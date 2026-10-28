@@ -1,0 +1,104 @@
+{
+  "id": "lib_0230ce02-6bf1-4f03-87c5-3dc73112e96a",
+  "source_id": "1442",
+  "name": "Kennington Library",
+  "slug": "kennington",
+  "address": "The Village Hall, Kennington Road, Kennington, Oxfordshire, OX1 5PG",
+  "postcode": "OX1 5PG",
+  "town": "Oxford",
+  "phone": "",
+  "email": "kennington.library@oxfordshire.gov.uk",
+  "website": "https://www.oxfordshire.gov.uk/libraries",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "community"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.718287,
+  "longitude": -1.244349,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/oxfordshire/kennington",
+  "authority": "oxfordshire"
+}

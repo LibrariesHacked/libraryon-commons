@@ -1,0 +1,88 @@
+{
+  "id": "lib_bf5c2c45-2cb2-45e3-8ad3-54e7d7c852c7",
+  "source_id": "2280",
+  "name": "Bloomsbury Library",
+  "slug": "bloomsbury-library",
+  "address": "The POD Oliver Street, Nechells Parkway , Birmingham, West Midlands, B7 4NX",
+  "postcode": "B7 4NX",
+  "town": "Birmingham",
+  "phone": "07745 261978",
+  "email": "bloomsbury.library@birmingham.gov.uk",
+  "website": "https://www.birmingham.gov.uk/directory_record/5127/bloomsbury_library_at_the_pod",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "Closed for lunch, Tues & Weds 1-1.30pm",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "community"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.49325,
+  "longitude": -1.87664,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/birmingham/bloomsbury-library",
+  "authority": "birmingham"
+}

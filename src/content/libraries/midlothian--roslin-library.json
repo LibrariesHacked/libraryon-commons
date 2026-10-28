@@ -1,0 +1,114 @@
+{
+  "id": "lib_550647d1-ae24-44ef-b6c7-aa1c3d1742a3",
+  "source_id": "3826",
+  "name": "Roslin Library",
+  "slug": "roslin-library",
+  "address": "9a Main Street, Roslin, EH25 9LD",
+  "postcode": "EH25 9LD",
+  "town": "Roslin",
+  "phone": "0131 448 2781",
+  "email": "Roslin.Library@midlothian.gov.uk",
+  "website": "https://www.midlothian.gov.uk/directory_record/65/roslin_library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "15:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    }
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "step-free-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 55.85717567885291,
+  "longitude": -3.1645841199501206,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/midlothian/roslin-library",
+  "authority": "midlothian"
+}

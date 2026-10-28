@@ -1,0 +1,109 @@
+{
+  "id": "lib_d6230284-e65f-4c47-b1be-a5755da12927",
+  "source_id": "373",
+  "name": "Killin Library",
+  "slug": "killin-library",
+  "address": "Main Street Killin FK21 8UW",
+  "postcode": "FK21 8UW",
+  "town": "Killin",
+  "phone": "01567 820571",
+  "email": "killinlibrary@stirling.gov.uk",
+  "website": "https://www.stirling.gov.uk/community-life-and-leisure/libraries-and-archives/libraries/libraries-in-stirling/list-of-libraries/killin-library/",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "15:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "15:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 56.467016,
+  "longitude": -4.318544,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-03-05",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/stirling/killin-library",
+  "authority": "stirling"
+}

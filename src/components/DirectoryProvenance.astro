@@ -1,0 +1,22 @@
+---
+import { formatDate, settings } from '../lib/site.mjs';
+const { record } = Astro.props;
+const copy = settings.ui.provenance;
+---
+
+<p class="notice">
+  {record.updated_on && (
+    <>
+      {copy.updated_prefix} <time datetime={record.updated_on}>{formatDate(record.updated_on)}</time>.{' '}
+    </>
+  )}
+  {record.reviewed_on ? (
+    <>
+      {copy.reviewed_prefix}{' '}
+      <time datetime={record.reviewed_on}>{record.reviewed_on}</time>.{' '}
+    </>
+  ) : !record.imported_on ? (
+    <>{copy.community_contributed} </>
+  ) : null}
+  {copy.check_official}
+</p>

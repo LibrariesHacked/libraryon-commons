@@ -1,0 +1,18 @@
+---
+import LibraryTemplate from '../../../templates/LibraryTemplate.astro';
+import { libraries, authorityByLibrary } from '../../../lib/directory.mjs';
+
+export function getStaticPaths() {
+  return libraries.map((library) => ({
+    params: {
+      authority: authorityByLibrary.get(library.id)?.slug || 'unassigned',
+      library: library.slug
+    },
+    props: { library, authority: authorityByLibrary.get(library.id) }
+  }));
+}
+
+const { library, authority } = Astro.props;
+---
+
+<LibraryTemplate library={library} authority={authority} />

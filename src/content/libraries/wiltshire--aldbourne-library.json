@@ -1,0 +1,122 @@
+{
+  "id": "lib_4ccf4324-1191-44ce-9169-0fa3db5a40ef",
+  "source_id": "3058",
+  "name": "Aldbourne Library",
+  "slug": "aldbourne-library",
+  "address": "South Street, Aldbourne Marlborough, Wiltshire, SN8 2DW",
+  "postcode": "SN8 2DW",
+  "town": "Marlborough",
+  "phone": "01672 540632",
+  "email": "libraryenquiries@wiltshire.gov.uk",
+  "website": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/4?isListPage=True",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:30",
+          "startTime": "13:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "17:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Volunteer-run",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:30",
+          "startTime": "13:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "17:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "step-free-access",
+    "service-dog-friendly",
+    "hearing-loop-system"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.47926,
+  "longitude": -1.61923,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": ""
+    },
+    {
+      "service": "Family history",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/wiltshire/aldbourne-library",
+  "authority": "wiltshire"
+}

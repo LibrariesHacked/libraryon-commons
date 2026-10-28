@@ -1,0 +1,106 @@
+{
+  "id": "lib_ce2460fc-84d9-4a97-83a3-6c072e484f92",
+  "source_id": "3414",
+  "name": "Cippenham Library",
+  "slug": "cippenham-library",
+  "address": "Elmshott Lane, Slough, Berkshire, SL1 5RB",
+  "postcode": "SL1 5RD",
+  "town": "Slough",
+  "phone": "01628 661745",
+  "email": "library@slough.gov.uk",
+  "website": "https://www.slough.gov.uk/directory-record/94/cippenham-library",
+  "catalogue": "https://slough.spydus.co.uk/",
+  "joinOnline": "https://www.slough.gov.uk/libraries/My-library-membership",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-parking",
+    "step-free-access",
+    "automatic-doors",
+    "accessible-restrooms",
+    "service-dog-friendly"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.51865,
+  "longitude": -0.64575,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.slough.gov.uk/libraries/home-library-service"
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.slough.gov.uk/libraries/ereading"
+    },
+    {
+      "service": "Career support",
+      "url": "https://www.slough.gov.uk/libraries/learning-career-support"
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/slough/cippenham-library",
+  "authority": "slough"
+}

@@ -1,0 +1,44 @@
+{
+  "format": 1,
+  "description": "Compact LibraryOn preservation evidence. Editable content and deduplicated media are kept separately in src/ and public/uploads/. No HARs, screenshots or duplicate API response objects.",
+  "contentPages": 36,
+  "datasets": [
+    "authorities.json",
+    "event-tags.json",
+    "events.json",
+    "libraries-event-counts.json",
+    "libraries.json",
+    "library-services.json",
+    "mobile-libraries.json"
+  ],
+  "templateURLs": [
+    "https://libraryon.org/libraries/blackburn-with-darwen",
+    "https://libraryon.org/libraries/cambridgeshire/cherry-hinton-library"
+  ],
+  "templateObjects": 53,
+  "bundles": [
+    {
+      "file": "content.json.gz",
+      "bytes": 268750,
+      "sha256": "fb40f936374f81fce8a2897afc57206e874943bd7ce75589e174ee04285f4f4d"
+    },
+    {
+      "file": "data.json.gz",
+      "bytes": 5718207,
+      "sha256": "1d9e3c35180ef080f5da3234d20cd55c80529c8217c2017a6aad2957d84f37ac"
+    },
+    {
+      "file": "templates.json.gz",
+      "bytes": 3566732,
+      "sha256": "4d3d7afbb72af596103ba484d8af4a423d0af1a492080ef0480161d43b104200"
+    }
+  ],
+  "mediaLocation": "public/uploads/archive",
+  "mediaProvenance": "migration/import-report.json",
+  "limitations": [
+    "Template evidence is original rendered HTML and compiled assets, not original CMS/React source.",
+    "Templates retain source URLs; these bundles are not an offline mirror.",
+    "Third-party presentations/videos remain references unless separately downloaded.",
+    "Unlinked CMS content and unreferenced uploads may be absent."
+  ]
+}

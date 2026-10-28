@@ -1,0 +1,117 @@
+{
+  "id": "lib_5e668f30-006b-43e2-8223-ad8f1d12f079",
+  "source_id": "3827",
+  "name": "Douglas City Library",
+  "slug": "douglas-city-library",
+  "address": "8 Duke Street, Douglas, Isle of Man, IM1 2AY",
+  "postcode": "IM1 2",
+  "town": "Douglas",
+  "phone": "01624 696461",
+  "email": "library@douglas.gov.im",
+  "website": "https://douglaslibrary.im/",
+  "catalogue": "https://www.douglas.gov.im/HeritageScripts/Hapi.dll/search1?CookieCheck=45841.6599598032",
+  "joinOnline": "https://douglaslibrary.im/join/",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "08:30"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "08:30"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "08:30"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "08:30"
+        }
+      ]
+    }
+  },
+  "openingTimesNotes": "Closed Bank Holidays and Easter Saturday.",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 54.148636151041075,
+  "longitude": -4.478688858207306,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://douglaslibrary.im/ebooks-eaudio/"
+    },
+    {
+      "service": "Family history",
+      "url": "https://douglaslibrary.im/online-reference/"
+    },
+    {
+      "service": "Hobby and interest groups",
+      "url": ""
+    },
+    {
+      "service": "Children's activities",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/isle-of-man/douglas-city-library",
+  "authority": "isle-of-man"
+}

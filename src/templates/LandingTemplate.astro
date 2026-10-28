@@ -1,0 +1,16 @@
+---
+import ArticleTemplate from './ArticleTemplate.astro';
+import ArticleCards from '../components/ArticleCards.astro';
+import { settings } from '../lib/site.mjs';
+const { children = [] } = Astro.props;
+---
+
+<ArticleTemplate {...Astro.props} label={settings.ui.editorial.labels.commons}>
+  <slot />
+  {children.length > 0 && (
+    <section slot="appendix">
+      <h2>{settings.ui.home.browse_resources}</h2>
+      <ArticleCards entries={children} />
+    </section>
+  )}
+</ArticleTemplate>

@@ -1,0 +1,115 @@
+{
+  "id": "lib_5d2e0fe0-929d-4de4-b453-83dcb478b233",
+  "source_id": "3249",
+  "name": "Flitwick Library",
+  "slug": "flitwick-library",
+  "address": "Coniston Road, Flitwick, Bedfordshire, MK45 1QJ",
+  "postcode": "MK45 1QJ",
+  "town": "Bedford",
+  "phone": "",
+  "email": "flitwick.library@centralbedfordshire.gov.uk",
+  "website": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "automatic-doors",
+    "accessible-parking",
+    "hearing-loop-system",
+    "wheelchair-access",
+    "accessible-restrooms",
+    "baby-changing-facilities"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.00144,
+  "longitude": -0.49866,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/central-bedfordshire/flitwick-library",
+  "authority": "central-bedfordshire"
+}

@@ -1,0 +1,110 @@
+{
+  "id": "lib_26e91d52-d8f5-4284-a0ea-2a5398599fda",
+  "source_id": "2090",
+  "name": "Birkby & Fartown Library",
+  "slug": "birkby-fartown-library",
+  "address": "Lea Street, Hillhouse, Huddersfield, West Yorkshire, HD1 6HF",
+  "postcode": "HD1 6HF",
+  "town": "Huddersfield",
+  "phone": "01484 414868",
+  "email": "frontline.services@kirklees.gov.uk",
+  "website": "https://www.kirklees.gov.uk/beta/libraries/index.aspx",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "15:00",
+          "startTime": "11:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "automatic-doors",
+    "step-free-access",
+    "hearing-loop-system",
+    "accessible-restrooms",
+    "baby-changing-facilities",
+    "service-dog-friendly",
+    "assistive-technology-available"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 53.65811,
+  "longitude": -1.7842,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "Garden",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/kirklees/birkby-fartown-library",
+  "authority": "kirklees"
+}

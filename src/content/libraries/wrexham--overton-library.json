@@ -1,0 +1,98 @@
+{
+  "id": "lib_a06ad7d0-b09a-4d9b-8a10-0323f4cfd966",
+  "source_id": "452",
+  "name": "Overton Library",
+  "slug": "overton-library",
+  "address": "4 Pen Y Llan Street, Overton, Wrexham, LL13 0EE, United Kingdom",
+  "postcode": "LL13 0EE",
+  "town": "Wrexham",
+  "phone": "01978 710557",
+  "email": "overton.library@wrexham.gov.uk",
+  "website": "https://www.wrexham.gov.uk/service/your-local-library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "14:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.96905,
+  "longitude": -2.93483,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Findmypast",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/wrexham/overton-library",
+  "authority": "wrexham"
+}

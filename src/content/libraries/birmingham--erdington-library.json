@@ -1,0 +1,128 @@
+{
+  "id": "lib_81d7c6d9-8962-49ea-a921-4467e10d4af2",
+  "source_id": "2300",
+  "name": "Erdington Library",
+  "slug": "erdington-library",
+  "address": "Orphanage Road , Birmingham, West Midlands, B24 9HP",
+  "postcode": "B24 9HP",
+  "town": "Birmingham",
+  "phone": "0121 464 0798",
+  "email": "erdington.library@birmingham.gov.uk",
+  "website": "https://www.birmingham.gov.uk/directory_record/5131/erdington_library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access"
+  ],
+  "notes": "Closed for lunch 1-2pm",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.52603,
+  "longitude": -1.83637,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/birmingham/erdington-library",
+  "authority": "birmingham"
+}

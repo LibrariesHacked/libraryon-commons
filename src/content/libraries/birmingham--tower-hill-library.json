@@ -1,0 +1,101 @@
+{
+  "id": "lib_1ae4e6af-28ac-46bf-91cc-53236fc083e7",
+  "source_id": "2407",
+  "name": "Tower Hill Library",
+  "slug": "tower-hill-library",
+  "address": "Tower Hill, Birmingham, West Midlands, B42 1LG",
+  "postcode": "B42 1LG",
+  "town": "Birmingham",
+  "phone": "0121 464 1948",
+  "email": "tower.hill.library@birmingham.gov.uk",
+  "website": "https://www.birmingham.gov.uk/directory_record/5154/tower_hill_library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "accessible-parking",
+    "baby-changing-facilities",
+    "accessible-restrooms"
+  ],
+  "notes": "Closed for lunch 1-2pm",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.53427,
+  "longitude": -1.91975,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/birmingham/tower-hill-library",
+  "authority": "birmingham"
+}

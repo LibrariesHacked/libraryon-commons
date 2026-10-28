@@ -1,0 +1,16 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { settings, sitePath } from '../lib/site.mjs';
+const copy = settings.ui.not_found;
+---
+
+<SiteLayout title={copy.title}>
+  <section class="section shell">
+    <p class="eyebrow">{copy.eyebrow}</p>
+    <h1>{copy.heading}</h1>
+    <p>{copy.description}</p>
+    <a class="button" href={sitePath('/')}>
+      {copy.return_link}
+    </a>
+  </section>
+</SiteLayout>

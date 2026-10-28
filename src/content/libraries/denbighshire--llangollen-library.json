@@ -1,0 +1,108 @@
+{
+  "id": "lib_f3076e54-65b2-4ed2-a327-9e540b5ae7c9",
+  "source_id": "339",
+  "name": "Llangollen Library",
+  "slug": "llangollen-library",
+  "address": "Castle Street, Llangollen, LL20 8NY, United Kingdom",
+  "postcode": "LL20 8NY",
+  "town": "Llangollen",
+  "phone": "01978 869600",
+  "email": "library@denbighshrie.gov.uk",
+  "website": "https://www.denbighshire.gov.uk/en/leisure-and-tourism/libraries/llangollen.aspx",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.969852,
+  "longitude": -3.170375,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/denbighshire/llangollen-library",
+  "authority": "denbighshire"
+}

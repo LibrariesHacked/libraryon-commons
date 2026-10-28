@@ -1,0 +1,212 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { Search, ArrowUpRight } from '@lucide/astro';
+import { authorities, searchRecords } from '../../lib/directory.mjs';
+import { settings, sitePath } from '../../lib/site.mjs';
+const copy = settings.ui.library_search;
+
+const countries = [
+  ...new Set(authorities.map((authority) => authority.country).filter(Boolean))
+].sort();
+---
+
+<SiteLayout
+  title={copy.title}
+  description={copy.description}
+>
+  <header class="page-heading">
+    <div class="shell">
+      <p class="eyebrow">{copy.eyebrow}</p>
+      <h1>{copy.heading}</h1>
+      <p>
+        {searchRecords.length.toLocaleString('en-GB')} {copy.intro_library_count} {authorities.length}{' '}
+        {copy.intro_authority_count}
+      </p>
+    </div>
+  </header>
+  <section class="section shell">
+    <form
+      id="library-search"
+      class="search-panel"
+      role="search"
+      data-index={sitePath('/directory.json')}
+      data-singular={copy.singular}
+      data-plural={copy.plural}
+      data-browse-status={copy.browse_status}
+      data-authority-browse-status={copy.authority_browse_status}
+    >
+      <label>
+        {copy.query_label}
+        <input
+          id="library-query"
+          name="q"
+          type="search"
+          placeholder={copy.query_placeholder}
+          autocomplete="off"
+        />
+      </label>
+      <label>
+        {copy.authority_label}
+        <select id="library-authority" name="authority">
+          <option value="">{copy.all_authorities}</option>
+          {authorities.map((authority) => (
+            <option value={authority.slug}>{authority.name}</option>
+          ))}
+          <option value="unassigned">{copy.unassigned_authority}</option>
+        </select>
+      </label>
+      <label>
+        {copy.country_label}
+        <select id="library-country" name="country">
+          <option value="">{copy.all_countries}</option>
+          {countries.map((country) => (
+            <option value={country}>{country}</option>
+          ))}
+        </select>
+      </label>
+      <button class="button" type="submit">
+        <Search size={19} aria-hidden="true" />
+        {copy.search_button}
+      </button>
+    </form>
+    <div class="results-heading">
+      <h2>{copy.results_heading}</h2>
+      <p id="library-count" class="muted" role="status" aria-live="polite">
+        {copy.browse_status}
+      </p>
+    </div>
+    <ul class="library-results" id="library-results">
+      {searchRecords.slice(0, 12).map((library) => (
+        <li>
+          <h3>
+            <a href={sitePath(library.url)}>
+              {library.name} <ArrowUpRight size={17} aria-hidden="true" />
+            </a>
+          </h3>
+          <p>{library.address}</p>
+          <span class="authority-label">{library.authorityName}</span>
+        </li>
+      ))}
+    </ul>
+    <p id="library-empty" class="empty-state" hidden>
+      {copy.no_matches}
+    </p>
+    <p id="library-error" class="notice" role="alert" hidden>
+      {copy.index_error}
+    </p>
+    <button class="button button-secondary load-more" id="library-more" type="button" hidden>
+      {copy.more_button}
+    </button>
+    <p class="notice" style="margin-top:2rem">
+      {copy.review_notice}
+    </p>
+    <details class="disclosure" open>
+      <summary>{copy.authority_disclosure}</summary>
+      <ul class="authority-grid">
+        {authorities.map((authority) => (
+          <li>
+            <a href={sitePath(`/libraries/${authority.slug}/`)}>{authority.name}</a>
+            <small>
+              {authority.country} · {authority.library_ids.length} {copy.recorded_libraries}
+            </small>
+          </li>
+        ))}
+      </ul>
+    </details>
+  </section>
+</SiteLayout>
+
+<script>
+  import { matchesLibrary } from '../../lib/search.mjs';
+  import { sitePath } from '../../lib/site.mjs';
+  const form = document.querySelector<HTMLFormElement>('#library-search');
+  const query = document.querySelector<HTMLInputElement>('#library-query');
+  const authority = document.querySelector<HTMLSelectElement>('#library-authority');
+  const country = document.querySelector<HTMLSelectElement>('#library-country');
+  const results = document.querySelector<HTMLUListElement>('#library-results');
+  const count = document.querySelector<HTMLElement>('#library-count');
+  const more = document.querySelector<HTMLButtonElement>('#library-more');
+  const empty = document.querySelector<HTMLElement>('#library-empty');
+  const error = document.querySelector<HTMLElement>('#library-error');
+  const countCopy = {
+    singular: form.dataset.singular,
+    plural: form.dataset.plural,
+    browse: form.dataset.browseStatus,
+    byAuthority: form.dataset.authorityBrowseStatus
+  };
+  const params = new URLSearchParams(location.search);
+  query.value = params.get('q') || '';
+  authority.value = params.get('authority') || '';
+  country.value = params.get('country') || '';
+  let records = [];
+  let filtered = [];
+  let visible = 24;
+  let loaded = false;
+
+  /** Render only the visible subset using text nodes rather than imported HTML. */
+  function showResults() {
+    const fragment = document.createDocumentFragment();
+    for (const record of filtered.slice(0, visible)) {
+      const item = document.createElement('li');
+      const heading = document.createElement('h3');
+      const link = document.createElement('a');
+      link.href = sitePath(record.url);
+      link.textContent = record.name;
+      heading.append(link);
+      const address = document.createElement('p');
+      address.textContent = record.address;
+      const label = document.createElement('span');
+      label.className = 'authority-label';
+      label.textContent = record.authorityName;
+      item.append(heading, address, label);
+      fragment.append(item);
+    }
+    results.replaceChildren(fragment);
+    count.textContent = `${filtered.length.toLocaleString('en-GB')} ${filtered.length === 1 ? countCopy.singular : countCopy.plural}`;
+    empty.hidden = filtered.length !== 0;
+    more.hidden = visible >= filtered.length;
+  }
+
+  /** Filter the static index and retain a shareable query in the browser URL. */
+  function search() {
+    if (!loaded) return;
+    visible = 24;
+    filtered = records.filter((record) =>
+      matchesLibrary(record, {
+        query: query.value,
+        authority: authority.value,
+        country: country.value
+      })
+    );
+    const parameters = new URLSearchParams();
+    if (query.value.trim()) parameters.set('q', query.value.trim());
+    if (authority.value) parameters.set('authority', authority.value);
+    if (country.value) parameters.set('country', country.value);
+    history.replaceState(
+      null,
+      '',
+      `${location.pathname}${parameters.size ? `?${parameters}` : ''}`
+    );
+    showResults();
+  }
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    search();
+  });
+  authority.addEventListener('change', search);
+  country.addEventListener('change', search);
+  more.addEventListener('click', () => {
+    visible += 24;
+    showResults();
+  });
+  try {
+    const response = await fetch(form.dataset.index);
+    if (!response.ok) throw new Error('Search index unavailable');
+    records = await response.json();
+    loaded = true;
+    search();
+  } catch {
+    error.hidden = false;
+    count.textContent = countCopy.byAuthority;
+  }
+</script>

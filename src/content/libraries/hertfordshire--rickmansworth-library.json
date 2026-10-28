@@ -1,0 +1,100 @@
+{
+  "id": "lib_3fbd50bd-f4db-433f-8cce-10e169de62b7",
+  "source_id": "940",
+  "name": "Rickmansworth Library",
+  "slug": "rickmansworth-library",
+  "address": "High Street, Rickmansworth, Hertfordshire, WD3 1EH",
+  "postcode": "WD3 1EH",
+  "town": "Rickmansworth",
+  "phone": "",
+  "email": "libraries.information@hertfordshire.gov.uk",
+  "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/rickmansworth-library.aspx",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "15:30",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.639073,
+  "longitude": -0.468805,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-07-01",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/hertfordshire/rickmansworth-library",
+  "authority": "hertfordshire"
+}

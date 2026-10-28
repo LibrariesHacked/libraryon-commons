@@ -1,0 +1,66 @@
+---
+import { getCollection, render } from 'astro:content';
+import HomeTemplate from '../templates/HomeTemplate.astro';
+import ArticleTemplate from '../templates/ArticleTemplate.astro';
+import CollectionTemplate from '../templates/CollectionTemplate.astro';
+import CaseStudyTemplate from '../templates/CaseStudyTemplate.astro';
+import ConferenceTemplate from '../templates/ConferenceTemplate.astro';
+import GrantTemplate from '../templates/GrantTemplate.astro';
+import LegalTemplate from '../templates/LegalTemplate.astro';
+import LandingTemplate from '../templates/LandingTemplate.astro';
+import { templateFor } from '../lib/templates.mjs';
+import { isPublishedPage } from '../lib/site.mjs';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('pages');
+  return pages
+    .filter((entry) => isPublishedPage(entry) && entry.data.path !== '/libraries')
+    .map((entry) => ({
+      params: { path: entry.data.path.replace(/^\/+|\/+$/g, '') || undefined },
+      props: { entry }
+    }));
+}
+
+const { entry } = Astro.props;
+const { Content, headings } = await render(entry);
+const allPages = (await getCollection('pages')).filter(isPublishedPage);
+const resources = new Map(
+  (await getCollection('resources')).map((resource) => [resource.id, resource.data])
+);
+const sessions = (await getCollection('sessions'))
+  .filter((session) => session.data.conference === entry.id)
+  .sort((first, second) => first.data.order - second.data.order);
+const contents = headings.filter((heading) => heading.depth === 2);
+const section = entry.data.path.split('/').filter(Boolean)[0];
+const neighbours = allPages.filter(
+  (page) => page.data.path.startsWith(`/${section}/`) && page.id !== entry.id
+);
+const related = entry.data.resources
+  .map((id) => resources.get(id))
+  .filter((resource) => resource && resource.kind !== 'link');
+const templates = {
+  home: HomeTemplate,
+  page: ArticleTemplate,
+  article: ArticleTemplate,
+  landing: LandingTemplate,
+  collection: CollectionTemplate,
+  'case-study': CaseStudyTemplate,
+  conference: ConferenceTemplate,
+  grant: GrantTemplate,
+  legal: LegalTemplate
+};
+const Template = templates[templateFor(entry)];
+---
+
+<Template
+  entry={entry}
+  allPages={allPages}
+  headings={contents}
+  neighbours={neighbours}
+  children={neighbours}
+  sessions={sessions}
+  resources={resources}
+  related={related}
+>
+  <Content />
+</Template>

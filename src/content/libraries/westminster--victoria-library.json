@@ -1,0 +1,148 @@
+{
+  "id": "lib_25a549a5-089f-4920-b6e0-b30a82af5c7e",
+  "source_id": "2601",
+  "name": "Victoria Library",
+  "slug": "victoria-library",
+  "address": "160 Buckingham Palace Road, London, Middlesex, SW1W 9UD",
+  "postcode": "SW1W 9TR",
+  "town": "London",
+  "phone": "020 7641 6200",
+  "email": "victorialibrary@westminster.gov.uk",
+  "website": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/victoria-library",
+  "catalogue": "https://trib.ent.sirsidynix.net.uk/client/en_GB/wcc/?dt=list",
+  "joinOnline": "https://mywestminster.westminster.gov.uk/library-not-logged-in/do-you-have-westminster-address",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "20:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "step-free-access",
+    "automatic-doors",
+    "service-dog-friendly",
+    "staff-support"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.49291,
+  "longitude": -0.14784,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Career support",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "Bookable space",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/rooms-hire-libraries-and-archives-centre/victoria-library"
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/home-library-service"
+    },
+    {
+      "service": "Children's activities",
+      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/children"
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://libbyapp.com/interview/welcome#doYouHaveACard"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": ""
+    },
+    {
+      "service": "Findmypast",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/westminster/victoria-library",
+  "authority": "westminster"
+}

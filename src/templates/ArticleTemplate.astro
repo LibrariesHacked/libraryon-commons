@@ -1,0 +1,36 @@
+---
+import EditorialLayout from '../layouts/EditorialLayout.astro';
+import ArticleMedia from '../components/ArticleMedia.astro';
+import FAQSection from '../components/FAQSection.astro';
+import ResourceLink from '../components/ResourceLink.astro';
+import { settings } from '../lib/site.mjs';
+const { entry, related = [], label = settings.ui.editorial.labels.articles } = Astro.props;
+---
+
+<EditorialLayout {...Astro.props} label={label}>
+  <ArticleMedia image={entry.data.hero} />
+  <article class="prose original-content">
+    <slot />
+  </article>
+  <FAQSection items={entry.data.faqs} />
+  {entry.data.gallery?.length > 0 && (
+    <section class="article-grid" aria-label={settings.ui.editorial.gallery_aria_label}>
+      {entry.data.gallery.map((image) => (
+        <ArticleMedia image={image} />
+      ))}
+    </section>
+  )}
+  {!entry.data.source_url && related.length > 0 && (
+    <section>
+      <h2>{settings.ui.editorial.related_resources}</h2>
+      <ul class="resource-list">
+        {related.map((resource) => (
+          <li>
+            <ResourceLink resource={resource} />
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+  <slot name="appendix" />
+</EditorialLayout>

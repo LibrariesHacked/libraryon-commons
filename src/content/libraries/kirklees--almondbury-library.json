@@ -1,0 +1,112 @@
+{
+  "id": "lib_ce36a664-9b54-4f28-8235-52109846063d",
+  "source_id": "2080",
+  "name": "Almondbury Library",
+  "slug": "almondbury-library",
+  "address": "Off Farfield Road, Almondbury, Huddersfield, West Yorkshire, HD5 8TD",
+  "postcode": "HD5 8RX",
+  "town": "Huddersfield",
+  "phone": "01484 414868",
+  "email": "frontline.services@kirklees.gov.uk",
+  "website": "https://www.kirklees.gov.uk/Libraries",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-parking",
+    "step-free-access",
+    "automatic-doors",
+    "service-dog-friendly",
+    "accessible-restrooms",
+    "baby-changing-facilities",
+    "assistive-technology-available"
+  ],
+  "notes": "Relocated to a modern building and refurbished to be dementia friendly",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "community"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 53.6339,
+  "longitude": -1.74811,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/kirklees/almondbury-library",
+  "authority": "kirklees"
+}

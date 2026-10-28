@@ -1,0 +1,115 @@
+{
+  "id": "lib_0721395b-e1bc-4c4c-b840-658a16c4ada7",
+  "source_id": "1268",
+  "name": "Riverhead Library",
+  "slug": "riverhead-library",
+  "address": "31 London Road, Riverhead, Kent, TN13 2BU",
+  "postcode": "TN13 2BU",
+  "town": "Sevenoaks",
+  "phone": "01732 459218",
+  "email": "riverheadlibrary@kent.gov.uk",
+  "website": "http://www.kent.gov.uk/leisure-and-community/libraries",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "14:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.28478,
+  "longitude": 0.16972,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/kent/riverhead-library",
+  "authority": "kent"
+}

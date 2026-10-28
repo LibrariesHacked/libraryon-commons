@@ -1,0 +1,128 @@
+{
+  "id": "lib_ed0c9984-463d-4119-9e8d-5ef39a24afab",
+  "source_id": "899",
+  "name": "Letchworth Library",
+  "slug": "letchworth-library",
+  "address": "Broadway, Letchworth, Hertfordshire, SG6 3PF",
+  "postcode": "SG6 3HL",
+  "town": "Letchworth Garden City",
+  "phone": "",
+  "email": "libraries.information@hertfordshire.gov.uk",
+  "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/letchworth-library.aspx",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "hearing-loop-system",
+    "accessible-parking"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.97684,
+  "longitude": -0.22887,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Bookable space",
+      "url": ""
+    },
+    {
+      "service": "Children's activities",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/hertfordshire/letchworth-library",
+  "authority": "hertfordshire"
+}

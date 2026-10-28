@@ -1,0 +1,46 @@
+---
+import { facilityLabel } from '../lib/directory.mjs';
+import { settings } from '../lib/site.mjs';
+const { library } = Astro.props;
+const copy = settings.ui.opening_hours;
+const hours = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].map(
+  (day) => ({ day, frames: library.openingTimes?.[day]?.timeFrames || [] })
+);
+---
+
+<section class="detail-section">
+  <h2>{copy.heading}</h2>
+  {hours.some((day) => day.frames.length) ? (
+    <table class="hours">
+      <tbody>
+        {hours.map(({ day, frames }) => (
+          <tr>
+            <th scope="row">{facilityLabel(day)}</th>
+            <td>
+              {frames.length
+                ? frames.map((frame) => (
+                    <div>
+                      {frame.startTime}–{frame.endTime}
+                      {frame.type && frame.type !== 'Staffed' && <small> · {frame.type}</small>}
+                    </div>
+                  ))
+                : copy.closed_not_recorded}
+            </td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  ) : (
+    <p>{copy.not_supplied}</p>
+  )}
+  {library.openingTimesNotes && (
+    <p class="muted" style="font-size:.8rem;margin-top:1rem">
+      {library.openingTimesNotes}
+    </p>
+  )}
+  {hours.some((day) => day.frames.length) && (
+    <p class="muted" style="font-size:.8rem;margin-top:1rem">
+      {copy.holiday_note}
+    </p>
+  )}
+</section>

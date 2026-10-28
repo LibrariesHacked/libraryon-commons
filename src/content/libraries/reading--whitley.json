@@ -1,0 +1,102 @@
+{
+  "id": "lib_77852ace-8ae9-446d-bf58-105afaa732bf",
+  "source_id": "3404",
+  "name": "Whitley",
+  "slug": "whitley",
+  "address": "South Reading Community Hub,  Northumberland Avenue, Reading, Berkshire, RG2 7QA",
+  "postcode": "RG2 7QA",
+  "town": "Reading",
+  "phone": "0118 937 5115",
+  "email": "info@readinglibraries.org.uk",
+  "website": "https://www.reading.gov.uk/leisure/libraries/all-libraries/whitley-library/",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access"
+  ],
+  "notes": "Moved into colocated space June 2018",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "community"
+  ],
+  "virtualTourUrl": "https://tour.giraffe360.com/whitley_library/",
+  "permanentlyClosed": false,
+  "latitude": 51.43286,
+  "longitude": -0.96273,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/reading/whitley",
+  "authority": "reading"
+}

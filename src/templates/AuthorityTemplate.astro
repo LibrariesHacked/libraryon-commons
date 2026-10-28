@@ -1,0 +1,82 @@
+---
+import DirectoryLayout from '../layouts/DirectoryLayout.astro';
+import DirectoryProvenance from '../components/DirectoryProvenance.astro';
+import ContactDetails from '../components/ContactDetails.astro';
+import { ArrowUpRight } from '@lucide/astro';
+import { libraryPath, libraryAddress, collectValues, facilityLabel } from '../lib/directory.mjs';
+import { settings, sitePath, safeURL } from '../lib/site.mjs';
+const { authority, entries } = Astro.props;
+const copy = settings.ui.directory;
+const services = collectValues(entries, (library) => library.services?.map((item) => item.service));
+const accessibility = collectValues(entries, (library) => library.accessibility);
+---
+
+<DirectoryLayout
+  title={authority.name}
+  subtitle={`${entries.length} ${copy.libraries_heading.toLowerCase()}${services.length ? ` · ${services.length} ${copy.services_count}` : ''}${authority.country ? ` · ${authority.country}` : ''}`}
+  description={`${copy.authority_description_prefix} ${authority.name}.`}
+>
+  <h2>{copy.libraries_heading}</h2>
+  <ul class="library-results">
+    {entries.map((library) => (
+      <li>
+        <h3>
+          <a href={sitePath(libraryPath(library))}>
+            {library.name} <ArrowUpRight size={17} aria-hidden="true" />
+          </a>
+        </h3>
+        <p>{libraryAddress(library)}</p>
+        {library.permanentlyClosed && <p>{copy.marked_permanently_closed}</p>}
+      </li>
+    ))}
+  </ul>
+  {services.length > 0 && (
+    <section class="detail-section">
+      <h2>{copy.services_heading}</h2>
+      <ul class="tags">
+        {services.map((service) => (
+          <li>{service}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+  {accessibility.length > 0 && (
+    <section class="detail-section">
+      <h2>{copy.accessibility}</h2>
+      <ul class="tags">
+        {accessibility.map((value) => (
+          <li>{facilityLabel(value)}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+  <Fragment slot="aside">
+    <section class="detail-section">
+      <h2>{copy.library_service}</h2>
+      <ContactDetails record={authority} />
+    </section>
+    {authority.about && (
+      <section class="detail-section">
+        <h2>{copy.about_service}</h2>
+        <p>{authority.about}</p>
+      </section>
+    )}
+    {authority.social?.length > 0 && (
+      <section class="detail-section">
+        <h2>{copy.connect}</h2>
+        <ul class="contact-list">
+          {authority.social
+            .filter((link) => safeURL(link.url))
+            .map((link) => (
+              <li>
+                <a href={safeURL(link.url)}>
+                  {link.channel} <ArrowUpRight size={15} aria-hidden="true" />
+                </a>
+              </li>
+            ))}
+        </ul>
+      </section>
+    )}
+    <DirectoryProvenance record={authority} />
+  </Fragment>
+</DirectoryLayout>

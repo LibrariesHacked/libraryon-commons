@@ -1,0 +1,125 @@
+{
+  "id": "lib_ee24c3f1-95b1-4b94-9838-1c89d8365504",
+  "source_id": "3380",
+  "name": "Helston Library & Information Service",
+  "slug": "helston-library-information-service",
+  "address": "Trengrouse Way, Helston, Cornwall, TR13 8AG",
+  "postcode": "TR13 8AH",
+  "town": "Helston",
+  "phone": "0300 1234 111",
+  "email": "libraries@cornwall.gov.uk",
+  "website": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/helston-library-and-information-service/",
+  "catalogue": "https://prism.librarymanagementcloud.co.uk/cornwall/",
+  "joinOnline": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/join-the-library/",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "step-free-access",
+    "automatic-doors",
+    "accessible-parking"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "civic",
+    "other"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 50.1006,
+  "longitude": -5.27078,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "Family history",
+      "url": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-free-library-resources/online-reference-library/genealogy-and-history-resources/"
+    },
+    {
+      "service": "Digital skills sessions",
+      "url": "https://www.cornwall.gov.uk/people-and-communities/digital-inclusion/"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/cornwall/helston-library-information-service",
+  "authority": "cornwall"
+}

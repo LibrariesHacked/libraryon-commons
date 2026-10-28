@@ -1,0 +1,34 @@
+---
+import AuthorityTemplate from '../../../templates/AuthorityTemplate.astro';
+import {
+  authorities,
+  libraries,
+  libraryPath,
+  libraryAddress,
+  authorityByLibrary
+} from '../../../lib/directory.mjs';
+
+export function getStaticPaths() {
+  const missing = libraries.filter((library) => !authorityByLibrary.has(library.id));
+  return [
+    ...authorities,
+    ...(missing.length
+      ? [
+          {
+            slug: 'unassigned',
+            name: 'Authority not recorded',
+            country: '',
+            library_ids: missing.map((library) => library.id)
+          }
+        ]
+      : [])
+  ].map((authority) => ({ params: { authority: authority.slug }, props: { authority } }));
+}
+const { authority } = Astro.props;
+const ids = new Set(authority.library_ids);
+const entries = libraries
+  .filter((library) => ids.has(library.id))
+  .sort((first, second) => first.name.localeCompare(second.name, 'en'));
+---
+
+<AuthorityTemplate authority={authority} entries={entries} />

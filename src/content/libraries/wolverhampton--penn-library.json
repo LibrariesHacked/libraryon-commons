@@ -1,0 +1,119 @@
+{
+  "id": "lib_a6e28d48-31bc-4569-acdb-bd9460ab67a9",
+  "source_id": "2318",
+  "name": "Penn Library",
+  "slug": "penn-library",
+  "address": "Coalway Road, Wolverhampton, West Midlands, WV3 7LT",
+  "postcode": "WV4 4AA",
+  "town": "Wolverhampton",
+  "phone": "01902 556281",
+  "email": "libraries@wolverhampton.gov.uk",
+  "website": "https://www.wolverhampton.gov.uk/libraries",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.56743,
+  "longitude": -2.14543,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Bookable space",
+      "url": "https://www.wolverhampton.gov.uk/libraries/room-hire"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/wolverhampton/penn-library",
+  "authority": "wolverhampton"
+}

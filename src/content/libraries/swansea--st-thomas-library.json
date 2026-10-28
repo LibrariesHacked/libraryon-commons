@@ -1,0 +1,122 @@
+{
+  "id": "lib_ec8266d6-7d20-45c6-9928-fb7285f23704",
+  "source_id": "737",
+  "name": "St Thomas Library",
+  "slug": "st-thomas-library",
+  "address": "Grenfell Park Road, St Thomas, Swansea, SA1 8EZ",
+  "postcode": "SA1 8EZ",
+  "town": "Swansea",
+  "phone": "01792 655570",
+  "email": "st.thomas.library@swansea.gov.uk",
+  "website": "https://www.swansea.gov.uk/stthomaslibrary?contactid=2158",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "accessible-restrooms",
+    "baby-changing-facilities",
+    "hearing-loop-system"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.62406,
+  "longitude": -3.92493,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/swansea/st-thomas-library",
+  "authority": "swansea"
+}

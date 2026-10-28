@@ -1,0 +1,33 @@
+---
+import ArticleTemplate from './ArticleTemplate.astro';
+import ResourceLink from '../components/ResourceLink.astro';
+import { settings, sitePath } from '../lib/site.mjs';
+const { sessions = [], resources = new Map() } = Astro.props;
+---
+
+<ArticleTemplate {...Astro.props} label={settings.ui.editorial.labels.conferences}>
+  <slot />
+  {sessions.length > 0 && (
+    <details class="disclosure" slot="appendix">
+      <summary>{settings.ui.conference.session_index}</summary>
+      <ol class="session-list">
+        {sessions.map((session) => (
+          <li>
+            <p class="eyebrow">{session.data.theme}</p>
+            <h3>
+              <a href={sitePath(`/sessions/${session.id}/`)}>{session.data.title}</a>
+            </h3>
+            <div class="session-resources">
+              {session.data.resources
+                .map((id) => resources.get(id))
+                .filter(Boolean)
+                .map((resource) => (
+                  <ResourceLink resource={resource} compact />
+                ))}
+            </div>
+          </li>
+        ))}
+      </ol>
+    </details>
+  )}
+</ArticleTemplate>

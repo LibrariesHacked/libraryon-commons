@@ -1,0 +1,27 @@
+---
+import { getCollection } from 'astro:content';
+import SessionTemplate from '../../templates/SessionTemplate.astro';
+import { isPublishedPage } from '../../lib/site.mjs';
+export async function getStaticPaths() {
+  const pages = new Map(
+    (await getCollection('pages'))
+      .filter(isPublishedPage)
+      .map((entry) => [entry.id, entry])
+  );
+  const resources = new Map(
+    (await getCollection('resources')).map((entry) => [entry.id, entry.data])
+  );
+  return (await getCollection('sessions'))
+    .filter((entry) => pages.has(entry.data.conference))
+    .map((entry) => ({
+    params: { session: entry.id },
+    props: {
+      session: entry.data,
+      conference: pages.get(entry.data.conference),
+      resources: entry.data.resources.map((id) => resources.get(id)).filter(Boolean)
+    }
+    }));
+}
+---
+
+<SessionTemplate {...Astro.props} />

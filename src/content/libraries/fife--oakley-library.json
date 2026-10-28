@@ -1,0 +1,101 @@
+{
+  "id": "lib_4ad83d58-308a-4839-8de1-3097f82759a5",
+  "source_id": "272",
+  "name": "Oakley Library",
+  "slug": "oakley-library",
+  "address": "Oakley Library, Oakley Campus, Station Road, Oakley, KY12 9RJ",
+  "postcode": "KY12 9RJ",
+  "town": "Dunfermline",
+  "phone": "01383 602369",
+  "email": "oakley.library@onfife.com",
+  "website": "http://onfife.com/venues/oakley-library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-parking",
+    "accessible-restrooms"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 56.085011,
+  "longitude": -3.568552,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://replay.bfi.org.uk/"
+    }
+  ],
+  "updated_on": "2026-05-01",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/fife/oakley-library",
+  "authority": "fife"
+}

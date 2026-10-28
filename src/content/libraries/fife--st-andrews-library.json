@@ -1,0 +1,132 @@
+{
+  "id": "lib_77d2cdd6-ab94-4d26-b61d-fec7b8b2b1b5",
+  "source_id": "287",
+  "name": "St Andrews Library",
+  "slug": "st-andrews-library",
+  "address": "St Andrews Library, Church Square, St. Andrews, KY16 9NN",
+  "postcode": "KY16 9NN",
+  "town": "St Andrews",
+  "phone": "01334 659378",
+  "email": "StAndrews.Library@onfife.com",
+  "website": "http://onfife.com/venues/st-andrews-library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "lift-access",
+    "accessible-restrooms"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 56.339872,
+  "longitude": -2.79589,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://replay.bfi.org.uk/"
+    }
+  ],
+  "updated_on": "2026-05-01",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/fife/st-andrews-library",
+  "authority": "fife"
+}

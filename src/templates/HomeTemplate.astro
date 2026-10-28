@@ -1,0 +1,91 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ArticleCards from '../components/ArticleCards.astro';
+import FAQSection from '../components/FAQSection.astro';
+import { ArrowRight, Search } from '@lucide/astro';
+import { articleImage, safeURL, settings, sitePath } from '../lib/site.mjs';
+import homepage from '../data/homepage.json';
+const { entry, allPages } = Astro.props;
+const hero = homepage.image
+  ? { url: homepage.image, alt: homepage.image_alt }
+  : articleImage(entry);
+const copy = settings.ui.home;
+const sourceURL = safeURL(entry.data.source_url);
+const selected = (paths) =>
+  paths.map((path) => allPages.find((page) => page.data.path === path)).filter(Boolean);
+const features = selected(homepage.feature_pages);
+const collections = selected(homepage.collection_pages);
+---
+
+<SiteLayout title={settings.site.title} description={settings.site.description}>
+  <section class="hero">
+    {hero && (
+      <img src={sitePath(hero.url)} alt={hero.alt} width="1600" height="600" fetchpriority="high" />
+    )}
+    <div class="shell">
+      <p class="eyebrow">{copy.eyebrow}</p>
+      <h1>{homepage.title}</h1>
+      <p>{homepage.intro}</p>
+      <a class="button" href={sitePath(copy.find_library_url)}>
+        {copy.find_library} <ArrowRight size={19} aria-hidden="true" />
+      </a>
+    </div>
+  </section>
+  <section class="section section-wash">
+    <div class="shell home-search">
+      <div>
+        <h2>{copy.search_heading}</h2>
+        <p>{copy.search_description}</p>
+      </div>
+      <form class="inline-search" action={sitePath(copy.find_library_url)} role="search">
+        <input
+          type="search"
+          name="q"
+          aria-label={copy.search_label}
+          placeholder={copy.search_placeholder}
+        />
+        <button class="button" type="submit">
+          <Search size={20} aria-hidden="true" />
+          <span>{copy.search_button}</span>
+        </button>
+      </form>
+    </div>
+  </section>
+  <section class="section shell">
+    <div class="section-heading">
+      <h2>{homepage.features_title}</h2>
+    </div>
+    <ArticleCards entries={features} />
+  </section>
+  <section class="section section-wash">
+    <div class="shell">
+      <div class="section-heading">
+        <h2>{homepage.collections_title}</h2>
+        <a href={sitePath(copy.collections_url)}>
+          {copy.all_collections} <ArrowRight size={16} aria-hidden="true" />
+        </a>
+      </div>
+      <ArticleCards entries={collections} />
+    </div>
+  </section>
+  <section class="section shell">
+    <div class="section-heading">
+      <h2>{homepage.community_title}</h2>
+      <a href={sitePath(copy.resources_url)}>
+        {copy.browse_resources} <ArrowRight size={16} aria-hidden="true" />
+      </a>
+    </div>
+    <ArticleCards entries={selected(homepage.community_pages)} />
+    <details class="disclosure">
+      <summary>{copy.preserved_intro}</summary>
+      <article class="prose">
+        <slot />
+      </article>
+      <div class="source-note">
+        {entry.data.attribution && <p>{entry.data.attribution}</p>}
+        {sourceURL && <a href={sourceURL}>{settings.ui.editorial.original_source_link}</a>}
+      </div>
+    </details>
+    <FAQSection items={entry.data.faqs} />
+  </section>
+</SiteLayout>

@@ -1,0 +1,90 @@
+{
+  "id": "lib_b1e8764c-e95e-45e3-8482-361c4e198d5b",
+  "source_id": "421",
+  "name": "Cove Library",
+  "slug": "cove-library",
+  "address": "30 Loirston Avenue, Aberdeen, AB12 3HE, United Kingdom",
+  "postcode": "AB12 3HE",
+  "town": "Aberdeen",
+  "phone": "",
+  "email": "CoveLibrary@aberdeencity.gov.uk",
+  "website": "https://www.aberdeencity.gov.uk/services/libraries-and-archives/find-your-local-library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 57.10398,
+  "longitude": -2.08443,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-07-21",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/aberdeen-city/cove-library",
+  "authority": "aberdeen-city"
+}

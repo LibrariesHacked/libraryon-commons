@@ -1,0 +1,186 @@
+{
+  "id": "lib_7ce3f405-166d-40e2-a9af-f29044819d8d",
+  "source_id": "2862",
+  "name": "Tisbury Library",
+  "slug": "tisbury-library",
+  "address": "Nadder Community Campus, Weaveland Road, Tisbury, Wiltshire, SP3 6HJ",
+  "postcode": "SP3 6HJ",
+  "town": "Salisbury",
+  "phone": "01722 434205",
+  "email": "libraryenquiries@wiltshire.gov.uk",
+  "website": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/37?isListPage=True",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "07:00"
+        },
+        {
+          "type": "Volunteer-run",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Volunteer-run",
+          "endTime": "16:00",
+          "startTime": "14:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "21:00",
+          "startTime": "16:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "21:00",
+          "startTime": "07:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "07:00"
+        },
+        {
+          "type": "Volunteer-run",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Volunteer-run",
+          "endTime": "16:00",
+          "startTime": "14:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "21:00",
+          "startTime": "16:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Volunteer-run",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "16:00",
+          "startTime": "12:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "07:00"
+        },
+        {
+          "type": "Volunteer-run",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "21:00",
+          "startTime": "12:00"
+        }
+      ]
+    }
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-parking",
+    "wheelchair-access",
+    "service-dog-friendly",
+    "hearing-loop-system"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "other"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.06683,
+  "longitude": -2.08326,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": ""
+    },
+    {
+      "service": "Family history",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-02-24",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/wiltshire/tisbury-library",
+  "authority": "wiltshire"
+}

@@ -1,0 +1,126 @@
+{
+  "id": "lib_b0ec914c-83ed-4bed-819d-a9501d1adf75",
+  "source_id": "2661",
+  "name": "Kirkby",
+  "slug": "kirkby",
+  "address": "The Kirkby Centre,  Norwich Way , Kirkby, Merseyside, L32 8XY",
+  "postcode": "L32 8UR",
+  "town": "Liverpool",
+  "phone": "0151 443 3734",
+  "email": "yourlibrary@knowsley.gov.uk",
+  "website": "https://yourlibrary.knowsley.gov.uk/find-your-local-library/kirkby-library/",
+  "catalogue": "https://catalogue.knowsley.gov.uk/",
+  "joinOnline": "https://catalogue.knowsley.gov.uk/cgi-bin/koha/opac-memberentry.pl",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "archives",
+    "arts",
+    "other"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 53.4824,
+  "longitude": -2.890056,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/knowsley/kirkby",
+  "authority": "knowsley"
+}

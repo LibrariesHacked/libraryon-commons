@@ -1,0 +1,115 @@
+{
+  "id": "lib_a04ad6f6-c8f1-4a72-89d2-0503be92f591",
+  "source_id": "2828",
+  "name": "Smith's Wood Neighbourhood Library",
+  "slug": "smiths-wood",
+  "address": "Smith’s Wood Village Centre, Elmwood Place, 37 Burtons Way, Birmingham , West Midlands, B36 0UG",
+  "postcode": "B36 0UG",
+  "town": "Birmingham",
+  "phone": "0121 779 1700",
+  "email": "libraries@solihull.gov.uk",
+  "website": "https://www.solihull.gov.uk/Libraries/Smiths-wood-neighbourhood-library",
+  "catalogue": "https://solihull.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
+  "joinOnline": "https://www.solihull.gov.uk/Libraries/Join-a-library",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "16:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "16:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "lift-access",
+    "hearing-loop-system",
+    "accessible-restrooms",
+    "step-free-access",
+    "automatic-doors",
+    "service-dog-friendly"
+  ],
+  "notes": "Self-service library",
+  "facilityOperated": "Local Authority Run Unstaffed",
+  "coLocated": [
+    "civic",
+    "other"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.50433,
+  "longitude": -1.74932,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.solihull.gov.uk/Libraries/Home-library-service"
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.solihull.gov.uk/Libraries/virtual-reference-library"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/solihull/smiths-wood",
+  "authority": "solihull"
+}

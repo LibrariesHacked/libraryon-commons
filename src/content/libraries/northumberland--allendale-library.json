@@ -1,0 +1,105 @@
+{
+  "id": "lib_5f147d47-482d-41d2-be67-b0ab24b50b32",
+  "source_id": "3286",
+  "name": "Allendale Library",
+  "slug": "allendale-library",
+  "address": "Dawson Place, Hexham, Northumberland, NE47 9PP",
+  "postcode": "NE47 9PP",
+  "town": "Hexham",
+  "phone": "01434 618585",
+  "email": "allendale.library@northumberland.gov.uk",
+  "website": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=ALE",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "16:30",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "Open on the first and third Saturday of the month at 10am-2pm with a limited service.",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 54.89757,
+  "longitude": -2.25267,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "Children's activities",
+      "url": ""
+    },
+    {
+      "service": "Family history",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/northumberland/allendale-library",
+  "authority": "northumberland"
+}

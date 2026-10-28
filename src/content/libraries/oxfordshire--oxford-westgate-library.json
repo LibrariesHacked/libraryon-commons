@@ -1,0 +1,125 @@
+{
+  "id": "lib_0dfdd28a-80c7-4bb0-8b72-0d3f4b55bdd0",
+  "source_id": "2962",
+  "name": "Oxford Westgate Library",
+  "slug": "oxford-westgate-library",
+  "address": "228 The Westgate Queen Street Oxford OX1 1PE",
+  "postcode": "OX1 1PE",
+  "town": "Oxford",
+  "phone": "01865 815509",
+  "email": "westgate.library@oxfordshire.gov.uk",
+  "website": "https://www.oxfordshire.gov.uk/libraries",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "20:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "20:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "20:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "20:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-public-transport-connections",
+    "lift-access",
+    "accessible-restrooms",
+    "hearing-loop-system"
+  ],
+  "notes": "Previously called Oxford Central, renamed after refusbishment in 2016-17",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "civic"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.751212,
+  "longitude": -1.260526,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Business support",
+      "url": "https://www.oxfordshire.gov.uk/business/business-and-intellectual-property-centre-bipc"
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/oxfordshire/oxford-westgate-library",
+  "authority": "oxfordshire"
+}

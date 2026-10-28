@@ -1,0 +1,124 @@
+---
+import DirectoryLayout from '../layouts/DirectoryLayout.astro';
+import DirectoryProvenance from '../components/DirectoryProvenance.astro';
+import ContactDetails from '../components/ContactDetails.astro';
+import OpeningHours from '../components/OpeningHours.astro';
+import { ArrowUpRight } from '@lucide/astro';
+import {
+  libraries,
+  libraryAddress,
+  libraryPath,
+  facilityLabel,
+  mapLinks,
+  nearbyLibraries,
+  operatingModelLabel
+} from '../lib/directory.mjs';
+import { safeURL, settings, sitePath } from '../lib/site.mjs';
+const { library, authority } = Astro.props;
+const copy = settings.ui.directory;
+const maps = mapLinks(library);
+const nearby = nearbyLibraries(library, libraries);
+const tags = [authority?.country, operatingModelLabel(library.facilityOperated)].filter(Boolean);
+---
+
+<DirectoryLayout
+  title={library.name}
+  description={`${library.name}. ${libraryAddress(library)}. ${copy.description_suffix}`}
+  subtitle={libraryAddress(library)}
+  authority={authority}
+  tags={tags}
+>
+  {library.permanentlyClosed && <p class="notice">{copy.permanently_closed}</p>}
+  <section class="detail-section">
+    <h2>{copy.visit_contact}</h2>
+    <ContactDetails
+      record={library}
+      address={libraryAddress(library)}
+      fallbackWebsite={authority?.website}
+    />
+  </section>
+  <slot />
+  {library.services?.length > 0 && (
+    <section class="detail-section">
+      <h2>{copy.services_heading}</h2>
+      <ul class="tags">
+        {library.services.map(({ service, url }) => (
+          <li>{safeURL(url) ? <a href={safeURL(url)}>{service}</a> : service}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+  {library.accessibility?.length > 0 && (
+    <section class="detail-section">
+      <h2>{copy.accessibility}</h2>
+      <ul class="tags">
+        {library.accessibility.map((value) => (
+          <li>{facilityLabel(value)}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+  {library.coLocated?.length > 0 && (
+    <section class="detail-section">
+      <h2>{copy.co_located_services}</h2>
+      <ul class="tags">
+        {library.coLocated.map((value) => (
+          <li>{facilityLabel(value)}</li>
+        ))}
+      </ul>
+    </section>
+  )}
+  {library.notes && (
+    <section class="detail-section">
+      <h2>{copy.library_notes}</h2>
+      <p>{library.notes}</p>
+    </section>
+  )}
+  {maps && (
+    <section class="detail-section">
+      <h2>{copy.getting_here}</h2>
+      <ul class="contact-list">
+        <li>
+          <a href={maps.google}>{copy.google_maps} <ArrowUpRight size={15} aria-hidden="true" /></a>
+        </li>
+        <li>
+          <a href={maps.apple}>{copy.apple_maps} <ArrowUpRight size={15} aria-hidden="true" /></a>
+        </li>
+      </ul>
+    </section>
+  )}
+  {nearby.length > 0 && (
+    <section class="detail-section">
+      <h2>{copy.nearby_libraries}</h2>
+      <ul class="library-results">
+        {nearby.map(({ library: other, miles }) => (
+          <li>
+            <h3>
+              <a href={sitePath(libraryPath(other))}>{other.name}</a>
+            </h3>
+            <p>
+              {miles.toFixed(1)} {copy.miles}
+            </p>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+  {safeURL(library.virtualTourUrl) && (
+    <section class="detail-section">
+      <h2>{copy.virtual_tour}</h2>
+      <a href={safeURL(library.virtualTourUrl)}>
+        {copy.open_virtual_tour} <ArrowUpRight size={16} aria-hidden="true" />
+      </a>
+    </section>
+  )}
+  <Fragment slot="aside">
+    <OpeningHours library={library} />
+    <DirectoryProvenance record={library} />
+    {authority && (
+      <a class="button button-secondary" href={sitePath(`/libraries/${authority.slug}/`)}>
+        {copy.more_in_prefix} {authority.name} <ArrowUpRight size={17} aria-hidden="true" />
+      </a>
+    )}
+  </Fragment>
+</DirectoryLayout>

@@ -1,0 +1,120 @@
+---
+import { getCollection } from 'astro:content';
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import ResourceLink from '../../components/ResourceLink.astro';
+import { normalise } from '../../lib/search.mjs';
+import { settings, sitePath } from '../../lib/site.mjs';
+const copy = settings.ui.resource_page;
+const kindLabels = {
+  document: copy.documents,
+  slides: copy.slides,
+  recording: copy.recordings,
+  link: copy.useful_link
+};
+
+const resources = (await getCollection('resources')).sort((first, second) => {
+  const firstLocal = first.data.url.startsWith('/uploads/');
+  const secondLocal = second.data.url.startsWith('/uploads/');
+  return (
+    Number(secondLocal) - Number(firstLocal) ||
+    first.data.title.localeCompare(second.data.title, 'en')
+  );
+});
+---
+
+<SiteLayout
+  title={copy.title}
+  description={copy.description}
+>
+  <header class="page-heading">
+    <div class="shell">
+      <p class="eyebrow">{copy.eyebrow}</p>
+      <h1>{copy.heading}</h1>
+      <p>{copy.intro}</p>
+    </div>
+  </header>
+  <section class="section shell">
+    <div
+      class="filter-bar"
+      data-singular={copy.singular}
+      data-plural={copy.plural}
+    >
+      <label>
+        {copy.search_label}
+        <input id="resource-query" type="search" placeholder={copy.search_placeholder} />
+      </label>
+      <label>
+        {copy.type_label}
+        <select id="resource-kind">
+          <option value="">{copy.all_resources}</option>
+          <option value="document">{copy.documents}</option>
+          <option value="slides">{copy.slides}</option>
+          <option value="recording">{copy.recordings}</option>
+          <option value="link">{copy.links}</option>
+        </select>
+      </label>
+      <label>
+        {copy.location_label}
+        <select id="resource-location">
+          <option value="">{copy.all_locations}</option>
+          <option value="local">{copy.saved_downloads}</option>
+          <option value="external">{copy.external_links}</option>
+        </select>
+      </label>
+    </div>
+    <p id="resource-count" class="muted" role="status" aria-live="polite">
+      {resources.length} {copy.plural}
+    </p>
+    <ul class="resource-list" id="resource-results">
+      {resources.map(({ id, data }) => (
+        <li
+          data-search={normalise(`${data.title} ${data.description || ''}`)}
+          data-kind={data.kind}
+          data-location={data.url.startsWith('/uploads/') ? 'local' : 'external'}
+        >
+          <ResourceLink resource={data} />
+          <p class="resource-meta">
+            <a href={sitePath(`/resources/${id}/`)}>{copy.details_link}</a>
+          </p>
+          {data.description && <p>{data.description}</p>}
+          <div class="resource-meta">
+            {kindLabels[data.kind]} · {data.url.startsWith('/uploads/') ? copy.saved_copy : copy.external_resource}
+            {data.credit && ` · ${data.credit}`}
+            {data.licence && ` · ${data.licence}`}
+          </div>
+        </li>
+      ))}
+    </ul>
+    <p id="resource-empty" class="empty-state" hidden>
+      {copy.no_matches}
+    </p>
+  </section>
+</SiteLayout>
+
+<script>
+  import { normalise } from '../../lib/search.mjs';
+  const query = document.querySelector<HTMLInputElement>('#resource-query');
+  const kind = document.querySelector<HTMLSelectElement>('#resource-kind');
+  const location = document.querySelector<HTMLSelectElement>('#resource-location');
+  const entries = [...document.querySelectorAll<HTMLElement>('#resource-results > li')];
+  const count = document.querySelector<HTMLElement>('#resource-count');
+  const empty = document.querySelector<HTMLElement>('#resource-empty');
+  const filterBar = document.querySelector<HTMLElement>('.filter-bar');
+  function filterResources() {
+    const terms = normalise(query.value).split(/\s+/);
+    let visible = 0;
+    for (const entry of entries) {
+      entry.hidden = !(
+        terms.every((term) => entry.dataset.search.includes(term)) &&
+        (!kind.value || entry.dataset.kind === kind.value) &&
+        (!location.value || entry.dataset.location === location.value)
+      );
+      if (!entry.hidden) visible++;
+    }
+    count.textContent = `${visible} ${visible === 1 ? filterBar.dataset.singular : filterBar.dataset.plural}`;
+    empty.hidden = visible !== 0;
+  }
+  query.addEventListener('input', filterResources);
+  kind.addEventListener('change', filterResources);
+  location.addEventListener('change', filterResources);
+</script>

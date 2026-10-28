@@ -1,0 +1,95 @@
+{
+  "id": "lib_7d6f3297-5136-4d51-aa91-c6db8d4e758d",
+  "source_id": "420",
+  "name": "Parkhall Library",
+  "slug": "parkhall-library",
+  "address": "123 Hawthorn Street, Clydebank, G81 3EF, United Kingdom",
+  "postcode": "G81 3EF",
+  "town": "Clydebank",
+  "phone": "0141 562 2467",
+  "email": "parkhall.library@west-dunbarton.gov.uk",
+  "website": "http://www.west-dunbarton.gov.uk/libraries/library-branches/parkhall-library/",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "16:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "16:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "16:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "accessible-restrooms"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 55.91521,
+  "longitude": -4.41309,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/west-dunbartonshire/parkhall-library",
+  "authority": "west-dunbartonshire"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "lib_9c04e4a7-784f-416f-bc88-7fd5a65661c8",
+  "source_id": "2137",
+  "name": "Hendon",
+  "slug": "hendon",
+  "address": "The Burroughs, Hendon, London, NW4 4BQ",
+  "postcode": "NW4 4BQ",
+  "town": "London",
+  "phone": "020 8359 2628",
+  "email": "hendon.library@barnet.gov.uk",
+  "website": "https://www.barnet.gov.uk/libraries/find-your-local-library/hendon-library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "14:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "17:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "09:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "12:30"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "09:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "12:30"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "14:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "20:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "step-free-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "uni_he"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.588568,
+  "longitude": -0.228888,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/barnet/hendon",
+  "authority": "barnet"
+}

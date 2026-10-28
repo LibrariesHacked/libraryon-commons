@@ -1,0 +1,38 @@
+---
+import { settings, sitePath } from '../../lib/site.mjs';
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link href={sitePath('/admin/config.yml')} type="text/yaml" rel="cms-config-url" />
+    <title>{settings.site.title} {settings.ui.admin.title_suffix}</title>
+  </head>
+  <body>
+    <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
+    <script is:inline>
+      // Directory records also stamp reviewed_on, which they already display.
+      const stampedFields = {
+        pages: ['updated_on'],
+        resources: ['updated_on'],
+        sessions: ['updated_on'],
+        contributors: ['updated_on'],
+        authorities: ['updated_on', 'reviewed_on'],
+        libraries: ['updated_on', 'reviewed_on']
+      };
+      CMS.registerEventListener({
+        name: 'preSave',
+        handler: ({ entry }) => {
+          const today = new Date().toLocaleDateString('en-CA');
+          return (stampedFields[entry.get('collection')] || []).reduce(
+            (data, field) => data.set(field, today),
+            entry.get('data')
+          );
+        }
+      });
+    </script>
+  </body>
+</html>

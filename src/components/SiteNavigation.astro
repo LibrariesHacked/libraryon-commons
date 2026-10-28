@@ -1,0 +1,60 @@
+---
+import { ChevronDown, ChevronRight } from '@lucide/astro';
+import { safeURL, settings } from '../lib/site.mjs';
+
+const { items = [], mode = 'desktop' } = Astro.props;
+const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/';
+
+function normalizedPath(value) {
+  if (!value?.startsWith('/') || value.startsWith('//')) return '';
+  return value.replace(/\/+$/, '') || '/';
+}
+
+function isActive(value) {
+  const path = normalizedPath(value);
+  return path && (currentPath === path || (path !== '/' && currentPath.startsWith(`${path}/`)));
+}
+
+function isCurrent(value) {
+  return currentPath === normalizedPath(value);
+}
+---
+
+<ul class:list={['navigation-items', `navigation-items-${mode}`]}>
+  {items.map((item) => {
+    const children = (item.children || []).filter((child) => safeURL(child.url));
+    const href = safeURL(item.url);
+    const childActive = children.some((child) => isActive(child.url));
+    return (
+      <li class="navigation-item">
+        {children.length > 0 ? (
+          <details class:list={['nav-dropdown', { 'has-current': childActive || isActive(item.url) }]}>
+            <summary data-current={childActive || isActive(item.url) ? 'true' : undefined}>
+              {item.label}
+              <ChevronDown size={15} aria-hidden="true" />
+            </summary>
+            <div class="nav-dropdown-panel">
+              {href && (
+                <a class="nav-dropdown-overview" href={href} aria-current={isCurrent(item.url) ? 'page' : undefined}>
+                  {item.label} {settings.ui.navigation.overview_link} <ChevronRight size={15} aria-hidden="true" />
+                </a>
+              )}
+              {children.map((child) => (
+                <a href={safeURL(child.url)} aria-current={isCurrent(child.url) ? 'page' : undefined}>
+                  <span>{child.label}</span>
+                  {child.description && <small>{child.description}</small>}
+                </a>
+              ))}
+            </div>
+          </details>
+        ) : (
+          href && (
+            <a href={href} aria-current={isCurrent(item.url) ? 'page' : undefined}>
+              {item.label}
+            </a>
+          )
+        )}
+      </li>
+    );
+  })}
+</ul>

@@ -1,0 +1,133 @@
+{
+  "id": "lib_b28870c4-ed27-4c9e-a7e4-6ff77150b322",
+  "source_id": "1651",
+  "name": "Pendleton Library",
+  "slug": "pendleton-gateway-library",
+  "address": "1 Broadwalk, Salford , Greater Manchester, M6 5FX",
+  "postcode": "M6 5FX",
+  "town": "Salford",
+  "phone": "0161 686 5421",
+  "email": "pendleton.library@scll.co.uk",
+  "website": "https://salfordcommunityleisure.co.uk/library/pendleton/",
+  "catalogue": "https://salfordlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
+  "joinOnline": "https://salfordcommunityleisure.co.uk/libraries/join/",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "18:30",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "22:00",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "22:00",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "22:00",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "22:00",
+          "startTime": "08:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "accessible-restrooms",
+    "baby-changing-facilities"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "civic",
+    "health"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 53.48836,
+  "longitude": -2.28474,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Children's activities",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/salford/pendleton-gateway-library",
+  "authority": "salford"
+}

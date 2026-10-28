@@ -1,0 +1,8 @@
+---
+import ArticleTemplate from './ArticleTemplate.astro';
+import { settings } from '../lib/site.mjs';
+---
+
+<ArticleTemplate {...Astro.props} label={settings.ui.editorial.labels.legal}>
+  <slot />
+</ArticleTemplate>

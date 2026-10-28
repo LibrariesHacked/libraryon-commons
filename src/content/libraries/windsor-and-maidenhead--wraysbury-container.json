@@ -1,0 +1,88 @@
+{
+  "id": "lib_5a864d7d-099b-4161-bd81-144fcaf2ccac",
+  "source_id": "3772",
+  "name": "Wraysbury Container",
+  "slug": "wraysbury-container",
+  "address": "Village Hall Car Park, The Green, Staines, Berkshire, TW19 5NA",
+  "postcode": "TW19 5NA",
+  "town": "Staines-upon-Thames",
+  "phone": "01628 796555",
+  "email": "container.library@rbwm.gov.uk",
+  "website": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-wraysbury-container",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "14:30"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "14:30"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "neurodivergent-spaces",
+    "lift-access",
+    "wheelchair-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.45816,
+  "longitude": -0.55598,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/digital-library/books-and-media"
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/home-library-service"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/wraysbury-container",
+  "authority": "windsor-and-maidenhead"
+}

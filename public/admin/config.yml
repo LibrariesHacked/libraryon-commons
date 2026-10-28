@@ -1,0 +1,1341 @@
+backend:
+  name: github
+  repo: LibrariesHacked/libraryon-commons
+  branch: main
+local_backend: true
+media_folder: public/uploads
+public_folder: /uploads
+collections:
+  - name: settings
+    label: Site Settings
+    editor:
+      preview: false
+    files:
+      - name: site
+        label: Site Configuration
+        file: src/data/settings.json
+        fields:
+          - name: site
+            label: Identity And Attribution
+            widget: object
+            fields:
+              - name: title
+                label: Title
+                widget: string
+              - name: description
+                label: Description
+                widget: text
+              - name: url
+                label: Published Site URL
+                widget: string
+                required: false
+              - name: licence_url
+                label: Licence URL
+                widget: string
+          - name: navigation
+            label: Navigation
+            widget: list
+            summary: '{{fields.label}}'
+            fields:
+              - name: label
+                label: Label
+                widget: string
+              - name: url
+                label: URL Or Site Path
+                widget: string
+                required: false
+              - name: description
+                label: Short Description
+                widget: text
+                required: false
+              - name: children
+                label: Submenu Links
+                widget: list
+                required: false
+                summary: '{{fields.label}}'
+                fields:
+                  - name: label
+                    label: Label
+                    widget: string
+                  - name: url
+                    label: URL Or Site Path
+                    widget: string
+                  - name: description
+                    label: Short Description
+                    widget: text
+                    required: false
+          - name: ui
+            label: Template Text
+            widget: object
+            fields:
+              - name: brand
+                label: Brand Display
+                widget: object
+                fields:
+                  - name: primary
+                    label: Brand Name
+                    widget: string
+                  - name: qualifier
+                    label: Brand Qualifier
+                    widget: string
+                    required: false
+              - name: navigation
+                label: Navigation Labels
+                widget: object
+                fields:
+                  - name: skip_to_content
+                    label: Skip Link
+                    widget: string
+                  - name: main_navigation
+                    label: Main Navigation Accessible Name
+                    widget: string
+                  - name: mobile_navigation
+                    label: Mobile Navigation Accessible Name
+                    widget: string
+                  - name: menu
+                    label: Mobile Menu Button
+                    widget: string
+                  - name: overview_link
+                    label: Menu Overview Link
+                    widget: string
+              - name: home
+                label: Homepage Labels
+                widget: object
+                fields:
+                  - name: eyebrow
+                    label: Homepage Eyebrow
+                    widget: string
+                  - name: find_library
+                    label: Find Library Button
+                    widget: string
+                  - name: find_library_url
+                    label: Find Library Destination
+                    widget: string
+                  - name: search_heading
+                    label: Library Search Heading
+                    widget: string
+                  - name: search_description
+                    label: Library Search Description
+                    widget: text
+                  - name: search_label
+                    label: Search Accessible Name
+                    widget: string
+                  - name: search_placeholder
+                    label: Search Placeholder
+                    widget: string
+                  - name: search_button
+                    label: Search Button
+                    widget: string
+                  - name: all_collections
+                    label: All Collections Link
+                    widget: string
+                  - name: collections_url
+                    label: Collections Destination
+                    widget: string
+                  - name: browse_resources
+                    label: Browse Resources Link
+                    widget: string
+                  - name: resources_url
+                    label: Resources Destination
+                    widget: string
+                  - name: preserved_intro
+                    label: Preserved Introduction Disclosure
+                    widget: string
+              - name: editorial
+                label: Editorial Labels
+                widget: object
+                fields:
+                  - name: breadcrumb_aria_label
+                    label: Breadcrumb Accessible Name
+                    widget: string
+                  - name: home_breadcrumb
+                    label: Home Breadcrumb
+                    widget: string
+                  - name: original_source_link
+                    label: Original Source Link
+                    widget: string
+                  - name: updated_prefix
+                    label: Updated Date Prefix
+                    widget: string
+                  - name: on_this_page
+                    label: On This Page Heading
+                    widget: string
+                  - name: in_this_section
+                    label: In This Section Heading
+                    widget: string
+                  - name: related_resources
+                    label: Related Resources Heading
+                    widget: string
+                  - name: gallery_aria_label
+                    label: Gallery Accessible Name
+                    widget: string
+                  - name: faq_heading
+                    label: FAQ Heading
+                    widget: string
+                  - name: labels
+                    label: Breadcrumb Section Labels
+                    widget: object
+                    fields:
+                      - name: articles
+                        label: Articles
+                        widget: string
+                      - name: commons
+                        label: Commons
+                        widget: string
+                      - name: collections
+                        label: Collections
+                        widget: string
+                      - name: case_studies
+                        label: Case Studies
+                        widget: string
+                      - name: grants
+                        label: Grants
+                        widget: string
+                      - name: conferences
+                        label: Conferences
+                        widget: string
+                      - name: legal
+                        label: Legal And Policies
+                        widget: string
+              - name: directory
+                label: Directory Labels
+                widget: object
+                fields:
+                  - name: breadcrumb
+                    label: Directory Breadcrumb
+                    widget: string
+                  - name: visit_contact
+                    label: Visit And Contact Heading
+                    widget: string
+                  - name: accessibility
+                    label: Accessibility Heading
+                    widget: string
+                  - name: services_heading
+                    label: Facilities And Services Heading
+                    widget: string
+                  - name: services_count
+                    label: Authority Services Count Word
+                    widget: string
+                  - name: getting_here
+                    label: Getting Here Heading
+                    widget: string
+                  - name: google_maps
+                    label: Google Maps Link
+                    widget: string
+                  - name: apple_maps
+                    label: Apple Maps Link
+                    widget: string
+                  - name: nearby_libraries
+                    label: Nearby Libraries Heading
+                    widget: string
+                  - name: miles
+                    label: Distance Unit
+                    widget: string
+                  - name: co_located_services
+                    label: Co-located Services Heading
+                    widget: string
+                  - name: library_notes
+                    label: Library Notes Heading
+                    widget: string
+                  - name: virtual_tour
+                    label: Virtual Tour Heading
+                    widget: string
+                  - name: open_virtual_tour
+                    label: Open Virtual Tour Link
+                    widget: string
+                  - name: permanently_closed
+                    label: Closed Listing Notice
+                    widget: string
+                  - name: marked_permanently_closed
+                    label: Closed Library Notice
+                    widget: string
+                  - name: more_in_prefix
+                    label: More In Authority Link Prefix
+                    widget: string
+                  - name: libraries_heading
+                    label: Libraries Heading
+                    widget: string
+                  - name: library_service
+                    label: Library Service Heading
+                    widget: string
+                  - name: about_service
+                    label: About Service Heading
+                    widget: string
+                  - name: connect
+                    label: Connect Heading
+                    widget: string
+                  - name: official_website
+                    label: Official Website Link
+                    widget: string
+                  - name: catalogue
+                    label: Catalogue Link
+                    widget: string
+                  - name: join_online
+                    label: Join Online Link
+                    widget: string
+                  - name: contact_aria_label
+                    label: Contact List Accessible Name
+                    widget: string
+                  - name: description_suffix
+                    label: Library Page Description Suffix
+                    widget: string
+                  - name: authority_description_prefix
+                    label: Authority Page Description Prefix
+                    widget: string
+              - name: opening_hours
+                label: Opening Hours Labels
+                widget: object
+                fields:
+                  - name: heading
+                    label: Opening Hours Heading
+                    widget: string
+                  - name: closed_not_recorded
+                    label: Missing Day Text
+                    widget: string
+                  - name: not_supplied
+                    label: Missing Hours Text
+                    widget: string
+                  - name: holiday_note
+                    label: Public Holiday Note
+                    widget: string
+              - name: provenance
+                label: Directory Provenance Text
+                widget: object
+                fields:
+                  - name: reviewed_prefix
+                    label: Reviewed Prefix
+                    widget: string
+                  - name: updated_prefix
+                    label: Updated Prefix
+                    widget: string
+                  - name: community_contributed
+                    label: Community Contribution Text
+                    widget: string
+                  - name: check_official
+                    label: Official Details Reminder
+                    widget: string
+              - name: resources
+                label: Resource Labels
+                widget: object
+                fields:
+                  - name: breadcrumb
+                    label: Resources Breadcrumb
+                    widget: string
+                  - name: credit
+                    label: Credit Label
+                    widget: string
+                  - name: rights
+                    label: Rights Label
+                    widget: string
+                  - name: original_source
+                    label: Original Source Link
+                    widget: string
+                  - name: compact_recording
+                    label: Compact Recording Link
+                    widget: string
+                  - name: compact_slides
+                    label: Compact Slides Link
+                    widget: string
+                  - name: compact_resource
+                    label: Compact Resource Link
+                    widget: string
+              - name: sessions
+                label: Session Labels
+                widget: object
+                fields:
+                  - name: speakers
+                    label: Speakers Heading
+                    widget: string
+                  - name: resources
+                    label: Session Resources Heading
+                    widget: string
+              - name: conference
+                label: Conference Labels
+                widget: object
+                fields:
+                  - name: session_index
+                    label: Session Index Disclosure
+                    widget: string
+              - name: contributors
+                label: Contributor Labels
+                widget: object
+                fields:
+                  - name: label
+                    label: Contributor Eyebrow
+                    widget: string
+                  - name: website
+                    label: Website Link
+                    widget: string
+              - name: library_search
+                label: Library Directory Search Text
+                widget: object
+                fields:
+                  - name: title
+                    label: Page Title
+                    widget: string
+                  - name: description
+                    label: Search Page Description
+                    widget: text
+                  - name: eyebrow
+                    label: Eyebrow
+                    widget: string
+                  - name: heading
+                    label: Heading
+                    widget: string
+                  - name: intro_library_count
+                    label: Library Count Text
+                    widget: string
+                  - name: intro_authority_count
+                    label: Authority Count Text
+                    widget: string
+                  - name: query_label
+                    label: Search Field Label
+                    widget: string
+                  - name: query_placeholder
+                    label: Search Placeholder
+                    widget: string
+                  - name: authority_label
+                    label: Authority Filter Label
+                    widget: string
+                  - name: all_authorities
+                    label: All Authorities Option
+                    widget: string
+                  - name: unassigned_authority
+                    label: Unassigned Authority Option
+                    widget: string
+                  - name: country_label
+                    label: Country Filter Label
+                    widget: string
+                  - name: all_countries
+                    label: All Countries Option
+                    widget: string
+                  - name: search_button
+                    label: Search Button
+                    widget: string
+                  - name: results_heading
+                    label: Results Heading
+                    widget: string
+                  - name: browse_status
+                    label: Initial Results Status
+                    widget: string
+                  - name: no_matches
+                    label: No Results Message
+                    widget: string
+                  - name: index_error
+                    label: Search Error Message
+                    widget: text
+                  - name: more_button
+                    label: Load More Button
+                    widget: string
+                  - name: review_notice
+                    label: Directory Notice
+                    widget: text
+                  - name: authority_disclosure
+                    label: Authority List Disclosure
+                    widget: string
+                  - name: recorded_libraries
+                    label: Authority Library Count Text
+                    widget: string
+                  - name: singular
+                    label: Singular Result Count
+                    widget: string
+                  - name: plural
+                    label: Plural Result Count
+                    widget: string
+                  - name: authority_browse_status
+                    label: Search Error Status
+                    widget: string
+              - name: resource_page
+                label: Resource Catalog Text
+                widget: object
+                fields:
+                  - name: title
+                    label: Page Title
+                    widget: string
+                  - name: description
+                    label: Page Description
+                    widget: text
+                  - name: eyebrow
+                    label: Eyebrow
+                    widget: string
+                  - name: heading
+                    label: Heading
+                    widget: string
+                  - name: intro
+                    label: Introduction
+                    widget: text
+                  - name: search_label
+                    label: Search Field Label
+                    widget: string
+                  - name: search_placeholder
+                    label: Search Placeholder
+                    widget: string
+                  - name: type_label
+                    label: Type Filter Label
+                    widget: string
+                  - name: all_resources
+                    label: All Resources Option
+                    widget: string
+                  - name: documents
+                    label: Documents Option
+                    widget: string
+                  - name: slides
+                    label: Slides Option
+                    widget: string
+                  - name: recordings
+                    label: Recordings Option
+                    widget: string
+                  - name: links
+                    label: Links Option
+                    widget: string
+                  - name: location_label
+                    label: Location Filter Label
+                    widget: string
+                  - name: all_locations
+                    label: All Locations Option
+                    widget: string
+                  - name: saved_downloads
+                    label: Saved Downloads Option
+                    widget: string
+                  - name: external_links
+                    label: External Links Option
+                    widget: string
+                  - name: details_link
+                    label: Details Link
+                    widget: string
+                  - name: singular
+                    label: Singular Count
+                    widget: string
+                  - name: plural
+                    label: Plural Count
+                    widget: string
+                  - name: useful_link
+                    label: Generic Link Type
+                    widget: string
+                  - name: saved_copy
+                    label: Local Copy Type
+                    widget: string
+                  - name: external_resource
+                    label: External Resource Type
+                    widget: string
+                  - name: no_matches
+                    label: No Results Message
+                    widget: string
+              - name: not_found
+                label: Page Not Found Text
+                widget: object
+                fields:
+                  - name: title
+                    label: Page Title
+                    widget: string
+                  - name: eyebrow
+                    label: Eyebrow
+                    widget: string
+                  - name: heading
+                    label: Heading
+                    widget: string
+                  - name: description
+                    label: Description
+                    widget: text
+                  - name: return_link
+                    label: Return Link
+                    widget: string
+              - name: admin
+                label: CMS Document Text
+                widget: object
+                fields:
+                  - name: title_suffix
+                    label: CMS Title Suffix
+                    widget: string
+          - name: footer
+            label: Footer
+            widget: object
+            fields:
+              - name: aria_label
+                label: Footer Navigation Accessible Name
+                widget: string
+              - name: attribution
+                label: Footer Attribution
+                widget: text
+              - name: links_heading
+                label: Footer Links Heading
+                widget: string
+              - name: links
+                label: Footer Links
+                widget: list
+                summary: '{{fields.label}}'
+                fields: &footerLinks
+                  - name: label
+                    label: Link Label
+                    widget: string
+                  - name: url
+                    label: URL Or Site Path
+                    widget: string
+              - name: directory_note
+                label: Library Directory Note
+                widget: text
+              - name: licence_label
+                label: Licence Link Label
+                widget: string
+              - name: management_label
+                label: CMS Link Label
+                widget: string
+          - name: redirects
+            label: Redirects
+            widget: list
+            required: false
+            fields:
+              - name: from
+                label: Old Site Path
+                widget: string
+              - name: to
+                label: Destination Path
+                widget: string
+      - name: homepage
+        label: Commons Homepage
+        file: src/data/homepage.json
+        fields:
+          - name: title
+            label: Heading
+            widget: string
+          - name: intro
+            label: Introduction
+            widget: text
+          - name: image
+            label: Main Image
+            widget: image
+          - name: image_alt
+            label: Image Alt Text
+            widget: string
+          - name: features_title
+            label: Features Heading
+            widget: string
+          - name: feature_pages
+            label: Featured Pages
+            widget: relation
+            collection: pages
+            search_fields:
+              - title
+            value_field: path
+            display_fields:
+              - title
+            multiple: true
+          - name: collections_title
+            label: Collections Heading
+            widget: string
+          - name: collection_pages
+            label: Collection Pages
+            widget: relation
+            collection: pages
+            search_fields:
+              - title
+            value_field: path
+            display_fields:
+              - title
+            multiple: true
+          - name: community_title
+            label: Community Heading
+            widget: string
+          - name: community_pages
+            label: Community Pages
+            widget: relation
+            collection: pages
+            search_fields:
+              - title
+            value_field: path
+            display_fields:
+              - title
+            multiple: true
+  - name: pages
+    label: Editorial Content
+    label_singular: Page
+    folder: src/content/pages
+    create: true
+    extension: md
+    format: frontmatter
+    slug: '{{slug}}'
+    identifier_field: title
+    summary: '{{title}} ({{kind}})'
+    view_groups:
+      - label: Content Type
+        field: kind
+    view_filters:
+      - label: Collection Articles
+        field: kind
+        pattern: collection
+      - label: Case Studies
+        field: kind
+        pattern: case-study
+      - label: Conferences
+        field: kind
+        pattern: conference
+      - label: Grants
+        field: path
+        pattern: ^/grants
+      - label: Policies And Legal
+        field: path
+        pattern: ^/legal/
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: path
+        label: Site Path
+        widget: string
+        pattern:
+          - ^/(?:[A-Za-z0-9_-]+/)*[A-Za-z0-9_-]*$
+          - Use an absolute site path, such as /about/pressplay.
+      - name: kind
+        label: Page Type
+        widget: select
+        options:
+          - label: Standard Page
+            value: page
+          - label: Article
+            value: article
+          - label: Landing Page
+            value: landing
+          - label: Collection Article
+            value: collection
+          - label: Case Study
+            value: case-study
+          - label: Grants Programme
+            value: grant
+          - label: Conference Page
+            value: conference
+          - label: Legal Or Policy Page
+            value: legal
+        default: page
+      - name: content_origin
+        label: Content Origin
+        widget: select
+        options:
+          - label: Original LibraryOn Content
+            value: libraryon
+          - label: New Commons Content
+            value: commons
+        required: false
+        hint: Existing LibraryOn source URLs are recognized automatically; set this explicitly for new pages that cite LibraryOn.
+      - name: published
+        label: Publish on site
+        widget: boolean
+        default: true
+        required: false
+        hint: Turn off to keep this entry in the CMS without generating a public page.
+      - name: description
+        label: Summary
+        widget: text
+        required: false
+      - name: author
+        label: Author Or Contributor
+        widget: string
+        required: false
+      - name: contributors
+        label: Contributor Profiles
+        widget: relation
+        collection: contributors
+        search_fields:
+          - name
+        value_field: '{{slug}}'
+        display_fields:
+          - name
+        multiple: true
+        required: false
+      - name: published_on
+        label: Publication Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        required: false
+      - name: updated_on
+        label: Updated Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        hint: Set automatically each time this page is saved.
+        required: false
+      - name: source_url
+        label: Original Source URL
+        widget: string
+        required: false
+      - name: attribution
+        label: Credits And Attribution
+        widget: text
+        required: false
+      - name: hero
+        label: Lead Image
+        widget: object
+        required: false
+        fields: &a1
+          - name: image
+            label: Image
+            widget: image
+          - name: alt
+            label: Alternative Text
+            widget: string
+          - name: caption
+            label: Caption
+            widget: string
+            required: false
+          - name: credit
+            label: Credit
+            widget: string
+            required: false
+      - name: body
+        label: Content
+        widget: markdown
+      - name: faqs
+        label: Frequently Asked Questions
+        widget: list
+        required: false
+        summary: '{{fields.question}}'
+        fields:
+          - name: question
+            label: Question
+            widget: string
+          - name: answer
+            label: Answer
+            widget: text
+      - name: gallery
+        label: Gallery Or Slides
+        widget: list
+        required: false
+        summary: '{{fields.alt}}'
+        fields: *a1
+      - name: resources
+        label: Related Resources
+        widget: relation
+        collection: resources
+        search_fields:
+          - title
+        value_field: '{{slug}}'
+        display_fields:
+          - title
+        multiple: true
+        required: false
+  - name: resources
+    label: Resources And Downloads
+    label_singular: Resource
+    folder: src/content/resources
+    create: true
+    extension: json
+    format: json
+    slug: '{{slug}}'
+    summary: '{{title}} ({{kind}})'
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Title
+        widget: string
+      - name: kind
+        label: Resource Type
+        widget: select
+        options:
+          - document
+          - slides
+          - recording
+          - link
+      - name: url
+        label: File Or External URL
+        widget: file
+        hint: Upload a local document, or enter the external presentation or recording URL.
+      - name: description
+        label: Description
+        widget: text
+        required: false
+      - name: source_url
+        label: Original Source URL
+        widget: string
+        required: false
+      - name: credit
+        label: Credit
+        widget: text
+        required: false
+      - name: licence
+        label: Rights Or Licence
+        widget: string
+        required: false
+      - name: updated_on
+        label: Updated Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        hint: Set automatically each time this resource is saved.
+        required: false
+  - name: sessions
+    label: Conference Sessions
+    label_singular: Session
+    folder: src/content/sessions
+    create: true
+    extension: json
+    format: json
+    slug: '{{slug}}'
+    summary: '{{title}}'
+    editor:
+      preview: false
+    fields:
+      - name: title
+        label: Session Title
+        widget: string
+      - name: conference
+        label: Conference Page
+        widget: relation
+        collection: pages
+        search_fields:
+          - title
+        value_field: '{{slug}}'
+        display_fields:
+          - title
+        filters:
+          - field: kind
+            values:
+              - conference
+      - name: theme
+        label: Theme
+        widget: string
+        required: false
+      - name: order
+        label: Display Order
+        widget: number
+        value_type: int
+        min: 0
+        default: 0
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+      - name: speakers
+        label: Speakers
+        widget: list
+        required: false
+        fields:
+          - name: name
+            label: Name
+            widget: string
+          - name: organisation
+            label: Organisation
+            widget: string
+            required: false
+      - name: resources
+        label: Slides And Recordings
+        widget: relation
+        collection: resources
+        search_fields:
+          - title
+        value_field: '{{slug}}'
+        display_fields:
+          - title
+        multiple: true
+        required: false
+      - name: updated_on
+        label: Updated Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        hint: Set automatically each time this session is saved.
+        required: false
+  - name: authorities
+    label: Library Authorities
+    label_singular: Authority
+    folder: src/content/authorities
+    create: true
+    extension: json
+    format: json
+    slug: '{{fields.slug}}'
+    identifier_field: name
+    summary: '{{name}} ({{country}})'
+    sortable_fields:
+      - name
+      - country
+      - reviewed_on
+    editor:
+      preview: false
+    fields:
+      - name: name
+        label: Authority Name
+        widget: string
+      - name: slug
+        label: URL Slug
+        widget: string
+        pattern:
+          - ^[A-Za-z0-9][A-Za-z0-9-]*$
+          - Use letters, numbers and hyphens; keep existing slugs unchanged.
+      - name: id
+        widget: hidden
+        required: false
+      - name: source_id
+        widget: hidden
+        required: false
+      - name: authorityID
+        label: Stable Authority ID
+        widget: string
+        required: false
+      - name: country
+        label: Country
+        widget: select
+        options:
+          - England
+          - Scotland
+          - Wales
+          - Northern Ireland
+          - Crown Dependencies
+        required: false
+      - name: website
+        label: Official Website
+        widget: string
+        required: false
+      - name: phone
+        label: Phone
+        widget: string
+        required: false
+      - name: email
+        label: Email
+        widget: string
+        required: false
+      - name: about
+        label: About The Service
+        widget: text
+        required: false
+      - name: catalogue
+        label: Catalogue URL
+        widget: string
+        required: false
+      - name: joinOnline
+        label: Join Online URL
+        widget: string
+        required: false
+      - name: androidApp
+        label: Android App
+        widget: string
+        required: false
+      - name: iOSApp
+        label: iOS App
+        widget: string
+        required: false
+      - name: gss
+        label: GSS Code
+        widget: string
+        required: false
+      - name: operatingOrganisation
+        label: Operating Organisation
+        widget: string
+        required: false
+      - name: source_url
+        label: Original Source URL
+        widget: string
+        required: false
+      - name: imported_on
+        label: Imported On
+        widget: hidden
+        required: false
+      - name: createdAt
+        widget: hidden
+        required: false
+      - name: updatedAt
+        widget: hidden
+        required: false
+      - name: updated_on
+        label: Last Updated
+        widget: datetime
+        date_format: YYYY-MM-DD
+        time_format: false
+        format: YYYY-MM-DD
+        hint: Set automatically each time this authority is saved.
+        required: false
+      - name: reviewed_on
+        label: Last Reviewed
+        widget: datetime
+        date_format: YYYY-MM-DD
+        time_format: false
+        format: YYYY-MM-DD
+        required: false
+      - name: social
+        label: Social Links
+        widget: list
+        required: false
+        fields:
+          - name: id
+            widget: hidden
+            required: false
+          - name: channel
+            label: Channel
+            widget: string
+          - name: handle
+            label: Handle
+            widget: string
+            required: false
+          - name: url
+            label: URL
+            widget: string
+  - name: libraries
+    label: Libraries
+    label_singular: Library
+    folder: src/content/libraries
+    create: true
+    extension: json
+    format: json
+    slug: '{{fields.authority}}--{{fields.slug}}'
+    summary: '{{name}}'
+    editor:
+      preview: false
+    fields:
+      - name: name
+        label: Library Name
+        widget: string
+      - name: slug
+        label: URL Slug
+        widget: string
+        pattern:
+          - ^[A-Za-z0-9][A-Za-z0-9-]*$
+          - Use letters, numbers and hyphens; keep existing slugs unchanged.
+      - name: authority
+        label: Authority
+        widget: relation
+        collection: authorities
+        search_fields:
+          - name
+        value_field: '{{slug}}'
+        display_fields:
+          - name
+        required: false
+        hint: Choose the library authority. Leave blank only if it is not known.
+      - name: id
+        label: Stable Listing ID
+        widget: string
+        required: false
+        hint: Keep existing IDs unchanged. New listings may leave this empty.
+      - name: source_id
+        widget: hidden
+        required: false
+      - name: uprn
+        label: UPRN
+        widget: string
+        required: false
+        hint: Unique Property Reference Number from the source library record, when supplied.
+      - name: address
+        label: Address
+        widget: text
+        required: false
+      - name: town
+        label: Town Or City
+        widget: string
+        required: false
+      - name: postcode
+        label: Postcode
+        widget: string
+        required: false
+      - name: phone
+        label: Phone
+        widget: string
+        required: false
+      - name: email
+        label: Email
+        widget: string
+        required: false
+      - name: website
+        label: Official Website
+        widget: string
+        required: false
+      - name: catalogue
+        label: Catalogue URL
+        widget: string
+        required: false
+      - name: joinOnline
+        label: Join Online URL
+        widget: string
+        required: false
+      - name: openingTimes
+        label: Opening Hours
+        widget: object
+        required: false
+        fields:
+          - name: monday
+            label: Monday
+            widget: object
+            fields: &a2
+              - name: timeFrames
+                label: Opening Periods
+                widget: list
+                required: false
+                default: []
+                summary: '{{fields.startTime}} - {{fields.endTime}}'
+                fields:
+                  - name: startTime
+                    label: Opens
+                    widget: string
+                    pattern:
+                      - ^([01][0-9]|2[0-3]):[0-5][0-9]$
+                      - Use 24-hour HH:MM.
+                  - name: endTime
+                    label: Closes
+                    widget: string
+                    pattern:
+                      - ^([01][0-9]|2[0-3]):[0-5][0-9]$
+                      - Use 24-hour HH:MM.
+                  - name: type
+                    label: Access Type
+                    widget: string
+                    required: false
+                    default: Staffed
+          - name: tuesday
+            label: Tuesday
+            widget: object
+            fields: *a2
+          - name: wednesday
+            label: Wednesday
+            widget: object
+            fields: *a2
+          - name: thursday
+            label: Thursday
+            widget: object
+            fields: *a2
+          - name: friday
+            label: Friday
+            widget: object
+            fields: *a2
+          - name: saturday
+            label: Saturday
+            widget: object
+            fields: *a2
+          - name: sunday
+            label: Sunday
+            widget: object
+            fields: *a2
+          - name: exceptions
+            label: Imported Exceptions
+            widget: hidden
+            required: false
+      - name: openingTimesNotes
+        label: Opening Hours Notes And Exceptions
+        widget: text
+        required: false
+      - name: accessibility
+        label: Accessibility
+        widget: list
+        required: false
+      - name: notes
+        label: Library Notes
+        widget: text
+        required: false
+      - name: facilityOperated
+        label: Operating Model
+        widget: string
+        required: false
+      - name: coLocated
+        label: Co-located Services
+        widget: list
+        required: false
+      - name: services
+        label: Facilities And Services
+        widget: list
+        required: false
+        summary: '{{fields.service}}'
+        fields:
+          - name: service
+            label: Name
+            widget: string
+          - name: url
+            label: Link
+            widget: string
+            required: false
+      - name: virtualTourUrl
+        label: Virtual Tour URL
+        widget: string
+        required: false
+      - name: permanentlyClosed
+        label: Permanently Closed
+        widget: boolean
+        default: false
+      - name: latitude
+        label: Latitude
+        widget: number
+        value_type: float
+        min: -90
+        max: 90
+        required: false
+      - name: longitude
+        label: Longitude
+        widget: number
+        value_type: float
+        min: -180
+        max: 180
+        required: false
+      - name: updated_on
+        label: Last Updated
+        widget: datetime
+        date_format: YYYY-MM-DD
+        time_format: false
+        format: YYYY-MM-DD
+        hint: Set automatically each time this library is saved.
+        required: false
+      - name: reviewed_on
+        label: Last Reviewed
+        widget: datetime
+        date_format: YYYY-MM-DD
+        time_format: false
+        format: YYYY-MM-DD
+        required: false
+      - name: imported_on
+        label: Imported On
+        widget: hidden
+        required: false
+      - name: source_url
+        label: Original Source URL
+        widget: string
+        required: false
+    identifier_field: name
+    sortable_fields:
+      - name
+      - reviewed_on
+  - name: contributors
+    label: Contributors
+    label_singular: Contributor
+    folder: src/content/contributors
+    create: true
+    extension: json
+    format: json
+    slug: '{{fields.slug}}'
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - name: name
+        label: Display Name
+        widget: string
+      - name: slug
+        label: URL Slug
+        widget: string
+      - name: biography
+        label: Biography
+        widget: text
+      - name: image
+        label: Profile Image
+        widget: image
+        required: false
+      - name: image_alt
+        label: Image Alt Text
+        widget: string
+        required: false
+      - name: organisation
+        label: Organisation
+        widget: string
+        required: false
+      - name: website
+        label: Website
+        widget: string
+        required: false
+      - name: updated_on
+        label: Updated Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        hint: Set automatically each time this profile is saved.
+        required: false

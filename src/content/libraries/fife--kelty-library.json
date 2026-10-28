@@ -1,0 +1,96 @@
+{
+  "id": "lib_234c5217-99a9-4e3b-a06c-245a8e9fa585",
+  "source_id": "221",
+  "name": "Kelty Library",
+  "slug": "kelty-library",
+  "address": "Kelty Library, 90-92 Main Street, Kelty, KY4 0AQ",
+  "postcode": "KY4 0BB",
+  "town": "Kelty",
+  "phone": "01383 602367",
+  "email": "kelty.library@onfife.com",
+  "website": "http://onfife.com/venues/kelty-library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 56.142867,
+  "longitude": -3.386996,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://replay.bfi.org.uk/"
+    }
+  ],
+  "updated_on": "2026-05-01",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/fife/kelty-library",
+  "authority": "fife"
+}

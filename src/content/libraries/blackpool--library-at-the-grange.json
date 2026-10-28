@@ -1,0 +1,157 @@
+{
+  "id": "lib_fca457e8-5494-4839-83fc-6577ddb9681c",
+  "source_id": "2507",
+  "name": "Library @thegrange",
+  "slug": "library-at-the-grange",
+  "address": "Bathurst Avenue, Blackpool, FY3 7RW",
+  "postcode": "FY3 7RL",
+  "town": "Blackpool",
+  "phone": "01253 478270",
+  "email": "library.grange@blackpool.gov.uk",
+  "website": "https://www.blackpool.gov.uk/Residents/Libraries-arts-and-heritage/Libraries/Libraries-and-opening-times/Library-thegrange.aspx",
+  "catalogue": "https://blackpool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/HOME",
+  "joinOnline": "https://blackpool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "Previously called Boundary",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "catering",
+    "community",
+    "retail"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 53.829056,
+  "longitude": -3.01743,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Garden",
+      "url": ""
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.com/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-07-21",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/blackpool/library-at-the-grange",
+  "authority": "blackpool"
+}

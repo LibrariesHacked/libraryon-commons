@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import ContributorTemplate from '../../templates/ContributorTemplate.astro';
+export async function getStaticPaths() {
+  return (await getCollection('contributors')).map((entry) => ({
+    params: { person: entry.data.slug },
+    props: { contributor: entry.data }
+  }));
+}
+---
+
+<ContributorTemplate {...Astro.props} />

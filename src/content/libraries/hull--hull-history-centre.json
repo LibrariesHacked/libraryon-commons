@@ -1,0 +1,109 @@
+{
+  "id": "lib_92970ba3-3b85-4268-883a-678f3dfa7040",
+  "source_id": "3750",
+  "name": "Hull History Centre",
+  "slug": "hull-history-centre",
+  "address": "Hull History Centre, Worship Street, Hull, HU2 8BG",
+  "postcode": "",
+  "town": "Hull",
+  "phone": "01482 317 500",
+  "email": "hullhistorycentre@hcandl.co.uk",
+  "website": "https://www.hulllibraries.co.uk/local-library/hull-history-centre",
+  "catalogue": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
+  "joinOnline": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:30",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:30",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:30",
+          "startTime": "09:30"
+        }
+      ]
+    }
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "assistive-technology-available",
+    "hearing-loop-system",
+    "wheelchair-access"
+  ],
+  "notes": "Open first and third Saturday of the month.",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 53.7478,
+  "longitude": -0.336073,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.hulllibraries.co.uk/borrowing/DigitalReadingandListening"
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.hulllibraries.co.uk/borrowing/home-library-service#:~:text=If%20you%20have%20difficulty%20getting,libraries%20right%20to%20your%20door.&text=Joining%20is%20easy%20and%20membership,of%20the%20items%20you%20borrow."
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/hull/hull-history-centre",
+  "authority": "hull"
+}

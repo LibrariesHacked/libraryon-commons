@@ -1,0 +1,191 @@
+{
+  "id": "lib_99e63480-0a60-4026-8685-4d1635653016",
+  "source_id": "2615",
+  "name": "Worcester St. John's Library",
+  "slug": "worcester-st-johns-library",
+  "address": "Glebe Close, Worcester, Worcestershire, WR2 5AX",
+  "postcode": "WR2 5AX",
+  "town": "Worcester",
+  "phone": "",
+  "email": "StJohnsLib@worcestershire.gov.uk",
+  "website": "http://www.worcestershire.gov.uk/libraries",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "17:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "14:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "17:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "17:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "20:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "14:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "17:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "10:00",
+          "startTime": "08:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Self-service",
+          "endTime": "20:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "accessible-restrooms",
+    "baby-changing-facilities",
+    "neurodivergent-spaces"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.188602,
+  "longitude": -2.235396,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": ""
+    },
+    {
+      "service": "Bookable space",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/worcestershire/worcester-st-johns-library",
+  "authority": "worcestershire"
+}

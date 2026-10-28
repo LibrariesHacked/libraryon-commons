@@ -1,0 +1,87 @@
+{
+  "id": "lib_5b2c1195-6cde-4d77-a3f0-7e76a696f9ff",
+  "source_id": "439",
+  "name": "Dufftown Library",
+  "slug": "dufftown-library",
+  "address": "Balvenie Street, Dufftown, AB55 4AB",
+  "postcode": "AB55 4AB",
+  "town": "Keith",
+  "phone": "01340 820272",
+  "email": "dufftown.library@moray.gov.uk",
+  "website": "http://www.moray.gov.uk/moray_standard/page_39963.html",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "14:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "15:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    }
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 57.44546,
+  "longitude": -3.12835,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-07-21",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/moray/dufftown-library",
+  "authority": "moray"
+}

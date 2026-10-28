@@ -1,0 +1,99 @@
+{
+  "id": "lib_c07bf263-4998-4a6d-978c-d351855234fb",
+  "source_id": "2712",
+  "name": "Headland Library",
+  "slug": "headland-library",
+  "address": "Middlegate, Hartlepool, County Durham, TS24 0JD",
+  "postcode": "TS24 0JD",
+  "town": "Hartlepool",
+  "phone": "",
+  "email": "headland.library@hartlepool.gov.uk",
+  "website": "https://www.hartlepool.gov.uk/communityhubs",
+  "catalogue": "",
+  "joinOnline": "https://hartlepool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/JOIN",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-restrooms",
+    "baby-changing-facilities",
+    "wheelchair-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 54.69605,
+  "longitude": -1.18383,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/hartlepool/headland-library",
+  "authority": "hartlepool"
+}

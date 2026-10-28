@@ -1,0 +1,45 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ResourceLink from '../components/ResourceLink.astro';
+import { settings, sitePath } from '../lib/site.mjs';
+const { session, conference, resources } = Astro.props;
+const copy = settings.ui.sessions;
+---
+
+<SiteLayout title={session.title} description={session.description}>
+  <header class="page-heading">
+    <div class="shell">
+      <nav class="breadcrumbs">
+        <a href={sitePath(conference.data.path)}>{conference.data.title}</a>
+      </nav>
+      <p class="eyebrow">{session.theme}</p>
+      <h1>{session.title}</h1>
+    </div>
+  </header>
+  <section class="section shell">
+    <div class="prose">
+      <p>{session.description}</p>
+      {session.speakers?.length > 0 && (
+        <>
+          <h2>{copy.speakers}</h2>
+          <ul>
+            {session.speakers.map((speaker) => (
+              <li>
+                {speaker.name}
+                {speaker.organisation && `, ${speaker.organisation}`}
+              </li>
+            ))}
+          </ul>
+        </>
+      )}
+      <h2>{copy.resources}</h2>
+      <ul class="resource-list">
+        {resources.map((resource) => (
+          <li>
+            <ResourceLink resource={resource} />
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+</SiteLayout>

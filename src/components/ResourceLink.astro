@@ -1,0 +1,31 @@
+---
+import { Download, ArrowUpRight, Play } from '@lucide/astro';
+import { safeURL, settings } from '../lib/site.mjs';
+const { resource, compact = false } = Astro.props;
+const copy = settings.ui.resources;
+const local = resource.url.startsWith('/uploads/');
+const label = compact
+  ? resource.kind === 'recording'
+    ? copy.compact_recording
+    : resource.kind === 'slides'
+      ? copy.compact_slides
+      : copy.compact_resource
+  : resource.title;
+const url = safeURL(resource.url);
+---
+
+{url && (
+  <a class:list={['resource-link', { 'resource-compact': compact }]} href={url}>
+    {resource.kind === 'recording' ? (
+      <Play size={18} aria-hidden="true" />
+    ) : local ? (
+      <Download size={18} aria-hidden="true" />
+    ) : (
+      <ArrowUpRight size={18} aria-hidden="true" />
+    )}
+    <span>
+      {label}
+      {local && <small>{resource.url.split('.').pop()?.toUpperCase()}</small>}
+    </span>
+  </a>
+)}

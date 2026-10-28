@@ -1,0 +1,44 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import ResourceLink from '../components/ResourceLink.astro';
+import { safeURL, settings, sitePath } from '../lib/site.mjs';
+const { resource } = Astro.props;
+const copy = settings.ui.resources;
+---
+
+<SiteLayout title={resource.title} description={resource.description}>
+  <header class="page-heading">
+    <div class="shell">
+      <nav class="breadcrumbs">
+        <a href={sitePath('/resources/')}>{copy.breadcrumb}</a>
+      </nav>
+      <p class="eyebrow">{resource.kind}</p>
+      <h1>{resource.title}</h1>
+    </div>
+  </header>
+  <section class="section shell">
+    <div class="prose">
+      {resource.description && <p>{resource.description}</p>}
+      <ResourceLink resource={resource} />
+      <dl>
+        {resource.credit && (
+          <>
+            <dt>{copy.credit}</dt>
+            <dd>{resource.credit}</dd>
+          </>
+        )}
+        {resource.licence && (
+          <>
+            <dt>{copy.rights}</dt>
+            <dd>{resource.licence}</dd>
+          </>
+        )}
+      </dl>
+      {safeURL(resource.source_url) && (
+        <p class="source-note">
+          <a href={safeURL(resource.source_url)}>{copy.original_source}</a>
+        </p>
+      )}
+    </div>
+  </section>
+</SiteLayout>

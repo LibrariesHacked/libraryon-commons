@@ -1,0 +1,101 @@
+{
+  "id": "lib_b75c237a-e06e-44cf-969d-3c5bc42fb187",
+  "source_id": "2398",
+  "name": "Stirchley Library",
+  "slug": "stirchley-library",
+  "address": "Bournville Lane, Birmingham, West Midlands, B30 2JT",
+  "postcode": "B30 2JT",
+  "town": "Birmingham",
+  "phone": "0121 464 1534",
+  "email": "stirchley.library@birmingham.gov.uk",
+  "website": "https://www.birmingham.gov.uk/directory_record/5152/stirchley_library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "accessible-restrooms",
+    "baby-changing-facilities",
+    "hearing-loop-system"
+  ],
+  "notes": "Closed for lunch on Thurs 1-2pm.",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.4289,
+  "longitude": -1.9235,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/birmingham/stirchley-library",
+  "authority": "birmingham"
+}

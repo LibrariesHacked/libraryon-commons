@@ -1,0 +1,12 @@
+---
+import { sitePath } from '../lib/site.mjs';
+const { image } = Astro.props;
+---
+
+{image && (
+  <figure>
+    <img src={sitePath(image.image)} alt={image.alt} loading="lazy" />
+    {image.caption && <figcaption>{image.caption}</figcaption>}
+    {image.credit && <small>{image.credit}</small>}
+  </figure>
+)}

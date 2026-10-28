@@ -1,0 +1,125 @@
+{
+  "id": "lib_f03292fb-e056-47cc-8fac-d9b6dd058b1b",
+  "source_id": "3216",
+  "name": "Stanford-le-Hope Library",
+  "slug": "stanford-le-hope-library",
+  "address": "High Street, Stanford-le-Hope, Essex, SS17 0HG",
+  "postcode": "SS17 0HG",
+  "town": "Stanford-le-Hope",
+  "phone": "01375 672 058",
+  "email": "stanford.le.hope.library@thurrock.gov.uk",
+  "website": "https://www.thurrock.gov.uk/find-a-library/stanford-le-hope-library",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": []
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-restrooms",
+    "wheelchair-access",
+    "step-free-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.51573,
+  "longitude": 0.42715,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.thurrock.gov.uk/whats-in-your-library/disability-and-accessibility"
+    },
+    {
+      "service": "Children's activities",
+      "url": ""
+    },
+    {
+      "service": "Computers",
+      "url": "https://www.thurrock.gov.uk/online-with-your-library/library-computers"
+    },
+    {
+      "service": "Hobby and interest groups",
+      "url": "https://www.thurrock.gov.uk/whats-on-at-your-library/activities-and-events"
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "Photocopiers",
+      "url": ""
+    },
+    {
+      "service": "Digital skills sessions",
+      "url": "https://www.thurrock.gov.uk/learning-at-your-library/take-part-in-our-learning-sessions"
+    },
+    {
+      "service": "Career support",
+      "url": "https://www.thurrock.gov.uk/help-with-applications-at-your-library/help-with-job-applications"
+    },
+    {
+      "service": "Family history",
+      "url": "https://www.thurrock.gov.uk/history-research-at-your-library/local-history"
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.thurrock.gov.uk/online-with-your-library/e-books-e-audio-and-magazines-online"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/thurrock/stanford-le-hope-library",
+  "authority": "thurrock"
+}

@@ -1,0 +1,35 @@
+{
+  "name": "libraryon-commons",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev --host 127.0.0.1 --port 4322",
+    "build": "astro build",
+    "preview": "astro preview --host 127.0.0.1 --port 4322",
+    "test": "node --test",
+    "archive": "node scripts/archive/collect.mjs",
+    "capture": "node scripts/archive/capture.mjs",
+    "import:archive": "node scripts/archive/import.mjs",
+    "compact:archive": "node scripts/archive/compact.mjs"
+  },
+  "dependencies": {
+    "@astrojs/markdown-remark": "^7.3.4",
+    "@fontsource-variable/lexend": "^5.3.0",
+    "@fontsource/dm-serif-display": "^5.3.0",
+    "@lucide/astro": "^1.62.0",
+    "astro": "^7.4.2",
+    "cheerio": "1.1.2",
+    "playwright": "1.56.1",
+    "sanitize-html": "^2.18.1",
+    "turndown": "^7.2.4",
+    "turndown-plugin-gfm": "^1.0.2",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.2"
+  }
+}

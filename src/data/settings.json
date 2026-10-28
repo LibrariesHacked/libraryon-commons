@@ -1,0 +1,218 @@
+{
+  "site": {
+    "title": "LibraryCommons",
+    "description": "A community-maintained commons for library stories, knowledge, resources and local library information.",
+    "url": "",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "navigation": [
+    { "label": "Find a library", "url": "/libraries/" },
+    {
+      "label": "Discover",
+      "children": [
+        { "label": "Reading", "url": "/reading/", "description": "Whatever you want to read, it’s in the library." },
+        { "label": "Work and skills", "url": "/work-and-skills/", "description": "Bring your big ideas to life." },
+        { "label": "Your community", "url": "/your-community/", "description": "Gathering is good for us." },
+        { "label": "Special collections", "url": "/special-collections/", "description": "Regional history and culture unlocked." },
+        { "label": "Events", "url": "/events/", "description": "What’s on near you." }
+      ]
+    },
+    {
+      "label": "About",
+      "children": [
+        { "label": "About LibraryCommons", "url": "/commons/", "description": "How this community project connects libraries." },
+        { "label": "Grants", "url": "/grants/", "description": "The LibraryOn grants programme for libraries." },
+        { "label": "Press Play Conference", "url": "/about/pressplay/", "description": "A playground of digital ideas." }
+      ]
+    }
+  ],
+  "ui": {
+    "brand": {
+      "primary": "Library",
+      "qualifier": "Commons"
+    },
+    "navigation": {
+      "skip_to_content": "Skip to content",
+      "main_navigation": "Main navigation",
+      "mobile_navigation": "Mobile navigation",
+      "menu": "Menu",
+      "overview_link": "Overview"
+    },
+    "home": {
+      "eyebrow": "Libraries · Knowledge · Community",
+      "find_library": "Find a library",
+      "find_library_url": "/libraries/",
+      "search_heading": "Your next chapter starts here",
+      "search_description": "Find a library by name, place or postcode.",
+      "search_label": "Library name, town or postcode",
+      "search_placeholder": "Name, town or postcode",
+      "search_button": "Search",
+      "all_collections": "All collections",
+      "collections_url": "/special-collections/",
+      "browse_resources": "Browse resources",
+      "resources_url": "/resources/",
+      "preserved_intro": "Introduction to public libraries"
+    },
+    "editorial": {
+      "breadcrumb_aria_label": "Breadcrumb",
+      "home_breadcrumb": "Home",
+      "original_source_link": "Originally published on LibraryOn",
+      "updated_prefix": "Updated:",
+      "on_this_page": "On this page",
+      "in_this_section": "In this section",
+      "related_resources": "Related resources",
+      "gallery_aria_label": "Gallery",
+      "faq_heading": "Frequently asked questions",
+      "labels": {
+        "articles": "Articles",
+        "commons": "LibraryCommons",
+        "collections": "Collections",
+        "case_studies": "Case studies",
+        "grants": "Grants and programmes",
+        "conferences": "Conferences",
+        "legal": "Policies and legal"
+      }
+    },
+    "directory": {
+      "breadcrumb": "Library directory",
+      "visit_contact": "Visit and contact",
+      "accessibility": "Accessibility",
+      "services_heading": "Facilities and services",
+      "services_count": "services",
+      "getting_here": "Getting here",
+      "google_maps": "Google Maps",
+      "apple_maps": "Apple Maps",
+      "nearby_libraries": "Nearby libraries",
+      "miles": "miles",
+      "co_located_services": "Co-located services",
+      "library_notes": "Library notes",
+      "virtual_tour": "Virtual tour",
+      "open_virtual_tour": "Open the virtual tour",
+      "permanently_closed": "This listing is marked as permanently closed.",
+      "marked_permanently_closed": "Marked as permanently closed",
+      "more_in_prefix": "More in",
+      "libraries_heading": "Libraries",
+      "library_service": "Library service",
+      "about_service": "About the service",
+      "connect": "Connect",
+      "official_website": "Official website",
+      "catalogue": "Library catalogue",
+      "join_online": "Join online",
+      "contact_aria_label": "Visit and contact details",
+      "description_suffix": "Library contact details and services.",
+      "authority_description_prefix": "Library information for"
+    },
+    "opening_hours": {
+      "heading": "Opening hours",
+      "closed_not_recorded": "Closed",
+      "not_supplied": "No opening hours have been supplied.",
+      "holiday_note": "Opening times may vary during public holidays."
+    },
+    "provenance": {
+      "reviewed_prefix": "Last reviewed by the community:",
+      "updated_prefix": "Last updated:",
+      "community_contributed": "Community-contributed information.",
+      "check_official": "Check the library service's website for the most up-to-date information."
+    },
+    "resources": {
+      "breadcrumb": "Resources",
+      "credit": "Credit",
+      "rights": "Rights",
+      "original_source": "Original source",
+      "compact_recording": "Recording",
+      "compact_slides": "Slides",
+      "compact_resource": "Resource"
+    },
+    "sessions": {
+      "speakers": "Speakers",
+      "resources": "Slides and recordings"
+    },
+    "conference": {
+      "session_index": "Session resource index"
+    },
+    "contributors": {
+      "label": "Community contributor",
+      "website": "Website"
+    },
+    "library_search": {
+      "title": "Find a library",
+      "description": "Find libraries in the community-maintained LibraryCommons directory.",
+      "eyebrow": "The library directory",
+      "heading": "Find your library",
+      "intro_library_count": "libraries and",
+      "intro_authority_count": "authorities, maintained with the library community.",
+      "query_label": "Name, town or postcode",
+      "query_placeholder": "e.g. Cambridge or CB1 9HZ",
+      "authority_label": "Library authority",
+      "all_authorities": "All authorities",
+      "unassigned_authority": "Authority not recorded",
+      "country_label": "Country",
+      "all_countries": "All countries",
+      "search_button": "Search",
+      "results_heading": "Libraries",
+      "browse_status": "Browse the directory",
+      "no_matches": "No libraries match this search.",
+      "index_error": "The search index could not be loaded. The authority directory below is still available.",
+      "more_button": "More libraries",
+      "review_notice": "Listings can be updated by community contributors. Check each listing’s review status and the library’s own website before visiting.",
+      "authority_disclosure": "Browse all library authorities",
+      "recorded_libraries": "recorded libraries",
+      "singular": "library",
+      "plural": "libraries",
+      "authority_browse_status": "Browse by authority"
+    },
+    "resource_page": {
+      "title": "Resources and downloads",
+      "description": "Presentations, reports, case studies, recordings and useful links shared through LibraryCommons.",
+      "eyebrow": "The resource collection",
+      "heading": "Resources and downloads",
+      "intro": "Presentations, case studies, reports and recordings shared by the library community.",
+      "search_label": "Search resources",
+      "search_placeholder": "Title or keyword",
+      "type_label": "Resource type",
+      "all_resources": "All resources",
+      "documents": "Documents",
+      "slides": "Slides",
+      "recordings": "Recordings",
+      "links": "Links",
+      "location_label": "Location",
+      "all_locations": "All locations",
+      "saved_downloads": "Saved downloads",
+      "external_links": "External links",
+      "details_link": "Details and credits",
+      "singular": "resource",
+      "plural": "resources",
+      "useful_link": "Useful link",
+      "saved_copy": "Saved local copy",
+      "external_resource": "External resource",
+      "no_matches": "No resources match these filters."
+    },
+    "not_found": {
+      "title": "Page not found",
+      "eyebrow": "404",
+      "heading": "This page isn’t in the collection",
+      "description": "The link may be incorrect, or the page was not part of the archive.",
+      "return_link": "Return to LibraryCommons"
+    },
+    "admin": {
+      "title_suffix": "CMS"
+    }
+  },
+  "footer": {
+    "aria_label": "Footer navigation",
+    "attribution": "Content is shared under Creative Commons Attribution 4.0 unless otherwise noted.",
+    "links_heading": "Explore",
+    "links": [
+      { "label": "About LibraryCommons", "url": "/commons/" },
+      { "label": "Find a library", "url": "/libraries/" },
+      { "label": "Collections", "url": "/special-collections/" },
+      { "label": "Resources", "url": "/resources/" },
+      { "label": "Press Play", "url": "/about/pressplay/" },
+      { "label": "Grants and case studies", "url": "/grants/" }
+    ],
+    "directory_note": "Library information is now community-maintained.",
+    "licence_label": "CC BY 4.0",
+    "management_label": "Content management"
+  },
+  "redirects": []
+}

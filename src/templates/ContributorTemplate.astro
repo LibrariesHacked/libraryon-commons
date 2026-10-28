@@ -1,0 +1,28 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import { safeURL, settings, sitePath } from '../lib/site.mjs';
+const { contributor } = Astro.props;
+const copy = settings.ui.contributors;
+---
+
+<SiteLayout title={contributor.name} description={contributor.biography}>
+  <header class="page-heading">
+    <div class="shell">
+      <p class="eyebrow">{copy.label}</p>
+      <h1>{contributor.name}</h1>
+      {contributor.organisation && <p>{contributor.organisation}</p>}
+    </div>
+  </header>
+  <section class="section shell prose">
+    {contributor.image && (
+      <img
+        src={sitePath(contributor.image)}
+        alt={contributor.image_alt || contributor.name}
+        width="320"
+        height="320"
+      />
+    )}
+    <p>{contributor.biography}</p>
+    {safeURL(contributor.website) && <a href={safeURL(contributor.website)}>{copy.website}</a>}
+  </section>
+</SiteLayout>

@@ -1,0 +1,127 @@
+{
+  "id": "lib_a5a9bc55-d745-4718-896f-c4596d36ec25",
+  "source_id": "3029",
+  "name": "Kington Library",
+  "slug": "kington",
+  "address": "64 Bridge Street, Kington, Herefordshire, HR5 3DJ",
+  "postcode": "HR5 3DJ",
+  "town": "Kington",
+  "phone": "01432 260600",
+  "email": "kingtonlibrary@herefordshire.gov.uk",
+  "website": "https://www.herefordshire.gov.uk/directory-record/26/kington-library",
+  "catalogue": "https://prism.librarymanagementcloud.co.uk/herefordshire/home",
+  "joinOnline": "https://www.herefordshire.gov.uk/libraries-1/joining-using-library",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "18:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "automatic-doors",
+    "lift-access",
+    "baby-changing-facilities"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 52.2038,
+  "longitude": -3.02867,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/3"
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/2"
+    },
+    {
+      "service": "Computers",
+      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/2"
+    },
+    {
+      "service": "Photocopiers",
+      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/3"
+    },
+    {
+      "service": "Children's activities",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": ""
+    },
+    {
+      "service": "Family history",
+      "url": "https://www.herefordshire.gov.uk/libraries-1/local-family-history"
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.herefordshire.gov.uk/libraries/homedelivery"
+    },
+    {
+      "service": "Hobby and interest groups",
+      "url": ""
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/herefordshire/kington",
+  "authority": "herefordshire"
+}

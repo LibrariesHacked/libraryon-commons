@@ -1,0 +1,87 @@
+{
+  "id": "lib_0e297850-fd97-491f-9430-f3b29dbcae24",
+  "source_id": "434",
+  "name": "Cullen Library",
+  "slug": "cullen-library",
+  "address": "Seafield Road, Cullen, AB56 4AF, Scotland",
+  "postcode": "AB56 4AF",
+  "town": "Buckie",
+  "phone": "01542 841140",
+  "email": "cullen.library@moray.gov.uk",
+  "website": "http://www.moray.gov.uk/moray_standard/page_39962.html",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "12:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "19:00",
+          "startTime": "15:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    }
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 57.68854,
+  "longitude": -2.81626,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-07-21",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/moray/cullen-library",
+  "authority": "moray"
+}

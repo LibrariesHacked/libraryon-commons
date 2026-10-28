@@ -1,0 +1,127 @@
+{
+  "id": "lib_3be61019-e23b-453a-b56c-aa4fb5f7f8f8",
+  "source_id": "742",
+  "name": "Swansea Central Library",
+  "slug": "swansea-central-library",
+  "address": "Y Storfa, 277-278 Oxford Street, Swansea, Swansea, SA1 3EL",
+  "postcode": "SA1 5HF",
+  "town": "Swansea",
+  "phone": "01792 636464",
+  "email": "central.library@swansea.gov.uk",
+  "website": "https://www.swansea.gov.uk/centrallibrary?contactid=2158",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "17:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:00",
+          "startTime": "09:00"
+        }
+      ]
+    }
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-parking",
+    "accessible-restrooms",
+    "baby-changing-facilities",
+    "hearing-loop-system",
+    "lift-access",
+    "wheelchair-access",
+    "automatic-doors"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.620442769572065,
+  "longitude": -3.943284011115793,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/swansea/swansea-central-library",
+  "authority": "swansea"
+}

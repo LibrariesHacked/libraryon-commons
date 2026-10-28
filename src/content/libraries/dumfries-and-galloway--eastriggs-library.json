@@ -1,0 +1,82 @@
+{
+  "id": "lib_dafa1e41-2f9d-494e-9553-f37e02e10061",
+  "source_id": "1664",
+  "name": "Eastriggs Library",
+  "slug": "eastriggs-library",
+  "address": "16 Annan Road, Eastriggs, Annan, DG12 6QA, United Kingdom",
+  "postcode": "DG12 6QA",
+  "town": "Annan",
+  "phone": "030 33 33 3004",
+  "email": "yourlibrary@dumgal.gov.uk",
+  "website": "http://www.dumgal.gov.uk/article/15399/DG-Customer-Services---Eastriggs",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": []
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": []
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 54.98655,
+  "longitude": -3.17967,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    }
+  ],
+  "updated_on": "2026-07-21",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/dumfries-and-galloway/eastriggs-library",
+  "authority": "dumfries-and-galloway"
+}

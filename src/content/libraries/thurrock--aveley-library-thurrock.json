@@ -1,0 +1,157 @@
+{
+  "id": "lib_cb2b1607-530c-4ff2-bb10-b65e4d20099c",
+  "source_id": "3180",
+  "name": "Aveley Library",
+  "slug": "aveley-library-thurrock",
+  "address": "Aveley Community Hub, High Street, Aveley, South Ockendon, RM15 4BX",
+  "postcode": "RM15 4BX",
+  "town": "South Ockendon",
+  "phone": "01708 865 667",
+  "email": "aveley.library@thurrock.gov.uk",
+  "website": "https://www.thurrock.gov.uk/find-a-library/aveley-library-part-of-aveley-community-hub",
+  "catalogue": "",
+  "joinOnline": "",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "16:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": []
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        },
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Self-service",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "accessible-restrooms",
+    "wheelchair-access",
+    "step-free-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [
+    "community",
+    "other"
+  ],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.4988,
+  "longitude": 0.25381,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Children's activities",
+      "url": ""
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.thurrock.gov.uk/whats-in-your-library/disability-and-accessibility"
+    },
+    {
+      "service": "Computers",
+      "url": "https://www.thurrock.gov.uk/online-with-your-library/library-computers"
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.thurrock.gov.uk/online-with-your-library/e-books-e-audio-and-magazines-online"
+    },
+    {
+      "service": "Digital skills sessions",
+      "url": "https://www.thurrock.gov.uk/learning-at-your-library/take-part-in-our-learning-sessions"
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Hobby and interest groups",
+      "url": "https://www.thurrock.gov.uk/whats-on-at-your-library/activities-and-events"
+    },
+    {
+      "service": "Career support",
+      "url": "https://www.thurrock.gov.uk/help-with-applications-at-your-library/help-with-job-applications"
+    },
+    {
+      "service": "Family history",
+      "url": "https://www.thurrock.gov.uk/history-research-at-your-library/local-history"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/thurrock/aveley-library-thurrock",
+  "authority": "thurrock"
+}

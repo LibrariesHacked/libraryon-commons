@@ -1,0 +1,53 @@
+---
+import { ArrowUpRight, MapPin, Phone, Mail } from '@lucide/astro';
+import { safeURL, settings } from '../lib/site.mjs';
+const { record, address = '', fallbackWebsite = '' } = Astro.props;
+const website = safeURL(record.website) || safeURL(fallbackWebsite);
+const copy = settings.ui.directory;
+---
+
+<ul class="contact-list" aria-label={copy.contact_aria_label}>
+  {address && (
+    <li>
+      <MapPin size={18} aria-hidden="true" /> {address}
+    </li>
+  )}
+  {website && (
+    <li>
+      <a href={website}>
+        <ArrowUpRight size={18} aria-hidden="true" />
+        {copy.official_website}
+      </a>
+    </li>
+  )}
+  {record.phone && (
+    <li>
+      <a href={`tel:${record.phone.replace(/[^+\d]/g, '')}`}>
+        <Phone size={18} aria-hidden="true" />
+        {record.phone}
+      </a>
+    </li>
+  )}
+  {record.email && (
+    <li>
+      <a href={`mailto:${record.email}`}>
+        <Mail size={18} aria-hidden="true" />
+        {record.email}
+      </a>
+    </li>
+  )}
+  {safeURL(record.catalogue) && (
+    <li>
+      <a href={safeURL(record.catalogue)}>
+        {copy.catalogue} <ArrowUpRight size={15} aria-hidden="true" />
+      </a>
+    </li>
+  )}
+  {safeURL(record.joinOnline) && (
+    <li>
+      <a href={safeURL(record.joinOnline)}>
+        {copy.join_online} <ArrowUpRight size={15} aria-hidden="true" />
+      </a>
+    </li>
+  )}
+</ul>

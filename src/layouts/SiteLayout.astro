@@ -1,0 +1,94 @@
+---
+import { Menu, ArrowUpRight, BookOpen } from '@lucide/astro';
+import SiteNavigation from '../components/SiteNavigation.astro';
+import { canonicalInternalPath, settings, sitePath, safeURL } from '../lib/site.mjs';
+import '../styles/global.css';
+
+const { title = settings.site.title, description = settings.site.description } = Astro.props;
+const canonical = Astro.site
+  ? new URL(canonicalInternalPath(Astro.url.pathname), Astro.site).href
+  : undefined;
+const { navigation: navigationCopy } = settings.ui;
+const { footer } = settings;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#244f3e" />\n    <link rel="icon" href={sitePath('/brand/favicon.svg')} type="image/svg+xml" />\n    <link rel="icon" href={sitePath('/brand/favicon-32.png')} sizes="32x32" type="image/png" />\n    <link rel="apple-touch-icon" href={sitePath('/brand/app-icon-180.png')} />
+    <title>{title === settings.site.title ? title : `${title} | ${settings.site.title}`}</title>
+    {canonical && <link rel="canonical" href={canonical} />}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">
+      {navigationCopy.skip_to_content}
+    </a>
+    <header class="site-header shell">
+      <a class="brand" href={sitePath('/')} aria-label={settings.site.title}>
+        <BookOpen size={30} stroke-width={1.7} aria-hidden="true" />
+        <span>
+          {settings.ui.brand.primary}{settings.ui.brand.qualifier && <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>}
+        </span>
+      </a>
+      <nav class="desktop-nav" aria-label={navigationCopy.main_navigation}>
+        <SiteNavigation items={settings.navigation} />
+      </nav>
+      <details class="mobile-nav">
+        <summary>
+          <Menu size={23} aria-hidden="true" />
+          <span>{navigationCopy.menu}</span>
+        </summary>
+        <nav aria-label={navigationCopy.mobile_navigation}>
+          <SiteNavigation items={settings.navigation} mode="mobile" />
+        </nav>
+      </details>
+    </header>
+    <main id="main">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="shell footer-grid">
+        <div>
+          <a class="brand" href={sitePath('/')} aria-label={settings.site.title}>
+            <BookOpen size={27} aria-hidden="true" />
+            <span>
+              {settings.ui.brand.primary}{settings.ui.brand.qualifier && <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>}
+            </span>
+          </a>
+          <p>{footer.attribution}</p>
+          <h2>{footer.links_heading}</h2>
+          <nav aria-label={footer.aria_label}>
+            {footer.links.map((link) => (
+              <a href={safeURL(link.url)}>{link.label}</a>
+            ))}
+          </nav>
+        </div>
+        <div class="footer-meta">
+          <p>{footer.directory_note}</p>
+          <a href={safeURL(settings.site.licence_url)}>
+            {footer.licence_label} <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
+          <a href={sitePath('/admin/')}>
+            {footer.management_label} <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // Capture phase, because the toggle event does not bubble.
+      document.addEventListener(
+        'toggle',
+        (event) => {
+          const opened = event.target as HTMLDetailsElement;
+          if (!opened.open || !opened.closest('.site-header')) return;
+          for (const menu of document.querySelectorAll<HTMLDetailsElement>('.site-header details'))
+            if (menu !== opened && !menu.contains(opened) && !opened.contains(menu)) menu.open = false;
+        },
+        true
+      );
+    </script>
+  </body>
+</html>

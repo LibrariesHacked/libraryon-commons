@@ -1,0 +1,12 @@
+---
+import { getCollection } from 'astro:content';
+import ResourceTemplate from '../../templates/ResourceTemplate.astro';
+export async function getStaticPaths() {
+  return (await getCollection('resources')).map((entry) => ({
+    params: { resource: entry.id },
+    props: { resource: entry.data }
+  }));
+}
+---
+
+<ResourceTemplate {...Astro.props} />

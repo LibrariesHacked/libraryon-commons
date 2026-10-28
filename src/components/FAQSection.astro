@@ -1,0 +1,20 @@
+---
+import { settings } from '../lib/site.mjs';
+const items = (Astro.props.items || []).filter(
+  (item) => item.question?.trim() && item.answer?.trim()
+);
+---
+
+{items.length > 0 && (
+  <section class="faq-section structured-faq">
+    <h2>{settings.ui.editorial.faq_heading}</h2>
+    <div class="faq-list">
+      {items.map((item) => (
+        <details class="faq-item">
+          <summary>{item.question}</summary>
+          <p class="faq-answer">{item.answer}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+)}

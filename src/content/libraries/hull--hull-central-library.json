@@ -1,0 +1,136 @@
+{
+  "id": "lib_230af2ae-5e8a-4f5b-962c-0a06538284a5",
+  "source_id": "2565",
+  "name": "Hull Central Library",
+  "slug": "hull-central-library",
+  "address": "Albion Street, Hull, East Riding of Yorkshire, HU1 3TF",
+  "postcode": "HU1 3TF",
+  "town": "Hull",
+  "phone": "01482 210 000",
+  "email": "Hull.CentralLibrary@hcandl.co.uk",
+  "website": "https://www.hulllibraries.co.uk/local-library/central-library",
+  "catalogue": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
+  "joinOnline": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "16:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:30",
+          "startTime": "09:30"
+        }
+      ]
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "19:30",
+          "startTime": "13:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "neurodivergent-spaces"
+  ],
+  "notes": "",
+  "facilityOperated": "Commissioned",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 53.746742,
+  "longitude": -0.34321,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": ""
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": ""
+    },
+    {
+      "service": "Business support",
+      "url": "https://www.hulllibraries.co.uk/bipchull"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk/"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    },
+    {
+      "service": "Computers",
+      "url": ""
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.hulllibraries.co.uk/borrowing/DigitalReadingandListening"
+    },
+    {
+      "service": "Children's activities",
+      "url": "https://www.hulllibraries.co.uk/children"
+    },
+    {
+      "service": "Bookable space",
+      "url": "https://www.hulllibraries.co.uk/weddings"
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.hulllibraries.co.uk/borrowing/home-library-service#:~:text=If%20you%20have%20difficulty%20getting,libraries%20right%20to%20your%20door.&text=Joining%20is%20easy%20and%20membership,of%20the%20items%20you%20borrow."
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/hull/hull-central-library",
+  "authority": "hull"
+}

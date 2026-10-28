@@ -1,0 +1,133 @@
+{
+  "id": "lib_1b9536b5-a0d9-41aa-8805-f7872c5a578b",
+  "source_id": "3344",
+  "name": "Lambourn Library",
+  "slug": "lambourn",
+  "address": "High Street, Lambourn, Berkshire, RG17 8XL",
+  "postcode": "RG17 8XL",
+  "town": "Hungerford",
+  "phone": "01488 71350",
+  "email": "lambournlibrary@westberks.gov.uk",
+  "website": "https://www.westberks.gov.uk/lambourn-library",
+  "catalogue": "https://www.westberks.gov.uk/library-catalogue",
+  "joinOnline": "https://westberks.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
+  "openingTimes": {
+    "friday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "monday": {
+      "timeFrames": []
+    },
+    "sunday": {
+      "timeFrames": []
+    },
+    "tuesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "17:30",
+          "startTime": "14:00"
+        }
+      ]
+    },
+    "saturday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "12:30",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "thursday": {
+      "timeFrames": []
+    },
+    "wednesday": {
+      "timeFrames": [
+        {
+          "type": "Staffed",
+          "endTime": "13:00",
+          "startTime": "10:00"
+        }
+      ]
+    },
+    "exceptions": []
+  },
+  "openingTimesNotes": "",
+  "accessibility": [
+    "wheelchair-access",
+    "step-free-access"
+  ],
+  "notes": "",
+  "facilityOperated": "Local Authority Run",
+  "coLocated": [],
+  "virtualTourUrl": "",
+  "permanentlyClosed": false,
+  "latitude": 51.50763,
+  "longitude": -1.5318,
+  "services": [
+    {
+      "service": "Books",
+      "url": ""
+    },
+    {
+      "service": "Printing",
+      "url": "https://www.westberks.gov.uk/library-computers"
+    },
+    {
+      "service": "Free Wi-Fi",
+      "url": "https://www.westberks.gov.uk/library-computers"
+    },
+    {
+      "service": "BFI Replay",
+      "url": "https://www.bfi.org.uk/bfi-replay"
+    },
+    {
+      "service": "Digital lending",
+      "url": "https://www.westberks.gov.uk/elibrary"
+    },
+    {
+      "service": "Computers",
+      "url": "https://www.westberks.gov.uk/library-computers"
+    },
+    {
+      "service": "Photocopiers",
+      "url": "https://www.westberks.gov.uk/library-computers"
+    },
+    {
+      "service": "Scanning",
+      "url": ""
+    },
+    {
+      "service": "Family history",
+      "url": "https://www.westberks.gov.uk/family-history"
+    },
+    {
+      "service": "Bookable space",
+      "url": "https://www.westberks.gov.uk/findaroom"
+    },
+    {
+      "service": "Books delivered",
+      "url": "https://www.westberks.gov.uk/mobile-library"
+    },
+    {
+      "service": "Findmypast",
+      "url": "https://www.findmypast.co.uk"
+    },
+    {
+      "service": "British Newspaper Archive",
+      "url": "https://www.britishnewspaperarchive.co.uk/"
+    }
+  ],
+  "updated_on": "2026-01-23",
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "source_url": "https://libraryon.org/libraries/west-berkshire/lambourn",
+  "authority": "west-berkshire"
+}

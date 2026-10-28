@@ -1,0 +1,28 @@
+---
+import { ArrowUpRight } from '@lucide/astro';
+import { articleImage, articleTitle, sitePath } from '../lib/site.mjs';
+const { entries } = Astro.props;
+---
+
+<div class="article-grid">
+  {entries.map((entry) => {
+    const image = articleImage(entry);
+    return (
+      <a class="article-card" href={sitePath(entry.data.path)}>
+        {image ? (
+          <img src={sitePath(image.url)} alt={image.alt} loading="lazy" width="640" height="400" />
+        ) : (
+          <div class="card-placeholder" aria-hidden="true">
+            LibraryCommons
+          </div>
+        )}
+        <div>
+          <h3>
+            {articleTitle(entry)} <ArrowUpRight size={20} aria-hidden="true" />
+          </h3>
+          {entry.data.description && <p>{entry.data.description}</p>}
+        </div>
+      </a>
+    );
+  })}
+</div>
