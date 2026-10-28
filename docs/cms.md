@@ -1,109 +1,59 @@
 # Editing Content
 
-Decap CMS is the browser editor for LibraryCommons. It saves Markdown and JSON
-files in this repository. There is no separate content database.
+LibraryCommons uses Decap CMS to edit Markdown and JSON files directly in the repository.
 
 ## Open The Local Editor
 
-Run the site from the project folder:
+1. Start the Astro development server:
 
-```sh
-npm run dev
-```
+   ```sh
+   npm run dev
+   ```
 
-In a second terminal, start Decap's local file service:
+2. In a second terminal, start Decap's local file service:
 
-```sh
-npx --yes decap-server@3.11.6
-```
+   ```sh
+   npx --yes decap-server@3.11.6
+   ```
 
-Open <http://127.0.0.1:4322/admin/> and choose **Login**. Local saves change files
-on your computer; they do not automatically commit or publish them. Stop the file
-service when finished and never expose it to the internet. Decap itself loads
-from a versioned CDN URL, so the editor needs an internet connection.
+3. Open <http://127.0.0.1:4322/admin/> and click **Login**.
 
-## Choose What To Edit
+Local edits write directly to your working tree without committing. Stop `decap-server` when finished and never expose it publicly.
 
-| CMS Section             | What You Can Change                                                                                    |
-| ----------------------- | ------------------------------------------------------------------------------------------------------ |
-| Site Settings           | Site name, navigation, redirects and footer credits                                                    |
-| Commons Homepage        | Introduction, image, headings and featured pages                                                       |
-| Editorial Content       | Pages, articles, collections, case studies, grants, conferences, policies, FAQs and publication status |
-| Libraries               | One library at a time: address, contacts, hours, accessibility and notes                               |
-| Library Authorities     | Authority contacts, website, catalogue and service information                                         |
-| Resources And Downloads | PDFs, slides, recordings, external links and credits                                                   |
-| Conference Sessions     | Session details, speakers and related resources                                                        |
-| Contributors            | Contributor biographies and profile images                                                             |
+## CMS Sections
 
-**Site Settings** controls the header menu, including nested submenu links and
-short descriptions, shared template and search text, and the footer's single
-attribution and link list.
+| Section                 | Controls                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------- |
+| Site Settings           | Site title, header navigation (including submenus), redirects, UI labels, and footer    |
+| Commons Homepage        | Hero copy, hero image, section headings, and featured pages                             |
+| Editorial Content       | Articles, collections, case studies, grants, conferences, legal pages, and FAQs         |
+| Libraries               | Individual library details: address, contacts, opening hours, services, and notes       |
+| Library Authorities     | Authority contacts, website, catalogue URL, and country                                 |
+| Resources And Downloads | PDFs, slide decks, recordings, external links, and credits                              |
+| Conference Sessions     | Session descriptions, speakers, parent conference, and linked resources                 |
+| Contributors            | Contributor biographies and profile images                                              |
 
-## Add An Article
+## Editorial Content
 
-Create an entry in **Editorial Content**. Choose its type, give it a title and
-a unique site path such as `/stories/my-library`, then write the body. Images,
-credits, contributors and related resources are optional. The type chooses the
-[page template](development.md).
+To add a page, create an entry in **Editorial Content**, choose a content type (which selects the [page template](development.md)), and set a unique path such as `/stories/my-library`.
 
-**Content Origin** is editorial metadata for maintainers; it does not add a
-front-end badge. Existing `libraryon.org` sources are inferred as LibraryOn
-content. Set the field explicitly when a new Commons page cites a LibraryOn URL.
-**Publish on site** controls visibility: unpublished records stay in the CMS but
-do not receive public routes or appear as related pages. The original legal
-pages and captured `/libraries` map snapshot are retained this way. The public
-directory is generated from the editable library records instead.
+- **Reserved paths:** Do not use `/libraries`, `/resources`, `/sessions`, `/people`, `/admin`, or `/directory.json`.
+- **Publish on site:** Unchecking this keeps a page editable in the CMS while removing its public route (used for archived legal notices and the original `/libraries` map page).
+- **Content Origin:** Editorial metadata distinguishing original `libraryon` material from new `commons` entries. Pages with a `libraryon.org` source URL default to LibraryOn.
+- **Updated Date:** Automatically stamped with today's date when saved in the CMS.
+- **Preserved articles:** The 34 original LibraryOn articles are checksum-verified against `migration/source-articles.json`. Add new content as a separate entry rather than editing original article bodies.
 
-**Updated Date** is stamped with today's date whenever a page, resource, session
-or contributor is saved in the CMS. Library and authority records stamp **Last
-Reviewed** instead. Dates imported from the original "Last updated" lines use
-the same field. Edits made outside the CMS do not change the date.
+## Libraries And Authorities
 
-Use **Frequently Asked Questions** for new question-and-answer groups. Each item
-has a question and a plain-text answer. Existing imported FAQ sections become
-expandable disclosures without changing their preserved page text.
+Each library is stored in `src/content/libraries/<slug>.json` and links to an authority in `src/content/authorities/<slug>.json`.
 
-Do not use the reserved paths `/libraries`, `/resources`, `/sessions`, `/people`,
-`/admin` or `/directory.json`. Keep existing filenames stable because other
-entries may refer to them.
+- **Adding an authority:** Create the authority under **Library Authorities** before assigning libraries to it.
+- **Slugs and IDs:** Keep existing slugs and IDs unchanged where possible. If a library's slug or authority changes, add a redirect in **Site Settings**.
+- **Opening hours:** Leave a day empty if closed or unknown, and use opening-hours notes for holiday exceptions.
+- **Last Reviewed:** Stamped automatically when a library or authority is saved in the CMS.
 
-To add a public page, create it in **Editorial Content**, leave **Publish on
-site** enabled, and set its path. To link it in the footer, open **Site Settings**
-and add its label and path under **Footer Links**. An unpublished archived page
-may share a path with its published replacement.
+## Publishing Changes
 
-The 34 original LibraryOn articles must retain their wording and credits. Their
-normalized Markdown is checked against `migration/source-articles.json`; the raw
-captured HTML remains unchanged. After an intentional converter cleanup, refresh
-managed Markdown and its fingerprints with
-`npm run import:archive -- --refresh-markdown`. New work belongs in a new entry.
-The Commons homepage is edited separately from the original LibraryOn homepage.
+CMS configuration lives in `public/admin/config.yml`, and uploaded media is stored in `public/uploads/`.
 
-## Maintain A Library
-
-Open **Libraries**, find the library, and edit its entry. Each library has its own
-JSON file in `src/content/libraries/`. Each authority has its own file in
-`src/content/authorities/`. Choose the authority from the library's authority field.
-If it does not exist, create it under **Library Authorities** first.
-
-Keep existing IDs and URL slugs unchanged where possible. Changing the slug or
-authority changes a library's public address; add a redirect in Site Settings.
-New records can leave the stable ID blank. The build rejects duplicate IDs,
-duplicate page addresses and authority links that do not exist.
-
-An empty opening-hours day means closed or not supplied. Add notes for holiday
-exceptions. Set **Last Reviewed** only when someone has checked the details.
-Avoid personal contact information or unverified accessibility claims.
-
-## Publish Changes
-
-The local site refreshes as files change. A static host must rebuild after a CMS
-commit before visitors see the change. There is no custom editor preview panel yet.
-
-Hosted editing targets `LibrariesHacked/libraryon-commons`, branch `main`.
-Editors need repository write access. GitHub OAuth must be configured before
-hosted login works; it has not been set up. Store OAuth secrets on the auth
-service, never in the CMS configuration. See [hosting](site.md).
-
-Forms are defined in `public/admin/config.yml`. Uploads go into `public/uploads/`.
-Use ordinary Git, not LFS, and check file size and rights before adding documents.
+Production CMS editing targets `LibrariesHacked/libraryon-commons` (`main` branch) and requires GitHub OAuth to be configured on the hosting platform (see [Running and Hosting](site.md)).

@@ -1,60 +1,42 @@
-# Changing Code And Templates
+# Code And Templates
 
-The site has three main building blocks:
+## Architecture
 
-- **Routes** in `src/pages/` decide what appears at a website address.
-- **Templates** in `src/templates/` arrange a particular type of content.
-- **Layouts and components** share the header, footer and smaller reusable pieces.
+The Astro site is organised into three layers:
 
-## Template Map
+- **Routes (`src/pages/`)** — Define URL structure and data loading.
+- **Templates (`src/templates/`)** — Render specific content types.
+- **Layouts & Components (`src/layouts/`, `src/components/`)** — Shared page shell, navigation, footer, cards, and directory widgets.
+
+## Template Hierarchy
 
 ```text
-SiteLayout                  Header, navigation, metadata and footer
+SiteLayout                  Header, navigation, metadata, and footer
   HomeTemplate              Commons homepage
-  EditorialLayout           Article header, contents and source credits
-    ArticleTemplate         Article body, images and related resources
-      CollectionTemplate    Collections
+  EditorialLayout           Article header, table of contents, and source credits
+    ArticleTemplate         Standard article body, media, and related resources
+      CollectionTemplate    Curated collections
       CaseStudyTemplate     Case studies
-      GrantTemplate         Grants and programmes
-      LegalTemplate         Policies and legal pages
-      LandingTemplate       Topic pages with links to child pages
-      ConferenceTemplate    Conference body and optional session index
-  DirectoryLayout           Library and authority page structure
-    AuthorityTemplate       Authority details and its libraries
-    LibraryTemplate         Library contacts, hours, accessibility and notes
-  ResourceTemplate          Resource details, download link and credits
-  SessionTemplate           Speakers, slides and recordings
+      GrantTemplate         Grant programmes
+      LegalTemplate         Policies and legal notices
+      LandingTemplate       Topic landing pages with child page cards
+      ConferenceTemplate    Conference overview and session index
+  DirectoryLayout           Shared shell for library and authority pages
+    AuthorityTemplate       Authority details and member library list
+    LibraryTemplate         Library contacts, hours, services, and nearby libraries
+  ResourceTemplate          Download or external resource details
+  SessionTemplate           Conference session details, speakers, and slides
   ContributorTemplate       Contributor profile
 ```
 
-`src/lib/templates.mjs` chooses the editorial template. The CMS type selector and
-`src/content.config.ts` must agree about the available types. Existing grants and
-legal pages also use their paths to select a template, without changing their
-original article files.
+`src/lib/templates.mjs` resolves the template for each editorial entry. Template types in `src/content.config.ts` and `public/admin/config.yml` must stay in sync.
 
-Shared components include `ContactDetails`, `OpeningHours`, `DirectoryProvenance`,
-`ArticleMedia`, `ArticleCards` and `ResourceLink`. Reuse them rather than copying
-the same markup into several templates.
+## Directory Model
 
-## Directory Data
+Each library (`src/content/libraries/*.json`) references its parent authority (`src/content/authorities/*.json`) by slug. `src/lib/directory-model.mjs` validates these relationships, computes each authority's member list, calculates nearby libraries, and generates the client search index (`/directory.json`).
 
-Each JSON file in `src/content/libraries/` contains one library and its authority
-link. Each file in `src/content/authorities/` contains one authority. The code in
-`src/lib/directory-model.mjs` checks those links and builds search data and public
-addresses. Authority library lists are calculated; do not keep a second copy of
-every library inside an authority record.
+## Testing
 
-## Scripts And Tests
+Run `npm test` after code or content changes, and `npm run build` when modifying routes, templates, or schemas.
 
-`scripts/archive/` holds optional collection, capture, import and compression
-tools. `tests/` holds all tests. Normal site editing does not require the archive
-scripts or the ignored `archive/` folder.
-
-Run `npm test` after a change, and `npm run build` when changing routes, templates
-or content rules. Tests cover links, original article checksums, directory records,
-duplicate files and import safeguards. Main code interfaces have JSDoc comments.
-Keep helpers small and explain non-obvious side effects.
-
-Do not reformat imported articles or binary source bundles. The original article
-bodies are protected by `migration/source-articles.json`; new work belongs in a
-new content entry. Source files can be compared with the preserved originals.
+Do not modify the 34 preserved LibraryOn article bodies or the compressed bundles in `preservation/`.
