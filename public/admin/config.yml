@@ -394,20 +394,53 @@ collections:
                   - name: query_placeholder
                     label: Search Placeholder
                     widget: string
-                  - name: authority_label
-                    label: Authority Filter Label
+                  - name: find_nearby
+                    label: Find Nearby Button
                     widget: string
-                  - name: all_authorities
-                    label: All Authorities Option
+                  - name: finding_nearby
+                    label: Finding Nearby Status
+                    widget: string
+                  - name: current_location
+                    label: Current Location Label
+                    widget: string
+                  - name: services_filter
+                    label: Services Filter Button
+                    widget: string
+                  - name: distance_filter
+                    label: Distance Filter Button
+                    widget: string
+                  - name: open_now_label
+                    label: Open Now Toggle Label
+                    widget: string
+                  - name: services_heading
+                    label: Services Filter Heading
+                    widget: string
+                  - name: accessibility_heading
+                    label: Accessibility Filter Heading
+                    widget: string
+                  - name: view_all
+                    label: View All Tags Button
+                    widget: string
+                  - name: show_less
+                    label: Show Less Tags Button
+                    widget: string
+                  - name: clear_button
+                    label: Clear Filter Button
+                    widget: string
+                  - name: apply_button
+                    label: Apply Filter Button
+                    widget: string
+                  - name: location_prefix
+                    label: Location Label Prefix
+                    widget: string
+                  - name: clear_location
+                    label: Clear Location Button
+                    widget: string
+                  - name: miles_suffix
+                    label: Distance Unit Label
                     widget: string
                   - name: unassigned_authority
                     label: Unassigned Authority Option
-                    widget: string
-                  - name: country_label
-                    label: Country Filter Label
-                    widget: string
-                  - name: all_countries
-                    label: All Countries Option
                     widget: string
                   - name: search_button
                     label: Search Button
@@ -604,9 +637,23 @@ collections:
           - name: image
             label: Main Image
             widget: image
+            required: false
           - name: image_alt
             label: Image Alt Text
             widget: string
+            required: false
+          - name: carousel
+            label: Hero Image Carousel
+            widget: list
+            required: false
+            summary: '{{fields.alt}}'
+            fields:
+              - name: image
+                label: Image
+                widget: image
+              - name: alt
+                label: Alternative Text
+                widget: string
           - name: features_title
             label: Features Heading
             widget: string

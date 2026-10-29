@@ -11,15 +11,39 @@ attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
   - resource-4784ab5a4083d3f80349
+hero:
+  image: /uploads/archive/1277ebaae5700ccacc173d28a5484768e67c871f589b84062df0234762568260.jpg
+  alt: Digital skills in libraries
 ---
-
-![Image](/uploads/archive/1277ebaae5700ccacc173d28a5484768e67c871f589b84062df0234762568260.jpg)
 
 # Digital skills in libraries
 
 ## Free help using tech, tablets and the internet
 
 [Free help using tech, tablets and the internet](https://www.youtube.com/embed/fzqjBqMM7j0?si=GdNLMpN-DpKQWGv9)
+
+<details>
+<summary>Read video transcript</summary>
+
+Shaun Condon, Service Delivery Manager at the Royal Borough of Kensington and Chelsea: Who are the sessions for? Well, they're for anyone who is trying to get a little bit of experience with digital skills.
+
+They might be trying to access things online, whether it's local services, or anyone who wants to save money or find local opportunities for skills.
+
+Majzoub Ali, customer at Southend Libraries: But the difference is, on the internet they tell me how to do it. But when I come here they show me how to do it. And of course, it makes me very confident using my devices.
+
+Emma Dunham, Senior Library Assistant at West Sussex Libraries: We had a gentleman recently who lost his wife, and he really was utterly at sea. He didn't know what to do. She was the holder of the digital keys almost, and he had no idea.
+
+He came in to do some book borrowing, and we said, "Perhaps, maybe, could you try and have a bash with a digital volunteer?" And he did. And now he can do it. And I think a big part of that was the loneliness that he was feeling, the lack of confidence having lost his wife. And suddenly the world began to open up for him again, and that was great to see.
+
+Ali Mashkoor, customer at West Sussex Libraries: Well, actually, I was struggling to check my emails and all the things. And a friend of mine said to me, go to the library and get help from there. So I come in and get the help a lot.
+
+Shaun Condon: I think we've definitely helped some people. Occasionally you'll get someone who comes in for one question. By finding out what they're actually looking for, you realise that you're actually stopping them from entering into a scam. So we've saved people, directly, money that way.
+
+The impression of libraries I want to break is that they're not necessarily quiet spaces anymore. People would always go like "shhh" when I said I worked in the library, and they're not, they can't be.
+
+They're community centres, they deal with everything. If you don't need a library yet, just know that's there for when you do. It's that third space in the community where you're not expected to pay anything, and it's just giving support for anything that you might need.
+
+</details>
 
 Many [libraries across the country](/libraries) offer free sessions that help people build their **digital literacy**.
 
@@ -72,38 +96,34 @@ Teaching others is a great way to build skills too, and there are often voluntee
 
 ## Questions about digital skills in libraries
 
-## Have more questions?
+### Who are library digital skills sessions aimed at?
 
-Let us know what questions and answers you'd like to see here.
+Some sessions are aimed at adults who might not be very familiar with technology. Others are aimed at all ages.
 
-[Email us](/cdn-cgi/l/email-protection#bed6dbd2d2d1fed2d7dcccdfccc7d1d090d1ccd981cdcbdcd4dbddca83fad7d9d7cad7dfd29ecdd5d7d2d2cd9ed7d09ed2d7dcccdfccd7dbcd849ecfcbdbcdcad7d1d0cd9edfd0da9edfd0cdc9dbcccd)
+See if a [library near you](/libraries) offers digital skills sessions and, if it does, staff will be able to advise you.
 
-![An icon featuring a heart shape inside a speech bubble.](/uploads/archive/ff46cb0ed3e3a8663eabce35574d3c8754f41bff0d083fb802370a4c13369373.png)
+### How can the library help me improve my digital skills?
 
-## More work and skills in libraries
+Libraries all over the country offer drop-in sessions where you can bring your device and get help from a volunteer.
 
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
+If you don't have a device you can often use one of the library's computers.
 
-### [Business support](/work-and-skills/business-support)
+### Do I need to be a member to get digital skills help at the library?
 
-Business & IP Centres in libraries help over 40,000 people every year start, grow and protect their businesses.
+It might vary. But many digital skills drop-in sessions will be open to non-library members.
 
-![A man wearing wireless headphones works on a laptop at a library desk.](/uploads/archive/2c8b56d5aa28082f971835620cd0763254f6eceac567af26b7ed12a6e028e35e.jpg)
+### Do I need to book to attend a library digital skills session?
 
-### [Study and work spaces](/work-and-skills/study-work-spaces)
+This might vary by library. But many library digital skills sessions tend to be drop-in, which means you don't need to book.
 
-Need a free, safe space with reliable Wi-Fi? The library is the perfect alternative to noisy cafés or working from home.
+### Do I need to bring my own device to a digital skills session at the library?
 
-![A group of people chat as they sit around a table in a library cafe.](/uploads/archive/eb25ba3381558855da07839c72696e38f3f2070c092e724da87927801ac70a8c.jpg)
+If you want to learn how to get the most out of your device, you can usually take it along and a volunteer will help you.
 
-### [Cafes](/work-and-skills/cafes)
+But you don't have to take a device to ask for advice or support.
 
-Many libraries have cafes where you can meet friends, relax after an event or study somewhere different.
+### Can I use a computer or the internet at the library?
 
-![A woman in a library makerspace sits in front of a podcast microphone wearing headphones.](/uploads/archive/74ba883bcba2b1e80c6c8c6b8c68b58108dab6d8e65cea47aa3f27b496a29f1a.png)
+Yes. Lots of public libraries offer free access to computers and wi-fi.
 
-### [Makerspaces](/work-and-skills/makerspaces)
-
-Find your voice in a podcast studio, or have a go with 3D printers. Find coding clubs for kids and spaces where anyone can learn the skills to become a maker.
-
-_Banner image: Tablet Taster session at_ [_The Forum Library_](/libraries/southend-on-sea/southend-forum)_, Southend-on-Sea._
+Staff can help you get started if you’re new to using them. There might be a time limit on how long your computer session will last.

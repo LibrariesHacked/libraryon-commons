@@ -131,34 +131,44 @@ Whether you’re after titles for younger children or teens, it’s worth checki
 
 ## Questions about using libraries
 
-## Have more questions?
+### How does a young person get a library card?
 
-Let us know what questions and answers you'd like to see here.
+It's free for anyone, including children, to join [their local library](/libraries).
 
-[Email us](/cdn-cgi/l/email-protection#7119141d1d1e311d1813031003081e1f5f1e03164e0204131b1412054c23141015181f1651181f511d18130310031814024b510004140205181e1f0251101f1551101f0206140302)
+An adult will usually need to show proof of identification and address at the library to obtain the child's library card.
 
-![An icon featuring a heart shape inside a speech bubble.](/uploads/archive/ff46cb0ed3e3a8663eabce35574d3c8754f41bff0d083fb802370a4c13369373.png)
+The age at which a library allows a young person to join as an adult varies by region. It's often at the age of 16 or 18.
 
-## More reading in libraries
+### What is there for children at the library?
 
-![A close-up of a person's hand removing a book entitled 'Monica' from a shelf full of books.](/uploads/archive/1ab825b444e27877b1faf5adb97e6396b87bdf66581c9b69ba5b5877a1b46d71.jpg)
+Most libraries have books for all ages, so children at every stage can find something to enjoy.
 
-### [Reading for adults in libraries](/reading/reading-in-libraries)
+In addition many libraries hold regular free sessions like Rhymetime or Storytime to help children's development.
 
-Whether it’s a bestseller, e-book or magazine, libraries have something for every interest.
+As children get older libraries host activities and challenges to keep them entertained after school, at weekends and during holidays.
 
-![A young woman is sitting beneath a tree reading a digital magazine on a smartphone.](/uploads/archive/facd02dbe459f92fd0ee90f9eac97306590cea7286c410e902b4ff8d6a91eafc.jpg)
+### Do I need to be silent at the library? Can I take my child?
 
-### [E-lending in libraries](/reading/e-lending-in-libraries)
+Most local public libraries don't expect you to be quiet, and hold activities especially for children. They also have quieter times - check with your local library for the best time to visit.
 
-Libraries let you borrow books, newspapers and magazines digitally – and for free.
+Larger libraries may have stricter rules on noise and quiet areas for people to study in peace.
 
-## More to discover in libraries
+### Do I need to be a member to enter a library?
 
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
+No. Anyone can enter a public library and there’s no charge to go in.
 
-### [Work & skills in libraries](/work-and-skills)
+### Do I need to be a library member to borrow books?
 
-Get free business support and a quiet space to work. Find tools and resources to help you learn new skills at any time of life.
+Yes. You might need to show some identification and proof of address to become a library member. But every library authority is different, so it's best to [find your nearest library](/libraries) and ask the staff.
 
-_Banner animation: Footage from UK libraries shot by LibraryOn._
+Once you're a member you can use your library card to borrow books and more.
+
+### How many library books can I borrow at a time?
+
+It varies by library authority. In some regions you can borrow up to 20 books at a time. When you become a library member staff will tell you how many books you can take home.
+
+### How does library e-lending work?
+
+With library e-lending you can use your own device to enjoy e-books, audiobooks and digital versions of newspapers and magazines.
+
+Learn more about e-lending in libraries.

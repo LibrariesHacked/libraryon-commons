@@ -99,6 +99,12 @@ test('CMS export retains rich content, image credits, slide and recording links'
       'https://lon1.digitaloceanspaces.com/libraryon/slides.pdf'
     )
   );
+  const bannerRecord = pageContent(
+    '<section id="banner-home"><h1>Libraries are for everyone</h1></section><main><p>Start your journey.</p></main>',
+    'https://libraryon.org/'
+  );
+  assert.equal(bannerRecord.headings[0].text, 'Libraries are for everyone');
+  assert.ok(bannerRecord.html.includes('<h1>Libraries are for everyone</h1>'));
 });
 
 test('image discovery keeps original images behind thumbnails and both storage URL formats', () => {

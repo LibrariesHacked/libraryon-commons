@@ -1,9 +1,10 @@
 ---
-title: LibraryOn – Campaign
+title: If you're into it, read into it | LibraryOn
 path: /campaigns/national-year-of-reading
 kind: page
 published: true
-description: Default description
+description: Celebrate the National Year of Reading 2026 at your local public
+  library with book recommendations, events, and reading challenges.
 source_url: https://libraryon.org/campaigns/national-year-of-reading
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
@@ -12,8 +13,6 @@ resources:
 ---
 
 # If you're into it, read into it
-
-National Year of Reading
 
 Interested in gaming? Or sports? Or gardening? Your local library is the perfect place to explore it.
 

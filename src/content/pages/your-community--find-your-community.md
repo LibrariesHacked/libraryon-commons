@@ -13,7 +13,7 @@ resources:
   - resource-9e5cdc52cc61cd58af2e
 ---
 
-# Your community Find your community
+# Find your community
 
 > “The great thing about the library is that it’s a public space where you don’t need to buy anything.”
 
@@ -81,7 +81,7 @@ Children make friends easily - and when they do it’s a great opportunity to st
 
 ### Find out what’s on
 
-You can search for [library events](/events) on our site. Or you can [find your local library’s website](/libraries) and browse the events and activities.
+You can [find your local library’s website](/libraries) and browse the events and activities.
 
 If they don’t have listings it’s also worth searching [Eventbrite](https://www.eventbrite.co.uk/), which some libraries use to promote things they’re putting on.
 
@@ -90,27 +90,3 @@ If they don’t have listings it’s also worth searching [Eventbrite](https://w
 Did you know many libraries have rooms you can hire?
 
 If you’d like to start up your own group, visit your library’s website or contact staff to find out if they have space suitable for you.
-
-## Map of libraries and services
-
-[Find your local public library](/libraries)
-
-![Map marker icon with a dashed path, indicating a location or route.](/uploads/archive/c507a5ea5cc311a59fee0d121a617ecb89a587259905053f82ae52d2b5b306a7.svg)
-
-## Expand your world at the library
-
-![Image](/uploads/archive/98393c97a373dcf25cda1992a79bb225dc644e9a38fe1a0222c367abb533f078.jpg)
-
-### [Reading](/reading)
-
-Whatever you want to read, it's in the library
-
-Explore
-
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
-
-### [Work and skills](/work-and-skills)
-
-Bring your big ideas to life
-
-Explore

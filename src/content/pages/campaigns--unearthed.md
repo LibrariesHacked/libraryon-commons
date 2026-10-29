@@ -15,8 +15,6 @@ resources:
 
 # Unearthed: The Power of Gardening
 
-Unearthed
-
 Gardening is so much more than the nation’s favourite pastime.
 
 ![The words: Unearthed: The power of gardening on a yellow background](/uploads/archive/b54d1f8955e9ba201d38acf9a51ed2f8305663c049bd65ece0645250cd83805d.jpg)

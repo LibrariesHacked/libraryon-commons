@@ -191,8 +191,42 @@ export function cleanContent(html, base, resolve = (value) => value) {
     if (node.find('input,select,textarea').length) node.remove();
   });
   document('script,style,svg,nav,footer,form,noscript').remove();
+  document('[class*="Timeline__TimelineList"] > li').each((index, element) => {
+    const spans = document(element).children('span');
+    if (spans.length >= 2) {
+      const first = spans.first();
+      first.replaceWith(document('<strong></strong>').text(squash(first.text())));
+      spans.eq(1).before(' — ');
+    }
+  });
+  document('[class*="Links__StyledTypography"]').each((index, element) => {
+    const node = document(element);
+    const link = node.children('a').first();
+    const span = node.children('span').first();
+    if (link.length && span.length && squash(span.text())) link.after(' — ');
+  });
   document('button').each((index, element) => {
     const node = document(element);
+    const title = squash(node.find('[class*="Recommendation__RecTitle"]').first().text());
+    const description = squash(node.find('[class*="Recommendation__RecDescription"]').first().text());
+    if (title && description) {
+      const meta = node
+        .find('[class*="Recommendation__StyledTypography"]')
+        .map((i, el) => squash(document(el).text()))
+        .get()
+        .filter(Boolean)
+        .join(', ');
+      const replacement = document('<div></div>');
+      replacement.append(document('<h3></h3>').text(meta ? `${title} (${meta})` : title));
+      replacement.append(document('<p></p>').text(description));
+      node.replaceWith(replacement.contents());
+      return;
+    }
+    const heading = node.find('h2,h3,h4').first();
+    if (heading.length) {
+      node.replaceWith(heading);
+      return;
+    }
     if (
       /^(previous|next|view|view all|show more|list view|map view|close|menu)$/i.test(squash(node.text())) ||
       (node.attr('aria-controls') && node.attr('aria-expanded') !== undefined)
@@ -539,7 +573,7 @@ export async function importArchive({
           : pathname.startsWith('/legal/')
             ? 'legal'
             : 'page',
-      published: !pathname.startsWith('/legal/') && pathname !== '/libraries',
+      published: !pathname.startsWith('/legal/') && pathname !== '/libraries' && pathname !== '/events',
       description: record.description || '',
       ...(updated_on && { updated_on }),
       source_url: url,

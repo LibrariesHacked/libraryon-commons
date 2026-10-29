@@ -11,9 +11,10 @@ attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
   - resource-141754fa1847a1854705
+hero:
+  image: /uploads/archive/2ee6dafd11d3be2202856674ac757f4ef54c4efee89544c4ccae48ef47e86df0.jpg
+  alt: Study and work spaces in libraries
 ---
-
-![Image](/uploads/archive/2ee6dafd11d3be2202856674ac757f4ef54c4efee89544c4ccae48ef47e86df0.jpg)
 
 # Study and work spaces in libraries
 
@@ -43,18 +44,6 @@ Libraries who partner with services like [Princh](https://princh.com/how-to-prin
 
 Nottingham Central Library uses Princh so customers can easily print documents from their own devices. Image: Nottingham Central Library by LibraryOn
 
-## Questions about using study and work spaces in libraries
-
-If you haven't visited a library before, or you haven't been in a while, here are answers to some questions you might have.
-
-## Have more questions?
-
-Let us know what questions and answers you'd like to see here.
-
-[Email us](/cdn-cgi/l/email-protection#056d6069696a45696c677764777c6a6b2b6a77623a7670676f60667138567170617c25646b6125726a776e25767564666076256c6b25696c677764776c60763f2574706076716c6a6b7625646b6125646b7672607776)
-
-![Image](/uploads/archive/ff46cb0ed3e3a8663eabce35574d3c8754f41bff0d083fb802370a4c13369373.png)
-
 **Did you know?**
 
 [Some libraries have cafes](/work-and-skills/cafes) where you can take a break and meet friends.
@@ -65,44 +54,50 @@ Some even offer a discount on coffee if you become a library member.
 
 The library is a **safe space** that is there for you when:
 
--   your broadband goes down
-
--   you need a change of scene
-
--   your flatmates or family are annoying you
-
--   you need to print that important doc
-
--   you’re tired of buying expensive coffees just to get a place to work…
+- your broadband goes down
+- you need a change of scene
+- your flatmates or family are annoying you
+- you need to print that important doc
+- you’re tired of buying expensive coffees just to get a place to work…
 
 [**Find your nearest library**](/libraries) **on our national library map.**
 
 [Your library: your space](https://www.youtube.com/embed/FDM0ZLv22r8?autoplay=1&mute=1&controls=0&loop=1&playlist=FDM0ZLv22r8)
 
-## More work and skills in libraries
+## Questions about using study and work spaces in libraries
 
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
+If you haven't visited a library before, or you haven't been in a while, here are answers to some questions you might have.
 
-### [Business support](/work-and-skills/business-support)
+### Do I need to be a library member to study or work in a library?
 
-Business & IP Centres in libraries help over 40,000 people every year start, grow and protect their businesses.
+In a word: no!
 
-![A group of people chat while sittingaround a table in a library cafe.](/uploads/archive/6ef6eb66a2d52aa9e12d8ef45b0ba81ceac0331081e79c9236d465911cc46774.jpg)
+Anybody can go into a library, and if there are desks available to you can use one without asking.
 
-### [Cafes](/work-and-skills/cafes)
+If you use a library computer there might be a limit to the amount of time you can use it.
 
-Many libraries have cafes where you can meet friends, relax after an event or study somewhere different.
+### Do I need to book a desk to study or work at the library?
 
-![A video camera set up on a tripod in a library makerspace. In the background are some 3D printers. ](/uploads/archive/180847b7f9b6fcb575e10949f871fb96f4a6242c3ea59ebdd771f50defaea46f.jpg)
+Most libraries with desks offer them on a first-come-first-served basis. That means you don’t need to book them – but you might need to be quick to get one.
 
-### [Makerspaces](/work-and-skills/makerspaces)
+### Can I use a computer or the internet at the library?
 
-Find your voice in a production studio, or have a go with 3D printers. Find coding clubs for kids and spaces where anyone can learn the skills to become a maker.
+Yes. Lots of public libraries offer free access to computers and wi-fi.
 
-![Library customers use library computers while sitting at a row of desks.](/uploads/archive/0084b37a5067883f757bcd0558d6009df82eab462618f119bfd889ebe99c6b75.jpg)
+Staff can help you get started [if you’re new to using them](/work-and-skills/digital-skills). There might be a time limit on how long your computer session will last.
 
-### [Digital skills](/work-and-skills/digital-skills)
+### Do libraries have bathrooms?
 
-Delivering the skills we all need to make the most of today's tech. Attend free drop-ins to learn how to use your devices and the internet safely.
+Most libraries have bathrooms, and some have accessible bathrooms suitable for people with disabilities or where you can change a baby.
 
-_Banner: image:_ [_The Forum Library_](/libraries/southend-on-sea/southend-forum)_, Southend-on-sea. Image: LibraryOn._
+To find out, first it’s best to [find your library](/libraries). Then you can look online, call ahead or drop in to find out more from staff.
+
+### What do I need to do if I want to borrow a book while I’m at the library?
+
+You can read library books in the library without having to be a member. But if you want to take a book away with you you'll need a membership.
+
+Take ID and proof of address with you and a staff member can get you signed up.
+
+### How long can I spend in the library?
+
+You can stay for as long as it's open!

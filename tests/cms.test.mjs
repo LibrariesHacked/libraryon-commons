@@ -89,7 +89,7 @@ test('menu hierarchy, single footer attribution, and CMS-only content origin are
   assert.equal(discover.label, 'Discover');
   assert.deepEqual(
     discover.children.map((item) => item.label),
-    ['Reading', 'Work and skills', 'Your community', 'Special collections', 'Events']
+    ['Reading', 'Work and skills', 'Your community', 'Special collections']
   );
   assert.equal(about.label, 'About');
   for (const item of [...discover.children, ...about.children]) assert.ok(item.url);
@@ -178,11 +178,14 @@ test('obsolete legal pages remain in the CMS but are unpublished', () => {
   }
 });
 
-test('the original library-map snapshot remains archived but unpublished', () => {
+test('the original library-map and events snapshots remain archived but unpublished', () => {
   const pages = contentRecords('src/content/pages', '.md');
   assert.ok(pages.has('libraries'));
   assert.equal(pages.get('libraries').data.path, '/libraries');
   assert.equal(pages.get('libraries').data.published, false);
+  assert.ok(pages.has('events'));
+  assert.equal(pages.get('events').data.path, '/events');
+  assert.equal(pages.get('events').data.published, false);
 });
 
 test('imported article bodies remain unchanged while new community articles are separate', () => {
@@ -193,7 +196,7 @@ test('imported article bodies remain unchanged while new community articles are 
   }
 });
 
-test('homepage controls point to existing content and an uploaded image', () => {
+test('homepage controls point to existing content and preserve the main heading', () => {
   const homepage = JSON.parse(readFileSync('src/data/homepage.json', 'utf8'));
   const paths = new Set(
     [...contentRecords('src/content/pages', '.md').values()]
@@ -206,7 +209,17 @@ test('homepage controls point to existing content and an uploaded image', () => 
     ...homepage.community_pages
   ])
     assert.ok(paths.has(path), `Missing homepage selection: ${path}`);
-  assert.ok(existsSync(`public${homepage.image}`));
+  assert.equal(homepage.title, 'Libraries are for everyone');
+  if (homepage.image) assert.ok(existsSync(`public${homepage.image}`));
+  assert.ok(Array.isArray(homepage.carousel) && homepage.carousel.length >= 3);
+  for (const slide of homepage.carousel) {
+    assert.ok(slide.image && existsSync(`public${slide.image}`), `Missing carousel image: ${slide.image}`);
+    assert.ok(slide.alt && slide.alt.trim().length > 0, `Missing carousel alt text for ${slide.image}`);
+    assert.ok(
+      !slide.image.includes('d8d54cb7e50d820ae0c8f4b528263d433b20427a5c76a332990590d644007f69'),
+      'Tracy testimonial photo must remain a testimonial image, not a hero carousel image'
+    );
+  }
   const fields = config.collections
     .find((collection) => collection.name === 'settings')
     .files.find((file) => file.name === 'homepage').fields;

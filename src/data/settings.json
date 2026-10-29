@@ -6,23 +6,53 @@
     "licence_url": "https://creativecommons.org/licenses/by/4.0/"
   },
   "navigation": [
-    { "label": "Find a library", "url": "/libraries/" },
+    {
+      "label": "Find a library",
+      "url": "/libraries/"
+    },
     {
       "label": "Discover",
       "children": [
-        { "label": "Reading", "url": "/reading/", "description": "Whatever you want to read, it’s in the library." },
-        { "label": "Work and skills", "url": "/work-and-skills/", "description": "Bring your big ideas to life." },
-        { "label": "Your community", "url": "/your-community/", "description": "Gathering is good for us." },
-        { "label": "Special collections", "url": "/special-collections/", "description": "Regional history and culture unlocked." },
-        { "label": "Events", "url": "/events/", "description": "What’s on near you." }
+        {
+          "label": "Reading",
+          "url": "/reading/",
+          "description": "Whatever you want to read, it’s in the library."
+        },
+        {
+          "label": "Work and skills",
+          "url": "/work-and-skills/",
+          "description": "Bring your big ideas to life."
+        },
+        {
+          "label": "Your community",
+          "url": "/your-community/",
+          "description": "Gathering is good for us."
+        },
+        {
+          "label": "Special collections",
+          "url": "/special-collections/",
+          "description": "Regional history and culture unlocked."
+        }
       ]
     },
     {
       "label": "About",
       "children": [
-        { "label": "About LibraryCommons", "url": "/commons/", "description": "How this community project connects libraries." },
-        { "label": "Grants", "url": "/grants/", "description": "The LibraryOn grants programme for libraries." },
-        { "label": "Press Play Conference", "url": "/about/pressplay/", "description": "A playground of digital ideas." }
+        {
+          "label": "About LibraryCommons",
+          "url": "/commons/",
+          "description": "How this community project connects libraries."
+        },
+        {
+          "label": "Grants",
+          "url": "/grants/",
+          "description": "The LibraryOn grants programme for libraries."
+        },
+        {
+          "label": "Press Play Conference",
+          "url": "/about/pressplay/",
+          "description": "A playground of digital ideas."
+        }
       ]
     }
   ],
@@ -141,13 +171,24 @@
       "heading": "Find your library",
       "intro_library_count": "libraries and",
       "intro_authority_count": "authorities, maintained with the library community.",
-      "query_label": "Name, town or postcode",
-      "query_placeholder": "e.g. Cambridge or CB1 9HZ",
-      "authority_label": "Library authority",
-      "all_authorities": "All authorities",
+      "query_label": "Search by library name or address",
+      "query_placeholder": "Search by library name or address...",
+      "find_nearby": "Find nearby",
+      "finding_nearby": "Finding...",
+      "current_location": "Your current location",
+      "services_filter": "Services",
+      "distance_filter": "Distance",
+      "open_now_label": "Open now",
+      "services_heading": "Services and facilities",
+      "accessibility_heading": "Accessibility",
+      "view_all": "View all",
+      "show_less": "Show less",
+      "clear_button": "Clear",
+      "apply_button": "Apply",
+      "location_prefix": "Location:",
+      "clear_location": "Clear location",
+      "miles_suffix": "miles",
       "unassigned_authority": "Authority not recorded",
-      "country_label": "Country",
-      "all_countries": "All countries",
       "search_button": "Search",
       "results_heading": "Libraries",
       "browse_status": "Browse the directory",
@@ -203,12 +244,30 @@
     "attribution": "Content is shared under Creative Commons Attribution 4.0 unless otherwise noted.",
     "links_heading": "Explore",
     "links": [
-      { "label": "About LibraryCommons", "url": "/commons/" },
-      { "label": "Find a library", "url": "/libraries/" },
-      { "label": "Collections", "url": "/special-collections/" },
-      { "label": "Resources", "url": "/resources/" },
-      { "label": "Press Play", "url": "/about/pressplay/" },
-      { "label": "Grants and case studies", "url": "/grants/" }
+      {
+        "label": "About LibraryCommons",
+        "url": "/commons/"
+      },
+      {
+        "label": "Find a library",
+        "url": "/libraries/"
+      },
+      {
+        "label": "Collections",
+        "url": "/special-collections/"
+      },
+      {
+        "label": "Resources",
+        "url": "/resources/"
+      },
+      {
+        "label": "Press Play",
+        "url": "/about/pressplay/"
+      },
+      {
+        "label": "Grants and case studies",
+        "url": "/grants/"
+      }
     ],
     "directory_note": "Library information is now community-maintained.",
     "licence_label": "CC BY 4.0",

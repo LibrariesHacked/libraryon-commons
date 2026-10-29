@@ -38,8 +38,6 @@ resources:
   - resource-383b0f6d6cecb9308132
 ---
 
-[Back to special collections](/special-collections)
-
 # Frances Wolseley: Gardener, activist, aristocrat
 
 ![Sepia photo of an older Frances Wolseley in a striped jacket standing by a full wooden bookcase.](/uploads/archive/dfd9b863b8a8d1a824453304e01d8e5d39826a855fa2b405c027d99919213d86.jpg)
@@ -48,9 +46,7 @@ Viscountess Frances Garnet Wolseley at her home, Massetts Place, in 1922. Source
 
 ## From aristocrat to activist
 
-## Viscountess Frances Garnet Wolseley was born into privilege and bred for society.
-
-## But she chose her own path, carving out a career and lifestyle that ultimately saw her pay a high price.
+**Viscountess Frances Garnet Wolseley was born into privilege and bred for society. But she chose her own path, carving out a career and lifestyle that ultimately saw her pay a high price.**
 
 As an author, garden designer, educator and organiser she became a strong supporter of women’s ability to pursue horticulture as a career.
 
@@ -58,7 +54,7 @@ Her decision not to marry, and instead share her life with women, means that tod
 
 Hove Library, part of [Brighton & Hove Libraries](https://www.brighton-hove.gov.uk/libraries-leisure-and-arts), houses a collection that helps tell the story of her life.
 
-### [Explore the collection online](https://www.flickr.com/photos/196656943@N03/albums/72177720331351304/)
+[Explore the collection online](https://www.flickr.com/photos/196656943@N03/albums/72177720331351304/)
 
 ![Sepia photo of Frances Wolseley in a hat with a small dog in front of a house.](/uploads/archive/86b311af02028c4b848bac37019c69bf9e136a3441e13c327ac62879c8fc7c98.jpg)
 
@@ -152,17 +148,40 @@ The Ragged Lands site where Glynde College students learned their skills, c.1909
 
 ## Explore Glynde College
 
-![Image](/uploads/archive/6f07225e4feafab0a6992d7a62c7c3a057dcd52cc8a9d1cf16df25f8e9c3b7f2.jpg)
+![Historical archive image](/uploads/archive/6f07225e4feafab0a6992d7a62c7c3a057dcd52cc8a9d1cf16df25f8e9c3b7f2.jpg)
 
-![Image](/uploads/archive/54447efd2aab5ce1de9f98f80dd1f8b9a574dcd86d19b7a2c794da0ca535f205.jpg)
+- **Mowing the lawn:** This photo from 1904 was taken before the students at Glynde had to wear uniforms.    Nevertheless the students wore long sleeves and long skirts to protect themselves from the weather, thorns and other occupational hazards.
+- **Mowing the lawn:** Why did it take two people to mow the lawn?    This is a manual lawnmower, which had to be pushed—and sometimes, as we see here, pulled.    These early models included a rear roller, and since the whole machine was made of cast iron they were very heavy to operate.
+- **Mowing the lawn:** [The lawnmower was invented by Edwin Beard Budding](https://www.museumofgardening.co.uk/post/the-budding-patent-lawn-mower), a Gloucestershire engineer. He was inspired by mechanisms he saw in a cloth mill.    He formed the company Budding and Ferrabee with a partner, and under this name they produced early models as well as licensing their designs to other manufacturers.
 
-![Image](/uploads/archive/01294f5727fd552437953742b4a4aafbcdf631ab737045bec05ce1c45a4209df.jpg)
+![Historical archive image](/uploads/archive/54447efd2aab5ce1de9f98f80dd1f8b9a574dcd86d19b7a2c794da0ca535f205.jpg)
 
-![Image](/uploads/archive/b7d49cd80db82656824f8bcf8212117eb8acd3295785cbb11cb34b67a0be3fc1.jpg)
+- **Ready for work:** This photo was taken c.1913/14. At the front of the students we see Elsa More, who had become a senior instructor and would assume day-to-day responsibilities of running the school.  Like Frances Wolseley, she was strict about rules and obedience.
+- **Ready for work:** Where previously students wore decorative if practical clothing, by this time they were given uniforms.  This included leather boots, ties (with tiepins), khaki skirts and hats. Students had to clean their boots regularly. Looking untidy would lead to punishment.    Wearing this many layers, as well as a collar and tie, probably made for a hot day's work.
+- **Ready for work:** The length of these skirts would have been considered daring at this time.    Wearing trousers (known as 'breeches') beneath them preserved the ladies' modesty when working and riding bicycles.    In terms of material: tweed would feature in winter, linen in summer.
 
-![Image](/uploads/archive/aa6075dc05e136c6ef7222173a7f0951a50f875e0429680dfc7168cc3e1592f7.jpg)
+![Historical archive image](/uploads/archive/01294f5727fd552437953742b4a4aafbcdf631ab737045bec05ce1c45a4209df.jpg)
 
-**The items in this gallery, from the Wolseley Collection at Hove Library, give an interesting look into what life was like at Glynde College. We've added clickable points on the pictures to give you more information.**
+- **College rules (part 1):** Elsa More, who became Principal in 1915, is here shown to be a Fellow of the Royal Horticultural Society ([today known as the RHS](https://www.rhs.org.uk/)).    The RHS was founded in 1804. Women weren’t allowed as Fellows until 1830.    Even then membership tended to be restricted to the wealthy, but this gradually changed during the 20th Century.
+- **College rules (part 1):** ‘A.D.C’ stands for ‘Aide-de-Camp'.    This is a term more commonly found in the military, where it refers to a personal assistant or secretary to someone of high rank.
+- **College rules (part 1):** With a long list of strict rules and a clear chain of command, we see how the college was run almost like a military unit.    Since many students came from rich families and might not have worked before, it's easy to see how surprising this environment could have been for some of them.
+
+![Historical archive image](/uploads/archive/b7d49cd80db82656824f8bcf8212117eb8acd3295785cbb11cb34b67a0be3fc1.jpg)
+
+- **College rules (part 2):** As we see elsewhere in this story, college staff disliked students who spoke too much.    Here we learn singing and whistling were also frowned upon...
+- **College rules (part 2):** ‘Not speaking unless spoken to’ could be seen as another example of Frances Wolseley's military approach to running her college.
+- **College rules (part 2):** Diaries and notebooks books would be used to keep track of the various plants and crops being planted.    It meant that if a student decided to leave (or was told to leave) there was a record of what was growing where and when it was planted. This made sure the gardens remained consistent.
+- **College rules (part 2):** [Stoolball](https://www.sportingheritage.org.uk/content/what-we-do/projects/the-sporting-heritage-of-disability-and-womens-sports/stoolball-what-ball-history-of-the-traditional-rural-womens-sport) is a sport that originated in Sussex.    It’s been described as ‘cricket in the air’—it features a shoulder-height wicket—and was largely played by women.
+
+![Historical archive image](/uploads/archive/aa6075dc05e136c6ef7222173a7f0951a50f875e0429680dfc7168cc3e1592f7.jpg)
+
+- **Following in Wolseley's footsteps:** Elsa More was a student who become Head Gardener and, eventually, Principal of Glynde College.   Not much is known about her, but a 1915 issue of the Daily Mirror refers to her grandfather serving under [Horatio Nelson](https://www.historic-uk.com/HistoryUK/HistoryofEngland/Admiral-Lord-Nelson/) on [HMS Victory](https://en.wikipedia.org/wiki/HMS_Victory).  This suggests she may have been raised in a way that made her well-suited to continue Frances Wolseley’s strict approach to running the school.
+- **Following in Wolseley’s footsteps:** While Elsa More may have been just as strict, there are signs that she tried to make students' time at the college special.    Several photos in Hove's collection show her in fancy dress, leading what look like plays and performances. Her outfit here, with its bicorn hat and shoulder boards, was perhaps a way of honouring her grandfather's naval career  This apparent attempt to boost morale at the college is rare in the collection as a whole.
+- **Following in Wolseley's footsteps:** The _Hastings and Bexhill Independent_ of 26 October 1917 reported that Elsa More was fined 10 shillings by a Magistrate.  Her crime was to have left an electric light near a window, unshielded by a blind. This broke the rules of a local ‘Lighting Order’ brought in to prevent light pollution in rural areas.  The Magistrate dealt with more than 30 people who were accused of similar offences that same day.
+- **Following in Wolseley's footsteps:** When Frances Wolseley left Ragged Lands to move to Massetts Place with Mary Musgrave, she left Elsa More in charge.  The responsibility weighed heavily on More. She wrote to Wolseley complaining about how tiring she found it to maintain discipline among the student body.
+- **Following in Wolseley's footsteps:** Photos in the Wolseley collection show More becoming increasingly thin during her time at Glynde.   She resigned in 1921, the year after Wolseley left. [There are suggestions](https://glynde.info/history/property.php?pageno=65) that she suffered a breakdown which prompted her leaving.  She died in 1933 at the age of 50.
+
+**The items in this gallery, from the Wolseley Collection at Hove Library, give an interesting look into what life was like at Glynde College. Explore the notes beneath each picture for more information.**
 
 Check out the long list of rules students needed to follow, and the uniform they were expected to wear.
 
@@ -248,7 +267,33 @@ In the course of her career Frances Wolseley published several books, covering h
 
 ![The cover of the book 'Gardening for Women' by Frances Wolseley.](/uploads/archive/b7030b3f5233f0f389a6b463faec56a896259ce830d52f94d8b2df27b127b18d.jpg)
 
-Wolseley's words
+### *Gardening for Women* — Frances Garnet Wolseley (1908)
+
+Wolseley’s first book urges women to consider gardening as a career. It explains practical growing techniques and stresses why proper training is important. The book argues that women can make a big difference in the world of horticulture.
+
+### *In a College Garden* — Frances Garnet Wolseley (1916)
+
+Published during wartime, this book shares Wolseley’s insights on running a college for female gardeners. She advocates for skilled women to enter the workplace, but also voices concerns about unsuitable 'rough-mannered, undisciplined middle-class women'.
+
+### *Women and the Land* — Frances Garnet Wolseley (1916)
+
+Broader than her previous books, this title focuses on the need to grow food and boost the countryside's economy during wartime and beyond. It criticises the existing educational system and suggests it’s a reason why so many women leave rural communities for towns.
+
+### *Gardens: Their Form and Design* — Frances Garnet Wolseley (1919)
+
+Here Wolseley examines how garden design can be considered an art in itself, particularly in combination with aesthetically pleasing architecture.
+
+### *The Countryman's Log-book* — Frances Garnet Wolseley (1921)
+
+This title explores old English traditions, farming and life in the countryside. It gives a detailed look at the customs and history of living in rural Britain, told through stories and observations
+
+### *Some of the Smaller Manor Houses of Sussex* — Frances Garnet Wolseley (1925)
+
+This book brings together articles by Wolseley from Sussex County Magazine. It takes a look inside many old, often private, homes in Sussex. It shares detailed descriptions and personal thoughts on these beautiful buildings and their links to local families.
+
+### *Historic Houses of East Sussex and their Owners* — Frances Garnet Wolseley (2008)
+
+This is a second collection of Wolseley’s articles from Sussex County Magazine, written after 1926. It describes elements of the region’s architecture, history, and family links, giving a personal and factual look at Sussex's rich past.
 
 ## Visit the Unearthed exhibition in libraries
 
@@ -258,65 +303,31 @@ Inspired by the British Library’s Unearthed: The Power of Gardening exhibition
 
 ## More gardening pioneers to explore
 
-[Alicia Amherst: Gardening historian](https://www.essexgardenstrust.org.uk/characters/2020/1/15/alicia-amherst-1865-1941)essexgardenstrust.org.uk
-
-[Gardeners you should know: Ellen Willmott](https://gardenmuseum.org.uk/gardeners-you-should-know-ellen-willmott-1858-1934/?srsltid=AfmBOoqGQRz-ZYB2bt9-zJnhbRjAZ6NuCfoCslD8JVQr1QHVv9WEVALm)gardenmuseum.org.uk
-
-[Gardening Women: Their Stories, 1600 to Present](https://www.catherinehorwood.com/gardening-women)Catherine Horwood
-
-[Gertrude Jekyll website](https://gertrudejekyll.co.uk/)gertrudejekyll.co.uk
-
-[William Robinson: Father of modern gardening](https://william-robinson.org.uk/william-robinson/)william-robinson.org.uk
+- [Alicia Amherst: Gardening historian](https://www.essexgardenstrust.org.uk/characters/2020/1/15/alicia-amherst-1865-1941) — essexgardenstrust.org.uk
+- [Gardeners you should know: Ellen Willmott](https://gardenmuseum.org.uk/gardeners-you-should-know-ellen-willmott-1858-1934/?srsltid=AfmBOoqGQRz-ZYB2bt9-zJnhbRjAZ6NuCfoCslD8JVQr1QHVv9WEVALm) — gardenmuseum.org.uk
+- [Gardening Women: Their Stories, 1600 to Present](https://www.catherinehorwood.com/gardening-women) — Catherine Horwood
+- [Gertrude Jekyll website](https://gertrudejekyll.co.uk/) — gertrudejekyll.co.uk
+- [William Robinson: Father of modern gardening](https://william-robinson.org.uk/william-robinson/) — william-robinson.org.uk
 
 ## Sources
 
-[Explore the archive online](https://www.flickr.com/photos/196656943@N03/albums/72177720331351304/)
-
-[A memoir of Lieutenant-General Sir Garnet J. Wolseley by Charles Rathbone Low](https://openlibrary.org/works/OL5670784W/A_memoir_of_Lieutenant-General_Sir_Garnet_J._Wolseley)
-
-[Arcangelo Lombari](https://arcangelolombari.wordpress.com/2013/11/19/arlesey-house/)
-
-[Cornell University on YouTube: Literature, Life, Gardens - The Influence of Vita Sackville-West](https://www.youtube.com/watch?v=pKK9CBt0Mko)
-
-[Female Representation, Patriarchal Imperatives and the Malleability of the Female Role in Official First World War Propaganda by J. Tompsett](https://e-space.mmu.ac.uk/634292/1/Joanna%20Tompsett%2018013440%20MRes%20Thesis%2003.07.23.pdf)
-
-[Garden History Girl](https://www.gardenhistorygirl.co.uk/)
-
-[Garden Masterclass on YouTube: Judith Taylor on Women and Gardens](https://www.youtube.com/watch?v=aP573cC8eBw)
-
-[Glynde.info](https://glynde.info/history/)
-
-[Horticultural Education in England, 1900-40: Middle-Class Women and Private Gardening Schools](https://www.jstor.org/stable/1587402?read-now=1#page_scan_tab_contents)
-
-[Imperial War Museum](https://www.iwm.org.uk/)
-
-[Jisc Archives Hub](https://archiveshub.jisc.ac.uk/features/jun08.shtml)
-
-[LearningWithExperts.com](https://www.learningwithexperts.com/blogs/articles/the-history-of-allotments)
-
-[Vote100Lewes](https://vote100lewes.wordpress.com/2018/10/13/100-lewes-women-20-viscountess-wolsley/)
-
-[The Wolseley Heritage by Marjorie Pegram](https://search.worldcat.org/cs/title/wolseley-heritage-the-story-of-frances-viscountess-wolseley-and-her-parents-with-plates-including-portraits/oclc/753184993)
-
-[WomensLandArmy.co.uk](https://www.womenslandarmy.co.uk/)
-
-[The Garden History Blog](https://thegardenhistory.blog/2019/03/16/ready-to-go-miss/)
-
-[The Wolseley Collection at Hove Library](https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/hove-library?origin_node=33916)
-
-## Explore your local library
-
-![A purple location icon](/uploads/archive/1c9eb67a90e87597ebe39c56af587f1752d68dfb48bd8d5f803f8aa5853437dd.svg)
-
-### [Find your local library](/libraries)
-
-Use our interactive map to find libraries across the UK
-
-![Image](/uploads/archive/349f42a221637f997b762d1be683dba896cb852fa1c379b2131a4c0189cb30f0.png)
-
-### [Find events at libraries](/events)
-
-Explore library event listings
+- [Explore the archive online](https://www.flickr.com/photos/196656943@N03/albums/72177720331351304/)
+- [A memoir of Lieutenant-General Sir Garnet J. Wolseley by Charles Rathbone Low](https://openlibrary.org/works/OL5670784W/A_memoir_of_Lieutenant-General_Sir_Garnet_J._Wolseley)
+- [Arcangelo Lombari](https://arcangelolombari.wordpress.com/2013/11/19/arlesey-house/)
+- [Cornell University on YouTube: Literature, Life, Gardens - The Influence of Vita Sackville-West](https://www.youtube.com/watch?v=pKK9CBt0Mko)
+- [Female Representation, Patriarchal Imperatives and the Malleability of the Female Role in Official First World War Propaganda by J. Tompsett](https://e-space.mmu.ac.uk/634292/1/Joanna%20Tompsett%2018013440%20MRes%20Thesis%2003.07.23.pdf)
+- [Garden History Girl](https://www.gardenhistorygirl.co.uk/)
+- [Garden Masterclass on YouTube: Judith Taylor on Women and Gardens](https://www.youtube.com/watch?v=aP573cC8eBw)
+- [Glynde.info](https://glynde.info/history/)
+- [Horticultural Education in England, 1900-40: Middle-Class Women and Private Gardening Schools](https://www.jstor.org/stable/1587402?read-now=1#page_scan_tab_contents)
+- [Imperial War Museum](https://www.iwm.org.uk/)
+- [Jisc Archives Hub](https://archiveshub.jisc.ac.uk/features/jun08.shtml)
+- [LearningWithExperts.com](https://www.learningwithexperts.com/blogs/articles/the-history-of-allotments)
+- [Vote100Lewes](https://vote100lewes.wordpress.com/2018/10/13/100-lewes-women-20-viscountess-wolsley/)
+- [The Wolseley Heritage by Marjorie Pegram](https://search.worldcat.org/cs/title/wolseley-heritage-the-story-of-frances-viscountess-wolseley-and-her-parents-with-plates-including-portraits/oclc/753184993)
+- [WomensLandArmy.co.uk](https://www.womenslandarmy.co.uk/)
+- [The Garden History Blog](https://thegardenhistory.blog/2019/03/16/ready-to-go-miss/)
+- [The Wolseley Collection at Hove Library](https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/hove-library?origin_node=33916)
 
 ## Partners
 

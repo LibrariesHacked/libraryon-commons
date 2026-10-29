@@ -240,3 +240,17 @@ test('only the first source H1 stays a top-level heading', () => {
   assert.ok(body.startsWith('# Title'));
   assert.ok(body.includes('## Section one') && body.includes('## Section two'));
 });
+
+test('recommendations, timeline headings, timeline spans, and link captions are preserved', () => {
+  const html =
+    '<button id="accordion-button-1" aria-controls="accordion-panel-1" aria-expanded="false" class="Recommendation__StyledLi"><p class="Recommendation__RecTitle">Gardening for Women</p><span class="Recommendation__StyledTypography">Frances Wolseley</span><span class="Recommendation__StyledTypography">1908</span><span role="region" id="accordion-panel-1" class="Recommendation__RecDescription">A guide to horticulture.</span></button>' +
+    '<button aria-controls="copy-container-0" aria-expanded="true"><h3>16th century</h3></button>' +
+    '<ol class="Timeline__TimelineList"><li><span>1 March 2023</span><span>Fund launched</span></li></ol>' +
+    '<p class="Links__StyledTypography"><a href="https://example.org">Archive</a><span>Digital collection</span></p>';
+  const body = cleanContent(html, 'https://libraryon.org/special-collections');
+  assert.ok(body.includes('### Gardening for Women (Frances Wolseley, 1908)'));
+  assert.ok(body.includes('A guide to horticulture.'));
+  assert.ok(body.includes('### 16th century'));
+  assert.ok(body.includes('**1 March 2023** — Fund launched'));
+  assert.ok(body.includes('[Archive](https://example.org/) — Digital collection'));
+});

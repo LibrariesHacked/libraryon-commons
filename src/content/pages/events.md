@@ -2,7 +2,7 @@
 title: Discover Library Events | LibraryOn
 path: /events
 kind: page
-published: true
+published: false
 description: Explore engaging events at your local library and beyond. From
   workshops to author talks, find something for everyone.
 source_url: https://libraryon.org/events

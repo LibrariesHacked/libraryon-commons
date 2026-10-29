@@ -9,7 +9,7 @@ const { children = [] } = Astro.props;
   <slot />
   {children.length > 0 && (
     <section slot="appendix">
-      <h2>{settings.ui.home.browse_resources}</h2>
+      <h2>{settings.ui.editorial.in_this_section}</h2>
       <ArticleCards entries={children} />
     </section>
   )}

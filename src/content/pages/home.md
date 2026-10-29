@@ -15,6 +15,8 @@ resources:
   - resource-5041d97e9e72e67ca4a9
 ---
 
+# Libraries are for everyone
+
 **Start your journey of discovery here — explore what’s on offer and find your local library.**
 
 **Libraries are free spaces of culture, learning, and community; places that belong to everyone, where stories are shared, ideas take root, and everyone can feel a sense of belonging.**
@@ -73,25 +75,16 @@ Customer, Sandwell Libraries
 
 ## Your public library is a free, open space where you can:
 
-**borrow books**
-
-**learn new skills**
-
-**keep warm**
-
-**access wifi**
-
-**entertain your child**
-
-**research your history**
-
-**find space to work**
-
-**study**
-
-**use a computer**
-
-**just be**
+- borrow books
+- learn new skills
+- keep warm
+- access wifi
+- entertain your child
+- research your history
+- find space to work
+- study
+- use a computer
+- just be
 
 ## Frequently asked questions
 
@@ -109,13 +102,11 @@ Yes, it's free to join.
 
 ### Where can I find out what's on at my library?
 
-You can [search for library events](/events) on our website.
+To find events near you, you can:
 
-We don't have all library events listed just yet. If you can't find events near you, you can also:
+- [find your library authority](/libraries) and search its website; or
 
-\- [find your library authority](/libraries) and search its website; or
-
-\- search [Eventbrite](https://www.eventbrite.co.uk/), which many libraries use to share events.
+- search [Eventbrite](https://www.eventbrite.co.uk/), which many libraries use to share events.
 
 ### Do I need to be silent at the library? Can I take my child?
 
@@ -133,7 +124,7 @@ That includes borrowing books, using computers, accessing wifi and, usually, tak
 
 Fines help ensure as many people as possible can access the books they want.
 
-However, many libraries have stopped issuing fines for returning books late. to find out if your library issues fines, [contact your local library](/libraries).
+However, many libraries have stopped issuing fines for returning books late. To find out if your library issues fines, [contact your local library](/libraries).
 
 ### Where can I find my library's opening hours?
 
@@ -154,9 +145,3 @@ Book groups are places where people get together to talk about books they are re
 They can take place in libraries, but people often host them in pubs, community centres or group members' homes.
 
 [Find your library](/libraries) to find out if there are book groups in your area.
-
-## Map of libraries and services
-
-[Find your local public library](/libraries)
-
-![Map marker icon with a dashed path, indicating a location or route.](/uploads/archive/c507a5ea5cc311a59fee0d121a617ecb89a587259905053f82ae52d2b5b306a7.svg)

@@ -7,7 +7,7 @@ import {
   libraryPath,
   authorityByLibrary
 } from '../src/lib/directory.mjs';
-import { matchesLibrary } from '../src/lib/search.mjs';
+import { matchesLibrary, isLibraryOpenAt, resolveQueryLocation } from '../src/lib/search.mjs';
 import {
   safeURL,
   articleTitle,
@@ -37,7 +37,15 @@ test('directory search matches place, authority, postcode spacing and combined f
     postcode: 'CB1 9HZ',
     authority: 'cambridgeshire',
     authorityName: 'Cambridgeshire',
-    country: 'England'
+    country: 'England',
+    services: ['Books', 'Free Wi-Fi', 'Computers'],
+    accessibility: ['wheelchair-access', 'step-free-access'],
+    hours: {
+      monday: [['09:00', '17:00']]
+    },
+    closed: false,
+    latitude: 52.189,
+    longitude: 0.175
   };
   for (const query of ['cherry hinton', 'cambridge', 'CB19HZ', 'CB1 9HZ'])
     assert.ok(matchesLibrary(record, { query }));
@@ -47,6 +55,36 @@ test('directory search matches place, authority, postcode spacing and combined f
   assert.ok(
     matchesLibrary({ ...record, address: 'High Street', town: 'Cambridge' }, { query: 'cambridge' })
   );
+  assert.ok(
+    matchesLibrary(record, {
+      services: ['Books', 'Free Wi-Fi'],
+      accessibility: ['wheelchair-access']
+    })
+  );
+  assert.ok(!matchesLibrary(record, { services: ['Books', 'Makerspace'] }));
+  assert.ok(!matchesLibrary(record, { accessibility: ['lift-access'] }));
+  const mondayMorning = new Date(2026, 9, 26, 10, 30);
+  const mondayEvening = new Date(2026, 9, 26, 19, 0);
+  assert.equal(isLibraryOpenAt(record, mondayMorning), true);
+  assert.equal(isLibraryOpenAt(record, mondayEvening), false);
+  assert.ok(matchesLibrary(record, { openNow: true, now: mondayMorning }));
+  assert.ok(!matchesLibrary(record, { openNow: true, now: mondayEvening }));
+  assert.ok(!matchesLibrary({ ...record, closed: true }, { openNow: true, now: mondayMorning }));
+  assert.ok(
+    matchesLibrary(record, {
+      location: { latitude: 52.2, longitude: 0.14 },
+      distance: 5
+    })
+  );
+  assert.ok(
+    !matchesLibrary(record, {
+      location: { latitude: 51.5, longitude: -0.1 },
+      distance: 5
+    })
+  );
+  const resolved = resolveQueryLocation([record], 'CB19HZ');
+  assert.equal(resolved.latitude, 52.189);
+  assert.equal(resolved.longitude, 0.175);
 });
 
 test('editorial types choose explicit templates without rewriting source metadata', () => {
@@ -178,7 +216,7 @@ test('imported embeds, image controls, lists, cards and FAQs render as usable co
           { href: 'https://www.youtube.com/embed/example-video' }
         )
       ]),
-      element('h2', [text('Frequently asked questions')]),
+      element('h2', [text('Questions about reading in libraries')]),
       element('p', [text('Common questions about libraries.')]),
       element('h3', [text('Can I join for free?')]),
       element('p', [text('Yes, joining is free.')]),
@@ -216,4 +254,61 @@ test('imported embeds, image controls, lists, cards and FAQs render as usable co
   assert.equal(htmlNodes[6].tagName, 'ul');
   assert.equal(htmlNodes[6].children[0].tagName, 'li');
   assert.ok(!htmlNodes.some((node) => node.tagName === 'p' && /^(View|1\/5|12345)$/.test(node.children?.[0]?.value || '')));
+});
+
+test('testimonials, attributed quotes, feature card grids and library activity lists are grouped semantically', () => {
+  const text = (value) => ({ type: 'text', value });
+  const element = (tagName, children = [], properties = {}) => ({
+    type: 'element',
+    tagName,
+    properties,
+    children
+  });
+  const tree = {
+    type: 'root',
+    children: [
+      element('p', [element('img', [], { src: '/uploads/tracy.jpg', alt: 'Tracy reading to children' })]),
+      element('blockquote', [element('p', [text('Bring your little ones to rhyme time.')])]),
+      element('p', [element('strong', [text('Tracy')])]),
+      element('p', [element('strong', [text('Children & Youth Librarian, Wiltshire Libraries')])]),
+      element('blockquote', [element('p', [text('We love our library.')])]),
+      element('p', [text('Alex')]),
+      element('p', [text('Customer, Sandwell Libraries')]),
+      element('h2', [text('Libraries improve lives')]),
+      element('p', [element('img', [], { src: '/uploads/one.jpg', alt: 'Reading group' })]),
+      element('h3', [text('Reading options for all ages')]),
+      element('p', [element('a', [text('Books and more')], { href: '/reading/reading-in-libraries' })]),
+      element('p', [element('img', [], { src: '/uploads/two.jpg', alt: 'Sensory space' })]),
+      element('h3', [text('Connection and support for families')]),
+      element('p', [element('a', [text('Your community')], { href: '/your-community/children-parents-carers-community' })]),
+      element('h2', [text('Your public library is a free, open space where you can:')]),
+      element('ul', [element('li', [text('borrow books')]), element('li', [text('learn new skills')])])
+    ]
+  };
+
+  preservedLinks()(tree);
+
+  const htmlNodes = tree.children.filter(
+    (node) => !(node.type === 'text' && !node.value.trim())
+  );
+  assert.equal(htmlNodes[0].tagName, 'figure');
+  assert.deepEqual(htmlNodes[0].properties.className, ['testimonial-card']);
+  assert.equal(htmlNodes[0].children[0].children[0].properties.src, '/uploads/tracy.jpg');
+  assert.equal(htmlNodes[0].children[1].children[0].tagName, 'blockquote');
+  assert.equal(htmlNodes[0].children[1].children[1].tagName, 'figcaption');
+  assert.equal(htmlNodes[0].children[1].children[1].children.length, 2);
+
+  assert.equal(htmlNodes[1].tagName, 'figure');
+  assert.deepEqual(htmlNodes[1].properties.className, ['testimonial-quote']);
+  assert.equal(htmlNodes[1].children[1].tagName, 'figcaption');
+  assert.equal(htmlNodes[1].children[1].children.length, 2);
+
+  assert.equal(htmlNodes[3].tagName, 'div');
+  assert.deepEqual(htmlNodes[3].properties.className, ['imported-content-card-grid']);
+  assert.equal(htmlNodes[3].children.length, 2);
+
+  assert.equal(htmlNodes[4].tagName, 'section');
+  assert.deepEqual(htmlNodes[4].properties.className, ['library-can-do-panel']);
+  assert.equal(htmlNodes[4].children[1].tagName, 'ul');
+  assert.deepEqual(htmlNodes[4].children[1].properties.className, ['library-can-do-list']);
 });

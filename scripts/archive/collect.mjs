@@ -172,6 +172,8 @@ export function pageContent(body, url) {
   const main = document('main').first().length
     ? document('main').first().clone()
     : document('body').clone();
+  if (!main.find('h1').length && document('h1').first().length)
+    main.prepend(document('h1').first().clone());
   const resolve = (value) => {
     try {
       return new URL(value, url).href;

@@ -15,9 +15,11 @@ resources:
   - resource-12c89819236201213f84
   - resource-04b001a977dfa7726004
   - resource-79a43fc4654b15f2efc0
+hero:
+  image: /uploads/archive/7296cd735bce35838c4a5da6742c2a890a6d35e8cb61c3f309c59e60cedde605.jpg
+  alt: Leeds Central Library
+  credit: "Banner image: Leeds Central Library. Photo by LibraryOn."
 ---
-
-![Image](/uploads/archive/7296cd735bce35838c4a5da6742c2a890a6d35e8cb61c3f309c59e60cedde605.jpg)
 
 # Reading for adults in libraries
 
@@ -70,7 +72,7 @@ Enjoy on the go
 
 Reading is the ultimate way to dive further into what you love, whether it's football, family time, fashion, cooking, comics or crafting.
 
-Get involved with the [National Year of Reading in 2026](https://goallin.org.uk/) by [joining the library](/libraries) and taking part in [free and low-cost events](/events).
+Get involved with the [National Year of Reading in 2026](https://goallin.org.uk/) by [joining the library](/libraries) and taking part in free and low-cost events.
 
 [2026 is the National Year of Reading](https://www.youtube.com/embed/XnXDmkemZhY?si=RhYreVS82ABKO4JI)
 
@@ -143,34 +145,28 @@ The [Reading Well programme](https://readingagency.org.uk/get-reading/our-progra
 
 ## Questions about using libraries
 
-## Have more questions?
+### Do I need to be a member to enter a library?
 
-Let us know what questions and answers you'd like to see here.
+No. Anyone can enter a public library and there’s no charge to go in.
 
-[Email us](/cdn-cgi/l/email-protection#b4dcd1d8d8dbf4d8ddd6c6d5c6cddbda9adbc6d38bc7c1d6ded1d7c089e6d1d5d0dddad394ddda94d8ddd6c6d5c6ddd1c78e94c5c1d1c7c0dddbdac794d5dad094d5dac7c3d1c6c7)
+### Do I need to be a library member to borrow books?
 
-![An icon featuring a heart shape inside a speech bubble.](/uploads/archive/ff46cb0ed3e3a8663eabce35574d3c8754f41bff0d083fb802370a4c13369373.png)
+Yes. You might need to show some identification and proof of address to become a library member. But every library authority is different, so it's best to [find your nearest library](/libraries) and ask the staff.
 
-## More reading in libraries
+Once you're a member you can use your library card to borrow books and more.
 
-![A member of library staff reads a story to a group of schoolchildren.](/uploads/archive/d6b2622ca5c88bfdbecda45234c8399f9da02c8367de49ef261ed1622f0b6db9.jpg)
+### How many library books can I borrow at a time?
 
-### [Reading for children and young people in libraries](/reading/reading-children-young-people-in-libraries)
+It varies by library authority. In some regions you can borrow up to 20 books at a time. When you become a library member staff will tell you how many books you can take home.
 
-Children of all ages are welcome in libraries, where there are loads of stories waiting to be explored.
+### How does library e-lending work?
 
-![A young woman is sitting beneath a tree reading a digital magazine on a smartphone.](/uploads/archive/facd02dbe459f92fd0ee90f9eac97306590cea7286c410e902b4ff8d6a91eafc.jpg)
+With library e-lending you can use your own device to enjoy e-books, audiobooks and digital versions of newspapers and magazines.
 
-### [E-lending in libraries](/reading/e-lending-in-libraries)
+Learn more about e-lending in libraries.
 
-Libraries let you borrow books, newspapers and magazines digitally – and for free.
+### How do I know what e-lending app to download?
 
-## More to discover in libraries
+When you become a library member the staff will be able to tell you which app or apps you should download.
 
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
-
-### [Work & skills in libraries](/work-and-skills)
-
-Get free business support and a quiet space to work. Find tools and resources to help you learn new skills at any time of life.
-
-_Banner image: Leeds Central Library. Photo by LibraryOn._
+Learn more about e-lending in libraries.

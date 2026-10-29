@@ -21,7 +21,7 @@ resources:
 
 ## Free e-books and more through the library
 
-[Reading is free and easy through libraries](/reading/reading-for-adults) – and that includes getting **e-books, audiobooks and magazines** on your own device..
+[Reading is free and easy through libraries](/reading/reading-in-libraries) – and that includes getting **e-books, audiobooks and magazines** on your own device.
 
 Once you're set up you can borrow content without visiting the library in person. It's a great option for enjoying stories wherever you are, whether you're commuting, on holiday or doing the dishes.
 
@@ -45,14 +45,6 @@ With [Libby](https://help.libbyapp.com/en-us/6103.htm), you can enjoy free ebook
 
 [uLibrary](https://www.ulibrary.net/how-it-works/) is a free service where you can borrow eAudiobooks and eBooks from your local library.
 
-![The BorrowBox logo featuring a white speech bubble with a book icon inside on a bright green background. The text reads "BorrowBox. Your library in one app."](/uploads/archive/b5745b66a4e163a96aab3b14ef7a5505c12ccaefcef240e044ff3aeb9d994b7a.jpg)
-
-![The Libby logo featuring a maroon circular icon of a person reading a book. The text reads "Libby. The library reading app."](/uploads/archive/05876a3ffa0501f578f1f187a6d680026cb5e8e187c2cc0dee32059b8e6ab45a.jpg)
-
-![The PressReader logo featuring a green stylized "P" speech bubble icon next to the word "pressreader" in dark gray text.](/uploads/archive/00eb471dfcb7f6e80d7aaade01ae12ea142714a9f7ba5909c1f2922bba0a8e5d.jpg)
-
-![The uLibrary logo featuring a blue rectangle with a white square icon containing a stylized "u" and the word "library" in white text.](/uploads/archive/62d0af5635bda3c8678113aba904307956e43813d2dd06cd1b2f62ba56b79eea.jpg)
-
 ## How e-lending at the library works
 
 The first thing you need to do is **become a member of the library**. It's free to join.
@@ -73,15 +65,11 @@ With apps like [Libby](https://help.libbyapp.com/en-us/6103.htm) you can enjoy n
 
 If your library uses Libby these are the steps to get access to your free content:
 
-1\. Go to our [national library map](/libraries) and find your library.
-
-2\. Join the library – it's free! You'll be given a library membership number or card.
-
-3\. Download Libby to your device.
-
-4\. Add the number from your library card to Libby.
-
-5\. That's it! You can now enjoy enjoy digital magazines and newspapers through your device.
+1. Go to our [national library map](/libraries) and find your library.
+2. Join the library – it's free! You'll be given a library membership number or card.
+3. Download Libby to your device.
+4. Add the number from your library card to Libby.
+5. That's it! You can now enjoy digital magazines and newspapers through your device.
 
 [View iframe](https://www.youtube.com/embed/6_9AOiE2d9g)
 
@@ -93,34 +81,38 @@ That means there are no late fines for digital loans.
 
 ## Questions about e-lending at libraries
 
-## Have more questions?
+### How do I find out my library authority?
 
-Let us know what questions and answers you'd like to see here.
+Your library authority is often run by your local council. If you visit your council's website it will tell you who runs libraries in your area, and how you can join.
 
-[Email us](/cdn-cgi/l/email-protection#670f020b0b08270b0e051506151e080949081500581412050d0204135a224a0b0209030e0900470e09470b0e051506150e02145d4716120214130e080914470609034706091410021514)
+You can also find your nearest libraries through [our national library map](/libraries).
 
-![An icon featuring a heart shape inside a speech bubble.](/uploads/archive/ff46cb0ed3e3a8663eabce35574d3c8754f41bff0d083fb802370a4c13369373.png)
+### How many e-books or audiobooks can I borrow at a time?
 
-## More reading in libraries
+It varies depending on where you live. But typically you’ll be able to borrow between five and ten e-books or audiobooks at a time.
 
-![A close-up of a person's hand removing a book entitled 'Monica' from a shelf full of books.](/uploads/archive/1ab825b444e27877b1faf5adb97e6396b87bdf66581c9b69ba5b5877a1b46d71.jpg)
+### Why isn’t the e-book or audiobook I want available?
 
-### [Reading for adults in libraries](/reading/reading-in-libraries)
+Just like with printed books, libraries have limited copies of e-books and audiobooks. If the one you want is on loan, you can put it ‘on hold’ and you’ll be notified when it’s available.
 
-Whether it’s a bestseller, e-book, or magazine, libraries have something for every interest.
+### How long does a digital loan through the library last?
 
-![A member of library staff reads a story to a group of schoolchildren.](/uploads/archive/d6b2622ca5c88bfdbecda45234c8399f9da02c8367de49ef261ed1622f0b6db9.jpg)
+Loans for e-books and audiobooks are usually around 21 days (three weeks).
 
-### [Reading for children and young people in libraries](/reading/reading-in-libraries)
+If you haven’t finished your title when the loan period ends, you might be able to renew it. If another customer is waiting for it you might only be allowed to renew it a few times before it is returned.
 
-Children of all ages are welcome in libraries, where there are loads of stories waiting to be explored.
+There's no due date for digital newspapers and magazines.
 
-## More to discover in libraries
+### What happens when my library digital loan ends?
 
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
+If you don’t renew an e-book or audiobook at the end of your loan, the title will be returned to the library automatically – you don’t have to do anything.
 
-### [Work & skills in libraries](/work-and-skills)
+### Can I renew a library digital loan?
 
-Get free business support and a quiet space to work. Find tools and resources to help you learn new skills at any time of life.
+Yes, you can renew e-book and audiobook loans through your app. If someone else has it on hold you might only be allowed to renew a few times.
 
-_Banner animation: Library e-lending customers shot by LibraryOn._
+You don't need to renew digital newspaper and magazines, as there is no return date for these.
+
+### Can I renew loans of digital newspapers and e-magazines?
+
+Unlike e-books and audiobooks, digital newspapers and magazines have no loan period – so you don’t need to return them.

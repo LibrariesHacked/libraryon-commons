@@ -29,5 +29,7 @@ export {
   operatingModelLabel,
   mapLinks,
   collectValues,
-  nearbyLibraries
+  nearbyLibraries,
+  distanceMiles,
+  compactOpeningHours
 } from './directory-model.mjs';

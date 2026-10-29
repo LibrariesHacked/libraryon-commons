@@ -36,8 +36,6 @@ resources:
   - resource-f851dedd5d61889deead
 ---
 
-[Back to special collections](/special-collections)
-
 # Nottingham lace: From craft to industry
 
 [Nottingham Local Studies](https://www.nottinghamcitylibraries.co.uk/our-services/local-studies-family-history/), part of Nottingham City Libraries, preserves a wealth of artefacts that illustrate how the lace craft became an industry central to the British Empire's growth.
@@ -112,79 +110,97 @@ Source: Nottingham Local Studies
 
 ![A group of men use chains to move a large part of a lace machine. Other parts of the machine lay nearby.](/uploads/archive/ff3d6e4bac3650c8f7eca7fd8dad2fa030190fcce52e0fbd6d9607aafa1ada02.png)
 
+_In the 19th century factories like Jardine's manufactured lace machinery for export worldwide._
+
 ![A group of factory workers stand behind a long crate containing the parts of a lace machine. On its side are stamped the words 'Made in England by John Jardine Ltd' and 'Calais' - its eventual destination.](/uploads/archive/d7438cab2730f9613b618d6bdb4bfc3dbd8b26de13601f2c2946c98df6e38b62.png)
+
+_The company proudly referred to themselves as ‘Lace Machine Builders to the World’. This crate was bound for Calais, France._
 
 ![A crate containing a lace machine for export is slowly hoisted into the air by chains, as factory workers hold it steady.](/uploads/archive/54469e5d014905e7913be927c7b5954cb0fe570e9aca2650c7c57a2cf050e0bc.png)
 
+_Transporting a newly-built lace machine to its destination was no small feat due to its size and weight._
+
 ![A long crate containing the parts of a lace machine is hoisted by a crane, ready to be shipped abroad.](/uploads/archive/a9cf0ec7badf5ae9e1ca2dec6ba309cd59e3ecfc75328c31dbe93ec719ff86be.png)
+
+_Safely moving the machine's crate from the port onto a ship required considerable power and care._
 
 ![A fully-constructed lace machine is installed and working, weaving cotton into lace under the watchful eye of a factory worker.](/uploads/archive/e7894bd9513cabadc869b104675b5bae112f9e356e65419dd09aaba336c1ccc4.png)
 
-In the 19th century factories like Jardine's manufactured lace machinery for export worldwide.
-
-The company proudly referred to themselves as ‘Lace Machine Builders to the World’. This crate was bound for Calais, France.
-
-Transporting a newly-built lace machine to its destination was no small feat due to its size and weight.
-
-Safely moving the machine's crate from the port onto a ship required considerable power and care.
-
-Once installed at its destination, a fully-constructed lace machine could run to eight metres long or more.
+_Once installed at its destination, a fully-constructed lace machine could run to eight metres long or more._
 
 ## From craft to industry: a timeline
 
+### 16th century
+
 The lacemaking craft arrives in Britain via Europe.
+
+![An old illustration of a woman sitting at a table working on bobbin lace.](/uploads/archive/6dcc0d1a533f51c767e36d624df21979463eb3c1d3554785fb680eb7befd0574.jpg)
+
+_Source: The Fireside Source of Invention by John McGovern, via Wikimedia_
+
+### 17th century
 
 ‘Lace Schools’ start to emerge, where women and children are taught how to make bobbin lace – and made to work long hours for little pay.
 
+![An illustration of a Belgian lace school, from the book A History of Lace, by Fanny Bury Palliser. Pupils and teachers sit in individual chairs working on bobbin lace.](/uploads/archive/5c957688dd83ffe34d940c975368a8de6fc9baa7f1d429799a2a54561ac003c1.jpg)
+
+_Source: A History of Lace by Fanny Bury Palliser, via Wikimedia_
+
+### 1790
+
 The first steam powered textile factory is built in Nottingham.
-
-John Heathcote patents the first bobbin-net machine, bringing mechanisation to lace-making.
-
-The Luddite movement sees workers rebel against the use of machines in textile manufacturing, and the cost of renting lace-making frames. Protests originate in Nottinghamshire.
-
-A new Jacquard attachment means lace machines can now replicate the fine decorative detail usually done by hand.
-
-Steam-enabled factory production of lace becomes widespread; the emergence of department stores means lace becomes more widely available.
-
-The Elementary Education Act, the first step towards outlawing child labour, is passed – although universal free education for children won’t arrive until 1891.
-
-At its peak before the First World War, there were over 1,500 lace warehouses and manufacturers in the Nottingham area.
-
-![An old illustration of a woman sitting at a table working on bobbin lace..](/uploads/archive/6dcc0d1a533f51c767e36d624df21979463eb3c1d3554785fb680eb7befd0574.jpg)
-
-Source: The Fireside Source of Invention by John McGovern, via Wikimedia
-
-![An illustration of a Belgian lace school, from the book A History of Lace, by Fanny Bury Palliser. Pupils and teachers sit in individual chairs working on bobbin lace. ](/uploads/archive/5c957688dd83ffe34d940c975368a8de6fc9baa7f1d429799a2a54561ac003c1.jpg)
-
-Source: A History of Lace by Fanny Bury Palliser, via Wikimedia
 
 ![A steam engine from the Gamble's Factory in Nottingham, which originally produced lace before switching to bicycle production for the Raleigh company.](/uploads/archive/7b1e171101c73e0853a5421234086ec6cbdcf495ab60b636a49b6b7393ed747d.jpg)
 
-Source: Chris Allen on Geograph CC BY-SA
+_Source: Chris Allen on Geograph CC BY-SA_
+
+### 1808
+
+John Heathcote patents the first bobbin-net machine, bringing mechanisation to lace-making.
 
 ![An early 20th century painting of a view of Nottingham's Lace Market area. St Mary's Churchyard is on the left, and on the right we can see a side street with the name 'Hollowstone'.](/uploads/archive/c6be3a8d921cee618ad7ec623f653cf0447d2b3109d74308ae36711e5d56d080.jpg)
 
-Source: Picture Nottingham
+_Source: Picture Nottingham_
+
+### 1811
+
+The Luddite movement sees workers rebel against the use of machines in textile manufacturing, and the cost of renting lace-making frames. Protests originate in Nottinghamshire.
 
 ![An illustration of a man gesturing or beckoning against the backdrop of a building on fire. He appears to be holding a knife or dagger. Other men raise their arms and hold similar weaponry. The image has the title 'The Leader of the Luddites'.](/uploads/archive/b125f9ea0e9d789b19bd73a66a663b42e0cb71beeedeac2953a47b7c0098deb7.jpg)
 
-Source: Working Class Movement Library catalogue, via Wikimedia
+_Source: Working Class Movement Library catalogue, via Wikimedia_
+
+### 1841
+
+A new Jacquard attachment means lace machines can now replicate the fine decorative detail usually done by hand.
 
 ![A small square sample of fine lace, decorated with floral motifs.](/uploads/archive/96a607b16d8f68e2171349f69b5c33ff0df3223af56fffe14c4f35d73e09dc42.jpg)
 
-Source: Picture Nottingham
+_Source: Picture Nottingham_
+
+### 1850s
+
+Steam-enabled factory production of lace becomes widespread; the emergence of department stores means lace becomes more widely available.
 
 ![A drawing of a woman posing in a floor length orange lace dress with a white trim topped with a matching cape. To the right of the image is a carriage clock balancing on blue, purple, orange and yellow flowing lace.](/uploads/archive/a6f4750a9363fb8edafb0cd2370e7ec75aef97c2b4ea5c45fc5b9472f4ac5f73.jpg)
 
-Lace Charmaine was an elegant style of lace created by Nottingham company Simon May & Co. Source: Nottingham Local Studies
+_Lace Charmaine was an elegant style of lace created by Nottingham company Simon May & Co. Source: Nottingham Local Studies_
+
+### 1870
+
+The Elementary Education Act, the first step towards outlawing child labour, is passed – although universal free education for children won’t arrive until 1891.
 
 ![An illustration of a lady and a young girl working at a lace-making machine on a factory floor.](/uploads/archive/708edc8ade9d83ac18c547de17e87c811ebcb2c6b37cdf69e5b483054c5f0b18.jpg)
 
-Source: Wellcome Images, via Wikimedia
+_Source: Wellcome Images, via Wikimedia_
+
+### 1914
+
+At its peak before the First World War, there were over 1,500 lace warehouses and manufacturers in the Nottingham area.
 
 ![A sepia photo, taken from high up, of workers at their stations in a lace-making factory. There are about two dozen people looking up at the camera, with many men wearing aprons. The bottom of photo says 'Interior Talbot Lace Curtain Factory'.](/uploads/archive/ea0c78502bb2c7f8079e941be839912b7cee7654418e03f1aca086a09766360d.jpg)
 
-Source: Picture Nottingham
+_Source: Picture Nottingham_
 
 ## Beauty born of hardship
 
@@ -238,71 +254,46 @@ Want to learn more about Nottingham’s fascinating history of lace? Lisa Hopwoo
 
 [Recommendations](https://www.youtube.com/embed/KB5AouNkiSU)
 
-Lisa’s lace reading list
+### *Felkin’s History of the Machine-wrought Hosiery and Lace Manufactures* — William Felkin (1967)
+
+Long considered the ‘go-to’ book for anyone wanting a complete history of the lace and textile industry in Nottingham during the 19th century.
+
+### *Employment of Children* — Children’s Employment Commission (1842)
+
+An interesting though grim read for anyone wanting to know more about the social history of the lace industry.
+
+### *Century of Achievement 1849-1949: The Simon May Story* — Simon, May & Co. Limited (1949)
+
+One of Nottingham’s lace companies reflects on its centenary in business, during which the city’s lace became popular worldwide.
 
 ## Nottingham lace: more resources
 
-[Lace Archives](https://nottinghammuseums.org.uk/category/collections/lace/)Nottingham Museums
-
-[A brief History of Lace](https://www.laceguild.org/a-brief-history-of-lace)The Lace Guild
-
-[Watch: Nottingham's Global World of Lace](https://www.youtube.com/watch?v=H-dcMwYMAHQ) University of Nottingham
-
-[Nottingham Lace History](https://www.visit-nottinghamshire.co.uk/ideas-and-inspiration/history-and-heritage/nottingham-lace-history) Visit Nottinghamshire
-
-[Black lead and bleaching - The Nottingham Lace Industry](https://www.bbc.co.uk/legacies/work/england/nottingham/article_1.shtml) bbc.co.uk archive
-
-[3D exhibition: Nottingham lace places](https://v21artspace.com/nottingham-lace-places) V21 Artspace
-
-[Watch: Nottingham Lace Walk](https://www.youtube.com/watch?v=2uYQ4qdJZRo) Nottingham City Museums
-
-## Explore your library
-
-![A purple location icon](/uploads/archive/1c9eb67a90e87597ebe39c56af587f1752d68dfb48bd8d5f803f8aa5853437dd.svg)
-
-### [Find your local library](/libraries)
-
-Use our interactive map to find libraries across the UK
-
-![A graphic of an open book](/uploads/archive/a194ebc470906d217eb248a24a1aad98c558fed04bed057aef17829dc79008fb.svg)
-
-### [Browse your library's catalogue](/libraries)
-
-Discover your library wherever you are
+- [Lace Archives](https://nottinghammuseums.org.uk/category/collections/lace/) — Nottingham Museums
+- [A brief History of Lace](https://www.laceguild.org/a-brief-history-of-lace) — The Lace Guild
+- [Watch: Nottingham's Global World of Lace](https://www.youtube.com/watch?v=H-dcMwYMAHQ) — University of Nottingham
+- [Nottingham Lace History](https://www.visit-nottinghamshire.co.uk/ideas-and-inspiration/history-and-heritage/nottingham-lace-history) — Visit Nottinghamshire
+- [Black lead and bleaching - The Nottingham Lace Industry](https://www.bbc.co.uk/legacies/work/england/nottingham/article_1.shtml) — bbc.co.uk archive
+- [3D exhibition: Nottingham lace places](https://v21artspace.com/nottingham-lace-places) — V21 Artspace
+- [Watch: Nottingham Lace Walk](https://www.youtube.com/watch?v=2uYQ4qdJZRo) — Nottingham City Museums
 
 ## Sources
 
-[Britannica](https://www.britannica.com/event/Luddite)
-
-[Fashion History Timeline](https://fashionhistory.fitnyc.edu/compartment-couture/)
-
-[Historic England](https://historicengland.org.uk/research/inclusive-heritage/womens-history/visible-in-stone/fashion-for-shopping/)
-
-[Lumen Learning](https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/textile-manufacturing/#:~:text=The%20British%20textile%20industry%20drove,%2C%20trade%2C%20and%20scientific%20innovation)
-
-[Nottingham City Libraries](https://www.nottinghamcitylibraries.co.uk/)
-
-[Nottingham Local Studies Collection](https://www.nottinghamcitylibraries.co.uk/our-services/local-studies-family-history/)
-
-[ozTypewriter](https://oztypewriter.blogspot.com/2011/03/bar-lock-typewriters-from-smiling-gap.html)
-
-[Picture Nottingham](https://picturenottingham.co.uk/)
-
-[Raleigh Street Lace Factories by Graham Woodward](http://www.gwoodward.co.uk/nottm.html)
-
-[Revealing Histories](http://revealinghistories.org.uk/why-was-cotton-so-important-in-north-west-england/articles/commerce-and-collecting.html#:~:text=From%201790%20this%20shifted%20to,dependent%20on%20slave-grown%20cotton)
-
-[The Lacemakers](https://lacemakersproject.com/23213-2/)
-
-[The National Archives](https://discovery.nationalarchives.gov.uk/details/r/c7bca0af-392a-4059-a1fe-7eed0fcdd1bc)
-
-[ThoughtCo](https://www.thoughtco.com/textile-machinery-industrial-revolution-4076291#:~:text=1790%20Arkwright%20built%20the%20first,the%20short-staple%20cotton%20fiber.)
-
-[Turvey History](https://www.turveyhistory.org.uk/)
-
-[UK Parliament](https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/school/overview/1870educationact/)
-
-[University of Nottingham's Lace Market Project](https://www.nottingham.ac.uk/news/new-research-lifts-the-veil-on-nottinghams-history-as-global-lace-market-hub)
+- [Britannica](https://www.britannica.com/event/Luddite)
+- [Fashion History Timeline](https://fashionhistory.fitnyc.edu/compartment-couture/)
+- [Historic England](https://historicengland.org.uk/research/inclusive-heritage/womens-history/visible-in-stone/fashion-for-shopping/)
+- [Lumen Learning](https://courses.lumenlearning.com/suny-hccc-worldhistory2/chapter/textile-manufacturing/#:~:text=The%20British%20textile%20industry%20drove,%2C%20trade%2C%20and%20scientific%20innovation)
+- [Nottingham City Libraries](https://www.nottinghamcitylibraries.co.uk/)
+- [Nottingham Local Studies Collection](https://www.nottinghamcitylibraries.co.uk/our-services/local-studies-family-history/)
+- [ozTypewriter](https://oztypewriter.blogspot.com/2011/03/bar-lock-typewriters-from-smiling-gap.html)
+- [Picture Nottingham](https://picturenottingham.co.uk/)
+- [Raleigh Street Lace Factories by Graham Woodward](http://www.gwoodward.co.uk/nottm.html)
+- [Revealing Histories](http://revealinghistories.org.uk/why-was-cotton-so-important-in-north-west-england/articles/commerce-and-collecting.html#:~:text=From%201790%20this%20shifted%20to,dependent%20on%20slave-grown%20cotton)
+- [The Lacemakers](https://lacemakersproject.com/23213-2/)
+- [The National Archives](https://discovery.nationalarchives.gov.uk/details/r/c7bca0af-392a-4059-a1fe-7eed0fcdd1bc)
+- [ThoughtCo](https://www.thoughtco.com/textile-machinery-industrial-revolution-4076291#:~:text=1790%20Arkwright%20built%20the%20first,the%20short-staple%20cotton%20fiber.)
+- [Turvey History](https://www.turveyhistory.org.uk/)
+- [UK Parliament](https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/school/overview/1870educationact/)
+- [University of Nottingham's Lace Market Project](https://www.nottingham.ac.uk/news/new-research-lifts-the-veil-on-nottinghams-history-as-global-lace-market-hub)
 
 ## Partners
 

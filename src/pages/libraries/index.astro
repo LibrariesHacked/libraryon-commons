@@ -1,113 +1,305 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
-import { Search, ArrowUpRight } from '@lucide/astro';
-import { authorities, searchRecords } from '../../lib/directory.mjs';
+import { ChevronDown, MapPin, Search } from '@lucide/astro';
+import {
+  libraries,
+  authorities,
+  searchRecords,
+  collectValues,
+  facilityLabel
+} from '../../lib/directory.mjs';
 import { settings, sitePath } from '../../lib/site.mjs';
-const copy = settings.ui.library_search;
 
-const countries = [
-  ...new Set(authorities.map((authority) => authority.country).filter(Boolean))
-].sort();
+const copy = settings.ui.library_search;
+const libraryOnServiceOrder = [
+  'Archives',
+  'Books',
+  'Bookable space',
+  'Books delivered',
+  'Business support',
+  'Career support',
+  'Digital skills sessions',
+  "Children's activities",
+  'Cafe',
+  'BFI Replay',
+  'British Newspaper Archive',
+  'Events',
+  'Family history',
+  'Findmypast',
+  'Hobby and interest groups',
+  'Garden',
+  'Computers',
+  'Digital lending',
+  'Faxing',
+  'Free Wi-Fi',
+  'Photocopiers',
+  'Printing',
+  'Scanning',
+  'Local info',
+  'Makerspace',
+  'Toilets',
+  'Work space'
+];
+const allServices = collectValues(libraries, (library) =>
+  (library.services || []).map((item) => item.service).filter(Boolean)
+).sort((first, second) => {
+  const firstIndex = libraryOnServiceOrder.indexOf(first);
+  const secondIndex = libraryOnServiceOrder.indexOf(second);
+  if (firstIndex !== -1 && secondIndex !== -1) return firstIndex - secondIndex;
+  if (firstIndex !== -1) return -1;
+  if (secondIndex !== -1) return 1;
+  return first.localeCompare(second, 'en-GB', { sensitivity: 'base' });
+});
+const allAccessibility = collectValues(libraries, (library) => library.accessibility || [])
+  .map((value) => ({ value, label: facilityLabel(value) }))
+  .sort((first, second) =>
+    first.label.localeCompare(second.label, 'en-GB', { sensitivity: 'base' })
+  );
+const initialVisibleTags = 7;
+const initialResults = searchRecords.slice(0, 60);
 ---
 
-<SiteLayout
-  title={copy.title}
-  description={copy.description}
->
-  <header class="page-heading">
+<SiteLayout title={copy.title} description={copy.description}>
+  <section class="page-heading">
     <div class="shell">
       <p class="eyebrow">{copy.eyebrow}</p>
       <h1>{copy.heading}</h1>
       <p>
-        {searchRecords.length.toLocaleString('en-GB')} {copy.intro_library_count} {authorities.length}{' '}
-        {copy.intro_authority_count}
+        {libraries.length.toLocaleString('en-GB')} {copy.intro_library_count}{' '}
+        {authorities.length.toLocaleString('en-GB')} {copy.intro_authority_count}
       </p>
     </div>
-  </header>
+  </section>
   <section class="section shell">
     <form
       id="library-search"
-      class="search-panel"
+      class="library-search-form"
       role="search"
-      data-index={sitePath('/directory.json')}
+      aria-label="Library search"
+      data-testid="libraries-search"
+      data-index-url={sitePath('/directory.json')}
+      data-unassigned-authority={copy.unassigned_authority}
+      data-no-matches={copy.no_matches}
+      data-index-error={copy.index_error}
       data-singular={copy.singular}
       data-plural={copy.plural}
-      data-browse-status={copy.browse_status}
       data-authority-browse-status={copy.authority_browse_status}
+      data-find-nearby={copy.find_nearby}
+      data-finding-nearby={copy.finding_nearby}
+      data-current-location={copy.current_location}
+      data-view-all={copy.view_all}
+      data-show-less={copy.show_less}
+      data-miles-suffix={copy.miles_suffix}
+      data-distance-filter={copy.distance_filter}
     >
-      <label>
-        {copy.query_label}
-        <input
-          id="library-query"
-          name="q"
-          type="search"
-          placeholder={copy.query_placeholder}
-          autocomplete="off"
-        />
-      </label>
-      <label>
-        {copy.authority_label}
-        <select id="library-authority" name="authority">
-          <option value="">{copy.all_authorities}</option>
-          {authorities.map((authority) => (
-            <option value={authority.slug}>{authority.name}</option>
-          ))}
-          <option value="unassigned">{copy.unassigned_authority}</option>
-        </select>
-      </label>
-      <label>
-        {copy.country_label}
-        <select id="library-country" name="country">
-          <option value="">{copy.all_countries}</option>
-          {countries.map((country) => (
-            <option value={country}>{country}</option>
-          ))}
-        </select>
-      </label>
-      <button class="button" type="submit">
-        <Search size={19} aria-hidden="true" />
-        {copy.search_button}
-      </button>
+      <div class="library-search-bar">
+        <div class="library-search-input-wrap">
+          <input
+            id="library-query"
+            name="q"
+            type="search"
+            aria-label={copy.query_label}
+            placeholder={copy.query_placeholder}
+          />
+          <button id="find-nearby" class="find-nearby-button" type="button">
+            <MapPin size={17} aria-hidden="true" />
+            <span id="find-nearby-label">{copy.find_nearby}</span>
+          </button>
+        </div>
+        <button class="button library-search-submit" type="submit" aria-label={copy.search_button}>
+          <Search size={19} aria-hidden="true" />
+          <span>{copy.search_button}</span>
+        </button>
+      </div>
+
+      <div class="library-filter-tabs">
+        <div class="tab-filter" id="services-tab">
+          <button
+            id="services-toggle"
+            class="tab-filter-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="Services-panel"
+          >
+            <span>{copy.services_filter}</span>
+            <span id="services-count" class="filter-badge" hidden>0</span>
+            <ChevronDown size={16} aria-hidden="true" />
+          </button>
+          <div
+            id="Services-panel"
+            class="tab-filter-panel"
+            role="dialog"
+            aria-label={copy.services_filter}
+            hidden
+          >
+            <div class="tab-filter-body">
+              <div class="open-now-row">
+                <label class="open-now-toggle" for="library-open-now">
+                  <span>{copy.open_now_label}</span>
+                  <span class="open-now-divider" aria-hidden="true"></span>
+                  <input id="library-open-now" name="openNow" type="checkbox" />
+                </label>
+              </div>
+
+              <div class="filter-group">
+                <p class="filter-group-heading">{copy.services_heading}</p>
+                <div class="filter-tag-list" data-tag-group="services">
+                  {allServices.map((service, index) => (
+                    <button
+                      type="button"
+                      class="filter-tag"
+                      data-service={service}
+                      data-extra-tag={index >= initialVisibleTags ? 'true' : undefined}
+                      hidden={index >= initialVisibleTags ? true : undefined}
+                      aria-pressed="false"
+                    >
+                      {service}
+                    </button>
+                  ))}
+                  {allServices.length > initialVisibleTags && (
+                    <button
+                      type="button"
+                      class="filter-tag-more"
+                      data-toggle-tags="services"
+                      data-expanded="false"
+                    >
+                      {copy.view_all}
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <div class="filter-group">
+                <p class="filter-group-heading">{copy.accessibility_heading}</p>
+                <div class="filter-tag-list" data-tag-group="accessibility">
+                  {allAccessibility.map(({ value, label }, index) => (
+                    <button
+                      type="button"
+                      class="filter-tag"
+                      data-accessibility={value}
+                      data-extra-tag={index >= initialVisibleTags ? 'true' : undefined}
+                      hidden={index >= initialVisibleTags ? true : undefined}
+                      aria-pressed="false"
+                    >
+                      {label}
+                    </button>
+                  ))}
+                  {allAccessibility.length > initialVisibleTags && (
+                    <button
+                      type="button"
+                      class="filter-tag-more"
+                      data-toggle-tags="accessibility"
+                      data-expanded="false"
+                    >
+                      {copy.view_all}
+                    </button>
+                  )}
+                </div>
+              </div>
+            </div>
+            <div class="tab-filter-footer">
+              <button id="clear-services" class="button button-secondary" type="button">
+                {copy.clear_button}
+              </button>
+              <button id="apply-services" class="button" type="button">
+                {copy.apply_button}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-filter" id="distance-tab">
+          <button
+            id="distance-toggle"
+            class="tab-filter-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="Distance-panel"
+            disabled
+          >
+            <span id="distance-button-label">{copy.distance_filter}</span>
+            <ChevronDown size={16} aria-hidden="true" />
+          </button>
+          <div
+            id="Distance-panel"
+            class="tab-filter-panel tab-filter-panel-narrow"
+            role="dialog"
+            aria-label={copy.distance_filter}
+            hidden
+          >
+            <div class="tab-filter-body">
+              <div class="distance-slider-group">
+                <label class="distance-slider-label" for="library-distance">
+                  <span>{copy.distance_filter}</span>
+                  <strong id="distance-value" data-testid="distance-label">
+                    5 {copy.miles_suffix}
+                  </strong>
+                </label>
+                <input
+                  id="library-distance"
+                  name="distance"
+                  type="range"
+                  min="1"
+                  max="50"
+                  value="5"
+                />
+              </div>
+              <div class="distance-location-row">
+                <div class="distance-location-meta">
+                  <strong>{copy.location_prefix}</strong>
+                  <span id="location-label">{copy.current_location}</span>
+                </div>
+                <button id="clear-location" class="button button-secondary" type="button">
+                  {copy.clear_location}
+                </button>
+              </div>
+            </div>
+            <div class="tab-filter-footer">
+              <button id="clear-distance" class="button button-secondary" type="button">
+                {copy.clear_button}
+              </button>
+              <button id="apply-distance" class="button" type="button">
+                {copy.apply_button}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </form>
+
     <div class="results-heading">
       <h2>{copy.results_heading}</h2>
-      <p id="library-count" class="muted" role="status" aria-live="polite">
-        {copy.browse_status}
-      </p>
+      <p id="result-count" aria-live="polite">{copy.browse_status}</p>
     </div>
-    <ul class="library-results" id="library-results">
-      {searchRecords.slice(0, 12).map((library) => (
+    <ul id="library-results" class="library-results">
+      {initialResults.map((library) => (
         <li>
           <h3>
-            <a href={sitePath(library.url)}>
-              {library.name} <ArrowUpRight size={17} aria-hidden="true" />
-            </a>
+            <a href={sitePath(library.url)}>{library.name}</a>
           </h3>
-          <p>{library.address}</p>
-          <span class="authority-label">{library.authorityName}</span>
+          <p>{library.address || library.postcode}</p>
+          <p class="authority-label">
+            {library.authorityName}
+            {library.country ? ` · ${library.country}` : ''}
+          </p>
         </li>
       ))}
     </ul>
-    <p id="library-empty" class="empty-state" hidden>
-      {copy.no_matches}
-    </p>
-    <p id="library-error" class="notice" role="alert" hidden>
-      {copy.index_error}
-    </p>
-    <button class="button button-secondary load-more" id="library-more" type="button" hidden>
+    <button id="more-results" class="button button-secondary load-more" type="button">
       {copy.more_button}
     </button>
-    <p class="notice" style="margin-top:2rem">
-      {copy.review_notice}
-    </p>
-    <details class="disclosure" open>
-      <summary>{copy.authority_disclosure}</summary>
+    <p class="notice">{copy.review_notice}</p>
+    <details class="disclosure">
+      <summary>
+        {copy.authority_disclosure} ({authorities.length.toLocaleString('en-GB')})
+      </summary>
       <ul class="authority-grid">
         {authorities.map((authority) => (
           <li>
             <a href={sitePath(`/libraries/${authority.slug}/`)}>{authority.name}</a>
             <small>
-              {authority.country} · {authority.library_ids.length} {copy.recorded_libraries}
+              {authority.country} · {(authority.library_ids || []).length}{' '}
+              {copy.recorded_libraries}
             </small>
           </li>
         ))}
@@ -117,96 +309,399 @@ const countries = [
 </SiteLayout>
 
 <script>
-  import { matchesLibrary } from '../../lib/search.mjs';
+  import { distanceMiles, matchesLibrary, resolveQueryLocation } from '../../lib/search.mjs';
   import { sitePath } from '../../lib/site.mjs';
-  const form = document.querySelector<HTMLFormElement>('#library-search');
-  const query = document.querySelector<HTMLInputElement>('#library-query');
-  const authority = document.querySelector<HTMLSelectElement>('#library-authority');
-  const country = document.querySelector<HTMLSelectElement>('#library-country');
-  const results = document.querySelector<HTMLUListElement>('#library-results');
-  const count = document.querySelector<HTMLElement>('#library-count');
-  const more = document.querySelector<HTMLButtonElement>('#library-more');
-  const empty = document.querySelector<HTMLElement>('#library-empty');
-  const error = document.querySelector<HTMLElement>('#library-error');
-  const countCopy = {
-    singular: form.dataset.singular,
-    plural: form.dataset.plural,
-    browse: form.dataset.browseStatus,
-    byAuthority: form.dataset.authorityBrowseStatus
-  };
-  const params = new URLSearchParams(location.search);
-  query.value = params.get('q') || '';
-  authority.value = params.get('authority') || '';
-  country.value = params.get('country') || '';
-  let records = [];
-  let filtered = [];
-  let visible = 24;
-  let loaded = false;
 
-  /** Render only the visible subset using text nodes rather than imported HTML. */
-  function showResults() {
-    const fragment = document.createDocumentFragment();
-    for (const record of filtered.slice(0, visible)) {
-      const item = document.createElement('li');
-      const heading = document.createElement('h3');
-      const link = document.createElement('a');
-      link.href = sitePath(record.url);
-      link.textContent = record.name;
-      heading.append(link);
-      const address = document.createElement('p');
-      address.textContent = record.address;
-      const label = document.createElement('span');
-      label.className = 'authority-label';
-      label.textContent = record.authorityName;
-      item.append(heading, address, label);
-      fragment.append(item);
+  const form = document.querySelector('#library-search');
+  const queryInput = document.querySelector('#library-query');
+  const findNearbyButton = document.querySelector('#find-nearby');
+  const findNearbyLabel = document.querySelector('#find-nearby-label');
+  const servicesTab = document.querySelector('#services-tab');
+  const servicesToggle = document.querySelector('#services-toggle');
+  const servicesPanel = document.querySelector('#Services-panel');
+  const servicesCountBadge = document.querySelector('#services-count');
+  const openNowInput = document.querySelector('#library-open-now');
+  const clearServicesButton = document.querySelector('#clear-services');
+  const applyServicesButton = document.querySelector('#apply-services');
+  const distanceTab = document.querySelector('#distance-tab');
+  const distanceToggle = document.querySelector('#distance-toggle');
+  const distanceButtonLabel = document.querySelector('#distance-button-label');
+  const distancePanel = document.querySelector('#Distance-panel');
+  const distanceInput = document.querySelector('#library-distance');
+  const distanceValue = document.querySelector('#distance-value');
+  const locationLabel = document.querySelector('#location-label');
+  const clearLocationButton = document.querySelector('#clear-location');
+  const clearDistanceButton = document.querySelector('#clear-distance');
+  const applyDistanceButton = document.querySelector('#apply-distance');
+  const list = document.querySelector('#library-results');
+  const count = document.querySelector('#result-count');
+  const more = document.querySelector('#more-results');
+
+  const params = new URLSearchParams(window.location.search);
+  const initialQuery = params.get('q') || params.get('query') || '';
+  queryInput.value = initialQuery;
+
+  const selectedServices = new Set(
+    (params.get('service') || '')
+      .split(',')
+      .map((item) => item.trim())
+      .filter(Boolean)
+  );
+  const selectedAccessibility = new Set(
+    (params.get('accessibility') || '')
+      .split(',')
+      .map((item) => item.trim())
+      .filter(Boolean)
+  );
+  openNowInput.checked = params.get('openNow') === 'true' || params.get('openNow') === '1';
+
+  const parsedDistance = Number.parseInt(params.get('distance') || '5', 10);
+  let selectedDistance =
+    Number.isFinite(parsedDistance) && parsedDistance >= 1 && parsedDistance <= 50
+      ? parsedDistance
+      : 5;
+  distanceInput.value = String(selectedDistance);
+
+  let explicitLocation = null;
+  let distanceFilterActive = false;
+  const locParam = params.get('loc');
+  if (locParam) {
+    const [latStr, lngStr] = locParam.split(',');
+    const latitude = Number.parseFloat(latStr);
+    const longitude = Number.parseFloat(lngStr);
+    if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
+      explicitLocation = {
+        latitude,
+        longitude,
+        label: initialQuery || form.dataset.currentLocation
+      };
+      distanceFilterActive = true;
     }
-    results.replaceChildren(fragment);
-    count.textContent = `${filtered.length.toLocaleString('en-GB')} ${filtered.length === 1 ? countCopy.singular : countCopy.plural}`;
-    empty.hidden = filtered.length !== 0;
-    more.hidden = visible >= filtered.length;
+  } else if (params.has('distance')) {
+    distanceFilterActive = true;
   }
 
-  /** Filter the static index and retain a shareable query in the browser URL. */
-  function search() {
-    if (!loaded) return;
-    visible = 24;
-    filtered = records.filter((record) =>
-      matchesLibrary(record, {
-        query: query.value,
-        authority: authority.value,
-        country: country.value
+  let records = [];
+  let matches = [];
+  let visible = 60;
+
+  const closePanels = () => {
+    servicesPanel.hidden = true;
+    servicesToggle.setAttribute('aria-expanded', 'false');
+    distancePanel.hidden = true;
+    distanceToggle.setAttribute('aria-expanded', 'false');
+  };
+
+  const togglePanel = (panel, button) => {
+    const willOpen = panel.hidden;
+    closePanels();
+    if (willOpen && !button.disabled) {
+      panel.hidden = false;
+      button.setAttribute('aria-expanded', 'true');
+    }
+  };
+
+  servicesToggle.addEventListener('click', () => togglePanel(servicesPanel, servicesToggle));
+  distanceToggle.addEventListener('click', () => togglePanel(distancePanel, distanceToggle));
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closePanels();
+  });
+  document.addEventListener('mousedown', (event) => {
+    if (
+      !servicesTab.contains(event.target) &&
+      !distanceTab.contains(event.target)
+    ) {
+      closePanels();
+    }
+  });
+
+  for (const button of form.querySelectorAll('[data-toggle-tags]')) {
+    button.addEventListener('click', () => {
+      const groupName = button.dataset.toggleTags;
+      const group = form.querySelector(`[data-tag-group="${groupName}"]`);
+      const expanded = button.dataset.expanded === 'true';
+      for (const tag of group.querySelectorAll('[data-extra-tag="true"]')) {
+        if (!expanded) {
+          tag.hidden = false;
+        } else if (tag.getAttribute('aria-pressed') !== 'true') {
+          tag.hidden = true;
+        }
+      }
+      button.dataset.expanded = expanded ? 'false' : 'true';
+      button.textContent = expanded ? form.dataset.viewAll : form.dataset.showLess;
+    });
+  }
+
+  const syncTagButtons = () => {
+    for (const button of form.querySelectorAll('[data-service]')) {
+      const active = selectedServices.has(button.dataset.service);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+      if (active) button.hidden = false;
+    }
+    for (const button of form.querySelectorAll('[data-accessibility]')) {
+      const active = selectedAccessibility.has(button.dataset.accessibility);
+      button.setAttribute('aria-pressed', active ? 'true' : 'false');
+      if (active) button.hidden = false;
+    }
+    const activeCount =
+      selectedServices.size + selectedAccessibility.size + (openNowInput.checked ? 1 : 0);
+    servicesCountBadge.hidden = activeCount === 0;
+    servicesCountBadge.textContent = String(activeCount);
+  };
+
+  for (const button of form.querySelectorAll('[data-service]')) {
+    button.addEventListener('click', () => {
+      const value = button.dataset.service;
+      if (selectedServices.has(value)) selectedServices.delete(value);
+      else selectedServices.add(value);
+      syncTagButtons();
+      update();
+    });
+  }
+
+  for (const button of form.querySelectorAll('[data-accessibility]')) {
+    button.addEventListener('click', () => {
+      const value = button.dataset.accessibility;
+      if (selectedAccessibility.has(value)) selectedAccessibility.delete(value);
+      else selectedAccessibility.add(value);
+      syncTagButtons();
+      update();
+    });
+  }
+
+  openNowInput.addEventListener('change', () => {
+    syncTagButtons();
+    update();
+  });
+
+  const activeLocation = () => {
+    if (explicitLocation) return explicitLocation;
+    const rawQuery = queryInput.value.trim();
+    if (!rawQuery || rawQuery === form.dataset.currentLocation) return null;
+    return resolveQueryLocation(records, rawQuery);
+  };
+
+  const syncDistanceUI = (resolvedLoc) => {
+    distanceValue.textContent = `${selectedDistance} ${form.dataset.milesSuffix}`;
+    distanceToggle.disabled = !resolvedLoc;
+    if (resolvedLoc) {
+      locationLabel.textContent = resolvedLoc.label;
+      distanceButtonLabel.textContent = distanceFilterActive
+        ? `${form.dataset.distanceFilter} (${selectedDistance} ${form.dataset.milesSuffix})`
+        : form.dataset.distanceFilter;
+    } else {
+      locationLabel.textContent = '';
+      distanceButtonLabel.textContent = form.dataset.distanceFilter;
+      distancePanel.hidden = true;
+      distanceToggle.setAttribute('aria-expanded', 'false');
+    }
+  };
+
+  const itemElement = (item, miles) => {
+    const li = document.createElement('li');
+    const title = document.createElement('h3');
+    const link = document.createElement('a');
+    link.href = sitePath(item.url);
+    link.textContent = item.name;
+    title.append(link);
+    const address = document.createElement('p');
+    address.textContent = item.address || item.postcode;
+    const authority = document.createElement('p');
+    authority.className = 'authority-label';
+    const metaParts = [item.authorityName || form.dataset.unassignedAuthority];
+    if (item.country) metaParts.push(item.country);
+    if (miles !== null && Number.isFinite(miles)) {
+      metaParts.push(`${miles.toFixed(1)} ${form.dataset.milesSuffix}`);
+    }
+    authority.textContent = metaParts.join(' · ');
+    li.append(title, address, authority);
+    return li;
+  };
+
+  const render = (resolvedLoc) => {
+    list.replaceChildren(
+      ...matches.slice(0, visible).map((item) => {
+        const miles =
+          distanceFilterActive && resolvedLoc ? distanceMiles(resolvedLoc, item) : null;
+        return itemElement(item, miles);
       })
     );
-    const parameters = new URLSearchParams();
-    if (query.value.trim()) parameters.set('q', query.value.trim());
-    if (authority.value) parameters.set('authority', authority.value);
-    if (country.value) parameters.set('country', country.value);
-    history.replaceState(
+    count.textContent = `${matches.length.toLocaleString('en-GB')} ${
+      matches.length === 1 ? form.dataset.singular : form.dataset.plural
+    }`;
+    more.hidden = visible >= matches.length;
+    if (!matches.length) {
+      const empty = document.createElement('li');
+      empty.textContent = form.dataset.noMatches;
+      list.append(empty);
+    }
+  };
+
+  const syncURL = (resolvedLoc) => {
+    const nextParams = new URLSearchParams();
+    const rawQuery = queryInput.value.trim();
+    if (rawQuery && rawQuery !== form.dataset.currentLocation) {
+      nextParams.set('q', rawQuery);
+    }
+    if (selectedServices.size) {
+      nextParams.set('service', [...selectedServices].join(','));
+    }
+    if (selectedAccessibility.size) {
+      nextParams.set('accessibility', [...selectedAccessibility].join(','));
+    }
+    if (openNowInput.checked) {
+      nextParams.set('openNow', 'true');
+    }
+    if (distanceFilterActive && resolvedLoc) {
+      nextParams.set('distance', String(selectedDistance));
+      if (explicitLocation) {
+        nextParams.set(
+          'loc',
+          `${explicitLocation.latitude.toFixed(5)},${explicitLocation.longitude.toFixed(5)}`
+        );
+      }
+    }
+    const search = nextParams.toString();
+    window.history.replaceState(
       null,
       '',
-      `${location.pathname}${parameters.size ? `?${parameters}` : ''}`
+      `${window.location.pathname}${search ? `?${search}` : ''}`
     );
-    showResults();
-  }
+  };
+
+  const update = () => {
+    if (!records.length) return;
+    visible = 60;
+    const resolvedLoc = activeLocation();
+    syncDistanceUI(resolvedLoc);
+    const rawQuery = queryInput.value.trim();
+    const textQuery =
+      rawQuery === form.dataset.currentLocation || (distanceFilterActive && resolvedLoc)
+        ? ''
+        : rawQuery;
+    const filters = {
+      query: textQuery,
+      services: [...selectedServices],
+      accessibility: [...selectedAccessibility],
+      openNow: openNowInput.checked,
+      location: distanceFilterActive ? resolvedLoc : null,
+      distance: selectedDistance
+    };
+    matches = records.filter((record) => matchesLibrary(record, filters));
+    if (distanceFilterActive && resolvedLoc) {
+      matches.sort((first, second) => {
+        const firstMiles = distanceMiles(resolvedLoc, first) ?? Number.POSITIVE_INFINITY;
+        const secondMiles = distanceMiles(resolvedLoc, second) ?? Number.POSITIVE_INFINITY;
+        return firstMiles - secondMiles;
+      });
+    }
+    syncURL(resolvedLoc);
+    render(resolvedLoc);
+  };
+
+  clearServicesButton.addEventListener('click', () => {
+    selectedServices.clear();
+    selectedAccessibility.clear();
+    openNowInput.checked = false;
+    syncTagButtons();
+    update();
+    closePanels();
+  });
+
+  applyServicesButton.addEventListener('click', () => {
+    update();
+    closePanels();
+  });
+
+  distanceInput.addEventListener('input', () => {
+    selectedDistance = Number.parseInt(distanceInput.value, 10) || 5;
+    distanceFilterActive = true;
+    update();
+  });
+
+  const clearLocationState = () => {
+    explicitLocation = null;
+    distanceFilterActive = false;
+    selectedDistance = 5;
+    distanceInput.value = '5';
+    if (queryInput.value.trim() === form.dataset.currentLocation) {
+      queryInput.value = '';
+    }
+    update();
+    closePanels();
+  };
+
+  clearLocationButton.addEventListener('click', clearLocationState);
+  clearDistanceButton.addEventListener('click', clearLocationState);
+  applyDistanceButton.addEventListener('click', () => {
+    distanceFilterActive = true;
+    update();
+    closePanels();
+  });
+
+  findNearbyButton.addEventListener('click', () => {
+    if (!navigator.geolocation) return;
+    findNearbyButton.disabled = true;
+    findNearbyLabel.textContent = form.dataset.findingNearby;
+    navigator.geolocation.getCurrentPosition(
+      (position) => {
+        explicitLocation = {
+          latitude: position.coords.latitude,
+          longitude: position.coords.longitude,
+          label: form.dataset.currentLocation
+        };
+        distanceFilterActive = true;
+        selectedDistance = 5;
+        distanceInput.value = '5';
+        queryInput.value = form.dataset.currentLocation;
+        findNearbyButton.disabled = false;
+        findNearbyLabel.textContent = form.dataset.findNearby;
+        update();
+      },
+      () => {
+        findNearbyButton.disabled = false;
+        findNearbyLabel.textContent = form.dataset.findNearby;
+      }
+    );
+  });
+
+  fetch(form.dataset.indexUrl)
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    })
+    .then((data) => {
+      records = data;
+      syncTagButtons();
+      update();
+    })
+    .catch(() => {
+      count.textContent = form.dataset.authorityBrowseStatus;
+      more.hidden = true;
+      const notice = document.createElement('p');
+      notice.className = 'notice';
+      notice.setAttribute('role', 'status');
+      notice.textContent = form.dataset.indexError;
+      form.after(notice);
+    });
+
   form.addEventListener('submit', (event) => {
     event.preventDefault();
-    search();
+    if (queryInput.value.trim() !== form.dataset.currentLocation) {
+      explicitLocation = null;
+    }
+    update();
   });
-  authority.addEventListener('change', search);
-  country.addEventListener('change', search);
+  queryInput.addEventListener('input', () => {
+    if (queryInput.value.trim() !== form.dataset.currentLocation) {
+      explicitLocation = null;
+      distanceFilterActive = false;
+    }
+    update();
+  });
   more.addEventListener('click', () => {
-    visible += 24;
-    showResults();
+    visible += 60;
+    render(activeLocation());
   });
-  try {
-    const response = await fetch(form.dataset.index);
-    if (!response.ok) throw new Error('Search index unavailable');
-    records = await response.json();
-    loaded = true;
-    search();
-  } catch {
-    error.hidden = false;
-    count.textContent = countCopy.byAuthority;
-  }
 </script>

@@ -2,33 +2,123 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ArticleCards from '../components/ArticleCards.astro';
 import FAQSection from '../components/FAQSection.astro';
-import { ArrowRight, Search } from '@lucide/astro';
-import { articleImage, safeURL, settings, sitePath } from '../lib/site.mjs';
+import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play, Search } from '@lucide/astro';
+import { articleTitle, safeURL, settings, sitePath } from '../lib/site.mjs';
 import homepage from '../data/homepage.json';
 const { entry, allPages } = Astro.props;
-const hero = homepage.image
-  ? { url: homepage.image, alt: homepage.image_alt }
-  : articleImage(entry);
+const hero = homepage.image ? { url: homepage.image, alt: homepage.image_alt } : null;
+const carousel = Array.isArray(homepage.carousel)
+  ? homepage.carousel.filter((slide) => slide?.image)
+  : [];
 const copy = settings.ui.home;
 const sourceURL = safeURL(entry.data.source_url);
+const heading = homepage.title || articleTitle(entry);
 const selected = (paths) =>
   paths.map((path) => allPages.find((page) => page.data.path === path)).filter(Boolean);
-const features = selected(homepage.feature_pages);
 const collections = selected(homepage.collection_pages);
 ---
 
 <SiteLayout title={settings.site.title} description={settings.site.description}>
-  <section class="hero">
-    {hero && (
+  <section
+    class:list={[
+      'hero',
+      carousel.length > 0 ? 'hero-with-carousel' : !hero && 'hero-plain'
+    ]}
+  >
+    {!carousel.length && hero && (
       <img src={sitePath(hero.url)} alt={hero.alt} width="1600" height="600" fetchpriority="high" />
     )}
-    <div class="shell">
-      <p class="eyebrow">{copy.eyebrow}</p>
-      <h1>{homepage.title}</h1>
-      <p>{homepage.intro}</p>
-      <a class="button" href={sitePath(copy.find_library_url)}>
-        {copy.find_library} <ArrowRight size={19} aria-hidden="true" />
-      </a>
+    <div class="shell hero-shell">
+      <div class="hero-copy">
+        <p class="eyebrow">{copy.eyebrow}</p>
+        <h1>{heading}</h1>
+        <p>{homepage.intro}</p>
+        <a class="button" href={sitePath(copy.find_library_url)}>
+          {copy.find_library} <ArrowRight size={19} aria-hidden="true" />
+        </a>
+      </div>
+      {carousel.length > 0 && (
+        <div
+          class="hero-carousel"
+          role="region"
+          aria-roledescription="carousel"
+          aria-label="Featured library images"
+          data-hero-carousel
+        >
+          <div class="hero-carousel-viewport" data-carousel-viewport tabindex="0">
+            <ul class="hero-carousel-track" data-carousel-track>
+              {carousel.map((slide, index) => (
+                <li
+                  class="hero-carousel-slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label={`Slide ${index + 1} of ${carousel.length}`}
+                  data-carousel-slide={index}
+                >
+                  <figure class="hero-carousel-card">
+                    <img
+                      src={sitePath(slide.image)}
+                      alt={slide.alt}
+                      width="800"
+                      height="600"
+                      loading={index < 3 ? 'eager' : 'lazy'}
+                      fetchpriority={index === 0 ? 'high' : 'auto'}
+                    />
+                  </figure>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div class="hero-carousel-toolbar">
+            <div class="hero-carousel-dots" role="group" aria-label="Choose slide">
+              {carousel.map((slide, index) => (
+                <button
+                  type="button"
+                  class="hero-carousel-dot"
+                  data-carousel-dot={index}
+                  aria-label={`Go to slide ${index + 1}`}
+                  aria-current={index === 0 ? 'true' : 'false'}
+                />
+              ))}
+            </div>
+            <div class="hero-carousel-controls">
+              <button
+                type="button"
+                class="hero-carousel-btn"
+                data-carousel-prev
+                aria-label="Previous image"
+                title="Previous image"
+              >
+                <ChevronLeft size={18} aria-hidden="true" />
+              </button>
+              <button
+                type="button"
+                class="hero-carousel-btn"
+                data-carousel-next
+                aria-label="Next image"
+                title="Next image"
+              >
+                <ChevronRight size={18} aria-hidden="true" />
+              </button>
+              <button
+                type="button"
+                class="hero-carousel-btn hero-carousel-toggle"
+                data-carousel-toggle
+                aria-pressed="false"
+                aria-label="Pause carousel"
+                title="Pause carousel"
+              >
+                <span data-icon-pause>
+                  <Pause size={16} aria-hidden="true" />
+                </span>
+                <span data-icon-play hidden>
+                  <Play size={16} aria-hidden="true" />
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   </section>
   <section class="section section-wash">
@@ -52,10 +142,10 @@ const collections = selected(homepage.collection_pages);
     </div>
   </section>
   <section class="section shell">
-    <div class="section-heading">
-      <h2>{homepage.features_title}</h2>
-    </div>
-    <ArticleCards entries={features} />
+    <article class="prose original-content home-prose">
+      <slot />
+    </article>
+    <FAQSection items={entry.data.faqs} />
   </section>
   <section class="section section-wash">
     <div class="shell">
@@ -76,16 +166,161 @@ const collections = selected(homepage.collection_pages);
       </a>
     </div>
     <ArticleCards entries={selected(homepage.community_pages)} />
-    <details class="disclosure">
-      <summary>{copy.preserved_intro}</summary>
-      <article class="prose">
-        <slot />
-      </article>
-      <div class="source-note">
-        {entry.data.attribution && <p>{entry.data.attribution}</p>}
-        {sourceURL && <a href={sourceURL}>{settings.ui.editorial.original_source_link}</a>}
-      </div>
-    </details>
-    <FAQSection items={entry.data.faqs} />
+    <div class="source-note">
+      {entry.data.attribution && <p>{entry.data.attribution}</p>}
+      {sourceURL && <a href={sourceURL}>{settings.ui.editorial.original_source_link}</a>}
+    </div>
   </section>
+  {carousel.length > 0 && (
+    <script is:inline>
+      (() => {
+        const root = document.querySelector('[data-hero-carousel]');
+        if (!root) return;
+        const viewport = root.querySelector('[data-carousel-viewport]');
+        const slides = [...root.querySelectorAll('[data-carousel-slide]')];
+        const dots = [...root.querySelectorAll('[data-carousel-dot]')];
+        const prevBtn = root.querySelector('[data-carousel-prev]');
+        const nextBtn = root.querySelector('[data-carousel-next]');
+        const toggleBtn = root.querySelector('[data-carousel-toggle]');
+        const pauseIcon = root.querySelector('[data-icon-pause]');
+        const playIcon = root.querySelector('[data-icon-play]');
+        if (!viewport || slides.length < 2) return;
+
+        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+        let userPaused = reducedMotion.matches;
+        let hoverOrFocusPaused = false;
+        let activeIndex = 0;
+        let timer = null;
+
+        const syncToggleUI = () => {
+          if (!toggleBtn) return;
+          toggleBtn.setAttribute('aria-pressed', String(userPaused));
+          const label = userPaused ? 'Play carousel' : 'Pause carousel';
+          toggleBtn.setAttribute('aria-label', label);
+          toggleBtn.setAttribute('title', label);
+          if (pauseIcon) pauseIcon.hidden = userPaused;
+          if (playIcon) playIcon.hidden = !userPaused;
+        };
+
+        const syncDots = (index) => {
+          activeIndex = index;
+          for (let i = 0; i < dots.length; i += 1) {
+            dots[i].setAttribute('aria-current', i === index ? 'true' : 'false');
+          }
+        };
+
+        const goToSlide = (index) => {
+          const count = slides.length;
+          const targetIndex = ((index % count) + count) % count;
+          const target = slides[targetIndex];
+          if (!target) return;
+          const left = target.offsetLeft - slides[0].offsetLeft;
+          viewport.scrollTo({
+            left,
+            behavior: reducedMotion.matches ? 'auto' : 'smooth'
+          });
+          syncDots(targetIndex);
+        };
+
+        const stepForward = () => {
+          const atEnd =
+            viewport.scrollLeft + viewport.clientWidth >= viewport.scrollWidth - 12;
+          if (atEnd) {
+            goToSlide(0);
+          } else {
+            goToSlide(activeIndex + 1);
+          }
+        };
+
+        const stepBackward = () => {
+          if (viewport.scrollLeft <= 12) {
+            goToSlide(slides.length - 1);
+          } else {
+            goToSlide(activeIndex - 1);
+          }
+        };
+
+        const restartTimer = () => {
+          if (timer) {
+            window.clearInterval(timer);
+            timer = null;
+          }
+          if (!userPaused && !hoverOrFocusPaused && !reducedMotion.matches) {
+            timer = window.setInterval(stepForward, 4200);
+          }
+        };
+
+        viewport.addEventListener(
+          'scroll',
+          () => {
+            const base = slides[0].offsetLeft;
+            const currentLeft = viewport.scrollLeft;
+            let closest = 0;
+            let minDiff = Infinity;
+            for (let i = 0; i < slides.length; i += 1) {
+              const diff = Math.abs(slides[i].offsetLeft - base - currentLeft);
+              if (diff < minDiff) {
+                minDiff = diff;
+                closest = i;
+              }
+            }
+            syncDots(closest);
+          },
+          { passive: true }
+        );
+
+        prevBtn?.addEventListener('click', () => {
+          stepBackward();
+          restartTimer();
+        });
+
+        nextBtn?.addEventListener('click', () => {
+          stepForward();
+          restartTimer();
+        });
+
+        for (const dot of dots) {
+          dot.addEventListener('click', () => {
+            const idx = Number(dot.getAttribute('data-carousel-dot') || 0);
+            goToSlide(idx);
+            restartTimer();
+          });
+        }
+
+        toggleBtn?.addEventListener('click', () => {
+          userPaused = !userPaused;
+          syncToggleUI();
+          restartTimer();
+        });
+
+        root.addEventListener('mouseenter', () => {
+          hoverOrFocusPaused = true;
+          restartTimer();
+        });
+        root.addEventListener('mouseleave', () => {
+          hoverOrFocusPaused = false;
+          restartTimer();
+        });
+        root.addEventListener('focusin', () => {
+          hoverOrFocusPaused = true;
+          restartTimer();
+        });
+        root.addEventListener('focusout', (event) => {
+          if (!root.contains(event.relatedTarget)) {
+            hoverOrFocusPaused = false;
+            restartTimer();
+          }
+        });
+
+        reducedMotion.addEventListener('change', () => {
+          if (reducedMotion.matches) userPaused = true;
+          syncToggleUI();
+          restartTimer();
+        });
+
+        syncToggleUI();
+        restartTimer();
+      })();
+    </script>
+  )}
 </SiteLayout>

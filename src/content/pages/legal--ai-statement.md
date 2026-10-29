@@ -1,9 +1,10 @@
 ---
-title: LibraryOn - Legal
+title: Artificial Intelligence (AI) statement | LibraryOn
 path: /legal/ai-statement
 kind: legal
 published: false
-description: Default description
+description: How LibraryOn uses artificial intelligence tools and protects
+  creator and user data.
 source_url: https://libraryon.org/legal/ai-statement
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.

@@ -1,7 +1,7 @@
 ---
 title: Your community | LibraryOn
 path: /your-community
-kind: page
+kind: landing
 published: true
 description: LibraryOn connects people with their local libraries, offering
   access to resources, events, and community activities for all ages.
@@ -9,11 +9,12 @@ source_url: https://libraryon.org/your-community
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources: []
+hero:
+  image: /uploads/archive/01e93430ed39a565526d0d5d514feaf2807a615544b3bc4a883779e12a4fe114.jpg
+  alt: Bringing people together in libraries
 ---
 
-# Your community Bringing people together
-
-![Image](/uploads/archive/01e93430ed39a565526d0d5d514feaf2807a615544b3bc4a883779e12a4fe114.jpg)
+# Bringing people together
 
 Gathering with people is good for us. It provides fun, a sense of belonging and shared experiences that enrich our lives.
 
@@ -51,14 +52,6 @@ Being part of a community offers social connection, friendship and support. It�
 
 At your library you might find groups for crafters, gardeners, readers, artists, quizzers, slimmers, writers or local historians. Young children enjoy story and rhyme times, and older ones benefit from LEGO clubs, Chatterbooks groups, reading challenges and more.
 
-### [Find your community](/your-community/find-your-community)
-
-Read more
-
-### [Connection and support for families](/your-community/children-parents-carers-community)
-
-Read more
-
 > “Our library is part of the reason we haven’t moved - it’s the central hub of the community.”
 
 Alex
@@ -86,21 +79,3 @@ Children learn social and emotional skills by being around people.
 Libraries run free activities and events for children, so there are always new people for them to play with and learn from.
 
 Read more about [the social benefits of libraries for children](/your-community/children-parents-carers-community).
-
-## Expand your world at the library
-
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
-
-### [Work and skills](/work-and-skills)
-
-Bring your big ideas to life
-
-Explore
-
-![Image](/uploads/archive/98393c97a373dcf25cda1992a79bb225dc644e9a38fe1a0222c367abb533f078.jpg)
-
-### [Reading](/reading)
-
-Whatever you want to read, it's in the library
-
-Explore

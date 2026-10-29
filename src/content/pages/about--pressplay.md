@@ -36,9 +36,10 @@ resources:
   - resource-ac16af325c1ae345d4a2
   - resource-ebd4ec77f3a6f7af8cf0
   - resource-29fd880f38920383e9d2
+hero:
+  image: /uploads/archive/9e8d7c0f2e1d63adcc5c334b21808e62d1f8f53ea4b60674deb0e35b2de70ea2.svg
+  alt: A playground of digital ideas
 ---
-
-![Image](/uploads/archive/9e8d7c0f2e1d63adcc5c334b21808e62d1f8f53ea4b60674deb0e35b2de70ea2.svg)
 
 # A playground of digital ideas
 
@@ -58,9 +59,9 @@ We also spotlit some of the brilliant projects developed by [LibraryOn grant rec
 
 The main space was live streamed and we recorded sessions where speakers joined virtually.
 
-"This was a new experience for me and I really enjoyed it. It is clear that we are all facing the same challenges across the sector. Seeing what people are doing to overcome them and learn from their experience is always very valuable. As well as reinforce that we are already on the right path. The food and the atmosphere that LibraryOn created were great too."
-
-###### Press Play conference attendee
+> "This was a new experience for me and I really enjoyed it. It is clear that we are all facing the same challenges across the sector. Seeing what people are doing to overcome them and learn from their experience is always very valuable. As well as reinforce that we are already on the right path. The food and the atmosphere that LibraryOn created were great too."
+>
+> — Press Play conference attendee
 
 ## Catch up
 
@@ -166,4 +167,4 @@ The programme consisted of keynote talks and sessions themed around engagement, 
 
 People who work in libraries such as digital leads, managers, and Heads of Service who oversee or deliver digital programmes.  We also welcomed people from other related organisations. We offered bursaries for library services who otherwise wouldn’t have been able to attend.
 
-#### Thank you to all our contributors and attendees. We hope you enjoyed the day!
+**Thank you to all our contributors and attendees. We hope you enjoyed the day!**
