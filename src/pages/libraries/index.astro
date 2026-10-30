@@ -120,6 +120,7 @@ const initialResults = searchRecords.slice(0, 60);
             type="button"
             aria-expanded="false"
             aria-controls="Services-panel"
+            popovertarget="Services-panel"
           >
             <span>{copy.services_filter}</span>
             <span id="services-count" class="filter-badge" hidden>0</span>
@@ -130,7 +131,7 @@ const initialResults = searchRecords.slice(0, 60);
             class="tab-filter-panel"
             role="dialog"
             aria-label={copy.services_filter}
-            hidden
+            popover="auto"
           >
             <div class="tab-filter-body">
               <div class="open-now-row">
@@ -215,6 +216,7 @@ const initialResults = searchRecords.slice(0, 60);
             type="button"
             aria-expanded="false"
             aria-controls="Distance-panel"
+            popovertarget="Distance-panel"
             disabled
           >
             <span id="distance-button-label">{copy.distance_filter}</span>
@@ -225,7 +227,7 @@ const initialResults = searchRecords.slice(0, 60);
             class="tab-filter-panel tab-filter-panel-narrow"
             role="dialog"
             aria-label={copy.distance_filter}
-            hidden
+            popover="auto"
           >
             <div class="tab-filter-body">
               <div class="distance-slider-group">
@@ -309,6 +311,7 @@ const initialResults = searchRecords.slice(0, 60);
 </SiteLayout>
 
 <script>
+  import { autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
   import { distanceMiles, matchesLibrary, resolveQueryLocation } from '../../lib/search.mjs';
   import { sitePath } from '../../lib/site.mjs';
 
@@ -316,14 +319,12 @@ const initialResults = searchRecords.slice(0, 60);
   const queryInput = document.querySelector('#library-query');
   const findNearbyButton = document.querySelector('#find-nearby');
   const findNearbyLabel = document.querySelector('#find-nearby-label');
-  const servicesTab = document.querySelector('#services-tab');
   const servicesToggle = document.querySelector('#services-toggle');
   const servicesPanel = document.querySelector('#Services-panel');
   const servicesCountBadge = document.querySelector('#services-count');
   const openNowInput = document.querySelector('#library-open-now');
   const clearServicesButton = document.querySelector('#clear-services');
   const applyServicesButton = document.querySelector('#apply-services');
-  const distanceTab = document.querySelector('#distance-tab');
   const distanceToggle = document.querySelector('#distance-toggle');
   const distanceButtonLabel = document.querySelector('#distance-button-label');
   const distancePanel = document.querySelector('#Distance-panel');
@@ -386,35 +387,27 @@ const initialResults = searchRecords.slice(0, 60);
   let visible = 60;
 
   const closePanels = () => {
-    servicesPanel.hidden = true;
-    servicesToggle.setAttribute('aria-expanded', 'false');
-    distancePanel.hidden = true;
-    distanceToggle.setAttribute('aria-expanded', 'false');
+    for (const panel of [servicesPanel, distancePanel])
+      if (panel.matches(':popover-open')) panel.hidePopover();
   };
 
-  const togglePanel = (panel, button) => {
-    const willOpen = panel.hidden;
-    closePanels();
-    if (willOpen && !button.disabled) {
-      panel.hidden = false;
-      button.setAttribute('aria-expanded', 'true');
-    }
-  };
-
-  servicesToggle.addEventListener('click', () => togglePanel(servicesPanel, servicesToggle));
-  distanceToggle.addEventListener('click', () => togglePanel(distancePanel, distanceToggle));
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') closePanels();
-  });
-  document.addEventListener('mousedown', (event) => {
-    if (
-      !servicesTab.contains(event.target) &&
-      !distanceTab.contains(event.target)
-    ) {
-      closePanels();
-    }
-  });
+  for (const [panel, button] of [[servicesPanel, servicesToggle], [distancePanel, distanceToggle]]) {
+    let cleanup: (() => void) | undefined;
+    panel.addEventListener('beforetoggle', () => panel.removeAttribute('data-positioned'));
+    panel.addEventListener('toggle', () => {
+      const open = panel.matches(':popover-open');
+      button.setAttribute('aria-expanded', String(open));
+      cleanup?.();
+      cleanup = open ? autoUpdate(button, panel, () => {
+        computePosition(button, panel, { strategy: 'fixed', placement: 'bottom-start', middleware: [offset(8), flip(), shift({ padding: 12, crossAxis: true })] })
+          .then(({ x, y }) => {
+            if (!panel.matches(':popover-open')) return;
+            Object.assign(panel.style, { left: `${x}px`, top: `${y}px` });
+            panel.setAttribute('data-positioned', 'true');
+          });
+      }) : undefined;
+    });
+  }
 
   for (const button of form.querySelectorAll('[data-toggle-tags]')) {
     button.addEventListener('click', () => {
@@ -493,7 +486,7 @@ const initialResults = searchRecords.slice(0, 60);
     } else {
       locationLabel.textContent = '';
       distanceButtonLabel.textContent = form.dataset.distanceFilter;
-      distancePanel.hidden = true;
+      if (distancePanel.matches(':popover-open')) distancePanel.hidePopover();
       distanceToggle.setAttribute('aria-expanded', 'false');
     }
   };

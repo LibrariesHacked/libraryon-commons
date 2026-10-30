@@ -1,4 +1,4 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection, reference, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
 const image = z.object({
@@ -34,15 +34,19 @@ const pages = defineCollection({
     updated_on: z.coerce.date().optional(),
     hero: image.optional(),
     gallery: z.array(image).optional(),
-    faqs: z
-      .array(
-        z.object({
-          question: z.string().min(1),
-          answer: z.string().min(1)
-        })
-      )
-      .default([]),
+    faq_heading: z.string().optional(),
+    faqs: z.array(reference('faqs')).default([]),
     resources: z.array(z.string()).default([])
+  })
+});
+
+const faqs = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/faqs' }),
+  schema: z.object({
+    question: z.string().min(1),
+    source_url: z.string().url().optional(),
+    attribution: z.string().optional(),
+    updated_on: z.coerce.date().optional()
   })
 });
 
@@ -90,4 +94,4 @@ const contributors = defineCollection({
   })
 });
 
-export const collections = { pages, resources, sessions, contributors };
+export const collections = { pages, faqs, resources, sessions, contributors };

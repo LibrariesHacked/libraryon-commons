@@ -10,24 +10,31 @@ source_url: https://libraryon.org/reading/reading-in-libraries
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-4744dc6698a5410b94f3
-  - resource-4f4706f2afbdad0c9e04
-  - resource-12c89819236201213f84
-  - resource-04b001a977dfa7726004
-  - resource-79a43fc4654b15f2efc0
+  - national-year-of-reading
+  - reading-well-programme
+  - being-a-teenager
+  - mental-health-difficulties
+  - dementia
 hero:
-  image: /uploads/archive/7296cd735bce35838c4a5da6742c2a890a6d35e8cb61c3f309c59e60cedde605.jpg
+  image: /uploads/archive/leeds-central-library.jpg
   alt: Leeds Central Library
   credit: "Banner image: Leeds Central Library. Photo by LibraryOn."
+faq_heading: Questions about using libraries
+faqs:
+  - do-i-need-to-be-a-member-to-enter-a-library
+  - do-i-need-to-be-a-library-member-to-borrow-books
+  - how-many-library-books-can-i-borrow-at-a-time
+  - how-does-library-e-lending-work
+  - how-do-i-know-what-e-lending-app-to-download
 ---
 
 # Reading for adults in libraries
 
+:::quote{author="Rachel" role="Customer, Wakefield Libraries"}
+
 > “My world — and my children’s world — would be a lot smaller without the library.”
 
-Rachel
-
-Customer, Wakefield Libraries
+:::
 
 ## Find books and more for all ages
 
@@ -74,7 +81,7 @@ Reading is the ultimate way to dive further into what you love, whether it's foo
 
 Get involved with the [National Year of Reading in 2026](https://goallin.org.uk/) by [joining the library](/libraries) and taking part in free and low-cost events.
 
-[2026 is the National Year of Reading](https://www.youtube.com/embed/XnXDmkemZhY?si=RhYreVS82ABKO4JI)
+::video{src="https://www.youtube.com/embed/XnXDmkemZhY?si=RhYreVS82ABKO4JI" title="Video: 2026 is the National Year of Reading"}
 
 ## Free digital newspapers and magazines
 
@@ -86,15 +93,15 @@ Newspapers
 
 Depending on your library authority’s subscriptions, you might access digital versions of:
 
--   The Daily Mirror
--   Daily Mail
--   The Guardian
--   Daily Star
--   Daily Express
--   Metro
--   Newsweek
--   The Economist
--   The Spectator
+- The Daily Mirror
+- Daily Mail
+- The Guardian
+- Daily Star
+- Daily Express
+- Metro
+- Newsweek
+- The Economist
+- The Spectator
 
 Magazines
 
@@ -102,16 +109,16 @@ Magazines
 
 As well as books related to hobbies, libraries offer digital versions of well-known magazines such as:
 
--   Heat
--   Grazia
--   New Scientist
--   Good Housekeeping
--   Cycling Weekly
--   Empire
--   BBC Gardeners’ World
--   ComputerActive
--   Good Food
--   Classic Rock
+- Heat
+- Grazia
+- New Scientist
+- Good Housekeeping
+- Cycling Weekly
+- Empire
+- BBC Gardeners’ World
+- ComputerActive
+- Good Food
+- Classic Rock
 
 Foreign publications
 
@@ -119,13 +126,13 @@ Foreign publications
 
 Libraries are great ways to access publications from abroad – with no paywalls. Titles include:
 
--   The Wall Street Journal
--   The Washington Post
--   The New Yorker
--   EL PAIS
--   South China Morning Post
--   The New Yorker
--   Bloomberg Businessweek
+- The Wall Street Journal
+- The Washington Post
+- The New Yorker
+- EL PAIS
+- South China Morning Post
+- The New Yorker
+- Bloomberg Businessweek
 
 ## Explore library e-lending
 
@@ -133,7 +140,7 @@ Free books, audiobooks and magazines – on your own device.
 
 [Learn more](/reading/e-lending-in-libraries)
 
-![A close-up of a person's hand holding a smartphone. The screen displays a digital issue of "FourFourTwo" magazine featuring football player Martin Ødegaard on the cover.](/uploads/archive/70577d091883f30c087140cde38cf21ddc33e619d593d016e754c651351a54d9.jpg)
+![A close-up of a person's hand holding a smartphone. The screen displays a digital issue of "FourFourTwo" magazine featuring football player Martin Ødegaard on the cover.](/uploads/archive/a-close-up-of-a-persons-hand-holding-a-smartphone-2.jpg)
 
 ## Reading for pleasure - and wellbeing
 
@@ -145,28 +152,4 @@ The [Reading Well programme](https://readingagency.org.uk/get-reading/our-progra
 
 ## Questions about using libraries
 
-### Do I need to be a member to enter a library?
-
-No. Anyone can enter a public library and there’s no charge to go in.
-
-### Do I need to be a library member to borrow books?
-
-Yes. You might need to show some identification and proof of address to become a library member. But every library authority is different, so it's best to [find your nearest library](/libraries) and ask the staff.
-
-Once you're a member you can use your library card to borrow books and more.
-
-### How many library books can I borrow at a time?
-
-It varies by library authority. In some regions you can borrow up to 20 books at a time. When you become a library member staff will tell you how many books you can take home.
-
-### How does library e-lending work?
-
-With library e-lending you can use your own device to enjoy e-books, audiobooks and digital versions of newspapers and magazines.
-
-Learn more about e-lending in libraries.
-
-### How do I know what e-lending app to download?
-
-When you become a library member the staff will be able to tell you which app or apps you should download.
-
-Learn more about e-lending in libraries.
+{{faqs}}

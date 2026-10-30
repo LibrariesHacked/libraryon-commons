@@ -11,8 +11,13 @@ attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources: []
 hero:
-  image: /uploads/archive/140bd4ff104088090c63e7628da7d7c86bf813f95664a5ea047762c314e87222.jpg
+  image: /uploads/archive/cafes-in-libraries.jpg
   alt: Cafes in libraries
+faq_heading: Questions about using cafes in libraries
+faqs:
+  - do-i-need-to-join-the-library-to-use-a-library-cafe
+  - are-library-cafes-suitable-for-children
+  - can-i-take-library-books-into-a-library-cafe
 ---
 
 # Cafes in libraries
@@ -25,7 +30,7 @@ They’re a great alternative to high street coffee chains, and you know spendin
 
 Whether you’re building a business, a child’s vocabulary or a study plan, libraries are also places to build in a moment of relaxation.
 
-![The counter of a well-stocked modern-looking cafe in a library, offering a wide range of drinks and snacks.](/uploads/archive/7de54345adc8ea84039ccf8706ae99afb94986372467f027c0e6ea9c5c4606f5.jpg)
+![The counter of a well-stocked modern-looking cafe in a library, offering a wide range of drinks and snacks.](/uploads/archive/the-counter-of-a-well-stocked-modern-looking-cafe.jpg)
 
 You can get a good cup of coffee and a snack in many libraries. Image: Nottingham Central Library by LibraryOn
 
@@ -39,14 +44,4 @@ Browse our directory to find UK libraries with cafes, or [find your nearest libr
 
 ## Questions about using cafes in libraries
 
-### Do I need to join the library to use a library cafe?
-
-No. But in some places you might get a discount it you show your library card.
-
-### Are library cafes suitable for children?
-
-These days most libraries are suitable for children, so their cafes tend to be fit for all ages too.
-
-### Can I take library books into a library cafe?
-
-It might vary by library, so it’s best to ask staff about this.
+{{faqs}}

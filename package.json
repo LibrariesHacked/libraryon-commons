@@ -17,18 +17,32 @@
   },
   "dependencies": {
     "@astrojs/markdown-remark": "^7.3.4",
+    "@floating-ui/dom": "^1.8.0",
     "@fontsource-variable/lexend": "^5.3.0",
     "@fontsource/dm-serif-display": "^5.3.0",
     "@lucide/astro": "^1.62.0",
+    "acorn": "^8.19.0",
     "astro": "^7.4.2",
     "cheerio": "1.1.2",
+    "embla-carousel": "^8.6.0",
+    "embla-carousel-autoplay": "^8.6.0",
+    "lucide": "^1.62.0",
+    "mdast-util-to-markdown": "^2.2.1",
+    "open-props": "^1.7.23",
     "playwright": "1.56.1",
+    "rehype-stringify": "^10.0.1",
+    "remark-directive": "^4.0.0",
+    "remark-parse": "^11.0.0",
+    "remark-rehype": "^11.1.2",
     "sanitize-html": "^2.18.1",
+    "sharp": "^0.35.5",
     "turndown": "^7.2.4",
     "turndown-plugin-gfm": "^1.0.2",
+    "unified": "^11.0.5",
     "yaml": "^2.9.1"
   },
   "devDependencies": {
+    "postcss": "^8.5.32",
     "prettier": "^3.9.10",
     "prettier-plugin-astro": "^1.1.2"
   }

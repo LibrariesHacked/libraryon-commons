@@ -9,37 +9,37 @@ source_url: https://libraryon.org/about
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-992819d387c5953e4fb3
-  - resource-99e18aa0e50373879bab
-  - resource-3190971f4457d3dd1082
-  - resource-88dcfd4756c7d799ad0d
-  - resource-21696540e8fcb72bc1e1
-  - resource-625ba794404ae8db916a
-  - resource-1df324111b707705e962
-  - resource-be4388dabbb3a40130b9
-  - resource-85087aa4abe04c9efd5c
-  - resource-c7ece276972a999be58a
-  - resource-0b9cb5bd4848252cf89e
-  - resource-d364cf0ceda0883b8a14
-  - resource-f22554ee5bc762152de2
-  - resource-7b22dc38bc92a1bd0075
-  - resource-e08e2dac98921915781a
-  - resource-f49773360f61dcb9ab18
-  - resource-3646c123e263bcb1b849
-  - resource-66c77aa2478420557670
-  - resource-1d7cb0b5267326fb0dd5
-  - resource-84f3cb47156efea2dd3f
-  - resource-58b39e8afda5bdfa8f4b
-  - resource-f4b89546c49d0ae6a74b
-  - resource-96f644366f85c1a05700
-  - resource-60000f483d5c05f6f1d0
+  - arts-council-england
+  - register-for-next-drop-in-23-march-2026
+  - birmingham
+  - camden
+  - devon
+  - gateshead
+  - greenwich
+  - hampshire
+  - kent
+  - leeds
+  - manchester
+  - plymouth
+  - rochdale
+  - sheffield
+  - staffordshire
+  - idea-stores-tower-hamlets
+  - wakefield-2
+  - west-sussex
+  - explore-york
+  - business-and-ip-centre-bipc
+  - centre-for-ageing-better
+  - luca-sage
+  - antony-sojka
+  - laurie-garnons-williams
 ---
 
 # About LibraryOn
 
 LibraryOn connects libraries and people. Our goal is to increase the number of people who use libraries, both in person and online.
 
-![Two young men around a table at the library. One has his laptop and is looking at his phone, the other has a tablet stylus in his hand. They are both concentrating on their tasks](/uploads/archive/e9c353ade0c6bc7ed4a89cd0a11d761015f36486bef66a628233dba470883703.png)
+![Two young men around a table at the library. One has his laptop and is looking at his phone, the other has a tablet stylus in his hand. They are both concentrating on their tasks](/uploads/archive/two-young-men-around-a-table-at-the-library-2.png)
 
 **LibraryOn celebrates what libraries do and what people love about them. We help people discover libraries by sharing content that tells inspiring, true stories. We also enable more people to enjoy libraries by improving digital access to information and services.**
 
@@ -49,8 +49,8 @@ LibraryOn is a publicly-funded, not-for-profit programme that promotes the work 
 
 Funded by [Arts Council England](https://www.artscouncil.org.uk/), and with libraries and library ethics at its heart, LibraryOn currently does this in two core ways:
 
--   Through the LibraryOn website, we share content that tells real stories from library staff, customers and volunteers. And we communicate the range of services, community activities and content libraries offer. By showing the real difference libraries make, we aim to encourage more people to explore what they offer – in-person and online.
--   The LibraryOn grants programme distributed £1.5m of funding to library services across England in 2023 to help library services make the most of the opportunities technology offers to be able to connect to their audiences. Through the funding we have been able to support library services to improve their online presence and discoverability. We also convene a Community of Practice for grant recipients to connect and share information and inspiration.
+- Through the LibraryOn website, we share content that tells real stories from library staff, customers and volunteers. And we communicate the range of services, community activities and content libraries offer. By showing the real difference libraries make, we aim to encourage more people to explore what they offer – in-person and online.
+- The LibraryOn grants programme distributed £1.5m of funding to library services across England in 2023 to help library services make the most of the opportunities technology offers to be able to connect to their audiences. Through the funding we have been able to support library services to improve their online presence and discoverability. We also convene a Community of Practice for grant recipients to connect and share information and inspiration.
 
 [Learn more about the LibraryOn grants programme](/grants)
 

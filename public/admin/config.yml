@@ -835,18 +835,36 @@ collections:
       - name: body
         label: Content
         widget: markdown
+        modes: [rich_text, raw]
+        editor_components:
+          - library-testimonial
+          - library-quote
+          - library-cards
+          - library-card
+          - library-list-panel
+          - library-video
+          - library-faqs
+          - library-resources
+          - image
+          - code-block
+        hint: 'In Rich Text, use the + menu to insert or edit testimonials, quotes, cards, lists, videos, and linked content. Markdown mode shows the saved explicit blocks. Select FAQ and resource entries in their page fields.'
+      - name: faq_heading
+        label: FAQ Section Heading
+        widget: string
+        required: false
+        hint: Match the heading immediately before the {{faqs}} marker to include that heading and its introduction in the FAQ component.
       - name: faqs
         label: Frequently Asked Questions
-        widget: list
+        widget: relation
+        collection: faqs
+        search_fields:
+          - question
+        value_field: '{{slug}}'
+        display_fields:
+          - question
+        multiple: true
         required: false
-        summary: '{{fields.question}}'
-        fields:
-          - name: question
-            label: Question
-            widget: string
-          - name: answer
-            label: Answer
-            widget: text
+        hint: Select reusable questions in display order. Edit answers in Frequently Asked Questions.
       - name: gallery
         label: Gallery Or Slides
         widget: list
@@ -863,6 +881,40 @@ collections:
         display_fields:
           - title
         multiple: true
+        required: false
+  - name: faqs
+    label: Frequently Asked Questions
+    label_singular: FAQ
+    folder: src/content/faqs
+    create: true
+    extension: md
+    format: frontmatter
+    slug: '{{slug}}'
+    identifier_field: question
+    summary: '{{question}}'
+    editor:
+      preview: false
+    fields:
+      - name: question
+        label: Question
+        widget: string
+      - name: body
+        label: Answer
+        widget: markdown
+      - name: source_url
+        label: Original Source URL
+        widget: string
+        required: false
+      - name: attribution
+        label: Credits And Attribution
+        widget: text
+        required: false
+      - name: updated_on
+        label: Updated Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
         required: false
   - name: resources
     label: Resources And Downloads

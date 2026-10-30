@@ -9,36 +9,36 @@ source_url: https://libraryon.org/grants
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-6de0ca1d23072acf7388
-  - resource-e5cea0fbea4b12f78062
-  - resource-16e559a3c2d4c02ea999
-  - resource-8b05f35874e45bd71edc
-  - resource-3da1024684a31c57ff11
-  - resource-65d404d695f740167523
-  - resource-d0a7a3b9f96feed0f04c
-  - resource-80bac53a2beacf7fb215
-  - resource-5c207c51aa8e2db92f1c
-  - resource-8a21cfcb6b5e40d6f6df
-  - resource-94b887f5a7f1597fd1db
-  - resource-c7ece276972a999be58a
-  - resource-9e867e7d1b1e17663a43
-  - resource-6fd5177cd3951f0a1194
-  - resource-5a6cc3c7a9a0bf9f22e4
-  - resource-aeeec287453021460adf
-  - resource-a72c1db4e42a43f90504
-  - resource-1d7fce535f2c5ce78d84
-  - resource-15ead6fbfb2cade6324e
-  - resource-d4c2d68a100c106ec930
-  - resource-0383d600e96865c570be
-  - resource-9803eac439b4a08418d1
-  - resource-3faa8f0ab13786a60eb4
-  - resource-0c95fd0b6f2f7c8fb058
-  - resource-8cd5ed1d7196b03d1ac9
-  - resource-7a2578de1ff27e8dae9b
-  - resource-5c924bf98c0191a107a6
-  - resource-4df9079c0ef0720002c7
+  - libraryon-grants-evaluation-pdf
+  - the-space
+  - novellic
+  - culture-house
+  - coventry-libraries
+  - uk-library-grants-programme-libraryon-watch-the-recording-5
+  - british-library-2
+  - uk-library-grants-programme-libraryon-watch-the-recording-8
+  - uk-library-grants-programme-libraryon-watch-the-recording-4
+  - uk-library-grants-programme-libraryon-watch-the-recording-9
+  - jisc
+  - leeds
+  - the-american-library-at-norfolk-libraries
+  - uk-library-grants-programme-libraryon-watch-the-recording-6
+  - bipc-oxfordshire
+  - uk-library-grants-programme-libraryon-watch-the-recording-11
+  - somerset-libraries
+  - uk-library-grants-programme-libraryon-watch-the-recording-2
+  - reason-digital
+  - uk-library-grants-programme-libraryon-watch-the-recording-12
+  - digital-unite
+  - uk-library-grants-programme-libraryon-watch-the-recording-10
+  - university-of-york
+  - uk-library-grants-programme-libraryon-watch-the-recording
+  - libraries-hacked
+  - uk-library-grants-programme-libraryon-watch-the-recording-7
+  - digital-culture-network
+  - uk-library-grants-programme-libraryon-watch-the-recording-3
 hero:
-  image: /uploads/archive/26135fb7cf0d7b2c62f713fa3a7d6c0297fba176788c062d6b744df2b496b8dd.jpg
+  image: /uploads/archive/a-man-sits-at-a-computer-in-a-library-he-has-his-back-to-us.jpg
   alt: A man sits at a computer in a library. He has his back to us.
 ---
 
@@ -46,7 +46,7 @@ hero:
 
 The LibraryOn grants programme funds public libraries in England to improve their online presence and discoverability.
 
-![In a brightly-lit library a figure walks past shelves full of books. They are wearing a top which has 'Library Staff' printed on the back.](/uploads/archive/998eb17ee1f71a05fb456cd76f24a0800373ce121bc5c3fc1d98e2f35898be31.jpg)
+![In a brightly-lit library a figure walks past shelves full of books. They are wearing a top which has 'Library Staff' printed on the back.](/uploads/archive/in-a-brightly-lit-library-a-figure-walks-past-shelves-2.jpg)
 
 ## Grants round three
 
@@ -70,9 +70,9 @@ The second round of LibraryOn's grants programme was completed in March 2024. Vi
 
 Rounds one and two distributed more than £1m to English libraries
 
-[LibraryOn grants evaluation (PDF)](/uploads/archive/1334002e8b45f3ad6d981a957ab1b5e28c89ecd0a3c24e9e59d5595869ef6cb2.pdf)
+[LibraryOn grants evaluation (PDF)](/uploads/archive/libraryon-grants-evaluation-pdf.pdf)
 
-![A map of England's regions is overlaid with circles containing numbers. The image title is 'Total library branches reached', and a large coloured circle says '1,524 total'.](/uploads/archive/96b88682c08db023877d371d5a6f26826c8db2cd33742973c3f6595d522e3478.png)
+![A map of England's regions is overlaid with circles containing numbers. The image title is 'Total library branches reached', and a large coloured circle says '1,524 total'.](/uploads/archive/a-map-of-englands-regions-is-overlaid-with-circles-containing-2.png)
 
 ## Overview
 
@@ -82,23 +82,23 @@ All statutory library services in England are eligible for funding, as well as s
 
 In the first round we awarded £1.09m, spread across 27 projects. Grants ranged from £10,000 to £70,000, and projects included:
 
--   Upgrading existing websites.
+- Upgrading existing websites.
 
--   Upgrading other online offers or services.
+- Upgrading other online offers or services.
 
--   Piloting something brand new.
+- Piloting something brand new.
 
 Applications were carefully considered through a robust, two-stage decision making process, involving panels of sector experts. Successful grantees have until January 2024 to complete their projects. A full list of awarded projects is available on our [Grants round one page](/grants/round-1).
 
 In the second round an additional £500,000 was made available. Services were invited to apply for funding of projects in the following categories:
 
--   Library apps
+- Library apps
 
--   Online registration
+- Online registration
 
--   Virtual tours
+- Virtual tours
 
--   Upgrades or improvements to Library Management Systems
+- Upgrades or improvements to Library Management Systems
 
 The round closed on 1 November 2023 and details of awarded projects can be found on our [Grants round two page](/grants/round-2).
 
@@ -106,11 +106,11 @@ The round closed on 1 November 2023 and details of awarded projects can be found
 
 We developed a Community of Practice (CoP) to allow services to support one another and maximise learning, both during the lifespan of the projects and beyond. The CoP’s three aims are:
 
--   To share – creating a space where projects can learn from one another, share ideas and explore ways of working around digital capability.
+- To share – creating a space where projects can learn from one another, share ideas and explore ways of working around digital capability.
 
--   To learn – a programme of workshops and seminars to support project activity and develop skills and expertise.
+- To learn – a programme of workshops and seminars to support project activity and develop skills and expertise.
 
--   To be inspired – inviting industry specialists from library, digital and other sectors to present on relevant topics
+- To be inspired – inviting industry specialists from library, digital and other sectors to present on relevant topics
 
 We asked services about the areas related to digital activity that they would most want to learn more about. Using this feedback we built a programme of expert speaker sessions, shaped by our CoP but also open to the wider sector.
 

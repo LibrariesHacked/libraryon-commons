@@ -10,15 +10,15 @@ source_url: https://libraryon.org/legal/accessibility-statement
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-0db6dce5a413f0a3218c
-  - resource-e8a554c801f02c5a0a24
-  - resource-6193ddc40ec467eea8e0
+  - terms-of-fair-usage
+  - abilitynet
+  - goss-consultancy-ltd-gcl
 ---
 
--   [Privacy notice](/legal/privacy-notice)
--   [Accessibility statement](/legal/accessibility-statement)
--   [Artificial Intelligence (AI) statement](/legal/ai-statement)
--   [Terms of fair usage](https://www.bl.uk/terms/)
+- [Privacy notice](/legal/privacy-notice)
+- [Accessibility statement](/legal/accessibility-statement)
+- [Artificial Intelligence (AI) statement](/legal/ai-statement)
+- [Terms of fair usage](https://www.bl.uk/terms/)
 
 # Accessibility statement for LibraryOn
 
@@ -30,11 +30,11 @@ LibraryOn, led by the British Library and funded by Arts Council England, is com
 
 We want as many people as possible to be able to use this website. This means you should be able to:
 
--   change colours, contrast levels and fonts using browser functionality
--   zoom in up to 200% without the text spilling off the screen
--   navigate most of the website using just a keyboard
--   navigate most of the website using speech recognition software
--   interact with most of the website using a screen reader (including recent versions of JAWS, NVDA and VoiceOver)
+- change colours, contrast levels and fonts using browser functionality
+- zoom in up to 200% without the text spilling off the screen
+- navigate most of the website using just a keyboard
+- navigate most of the website using speech recognition software
+- interact with most of the website using a screen reader (including recent versions of JAWS, NVDA and VoiceOver)
 
 We also use straightforward language to help make our content clear and understandable.
 
@@ -46,8 +46,8 @@ Our most recent website review was undertaken by people with lived experience of
 
 We are aware that a few areas of this website are not fully accessible:
 
--   Some naked links appear on the site.
--   One area of the information provided about some libraries does not provide sufficient colour contrast.
+- Some naked links appear on the site.
+- One area of the information provided about some libraries does not provide sufficient colour contrast.
 
 ## Reporting accessibility problems with this website
 
@@ -73,9 +73,9 @@ The content listed below is non-accessible for the following reasons.
 
 ### Non-compliance with the Accessibility Regulations
 
--   The purpose of some links on this site cannot be understood from the link text alone, meaning that people with cognitive limitations or users of assistive technologies may become disoriented by navigation to content they are not interested in. This fails WCAG 2.4.4 (Link Purpose in Context).
+- The purpose of some links on this site cannot be understood from the link text alone, meaning that people with cognitive limitations or users of assistive technologies may become disoriented by navigation to content they are not interested in. This fails WCAG 2.4.4 (Link Purpose in Context).
 
--   The ‘Opening Times' display panel does not have sufficient colour contrast, meaning that people with low vision or contrast impairment may not be able to distinguish the content without assistive technology. This fails WCAG 1.4.3 (Contrast Minimum).
+- The ‘Opening Times' display panel does not have sufficient colour contrast, meaning that people with low vision or contrast impairment may not be able to distinguish the content without assistive technology. This fails WCAG 1.4.3 (Contrast Minimum).
 
 We are working to improve this and aim to resolve the issues we have identified by the end of April 2026.
 
@@ -93,10 +93,10 @@ This website was last tested during late August 2025. The test was carried out b
 
 GCL tested a range of the website pages over a series of user journeys and tasks. These were appraised by a GCL digital accessibility specialist, with lived experience of disability, using the following general terms as a focus:
 
--   Aesthetic
--   Function
--   Accessibility
--   Navigation
+- Aesthetic
+- Function
+- Accessibility
+- Navigation
 
 A parallel assessment was undertaken by individuals who have a neurodiverse profile, a user of Assistive Technology who has a visual impairment, and a specialist provider of Assistive Technology for users who have a visual impairment. They undertook the journeys using Assistive Technology software and screen readers, text to speech software using a varied selection of browsers (including Google Chrome, Firefox, Opera and Microsoft Edge), and running software on Microsoft 11 operating platforms to mirror the experience of the majority of hardware and software that website visitors would utilise. Firefox on a OnePlus Android device was also utilised for testing. 
 

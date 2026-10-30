@@ -1,7 +1,7 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ArticleCards from '../components/ArticleCards.astro';
-import FAQSection from '../components/FAQSection.astro';
+import PageContent from '../components/PageContent.astro';
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play, Search } from '@lucide/astro';
 import { articleTitle, safeURL, settings, sitePath } from '../lib/site.mjs';
 import homepage from '../data/homepage.json';
@@ -143,9 +143,8 @@ const collections = selected(homepage.collection_pages);
   </section>
   <section class="section shell">
     <article class="prose original-content home-prose">
-      <slot />
+      <PageContent {...Astro.props}><slot /></PageContent>
     </article>
-    <FAQSection items={entry.data.faqs} />
   </section>
   <section class="section section-wash">
     <div class="shell">
@@ -172,25 +171,28 @@ const collections = selected(homepage.collection_pages);
     </div>
   </section>
   {carousel.length > 0 && (
-    <script is:inline>
+    <script>
+      import EmblaCarousel from 'embla-carousel';
+      import Autoplay from 'embla-carousel-autoplay';
+
       (() => {
         const root = document.querySelector('[data-hero-carousel]');
         if (!root) return;
-        const viewport = root.querySelector('[data-carousel-viewport]');
-        const slides = [...root.querySelectorAll('[data-carousel-slide]')];
+        const viewport = root.querySelector<HTMLElement>('[data-carousel-viewport]');
+        const slides = [...root.querySelectorAll<HTMLElement>('[data-carousel-slide]')];
         const dots = [...root.querySelectorAll('[data-carousel-dot]')];
         const prevBtn = root.querySelector('[data-carousel-prev]');
         const nextBtn = root.querySelector('[data-carousel-next]');
         const toggleBtn = root.querySelector('[data-carousel-toggle]');
-        const pauseIcon = root.querySelector('[data-icon-pause]');
-        const playIcon = root.querySelector('[data-icon-play]');
+        const pauseIcon = root.querySelector<HTMLElement>('[data-icon-pause]');
+        const playIcon = root.querySelector<HTMLElement>('[data-icon-play]');
         if (!viewport || slides.length < 2) return;
 
         const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
         let userPaused = reducedMotion.matches;
-        let hoverOrFocusPaused = false;
-        let activeIndex = 0;
-        let timer = null;
+        const autoplay = Autoplay({ delay: 4200, playOnInit: false, stopOnInteraction: true });
+        viewport.dataset.carouselInitialized = 'true';
+        const carousel = EmblaCarousel(viewport, { align: 'start', containScroll: false, loop: true, duration: reducedMotion.matches ? 0 : 25 }, [autoplay]);
 
         const syncToggleUI = () => {
           if (!toggleBtn) return;
@@ -202,124 +204,60 @@ const collections = selected(homepage.collection_pages);
           if (playIcon) playIcon.hidden = !userPaused;
         };
 
-        const syncDots = (index) => {
-          activeIndex = index;
-          for (let i = 0; i < dots.length; i += 1) {
-            dots[i].setAttribute('aria-current', i === index ? 'true' : 'false');
-          }
+        const syncDots = () => {
+          dots.forEach((dot, index) => dot.setAttribute('aria-current', String(index === carousel.selectedScrollSnap())));
         };
-
-        const goToSlide = (index) => {
-          const count = slides.length;
-          const targetIndex = ((index % count) + count) % count;
-          const target = slides[targetIndex];
-          if (!target) return;
-          const left = target.offsetLeft - slides[0].offsetLeft;
-          viewport.scrollTo({
-            left,
-            behavior: reducedMotion.matches ? 'auto' : 'smooth'
-          });
-          syncDots(targetIndex);
+        const resume = () => {
+          if (!userPaused && !root.matches(':hover, :focus-within') && !document.hidden) autoplay.play(reducedMotion.matches);
         };
-
-        const stepForward = () => {
-          const atEnd =
-            viewport.scrollLeft + viewport.clientWidth >= viewport.scrollWidth - 12;
-          if (atEnd) {
-            goToSlide(0);
-          } else {
-            goToSlide(activeIndex + 1);
-          }
-        };
-
-        const stepBackward = () => {
-          if (viewport.scrollLeft <= 12) {
-            goToSlide(slides.length - 1);
-          } else {
-            goToSlide(activeIndex - 1);
-          }
-        };
-
-        const restartTimer = () => {
-          if (timer) {
-            window.clearInterval(timer);
-            timer = null;
-          }
-          if (!userPaused && !hoverOrFocusPaused && !reducedMotion.matches) {
-            timer = window.setInterval(stepForward, 4200);
-          }
-        };
-
-        viewport.addEventListener(
-          'scroll',
-          () => {
-            const base = slides[0].offsetLeft;
-            const currentLeft = viewport.scrollLeft;
-            let closest = 0;
-            let minDiff = Infinity;
-            for (let i = 0; i < slides.length; i += 1) {
-              const diff = Math.abs(slides[i].offsetLeft - base - currentLeft);
-              if (diff < minDiff) {
-                minDiff = diff;
-                closest = i;
-              }
-            }
-            syncDots(closest);
-          },
-          { passive: true }
-        );
+        carousel.on('select', syncDots).on('reInit', syncDots);
+        carousel.on('pointerDown', () => {
+          userPaused = true;
+          syncToggleUI();
+        });
 
         prevBtn?.addEventListener('click', () => {
-          stepBackward();
-          restartTimer();
+          carousel.scrollPrev(reducedMotion.matches);
+          autoplay.reset();
         });
 
         nextBtn?.addEventListener('click', () => {
-          stepForward();
-          restartTimer();
+          carousel.scrollNext(reducedMotion.matches);
+          autoplay.reset();
         });
 
         for (const dot of dots) {
           dot.addEventListener('click', () => {
-            const idx = Number(dot.getAttribute('data-carousel-dot') || 0);
-            goToSlide(idx);
-            restartTimer();
+            carousel.scrollTo(Number(dot.getAttribute('data-carousel-dot') || 0), reducedMotion.matches);
+            autoplay.reset();
           });
         }
 
         toggleBtn?.addEventListener('click', () => {
           userPaused = !userPaused;
           syncToggleUI();
-          restartTimer();
+          if (userPaused) autoplay.stop();
+          else autoplay.play(reducedMotion.matches);
         });
 
-        root.addEventListener('mouseenter', () => {
-          hoverOrFocusPaused = true;
-          restartTimer();
-        });
-        root.addEventListener('mouseleave', () => {
-          hoverOrFocusPaused = false;
-          restartTimer();
-        });
-        root.addEventListener('focusin', () => {
-          hoverOrFocusPaused = true;
-          restartTimer();
-        });
+        root.addEventListener('mouseenter', () => autoplay.stop());
+        root.addEventListener('mouseleave', resume);
+        root.addEventListener('focusin', () => autoplay.stop());
         root.addEventListener('focusout', (event) => {
-          if (!root.contains(event.relatedTarget)) {
-            hoverOrFocusPaused = false;
-            restartTimer();
-          }
+          if (!root.contains(event.relatedTarget)) resume();
         });
 
         reducedMotion.addEventListener('change', () => {
           if (reducedMotion.matches) userPaused = true;
+          carousel.reInit({ duration: reducedMotion.matches ? 0 : 25 });
           syncToggleUI();
-          restartTimer();
+          if (userPaused) autoplay.stop();
+          else resume();
         });
 
+        syncDots();
         syncToggleUI();
-        restartTimer();
+        resume();
       })();
     </script>
   )}

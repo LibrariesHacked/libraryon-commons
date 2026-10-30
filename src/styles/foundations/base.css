@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+button,
+a,
+input,
+select,
+summary {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: var(--brand-link);
+  text-underline-offset: 0.2em;
+}
+a:hover {
+  color: var(--brand-primary);
+}
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 4px;
+}
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-weight: 550;
+  letter-spacing: 0;
+}
+h1,
+h2 {
+  font-family: var(--display);
+  font-weight: var(--font-weight-4);
+}
+h1 {
+  font-size: 2.8rem;
+  margin: 0.5rem 0 var(--size-4);
+}
+h2 {
+  font-size: var(--font-size-5);
+}
+h3 {
+  font-size: 1.15rem;
+}
+p {
+  margin: 0 0 1.2rem;
+}
+svg {
+  flex-shrink: 0;
+  vertical-align: middle;
+}
+.prose {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.prose.original-content h1 {
+  display: none;
+}
+.prose h2 {
+  margin: 2.5rem 0 var(--size-3);
+}
+.prose h3 {
+  margin: var(--size-7) 0 0.8rem;
+}
+.prose img {
+  display: block;
+  width: auto;
+  max-height: 560px;
+  object-fit: contain;
+  margin: var(--size-5) auto;
+}
+.prose blockquote {
+  margin: var(--size-7) 0;
+  border-left: 4px solid var(--brand-rose);
+  padding: 0.5rem 0 0.5rem var(--size-5);
+  font-family: var(--display);
+  font-size: 1.3rem;
+}
+.prose blockquote p:last-child {
+  margin-bottom: 0;
+}
+.prose table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-block: var(--size-5);
+}
+.prose th,
+.prose td {
+  padding: 0.75rem;
+  border: var(--border-size-1) solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+.prose th {
+  background: var(--wash);
+}
+.prose li {
+  margin-block: 0.4rem;
+}
+.prose details {
+  border-block: var(--border-size-1) solid var(--line);
+  padding: var(--size-3) 0;
+}
+.prose summary {
+  cursor: pointer;
+}
+.prose ul {
+  padding-inline-start: var(--size-5);
+}
+.muted {
+  color: var(--muted);
+}
+[hidden] {
+  display: none !important;
+}
+@media (max-width: 760px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .prose {
+    font-size: 0.93rem;
+  }
+  .prose img {
+    max-height: 420px;
+  }
+}

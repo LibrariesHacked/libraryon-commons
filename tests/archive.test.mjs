@@ -1,5 +1,36 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import sharp from 'sharp';
+import { pageImages, responsiveSources, largestAvailableImage, serializedPageData } from '../scripts/archive/media.mjs';
+
+test('serialized public image metadata is parsed without executing source scripts', () => {
+  const media = { image: { url: 'https://libraryon.lon1.digitaloceanspaces.com/original.jpg', formats: { thumbnail: { url: 'https://libraryon.lon1.digitaloceanspaces.com/thumbnail.jpg' } } } };
+  const chunk = `a:${JSON.stringify(media)}\n`;
+  const html = `<script>globalThis.__archiveScriptExecuted = true; self.__next_f.push([1,${JSON.stringify(chunk)}])</script>`;
+  assert.deepEqual(serializedPageData(html), [media]);
+  assert.equal(globalThis.__archiveScriptExecuted, undefined);
+  const [image] = pageImages(`<img src="https://libraryon.lon1.digitaloceanspaces.com/thumbnail.jpg" alt="Library">${html}`, 'https://libraryon.org/');
+  assert.ok(image.candidates.some((candidate) => candidate.url.endsWith('/original.jpg')));
+});
+
+test('image masters include banners, picture sources, zoom links and actual pixel dimensions', async () => {
+  const html = '<section><a href="/zoom.png"><picture><source srcset="/large.png 2000w"><img src="/small.png" srcset="/medium.png 1000w" alt="Library"></picture></a></section><main>Body</main>';
+  const [image] = pageImages(html, 'https://libraryon.org/');
+  assert.deepEqual(image.candidates.map((candidate) => candidate.url), [
+    'https://libraryon.org/small.png', 'https://libraryon.org/medium.png',
+    'https://libraryon.org/large.png', 'https://libraryon.org/zoom.png'
+  ]);
+  assert.equal(responsiveSources('/_next/image?url=%2Foriginal.jpg&w=640', '', 'https://libraryon.org/')[0].url, 'https://libraryon.org/original.jpg');
+  const sizes = { 'small.png': 10, 'medium.png': 20, 'zoom.png': 40 };
+  const result = await largestAvailableImage(image.candidates, async (url) => {
+    const width = sizes[url.split('/').pop()];
+    if (!width) throw new Error('404');
+    return { bytes: await sharp({ create: { width, height: width, channels: 3, background: 'white' } }).png().toBuffer() };
+  });
+  assert.equal(result.image.url, 'https://libraryon.org/zoom.png');
+  assert.equal(result.image.width, 40);
+  assert.equal(result.failures.length, 1);
+});
 import {
   allowed,
   references,
@@ -100,11 +131,14 @@ test('CMS export retains rich content, image credits, slide and recording links'
     )
   );
   const bannerRecord = pageContent(
-    '<section id="banner-home"><h1>Libraries are for everyone</h1></section><main><p>Start your journey.</p></main>',
+    '<section id="banner-home"><h1>Libraries are for everyone</h1><img src="/hero.jpg" alt="Library visitor" srcset="/hero-large.jpg 2500w"></section><main><p>Start your journey.</p></main>',
     'https://libraryon.org/'
   );
   assert.equal(bannerRecord.headings[0].text, 'Libraries are for everyone');
   assert.ok(bannerRecord.html.includes('<h1>Libraries are for everyone</h1>'));
+  assert.equal(bannerRecord.images[0].url, 'https://libraryon.org/hero.jpg');
+  assert.equal(bannerRecord.images[0].srcset, '/hero-large.jpg 2500w');
+  assert.ok(!bannerRecord.html.includes('hero.jpg'));
 });
 
 test('image discovery keeps original images behind thumbnails and both storage URL formats', () => {

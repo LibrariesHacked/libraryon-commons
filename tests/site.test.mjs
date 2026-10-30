@@ -15,10 +15,146 @@ import {
   canonicalInternalPath,
   isOriginalContent,
   isPublishedPage,
-  sitePath
+  sitePath,
+  mediaURL
 } from '../src/lib/site.mjs';
 import { preservedLinks, decodeProtectedEmail } from '../src/lib/markdown.mjs';
 import { templateFor } from '../src/lib/templates.mjs';
+import { splitContentModules, unlinkedResources } from '../src/lib/content-modules.mjs';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import remarkDirective from 'remark-directive';
+import { contentDirectives } from '../src/lib/content-directives.mjs';
+import { transformImportedMarkup } from '../scripts/archive/legacy-markup.mjs';
+import { load } from 'cheerio';
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import astroConfig from '../astro.config.mjs';
+import { normalizeListSpacing } from '../src/lib/markdown-format.mjs';
+import { normalizeLinkedCards } from '../scripts/normalize-content.mjs';
+
+test('carousel and filter mechanics use maintained engines and native browser primitives', () => {
+  const home = readFileSync(new URL('../src/templates/HomeTemplate.astro', import.meta.url), 'utf8');
+  assert.ok(home.includes("from 'embla-carousel'"));
+  assert.ok(home.includes("from 'embla-carousel-autoplay'"));
+  assert.ok(!home.includes('setInterval('));
+  assert.ok(!home.includes('requestAnimationFrame('));
+  const directory = readFileSync(new URL('../src/pages/libraries/index.astro', import.meta.url), 'utf8');
+  assert.equal((directory.match(/popover="auto"/g) || []).length, 2);
+  assert.ok(directory.includes('popovertarget="Services-panel"'));
+  assert.ok(directory.includes('popovertarget="Distance-panel"'));
+  assert.ok(directory.includes("from '@floating-ui/dom'"));
+  assert.ok(!directory.includes('const togglePanel'));
+  assert.ok(!directory.includes("document.addEventListener('mousedown'"));
+  assert.ok(!directory.includes("document.addEventListener('keydown'"));
+});
+
+test('Markdown list markers normalize without changing nested structure or code', () => {
+  const source = '-   Parent\n    -   Child\n        continuation\n\n```md\n-   Keep code\n```\n';
+  const normalized = normalizeListSpacing(source);
+  assert.ok(normalized.startsWith('- Parent\n  - Child\n    continuation'));
+  assert.ok(normalized.includes('-   Keep code'));
+  assert.equal(normalizeListSpacing(normalized), normalized);
+  const link = normalizeLinkedCards(':::card\n\n### Read together\n\n[Explore](/reading)\n\n:::');
+  assert.equal(link.linked, 1);
+  assert.ok(link.source.startsWith(':::card{href="/reading"}'));
+  assert.ok(!link.source.includes('[Explore]'));
+  assert.equal(normalizeLinkedCards(link.source).linked, 0);
+});
+
+test('linked Markdown cards use the common body, heading and Lucide arrow structure', async () => {
+  const processor = await createMarkdownProcessor({ remarkPlugins: [remarkDirective, contentDirectives] });
+  const document = load((await processor.render('::::cards\n\n:::card{href="/reading"}\n\n![Reading](/photo.jpg)\n\n### Reading together\n\nA description.\n\n:::\n\n::::')).code);
+  assert.equal(document('a.content-card[href="/reading"] > img').length, 1);
+  assert.equal(document('a.content-card > .content-card-body > .content-card-heading').length, 1);
+  assert.equal(document('.content-card-heading .content-card-arrow path').length, 2);
+  assert.equal(document('a.content-card a').length, 0);
+});
+
+test('Markdown component source changes are included in the content-cache fingerprint', () => {
+  const hash = createHash('sha256');
+  for (const file of ['content-directives.mjs', 'markdown.mjs', 'site.mjs'])
+    hash.update(readFileSync(new URL(`../src/lib/${file}`, import.meta.url))).update('\0');
+  const options = astroConfig.markdown.processor.options.rehypePlugins.find(([plugin]) => plugin === preservedLinks)[1];
+  assert.equal(options.rendererDigest, hash.digest('hex'));
+});
+
+test('named Markdown blocks render explicit components and ordinary content stays ordinary', async () => {
+  const processor = await createMarkdownProcessor({ remarkPlugins: [remarkDirective, contentDirectives], rehypePlugins: [[preservedLinks, { base: '/commons/' }]], smartypants: false });
+  const markdown = ':::testimonial{author="Tracy" role="Librarian" organisation="Wiltshire Libraries" url="/libraries/wiltshire"}\n\n![Reading](/photo.jpg)\n\n> Bring your little ones.\n\n:::\n\n:::quote{author="Alex" role="Customer"}\n\n> We love our library.\n\n:::\n\n::::cards\n\n:::card\n\n![Books](/books.jpg)\n\n### Reading\n\n[Explore](/reading)\n\n:::\n\n::::\n\n:::list-panel\n\n## Activities\n\n- Borrow books\n- Learn skills\n\n:::\n\n::video{src="https://www.youtube.com/embed/example" title="Library film"}';
+  const document = load((await processor.render(markdown)).code);
+  assert.equal(document('figure.testimonial-card').length, 1);
+  assert.equal(document('.testimonial-body blockquote').text().trim(), 'Bring your little ones.');
+  assert.equal(document('.quote-author').first().text(), 'Tracy');
+  assert.equal(document('.quote-role a').attr('href'), '/commons/libraries/wiltshire/');
+  assert.equal(document('figure.testimonial-quote').length, 1);
+  assert.equal(document('.imported-content-card-grid > .imported-content-card > img').length, 1);
+  assert.equal(document('.library-can-do-panel .library-can-do-list li').length, 2);
+  assert.equal(document('.video-embed iframe').attr('title'), 'Library film');
+  assert.equal(document('.video-embed-player iframe').attr('loading'), 'lazy');
+  assert.equal(document('.video-embed figcaption a').attr('href'), 'https://www.youtube.com/watch?v=example');
+  assert.equal(document('.video-embed figcaption a').text(), 'Watch on YouTube');
+  const ordinary = (await processor.render('![Photo](/photo.jpg)\n\n> A quote.\n\nTracy\n\nLibrarian, Wiltshire\n\n## Your public library is a free, open space where you can:\n\n- Borrow books\n\n[View iframe](https://www.youtube.com/embed/example)')).code;
+  assert.ok(!ordinary.includes('testimonial-card'));
+  assert.ok(!ordinary.includes('testimonial-quote'));
+  assert.ok(!ordinary.includes('library-can-do-panel'));
+  assert.ok(!ordinary.includes('<iframe'));
+  await assert.rejects(processor.render(':::quote\n\n> No author.\n\n:::'), /author is required/);
+  await assert.rejects(processor.render(':::unknown\n\nText\n\n:::'), /unknown content block/);
+  await assert.rejects(processor.render(':::card{href="javascript:alert(1)"}\n\nText\n\n:::'), /links must use/);
+});
+
+test('master image resolution preserves suffixes and leaves unrelated URLs alone', () => {
+  const aliases = { '/uploads/small.jpg': { url: '/uploads/original.jpg' } };
+  assert.equal(mediaURL('/uploads/small.jpg?download=1#detail', aliases), '/uploads/original.jpg?download=1#detail');
+  assert.equal(mediaURL('/uploads/other.jpg', aliases), '/uploads/other.jpg');
+  assert.equal(mediaURL('https://example.org/photo.jpg', aliases), 'https://example.org/photo.jpg');
+  assert.equal(mediaURL(null, aliases), null);
+});
+
+test('cached Markdown media resolves original masters at the shared content boundary', () => {
+  const old = '/uploads/archive/a-man-and-a-woman-laugh-together-in-a-reading-group-discussion.jpg';
+  const master = mediaURL(old);
+  assert.notEqual(master, old);
+  const html = `<p><a href="${old}#detail"><img src="${old}" alt="Reading group"></a></p>`;
+  const blocks = splitContentModules(html);
+  assert.ok(blocks[0].html.includes(`src="${master}"`));
+  assert.ok(blocks[0].html.includes(`href="${master}#detail"`));
+  const prefixed = splitContentModules(html.replaceAll('/uploads/', '/commons/uploads/'), { base: '/commons/' });
+  assert.ok(prefixed[0].html.includes(`src="/commons${master}"`));
+});
+
+test('content modules use explicit positions once, or follow the page body by default', () => {
+  const blocks = splitContentModules('<p>Before</p><p>{{faqs}}</p><h2>After</h2><p>{{faqs}}</p><p>{{resources}}</p>');
+  assert.deepEqual(blocks, [
+    { type: 'html', html: '<p>Before</p>' },
+    { type: 'faqs' },
+    { type: 'html', html: '<h2>After</h2>' },
+    { type: 'resources' }
+  ]);
+  assert.deepEqual(splitContentModules('<p>Body</p>').map((block) => block.type), ['html', 'faqs', 'resources']);
+  assert.ok(splitContentModules('<pre><code>{{faqs}}</code></pre><p>A {{resources}} example</p>')[0].html.includes('<code>{{faqs}}</code>'));
+});
+
+test('FAQ references retain their introduction and anchor without inline answers', () => {
+  const html = '<p>Before</p><h2 id="questions">Questions</h2><p>Introduction</p><p>{{faqs}}</p><h2>After</h2>';
+  const blocks = splitContentModules(html, { faqHeading: 'Questions' });
+  assert.deepEqual(blocks[1], { type: 'faqs', headingId: 'questions', introduction: '<p>Introduction</p>' });
+  assert.ok(blocks[0].html.includes('Before'));
+  assert.ok(blocks[2].html.includes('After'));
+  assert.ok(!JSON.stringify(blocks).includes('{{faqs}}'));
+});
+
+test('resource modules include external links but avoid body links, duplicates and unsafe URLs', () => {
+  const resources = [
+    { url: '/reading', kind: 'link' },
+    { url: '/uploads/guide.pdf', kind: 'document' },
+    { url: 'https://example.org/video', kind: 'recording' },
+    { url: 'https://example.org/video', kind: 'link' },
+    { url: 'javascript:alert(1)', kind: 'link' }
+  ];
+  assert.deepEqual(unlinkedResources('<a href="/reading/">Read</a><a href="/uploads/guide.pdf">Guide</a>', resources), [resources[2]]);
+  assert.deepEqual(unlinkedResources('<a href="/reading/">Read</a><a href="/uploads/guide.pdf">Guide</a><div class="faq-answer"><a href="https://example.org/video">Watch</a></div>', resources), []);
+});
 
 test('directory routes preserve every library with unique URLs and authority relationships', () => {
   assert.equal(searchRecords.length, libraries.length);
@@ -192,7 +328,7 @@ test('Markdown links support subpaths and original obfuscated email without clie
   assert.equal(externalImage.children[0].value, 'Original event image');
 });
 
-test('imported embeds, image controls, lists, cards and FAQs render as usable components', () => {
+test('legacy migration recognizes imported embeds, image controls, lists, cards and FAQs', () => {
   const text = (value) => ({ type: 'text', value });
   const element = (tagName, children = [], properties = {}) => ({
     type: 'element',
@@ -236,6 +372,7 @@ test('imported embeds, image controls, lists, cards and FAQs render as usable co
     ]
   };
 
+  transformImportedMarkup(tree, '');
   preservedLinks()(tree);
 
   const htmlNodes = tree.children.filter(
@@ -256,7 +393,7 @@ test('imported embeds, image controls, lists, cards and FAQs render as usable co
   assert.ok(!htmlNodes.some((node) => node.tagName === 'p' && /^(View|1\/5|12345)$/.test(node.children?.[0]?.value || '')));
 });
 
-test('testimonials, attributed quotes, feature card grids and library activity lists are grouped semantically', () => {
+test('legacy migration recognizes testimonials, cards and list groupings', () => {
   const text = (value) => ({ type: 'text', value });
   const element = (tagName, children = [], properties = {}) => ({
     type: 'element',
@@ -286,6 +423,7 @@ test('testimonials, attributed quotes, feature card grids and library activity l
     ]
   };
 
+  transformImportedMarkup(tree, '');
   preservedLinks()(tree);
 
   const htmlNodes = tree.children.filter(

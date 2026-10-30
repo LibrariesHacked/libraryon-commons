@@ -96,11 +96,21 @@ See [Running and Hosting](docs/site.md) for static host requirements, `SITE_URL`
 
 ## Built With
 
-- [Astro](https://astro.build/) — Static site generator
-- [Decap CMS](https://decapcms.org/) — Git-backed browser CMS
-- [Node.js](https://nodejs.org/) — Runtime and test runner (`node --test`)
-- [Turndown](https://github.com/mixmark-io/turndown), [Cheerio](https://cheerio.js.org/) & [sanitize-html](https://github.com/apostrophecms/sanitize-html) — Archive HTML-to-Markdown pipeline
-- [Playwright](https://playwright.dev/) — Optional browser capture tool
+- [Astro](https://astro.build/) — Builds the static website.
+- [Decap CMS](https://decapcms.org/) — Edits content in the browser, with Decap Server for local editing.
+- [Open Props](https://open-props.style/) — Shared styling values.
+- [Embla Carousel](https://www.embla-carousel.com/) — Image carousel and autoplay.
+- [Floating UI](https://floating-ui.com/) — Positions filter menus.
+- [Lucide](https://lucide.dev/) — Icons.
+- [Fontsource](https://fontsource.org/) — Locally hosted fonts.
+- [Unified, Remark and Rehype](https://unifiedjs.com/) — Read, write and render Markdown.
+- [YAML](https://eemeli.org/yaml/) — Reads content metadata and CMS settings.
+- [Turndown](https://github.com/mixmark-io/turndown) — Converts archived HTML to Markdown.
+- [Cheerio](https://cheerio.js.org/) and [sanitize-html](https://github.com/apostrophecms/sanitize-html) — Read and clean archived HTML.
+- [Sharp](https://sharp.pixelplumbing.com/) — Checks image sizes and quality.
+- [Acorn](https://github.com/acornjs/acorn) — Reads archived JavaScript without running it.
+- [Playwright](https://playwright.dev/) — Browser testing and archive captures.
+- [PostCSS](https://postcss.org/) and [Prettier](https://prettier.io/) — Check and format styles and code.
 
 ## Contributing
 

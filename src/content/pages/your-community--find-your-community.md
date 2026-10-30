@@ -9,23 +9,23 @@ source_url: https://libraryon.org/your-community/find-your-community
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-0264f89ac8331cc814e5
-  - resource-9e5cdc52cc61cd58af2e
+  - wakefield
+  - eventbrite
 ---
 
 # Find your community
 
+:::quote{author="Diane" role="Customer and volunteer, Wakefield Libraries"}
+
 > “The great thing about the library is that it’s a public space where you don’t need to buy anything.”
 
-Diane
-
-Customer and volunteer, Wakefield Libraries
+:::
 
 Free entry. Free seating. Free toilets. Free community.
 
 The library is the main community hub in many villages, towns and cities across the country. It acts as a gateway to friendship, hobbies, culture and support for many.
 
-![Two men at a laptop. One man works for the library and is pointing at the laptop. The other man is an older man wearing a fur hat and smiling.](/uploads/archive/f463f4b56a9685edd1c4e3b1c1c9b4863e74b50eaaba8c42c8aa73ec41e48b92.jpg)
+![Two men at a laptop. One man works for the library and is pointing at the laptop. The other man is an older man wearing a fur hat and smiling.](/uploads/archive/an-older-person-using-a-laptop-with-a-member.jpg)
 
 Diane in Sandal, [Wakefield](https://www.wakefield.gov.uk/libraries-and-local-history/), says:
 
@@ -43,29 +43,45 @@ Most of us are novice gardeners. We’ve built a nice bond, and it’s a healthy
 
 ## Why try the library
 
-![Two ladies take part in an arts and craft event at a library.](/uploads/archive/18419a6230114d0b0d73df0a61e462d7195bc4da45f70e522beead11ed3f5cb5.jpg)
+::::cards
+
+:::card
+
+![Two ladies take part in an arts and craft event at a library.](/uploads/archive/two-ladies-take-part-in-an-arts-and-craft-event-at-a-library.jpg)
 
 ### Hobby groups
 
 Find craft and interest groups - including book groups - at many libraries. Great whether you're an expert or a beginner
 
-![A lady smiles while she talks to another lady at a library.](/uploads/archive/5d65f1b95c8241181cff3446b50423e2009d635fd98b7dbb5789083395f0534f.jpg)
+:::
+
+:::card
+
+![A lady smiles while she talks to another lady at a library.](/uploads/archive/a-lady-smiles-while-she-talks-to-another-lady-at-a-library.jpg)
 
 ### Accessible spaces
 
 Libraries often host activities designed for the health and wellbeing of people with additional needs
 
-![A man stands in front of a group of people in a room. Behind him is a projection that reads 'What ACCG can do for you'.](/uploads/archive/c0527da25f36b43e5354ec3cd270deaa78822e10a63403aae42713c5a00a81e2.jpg)
+:::
+
+:::card
+
+![A man stands in front of a group of people in a room. Behind him is a projection that reads 'What ACCG can do for you'.](/uploads/archive/a-man-stands-in-front-of-a-group-of-people.jpg)
 
 ### Support hub
 
 Charities help library customers find peer support from people with similar experiences
 
+:::
+
+::::
+
+:::quote{author="Helen" role="Floor manager, Halton Libraries"}
+
 > “We get a lot of the same people coming back… so we know we’re doing something right.”
 
-Helen
-
-Floor manager, Halton Libraries
+:::
 
 ## Tips for finding your community at the library
 

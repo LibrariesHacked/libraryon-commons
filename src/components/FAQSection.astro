@@ -1,18 +1,22 @@
 ---
 import { settings } from '../lib/site.mjs';
-const items = (Astro.props.items || []).filter(
-  (item) => item.question?.trim() && item.answer?.trim()
-);
+import { render } from 'astro:content';
+const { items = [], heading = settings.ui.editorial.faq_heading, headingId = 'page-faqs', introduction = '' } = Astro.props;
+const answers = await Promise.all(items.map(async (entry) => ({
+  question: entry.data.question,
+  ...(await render(entry))
+})));
 ---
 
-{items.length > 0 && (
+{answers.length > 0 && (
   <section class="faq-section structured-faq">
-    <h2>{settings.ui.editorial.faq_heading}</h2>
+    <h2 id={headingId}>{heading}</h2>
+    <Fragment set:html={introduction} />
     <div class="faq-list">
-      {items.map((item) => (
+      {answers.map(({ question, Content }) => (
         <details class="faq-item">
-          <summary>{item.question}</summary>
-          <p class="faq-answer">{item.answer}</p>
+          <summary>{question}</summary>
+          <div class="faq-answer"><Content /></div>
         </details>
       ))}
     </div>

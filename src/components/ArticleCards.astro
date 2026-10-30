@@ -8,7 +8,7 @@ const { entries } = Astro.props;
   {entries.map((entry) => {
     const image = articleImage(entry);
     return (
-      <a class="article-card" href={sitePath(entry.data.path)}>
+      <a class="article-card content-card" href={sitePath(entry.data.path)}>
         {image ? (
           <img src={sitePath(image.url)} alt={image.alt} loading="lazy" width="640" height="400" />
         ) : (
@@ -16,9 +16,9 @@ const { entries } = Astro.props;
             LibraryCommons
           </div>
         )}
-        <div>
-          <h3>
-            {articleTitle(entry)} <ArrowUpRight size={20} aria-hidden="true" />
+        <div class="content-card-body">
+          <h3 class="content-card-heading">
+            <span>{articleTitle(entry)}</span> <ArrowUpRight class="content-card-arrow" size={20} aria-hidden="true" />
           </h3>
           {entry.data.description && <p>{entry.data.description}</p>}
         </div>

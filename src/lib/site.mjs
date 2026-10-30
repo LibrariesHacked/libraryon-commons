@@ -1,4 +1,13 @@
 import settings from '../data/settings.json' with { type: 'json' };
+import mediaMasters from '../data/media-masters.json' with { type: 'json' };
+
+export function mediaURL(value, aliases = mediaMasters.aliases) {
+  if (typeof value !== 'string') return value;
+  const suffixIndex = value.search(/[?#]/);
+  const pathname = suffixIndex < 0 ? value : value.slice(0, suffixIndex);
+  const suffix = suffixIndex < 0 ? '' : value.slice(suffixIndex);
+  return `${aliases[pathname]?.url || pathname}${suffix}`;
+}
 
 /** Canonicalize extensionless internal routes without changing files or URL suffixes. */
 export function canonicalInternalPath(value) {
@@ -20,7 +29,7 @@ export function canonicalInternalPath(value) {
 export function sitePath(value) {
   if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value;
   const base = (import.meta.env?.BASE_URL || '/').replace(/\/$/, '');
-  return `${base}${canonicalInternalPath(value)}`;
+  return `${base}${canonicalInternalPath(mediaURL(value))}`;
 }
 
 /** Only render navigation URLs with safe protocols or absolute local paths. */

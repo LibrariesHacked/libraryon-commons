@@ -10,21 +10,28 @@ source_url: https://libraryon.org/work-and-skills/business-support
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-5be936432fc9818fd432
-  - resource-ef428b2f60c97e664098
-  - resource-3f487d9c5c81960e5f67
+  - business-and-ip-centres
+  - saints-coffee
+  - bipc-northamptonshire
 hero:
-  image: /uploads/archive/f20ae2d00895732629252601b0e96e3f3bc2769b21eb567864a914d851812344.jpg
+  image: /uploads/archive/business-support-in-libraries.jpg
   alt: Business support in libraries
+faq_heading: Questions about Business & IP Centres
+faqs:
+  - what-do-business-and-ip-centres-offer
+  - how-do-i-find-a-business-and-ip-centre
+  - where-can-i-hear-from-people-who-have-used-business-and-ip-centres
+  - do-i-need-to-pay-to-attend-business-and-ip-centre-events
+  - can-i-catch-up-with-past-business-and-ip-centre-events
 ---
 
 # Business support in libraries
 
+:::quote{author="Ben Francoise" role="Founder, Saints Coffee"}
+
 > "The seminars and one-to-one sessions on marketing, intellectual property and business coaching were incredibly valuable."
 
-Ben Francoise
-
-Founder, Saints Coffee
+:::
 
 ## Business & IP Centres in libraries
 
@@ -48,7 +55,7 @@ Ben founded [Saints Coffee](https://www.saintscoffee.co.uk/), a social enterpris
 
 He did it with the help of [BIPC Northamptonshire](https://www.bipcnorthamptonshire.co.uk/), which is based in [Northamptonshire Central Library](/libraries/west-northamptonshire/northamptonshire-central-library).
 
-[View iframe](https://www.youtube.com/embed/2ARdN4eaTiU?si=GgAFhx6HycQVxlNM)
+::video{src="https://www.youtube.com/embed/2ARdN4eaTiU?si=GgAFhx6HycQVxlNM" title="Embedded YouTube video"}
 
 <details>
 <summary>Read video transcript</summary>
@@ -93,30 +100,4 @@ End of transcript
 
 ## Questions about Business & IP Centres
 
-### What do Business & IP Centres offer?
-
-At Business & IP Centres you can find:
-
-- High-value market information to research your market, customers and competitors
-- Workshops and one-to-ones on all the essentials of starting a business
-- Help with intellectual property and protecting your business idea
-- A buzzing business community and events programme
-- Meeting rooms, podcast studios and maker spaces (varies by location).
-
-They also offer [a toolkit for startups](https://www.bl.uk/bipc/business-guides/starting-your-business-a-toolkit-for-start-ups) which you can download for free.
-
-### How do I find a Business & IP Centre?
-
-Explore the map above, or visit [bl.uk/bipc](https://www.bl.uk/bipc).
-
-### Where can I hear from people who have used Business & IP Centres?
-
-You can browse [BIPC case studies](https://bl.uk/bipc/success-stories) to hear from entrepreneurs who have used its services to start, grow and protect their businesses.
-
-### Do I need to pay to attend Business & IP Centre events?
-
-The majority of [BIPC events](https://events.bl.uk/whats-on/business-and-ip-centre) are completely free. Occasionally there are small charges for some events. There is no cost to visit a Business & IP Centre and access its resources.
-
-### Can I catch up with past Business & IP Centre events?
-
-Yes, many are available to watch as recordings on [the BIPC website](https://bipc.tv/).
+{{faqs}}

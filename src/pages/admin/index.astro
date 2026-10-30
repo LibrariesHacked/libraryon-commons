@@ -12,6 +12,9 @@ import { settings, sitePath } from '../../lib/site.mjs';
     <title>{settings.site.title} {settings.ui.admin.title_suffix}</title>
   </head>
   <body>
+    <script is:inline>
+      window.CMS_MANUAL_INIT = true;
+    </script>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script is:inline>
       // Directory records also stamp reviewed_on, which they already display.
@@ -33,6 +36,14 @@ import { settings, sitePath } from '../../lib/site.mjs';
           );
         }
       });
+    </script>
+    <script>
+      import { registerEditorComponents } from '../../lib/cms-editor-components.mjs';
+      import previewStyles from '../../styles/global.css?inline';
+      const cms = Reflect.get(window, 'CMS');
+      registerEditorComponents(cms);
+      cms.registerPreviewStyle(previewStyles, { raw: true });
+      cms.init();
     </script>
   </body>
 </html>

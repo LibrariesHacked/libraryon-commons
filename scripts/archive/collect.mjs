@@ -8,9 +8,9 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { parseArgs } from 'node:util';
 import { load, loadBuffer } from 'cheerio';
-
-export const origin = 'https://libraryon.org';
-export const assetHost = 'libraryon.lon1.digitaloceanspaces.com';
+import { pageImages } from './media.mjs';
+import { origin, allowed } from './scope.mjs';
+export { origin, assetHost, allowed } from './scope.mjs';
 
 /**
  * Hash exact bytes, without normalising text or JSON.
@@ -33,17 +33,6 @@ export const objectPath = (url) => `objects/${digest(url)}`;
  * @returns {boolean} Whether the collector may request this URL.
  * @throws {TypeError|URIError} If URL syntax or percent encoding is invalid.
  */
-export function allowed(url, api = false) {
-  const parsed = new URL(url);
-  if (parsed.protocol !== 'https:' || parsed.username || parsed.password) return false;
-  if (parsed.hostname === assetHost) return true;
-  if (parsed.hostname === 'lon1.digitaloceanspaces.com')
-    return parsed.pathname.startsWith('/libraryon/');
-  if (parsed.origin !== origin) return false;
-  const pathname = decodeURIComponent(parsed.pathname);
-  return !pathname.startsWith('/cms/') || (api && pathname.startsWith('/cms/api/'));
-}
-
 /**
  * Discover first-party assets in HTML, CSS and serialized application data.
  * Also retain original images behind thumbnails and known malformed media links.
@@ -188,14 +177,12 @@ export function pageContent(body, url) {
       url: resolve(document(element).attr('href'))
     }))
     .get();
-  const images = main
-    .find('img')
-    .map((index, element) => ({
-      url: resolve(document(element).attr('src')),
-      alt: document(element).attr('alt') || '',
-      srcset: document(element).attr('srcset') || ''
-    }))
-    .get();
+  const images = pageImages(body, url).filter((image) => image.source).map((image) => ({
+    url: image.source,
+    alt: image.alt,
+    srcset: image.srcset,
+    candidates: image.candidates
+  }));
   const headings = main
     .find('h1,h2,h3,h4')
     .map((index, element) => ({

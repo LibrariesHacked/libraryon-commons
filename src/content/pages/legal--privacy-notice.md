@@ -8,14 +8,14 @@ source_url: https://libraryon.org/legal/privacy-notice
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-0db6dce5a413f0a3218c
-  - resource-47330706f5e77b8da361
+  - terms-of-fair-usage
+  - google-privacy-and-terms-web-page
 ---
 
--   [Privacy notice](/legal/privacy-notice)
--   [Accessibility statement](/legal/accessibility-statement)
--   [Artificial Intelligence (AI) statement](/legal/ai-statement)
--   [Terms of fair usage](https://www.bl.uk/terms/)
+- [Privacy notice](/legal/privacy-notice)
+- [Accessibility statement](/legal/accessibility-statement)
+- [Artificial Intelligence (AI) statement](/legal/ai-statement)
+- [Terms of fair usage](https://www.bl.uk/terms/)
 
 # Privacy notice
 
@@ -27,14 +27,14 @@ When you use our site, we may collect certain personal information which (either
 
 We may collect or process a number of different types of personal information from you depending on how you use our site, but which may include any or all of your:
 
--   your name and title
--   email address
--   device information (such as MAC address, IP address, operating system, device and browser type)
--   location information (such as GPS signal emitted by your mobile device)
--   marketing preferences (for example where you have opted in to receive our newsletter(s))
--   reason(s) for contacting us, such an enquiries or requests
--   opinions, preferences, feedback, complaints, comments and/or suggestions
--   online browsing habits, activities and behaviour (such as which of our web pages you have visited and when you visited them)
+- your name and title
+- email address
+- device information (such as MAC address, IP address, operating system, device and browser type)
+- location information (such as GPS signal emitted by your mobile device)
+- marketing preferences (for example where you have opted in to receive our newsletter(s))
+- reason(s) for contacting us, such an enquiries or requests
+- opinions, preferences, feedback, complaints, comments and/or suggestions
+- online browsing habits, activities and behaviour (such as which of our web pages you have visited and when you visited them)
 
 This list is not intended to be exhaustive and may be updated from time to time as our business needs and legal requirements dictate.
 
@@ -60,25 +60,25 @@ We may use your personal information for a variety of purposes, depending upon h
 
 We may also use your personal information to manage and develop the LibraryOn service, for example to:
 
--   ensure that our website is provided in the most effective manner for you and the device you are using
--   manage and improve our website
--   review and analyse your use of our website in order to develop and improve the quality of our offering and strengthen our relationship with you
--   share information with you via our own systems (or third party collaboration systems used on our behalf such as Microsoft365 or Google Docs)
--   contact you if we have not heard from you for a certain amount of time
--   invite you to provide feedback, assist with surveys and input into consultation exercises
--   provide you with administrative information and/or service announcements and updates (including changes to our policies and terms)
--   ensure our records are accurate and up to date
--   administer our legitimate internal management analysis, audit, forecasts and business planning
--   enforce our rules and policies, and maintain our network security
--   meet audit requirements
--   comply with our legal obligations and to perform our statutory and public functions and duties
--   establish, defend or exercise our legal rights
--   comply with orders/requests received from the public and regulatory, governmental and judicial bodies
--   comply with our legal, regulatory and internal governance obligations (for example record retention policies)
--   Where you have given your consent we may also use your contact details to send you direct marketing communications (including e-mail marketing and fundraising communications).
--   In carrying out the above, the Library processes your personal data in a variety of ways, each of which may have a different legal basis. We may process your personal data because:
--   You have given your consent (e.g. for the provision of marketing correspondence)
--   It is in the public interest and in the performance of our official duties (e.g. the provision of the LibraryOn service).
+- ensure that our website is provided in the most effective manner for you and the device you are using
+- manage and improve our website
+- review and analyse your use of our website in order to develop and improve the quality of our offering and strengthen our relationship with you
+- share information with you via our own systems (or third party collaboration systems used on our behalf such as Microsoft365 or Google Docs)
+- contact you if we have not heard from you for a certain amount of time
+- invite you to provide feedback, assist with surveys and input into consultation exercises
+- provide you with administrative information and/or service announcements and updates (including changes to our policies and terms)
+- ensure our records are accurate and up to date
+- administer our legitimate internal management analysis, audit, forecasts and business planning
+- enforce our rules and policies, and maintain our network security
+- meet audit requirements
+- comply with our legal obligations and to perform our statutory and public functions and duties
+- establish, defend or exercise our legal rights
+- comply with orders/requests received from the public and regulatory, governmental and judicial bodies
+- comply with our legal, regulatory and internal governance obligations (for example record retention policies)
+- Where you have given your consent we may also use your contact details to send you direct marketing communications (including e-mail marketing and fundraising communications).
+- In carrying out the above, the Library processes your personal data in a variety of ways, each of which may have a different legal basis. We may process your personal data because:
+- You have given your consent (e.g. for the provision of marketing correspondence)
+- It is in the public interest and in the performance of our official duties (e.g. the provision of the LibraryOn service).
 
 ### Depersonalised and anonymous information
 
@@ -94,9 +94,9 @@ We may share personal information within LibraryOn’s advisory boards, panels a
 
 In limited cases, your personal information may also be shared with other people and organisations to the extent permitted or required by law. For example, we may provide your personal information to:
 
--   government authorities, law enforcement and regulatory authorities where required or permitted by law, and for tax or other lawful purposes 
--   external parties in response to legal process, and when required to comply with laws, to respond to an emergency, or to enforce our agreements, policies, rules and terms, or to protect the rights, property or safety of our staff, agents, customers and other users of the British Library
--   parties to whom you authorise us to release your personal information
+- government authorities, law enforcement and regulatory authorities where required or permitted by law, and for tax or other lawful purposes 
+- external parties in response to legal process, and when required to comply with laws, to respond to an emergency, or to enforce our agreements, policies, rules and terms, or to protect the rights, property or safety of our staff, agents, customers and other users of the British Library
+- parties to whom you authorise us to release your personal information
 
 ### Will we send your personal information overseas?
 
@@ -120,10 +120,10 @@ Please note that we cannot guarantee the security of any transmission of persona
 
 You have a number of rights in relation to your personal information, although in some cases these rights are subject to certain conditions and limitations. You are entitled to:
 
--   request copies of, and/or access to your personal information
--   request that your personal information be corrected where inaccurate or incomplete
--   request that your personal data be deleted (or that we stop using your personal data) where it is no longer necessary
--   request that we stop sending you direct marketing communications
+- request copies of, and/or access to your personal information
+- request that your personal information be corrected where inaccurate or incomplete
+- request that your personal data be deleted (or that we stop using your personal data) where it is no longer necessary
+- request that we stop sending you direct marketing communications
 
 If you would like to exercise any of your rights, please contact our Data Protection Officer at: **Corporate Information Management Unit**
 

@@ -1,4 +1,4 @@
-const normalise = (value) => (value || '').toLowerCase().trim();
+export const normalise = (value) => (value || '').toLowerCase().trim();
 const compact = (value) => normalise(value).replace(/\s+/g, '');
 const toRadians = (degrees) => (degrees * Math.PI) / 180;
 const earthMiles = 3958.8;

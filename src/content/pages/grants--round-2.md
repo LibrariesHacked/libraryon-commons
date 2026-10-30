@@ -9,12 +9,12 @@ source_url: https://libraryon.org/grants/round-2
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-afb7b18158655360887d
-  - resource-2e16f10ee36119542f63
-  - resource-e175ed5b983eb46d0170
-  - resource-fb06dec1106ddf96503c
+  - grants-guidance-2
+  - application-portal
+  - bank-details-form-2
+  - monitoring-report
 hero:
-  image: /uploads/archive/26135fb7cf0d7b2c62f713fa3a7d6c0297fba176788c062d6b744df2b496b8dd.jpg
+  image: /uploads/archive/a-man-sits-at-a-computer-in-a-library-he-has-his-back-to-us.jpg
   alt: A man sits at a computer in a library. He has his back to us.
 ---
 
@@ -26,25 +26,25 @@ Submissions are now closed
 
 ## Information for round two grantees
 
--   [Grants guidance](/uploads/archive/b51e964b8114c964cfc35036d472a25a11e769f79e87091bb21fc70556187c2a.pdf)
+- [Grants guidance](/uploads/archive/grants-guidance-2.pdf)
 
--   [Application portal](https://webportalapp.com/sp/login/libraryon-grants-r2)
+- [Application portal](https://webportalapp.com/sp/login/libraryon-grants-r2)
 
--   [Bank details form](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Flibraryon.lon1.digitaloceanspaces.com%2Fcd03724004ac612eb193215590d3aa5b.docx&wdOrigin=BROWSELINK)
+- [Bank details form](https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Flibraryon.lon1.digitaloceanspaces.com%2Fcd03724004ac612eb193215590d3aa5b.docx&wdOrigin=BROWSELINK)
 
--   [Monitoring report](/uploads/archive/212da6b627dcd10447a150fa8ad33a6cfba6f5e8dce1409e3cca86252788c21e.docx)
+- [Monitoring report](/uploads/archive/monitoring-report.docx)
 
 ## Overview
 
 Our second-round grants programme closed at the beginning of November 2023. We had up to £500,000 available and applicants could apply for projects under the following headings:
 
--   Library apps 
+- Library apps 
 
--   Online registration 
+- Online registration 
 
--   Virtual tours 
+- Virtual tours 
 
--   Upgrades or improvements to Library Management Systems (LMS) 
+- Upgrades or improvements to Library Management Systems (LMS) 
 
 Grants were available for between £10,000 and £30,000, with activity required to take place **between November 2023 and March 2024**. We recognised the delivery time was short and had hoped to attract projects that were already somewhat scoped out.
 
@@ -56,15 +56,15 @@ Of the 21 awards, six were for library apps, eleven virtual tours and four LMS u
 
 Geographically, the split was:
 
--   Eight awards in the North
+- Eight awards in the North
 
--   Two awards in the Midlands
+- Two awards in the Midlands
 
--   Five awards in London
+- Five awards in London
 
--   Three awards in the South East
+- Three awards in the South East
 
--   Three awards in the South West
+- Three awards in the South West
 
 Included in the London awards was a consortium application on behalf of London Libraries.
 
@@ -214,14 +214,14 @@ Suffolk Libraries will create a series of virtual video tours which will support
 
 ## Timeline
 
-1.  **4 October 2023** — Applications open
+1. **4 October 2023** — Applications open
 
-2.  **1 November 2023** — Applications close
+2. **1 November 2023** — Applications close
 
-3.  **15 November 2023** — Funding decisions confirmed
+3. **15 November 2023** — Funding decisions confirmed
 
-4.  **17 November 2023** — First payments released
+4. **17 November 2023** — First payments released
 
-5.  **18 March 2024** — Project delivery period ends
+5. **18 March 2024** — Project delivery period ends
 
-6.  **29 March 2024** — Project monitoring due
+6. **29 March 2024** — Project monitoring due

@@ -9,38 +9,38 @@ source_url: https://libraryon.org/special-collections/frances-wolseley-gardening
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-391c8979201fc89f7946
-  - resource-15d27e0ae5eebc9a6368
-  - resource-ef22ab13de7737ab99b0
-  - resource-5874398d23178593745b
-  - resource-a1406d0a27eb45a59d23
-  - resource-57abddf34634471788c9
-  - resource-3b18e3f7efa84c6dfa87
-  - resource-365f788370ef768c7076
-  - resource-292480fc6e3af42deb5c
-  - resource-e71600c8019cdc971ca4
-  - resource-e4ac24aeeaef5bcd35e7
-  - resource-b6eb3ab8cde0d2adac8d
-  - resource-f865ec8c4a6bd132c85a
-  - resource-c8e22604a001522d1d2a
-  - resource-8eba7901c40c80dc50a3
-  - resource-cdb43f79b9fd70818f14
-  - resource-fc19cfbaef248708e264
-  - resource-368c8bb02fdd99059ca5
-  - resource-413b1d8761f9f00337fd
-  - resource-7d9aeaeb3028da4bf69e
-  - resource-47d7d49f3659622c5415
-  - resource-d173414040c43b3e5956
-  - resource-93c9837e71621164636b
-  - resource-77f828f54f53ca26f98b
-  - resource-69bc1241f37f7dc93412
-  - resource-593ccd570458a50122f5
-  - resource-383b0f6d6cecb9308132
+  - brighton-and-hove-libraries
+  - explore-the-collection-online
+  - viscount-garnet-wolseley
+  - frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection-2
+  - social-season
+  - alicia-amherst-gardening-historian
+  - gardeners-you-should-know-ellen-willmott
+  - gardening-women-their-stories-1600-to-present
+  - gertrude-jekyll-website
+  - william-robinson-father-of-modern-gardening
+  - a-memoir-of-lieutenant-general-sir-garnet-j-wolseley-by-charles-rathbone-low
+  - arcangelo-lombari
+  - cornell-university-on-youtube-literature-life-gardens-the-influence-of-vita-sackville-west
+  - female-representation-patriarchal-imperatives-and-the-malleability-of-the-female-role-in-official-first-world-war-propaganda-by-j-tompsett
+  - garden-history-girl
+  - garden-masterclass-on-youtube-judith-taylor-on-women-and-gardens
+  - glynde-info
+  - horticultural-education-in-england-1900-40-middle-class-women-and-private-gardening-schools
+  - imperial-war-museum
+  - jisc-archives-hub
+  - learningwithexperts-com
+  - vote100lewes
+  - the-wolseley-heritage-by-marjorie-pegram
+  - womenslandarmy-co-uk
+  - the-garden-history-blog
+  - the-wolseley-collection-at-hove-library
+  - frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection
 ---
 
 # Frances Wolseley: Gardener, activist, aristocrat
 
-![Sepia photo of an older Frances Wolseley in a striped jacket standing by a full wooden bookcase.](/uploads/archive/dfd9b863b8a8d1a824453304e01d8e5d39826a855fa2b405c027d99919213d86.jpg)
+![Sepia photo of an older Frances Wolseley in a striped jacket standing by a full wooden bookcase.](/uploads/archive/sepia-photo-of-an-older-frances-wolseley-in-a-striped-2.jpg)
 
 Viscountess Frances Garnet Wolseley at her home, Massetts Place, in 1922. Source: Brighton & Hove Libraries
 
@@ -56,15 +56,15 @@ Hove Library, part of [Brighton & Hove Libraries](https://www.brighton-hove.gov.
 
 [Explore the collection online](https://www.flickr.com/photos/196656943@N03/albums/72177720331351304/)
 
-![Sepia photo of Frances Wolseley in a hat with a small dog in front of a house.](/uploads/archive/86b311af02028c4b848bac37019c69bf9e136a3441e13c327ac62879c8fc7c98.jpg)
+![Sepia photo of Frances Wolseley in a hat with a small dog in front of a house.](/uploads/archive/sepia-photo-of-frances-wolseley-in-a-hat.jpg)
 
 Viscountess Wolseley and her dog, Forge, in 1922. Source: Brighton & Hove Libraries
 
-![Sepia portrait of a Frances Wolseley as a girl, with long, wavy hair and fringe.](/uploads/archive/ae363b7346c468ccbb169820d16534d266caf5b3626a28e1094a20aaee0ddc36.jpg)
+![Sepia portrait of a Frances Wolseley as a girl, with long, wavy hair and fringe.](/uploads/archive/sepia-portrait-of-a-frances-wolseley-as-a-girl.jpg)
 
-![Sepia portrait of a young Frances Wolseley wearing a large, feathery hat and ruffled collar.](/uploads/archive/9904ae50f563077f6471abb69c523ffed8390084ddf778ea5e9f0d94e86d060e.jpg)
+![Sepia portrait of a young Frances Wolseley wearing a large, feathery hat and ruffled collar.](/uploads/archive/sepia-portrait-of-a-young-frances-wolseley-wearing-a-large-2.jpg)
 
-![Sepia portrait of a young woman in a formal dress with her hair up, wearing a necklace.](/uploads/archive/cb9b6a69720c890a036f63c3bff887ec53b092827a7c8088d88b84d0d9a8b439.jpg)
+![Sepia portrait of a young woman in a formal dress with her hair up, wearing a necklace.](/uploads/archive/sepia-portrait-of-a-young-woman-in-a-formal-dress-2.jpg)
 
 ## Early life
 
@@ -90,7 +90,7 @@ When her family moved to Glynde village in East Sussex, this interest grew into 
 
 This passion would shape her whole life and career, but it would also cause problems between her and her parents.
 
-![Sepia photo of a Frances Wolseley in a long skirt tending a plant on a trellis outdoors.](/uploads/archive/991bd374e335a5cebb0bef3f6679411867c8d7ec32a70866662c42baacc1e98d.jpg)
+![Sepia photo of a Frances Wolseley in a long skirt tending a plant on a trellis outdoors.](/uploads/archive/sepia-photo-of-a-frances-wolseley-in-a-long-skirt-2.jpg)
 
 Frances Wolseley tends to a trellis in the Rose Garden at Ragged Lands, 1908. Source: Brighton & Hove Libraries
 
@@ -104,11 +104,11 @@ However, after raising money from friends, Frances rented the greenhouse on her 
 
 Her parents were furious. At that time, as an unmarried lady, Frances was expected to devote her life to looking after them. It was the start of a disagreement that would last many years.
 
-![Sepia photo of two women working in a garden with trellises and a beehive.](/uploads/archive/215fdaa585ff43420d6443420ab6458155df9a817c0195cd03756a19886d7290.png)
+![Sepia photo of two women working in a garden with trellises and a beehive.](/uploads/archive/sepia-photo-of-two-women-working-in-a-garden.png)
 
 Frances Wolseley (right) and a student tend to the garden at Farm House, c.1905. Source: Brighton & Hove Libraries
 
-![Headed notepaper with illustrated trees and birds. The text says 'College of Gardening: Ragged Lands, Glynde, Sussex'.](/uploads/archive/1a4ee7f441ee8d28e91a2c35570c173a278b813101b22f17b350912a67e300f1.jpg)
+![Headed notepaper with illustrated trees and birds. The text says 'College of Gardening: Ragged Lands, Glynde, Sussex'.](/uploads/archive/headed-notepaper-with-illustrated-trees-and-birds-2.jpg)
 
 ## Glynde School for Lady Gardeners
 
@@ -124,11 +124,11 @@ With a large garden of five acres for teaching, the college's lessons grew into 
 
 But only ladies made of the right stuff...
 
-![Formal document listing patrons, principal, subjects, and terms for Glynde School.](/uploads/archive/39d8f1d21cf29ad0f86bea76225e8e19ee068a11c9dde7c9a2536b3e7393574b.jpg)
+![Formal document listing patrons, principal, subjects, and terms for Glynde School.](/uploads/archive/formal-document-listing-patrons-principal-subjects-and-terms.jpg)
 
 Frances Wolseley used her connections to attract a list of well-know patrons from the world of horticulture, including Gertrude Jekyll, William Robinson and Ellen Willmott. Source: Brighton & Hove Libraries
 
-![Sepia photo of several young women in uniforms (shirts, ties, skirts, hats, boots) standing outdoors in a line with bicycles.](/uploads/archive/7ea47089bc7b2f6668fa68ccbf70309b11220e85939cf384334e151fac1964f1.jpg)
+![Sepia photo of several young women in uniforms (shirts, ties, skirts, hats, boots) standing outdoors in a line with bicycles.](/uploads/archive/sepia-photo-of-several-young-women-in-uniforms-shirts-ties-2.jpg)
 
 Students, now issued uniforms, at the expanded college on Ragged Lands. The lady holding the bell on the right is Elsa More, who would take over day-to-day running of the school. Source: Brighton & Hove Libraries
 
@@ -142,38 +142,38 @@ Because of how she was brought up, Frances had high standards, but she also had 
 
 And she thought 'breeding' (meaning a person's family background) was very important. She felt that people from a lower class were not right for her college.
 
-![Sepia aerial photo of a terraced landscape with fields and a large house on a hill. A small shed and horse and cart are visible.](/uploads/archive/e53a71d4fc5460e9dbca881799715088915f72421b273a47469be3c34d80ee81.jpg)
+![Sepia aerial photo of a terraced landscape with fields and a large house on a hill. A small shed and horse and cart are visible.](/uploads/archive/sepia-aerial-photo-of-a-terraced-landscape-with-fields.jpg)
 
 The Ragged Lands site where Glynde College students learned their skills, c.1909. Source: Brighton & Hove Libraries
 
 ## Explore Glynde College
 
-![Historical archive image](/uploads/archive/6f07225e4feafab0a6992d7a62c7c3a057dcd52cc8a9d1cf16df25f8e9c3b7f2.jpg)
+![Historical archive image](/uploads/archive/glynde-college-students-mowing-the-lawn-1904.jpg)
 
 - **Mowing the lawn:** This photo from 1904 was taken before the students at Glynde had to wear uniforms.    Nevertheless the students wore long sleeves and long skirts to protect themselves from the weather, thorns and other occupational hazards.
 - **Mowing the lawn:** Why did it take two people to mow the lawn?    This is a manual lawnmower, which had to be pushed—and sometimes, as we see here, pulled.    These early models included a rear roller, and since the whole machine was made of cast iron they were very heavy to operate.
 - **Mowing the lawn:** [The lawnmower was invented by Edwin Beard Budding](https://www.museumofgardening.co.uk/post/the-budding-patent-lawn-mower), a Gloucestershire engineer. He was inspired by mechanisms he saw in a cloth mill.    He formed the company Budding and Ferrabee with a partner, and under this name they produced early models as well as licensing their designs to other manufacturers.
 
-![Historical archive image](/uploads/archive/54447efd2aab5ce1de9f98f80dd1f8b9a574dcd86d19b7a2c794da0ca535f205.jpg)
+![Historical archive image](/uploads/archive/frances-wolseley-gardener-teacher-wartime-organiser-libraryon.jpg)
 
 - **Ready for work:** This photo was taken c.1913/14. At the front of the students we see Elsa More, who had become a senior instructor and would assume day-to-day responsibilities of running the school.  Like Frances Wolseley, she was strict about rules and obedience.
 - **Ready for work:** Where previously students wore decorative if practical clothing, by this time they were given uniforms.  This included leather boots, ties (with tiepins), khaki skirts and hats. Students had to clean their boots regularly. Looking untidy would lead to punishment.    Wearing this many layers, as well as a collar and tie, probably made for a hot day's work.
 - **Ready for work:** The length of these skirts would have been considered daring at this time.    Wearing trousers (known as 'breeches') beneath them preserved the ladies' modesty when working and riding bicycles.    In terms of material: tweed would feature in winter, linen in summer.
 
-![Historical archive image](/uploads/archive/01294f5727fd552437953742b4a4aafbcdf631ab737045bec05ce1c45a4209df.jpg)
+![Historical archive image](/uploads/archive/glynde-college-gardening-rules-part-one.jpg)
 
 - **College rules (part 1):** Elsa More, who became Principal in 1915, is here shown to be a Fellow of the Royal Horticultural Society ([today known as the RHS](https://www.rhs.org.uk/)).    The RHS was founded in 1804. Women weren’t allowed as Fellows until 1830.    Even then membership tended to be restricted to the wealthy, but this gradually changed during the 20th Century.
 - **College rules (part 1):** ‘A.D.C’ stands for ‘Aide-de-Camp'.    This is a term more commonly found in the military, where it refers to a personal assistant or secretary to someone of high rank.
 - **College rules (part 1):** With a long list of strict rules and a clear chain of command, we see how the college was run almost like a military unit.    Since many students came from rich families and might not have worked before, it's easy to see how surprising this environment could have been for some of them.
 
-![Historical archive image](/uploads/archive/b7d49cd80db82656824f8bcf8212117eb8acd3295785cbb11cb34b67a0be3fc1.jpg)
+![Historical archive image](/uploads/archive/glynde-college-gardening-rules-part-two.jpg)
 
 - **College rules (part 2):** As we see elsewhere in this story, college staff disliked students who spoke too much.    Here we learn singing and whistling were also frowned upon...
 - **College rules (part 2):** ‘Not speaking unless spoken to’ could be seen as another example of Frances Wolseley's military approach to running her college.
 - **College rules (part 2):** Diaries and notebooks books would be used to keep track of the various plants and crops being planted.    It meant that if a student decided to leave (or was told to leave) there was a record of what was growing where and when it was planted. This made sure the gardens remained consistent.
 - **College rules (part 2):** [Stoolball](https://www.sportingheritage.org.uk/content/what-we-do/projects/the-sporting-heritage-of-disability-and-womens-sports/stoolball-what-ball-history-of-the-traditional-rural-womens-sport) is a sport that originated in Sussex.    It’s been described as ‘cricket in the air’—it features a shoulder-height wicket—and was largely played by women.
 
-![Historical archive image](/uploads/archive/aa6075dc05e136c6ef7222173a7f0951a50f875e0429680dfc7168cc3e1592f7.jpg)
+![Historical archive image](/uploads/archive/elsa-more-career-at-glynde-college.jpg)
 
 - **Following in Wolseley's footsteps:** Elsa More was a student who become Head Gardener and, eventually, Principal of Glynde College.   Not much is known about her, but a 1915 issue of the Daily Mirror refers to her grandfather serving under [Horatio Nelson](https://www.historic-uk.com/HistoryUK/HistoryofEngland/Admiral-Lord-Nelson/) on [HMS Victory](https://en.wikipedia.org/wiki/HMS_Victory).  This suggests she may have been raised in a way that made her well-suited to continue Frances Wolseley’s strict approach to running the school.
 - **Following in Wolseley’s footsteps:** While Elsa More may have been just as strict, there are signs that she tried to make students' time at the college special.    Several photos in Hove's collection show her in fancy dress, leading what look like plays and performances. Her outfit here, with its bicorn hat and shoulder boards, was perhaps a way of honouring her grandfather's naval career  This apparent attempt to boost morale at the college is rare in the collection as a whole.
@@ -207,7 +207,7 @@ Here are some parts from it, showing how some students who didn't do well were d
 
 > Took herself off at 9pm in a fit of hysterics having discovered what she was pleased to call an open drain.
 
-![Vintage yellow poster: "National service women's land army." A woman in a hat and coat guides a plough pulled by an animal. Text: "God speed the plough and the woman who drives it."](/uploads/archive/6d1f8dc40547002599b4dfbc4d8679fa5674cf16d1e1bc3d7dbb36c8c20e535a.jpg)
+![Vintage yellow poster: "National service women's land army." A woman in a hat and coat guides a plough pulled by an animal. Text: "God speed the plough and the woman who drives it."](/uploads/archive/vintage-yellow-poster-national-service-womens-land-army-a-woman.jpg)
 
 While more commonly associated with World War Two, the Women's Land Army was formed during World War One. Source: Art.IWM PST 5996, 1917
 
@@ -225,7 +225,7 @@ The British Government took over every unused piece of land so food could be gro
 
 In his memoirs, Prime Minister Lloyd George wrote: "The food question ultimately decided the issue of this war."
 
-![Engraved illustration of a house within a floral border with gardening tools, text "Mary T. Musgrave."](/uploads/archive/d43dd6dc3319f6ad04fc22e9045d2eeb7da0b4d146d61b29baf2f6921f417d1b.jpg)
+![Engraved illustration of a house within a floral border with gardening tools, text "Mary T. Musgrave."](/uploads/archive/engraved-illustration-of-a-house-within-a-floral-border.jpg)
 
 Mary Musgrave's bookplate (a label used to show ownership of a book), designed by Frances Garnet Wolseley. This view can also be seen in a painting by Wolseley (see below). Source: Brighton & Hove Libraries
 
@@ -249,23 +249,23 @@ Letters show that Captain Peete Musgrave, Mary Musgrave's husband, knew his wife
 
 He seemed comfortable with the arrangement. But it's not clear whether he had any feelings or suspicions around the likely nature of their relationship.
 
-![Watercolor painting of a large house with multiple chimneys and gabled roofs, surrounded by trees and a garden.](/uploads/archive/70d15b25272b4db6ec22ee45c77f41bb5399702421f266c5d0ae7a83a4ee2a5f.jpg)
+![Watercolor painting of a large house with multiple chimneys and gabled roofs, surrounded by trees and a garden.](/uploads/archive/watercolor-painting-of-a-large-house-with-multiple-chimneys.jpg)
 
-![Sepia photo of a woman in a hat, in a garden with three small dogs and a house.](/uploads/archive/a23c2961c70c6472590ac25c4652850cd716c1f61c1a3e169cc95a06b1c97120.jpg)
+![Sepia photo of a woman in a hat, in a garden with three small dogs and a house.](/uploads/archive/sepia-photo-of-a-woman-in-a-hat.jpg)
 
-![A woman in an armchair with a small dog on her lap.](/uploads/archive/002b553e801ec80cf95af40ec10df3cbb7d7214ec0d2e87dd098a6ccedb17972.jpg)
+![A woman in an armchair with a small dog on her lap.](/uploads/archive/a-woman-in-an-armchair-with-a-small-dog-on-her-lap.jpg)
 
-![Image](/uploads/archive/a823cfd259fef1683ce5bb1e163723f078c30380fca638082ef0560ee6a57bf7.jpg)
+![Image](/uploads/archive/cuckfield-rural-meat-ration-card.jpg)
 
-![Sepia photo of a wooden shed with an open window; a person looks out. There are garden tools in foreground.](/uploads/archive/d5833d278e8f27de6844d4404d9672053ebbcf264b0026db588d13402417781e.jpg)
+![Sepia photo of a wooden shed with an open window; a person looks out. There are garden tools in foreground.](/uploads/archive/sepia-photo-of-a-wooden-shed-with-an-open-window-2.jpg)
 
-![Sepia photo of female gardener in long coat and hat carrying a bucket](/uploads/archive/eede8d40728ca052e68844710088d33bf1dd7adf81b4bd211aa137a124cd7127.jpg)
+![Sepia photo of female gardener in long coat and hat carrying a bucket](/uploads/archive/sepia-photo-of-female-gardener-in-long-coat-and-hat-carrying-a-bucket.jpg)
 
 ## Books written by Frances Garnet Wolseley
 
 In the course of her career Frances Wolseley published several books, covering horticulture, garden design and the county of Sussex, where she lived for much of her life.
 
-![The cover of the book 'Gardening for Women' by Frances Wolseley.](/uploads/archive/b7030b3f5233f0f389a6b463faec56a896259ce830d52f94d8b2df27b127b18d.jpg)
+![The cover of the book 'Gardening for Women' by Frances Wolseley.](/uploads/archive/the-cover-of-the-book-gardening-for-women-by-frances-wolseley.jpg)
 
 ### *Gardening for Women* — Frances Garnet Wolseley (1908)
 
@@ -299,7 +299,7 @@ This is a second collection of Wolseley’s articles from Sussex County Magazine
 
 Inspired by the British Library’s Unearthed: The Power of Gardening exhibition, libraries across the UK are hosting free panel displays to explore the transformative power of gardening. Click below to check out where you can catch Unearthed.
 
-[![The words: Unearthed: The power of gardening on a yellow background](/uploads/archive/b54d1f8955e9ba201d38acf9a51ed2f8305663c049bd65ece0645250cd83805d.jpg)](/campaigns/unearthed)
+[![The words: Unearthed: The power of gardening on a yellow background](/uploads/archive/the-words-unearthed-the-power-of-gardening-on-a-yellow-background.jpg)](/campaigns/unearthed)
 
 ## More gardening pioneers to explore
 
@@ -333,4 +333,4 @@ Inspired by the British Library’s Unearthed: The Power of Gardening exhibition
 
 Thanks to Brighton & Hove Libraries, part of Brighton & Hove City Council, for sharing Hove Library's Wolseley Collection with us.
 
-[![Brighton and Hove City Council logo, an image of Brighton Pavilion on a blue background](/uploads/archive/6eefa10bf88ca3801776b3b431f41404a47bb8c3baf713051beddd5ee38e334a.png)](https://www.brighton-hove.gov.uk/)
+[![Brighton and Hove City Council logo, an image of Brighton Pavilion on a blue background](/uploads/archive/brighton-and-hove-city-council-logo-an-image-of-brighton.png)](https://www.brighton-hove.gov.uk/)

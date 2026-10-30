@@ -9,13 +9,13 @@ source_url: https://libraryon.org/legal/ai-statement
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-0db6dce5a413f0a3218c
+  - terms-of-fair-usage
 ---
 
--   [Privacy notice](/legal/privacy-notice)
--   [Accessibility statement](/legal/accessibility-statement)
--   [Artificial Intelligence (AI) statement](/legal/ai-statement)
--   [Terms of fair usage](https://www.bl.uk/terms/)
+- [Privacy notice](/legal/privacy-notice)
+- [Accessibility statement](/legal/accessibility-statement)
+- [Artificial Intelligence (AI) statement](/legal/ai-statement)
+- [Terms of fair usage](https://www.bl.uk/terms/)
 
 # Artificial Intelligence (AI) statement
 

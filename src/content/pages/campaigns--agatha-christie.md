@@ -9,7 +9,7 @@ source_url: https://libraryon.org/campaigns/agatha-christie
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-1342d693a3ecb2b3fcba
+  - british-library
 ---
 
 # Agatha Christie
@@ -18,7 +18,7 @@ Delve into the remarkable life and legacy of the bestselling novelist of all tim
 
 Photo credit: Agatha Christie relaxing during a sightseeing tour, Tajoura, Libya, 1955. © The Christie Archive Trust
 
-![Agatha Christie relaxing during a sightseeing tour, Tajoura, Libya, 1955](/uploads/archive/c1744fe2f65c44a4f9d9fabbd24ebf3cad1662dbc8081170a78149e58b60a1cf.jpg)
+![Agatha Christie relaxing during a sightseeing tour, Tajoura, Libya, 1955](/uploads/archive/agatha-christie-relaxing-during-a-sightseeing-tour-tajoura-libya-1955.jpg)
 
 Agatha Christie relaxing during a sightseeing tour, Tajoura, Libya, 1955. © The Christie Archive Trust
 
@@ -66,4 +66,4 @@ Developed with support from Agatha Christie Limited and The Christie Archive Tru
 
 Supported by a grant from the Colwinston Charitable Trust 30th Anniversary Fund
 
-![Image](/uploads/archive/c1724141617c6842fb08db91aec8e8d3e34ec34ac53b55bd5607d6b5839d6b89.png)
+![Image](/uploads/archive/colwinston-charitable-trust-logo.png)

@@ -9,15 +9,15 @@ source_url: https://libraryon.org/campaigns/unearthed
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-2262d012255d3ac20000
-  - resource-4744a45b10039a2cebfb
+  - more-unearthed-content
+  - audio-guide
 ---
 
 # Unearthed: The Power of Gardening
 
 Gardening is so much more than the nation’s favourite pastime.
 
-![The words: Unearthed: The power of gardening on a yellow background](/uploads/archive/b54d1f8955e9ba201d38acf9a51ed2f8305663c049bd65ece0645250cd83805d.jpg)
+![The words: Unearthed: The power of gardening on a yellow background](/uploads/archive/the-words-unearthed-the-power-of-gardening-on-a-yellow-background.jpg)
 
 Inspired by the British Library’s Unearthed: The Power of Gardening exhibition, a number of libraries will host a free panel display to explore the transformative power of gardening.
 
@@ -35,7 +35,7 @@ Discover even more Unearthed events, reading lists, and activities through the B
 
 [More Unearthed content](https://living-knowledge-network.co.uk/?time=ondemand&time=upcoming&type=watch&type=listen&type=read&type=livestream&filter-theme=unearthed-gardening)
 
-![A wheelbarrow full of flowers](/uploads/archive/277f34667e1d957593ab93d518f643d87cbbe043184d784021accd746b44136a.png)
+![A wheelbarrow full of flowers](/uploads/archive/a-wheelbarrow-full-of-flowers.png)
 
 ## Resources for blind visitors
 
@@ -45,7 +45,7 @@ Visitors can also listen to audio clips through the Museum in a Box, which you c
 
 An [audio guide](https://living-knowledge-network.co.uk/library/audio-description-of-unearthed-the-power-of-gardening-exhibition) is also available
 
-![Picture of tactile braille image of a dandelion in the Unearthed braille guide](/uploads/archive/43ff62c2bef16f81b1a6d9227517b46abebe1ce947c3113586af9804351d02fd.png)
+![Picture of tactile braille image of a dandelion in the Unearthed braille guide](/uploads/archive/picture-of-tactile-braille-image-of-a-dandelion.png)
 
 Picture of tactile braille image of a dandelion in the Unearthed braille guide
 
@@ -61,4 +61,4 @@ As an author, garden designer, educator and organiser Frances became a strong su
 
 [Read our story to discover more](/special-collections/frances-wolseley-gardening-educator)
 
-![Sepia photo of a woman in a hat, in a garden with three small dogs and a house.](/uploads/archive/a23c2961c70c6472590ac25c4652850cd716c1f61c1a3e169cc95a06b1c97120.jpg)
+![Sepia photo of a woman in a hat, in a garden with three small dogs and a house.](/uploads/archive/sepia-photo-of-a-woman-in-a-hat.jpg)

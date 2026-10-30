@@ -1,5 +1,5 @@
 ---
-import { getCollection, render } from 'astro:content';
+import { getCollection, getEntries, render } from 'astro:content';
 import HomeTemplate from '../templates/HomeTemplate.astro';
 import ArticleTemplate from '../templates/ArticleTemplate.astro';
 import CollectionTemplate from '../templates/CollectionTemplate.astro';
@@ -9,7 +9,7 @@ import GrantTemplate from '../templates/GrantTemplate.astro';
 import LegalTemplate from '../templates/LegalTemplate.astro';
 import LandingTemplate from '../templates/LandingTemplate.astro';
 import { templateFor } from '../lib/templates.mjs';
-import { isPublishedPage } from '../lib/site.mjs';
+import { isPublishedPage, settings } from '../lib/site.mjs';
 
 export async function getStaticPaths() {
   const pages = await getCollection('pages');
@@ -23,6 +23,7 @@ export async function getStaticPaths() {
 
 const { entry } = Astro.props;
 const { Content, headings } = await render(entry);
+const faqs = await getEntries(entry.data.faqs);
 const allPages = (await getCollection('pages')).filter(isPublishedPage);
 const resources = new Map(
   (await getCollection('resources')).map((resource) => [resource.id, resource.data])
@@ -31,13 +32,17 @@ const sessions = (await getCollection('sessions'))
   .filter((session) => session.data.conference === entry.id)
   .sort((first, second) => first.data.order - second.data.order);
 const contents = headings.filter((heading) => heading.depth === 2);
+const faqHeading = entry.data.faq_heading || settings.ui.editorial.faq_heading;
+if (faqs.length > 0 && !contents.some((heading) => heading.text === faqHeading)) {
+  contents.push({ depth: 2, slug: 'page-faqs', text: faqHeading });
+}
 const section = entry.data.path.split('/').filter(Boolean)[0];
 const neighbours = allPages.filter(
   (page) => page.data.path.startsWith(`/${section}/`) && page.id !== entry.id
 );
 const related = entry.data.resources
   .map((id) => resources.get(id))
-  .filter((resource) => resource && resource.kind !== 'link');
+  .filter(Boolean);
 const templates = {
   home: HomeTemplate,
   page: ArticleTemplate,
@@ -61,6 +66,7 @@ const Template = templates[templateFor(entry)];
   sessions={sessions}
   resources={resources}
   related={related}
+  faqs={faqs}
 >
   <Content />
 </Template>

@@ -1,0 +1,23 @@
+---
+import FAQSection from './FAQSection.astro';
+import ResourceLink from './ResourceLink.astro';
+import { splitContentModules, unlinkedResources } from '../lib/content-modules.mjs';
+import { settings } from '../lib/site.mjs';
+const { entry, faqs = [], related = [] } = Astro.props;
+const html = await Astro.slots.render('default');
+const blocks = splitContentModules(html, { faqHeading: entry.data.faq_heading });
+const resources = unlinkedResources([html, ...faqs.map((faq) => faq.rendered?.html || '')].join('\n'), related);
+---
+
+{blocks.map((block) => (
+  block.type === 'html' ? <Fragment set:html={block.html} /> :
+  block.type === 'faqs' ? <FAQSection items={faqs} heading={entry.data.faq_heading} headingId={block.headingId} introduction={block.introduction} /> :
+  resources.length > 0 && (
+    <section class="related-resources">
+      <h2>{settings.ui.editorial.related_resources}</h2>
+      <ul class="resource-list">
+        {resources.map((resource) => <li><ResourceLink resource={resource} /></li>)}
+      </ul>
+    </section>
+  )
+))}

@@ -1,0 +1,35 @@
+@import 'open-props/sizes';
+@import 'open-props/borders';
+@import 'open-props/fonts';
+@import 'open-props/aspects';
+@import 'open-props/easings';
+@import 'open-props/zindex';
+
+:root {
+  --ink: #1e1a28;
+  --muted: #615f68;
+  --brand-primary: #671e7d;
+  --brand-link: #420454;
+  --brand-forest: #0d522b;
+  --brand-rose: #cc808d;
+  --brand-apricot: #cc8a6c;
+  --paper: #fff;
+  --wash: #f6f6f6;
+  --line: #d2d1d4;
+  --line-strong: #bcbabf;
+  --focus: #6495ed;
+  --hero-overlay: rgba(30, 26, 40, 0.48);
+  --shadow-popover: 0 10px 24px rgba(30, 26, 40, 0.12);
+  --card-radius: 4px;
+  --card-padding: var(--size-4);
+  --card-gap: var(--size-6);
+  --motion-ease: var(--ease-3);
+  --font: 'Lexend Variable', sans-serif;
+  --display: 'DM Serif Display', Georgia, serif;
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0;
+  background: var(--paper);
+}
