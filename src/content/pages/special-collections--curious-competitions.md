@@ -28,27 +28,34 @@ resources:
 
 # Curious competitions:  England's eccentric heritage games
 
+:::collection-image{layout="full" zoom="true"}
+
 ![In a cloud of smoke, a man with a red harlequin jacket, tricorn hat and sooty face is raised above a crowd in front of a church.](/uploads/archive/in-a-cloud-of-smoke-a-man-with-a-red-2.jpg)
 
 'Smoking the Fool', outside St Nicholas' Parish Church in Haxey, North Lincolnshire. A pre-match ritual for The Haxey Hood. Photo: LibraryOn.
+
+:::
 
 **Long before VAR, mega sponsorship deals and esports, England's towns and villages spent centuries playing their own local games.**
 
 Part pageant, part battle, part ritual, part drinking contest — and always an excuse for people to get together and have a laugh.
 
 These traditions are stitched from scraps of folklore, full of disputed origin stories and old family feuds. To this day they still bring out huge displays of local pride and community spirit.
-
-From using leather balls to settle ancient disputes, to becoming world champion of pulling the ugliest face, what do these customs reveal about the communities that still keep them alive?
-
-**And how can library special collections uncover the histories of these unique customs?**
+:::collection-image{layout="inset" zoom="true"}
 
 ![Crowd of people in a mass scrum, wrestling over an unseen ball](/uploads/archive/crowd-of-people-in-a-mass-scrum-wrestling-over-an-unseen-ball.jpg)
 
 Close-up of the Atherstone Ball Game. Taken circa 1990. Source: Warwickshire Libraries.
 
+:::
+
+:::collection-image{layout="inset" zoom="true"}
+
 ![A wooden sign depicting the Haxey Hood. A church in the background.](/uploads/archive/a-wooden-sign-depicting-the-haxey-hood-a-church-in-the-background.jpg)
 
 Sign commemorating the Haxey Hood, outside St Nicholas' Parish Church. Photo: LibraryOn.
+
+:::
 
 ## The Haxey Hood
 
@@ -88,24 +95,87 @@ The **winning pub** gets to hang the Hood above the bar until the next year’s 
 
 ⚖️ **Rules:** No running, no kicking, no throwing. Play must stop whenever anyone in the Sway falls over. The game continues indefinitely until the Hood crosses a pub's threshold
 
+:::::collection-carousel{kind="hotspots" label="Haxey Hood gallery"}
+
+::::slide
+
 ![Historical archive image](/uploads/archive/haxey-hood-fool-and-boggins.jpg)
 
-- **The Fool:** The ceremonial 13th Boggin.    Half ringmaster, half jester, the Fool embodies the day's sense of merry mischief.    Before the game starts, he performs a speech outside the parish church and leads the 'House against house' chorus.    His ritualistic 'Smoking' (mock burning) forms a link with the event's possible pagan roots.
-- **Lord of the Hood:** Chief official of the game.    After a rowdy tour of the local pubs and the Fool's 'Smoking', the Lord directs the procession from St Nicholas Church to the 'Hood Field'.    The game commences on his command and he acts as referee.
-- **The Boggins:** The game's officials.    12 in number, they represent the dozen farmers who chased Lady de Mowbray's hood in the game's medieval origin story.    They wear distinctive red outfits and marshal the scrum, making sure rules are obeyed and crushes are avoided.
-- **The Hood:** The Hood is a leather cylinder, two-foot long and 8-inches in circumference.    It is traditionally filled with coiled rope, money and the names of residing Boggins at the object's creation.    Hoods are used until they fall apart, which can take as long as 25 years. They are made by a long-standing local saddler.
+:::hotspot{title="The Fool" x="30" y="46"}
+
+The ceremonial 13th Boggin. Half ringmaster, half jester, the Fool embodies the day's sense of merry mischief. Before the game starts, he performs a speech outside the parish church and leads the 'House against house' chorus. His ritualistic 'Smoking' (mock burning) forms a link with the event's possible pagan roots.
+
+:::
+
+:::hotspot{title="Lord of the Hood" x="53" y="46"}
+
+Chief official of the game. After a rowdy tour of the local pubs and the Fool's 'Smoking', the Lord directs the procession from St Nicholas Church to the 'Hood Field'. The game commences on his command and he acts as referee.
+
+:::
+
+:::hotspot{title="The Boggins" x="73" y="44"}
+
+The game's officials. Twelve in number, they represent the farmers who chased Lady de Mowbray's hood in the game's medieval origin story. They wear distinctive red outfits and marshal the scrum, making sure rules are obeyed and crushes are avoided.
+
+:::
+
+:::hotspot{title="The Hood" x="61" y="57"}
+
+The Hood is a leather cylinder, two-foot long and 8-inches in circumference. It is traditionally filled with coiled rope, money and the names of residing Boggins at the object's creation. Hoods are used until they fall apart, which can take as long as 25 years. They are made by a long-standing local saddler.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/in-a-cloud-of-smoke-a-man-with-a-red-2.jpg)
 
-- **The Fool's Outfit:** The Fool wears a harlequin-style red jacket, white trousers and a tricorn hat.    His clothes are decorated all over with badges, patches and multicoloured scraps. Every Fool makes his own outfit when he begins his tenure in the role.    The Fool's face is blackened with soot to represent his 'Smoking'.
-- **The Fool's Flail:** The Fool carries a flail, traditionally made from a sock filled with bran, with which he is allowed to swipe at the crowd.    In times gone by, the Fool was also allowed 'to throw his arm round and kiss any women, "even be she the highest i' the land,"' (Ethel Rudkin, _Lincolnshire Folklore_). They don't let him do that anymore.
-- **Smoking the Fool:** During his speech, the Fool stands on the Mowbray Stone, a small plinth.    On the floor behind him, bundles of damp straw are burnt by the other Boggins. It's pretty smelly!    In the past, the Fool was suspended from a tree above a bonfire during the ritual. For health and safety reasons, that practice has been discontinued.
+:::hotspot{title="The Fool's outfit" x="53" y="64"}
+
+The Fool wears a harlequin-style red jacket, white trousers and a tricorn hat. His clothes are decorated all over with badges, patches and multicoloured scraps. Every Fool makes his own outfit when he begins his tenure in the role. The Fool's face is blackened with soot to represent his 'Smoking'.
+
+:::
+
+:::hotspot{title="The Fool's flail" x="41" y="49"}
+
+The Fool carries a flail, traditionally made from a sock filled with bran, with which he is allowed to swipe at the crowd. In times gone by, the Fool was also allowed 'to throw his arm round and kiss any women, "even be she the highest i' the land,"' (Ethel Rudkin, *Lincolnshire Folklore*). They don't let him do that anymore.
+
+:::
+
+:::hotspot{title="Smoking the Fool" x="37" y="69"}
+
+During his speech, the Fool stands on the Mowbray Stone, a small plinth. On the floor behind him, bundles of damp straw are burnt by the other Boggins. In the past, the Fool was suspended from a tree above a bonfire during the ritual. For health and safety reasons, that practice has been discontinued.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/haxey-hood-gathering-at-sunset.jpg)
 
-- **The Wand:** The Lord of the Hood's staff of office.    A wand made of 13 willow sticks, bound together 13 times.    12 sticks face upwards, one down, representing the Boggins and Fool respectively.    The wand is about five-foot long and is used by the Lord to marshal the game.    Only one person in Haxey knows how to make the wand. Eventually they will pass down their knowledge to a single successor.
-- **The Sway:** The Sway is a slow, chaotic scrum of players, all trying to move the Hood (it's in there somewhere!) towards their chosen pub.    It can number 300+ people on a good day and is made up of locals and visitors alike.    Most play for the same pub every year, although some shift allegiances when establishments change ownership.
-- **Mud:** The Haxey Hood is played come rain or shine.    The Sway frequently breaks down, forcing the Boggins to stop proceedings until everyone regains their feet.    Things get muddy.
+:::hotspot{title="The Wand" x="46" y="29"}
+
+The Lord of the Hood's staff of office. A wand made of 13 willow sticks, bound together 13 times. Twelve sticks face upwards, one down, representing the Boggins and Fool respectively. The wand is about five-foot long and is used by the Lord to marshal the game. Only one person in Haxey knows how to make the wand. Eventually they will pass down their knowledge to a single successor.
+
+:::
+
+:::hotspot{title="The Sway" x="49" y="54"}
+
+The Sway is a slow, chaotic scrum of players, all trying to move the Hood (it's in there somewhere!) towards their chosen pub. It can number 300+ people on a good day and is made up of locals and visitors alike. Most play for the same pub every year, although some shift allegiances when establishments change ownership.
+
+:::
+
+:::hotspot{title="Mud" x="63" y="92"}
+
+The Haxey Hood is played come rain or shine. The Sway frequently breaks down, forcing the Boggins to stop proceedings until everyone regains their feet. Things get muddy.
+
+:::
+
+::::
+
+:::::
 
 **Members of the LibraryOn team, hosted by** [**North Lincolnshire Libraries**](/libraries/north-lincolnshire)**, were lucky enough to attend the Haxey Hood in 2025.**
 
@@ -145,9 +215,13 @@ The Fool then gives **a speech**, joking about the year's events, running throug
 
 The poem's origins are **ancient and unknown**. Some believe the final line was added later to discourage violent play.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![A man in harlequin jacket, white trousers and tricorn hat surrounded with smoke, standing on a stone.](/uploads/archive/a-man-in-harlequin-jacket-white-trousers-and-tricorn-hat-2.jpg)
 
 The Fool, standing on the Mowbray Stone during his 'Smoking'. Photo: LibraryOn.
+
+:::
 
 ### Learning more in the library
 
@@ -155,21 +229,35 @@ The Fool, standing on the Mowbray Stone during his 'Smoking'. Photo: LibraryOn.
 
 ::video{src="https://www.youtube.com/embed/Rqhy807OO30" title="Video: Recommendations"}
 
-#### Specialist books
+::::collection-accordion{label="Learning more in the library"}
+
+:::accordion-item{title="Specialist books"}
 
 Libraries are a great place to find reference books specialising in local history. Often these books are otherwise very hard to get hold of. Some may be independently published in small print runs, others may be antique and rare. Scunthorpe Central Library hold three beautiful Victorian books about the Isle of Axholme's history. These are some of the definitive historical authorities on the Haxey area and its traditions, including the Hood game.
 
-#### Local newspapers
+:::
+
+:::accordion-item{title="Local newspapers"}
 
 The Epworth Bells was the local newspaper for the Haxey area from 1872 to 2019, when it was replaced by the Epworth Times. Almost every edition of the paper is held in the local studies section of Scunthorpe Central Library and is available to read upon request. Local newspapers are a great source for historical material, providing more detail and local colour than their national counterparts.
 
-#### Microfilm
+:::
+
+:::accordion-item{title="Microfilm"}
 
 Microfilm is an early form of digitisation, developed in the post-war period. Primary sources (such as newspapers) are photographed onto a strip of film. The film is stored on a reel. Being sturdier than paper, materials are easier to store safely. Most modern microfilm readers transmit to a computer screen. The software includes features like zoom, image enhancement and screen capture.
+
+:::
+
+::::
+
+:::collection-image{layout="inset" zoom="true"}
 
 ![Two sepia photos side-by-side of the same man. In one he makes a very ugly, funny face.](/uploads/archive/two-sepia-photos-side-by-side-of-the-same-man-2.jpg)
 
 Headshots of Wyndham 'Taffy' Thomas, five-time gurning world champion. Taken by Ben Templeton in 1965. Source: Whitehaven Archives.
+
+:::
 
 ## Egremont Crab Fair
 
@@ -201,29 +289,93 @@ Today's fair includes competitive pipe-smoking, Cumberland wrestling, greasy pol
 
 🦀 **Other games:** Competitive pipe-smoking, greasy pole climbing, Cumberland wrestling
 
+:::::collection-carousel{kind="hotspots" label="Egremont Crab Fair programmes"}
+
+::::slide
+
 ![Historical archive image](/uploads/archive/egremont-crab-fair-programme-1952.jpg)
 
-- **1952 Crab Fair Programme:** Older programmes focus on athletics and animal-related competitions. More eccentric games are relegated to this fleeting reference on the back page.    Gurning is referred to as "Grinning through Horse Collar". An even older name for the event was "Grinning for 'bacca", referring to the tobacco prize awarded to the winner.
-- **1952 Crab Fair Programme:** From its inception, the Crab Fair has relied upon the goodwill of local suppliers and patrons.    Nowadays the event is funded by donations and run by a committee of volunteers.
-- **1952 Crab Fair Programme:** A massive barn dance in Egremont Market Hall formed the climax of the event.    In the last few years this has evolved into CrabFest, a festival of live music that accompanies the games.
+:::hotspot{title="1952 Crab Fair Programme" x="69" y="28"}
+
+Older programmes focus on athletics and animal-related competitions. More eccentric games are relegated to this fleeting reference on the back page. Gurning is referred to as "Grinning through Horse Collar". An even older name for the event was "Grinning for 'bacca", referring to the tobacco prize awarded to the winner.
+
+:::
+
+:::hotspot{title="Local support" x="27" y="48"}
+
+From its inception, the Crab Fair has relied upon the goodwill of local suppliers and patrons. Nowadays the event is funded by donations and run by a committee of volunteers.
+
+:::
+
+:::hotspot{title="Barn dance" x="72" y="74"}
+
+A massive barn dance in Egremont Market Hall formed the climax of the event. In the last few years this has evolved into CrabFest, a festival of live music that accompanies the games.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/egremont-crab-fair-trophies-1963.jpg)
 
-- **1963 Crab Fair Programme:** Trophies tend to be named after patrons or successful competitors.    They are a testament to the importance of donors for the ongoing survival of the fair and to the legacies of its participants.    The Gurning World Championship prize is now known as the Gordon Blacklock Memorial Trophy. Gordon Blacklock was a five-time champion who shared a 15-year rivalry with Tommy Mattinson (19 wins). After he passed away in 2020, a new trophy was named in his honour.
-- **1963 Crab Fair Programme:** Here "grinning" has been replaced by "gurning", although on the back page it is again referred to as "Grinning through Horse Collar".    "Go as you please" competitions were an early iteration of the talent show.
+:::hotspot{title="Trophies" x="76" y="11"}
+
+Trophies tend to be named after patrons or successful competitors. They are a testament to the importance of donors for the ongoing survival of the fair and to the legacies of its participants. The Gurning World Championship prize is now known as the Gordon Blacklock Memorial Trophy. Gordon Blacklock was a five-time champion who shared a 15-year rivalry with Tommy Mattinson (19 wins). After he passed away in 2020, a new trophy was named in his honour.
+
+:::
+
+:::hotspot{title="Gurning" x="34" y="84"}
+
+Here "grinning" has been replaced by "gurning", although on the back page it is again referred to as "Grinning through Horse Collar". "Go as you please" competitions were an early iteration of the talent show.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/egremont-crab-fair-programme-1977.jpg)
 
-- **1977 Crab Fair Programme:** Greasy pole climbing is one of the fair's most venerable events.    The pole is erected at the start of the day and the competition lasts until the evening.    The pole is 30-foot long and traditionally greased with lard.    The prize for climbing highest up the pole used to be a hat, probably a top hat, which was switched to a leg of lamb or mutton in the mid-19th century.
+:::hotspot{title="Greasy pole climbing" x="74" y="45"}
+
+Greasy pole climbing is one of the fair's most venerable events. The pole is erected at the start of the day and the competition lasts until the evening. The pole is 30-foot long and traditionally greased with lard. The prize for climbing highest up the pole used to be a hat, probably a top hat, which was switched to a leg of lamb or mutton in the mid-19th century.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/egremont-crab-fair-programme-1996.jpg)
 
-- **1996 Crab Fair Programme:** Exhibitions and parades of vintage vehicles now form an important part of the fair.    Agricultural shows and animal performances are similarly important, representing a merging of the Crab Fair's itinerary with more conventional village fêtes.
-- **1996 Crab Fair Programme:** By the 1990s, gurning had become the main attraction.    Rebranded as a "World Championship", the competition has also diversified to include junior and women's categories.    The filming of the 1996 gurning competition by Australian television reflects the worldwide infamy of this increasingly novel folk tradition.
+:::hotspot{title="Vintage vehicles" x="74" y="21"}
+
+Exhibitions and parades of vintage vehicles now form an important part of the fair. Agricultural shows and animal performances are similarly important, representing a merging of the Crab Fair's itinerary with more conventional village fêtes.
+
+:::
+
+:::hotspot{title="World Gurning Championship" x="76" y="68"}
+
+By the 1990s, gurning had become the main attraction. Rebranded as a "World Championship", the competition has also diversified to include junior and women's categories. The filming of the 1996 gurning competition by Australian television reflects the worldwide infamy of this increasingly novel folk tradition.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/egremont-crab-fair-advertisement-1824.jpg)
 
-- **1824 Crab Fair Advert Slide:** Cumberland wrestling is a cornerstone of the Crab Fair.    Inspired by Norse Irish settlers, this ancient throwing contest begins with both competitors in a standing hold.    From this position, they attempt to force their opponent into three falls.    Competitors wear uniquely embroidered outfits, with the best dressed awarded a special prize.
+:::hotspot{title="1824 Crab Fair Advert Slide" x="48" y="20"}
+
+Cumberland wrestling is a cornerstone of the Crab Fair. Inspired by Norse Irish settlers, this ancient throwing contest begins with both competitors in a standing hold. From this position, they attempt to force their opponent into three falls. Competitors wear uniquely embroidered outfits, with the best dressed awarded a special prize.
+
+:::
+
+::::
+
+:::::
 
 ### Programmes through the ages
 
@@ -247,17 +399,41 @@ The game's origins are uncertain. Some say it began as a ritual mocking of the s
 
 Champions often hold on to their titles for years. Anne Woods dominated the women's division from 1977 to 2010, winning a record **28 times**.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Sepia photo of man making an ugly, funny face](/uploads/archive/sepia-photo-of-man-making-an-ugly-funny-face.jpg)
 
 Headshot of Wyndham 'Taffy' Thomas, 1965. Source: Whitehaven Archives.
 
+:::
+
+:::::collection-carousel{kind="images" label="Atherstone Ball Game"}
+
+::::slide{zoom="true"}
+
 ![Photo of a melee of people wrestling in the street](/uploads/archive/photo-of-a-melee-of-people-wrestling-in-the-street.jpg)
+
+::::
+
+::::slide
 
 ![Photo of people amassed around a boarded-up shopfront ready to play.](/uploads/archive/photo-of-people-amassed-around-a-boarded-up-shopfront-ready-to-play.jpg)
 
+::::
+
+::::slide
+
 ![Photo of a large crowd of fighting people in the street, behind them some barricaded shops.](/uploads/archive/photo-of-a-large-crowd-of-fighting-people.jpg)
 
+::::
+
+::::slide
+
 ![A shot from above of crowds beginning to gather in the street in preparation for the ball game](/uploads/archive/a-shot-from-above-of-crowds-beginning-to-gather.jpg)
+
+::::
+
+:::::
 
 ## Atherstone Ball Game
 
@@ -325,37 +501,55 @@ Local newspapers are the best place to find these debates — and plenty of comi
 
 [**Warwickshire Libraries**](/libraries/warwickshire) has gathered a collection of clippings from across the decades, available to view on request. Here are some highlights.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Newspaper clipping titled 'Shrovetide Football'.](/uploads/archive/newspaper-clipping-titled-shrovetide-football.jpg)
 
 Clipping from The Atherstone News, 1934. Source: Warwickshire Libraries.
 
-The 1934 game was the first to be broadcast by the BBC. The announcer, however, had to apologise for wrongly calling Atherstone a village.
+:::
 
-The report in _The Atherstone News_ adds:
+:::::collection-carousel{kind="quotes" label="Newspaper reports on the Atherstone Ball Game"}
+
+::::slide
+
+The 1934 game was the first to be broadcast by the BBC. The announcer, however, had to apologise for wrongly calling Atherstone a village. The report in _The Atherstone News_ adds:
 
 > "He assured listeners that the Town of Atherstone appeared in the Domesday Book, which was more than could be said of Birmingham."
 
-The UK faced a severe winter in 1947, known as ‘The Great Freeze’. The game still went ahead, though the icy conditions made play difficult.
+::::
 
-From _The Tribune_:
+::::slide
+
+The UK faced a severe winter in 1947, known as ‘The Great Freeze’. The game still went ahead, though the icy conditions made play difficult. From _The Tribune_:
 
 > "Where the ball goes the players follow—sometimes to the depths of the canal which skirts the town.
-
+>
 > Today the thrill of immersion was denied the contestants for the canal was frozen over."
+
+::::
+
+::::slide
 
 1950 was a violent year according to _The Atherstone News_:
 
 > "The cry was raised that a man was down under the scrum.
-
+>
 > The Atherstone Ambulance was soon on the scene and the attendants, assisted by the police, had the greatest difficulty in forcing their way to the seething mass of humanity only to find that their services were not required."
 
-Many newspapers report damage to the shops and homes unlucky enough to be caught up in the game.
+::::
 
-1951 was especially “fishy”, as _The Birmingham Mail's_ 1952 report makes clear:
+::::slide
+
+Many newspapers report damage to the shops and homes unlucky enough to be caught up in the game. 1951 was especially “fishy”, as _The Birmingham Mail's_ 1952 report makes clear:
 
 > "Whoever holds the ball as the church clock strikes five has the right to keep it, and long before that hour rival gangs try to smuggle it away.
-
+>
 > Last year at this stage a fish trader's stall was upset and the fish used as missiles."
+
+::::
+
+:::::
 
 ## Discover more
 

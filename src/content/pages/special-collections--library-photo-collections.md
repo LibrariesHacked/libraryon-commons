@@ -65,13 +65,21 @@ Library photo collections are increasingly being digitised, but you can also spe
 
 **Here we'll look at how three different library authorities have preserved photos that help tell stories about their communities.**
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![A black & white photo of a young boy in shorts reclining in a buggy.](/uploads/archive/a-black-and-white-photo-of-a-young-boy-in-shorts-reclining-in-a-buggy.jpg)
 
 Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
 
+:::
+
+:::collection-image{layout="inset" zoom="true"}
+
 ![A sepia photo of a large crowd of several hundred people posing for the camera. The people are dressed formally, with men in suits and women in dresses. All the men and women wear hats or bonnets.](/uploads/archive/a-sepia-photo-of-a-large-crowd-of-several-hundred-2.jpg)
 
 The Colman family and the company's employees in 1882. Image courtesy of Norfolk County Council Library and Information Service at www.picture.norfolk.gov.uk
+
+:::
 
 ## Preserving the Colman's legacy
 
@@ -93,27 +101,105 @@ These moves were notable because they were established decades before widespread
 
 ## From Norwich to Antarctica
 
+:::::collection-carousel{kind="hotspots" label="Colman's Antarctic expeditions"}
+
+::::slide
+
 ![Historical archive image](/uploads/archive/delivery-crates-in-a-snowy-landscape.jpg)
 
-- **The Terra Nova Expedition — 1910–1912:** Here we see boxes of Colman's products being unloaded in Antarctica.  This shot is from Scott's _Terra Nova_ expedition to the South Pole, which set out in 1910.  It was during the 800-mile trek back to base camp from the South Pole that Scott and four crew members died in 1912.  _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Terra Nova Expedition — 1910–1912:** The Terra Nova ship faced storms and was trapped in pack ice for twenty days before reaching Antarctica.  When they finally arrived in January 1911 the crew constructed this hut as their base.  It still stands today, preserved by the [Antarctic Heritage Trust](https://nzaht.org/conserve/explorer-bases/scotts-hut-cape-evans/scotts-terra-nova-hut/).     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Terra Nova Expedition — 1910–1912:** The boxes bear the mark 'BAE', which stands for 'British Antarctic Expedition'.  In the background by the hut we can see dozens more boxes being stored for the expedition.     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Terra Nova Expedition — 1910–1912:** Overlooking the base is Mount Erebus, the southernmost volcano in the world.  Scientists have detected tiny gold crystals from its explosions over 600 miles away. It's been estimated it emits around £1.5m worth of gold every year.     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+:::hotspot{title="Unloading supplies" x="80" y="34"}
+
+Here we see boxes of Colman's products being unloaded in Antarctica. This shot is from Scott's _Terra Nova_ expedition to the South Pole, which set out in 1910. It was during the 800-mile trek back to base camp from the South Pole that Scott and four crew members died in 1912. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="The expedition hut" x="16" y="28"}
+
+The Terra Nova ship faced storms and was trapped in pack ice for twenty days before reaching Antarctica. When they finally arrived in January 1911 the crew constructed this hut as their base. It still stands today, preserved by the [Antarctic Heritage Trust](https://nzaht.org/conserve/explorer-bases/scotts-hut-cape-evans/scotts-terra-nova-hut/). _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="British Antarctic Expedition supplies" x="57" y="52"}
+
+The boxes bear the mark 'BAE', which stands for 'British Antarctic Expedition'. In the background by the hut we can see dozens more boxes being stored for the expedition. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Mount Erebus" x="51" y="10"}
+
+Overlooking the base is Mount Erebus, the southernmost volcano in the world. Scientists have detected tiny gold crystals from its explosions over 600 miles away. It's been estimated it emits around £1.5m worth of gold every year. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/historical-delivery-van-with-union-jack.jpg)
 
-- **The Nimrod Expedition — 1907–1909:** The text on the boxes on this carriage show they are headed for the [1907 British Antarctic Expedition](https://shackleton.com/blogs/articles/ernest-shackleton-nimrod-expedition).  This expedition was led by Ernest Shackleton, with the aim of being the first to reach the South Pole.   While they didn't succeed in their goal, it was at that time the furthest south any humans had been. Shackleton was knighted on his return.     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Nimrod Expedition — 1907–1909:** This picture may have been taken in the grounds of the Carrow Works factory site developed by Colman's.  The company occupied it for over 160 years before moving production in 2020.     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Nimrod Expedition — 1907–1909 —:** The carriage sits on a tramway. In the late 19th century factories started using internal tram systems as an efficient way of moving resources around a site and preparing deliveries.  When it closed in 2020 the site covered 40 acres, and today several of its buildings are Grade I or II listed, meaning they are of special or exceptional interest.     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Nimrod Expedition — 1907–1909:** While Colman's is famous today for its mustard, here we can see that the company also provided various kinds of flour for this expedition.  Other companies provided supplies too. In 2010 a case of whisky buried during Shackleton’s expedition was found in Antarctica. After taking samples from the 100 year-old bottle, distillers Whyte & Mackay recreated the recipe.     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+:::hotspot{title="Shackleton's Nimrod Expedition" x="18" y="41"}
+
+The text on the boxes on this carriage show they are headed for the [1907 British Antarctic Expedition](https://shackleton.com/blogs/articles/ernest-shackleton-nimrod-expedition). This expedition was led by Ernest Shackleton, with the aim of being the first to reach the South Pole. While they didn't succeed in their goal, it was at that time the furthest south any humans had been. Shackleton was knighted on his return. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Carrow Works" x="62" y="13"}
+
+This picture may have been taken in the grounds of the Carrow Works factory site developed by Colman's. The company occupied it for over 160 years before moving production in 2020. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="The factory tramway" x="80" y="84"}
+
+The carriage sits on a tramway. In the late 19th century factories started using internal tram systems as an efficient way of moving resources around a site and preparing deliveries. When it closed in 2020 the site covered 40 acres, and today several of its buildings are Grade I or II listed, meaning they are of special or exceptional interest. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Colman's flour and provisions" x="63" y="59"}
+
+While Colman's is famous today for its mustard, here we can see that the company also provided various kinds of flour for this expedition. Other companies provided supplies too. In 2010 a case of whisky buried during Shackleton’s expedition was found in Antarctica. After taking samples from the 100 year-old bottle, distillers Whyte & Mackay recreated the recipe. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/historical-shop-counter-and-packaging.jpg)
 
-- **The Discovery Expedition — 1901-1904:** Robert Falcon Scott was happy enough with his supply of Colman's products to provide glowing testimonials.    Written on his departure and his return, Scott's recommendations were framed and photographed alongside Colman's products by the company.    This was an early example of using customer reviews in marketing materials, which lots of companies do today.    _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Discovery Expedition — 1901–1904:** Scott led the Discovery expedition to Antarctica in 1901. It was the first British exploration of the territory for 60 years.  As well as Colman's, companies who supplied food for the expedition included Cadbury's (chocolate), Bird's (custard and baking powders) and Bovril (beef extract).     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Discovery Expedition — 1901–1904:** For the journey Scott's crew brought along a tonne and a half of Colman's mustard. It was most likely in the powdered form we see here.  Colman's supplied the provisions for free, presumably anticipating the benefits of the international exposure the expedition would provide.    _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Discovery Expedition — 1901–1904:** Under the heading _The Departure_, Scott writes to Colman's:  "I would add an expression of my appreciation of the extraordinary care that you have taken in all details connected with packing and preservation, and with the admirable manner in which you have adapted the goods to our requirements.  "May I, in conclusion, ask your Directors to accept from the Presidents of the Royal Geographical Societies their most sincere thanks for the completeness of the present which your firm has made, and my own sincere thanks for the good wishes which accompany it."     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
-- **The Discovery Expedition — 1901–1904:** On completion of the expedition, under the heading _The Return_, Scott writes:  "I have much pleasure in informing you that the flour, mustard, etc which you supplied for the Discovery proved to be of the best quality, and in all respects satisfactory. Some portion which remained unconsumed, on our return to England, has been found to be in as good condition as when it was supplied.    "I must also congratulate you on the excellent manner in which the goods were packed. This is an important consideration for an Expedition, and in our case it, no doubt, accounted for the absence of deterioration."     _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+:::hotspot{title="Scott's testimonials" x="57" y="63"}
+
+Robert Falcon Scott was happy enough with his supply of Colman's products to provide glowing testimonials. Written on his departure and his return, Scott's recommendations were framed and photographed alongside Colman's products by the company. This was an early example of using customer reviews in marketing materials, which lots of companies do today. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="The Discovery expedition" x="13" y="42"}
+
+Scott led the Discovery expedition to Antarctica in 1901. It was the first British exploration of the territory for 60 years. As well as Colman's, companies who supplied food for the expedition included Cadbury's (chocolate), Bird's (custard and baking powders) and Bovril (beef extract). _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Mustard for the expedition" x="35" y="69"}
+
+For the journey Scott's crew brought along a tonne and a half of Colman's mustard. It was most likely in the powdered form we see here. Colman's supplied the provisions for free, presumably anticipating the benefits of the international exposure the expedition would provide. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Scott's departure letter" x="46" y="47"}
+
+Under the heading _The Departure_, Scott writes to Colman's: "I would add an expression of my appreciation of the extraordinary care that you have taken in all details connected with packing and preservation, and with the admirable manner in which you have adapted the goods to our requirements. "May I, in conclusion, ask your Directors to accept from the Presidents of the Royal Geographical Societies their most sincere thanks for the completeness of the present which your firm has made, and my own sincere thanks for the good wishes which accompany it." _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Scott's return letter" x="63" y="45"}
+
+On completion of the expedition, under the heading _The Return_, Scott writes: "I have much pleasure in informing you that the flour, mustard, etc which you supplied for the Discovery proved to be of the best quality, and in all respects satisfactory. Some portion which remained unconsumed, on our return to England, has been found to be in as good condition as when it was supplied. "I must also congratulate you on the excellent manner in which the goods were packed. This is an important consideration for an Expedition, and in our case, it no doubt accounted for the absence of deterioration." _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+::::
+
+:::::
 
 **In this gallery you'll get an idea of the volume of food Colman's sent to Antarctica, and the effort required to transport it to the remotest part of the world.**
 
@@ -131,17 +217,41 @@ Where local people may have seen little worth photographing, as an immigrant—s
 
 His shots document shopping locations, markets, the shipyards of the region and more. Taken together, they offer a comprehensive snapshot of a specific time in the city’s history.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![A black & white photo of two ladies smiling outside a shop.](/uploads/archive/a-black-and-white-photo-of-two-ladies-smiling-outside-a-shop.jpg)
 
 Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
 
+:::
+
+:::::collection-carousel{kind="images" label="Torday's Newcastle street photographs"}
+
+::::slide{zoom="true"}
+
 ![A black & white photo of shoppers on a street in Newcastle in the Sixties. We can see a man in a suit and hat, a lady with shopping bags and two ladies with children.](/uploads/archive/a-black-and-white-photo-of-shoppers-on-a-street.jpg)
+
+::::
+
+::::slide{zoom="true"}
 
 ![A black & white photo from the sixties of two men working on a fish market. The boxes they're packing have 'North Quay Fish' printed on the side.](/uploads/archive/a-black-and-white-photo-from-the-sixties-of-two-2.jpg)
 
+::::
+
+::::slide{zoom="true"}
+
 ![A black and white photo of a lady walking past some shops. One of the shops has ads in the window for the brands Tizer, Birds Eye and Cadets cigarettes.](/uploads/archive/a-black-and-white-photo-of-a-lady-walking-past-2.jpg)
 
+::::
+
+::::slide{zoom="true"}
+
 ![A black and white photo of six young children smiling as they look at the camera through the bars of a gate or fence.](/uploads/archive/a-black-and-white-photo-of-six-young-children-smiling-2.jpg)
+
+::::
+
+:::::
 
 _Photos from 'Torday's Newcastle' (Newcastle Libraries Flickr). Source: Newcastle City Library Photographic Collection._
 
@@ -151,9 +261,13 @@ However, by [uploading Torday’s photos to Flickr](https://www.flickr.com/photo
 
 **Do you recognise any of people or places in Torday’s photos?** You can comment on them in [Newcastle's Flickr album](https://www.flickr.com/photos/newcastlelibraries/albums/72157632024528422/).
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![A screenshot of a thumbnail image from Flickr. The thumbnail is from the Newcastle Libraries album called 'Torday's Newcastle', and we can see the album contains 999 images and has been viewed 100,975 times.](/uploads/archive/a-screenshot-of-a-thumbnail-image-from-flickr.jpg)
 
 Screenshot from Newcastle Libraries Flickr
+
+:::
 
 ## Manchester's one-man Streetview
 
@@ -165,13 +279,21 @@ His collection of thousands of local photos was bequeathed to the Archives and L
 
 **Middleton Library**, in [Rochdale](https://www.rochdale.gov.uk/libraries), used Kaye's photos in a particularly innovative way. Staff created [a walking route and map](https://middletonphotographicwalkingtrail.weebly.com/photographic-walk.html), with Kaye’s photos, alongside those of others, used along the route to enable comparison between past and present.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![A black and white shot of photographer Lawrence Kaye standing in front of a full-length mirror, photographing himself. He is wearing a trenchcoat and hat.](/uploads/archive/a-black-and-white-shot-of-photographer-lawrence-kaye-standing.jpg)
 
 Photographer Lawrence Kaye. Source: Manchester Libraries (via images.manchester.gov.uk), CC BY-NC-SA 4.0
 
+:::
+
+:::collection-image{layout="inset" zoom="true"}
+
 ![A screenshot of a map of Middleton's photographic walking trail. Overlaid on the map is an old photo of a location on the map, Durnford Street, remarking on how different the location looks today.](/uploads/archive/a-screenshot-of-a-map-of-middletons-photographic-walking-trail-2.jpg)
 
 Middleton Library's photographic walking trail, based on the photography of Lawrence Kaye. Source: Middleton Library Local Studies
+
+:::
 
 Projects like Middleton Library’s show how old photos can be **combined with modern technology** to engage audiences decades after shots were taken.
 
@@ -183,21 +305,33 @@ From the streets of northern England to Antarctica, these books feature photogra
 
 ![The cover of 'Another Country: British Documentary Photography Since 1945' by Gerry Badger. It features a boy standing with a bicycle that has a Union Flag on its handlebars.](/uploads/archive/the-cover-of-another-country-british-documentary-photography-2.jpg)
 
-### *Another Country: British Documentary Photography Since 1945* — Gerry Badger (2022)
+::::collection-accordion{label="Books at the library about pioneering photography"}
+
+:::accordion-item{title="Another Country: British Documentary Photography Since 1945 — Gerry Badger (2022)"}
 
 Featuring a diverse range of photographers, this is a comprehensive overview of how photographers and photo-artists have depicted Britain and British society over the last 70 years.
 
-### *Lewis W. Hine: America at Work* — Peter Walther (2018)
+:::
+
+:::accordion-item{title="Lewis W. Hine: America at Work — Peter Walther (2018)"}
 
 Lewis Hine was one of the earliest photographers to use the camera as a documentary tool. His images, including those of children in cotton mills, factories, coal mines and fields, became icons of photographic history that helped to transform labour laws in the United States.
 
-### *The North* — John Bulmer (2012)
+:::
+
+:::accordion-item{title="The North — John Bulmer (2012)"}
 
 John Bulmer's striking photos capture the impact of the collapse of traditional industry in the north of England on communities in the 60s and 70s.
 
-### *Herbert Ponting: Scott’s Antarctic Photographer and Pioneer Filmmaker* — Anne Strathie (2021)
+:::
+
+:::accordion-item{title="Herbert Ponting: Scott’s Antarctic Photographer and Pioneer Filmmaker — Anne Strathie (2021)"}
 
 Self-trained professional photographer Herbert Ponting documented Scott's fateful expedition to the Antarctic. He returned with stunning photographs and over 30,000 feet of film recorded under the harshest of conditions.
+
+:::
+
+::::
 
 ## More library digital photo collections
 

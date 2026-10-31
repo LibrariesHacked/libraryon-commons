@@ -271,8 +271,8 @@ test("CMS form controls are registered before initialization and keep Markdown a
   registerEditorComponents({
     registerEditorComponent: (component) => registered.push(component.id),
   });
-  assert.equal(registered.length, 8);
-  assert.equal(new Set(registered).size, 8);
+  assert.equal(registered.length, 11);
+  assert.equal(new Set(registered).size, 11);
   const body = config.collections
     .find((collection) => collection.name === "pages")
     .fields.find((field) => field.name === "body");
@@ -370,6 +370,72 @@ test("CMS blocks preserve punctuation and nested lists and preview untrusted val
   assert.deepEqual(
     panel.fromBlock(panel.toBlock(list).match(panel.pattern)),
     list,
+  );
+  const image = components.find(
+    (component) => component.id === "library-collection-image",
+  );
+  const imageData = {
+    image: "/uploads/archive/painting.jpg",
+    alt: "A watercolor painting.",
+    image_title: "",
+    layout: "full",
+    zoom: true,
+    caption: "Source: Hove Library.",
+  };
+  assert.deepEqual(
+    image.fromBlock(image.toBlock(imageData).match(image.pattern)),
+    imageData,
+  );
+  const carousel = components.find(
+    (component) => component.id === "library-collection-carousel",
+  );
+  const carouselData = {
+    kind: "hotspots",
+    label: "Explore Glynde College",
+    content:
+      '::::slide\n\n![A college garden](/uploads/garden.jpg)\n\n::::::hotspot{title="Mowing" x="44" y="49"}\n\nA lawnmower.\n\n::::::\n\n::::\n\n::::',
+  };
+  assert.deepEqual(
+    carousel.fromBlock(carousel.toBlock(carouselData).match(carousel.pattern)),
+    carouselData,
+  );
+  const attributedCarousel = {
+    kind: "quotes",
+    label: "Lace worker recollections",
+    content:
+      '::::slide\n\n:::quote{author="Mrs Ethel Clarke"}\n\n> The factory conditions were austere.\n\n:::\n\n::::',
+  };
+  assert.deepEqual(
+    carousel.fromBlock(
+      carousel.toBlock(attributedCarousel).match(carousel.pattern),
+    ),
+    attributedCarousel,
+  );
+  assert.match(
+    previewEditorBlock("collection-carousel", attributedCarousel),
+    /quote-author/,
+  );
+  const collectionAccordion = components.find(
+    (component) => component.id === "library-collection-accordion",
+  );
+  const books = {
+    label: "Books by Frances Wolseley",
+    content:
+      ':::accordion-item{title="Gardening for Women" author="Frances Wolseley" year="1908"}\n\nA description with **formatting**.\n\n:::\n\n:::accordion-item{title="In a College Garden" year="1916"}\n\nAnother entry.\n\n:::',
+  };
+  assert.deepEqual(
+    collectionAccordion.fromBlock(
+      collectionAccordion.toBlock(books).match(collectionAccordion.pattern),
+    ),
+    books,
+  );
+  assert.match(
+    previewEditorBlock("collection-carousel", carouselData),
+    /collection-hotspot-marker/,
+  );
+  assert.match(
+    previewEditorBlock("collection-accordion", books),
+    /collection-accordion-content/,
   );
   const rendered = previewEditorBlock("quote", {
     author: "<script>alert(1)</script>",

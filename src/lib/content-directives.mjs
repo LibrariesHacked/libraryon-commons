@@ -1,11 +1,14 @@
 import { ArrowUpRight } from "lucide";
 
-function element(tagName, className, children) {
+function element(tagName, className, children, properties = {}) {
   return {
     type: "paragraph",
     data: {
       hName: tagName,
-      hProperties: className ? { className: [className] } : {},
+      hProperties: {
+        ...properties,
+        ...(className ? { className: [className] } : {}),
+      },
     },
     children,
   };
@@ -42,7 +45,245 @@ export function contentDirectives() {
       const block = (tagName, className) => {
         node.data = { hName: tagName, hProperties: { className: [className] } };
       };
-      if (["testimonial", "quote"].includes(node.name)) {
+      if (["slide", "hotspot", "accordion-item"].includes(node.name)) {
+        return;
+      } else if (node.name === "collection-image") {
+        const layout = attributes.layout || "standard";
+        const image = node.children.filter(imageParagraph);
+        if (image.length !== 1) fail("include exactly one image");
+        if (!["standard", "inset", "full"].includes(layout))
+          fail("layout must be standard, inset or full");
+        const caption = node.children.filter((child) => child !== image[0]);
+        if (caption[0]) {
+          caption[0].data = {
+            ...(caption[0].data || {}),
+            hName: "figcaption",
+          };
+        }
+        node.data = {
+          hName: "figure",
+          hProperties: {
+            className: ["collection-image", `collection-image--${layout}`],
+          },
+        };
+        node.children = [
+          ...image,
+          ...caption,
+          ...(attributes.zoom === "true"
+            ? [
+                element(
+                  "button",
+                  "collection-image-zoom",
+                  [text("View")],
+                  {
+                    type: "button",
+                    ariaLabel: "Zoom in on image",
+                    dataCollectionZoom: "",
+                  },
+                ),
+              ]
+            : []),
+        ];
+      } else if (node.name === "collection-carousel") {
+        const kind = attributes.kind;
+        const slides = node.children.filter(
+          (child) =>
+            child.type === "containerDirective" && child.name === "slide",
+        );
+        if (!slides.length || slides.length !== node.children.length)
+          fail("include one or more slide blocks and no other content");
+        if (!["images", "quotes", "hotspots"].includes(kind))
+          fail("kind must be images, quotes or hotspots");
+        slides.forEach((slide, index) => {
+          const properties = {
+            role: "group",
+            ariaLabel: `Slide ${index + 1} of ${slides.length}`,
+            ariaRoledescription: "slide",
+            dataCarouselSlide: "",
+          };
+          if (kind === "images") {
+            const images = slide.children.filter(imageParagraph);
+            if (images.length !== 1) fail("each image slide needs one image");
+            slide.data = {
+              hName: "figure",
+              hProperties: {
+                ...properties,
+                className: ["collection-carousel-slide", "collection-carousel-slide--image"],
+              },
+            };
+            if (slide.attributes.zoom === "true")
+              slide.children.push(
+                element(
+                  "button",
+                  "collection-image-zoom",
+                  [text("View")],
+                  {
+                    type: "button",
+                    ariaLabel: "Zoom in on image",
+                    dataCollectionZoom: "",
+                  },
+                ),
+              );
+          } else if (kind === "quotes") {
+            const attributedQuotes = slide.children.filter(
+              (child) =>
+                child.type === "containerDirective" && child.name === "quote",
+            );
+            if (attributedQuotes.length) {
+              if (attributedQuotes.length !== 1 || slide.children.length !== 1)
+                fail("include exactly one attributed quote per slide");
+              slide.children = attributedQuotes;
+            } else if (
+              !slide.children.some((child) => child.type === "blockquote")
+            ) {
+              fail("each quote slide needs a blockquote");
+            }
+            slide.data = {
+              hName: "div",
+              hProperties: {
+                ...properties,
+                className: ["collection-carousel-slide", "collection-carousel-slide--quote"],
+              },
+            };
+          } else {
+            const images = slide.children.filter(imageParagraph);
+            const hotspots = slide.children.filter(
+              (child) =>
+                child.type === "containerDirective" && child.name === "hotspot",
+            );
+            if (images.length !== 1 || !hotspots.length)
+              fail("each hotspot slide needs one image and one or more hotspots");
+            const markers = [];
+            const notes = [];
+            hotspots.forEach((hotspot, hotspotIndex) => {
+              const x = Number(hotspot.attributes.x);
+              const y = Number(hotspot.attributes.y);
+              const title = hotspot.attributes.title?.trim();
+              if (!title) fail("each hotspot needs a title");
+              if (!Number.isFinite(x) || x < 0 || x > 100)
+                fail("hotspot x must be between 0 and 100");
+              if (!Number.isFinite(y) || y < 0 || y > 100)
+                fail("hotspot y must be between 0 and 100");
+              markers.push(
+                element(
+                  "button",
+                  "collection-hotspot-marker",
+                  [text(String(hotspotIndex + 1))],
+                  {
+                    type: "button",
+                    ariaLabel: `${title}, note ${hotspotIndex + 1}`,
+                    ariaPressed: hotspotIndex === 0 ? "true" : "false",
+                    dataHotspotSelect: String(hotspotIndex),
+                    style: `left:${x}%;top:${y}%;`,
+                  },
+                ),
+              );
+              notes.push(
+                element(
+                  "div",
+                  "collection-hotspot-note",
+                  [
+                    element("h4", "", [text(title)]),
+                    ...hotspot.children,
+                  ],
+                  {
+                    dataHotspotNote: String(hotspotIndex),
+                    ...(hotspotIndex ? { hidden: true } : {}),
+                  },
+                ),
+              );
+            });
+            slide.data = {
+              hName: "div",
+              hProperties: {
+                ...properties,
+                className: ["collection-carousel-slide", "collection-hotspot-slide"],
+              },
+            };
+            slide.children = [
+              element("div", "collection-hotspot-image", [
+                images[0],
+                ...markers,
+              ]),
+              element("aside", "collection-hotspot-aside", notes),
+            ];
+          }
+        });
+        node.data = {
+          hName: "section",
+          hProperties: {
+            className: ["collection-carousel", `collection-carousel--${kind}`],
+            role: "region",
+            ariaLabel: attributes.label || "Collection gallery",
+            ariaRoledescription: "carousel",
+            dataCollectionCarousel: "",
+            dataCarouselKind: kind,
+          },
+        };
+        node.children = [
+          element(
+            "div",
+            "collection-carousel-viewport",
+            [element("div", "collection-carousel-track", slides)],
+            { dataCarouselViewport: "", tabindex: "0" },
+          ),
+          element("div", "collection-carousel-controls", [
+            element(
+              "button",
+              "collection-carousel-previous",
+              [text("Previous")],
+              { type: "button", ariaLabel: "Previous slide", dataCarouselPrevious: "" },
+            ),
+            element(
+              "span",
+              "collection-carousel-status",
+              [text(`1 / ${slides.length}`)],
+              { ariaLive: "polite", dataCarouselStatus: "" },
+            ),
+            element(
+              "button",
+              "collection-carousel-next",
+              [text("Next")],
+              { type: "button", ariaLabel: "Next slide", dataCarouselNext: "" },
+            ),
+          ]),
+        ];
+      } else if (node.name === "collection-accordion") {
+        const items = node.children.filter(
+          (child) =>
+            child.type === "containerDirective" && child.name === "accordion-item",
+        );
+        if (!items.length || items.length !== node.children.length)
+          fail("include one or more accordion items and no other content");
+        for (const item of items) {
+          const title = item.attributes.title?.trim();
+          if (!title) fail("each item needs a title");
+          const meta = [item.attributes.author, item.attributes.year]
+            .filter(Boolean)
+            .join(" · ");
+          item.data = {
+            hName: "details",
+            hProperties: { className: ["collection-accordion-item"] },
+          };
+          item.children = [
+            element("summary", "collection-accordion-summary", [
+              element("span", "collection-accordion-title", [text(title)]),
+              ...(meta
+                ? [element("span", "collection-accordion-meta", [text(meta)])]
+                : []),
+            ]),
+            element("div", "collection-accordion-content", item.children),
+          ];
+        }
+        node.data = {
+          hName: "div",
+          hProperties: {
+            className: ["collection-accordion"],
+            role: "region",
+            ariaLabel: attributes.label || "Collection details",
+          },
+        };
+      } else if (["testimonial", "quote"].includes(node.name)) {
         if (!attributes.author?.trim()) fail("an author is required");
         const images = node.children.filter(imageParagraph);
         const quotes = node.children.filter(

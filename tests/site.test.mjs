@@ -450,3 +450,87 @@ test('legacy migration recognizes testimonials, cards and list groupings', () =>
   assert.equal(htmlNodes[4].children[1].tagName, 'ul');
   assert.deepEqual(htmlNodes[4].children[1].properties.className, ['library-can-do-list']);
 });
+
+test('special collection galleries, notes and book entries stay in the article Markdown', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    rehypePlugins: [[preservedLinks, { base: '/' }]],
+    smartypants: false,
+  });
+  const expected = [
+    {
+      file: 'special-collections--frances-wolseley-gardening-educator.md',
+      imageCarousels: 2,
+      imageSlides: 9,
+      quoteSlides: 6,
+      hotspotSlides: 5,
+      markers: 18,
+      accordionItems: 7,
+      zoomButtons: 12,
+    },
+    {
+      file: 'special-collections--curious-competitions.md',
+      imageCarousels: 1,
+      imageSlides: 4,
+      quoteSlides: 4,
+      hotspotSlides: 8,
+      markers: 19,
+      accordionItems: 3,
+      zoomButtons: 8,
+    },
+    {
+      file: 'special-collections--early-days-of-circus.md',
+      imageCarousels: 0,
+      imageSlides: 0,
+      quoteSlides: 3,
+      hotspotSlides: 5,
+      markers: 27,
+      accordionItems: 4,
+      zoomButtons: 9,
+    },
+    {
+      file: 'special-collections--lacemaking-in-nottingham.md',
+      imageCarousels: 1,
+      imageSlides: 5,
+      quoteSlides: 4,
+      hotspotSlides: 0,
+      markers: 0,
+      accordionItems: 3,
+      zoomButtons: 22,
+    },
+    {
+      file: 'special-collections--library-photo-collections.md',
+      imageCarousels: 1,
+      imageSlides: 4,
+      quoteSlides: 0,
+      hotspotSlides: 3,
+      markers: 13,
+      accordionItems: 4,
+      zoomButtons: 10,
+    },
+  ];
+
+  for (const page of expected) {
+    const source = readFileSync(
+      new URL(`../src/content/pages/${page.file}`, import.meta.url),
+      'utf8',
+    ).replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+    const document = load((await processor.render(source)).code);
+    assert.equal(document('.collection-carousel--images').length, page.imageCarousels, page.file);
+    assert.equal(document('.collection-carousel--images .collection-carousel-slide').length, page.imageSlides, page.file);
+    assert.equal(document('.collection-carousel--quotes .collection-carousel-slide').length, page.quoteSlides, page.file);
+    assert.equal(document('.collection-carousel--hotspots .collection-carousel-slide').length, page.hotspotSlides, page.file);
+    assert.equal(document('.collection-hotspot-marker').length, page.markers, page.file);
+    assert.equal(document('.collection-hotspot-note').length, page.markers, page.file);
+    assert.equal(document('.collection-accordion > .collection-accordion-item').length, page.accordionItems, page.file);
+    assert.equal(document('.collection-image-zoom').length, page.zoomButtons, page.file);
+    assert.ok(
+      [...document('img').toArray()].every((image) => image.attribs.src.startsWith('/uploads/')),
+      page.file,
+    );
+    if (page.file === 'special-collections--frances-wolseley-gardening-educator.md')
+      assert.ok(
+        document('.collection-hotspot-note a[href="https://www.museumofgardening.co.uk/post/the-budding-patent-lawn-mower"]').length,
+      );
+  }
+});

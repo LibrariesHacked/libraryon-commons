@@ -21,3 +21,9 @@ const resources = unlinkedResources([html, ...faqs.map((faq) => faq.rendered?.ht
     </section>
   )
 ))}
+
+<script>
+  import { initializeCollectionMedia } from '../lib/collection-media.mjs';
+
+  initializeCollectionMedia();
+</script>

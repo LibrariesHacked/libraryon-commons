@@ -40,9 +40,13 @@ resources:
 
 # Frances Wolseley: Gardener, activist, aristocrat
 
+:::collection-image{layout="full" zoom="true"}
+
 ![Sepia photo of an older Frances Wolseley in a striped jacket standing by a full wooden bookcase.](/uploads/archive/sepia-photo-of-an-older-frances-wolseley-in-a-striped-2.jpg)
 
 Viscountess Frances Garnet Wolseley at her home, Massetts Place, in 1922. Source: Brighton & Hove Libraries
+
+:::
 
 ## From aristocrat to activist
 
@@ -56,15 +60,39 @@ Hove Library, part of [Brighton & Hove Libraries](https://www.brighton-hove.gov.
 
 [Explore the collection online](https://www.flickr.com/photos/196656943@N03/albums/72177720331351304/)
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Sepia photo of Frances Wolseley in a hat with a small dog in front of a house.](/uploads/archive/sepia-photo-of-frances-wolseley-in-a-hat.jpg)
 
 Viscountess Wolseley and her dog, Forge, in 1922. Source: Brighton & Hove Libraries
 
-![Sepia portrait of a Frances Wolseley as a girl, with long, wavy hair and fringe.](/uploads/archive/sepia-portrait-of-a-frances-wolseley-as-a-girl.jpg)
+:::
+
+### The young Frances Wolseley
+
+:::::collection-carousel{kind="images" label="The young Frances Wolseley"}
+
+::::slide{zoom="true"}
+
+![Sepia portrait of Frances Wolseley as a girl, with long, wavy hair and fringe.](/uploads/archive/sepia-portrait-of-a-frances-wolseley-as-a-girl.jpg)
+
+::::
+
+::::slide
 
 ![Sepia portrait of a young Frances Wolseley wearing a large, feathery hat and ruffled collar.](/uploads/archive/sepia-portrait-of-a-young-frances-wolseley-wearing-a-large-2.jpg)
 
+::::
+
+::::slide
+
 ![Sepia portrait of a young woman in a formal dress with her hair up, wearing a necklace.](/uploads/archive/sepia-portrait-of-a-young-woman-in-a-formal-dress-2.jpg)
+
+::::
+
+:::::
+
+On reaching eighteen Frances would have been expected to find a suitable (wealthy) husband. Source: Brighton & Hove Libraries
 
 ## Early life
 
@@ -90,9 +118,13 @@ When her family moved to Glynde village in East Sussex, this interest grew into 
 
 This passion would shape her whole life and career, but it would also cause problems between her and her parents.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Sepia photo of a Frances Wolseley in a long skirt tending a plant on a trellis outdoors.](/uploads/archive/sepia-photo-of-a-frances-wolseley-in-a-long-skirt-2.jpg)
 
 Frances Wolseley tends to a trellis in the Rose Garden at Ragged Lands, 1908. Source: Brighton & Hove Libraries
+
+:::
 
 ## A move for independence
 
@@ -104,11 +136,19 @@ However, after raising money from friends, Frances rented the greenhouse on her 
 
 Her parents were furious. At that time, as an unmarried lady, Frances was expected to devote her life to looking after them. It was the start of a disagreement that would last many years.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Sepia photo of two women working in a garden with trellises and a beehive.](/uploads/archive/sepia-photo-of-two-women-working-in-a-garden.png)
 
 Frances Wolseley (right) and a student tend to the garden at Farm House, c.1905. Source: Brighton & Hove Libraries
 
+:::
+
+:::collection-image{layout="full" zoom="true"}
+
 ![Headed notepaper with illustrated trees and birds. The text says 'College of Gardening: Ragged Lands, Glynde, Sussex'.](/uploads/archive/headed-notepaper-with-illustrated-trees-and-birds-2.jpg)
+
+:::
 
 ## Glynde School for Lady Gardeners
 
@@ -124,13 +164,21 @@ With a large garden of five acres for teaching, the college's lessons grew into 
 
 But only ladies made of the right stuff...
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Formal document listing patrons, principal, subjects, and terms for Glynde School.](/uploads/archive/formal-document-listing-patrons-principal-subjects-and-terms.jpg)
 
 Frances Wolseley used her connections to attract a list of well-know patrons from the world of horticulture, including Gertrude Jekyll, William Robinson and Ellen Willmott. Source: Brighton & Hove Libraries
 
+:::
+
+:::collection-image{layout="full" zoom="true"}
+
 ![Sepia photo of several young women in uniforms (shirts, ties, skirts, hats, boots) standing outdoors in a line with bicycles.](/uploads/archive/sepia-photo-of-several-young-women-in-uniforms-shirts-ties-2.jpg)
 
 Students, now issued uniforms, at the expanded college on Ragged Lands. The lady holding the bell on the right is Elsa More, who would take over day-to-day running of the school. Source: Brighton & Hove Libraries
+
+:::
 
 ## Life at Glynde College
 
@@ -142,44 +190,159 @@ Because of how she was brought up, Frances had high standards, but she also had 
 
 And she thought 'breeding' (meaning a person's family background) was very important. She felt that people from a lower class were not right for her college.
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Sepia aerial photo of a terraced landscape with fields and a large house on a hill. A small shed and horse and cart are visible.](/uploads/archive/sepia-aerial-photo-of-a-terraced-landscape-with-fields.jpg)
 
 The Ragged Lands site where Glynde College students learned their skills, c.1909. Source: Brighton & Hove Libraries
 
+:::
+
 ## Explore Glynde College
+
+:::::collection-carousel{kind="hotspots" label="Explore Glynde College"}
+
+::::slide
 
 ![Historical archive image](/uploads/archive/glynde-college-students-mowing-the-lawn-1904.jpg)
 
-- **Mowing the lawn:** This photo from 1904 was taken before the students at Glynde had to wear uniforms.    Nevertheless the students wore long sleeves and long skirts to protect themselves from the weather, thorns and other occupational hazards.
-- **Mowing the lawn:** Why did it take two people to mow the lawn?    This is a manual lawnmower, which had to be pushed—and sometimes, as we see here, pulled.    These early models included a rear roller, and since the whole machine was made of cast iron they were very heavy to operate.
-- **Mowing the lawn:** [The lawnmower was invented by Edwin Beard Budding](https://www.museumofgardening.co.uk/post/the-budding-patent-lawn-mower), a Gloucestershire engineer. He was inspired by mechanisms he saw in a cloth mill.    He formed the company Budding and Ferrabee with a partner, and under this name they produced early models as well as licensing their designs to other manufacturers.
+:::hotspot{title="Mowing the lawn" x="44" y="49"}
+
+This photo from 1904 was taken before the students at Glynde had to wear uniforms. Nevertheless the students wore long sleeves and long skirts to protect themselves from the weather, thorns and other occupational hazards.
+
+:::
+
+:::hotspot{title="The lawnmower" x="73" y="52"}
+
+Why did it take two people to mow the lawn? This is a manual lawnmower, which had to be pushed—and sometimes, as we see here, pulled. These early models included a rear roller, and since the whole machine was made of cast iron they were very heavy to operate.
+
+:::
+
+:::hotspot{title="Edwin Beard Budding" x="73" y="71"}
+
+[The lawnmower was invented by Edwin Beard Budding](https://www.museumofgardening.co.uk/post/the-budding-patent-lawn-mower), a Gloucestershire engineer. He was inspired by mechanisms he saw in a cloth mill. He formed the company Budding and Ferrabee with a partner, and under this name they produced early models as well as licensing their designs to other manufacturers.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/frances-wolseley-gardener-teacher-wartime-organiser-libraryon.jpg)
 
-- **Ready for work:** This photo was taken c.1913/14. At the front of the students we see Elsa More, who had become a senior instructor and would assume day-to-day responsibilities of running the school.  Like Frances Wolseley, she was strict about rules and obedience.
-- **Ready for work:** Where previously students wore decorative if practical clothing, by this time they were given uniforms.  This included leather boots, ties (with tiepins), khaki skirts and hats. Students had to clean their boots regularly. Looking untidy would lead to punishment.    Wearing this many layers, as well as a collar and tie, probably made for a hot day's work.
-- **Ready for work:** The length of these skirts would have been considered daring at this time.    Wearing trousers (known as 'breeches') beneath them preserved the ladies' modesty when working and riding bicycles.    In terms of material: tweed would feature in winter, linen in summer.
+:::hotspot{title="Ready for work" x="49" y="9"}
+
+This photo was taken c.1913/14. At the front of the students we see Elsa More, who had become a senior instructor and would assume day-to-day responsibilities of running the school. Like Frances Wolseley, she was strict about rules and obedience.
+
+:::
+
+:::hotspot{title="Uniforms" x="42" y="34"}
+
+Where previously students wore decorative if practical clothing, by this time they were given uniforms. This included leather boots, ties (with tiepins), khaki skirts and hats. Students had to clean their boots regularly. Looking untidy would lead to punishment. Wearing this many layers, as well as a collar and tie, probably made for a hot day's work.
+
+:::
+
+:::hotspot{title="Skirts and breeches" x="72" y="63"}
+
+The length of these skirts would have been considered daring at this time. Wearing trousers (known as 'breeches') beneath them preserved the ladies' modesty when working and riding bicycles. In terms of material: tweed would feature in winter, linen in summer.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/glynde-college-gardening-rules-part-one.jpg)
 
-- **College rules (part 1):** Elsa More, who became Principal in 1915, is here shown to be a Fellow of the Royal Horticultural Society ([today known as the RHS](https://www.rhs.org.uk/)).    The RHS was founded in 1804. Women weren’t allowed as Fellows until 1830.    Even then membership tended to be restricted to the wealthy, but this gradually changed during the 20th Century.
-- **College rules (part 1):** ‘A.D.C’ stands for ‘Aide-de-Camp'.    This is a term more commonly found in the military, where it refers to a personal assistant or secretary to someone of high rank.
-- **College rules (part 1):** With a long list of strict rules and a clear chain of command, we see how the college was run almost like a military unit.    Since many students came from rich families and might not have worked before, it's easy to see how surprising this environment could have been for some of them.
+:::hotspot{title="Elsa More and the RHS" x="71" y="27"}
+
+Elsa More, who became Principal in 1915, is here shown to be a Fellow of the Royal Horticultural Society ([today known as the RHS](https://www.rhs.org.uk/)). The RHS was founded in 1804. Women weren’t allowed as Fellows until 1830. Even then membership tended to be restricted to the wealthy, but this gradually changed during the 20th Century.
+
+:::
+
+:::hotspot{title="A.D.C" x="26" y="38"}
+
+‘A.D.C’ stands for ‘Aide-de-Camp'. This is a term more commonly found in the military, where it refers to a personal assistant or secretary to someone of high rank.
+
+:::
+
+:::hotspot{title="College rules" x="78" y="59"}
+
+With a long list of strict rules and a clear chain of command, we see how the college was run almost like a military unit. Since many students came from rich families and might not have worked before, it's easy to see how surprising this environment could have been for some of them.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/glynde-college-gardening-rules-part-two.jpg)
 
-- **College rules (part 2):** As we see elsewhere in this story, college staff disliked students who spoke too much.    Here we learn singing and whistling were also frowned upon...
-- **College rules (part 2):** ‘Not speaking unless spoken to’ could be seen as another example of Frances Wolseley's military approach to running her college.
-- **College rules (part 2):** Diaries and notebooks books would be used to keep track of the various plants and crops being planted.    It meant that if a student decided to leave (or was told to leave) there was a record of what was growing where and when it was planted. This made sure the gardens remained consistent.
-- **College rules (part 2):** [Stoolball](https://www.sportingheritage.org.uk/content/what-we-do/projects/the-sporting-heritage-of-disability-and-womens-sports/stoolball-what-ball-history-of-the-traditional-rural-womens-sport) is a sport that originated in Sussex.    It’s been described as ‘cricket in the air’—it features a shoulder-height wicket—and was largely played by women.
+:::hotspot{title="Strict rules" x="8" y="20"}
+
+As we see elsewhere in this story, college staff disliked students who spoke too much. Here we learn singing and whistling were also frowned upon.
+
+:::
+
+:::hotspot{title="Not speaking unless spoken to" x="57" y="29"}
+
+This could be seen as another example of Frances Wolseley's military approach to running her college.
+
+:::
+
+:::hotspot{title="Diaries and notebooks" x="41" y="39"}
+
+Diaries and notebooks books would be used to keep track of the various plants and crops being planted. It meant that if a student decided to leave (or was told to leave) there was a record of what was growing where and when it was planted. This made sure the gardens remained consistent.
+
+:::
+
+:::hotspot{title="Stoolball" x="45" y="83"}
+
+[Stoolball](https://www.sportingheritage.org.uk/content/what-we-do/projects/the-sporting-heritage-of-disability-and-womens-sports/stoolball-what-ball-history-of-the-traditional-rural-womens-sport) is a sport that originated in Sussex. It’s been described as ‘cricket in the air’—it features a shoulder-height wicket—and was largely played by women.
+
+:::
+
+::::
+
+::::slide
 
 ![Historical archive image](/uploads/archive/elsa-more-career-at-glynde-college.jpg)
 
-- **Following in Wolseley's footsteps:** Elsa More was a student who become Head Gardener and, eventually, Principal of Glynde College.   Not much is known about her, but a 1915 issue of the Daily Mirror refers to her grandfather serving under [Horatio Nelson](https://www.historic-uk.com/HistoryUK/HistoryofEngland/Admiral-Lord-Nelson/) on [HMS Victory](https://en.wikipedia.org/wiki/HMS_Victory).  This suggests she may have been raised in a way that made her well-suited to continue Frances Wolseley’s strict approach to running the school.
-- **Following in Wolseley’s footsteps:** While Elsa More may have been just as strict, there are signs that she tried to make students' time at the college special.    Several photos in Hove's collection show her in fancy dress, leading what look like plays and performances. Her outfit here, with its bicorn hat and shoulder boards, was perhaps a way of honouring her grandfather's naval career  This apparent attempt to boost morale at the college is rare in the collection as a whole.
-- **Following in Wolseley's footsteps:** The _Hastings and Bexhill Independent_ of 26 October 1917 reported that Elsa More was fined 10 shillings by a Magistrate.  Her crime was to have left an electric light near a window, unshielded by a blind. This broke the rules of a local ‘Lighting Order’ brought in to prevent light pollution in rural areas.  The Magistrate dealt with more than 30 people who were accused of similar offences that same day.
-- **Following in Wolseley's footsteps:** When Frances Wolseley left Ragged Lands to move to Massetts Place with Mary Musgrave, she left Elsa More in charge.  The responsibility weighed heavily on More. She wrote to Wolseley complaining about how tiring she found it to maintain discipline among the student body.
-- **Following in Wolseley's footsteps:** Photos in the Wolseley collection show More becoming increasingly thin during her time at Glynde.   She resigned in 1921, the year after Wolseley left. [There are suggestions](https://glynde.info/history/property.php?pageno=65) that she suffered a breakdown which prompted her leaving.  She died in 1933 at the age of 50.
+:::hotspot{title="Elsa More at Glynde College" x="45" y="4"}
+
+Elsa More was a student who became Head Gardener and, eventually, Principal of Glynde College. Not much is known about her, but a 1915 issue of the Daily Mirror refers to her grandfather serving under [Horatio Nelson](https://www.historic-uk.com/HistoryUK/HistoryofEngland/Admiral-Lord-Nelson/) on [HMS Victory](https://en.wikipedia.org/wiki/HMS_Victory). This suggests she may have been raised in a way that made her well-suited to continue Frances Wolseley’s strict approach to running the school.
+
+:::
+
+:::hotspot{title="Fancy dress" x="51" y="61"}
+
+While Elsa More may have been just as strict, there are signs that she tried to make students' time at the college special. Several photos in Hove's collection show her in fancy dress, leading what look like plays and performances. Her outfit here, with its bicorn hat and shoulder boards, was perhaps a way of honouring her grandfather's naval career. This apparent attempt to boost morale at the college is rare in the collection as a whole.
+
+:::
+
+:::hotspot{title="A lighting order" x="47" y="88"}
+
+The _Hastings and Bexhill Independent_ of 26 October 1917 reported that Elsa More was fined 10 shillings by a Magistrate. Her crime was to have left an electric light near a window, unshielded by a blind. This broke the rules of a local ‘Lighting Order’ brought in to prevent light pollution in rural areas. The Magistrate dealt with more than 30 people who were accused of similar offences that same day.
+
+:::
+
+:::hotspot{title="Elsa More takes over" x="71" y="28"}
+
+When Frances Wolseley left Ragged Lands to move to Massetts Place with Mary Musgrave, she left Elsa More in charge. The responsibility weighed heavily on More. She wrote to Wolseley complaining about how tiring she found it to maintain discipline among the student body.
+
+:::
+
+:::hotspot{title="Following in Wolseley's footsteps" x="83" y="58"}
+
+Photos in the Wolseley collection show More becoming increasingly thin during her time at Glynde. She resigned in 1921, the year after Wolseley left. [There are suggestions](https://glynde.info/history/property.php?pageno=65) that she suffered a breakdown which prompted her leaving. She died in 1933 at the age of 50.
+
+:::
+
+::::
+
+:::::
+
+::::
 
 **The items in this gallery, from the Wolseley Collection at Hove Library, give an interesting look into what life was like at Glynde College. Explore the notes beneath each picture for more information.**
 
@@ -195,21 +358,53 @@ A student register (a list of students) from the Glynde School for Lady Gardener
 
 Here are some parts from it, showing how some students who didn't do well were described (names are not included)...
 
+:::::collection-carousel{kind="quotes" label="Harsh appraisals of students"}
+
+::::slide
+
 > A perpetual talker. Does things badly because she thinks she knows everything... Is rather a nuisance all round.
+
+::::
+
+::::slide
 
 > Very respectable, civil and neat - but too delicate to do much gardening. Left on that account.
 
+::::
+
+::::slide
+
 > Sent her for a holiday as she was suffering from hysteria and told her if not better in a week she must leave. She has a violent temper, no manners and has been utterly spoilt.
+
+::::
+
+::::slide
 
 > Left because her freedom was not what her Mother desired for her.
 
+::::
+
+::::slide
+
 > Much too old for a student and has pottered about for too long in her own way. Manners none. Hysterical and generally a nuisance.
 
+::::
+
+::::slide
+
 > Took herself off at 9pm in a fit of hysterics having discovered what she was pleased to call an open drain.
+
+::::
+
+:::::
+
+:::collection-image{layout="full" zoom="true"}
 
 ![Vintage yellow poster: "National service women's land army." A woman in a hat and coat guides a plough pulled by an animal. Text: "God speed the plough and the woman who drives it."](/uploads/archive/vintage-yellow-poster-national-service-womens-land-army-a-woman.jpg)
 
 While more commonly associated with World War Two, the Women's Land Army was formed during World War One. Source: Art.IWM PST 5996, 1917
+
+:::
 
 ## Wartime organiser
 
@@ -225,9 +420,13 @@ The British Government took over every unused piece of land so food could be gro
 
 In his memoirs, Prime Minister Lloyd George wrote: "The food question ultimately decided the issue of this war."
 
+:::collection-image{layout="inset" zoom="true"}
+
 ![Engraved illustration of a house within a floral border with gardening tools, text "Mary T. Musgrave."](/uploads/archive/engraved-illustration-of-a-house-within-a-floral-border.jpg)
 
 Mary Musgrave's bookplate (a label used to show ownership of a book), designed by Frances Garnet Wolseley. This view can also be seen in a painting by Wolseley (see below). Source: Brighton & Hove Libraries
+
+:::
 
 ## An unlikely queer icon
 
@@ -249,51 +448,103 @@ Letters show that Captain Peete Musgrave, Mary Musgrave's husband, knew his wife
 
 He seemed comfortable with the arrangement. But it's not clear whether he had any feelings or suspicions around the likely nature of their relationship.
 
+:::::collection-carousel{kind="images" label="Massetts Place"}
+
+::::slide{zoom="true"}
+
 ![Watercolor painting of a large house with multiple chimneys and gabled roofs, surrounded by trees and a garden.](/uploads/archive/watercolor-painting-of-a-large-house-with-multiple-chimneys.jpg)
+
+Viscountess Wolseley painted this picture of Massetts Place, where she lived with Mary Musgrave. Source: Brighton & Hove Libraries
+
+::::
+
+::::slide
 
 ![Sepia photo of a woman in a hat, in a garden with three small dogs and a house.](/uploads/archive/sepia-photo-of-a-woman-in-a-hat.jpg)
 
+::::
+
+::::slide
+
 ![A woman in an armchair with a small dog on her lap.](/uploads/archive/a-woman-in-an-armchair-with-a-small-dog-on-her-lap.jpg)
+
+::::
+
+::::slide
 
 ![Image](/uploads/archive/cuckfield-rural-meat-ration-card.jpg)
 
+::::
+
+::::slide
+
 ![Sepia photo of a wooden shed with an open window; a person looks out. There are garden tools in foreground.](/uploads/archive/sepia-photo-of-a-wooden-shed-with-an-open-window-2.jpg)
 
+::::
+
+::::slide
+
 ![Sepia photo of female gardener in long coat and hat carrying a bucket](/uploads/archive/sepia-photo-of-female-gardener-in-long-coat-and-hat-carrying-a-bucket.jpg)
+
+::::
+
+:::::
 
 ## Books written by Frances Garnet Wolseley
 
 In the course of her career Frances Wolseley published several books, covering horticulture, garden design and the county of Sussex, where she lived for much of her life.
 
+:::collection-image{layout="inset"}
+
 ![The cover of the book 'Gardening for Women' by Frances Wolseley.](/uploads/archive/the-cover-of-the-book-gardening-for-women-by-frances-wolseley.jpg)
 
-### *Gardening for Women* — Frances Garnet Wolseley (1908)
+:::
+
+::::collection-accordion{label="Books by Frances Garnet Wolseley"}
+
+:::accordion-item{title="Gardening for Women" author="Frances Garnet Wolseley" year="1908"}
 
 Wolseley’s first book urges women to consider gardening as a career. It explains practical growing techniques and stresses why proper training is important. The book argues that women can make a big difference in the world of horticulture.
 
-### *In a College Garden* — Frances Garnet Wolseley (1916)
+:::
+
+:::accordion-item{title="In a College Garden" author="Frances Garnet Wolseley" year="1916"}
 
 Published during wartime, this book shares Wolseley’s insights on running a college for female gardeners. She advocates for skilled women to enter the workplace, but also voices concerns about unsuitable 'rough-mannered, undisciplined middle-class women'.
 
-### *Women and the Land* — Frances Garnet Wolseley (1916)
+:::
+
+:::accordion-item{title="Women and the Land" author="Frances Garnet Wolseley" year="1916"}
 
 Broader than her previous books, this title focuses on the need to grow food and boost the countryside's economy during wartime and beyond. It criticises the existing educational system and suggests it’s a reason why so many women leave rural communities for towns.
 
-### *Gardens: Their Form and Design* — Frances Garnet Wolseley (1919)
+:::
+
+:::accordion-item{title="Gardens: Their Form and Design" author="Frances Garnet Wolseley" year="1919"}
 
 Here Wolseley examines how garden design can be considered an art in itself, particularly in combination with aesthetically pleasing architecture.
 
-### *The Countryman's Log-book* — Frances Garnet Wolseley (1921)
+:::
+
+:::accordion-item{title="The Countryman's Log-book" author="Frances Garnet Wolseley" year="1921"}
 
 This title explores old English traditions, farming and life in the countryside. It gives a detailed look at the customs and history of living in rural Britain, told through stories and observations
 
-### *Some of the Smaller Manor Houses of Sussex* — Frances Garnet Wolseley (1925)
+:::
+
+:::accordion-item{title="Some of the Smaller Manor Houses of Sussex" author="Frances Garnet Wolseley" year="1925"}
 
 This book brings together articles by Wolseley from Sussex County Magazine. It takes a look inside many old, often private, homes in Sussex. It shares detailed descriptions and personal thoughts on these beautiful buildings and their links to local families.
 
-### *Historic Houses of East Sussex and their Owners* — Frances Garnet Wolseley (2008)
+:::
 
-This is a second collection of Wolseley’s articles from Sussex County Magazine, written after 1926. It describes elements of the region’s architecture, history, and family links, giving a personal and factual look at Sussex's rich past.
+:::accordion-item{title="Historic Houses of East Sussex and their Owners" author="Frances Garnet Wolseley" year="2008"}
+
+This is a second collection of Wolseley's articles from Sussex County Magazine, written after 1926. It describes elements of the region's architecture, history, and family links, giving a personal and factual look at Sussex's rich past.
+
+:::
+
+::::
 
 ## Visit the Unearthed exhibition in libraries
 

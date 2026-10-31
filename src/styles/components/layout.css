@@ -6,12 +6,15 @@
   position: fixed;
   top: -5rem;
   left: 1rem;
-  background: white;
+  background: var(--paper);
   padding: 0.75rem;
   z-index: 100;
 }
 .skip-link:focus {
   top: 1rem;
+}
+.site-header-bar {
+  background: var(--paper);
 }
 .site-header {
   min-height: 100px;
@@ -79,22 +82,18 @@
 .nav-dropdown-panel {
   position: absolute;
   top: calc(100% + 0.25rem);
-  left: -0.75rem;
+  right: -0.75rem;
   z-index: 40;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 0.15rem;
   width: min(460px, calc(100vw - 2rem));
   padding: 0.5rem;
-  background: white;
+  background: var(--paper);
   border: var(--border-size-1) solid var(--line);
   border-top: 3px solid var(--brand-rose);
   border-radius: 4px;
   box-shadow: var(--shadow-popover);
-}
-.navigation-items-desktop > li:last-child .nav-dropdown-panel {
-  right: -0.75rem;
-  left: auto;
 }
 .nav-dropdown-panel a {
   display: grid;
@@ -121,7 +120,6 @@
 }
 .section-wash {
   background: var(--wash);
-  border-block: var(--border-size-1) solid var(--line);
 }
 .section-heading {
   display: flex;
@@ -138,7 +136,6 @@
 }
 .page-heading {
   padding: 2.8rem 0 2.2rem;
-  border-top: var(--border-size-1) solid var(--line);
   background: var(--wash);
 }
 .page-heading p {
@@ -156,7 +153,7 @@
 }
 .site-footer {
   background: var(--brand-primary);
-  color: white;
+  color: var(--paper);
   padding-block: 3.5rem;
   margin-top: var(--size-8);
 }
@@ -166,7 +163,7 @@
   gap: var(--size-9);
 }
 .site-footer a {
-  color: white;
+  color: var(--paper);
 }
 .site-footer .brand {
   margin-bottom: 1.3rem;
@@ -179,7 +176,7 @@
 .site-footer h2,
 .site-footer h3 {
   margin: 0 0 0.75rem;
-  color: white;
+  color: var(--paper);
   font-family: var(--font);
   font-size: 0.9rem;
   font-weight: var(--font-weight-6);
@@ -245,7 +242,7 @@
     top: 2.6rem;
     width: 230px;
     padding: var(--size-3);
-    background: white;
+    background: var(--paper);
     border: var(--border-size-1) solid var(--line);
     z-index: 20;
     display: block;

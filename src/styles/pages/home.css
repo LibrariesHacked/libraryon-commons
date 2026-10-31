@@ -4,7 +4,7 @@
   display: flex;
   align-items: center;
   background: var(--brand-forest);
-  color: white;
+  color: var(--paper);
   overflow: hidden;
 }
 .hero > img {
@@ -36,7 +36,7 @@
   padding-block: var(--size-8) 2.75rem;
 }
 .hero-with-carousel {
-  background: var(--paper);
+  background: var(--canvas);
   color: var(--ink);
 }
 .hero-copy {
@@ -46,17 +46,20 @@
   font-size: 3.8rem;
   margin: 0 0 0.8rem;
 }
+.hero-title-highlight {
+  color: var(--brand-primary);
+}
 .hero p {
   max-width: 560px;
   font-size: var(--font-size-2);
 }
 .hero .eyebrow {
-  color: white;
+  color: var(--paper);
 }
 .hero .button {
-  background: white;
+  background: var(--paper);
   color: var(--brand-primary);
-  border-color: white;
+  border-color: var(--paper);
 }
 .hero-with-carousel .eyebrow {
   color: var(--muted);
@@ -64,7 +67,7 @@
 .hero-with-carousel .button {
   background: var(--brand-primary);
   border-color: var(--brand-primary);
-  color: white;
+  color: var(--paper);
 }
 .hero-with-carousel .button:hover {
   background: var(--brand-link);
@@ -111,15 +114,17 @@
 .hero-carousel-card {
   margin: 0;
   aspect-ratio: var(--ratio-landscape);
+  padding: 6px;
+  border: 0;
   border-radius: 10px;
   overflow: hidden;
-  background: var(--wash);
-  border: var(--border-size-1) solid var(--line);
-  box-shadow: 0 12px 26px rgba(30, 26, 40, 0.08);
+  background: var(--surface-tint-rose);
+  box-shadow: var(--shadow-card);
 }
 .hero-carousel-card img {
   width: 100%;
   height: 100%;
+  border-radius: 6px;
   object-fit: cover;
   display: block;
 }
@@ -141,7 +146,7 @@
   padding: 0;
   border-radius: 999px;
   border: var(--border-size-1) solid var(--muted);
-  background: var(--line);
+  background: var(--brand-rose);
   cursor: pointer;
   transition:
     width 0.2s var(--motion-ease),
@@ -197,21 +202,6 @@
     scroll-behavior: auto;
   }
 }
-.home-search {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: var(--size-7);
-}
-.home-search h2 {
-  margin: 0 0 0.35rem;
-  font-size: 1.8rem;
-}
-.home-search p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
 @media (max-width: 760px) {
   .hero {
     min-height: 300px;
@@ -222,9 +212,6 @@
   .hero p {
     font-size: 0.95rem;
     max-width: 300px;
-  }
-  .home-search {
-    display: block;
   }
 }
 @media (prefers-reduced-motion: no-preference) {

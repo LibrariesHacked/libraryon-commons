@@ -2,7 +2,7 @@
 import SiteLayout from '../layouts/SiteLayout.astro';
 import ArticleCards from '../components/ArticleCards.astro';
 import PageContent from '../components/PageContent.astro';
-import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play, Search } from '@lucide/astro';
+import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from '@lucide/astro';
 import { articleTitle, safeURL, settings, sitePath } from '../lib/site.mjs';
 import homepage from '../data/homepage.json';
 const { entry, allPages } = Astro.props;
@@ -13,6 +13,7 @@ const carousel = Array.isArray(homepage.carousel)
 const copy = settings.ui.home;
 const sourceURL = safeURL(entry.data.source_url);
 const heading = homepage.title || articleTitle(entry);
+const highlightedHeading = heading.match(/^(.*\s)(everyone)$/i);
 const selected = (paths) =>
   paths.map((path) => allPages.find((page) => page.data.path === path)).filter(Boolean);
 const collections = selected(homepage.collection_pages);
@@ -31,7 +32,16 @@ const collections = selected(homepage.collection_pages);
     <div class="shell hero-shell">
       <div class="hero-copy">
         <p class="eyebrow">{copy.eyebrow}</p>
-        <h1>{heading}</h1>
+        <h1>
+          {highlightedHeading ? (
+            <>
+              {highlightedHeading[1]}
+              <span class="hero-title-highlight">{highlightedHeading[2]}</span>
+            </>
+          ) : (
+            heading
+          )}
+        </h1>
         <p>{homepage.intro}</p>
         <a class="button" href={sitePath(copy.find_library_url)}>
           {copy.find_library} <ArrowRight size={19} aria-hidden="true" />
@@ -119,26 +129,6 @@ const collections = selected(homepage.collection_pages);
           </div>
         </div>
       )}
-    </div>
-  </section>
-  <section class="section section-wash">
-    <div class="shell home-search">
-      <div>
-        <h2>{copy.search_heading}</h2>
-        <p>{copy.search_description}</p>
-      </div>
-      <form class="inline-search" action={sitePath(copy.find_library_url)} role="search">
-        <input
-          type="search"
-          name="q"
-          aria-label={copy.search_label}
-          placeholder={copy.search_placeholder}
-        />
-        <button class="button" type="submit">
-          <Search size={20} aria-hidden="true" />
-          <span>{copy.search_button}</span>
-        </button>
-      </form>
     </div>
   </section>
   <section class="section shell">

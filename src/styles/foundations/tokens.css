@@ -13,13 +13,25 @@
   --brand-forest: #0d522b;
   --brand-rose: #cc808d;
   --brand-apricot: #cc8a6c;
+  --brand-berry: #77364b;
   --paper: #fff;
-  --wash: #f6f6f6;
+  --canvas: #fdfbfc;
+  --wash: var(--surface-tint-rose-pale);
+  --surface-tint-green: #eef5ef;
+  --surface-tint-rose: #f8edf1;
+  --surface-tint-rose-pale: #fbf2f4;
+  --surface-tint-apricot: #fbf0e9;
+  --surface-tint-plum: #fcf5fc;
+  --surface-tint-plum-selected: #f5e6f8;
   --line: #d2d1d4;
   --line-strong: #bcbabf;
+  --line-plum-soft: #e7d2ec;
+  --line-rose-soft: #e6c0c8;
   --focus: #6495ed;
   --hero-overlay: rgba(30, 26, 40, 0.48);
+  --lightbox-overlay: rgba(30, 26, 40, 0.82);
   --shadow-popover: 0 10px 24px rgba(30, 26, 40, 0.12);
+  --shadow-card: 0 12px 26px rgba(30, 26, 40, 0.08);
   --card-radius: 4px;
   --card-padding: var(--size-4);
   --card-gap: var(--size-6);
@@ -31,5 +43,5 @@
   font-size: 16px;
   line-height: 1.7;
   letter-spacing: 0;
-  background: var(--paper);
+  background: var(--canvas);
 }

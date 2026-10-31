@@ -28,7 +28,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background: white;
+  background: var(--paper);
   border: var(--border-size-1) solid var(--line-strong);
   border-radius: 4px;
   padding: 0.2rem 0.35rem 0.2rem 0.9rem;
@@ -51,8 +51,8 @@
   gap: 0.45rem;
   padding: 0.5rem 0.85rem;
   border-radius: 4px;
-  border: var(--border-size-1) solid #e7d2ec;
-  background: #fcf5fc;
+  border: var(--border-size-1) solid var(--line-plum-soft);
+  background: var(--surface-tint-plum);
   color: var(--ink);
   font-size: 0.82rem;
   font-weight: 550;
@@ -60,7 +60,7 @@
 }
 .find-nearby-button:hover:not(:disabled) {
   border-color: var(--brand-primary);
-  background: #f5e6f8;
+  background: var(--surface-tint-plum-selected);
 }
 .find-nearby-button:disabled {
   opacity: 0.65;
@@ -81,7 +81,7 @@
   gap: 0.55rem;
   min-height: 44px;
   padding: 0.55rem var(--size-3);
-  background: white;
+  background: var(--paper);
   color: var(--ink);
   border: var(--border-size-1) solid var(--line-strong);
   border-radius: 999px;
@@ -112,7 +112,7 @@
   padding: 0 0.35rem;
   border-radius: 999px;
   background: var(--brand-primary);
-  color: white;
+  color: var(--paper);
   font-size: 0.72rem;
   font-weight: var(--font-weight-6);
 }
@@ -122,7 +122,7 @@
   margin: 0;
   padding: 0;
   width: min(680px, calc(100vw - 2rem));
-  background: white;
+  background: var(--paper);
   border: var(--border-size-1) solid var(--line-strong);
   border-radius: 12px;
   box-shadow: var(--shadow-popover);
@@ -155,7 +155,7 @@
 .open-now-divider {
   flex: 1;
   height: 1px;
-  background: var(--line);
+  background: var(--brand-rose);
 }
 .open-now-toggle input[type='checkbox'] {
   width: 1.25rem;
@@ -191,7 +191,7 @@
   border-color: var(--brand-primary);
 }
 .filter-tag[aria-pressed='true'] {
-  background: #f5e6f8;
+  background: var(--surface-tint-plum-selected);
   border-color: var(--brand-primary);
   color: var(--brand-link);
   font-weight: var(--font-weight-6);
@@ -202,7 +202,7 @@
   padding: 0.42rem 0.85rem;
   border-radius: 999px;
   border: var(--border-size-1) solid var(--brand-primary);
-  background: white;
+  background: var(--paper);
   color: var(--brand-primary);
   font-size: 0.78rem;
   font-weight: 550;
@@ -251,7 +251,7 @@
   gap: 0.75rem;
   padding: 0.85rem var(--size-4);
   border-top: var(--border-size-1) solid var(--line);
-  background: white;
+  background: var(--paper);
 }
 .tab-filter-footer .button {
   min-height: 40px;

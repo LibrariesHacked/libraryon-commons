@@ -17,6 +17,12 @@ const preview = unified()
 const markdown = (children) =>
   toMarkdown({ type: "root", children }, markdownOptions).trim();
 const parse = (value) => parser.parse(String(value || "")).children;
+const directiveBody = (source) =>
+  String(source || "")
+    .split(/\r?\n/)
+    .slice(1, -1)
+    .join("\n")
+    .trim();
 const attributes = (values) => {
   const entries = Object.entries(values).filter(
     ([, value]) => value !== undefined && value !== null && value !== "",
@@ -68,6 +74,13 @@ const markdownField = (name, label, required = false) => ({
   required,
   editor_components: [],
   modes: ["rich_text", "raw"],
+});
+const markdownSourceField = (name, label) => ({
+  name,
+  label,
+  widget: "text",
+  required: true,
+  hint: "Keep the nested slide or book Markdown in this article block.",
 });
 const stringField = (name, label, required = false) => ({
   name,
@@ -128,6 +141,25 @@ export function parseEditorBlock(source) {
       ),
     };
   }
+  if (["collection-carousel", "collection-accordion"].includes(node.name)) {
+    return {
+      ...node.attributes,
+      content: directiveBody(source),
+    };
+  }
+  if (node.name === "collection-image") {
+    const image = node.children.find(imageParagraph)?.children[0];
+    return {
+      layout: node.attributes.layout || "standard",
+      zoom: node.attributes.zoom === "true",
+      image: image?.url || "",
+      alt: image?.alt || "",
+      image_title: image?.title || "",
+      caption: markdown(
+        node.children.filter((child) => !imageParagraph(child)),
+      ),
+    };
+  }
   if (node.name === "card") return parseCard(node);
   if (node.name === "cards") return { cards: node.children.map(parseCard) };
   if (node.name === "list-panel") {
@@ -166,6 +198,24 @@ export function serializeEditorBlock(name, data) {
       role: data.role,
       organisation: data.organisation,
       url: data.url,
+    });
+  }
+  if (["collection-carousel", "collection-accordion"].includes(name))
+    return wrap(
+      name,
+      data.content || "",
+      name === "collection-carousel"
+        ? { kind: data.kind || "images", label: data.label || "" }
+        : { label: data.label || "" },
+      name === "collection-carousel" ? ":::::" : "::::",
+    );
+  if (name === "collection-image") {
+    const children = [];
+    if (data.image) children.push(imageNode(data));
+    children.push(...parse(data.caption));
+    return wrap("collection-image", markdown(children), {
+      layout: data.layout || "standard",
+      zoom: data.zoom ? "true" : "false",
     });
   }
   if (name === "card") return cardMarkdown(data);
@@ -345,6 +395,51 @@ export function createEditorComponents() {
         stringField("title", "Video Title", true),
       ],
     },
+    {
+      name: "collection-image",
+      label: "Collection Image",
+      fields: [
+        ...imageFields(true),
+        {
+          name: "layout",
+          label: "Image Layout",
+          widget: "select",
+          default: "standard",
+          options: ["standard", "inset", "full"],
+        },
+        {
+          name: "zoom",
+          label: "Zoom Control",
+          widget: "boolean",
+          default: false,
+          required: false,
+        },
+        markdownField("caption", "Caption"),
+      ],
+    },
+    {
+      name: "collection-carousel",
+      label: "Collection Carousel",
+      fields: [
+        {
+          name: "kind",
+          label: "Carousel Type",
+          widget: "select",
+          default: "images",
+          options: ["images", "quotes", "hotspots"],
+        },
+        stringField("label", "Accessible Label", true),
+        markdownSourceField("content", "Slides and Notes (Markdown)"),
+      ],
+    },
+    {
+      name: "collection-accordion",
+      label: "Collection Accordion",
+      fields: [
+        stringField("label", "Accessible Label", true),
+        markdownSourceField("content", "Accordion Entries (Markdown)"),
+      ],
+    },
     { name: "faqs", label: "Linked FAQs", fields: [] },
     { name: "resources", label: "Linked Resources", fields: [] },
   ].map(({ name, label, fields }) => ({
@@ -355,7 +450,15 @@ export function createEditorComponents() {
       ? new RegExp(`^\\{\\{${name}\\}\\}[\\t ]*(?=\\r?\\n|$)`)
       : name === "video"
         ? /^::video(?:\{[^\r\n]*\})?[\t ]*(?=\r?\n|$)/
-        : containerPattern(name, name === "cards" ? 4 : 3),
+        : containerPattern(
+            name,
+            name === "cards" ||
+              name === "collection-accordion"
+              ? 4
+              : name === "collection-carousel"
+                ? 5
+                : 3,
+          ),
     fromBlock: (match) =>
       ["faqs", "resources"].includes(name) ? {} : parseEditorBlock(match[0]),
     toBlock: (data) => serializeEditorBlock(name, data),

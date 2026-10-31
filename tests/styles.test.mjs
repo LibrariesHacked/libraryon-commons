@@ -122,3 +122,32 @@ test('site and CMS previews continue to consume the same complete stylesheet ent
       postcss.parse(read(file), { from: path.join('src/styles', file) }),
     );
 });
+
+test('site styles use shared tokens instead of local color values', () => {
+  const localColor = /#[\da-f]{3,8}\b|rgba?\(|\bwhite\b/i;
+  for (const file of modules.filter((file) => file !== 'foundations/tokens.css')) {
+    postcss
+      .parse(read(file), { from: path.join('src/styles', file) })
+      .walkDecls((declaration) =>
+        assert.doesNotMatch(
+          declaration.value,
+          localColor,
+          `${file}: use a palette token for ${declaration.prop}`,
+        ),
+      );
+  }
+});
+
+  test('grey line tokens are not used as filled backgrounds', () => {
+    for (const file of modules) {
+      postcss.parse(read(file), { from: path.join('src/styles', file) }).walkDecls(
+        /^background(?:-color)?$/,
+        (declaration) =>
+          assert.doesNotMatch(
+            declaration.value,
+            /var\(--line(?:-strong)?\)/,
+            `${file}: use a surface token for backgrounds`,
+          ),
+      );
+    }
+  });

@@ -843,11 +843,14 @@ collections:
           - library-card
           - library-list-panel
           - library-video
+          - library-collection-image
+          - library-collection-carousel
+          - library-collection-accordion
           - library-faqs
           - library-resources
           - image
           - code-block
-        hint: 'In Rich Text, use the + menu to insert or edit testimonials, quotes, cards, lists, videos, and linked content. Markdown mode shows the saved explicit blocks. Select FAQ and resource entries in their page fields.'
+        hint: 'Use the + menu for content blocks. Collection carousels and book recommendations keep all slides, notes, and entries inline in this Markdown body. Select FAQ and resource entries in their page fields.'
       - name: faq_heading
         label: FAQ Section Heading
         widget: string

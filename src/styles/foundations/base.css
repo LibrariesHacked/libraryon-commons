@@ -115,12 +115,22 @@ svg {
 .prose li {
   margin-block: 0.4rem;
 }
-.prose details {
-  border-block: var(--border-size-1) solid var(--line);
-  padding: var(--size-3) 0;
+.prose details:not(.faq-item):not(.collection-accordion-item) {
+  margin-block: var(--size-5);
+  padding: var(--size-4);
+  border: 0;
+  border-radius: var(--card-radius);
+  background: var(--surface-tint-rose-pale);
 }
 .prose summary {
   cursor: pointer;
+  color: var(--brand-berry);
+  font-weight: var(--font-weight-6);
+}
+.prose details:not(.faq-item):not(.collection-accordion-item)[open] > summary {
+  margin-bottom: var(--size-3);
+  padding-bottom: var(--size-3);
+  border-bottom: var(--border-size-2) solid var(--brand-rose);
 }
 .prose ul {
   padding-inline-start: var(--size-5);

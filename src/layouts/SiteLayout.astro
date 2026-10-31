@@ -29,25 +29,27 @@ const { footer } = settings;
     <a class="skip-link" href="#main">
       {navigationCopy.skip_to_content}
     </a>
-    <header class="site-header shell">
-      <a class="brand" href={sitePath('/')} aria-label={settings.site.title}>
-        <BookOpen size={30} stroke-width={1.7} aria-hidden="true" />
-        <span>
-          {settings.ui.brand.primary}{settings.ui.brand.qualifier && <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>}
-        </span>
-      </a>
-      <nav class="desktop-nav" aria-label={navigationCopy.main_navigation}>
-        <SiteNavigation items={settings.navigation} />
-      </nav>
-      <details class="mobile-nav">
-        <summary>
-          <Menu size={23} aria-hidden="true" />
-          <span>{navigationCopy.menu}</span>
-        </summary>
-        <nav aria-label={navigationCopy.mobile_navigation}>
-          <SiteNavigation items={settings.navigation} mode="mobile" />
+    <header class="site-header-bar">
+      <div class="site-header shell">
+        <a class="brand" href={sitePath('/')} aria-label={settings.site.title}>
+          <BookOpen size={30} stroke-width={1.7} aria-hidden="true" />
+          <span>
+            {settings.ui.brand.primary}{settings.ui.brand.qualifier && <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>}
+          </span>
+        </a>
+        <nav class="desktop-nav" aria-label={navigationCopy.main_navigation}>
+          <SiteNavigation items={settings.navigation} />
         </nav>
-      </details>
+        <details class="mobile-nav">
+          <summary>
+            <Menu size={23} aria-hidden="true" />
+            <span>{navigationCopy.menu}</span>
+          </summary>
+          <nav aria-label={navigationCopy.mobile_navigation}>
+            <SiteNavigation items={settings.navigation} mode="mobile" />
+          </nav>
+        </details>
+      </div>
     </header>
     <main id="main">
       <slot />

@@ -51,3 +51,7 @@ To enable browser editing in production at `/admin/`, configure GitHub OAuth on 
 
 - **Included:** Editorial pages, collections, conference sessions, downloadable resources, authority indexes, individual library pages, and client-side search by library name, town, authority, or postcode text.
 - **Not included:** Interactive slippy maps, distance/postcode geocoding, or live event feeds. External videos (YouTube) and Canva decks remain outbound links or embeds.
+
+## Visual Design
+
+Use the shared palette and color-pairing rules in [Brand And Color Guidelines](brand-guidelines.md). Site colors are defined in `src/styles/foundations/tokens.css` so pages and CMS previews stay consistent.
