@@ -11,10 +11,10 @@ attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
 resources:
   - rare-180-year-old-posters
   - wakefield-libraries-cryer-collection
-  - wakefield
+  - wakefield-libraries-and-local-history
   - beneath-the-big-top-a-social-history-of-the-circus-in-britain
-  - dr-steve-ward-2
-  - dr-steve-ward
+  - dr-steve-ward-author-website
+  - dr-steve-ward-circus-doctor-recommendations
   - national-fairground-and-circus-archive
   - circopedia
   - the-story-of-circus
@@ -35,7 +35,7 @@ resources:
 
 # From horseback to Big Top: The early days of circus
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![A collage of three photos. Two of the photos are of 19th century circus posters, with one mentioning 'Mr Kite'. The third image is the spine of a book of newspaper cuttings bearing the name 'Cryer'.](/uploads/archive/a-collage-of-three-photos-2.jpg)
 
@@ -53,7 +53,7 @@ Its early years contained fascinating characters and stories. The comedy of the 
 
 On this page you'll be able explore previously **unseen circus posters from the 1840s**, thanks to Wakefield Libraries. They're an example of how libraries can bring local and national history to life for everyone.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A man stands next a small horse. The caption reads: "'Dick', the smallest Entire Horse in the World. Sir Robert Fossett's Grand Circus."](/uploads/archive/a-man-stands-next-a-small-horse-2.jpg)
 
@@ -69,7 +69,7 @@ A lover of horses from an early age, he joined Colonel Eliott's Light Horse regi
 
 In 1768 he headed to London and set up a riding school on land where, today, you’ll find Waterloo train station. Here he demonstrated his tricks, such as **standing on a horse’s back, dismounting and remounting, and standing on his head** – all while his horse cantered round in a circle. His wife, Patty, was also a trick rider and performed alongside him.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![Image](/uploads/archive/astleys-riding-school-engraving-1777.jpg)
 
@@ -87,7 +87,7 @@ In fact, he ended up having to build several venues in London alone, as they **k
 
 Today, if you visit the garden at **St. Thomas’ Hospital** in London, you’ll find a plaque commemorating Philip Astley’s amphitheatre, which stood nearby.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A black and white illustration of the exterior of a 19th century theatre. Outside there are a horse and cart and some well-dressed people. Its caption reads 'Entrance to Astley's Theatre in 1820'.](/uploads/archive/a-black-and-white-illustration-of-the-exterior.jpg)
 
@@ -95,25 +95,33 @@ The entrance to Astley's Theatre in 1820. Source: 'Old & New London' By W. Thorn
 
 :::
 
-:::collection-image{layout="inset" zoom="true"}
+:::::collection-carousel{kind="images" label="Astley's Amphitheatre images"}
+
+::::slide{zoom="true"}
 
 ![The interior of Astley's Amphitheatre in 1808, showing riders performing in the ring surrounded by tiers of spectators.](/uploads/archive/the-interior-of-astleys-amphitheatre-in-1808-showing-riders.jpg)
 
-_Astley's Amphitheatre interior, c.1808. Source: Microcosm of London, Thomas Rowlandson and Augustus Pugin (public domain)_
+Chandeliers of candles were used to light the interior of Astley's Amphitheatre, but were a fire hazard. Source: The Microcosm of London, R. Ackermann 1808–1811. From the British Library archive (public domain).
 
-:::
+::::
 
-:::collection-image{layout="inset" zoom="true"}
+::::slide{zoom="true"}
 
-![Illustration of Ducrow's courier of St Petersburg act at Astley's Amphitheatre, straddling multiple galloping horses.](/uploads/archive/illustration-of-ducrows-courier-of-st-petersburg-act-at-astleys.jpg)
+![The interior of Astley's circus on Surrey Road, London, in 1815, showing the ring and audience.](/uploads/archive/illustration-of-ducrows-courier-of-st-petersburg-act-at-astleys.jpg)
 
-_Andrew Ducrow performing at Astley's Amphitheatre. Source: Wikimedia Commons (public domain)_
+The interior of Astley's circus on Surrey Road, London, c.1815. Source: Cooper Hewitt, Smithsonian Design Museum. Engraved by William Wise (active 1812–1876) after a drawing by George Jones (1786–1869) (public domain).
 
-:::
+::::
+
+::::slide
 
 ![A blue wall-mounted plaque reads: "Philip and Patty Astley first staged spectacular horse-riding feats nearby on Easter Monday 1768. Adding acrobats and clowns, they created what we know as 'circus'."](/uploads/archive/a-blue-wall-mounted-plaque-reads-philip-and-patty-astley.jpg)
 
 A plaque on Cornwall Road, Lambeth in London commemorates Philip and Astley's first equestrian performance nearby in 1768. Source: Chris Barltrop on Wikimedia Commons CC BY-SA 4.0
+
+::::
+
+:::::
 
 ## More acts added
 
@@ -125,9 +133,13 @@ Astley junior’s performance left such an impression on the monarch that it hel
 
 However, the French Revolution of 1789 led him to return to Britain, where he found competition from other circuses entertaining the masses...
 
+:::collection-image{layout="float-right"}
+
 ![Image](/uploads/archive/miss-pearl-tightrope-performance-circus-poster.jpg)
 
 Miss Pearl was a regular performer for Cooke's Circus. 'Corde Roide Elastique' is French for 'elastic rope' - known today as tightrope. Source: Wakefield Libraries
+
+:::
 
 ## The importance of marketing
 
@@ -325,7 +337,7 @@ Horses were a key characteristic of circuses for the first century or so of its 
 
 :::hotspot{title="William Frederick Wallett" x="61" y="82"}
 
-[William Frederick Wallett](https://en.wikipedia.org/wiki/W._F._Wallett) was a popular circus clown and circus owner. Having been invited to perform for Queen Victoria in 1844, he referred to himself thereafter as 'the Queen's Jester'. In his [1870 autobiography](< https://www.google.co.uk/books/edition/The_Public_Life_of_W_F_Wallett_the_Queen/YfhzpDUfY_sC?hl=en>) Wallett described witnessing the tragic death of his friend Pablo Fanque's wife, Susannah Darby, in a Leeds circus collapse in 1848. Wallett's wife, Mary, had been sitting with Darby and escaped with minor injuries.
+[William Frederick Wallett](https://en.wikipedia.org/wiki/W._F._Wallett) was a popular circus clown and circus owner. Having been invited to perform for Queen Victoria in 1844, he referred to himself thereafter as 'the Queen's Jester'. In his [1870 autobiography](<https://www.google.co.uk/books/edition/The_Public_Life_of_W_F_Wallett_the_Queen/YfhzpDUfY_sC?hl=en>) Wallett described witnessing the tragic death of his friend Pablo Fanque's wife, Susannah Darby, in a Leeds circus collapse in 1848. Wallett's wife, Mary, had been sitting with Darby and escaped with minor injuries.
 
 :::
 
@@ -365,7 +377,7 @@ _... The people in the upper gallery must have a marvelous view of that chandeli
 
 _The orchestra is seated between the front of the stage and the ring and are playing a merry tune. In the ring at this moment is a young woman astride three white horses. As they gallop in a circle she balances on one leg on the middle horse and her diaphanous costume billows out behind her. The clown in the middle of the ring laughs and claps._
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![The cover of the book 'Beneath the Big Top: A Social History of the Circus in Britain' by Steve Ward. The cover features a colourful illustration of circus acts including acrobats and trapeze artists.](/uploads/archive/the-cover-of-the-book-beneath-the-big-top.jpg)
 
@@ -381,7 +393,7 @@ Moreover, the general quality of life was poor by today’s standards. People we
 
 So a visit to the circus was a chance to **leave behind daily worries** and be entertained by dazzling feats. When menageries started to merge with circuses, exotic animals added yet more excitement.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A 19th Century circus poster advertising 'Pablo Fanque's Circus Royal'. The headline act is Master Burnham, who we are told will 'leap over a real horse on the tightrope'.](/uploads/archive/a-19th-century-circus-poster-advertising-pablo-fanques-circus-2.png)
 
@@ -393,35 +405,41 @@ Illustration would be used on posters to capture the public's imagination. Sourc
 
 **Wakefield Libraries** engaged the help of [**Dr. Steve Ward**](https://steve-ward.weebly.com/) to assess the significance of the Cryer Collection's circus bills. Here he recommends further reading for anyone interested in learning more about the history of circus.
 
+:::::collection-recommendations{title="Five books about the history of circus"}
+
+::::recommendation-item{title="Pablo Fanque and The Victorian Circus" author="Gareth H. H. Davies" year="2017"}
+
 ![The cover of the book 'Pablo Fanque and the Victorian Circus', by Gareth H.H. Davies.](/uploads/archive/the-cover-of-the-book-pablo-fanque-and-the-victorian.jpg)
-
-::::collection-accordion{label="Reading recommendations from Wakefield Libraries"}
-
-:::accordion-item{title="Pablo Fanque and The Victorian Circus — Gareth H. H. Davies (2017)"}
 
 The life story of Pablo Fanque, or William Darby, the first black circus proprietor.
 
-:::
+::::
 
-:::accordion-item{title="The Circus: A Visual History — Pascal Jacob (2018)"}
+::::recommendation-item{title="The Circus: A Visual History" author="Pascal Jacob" year="2018"}
+
+![The cover of the book 'The Circus' by Pascal Jacob.](/uploads/archive/the-cover-of-the-book-the-circus-by-pascal-jacob-original.jpg)
 
 Using over 200 circus related artworks from the French National Library's private collections, celebrated cultural historian Pascal Jacob tells the story of travelling entertainers and their art and trade.
 
-:::
+::::
 
-:::accordion-item{title="Father of the Modern Circus; 'Billy Buttons'; The Life and Times of Philip Astley — Steve Ward (2018)"}
+::::recommendation-item{title="Father of the Modern Circus; 'Billy Buttons'; The Life and Times of Philip Astley" author="Steve Ward" year="2018"}
+
+![The cover of the book 'Father of the Modern Circus: Billy Buttons' by Steve Ward.](/uploads/archive/the-cover-of-the-book-father-of-the-modern-circus-original.jpg)
 
 Dr. Steve Ward's history of Philip Astley charts the life of the man credited as the father of the modern circus.
 
-:::
+::::
 
-:::accordion-item{title="The Circus and Victorian Society — Brenda Assael (2005)"}
+::::recommendation-item{title="The Circus and Victorian Society" author="Brenda Assael" year="2005"}
+
+![The cover of the book 'The Circus and Victorian Society' by Brenda Assael.](/uploads/archive/the-cover-of-the-book-the-circus-and-victorian-society-original.jpg)
 
 Brenda Assael examines how circus became integrated into Victorian society despite — or because of — its acts often pushing against the boundaries of the period's societal norms.
 
-:::
-
 ::::
+
+:::::
 
 ## A dangerous profession – and spectacle
 
@@ -429,7 +447,7 @@ Circus owners didn’t generally prioritise the safety of performers, workers an
 
 Here are just a few examples of times when tragedy struck.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![An illustration of the Yarmouth Suspension Bridge Collapse, showing a listing bridge and people falling into the river.](/uploads/archive/an-illustration-of-the-yarmouth-suspension-bridge-collapse-2.jpg)
 

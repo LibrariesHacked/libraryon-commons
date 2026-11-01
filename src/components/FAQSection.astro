@@ -3,6 +3,7 @@ import { settings } from '../lib/site.mjs';
 import { render } from 'astro:content';
 const { items = [], heading = settings.ui.editorial.faq_heading, headingId = 'page-faqs', introduction = '' } = Astro.props;
 const answers = await Promise.all(items.map(async (entry) => ({
+  id: entry.id,
   question: entry.data.question,
   ...(await render(entry))
 })));
@@ -13,8 +14,8 @@ const answers = await Promise.all(items.map(async (entry) => ({
     <h2 id={headingId}>{heading}</h2>
     <Fragment set:html={introduction} />
     <div class="faq-list">
-      {answers.map(({ question, Content }) => (
-        <details class="faq-item">
+      {answers.map(({ id, question, Content }) => (
+        <details class="faq-item" id={`faq-${id}`}>
           <summary>{question}</summary>
           <div class="faq-answer"><Content /></div>
         </details>

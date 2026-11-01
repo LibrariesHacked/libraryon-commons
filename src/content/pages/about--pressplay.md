@@ -82,27 +82,27 @@ The programme consisted of keynote talks and sessions themed around engagement, 
 
 **Lifting the lid: Stakeholder communication with ideas from agile** – Giles Turnbull, Use the human voice
 
-[**View recording**](https://youtu.be/VIc2xXDxJ2g?si=mdd617dZ-SIgccXg)
+[**Watch recording: Lifting the lid — Stakeholder communication with ideas from agile**](https://youtu.be/VIc2xXDxJ2g?si=mdd617dZ-SIgccXg)
 
 **Setting up a studio in your library: Photography, video, lighting and podcasting** – Ryan Johnson, BIPC Oxfordshire
 
-[**View slides PDF**](/uploads/archive/setting-up-a-studio-in-your-library-photography-video-lighting-and-podcasting-slides.pdf)
+[**View slides PDF: Setting up a studio in your library**](/uploads/archive/setting-up-a-studio-in-your-library-photography-video-lighting-and-podcasting-slides.pdf)
 
 **Future-proofing libraries** – Maaike Verberk, DEN, Netherlands
 
-[**View slides PDF**](/uploads/archive/future-proofing-libraries-slides.pdf) [**View recording**](https://www.youtube.com/watch?v=Bso5MDFqGZ0)
+[**View slides PDF: Future-proofing libraries**](/uploads/archive/future-proofing-libraries-slides.pdf) [**Watch recording: Future-proofing libraries**](https://www.youtube.com/watch?v=Bso5MDFqGZ0)
 
 **Journey of a library Instagram** – Izzy Ashley, Library Outreach Assistant, and Lorna Hulme, Development Officer, Halton Libraries
 
-[**View slides PDF**](/uploads/archive/journey-of-a-library-instagram-slides.pdf)
+[**View slides PDF: Journey of a library Instagram**](/uploads/archive/journey-of-a-library-instagram-slides.pdf)
 
 **TikTok: Leveraging video content for advocacy, outreach and book promotion** – Kelsey Bogan, High School Librarian & Adjunct Professor at Great Valley High School
 
-[**View slides PDF**](https://www.canva.com/design/DAF9ijgYrLQ/Gmm3sMFW1d1fnO7dllTu6g/view?utm_content=DAF9ijgYrLQ&utm_campaign=designshare&utm_medium=link&utm_source=viewer#2f) [**View recording**](https://youtu.be/Ap8qiE9M_gg?feature=shared)
+[**View slides PDF: TikTok — Leveraging video content for advocacy, outreach and book promotion**](https://www.canva.com/design/DAF9ijgYrLQ/Gmm3sMFW1d1fnO7dllTu6g/view?utm_content=DAF9ijgYrLQ&utm_campaign=designshare&utm_medium=link&utm_source=viewer#2f) [**Watch recording: TikTok — Leveraging video content for advocacy, outreach and book promotion**](https://youtu.be/Ap8qiE9M_gg?feature=shared)
 
 **Artificial intelligence: Let’s embrace playfulness** – Jocelyn Burnham, AI trainer for the culture sector
 
-[**View slides PDF**](/uploads/archive/artificial-intelligence-lets-embrace-playfulness-slides.pdf)
+[**View slides PDF: Artificial intelligence — Let’s embrace playfulness**](/uploads/archive/artificial-intelligence-lets-embrace-playfulness-slides.pdf)
 
 **Digital Powerwash: Ethics around the use of Big Tech for socials** – Jantien Borsboom, Director of Public Spaces, Netherlands
 
@@ -110,37 +110,37 @@ The programme consisted of keynote talks and sessions themed around engagement, 
 
 **Data storytelling live** – Dave Rowe, Founder of Libraries Hacked
 
-[**View slides PDF**](/uploads/archive/data-storytelling-live-slides.pdf)
+[**View slides PDF: Data storytelling live**](/uploads/archive/data-storytelling-live-slides.pdf)
 
 **Transforming the customer experience using open data** – Georgina Carr, Marketing Programme Manager, GLL
 
-[**View slides PDF**](/uploads/archive/transforming-the-customer-experience-using-open-data-slides.pdf)
+[**View slides PDF: Transforming the customer experience using open data**](/uploads/archive/transforming-the-customer-experience-using-open-data-slides.pdf)
 
 **Using data to understand online audiences** – Chris Unitt, Founder of One Further
 
-[**View slides PDF**](/uploads/archive/using-data-to-understand-online-audiences-slides.pdf)
+[**View slides PDF: Using data to understand online audiences**](/uploads/archive/using-data-to-understand-online-audiences-slides.pdf)
 
 **Panel discussion: Why do we need open data?** – chaired by Luke Burton, Director, Libraries at Arts Council England, with Sander van Kempen, Senior Advisor for National Library of the Netherlands, and Aude Charillon, PTFS Europe
 
-[**View recording**](https://youtu.be/hmMZuNkoqfg?feature=shared)
+[**Watch recording: Why do we need open data?**](https://youtu.be/hmMZuNkoqfg?feature=shared)
 
 ## Inclusion theme sessions
 
 **Inclusion potential of digital spaces** – Dr Tola Dabiri, Cultural Sector Lead at National Academy for Social Prescribing
 
-[**View slides PDF**](/uploads/archive/inclusion-potential-of-digital-spaces-slides.pdf) [**View recording**](https://youtu.be/Guz4xh0Zy38?feature=shared)
+[**View slides PDF: Inclusion potential of digital spaces**](/uploads/archive/inclusion-potential-of-digital-spaces-slides.pdf) [**Watch recording: Inclusion potential of digital spaces**](https://youtu.be/Guz4xh0Zy38?feature=shared)
 
 **Libraries digital inclusion meetup – LIVE!** – Good Things Foundation and Cambridgeshire Libraries
 
-[**View slides PDF**](/uploads/archive/libraries-digital-inclusion-meetup-live-slides.pdf)
+[**View slides PDF: Libraries digital inclusion meetup — LIVE!**](/uploads/archive/libraries-digital-inclusion-meetup-live-slides.pdf)
 
 **Envoy Connect project: Audiobooks for blind and partially sighted users** – Abul Kashim, Programme Manager, Camden Libraries, and Lara Marshall, Libraries Engagement Manager, RNIB
 
-[**View slides PDF**](/uploads/archive/envoy-connect-project-audiobooks-for-blind-and-partially-sighted-users-slides.pdf)
+[**View slides PDF: Envoy Connect project — Audiobooks for blind and partially sighted users**](/uploads/archive/envoy-connect-project-audiobooks-for-blind-and-partially-sighted-users-slides.pdf)
 
 **Virtual tours and room hire: Online solutions to drive inclusive and sustainable footfall in libraries** – Jack Woodley, Kajima Community
 
-[**View slides PDF**](/uploads/archive/virtual-tours-and-room-hire-online-solutions-to-drive-inclusive-and-sustainable-footfall-in-libraries-slides.pdf)
+[**View slides PDF: Virtual tours and room hire — Online solutions to drive inclusive and sustainable footfall in libraries**](/uploads/archive/virtual-tours-and-room-hire-online-solutions-to-drive-inclusive-and-sustainable-footfall-in-libraries-slides.pdf)
 
 **Digital inclusion in libraries** – Dr Amy Kavanagh
 
@@ -148,19 +148,19 @@ The programme consisted of keynote talks and sessions themed around engagement, 
 
 **Information in the digital age** – Lucy Crompton-Reid, CEO of Wikimedia UK
 
-[**View slides PDF**](/uploads/archive/information-in-the-digital-age-slides.pdf) [**View recording**](https://youtu.be/QOOmTGmwP_w?feature=shared)
+[**View slides PDF: Information in the digital age**](/uploads/archive/information-in-the-digital-age-slides.pdf) [**Watch recording: Information in the digital age**](https://youtu.be/QOOmTGmwP_w?feature=shared)
 
 **In conversation: Role of libraries in the digital age** – Tony Ageh OBE, former Chief Digital Officer of New York Public Library and Sir Roly Keating, CEO of the British Library
 
-[**View recording**](https://youtu.be/FLO5deF7P7s?feature=shared)
+[**Watch recording: Role of libraries in the digital age**](https://youtu.be/FLO5deF7P7s?feature=shared)
 
 **Panel discussion: Widening access to collections through digital** – chaired by Katherine Blamire, Head of the British Library’s Living Knowledge Network, with Alison Stevenson, Vice-Chair of Library and Information Council and Interim Associate Director for Collections and Research at the National Library of Scotland, and Richard Davies, Head of Collection Programmes at the British Library
 
-[**View recording**](https://youtu.be/86YHaupjWtQ?feature=shared)
+[**Watch recording: Widening access to collections through digital**](https://youtu.be/86YHaupjWtQ?feature=shared)
 
 **Protecting the freedom to read: Books Unbanned and digital access for teens** – Nick Higgins, Chief Librarian, and Amy Mikel, Director of Customer Experience, from Brooklyn Public Library
 
-[**View slides PDF**](/uploads/archive/protecting-the-freedom-to-read-books-unbanned-and-digital-access-for-teens-slides.pdf) [**View recording**](https://youtu.be/TnFa5QoJ0W4?feature=shared)
+[**View slides PDF: Protecting the freedom to read — Books Unbanned and digital access for teens**](/uploads/archive/protecting-the-freedom-to-read-books-unbanned-and-digital-access-for-teens-slides.pdf) [**Watch recording: Protecting the freedom to read — Books Unbanned and digital access for teens**](https://youtu.be/TnFa5QoJ0W4?feature=shared)
 
 **Closing reflections** – Dave Lloyd, Service Development Manager, Coventry Libraries
 

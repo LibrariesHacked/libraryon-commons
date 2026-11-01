@@ -141,9 +141,12 @@ export function parseEditorBlock(source) {
       ),
     };
   }
-  if (["collection-carousel", "collection-accordion"].includes(node.name)) {
+  if (["collection-carousel", "collection-accordion", "collection-aside", "collection-recommendations"].includes(node.name)) {
     return {
       ...node.attributes,
+      ...(node.name === "collection-aside"
+        ? { layout: node.attributes.layout || "block" }
+        : {}),
       content: directiveBody(source),
     };
   }
@@ -200,6 +203,15 @@ export function serializeEditorBlock(name, data) {
       url: data.url,
     });
   }
+  if (name === "collection-aside")
+    return wrap(
+      name,
+      data.content || "",
+      { title: data.title || "", layout: data.layout || "block" },
+      "::::",
+    );
+  if (name === "collection-recommendations")
+    return wrap(name, data.content || "", { title: data.title || "" }, ":::::");
   if (["collection-carousel", "collection-accordion"].includes(name))
     return wrap(
       name,
@@ -405,7 +417,7 @@ export function createEditorComponents() {
           label: "Image Layout",
           widget: "select",
           default: "standard",
-          options: ["standard", "inset", "full"],
+          options: ["standard", "inset", "full", "float-left", "float-right"],
         },
         {
           name: "zoom",
@@ -440,6 +452,29 @@ export function createEditorComponents() {
         markdownSourceField("content", "Accordion Entries (Markdown)"),
       ],
     },
+    {
+      name: "collection-aside",
+      label: "Editorial Aside",
+      fields: [
+        stringField("title", "Heading", true),
+        {
+          name: "layout",
+          label: "Aside Layout",
+          widget: "select",
+          default: "block",
+          options: ["block", "float-left", "float-right"],
+        },
+        markdownSourceField("content", "Aside Content (Markdown)"),
+      ],
+    },
+    {
+      name: "collection-recommendations",
+      label: "Book Recommendations",
+      fields: [
+        stringField("title", "Section Title", true),
+        markdownSourceField("content", "Books, Covers, and Descriptions (Markdown)"),
+      ],
+    },
     { name: "faqs", label: "Linked FAQs", fields: [] },
     { name: "resources", label: "Linked Resources", fields: [] },
   ].map(({ name, label, fields }) => ({
@@ -453,9 +488,11 @@ export function createEditorComponents() {
         : containerPattern(
             name,
             name === "cards" ||
-              name === "collection-accordion"
+              name === "collection-accordion" ||
+              name === "collection-aside"
               ? 4
-              : name === "collection-carousel"
+              : name === "collection-carousel" ||
+                  name === "collection-recommendations"
                 ? 5
                 : 3,
           ),

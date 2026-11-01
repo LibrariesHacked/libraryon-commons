@@ -1,9 +1,28 @@
 import { load } from 'cheerio';
 import { safeURL, mediaURL } from './site.mjs';
 
-export function splitContentModules(html, { faqHeading, base = import.meta.env?.BASE_URL || '/' } = {}) {
+export function splitContentModules(html, {
+  faqHeading,
+  base = import.meta.env?.BASE_URL || '/',
+  leadImage = false,
+} = {}) {
   const document = load(html, null, false);
   const prefix = base.replace(/\/$/, '');
+  if (leadImage) {
+    for (const node of document.root().contents().toArray()) {
+      const element = document(node);
+      if (element.is('h2')) break;
+      if (!element.is('p') || element.text().trim()) continue;
+      const image = element.find('img').first();
+      if (!image.length) continue;
+      const alt = image.attr('alt') || '';
+      const src = image.attr('src') || '';
+      if (/\b(?:logo|icon)\b/i.test(alt) || /\.svg(?:[?#]|$)/i.test(src))
+        break;
+      element.addClass('article-lead-image');
+      break;
+    }
+  }
   document('[src], [href], [poster]').each((index, node) => {
     const element = document(node);
     for (const attribute of ['src', 'href', 'poster']) {

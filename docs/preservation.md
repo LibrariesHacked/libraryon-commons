@@ -31,6 +31,14 @@ Located in `scripts/archive/` and run from the repository root:
 
 The importer never overwrites library records, site settings, or files modified since import (tracked via `migration/import-state.json`).
 
+## Reviewing Changes
+
+New CMS edits are saved as GitHub pull requests rather than published directly. The repository's `CODEOWNERS` file assigns maintainer review to the original LibraryOn articles, imported FAQs and resources, archived uploads, and preservation records. New community uploads go to `public/uploads/community/`, separate from archived media.
+
+The pull-request workflow runs `npm test` and `npm run build`. Repository administrators still need to protect the `main` branch in GitHub settings: require the **Tests and build** status check, require a maintainer approval, and require code-owner review. Confirm that `@DaveBathnes` has write access; if ownership moves to a team, replace that account with its `@LibrariesHacked/team-name` handle. Without the host settings, a pull request can still be merged without the safeguards being enforced.
+
+Local CMS editing uses the local file service and writes to the working tree for testing; it does not create GitHub pull requests. The local file service must only be used on a trusted computer and must never be exposed to the public internet.
+
 The importer reuses the filename mapping and gives new resources, sessions, and uploads descriptive names. `node scripts/migrate-filenames.mjs` previews any remaining legacy filenames; add `--apply` to migrate them and update active references. The migration leaves raw captures and compressed preservation bundles untouched. Asset URLs change with their filenames; the mapping records previous URLs but does not configure hosting redirects.
 
 ## Archive Coverage

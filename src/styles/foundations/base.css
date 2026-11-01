@@ -74,6 +74,13 @@ svg {
 .prose h2 {
   margin: 2.5rem 0 var(--size-3);
 }
+.prose > h2 {
+  padding: 0.55rem 0.8rem;
+  border-left: 4px solid var(--brand-rose);
+  border-radius: var(--card-radius);
+  background: var(--surface-tint-rose-pale);
+  color: var(--brand-berry);
+}
 .prose h3 {
   margin: var(--size-7) 0 0.8rem;
 }
@@ -83,6 +90,18 @@ svg {
   max-height: 560px;
   object-fit: contain;
   margin: var(--size-5) auto;
+}
+.prose p.article-lead-image {
+  width: 100%;
+  margin-block: var(--size-4) var(--size-7);
+}
+.prose p.article-lead-image > img,
+.prose p.article-lead-image > a > img {
+  display: block;
+  width: 100%;
+  max-height: none;
+  margin: 0;
+  object-fit: contain;
 }
 .prose blockquote {
   margin: var(--size-7) 0;

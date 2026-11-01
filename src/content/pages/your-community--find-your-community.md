@@ -9,7 +9,7 @@ source_url: https://libraryon.org/your-community/find-your-community
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - wakefield
+  - wakefield-libraries-and-local-history
   - eventbrite
 ---
 

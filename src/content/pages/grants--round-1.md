@@ -9,8 +9,8 @@ source_url: https://libraryon.org/grants/round-1
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - grants-guidance
-  - application-portal-2
+  - grants-round-one-guidance-pdf
+  - grants-round-one-application-portal
   - interim-monitoring-report
   - final-monitoring-report
   - libraries-connected

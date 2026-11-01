@@ -54,7 +54,7 @@ That relationship is shown through documents, photographs and other artefacts pr
 
 What started as a hand-woven craft became a global industry as the British Empire spread. And you might be surprised by the extent to which it helped shape the Nottingham of the 21st century. 
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A red street sign made from iron with white text reading St Mary's Gate. There is a lace motif above the text.](/uploads/archive/a-red-street-sign-made-from-iron-with-white-text.jpg)
 
@@ -98,7 +98,7 @@ The more sophisticated the design, the more time it took. It wasn’t unusual fo
 
 Such conditions were sadly consistent with the origins of the fabric with which they were working. By the end of the 18th century, most cotton used in textile manufacturing was a result of **the labour of enslaved people** in British colonies such as the West Indies and the United States.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A black and white drawing of a group of women sitting by a window in a dark room making lace and winding bobbins.](/uploads/archive/a-black-and-white-drawing-of-a-group-of-women.png)
 
@@ -124,7 +124,7 @@ In this series of pictures from Nottingham Local Studies' archives, Jardine's fa
 
 Machines like these could weigh several tonnes, and transporting them was a dangerous operation.   
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![The cover of a black photo album. On the cover are the words 'John Jardine, Nottingham, England' in embossed gold lettering.](/uploads/archive/the-cover-of-a-black-photo-album.png)
 
@@ -182,7 +182,7 @@ _Once installed at its destination, a fully-constructed lace machine could run t
 
 The lacemaking craft arrives in Britain via Europe.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![An old illustration of a woman sitting at a table working on bobbin lace.](/uploads/archive/an-old-illustration-of-a-woman-sitting-at-a-table-working-on-bobbin-lace.jpg)
 
@@ -194,7 +194,7 @@ _Source: The Fireside Source of Invention by John McGovern, via Wikimedia_
 
 ‘Lace Schools’ start to emerge, where women and children are taught how to make bobbin lace – and made to work long hours for little pay.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![An illustration of a Belgian lace school, from the book A History of Lace, by Fanny Bury Palliser. Pupils and teachers sit in individual chairs working on bobbin lace.](/uploads/archive/an-illustration-of-a-belgian-lace-school-from-the-book-2.jpg)
 
@@ -206,7 +206,7 @@ _Source: A History of Lace by Fanny Bury Palliser, via Wikimedia_
 
 The first steam powered textile factory is built in Nottingham.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A steam engine from the Gamble's Factory in Nottingham, which originally produced lace before switching to bicycle production for the Raleigh company.](/uploads/archive/a-steam-engine-from-the-gambles-factory-in-nottingham-which.jpg)
 
@@ -218,7 +218,7 @@ _Source: Chris Allen on Geograph CC BY-SA_
 
 John Heathcote patents the first bobbin-net machine, bringing mechanisation to lace-making.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![An early 20th century painting of a view of Nottingham's Lace Market area. St Mary's Churchyard is on the left, and on the right we can see a side street with the name 'Hollowstone'.](/uploads/archive/an-early-20th-century-painting-of-a-view-of-nottinghams-2.jpg)
 
@@ -230,7 +230,7 @@ _Source: Picture Nottingham_
 
 The Luddite movement sees workers rebel against the use of machines in textile manufacturing, and the cost of renting lace-making frames. Protests originate in Nottinghamshire.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![An illustration of a man gesturing or beckoning against the backdrop of a building on fire. He appears to be holding a knife or dagger. Other men raise their arms and hold similar weaponry. The image has the title 'The Leader of the Luddites'.](/uploads/archive/an-illustration-of-a-man-gesturing-or-beckoning-against.jpg)
 
@@ -242,7 +242,7 @@ _Source: Working Class Movement Library catalogue, via Wikimedia_
 
 A new Jacquard attachment means lace machines can now replicate the fine decorative detail usually done by hand.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A small square sample of fine lace, decorated with floral motifs.](/uploads/archive/a-small-square-sample-of-fine-lace-decorated-with-floral-motifs.jpg)
 
@@ -254,7 +254,7 @@ _Source: Picture Nottingham_
 
 Steam-enabled factory production of lace becomes widespread; the emergence of department stores means lace becomes more widely available.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A drawing of a woman posing in a floor length orange lace dress with a white trim topped with a matching cape. To the right of the image is a carriage clock balancing on blue, purple, orange and yellow flowing lace.](/uploads/archive/a-drawing-of-a-woman-posing-in-a-floor-length.jpg)
 
@@ -266,7 +266,7 @@ _Lace Charmaine was an elegant style of lace created by Nottingham company Simon
 
 The Elementary Education Act, the first step towards outlawing child labour, is passed – although universal free education for children won’t arrive until 1891.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![An illustration of a lady and a young girl working at a lace-making machine on a factory floor.](/uploads/archive/an-illustration-of-a-lady-and-a-young-girl-working-2.jpg)
 
@@ -278,7 +278,7 @@ _Source: Wellcome Images, via Wikimedia_
 
 At its peak before the First World War, there were over 1,500 lace warehouses and manufacturers in the Nottingham area.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A sepia photo, taken from high up, of workers at their stations in a lace-making factory. There are about two dozen people looking up at the camera, with many men wearing aprons. The bottom of photo says 'Interior Talbot Lace Curtain Factory'.](/uploads/archive/a-sepia-photo-taken-from-high-up-of-workers.jpg)
 
@@ -294,7 +294,7 @@ One of the most common ailments people suffered was **poor eyesight**. Sitting i
 
 Another effect factory workers suffered was **curvature of the spine**, due to the long hours and poor posture their work required.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A warehouse room full of women work on finishing lace garments and drapery. At the bottom of the photo are the words 'Finishing Department'.](/uploads/archive/a-warehouse-room-full-of-women-work-on-finishing-lace-2.jpg)
 
@@ -308,7 +308,7 @@ In 1973, a Nottinghamshire newspaper ran an essay competition in which it asked 
 
 **Nottingham Central Library** retains many of these entries, which now act as invaluable first-hand accounts of the lives of factory workers.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![One page of a handwritten essay from Mrs Ethel Clarke, who worked in the Nottingham lace trade as a girl.](/uploads/archive/one-page-of-a-handwritten-essay-from-mrs-ethel-clarke-2.jpg)
 

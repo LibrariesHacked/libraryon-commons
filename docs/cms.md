@@ -2,6 +2,8 @@
 
 LibraryCommons uses Decap CMS to edit Markdown and JSON files directly in the repository.
 
+Editors can also use the public **Editing guide** linked from the site footer. It explains common tasks without requiring repository knowledge.
+
 ## Open The Local Editor
 
 1. Start the Astro development server:
@@ -44,6 +46,14 @@ To add a page, create an entry in **Editorial Content**, choose a content type (
 - **Updated Date:** Automatically stamped with today's date when saved in the CMS.
 - **Preserved articles:** The original LibraryOn text is checksum-verified against `migration/source-articles.json`. FAQ-bearing pages now use references instead of inline answers; their pre-modular text is retained in a compressed archive snapshot. Edit questions and answers in the FAQ collection, not in the page body.
 
+## Review And Preserved Material
+
+Production CMS edits are saved as draft pull requests. A maintainer reviews the changes before they are merged and published. The repository runs its tests and builds the site for each pull request. GitHub must also be configured to require the **Tests and build** check and code-owner approval on `main`; see [reviewing changes](preservation.md#reviewing-changes).
+
+The original LibraryOn articles, imported FAQs and resources, archive uploads, and preservation records are assigned to maintainer review in `.github/CODEOWNERS`. New CMS uploads are stored in `public/uploads/community/`, not alongside `public/uploads/archive/`.
+
+When using the local editor, saves write to your working copy only. They do not create a pull request or publish the change.
+
 ## Reusable Content
 
 Create questions under **Frequently Asked Questions**, then select and order them in a page's **FAQs** field. The referenced FAQ files are the only editable source for question and answer text. Answers support Markdown; do not copy them into the page body.
@@ -64,6 +74,11 @@ The **Content** editor has **Rich Text** and **Markdown** modes. In Rich Text, u
 | Card                           | A single card using the same fields                                                |
 | List Panel                     | Heading, introduction, repeatable items, numbered-list settings, and trailing text |
 | YouTube Video                  | Embed URL and accessible title                                                     |
+| Collection Image               | Image, alternative text, layout, zoom control, and caption                         |
+| Collection Carousel            | Type and accessible label; slides and notes are written in Markdown                |
+| Collection Accordion           | Accessible label; entries are written in Markdown                                 |
+| Editorial Aside                | Heading and layout; aside text is written in Markdown                             |
+| Book Recommendations           | Section title; covers and descriptions are written in Markdown                    |
 | Linked FAQs / Linked Resources | Insert the selected page metadata references at this position                      |
 
 Select FAQ and resource entries in their normal page fields. The insertion shortcuts place a marker; they do not copy the linked content. A whole-card link cannot be combined with links inside that card's text.
@@ -121,6 +136,80 @@ Use `:::card{href="/reading"}` only for a whole-card link with no other links in
 
 Each video also has a **Watch on YouTube** link. Some embedded webviews, including the VS Code integrated browser in this environment, can abort third-party iframe navigation and leave the player blank even when it works in a regular browser. The direct link remains available when embedded playback is blocked.
 
+## Special Collection Controls
+
+The editor presents the outer component as a form. For slides, accordion entries, aside text, and book lists, its **Markdown** field contains the inner items. Keep each slide’s image and notes together and each book’s cover, description, and details inside the same item.
+
+### Image and Carousel
+
+Choose **Full** for a lead image, **Inset** for an image alongside article text, or a float when it belongs beside nearby paragraphs. Captions and credits go inside the image block.
+
+```md
+:::collection-image{layout="full" zoom="true"}
+
+![Circus posters and a scrapbook.](/uploads/community/circus-posters.jpg)
+
+Posters from the local history collection. Credit: Example Library.
+
+:::
+```
+
+An image carousel has one `slide` block per image. A hotspot carousel places each hotspot inside the slide it describes. The `x` and `y` values are percentages measured from the left and top edges of the image.
+
+```md
+:::::collection-carousel{kind="hotspots" label="Historic poster"}
+
+::::slide
+
+![An 1844 circus poster.](/uploads/community/circus-poster.jpg)
+
+:::hotspot{title="Performance date" x="65" y="22"}
+
+The poster advertises a performance on 22 August 1844.
+
+:::
+
+::::
+
+:::::
+```
+
+### Accordion and Aside
+
+Use one `accordion-item` per topic. An aside has one heading and should contain only information that helps readers understand the nearby article text.
+
+```md
+::::collection-accordion{label="Local history resources"}
+
+:::accordion-item{title="Newspapers"}
+
+The library keeps local newspaper issues in its study collection.
+
+:::
+
+::::
+```
+
+### Book Recommendations
+
+Use one `recommendation-item` per book. Put the cover and its description inside that item; the selected description opens beside its matching cover.
+
+```md
+::::::collection-recommendations{title="Books about circus history"}
+
+:::::recommendation-item{title="A History of the Circus" author="Alex Example" year="2020"}
+
+![Cover of A History of the Circus.](/uploads/community/circus-book.jpg)
+
+A short description of the book.
+
+:::::
+
+::::::
+```
+
+The editor’s form handles the component boundary. You should only need to edit this inner Markdown for slides, notes, accordion entries, asides, and recommendations.
+
 Unknown blocks, missing required data, and unsafe links fail the build with an error. Plain blockquotes, paragraphs, headings, lists, and video links remain plain Markdown. These blocks are page-specific content; keep shared questions and answers in the FAQ collection instead of copying them.
 
 ## File Names
@@ -131,7 +220,7 @@ New image names use a short phrase from the first sentence: up to ten words and 
 
 Markdown list markers use one space (`- Item`), including HTML imports and CMS output. `node scripts/normalize-content.mjs` previews old-list formatting and single-destination card conversions; add `--apply` to update content and its preservation checksums. Nested lists and code blocks are handled structurally rather than by a blanket text replacement.
 
-Use a descriptive filename before uploading new images or documents, and provide useful alt text for images. Changing a title does not rename its existing file. Page URLs come from the **Path** field, independently of filenames. Resource and FAQ relations use filename stems, so do not manually rename their files without updating references. The recorded migration and preservation checks are described in [Preserving The Original Material](preservation.md).
+Use a descriptive filename before uploading new images or documents, and provide useful alternative text for images. New files go into the community uploads folder. Changing a resource title does not rename its existing file or change its ID. Give repeated links enough detail to tell them apart, such as a programme round or session name. The resource pages show where each item is used. Page URLs come from the **Path** field, independently of filenames. Resource and FAQ relations use their filenames as IDs. To rename existing resources safely, preview with `node scripts/migrate-filenames.mjs --resource-ids=old-id,another-old-id`; add `--apply` to update page and session references, keep redirects for old resource pages, and record the filename history. Do not rename those files manually. The recorded migration and preservation checks are described in [Preserving The Original Material](preservation.md).
 
 ## Libraries And Authorities
 

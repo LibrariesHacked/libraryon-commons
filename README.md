@@ -1,139 +1,42 @@
 # LibraryCommons
 
-A static community website for UK library stories, resources, and directory listings, built on content originally published by LibraryOn.
+LibraryCommons brings together stories, resources, and information about public libraries across the UK. It includes original LibraryOn articles, community-written content, and a directory of 3,811 libraries across 218 authorities.
 
-Original articles retain their wording and credits, while new community articles and library listings (3,811 libraries across 218 authorities) can be edited in the browser with Decap CMS and built with Astro.
+You can browse the site using the [site map](/sitemap/) or add and update content in the browser editor. Changes are saved for review before they appear on the public site.
 
-## Getting Started
+## Using The Editor
 
-### Documentation
+Open the public site’s **Content management** link, or go to `/admin/`. The site footer links to a public editing guide that explains common tasks in plain English. The repository’s [CMS guide](docs/cms.md) includes detailed examples for special content such as galleries and book recommendations.
 
-- **[Editing Content](docs/cms.md)** — Using Decap CMS to manage articles, libraries, authorities, and site settings.
-- **[Running and Hosting](docs/site.md)** — Local development, production builds, and static deployment.
-- **[Code and Templates](docs/development.md)** — Routes, templates, components, and directory data model.
-- **[Preservation](docs/preservation.md)** — Archived LibraryOn source bundles and optional import scripts.
+Site menus, footer links, and template text can be edited in **Site Settings**. New images and documents belong to community uploads. Original LibraryOn material and archive files are kept separate and receive maintainer review.
 
-### Prerequisites
+## Project Guides
 
-- **Node.js** `22.23.4` or later
+- [Editing content](docs/cms.md) explains the editor, page types, and special content controls.
+- [Running the site](docs/site.md) explains how to start a local preview and publish the site.
+- [How the site is built](docs/development.md) describes the parts that developers may need to change.
+- [Preserving original material](docs/preservation.md) explains the archive, rights, and review safeguards.
 
-The site builds directly from tracked repository files; raw archive captures are not required.
+## For Maintainers
 
-### Installing
+The public website is generated from files stored in this repository. This is called a **static site**: visitors receive ready-made pages and the site does not need a database to serve them. Astro creates the pages, and Decap CMS provides the browser editor.
 
-Install dependencies and start the local dev server:
+To run a local copy, install Node.js `22.23.4` or later, then run:
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open <http://127.0.0.1:4322/>.
+Open <http://127.0.0.1:4322/>. To use the local editor, start Decap’s local file service in another terminal as described in [the CMS guide](docs/cms.md#open-the-local-editor).
 
-To use the local CMS editor at <http://127.0.0.1:4322/admin/>, run the Decap local backend in a second terminal (see [Editing Content](docs/cms.md#open-the-local-editor)):
-
-```sh
-npx --yes decap-server@3.11.6
-```
-
-### Folder Guide
-
-```text
-src/
-  content.config.ts         Astro schemas for CMS content collections
-  pages/                    Routes for articles, directory, resources, and CMS
-  layouts/                  Shared site shell, navigation, and footer
-  templates/                Page templates by content type
-  components/               Reusable UI components
-  styles/                   Stylesheets and bundled local fonts
-  lib/                      URL helpers, Markdown plugins, and directory search
-  content/
-    pages/                  Editorial Markdown pages and articles
-    resources/              Downloadable files and external resource records (JSON)
-    sessions/               Conference session records (JSON)
-    contributors/           Contributor profiles (JSON)
-    authorities/            Library authorities (JSON)
-    libraries/              Individual library records (JSON)
-  data/
-    settings.json           Site navigation, labels, and footer configuration
-    homepage.json           Homepage copy, hero image, and featured pages
-public/
-  admin/                    Decap CMS configuration (/admin/config.yml)
-  uploads/                  CMS media uploads and deduplicated archive assets
-preservation/               Compressed original LibraryOn source bundles (.json.gz)
-migration/                  Import report and SHA-256 checksum safeguards
-scripts/archive/            Optional collection, capture, import, and compaction scripts
-tests/                      Automated test suite
-docs/                       Project documentation
-```
-
-## Running the Tests
-
-Run the automated test suite:
+Before publishing changes, run the checks and build:
 
 ```sh
 npm test
-```
-
-### Automated Checks
-
-`npm test` validates CMS schemas, internal links, uploaded asset references, directory routes and search, Markdown conversion, and SHA-256 checksums for the 34 preserved LibraryOn articles. It runs entirely offline without raw archive files.
-
-### Manual Review
-
-Review code, CMS configuration, and documentation changes separately from content edits. Automated tests do not replace checking editorial wording, image rights, or visual layout.
-
-## Deployment
-
-Build and preview the production static site (`dist/`):
-
-```sh
 npm run build
-npm run preview
 ```
 
-See [Running and Hosting](docs/site.md) for static host requirements, `SITE_URL` / `BASE_PATH` environment variables, and GitHub OAuth setup for production CMS editing.
+Automated checks verify content relationships and preserved records. They do not replace a person’s review of wording, image credits, and rights. Original LibraryOn material is shared under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) unless a page says otherwise; the software uses the [MIT License](LICENSE).
 
-## Built With
-
-- [Astro](https://astro.build/) — Builds the static website.
-- [Decap CMS](https://decapcms.org/) — Edits content in the browser, with Decap Server for local editing.
-- [Open Props](https://open-props.style/) — Shared styling values.
-- [Embla Carousel](https://www.embla-carousel.com/) — Image carousel and autoplay.
-- [Floating UI](https://floating-ui.com/) — Positions filter menus.
-- [Lucide](https://lucide.dev/) — Icons.
-- [Fontsource](https://fontsource.org/) — Locally hosted fonts.
-- [Unified, Remark and Rehype](https://unifiedjs.com/) — Read, write and render Markdown.
-- [YAML](https://eemeli.org/yaml/) — Reads content metadata and CMS settings.
-- [Turndown](https://github.com/mixmark-io/turndown) — Converts archived HTML to Markdown.
-- [Cheerio](https://cheerio.js.org/) and [sanitize-html](https://github.com/apostrophecms/sanitize-html) — Read and clean archived HTML.
-- [Sharp](https://sharp.pixelplumbing.com/) — Checks image sizes and quality.
-- [Acorn](https://github.com/acornjs/acorn) — Reads archived JavaScript without running it.
-- [Playwright](https://playwright.dev/) — Browser testing and archive captures.
-- [PostCSS](https://postcss.org/) and [Prettier](https://prettier.io/) — Check and format styles and code.
-
-## Contributing
-
-Read [Editing Content](docs/cms.md) and [Code and Templates](docs/development.md) before submitting changes:
-
-- Keep existing filenames, IDs, and URL slugs stable so cross-references and public URLs do not break.
-- Do not edit the 34 original LibraryOn article bodies tracked in `migration/source-articles.json`; add new work as separate entries.
-
-## Versioning
-
-All code, content, and media are tracked in standard Git without Git LFS. Checksums in `migration/` and `preservation/manifest.json` protect original articles, author edits, and compressed archive bundles.
-
-## Authors
-
-- **Libraries Hacked** — *Development and maintenance* — [LibrariesHacked](https://github.com/LibrariesHacked)
-- **LibraryOn / British Library** — *Original articles, resources, and directory dataset*
-
-## License
-
-- **Software:** Licensed under the [MIT License](LICENSE).
-- **Content:** Original LibraryOn material is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) **except where otherwise noted**. Retain source credits, links, and snapshot dates, and check third-party media rights before reuse. See [Preservation — Rights and Backup](docs/preservation.md#rights-and-backup).
-
-## Acknowledgments
-
-- LibraryOn and the British Library for the original editorial articles, conference resources, and UK public library directory data.
-- Community contributors, speakers, and library services represented across the site.
+New CMS drafts become pull requests. In GitHub, repository administrators must require the **Tests and build** check and maintainer approval before merging; see [preservation and review](docs/preservation.md#reviewing-changes).

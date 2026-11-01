@@ -12,7 +12,7 @@ resources:
   - brighton-and-hove-libraries
   - explore-the-collection-online
   - viscount-garnet-wolseley
-  - frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection-2
+  - massetts-place-frances-wolseleys-home-historic-england
   - social-season
   - alicia-amherst-gardening-historian
   - gardeners-you-should-know-ellen-willmott
@@ -35,7 +35,7 @@ resources:
   - womenslandarmy-co-uk
   - the-garden-history-blog
   - the-wolseley-collection-at-hove-library
-  - frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection
+  - brighton-and-hove-libraries-website
 ---
 
 # Frances Wolseley: Gardener, activist, aristocrat
@@ -60,7 +60,7 @@ Hove Library, part of [Brighton & Hove Libraries](https://www.brighton-hove.gov.
 
 [Explore the collection online](https://www.flickr.com/photos/196656943@N03/albums/72177720331351304/)
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![Sepia photo of Frances Wolseley in a hat with a small dog in front of a house.](/uploads/archive/sepia-photo-of-frances-wolseley-in-a-hat.jpg)
 
@@ -118,7 +118,7 @@ When her family moved to Glynde village in East Sussex, this interest grew into 
 
 This passion would shape her whole life and career, but it would also cause problems between her and her parents.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![Sepia photo of a Frances Wolseley in a long skirt tending a plant on a trellis outdoors.](/uploads/archive/sepia-photo-of-a-frances-wolseley-in-a-long-skirt-2.jpg)
 
@@ -136,7 +136,7 @@ However, after raising money from friends, Frances rented the greenhouse on her 
 
 Her parents were furious. At that time, as an unmarried lady, Frances was expected to devote her life to looking after them. It was the start of a disagreement that would last many years.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![Sepia photo of two women working in a garden with trellises and a beehive.](/uploads/archive/sepia-photo-of-two-women-working-in-a-garden.png)
 
@@ -164,7 +164,7 @@ With a large garden of five acres for teaching, the college's lessons grew into 
 
 But only ladies made of the right stuff...
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![Formal document listing patrons, principal, subjects, and terms for Glynde School.](/uploads/archive/formal-document-listing-patrons-principal-subjects-and-terms.jpg)
 
@@ -190,7 +190,7 @@ Because of how she was brought up, Frances had high standards, but she also had 
 
 And she thought 'breeding' (meaning a person's family background) was very important. She felt that people from a lower class were not right for her college.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![Sepia aerial photo of a terraced landscape with fields and a large house on a hill. A small shed and horse and cart are visible.](/uploads/archive/sepia-aerial-photo-of-a-terraced-landscape-with-fields.jpg)
 

@@ -9,7 +9,7 @@ import {
 } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { gunzipSync } from "node:zlib";
-import { parse } from "yaml";
+import { parse, parseDocument } from "yaml";
 
 export function descriptiveSlug(value) {
   return String(value || "")
@@ -149,7 +149,11 @@ export function originalAssetReferences(body, mappings) {
   )(body);
 }
 
-export function migrateFilenames({ root = process.cwd(), apply = false } = {}) {
+export function migrateFilenames({
+  root = process.cwd(),
+  apply = false,
+  resourceIds = [],
+} = {}) {
   const absolute = (filename) => path.join(root, filename);
   const mappingFile = absolute("migration/filenames.json");
   const previous = existsSync(mappingFile) ? readJSON(mappingFile).renames : [];
@@ -254,14 +258,16 @@ export function migrateFilenames({ root = process.cwd(), apply = false } = {}) {
         .map((record) => path.basename(record.file).toLowerCase()),
     );
     for (const { file, data } of entries.filter((record) =>
-      opaque(record.file),
+      opaque(record.file) ||
+      (collection === "resources" &&
+        resourceIds.includes(path.basename(record.file, ".json"))),
     )) {
       const label =
         collection === "faqs"
           ? data.question
           : collection === "sessions"
             ? `${data.conference} ${data.title}`
-            : sessionLabels.get(file) || data.title;
+            : data.title || sessionLabels.get(file);
       renames.push({
         from: file,
         to: `${folder}/${uniqueFilename(label, path.extname(file), used)}`,
@@ -331,6 +337,8 @@ export function migrateFilenames({ root = process.cwd(), apply = false } = {}) {
           [from, to],
           [from.slice("public".length), to.slice("public".length)],
         ]
+      : from.startsWith("src/content/resources/")
+        ? [[from, to]]
       : [
           [from, to],
           [
@@ -340,7 +348,66 @@ export function migrateFilenames({ root = process.cwd(), apply = false } = {}) {
         ],
   );
   const replace = replacementFunction(replacements);
+  const resourceIdMap = new Map(
+    renames
+      .filter((entry) => entry.from.startsWith("src/content/resources/"))
+      .map((entry) => [
+        path.basename(entry.from, ".json"),
+        path.basename(entry.to, ".json"),
+      ]),
+  );
+  const replaceResourceReferences = (file, source) => {
+    const relative = path.relative(root, file);
+    if (relative.startsWith("src/content/pages/") && relative.endsWith(".md")) {
+      const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(source);
+      if (!frontmatter) return source;
+      const document = parseDocument(frontmatter[1]);
+      const sequence = document.get("resources", true);
+      if (!sequence?.items) return source;
+      let changed = false;
+      for (const item of sequence.items) {
+        if (resourceIdMap.has(item.value)) {
+          item.value = resourceIdMap.get(item.value);
+          changed = true;
+        }
+      }
+      if (!changed) return source;
+      const newline = frontmatter[0].includes("\r\n") ? "\r\n" : "\n";
+      const header = `---${newline}${document.toString().replace(/\r?\n/g, newline)}---`;
+      return source.replace(frontmatter[0], header);
+    }
+    if (
+      (relative.startsWith("src/content/sessions/") ||
+        relative === "migration/import-report.json") &&
+      file.endsWith(".json")
+    ) {
+      const update = (value) => {
+        if (Array.isArray(value)) return value.map(update);
+        if (!value || typeof value !== "object") return value;
+        return Object.fromEntries(
+          Object.entries(value).map(([key, child]) => [
+            key,
+            key === "resources" && Array.isArray(child)
+              ? child.map((id) => resourceIdMap.get(id) || id)
+              : update(child),
+          ]),
+        );
+      };
+      return `${JSON.stringify(update(JSON.parse(source)), null, 2)}\n`;
+    }
+    return source;
+  };
   const state = readJSON(absolute("migration/import-state.json"));
+  const resourceRenames = renames.filter((entry) =>
+    entry.from.startsWith("src/content/resources/"),
+  );
+  const resourcePaths = new Map(
+    resourceRenames.map(({ from, to }) => [from, to]),
+  );
+  const historicalRenames = previous.map((entry) => ({
+    ...entry,
+    to: resourcePaths.get(entry.to) || entry.to,
+  }));
   const managed = new Map(
     Object.entries(state.files).map(([file, hash]) => [
       file,
@@ -348,6 +415,7 @@ export function migrateFilenames({ root = process.cwd(), apply = false } = {}) {
         checksum(readFileSync(absolute(file))) === hash,
     ]),
   );
+  const fileRenames = new Map(renames.map(({ from, to }) => [from, to]));
   const editable = [
     ...filesIn(absolute("src")),
     ...filesIn(absolute("public/admin")),
@@ -359,14 +427,18 @@ export function migrateFilenames({ root = process.cwd(), apply = false } = {}) {
   const updates = editable
     .map((file) => {
       const before = readFileSync(file, "utf8");
-      return { file, before, after: replace(before) };
+      return {
+        file,
+        before,
+        after: replaceResourceReferences(file, replace(before)),
+      };
     })
     .filter(({ before, after }) => before !== after);
   for (const { file, after } of updates) writeFileSync(file, after);
   for (const { from, to } of renames) renameSync(absolute(from), absolute(to));
   state.files = Object.fromEntries(
     Object.entries(state.files).map(([file, hash]) => {
-      const target = replace(file);
+      const target = fileRenames.get(file) || file;
       return [
         target,
         managed.get(file) ? checksum(readFileSync(absolute(target))) : hash,
@@ -376,8 +448,25 @@ export function migrateFilenames({ root = process.cwd(), apply = false } = {}) {
   writeFileSync(absolute("migration/import-state.json"), jsonText(state));
   writeFileSync(
     mappingFile,
-    jsonText({ version: 1, renames: [...previous, ...renames] }),
+    jsonText({ version: 1, renames: [...historicalRenames, ...renames] }),
   );
+  if (resourceRenames.length) {
+    const settingsFile = absolute("src/data/settings.json");
+    const settings = readJSON(settingsFile);
+    const redirects = new Map(
+      (settings.redirects || []).map((redirect) => [redirect.from, redirect]),
+    );
+    for (const { from, to } of resourceRenames) {
+      const oldId = path.basename(from, ".json");
+      const newId = path.basename(to, ".json");
+      const source = `/resources/${oldId}/`;
+      const target = `/resources/${newId}/`;
+      if (redirects.has(source)) redirects.get(source).to = target;
+      else redirects.set(source, { from: source, to: target });
+    }
+    settings.redirects = [...redirects.values()];
+    writeFileSync(settingsFile, jsonText(settings));
+  }
   return { renames, applied: true };
 }
 
@@ -385,6 +474,14 @@ if (
   process.argv[1] &&
   import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href
 ) {
-  const result = migrateFilenames({ apply: process.argv.includes("--apply") });
+  const resourceIds = process.argv
+    .find((argument) => argument.startsWith("--resource-ids="))
+    ?.slice("--resource-ids=".length)
+    .split(",")
+    .filter(Boolean) || [];
+  const result = migrateFilenames({
+    apply: process.argv.includes("--apply"),
+    resourceIds,
+  });
   console.log(JSON.stringify(result, null, 2));
 }

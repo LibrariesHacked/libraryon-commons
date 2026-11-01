@@ -22,6 +22,66 @@ const imageParagraph = (node) =>
 
 export function contentDirectives() {
   return (tree, file) => {
+    const textParagraph = (node) =>
+      node?.type === "paragraph" &&
+      !(node.children || []).some((child) => child.type === "image");
+    const groupFloatedImages = (node) => {
+      const children = node.children || [];
+      children.forEach(groupFloatedImages);
+      if (!children.length) return;
+
+      const grouped = [];
+      for (let index = 0; index < children.length; index += 1) {
+        const child = children[index];
+        const layout =
+          child.type === "containerDirective" &&
+          child.name === "collection-image"
+            ? child.attributes?.layout
+            : null;
+        if (!new Set(["float-left", "float-right"]).has(layout)) {
+          grouped.push(child);
+          continue;
+        }
+
+        const preceding = [];
+        while (textParagraph(grouped.at(-1))) preceding.unshift(grouped.pop());
+        const following = [];
+        let nextIndex = index + 1;
+        if (!preceding.length) {
+          while (textParagraph(children[nextIndex]))
+            following.push(children[nextIndex++]);
+        }
+        const copy = preceding.length ? preceding : following;
+        if (!copy.length) {
+          grouped.push(child);
+          continue;
+        }
+
+        const start = preceding.length
+          ? copy[0].position.start
+          : child.position.start;
+        const end = preceding.length
+          ? child.position.end
+          : copy.at(-1).position.end;
+        const content = {
+          type: "containerDirective",
+          name: "collection-image-copy",
+          attributes: {},
+          children: copy,
+          position: { start: copy[0].position.start, end: copy.at(-1).position.end },
+        };
+        grouped.push({
+          type: "containerDirective",
+          name: "collection-image-row",
+          attributes: { layout },
+          children: preceding.length ? [content, child] : [child, content],
+          position: { start, end },
+        });
+        if (!preceding.length) index = nextIndex - 1;
+      }
+      node.children = grouped;
+    };
+
     const visit = (node) => {
       for (const child of node.children || []) visit(child);
       if (
@@ -45,14 +105,37 @@ export function contentDirectives() {
       const block = (tagName, className) => {
         node.data = { hName: tagName, hProperties: { className: [className] } };
       };
-      if (["slide", "hotspot", "accordion-item"].includes(node.name)) {
+      if (
+        ["slide", "hotspot", "accordion-item", "recommendation-item"].includes(
+          node.name,
+        )
+      ) {
         return;
+      } else if (node.name === "collection-image-row") {
+        node.data = {
+          hName: "div",
+          hProperties: {
+            className: [
+              "collection-image-row",
+              `collection-image-row--${node.attributes.layout}`,
+            ],
+          },
+        };
+      } else if (node.name === "collection-image-copy") {
+        node.data = {
+          hName: "div",
+          hProperties: { className: ["collection-image-copy"] },
+        };
       } else if (node.name === "collection-image") {
         const layout = attributes.layout || "standard";
         const image = node.children.filter(imageParagraph);
         if (image.length !== 1) fail("include exactly one image");
-        if (!["standard", "inset", "full"].includes(layout))
-          fail("layout must be standard, inset or full");
+        if (
+          !["standard", "inset", "full", "float-left", "float-right"].includes(
+            layout,
+          )
+        )
+          fail("layout must be standard, inset, full, float-left or float-right");
         const caption = node.children.filter((child) => child !== image[0]);
         if (caption[0]) {
           caption[0].data = {
@@ -84,14 +167,130 @@ export function contentDirectives() {
               ]
             : []),
         ];
+      } else if (node.name === "collection-aside") {
+        const layout = attributes.layout || "block";
+        const title = attributes.title?.trim();
+        if (!title) fail("include a title");
+        if (!["block", "float-left", "float-right"].includes(layout))
+          fail("layout must be block, float-left or float-right");
+        node.data = {
+          hName: "aside",
+          hProperties: {
+            className: ["collection-aside", `collection-aside--${layout}`],
+            ariaLabel: title,
+          },
+        };
+        node.children = [
+          element("h3", "collection-aside-title", [text(title)]),
+          ...node.children,
+        ];
+      } else if (node.name === "collection-recommendations") {
+        const title = attributes.title?.trim();
+        const items = node.children.filter(
+          (child) =>
+            child.type === "containerDirective" &&
+            child.name === "recommendation-item",
+        );
+        if (!title) fail("include a section title");
+        if (!items.length || items.length !== node.children.length)
+          fail("include one or more recommendation-item blocks and no other content");
+
+        const covers = [];
+        const recommendationItems = [];
+        items.forEach((item, index) => {
+          const bookTitle = item.attributes.title?.trim();
+          const images = item.children.filter(imageParagraph);
+          if (!bookTitle) fail("each recommendation needs a title");
+          if (images.length !== 1) fail("each recommendation needs one cover image");
+          const identifier = `${node.position.start.line}-${index}`;
+          const meta = [item.attributes.author, item.attributes.year]
+            .filter(Boolean)
+            .join(" · ");
+          covers.push(
+            element(
+              "figure",
+              "collection-recommendation-cover",
+              [images[0]],
+              {
+                dataRecommendationCover: String(index),
+                ...(index ? { hidden: true } : {}),
+              },
+            ),
+          );
+          recommendationItems.push(
+            element("li", "collection-recommendation-item", [
+              element(
+                "button",
+                "collection-recommendation-select",
+                [
+                  element("span", "collection-recommendation-title", [
+                    text(bookTitle),
+                  ]),
+                  ...(meta
+                    ? [
+                        element("span", "collection-recommendation-meta", [
+                          text(meta),
+                        ]),
+                      ]
+                    : []),
+                ],
+                {
+                  type: "button",
+                  ariaPressed: index === 0 ? "true" : "false",
+                  ariaExpanded: index === 0 ? "true" : "false",
+                  ariaControls: `collection-book-cover-${identifier} collection-book-description-${identifier}`,
+                  dataRecommendationSelect: String(index),
+                },
+              ),
+              element(
+                "div",
+                "collection-recommendation-description",
+                item.children.filter((child) => child !== images[0]),
+                {
+                  id: `collection-book-description-${identifier}`,
+                  dataRecommendationDescription: String(index),
+                  ...(index ? { hidden: true } : {}),
+                },
+              ),
+            ]),
+          );
+          covers.at(-1).data.hProperties.id = `collection-book-cover-${identifier}`;
+        });
+        node.data = {
+          hName: "section",
+          hProperties: {
+            className: ["collection-recommendations"],
+            role: "region",
+            ariaLabel: title,
+            dataCollectionRecommendations: "",
+          },
+        };
+        node.children = [
+          element("h2", "collection-recommendations-heading", [text(title)]),
+          element("div", "collection-recommendations-layout", [
+            element("div", "collection-recommendations-media", covers),
+            element("div", "collection-recommendations-copy", [
+              element("ul", "collection-recommendations-list", recommendationItems),
+            ]),
+          ]),
+        ];
       } else if (node.name === "collection-carousel") {
         const kind = attributes.kind;
+        const introAside = node.children.find(
+          (child) =>
+            child.type === "containerDirective" &&
+            child.name === "collection-aside",
+        );
         const slides = node.children.filter(
           (child) =>
             child.type === "containerDirective" && child.name === "slide",
         );
-        if (!slides.length || slides.length !== node.children.length)
-          fail("include one or more slide blocks and no other content");
+        if (
+          !slides.length ||
+          slides.length + Number(Boolean(introAside)) !== node.children.length ||
+          (introAside && kind !== "hotspots")
+        )
+          fail("include slides and, for hotspot galleries, at most one collection aside");
         if (!["images", "quotes", "hotspots"].includes(kind))
           fail("kind must be images, quotes or hotspots");
         slides.forEach((slide, index) => {
@@ -205,7 +404,18 @@ export function contentDirectives() {
                 images[0],
                 ...markers,
               ]),
-              element("aside", "collection-hotspot-aside", notes),
+              element("aside", "collection-hotspot-aside", [
+                ...(introAside
+                  ? [
+                      element(
+                        "div",
+                        "collection-hotspot-intro",
+                        structuredClone(introAside.children),
+                      ),
+                    ]
+                  : []),
+                ...notes,
+              ]),
             ];
           }
         });
@@ -246,6 +456,23 @@ export function contentDirectives() {
               [text("Next")],
               { type: "button", ariaLabel: "Next slide", dataCarouselNext: "" },
             ),
+            ...(kind === "hotspots"
+              ? [
+                  element("label", "collection-hotspot-toggle", [
+                    element(
+                      "input",
+                      "",
+                      [],
+                      {
+                        type: "checkbox",
+                        checked: true,
+                        dataHotspotVisibilityToggle: "",
+                      },
+                    ),
+                    text("Show hotspots"),
+                  ]),
+                ]
+              : []),
           ]),
         ];
       } else if (node.name === "collection-accordion") {
@@ -467,6 +694,7 @@ export function contentDirectives() {
         ];
       } else fail("unknown content block");
     };
+    groupFloatedImages(tree);
     visit(tree);
   };
 }

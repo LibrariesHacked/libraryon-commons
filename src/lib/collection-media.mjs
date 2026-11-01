@@ -44,6 +44,9 @@ function setupCarousel(root) {
   const previous = root.querySelector("[data-carousel-previous]");
   const next = root.querySelector("[data-carousel-next]");
   const status = root.querySelector("[data-carousel-status]");
+  const hotspotVisibility = root.querySelector(
+    "[data-hotspot-visibility-toggle]",
+  );
   if (!viewport || !track || !previous || !next || !status) return;
 
   const slides = [...track.children];
@@ -68,6 +71,16 @@ function setupCarousel(root) {
   slides.forEach((slide) => resizeObserver.observe(slide));
   previous.addEventListener("click", () => carousel.scrollPrev());
   next.addEventListener("click", () => carousel.scrollNext());
+  if (hotspotVisibility) {
+    const updateHotspotVisibility = () => {
+      root.classList.toggle(
+        "collection-carousel--hotspots-hidden",
+        !hotspotVisibility.checked,
+      );
+    };
+    hotspotVisibility.addEventListener("change", updateHotspotVisibility);
+    updateHotspotVisibility();
+  }
   carousel.on("select", update);
   carousel.on("reInit", update);
   update();
@@ -88,6 +101,31 @@ export function initializeCollectionMedia() {
     const zoom = target.closest("[data-collection-zoom]");
     if (zoom) {
       openImage(zoom);
+      return;
+    }
+
+    const recommendation = target.closest("[data-recommendation-select]");
+    if (recommendation) {
+      const section = recommendation.closest("[data-collection-recommendations]");
+      if (!section) return;
+      const selected = recommendation.dataset.recommendationSelect;
+      section.querySelectorAll("[data-recommendation-select]").forEach((button) => {
+        const isSelected = button.dataset.recommendationSelect === selected;
+        button.setAttribute(
+          "aria-pressed",
+          String(isSelected),
+        );
+        button.setAttribute("aria-expanded", String(isSelected));
+      });
+      section.querySelectorAll("[data-recommendation-cover]").forEach((cover) => {
+        cover.hidden = cover.dataset.recommendationCover !== selected;
+      });
+      section
+        .querySelectorAll("[data-recommendation-description]")
+        .forEach((description) => {
+          description.hidden =
+            description.dataset.recommendationDescription !== selected;
+        });
       return;
     }
 

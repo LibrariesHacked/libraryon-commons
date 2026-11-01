@@ -14,29 +14,29 @@ resources:
   - novellic
   - culture-house
   - coventry-libraries
-  - uk-library-grants-programme-libraryon-watch-the-recording-5
-  - british-library-2
-  - uk-library-grants-programme-libraryon-watch-the-recording-8
-  - uk-library-grants-programme-libraryon-watch-the-recording-4
-  - uk-library-grants-programme-libraryon-watch-the-recording-9
+  - contracting-digital-projects-for-libraries-recording
+  - british-library-homepage
+  - digital-item-copyright-recording
+  - ai-in-public-libraries-literacy-and-ethics-recording
+  - tackling-abuse-online-practical-steps-for-libraries-recording
   - jisc
   - leeds
   - the-american-library-at-norfolk-libraries
-  - uk-library-grants-programme-libraryon-watch-the-recording-6
+  - how-to-get-the-best-out-of-your-special-collections-recording
   - bipc-oxfordshire
-  - uk-library-grants-programme-libraryon-watch-the-recording-11
+  - projects-101-building-partnerships-and-getting-funding-recording
   - somerset-libraries
-  - uk-library-grants-programme-libraryon-watch-the-recording-2
+  - ai-for-public-libraries-recording
   - reason-digital
-  - uk-library-grants-programme-libraryon-watch-the-recording-12
+  - library-data-visualised-recording
   - digital-unite
-  - uk-library-grants-programme-libraryon-watch-the-recording-10
+  - why-digital-inclusion-matters-recording
   - university-of-york
-  - uk-library-grants-programme-libraryon-watch-the-recording
+  - social-media-surgery-recording
   - libraries-hacked
-  - uk-library-grants-programme-libraryon-watch-the-recording-7
+  - telling-stories-with-data-recording
   - digital-culture-network
-  - uk-library-grants-programme-libraryon-watch-the-recording-3
+  - accessible-websites-and-user-journeys-recording
 hero:
   image: /uploads/archive/a-man-sits-at-a-computer-in-a-library-he-has-his-back-to-us.jpg
   alt: A man sits at a computer in a library. He has his back to us.
@@ -126,25 +126,25 @@ We asked services about the areas related to digital activity that they would mo
 
 with John White ([The Space](https://www.thespace.org/)), Candide Kirk ([Novellic](https://novellic.com/)), Lizzie Nixon ([Culture House](https://culturehouse.org.uk/)) and Carrina Blake ([Coventry Libraries](https://www.coventry.gov.uk/libraries-1))
 
-[Watch the recording](https://www.youtube.com/watch?v=GlvXqQ8DNJQ&list=PLrRq4FeMUe-eBHe5pYbu8ih9PqwMmLbZw)
+[Watch recording: Contracting Digital Projects for Libraries](https://www.youtube.com/watch?v=GlvXqQ8DNJQ&list=PLrRq4FeMUe-eBHe5pYbu8ih9PqwMmLbZw)
 
 #### Digital item copyright
 
 with Alison Davidson ([British Library](https://www.bl.uk/))
 
-[Watch the recording](https://youtu.be/5c-Aoayv8cU)
+[Watch recording: Digital item copyright](https://youtu.be/5c-Aoayv8cU)
 
 #### AI in Public Libraries: Literacy and Ethics
 
 with Mia Ridge ([British Library](https://www.bl.uk/))
 
-[Watch the recording](https://youtu.be/9yyZMOQbEBk)
+[Watch recording: AI in Public Libraries: Literacy and Ethics](https://youtu.be/9yyZMOQbEBk)
 
 #### Tackling Abuse Online: Practical Steps for Libraries
 
 with John White and Rowan Kerek Robertson ([The Space](https://www.thespace.org/))
 
-[Watch the recording](https://www.youtube.com/watch?v=S4kMwldJ8ns)
+[Watch recording: Tackling Abuse Online: Practical Steps for Libraries](https://www.youtube.com/watch?v=S4kMwldJ8ns)
 
 #### Driving Digital Sustainability: Practical Steps for Libraries
 
@@ -154,46 +154,46 @@ with Cal Innes ([Jisc](https://www.jisc.ac.uk/))
 
 with Rhian Isaac ([Leeds Libraries](https://libraries.leeds.gov.uk/)) and Orla Kennelly ([The American Library at Norfolk Libraries](https://www.americanlibrary.uk/))
 
-[Watch the recording](https://youtu.be/0GmYgbeB62E)
+[Watch recording: How to Get the Best Out of Your Special Collections](https://youtu.be/0GmYgbeB62E)
 
 #### Projects 101: Building Partnerships and Getting Funding
 
 with Ryan Johnson ([BIPC Oxfordshire](https://www.oxfordshire.gov.uk/business/business-and-intellectual-property-centre-bipc)), Liam Garnett ([Leeds Libraries](https://libraries.leeds.gov.uk/)), Dave Lloyd ([Coventry Libraries](https://www.coventry.gov.uk/libraries-1)) and John White ([The Space](https://www.thespace.org/))
 
-[Watch the recording](https://youtu.be/U9Z_8AIoyw4)
+[Watch recording: Projects 101: Building Partnerships and Getting Funding](https://youtu.be/U9Z_8AIoyw4)
 
 #### AI for Public Libraries
 
 with Olly Hellis ([Somerset Libraries](https://www.somerset.gov.uk/libraries/)) and Phil Bradley (independent consultant)
 
-[Watch the recording](https://youtu.be/OBsNChHWYaQ)
+[Watch recording: AI for Public Libraries](https://youtu.be/OBsNChHWYaQ)
 
 #### Library Data, Visualised
 
 with Rufus Spiller and Fanni Breczku ([Reason Digital](https://reasondigital.com/))
 
-[Watch the recording](https://youtu.be/YfmF2DRY1fU)
+[Watch recording: Library Data, Visualised](https://youtu.be/YfmF2DRY1fU)
 
 #### Why Digital Inclusion Matters
 
 with Emma Weston ([Digital Unite](https://www.digitalunite.com/))
 
-[Watch the recording](https://youtu.be/3ZI1X3SMO7M)
+[Watch recording: Why Digital Inclusion Matters](https://youtu.be/3ZI1X3SMO7M)
 
 #### Social Media Surgery
 
 with Ned Potter ([University of York](https://www.york.ac.uk/))
 
-[Watch the recording](https://youtu.be/xW8U7JYnnZg)
+[Watch recording: Social Media Surgery](https://youtu.be/xW8U7JYnnZg)
 
 #### Telling Stories with Data
 
 with Dave Rowe ([Libraries Hacked](https://www.librarieshacked.org/))
 
-[Watch the recording](https://youtu.be/qhLRaMNVI7I)
+[Watch recording: Telling Stories with Data](https://youtu.be/qhLRaMNVI7I)
 
 #### Accessible Websites and User Journeys
 
 with Roberta Beattie (Accessibility Tech Champion, [Digital Culture Network](https://digitalculturenetwork.org.uk/))
 
-[Watch the recording](https://youtu.be/lRk8doD0DR0)
+[Watch recording: Accessible Websites and User Journeys](https://youtu.be/lRk8doD0DR0)

@@ -14,7 +14,7 @@ resources:
   - template-to-be-completed-by-your-finance-team-and-submitted-with-your-application
   - frequently-asked-questions-faqs
   - logo-guidance
-  - bank-details-form
+  - grants-round-three-bank-details-form
   - monitoring-template
   - blackpool-library-services-lms-project-webinar
   - libraries-unlimiteds-secret-book-quest-and-virtual-tour-projects

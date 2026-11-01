@@ -12,7 +12,7 @@ attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
 resources:
   - eventbrite
   - borrowbox
-  - libby
+  - libby-app
 faq_heading: Frequently asked questions
 faqs:
   - is-it-free-to-join-a-public-library-how-do-i-join

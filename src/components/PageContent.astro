@@ -5,7 +5,10 @@ import { splitContentModules, unlinkedResources } from '../lib/content-modules.m
 import { settings } from '../lib/site.mjs';
 const { entry, faqs = [], related = [] } = Astro.props;
 const html = await Astro.slots.render('default');
-const blocks = splitContentModules(html, { faqHeading: entry.data.faq_heading });
+const blocks = splitContentModules(html, {
+  faqHeading: entry.data.faq_heading,
+  leadImage: !entry.data.hero && entry.data.kind !== 'collection',
+});
 const resources = unlinkedResources([html, ...faqs.map((faq) => faq.rendered?.html || '')].join('\n'), related);
 ---
 

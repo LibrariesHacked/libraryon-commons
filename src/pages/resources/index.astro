@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import ResourceLink from '../../components/ResourceLink.astro';
 import { normalise } from '../../lib/search.mjs';
+import { resourceUsage } from '../../lib/resource-usage.mjs';
 import { settings, sitePath } from '../../lib/site.mjs';
 const copy = settings.ui.resource_page;
 const kindLabels = {
@@ -20,6 +21,11 @@ const resources = (await getCollection('resources')).sort((first, second) => {
     first.data.title.localeCompare(second.data.title, 'en')
   );
 });
+const usage = resourceUsage(
+  resources,
+  await getCollection('pages'),
+  await getCollection('sessions'),
+);
 ---
 
 <SiteLayout
@@ -38,6 +44,8 @@ const resources = (await getCollection('resources')).sort((first, second) => {
       class="filter-bar"
       data-singular={copy.singular}
       data-plural={copy.plural}
+      data-page-size="24"
+      data-page-status={copy.pagination_status}
     >
       <label>
         {copy.search_label}
@@ -65,10 +73,15 @@ const resources = (await getCollection('resources')).sort((first, second) => {
     <p id="resource-count" class="muted" role="status" aria-live="polite">
       {resources.length} {copy.plural}
     </p>
+    <nav class="resource-pagination" id="resource-pagination" aria-label={copy.pagination_label} hidden>
+      <button class="button button-secondary" id="resource-previous" type="button">{copy.previous_page}</button>
+      <p id="resource-page-status" role="status" aria-live="polite"></p>
+      <button class="button button-secondary" id="resource-next" type="button">{copy.next_page}</button>
+    </nav>
     <ul class="resource-list" id="resource-results">
       {resources.map(({ id, data }) => (
         <li
-          data-search={normalise(`${data.title} ${data.description || ''}`)}
+          data-search={normalise(`${data.title} ${data.description || ''} ${(usage.get(id) || []).map((reference) => reference.label).join(' ')}`)}
           data-kind={data.kind}
           data-location={data.url.startsWith('/uploads/') ? 'local' : 'external'}
         >
@@ -77,6 +90,14 @@ const resources = (await getCollection('resources')).sort((first, second) => {
             <a href={sitePath(`/resources/${id}/`)}>{copy.details_link}</a>
           </p>
           {data.description && <p>{data.description}</p>}
+          {usage.get(id)?.length > 0 && (
+            <p class="resource-usage">
+              <span>{settings.ui.resources.used_in}</span>
+              {usage.get(id).map((reference) => (
+                <a href={sitePath(reference.href)}>{reference.label}</a>
+              ))}
+            </p>
+          )}
           <div class="resource-meta">
             {kindLabels[data.kind]} · {data.url.startsWith('/uploads/') ? copy.saved_copy : copy.external_resource}
             {data.credit && ` · ${data.credit}`}
@@ -100,21 +121,51 @@ const resources = (await getCollection('resources')).sort((first, second) => {
   const count = document.querySelector<HTMLElement>('#resource-count');
   const empty = document.querySelector<HTMLElement>('#resource-empty');
   const filterBar = document.querySelector<HTMLElement>('.filter-bar');
+  const pagination = document.querySelector<HTMLElement>('#resource-pagination');
+  const previous = document.querySelector<HTMLButtonElement>('#resource-previous');
+  const next = document.querySelector<HTMLButtonElement>('#resource-next');
+  const pageStatus = document.querySelector<HTMLElement>('#resource-page-status');
+  const pageSize = Number(filterBar.dataset.pageSize);
+  let currentPage = 1;
+
   function filterResources() {
     const terms = normalise(query.value).split(/\s+/);
-    let visible = 0;
-    for (const entry of entries) {
-      entry.hidden = !(
+    const matches = entries.filter((entry) =>
         terms.every((term) => entry.dataset.search.includes(term)) &&
         (!kind.value || entry.dataset.kind === kind.value) &&
         (!location.value || entry.dataset.location === location.value)
-      );
-      if (!entry.hidden) visible++;
-    }
-    count.textContent = `${visible} ${visible === 1 ? filterBar.dataset.singular : filterBar.dataset.plural}`;
-    empty.hidden = visible !== 0;
+    );
+    const pageCount = Math.max(1, Math.ceil(matches.length / pageSize));
+    currentPage = Math.min(currentPage, pageCount);
+    const first = (currentPage - 1) * pageSize;
+    const visibleEntries = new Set(matches.slice(first, first + pageSize));
+    for (const entry of entries) entry.hidden = !visibleEntries.has(entry);
+    count.textContent = `${matches.length} ${matches.length === 1 ? filterBar.dataset.singular : filterBar.dataset.plural}`;
+    empty.hidden = matches.length !== 0;
+    pagination.hidden = pageCount <= 1;
+    previous.disabled = currentPage <= 1;
+    next.disabled = currentPage >= pageCount;
+    pageStatus.textContent = filterBar.dataset.pageStatus
+      .replace('{page}', String(currentPage))
+      .replace('{pages}', String(pageCount));
   }
-  query.addEventListener('input', filterResources);
-  kind.addEventListener('change', filterResources);
-  location.addEventListener('change', filterResources);
+  query.addEventListener('input', () => {
+    currentPage = 1;
+    filterResources();
+  });
+  const resetPageAndFilter = () => {
+    currentPage = 1;
+    filterResources();
+  };
+  kind.addEventListener('change', resetPageAndFilter);
+  location.addEventListener('change', resetPageAndFilter);
+  previous.addEventListener('click', () => {
+    currentPage -= 1;
+    filterResources();
+  });
+  next.addEventListener('click', () => {
+    currentPage += 1;
+    filterResources();
+  });
+  filterResources();
 </script>

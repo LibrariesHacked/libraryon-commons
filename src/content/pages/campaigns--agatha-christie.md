@@ -9,7 +9,7 @@ source_url: https://libraryon.org/campaigns/agatha-christie
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - british-library
+  - agatha-christie-exhibition-at-the-british-library
 ---
 
 # Agatha Christie

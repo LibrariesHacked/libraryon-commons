@@ -70,6 +70,31 @@ export function articleTitle(entry) {
     .trim();
 }
 
+/** Build a breadcrumb trail from published pages that are actual route ancestors. */
+export function breadcrumbsForPage(entry, pages = [], homeLabel = settings.ui.editorial.home_breadcrumb) {
+  const normalizePath = (value) => {
+    const segments = String(value || '').split('/').filter(Boolean);
+    return segments.length ? `/${segments.join('/')}` : '/';
+  };
+  const currentPath = normalizePath(entry.data.path);
+  if (currentPath === '/') return [];
+
+  const pagesByPath = new Map(pages.map((page) => [normalizePath(page.data.path), page]));
+  const segments = currentPath.split('/').filter(Boolean);
+  const ancestors = [];
+  for (let length = 1; length < segments.length; length += 1) {
+    const path = `/${segments.slice(0, length).join('/')}`;
+    const page = pagesByPath.get(path);
+    if (page) ancestors.push({ label: articleTitle(page), href: page.data.path });
+  }
+
+  return [
+    { label: homeLabel, href: '/' },
+    ...ancestors,
+    { label: articleTitle(entry), current: true }
+  ];
+}
+
 /** Read the first locally preserved image for article previews. */
 export function articleImage(entry) {
   if (entry.data.hero?.image) return { url: entry.data.hero.image, alt: entry.data.hero.alt };

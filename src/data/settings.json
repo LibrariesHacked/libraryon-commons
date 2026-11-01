@@ -151,7 +151,8 @@
       "original_source": "Original source",
       "compact_recording": "Recording",
       "compact_slides": "Slides",
-      "compact_resource": "Resource"
+      "compact_resource": "Resource",
+      "used_in": "Used in"
     },
     "sessions": {
       "speakers": "Speakers",
@@ -226,7 +227,29 @@
       "useful_link": "Useful link",
       "saved_copy": "Saved local copy",
       "external_resource": "External resource",
-      "no_matches": "No resources match these filters."
+      "no_matches": "No resources match these filters.",
+      "pagination_label": "Resource pages",
+      "previous_page": "Previous",
+      "next_page": "Next",
+      "pagination_status": "Page {page} of {pages}"
+    },
+    "sitemap": {
+      "title": "Site map",
+      "description": "Browse every published page, resource, question and library in the LibraryCommons collection.",
+      "eyebrow": "Browse the site",
+      "heading": "Site map",
+      "intro": "Explore the full site by topic, resource type, or library authority.",
+      "pages": "Pages",
+      "homepage": "Homepage",
+      "sessions": "Conference sessions",
+      "resources": "Resources and downloads",
+      "browse_resources": "Browse all resources",
+      "questions": "Questions and answers",
+      "browse_questions": "Browse all questions",
+      "contributors": "Contributors",
+      "directory": "Library directory",
+      "directory_search": "Search the library directory",
+      "authority_page": "Browse authority page"
     },
     "not_found": {
       "title": "Page not found",
@@ -261,6 +284,14 @@
         "url": "/resources/"
       },
       {
+        "label": "Site map",
+        "url": "/sitemap/"
+      },
+      {
+        "label": "Editing guide",
+        "url": "/editing-guide/"
+      },
+      {
         "label": "Press Play",
         "url": "/about/pressplay/"
       },
@@ -273,5 +304,118 @@
     "licence_label": "CC BY 4.0",
     "management_label": "Content management"
   },
-  "redirects": []
+  "redirects": [
+    {
+      "from": "/resources/application-portal-2/",
+      "to": "/resources/grants-round-one-application-portal/"
+    },
+    {
+      "from": "/resources/application-portal/",
+      "to": "/resources/grants-round-two-application-portal/"
+    },
+    {
+      "from": "/resources/bank-details-form-2/",
+      "to": "/resources/grants-round-two-bank-details-form/"
+    },
+    {
+      "from": "/resources/bank-details-form/",
+      "to": "/resources/grants-round-three-bank-details-form/"
+    },
+    {
+      "from": "/resources/british-library-2/",
+      "to": "/resources/british-library-homepage/"
+    },
+    {
+      "from": "/resources/british-library/",
+      "to": "/resources/agatha-christie-exhibition-at-the-british-library/"
+    },
+    {
+      "from": "/resources/dr-steve-ward-2/",
+      "to": "/resources/dr-steve-ward-author-website/"
+    },
+    {
+      "from": "/resources/dr-steve-ward/",
+      "to": "/resources/dr-steve-ward-circus-doctor-recommendations/"
+    },
+    {
+      "from": "/resources/frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection-2/",
+      "to": "/resources/massetts-place-frances-wolseleys-home-historic-england/"
+    },
+    {
+      "from": "/resources/frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection/",
+      "to": "/resources/brighton-and-hove-libraries-website/"
+    },
+    {
+      "from": "/resources/grants-guidance-2/",
+      "to": "/resources/grants-round-two-guidance-pdf/"
+    },
+    {
+      "from": "/resources/grants-guidance/",
+      "to": "/resources/grants-round-one-guidance-pdf/"
+    },
+    {
+      "from": "/resources/libby-2/",
+      "to": "/resources/libby-help-getting-started/"
+    },
+    {
+      "from": "/resources/libby/",
+      "to": "/resources/libby-app/"
+    },
+    {
+      "from": "/resources/wakefield-2/",
+      "to": "/resources/wakefield-central-library/"
+    },
+    {
+      "from": "/resources/wakefield/",
+      "to": "/resources/wakefield-libraries-and-local-history/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-5/",
+      "to": "/resources/contracting-digital-projects-for-libraries-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-8/",
+      "to": "/resources/digital-item-copyright-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-4/",
+      "to": "/resources/ai-in-public-libraries-literacy-and-ethics-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-9/",
+      "to": "/resources/tackling-abuse-online-practical-steps-for-libraries-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-6/",
+      "to": "/resources/how-to-get-the-best-out-of-your-special-collections-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-11/",
+      "to": "/resources/projects-101-building-partnerships-and-getting-funding-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-2/",
+      "to": "/resources/ai-for-public-libraries-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-12/",
+      "to": "/resources/library-data-visualised-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-10/",
+      "to": "/resources/why-digital-inclusion-matters-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording/",
+      "to": "/resources/social-media-surgery-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-7/",
+      "to": "/resources/telling-stories-with-data-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-3/",
+      "to": "/resources/accessible-websites-and-user-journeys-recording/"
+    }
+  ]
 }

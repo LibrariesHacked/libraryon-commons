@@ -25,7 +25,7 @@ resources:
   - sheffield
   - staffordshire
   - idea-stores-tower-hamlets
-  - wakefield-2
+  - wakefield-central-library
   - west-sussex
   - explore-york
   - business-and-ip-centre-bipc

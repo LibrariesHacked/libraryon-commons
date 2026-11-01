@@ -4,6 +4,10 @@
   gap: var(--size-9);
   justify-content: space-between;
 }
+.article-layout-no-aside {
+  grid-template-columns: minmax(0, 780px);
+  justify-content: center;
+}
 .article-layout
   figure:not(.video-embed):not(.testimonial-card):not(.testimonial-quote) {
   margin: 0 0 var(--size-7);
@@ -69,9 +73,5 @@
   }
   .article-aside nav a {
     font-size: var(--font-size-0);
-  }
-  .article-aside {
-    border-bottom: var(--border-size-1) solid var(--line);
-    padding-bottom: var(--size-5);
   }
 }

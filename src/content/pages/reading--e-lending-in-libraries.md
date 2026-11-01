@@ -12,7 +12,7 @@ attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
   - borrowbox
-  - libby-2
+  - libby-help-getting-started
   - pressreader
   - ulibrary
 faq_heading: Questions about e-lending at libraries

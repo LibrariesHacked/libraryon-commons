@@ -301,6 +301,15 @@ test("archive imports reuse readable filenames and preserve unrelated files", as
     "about-pressplay-library-data-in-practice",
   );
   assert.deepEqual(first.sessions[0].resources, ["library-guide-2"]);
+  assert.equal(
+    JSON.parse(
+      await readFile(
+        path.join(root, "src/content/resources/library-guide-2.json"),
+        "utf8",
+      ),
+    ).title,
+    "Library data in practice — Slides (PDF)",
+  );
   assert.deepEqual(
     await readFile(path.join(root, first.assets[0].file)),
     bytes,
@@ -431,6 +440,31 @@ test("sessions keep each card associated with its own slide and recording links"
   assert.equal(sessions[0].links.length, 2);
   assert.equal(sessions[1].links[0].url, "https://libraryon.org/two.pdf");
   assert.equal(sessions[0].theme, "Data sessions");
+  assert.deepEqual(
+    sessions[0].links.map((link) => link.label),
+    [
+      "View slides PDF: Library data in practice",
+      "Watch recording: Library data in practice",
+    ],
+  );
+});
+
+test("conference link labels gain session context during Markdown migration", () => {
+  const html =
+    '<h2>Engagement</h2><article><h3>Library data in practice</h3><p>Useful methods from the speakers.</p><a href="/one.pdf">View slides PDF</a><a href="https://youtu.be/one">View recording</a></article>';
+  const body = cleanContent(html, "https://libraryon.org/about/pressplay");
+  assert.ok(body.includes("View slides PDF: Library data in practice"));
+  assert.ok(body.includes("Watch recording: Library data in practice"));
+});
+
+test("recording links on editorial pages use their nearest section heading", () => {
+  const html =
+    '<h2>Previous sessions</h2><h3>Contracting Digital Projects for Libraries</h3><p><a href="https://youtu.be/example">Watch the recording</a></p><h3>Digital item copyright</h3><p><a href="https://youtu.be/example-two">Watch the recording</a></p>';
+  const body = cleanContent(html, "https://libraryon.org/grants");
+  assert.ok(
+    body.includes("Watch recording: Contracting Digital Projects for Libraries"),
+  );
+  assert.ok(body.includes("Watch recording: Digital item copyright"));
 });
 
 test("paragraph-based conference sessions do not merge at the theme container", () => {

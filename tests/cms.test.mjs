@@ -208,6 +208,7 @@ test("filename migration preserves bytes, updates relations, protects edits and 
   const writeJSON = (file, value) =>
     writeFileSync(path.join(root, file), JSON.stringify(value));
   writeJSON("src/data/homepage.json", {});
+  writeJSON("src/data/settings.json", { redirects: [] });
   writeJSON("migration/import-report.json", {
     assets: [
       {
@@ -271,8 +272,8 @@ test("CMS form controls are registered before initialization and keep Markdown a
   registerEditorComponents({
     registerEditorComponent: (component) => registered.push(component.id),
   });
-  assert.equal(registered.length, 11);
-  assert.equal(new Set(registered).size, 11);
+  assert.equal(registered.length, 13);
+  assert.equal(new Set(registered).size, 13);
   const body = config.collections
     .find((collection) => collection.name === "pages")
     .fields.find((field) => field.name === "body");
@@ -688,6 +689,47 @@ test("CMS records have unique public paths, valid relations and existing local f
     );
     for (const resource of record.data.resources || [])
       assert.ok(resources.has(resource), `${id}: missing ${resource}`);
+  }
+});
+
+test("resource links use descriptive labels across editable content and CMS records", () => {
+  const pages = contentRecords("src/content/pages", ".md");
+  const resources = contentRecords("src/content/resources", ".json");
+  const sessions = contentRecords("src/content/sessions", ".json");
+  const page = pages.get("about--pressplay");
+
+  assert.ok(page);
+  for (const folder of ["pages", "faqs"]) {
+    for (const file of readdirSync(`src/content/${folder}`).filter((name) =>
+      name.endsWith(".md"),
+    )) {
+      const source = readFileSync(`src/content/${folder}/${file}`, "utf8");
+      assert.doesNotMatch(
+        source,
+        /\[(?:\*\*)?(?:View slides PDF|View recording)(?:\*\*)?\]\(/i,
+        `${folder}/${file}: use a descriptive resource link name`,
+      );
+    }
+  }
+  for (const [id, resource] of resources) {
+    assert.doesNotMatch(
+      resource.data.title,
+      /(?:^|:\s*)View (?:slides PDF|recording)$/i,
+      `${id}: resource title is generic`,
+    );
+  }
+
+  const conferenceSessions = [...sessions.values()].filter(
+    (session) => session.data.conference === "about--pressplay",
+  );
+  assert.ok(conferenceSessions.length > 0);
+  for (const session of conferenceSessions) {
+    for (const id of session.data.resources) {
+      const resource = resources.get(id);
+      assert.ok(resource, `${session.id}: missing ${id}`);
+      assert.ok(resource.data.title.includes(session.data.title), `${id}: missing session title`);
+      assert.match(resource.data.title, /— (?:Slides \(PDF\)|Recording)$/);
+    }
   }
 });
 

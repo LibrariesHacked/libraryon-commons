@@ -65,7 +65,7 @@ Library photo collections are increasingly being digitised, but you can also spe
 
 **Here we'll look at how three different library authorities have preserved photos that help tell stories about their communities.**
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A black & white photo of a young boy in shorts reclining in a buggy.](/uploads/archive/a-black-and-white-photo-of-a-young-boy-in-shorts-reclining-in-a-buggy.jpg)
 
@@ -217,7 +217,7 @@ Where local people may have seen little worth photographing, as an immigrant—s
 
 His shots document shopping locations, markets, the shipyards of the region and more. Taken together, they offer a comprehensive snapshot of a specific time in the city’s history.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A black & white photo of two ladies smiling outside a shop.](/uploads/archive/a-black-and-white-photo-of-two-ladies-smiling-outside-a-shop.jpg)
 
@@ -261,7 +261,7 @@ However, by [uploading Torday’s photos to Flickr](https://www.flickr.com/photo
 
 **Do you recognise any of people or places in Torday’s photos?** You can comment on them in [Newcastle's Flickr album](https://www.flickr.com/photos/newcastlelibraries/albums/72157632024528422/).
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A screenshot of a thumbnail image from Flickr. The thumbnail is from the Newcastle Libraries album called 'Torday's Newcastle', and we can see the album contains 999 images and has been viewed 100,975 times.](/uploads/archive/a-screenshot-of-a-thumbnail-image-from-flickr.jpg)
 
@@ -279,7 +279,7 @@ His collection of thousands of local photos was bequeathed to the Archives and L
 
 **Middleton Library**, in [Rochdale](https://www.rochdale.gov.uk/libraries), used Kaye's photos in a particularly innovative way. Staff created [a walking route and map](https://middletonphotographicwalkingtrail.weebly.com/photographic-walk.html), with Kaye’s photos, alongside those of others, used along the route to enable comparison between past and present.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![A black and white shot of photographer Lawrence Kaye standing in front of a full-length mirror, photographing himself. He is wearing a trenchcoat and hat.](/uploads/archive/a-black-and-white-shot-of-photographer-lawrence-kaye-standing.jpg)
 

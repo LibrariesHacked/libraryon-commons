@@ -15,6 +15,7 @@ import {
   canonicalInternalPath,
   isOriginalContent,
   isPublishedPage,
+  breadcrumbsForPage,
   sitePath,
   mediaURL
 } from '../src/lib/site.mjs';
@@ -46,6 +47,14 @@ test('carousel and filter mechanics use maintained engines and native browser pr
   assert.ok(!directory.includes('const togglePanel'));
   assert.ok(!directory.includes("document.addEventListener('mousedown'"));
   assert.ok(!directory.includes("document.addEventListener('keydown'"));
+});
+
+test('editorial layouts omit source notes and sidebars when they have no content', () => {
+  const layout = readFileSync(new URL('../src/layouts/EditorialLayout.astro', import.meta.url), 'utf8');
+  assert.ok(layout.includes('const hasSourceNote = Boolean(entry.data.attribution || originalSource || entry.data.updated_on);'));
+  assert.ok(layout.includes("const hasAside = headings.length > 0 || neighbours.length > 0 || Astro.slots.has('aside');"));
+  assert.ok(layout.includes('{hasSourceNote && ('));
+  assert.ok(layout.includes('{hasAside && ('));
 });
 
 test('Markdown list markers normalize without changing nested structure or code', () => {
@@ -103,6 +112,105 @@ test('named Markdown blocks render explicit components and ordinary content stay
   await assert.rejects(processor.render(':::card{href="javascript:alert(1)"}\n\nText\n\n:::'), /links must use/);
 });
 
+test('hotspot galleries expose a show-hide toggle and one initially selected marker', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    smartypants: false,
+  });
+  const source = `:::::collection-carousel{kind="hotspots" label="Historic poster"}
+
+::::collection-aside{title="About this gallery"}
+
+The collection is held by the local library.
+
+::::
+
+::::slide
+
+![A poster](/poster.jpg)
+
+:::hotspot{title="Headline" x="35" y="42"}
+
+The poster headline.
+
+:::
+
+::::
+
+::::slide
+
+![A second poster](/poster-two.jpg)
+
+:::hotspot{title="Date" x="65" y="58"}
+
+Printed in 1908.
+
+:::
+
+::::
+
+:::::`;
+  const document = load((await processor.render(source)).code);
+
+  assert.equal(document('.collection-hotspot-toggle input[type="checkbox"]').length, 1);
+  assert.equal(document('.collection-hotspot-toggle input[checked]').length, 1);
+  assert.equal(document('.collection-hotspot-marker[aria-pressed="true"]').length, 2);
+  assert.equal(document('.collection-hotspot-note:not([hidden])').length, 2);
+    assert.equal(document('.collection-hotspot-intro').length, 2);
+  assert.equal(document('.collection-hotspot-intro h3').first().text(), 'About this gallery');
+  assert.equal(document('.collection-hotspot-intro p').first().text(), 'The collection is held by the local library.');
+});
+
+test('collection images can wrap text and editorial asides render semantically', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    smartypants: false,
+  });
+  const source = ':::collection-image{layout="float-right"}\n\n![A small photograph](/small.jpg)\n\n:::\n\nText beside the photograph.\n\n::::collection-aside{title="At a glance" layout="float-left"}\n\n- **When:** 6 January\n- **Officials:** The Lord and Boggins\n\n::::';
+  const document = load((await processor.render(source)).code);
+
+  assert.equal(document('figure.collection-image--float-right img').length, 1);
+  assert.equal(document('.collection-aside--float-left[aria-label="At a glance"] h3').text(), 'At a glance');
+  assert.equal(document('.collection-aside li').length, 2);
+  assert.equal(document('.collection-aside').prev().text().trim(), 'Text beside the photograph.');
+});
+
+test('book recommendations select the matching inline cover and description', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    smartypants: false,
+  });
+  const source = `:::::collection-recommendations{title="Five books about circus"}
+
+::::recommendation-item{title="Ring history" author="A. Author" year="1900"}
+
+![First book cover](/uploads/first.jpg)
+
+First description.
+
+::::
+
+::::recommendation-item{title="Circus images" author="B. Writer" year="1910"}
+
+![Second book cover](/uploads/second.jpg)
+
+Second description.
+
+::::
+
+:::::`;
+  const document = load((await processor.render(source)).code);
+
+  assert.equal(document('.collection-recommendations-heading').text(), 'Five books about circus');
+  assert.equal(document('.collection-recommendation-select').length, 2);
+  assert.equal(document('.collection-recommendation-select[aria-pressed="true"]').text().includes('Ring history'), true);
+  assert.equal(document('.collection-recommendation-select[aria-expanded="true"]').length, 1);
+  assert.equal(document('.collection-recommendation-cover:not([hidden]) img').attr('alt'), 'First book cover');
+  assert.equal(document('.collection-recommendation-description:not([hidden])').text().trim(), 'First description.');
+  assert.equal(document('.collection-recommendations-list li').first().find('.collection-recommendation-description').length, 1);
+  assert.equal(document('.collection-recommendation-cover[hidden] img').attr('alt'), 'Second book cover');
+});
+
 test('master image resolution preserves suffixes and leaves unrelated URLs alone', () => {
   const aliases = { '/uploads/small.jpg': { url: '/uploads/original.jpg' } };
   assert.equal(mediaURL('/uploads/small.jpg?download=1#detail', aliases), '/uploads/original.jpg?download=1#detail');
@@ -133,6 +241,35 @@ test('content modules use explicit positions once, or follow the page body by de
   ]);
   assert.deepEqual(splitContentModules('<p>Body</p>').map((block) => block.type), ['html', 'faqs', 'resources']);
   assert.ok(splitContentModules('<pre><code>{{faqs}}</code></pre><p>A {{resources}} example</p>')[0].html.includes('<code>{{faqs}}</code>'));
+});
+
+test('opening article images fill the content width without promoting logos or section images', () => {
+  const leading = splitContentModules(
+    '<h1>About</h1><p>Introduction.</p><p><img src="/lead.jpg" alt="A library scene"></p><h2>More</h2><p><img src="/detail.jpg" alt="Detail"></p>',
+    { leadImage: true },
+  );
+  const leadingDocument = load(leading.filter((block) => block.type === 'html').map((block) => block.html).join(''));
+  assert.equal(leadingDocument('p.article-lead-image img').attr('src'), '/lead.jpg');
+  assert.equal(leadingDocument('p.article-lead-image').length, 1);
+
+  const logo = splitContentModules(
+    '<h1>Digital loans</h1><p><img src="/borrowbox.jpg" alt="BorrowBox logo"></p><h2>More</h2>',
+    { leadImage: true },
+  );
+  assert.equal(load(logo[0].html)('p.article-lead-image').length, 0);
+
+  const collection = splitContentModules(
+    '<h1>Collection</h1><p><img src="/collection.jpg" alt="Archival photo"></p>',
+  );
+  assert.equal(load(collection[0].html)('p.article-lead-image').length, 0);
+});
+
+test('the opening circus collage uses the full content width', () => {
+  const markdown = readFileSync(
+    new URL('../src/content/pages/special-collections--early-days-of-circus.md', import.meta.url),
+    'utf8',
+  );
+  assert.match(markdown, /^:::collection-image\{layout="full" zoom="true"\}/m);
 });
 
 test('FAQ references retain their introduction and anchor without inline answers', () => {
@@ -262,6 +399,44 @@ test('content provenance distinguishes LibraryOn source pages from new Commons p
     }),
     false
   );
+});
+
+test('breadcrumbs link to real page ancestors and identify the current page', () => {
+  const collectionIndex = {
+    id: 'special-collections',
+    data: { path: '/special-collections', title: 'Special collections' },
+    body: '# Special collections'
+  };
+  const collection = {
+    id: 'curious-competitions',
+    data: { path: '/special-collections/curious-competitions', title: 'Old SEO title' },
+    body: "# Curious competitions: England's eccentric heritage games"
+  };
+  const about = {
+    id: 'about',
+    data: { path: '/about', title: 'About LibraryCommons' },
+    body: '# About LibraryCommons'
+  };
+  const pressPlay = {
+    id: 'pressplay',
+    data: { path: '/about/pressplay', title: 'Press Play Conference' },
+    body: '# Press Play Conference'
+  };
+
+  assert.deepEqual(breadcrumbsForPage(collection, [collectionIndex, collection]), [
+    { label: 'Home', href: '/' },
+    { label: 'Special collections', href: '/special-collections' },
+    { label: "Curious competitions: England's eccentric heritage games", current: true }
+  ]);
+  assert.deepEqual(breadcrumbsForPage(pressPlay, [about, pressPlay]), [
+    { label: 'Home', href: '/' },
+    { label: 'About LibraryCommons', href: '/about' },
+    { label: 'Press Play Conference', current: true }
+  ]);
+  assert.deepEqual(breadcrumbsForPage(collection, []), [
+    { label: 'Home', href: '/' },
+    { label: "Curious competitions: England's eccentric heritage games", current: true }
+  ]);
 });
 
 test('pages remain public by default and can be kept in the CMS without publishing', () => {
@@ -462,51 +637,65 @@ test('special collection galleries, notes and book entries stay in the article M
       file: 'special-collections--frances-wolseley-gardening-educator.md',
       imageCarousels: 2,
       imageSlides: 9,
+      imageCarouselZooms: 2,
       quoteSlides: 6,
       hotspotSlides: 5,
       markers: 18,
       accordionItems: 7,
       zoomButtons: 12,
+      imageRows: 5,
     },
     {
       file: 'special-collections--curious-competitions.md',
       imageCarousels: 1,
       imageSlides: 4,
+      imageCarouselZooms: 4,
       quoteSlides: 4,
       hotspotSlides: 8,
       markers: 19,
       accordionItems: 3,
-      zoomButtons: 8,
+      zoomButtons: 11,
+      asides: 3,
+      imageRows: 4,
     },
     {
       file: 'special-collections--early-days-of-circus.md',
-      imageCarousels: 0,
-      imageSlides: 0,
+      imageCarousels: 1,
+      imageSlides: 3,
+      imageCarouselZooms: 2,
       quoteSlides: 3,
       hotspotSlides: 5,
       markers: 27,
-      accordionItems: 4,
+      accordionItems: 0,
       zoomButtons: 9,
+      imageRows: 7,
+      recommendationSections: 1,
+      recommendationItems: 4,
+      recommendationCovers: 4,
     },
     {
       file: 'special-collections--lacemaking-in-nottingham.md',
       imageCarousels: 1,
       imageSlides: 5,
+      imageCarouselZooms: 5,
       quoteSlides: 4,
       hotspotSlides: 0,
       markers: 0,
       accordionItems: 3,
       zoomButtons: 22,
+      imageRows: 14,
     },
     {
       file: 'special-collections--library-photo-collections.md',
       imageCarousels: 1,
       imageSlides: 4,
+      imageCarouselZooms: 4,
       quoteSlides: 0,
       hotspotSlides: 3,
       markers: 13,
       accordionItems: 4,
       zoomButtons: 10,
+      imageRows: 4,
     },
   ];
 
@@ -518,12 +707,19 @@ test('special collection galleries, notes and book entries stay in the article M
     const document = load((await processor.render(source)).code);
     assert.equal(document('.collection-carousel--images').length, page.imageCarousels, page.file);
     assert.equal(document('.collection-carousel--images .collection-carousel-slide').length, page.imageSlides, page.file);
+    assert.equal(document('.collection-carousel--images .collection-image-zoom').length, page.imageCarouselZooms, page.file);
     assert.equal(document('.collection-carousel--quotes .collection-carousel-slide').length, page.quoteSlides, page.file);
     assert.equal(document('.collection-carousel--hotspots .collection-carousel-slide').length, page.hotspotSlides, page.file);
     assert.equal(document('.collection-hotspot-marker').length, page.markers, page.file);
     assert.equal(document('.collection-hotspot-note').length, page.markers, page.file);
     assert.equal(document('.collection-accordion > .collection-accordion-item').length, page.accordionItems, page.file);
     assert.equal(document('.collection-image-zoom').length, page.zoomButtons, page.file);
+    assert.equal(document('.collection-aside').length, page.asides || 0, page.file);
+    assert.equal(document('.collection-image-row').length, page.imageRows, page.file);
+    assert.equal(document('.collection-image-row .collection-image-copy').length, page.imageRows, page.file);
+    assert.equal(document('.collection-recommendations').length, page.recommendationSections || 0, page.file);
+    assert.equal(document('.collection-recommendation-select').length, page.recommendationItems || 0, page.file);
+    assert.equal(document('.collection-recommendation-cover img').length, page.recommendationCovers || 0, page.file);
     assert.ok(
       [...document('img').toArray()].every((image) => image.attribs.src.startsWith('/uploads/')),
       page.file,

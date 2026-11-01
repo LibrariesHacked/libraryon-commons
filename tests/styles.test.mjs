@@ -16,6 +16,7 @@ const modules = [
   'pages/editorial.css',
   'pages/directory.css',
   'pages/resources.css',
+  'pages/sitemap.css',
 ];
 
 test('stylesheet entry imports foundations, shared components and page rules in order', () => {
@@ -136,6 +137,49 @@ test('site styles use shared tokens instead of local color values', () => {
         ),
       );
   }
+});
+
+test('editorial section headings and source notes use tinted surfaces instead of grey dividers', () => {
+  const base = postcss.parse(read('foundations/base.css'));
+  const sectionHeading = base.nodes.find(
+    (node) => node.type === 'rule' && node.selector === '.prose > h2',
+  );
+  const headingValues = new Map(
+    sectionHeading.nodes
+      .filter((node) => node.type === 'decl')
+      .map((node) => [node.prop, node.value]),
+  );
+  assert.equal(headingValues.get('background'), 'var(--surface-tint-rose-pale)');
+  assert.equal(headingValues.get('border-left'), '4px solid var(--brand-rose)');
+
+  const content = postcss.parse(read('components/content.css'));
+  const sourceNote = content.nodes.find(
+    (node) => node.type === 'rule' && node.selector === '.source-note',
+  );
+  const noteValues = new Map(
+    sourceNote.nodes
+      .filter((node) => node.type === 'decl')
+      .map((node) => [node.prop, node.value]),
+  );
+  assert.equal(noteValues.get('background'), 'var(--surface-tint-green)');
+  assert.equal(noteValues.has('border-top'), false);
+});
+
+test('hotspot frames shrink-wrap images so percentage markers align with the artwork', () => {
+  const content = postcss.parse(read('components/content.css'));
+  const frame = content.nodes.find(
+    (node) => node.type === 'rule' && node.selector === '.collection-hotspot-image',
+  );
+  const image = content.nodes.find(
+    (node) => node.type === 'rule' && node.selector === '.collection-hotspot-image img',
+  );
+  const value = (rule, property) =>
+    rule.nodes.find((node) => node.type === 'decl' && node.prop === property)?.value;
+
+  assert.equal(value(frame, 'width'), 'fit-content');
+  assert.equal(value(frame, 'max-width'), '100%');
+  assert.equal(value(image, 'width'), 'auto');
+  assert.equal(value(image, 'max-height'), '68vh');
 });
 
   test('grey line tokens are not used as filled backgrounds', () => {

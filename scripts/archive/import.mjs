@@ -132,6 +132,60 @@ export function resourceKind(url, label = "") {
   return "link";
 }
 
+function sessionTitleForLink(document, link) {
+  for (const ancestor of link.parents().toArray()) {
+    for (const sibling of document(ancestor).prevAll().toArray()) {
+      const current = document(sibling);
+      const heading = current.is("h3,h4")
+        ? current
+        : current.find("h3,h4").last();
+      if (heading.length) return squash(heading.text());
+    }
+  }
+  const articleTitle = link.closest("article").find("h2,h3,h4").first();
+  if (articleTitle.length) return squash(articleTitle.text());
+  const titleParagraph = link
+    .closest("p")
+    .prevAll("p")
+    .filter((_, paragraph) => document(paragraph).find("strong").length > 0)
+    .first();
+  return titleParagraph.length
+    ? squash(document(titleParagraph).find("strong").first().text())
+    : "";
+}
+
+function descriptiveSessionLink(label, title) {
+  const normalized = squash(label);
+  if (!title) return normalized;
+  if (/^(?:view slides pdf|watch recording):/i.test(normalized))
+    return normalized;
+  if (/^view slides pdf$/i.test(normalized))
+    return `View slides PDF: ${title}`;
+  if (/^(?:view recording|watch(?: the)? recording)$/i.test(normalized))
+    return `Watch recording: ${title}`;
+  return normalized;
+}
+
+function descriptiveResourceTitle(label, pageTitle) {
+  const normalized = squash(label);
+  const contextual = /^(?:view slides pdf|watch recording):\s*(.+)$/i.exec(
+    normalized,
+  );
+  if (contextual) {
+    const format = /^view slides pdf/i.test(normalized)
+      ? "Slides (PDF)"
+      : "Recording";
+    return `${contextual[1]} — ${format}`;
+  }
+  if (/^view slides pdf$/i.test(normalized))
+    return `${pageTitle} — Slides (PDF)`;
+  if (/^view recording$/i.test(normalized))
+    return `${pageTitle} — Recording`;
+  if (/^(?:view|watch|slides|recording|download)\b/i.test(normalized))
+    return `${pageTitle} — ${normalized}`;
+  return normalized || pageTitle;
+}
+
 /**
  * Group conference links by a preceding title paragraph or descriptive card.
  * Paragraph-based source layouts must not merge all sessions within a theme.
@@ -149,7 +203,7 @@ export function extractSessions(html, base) {
       theme = squash(node.text());
       return;
     }
-    if (!/view slides|view recording/i.test(node.text())) return;
+    if (!/(?:view|watch) (?:slides|recording)/i.test(node.text())) return;
     const titleParagraph = node
       .closest("p")
       .prevAll("p")
@@ -185,9 +239,10 @@ export function extractSessions(html, base) {
         links: [],
       });
     }
-    sessions.get(key).links.push({
+    const session = sessions.get(key);
+    session.links.push({
       url: absoluteURL(node.attr("href"), base),
-      label: squash(node.text()),
+      label: descriptiveSessionLink(node.text(), session.title),
     });
   });
   return [...sessions.values()];
@@ -288,6 +343,15 @@ export function cleanContent(html, base, resolve = (value) => value) {
     )
       return;
     node.remove();
+  });
+  document("a[href]").each((index, element) => {
+    const node = document(element);
+    const label = squash(node.text());
+    const contextual = descriptiveSessionLink(
+      label,
+      sessionTitleForLink(document, node),
+    );
+    if (contextual !== label) node.text(contextual);
   });
   document("img").each((index, element) => {
     const node = document(element);
@@ -696,9 +760,7 @@ export async function importArchive({
     if (!/^https?:$/.test(parsed.protocol)) return null;
     const local = localise(url);
     if (parsed.origin === origin && !local.startsWith("/uploads/")) return null;
-    const title = /^(view |watch |slides|recording|download)/i.test(label)
-      ? `${pageTitle}: ${label}`
-      : label || pageTitle;
+    const title = descriptiveResourceTitle(label, pageTitle);
     const filename = readablePath(
       `src/content/resources/resource-${digest(url).slice(0, 20)}.json`,
       title,
@@ -714,6 +776,8 @@ export async function importArchive({
         credit: "",
         licence: "",
       });
+    } else if (/^(?:view slides pdf|watch recording):/i.test(squash(label))) {
+      resources.get(key).title = title;
     }
     return key;
   };
@@ -778,7 +842,11 @@ export async function importArchive({
       const node = document(element);
       const target = absoluteURL(node.attr("href"), url);
       if (!/^https?:/.test(target)) continue;
-      const reference = resource(target, squash(node.text()), title);
+      const label = descriptiveSessionLink(
+        squash(node.text()),
+        sessionTitleForLink(document, node),
+      );
+      const reference = resource(target, label, title);
       if (reference) related.add(reference);
     }
     const metadata = {

@@ -1,22 +1,20 @@
 ---
 import SiteLayout from './SiteLayout.astro';
-import { ChevronRight } from '@lucide/astro';
-import { settings, sitePath } from '../lib/site.mjs';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { settings } from '../lib/site.mjs';
 const { title, description, subtitle, authority, tags = [] } = Astro.props;
+const breadcrumbs = [
+  { label: settings.ui.editorial.home_breadcrumb, href: '/' },
+  { label: settings.ui.directory.breadcrumb, href: '/libraries/' },
+  ...(authority ? [{ label: authority.name, href: `/libraries/${authority.slug}/` }] : []),
+  { label: title, current: true }
+];
 ---
 
 <SiteLayout title={title} description={description}>
   <header class="page-heading">
     <div class="shell">
-      <nav class="breadcrumbs" aria-label={settings.ui.editorial.breadcrumb_aria_label}>
-        <a href={sitePath('/libraries/')}>{settings.ui.directory.breadcrumb}</a>
-        {authority && (
-          <>
-            <ChevronRight size={13} aria-hidden="true" />
-            <a href={sitePath(`/libraries/${authority.slug}/`)}>{authority.name}</a>
-          </>
-        )}
-      </nav>
+      <Breadcrumbs items={breadcrumbs} />
       <h1>{title}</h1>
       {subtitle && <p>{subtitle}</p>}
       {tags.length > 0 && (

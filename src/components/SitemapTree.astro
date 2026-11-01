@@ -1,0 +1,16 @@
+---
+import SitemapTree from './SitemapTree.astro';
+import { sitePath } from '../lib/site.mjs';
+const { nodes = [] } = Astro.props;
+---
+
+{nodes.length > 0 && (
+  <ul class="sitemap-tree">
+    {nodes.map((node) => (
+      <li>
+        {node.href ? <a href={sitePath(node.href)}>{node.label}</a> : <span>{node.label}</span>}
+        <SitemapTree nodes={node.children} />
+      </li>
+    ))}
+  </ul>
+)}

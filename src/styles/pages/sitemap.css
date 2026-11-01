@@ -1,0 +1,42 @@
+.sitemap {
+  display: grid;
+  gap: var(--size-7);
+}
+.sitemap section > h2 {
+  margin: 0 0 var(--size-3);
+  font-size: 1.3rem;
+}
+.sitemap h2 span,
+.sitemap summary span {
+  color: var(--muted);
+  font-size: var(--font-size-0);
+  font-weight: var(--font-weight-4);
+}
+.sitemap ul {
+  margin-block: var(--size-2);
+  padding-inline-start: var(--size-5);
+}
+.sitemap-tree {
+  list-style: none;
+  padding-inline-start: 0 !important;
+}
+.sitemap-tree .sitemap-tree {
+  padding-inline-start: var(--size-5) !important;
+}
+.sitemap-authorities {
+  columns: 2 24rem;
+  column-gap: var(--size-8);
+}
+.sitemap-authorities > li {
+  break-inside: avoid;
+  margin-block: 0.6rem;
+}
+.sitemap details > summary {
+  cursor: pointer;
+  font-weight: var(--font-weight-5);
+}
+@media (max-width: 760px) {
+  .sitemap-authorities {
+    columns: 1;
+  }
+}

@@ -36,18 +36,19 @@ resources:
 
 :::
 
-**Long before VAR, mega sponsorship deals and esports, England's towns and villages spent centuries playing their own local games.**
-
-Part pageant, part battle, part ritual, part drinking contest — and always an excuse for people to get together and have a laugh.
-
-These traditions are stitched from scraps of folklore, full of disputed origin stories and old family feuds. To this day they still bring out huge displays of local pride and community spirit.
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="float-right" zoom="true"}
 
 ![Crowd of people in a mass scrum, wrestling over an unseen ball](/uploads/archive/crowd-of-people-in-a-mass-scrum-wrestling-over-an-unseen-ball.jpg)
 
 Close-up of the Atherstone Ball Game. Taken circa 1990. Source: Warwickshire Libraries.
 
 :::
+
+**Long before VAR, mega sponsorship deals and esports, England's towns and villages spent centuries playing their own local games.**
+
+Part pageant, part battle, part ritual, part drinking contest — and always an excuse for people to get together and have a laugh.
+
+These traditions are stitched from scraps of folklore, full of disputed origin stories and old family feuds. To this day they still bring out huge displays of local pride and community spirit.
 
 :::collection-image{layout="inset" zoom="true"}
 
@@ -58,6 +59,22 @@ Sign commemorating the Haxey Hood, outside St Nicholas' Parish Church. Photo: Li
 :::
 
 ## The Haxey Hood
+
+::::collection-aside{title="The Haxey Hood at a glance" layout="float-right"}
+
+📍 **Location:** Haxey, North Lincolnshire
+
+📜 **Origins:** 1350s (or earlier?)
+
+📅 **When:** Annually on 6 January, unless it falls on a Sunday
+
+👑 **Officials:** Lord of the Hood, 12 Boggins (including a Chief Boggin) and the Fool
+
+🎯 **Aim:** To force the Hood (a two-foot leather tube) across the threshold of one of four local pubs
+
+⚖️ **Rules:** No running, no kicking, no throwing. Play must stop whenever anyone in the Sway falls over. The game continues indefinitely until the Hood crosses a pub's threshold
+
+::::
 
 _**House against house,**_
 
@@ -83,19 +100,13 @@ After **two or more hours** of play, slowly trampling anything in its path, the 
 
 The **winning pub** gets to hang the Hood above the bar until the next year’s game. They usually give everyone a free round of drinks too!
 
-📍 **Location:** Haxey, North Lincolnshire
-
-📜 **Origins:** 1350s (or earlier?)
-
-📅 **When:** Annually on 6 January, unless it falls on a Sunday
-
-👑 **Officials:** Lord of the Hood, 12 Boggins (including a Chief Boggin) and the Fool
-
-🎯 **Aim:** To force the Hood (a two-foot leather tube) across the threshold of one of four local pubs
-
-⚖️ **Rules:** No running, no kicking, no throwing. Play must stop whenever anyone in the Sway falls over. The game continues indefinitely until the Hood crosses a pub's threshold
-
 :::::collection-carousel{kind="hotspots" label="Haxey Hood gallery"}
+
+::::collection-aside{title="The 2025 Haxey Hood"}
+
+Members of the LibraryOn team attended the Haxey Hood in 2025, hosted by North Lincolnshire Libraries. It was the 666th instalment of the competition, and The Loco won that year. The notes alongside the images explain the Hood's officials, objects and rituals.
+
+::::
 
 ::::slide
 
@@ -203,6 +214,14 @@ The Lord's willow wand, the red costumes and feathered hats, the 13 'Boggins', t
 
 ### Smoking the Fool
 
+:::collection-image{layout="float-right" zoom="true"}
+
+![A man in harlequin jacket, white trousers and tricorn hat surrounded with smoke, standing on a stone.](/uploads/archive/a-man-in-harlequin-jacket-white-trousers-and-tricorn-hat-2.jpg)
+
+The Fool, standing on the Mowbray Stone during his 'Smoking'. Photo: LibraryOn.
+
+:::
+
 The game is overseen by 12 attendants in red outfits known as **Boggins**. They are led by the **Lord of the Hood** and the ceremonial 13th Boggin — the **Fool**.
 
 After touring the local pubs, singing folk songs and spreading cheer, the Boggins gather everyone outside St Nicholas' Church for the ritual of **Smoking the Fool**.
@@ -215,21 +234,13 @@ The Fool then gives **a speech**, joking about the year's events, running throug
 
 The poem's origins are **ancient and unknown**. Some believe the final line was added later to discourage violent play.
 
-:::collection-image{layout="inset" zoom="true"}
-
-![A man in harlequin jacket, white trousers and tricorn hat surrounded with smoke, standing on a stone.](/uploads/archive/a-man-in-harlequin-jacket-white-trousers-and-tricorn-hat-2.jpg)
-
-The Fool, standing on the Mowbray Stone during his 'Smoking'. Photo: LibraryOn.
-
-:::
-
 ### Learning more in the library
 
 **Tim Davies** from North Lincolnshire Libraries explains how the local studies section at [**Scunthorpe Central Library**](/libraries/north-lincolnshire/scunthorpe-central) helps people learn more about the Hood and its history.
 
 ::video{src="https://www.youtube.com/embed/Rqhy807OO30" title="Video: Recommendations"}
 
-::::collection-accordion{label="Learning more in the library"}
+::::collection-accordion{label="Useful local studies resources"}
 
 :::accordion-item{title="Specialist books"}
 
@@ -261,6 +272,22 @@ Headshots of Wyndham 'Taffy' Thomas, five-time gurning world champion. Taken by 
 
 ## Egremont Crab Fair
 
+::::collection-aside{title="Egremont Crab Fair at a glance" layout="float-right"}
+
+📍 **Location:** Egremont, Cumbria
+
+📜 **Origins:** First chartered in 1267 by King Henry III
+
+📅 **When:** Third Saturday in September
+
+🏆 **Main event:** World Gurning Championship
+
+🎯 **Aim:** To pull the ugliest — and funniest — face
+
+🦀 **Other games:** Competitive pipe-smoking, greasy pole climbing, Cumberland wrestling
+
+::::
+
 The Egremont Crab Fair in Cumbria was first chartered in **1267** by Henry III as a market and harvest celebration.
 
 It gave the Lord of the Manor a chance to thank local serfs for farming his land.
@@ -276,18 +303,6 @@ But this story might be anachronistic. A 1775 account of the fair makes no menti
 Past attractions included the cruel sports of bull baiting, cock fighting and **"catching a pig with a soapy tail"** (_Memories of Egremont Crab Fair_, R. Norman Roberts). These were banned in 1835.
 
 Today's fair includes competitive pipe-smoking, Cumberland wrestling, greasy pole climbing, street racing, horse-jumping and the famous **World Gurning Championship**.
-
-📍 **Location:** Egremont, Cumbria
-
-📜 **Origins:** First chartered in 1267 by King Henry III
-
-📅 **When:** Third Saturday in September
-
-🏆 **Main event:** World Gurning Championship
-
-🎯 **Aim:** To pull the ugliest — and funniest — face
-
-🦀 **Other games:** Competitive pipe-smoking, greasy pole climbing, Cumberland wrestling
 
 :::::collection-carousel{kind="hotspots" label="Egremont Crab Fair programmes"}
 
@@ -389,6 +404,14 @@ Explore the notes beneath each programme above to trace the Crab Fair's evolutio
 
 ### Gurning for glory
 
+:::collection-image{layout="float-right" zoom="true"}
+
+![Sepia photo of man making an ugly, funny face](/uploads/archive/sepia-photo-of-man-making-an-ugly-funny-face.jpg)
+
+Headshot of Wyndham 'Taffy' Thomas, 1965. Source: Whitehaven Archives.
+
+:::
+
 Egremont Crab Fair's headline event is the **World Gurning Championship**.
 
 To **gurn** means to twist your face into grotesque or hilarious shapes. At the Crab Fair, pulling a funny face reaches Olympian levels.
@@ -399,14 +422,6 @@ The game's origins are uncertain. Some say it began as a ritual mocking of the s
 
 Champions often hold on to their titles for years. Anne Woods dominated the women's division from 1977 to 2010, winning a record **28 times**.
 
-:::collection-image{layout="inset" zoom="true"}
-
-![Sepia photo of man making an ugly, funny face](/uploads/archive/sepia-photo-of-man-making-an-ugly-funny-face.jpg)
-
-Headshot of Wyndham 'Taffy' Thomas, 1965. Source: Whitehaven Archives.
-
-:::
-
 :::::collection-carousel{kind="images" label="Atherstone Ball Game"}
 
 ::::slide{zoom="true"}
@@ -415,19 +430,19 @@ Headshot of Wyndham 'Taffy' Thomas, 1965. Source: Whitehaven Archives.
 
 ::::
 
-::::slide
+::::slide{zoom="true"}
 
 ![Photo of people amassed around a boarded-up shopfront ready to play.](/uploads/archive/photo-of-people-amassed-around-a-boarded-up-shopfront-ready-to-play.jpg)
 
 ::::
 
-::::slide
+::::slide{zoom="true"}
 
 ![Photo of a large crowd of fighting people in the street, behind them some barricaded shops.](/uploads/archive/photo-of-a-large-crowd-of-fighting-people.jpg)
 
 ::::
 
-::::slide
+::::slide{zoom="true"}
 
 ![A shot from above of crowds beginning to gather in the street in preparation for the ball game](/uploads/archive/a-shot-from-above-of-crowds-beginning-to-gather.jpg)
 
@@ -436,6 +451,22 @@ Headshot of Wyndham 'Taffy' Thomas, 1965. Source: Whitehaven Archives.
 :::::
 
 ## Atherstone Ball Game
+
+::::collection-aside{title="Atherstone Ball Game at a glance" layout="float-right"}
+
+📍 **Location:** Atherstone, Warwickshire
+
+⏳ **Origins:** 1199 football match between Leicestershire and Warwickshire
+
+📅 **When:** Every Shrove Tuesday
+
+👥 **Teams:** None, everyone for themselves
+
+🎯 **Aim:** The individual holding the ball at 5pm wins
+
+⚖️ **Rules:** Players should avoid killing each other
+
+::::
 
 At first glance, photos of the Atherstone Ball Game make it look like a lively, slightly cramped street festival.
 
@@ -452,18 +483,6 @@ It starts when a **large, heavy ball**, filled with water and covered in ribbons
 Apart from keeping play to Atherstone's **Long Street** and asking players not to hurt each other too badly, there are almost no rules.
 
 It's a free-for-all. Whoever is holding the ball when the church bell strikes **5pm** wins.
-
-📍 **Location:** Atherstone, Warwickshire
-
-⏳ **Origins:** 1199 football match between Leicestershire and Warwickshire
-
-📅 **When:** Every Shrove Tuesday
-
-👥 **Teams:** None, everyone for themselves
-
-🎯 **Aim:** The individual holding the ball at 5pm wins
-
-⚖️ **Rules:** Players should avoid killing each other
 
 ### On the ball
 
@@ -493,6 +512,14 @@ In 2024, the game was started by locally-born comedian **Josh Pugh**.
 
 ### Read all about it!
 
+:::collection-image{layout="float-right" zoom="true"}
+
+![Newspaper clipping titled 'Shrovetide Football'.](/uploads/archive/newspaper-clipping-titled-shrovetide-football.jpg)
+
+Clipping from The Atherstone News, 1934. Source: Warwickshire Libraries.
+
+:::
+
 The Atherstone Ball Game has had plenty of controversy over the years.
 
 Incidents such as property damage, injuries and even the use of fish as missiles have fuelled debates about whether the game should continue.
@@ -500,14 +527,6 @@ Incidents such as property damage, injuries and even the use of fish as missiles
 Local newspapers are the best place to find these debates — and plenty of comic stories too.
 
 [**Warwickshire Libraries**](/libraries/warwickshire) has gathered a collection of clippings from across the decades, available to view on request. Here are some highlights.
-
-:::collection-image{layout="inset" zoom="true"}
-
-![Newspaper clipping titled 'Shrovetide Football'.](/uploads/archive/newspaper-clipping-titled-shrovetide-football.jpg)
-
-Clipping from The Atherstone News, 1934. Source: Warwickshire Libraries.
-
-:::
 
 :::::collection-carousel{kind="quotes" label="Newspaper reports on the Atherstone Ball Game"}
 

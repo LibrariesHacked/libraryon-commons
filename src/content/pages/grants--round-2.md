@@ -9,9 +9,9 @@ source_url: https://libraryon.org/grants/round-2
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - grants-guidance-2
-  - application-portal
-  - bank-details-form-2
+  - grants-round-two-guidance-pdf
+  - grants-round-two-application-portal
+  - grants-round-two-bank-details-form
   - monitoring-report
 hero:
   image: /uploads/archive/a-man-sits-at-a-computer-in-a-library-he-has-his-back-to-us.jpg

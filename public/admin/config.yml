@@ -2,9 +2,10 @@ backend:
   name: github
   repo: LibrariesHacked/libraryon-commons
   branch: main
+publish_mode: editorial_workflow
 local_backend: true
-media_folder: public/uploads
-public_folder: /uploads
+media_folder: public/uploads/community
+public_folder: /uploads/community
 collections:
   - name: settings
     label: Site Settings
@@ -339,6 +340,9 @@ collections:
                   - name: compact_resource
                     label: Compact Resource Link
                     widget: string
+                  - name: used_in
+                    label: Resource Usage Heading
+                    widget: string
               - name: sessions
                 label: Session Labels
                 widget: object
@@ -554,6 +558,18 @@ collections:
                   - name: no_matches
                     label: No Results Message
                     widget: string
+                  - name: pagination_label
+                    label: Pagination Accessible Name
+                    widget: string
+                  - name: previous_page
+                    label: Previous Page Button
+                    widget: string
+                  - name: next_page
+                    label: Next Page Button
+                    widget: string
+                  - name: pagination_status
+                    label: Pagination Status
+                    widget: string
               - name: not_found
                 label: Page Not Found Text
                 widget: object
@@ -572,6 +588,58 @@ collections:
                     widget: text
                   - name: return_link
                     label: Return Link
+                    widget: string
+              - name: sitemap
+                label: Site Map Text
+                widget: object
+                fields:
+                  - name: title
+                    label: Page Title
+                    widget: string
+                  - name: description
+                    label: Page Description
+                    widget: text
+                  - name: eyebrow
+                    label: Eyebrow
+                    widget: string
+                  - name: heading
+                    label: Heading
+                    widget: string
+                  - name: intro
+                    label: Introduction
+                    widget: text
+                  - name: pages
+                    label: Pages Heading
+                    widget: string
+                  - name: homepage
+                    label: Homepage Link
+                    widget: string
+                  - name: sessions
+                    label: Sessions Heading
+                    widget: string
+                  - name: resources
+                    label: Resources Heading
+                    widget: string
+                  - name: browse_resources
+                    label: Browse Resources Label
+                    widget: string
+                  - name: questions
+                    label: Questions Heading
+                    widget: string
+                  - name: browse_questions
+                    label: Browse Questions Label
+                    widget: string
+                  - name: contributors
+                    label: Contributors Heading
+                    widget: string
+                  - name: directory
+                    label: Directory Heading
+                    widget: string
+                  - name: directory_search
+                    label: Directory Search Link
+                    widget: string
+                  - name: authority_page
+                    label: Authority Page Link
                     widget: string
               - name: admin
                 label: CMS Document Text
@@ -846,6 +914,8 @@ collections:
           - library-collection-image
           - library-collection-carousel
           - library-collection-accordion
+          - library-collection-aside
+          - library-collection-recommendations
           - library-faqs
           - library-resources
           - image
