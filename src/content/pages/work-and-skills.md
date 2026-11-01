@@ -11,6 +11,15 @@ source_url: https://libraryon.org/work-and-skills
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources: []
+child_pages:
+  - /work-and-skills/business-support
+  - /work-and-skills/makerspaces
+  - /work-and-skills/cafes
+  - /work-and-skills/study-work-spaces
+  - /work-and-skills/digital-skills
+hero:
+  image: /uploads/archive/library-users-working-in-study-booths.jpg
+  alt: Library users working in study booths.
 ---
 
 # Work and skills

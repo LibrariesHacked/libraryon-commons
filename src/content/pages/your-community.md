@@ -9,6 +9,9 @@ source_url: https://libraryon.org/your-community
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources: []
+child_pages:
+  - /your-community/find-your-community
+  - /your-community/children-parents-carers-community
 hero:
   image: /uploads/archive/bringing-people-together-in-libraries.jpg
   alt: Bringing people together in libraries

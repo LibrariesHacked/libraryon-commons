@@ -36,7 +36,8 @@ const pages = defineCollection({
     gallery: z.array(image).optional(),
     faq_heading: z.string().optional(),
     faqs: z.array(reference('faqs')).default([]),
-    resources: z.array(z.string()).default([])
+    resources: z.array(z.string()).default([]),
+    child_pages: z.array(z.string().startsWith('/')).optional()
   })
 });
 

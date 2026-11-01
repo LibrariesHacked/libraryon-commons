@@ -10,6 +10,13 @@ source_url: https://libraryon.org/reading
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources: []
+child_pages:
+  - /reading/reading-in-libraries
+  - /reading/reading-children-young-people-in-libraries
+  - /reading/e-lending-in-libraries
+hero:
+  image: /uploads/archive/library-visitor-reading-beside-a-window.jpg
+  alt: A red-haired woman reads by a library window.
 ---
 
 # Reading

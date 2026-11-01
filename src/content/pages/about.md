@@ -33,6 +33,8 @@ resources:
   - luca-sage
   - antony-sojka
   - laurie-garnons-williams
+child_pages:
+  - /about/pressplay
 ---
 
 # About LibraryOn

@@ -10,6 +10,12 @@ source_url: https://libraryon.org/special-collections
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources: []
+child_pages:
+  - /special-collections/frances-wolseley-gardening-educator
+  - /special-collections/lacemaking-in-nottingham
+  - /special-collections/early-days-of-circus
+  - /special-collections/library-photo-collections
+  - /special-collections/curious-competitions
 ---
 
 # Special collections

@@ -955,6 +955,18 @@ collections:
           - title
         multiple: true
         required: false
+      - name: child_pages
+        label: Subpages
+        widget: relation
+        collection: pages
+        search_fields:
+          - title
+        value_field: path
+        display_fields:
+          - title
+        multiple: true
+        required: false
+        hint: Select and arrange this landing page's child pages in the order they should appear.
   - name: faqs
     label: Frequently Asked Questions
     label_singular: FAQ

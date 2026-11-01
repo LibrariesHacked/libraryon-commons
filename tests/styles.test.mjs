@@ -165,6 +165,30 @@ test('editorial section headings and source notes use tinted surfaces instead of
   assert.equal(noteValues.has('border-top'), false);
 });
 
+test('homepage carousel has a distinct light surface and quiet inactive dots', () => {
+  const home = postcss.parse(read('pages/home.css'));
+  const hero = home.nodes.find(
+    (node) => node.type === 'rule' && node.selector === '.hero-with-carousel',
+  );
+  const heroValues = new Map(
+    hero.nodes
+      .filter((node) => node.type === 'decl')
+      .map((node) => [node.prop, node.value]),
+  );
+  assert.equal(heroValues.get('background'), 'var(--surface-tint-green)');
+
+  const dot = home.nodes.find(
+    (node) => node.type === 'rule' && node.selector === '.hero-carousel-dot',
+  );
+  const dotValues = new Map(
+    dot.nodes
+      .filter((node) => node.type === 'decl')
+      .map((node) => [node.prop, node.value]),
+  );
+  assert.equal(dotValues.get('background'), 'var(--surface-tint-rose-pale)');
+  assert.equal(dotValues.get('border'), 'var(--border-size-1) solid var(--line-strong)');
+});
+
 test('hotspot frames shrink-wrap images so percentage markers align with the artwork', () => {
   const content = postcss.parse(read('components/content.css'));
   const frame = content.nodes.find(

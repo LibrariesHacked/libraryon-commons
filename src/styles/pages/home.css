@@ -36,7 +36,7 @@
   padding-block: var(--size-8) 2.75rem;
 }
 .hero-with-carousel {
-  background: var(--canvas);
+  background: var(--surface-tint-green);
   color: var(--ink);
 }
 .hero-copy {
@@ -145,8 +145,8 @@
   height: 0.65rem;
   padding: 0;
   border-radius: 999px;
-  border: var(--border-size-1) solid var(--muted);
-  background: var(--brand-rose);
+  border: var(--border-size-1) solid var(--line-strong);
+  background: var(--surface-tint-rose-pale);
   cursor: pointer;
   transition:
     width 0.2s var(--motion-ease),

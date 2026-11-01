@@ -40,6 +40,13 @@ const section = entry.data.path.split('/').filter(Boolean)[0];
 const neighbours = allPages.filter(
   (page) => page.data.path.startsWith(`/${section}/`) && page.id !== entry.id
 );
+const children = entry.data.child_pages
+  ? entry.data.child_pages.map((path) => {
+      const child = allPages.find((page) => page.data.path === path);
+      if (!child) throw new Error(`Missing landing page child ${path} on ${entry.data.path}`);
+      return child;
+    })
+  : neighbours;
 const related = entry.data.resources
   .map((id) => resources.get(id))
   .filter(Boolean);
@@ -61,8 +68,8 @@ const Template = templates[templateFor(entry)];
   entry={entry}
   allPages={allPages}
   headings={contents}
-  neighbours={neighbours}
-  children={neighbours}
+  neighbours={entry.data.child_pages ? children : neighbours}
+  children={children}
   sessions={sessions}
   resources={resources}
   related={related}
