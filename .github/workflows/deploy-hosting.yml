@@ -86,4 +86,4 @@ jobs:
             echo "Netlify deployment skipped: configure NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID."
             exit 0
           fi
-          npx --yes netlify-cli@27.16.1 deploy --dir=.deploy/netlify-admin --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" --prod
+          npx --yes netlify-cli@27.16.1 deploy --no-build --dir=.deploy/netlify-admin --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" --prod

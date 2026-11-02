@@ -31,6 +31,10 @@ test('split deployment publishes the public Pages site and a CMS-only Netlify bu
   assert.ok(workflow.jobs['deploy-netlify-admin'].steps.some((step) =>
     step.run?.includes('NETLIFY_AUTH_TOKEN') && step.run.includes('netlify-cli@27.16.1'),
   ));
+  const netlifyDeploy = workflow.jobs['deploy-netlify-admin'].steps.find((step) =>
+    step.name === 'Deploy CMS bundle',
+  );
+  assert.match(netlifyDeploy.run, /netlify-cli@27\.16\.1 deploy --no-build --dir=\.deploy\/netlify-admin/);
 
   const netlify = read('../netlify.toml');
   assert.match(netlify, /publish = "\.deploy\/netlify-admin"/);
