@@ -1,9 +1,51 @@
 {
-  "title": "LibraryCommons",
-  "intro": "A shared home for library stories, resources and ideas. Preserved, maintained and grown by the community.",
-  "image": "/uploads/archive/d8d54cb7e50d820ae0c8f4b528263d433b20427a5c76a332990590d644007f69.jpg",
-  "image_alt": "A female library staff member smiles as she reads a story to a group of children.",
-  "features_title": "More from your library",
+  "title": "Libraries are for everyone",
+  "intro": "Start your journey of discovery here — explore what’s on offer and find your local library.",
+  "image": "",
+  "image_alt": "",
+  "carousel": [
+    {
+      "image": "/uploads/archive/a-smiling-woman-receives-a-library-book-from-a-male-member-of-staff.jpg",
+      "alt": "A smiling woman receives a library book from a male member of staff"
+    },
+    {
+      "image": "/uploads/archive/a-group-of-ladies-at-a-craft-group-at-their.jpg",
+      "alt": "A group of ladies at a craft group at their local library. They are looking at some of the crafting that is on a table."
+    },
+    {
+      "image": "/uploads/archive/a-childrens-craft-group.jpg",
+      "alt": "A children's craft group. Two children are holding up felt flowers and the group leader is smiling."
+    },
+    {
+      "image": "/uploads/archive/two-young-men-around-a-table-at-the-library.jpg",
+      "alt": "Two young men around a table at the library. One has his laptop and is looking at his phone, the other has a tablet stylus in his hand. They are both concentrating on their tasks"
+    },
+    {
+      "image": "/uploads/archive/an-older-person-using-a-laptop-with-a-member.jpg",
+      "alt": "An older person using a laptop with a member of library staff"
+    },
+    {
+      "image": "/uploads/archive/a-female-student-sits-at-a-table-by-a-window.jpg",
+      "alt": "A female student sits at a table by a window writing notes with a laptop open in front of her"
+    },
+    {
+      "image": "/uploads/archive/a-close-up-of-the-book-a-very-hungry-caterpillar.jpg",
+      "alt": "A close up of the book \"A Very Hungry Caterpillar\". A person, out of shot, is using brail to read the book with their finger"
+    },
+    {
+      "image": "/uploads/archive/a-middle-aged-man-a-middle-aged-woman.jpg",
+      "alt": "A middle aged man, a middle aged woman and a younger woman are gathered round a table looking at maps"
+    },
+    {
+      "image": "/uploads/archive/a-male-member-of-library-staff-shows-a-female-library.jpg",
+      "alt": "A male member of library staff shows a female library user how to use a photocopier via her phone"
+    },
+    {
+      "image": "/uploads/archive/two-female-library-users-sit-in-booths-with-desks-using.jpg",
+      "alt": "Two female library users sit in booths with desks using laptops and wearing headphones"
+    }
+  ],
+  "features_title": "Libraries improve lives",
   "feature_pages": [
     "/reading/reading-in-libraries",
     "/your-community/children-parents-carers-community",
@@ -16,5 +58,9 @@
     "/special-collections/library-photo-collections"
   ],
   "community_title": "A growing commons",
-  "community_pages": ["/commons", "/about/pressplay", "/grants"]
+  "community_pages": [
+    "/commons",
+    "/about/pressplay",
+    "/grants"
+  ]
 }

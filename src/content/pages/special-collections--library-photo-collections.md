@@ -10,50 +10,48 @@ source_url: https://libraryon.org/special-collections/library-photo-collections
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-909d93f08dc31cfaf68f
-  - resource-36e28ed7f8a73c4ee5e9
-  - resource-3b96e165e3ef9e7a5e1c
-  - resource-3ed7b9b73f14d13a6d59
-  - resource-b39be698aafd958ce4e3
-  - resource-6ce08690bd61410c7dc4
-  - resource-a0516e01bd2ae6cbb656
-  - resource-eb2d0d6b6d72e5fe57ed
-  - resource-f22554ee5bc762152de2
-  - resource-fa37c90912a5e3dada90
-  - resource-4230ed9212814976c1c3
-  - resource-9b05c7129579231ba183
-  - resource-69a47eca7a44399c3d92
-  - resource-f244abf4d3e4a0428ca8
-  - resource-2bb0b966006b807a8010
-  - resource-622f224cff8ad04bdfc0
-  - resource-f89d454b93e5e5d3d222
-  - resource-8af58efa2127a80d7d50
-  - resource-1cedc939848788faf25e
-  - resource-1ad661ed2a23bca06138
-  - resource-a7ab13184d4054ebeb93
-  - resource-0019374f718298698d36
-  - resource-fbd48c0272f2b6f7218b
-  - resource-f90c993a881eed62c358
-  - resource-dae7e34129c282aa897b
-  - resource-11ef8829918127ec16a9
-  - resource-87fe3245ddf2a55b01c7
-  - resource-3e9f3deaf0c1b68a645c
-  - resource-881e3a309a64d4705cc9
-  - resource-f18818695a4ccbcaa62a
-  - resource-4c9e83a17da78472fb21
-  - resource-14f0b3f776735fa78d9a
-  - resource-cc2a0039ff08b00a7492
-  - resource-07210566ba16e47a3fe4
-  - resource-ddbc4e37cd4cfdf18369
-  - resource-7daba5cf35ce76d4d0de
-  - resource-3c2c0d6cefcf6a717206
-  - resource-39d60a8768512ea9c42a
-  - resource-ea169b9ef6eb68ea70e2
-  - resource-37728390a0beb0459c05
-  - resource-4cc229829bb071692568
+  - colmans-mustard
+  - picture-norfolk
+  - by-leading-nazi-ernst-rohm
+  - newcastle-libraries
+  - uploading-tordays-photos-to-flickr
+  - manchester-central-library
+  - middleton-library
+  - touchstones-rochdale
+  - rochdale
+  - a-walking-route-and-map
+  - british-library-flickr
+  - cheshire-image-bank
+  - coventry-digital
+  - hackney-archives
+  - hampshire-archives-photos
+  - inspire-picture-archive
+  - leodis
+  - llyfrgell-genedlaethol-cymru-flickr-the-national-library-of-wales-flickr
+  - manchester-archives-flickr
+  - merton-memories-photographic-archive
+  - national-library-of-ireland-flickr
+  - national-library-of-scotland-flickr
+  - picture-cambridgeshire
+  - picture-sheffield
+  - picture-stockton-archives
+  - public-record-office-of-northern-ireland-flickr
+  - red-rose-collections
+  - stockport-image-archive
+  - swindon-libraries-flickr
+  - tameside-image-archive
+  - tower-hamlets-local-history-image-archive
+  - twixt-aire-and-calder
+  - west-sussex-past-pictures
+  - 12-london-boroughs
+  - newcastle-libraries-on-flickr
+  - middleton-photographic-walking-trail
+  - shine-a-light-project
+  - naked-kitchens
+  - antarctic-heritage-trust
+  - royal-museums-greenwich
+  - wikipedia-the-terra-nova-expedition
 ---
-
-[Back to special collections](/special-collections)
 
 # Library photography collections: Capturing regional pride
 
@@ -67,13 +65,21 @@ Library photo collections are increasingly being digitised, but you can also spe
 
 **Here we'll look at how three different library authorities have preserved photos that help tell stories about their communities.**
 
-![A black & white photo of a young boy in shorts reclining in a buggy.](/uploads/archive/8af4f08de3e1ea963f897a37a702f28960f76b9b3e809873252cf08051760323.jpg)
+:::collection-image{layout="float-right" zoom="true"}
+
+![A black & white photo of a young boy in shorts reclining in a buggy.](/uploads/archive/a-black-and-white-photo-of-a-young-boy-in-shorts-reclining-in-a-buggy.jpg)
 
 Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
 
-![A sepia photo of a large crowd of several hundred people posing for the camera. The people are dressed formally, with men in suits and women in dresses. All the men and women wear hats or bonnets.](/uploads/archive/f972eade49463dfda4e9159f86a2fb5328dd12fea229bb3422ea3017cf334bb6.jpg)
+:::
+
+:::collection-image{layout="inset" zoom="true"}
+
+![A sepia photo of a large crowd of several hundred people posing for the camera. The people are dressed formally, with men in suits and women in dresses. All the men and women wear hats or bonnets.](/uploads/archive/a-sepia-photo-of-a-large-crowd-of-several-hundred-2.jpg)
 
 The Colman family and the company's employees in 1882. Image courtesy of Norfolk County Council Library and Information Service at www.picture.norfolk.gov.uk
+
+:::
 
 ## Preserving the Colman's legacy
 
@@ -95,11 +101,105 @@ These moves were notable because they were established decades before widespread
 
 ## From Norwich to Antarctica
 
-![Image](/uploads/archive/9b4e0be9b7ee2251b3b1106c13c1be08b5b6137fac335569c55ecb6a784cf996.jpg)
+:::::collection-carousel{kind="hotspots" label="Colman's Antarctic expeditions"}
 
-![Image](/uploads/archive/6c17ca84a668f7c6c8c829040e64782e25a5754eb52f9e6561e7ec2b57d2c51a.jpg)
+::::slide
 
-![Image](/uploads/archive/54bd329233721bab89118dc1fbabf8877ca68a949fcb2b904632d7c59b77018c.jpg)
+![Historical archive image](/uploads/archive/delivery-crates-in-a-snowy-landscape.jpg)
+
+:::hotspot{title="Unloading supplies" x="80" y="34"}
+
+Here we see boxes of Colman's products being unloaded in Antarctica. This shot is from Scott's _Terra Nova_ expedition to the South Pole, which set out in 1910. It was during the 800-mile trek back to base camp from the South Pole that Scott and four crew members died in 1912. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="The expedition hut" x="16" y="28"}
+
+The Terra Nova ship faced storms and was trapped in pack ice for twenty days before reaching Antarctica. When they finally arrived in January 1911 the crew constructed this hut as their base. It still stands today, preserved by the [Antarctic Heritage Trust](https://nzaht.org/conserve/explorer-bases/scotts-hut-cape-evans/scotts-terra-nova-hut/). _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="British Antarctic Expedition supplies" x="57" y="52"}
+
+The boxes bear the mark 'BAE', which stands for 'British Antarctic Expedition'. In the background by the hut we can see dozens more boxes being stored for the expedition. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Mount Erebus" x="51" y="10"}
+
+Overlooking the base is Mount Erebus, the southernmost volcano in the world. Scientists have detected tiny gold crystals from its explosions over 600 miles away. It's been estimated it emits around £1.5m worth of gold every year. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/historical-delivery-van-with-union-jack.jpg)
+
+:::hotspot{title="Shackleton's Nimrod Expedition" x="18" y="41"}
+
+The text on the boxes on this carriage show they are headed for the [1907 British Antarctic Expedition](https://shackleton.com/blogs/articles/ernest-shackleton-nimrod-expedition). This expedition was led by Ernest Shackleton, with the aim of being the first to reach the South Pole. While they didn't succeed in their goal, it was at that time the furthest south any humans had been. Shackleton was knighted on his return. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Carrow Works" x="62" y="13"}
+
+This picture may have been taken in the grounds of the Carrow Works factory site developed by Colman's. The company occupied it for over 160 years before moving production in 2020. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="The factory tramway" x="80" y="84"}
+
+The carriage sits on a tramway. In the late 19th century factories started using internal tram systems as an efficient way of moving resources around a site and preparing deliveries. When it closed in 2020 the site covered 40 acres, and today several of its buildings are Grade I or II listed, meaning they are of special or exceptional interest. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Colman's flour and provisions" x="63" y="59"}
+
+While Colman's is famous today for its mustard, here we can see that the company also provided various kinds of flour for this expedition. Other companies provided supplies too. In 2010 a case of whisky buried during Shackleton’s expedition was found in Antarctica. After taking samples from the 100 year-old bottle, distillers Whyte & Mackay recreated the recipe. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/historical-shop-counter-and-packaging.jpg)
+
+:::hotspot{title="Scott's testimonials" x="57" y="63"}
+
+Robert Falcon Scott was happy enough with his supply of Colman's products to provide glowing testimonials. Written on his departure and his return, Scott's recommendations were framed and photographed alongside Colman's products by the company. This was an early example of using customer reviews in marketing materials, which lots of companies do today. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="The Discovery expedition" x="13" y="42"}
+
+Scott led the Discovery expedition to Antarctica in 1901. It was the first British exploration of the territory for 60 years. As well as Colman's, companies who supplied food for the expedition included Cadbury's (chocolate), Bird's (custard and baking powders) and Bovril (beef extract). _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Mustard for the expedition" x="35" y="69"}
+
+For the journey Scott's crew brought along a tonne and a half of Colman's mustard. It was most likely in the powdered form we see here. Colman's supplied the provisions for free, presumably anticipating the benefits of the international exposure the expedition would provide. _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Scott's departure letter" x="46" y="47"}
+
+Under the heading _The Departure_, Scott writes to Colman's: "I would add an expression of my appreciation of the extraordinary care that you have taken in all details connected with packing and preservation, and with the admirable manner in which you have adapted the goods to our requirements. "May I, in conclusion, ask your Directors to accept from the Presidents of the Royal Geographical Societies their most sincere thanks for the completeness of the present which your firm has made, and my own sincere thanks for the good wishes which accompany it." _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+:::hotspot{title="Scott's return letter" x="63" y="45"}
+
+On completion of the expedition, under the heading _The Return_, Scott writes: "I have much pleasure in informing you that the flour, mustard, etc which you supplied for the Discovery proved to be of the best quality, and in all respects satisfactory. Some portion which remained unconsumed, on our return to England, has been found to be in as good condition as when it was supplied. "I must also congratulate you on the excellent manner in which the goods were packed. This is an important consideration for an Expedition, and in our case, it no doubt accounted for the absence of deterioration." _Image courtesy of Norfolk County Council Library and Information Service at_ [_picture.norfolk.gov.uk_](https://www.norfolk.gov.uk/norfolkphotos)
+
+:::
+
+::::
+
+:::::
 
 **In this gallery you'll get an idea of the volume of food Colman's sent to Antarctica, and the effort required to transport it to the remotest part of the world.**
 
@@ -117,25 +217,43 @@ Where local people may have seen little worth photographing, as an immigrant—s
 
 His shots document shopping locations, markets, the shipyards of the region and more. Taken together, they offer a comprehensive snapshot of a specific time in the city’s history.
 
-![A black & white photo of two ladies smiling outside a shop.](/uploads/archive/531d19b74cf5f3148764d34b9fc8f22fa5db43ac0e138345fae2b5f57f3398c8.jpg)
+:::collection-image{layout="float-right" zoom="true"}
+
+![A black & white photo of two ladies smiling outside a shop.](/uploads/archive/a-black-and-white-photo-of-two-ladies-smiling-outside-a-shop.jpg)
 
 Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
 
-![A black & white photo of shoppers of shoppers on a street in Newcastle in the Sixties. We can see a man in a suit and hat, a lady with shopping bags and two ladies with children.](/uploads/archive/1045667535cfdd349cb49c745486cc7eb07ea8397ab7f521cd8525ea2ff57b78.jpg)
+:::
 
-![A black & white photo from the sixties of two men working on a fish market. The boxes they're packing have 'North Quay Fish' printed on the side.](/uploads/archive/c240f16fe0e5daf5c66491fbcb531e7eb591786c4a8a7bb462da847e22fca0eb.jpg)
+:::::collection-carousel{kind="images" label="Torday's Newcastle street photographs"}
 
-![A black and white photo of a lady walking past some shops. One of the shops has ads in the window for the brands Tizer, Birds Eye and Cadets cigarettes.](/uploads/archive/dbd9c5a3100ad62c76b3eefa6343979b7276f26c3ac1d54038da6547045fc86b.jpg)
+::::slide{zoom="true"}
 
-![A black and white photo of six young children smiling as they look at the camera through the bars of a gate or fence.](/uploads/archive/05002991ab86a3e6fee0ca61433a86e8bd163c729f02d2169581a0d6fdb2e733.jpg)
+![A black & white photo of shoppers on a street in Newcastle in the Sixties. We can see a man in a suit and hat, a lady with shopping bags and two ladies with children.](/uploads/archive/a-black-and-white-photo-of-shoppers-on-a-street.jpg)
 
-Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
+::::
 
-Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
+::::slide{zoom="true"}
 
-Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
+![A black & white photo from the sixties of two men working on a fish market. The boxes they're packing have 'North Quay Fish' printed on the side.](/uploads/archive/a-black-and-white-photo-from-the-sixties-of-two-2.jpg)
 
-Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle City Library Photographic Collection
+::::
+
+::::slide{zoom="true"}
+
+![A black and white photo of a lady walking past some shops. One of the shops has ads in the window for the brands Tizer, Birds Eye and Cadets cigarettes.](/uploads/archive/a-black-and-white-photo-of-a-lady-walking-past-2.jpg)
+
+::::
+
+::::slide{zoom="true"}
+
+![A black and white photo of six young children smiling as they look at the camera through the bars of a gate or fence.](/uploads/archive/a-black-and-white-photo-of-six-young-children-smiling-2.jpg)
+
+::::
+
+:::::
+
+_Photos from 'Torday's Newcastle' (Newcastle Libraries Flickr). Source: Newcastle City Library Photographic Collection._
 
 When Laszlo Torday’s photos were acquired by [Newcastle Libraries](https://www.newcastle.gov.uk/services/libraries-and-culture), they came with a challenge: there was little contextual information available about the shots within the collection.
 
@@ -143,9 +261,13 @@ However, by [uploading Torday’s photos to Flickr](https://www.flickr.com/photo
 
 **Do you recognise any of people or places in Torday’s photos?** You can comment on them in [Newcastle's Flickr album](https://www.flickr.com/photos/newcastlelibraries/albums/72157632024528422/).
 
-![A screenshot of a thumbnail image from Flickr. The thumbnail is from the Newcastle Libraries album called 'Torday's Newcastle', and we can see the album contains 999 images and has been viewed 100,975 times.](/uploads/archive/ea5085e3b3bf80386cee6bdba985c4229428dca3599cd32d8872fe87547a5378.jpg)
+:::collection-image{layout="float-right" zoom="true"}
+
+![A screenshot of a thumbnail image from Flickr. The thumbnail is from the Newcastle Libraries album called 'Torday's Newcastle', and we can see the album contains 999 images and has been viewed 100,975 times.](/uploads/archive/a-screenshot-of-a-thumbnail-image-from-flickr.jpg)
 
 Screenshot from Newcastle Libraries Flickr
+
+:::
 
 ## Manchester's one-man Streetview
 
@@ -157,13 +279,21 @@ His collection of thousands of local photos was bequeathed to the Archives and L
 
 **Middleton Library**, in [Rochdale](https://www.rochdale.gov.uk/libraries), used Kaye's photos in a particularly innovative way. Staff created [a walking route and map](https://middletonphotographicwalkingtrail.weebly.com/photographic-walk.html), with Kaye’s photos, alongside those of others, used along the route to enable comparison between past and present.
 
-![A black and white shot of photographer Lawrence Kaye standing in front of a full-length mirror, photographing himself. He is wearing a trenchcoat and hat.](/uploads/archive/f9ba2470edaeb492b3de6fe3f3b9c734354a58c03c052d27ac707edeec74efec.jpg)
+:::collection-image{layout="float-right" zoom="true"}
+
+![A black and white shot of photographer Lawrence Kaye standing in front of a full-length mirror, photographing himself. He is wearing a trenchcoat and hat.](/uploads/archive/a-black-and-white-shot-of-photographer-lawrence-kaye-standing.jpg)
 
 Photographer Lawrence Kaye. Source: Manchester Libraries (via images.manchester.gov.uk), CC BY-NC-SA 4.0
 
-![A screenshot of a map of Middleton's photographic walking trail. Overlaid on the map is an old photo of a location on the map, Durnford Street, remarking on how different the location looks today.](/uploads/archive/71b05c41f56c0b4d4a92219654b3a7d62ea48dadf235a55827f3d22cd39647cc.jpg)
+:::
+
+:::collection-image{layout="inset" zoom="true"}
+
+![A screenshot of a map of Middleton's photographic walking trail. Overlaid on the map is an old photo of a location on the map, Durnford Street, remarking on how different the location looks today.](/uploads/archive/a-screenshot-of-a-map-of-middletons-photographic-walking-trail-2.jpg)
 
 Middleton Library's photographic walking trail, based on the photography of Lawrence Kaye. Source: Middleton Library Local Studies
+
+:::
 
 Projects like Middleton Library’s show how old photos can be **combined with modern technology** to engage audiences decades after shots were taken.
 
@@ -173,100 +303,79 @@ In preserving photography from bygone times, libraries ensure that as technology
 
 From the streets of northern England to Antarctica, these books feature photographers who immortalised communities and landscapes for the world to enjoy. **Enjoy them for free** [**at a library near you**](/libraries)**.**
 
-![The cover of 'Another Country: British Documentary Photography Since 1945' by Gerry Badger. It features a boy standing with a bicycle that has a Union Flag on its handlebars.](/uploads/archive/adb4f79f0691ef1c7e9a6994e28fae234d571f04fd5a7f86fc1e9decce4f9848.jpg)
+![The cover of 'Another Country: British Documentary Photography Since 1945' by Gerry Badger. It features a boy standing with a bicycle that has a Union Flag on its handlebars.](/uploads/archive/the-cover-of-another-country-british-documentary-photography-2.jpg)
 
-Photography books to check out
+::::collection-accordion{label="Books at the library about pioneering photography"}
+
+:::accordion-item{title="Another Country: British Documentary Photography Since 1945 — Gerry Badger (2022)"}
+
+Featuring a diverse range of photographers, this is a comprehensive overview of how photographers and photo-artists have depicted Britain and British society over the last 70 years.
+
+:::
+
+:::accordion-item{title="Lewis W. Hine: America at Work — Peter Walther (2018)"}
+
+Lewis Hine was one of the earliest photographers to use the camera as a documentary tool. His images, including those of children in cotton mills, factories, coal mines and fields, became icons of photographic history that helped to transform labour laws in the United States.
+
+:::
+
+:::accordion-item{title="The North — John Bulmer (2012)"}
+
+John Bulmer's striking photos capture the impact of the collapse of traditional industry in the north of England on communities in the 60s and 70s.
+
+:::
+
+:::accordion-item{title="Herbert Ponting: Scott’s Antarctic Photographer and Pioneer Filmmaker — Anne Strathie (2021)"}
+
+Self-trained professional photographer Herbert Ponting documented Scott's fateful expedition to the Antarctic. He returned with stunning photographs and over 30,000 feet of film recorded under the harshest of conditions.
+
+:::
+
+::::
 
 ## More library digital photo collections
 
-[British Library Flickr](https://www.flickr.com/photos/britishlibrary/)British Library
-
-[Cheshire Image Bank](https://www.cheshireimagebank.org.uk/index.php)Cheshire Libraries
-
-[Coventry Digital](https://coventry.digital/)Coventry Libraries
-
-[Hackney Archives](https://hackney.soutron.net/Portal/Default/en-GB/Search/SimpleSearch)Hackney Council
-
-[Hampshire Archives Photos](https://www.hants.gov.uk/librariesandarchives/archives/popular-records/photographs)Hampshire Libraries and Archives
-
-[Inspire Picture Archive](https://www.inspirepicturearchive.org.uk/)Nottinghamshire Libraries
-
-[Leodis](https://www.leodis.net/)Leeds Libraries
-
-[Llyfrgell Genedlaethol Cymru Flickr / The National Library of Wales Flickr](https://www.flickr.com/photos/llgc/)Llyfrgell Genedlaethol Cymru / The National Library of Wales
-
-[Manchester Archives+ Flickr](https://www.flickr.com/photos/manchesterarchiveplus/)Manchester Libraries
-
-[Merton Memories Photographic Archive](https://photoarchive.merton.gov.uk/)Merton Libraries
-
-[National Library of Ireland Flickr](https://www.flickr.com/photos/nlireland/)National Library of Ireland
-
-[National Library of Scotland Flickr](https://www.flickr.com/photos/nlscotland/)National Library of Scotland
-
-[Picture Cambridgeshire](https://cambridgeshire.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/BIBENQ?QRY=SVL\(PICTURECAMBRIDGESHIRE\)%20-%20MINOR%3AITD16&SORTS=SQL_RANDOM&QRYTEXT=Picture%20Cambridgeshire)Cambridgeshire Libraries
-
-[Picture Sheffield](https://www.picturesheffield.com/)Sheffield Libraries
-
-[Picture Stockton Archives](https://picturestocktonarchive.com/)Stockton-on-Tees Libraries
-
-[Public Record Office of Northern Ireland Flickr](https://www.flickr.com/photos/proni/)Public Record Office of Northern Ireland
-
-[Red Rose Collections](https://redrosecollections.lancashire.gov.uk/field-search?t=1&WINID=1746710610060)Lancashire Libraries
-
-[Stockport Image Archive](https://imagearchive.stockport.gov.uk/)Stockport Libraries
-
-[Swindon Libraries Flickr](https://www.flickr.com/photos/39771107@N08/)Swindon Library & Information Service
-
-[Tameside Image Archive](https://public.tameside.gov.uk/imagearchive/)Tameside Libraries
-
-[Tower Hamlets Local History Image Archive](https://www.ideastore.co.uk/local-history/image-library)Idea Stores
-
-[Twixt Aire & Calder](https://www.twixtaireandcalder.org.uk/)Wakefield Libraries
-
-[West Sussex Past Pictures](http://www.westsussexpast.org.uk/)West Sussex Libraries
-
-[12 London Boroughs](https://boroughphotos.org/)Borough Photos
+- [British Library Flickr](https://www.flickr.com/photos/britishlibrary/) — British Library
+- [Cheshire Image Bank](https://www.cheshireimagebank.org.uk/index.php) — Cheshire Libraries
+- [Coventry Digital](https://coventry.digital/) — Coventry Libraries
+- [Hackney Archives](https://hackney.soutron.net/Portal/Default/en-GB/Search/SimpleSearch) — Hackney Council
+- [Hampshire Archives Photos](https://www.hants.gov.uk/librariesandarchives/archives/popular-records/photographs) — Hampshire Libraries and Archives
+- [Inspire Picture Archive](https://www.inspirepicturearchive.org.uk/) — Nottinghamshire Libraries
+- [Leodis](https://www.leodis.net/) — Leeds Libraries
+- [Llyfrgell Genedlaethol Cymru Flickr / The National Library of Wales Flickr](https://www.flickr.com/photos/llgc/) — Llyfrgell Genedlaethol Cymru / The National Library of Wales
+- [Manchester Archives+ Flickr](https://www.flickr.com/photos/manchesterarchiveplus/) — Manchester Libraries
+- [Merton Memories Photographic Archive](https://photoarchive.merton.gov.uk/) — Merton Libraries
+- [National Library of Ireland Flickr](https://www.flickr.com/photos/nlireland/) — National Library of Ireland
+- [National Library of Scotland Flickr](https://www.flickr.com/photos/nlscotland/) — National Library of Scotland
+- [Picture Cambridgeshire](https://cambridgeshire.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/BIBENQ?QRY=SVL\(PICTURECAMBRIDGESHIRE\) — %20-%20MINOR%3AITD16&SORTS=SQL_RANDOM&QRYTEXT=Picture%20Cambridgeshire)Cambridgeshire Libraries
+- [Picture Sheffield](https://www.picturesheffield.com/) — Sheffield Libraries
+- [Picture Stockton Archives](https://picturestocktonarchive.com/) — Stockton-on-Tees Libraries
+- [Public Record Office of Northern Ireland Flickr](https://www.flickr.com/photos/proni/) — Public Record Office of Northern Ireland
+- [Red Rose Collections](https://redrosecollections.lancashire.gov.uk/field-search?t=1&WINID=1746710610060) — Lancashire Libraries
+- [Stockport Image Archive](https://imagearchive.stockport.gov.uk/) — Stockport Libraries
+- [Swindon Libraries Flickr](https://www.flickr.com/photos/39771107@N08/) — Swindon Library & Information Service
+- [Tameside Image Archive](https://public.tameside.gov.uk/imagearchive/) — Tameside Libraries
+- [Tower Hamlets Local History Image Archive](https://www.ideastore.co.uk/local-history/image-library) — Idea Stores
+- [Twixt Aire & Calder](https://www.twixtaireandcalder.org.uk/) — Wakefield Libraries
+- [West Sussex Past Pictures](http://www.westsussexpast.org.uk/) — West Sussex Libraries
+- [12 London Boroughs](https://boroughphotos.org/) — Borough Photos
 
 ## Sources
 
-[Newcastle Libraries on Flickr](https://www.flickr.com/photos/newcastlelibraries/)
-
-[Newcastle Libraries](https://www.newcastle.gov.uk/services/libraries-and-culture)
-
-[Rochdale Libraries](https://www.rochdale.gov.uk/libraries)
-
-[Middleton Photographic Walking Trail](https://middletonphotographicwalkingtrail.weebly.com/)
-
-[Picture Norfolk](https://www.norfolk.gov.uk/norfolkphotos)
-
-[Shine a Light Project](https://shinealightproject.wordpress.com/2013/12/13/the-mustard-revolution-the-life-of-jeremiah-james-colman/)
-
-[Naked Kitchens](https://www.nakedkitchens.com/blog/kitchens-unpacked-the-story-of-colman%E2%80%99s-mustard)
-
-[Antarctic Heritage Trust](https://nzaht.org/conserve/explorer-bases/)
-
-[Royal Museums Greenwich](https://www.rmg.co.uk/stories/topics/captain-robert-falcon-scott#:~:text=The%20800-mile%20journey%20back,base%20of%20the%20Beardmore%20Glacier)
-
-[Wikipedia: The Terra Nova Expedition](https://en.wikipedia.org/wiki/Terra_Nova_Expedition)
-
-[Fishing News](https://fishingnews.co.uk/features/north-shields-pictures-seeking-captions/)
-
-## Explore your local library
-
-![A purple location icon](/uploads/archive/1c9eb67a90e87597ebe39c56af587f1752d68dfb48bd8d5f803f8aa5853437dd.svg)
-
-### [Find your local library](/libraries)
-
-Use our interactive map to find libraries across the UK
-
-![Image](/uploads/archive/349f42a221637f997b762d1be683dba896cb852fa1c379b2131a4c0189cb30f0.png)
-
-### [Find events at libraries](/events)
-
-Explore library event listings
+- [Newcastle Libraries on Flickr](https://www.flickr.com/photos/newcastlelibraries/)
+- [Newcastle Libraries](https://www.newcastle.gov.uk/services/libraries-and-culture)
+- [Rochdale Libraries](https://www.rochdale.gov.uk/libraries)
+- [Middleton Photographic Walking Trail](https://middletonphotographicwalkingtrail.weebly.com/)
+- [Picture Norfolk](https://www.norfolk.gov.uk/norfolkphotos)
+- [Shine a Light Project](https://shinealightproject.wordpress.com/2013/12/13/the-mustard-revolution-the-life-of-jeremiah-james-colman/)
+- [Naked Kitchens](https://www.nakedkitchens.com/blog/kitchens-unpacked-the-story-of-colman%E2%80%99s-mustard)
+- [Antarctic Heritage Trust](https://nzaht.org/conserve/explorer-bases/)
+- [Royal Museums Greenwich](https://www.rmg.co.uk/stories/topics/captain-robert-falcon-scott#:~:text=The%20800-mile%20journey%20back,base%20of%20the%20Beardmore%20Glacier)
+- [Wikipedia: The Terra Nova Expedition](https://en.wikipedia.org/wiki/Terra_Nova_Expedition)
+- [Fishing News](https://fishingnews.co.uk/features/north-shields-pictures-seeking-captions/)
 
 ## Partners
 
 Thank you to Newcastle City Libraries, Norfolk County Council Library and Information Service and Rochdale Libraries for sharing their materials and knowledge to help tell this story.
 
-![Logos from three English borough councils - Newcastle City, Norfolk and Rochdale.](/uploads/archive/5da2f0823f8ea44438e645b586914c22eefd561bb3cc09874cf0b223c70d480f.png)
+![Logos from three English borough councils - Newcastle City, Norfolk and Rochdale.](/uploads/archive/logos-from-three-english-borough-councils-newcastle-city-norfolk-2.png)

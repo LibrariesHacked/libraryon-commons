@@ -62,6 +62,44 @@ export function collectValues(records, read) {
 
 const toRadians = (degrees) => (degrees * Math.PI) / 180;
 const earthMiles = 3958.8;
+const weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+
+/**
+ * Calculate straight-line distance in miles between two coordinate records.
+ * @param {{latitude?: number, longitude?: number}} first - Origin coordinates.
+ * @param {{latitude?: number, longitude?: number}} second - Target coordinates.
+ * @returns {number|null} Distance in miles, or null when either coordinate is missing.
+ */
+export function distanceMiles(first, second) {
+  if (
+    !Number.isFinite(first?.latitude) ||
+    !Number.isFinite(first?.longitude) ||
+    !Number.isFinite(second?.latitude) ||
+    !Number.isFinite(second?.longitude)
+  )
+    return null;
+  const lat = toRadians(first.latitude);
+  const otherLat = toRadians(second.latitude);
+  const haversine =
+    Math.sin((otherLat - lat) / 2) ** 2 +
+    Math.cos(lat) *
+      Math.cos(otherLat) *
+      Math.sin(toRadians(second.longitude - first.longitude) / 2) ** 2;
+  return 2 * earthMiles * Math.asin(Math.sqrt(haversine));
+}
+
+/** Extract compact weekly [startTime, endTime] pairs for client-side "Open now" filtering. */
+export function compactOpeningHours(openingTimes) {
+  if (!openingTimes || typeof openingTimes !== 'object') return null;
+  const hours = {};
+  for (const day of weekDays) {
+    const slots = (openingTimes[day]?.timeFrames || [])
+      .filter((frame) => frame?.startTime && frame?.endTime)
+      .map((frame) => [frame.startTime, frame.endTime]);
+    if (slots.length) hours[day] = slots;
+  }
+  return Object.keys(hours).length ? hours : null;
+}
 
 /**
  * Find the closest open libraries to one library, by straight-line distance.
@@ -72,23 +110,11 @@ const earthMiles = 3958.8;
  */
 export function nearbyLibraries(library, candidates, count = 5) {
   if (!Number.isFinite(library.latitude) || !Number.isFinite(library.longitude)) return [];
-  const lat = toRadians(library.latitude);
   const nearest = [];
   for (const other of candidates) {
-    if (
-      other.id === library.id ||
-      other.permanentlyClosed ||
-      !Number.isFinite(other.latitude) ||
-      !Number.isFinite(other.longitude)
-    )
-      continue;
-    const otherLat = toRadians(other.latitude);
-    const haversine =
-      Math.sin((otherLat - lat) / 2) ** 2 +
-      Math.cos(lat) *
-        Math.cos(otherLat) *
-        Math.sin(toRadians(other.longitude - library.longitude) / 2) ** 2;
-    const miles = 2 * earthMiles * Math.asin(Math.sqrt(haversine));
+    if (other.id === library.id || other.permanentlyClosed) continue;
+    const miles = distanceMiles(library, other);
+    if (miles === null) continue;
     if (nearest.length === count && miles >= nearest[count - 1].miles) continue;
     nearest.push({ library: other, miles });
     nearest.sort((first, second) => first.miles - second.miles);
@@ -149,7 +175,19 @@ export function createDirectory(authorityRecords, libraryRecords) {
       town: library.town || '',
       authority: library.authority || 'unassigned',
       authorityName: authorityByLibrary.get(library.id)?.name || 'Authority not recorded',
-      country: authorityByLibrary.get(library.id)?.country || ''
+      country: authorityByLibrary.get(library.id)?.country || '',
+      services: (library.services || [])
+        .map((item) => (typeof item === 'string' ? item : item?.service))
+        .filter(Boolean),
+      accessibility: library.accessibility || [],
+      hours: compactOpeningHours(library.openingTimes),
+      closed: Boolean(
+        library.permanentlyClosed ||
+          library.facilityOperated === 'Closed' ||
+          library.facilityOperated === 'Facility Not Open'
+      ),
+      latitude: Number.isFinite(library.latitude) ? library.latitude : null,
+      longitude: Number.isFinite(library.longitude) ? library.longitude : null
     }))
     .sort((first, second) => first.name.localeCompare(second.name, 'en'));
   return {

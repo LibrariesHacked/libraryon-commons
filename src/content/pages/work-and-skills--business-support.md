@@ -10,20 +10,28 @@ source_url: https://libraryon.org/work-and-skills/business-support
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-5be936432fc9818fd432
-  - resource-ef428b2f60c97e664098
-  - resource-3f487d9c5c81960e5f67
+  - business-and-ip-centres
+  - saints-coffee
+  - bipc-northamptonshire
+hero:
+  image: /uploads/archive/business-support-in-libraries.jpg
+  alt: Business support in libraries
+faq_heading: Questions about Business & IP Centres
+faqs:
+  - what-do-business-and-ip-centres-offer
+  - how-do-i-find-a-business-and-ip-centre
+  - where-can-i-hear-from-people-who-have-used-business-and-ip-centres
+  - do-i-need-to-pay-to-attend-business-and-ip-centre-events
+  - can-i-catch-up-with-past-business-and-ip-centre-events
 ---
-
-![Image](/uploads/archive/f20ae2d00895732629252601b0e96e3f3bc2769b21eb567864a914d851812344.jpg)
 
 # Business support in libraries
 
+:::quote{author="Ben Francoise" role="Founder, Saints Coffee"}
+
 > "The seminars and one-to-one sessions on marketing, intellectual property and business coaching were incredibly valuable."
 
-Ben Francoise
-
-Founder, Saints Coffee
+:::
 
 ## Business & IP Centres in libraries
 
@@ -47,56 +55,49 @@ Ben founded [Saints Coffee](https://www.saintscoffee.co.uk/), a social enterpris
 
 He did it with the help of [BIPC Northamptonshire](https://www.bipcnorthamptonshire.co.uk/), which is based in [Northamptonshire Central Library](/libraries/west-northamptonshire/northamptonshire-central-library).
 
-[View iframe](https://www.youtube.com/embed/2ARdN4eaTiU?si=GgAFhx6HycQVxlNM)
+::video{src="https://www.youtube.com/embed/2ARdN4eaTiU?si=GgAFhx6HycQVxlNM" title="Embedded YouTube video"}
+
+<details>
+<summary>Read video transcript</summary>
+
+Chapter 1: Intro
+
+My name is Ben Françoise, and I'm the owner and founder of Saints Coffee — a social enterprise coffee shop and cocktail bar in the heart of Northampton.
+
+---
+
+Chapter 2: About Saints Coffee
+
+At Saints Coffee, we sell speciality coffee, craft cocktails, and a selection of excellent wines sourced from local Northampton suppliers. We also offer a wide range of craft beers, brunch dishes, and charcuterie boards featuring English cheeses and British cured meats.
+
+The BIPC Northamptonshire supported my business with a grant that helped us purchase key equipment to deliver high-quality coffee to our customers. In addition to the funding, the seminars and one-to-one sessions on topics like marketing, intellectual property, and business coaching were incredibly valuable in helping me understand how to build and grow a new business.
+
+The IP sessions, in particular, made me think seriously about trademarking and protecting our brand as we continue to expand.
+
+---
+
+Chapter 3: Proudest Moment
+
+My proudest moment—beyond opening our doors during a lockdown and the pandemic—was launching our flagship social enterprise project: **Baristas**.
+
+Baristas is an employability program designed to help people back into work by using our business as a live hospitality training environment. Participants gain hands-on experience as baristas, chefs, and front-of-house staff. It’s one of the key reasons I wanted to start a business in Northampton—to make a positive social impact in the community.
+
+---
+
+Chapter 4: Future Plans
+
+Looking ahead, our goal is to build a brand that people recognise as proudly originating in Northampton—known for great coffee and cocktail bars. We also plan to explore new food and restaurant concepts, continuing to expand our social enterprise projects so we can help even more people through meaningful employment opportunities.
+
+---
+
+Chapter 5: Business Advice
+
+My best piece of business advice would be to have **purpose** at the heart of what you do—not just profit. When your business has purpose, it connects with the community in a deeper way. People appreciate and support companies that give back while providing great products and services.
+
+End of transcript
+
+</details>
 
 ## Questions about Business & IP Centres
 
-## Have more questions?
-
-Let us know what questions and answers you'd like to see here.
-
-[Email us](/cdn-cgi/l/email-protection#046c6168686b44686d667665767d6b6a2a6b76633b7771666e616770394671776d6a61777724777174746b7670246d6a24686d667665766d61773e2475716177706d6b6a7724656a6024656a7773617677)
-
-![An icon featuring a heart shape inside a speech bubble.](/uploads/archive/ff46cb0ed3e3a8663eabce35574d3c8754f41bff0d083fb802370a4c13369373.png)
-
-**Did you know?**
-
-You don’t need to be a library member to attend Business & IP Centre events.
-
-You **will** need to be a library member to access market information resources though. Remember: it's **free** to join the library.
-
-[View iframe](https://www.youtube.com/embed/UuAowDolVF0?si=MByuvqlRDLx2Qxnx)
-
-## More work and skills in libraries
-
-![A woman works on a laptop while sitting in a modern-looking booth within a library.](/uploads/archive/f981fa840ccf44ae585c40c6879be5ca785d28f83a4230505a78c770d78a0989.jpg)
-
-### [Study spaces](/work-and-skills/study-work-spaces)
-
-Need a free, safe space with reliable Wi-Fi? The library is the perfect alternative to pricey cafés or working from home.
-
-![A group of people chat while sittingaround a table in a library cafe.](/uploads/archive/6ef6eb66a2d52aa9e12d8ef45b0ba81ceac0331081e79c9236d465911cc46774.jpg)
-
-### [Cafes](/work-and-skills/cafes)
-
-Many libraries have cafes where you can meet friends, relax after an event or study somewhere different.
-
-![A video camera set up on a tripod in a library makerspace. In the background are some 3D printers. ](/uploads/archive/180847b7f9b6fcb575e10949f871fb96f4a6242c3ea59ebdd771f50defaea46f.jpg)
-
-### [Makerspaces](/work-and-skills/makerspaces)
-
-Find your voice in a production studio, or have a go with 3D printers. Find coding clubs for kids and spaces where anyone can learn the skills to become a maker.
-
-![Library customers use library computers while sitting at a row of desks.](/uploads/archive/0084b37a5067883f757bcd0558d6009df82eab462618f119bfd889ebe99c6b75.jpg)
-
-### [Digital skills](/work-and-skills/digital-skills)
-
-Delivering the skills we all need to make the most of today's tech. Attend free drop-ins to learn how to use your devices and the internet safely.
-
-## More to discover in libraries
-
-![Image](/uploads/archive/98393c97a373dcf25cda1992a79bb225dc644e9a38fe1a0222c367abb533f078.jpg)
-
-### [Reading in libraries](/reading)
-
-Read for fun with books you can borrow for free. Choose from actual books, or try e-books, audiobooks, and digital magazines on your own device.
+{{faqs}}

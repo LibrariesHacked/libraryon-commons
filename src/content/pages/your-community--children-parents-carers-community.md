@@ -9,27 +9,26 @@ source_url: https://libraryon.org/your-community/children-parents-carers-communi
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-24d0ebf71098ecf672f9
-  - resource-c1d65c65a753bd23f40a
-  - resource-9c5e76e25babb69d44a5
-  - resource-9e5cdc52cc61cd58af2e
-  - resource-f28159b0e3bc4206172c
+  - wiltshire-libraries
+  - summer-reading-challenge
+  - explore-york-libraries-and-archives
+  - eventbrite
+  - halton-libraries
 ---
 
-# Your community Connection and support for  
-families
+# Connection and support for families
+
+:::quote{author="Alex" role="Customer and parent, Sandwell Libraries"}
 
 > “It’s a sociable, safe space. And it’s free!”
 
-Alex
-
-Customer and parent, Sandwell Libraries
+:::
 
 Libraries help children, parents and carers make friends and build support networks.
 
 Having children is a huge life transition, and libraries play a big part in helping parents around the country adapt and enjoy time together.
 
-![CBeebies presenters speak to a crowd of children and parents at a colourful event in Leeds Central Library. In the background a stand has the words: 'BBC Children's Bedtime Story'.](/uploads/archive/a62a259fc3a22ef7b382a2d7879791ed3a1d0ec20b164754bacba98c753b57b8.jpg)
+![CBeebies presenters speak to a crowd of children and parents at a colourful event in Leeds Central Library. In the background a stand has the words: 'BBC Children's Bedtime Story'.](/uploads/archive/cbeebies-presenters-speak-to-a-crowd-of-children-and-parents-2.jpg)
 
 Being part of a community offers social connection, friendship and support. It’s great for our mental health.
 
@@ -47,37 +46,47 @@ In a recent teen reading group I had 16 readers debating our book of the month. 
 
 I expect some will become co-workers too…"
 
-## Map of libraries and services
-
-[Find your local public library](/libraries)
-
-![Map marker icon with a dashed path, indicating a location or route.](/uploads/archive/c507a5ea5cc311a59fee0d121a617ecb89a587259905053f82ae52d2b5b306a7.svg)
-
 ## Things youngsters love at the library
 
-![Image](/uploads/archive/b9842742bc220673d0bfe567ff8e1baa8b19f193b7d81680016a1b1d4a9a4563.jpg)
+::::cards
+
+:::card
+
+![Children doing colouring and crafts together at a library table.](/uploads/archive/children-doing-colouring-and-crafts-together-at-a-library-table.jpg)
 
 ### Colouring and crafts
 
 Opportunities to play and create alongside peers
 
-![Image](/uploads/archive/96cf5089617b0e27a751ef3cc836d778704b9f129d6f4343e81c3f125e375c6f.jpg)
+:::
+
+:::card
+
+![Young children exploring picture books in a welcoming library space.](/uploads/archive/young-children-exploring-picture-books-in-a-welcoming-library-space.jpg)
 
 ### Freedom to explore
 
 A safe space for children to feel in control and make discoveries
 
-![Image](/uploads/archive/7d299f545030d75ff3ca8c40fd61f7f14858d4703e444e9d62927a7d5ea97982.jpg)
+:::
+
+:::card
+
+![Children and families taking part in a group activity at the library.](/uploads/archive/children-and-families-taking-part-in-a-group-activity-at-the-library.jpg)
 
 ### Getting social
 
 Participation in storytimes, reading challenges, code clubs and more
 
+:::
+
+::::
+
+:::quote{author="Helen" role="Floor Manager, Halton Libraries"}
+
 > “If you leave the library with a smile on your face, we know we’ve done our job!”
 
-Helen
-
-Floor Manager, Halton Libraries
+:::
 
 ## Tips for bringing the library into your child’s life
 
@@ -118,27 +127,3 @@ Check out your local library’s website or search for it on [Eventbrite](https:
 Library staff want you to enjoy your time enough for you to come back again - so they’ll be happy to help. And return visits are great votes of confidence for staff and volunteers.
 
 “We get a lot of the same people coming back,” says Helen Halliwell, Library Floor Manager at [Halton Libraries](https://library.haltonbc.info/). “So we know we’re doing something right!”
-
-## Map of libraries and services
-
-[Find your local public library](/libraries)
-
-![Map marker icon with a dashed path, indicating a location or route.](/uploads/archive/c507a5ea5cc311a59fee0d121a617ecb89a587259905053f82ae52d2b5b306a7.svg)
-
-## Expand your world at the library
-
-![People talk with a business advisor in a public library business support session. In the background other library users use computers.](/uploads/archive/63cf1714f14ca2ee1357f8ab47ad3a477e8932a76e617406756387ff504d11ea.jpg)
-
-### [Work and skills](/work-and-skills)
-
-Bring your big ideas to life
-
-Explore
-
-![Image](/uploads/archive/98393c97a373dcf25cda1992a79bb225dc644e9a38fe1a0222c367abb533f078.jpg)
-
-### [Reading](/reading)
-
-Whatever you want to read, it's in the library
-
-Explore

@@ -1,5 +1,10 @@
 ---
 import { settings, sitePath } from '../../lib/site.mjs';
+const publicSiteURL = import.meta.env.PUBLIC_SITE_URL || settings.site.url;
+const publicSitePath = (value) =>
+  publicSiteURL
+    ? new URL(value.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
+    : sitePath(value);
 ---
 
 <!doctype html>
@@ -10,8 +15,16 @@ import { settings, sitePath } from '../../lib/site.mjs';
     <meta name="robots" content="noindex, nofollow" />
     <link href={sitePath('/admin/config.yml')} type="text/yaml" rel="cms-config-url" />
     <title>{settings.site.title} {settings.ui.admin.title_suffix}</title>
+    <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
+    <nav class="cms-help-links" aria-label="Editor help">
+      <a href={publicSitePath('/editing-guide/')}>Editing guide</a>
+      <a href={publicSitePath('/sitemap/')}>Site map</a>
+    </nav>
+    <script is:inline>
+      window.CMS_MANUAL_INIT = true;
+    </script>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script is:inline>
       // Directory records also stamp reviewed_on, which they already display.
@@ -34,5 +47,25 @@ import { settings, sitePath } from '../../lib/site.mjs';
         }
       });
     </script>
+    <script>
+      import { registerEditorComponents } from '../../lib/cms-editor-components.mjs';
+      import previewStyles from '../../styles/global.css?inline';
+      const cms = Reflect.get(window, 'CMS');
+      registerEditorComponents(cms);
+      cms.registerPreviewStyle(previewStyles, { raw: true });
+      cms.init();
+    </script>
   </body>
 </html>
+
+<style>
+  .cms-help-links {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.75rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #d2d1d4;
+    background: #fff;
+    font: 0.8rem/1.3 sans-serif;
+  }
+</style>

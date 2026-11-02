@@ -150,4 +150,4 @@ Findmypast
 
 [Rhondda Cynon Taf](/libraries/rhondda-cynon-taf)
 
-[![LibraryOn logo](/uploads/archive/4980fc5855d4e7b16faa6b053d91c4a6ad767b347bc98df10030491629f52997.svg)](/)
+[![LibraryOn logo](/uploads/archive/libraryon-logo-2.svg)](/)

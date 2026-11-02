@@ -7,7 +7,7 @@ import {
   libraryPath,
   authorityByLibrary
 } from '../src/lib/directory.mjs';
-import { matchesLibrary } from '../src/lib/search.mjs';
+import { matchesLibrary, isLibraryOpenAt, resolveQueryLocation } from '../src/lib/search.mjs';
 import {
   safeURL,
   articleTitle,
@@ -15,10 +15,283 @@ import {
   canonicalInternalPath,
   isOriginalContent,
   isPublishedPage,
-  sitePath
+  breadcrumbsForPage,
+  sitePath,
+  mediaURL
 } from '../src/lib/site.mjs';
 import { preservedLinks, decodeProtectedEmail } from '../src/lib/markdown.mjs';
 import { templateFor } from '../src/lib/templates.mjs';
+import { splitContentModules, unlinkedResources } from '../src/lib/content-modules.mjs';
+import { createMarkdownProcessor } from '@astrojs/markdown-remark';
+import remarkDirective from 'remark-directive';
+import { contentDirectives } from '../src/lib/content-directives.mjs';
+import { transformImportedMarkup } from '../scripts/archive/legacy-markup.mjs';
+import { load } from 'cheerio';
+import { readFileSync } from 'node:fs';
+import { createHash } from 'node:crypto';
+import astroConfig from '../astro.config.mjs';
+import { normalizeListSpacing } from '../src/lib/markdown-format.mjs';
+import { normalizeLinkedCards } from '../scripts/normalize-content.mjs';
+
+test('carousel and filter mechanics use maintained engines and native browser primitives', () => {
+  const home = readFileSync(new URL('../src/templates/HomeTemplate.astro', import.meta.url), 'utf8');
+  assert.ok(home.includes("from 'embla-carousel'"));
+  assert.ok(home.includes("from 'embla-carousel-autoplay'"));
+  assert.ok(!home.includes('setInterval('));
+  assert.ok(!home.includes('requestAnimationFrame('));
+  const directory = readFileSync(new URL('../src/pages/libraries/index.astro', import.meta.url), 'utf8');
+  assert.equal((directory.match(/popover="auto"/g) || []).length, 2);
+  assert.ok(directory.includes('popovertarget="Services-panel"'));
+  assert.ok(directory.includes('popovertarget="Distance-panel"'));
+  assert.ok(directory.includes("from '@floating-ui/dom'"));
+  assert.ok(!directory.includes('const togglePanel'));
+  assert.ok(!directory.includes("document.addEventListener('mousedown'"));
+  assert.ok(!directory.includes("document.addEventListener('keydown'"));
+});
+
+test('editorial layouts omit source notes and sidebars when they have no content', () => {
+  const layout = readFileSync(new URL('../src/layouts/EditorialLayout.astro', import.meta.url), 'utf8');
+  assert.ok(layout.includes('const hasSourceNote = Boolean(entry.data.attribution || originalSource || entry.data.updated_on);'));
+  assert.ok(layout.includes("const hasAside = headings.length > 0 || neighbours.length > 0 || Astro.slots.has('aside');"));
+  assert.ok(layout.includes('{hasSourceNote && ('));
+  assert.ok(layout.includes('{hasAside && ('));
+});
+
+test('Markdown list markers normalize without changing nested structure or code', () => {
+  const source = '-   Parent\n    -   Child\n        continuation\n\n```md\n-   Keep code\n```\n';
+  const normalized = normalizeListSpacing(source);
+  assert.ok(normalized.startsWith('- Parent\n  - Child\n    continuation'));
+  assert.ok(normalized.includes('-   Keep code'));
+  assert.equal(normalizeListSpacing(normalized), normalized);
+  const link = normalizeLinkedCards(':::card\n\n### Read together\n\n[Explore](/reading)\n\n:::');
+  assert.equal(link.linked, 1);
+  assert.ok(link.source.startsWith(':::card{href="/reading"}'));
+  assert.ok(!link.source.includes('[Explore]'));
+  assert.equal(normalizeLinkedCards(link.source).linked, 0);
+});
+
+test('linked Markdown cards use the common body, heading and Lucide arrow structure', async () => {
+  const processor = await createMarkdownProcessor({ remarkPlugins: [remarkDirective, contentDirectives] });
+  const document = load((await processor.render('::::cards\n\n:::card{href="/reading"}\n\n![Reading](/photo.jpg)\n\n### Reading together\n\nA description.\n\n:::\n\n::::')).code);
+  assert.equal(document('a.content-card[href="/reading"] > img').length, 1);
+  assert.equal(document('a.content-card > .content-card-body > .content-card-heading').length, 1);
+  assert.equal(document('.content-card-heading .content-card-arrow path').length, 2);
+  assert.equal(document('a.content-card a').length, 0);
+});
+
+test('Markdown component source changes are included in the content-cache fingerprint', () => {
+  const hash = createHash('sha256');
+  for (const file of ['content-directives.mjs', 'markdown.mjs', 'site.mjs'])
+    hash.update(readFileSync(new URL(`../src/lib/${file}`, import.meta.url))).update('\0');
+  const options = astroConfig.markdown.processor.options.rehypePlugins.find(([plugin]) => plugin === preservedLinks)[1];
+  assert.equal(options.rendererDigest, hash.digest('hex'));
+});
+
+test('named Markdown blocks render explicit components and ordinary content stays ordinary', async () => {
+  const processor = await createMarkdownProcessor({ remarkPlugins: [remarkDirective, contentDirectives], rehypePlugins: [[preservedLinks, { base: '/commons/' }]], smartypants: false });
+  const markdown = ':::testimonial{author="Tracy" role="Librarian" organisation="Wiltshire Libraries" url="/libraries/wiltshire"}\n\n![Reading](/photo.jpg)\n\n> Bring your little ones.\n\n:::\n\n:::quote{author="Alex" role="Customer"}\n\n> We love our library.\n\n:::\n\n::::cards\n\n:::card\n\n![Books](/books.jpg)\n\n### Reading\n\n[Explore](/reading)\n\n:::\n\n::::\n\n:::list-panel\n\n## Activities\n\n- Borrow books\n- Learn skills\n\n:::\n\n::video{src="https://www.youtube.com/embed/example" title="Library film"}';
+  const document = load((await processor.render(markdown)).code);
+  assert.equal(document('figure.testimonial-card').length, 1);
+  assert.equal(document('.testimonial-body blockquote').text().trim(), 'Bring your little ones.');
+  assert.equal(document('.quote-author').first().text(), 'Tracy');
+  assert.equal(document('.quote-role a').attr('href'), '/commons/libraries/wiltshire/');
+  assert.equal(document('figure.testimonial-quote').length, 1);
+  assert.equal(document('.imported-content-card-grid > .imported-content-card > img').length, 1);
+  assert.equal(document('.library-can-do-panel .library-can-do-list li').length, 2);
+  assert.equal(document('.video-embed iframe').attr('title'), 'Library film');
+  assert.equal(document('.video-embed-player iframe').attr('loading'), 'lazy');
+  assert.equal(document('.video-embed figcaption a').attr('href'), 'https://www.youtube.com/watch?v=example');
+  assert.equal(document('.video-embed figcaption a').text(), 'Watch on YouTube');
+  const ordinary = (await processor.render('![Photo](/photo.jpg)\n\n> A quote.\n\nTracy\n\nLibrarian, Wiltshire\n\n## Your public library is a free, open space where you can:\n\n- Borrow books\n\n[View iframe](https://www.youtube.com/embed/example)')).code;
+  assert.ok(!ordinary.includes('testimonial-card'));
+  assert.ok(!ordinary.includes('testimonial-quote'));
+  assert.ok(!ordinary.includes('library-can-do-panel'));
+  assert.ok(!ordinary.includes('<iframe'));
+  await assert.rejects(processor.render(':::quote\n\n> No author.\n\n:::'), /author is required/);
+  await assert.rejects(processor.render(':::unknown\n\nText\n\n:::'), /unknown content block/);
+  await assert.rejects(processor.render(':::card{href="javascript:alert(1)"}\n\nText\n\n:::'), /links must use/);
+});
+
+test('hotspot galleries expose a show-hide toggle and one initially selected marker', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    smartypants: false,
+  });
+  const source = `:::::collection-carousel{kind="hotspots" label="Historic poster"}
+
+::::collection-aside{title="About this gallery"}
+
+The collection is held by the local library.
+
+::::
+
+::::slide
+
+![A poster](/poster.jpg)
+
+:::hotspot{title="Headline" x="35" y="42"}
+
+The poster headline.
+
+:::
+
+::::
+
+::::slide
+
+![A second poster](/poster-two.jpg)
+
+:::hotspot{title="Date" x="65" y="58"}
+
+Printed in 1908.
+
+:::
+
+::::
+
+:::::`;
+  const document = load((await processor.render(source)).code);
+
+  assert.equal(document('.collection-hotspot-toggle input[type="checkbox"]').length, 1);
+  assert.equal(document('.collection-hotspot-toggle input[checked]').length, 1);
+  assert.equal(document('.collection-hotspot-marker[aria-pressed="true"]').length, 2);
+  assert.equal(document('.collection-hotspot-note:not([hidden])').length, 2);
+    assert.equal(document('.collection-hotspot-intro').length, 2);
+  assert.equal(document('.collection-hotspot-intro h3').first().text(), 'About this gallery');
+  assert.equal(document('.collection-hotspot-intro p').first().text(), 'The collection is held by the local library.');
+});
+
+test('collection images can wrap text and editorial asides render semantically', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    smartypants: false,
+  });
+  const source = ':::collection-image{layout="float-right"}\n\n![A small photograph](/small.jpg)\n\n:::\n\nText beside the photograph.\n\n::::collection-aside{title="At a glance" layout="float-left"}\n\n- **When:** 6 January\n- **Officials:** The Lord and Boggins\n\n::::';
+  const document = load((await processor.render(source)).code);
+
+  assert.equal(document('figure.collection-image--float-right img').length, 1);
+  assert.equal(document('.collection-aside--float-left[aria-label="At a glance"] h3').text(), 'At a glance');
+  assert.equal(document('.collection-aside li').length, 2);
+  assert.equal(document('.collection-aside').prev().text().trim(), 'Text beside the photograph.');
+});
+
+test('book recommendations select the matching inline cover and description', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    smartypants: false,
+  });
+  const source = `:::::collection-recommendations{title="Five books about circus"}
+
+::::recommendation-item{title="Ring history" author="A. Author" year="1900"}
+
+![First book cover](/uploads/first.jpg)
+
+First description.
+
+::::
+
+::::recommendation-item{title="Circus images" author="B. Writer" year="1910"}
+
+![Second book cover](/uploads/second.jpg)
+
+Second description.
+
+::::
+
+:::::`;
+  const document = load((await processor.render(source)).code);
+
+  assert.equal(document('.collection-recommendations-heading').text(), 'Five books about circus');
+  assert.equal(document('.collection-recommendation-select').length, 2);
+  assert.equal(document('.collection-recommendation-select[aria-pressed="true"]').text().includes('Ring history'), true);
+  assert.equal(document('.collection-recommendation-select[aria-expanded="true"]').length, 1);
+  assert.equal(document('.collection-recommendation-cover:not([hidden]) img').attr('alt'), 'First book cover');
+  assert.equal(document('.collection-recommendation-description:not([hidden])').text().trim(), 'First description.');
+  assert.equal(document('.collection-recommendations-list li').first().find('.collection-recommendation-description').length, 1);
+  assert.equal(document('.collection-recommendation-cover[hidden] img').attr('alt'), 'Second book cover');
+});
+
+test('master image resolution preserves suffixes and leaves unrelated URLs alone', () => {
+  const aliases = { '/uploads/small.jpg': { url: '/uploads/original.jpg' } };
+  assert.equal(mediaURL('/uploads/small.jpg?download=1#detail', aliases), '/uploads/original.jpg?download=1#detail');
+  assert.equal(mediaURL('/uploads/other.jpg', aliases), '/uploads/other.jpg');
+  assert.equal(mediaURL('https://example.org/photo.jpg', aliases), 'https://example.org/photo.jpg');
+  assert.equal(mediaURL(null, aliases), null);
+});
+
+test('cached Markdown media resolves original masters at the shared content boundary', () => {
+  const old = '/uploads/archive/a-man-and-a-woman-laugh-together-in-a-reading-group-discussion.jpg';
+  const master = mediaURL(old);
+  assert.notEqual(master, old);
+  const html = `<p><a href="${old}#detail"><img src="${old}" alt="Reading group"></a></p>`;
+  const blocks = splitContentModules(html);
+  assert.ok(blocks[0].html.includes(`src="${master}"`));
+  assert.ok(blocks[0].html.includes(`href="${master}#detail"`));
+  const prefixed = splitContentModules(html.replaceAll('/uploads/', '/commons/uploads/'), { base: '/commons/' });
+  assert.ok(prefixed[0].html.includes(`src="/commons${master}"`));
+});
+
+test('content modules use explicit positions once, or follow the page body by default', () => {
+  const blocks = splitContentModules('<p>Before</p><p>{{faqs}}</p><h2>After</h2><p>{{faqs}}</p><p>{{resources}}</p>');
+  assert.deepEqual(blocks, [
+    { type: 'html', html: '<p>Before</p>' },
+    { type: 'faqs' },
+    { type: 'html', html: '<h2>After</h2>' },
+    { type: 'resources' }
+  ]);
+  assert.deepEqual(splitContentModules('<p>Body</p>').map((block) => block.type), ['html', 'faqs', 'resources']);
+  assert.ok(splitContentModules('<pre><code>{{faqs}}</code></pre><p>A {{resources}} example</p>')[0].html.includes('<code>{{faqs}}</code>'));
+});
+
+test('opening article images fill the content width without promoting logos or section images', () => {
+  const leading = splitContentModules(
+    '<h1>About</h1><p>Introduction.</p><p><img src="/lead.jpg" alt="A library scene"></p><h2>More</h2><p><img src="/detail.jpg" alt="Detail"></p>',
+    { leadImage: true },
+  );
+  const leadingDocument = load(leading.filter((block) => block.type === 'html').map((block) => block.html).join(''));
+  assert.equal(leadingDocument('p.article-lead-image img').attr('src'), '/lead.jpg');
+  assert.equal(leadingDocument('p.article-lead-image').length, 1);
+
+  const logo = splitContentModules(
+    '<h1>Digital loans</h1><p><img src="/borrowbox.jpg" alt="BorrowBox logo"></p><h2>More</h2>',
+    { leadImage: true },
+  );
+  assert.equal(load(logo[0].html)('p.article-lead-image').length, 0);
+
+  const collection = splitContentModules(
+    '<h1>Collection</h1><p><img src="/collection.jpg" alt="Archival photo"></p>',
+  );
+  assert.equal(load(collection[0].html)('p.article-lead-image').length, 0);
+});
+
+test('the opening circus collage uses the full content width', () => {
+  const markdown = readFileSync(
+    new URL('../src/content/pages/special-collections--early-days-of-circus.md', import.meta.url),
+    'utf8',
+  );
+  assert.match(markdown, /^:::collection-image\{layout="full" zoom="true"\}/m);
+});
+
+test('FAQ references retain their introduction and anchor without inline answers', () => {
+  const html = '<p>Before</p><h2 id="questions">Questions</h2><p>Introduction</p><p>{{faqs}}</p><h2>After</h2>';
+  const blocks = splitContentModules(html, { faqHeading: 'Questions' });
+  assert.deepEqual(blocks[1], { type: 'faqs', headingId: 'questions', introduction: '<p>Introduction</p>' });
+  assert.ok(blocks[0].html.includes('Before'));
+  assert.ok(blocks[2].html.includes('After'));
+  assert.ok(!JSON.stringify(blocks).includes('{{faqs}}'));
+});
+
+test('resource modules include external links but avoid body links, duplicates and unsafe URLs', () => {
+  const resources = [
+    { url: '/reading', kind: 'link' },
+    { url: '/uploads/guide.pdf', kind: 'document' },
+    { url: 'https://example.org/video', kind: 'recording' },
+    { url: 'https://example.org/video', kind: 'link' },
+    { url: 'javascript:alert(1)', kind: 'link' }
+  ];
+  assert.deepEqual(unlinkedResources('<a href="/reading/">Read</a><a href="/uploads/guide.pdf">Guide</a>', resources), [resources[2]]);
+  assert.deepEqual(unlinkedResources('<a href="/reading/">Read</a><a href="/uploads/guide.pdf">Guide</a><div class="faq-answer"><a href="https://example.org/video">Watch</a></div>', resources), []);
+});
 
 test('directory routes preserve every library with unique URLs and authority relationships', () => {
   assert.equal(searchRecords.length, libraries.length);
@@ -37,7 +310,15 @@ test('directory search matches place, authority, postcode spacing and combined f
     postcode: 'CB1 9HZ',
     authority: 'cambridgeshire',
     authorityName: 'Cambridgeshire',
-    country: 'England'
+    country: 'England',
+    services: ['Books', 'Free Wi-Fi', 'Computers'],
+    accessibility: ['wheelchair-access', 'step-free-access'],
+    hours: {
+      monday: [['09:00', '17:00']]
+    },
+    closed: false,
+    latitude: 52.189,
+    longitude: 0.175
   };
   for (const query of ['cherry hinton', 'cambridge', 'CB19HZ', 'CB1 9HZ'])
     assert.ok(matchesLibrary(record, { query }));
@@ -47,6 +328,36 @@ test('directory search matches place, authority, postcode spacing and combined f
   assert.ok(
     matchesLibrary({ ...record, address: 'High Street', town: 'Cambridge' }, { query: 'cambridge' })
   );
+  assert.ok(
+    matchesLibrary(record, {
+      services: ['Books', 'Free Wi-Fi'],
+      accessibility: ['wheelchair-access']
+    })
+  );
+  assert.ok(!matchesLibrary(record, { services: ['Books', 'Makerspace'] }));
+  assert.ok(!matchesLibrary(record, { accessibility: ['lift-access'] }));
+  const mondayMorning = new Date(2026, 9, 26, 10, 30);
+  const mondayEvening = new Date(2026, 9, 26, 19, 0);
+  assert.equal(isLibraryOpenAt(record, mondayMorning), true);
+  assert.equal(isLibraryOpenAt(record, mondayEvening), false);
+  assert.ok(matchesLibrary(record, { openNow: true, now: mondayMorning }));
+  assert.ok(!matchesLibrary(record, { openNow: true, now: mondayEvening }));
+  assert.ok(!matchesLibrary({ ...record, closed: true }, { openNow: true, now: mondayMorning }));
+  assert.ok(
+    matchesLibrary(record, {
+      location: { latitude: 52.2, longitude: 0.14 },
+      distance: 5
+    })
+  );
+  assert.ok(
+    !matchesLibrary(record, {
+      location: { latitude: 51.5, longitude: -0.1 },
+      distance: 5
+    })
+  );
+  const resolved = resolveQueryLocation([record], 'CB19HZ');
+  assert.equal(resolved.latitude, 52.189);
+  assert.equal(resolved.longitude, 0.175);
 });
 
 test('editorial types choose explicit templates without rewriting source metadata', () => {
@@ -88,6 +399,44 @@ test('content provenance distinguishes LibraryOn source pages from new Commons p
     }),
     false
   );
+});
+
+test('breadcrumbs link to real page ancestors and identify the current page', () => {
+  const collectionIndex = {
+    id: 'special-collections',
+    data: { path: '/special-collections', title: 'Special collections' },
+    body: '# Special collections'
+  };
+  const collection = {
+    id: 'curious-competitions',
+    data: { path: '/special-collections/curious-competitions', title: 'Old SEO title' },
+    body: "# Curious competitions: England's eccentric heritage games"
+  };
+  const about = {
+    id: 'about',
+    data: { path: '/about', title: 'About LibraryCommons' },
+    body: '# About LibraryCommons'
+  };
+  const pressPlay = {
+    id: 'pressplay',
+    data: { path: '/about/pressplay', title: 'Press Play Conference' },
+    body: '# Press Play Conference'
+  };
+
+  assert.deepEqual(breadcrumbsForPage(collection, [collectionIndex, collection]), [
+    { label: 'Home', href: '/' },
+    { label: 'Special collections', href: '/special-collections' },
+    { label: "Curious competitions: England's eccentric heritage games", current: true }
+  ]);
+  assert.deepEqual(breadcrumbsForPage(pressPlay, [about, pressPlay]), [
+    { label: 'Home', href: '/' },
+    { label: 'About LibraryCommons', href: '/about' },
+    { label: 'Press Play Conference', current: true }
+  ]);
+  assert.deepEqual(breadcrumbsForPage(collection, []), [
+    { label: 'Home', href: '/' },
+    { label: "Curious competitions: England's eccentric heritage games", current: true }
+  ]);
 });
 
 test('pages remain public by default and can be kept in the CMS without publishing', () => {
@@ -154,7 +503,7 @@ test('Markdown links support subpaths and original obfuscated email without clie
   assert.equal(externalImage.children[0].value, 'Original event image');
 });
 
-test('imported embeds, image controls, lists, cards and FAQs render as usable components', () => {
+test('legacy migration recognizes imported embeds, image controls, lists, cards and FAQs', () => {
   const text = (value) => ({ type: 'text', value });
   const element = (tagName, children = [], properties = {}) => ({
     type: 'element',
@@ -178,7 +527,7 @@ test('imported embeds, image controls, lists, cards and FAQs render as usable co
           { href: 'https://www.youtube.com/embed/example-video' }
         )
       ]),
-      element('h2', [text('Frequently asked questions')]),
+      element('h2', [text('Questions about reading in libraries')]),
       element('p', [text('Common questions about libraries.')]),
       element('h3', [text('Can I join for free?')]),
       element('p', [text('Yes, joining is free.')]),
@@ -198,6 +547,7 @@ test('imported embeds, image controls, lists, cards and FAQs render as usable co
     ]
   };
 
+  transformImportedMarkup(tree, '');
   preservedLinks()(tree);
 
   const htmlNodes = tree.children.filter(
@@ -216,4 +566,167 @@ test('imported embeds, image controls, lists, cards and FAQs render as usable co
   assert.equal(htmlNodes[6].tagName, 'ul');
   assert.equal(htmlNodes[6].children[0].tagName, 'li');
   assert.ok(!htmlNodes.some((node) => node.tagName === 'p' && /^(View|1\/5|12345)$/.test(node.children?.[0]?.value || '')));
+});
+
+test('legacy migration recognizes testimonials, cards and list groupings', () => {
+  const text = (value) => ({ type: 'text', value });
+  const element = (tagName, children = [], properties = {}) => ({
+    type: 'element',
+    tagName,
+    properties,
+    children
+  });
+  const tree = {
+    type: 'root',
+    children: [
+      element('p', [element('img', [], { src: '/uploads/tracy.jpg', alt: 'Tracy reading to children' })]),
+      element('blockquote', [element('p', [text('Bring your little ones to rhyme time.')])]),
+      element('p', [element('strong', [text('Tracy')])]),
+      element('p', [element('strong', [text('Children & Youth Librarian, Wiltshire Libraries')])]),
+      element('blockquote', [element('p', [text('We love our library.')])]),
+      element('p', [text('Alex')]),
+      element('p', [text('Customer, Sandwell Libraries')]),
+      element('h2', [text('Libraries improve lives')]),
+      element('p', [element('img', [], { src: '/uploads/one.jpg', alt: 'Reading group' })]),
+      element('h3', [text('Reading options for all ages')]),
+      element('p', [element('a', [text('Books and more')], { href: '/reading/reading-in-libraries' })]),
+      element('p', [element('img', [], { src: '/uploads/two.jpg', alt: 'Sensory space' })]),
+      element('h3', [text('Connection and support for families')]),
+      element('p', [element('a', [text('Your community')], { href: '/your-community/children-parents-carers-community' })]),
+      element('h2', [text('Your public library is a free, open space where you can:')]),
+      element('ul', [element('li', [text('borrow books')]), element('li', [text('learn new skills')])])
+    ]
+  };
+
+  transformImportedMarkup(tree, '');
+  preservedLinks()(tree);
+
+  const htmlNodes = tree.children.filter(
+    (node) => !(node.type === 'text' && !node.value.trim())
+  );
+  assert.equal(htmlNodes[0].tagName, 'figure');
+  assert.deepEqual(htmlNodes[0].properties.className, ['testimonial-card']);
+  assert.equal(htmlNodes[0].children[0].children[0].properties.src, '/uploads/tracy.jpg');
+  assert.equal(htmlNodes[0].children[1].children[0].tagName, 'blockquote');
+  assert.equal(htmlNodes[0].children[1].children[1].tagName, 'figcaption');
+  assert.equal(htmlNodes[0].children[1].children[1].children.length, 2);
+
+  assert.equal(htmlNodes[1].tagName, 'figure');
+  assert.deepEqual(htmlNodes[1].properties.className, ['testimonial-quote']);
+  assert.equal(htmlNodes[1].children[1].tagName, 'figcaption');
+  assert.equal(htmlNodes[1].children[1].children.length, 2);
+
+  assert.equal(htmlNodes[3].tagName, 'div');
+  assert.deepEqual(htmlNodes[3].properties.className, ['imported-content-card-grid']);
+  assert.equal(htmlNodes[3].children.length, 2);
+
+  assert.equal(htmlNodes[4].tagName, 'section');
+  assert.deepEqual(htmlNodes[4].properties.className, ['library-can-do-panel']);
+  assert.equal(htmlNodes[4].children[1].tagName, 'ul');
+  assert.deepEqual(htmlNodes[4].children[1].properties.className, ['library-can-do-list']);
+});
+
+test('special collection galleries, notes and book entries stay in the article Markdown', async () => {
+  const processor = await createMarkdownProcessor({
+    remarkPlugins: [remarkDirective, contentDirectives],
+    rehypePlugins: [[preservedLinks, { base: '/' }]],
+    smartypants: false,
+  });
+  const expected = [
+    {
+      file: 'special-collections--frances-wolseley-gardening-educator.md',
+      imageCarousels: 2,
+      imageSlides: 9,
+      imageCarouselZooms: 2,
+      quoteSlides: 6,
+      hotspotSlides: 5,
+      markers: 18,
+      accordionItems: 7,
+      zoomButtons: 12,
+      imageRows: 5,
+    },
+    {
+      file: 'special-collections--curious-competitions.md',
+      imageCarousels: 1,
+      imageSlides: 4,
+      imageCarouselZooms: 4,
+      quoteSlides: 4,
+      hotspotSlides: 8,
+      markers: 19,
+      accordionItems: 3,
+      zoomButtons: 11,
+      asides: 3,
+      imageRows: 4,
+    },
+    {
+      file: 'special-collections--early-days-of-circus.md',
+      imageCarousels: 1,
+      imageSlides: 3,
+      imageCarouselZooms: 2,
+      quoteSlides: 3,
+      hotspotSlides: 5,
+      markers: 27,
+      accordionItems: 0,
+      zoomButtons: 9,
+      imageRows: 7,
+      recommendationSections: 1,
+      recommendationItems: 4,
+      recommendationCovers: 4,
+    },
+    {
+      file: 'special-collections--lacemaking-in-nottingham.md',
+      imageCarousels: 1,
+      imageSlides: 5,
+      imageCarouselZooms: 5,
+      quoteSlides: 4,
+      hotspotSlides: 0,
+      markers: 0,
+      accordionItems: 3,
+      zoomButtons: 22,
+      imageRows: 14,
+    },
+    {
+      file: 'special-collections--library-photo-collections.md',
+      imageCarousels: 1,
+      imageSlides: 4,
+      imageCarouselZooms: 4,
+      quoteSlides: 0,
+      hotspotSlides: 3,
+      markers: 13,
+      accordionItems: 4,
+      zoomButtons: 10,
+      imageRows: 4,
+    },
+  ];
+
+  for (const page of expected) {
+    const source = readFileSync(
+      new URL(`../src/content/pages/${page.file}`, import.meta.url),
+      'utf8',
+    ).replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+    const document = load((await processor.render(source)).code);
+    assert.equal(document('.collection-carousel--images').length, page.imageCarousels, page.file);
+    assert.equal(document('.collection-carousel--images .collection-carousel-slide').length, page.imageSlides, page.file);
+    assert.equal(document('.collection-carousel--images .collection-image-zoom').length, page.imageCarouselZooms, page.file);
+    assert.equal(document('.collection-carousel--quotes .collection-carousel-slide').length, page.quoteSlides, page.file);
+    assert.equal(document('.collection-carousel--hotspots .collection-carousel-slide').length, page.hotspotSlides, page.file);
+    assert.equal(document('.collection-hotspot-marker').length, page.markers, page.file);
+    assert.equal(document('.collection-hotspot-note').length, page.markers, page.file);
+    assert.equal(document('.collection-accordion > .collection-accordion-item').length, page.accordionItems, page.file);
+    assert.equal(document('.collection-image-zoom').length, page.zoomButtons, page.file);
+    assert.equal(document('.collection-aside').length, page.asides || 0, page.file);
+    assert.equal(document('.collection-image-row').length, page.imageRows, page.file);
+    assert.equal(document('.collection-image-row .collection-image-copy').length, page.imageRows, page.file);
+    assert.equal(document('.collection-recommendations').length, page.recommendationSections || 0, page.file);
+    assert.equal(document('.collection-recommendation-select').length, page.recommendationItems || 0, page.file);
+    assert.equal(document('.collection-recommendation-cover img').length, page.recommendationCovers || 0, page.file);
+    assert.ok(
+      [...document('img').toArray()].every((image) => image.attribs.src.startsWith('/uploads/')),
+      page.file,
+    );
+    if (page.file === 'special-collections--frances-wolseley-gardening-educator.md')
+      assert.ok(
+        document('.collection-hotspot-note a[href="https://www.museumofgardening.co.uk/post/the-budding-patent-lawn-mower"]').length,
+      );
+  }
 });

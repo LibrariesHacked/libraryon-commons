@@ -1,4 +1,13 @@
 import settings from '../data/settings.json' with { type: 'json' };
+import mediaMasters from '../data/media-masters.json' with { type: 'json' };
+
+export function mediaURL(value, aliases = mediaMasters.aliases) {
+  if (typeof value !== 'string') return value;
+  const suffixIndex = value.search(/[?#]/);
+  const pathname = suffixIndex < 0 ? value : value.slice(0, suffixIndex);
+  const suffix = suffixIndex < 0 ? '' : value.slice(suffixIndex);
+  return `${aliases[pathname]?.url || pathname}${suffix}`;
+}
 
 /** Canonicalize extensionless internal routes without changing files or URL suffixes. */
 export function canonicalInternalPath(value) {
@@ -20,7 +29,7 @@ export function canonicalInternalPath(value) {
 export function sitePath(value) {
   if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value;
   const base = (import.meta.env?.BASE_URL || '/').replace(/\/$/, '');
-  return `${base}${canonicalInternalPath(value)}`;
+  return `${base}${canonicalInternalPath(mediaURL(value))}`;
 }
 
 /** Only render navigation URLs with safe protocols or absolute local paths. */
@@ -59,6 +68,31 @@ export function articleTitle(entry) {
     .replace(/\s*\|\s*LibraryOn.*$/i, '')
     .replace(/[*_]/g, '')
     .trim();
+}
+
+/** Build a breadcrumb trail from published pages that are actual route ancestors. */
+export function breadcrumbsForPage(entry, pages = [], homeLabel = settings.ui.editorial.home_breadcrumb) {
+  const normalizePath = (value) => {
+    const segments = String(value || '').split('/').filter(Boolean);
+    return segments.length ? `/${segments.join('/')}` : '/';
+  };
+  const currentPath = normalizePath(entry.data.path);
+  if (currentPath === '/') return [];
+
+  const pagesByPath = new Map(pages.map((page) => [normalizePath(page.data.path), page]));
+  const segments = currentPath.split('/').filter(Boolean);
+  const ancestors = [];
+  for (let length = 1; length < segments.length; length += 1) {
+    const path = `/${segments.slice(0, length).join('/')}`;
+    const page = pagesByPath.get(path);
+    if (page) ancestors.push({ label: articleTitle(page), href: page.data.path });
+  }
+
+  return [
+    { label: homeLabel, href: '/' },
+    ...ancestors,
+    { label: articleTitle(entry), current: true }
+  ];
 }
 
 /** Read the first locally preserved image for article previews. */

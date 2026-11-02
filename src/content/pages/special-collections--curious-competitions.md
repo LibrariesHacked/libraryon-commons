@@ -10,49 +10,71 @@ source_url: https://libraryon.org/special-collections/curious-competitions
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.
 resources:
-  - resource-05b9900baea649783f62
-  - resource-9c3bdfa15f17d4cb7b6d
-  - resource-0e7830ee7d16fb460dbf
-  - resource-61fd6bf0429d36a9a48d
-  - resource-1de6e9dd839ced33b46e
-  - resource-fd1dc7fcbc49ed9629ee
-  - resource-bbc705ea1fc38bb986b4
-  - resource-c900d6ce624a4000ca33
-  - resource-00c5e1d106b34c7e5efc
-  - resource-b08670207ac4eb5b7835
-  - resource-f7fba27d2c70dddd4d65
-  - resource-62a6cd0c22fdd9121f23
-  - resource-6c632f19f14006597fe3
-  - resource-a3fa5e4a2f4fdb06fdf3
+  - lincolnshire-folklore-1936
+  - a-topographical-account-of-the-isle-of-axholme-1815
+  - north-lincolnshire-family-and-local-history-research
+  - haxey-hood-website
+  - cumbria-archives
+  - egremont-crab-fair-website
+  - archival-crab-fair-footage
+  - world-gurning-championship-hall-of-fame
+  - warwickshire-county-record-office
+  - uppies-and-downies-the-extraordinary-football-games-of-britain-2008
+  - british-newspaper-archive
+  - local-studies-at-warwickshire-libraries
+  - community-sports-in-workington-cumbria-1913
+  - the-history-of-egremont-crab-fair-narrated-by-steve-foster
 ---
-
-[Back to special collections](/special-collections)
 
 # Curious competitions:  England's eccentric heritage games
 
-![In a cloud of smoke, a man with a red harlequin jacket, tricorn hat and sooty face is raised above a crowd in front of a church.](/uploads/archive/873488fa6a85a1c759e8bc4b5290ce1adaa4a649144fb57a8ed7b850cafb9779.jpg)
+:::collection-image{layout="full" zoom="true"}
+
+![In a cloud of smoke, a man with a red harlequin jacket, tricorn hat and sooty face is raised above a crowd in front of a church.](/uploads/archive/in-a-cloud-of-smoke-a-man-with-a-red-2.jpg)
 
 'Smoking the Fool', outside St Nicholas' Parish Church in Haxey, North Lincolnshire. A pre-match ritual for The Haxey Hood. Photo: LibraryOn.
 
-## Long before VAR, mega sponsorship deals and esports, England's towns and villages spent centuries playing their own local games.
+:::
+
+:::collection-image{layout="float-right" zoom="true"}
+
+![Crowd of people in a mass scrum, wrestling over an unseen ball](/uploads/archive/crowd-of-people-in-a-mass-scrum-wrestling-over-an-unseen-ball.jpg)
+
+Close-up of the Atherstone Ball Game. Taken circa 1990. Source: Warwickshire Libraries.
+
+:::
+
+**Long before VAR, mega sponsorship deals and esports, England's towns and villages spent centuries playing their own local games.**
 
 Part pageant, part battle, part ritual, part drinking contest — and always an excuse for people to get together and have a laugh.
 
 These traditions are stitched from scraps of folklore, full of disputed origin stories and old family feuds. To this day they still bring out huge displays of local pride and community spirit.
 
-From using leather balls to settle ancient disputes, to becoming world champion of pulling the ugliest face, what do these customs reveal about the communities that still keep them alive?
+:::collection-image{layout="inset" zoom="true"}
 
-**And how can library special collections uncover the histories of these unique customs?**
-
-![Crowd of people in a mass scrum, wrestling over an unseen ball](/uploads/archive/e42b784be52d6e9827d5235021936d4072b6ffd61fbfb58a72b3f112b37c3254.jpg)
-
-Close-up of the Atherstone Ball Game. Taken circa 1990. Source: Warwickshire Libraries.
-
-![A wooden sign depicting the Haxey Hood. A church in the background.](/uploads/archive/82fb7f1a50eee094d4cd6f042f1b971560a739689c36f74eb7efdd677daba981.jpg)
+![A wooden sign depicting the Haxey Hood. A church in the background.](/uploads/archive/a-wooden-sign-depicting-the-haxey-hood-a-church-in-the-background.jpg)
 
 Sign commemorating the Haxey Hood, outside St Nicholas' Parish Church. Photo: LibraryOn.
 
+:::
+
 ## The Haxey Hood
+
+::::collection-aside{title="The Haxey Hood at a glance" layout="float-right"}
+
+📍 **Location:** Haxey, North Lincolnshire
+
+📜 **Origins:** 1350s (or earlier?)
+
+📅 **When:** Annually on 6 January, unless it falls on a Sunday
+
+👑 **Officials:** Lord of the Hood, 12 Boggins (including a Chief Boggin) and the Fool
+
+🎯 **Aim:** To force the Hood (a two-foot leather tube) across the threshold of one of four local pubs
+
+⚖️ **Rules:** No running, no kicking, no throwing. Play must stop whenever anyone in the Sway falls over. The game continues indefinitely until the Hood crosses a pub's threshold
+
+::::
 
 _**House against house,**_
 
@@ -78,31 +100,101 @@ After **two or more hours** of play, slowly trampling anything in its path, the 
 
 The **winning pub** gets to hang the Hood above the bar until the next year’s game. They usually give everyone a free round of drinks too!
 
-📍 **Location:** Haxey, North Lincolnshire
+:::::collection-carousel{kind="hotspots" label="Haxey Hood gallery"}
 
-📜 **Origins:** 1350s (or earlier?)
+::::collection-aside{title="The 2025 Haxey Hood"}
 
-📅 **When:** Annually on 6 January, unless it falls on a Sunday
+Members of the LibraryOn team attended the Haxey Hood in 2025, hosted by North Lincolnshire Libraries. It was the 666th instalment of the competition, and The Loco won that year. The notes alongside the images explain the Hood's officials, objects and rituals.
 
-👑 **Officials:** Lord of the Hood, 12 Boggins (including a Chief Boggin) and the Fool
+::::
 
-🎯 **Aim:** To force the Hood (a two-foot leather tube) across the threshold of one of four local pubs
+::::slide
 
-⚖️ **Rules:** No running, no kicking, no throwing. Play must stop whenever anyone in the Sway falls over. The game continues indefinitely until the Hood crosses a pub's threshold
+![Historical archive image](/uploads/archive/haxey-hood-fool-and-boggins.jpg)
 
-![Image](/uploads/archive/c38a980c6753d28037e9b255ae162afb055b63fe3ae5fc468b74c92571cd54dc.jpg)
+:::hotspot{title="The Fool" x="30" y="46"}
 
-![Image](/uploads/archive/873488fa6a85a1c759e8bc4b5290ce1adaa4a649144fb57a8ed7b850cafb9779.jpg)
+The ceremonial 13th Boggin. Half ringmaster, half jester, the Fool embodies the day's sense of merry mischief. Before the game starts, he performs a speech outside the parish church and leads the 'House against house' chorus. His ritualistic 'Smoking' (mock burning) forms a link with the event's possible pagan roots.
 
-![Image](/uploads/archive/a3ca0bb95a80c4aa84b73ed71ad5f1b7d90347d646289ba6a39f6b058a9cf1b0.jpg)
+:::
+
+:::hotspot{title="Lord of the Hood" x="53" y="46"}
+
+Chief official of the game. After a rowdy tour of the local pubs and the Fool's 'Smoking', the Lord directs the procession from St Nicholas Church to the 'Hood Field'. The game commences on his command and he acts as referee.
+
+:::
+
+:::hotspot{title="The Boggins" x="73" y="44"}
+
+The game's officials. Twelve in number, they represent the farmers who chased Lady de Mowbray's hood in the game's medieval origin story. They wear distinctive red outfits and marshal the scrum, making sure rules are obeyed and crushes are avoided.
+
+:::
+
+:::hotspot{title="The Hood" x="61" y="57"}
+
+The Hood is a leather cylinder, two-foot long and 8-inches in circumference. It is traditionally filled with coiled rope, money and the names of residing Boggins at the object's creation. Hoods are used until they fall apart, which can take as long as 25 years. They are made by a long-standing local saddler.
+
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/in-a-cloud-of-smoke-a-man-with-a-red-2.jpg)
+
+:::hotspot{title="The Fool's outfit" x="53" y="64"}
+
+The Fool wears a harlequin-style red jacket, white trousers and a tricorn hat. His clothes are decorated all over with badges, patches and multicoloured scraps. Every Fool makes his own outfit when he begins his tenure in the role. The Fool's face is blackened with soot to represent his 'Smoking'.
+
+:::
+
+:::hotspot{title="The Fool's flail" x="41" y="49"}
+
+The Fool carries a flail, traditionally made from a sock filled with bran, with which he is allowed to swipe at the crowd. In times gone by, the Fool was also allowed 'to throw his arm round and kiss any women, "even be she the highest i' the land,"' (Ethel Rudkin, *Lincolnshire Folklore*). They don't let him do that anymore.
+
+:::
+
+:::hotspot{title="Smoking the Fool" x="37" y="69"}
+
+During his speech, the Fool stands on the Mowbray Stone, a small plinth. On the floor behind him, bundles of damp straw are burnt by the other Boggins. In the past, the Fool was suspended from a tree above a bonfire during the ritual. For health and safety reasons, that practice has been discontinued.
+
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/haxey-hood-gathering-at-sunset.jpg)
+
+:::hotspot{title="The Wand" x="46" y="29"}
+
+The Lord of the Hood's staff of office. A wand made of 13 willow sticks, bound together 13 times. Twelve sticks face upwards, one down, representing the Boggins and Fool respectively. The wand is about five-foot long and is used by the Lord to marshal the game. Only one person in Haxey knows how to make the wand. Eventually they will pass down their knowledge to a single successor.
+
+:::
+
+:::hotspot{title="The Sway" x="49" y="54"}
+
+The Sway is a slow, chaotic scrum of players, all trying to move the Hood (it's in there somewhere!) towards their chosen pub. It can number 300+ people on a good day and is made up of locals and visitors alike. Most play for the same pub every year, although some shift allegiances when establishments change ownership.
+
+:::
+
+:::hotspot{title="Mud" x="63" y="92"}
+
+The Haxey Hood is played come rain or shine. The Sway frequently breaks down, forcing the Boggins to stop proceedings until everyone regains their feet. Things get muddy.
+
+:::
+
+::::
+
+:::::
 
 **Members of the LibraryOn team, hosted by** [**North Lincolnshire Libraries**](/libraries/north-lincolnshire)**, were lucky enough to attend the Haxey Hood in 2025.**
 
 It was the **666th** instalment of the competition and was won by **The Loco**.
 
-Use the **hotspots** on the photos to discover the Hood's key figures, objects and rituals.
+Explore the notes beneath the photos above to discover the Hood's key figures, objects and rituals.
 
-## Contested beginnings
+### Contested beginnings
 
 Local legend says the Hood game began in the 14th century.
 
@@ -114,13 +206,21 @@ The boy who caught the hood was too shy to hand it back. A bolder friend did the
 
 She rewarded the men with 13 half-acres of land and was so tickled by the event that she ordered a re-enactment every year.
 
-###### **💡 It's a neat story, but could there be another explanation?**
+**💡 It's a neat story, but could there be another explanation?**
 
 The Lord's willow wand, the red costumes and feathered hats, the 13 'Boggins', the mock burning and the Hood itself — which doesn’t look like a hood at all — are not explained by the medieval tale.
 
 **"Students of folklore will probably recognise a much more ancient origin, and possible survivals of fertility rites"** (_Lincolnshire Folklore_, Ethel R. Rudkin)
 
-## Smoking the Fool
+### Smoking the Fool
+
+:::collection-image{layout="float-right" zoom="true"}
+
+![A man in harlequin jacket, white trousers and tricorn hat surrounded with smoke, standing on a stone.](/uploads/archive/a-man-in-harlequin-jacket-white-trousers-and-tricorn-hat-2.jpg)
+
+The Fool, standing on the Mowbray Stone during his 'Smoking'. Photo: LibraryOn.
+
+:::
 
 The game is overseen by 12 attendants in red outfits known as **Boggins**. They are led by the **Lord of the Hood** and the ceremonial 13th Boggin — the **Fool**.
 
@@ -134,23 +234,59 @@ The Fool then gives **a speech**, joking about the year's events, running throug
 
 The poem's origins are **ancient and unknown**. Some believe the final line was added later to discourage violent play.
 
-![A man in harlequin jacket, white trousers and tricorn hat surrounded with smoke, standing on a stone.](/uploads/archive/f0414630cb07bbe05a0dc5bb9f54f7211d5b2ccccfc084124c646565c6fcf2b9.jpg)
-
-The Fool, standing on the Mowbray Stone during his 'Smoking'. Photo: LibraryOn.
-
-## Learning more in the library
+### Learning more in the library
 
 **Tim Davies** from North Lincolnshire Libraries explains how the local studies section at [**Scunthorpe Central Library**](/libraries/north-lincolnshire/scunthorpe-central) helps people learn more about the Hood and its history.
 
-[Recommendations](https://www.youtube.com/embed/Rqhy807OO30)
+::video{src="https://www.youtube.com/embed/Rqhy807OO30" title="Video: Recommendations"}
 
-Useful local studies resources
+::::collection-accordion{label="Useful local studies resources"}
 
-![Two sepia photos side-by-side of the same man. In one he makes a very ugly, funny face.](/uploads/archive/cbe301214286d9cd4acc7e9d171630884d3996f214ab26505dd7c1afa7a27335.jpg)
+:::accordion-item{title="Specialist books"}
+
+Libraries are a great place to find reference books specialising in local history. Often these books are otherwise very hard to get hold of. Some may be independently published in small print runs, others may be antique and rare. Scunthorpe Central Library hold three beautiful Victorian books about the Isle of Axholme's history. These are some of the definitive historical authorities on the Haxey area and its traditions, including the Hood game.
+
+:::
+
+:::accordion-item{title="Local newspapers"}
+
+The Epworth Bells was the local newspaper for the Haxey area from 1872 to 2019, when it was replaced by the Epworth Times. Almost every edition of the paper is held in the local studies section of Scunthorpe Central Library and is available to read upon request. Local newspapers are a great source for historical material, providing more detail and local colour than their national counterparts.
+
+:::
+
+:::accordion-item{title="Microfilm"}
+
+Microfilm is an early form of digitisation, developed in the post-war period. Primary sources (such as newspapers) are photographed onto a strip of film. The film is stored on a reel. Being sturdier than paper, materials are easier to store safely. Most modern microfilm readers transmit to a computer screen. The software includes features like zoom, image enhancement and screen capture.
+
+:::
+
+::::
+
+:::collection-image{layout="inset" zoom="true"}
+
+![Two sepia photos side-by-side of the same man. In one he makes a very ugly, funny face.](/uploads/archive/two-sepia-photos-side-by-side-of-the-same-man-2.jpg)
 
 Headshots of Wyndham 'Taffy' Thomas, five-time gurning world champion. Taken by Ben Templeton in 1965. Source: Whitehaven Archives.
 
+:::
+
 ## Egremont Crab Fair
+
+::::collection-aside{title="Egremont Crab Fair at a glance" layout="float-right"}
+
+📍 **Location:** Egremont, Cumbria
+
+📜 **Origins:** First chartered in 1267 by King Henry III
+
+📅 **When:** Third Saturday in September
+
+🏆 **Main event:** World Gurning Championship
+
+🎯 **Aim:** To pull the ugliest — and funniest — face
+
+🦀 **Other games:** Competitive pipe-smoking, greasy pole climbing, Cumberland wrestling
+
+::::
 
 The Egremont Crab Fair in Cumbria was first chartered in **1267** by Henry III as a market and harvest celebration.
 
@@ -168,29 +304,95 @@ Past attractions included the cruel sports of bull baiting, cock fighting and **
 
 Today's fair includes competitive pipe-smoking, Cumberland wrestling, greasy pole climbing, street racing, horse-jumping and the famous **World Gurning Championship**.
 
-📍 **Location:** Egremont, Cumbria
+:::::collection-carousel{kind="hotspots" label="Egremont Crab Fair programmes"}
 
-📜 **Origins:** First chartered in 1267 by King Henry III
+::::slide
 
-📅 **When:** Third Saturday in September
+![Historical archive image](/uploads/archive/egremont-crab-fair-programme-1952.jpg)
 
-🏆 **Main event:** World Gurning Championship
+:::hotspot{title="1952 Crab Fair Programme" x="69" y="28"}
 
-🎯 **Aim:** To pull the ugliest — and funniest — face
+Older programmes focus on athletics and animal-related competitions. More eccentric games are relegated to this fleeting reference on the back page. Gurning is referred to as "Grinning through Horse Collar". An even older name for the event was "Grinning for 'bacca", referring to the tobacco prize awarded to the winner.
 
-🦀 **Other games:** Competitive pipe-smoking, greasy pole climbing, Cumberland wrestling
+:::
 
-![Image](/uploads/archive/e7dda638c2a8c0e06ccb719ea0b8bfe4db11fdf836cb9c77900d1d57f1301cf8.jpg)
+:::hotspot{title="Local support" x="27" y="48"}
 
-![Image](/uploads/archive/309a09a430d13556be32886ff0d482aa2c1d0954e0235accc84b01a840125b66.jpg)
+From its inception, the Crab Fair has relied upon the goodwill of local suppliers and patrons. Nowadays the event is funded by donations and run by a committee of volunteers.
 
-![Image](/uploads/archive/535bfcf4402dcfef2260aec6f82a07c5b432ce7cbc8c1d31dfa15d298008c259.jpg)
+:::
 
-![Image](/uploads/archive/a0a95a480ff13433d0d9b6caa8302e0939f7f16122a94f464550f25b2c1c5e3f.jpg)
+:::hotspot{title="Barn dance" x="72" y="74"}
 
-![Image](/uploads/archive/543eeb368cc95063a2422dce643c5135bf4e36ad2e86c135857fa7902a1d6e3f.jpg)
+A massive barn dance in Egremont Market Hall formed the climax of the event. In the last few years this has evolved into CrabFest, a festival of live music that accompanies the games.
 
-## Programmes through the ages
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/egremont-crab-fair-trophies-1963.jpg)
+
+:::hotspot{title="Trophies" x="76" y="11"}
+
+Trophies tend to be named after patrons or successful competitors. They are a testament to the importance of donors for the ongoing survival of the fair and to the legacies of its participants. The Gurning World Championship prize is now known as the Gordon Blacklock Memorial Trophy. Gordon Blacklock was a five-time champion who shared a 15-year rivalry with Tommy Mattinson (19 wins). After he passed away in 2020, a new trophy was named in his honour.
+
+:::
+
+:::hotspot{title="Gurning" x="34" y="84"}
+
+Here "grinning" has been replaced by "gurning", although on the back page it is again referred to as "Grinning through Horse Collar". "Go as you please" competitions were an early iteration of the talent show.
+
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/egremont-crab-fair-programme-1977.jpg)
+
+:::hotspot{title="Greasy pole climbing" x="74" y="45"}
+
+Greasy pole climbing is one of the fair's most venerable events. The pole is erected at the start of the day and the competition lasts until the evening. The pole is 30-foot long and traditionally greased with lard. The prize for climbing highest up the pole used to be a hat, probably a top hat, which was switched to a leg of lamb or mutton in the mid-19th century.
+
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/egremont-crab-fair-programme-1996.jpg)
+
+:::hotspot{title="Vintage vehicles" x="74" y="21"}
+
+Exhibitions and parades of vintage vehicles now form an important part of the fair. Agricultural shows and animal performances are similarly important, representing a merging of the Crab Fair's itinerary with more conventional village fêtes.
+
+:::
+
+:::hotspot{title="World Gurning Championship" x="76" y="68"}
+
+By the 1990s, gurning had become the main attraction. Rebranded as a "World Championship", the competition has also diversified to include junior and women's categories. The filming of the 1996 gurning competition by Australian television reflects the worldwide infamy of this increasingly novel folk tradition.
+
+:::
+
+::::
+
+::::slide
+
+![Historical archive image](/uploads/archive/egremont-crab-fair-advertisement-1824.jpg)
+
+:::hotspot{title="1824 Crab Fair Advert Slide" x="48" y="20"}
+
+Cumberland wrestling is a cornerstone of the Crab Fair. Inspired by Norse Irish settlers, this ancient throwing contest begins with both competitors in a standing hold. From this position, they attempt to force their opponent into three falls. Competitors wear uniquely embroidered outfits, with the best dressed awarded a special prize.
+
+:::
+
+::::
+
+:::::
+
+### Programmes through the ages
 
 [**Whitehaven Archive & Local Studies Centre**](/libraries/cumberland/whitehaven-archive-local-studies-centre) is the home of Cumbria's local history archive.
 
@@ -198,9 +400,17 @@ As well as photographs and specialist local history books, the archive holds sev
 
 Extracts from the programmes of **1952, 1963, 1977** and **1996**, as well as a slide advertisement from **1824**, are digitised here for the first time.
 
-Use the **hotspots** to explore the Crab Fair's evolution.
+Explore the notes beneath each programme above to trace the Crab Fair's evolution.
 
-## Gurning for glory
+### Gurning for glory
+
+:::collection-image{layout="float-right" zoom="true"}
+
+![Sepia photo of man making an ugly, funny face](/uploads/archive/sepia-photo-of-man-making-an-ugly-funny-face.jpg)
+
+Headshot of Wyndham 'Taffy' Thomas, 1965. Source: Whitehaven Archives.
+
+:::
 
 Egremont Crab Fair's headline event is the **World Gurning Championship**.
 
@@ -212,19 +422,51 @@ The game's origins are uncertain. Some say it began as a ritual mocking of the s
 
 Champions often hold on to their titles for years. Anne Woods dominated the women's division from 1977 to 2010, winning a record **28 times**.
 
-![Sepia photo of man making an ugly, funny face](/uploads/archive/25d0eac05262d7376fdb61825cd57893e40223e7f67c0488c173dcb7df2f84d2.jpg)
+:::::collection-carousel{kind="images" label="Atherstone Ball Game"}
 
-Headshot of Wyndham 'Taffy' Thomas, 1965. Source: Whitehaven Archives.
+::::slide{zoom="true"}
 
-![Photo of a melee of people wrestling in the street](/uploads/archive/c4b05d6d17d6ccc9354c21b7965b38342a0e065aaf892e4486e04a2c8821ff97.jpg)
+![Photo of a melee of people wrestling in the street](/uploads/archive/photo-of-a-melee-of-people-wrestling-in-the-street.jpg)
 
-![Photo of people amassed around a boarded-up shopfront ready to play.](/uploads/archive/8b04863e4d9277c7bf78599d1dc9ce0e34554cbb57a2d740d7d44ed3e53edbb9.jpg)
+::::
 
-![Photo of a large crowd of fighting people in the street, behind them some barricaded shops.](/uploads/archive/a733d249e0dccaae433cea6a3734b0a2d3ea96e66d0fc196b3421427c5d23158.jpg)
+::::slide{zoom="true"}
 
-![A shot from above of crowds beginning to gather in the street in preparation for the ball game](/uploads/archive/34705d4889520f2caf7203f2dba0057b5e731b9ec6ae3c603dfc1d10615a59d2.jpg)
+![Photo of people amassed around a boarded-up shopfront ready to play.](/uploads/archive/photo-of-people-amassed-around-a-boarded-up-shopfront-ready-to-play.jpg)
+
+::::
+
+::::slide{zoom="true"}
+
+![Photo of a large crowd of fighting people in the street, behind them some barricaded shops.](/uploads/archive/photo-of-a-large-crowd-of-fighting-people.jpg)
+
+::::
+
+::::slide{zoom="true"}
+
+![A shot from above of crowds beginning to gather in the street in preparation for the ball game](/uploads/archive/a-shot-from-above-of-crowds-beginning-to-gather.jpg)
+
+::::
+
+:::::
 
 ## Atherstone Ball Game
+
+::::collection-aside{title="Atherstone Ball Game at a glance" layout="float-right"}
+
+📍 **Location:** Atherstone, Warwickshire
+
+⏳ **Origins:** 1199 football match between Leicestershire and Warwickshire
+
+📅 **When:** Every Shrove Tuesday
+
+👥 **Teams:** None, everyone for themselves
+
+🎯 **Aim:** The individual holding the ball at 5pm wins
+
+⚖️ **Rules:** Players should avoid killing each other
+
+::::
 
 At first glance, photos of the Atherstone Ball Game make it look like a lively, slightly cramped street festival.
 
@@ -242,19 +484,7 @@ Apart from keeping play to Atherstone's **Long Street** and asking players not t
 
 It's a free-for-all. Whoever is holding the ball when the church bell strikes **5pm** wins.
 
-📍 **Location:** Atherstone, Warwickshire
-
-⏳ **Origins:** 1199 football match between Leicestershire and Warwickshire
-
-📅 **When:** Every Shrove Tuesday
-
-👥 **Teams:** None, everyone for themselves
-
-🎯 **Aim:** The individual holding the ball at 5pm wins
-
-⚖️ **Rules:** Players should avoid killing each other
-
-## On the ball
+### On the ball
 
 Events like the Atherstone Ball Game **evolve over time**, with each new generation putting their own stamp on the occasion.
 
@@ -266,7 +496,7 @@ With that, **the game of rugby** was born, named after Webb Ellis' school.
 
 Whilst there's not much proof for this story, it invites us to **look at the sports played, watched, and enjoyed around the world today** and consider the weird and wonderful historical games from which they originate.
 
-###### **💡 Historically, the game was always started by a footballer or rugby player.**
+**💡 Historically, the game was always started by a footballer or rugby player.**
 
 The most famous example was legendary England goalkeeper **Gordon Banks**, who kicked off proceedings in 1995.
 
@@ -274,11 +504,21 @@ In recent years this honour has been widened to celebrities from other fields, w
 
 In 2024, the game was started by locally-born comedian **Josh Pugh**.
 
+:::quote{author="The Tribune (1947)"}
+
 > "No referee could declare the pitch unfit—for this game knows no referee. It's an all-in scramble."
 
-## _The Tribune_ (1947)
+:::
 
-## Read all about it!
+### Read all about it!
+
+:::collection-image{layout="float-right" zoom="true"}
+
+![Newspaper clipping titled 'Shrovetide Football'.](/uploads/archive/newspaper-clipping-titled-shrovetide-football.jpg)
+
+Clipping from The Atherstone News, 1934. Source: Warwickshire Libraries.
+
+:::
 
 The Atherstone Ball Game has had plenty of controversy over the years.
 
@@ -288,81 +528,64 @@ Local newspapers are the best place to find these debates — and plenty of comi
 
 [**Warwickshire Libraries**](/libraries/warwickshire) has gathered a collection of clippings from across the decades, available to view on request. Here are some highlights.
 
-![Newspaper clipping titled 'Shrovetide Football'.](/uploads/archive/f38ed55cbc3c3607be2cf0d268c5707e909e2f171e0bb292cf7992207e68bfd3.jpg)
+:::::collection-carousel{kind="quotes" label="Newspaper reports on the Atherstone Ball Game"}
 
-Clipping from The Atherstone News, 1934. Source: Warwickshire Libraries.
+::::slide
 
-### The 1934 game was the first to be broadcast by the BBC. The announcer, however, had to apologise for wrongly calling Atherstone a village.
-
-### The report in _The Atherstone News_ adds:
+The 1934 game was the first to be broadcast by the BBC. The announcer, however, had to apologise for wrongly calling Atherstone a village. The report in _The Atherstone News_ adds:
 
 > "He assured listeners that the Town of Atherstone appeared in the Domesday Book, which was more than could be said of Birmingham."
 
-### The UK faced a severe winter in 1947, known as ‘The Great Freeze’. The game still went ahead, though the icy conditions made play difficult.
+::::
 
-### From _The Tribune_:
+::::slide
+
+The UK faced a severe winter in 1947, known as ‘The Great Freeze’. The game still went ahead, though the icy conditions made play difficult. From _The Tribune_:
 
 > "Where the ball goes the players follow—sometimes to the depths of the canal which skirts the town.
-
+>
 > Today the thrill of immersion was denied the contestants for the canal was frozen over."
 
-### 1950 was a violent year according to _The Atherstone News_:
+::::
+
+::::slide
+
+1950 was a violent year according to _The Atherstone News_:
 
 > "The cry was raised that a man was down under the scrum.
-
+>
 > The Atherstone Ambulance was soon on the scene and the attendants, assisted by the police, had the greatest difficulty in forcing their way to the seething mass of humanity only to find that their services were not required."
 
-### Many newspapers report damage to the shops and homes unlucky enough to be caught up in the game.
+::::
 
-### 1951 was especially “fishy”, as _The Birmingham Mail's_ 1952 report makes clear:
+::::slide
+
+Many newspapers report damage to the shops and homes unlucky enough to be caught up in the game. 1951 was especially “fishy”, as _The Birmingham Mail's_ 1952 report makes clear:
 
 > "Whoever holds the ball as the church clock strikes five has the right to keep it, and long before that hour rival gangs try to smuggle it away.
-
+>
 > Last year at this stage a fish trader's stall was upset and the fish used as missiles."
+
+::::
+
+:::::
 
 ## Discover more
 
-[Lincolnshire Folklore (1936)](https://openlibrary.org/books/OL5123078M/Lincolnshire_folklore)Ethel R. Rudkin's seminal history of Lincolnshire folk traditions
-
-[A Topographical Account of the Isle of Axholme (1815)](https://openlibrary.org/works/OL5037163W/A_topographical_account_of_the_Isle_of_Axholme_..._in_the_county_of_Lincoln?edition=key%3A/books/OL20714249M)William Peck's local history book, held in North Lincolnshire Libraries' reference section
-
-[North Lincolnshire family and local history research](https://www.livewellnorthlincolnshire.org.uk/service/family-and-local-history-research)Tim Davies' bespoke service for researching the library's archives
-
-[Haxey Hood website](https://haxeyhood.weebly.com/)Semi-official web page of the Hood, featuring archival images going back to 1905
-
-[Cumbria Archives](https://cumbriaarchives.org.uk/welcome-cumbria-archives)Searchable digital database of Whitehaven and other Cumbrian archives
-
-[Egremont Crab Fair website](https://www.egremontcrabfair.com/)Official site of Egremont Crab Fair
-
-[Archival Crab Fair footage](https://www.britishpathe.com/asset/38560/)British Pathé newsreel footage from the 1969 fair
-
-[World Gurning Championship Hall of Fame](https://www.egremontcrabfair.com/history/halloffame)List of all winners and runners up since 1945
-
-[Warwickshire County Record Office](https://archivesunlocked.warwickshire.gov.uk/CalmView/)Searchable database of Warwickshire local studies artefacts
-
-[Uppies and Downies: The Extraordinary Football Games of Britain (2008)](https://historicengland.org.uk/images-books/publications/uppies-and-downies/)Hugh Hornby's overview of Britain's folk football games, including the Atherstone Ball Game
-
-[British Newspaper Archive](https://www.britishnewspaperarchive.co.uk/)Millions of digitised newspapers, accessible in the library
-
-[Local Studies at Warwickshire Libraries](https://library.warwickshire.gov.uk/reading-collections/local-studies-family-history)Catalogue of Warwickshire Libraries' local studies collections
-
-[Community sports in Workington, Cumbria (1913)](https://youtu.be/bLIPMAFdc6Q?si=UEKXAf7zdz4lWpTj&t=658)Archival footage of Uppies and Downies, a medieval football match held in Workington, Cumbria
-
-[The History of Egremont Crab Fair, narrated by Steve Foster](https://youtu.be/ADdM2Cb-XtU)Recording of the Crab Fair Committee President narrating the event's history
-
-## Explore your local library
-
-![A purple location icon](/uploads/archive/1c9eb67a90e87597ebe39c56af587f1752d68dfb48bd8d5f803f8aa5853437dd.svg)
-
-### [Find your local library](/libraries)
-
-Use our interactive map to find libraries across the UK
-
-![Image](/uploads/archive/349f42a221637f997b762d1be683dba896cb852fa1c379b2131a4c0189cb30f0.png)
-
-### [Find events at libraries](/events)
-
-Explore library event listings
+- [Lincolnshire Folklore (1936)](https://openlibrary.org/books/OL5123078M/Lincolnshire_folklore) — Ethel R. Rudkin's seminal history of Lincolnshire folk traditions
+- [A Topographical Account of the Isle of Axholme (1815)](https://openlibrary.org/works/OL5037163W/A_topographical_account_of_the_Isle_of_Axholme_..._in_the_county_of_Lincoln?edition=key%3A/books/OL20714249M) — William Peck's local history book, held in North Lincolnshire Libraries' reference section
+- [North Lincolnshire family and local history research](https://www.livewellnorthlincolnshire.org.uk/service/family-and-local-history-research) — Tim Davies' bespoke service for researching the library's archives
+- [Haxey Hood website](https://haxeyhood.weebly.com/) — Semi-official web page of the Hood, featuring archival images going back to 1905
+- [Cumbria Archives](https://cumbriaarchives.org.uk/welcome-cumbria-archives) — Searchable digital database of Whitehaven and other Cumbrian archives
+- [Egremont Crab Fair website](https://www.egremontcrabfair.com/) — Official site of Egremont Crab Fair
+- [Archival Crab Fair footage](https://www.britishpathe.com/asset/38560/) — British Pathé newsreel footage from the 1969 fair
+- [World Gurning Championship Hall of Fame](https://www.egremontcrabfair.com/history/halloffame) — List of all winners and runners up since 1945
+- [Warwickshire County Record Office](https://archivesunlocked.warwickshire.gov.uk/CalmView/) — Searchable database of Warwickshire local studies artefacts
+- [Uppies and Downies: The Extraordinary Football Games of Britain (2008)](https://historicengland.org.uk/images-books/publications/uppies-and-downies/) — Hugh Hornby's overview of Britain's folk football games, including the Atherstone Ball Game
+- [British Newspaper Archive](https://www.britishnewspaperarchive.co.uk/) — Millions of digitised newspapers, accessible in the library
+- [Local Studies at Warwickshire Libraries](https://library.warwickshire.gov.uk/reading-collections/local-studies-family-history) — Catalogue of Warwickshire Libraries' local studies collections
+- [Community sports in Workington, Cumbria (1913)](https://youtu.be/bLIPMAFdc6Q?si=UEKXAf7zdz4lWpTj&t=658) — Archival footage of Uppies and Downies, a medieval football match held in Workington, Cumbria
+- [The History of Egremont Crab Fair, narrated by Steve Foster](https://youtu.be/ADdM2Cb-XtU) — Recording of the Crab Fair Committee President narrating the event's history
 
 ## Partners
 

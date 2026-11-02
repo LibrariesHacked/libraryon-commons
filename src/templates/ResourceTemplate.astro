@@ -1,17 +1,21 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import ResourceLink from '../components/ResourceLink.astro';
-import { safeURL, settings, sitePath } from '../lib/site.mjs';
-const { resource } = Astro.props;
+import { safeURL, settings } from '../lib/site.mjs';
+const { resource, usage = [] } = Astro.props;
 const copy = settings.ui.resources;
+const breadcrumbs = [
+  { label: settings.ui.editorial.home_breadcrumb, href: '/' },
+  { label: copy.breadcrumb, href: '/resources/' },
+  { label: resource.title, current: true }
+];
 ---
 
 <SiteLayout title={resource.title} description={resource.description}>
   <header class="page-heading">
     <div class="shell">
-      <nav class="breadcrumbs">
-        <a href={sitePath('/resources/')}>{copy.breadcrumb}</a>
-      </nav>
+      <Breadcrumbs items={breadcrumbs} />
       <p class="eyebrow">{resource.kind}</p>
       <h1>{resource.title}</h1>
     </div>
@@ -20,6 +24,16 @@ const copy = settings.ui.resources;
     <div class="prose">
       {resource.description && <p>{resource.description}</p>}
       <ResourceLink resource={resource} />
+      {usage.length > 0 && (
+        <section class="resource-used-in">
+          <h2>{settings.ui.resources.used_in}</h2>
+          <ul>
+            {usage.map((reference) => (
+              <li><a href={safeURL(reference.href)}>{reference.label}</a></li>
+            ))}
+          </ul>
+        </section>
+      )}
       <dl>
         {resource.credit && (
           <>

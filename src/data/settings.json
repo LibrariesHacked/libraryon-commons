@@ -2,27 +2,57 @@
   "site": {
     "title": "LibraryCommons",
     "description": "A community-maintained commons for library stories, knowledge, resources and local library information.",
-    "url": "",
+    "url": "https://librarycommons.org.uk/",
     "licence_url": "https://creativecommons.org/licenses/by/4.0/"
   },
   "navigation": [
-    { "label": "Find a library", "url": "/libraries/" },
+    {
+      "label": "Find a library",
+      "url": "/libraries/"
+    },
     {
       "label": "Discover",
       "children": [
-        { "label": "Reading", "url": "/reading/", "description": "Whatever you want to read, it’s in the library." },
-        { "label": "Work and skills", "url": "/work-and-skills/", "description": "Bring your big ideas to life." },
-        { "label": "Your community", "url": "/your-community/", "description": "Gathering is good for us." },
-        { "label": "Special collections", "url": "/special-collections/", "description": "Regional history and culture unlocked." },
-        { "label": "Events", "url": "/events/", "description": "What’s on near you." }
+        {
+          "label": "Reading",
+          "url": "/reading/",
+          "description": "Whatever you want to read, it’s in the library."
+        },
+        {
+          "label": "Work and skills",
+          "url": "/work-and-skills/",
+          "description": "Bring your big ideas to life."
+        },
+        {
+          "label": "Your community",
+          "url": "/your-community/",
+          "description": "Gathering is good for us."
+        },
+        {
+          "label": "Special collections",
+          "url": "/special-collections/",
+          "description": "Regional history and culture unlocked."
+        }
       ]
     },
     {
       "label": "About",
       "children": [
-        { "label": "About LibraryCommons", "url": "/commons/", "description": "How this community project connects libraries." },
-        { "label": "Grants", "url": "/grants/", "description": "The LibraryOn grants programme for libraries." },
-        { "label": "Press Play Conference", "url": "/about/pressplay/", "description": "A playground of digital ideas." }
+        {
+          "label": "About LibraryCommons",
+          "url": "/commons/",
+          "description": "How this community project connects libraries."
+        },
+        {
+          "label": "Grants",
+          "url": "/grants/",
+          "description": "The LibraryOn grants programme for libraries."
+        },
+        {
+          "label": "Press Play Conference",
+          "url": "/about/pressplay/",
+          "description": "A playground of digital ideas."
+        }
       ]
     }
   ],
@@ -121,7 +151,8 @@
       "original_source": "Original source",
       "compact_recording": "Recording",
       "compact_slides": "Slides",
-      "compact_resource": "Resource"
+      "compact_resource": "Resource",
+      "used_in": "Used in"
     },
     "sessions": {
       "speakers": "Speakers",
@@ -141,13 +172,24 @@
       "heading": "Find your library",
       "intro_library_count": "libraries and",
       "intro_authority_count": "authorities, maintained with the library community.",
-      "query_label": "Name, town or postcode",
-      "query_placeholder": "e.g. Cambridge or CB1 9HZ",
-      "authority_label": "Library authority",
-      "all_authorities": "All authorities",
+      "query_label": "Search by library name or address",
+      "query_placeholder": "Search by library name or address...",
+      "find_nearby": "Find nearby",
+      "finding_nearby": "Finding...",
+      "current_location": "Your current location",
+      "services_filter": "Services",
+      "distance_filter": "Distance",
+      "open_now_label": "Open now",
+      "services_heading": "Services and facilities",
+      "accessibility_heading": "Accessibility",
+      "view_all": "View all",
+      "show_less": "Show less",
+      "clear_button": "Clear",
+      "apply_button": "Apply",
+      "location_prefix": "Location:",
+      "clear_location": "Clear location",
+      "miles_suffix": "miles",
       "unassigned_authority": "Authority not recorded",
-      "country_label": "Country",
-      "all_countries": "All countries",
       "search_button": "Search",
       "results_heading": "Libraries",
       "browse_status": "Browse the directory",
@@ -185,7 +227,29 @@
       "useful_link": "Useful link",
       "saved_copy": "Saved local copy",
       "external_resource": "External resource",
-      "no_matches": "No resources match these filters."
+      "no_matches": "No resources match these filters.",
+      "pagination_label": "Resource pages",
+      "previous_page": "Previous",
+      "next_page": "Next",
+      "pagination_status": "Page {page} of {pages}"
+    },
+    "sitemap": {
+      "title": "Site map",
+      "description": "Browse every published page, resource, question and library in the LibraryCommons collection.",
+      "eyebrow": "Browse the site",
+      "heading": "Site map",
+      "intro": "Explore the full site by topic, resource type, or library authority.",
+      "pages": "Pages",
+      "homepage": "Homepage",
+      "sessions": "Conference sessions",
+      "resources": "Resources and downloads",
+      "browse_resources": "Browse all resources",
+      "questions": "Questions and answers",
+      "browse_questions": "Browse all questions",
+      "contributors": "Contributors",
+      "directory": "Library directory",
+      "directory_search": "Search the library directory",
+      "authority_page": "Browse authority page"
     },
     "not_found": {
       "title": "Page not found",
@@ -203,16 +267,155 @@
     "attribution": "Content is shared under Creative Commons Attribution 4.0 unless otherwise noted.",
     "links_heading": "Explore",
     "links": [
-      { "label": "About LibraryCommons", "url": "/commons/" },
-      { "label": "Find a library", "url": "/libraries/" },
-      { "label": "Collections", "url": "/special-collections/" },
-      { "label": "Resources", "url": "/resources/" },
-      { "label": "Press Play", "url": "/about/pressplay/" },
-      { "label": "Grants and case studies", "url": "/grants/" }
+      {
+        "label": "About LibraryCommons",
+        "url": "/commons/"
+      },
+      {
+        "label": "Find a library",
+        "url": "/libraries/"
+      },
+      {
+        "label": "Collections",
+        "url": "/special-collections/"
+      },
+      {
+        "label": "Resources",
+        "url": "/resources/"
+      },
+      {
+        "label": "Site map",
+        "url": "/sitemap/"
+      },
+      {
+        "label": "Editing guide",
+        "url": "/editing-guide/"
+      },
+      {
+        "label": "Press Play",
+        "url": "/about/pressplay/"
+      },
+      {
+        "label": "Grants and case studies",
+        "url": "/grants/"
+      }
     ],
     "directory_note": "Library information is now community-maintained.",
     "licence_label": "CC BY 4.0",
     "management_label": "Content management"
   },
-  "redirects": []
+  "redirects": [
+    {
+      "from": "/resources/application-portal-2/",
+      "to": "/resources/grants-round-one-application-portal/"
+    },
+    {
+      "from": "/resources/application-portal/",
+      "to": "/resources/grants-round-two-application-portal/"
+    },
+    {
+      "from": "/resources/bank-details-form-2/",
+      "to": "/resources/grants-round-two-bank-details-form/"
+    },
+    {
+      "from": "/resources/bank-details-form/",
+      "to": "/resources/grants-round-three-bank-details-form/"
+    },
+    {
+      "from": "/resources/british-library-2/",
+      "to": "/resources/british-library-homepage/"
+    },
+    {
+      "from": "/resources/british-library/",
+      "to": "/resources/agatha-christie-exhibition-at-the-british-library/"
+    },
+    {
+      "from": "/resources/dr-steve-ward-2/",
+      "to": "/resources/dr-steve-ward-author-website/"
+    },
+    {
+      "from": "/resources/dr-steve-ward/",
+      "to": "/resources/dr-steve-ward-circus-doctor-recommendations/"
+    },
+    {
+      "from": "/resources/frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection-2/",
+      "to": "/resources/massetts-place-frances-wolseleys-home-historic-england/"
+    },
+    {
+      "from": "/resources/frances-wolseley-gardener-teacher-wartime-organiser-libraryon-special-collection/",
+      "to": "/resources/brighton-and-hove-libraries-website/"
+    },
+    {
+      "from": "/resources/grants-guidance-2/",
+      "to": "/resources/grants-round-two-guidance-pdf/"
+    },
+    {
+      "from": "/resources/grants-guidance/",
+      "to": "/resources/grants-round-one-guidance-pdf/"
+    },
+    {
+      "from": "/resources/libby-2/",
+      "to": "/resources/libby-help-getting-started/"
+    },
+    {
+      "from": "/resources/libby/",
+      "to": "/resources/libby-app/"
+    },
+    {
+      "from": "/resources/wakefield-2/",
+      "to": "/resources/wakefield-central-library/"
+    },
+    {
+      "from": "/resources/wakefield/",
+      "to": "/resources/wakefield-libraries-and-local-history/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-5/",
+      "to": "/resources/contracting-digital-projects-for-libraries-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-8/",
+      "to": "/resources/digital-item-copyright-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-4/",
+      "to": "/resources/ai-in-public-libraries-literacy-and-ethics-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-9/",
+      "to": "/resources/tackling-abuse-online-practical-steps-for-libraries-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-6/",
+      "to": "/resources/how-to-get-the-best-out-of-your-special-collections-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-11/",
+      "to": "/resources/projects-101-building-partnerships-and-getting-funding-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-2/",
+      "to": "/resources/ai-for-public-libraries-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-12/",
+      "to": "/resources/library-data-visualised-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-10/",
+      "to": "/resources/why-digital-inclusion-matters-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording/",
+      "to": "/resources/social-media-surgery-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-7/",
+      "to": "/resources/telling-stories-with-data-recording/"
+    },
+    {
+      "from": "/resources/uk-library-grants-programme-libraryon-watch-the-recording-3/",
+      "to": "/resources/accessible-websites-and-user-journeys-recording/"
+    }
+  ]
 }

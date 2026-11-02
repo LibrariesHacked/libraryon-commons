@@ -1,10 +1,10 @@
 backend:
-  name: github
-  repo: LibrariesHacked/libraryon-commons
+  name: git-gateway
   branch: main
+publish_mode: editorial_workflow
 local_backend: true
-media_folder: public/uploads
-public_folder: /uploads
+media_folder: public/uploads/community
+public_folder: /uploads/community
 collections:
   - name: settings
     label: Site Settings
@@ -339,6 +339,9 @@ collections:
                   - name: compact_resource
                     label: Compact Resource Link
                     widget: string
+                  - name: used_in
+                    label: Resource Usage Heading
+                    widget: string
               - name: sessions
                 label: Session Labels
                 widget: object
@@ -394,20 +397,53 @@ collections:
                   - name: query_placeholder
                     label: Search Placeholder
                     widget: string
-                  - name: authority_label
-                    label: Authority Filter Label
+                  - name: find_nearby
+                    label: Find Nearby Button
                     widget: string
-                  - name: all_authorities
-                    label: All Authorities Option
+                  - name: finding_nearby
+                    label: Finding Nearby Status
+                    widget: string
+                  - name: current_location
+                    label: Current Location Label
+                    widget: string
+                  - name: services_filter
+                    label: Services Filter Button
+                    widget: string
+                  - name: distance_filter
+                    label: Distance Filter Button
+                    widget: string
+                  - name: open_now_label
+                    label: Open Now Toggle Label
+                    widget: string
+                  - name: services_heading
+                    label: Services Filter Heading
+                    widget: string
+                  - name: accessibility_heading
+                    label: Accessibility Filter Heading
+                    widget: string
+                  - name: view_all
+                    label: View All Tags Button
+                    widget: string
+                  - name: show_less
+                    label: Show Less Tags Button
+                    widget: string
+                  - name: clear_button
+                    label: Clear Filter Button
+                    widget: string
+                  - name: apply_button
+                    label: Apply Filter Button
+                    widget: string
+                  - name: location_prefix
+                    label: Location Label Prefix
+                    widget: string
+                  - name: clear_location
+                    label: Clear Location Button
+                    widget: string
+                  - name: miles_suffix
+                    label: Distance Unit Label
                     widget: string
                   - name: unassigned_authority
                     label: Unassigned Authority Option
-                    widget: string
-                  - name: country_label
-                    label: Country Filter Label
-                    widget: string
-                  - name: all_countries
-                    label: All Countries Option
                     widget: string
                   - name: search_button
                     label: Search Button
@@ -521,6 +557,18 @@ collections:
                   - name: no_matches
                     label: No Results Message
                     widget: string
+                  - name: pagination_label
+                    label: Pagination Accessible Name
+                    widget: string
+                  - name: previous_page
+                    label: Previous Page Button
+                    widget: string
+                  - name: next_page
+                    label: Next Page Button
+                    widget: string
+                  - name: pagination_status
+                    label: Pagination Status
+                    widget: string
               - name: not_found
                 label: Page Not Found Text
                 widget: object
@@ -539,6 +587,58 @@ collections:
                     widget: text
                   - name: return_link
                     label: Return Link
+                    widget: string
+              - name: sitemap
+                label: Site Map Text
+                widget: object
+                fields:
+                  - name: title
+                    label: Page Title
+                    widget: string
+                  - name: description
+                    label: Page Description
+                    widget: text
+                  - name: eyebrow
+                    label: Eyebrow
+                    widget: string
+                  - name: heading
+                    label: Heading
+                    widget: string
+                  - name: intro
+                    label: Introduction
+                    widget: text
+                  - name: pages
+                    label: Pages Heading
+                    widget: string
+                  - name: homepage
+                    label: Homepage Link
+                    widget: string
+                  - name: sessions
+                    label: Sessions Heading
+                    widget: string
+                  - name: resources
+                    label: Resources Heading
+                    widget: string
+                  - name: browse_resources
+                    label: Browse Resources Label
+                    widget: string
+                  - name: questions
+                    label: Questions Heading
+                    widget: string
+                  - name: browse_questions
+                    label: Browse Questions Label
+                    widget: string
+                  - name: contributors
+                    label: Contributors Heading
+                    widget: string
+                  - name: directory
+                    label: Directory Heading
+                    widget: string
+                  - name: directory_search
+                    label: Directory Search Link
+                    widget: string
+                  - name: authority_page
+                    label: Authority Page Link
                     widget: string
               - name: admin
                 label: CMS Document Text
@@ -604,9 +704,23 @@ collections:
           - name: image
             label: Main Image
             widget: image
+            required: false
           - name: image_alt
             label: Image Alt Text
             widget: string
+            required: false
+          - name: carousel
+            label: Hero Image Carousel
+            widget: list
+            required: false
+            summary: '{{fields.alt}}'
+            fields:
+              - name: image
+                label: Image
+                widget: image
+              - name: alt
+                label: Alternative Text
+                widget: string
           - name: features_title
             label: Features Heading
             widget: string
@@ -788,18 +902,41 @@ collections:
       - name: body
         label: Content
         widget: markdown
+        modes: [rich_text, raw]
+        editor_components:
+          - library-testimonial
+          - library-quote
+          - library-cards
+          - library-card
+          - library-list-panel
+          - library-video
+          - library-collection-image
+          - library-collection-carousel
+          - library-collection-accordion
+          - library-collection-aside
+          - library-collection-recommendations
+          - library-faqs
+          - library-resources
+          - image
+          - code-block
+        hint: 'Use the + menu for content blocks. Collection carousels and book recommendations keep all slides, notes, and entries inline in this Markdown body. Select FAQ and resource entries in their page fields.'
+      - name: faq_heading
+        label: FAQ Section Heading
+        widget: string
+        required: false
+        hint: Match the heading immediately before the {{faqs}} marker to include that heading and its introduction in the FAQ component.
       - name: faqs
         label: Frequently Asked Questions
-        widget: list
+        widget: relation
+        collection: faqs
+        search_fields:
+          - question
+        value_field: '{{slug}}'
+        display_fields:
+          - question
+        multiple: true
         required: false
-        summary: '{{fields.question}}'
-        fields:
-          - name: question
-            label: Question
-            widget: string
-          - name: answer
-            label: Answer
-            widget: text
+        hint: Select reusable questions in display order. Edit answers in Frequently Asked Questions.
       - name: gallery
         label: Gallery Or Slides
         widget: list
@@ -816,6 +953,52 @@ collections:
         display_fields:
           - title
         multiple: true
+        required: false
+      - name: child_pages
+        label: Subpages
+        widget: relation
+        collection: pages
+        search_fields:
+          - title
+        value_field: path
+        display_fields:
+          - title
+        multiple: true
+        required: false
+        hint: Select and arrange this landing page's child pages in the order they should appear.
+  - name: faqs
+    label: Frequently Asked Questions
+    label_singular: FAQ
+    folder: src/content/faqs
+    create: true
+    extension: md
+    format: frontmatter
+    slug: '{{slug}}'
+    identifier_field: question
+    summary: '{{question}}'
+    editor:
+      preview: false
+    fields:
+      - name: question
+        label: Question
+        widget: string
+      - name: body
+        label: Answer
+        widget: markdown
+      - name: source_url
+        label: Original Source URL
+        widget: string
+        required: false
+      - name: attribution
+        label: Credits And Attribution
+        widget: text
+        required: false
+      - name: updated_on
+        label: Updated Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
         required: false
   - name: resources
     label: Resources And Downloads

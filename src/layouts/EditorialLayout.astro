@@ -1,12 +1,15 @@
 ---
 import SiteLayout from './SiteLayout.astro';
-import { ChevronRight } from '@lucide/astro';
-import { articleTitle, formatDate, safeURL, settings, sitePath } from '../lib/site.mjs';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { articleTitle, breadcrumbsForPage, formatDate, safeURL, settings, sitePath } from '../lib/site.mjs';
 import { getCollection } from 'astro:content';
 const copy = settings.ui.editorial;
-const { entry, label = copy.labels.articles, headings = [], neighbours = [] } = Astro.props;
+const { entry, allPages = [], headings = [], neighbours = [] } = Astro.props;
 const title = articleTitle(entry);
+const breadcrumbs = breadcrumbsForPage(entry, allPages, copy.home_breadcrumb);
 const originalSource = safeURL(entry.data.source_url);
+const hasSourceNote = Boolean(entry.data.attribution || originalSource || entry.data.updated_on);
+const hasAside = headings.length > 0 || neighbours.length > 0 || Astro.slots.has('aside');
 const contributors = (await getCollection('contributors')).filter((profile) =>
   entry.data.contributors?.includes(profile.id)
 );
@@ -15,11 +18,7 @@ const contributors = (await getCollection('contributors')).filter((profile) =>
 <SiteLayout title={title} description={entry.data.description}>
   <header class="page-heading">
     <div class="shell">
-      <nav class="breadcrumbs" aria-label={copy.breadcrumb_aria_label}>
-        <a href={sitePath('/')}>{copy.home_breadcrumb}</a>
-        <ChevronRight size={13} aria-hidden="true" />
-        <span>{label}</span>
-      </nav>
+      <Breadcrumbs items={breadcrumbs} />
       <h1>{title}</h1>
       {!entry.data.source_url && entry.data.description && <p>{entry.data.description}</p>}
       {entry.data.author && (
@@ -37,48 +36,52 @@ const contributors = (await getCollection('contributors')).filter((profile) =>
       )}
     </div>
   </header>
-  <div class="section shell article-layout">
+  <div class:list={['section', 'shell', 'article-layout', !hasAside && 'article-layout-no-aside']}>
     <div>
       <slot />
-      <div class="source-note">
-        {entry.data.attribution && <p>{entry.data.attribution}</p>}
-        {originalSource && (
-          <a href={originalSource}>{copy.original_source_link}</a>
-        )}
-        {entry.data.updated_on && (
-          <p>
-            {copy.updated_prefix}{' '}
-            <time datetime={entry.data.updated_on.toISOString().slice(0, 10)}>
-              {formatDate(entry.data.updated_on)}
-            </time>
-          </p>
-        )}
-      </div>
+      {hasSourceNote && (
+        <div class="source-note">
+          {entry.data.attribution && <p>{entry.data.attribution}</p>}
+          {originalSource && (
+            <a href={originalSource}>{copy.original_source_link}</a>
+          )}
+          {entry.data.updated_on && (
+            <p>
+              {copy.updated_prefix}{' '}
+              <time datetime={entry.data.updated_on.toISOString().slice(0, 10)}>
+                {formatDate(entry.data.updated_on)}
+              </time>
+            </p>
+          )}
+        </div>
+      )}
     </div>
-    <aside class="article-aside">
-      <div>
-        {headings.length > 0 && (
-          <>
-            <h2>{copy.on_this_page}</h2>
-            <nav aria-label={copy.on_this_page}>
-              {headings.map((heading) => (
-                <a href={`#${heading.slug}`}>{heading.text}</a>
-              ))}
-            </nav>
-          </>
-        )}
-        {neighbours.length > 0 && (
-          <>
-            <h2 style="margin-top:2rem">{copy.in_this_section}</h2>
-            <nav aria-label={copy.in_this_section}>
-              {neighbours.map((page) => (
-                <a href={sitePath(page.data.path)}>{articleTitle(page)}</a>
-              ))}
-            </nav>
-          </>
-        )}
-        <slot name="aside" />
-      </div>
-    </aside>
+    {hasAside && (
+      <aside class="article-aside">
+        <div>
+          {headings.length > 0 && (
+            <>
+              <h2>{copy.on_this_page}</h2>
+              <nav aria-label={copy.on_this_page}>
+                {headings.map((heading) => (
+                  <a href={`#${heading.slug}`}>{heading.text}</a>
+                ))}
+              </nav>
+            </>
+          )}
+          {neighbours.length > 0 && (
+            <>
+              <h2 style="margin-top:2rem">{copy.in_this_section}</h2>
+              <nav aria-label={copy.in_this_section}>
+                {neighbours.map((page) => (
+                  <a href={sitePath(page.data.path)}>{articleTitle(page)}</a>
+                ))}
+              </nav>
+            </>
+          )}
+          <slot name="aside" />
+        </div>
+      </aside>
+    )}
   </div>
 </SiteLayout>
