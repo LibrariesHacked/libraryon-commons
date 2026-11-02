@@ -233,6 +233,4 @@ Each library is stored in `src/content/libraries/<slug>.json` and links to an au
 
 ## Publishing Changes
 
-CMS configuration lives in `public/admin/config.yml`, and uploaded media is stored in `public/uploads/`.
-
-Production CMS editing targets `LibrariesHacked/libraryon-commons` (`main` branch) and requires GitHub OAuth to be configured on the hosting platform (see [Running and Hosting](site.md)).
+CMS configuration lives in `public/admin/config.yml`. Production editing is hosted on Netlify and uses Netlify Identity with Git Gateway to write reviewed drafts to `LibrariesHacked/libraryon-commons` (`main` branch). Editors need an invitation, not GitHub repository access. New uploads go to `public/uploads/community/`; archived files remain separate. See [the split-hosting setup](site.md#split-hosting) for the full handover steps.

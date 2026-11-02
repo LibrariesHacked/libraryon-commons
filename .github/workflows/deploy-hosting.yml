@@ -1,0 +1,89 @@
+name: Deploy LibraryCommons
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-librarycommons
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build deployment artifacts
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.23.4
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Build public GitHub Pages site
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://librarycommons.org.uk/' }}
+          BASE_PATH: ${{ vars.BASE_PATH || '/' }}
+          CMS_URL: ${{ vars.CMS_URL || 'https://edit.librarycommons.org.uk/' }}
+        run: npm run build
+      - name: Add custom domain file
+        env:
+          PAGES_DOMAIN: ${{ vars.PAGES_DOMAIN || 'librarycommons.org.uk' }}
+        run: printf '%s\n' "$PAGES_DOMAIN" > dist/CNAME
+      - name: Keep the CMS off the public site
+        run: rm -rf dist/admin
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+      - name: Build CMS for its Netlify root domain
+        env:
+          SITE_URL: ${{ vars.SITE_URL || 'https://librarycommons.org.uk/' }}
+          BASE_PATH: /
+          PUBLIC_SITE_URL: ${{ vars.SITE_URL || 'https://librarycommons.org.uk/' }}
+        run: npm run build
+      - run: npm run package:netlify-admin
+      - uses: actions/upload-artifact@v4
+        with:
+          name: netlify-admin
+          path: .deploy/netlify-admin
+          if-no-files-found: error
+
+  deploy-pages:
+    name: Publish public site to GitHub Pages
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    permissions:
+      pages: write
+      id-token: write
+    steps:
+      - uses: actions/configure-pages@v5
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  deploy-netlify-admin:
+    name: Publish CMS bundle to Netlify
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: netlify-admin
+          path: .deploy/netlify-admin
+      - name: Deploy CMS bundle
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [[ -z "$NETLIFY_AUTH_TOKEN" || -z "$NETLIFY_SITE_ID" ]]; then
+            echo "Netlify deployment skipped: configure NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID."
+            exit 0
+          fi
+          npx --yes netlify-cli@27.16.1 deploy --dir=.deploy/netlify-admin --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN" --prod

@@ -46,4 +46,19 @@ test('CMS edits use pull requests and preserved records have ownership rules', (
     .filter(Boolean);
   assert.ok(commands.includes('npm test'));
   assert.ok(commands.includes('npm run build'));
+
+  const hosting = parse(
+    readFileSync(new URL('../.github/workflows/deploy-hosting.yml', import.meta.url), 'utf8'),
+  );
+  assert.ok(hosting.on.push.branches.includes('main'));
+  assert.ok(hosting.jobs.build.steps.some((step) => step.run === 'rm -rf dist/admin'));
+  assert.ok(hosting.jobs.build.steps.some((step) => step.uses === 'actions/upload-pages-artifact@v3'));
+  assert.equal(hosting.jobs['deploy-pages'].steps.at(-1).uses, 'actions/deploy-pages@v4');
+  assert.ok(hosting.jobs['deploy-netlify-admin'].steps.some((step) =>
+    step.run?.includes('NETLIFY_AUTH_TOKEN') && step.run.includes('netlify-cli@27.16.1'),
+  ));
+
+  const netlify = readFileSync(new URL('../netlify.toml', import.meta.url), 'utf8');
+  assert.match(netlify, /publish = "\.deploy\/netlify-admin"/);
+  assert.match(netlify, /ignore = "echo 'Netlify builds are handled by GitHub Actions' && exit 0"/);
 });

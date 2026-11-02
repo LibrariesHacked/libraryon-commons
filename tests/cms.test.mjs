@@ -521,7 +521,8 @@ function assertSettingsFields(
 }
 
 test("Decap uses the repository backend and tracked editable files, not archive data", () => {
-  assert.equal(config.backend.repo, "LibrariesHacked/libraryon-commons");
+  assert.equal(config.backend.name, "git-gateway");
+  assert.equal(config.backend.repo, undefined);
   assert.equal(config.backend.branch, "main");
   assert.equal(config.local_backend, true);
   assert.equal(config.media_library, undefined);

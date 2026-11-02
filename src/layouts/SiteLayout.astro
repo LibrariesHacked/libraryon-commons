@@ -10,6 +10,7 @@ const canonical = Astro.site
   : undefined;
 const { navigation: navigationCopy } = settings.ui;
 const { footer } = settings;
+const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admin/') : null);
 ---
 
 <!doctype html>
@@ -76,9 +77,11 @@ const { footer } = settings;
           <a href={safeURL(settings.site.licence_url)}>
             {footer.licence_label} <ArrowUpRight size={15} aria-hidden="true" />
           </a>
-          <a href={sitePath('/admin/')}>
-            {footer.management_label} <ArrowUpRight size={15} aria-hidden="true" />
-          </a>
+          {cmsURL && (
+            <a href={safeURL(cmsURL)}>
+              {footer.management_label} <ArrowUpRight size={15} aria-hidden="true" />
+            </a>
+          )}
         </div>
       </div>
     </footer>

@@ -1,5 +1,10 @@
 ---
 import { settings, sitePath } from '../../lib/site.mjs';
+const publicSiteURL = import.meta.env.PUBLIC_SITE_URL || settings.site.url;
+const publicSitePath = (value) =>
+  publicSiteURL
+    ? new URL(value.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
+    : sitePath(value);
 ---
 
 <!doctype html>
@@ -10,11 +15,12 @@ import { settings, sitePath } from '../../lib/site.mjs';
     <meta name="robots" content="noindex, nofollow" />
     <link href={sitePath('/admin/config.yml')} type="text/yaml" rel="cms-config-url" />
     <title>{settings.site.title} {settings.ui.admin.title_suffix}</title>
+    <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
     <nav class="cms-help-links" aria-label="Editor help">
-      <a href={sitePath('/editing-guide/')}>Editing guide</a>
-      <a href={sitePath('/sitemap/')}>Site map</a>
+      <a href={publicSitePath('/editing-guide/')}>Editing guide</a>
+      <a href={publicSitePath('/sitemap/')}>Site map</a>
     </nav>
     <script is:inline>
       window.CMS_MANUAL_INIT = true;
