@@ -1,14 +1,15 @@
 ---
-import DirectoryLayout from '../layouts/DirectoryLayout.astro';
-import DirectoryProvenance from '../components/DirectoryProvenance.astro';
-import ContactDetails from '../components/ContactDetails.astro';
-import { ArrowUpRight } from '@lucide/astro';
-import { libraryPath, libraryAddress, collectValues, facilityLabel } from '../lib/directory.mjs';
-import { settings, sitePath, safeURL } from '../lib/site.mjs';
-const { authority, entries } = Astro.props;
-const copy = settings.ui.directory;
-const services = collectValues(entries, (library) => library.services?.map((item) => item.service));
-const accessibility = collectValues(entries, (library) => library.accessibility);
+import { ArrowUpRight } from '@lucide/astro'
+
+import ContactDetails from '../components/ContactDetails.astro'
+import DirectoryProvenance from '../components/DirectoryProvenance.astro'
+import DirectoryLayout from '../layouts/DirectoryLayout.astro'
+import { libraryPath, libraryAddress, collectValues, facilityLabel } from '../lib/directory.mjs'
+import { settings, sitePath, safeURL } from '../lib/site.mjs'
+const { authority, entries } = Astro.props
+const copy = settings.ui.directory
+const services = collectValues(entries, (library) => library.services?.map((item) => item.service))
+const accessibility = collectValues(entries, (library) => library.accessibility)
 ---
 
 <DirectoryLayout

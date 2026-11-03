@@ -42,16 +42,26 @@
           "label": "About LibraryCommons",
           "url": "/commons/",
           "description": "How this community project connects libraries."
+        }
+      ]
+    },
+    {
+      "label": "Archive",
+      "children": [
+        {
+          "label": "About LibraryOn",
+          "url": "/archive/about-libraryon/",
+          "description": "The original LibraryOn programme and its work with libraries."
         },
         {
           "label": "Grants",
-          "url": "/grants/",
-          "description": "The LibraryOn grants programme for libraries."
+          "url": "/archive/grants/",
+          "description": "Closed LibraryOn funding rounds and the projects they supported."
         },
         {
           "label": "Press Play Conference",
-          "url": "/about/pressplay/",
-          "description": "A playground of digital ideas."
+          "url": "/archive/pressplay/",
+          "description": "A 2024 LibraryOn event exploring digital ideas for libraries."
         }
       ]
     }
@@ -276,28 +286,12 @@
         "url": "/libraries/"
       },
       {
-        "label": "Collections",
-        "url": "/special-collections/"
-      },
-      {
-        "label": "Resources",
-        "url": "/resources/"
-      },
-      {
         "label": "Site map",
         "url": "/sitemap/"
       },
       {
         "label": "Editing guide",
         "url": "/editing-guide/"
-      },
-      {
-        "label": "Press Play",
-        "url": "/about/pressplay/"
-      },
-      {
-        "label": "Grants and case studies",
-        "url": "/grants/"
       }
     ],
     "directory_note": "Library information is now community-maintained.",
@@ -305,6 +299,54 @@
     "management_label": "Content management"
   },
   "redirects": [
+    {
+      "from": "/about",
+      "to": "/archive/about-libraryon/"
+    },
+    {
+      "from": "/about/",
+      "to": "/archive/about-libraryon/"
+    },
+    {
+      "from": "/about/pressplay",
+      "to": "/archive/pressplay/"
+    },
+    {
+      "from": "/about/pressplay/",
+      "to": "/archive/pressplay/"
+    },
+    {
+      "from": "/grants",
+      "to": "/archive/grants/"
+    },
+    {
+      "from": "/grants/",
+      "to": "/archive/grants/"
+    },
+    {
+      "from": "/grants/round-1",
+      "to": "/archive/grants/round-1/"
+    },
+    {
+      "from": "/grants/round-1/",
+      "to": "/archive/grants/round-1/"
+    },
+    {
+      "from": "/grants/round-2",
+      "to": "/archive/grants/round-2/"
+    },
+    {
+      "from": "/grants/round-2/",
+      "to": "/archive/grants/round-2/"
+    },
+    {
+      "from": "/grants/round-3",
+      "to": "/archive/grants/round-3/"
+    },
+    {
+      "from": "/grants/round-3/",
+      "to": "/archive/grants/round-3/"
+    },
     {
       "from": "/resources/application-portal-2/",
       "to": "/resources/grants-round-one-application-portal/"

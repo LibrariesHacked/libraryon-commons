@@ -1,105 +1,107 @@
-import settings from '../data/settings.json' with { type: 'json' };
-import mediaMasters from '../data/media-masters.json' with { type: 'json' };
+import settings from '../data/settings.json' with { type: 'json' }
+import mediaMasters from '../data/media-masters.json' with { type: 'json' }
 
 export function mediaURL(value, aliases = mediaMasters.aliases) {
-  if (typeof value !== 'string') return value;
-  const suffixIndex = value.search(/[?#]/);
-  const pathname = suffixIndex < 0 ? value : value.slice(0, suffixIndex);
-  const suffix = suffixIndex < 0 ? '' : value.slice(suffixIndex);
-  return `${aliases[pathname]?.url || pathname}${suffix}`;
+  if (typeof value !== 'string') return value
+  const suffixIndex = value.search(/[?#]/)
+  const pathname = suffixIndex < 0 ? value : value.slice(0, suffixIndex)
+  const suffix = suffixIndex < 0 ? '' : value.slice(suffixIndex)
+  return `${aliases[pathname]?.url || pathname}${suffix}`
 }
 
 /** Canonicalize extensionless internal routes without changing files or URL suffixes. */
 export function canonicalInternalPath(value) {
-  if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value;
-  const suffixIndex = value.search(/[?#]/);
-  const pathname = suffixIndex < 0 ? value : value.slice(0, suffixIndex);
-  const suffix = suffixIndex < 0 ? '' : value.slice(suffixIndex);
-  const finalSegment = pathname.slice(pathname.lastIndexOf('/') + 1);
-  if (
-    pathname === '/' ||
-    pathname.endsWith('/') ||
-    /\.[a-z\d]{1,10}$/i.test(finalSegment)
-  )
-    return value;
-  return `${pathname}/${suffix}`;
+  if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value
+  const suffixIndex = value.search(/[?#]/)
+  const pathname = suffixIndex < 0 ? value : value.slice(0, suffixIndex)
+  const suffix = suffixIndex < 0 ? '' : value.slice(suffixIndex)
+  const finalSegment = pathname.slice(pathname.lastIndexOf('/') + 1)
+  if (pathname === '/' || pathname.endsWith('/') || /\.[a-z\d]{1,10}$/i.test(finalSegment))
+    return value
+  return `${pathname}/${suffix}`
 }
 
 /** Prefix same-site URLs for static hosting at a domain root or a subpath. */
 export function sitePath(value) {
-  if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value;
-  const base = (import.meta.env?.BASE_URL || '/').replace(/\/$/, '');
-  return `${base}${canonicalInternalPath(mediaURL(value))}`;
+  if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value
+  const base = (import.meta.env?.BASE_URL || '/').replace(/\/$/, '')
+  return `${base}${canonicalInternalPath(mediaURL(value))}`
 }
 
 /** Only render navigation URLs with safe protocols or absolute local paths. */
 export function safeURL(value) {
-  if (typeof value !== 'string' || !value.trim()) return null;
-  if (value.startsWith('/') && !value.startsWith('//')) return sitePath(value);
+  if (typeof value !== 'string' || !value.trim()) return null
+  if (value.startsWith('/') && !value.startsWith('//')) return sitePath(value)
   try {
-    const url = new URL(value.trim());
-    return ['https:', 'http:'].includes(url.protocol) ? url.href : null;
+    const url = new URL(value.trim())
+    return ['https:', 'http:'].includes(url.protocol) ? url.href : null
   } catch {
-    return null;
+    return null
   }
 }
 
 /** Use explicit CMS provenance when set; otherwise recognize preserved LibraryOn source URLs. */
 export function isOriginalContent(entry) {
-  if (entry.data.content_origin === 'libraryon') return true;
-  if (entry.data.content_origin === 'commons') return false;
+  if (entry.data.content_origin === 'libraryon') return true
+  if (entry.data.content_origin === 'commons') return false
   try {
-    return new URL(entry.data.source_url).hostname === 'libraryon.org';
+    return new URL(entry.data.source_url).hostname === 'libraryon.org'
   } catch {
-    return false;
+    return false
   }
 }
 
 /** Treat content as public unless an editor explicitly archives it. */
 export function isPublishedPage(entry) {
-  return entry.data.published !== false;
+  return entry.data.published !== false
 }
 
 /** Prefer the article's own H1 over its old search-engine title. */
 export function articleTitle(entry) {
-  const heading = /^#\s+(.+)$/m.exec(entry.body || '')?.[1];
-  const title = heading?.endsWith('  ') ? entry.data.title : heading || entry.data.title;
+  const heading = /^#\s+(.+)$/m.exec(entry.body || '')?.[1]
+  const title = heading?.endsWith('  ') ? entry.data.title : heading || entry.data.title
   return title
     .replace(/\s*\|\s*LibraryOn.*$/i, '')
     .replace(/[*_]/g, '')
-    .trim();
+    .trim()
 }
 
 /** Build a breadcrumb trail from published pages that are actual route ancestors. */
-export function breadcrumbsForPage(entry, pages = [], homeLabel = settings.ui.editorial.home_breadcrumb) {
+export function breadcrumbsForPage(
+  entry,
+  pages = [],
+  homeLabel = settings.ui.editorial.home_breadcrumb
+) {
   const normalizePath = (value) => {
-    const segments = String(value || '').split('/').filter(Boolean);
-    return segments.length ? `/${segments.join('/')}` : '/';
-  };
-  const currentPath = normalizePath(entry.data.path);
-  if (currentPath === '/') return [];
+    const segments = String(value || '')
+      .split('/')
+      .filter(Boolean)
+    return segments.length ? `/${segments.join('/')}` : '/'
+  }
+  const currentPath = normalizePath(entry.data.path)
+  if (currentPath === '/') return []
 
-  const pagesByPath = new Map(pages.map((page) => [normalizePath(page.data.path), page]));
-  const segments = currentPath.split('/').filter(Boolean);
-  const ancestors = [];
+  const pagesByPath = new Map(pages.map((page) => [normalizePath(page.data.path), page]))
+  const segments = currentPath.split('/').filter(Boolean)
+  const ancestors = []
   for (let length = 1; length < segments.length; length += 1) {
-    const path = `/${segments.slice(0, length).join('/')}`;
-    const page = pagesByPath.get(path);
-    if (page) ancestors.push({ label: articleTitle(page), href: page.data.path });
+    const path = `/${segments.slice(0, length).join('/')}`
+    const page = pagesByPath.get(path)
+    if (page) ancestors.push({ label: articleTitle(page), href: page.data.path })
   }
 
   return [
     { label: homeLabel, href: '/' },
     ...ancestors,
     { label: articleTitle(entry), current: true }
-  ];
+  ]
 }
 
 /** Read the first locally preserved image for article previews. */
 export function articleImage(entry) {
-  if (entry.data.hero?.image) return { url: entry.data.hero.image, alt: entry.data.hero.alt };
-  const image = /!\[([^\]]*)\]\((\/uploads\/[^\s)]+)\)/.exec(entry.body || '');
-  return image ? { url: image[2], alt: image[1] } : null;
+  if (entry.data.hero?.image) return { url: entry.data.hero.image, alt: entry.data.hero.alt }
+  const image = /!\[([^\]]*)\]\((\/uploads\/[^\s)]+)\)/.exec(entry.body || '')
+  return image ? { url: image[2], alt: image[1] } : null
 }
 
 export const navigation = settings.navigation.length
@@ -110,7 +112,7 @@ export const navigation = settings.navigation.length
       { label: 'Reading', url: '/reading/' },
       { label: 'Resources', url: '/resources/' },
       { label: 'Press Play', url: '/about/pressplay/' }
-    ];
+    ]
 
 /** Format a date-only value as written, regardless of the viewer's timezone. */
 export function formatDate(value) {
@@ -119,7 +121,7 @@ export function formatDate(value) {
     month: 'long',
     year: 'numeric',
     timeZone: 'UTC'
-  });
+  })
 }
 
-export { settings };
+export { settings }

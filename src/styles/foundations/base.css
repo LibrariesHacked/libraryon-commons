@@ -76,7 +76,7 @@ svg {
 }
 .prose > h2 {
   padding: 0.55rem 0.8rem;
-  border-left: 4px solid var(--brand-rose);
+  border-right: 4px solid var(--brand-rose);
   border-radius: var(--card-radius);
   background: var(--surface-tint-rose-pale);
   color: var(--brand-berry);
@@ -94,6 +94,9 @@ svg {
 .prose p.article-lead-image {
   width: 100%;
   margin-block: var(--size-4) var(--size-7);
+}
+.prose.original-content > h1 + * {
+  margin-top: 0;
 }
 .prose p.article-lead-image > img,
 .prose p.article-lead-image > a > img {

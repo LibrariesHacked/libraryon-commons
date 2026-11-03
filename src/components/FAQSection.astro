@@ -1,12 +1,20 @@
 ---
-import { settings } from '../lib/site.mjs';
-import { render } from 'astro:content';
-const { items = [], heading = settings.ui.editorial.faq_heading, headingId = 'page-faqs', introduction = '' } = Astro.props;
-const answers = await Promise.all(items.map(async (entry) => ({
-  id: entry.id,
-  question: entry.data.question,
-  ...(await render(entry))
-})));
+import { render } from 'astro:content'
+
+import { settings } from '../lib/site.mjs'
+const {
+  items = [],
+  heading = settings.ui.editorial.faq_heading,
+  headingId = 'page-faqs',
+  introduction = ''
+} = Astro.props
+const answers = await Promise.all(
+  items.map(async (entry) => ({
+    id: entry.id,
+    question: entry.data.question,
+    ...(await render(entry))
+  }))
+)
 ---
 
 {answers.length > 0 && (
@@ -17,7 +25,9 @@ const answers = await Promise.all(items.map(async (entry) => ({
       {answers.map(({ id, question, Content }) => (
         <details class="faq-item" id={`faq-${id}`}>
           <summary>{question}</summary>
-          <div class="faq-answer"><Content /></div>
+          <div class="faq-answer">
+            <Content />
+          </div>
         </details>
       ))}
     </div>

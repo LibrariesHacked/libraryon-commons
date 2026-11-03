@@ -1,15 +1,17 @@
 ---
-import EditorialLayout from '../layouts/EditorialLayout.astro';
-import ArticleMedia from '../components/ArticleMedia.astro';
-import PageContent from '../components/PageContent.astro';
-import { settings } from '../lib/site.mjs';
-const { entry, label = settings.ui.editorial.labels.articles } = Astro.props;
+import ArticleMedia from '../components/ArticleMedia.astro'
+import PageContent from '../components/PageContent.astro'
+import EditorialLayout from '../layouts/EditorialLayout.astro'
+import { settings } from '../lib/site.mjs'
+const { entry, label = settings.ui.editorial.labels.articles } = Astro.props
 ---
 
 <EditorialLayout {...Astro.props} label={label}>
   <ArticleMedia image={entry.data.hero} />
-  <article class="prose original-content">
-    <PageContent {...Astro.props}><slot /></PageContent>
+  <article class="prose original-content" data-content-path={entry.data.path}>
+    <PageContent {...Astro.props}>
+      <slot />
+    </PageContent>
   </article>
   {entry.data.gallery?.length > 0 && (
     <section class="article-grid" aria-label={settings.ui.editorial.gallery_aria_label}>

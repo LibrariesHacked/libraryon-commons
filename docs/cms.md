@@ -46,6 +46,16 @@ To add a page, create an entry in **Editorial Content**, choose a content type (
 - **Updated Date:** Automatically stamped with today's date when saved in the CMS.
 - **Preserved articles:** The original LibraryOn text is checksum-verified against `migration/source-articles.json`. FAQ-bearing pages now use references instead of inline answers; their pre-modular text is retained in a compressed archive snapshot. Edit questions and answers in the FAQ collection, not in the page body.
 
+### Navigation And Page Hierarchy
+
+Header navigation and page structure are maintained separately:
+
+- **Site Settings → Navigation** controls the header menu. Point a section's URL at its published landing page; submenu URLs should match the pages' Site Paths.
+- **Site Path** determines sitemap nesting and breadcrumb ancestors. A section appears as a linked ancestor only when a published page exists at that path.
+- **Subpages** selects and orders the cards shown on a landing page. It does not create routes or change sitemap nesting.
+
+For example, the Archive menu links to the `/archive/` landing page, whose Subpages list contains pages with paths under `/archive/`. When changing a live Site Path, add a redirect in Site Settings so existing links continue to work.
+
 ## Review And Preserved Material
 
 Production CMS edits are saved as draft pull requests. A maintainer reviews the changes before they are merged and published. The repository runs its tests and builds the site for each pull request. GitHub must also be configured to require the **Tests and build** check and code-owner approval on `main`; see [reviewing changes](preservation.md#reviewing-changes).

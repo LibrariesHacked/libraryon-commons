@@ -1,12 +1,12 @@
-import { defineCollection, reference, z } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { defineCollection, reference, z } from 'astro:content'
+import { glob } from 'astro/loaders'
 
 const image = z.object({
   image: z.string(),
   alt: z.string(),
   caption: z.string().optional(),
   credit: z.string().optional()
-});
+})
 
 const pages = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/pages' }),
@@ -39,7 +39,7 @@ const pages = defineCollection({
     resources: z.array(z.string()).default([]),
     child_pages: z.array(z.string().startsWith('/')).optional()
   })
-});
+})
 
 const faqs = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/faqs' }),
@@ -49,7 +49,7 @@ const faqs = defineCollection({
     attribution: z.string().optional(),
     updated_on: z.coerce.date().optional()
   })
-});
+})
 
 const resources = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/resources' }),
@@ -63,7 +63,7 @@ const resources = defineCollection({
     licence: z.string().optional(),
     updated_on: z.coerce.date().optional()
   })
-});
+})
 
 const sessions = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/sessions' }),
@@ -79,7 +79,7 @@ const sessions = defineCollection({
     resources: z.array(z.string()).default([]),
     updated_on: z.coerce.date().optional()
   })
-});
+})
 
 const contributors = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/content/contributors' }),
@@ -93,6 +93,6 @@ const contributors = defineCollection({
     website: z.string().optional(),
     updated_on: z.coerce.date().optional()
   })
-});
+})
 
-export const collections = { pages, faqs, resources, sessions, contributors };
+export const collections = { pages, faqs, resources, sessions, contributors }

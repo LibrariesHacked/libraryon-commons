@@ -1,16 +1,16 @@
 ---
-import { Menu, ArrowUpRight, BookOpen } from '@lucide/astro';
-import SiteNavigation from '../components/SiteNavigation.astro';
-import { canonicalInternalPath, settings, sitePath, safeURL } from '../lib/site.mjs';
-import '../styles/global.css';
+import { Menu, ArrowUpRight, BookOpen } from '@lucide/astro'
+import SiteNavigation from '../components/SiteNavigation.astro'
+import { canonicalInternalPath, settings, sitePath, safeURL } from '../lib/site.mjs'
+import '../styles/global.css'
 
-const { title = settings.site.title, description = settings.site.description } = Astro.props;
+const { title = settings.site.title, description = settings.site.description } = Astro.props
 const canonical = Astro.site
   ? new URL(canonicalInternalPath(Astro.url.pathname), Astro.site).href
-  : undefined;
-const { navigation: navigationCopy } = settings.ui;
-const { footer } = settings;
-const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admin/') : null);
+  : undefined
+const { navigation: navigationCopy } = settings.ui
+const { footer } = settings
+const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admin/') : null)
 ---
 
 <!doctype html>
@@ -35,7 +35,10 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
         <a class="brand" href={sitePath('/')} aria-label={settings.site.title}>
           <BookOpen size={30} stroke-width={1.7} aria-hidden="true" />
           <span>
-            {settings.ui.brand.primary}{settings.ui.brand.qualifier && <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>}
+            {settings.ui.brand.primary}
+            {settings.ui.brand.qualifier && (
+              <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>
+            )}
           </span>
         </a>
         <nav class="desktop-nav" aria-label={navigationCopy.main_navigation}>
@@ -61,7 +64,10 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
           <a class="brand" href={sitePath('/')} aria-label={settings.site.title}>
             <BookOpen size={27} aria-hidden="true" />
             <span>
-              {settings.ui.brand.primary}{settings.ui.brand.qualifier && <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>}
+              {settings.ui.brand.primary}
+              {settings.ui.brand.qualifier && (
+                <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>
+              )}
             </span>
           </a>
           <p>{footer.attribution}</p>
@@ -78,7 +84,7 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
             {footer.licence_label} <ArrowUpRight size={15} aria-hidden="true" />
           </a>
           {cmsURL && (
-            <a href={safeURL(cmsURL)}>
+            <a class="footer-management-link" href={safeURL(cmsURL)}>
               {footer.management_label} <ArrowUpRight size={15} aria-hidden="true" />
             </a>
           )}
@@ -90,13 +96,14 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
       document.addEventListener(
         'toggle',
         (event) => {
-          const opened = event.target as HTMLDetailsElement;
-          if (!opened.open || !opened.closest('.site-header')) return;
+          const opened = event.target as HTMLDetailsElement
+          if (!opened.open || !opened.closest('.site-header')) return
           for (const menu of document.querySelectorAll<HTMLDetailsElement>('.site-header details'))
-            if (menu !== opened && !menu.contains(opened) && !opened.contains(menu)) menu.open = false;
+            if (menu !== opened && !menu.contains(opened) && !opened.contains(menu))
+              menu.open = false
         },
         true
-      );
+      )
     </script>
   </body>
 </html>

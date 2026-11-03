@@ -11,6 +11,8 @@
     "preview": "astro preview --host 127.0.0.1 --port 4322",
     "package:netlify-admin": "node scripts/package-netlify-admin.mjs",
     "test": "node --test",
+    "format": "prettier --write astro.config.mjs .prettierrc.json \"src/**/*.{astro,ts,mjs,css}\" src/data/*.json \"scripts/**/*.{mjs,js,cjs}\" \"tests/**/*.{mjs,js,cjs}\" package.json \".github/workflows/*.{yml,yaml}\"",
+    "format:check": "prettier --check astro.config.mjs .prettierrc.json \"src/**/*.{astro,ts,mjs,css}\" src/data/*.json \"scripts/**/*.{mjs,js,cjs}\" \"tests/**/*.{mjs,js,cjs}\" package.json \".github/workflows/*.{yml,yaml}\"",
     "archive": "node scripts/archive/collect.mjs",
     "capture": "node scripts/archive/capture.mjs",
     "import:archive": "node scripts/archive/import.mjs",

@@ -1,15 +1,15 @@
 ---
-import SiteLayout from '../layouts/SiteLayout.astro';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import ResourceLink from '../components/ResourceLink.astro';
-import { articleTitle, settings } from '../lib/site.mjs';
-const { session, conference, resources } = Astro.props;
-const copy = settings.ui.sessions;
+import Breadcrumbs from '../components/Breadcrumbs.astro'
+import ResourceLink from '../components/ResourceLink.astro'
+import SiteLayout from '../layouts/SiteLayout.astro'
+import { articleTitle, settings } from '../lib/site.mjs'
+const { session, conference, resources } = Astro.props
+const copy = settings.ui.sessions
 const breadcrumbs = [
   { label: settings.ui.editorial.home_breadcrumb, href: '/' },
   { label: articleTitle(conference), href: conference.data.path },
   { label: session.title, current: true }
-];
+]
 ---
 
 <SiteLayout title={session.title} description={session.description}>

@@ -1,9 +1,10 @@
 ---
-import DirectoryLayout from '../layouts/DirectoryLayout.astro';
-import DirectoryProvenance from '../components/DirectoryProvenance.astro';
-import ContactDetails from '../components/ContactDetails.astro';
-import OpeningHours from '../components/OpeningHours.astro';
-import { ArrowUpRight } from '@lucide/astro';
+import { ArrowUpRight } from '@lucide/astro'
+
+import ContactDetails from '../components/ContactDetails.astro'
+import DirectoryProvenance from '../components/DirectoryProvenance.astro'
+import OpeningHours from '../components/OpeningHours.astro'
+import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import {
   libraries,
   libraryAddress,
@@ -12,13 +13,13 @@ import {
   mapLinks,
   nearbyLibraries,
   operatingModelLabel
-} from '../lib/directory.mjs';
-import { safeURL, settings, sitePath } from '../lib/site.mjs';
-const { library, authority } = Astro.props;
-const copy = settings.ui.directory;
-const maps = mapLinks(library);
-const nearby = nearbyLibraries(library, libraries);
-const tags = [authority?.country, operatingModelLabel(library.facilityOperated)].filter(Boolean);
+} from '../lib/directory.mjs'
+import { safeURL, settings, sitePath } from '../lib/site.mjs'
+const { library, authority } = Astro.props
+const copy = settings.ui.directory
+const maps = mapLinks(library)
+const nearby = nearbyLibraries(library, libraries)
+const tags = [authority?.country, operatingModelLabel(library.facilityOperated)].filter(Boolean)
 ---
 
 <DirectoryLayout
@@ -79,10 +80,14 @@ const tags = [authority?.country, operatingModelLabel(library.facilityOperated)]
       <h2>{copy.getting_here}</h2>
       <ul class="contact-list">
         <li>
-          <a href={maps.google}>{copy.google_maps} <ArrowUpRight size={15} aria-hidden="true" /></a>
+          <a href={maps.google}>
+            {copy.google_maps} <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
         </li>
         <li>
-          <a href={maps.apple}>{copy.apple_maps} <ArrowUpRight size={15} aria-hidden="true" /></a>
+          <a href={maps.apple}>
+            {copy.apple_maps} <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
         </li>
       </ul>
     </section>

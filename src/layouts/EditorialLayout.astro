@@ -1,18 +1,26 @@
 ---
-import SiteLayout from './SiteLayout.astro';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import { articleTitle, breadcrumbsForPage, formatDate, safeURL, settings, sitePath } from '../lib/site.mjs';
-import { getCollection } from 'astro:content';
-const copy = settings.ui.editorial;
-const { entry, allPages = [], headings = [], neighbours = [] } = Astro.props;
-const title = articleTitle(entry);
-const breadcrumbs = breadcrumbsForPage(entry, allPages, copy.home_breadcrumb);
-const originalSource = safeURL(entry.data.source_url);
-const hasSourceNote = Boolean(entry.data.attribution || originalSource || entry.data.updated_on);
-const hasAside = headings.length > 0 || neighbours.length > 0 || Astro.slots.has('aside');
+import { getCollection } from 'astro:content'
+
+import Breadcrumbs from '../components/Breadcrumbs.astro'
+import {
+  articleTitle,
+  breadcrumbsForPage,
+  formatDate,
+  safeURL,
+  settings,
+  sitePath
+} from '../lib/site.mjs'
+import SiteLayout from './SiteLayout.astro'
+const copy = settings.ui.editorial
+const { entry, allPages = [], headings = [], neighbours = [] } = Astro.props
+const title = articleTitle(entry)
+const breadcrumbs = breadcrumbsForPage(entry, allPages, copy.home_breadcrumb)
+const originalSource = safeURL(entry.data.source_url)
+const hasSourceNote = Boolean(entry.data.attribution || originalSource || entry.data.updated_on)
+const hasAside = headings.length > 0 || neighbours.length > 0 || Astro.slots.has('aside')
 const contributors = (await getCollection('contributors')).filter((profile) =>
   entry.data.contributors?.includes(profile.id)
-);
+)
 ---
 
 <SiteLayout title={title} description={entry.data.description}>
@@ -42,9 +50,7 @@ const contributors = (await getCollection('contributors')).filter((profile) =>
       {hasSourceNote && (
         <div class="source-note">
           {entry.data.attribution && <p>{entry.data.attribution}</p>}
-          {originalSource && (
-            <a href={originalSource}>{copy.original_source_link}</a>
-          )}
+          {originalSource && <a href={originalSource}>{copy.original_source_link}</a>}
           {entry.data.updated_on && (
             <p>
               {copy.updated_prefix}{' '}

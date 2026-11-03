@@ -1,55 +1,54 @@
 ---
-import { getCollection, getEntries, render } from 'astro:content';
-import HomeTemplate from '../templates/HomeTemplate.astro';
-import ArticleTemplate from '../templates/ArticleTemplate.astro';
-import CollectionTemplate from '../templates/CollectionTemplate.astro';
-import CaseStudyTemplate from '../templates/CaseStudyTemplate.astro';
-import ConferenceTemplate from '../templates/ConferenceTemplate.astro';
-import GrantTemplate from '../templates/GrantTemplate.astro';
-import LegalTemplate from '../templates/LegalTemplate.astro';
-import LandingTemplate from '../templates/LandingTemplate.astro';
-import { templateFor } from '../lib/templates.mjs';
-import { isPublishedPage, settings } from '../lib/site.mjs';
+import { getCollection, getEntries, render } from 'astro:content'
+
+import { isPublishedPage, settings } from '../lib/site.mjs'
+import { templateFor } from '../lib/templates.mjs'
+import ArticleTemplate from '../templates/ArticleTemplate.astro'
+import CaseStudyTemplate from '../templates/CaseStudyTemplate.astro'
+import CollectionTemplate from '../templates/CollectionTemplate.astro'
+import ConferenceTemplate from '../templates/ConferenceTemplate.astro'
+import GrantTemplate from '../templates/GrantTemplate.astro'
+import HomeTemplate from '../templates/HomeTemplate.astro'
+import LandingTemplate from '../templates/LandingTemplate.astro'
+import LegalTemplate from '../templates/LegalTemplate.astro'
 
 export async function getStaticPaths() {
-  const pages = await getCollection('pages');
+  const pages = await getCollection('pages')
   return pages
     .filter((entry) => isPublishedPage(entry) && entry.data.path !== '/libraries')
     .map((entry) => ({
       params: { path: entry.data.path.replace(/^\/+|\/+$/g, '') || undefined },
       props: { entry }
-    }));
+    }))
 }
 
-const { entry } = Astro.props;
-const { Content, headings } = await render(entry);
-const faqs = await getEntries(entry.data.faqs);
-const allPages = (await getCollection('pages')).filter(isPublishedPage);
+const { entry } = Astro.props
+const { Content, headings } = await render(entry)
+const faqs = await getEntries(entry.data.faqs)
+const allPages = (await getCollection('pages')).filter(isPublishedPage)
 const resources = new Map(
   (await getCollection('resources')).map((resource) => [resource.id, resource.data])
-);
+)
 const sessions = (await getCollection('sessions'))
   .filter((session) => session.data.conference === entry.id)
-  .sort((first, second) => first.data.order - second.data.order);
-const contents = headings.filter((heading) => heading.depth === 2);
-const faqHeading = entry.data.faq_heading || settings.ui.editorial.faq_heading;
+  .sort((first, second) => first.data.order - second.data.order)
+const contents = headings.filter((heading) => heading.depth === 2)
+const faqHeading = entry.data.faq_heading || settings.ui.editorial.faq_heading
 if (faqs.length > 0 && !contents.some((heading) => heading.text === faqHeading)) {
-  contents.push({ depth: 2, slug: 'page-faqs', text: faqHeading });
+  contents.push({ depth: 2, slug: 'page-faqs', text: faqHeading })
 }
-const section = entry.data.path.split('/').filter(Boolean)[0];
+const section = entry.data.path.split('/').filter(Boolean)[0]
 const neighbours = allPages.filter(
   (page) => page.data.path.startsWith(`/${section}/`) && page.id !== entry.id
-);
+)
 const children = entry.data.child_pages
   ? entry.data.child_pages.map((path) => {
-      const child = allPages.find((page) => page.data.path === path);
-      if (!child) throw new Error(`Missing landing page child ${path} on ${entry.data.path}`);
-      return child;
+      const child = allPages.find((page) => page.data.path === path)
+      if (!child) throw new Error(`Missing landing page child ${path} on ${entry.data.path}`)
+      return child
     })
-  : neighbours;
-const related = entry.data.resources
-  .map((id) => resources.get(id))
-  .filter(Boolean);
+  : neighbours
+const related = entry.data.resources.map((id) => resources.get(id)).filter(Boolean)
 const templates = {
   home: HomeTemplate,
   page: ArticleTemplate,
@@ -60,8 +59,8 @@ const templates = {
   conference: ConferenceTemplate,
   grant: GrantTemplate,
   legal: LegalTemplate
-};
-const Template = templates[templateFor(entry)];
+}
+const Template = templates[templateFor(entry)]
 ---
 
 <Template

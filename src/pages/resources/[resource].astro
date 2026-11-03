@@ -1,18 +1,19 @@
 ---
-import { getCollection } from 'astro:content';
-import ResourceTemplate from '../../templates/ResourceTemplate.astro';
-import { resourceUsage } from '../../lib/resource-usage.mjs';
+import { getCollection } from 'astro:content'
+
+import { resourceUsage } from '../../lib/resource-usage.mjs'
+import ResourceTemplate from '../../templates/ResourceTemplate.astro'
 export async function getStaticPaths() {
   const [resources, pages, sessions] = await Promise.all([
     getCollection('resources'),
     getCollection('pages'),
-    getCollection('sessions'),
-  ]);
-  const usage = resourceUsage(resources, pages, sessions);
+    getCollection('sessions')
+  ])
+  const usage = resourceUsage(resources, pages, sessions)
   return resources.map((entry) => ({
     params: { resource: entry.id },
     props: { resource: entry.data, usage: usage.get(entry.id) || [] }
-  }));
+  }))
 }
 ---
 

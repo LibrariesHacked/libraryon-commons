@@ -490,6 +490,74 @@
 .collection-hotspot-note p:last-child {
   margin-bottom: 0;
 }
+.collection-timeline {
+  margin-block: var(--size-7);
+}
+.collection-timeline-heading {
+  margin-top: 0;
+}
+.collection-timeline-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: var(--size-5);
+  align-items: start;
+}
+.collection-timeline-events {
+  display: grid;
+  gap: var(--size-2);
+  padding-inline-start: var(--size-3);
+  border-inline-start: var(--border-size-2) solid var(--line-rose-soft);
+}
+.collection-timeline-entry {
+  min-width: 0;
+}
+.collection-timeline-year {
+  width: 100%;
+  padding: var(--size-2) var(--size-3);
+  border: 0;
+  border-radius: var(--card-radius);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: var(--font-weight-6);
+  text-align: left;
+  cursor: pointer;
+}
+.collection-timeline-year[aria-expanded='true'] {
+  background: var(--surface-tint-rose-pale);
+  color: var(--brand-berry);
+}
+.collection-timeline-year:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 2px;
+}
+.collection-timeline-detail {
+  padding: var(--size-2) var(--size-3) var(--size-4);
+}
+.collection-timeline-detail[hidden],
+.collection-timeline-media [hidden] {
+  display: none;
+}
+.collection-timeline-detail > :last-child {
+  margin-bottom: 0;
+}
+.collection-timeline-media {
+  position: sticky;
+  top: var(--size-5);
+  min-width: 0;
+}
+.collection-timeline-media > figure {
+  width: 100%;
+  margin: 0;
+}
+.collection-timeline-media img {
+  display: block;
+  width: 100%;
+  max-height: 65vh;
+  margin: 0;
+  object-fit: contain;
+  object-position: center top;
+}
 .collection-accordion {
   display: grid;
   gap: var(--size-2);
@@ -529,6 +597,12 @@
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
   gap: var(--size-5);
   align-items: start;
+}
+.collection-recommendations--collapsed .collection-recommendations-layout {
+  grid-template-columns: minmax(0, 1fr);
+}
+.collection-recommendations--collapsed .collection-recommendations-media {
+  display: none;
 }
 .collection-recommendations-media {
   position: sticky;

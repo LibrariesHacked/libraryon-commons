@@ -1,51 +1,66 @@
 ---
-import { getCollection, getEntries } from 'astro:content';
-import SiteLayout from '../layouts/SiteLayout.astro';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import SitemapTree from '../components/SitemapTree.astro';
-import { buildPageTree } from '../lib/sitemap.mjs';
-import { authorities, libraries, libraryPath } from '../lib/directory.mjs';
-import { isPublishedPage, articleTitle, settings, sitePath } from '../lib/site.mjs';
+import { getCollection, getEntries } from 'astro:content'
+
+import Breadcrumbs from '../components/Breadcrumbs.astro'
+import SitemapTree from '../components/SitemapTree.astro'
+import SiteLayout from '../layouts/SiteLayout.astro'
+import { authorities, libraries, libraryPath } from '../lib/directory.mjs'
+import { isPublishedPage, articleTitle, settings, sitePath } from '../lib/site.mjs'
+import { buildPageTree } from '../lib/sitemap.mjs'
 
 const [pageEntries, sessions, resources, faqs, contributors] = await Promise.all([
   getCollection('pages'),
   getCollection('sessions'),
   getCollection('resources'),
   getCollection('faqs'),
-  getCollection('contributors'),
-]);
-const pages = pageEntries.filter((entry) => isPublishedPage(entry) && entry.data.path !== '/libraries');
-const pageTree = buildPageTree(pages);
-const librariesByAuthority = new Map();
+  getCollection('contributors')
+])
+const pages = pageEntries.filter(
+  (entry) => isPublishedPage(entry) && entry.data.path !== '/libraries'
+)
+const pageTree = buildPageTree(pages)
+const librariesByAuthority = new Map()
 for (const library of libraries) {
-  const key = library.authority || 'unassigned';
-  if (!librariesByAuthority.has(key)) librariesByAuthority.set(key, []);
-  librariesByAuthority.get(key).push(library);
+  const key = library.authority || 'unassigned'
+  if (!librariesByAuthority.has(key)) librariesByAuthority.set(key, [])
+  librariesByAuthority.get(key).push(library)
 }
 const authorityGroups = authorities.map((authority) => ({
   ...authority,
-  entries: (librariesByAuthority.get(authority.slug) || []).sort((first, second) => first.name.localeCompare(second.name, 'en')),
-}));
-const unassigned = (librariesByAuthority.get('unassigned') || []).sort((first, second) => first.name.localeCompare(second.name, 'en'));
-if (unassigned.length) authorityGroups.push({ slug: 'unassigned', name: 'Authority not recorded', entries: unassigned });
-const faqPages = new Map();
+  entries: (librariesByAuthority.get(authority.slug) || []).sort((first, second) =>
+    first.name.localeCompare(second.name, 'en')
+  )
+}))
+const unassigned = (librariesByAuthority.get('unassigned') || []).sort((first, second) =>
+  first.name.localeCompare(second.name, 'en')
+)
+if (unassigned.length)
+  authorityGroups.push({ slug: 'unassigned', name: 'Authority not recorded', entries: unassigned })
+const faqPages = new Map()
 for (const page of pages) {
   for (const faq of await getEntries(page.data.faqs || [])) {
-    if (!faqPages.has(faq.id)) faqPages.set(faq.id, []);
-    faqPages.get(faq.id).push({ title: articleTitle(page), href: `${page.data.path}#faq-${faq.id}` });
+    if (!faqPages.has(faq.id)) faqPages.set(faq.id, [])
+    faqPages
+      .get(faq.id)
+      .push({ title: articleTitle(page), href: `${page.data.path}#faq-${faq.id}` })
   }
 }
-sessions.sort((first, second) => first.data.title.localeCompare(second.data.title, 'en'));
-resources.sort((first, second) => first.data.title.localeCompare(second.data.title, 'en'));
-faqs.sort((first, second) => first.data.question.localeCompare(second.data.question, 'en'));
-contributors.sort((first, second) => first.data.name.localeCompare(second.data.name, 'en'));
-const copy = settings.ui.sitemap;
+sessions.sort((first, second) => first.data.title.localeCompare(second.data.title, 'en'))
+resources.sort((first, second) => first.data.title.localeCompare(second.data.title, 'en'))
+faqs.sort((first, second) => first.data.question.localeCompare(second.data.question, 'en'))
+contributors.sort((first, second) => first.data.name.localeCompare(second.data.name, 'en'))
+const copy = settings.ui.sitemap
 ---
 
 <SiteLayout title={copy.title} description={copy.description}>
   <header class="page-heading">
     <div class="shell">
-      <Breadcrumbs items={[{ label: settings.ui.editorial.home_breadcrumb, href: '/' }, { label: copy.heading, current: true }]} />
+      <Breadcrumbs
+        items={[
+          { label: settings.ui.editorial.home_breadcrumb, href: '/' },
+          { label: copy.heading, current: true }
+        ]}
+      />
       <p class="eyebrow">{copy.eyebrow}</p>
       <h1>{copy.heading}</h1>
       <p>{copy.intro}</p>
@@ -53,34 +68,48 @@ const copy = settings.ui.sitemap;
   </header>
   <div class="section shell sitemap">
     <section aria-labelledby="sitemap-pages">
-      <h2 id="sitemap-pages">{copy.pages} <span>({pages.length})</span></h2>
-      <p><a href={sitePath('/')}>{copy.homepage}</a></p>
+      <h2 id="sitemap-pages">
+        {copy.pages} <span>({pages.length})</span>
+      </h2>
+      <p>
+        <a href={sitePath('/')}>{copy.homepage}</a>
+      </p>
       <SitemapTree nodes={pageTree} />
     </section>
 
     <section aria-labelledby="sitemap-sessions">
-      <h2 id="sitemap-sessions">{copy.sessions} <span>({sessions.length})</span></h2>
+      <h2 id="sitemap-sessions">
+        {copy.sessions} <span>({sessions.length})</span>
+      </h2>
       <ul>
         {sessions.map((session) => (
-          <li><a href={sitePath(`/sessions/${session.id}/`)}>{session.data.title}</a></li>
+          <li>
+            <a href={sitePath(`/sessions/${session.id}/`)}>{session.data.title}</a>
+          </li>
         ))}
       </ul>
     </section>
 
     <section aria-labelledby="sitemap-resources">
-      <h2 id="sitemap-resources">{copy.resources} <span>({resources.length})</span></h2>
+      <h2 id="sitemap-resources">
+        {copy.resources} <span>({resources.length})</span>
+      </h2>
       <details>
         <summary>{copy.browse_resources}</summary>
         <ul>
           {resources.map((resource) => (
-            <li><a href={sitePath(`/resources/${resource.id}/`)}>{resource.data.title}</a></li>
+            <li>
+              <a href={sitePath(`/resources/${resource.id}/`)}>{resource.data.title}</a>
+            </li>
           ))}
         </ul>
       </details>
     </section>
 
     <section aria-labelledby="sitemap-faqs">
-      <h2 id="sitemap-faqs">{copy.questions} <span>({faqs.length})</span></h2>
+      <h2 id="sitemap-faqs">
+        {copy.questions} <span>({faqs.length})</span>
+      </h2>
       <details>
         <summary>{copy.browse_questions}</summary>
         <ul>
@@ -88,7 +117,10 @@ const copy = settings.ui.sitemap;
             <li>
               <span>{faq.data.question}</span>
               {faqPages.get(faq.id)?.map((page) => (
-                <> · <a href={sitePath(page.href)}>{page.title}</a></>
+                <>
+                  {' '}
+                  · <a href={sitePath(page.href)}>{page.title}</a>
+                </>
               ))}
             </li>
           ))}
@@ -97,26 +129,40 @@ const copy = settings.ui.sitemap;
     </section>
 
     <section aria-labelledby="sitemap-contributors">
-      <h2 id="sitemap-contributors">{copy.contributors} <span>({contributors.length})</span></h2>
+      <h2 id="sitemap-contributors">
+        {copy.contributors} <span>({contributors.length})</span>
+      </h2>
       <ul>
         {contributors.map((person) => (
-          <li><a href={sitePath(`/people/${person.data.slug}/`)}>{person.data.name}</a></li>
+          <li>
+            <a href={sitePath(`/people/${person.data.slug}/`)}>{person.data.name}</a>
+          </li>
         ))}
       </ul>
     </section>
 
     <section aria-labelledby="sitemap-libraries">
-      <h2 id="sitemap-libraries">{copy.directory} <span>({libraries.length})</span></h2>
-      <p><a href={sitePath('/libraries/')}>{copy.directory_search}</a></p>
+      <h2 id="sitemap-libraries">
+        {copy.directory} <span>({libraries.length})</span>
+      </h2>
+      <p>
+        <a href={sitePath('/libraries/')}>{copy.directory_search}</a>
+      </p>
       <ul class="sitemap-authorities">
         {authorityGroups.map((authority) => (
           <li>
             <details>
-              <summary>{authority.name} <span>({authority.entries.length})</span></summary>
-              <p><a href={sitePath(`/libraries/${authority.slug}/`)}>{copy.authority_page}</a></p>
+              <summary>
+                {authority.name} <span>({authority.entries.length})</span>
+              </summary>
+              <p>
+                <a href={sitePath(`/libraries/${authority.slug}/`)}>{copy.authority_page}</a>
+              </p>
               <ul>
                 {authority.entries.map((library) => (
-                  <li><a href={sitePath(libraryPath(library))}>{library.name}</a></li>
+                  <li>
+                    <a href={sitePath(libraryPath(library))}>{library.name}</a>
+                  </li>
                 ))}
               </ul>
             </details>

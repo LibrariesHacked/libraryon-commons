@@ -1,10 +1,10 @@
 ---
-import { settings, sitePath } from '../../lib/site.mjs';
-const publicSiteURL = import.meta.env.PUBLIC_SITE_URL || settings.site.url;
+import { settings, sitePath } from '../../lib/site.mjs'
+const publicSiteURL = import.meta.env.PUBLIC_SITE_URL || settings.site.url
 const publicSitePath = (value) =>
   publicSiteURL
     ? new URL(value.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
-    : sitePath(value);
+    : sitePath(value)
 ---
 
 <!doctype html>
@@ -23,7 +23,7 @@ const publicSitePath = (value) =>
       <a href={publicSitePath('/sitemap/')}>Site map</a>
     </nav>
     <script is:inline>
-      window.CMS_MANUAL_INIT = true;
+      window.CMS_MANUAL_INIT = true
     </script>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script is:inline>
@@ -35,25 +35,25 @@ const publicSitePath = (value) =>
         contributors: ['updated_on'],
         authorities: ['updated_on', 'reviewed_on'],
         libraries: ['updated_on', 'reviewed_on']
-      };
+      }
       CMS.registerEventListener({
         name: 'preSave',
         handler: ({ entry }) => {
-          const today = new Date().toLocaleDateString('en-CA');
+          const today = new Date().toLocaleDateString('en-CA')
           return (stampedFields[entry.get('collection')] || []).reduce(
             (data, field) => data.set(field, today),
             entry.get('data')
-          );
+          )
         }
-      });
+      })
     </script>
     <script>
-      import { registerEditorComponents } from '../../lib/cms-editor-components.mjs';
-      import previewStyles from '../../styles/global.css?inline';
-      const cms = Reflect.get(window, 'CMS');
-      registerEditorComponents(cms);
-      cms.registerPreviewStyle(previewStyles, { raw: true });
-      cms.init();
+      import { registerEditorComponents } from '../../lib/cms-editor-components.mjs'
+      import previewStyles from '../../styles/global.css?inline'
+      const cms = Reflect.get(window, 'CMS')
+      registerEditorComponents(cms)
+      cms.registerPreviewStyle(previewStyles, { raw: true })
+      cms.init()
     </script>
   </body>
 </html>

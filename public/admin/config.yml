@@ -36,6 +36,7 @@ collections:
             label: Navigation
             widget: list
             summary: '{{fields.label}}'
+            hint: 'Controls the header menu only. Use a published landing page URL for a section; submenu URLs should match its child page paths.'
             fields:
               - name: label
                 label: Label
@@ -800,7 +801,7 @@ collections:
         widget: string
         pattern:
           - ^/(?:[A-Za-z0-9_-]+/)*[A-Za-z0-9_-]*$
-          - Use an absolute site path, such as /about/pressplay.
+          - Use an absolute site path. Published parent pages create sitemap and breadcrumb links; add a redirect when changing a live path.
       - name: kind
         label: Page Type
         widget: select
@@ -965,7 +966,7 @@ collections:
           - title
         multiple: true
         required: false
-        hint: Select and arrange this landing page's child pages in the order they should appear.
+        hint: Select and order the cards shown on this landing page. Child paths, not this list, determine sitemap nesting and breadcrumbs.
   - name: faqs
     label: Frequently Asked Questions
     label_singular: FAQ

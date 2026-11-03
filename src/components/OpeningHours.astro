@@ -1,11 +1,11 @@
 ---
-import { facilityLabel } from '../lib/directory.mjs';
-import { settings } from '../lib/site.mjs';
-const { library } = Astro.props;
-const copy = settings.ui.opening_hours;
+import { facilityLabel } from '../lib/directory.mjs'
+import { settings } from '../lib/site.mjs'
+const { library } = Astro.props
+const copy = settings.ui.opening_hours
 const hours = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].map(
   (day) => ({ day, frames: library.openingTimes?.[day]?.timeFrames || [] })
-);
+)
 ---
 
 <section class="detail-section">

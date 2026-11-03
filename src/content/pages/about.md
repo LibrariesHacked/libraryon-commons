@@ -1,6 +1,6 @@
 ---
 title: "About LibraryOn: Helping more people discover libraries | LibraryOn"
-path: /about
+path: /archive/about-libraryon
 kind: page
 published: true
 description: LibraryOn celebrates libraries by sharing inspiring stories and
@@ -33,8 +33,6 @@ resources:
   - luca-sage
   - antony-sojka
   - laurie-garnons-williams
-child_pages:
-  - /about/pressplay
 ---
 
 # About LibraryOn

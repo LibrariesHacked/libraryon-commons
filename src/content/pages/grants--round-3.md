@@ -1,6 +1,6 @@
 ---
 title: "LibraryOn grants for libraries: Round 3 | LibraryOn"
-path: /grants/round-3
+path: /archive/grants/round-3
 kind: page
 published: true
 description: The LibraryOn grants programme funds public libraries in England to

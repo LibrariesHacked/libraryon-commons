@@ -1,6 +1,6 @@
 # Running And Hosting The Site
 
-LibraryCommons is a static Astro site built entirely from files in this repository. It requires no database, external API, or map service at runtime.
+LibraryCommons is a static site built entirely from files in this repository using Astro. It requires no database, external API, or map service at runtime.
 
 ## Local Development
 

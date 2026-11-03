@@ -1,7 +1,7 @@
 ---
-import SitemapTree from './SitemapTree.astro';
-import { sitePath } from '../lib/site.mjs';
-const { nodes = [] } = Astro.props;
+import { sitePath } from '../lib/site.mjs'
+import SitemapTree from './SitemapTree.astro'
+const { nodes = [] } = Astro.props
 ---
 
 {nodes.length > 0 && (

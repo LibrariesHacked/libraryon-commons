@@ -1,6 +1,6 @@
 ---
 title: Grants Round 2 | LibraryOn
-path: /grants/round-2
+path: /archive/grants/round-2
 kind: page
 published: true
 description: Round 2 offered a further £500,000 for public libraries in England

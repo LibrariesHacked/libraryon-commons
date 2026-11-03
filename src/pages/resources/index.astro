@@ -1,37 +1,35 @@
 ---
-import { getCollection } from 'astro:content';
-import SiteLayout from '../../layouts/SiteLayout.astro';
-import ResourceLink from '../../components/ResourceLink.astro';
-import { normalise } from '../../lib/search.mjs';
-import { resourceUsage } from '../../lib/resource-usage.mjs';
-import { settings, sitePath } from '../../lib/site.mjs';
-const copy = settings.ui.resource_page;
+import { getCollection } from 'astro:content'
+
+import ResourceLink from '../../components/ResourceLink.astro'
+import SiteLayout from '../../layouts/SiteLayout.astro'
+import { resourceUsage } from '../../lib/resource-usage.mjs'
+import { normalise } from '../../lib/search.mjs'
+import { settings, sitePath } from '../../lib/site.mjs'
+const copy = settings.ui.resource_page
 const kindLabels = {
   document: copy.documents,
   slides: copy.slides,
   recording: copy.recordings,
   link: copy.useful_link
-};
+}
 
 const resources = (await getCollection('resources')).sort((first, second) => {
-  const firstLocal = first.data.url.startsWith('/uploads/');
-  const secondLocal = second.data.url.startsWith('/uploads/');
+  const firstLocal = first.data.url.startsWith('/uploads/')
+  const secondLocal = second.data.url.startsWith('/uploads/')
   return (
     Number(secondLocal) - Number(firstLocal) ||
     first.data.title.localeCompare(second.data.title, 'en')
-  );
-});
+  )
+})
 const usage = resourceUsage(
   resources,
   await getCollection('pages'),
-  await getCollection('sessions'),
-);
+  await getCollection('sessions')
+)
 ---
 
-<SiteLayout
-  title={copy.title}
-  description={copy.description}
->
+<SiteLayout title={copy.title} description={copy.description}>
   <header class="page-heading">
     <div class="shell">
       <p class="eyebrow">{copy.eyebrow}</p>
@@ -73,15 +71,26 @@ const usage = resourceUsage(
     <p id="resource-count" class="muted" role="status" aria-live="polite">
       {resources.length} {copy.plural}
     </p>
-    <nav class="resource-pagination" id="resource-pagination" aria-label={copy.pagination_label} hidden>
-      <button class="button button-secondary" id="resource-previous" type="button">{copy.previous_page}</button>
+    <nav
+      class="resource-pagination"
+      id="resource-pagination"
+      aria-label={copy.pagination_label}
+      hidden
+    >
+      <button class="button button-secondary" id="resource-previous" type="button">
+        {copy.previous_page}
+      </button>
       <p id="resource-page-status" role="status" aria-live="polite"></p>
-      <button class="button button-secondary" id="resource-next" type="button">{copy.next_page}</button>
+      <button class="button button-secondary" id="resource-next" type="button">
+        {copy.next_page}
+      </button>
     </nav>
     <ul class="resource-list" id="resource-results">
       {resources.map(({ id, data }) => (
         <li
-          data-search={normalise(`${data.title} ${data.description || ''} ${(usage.get(id) || []).map((reference) => reference.label).join(' ')}`)}
+          data-search={normalise(
+            `${data.title} ${data.description || ''} ${(usage.get(id) || []).map((reference) => reference.label).join(' ')}`
+          )}
           data-kind={data.kind}
           data-location={data.url.startsWith('/uploads/') ? 'local' : 'external'}
         >
@@ -99,7 +108,8 @@ const usage = resourceUsage(
             </p>
           )}
           <div class="resource-meta">
-            {kindLabels[data.kind]} · {data.url.startsWith('/uploads/') ? copy.saved_copy : copy.external_resource}
+            {kindLabels[data.kind]} ·{' '}
+            {data.url.startsWith('/uploads/') ? copy.saved_copy : copy.external_resource}
             {data.credit && ` · ${data.credit}`}
             {data.licence && ` · ${data.licence}`}
           </div>
@@ -113,59 +123,60 @@ const usage = resourceUsage(
 </SiteLayout>
 
 <script>
-  import { normalise } from '../../lib/search.mjs';
-  const query = document.querySelector<HTMLInputElement>('#resource-query');
-  const kind = document.querySelector<HTMLSelectElement>('#resource-kind');
-  const location = document.querySelector<HTMLSelectElement>('#resource-location');
-  const entries = [...document.querySelectorAll<HTMLElement>('#resource-results > li')];
-  const count = document.querySelector<HTMLElement>('#resource-count');
-  const empty = document.querySelector<HTMLElement>('#resource-empty');
-  const filterBar = document.querySelector<HTMLElement>('.filter-bar');
-  const pagination = document.querySelector<HTMLElement>('#resource-pagination');
-  const previous = document.querySelector<HTMLButtonElement>('#resource-previous');
-  const next = document.querySelector<HTMLButtonElement>('#resource-next');
-  const pageStatus = document.querySelector<HTMLElement>('#resource-page-status');
-  const pageSize = Number(filterBar.dataset.pageSize);
-  let currentPage = 1;
+  import { normalise } from '../../lib/search.mjs'
+  const query = document.querySelector<HTMLInputElement>('#resource-query')
+  const kind = document.querySelector<HTMLSelectElement>('#resource-kind')
+  const location = document.querySelector<HTMLSelectElement>('#resource-location')
+  const entries = [...document.querySelectorAll<HTMLElement>('#resource-results > li')]
+  const count = document.querySelector<HTMLElement>('#resource-count')
+  const empty = document.querySelector<HTMLElement>('#resource-empty')
+  const filterBar = document.querySelector<HTMLElement>('.filter-bar')
+  const pagination = document.querySelector<HTMLElement>('#resource-pagination')
+  const previous = document.querySelector<HTMLButtonElement>('#resource-previous')
+  const next = document.querySelector<HTMLButtonElement>('#resource-next')
+  const pageStatus = document.querySelector<HTMLElement>('#resource-page-status')
+  const pageSize = Number(filterBar.dataset.pageSize)
+  let currentPage = 1
 
   function filterResources() {
-    const terms = normalise(query.value).split(/\s+/);
-    const matches = entries.filter((entry) =>
+    const terms = normalise(query.value).split(/\s+/)
+    const matches = entries.filter(
+      (entry) =>
         terms.every((term) => entry.dataset.search.includes(term)) &&
         (!kind.value || entry.dataset.kind === kind.value) &&
         (!location.value || entry.dataset.location === location.value)
-    );
-    const pageCount = Math.max(1, Math.ceil(matches.length / pageSize));
-    currentPage = Math.min(currentPage, pageCount);
-    const first = (currentPage - 1) * pageSize;
-    const visibleEntries = new Set(matches.slice(first, first + pageSize));
-    for (const entry of entries) entry.hidden = !visibleEntries.has(entry);
-    count.textContent = `${matches.length} ${matches.length === 1 ? filterBar.dataset.singular : filterBar.dataset.plural}`;
-    empty.hidden = matches.length !== 0;
-    pagination.hidden = pageCount <= 1;
-    previous.disabled = currentPage <= 1;
-    next.disabled = currentPage >= pageCount;
+    )
+    const pageCount = Math.max(1, Math.ceil(matches.length / pageSize))
+    currentPage = Math.min(currentPage, pageCount)
+    const first = (currentPage - 1) * pageSize
+    const visibleEntries = new Set(matches.slice(first, first + pageSize))
+    for (const entry of entries) entry.hidden = !visibleEntries.has(entry)
+    count.textContent = `${matches.length} ${matches.length === 1 ? filterBar.dataset.singular : filterBar.dataset.plural}`
+    empty.hidden = matches.length !== 0
+    pagination.hidden = pageCount <= 1
+    previous.disabled = currentPage <= 1
+    next.disabled = currentPage >= pageCount
     pageStatus.textContent = filterBar.dataset.pageStatus
       .replace('{page}', String(currentPage))
-      .replace('{pages}', String(pageCount));
+      .replace('{pages}', String(pageCount))
   }
   query.addEventListener('input', () => {
-    currentPage = 1;
-    filterResources();
-  });
+    currentPage = 1
+    filterResources()
+  })
   const resetPageAndFilter = () => {
-    currentPage = 1;
-    filterResources();
-  };
-  kind.addEventListener('change', resetPageAndFilter);
-  location.addEventListener('change', resetPageAndFilter);
+    currentPage = 1
+    filterResources()
+  }
+  kind.addEventListener('change', resetPageAndFilter)
+  location.addEventListener('change', resetPageAndFilter)
   previous.addEventListener('click', () => {
-    currentPage -= 1;
-    filterResources();
-  });
+    currentPage -= 1
+    filterResources()
+  })
   next.addEventListener('click', () => {
-    currentPage += 1;
-    filterResources();
-  });
-  filterResources();
+    currentPage += 1
+    filterResources()
+  })
+  filterResources()
 </script>

@@ -1,6 +1,6 @@
 ---
 title: UK library grants programme | LibraryOn
-path: /grants
+path: /archive/grants
 kind: page
 published: true
 description: LibraryOn has delivered over £1m in grants to UK libraries to
@@ -38,9 +38,9 @@ resources:
   - digital-culture-network
   - accessible-websites-and-user-journeys-recording
 child_pages:
-  - /grants/round-3
-  - /grants/round-1
-  - /grants/round-2
+  - /archive/grants/round-3
+  - /archive/grants/round-1
+  - /archive/grants/round-2
 hero:
   image: /uploads/archive/a-man-sits-at-a-computer-in-a-library-he-has-his-back-to-us.jpg
   alt: A man sits at a computer in a library. He has his back to us.

@@ -2,29 +2,29 @@
  * @file Rate-limited public-site collector with resumable, checksummed responses.
  * Raw captures are local-only; import/compaction create the ordinary-Git outputs.
  */
-import { createHash } from 'node:crypto';
-import { mkdir, readFile, writeFile, appendFile } from 'node:fs/promises';
-import path from 'node:path';
-import { pathToFileURL } from 'node:url';
-import { parseArgs } from 'node:util';
-import { load, loadBuffer } from 'cheerio';
-import { pageImages } from './media.mjs';
-import { origin, allowed } from './scope.mjs';
-export { origin, assetHost, allowed } from './scope.mjs';
+import { createHash } from 'node:crypto'
+import { mkdir, readFile, writeFile, appendFile } from 'node:fs/promises'
+import path from 'node:path'
+import { pathToFileURL } from 'node:url'
+import { parseArgs } from 'node:util'
+import { load, loadBuffer } from 'cheerio'
+import { pageImages } from './media.mjs'
+import { origin, allowed } from './scope.mjs'
+export { origin, assetHost, allowed } from './scope.mjs'
 
 /**
  * Hash exact bytes, without normalising text or JSON.
  * @param {string|Buffer} value - Input bytes or UTF-8 string.
  * @returns {string} Hexadecimal SHA-256 checksum.
  */
-export const digest = (value) => createHash('sha256').update(value).digest('hex');
+export const digest = (value) => createHash('sha256').update(value).digest('hex')
 
 /**
  * Map a full URL, including its query, to a filesystem-safe raw object path.
  * @param {string} url - Absolute source URL.
  * @returns {string} Path relative to the raw capture directory.
  */
-export const objectPath = (url) => `objects/${digest(url)}`;
+export const objectPath = (url) => `objects/${digest(url)}`
 
 /**
  * Enforce the first-party HTTPS scope, with explicit opt-in for public CMS APIs.
@@ -42,53 +42,58 @@ export const objectPath = (url) => `objects/${digest(url)}`;
  * @returns {string[]} Unique in-scope URLs, without fragment identifiers.
  */
 export function references(body, url, type) {
-  const found = new Set();
+  const found = new Set()
   const add = (value) => {
-    if (!value || value.startsWith('#')) return;
+    if (!value || value.startsWith('#')) return
     try {
-      if (decodeURIComponent(value).startsWith('#')) return;
-      const target = new URL(value, url);
-      target.hash = '';
+      if (decodeURIComponent(value).startsWith('#')) return
+      const target = new URL(value, url)
+      target.hash = ''
       if (allowed(target.href)) {
-        found.add(target.href);
+        found.add(target.href)
         if (
           target.origin === origin &&
           target.pathname === '/_next/image' &&
           target.searchParams.has('url')
-        )
-          add(target.searchParams.get('url'));
+        ) {
+          add(target.searchParams.get('url'))
+        }
         if (
           target.origin === origin &&
           target.pathname.startsWith('/lon1.digitaloceanspaces.com/libraryon/')
-        )
-          add(`https://${target.pathname.slice(1)}`);
+        ) {
+          add(`https://${target.pathname.slice(1)}`)
+        }
       }
     } catch {}
-  };
+  }
   if (type.includes('html')) {
-    const document = load(body);
+    const document = load(body)
     document('[src], link[href], a[href], [poster]').each((index, element) => {
-      const node = document(element);
-      const attribute = node.attr('src') || node.attr('poster') || node.attr('href');
-      if (element.name !== 'a' || /\.(pdf|docx?|xlsx?|pptx?|zip)(?:\?|$)/i.test(attribute))
-        add(attribute);
-    });
+      const node = document(element)
+      const attribute = node.attr('src') || node.attr('poster') || node.attr('href')
+      if (element.name !== 'a' || /\.(pdf|docx?|xlsx?|pptx?|zip)(?:\?|$)/i.test(attribute)) {
+        add(attribute)
+      }
+    })
     document('[srcset]').each((index, element) => {
-      for (const candidate of document(element).attr('srcset').split(','))
-        add(candidate.trim().split(/\s+/)[0]);
-    });
+      for (const candidate of document(element).attr('srcset').split(',')) {
+        add(candidate.trim().split(/\s+/)[0])
+      }
+    })
   }
   if (/css|html/.test(type)) {
-    for (const match of body.matchAll(/url\(\s*["']?([^\s"')]+)["']?\s*\)/g)) add(match[1]);
+    for (const match of body.matchAll(/url\(\s*["']?([^\s"')]+)["']?\s*\)/g)) add(match[1])
   }
   if (/json|javascript|html/.test(type)) {
-    const decoded = body.replaceAll('\\/', '/').replaceAll('\\u0026', '&');
+    const decoded = body.replaceAll('\\/', '/').replaceAll('\\u0026', '&')
     for (const match of decoded.matchAll(
       /https:\/\/(?:libraryon\.lon1\.digitaloceanspaces\.com\/|lon1\.digitaloceanspaces\.com\/libraryon\/)[^\s"'<>\\)]+/g
-    ))
-      add(match[0]);
+    )) {
+      add(match[0])
+    }
   }
-  return [...found];
+  return [...found]
 }
 
 /**
@@ -101,33 +106,33 @@ export function paginationComplete(records, pagination) {
   return (
     records.length === pagination.total &&
     new Set(records.map((record) => record.id)).size === records.length
-  );
+  )
 }
 
 /** Build a paginated API URL, explicitly populating nested library-event relations. */
 export function collectionRequestURL(endpoint, pageNumber) {
-  const url = new URL(`/cms/api/${endpoint}`, origin);
+  const url = new URL(`/cms/api/${endpoint}`, origin)
   if (endpoint === 'alerts') {
     url.search = new URLSearchParams({
       publicationState: 'live',
       'populate[relations][populate][page][fields][0]': 'slug',
       'populate[relations][populate][legal][fields][0]': 'slug',
       'populate[relations][populate][special_collection][fields][0]': 'slug'
-    });
+    })
   } else if (!endpoint.includes('/')) {
     const query = new URLSearchParams({
       'pagination[page]': pageNumber,
       'pagination[pageSize]': 100,
       populate: '*',
       'sort[0]': 'id:asc'
-    });
+    })
     if (endpoint === 'libraries') {
-      query.set('populate[events][populate][tags]', '*');
-      query.set('populate[events][populate][occurrences]', '*');
+      query.set('populate[events][populate][tags]', '*')
+      query.set('populate[events][populate][occurrences]', '*')
     }
-    url.search = query;
+    url.search = query
   }
-  return url;
+  return url
 }
 
 /**
@@ -138,15 +143,15 @@ export function collectionRequestURL(endpoint, pageNumber) {
  */
 export function editorialURL(value, base = origin) {
   try {
-    const url = new URL(value, base);
-    if (url.origin !== origin || !allowed(url.href)) return null;
-    if (/^\/(?:libraries\/|events\/|_next\/|cdn-cgi\/)/.test(url.pathname)) return null;
-    if (/\.[a-z0-9]{2,5}$/i.test(url.pathname)) return null;
-    url.search = '';
-    url.hash = '';
-    return url.href;
+    const url = new URL(value, base)
+    if (url.origin !== origin || !allowed(url.href)) return null
+    if (/^\/(?:libraries\/|events\/|_next\/|cdn-cgi\/)/.test(url.pathname)) return null
+    if (/\.[a-z0-9]{2,5}$/i.test(url.pathname)) return null
+    url.search = ''
+    url.hash = ''
+    return url.href
   } catch {
-    return null;
+    return null
   }
 }
 
@@ -157,46 +162,49 @@ export function editorialURL(value, base = origin) {
  * @returns {object} Canonical metadata, rich HTML, text, images, links and embeds.
  */
 export function pageContent(body, url) {
-  const document = load(body);
+  const document = load(body)
   const main = document('main').first().length
     ? document('main').first().clone()
-    : document('body').clone();
-  if (!main.find('h1').length && document('h1').first().length)
-    main.prepend(document('h1').first().clone());
+    : document('body').clone()
+  if (!main.find('h1').length && document('h1').first().length) {
+    main.prepend(document('h1').first().clone())
+  }
   const resolve = (value) => {
     try {
-      return new URL(value, url).href;
+      return new URL(value, url).href
     } catch {
-      return value;
+      return value
     }
-  };
+  }
   const links = main
     .find('a[href]')
     .map((index, element) => ({
       text: document(element).text().replace(/\s+/g, ' ').trim(),
       url: resolve(document(element).attr('href'))
     }))
-    .get();
-  const images = pageImages(body, url).filter((image) => image.source).map((image) => ({
-    url: image.source,
-    alt: image.alt,
-    srcset: image.srcset,
-    candidates: image.candidates
-  }));
+    .get()
+  const images = pageImages(body, url)
+    .filter((image) => image.source)
+    .map((image) => ({
+      url: image.source,
+      alt: image.alt,
+      srcset: image.srcset,
+      candidates: image.candidates
+    }))
   const headings = main
     .find('h1,h2,h3,h4')
     .map((index, element) => ({
       level: Number(element.name.slice(1)),
       text: document(element).text().replace(/\s+/g, ' ').trim()
     }))
-    .get();
-  main.find('script').remove();
+    .get()
+  main.find('script').remove()
   main.find('[href], [src], [poster]').each((index, element) => {
     for (const attribute of ['href', 'src', 'poster']) {
-      const value = document(element).attr(attribute);
-      if (value) document(element).attr(attribute, resolve(value));
+      const value = document(element).attr(attribute)
+      if (value) document(element).attr(attribute, resolve(value))
     }
-  });
+  })
   return {
     source: url,
     title: document('head > title').first().text(),
@@ -215,7 +223,7 @@ export function pageContent(body, url) {
         title: document(element).attr('title') || ''
       }))
       .get()
-  };
+  }
 }
 
 /**
@@ -227,63 +235,63 @@ export function pageContent(body, url) {
  * @returns {Promise<void>} Sets process.exitCode when any requested slice fails.
  */
 export async function collect(options) {
-  const output = path.resolve(options.output || 'archive');
-  await mkdir(path.join(output, 'objects'), { recursive: true });
-  await mkdir(path.join(output, 'data'), { recursive: true });
-  await mkdir(path.join(output, 'content'), { recursive: true });
-  const entries = new Map();
+  const output = path.resolve(options.output || 'archive')
+  await mkdir(path.join(output, 'objects'), { recursive: true })
+  await mkdir(path.join(output, 'data'), { recursive: true })
+  await mkdir(path.join(output, 'content'), { recursive: true })
+  const entries = new Map()
   try {
     for (const line of (await readFile(path.join(output, 'manifest.jsonl'), 'utf8'))
       .trim()
       .split('\n')) {
-      const entry = JSON.parse(line);
-      if (entry.status >= 200 && entry.status < 400) entries.set(entry.url, entry);
+      const entry = JSON.parse(line)
+      if (entry.status >= 200 && entry.status < 400) entries.set(entry.url, entry)
     }
   } catch (error) {
-    if (error.code !== 'ENOENT') throw error;
+    if (error.code !== 'ENOENT') throw error
   }
-  const failures = [];
-  const assets = new Set();
-  let lastRequest = 0;
+  const failures = []
+  const assets = new Set()
+  let lastRequest = 0
   /** Reuse a verified response or issue a bounded-retry GET without auto-redirects. */
   const get = async (url) => {
-    if (!allowed(url, options.api)) throw new Error(`Out of scope: ${url}`);
-    const previous = entries.get(url);
+    if (!allowed(url, options.api)) throw new Error(`Out of scope: ${url}`)
+    const previous = entries.get(url)
     if (previous) {
-      const body = await readFile(path.join(output, previous.file));
-      if (digest(body) !== previous.sha256) throw new Error(`Checksum mismatch: ${url}`);
+      const body = await readFile(path.join(output, previous.file))
+      if (digest(body) !== previous.sha256) throw new Error(`Checksum mismatch: ${url}`)
       return {
         body,
         type: previous.contentType,
         status: previous.status,
         location: previous.headers.location
-      };
+      }
     }
     for (let attempt = 0; attempt < 3; attempt++) {
       await new Promise((resolve) =>
         setTimeout(resolve, Math.max(0, lastRequest + options.delay - Date.now()))
-      );
-      lastRequest = Date.now();
+      )
+      lastRequest = Date.now()
       try {
         const response = await fetch(url, {
           headers: { 'User-Agent': 'LibraryOnPreservation/1.0 (public archival GET; CC-BY-4.0)' },
           redirect: 'manual',
           signal: AbortSignal.timeout(60000)
-        });
+        })
         if ((response.status === 429 || response.status >= 500) && attempt < 2) {
-          const retryAfter = response.headers.get('retry-after');
-          const seconds = Number(retryAfter);
+          const retryAfter = response.headers.get('retry-after')
+          const seconds = Number(retryAfter)
           const wait =
             retryAfter && !Number.isNaN(seconds)
               ? seconds * 1000
-              : Date.parse(retryAfter) - Date.now();
-          await response.arrayBuffer();
+              : Date.parse(retryAfter) - Date.now()
+          await response.arrayBuffer()
           await new Promise((resolve) =>
             setTimeout(resolve, Math.max(2000 * (attempt + 1), wait || 0))
-          );
-          continue;
+          )
+          continue
         }
-        const body = Buffer.from(await response.arrayBuffer());
+        const body = Buffer.from(await response.arrayBuffer())
         const entry = {
           url,
           capturedAt: new Date().toISOString(),
@@ -295,52 +303,53 @@ export async function collect(options) {
           file: objectPath(url),
           bytes: body.length,
           sha256: digest(body)
-        };
-        await writeFile(path.join(output, entry.file), body);
-        await appendFile(path.join(output, 'manifest.jsonl'), `${JSON.stringify(entry)}\n`);
-        if (!response.ok && !(response.status >= 300 && response.status < 400)) {
-          failures.push({ url, status: response.status });
-          return { body, type: entry.contentType, status: response.status };
         }
-        entries.set(url, entry);
+        await writeFile(path.join(output, entry.file), body)
+        await appendFile(path.join(output, 'manifest.jsonl'), `${JSON.stringify(entry)}\n`)
+        if (!response.ok && !(response.status >= 300 && response.status < 400)) {
+          failures.push({ url, status: response.status })
+          return { body, type: entry.contentType, status: response.status }
+        }
+        entries.set(url, entry)
         return {
           body,
           type: entry.contentType,
           status: response.status,
           location: response.headers.get('location')
-        };
+        }
       } catch (error) {
-        if (attempt === 2) throw error;
+        if (attempt === 2) throw error
       }
     }
-  };
+  }
   /** Follow only in-scope redirects and extend the asset queue from successful text. */
   const fetchObject = async (url, redirects = 0) => {
     try {
-      const result = await get(url);
+      const result = await get(url)
       if (result.status >= 300 && result.status < 400) {
-        if (!result.location || redirects >= 10) throw new Error('Invalid or excessive redirects');
-        const target = new URL(result.location, url).href;
-        if (!allowed(target, options.api))
-          throw new Error(`Redirect outside allowed scope: ${target}`);
-        return await fetchObject(target, redirects + 1);
+        if (!result.location || redirects >= 10) throw new Error('Invalid or excessive redirects')
+        const target = new URL(result.location, url).href
+        if (!allowed(target, options.api)) {
+          throw new Error(`Redirect outside allowed scope: ${target}`)
+        }
+        return await fetchObject(target, redirects + 1)
       }
       if (result.status === 200) {
-        for (const asset of references(result.body.toString(), url, result.type)) assets.add(asset);
+        for (const asset of references(result.body.toString(), url, result.type)) assets.add(asset)
       }
-      return result;
+      return result
     } catch (error) {
-      failures.push({ url, error: error.message });
-      return null;
+      failures.push({ url, error: error.message })
+      return null
     }
-  };
-  const robots = await get(`${origin}/robots.txt`);
-  if (robots.status !== 200 || !robots.body.toString().includes('Disallow: /cms/')) {
-    throw new Error('Robots policy changed or unavailable; review it before collecting.');
   }
-  const sitemap = await get(`${origin}/sitemap.xml`);
-  if (sitemap.status !== 200) throw new Error('Cannot read sitemap');
-  const xml = loadBuffer(sitemap.body, { xml: true });
+  const robots = await get(`${origin}/robots.txt`)
+  if (robots.status !== 200 || !robots.body.toString().includes('Disallow: /cms/')) {
+    throw new Error('Robots policy changed or unavailable; review it before collecting.')
+  }
+  const sitemap = await get(`${origin}/sitemap.xml`)
+  if (sitemap.status !== 200) throw new Error('Cannot read sitemap')
+  const xml = loadBuffer(sitemap.body, { xml: true })
   const pages = [
     ...new Set([
       `${origin}/`,
@@ -348,10 +357,10 @@ export async function collect(options) {
         .map((index, element) => xml(element).text().trim())
         .get()
     ])
-  ];
-  await writeFile(path.join(output, 'seeds.txt'), `${pages.join('\n')}\n`);
-  const apiSummary = {};
-  const content = new Map();
+  ]
+  await writeFile(path.join(output, 'seeds.txt'), `${pages.join('\n')}\n`)
+  const apiSummary = {}
+  const content = new Map()
   if (options.api) {
     for (const endpoint of [
       'libraries',
@@ -361,76 +370,78 @@ export async function collect(options) {
       'alerts',
       'libraries/event-counts'
     ]) {
-      const records = [];
-      let pagination;
-      let complete = false;
+      const records = []
+      let pagination
+      let complete = false
       for (let pageNumber = 1; ; pageNumber++) {
-        const url = collectionRequestURL(endpoint, pageNumber);
-        const response = await fetchObject(url.href);
-        if (!response || response.status !== 200) break;
-        const json = JSON.parse(response.body);
+        const url = collectionRequestURL(endpoint, pageNumber)
+        const response = await fetchObject(url.href)
+        if (!response || response.status !== 200) break
+        const json = JSON.parse(response.body)
         if (!Array.isArray(json.data)) {
           await writeFile(
             path.join(output, 'data', `${endpoint.replaceAll('/', '-')}.json`),
             JSON.stringify(json, null, 2)
-          );
-          complete = true;
-          break;
+          )
+          complete = true
+          break
         }
-        records.push(...json.data);
-        const nextPagination = json.meta?.pagination;
-        if (pagination && nextPagination?.total !== pagination.total) break;
-        pagination = nextPagination;
+        records.push(...json.data)
+        const nextPagination = json.meta?.pagination
+        if (pagination && nextPagination?.total !== pagination.total) break
+        pagination = nextPagination
         if (!pagination) {
-          complete = true;
-          break;
+          complete = true
+          break
         }
         if (pageNumber >= pagination.pageCount) {
-          complete = paginationComplete(records, pagination);
-          break;
+          complete = paginationComplete(records, pagination)
+          break
         }
       }
-      if (records.length || pagination)
+      if (records.length || pagination) {
         await writeFile(
           path.join(output, 'data', `${endpoint}.json`),
           JSON.stringify({ data: records, pagination, complete }, null, 2)
-        );
-      apiSummary[endpoint] = { records: records.length, expected: pagination?.total, complete };
-      console.log(endpoint, apiSummary[endpoint]);
+        )
+      }
+      apiSummary[endpoint] = { records: records.length, expected: pagination?.total, complete }
+      console.log(endpoint, apiSummary[endpoint])
     }
   }
   if (!options['data-only']) {
     const templates = [
       pages.find((url) => /\/libraries\/[^/]+$/.test(url)),
       pages.find((url) => /\/libraries\/[^/]+\/[^/]+$/.test(url))
-    ].filter(Boolean);
+    ].filter(Boolean)
     const selected = options['all-libraries']
       ? pages.filter((url) => allowed(url))
-      : [...new Set([...pages.map((url) => editorialURL(url)).filter(Boolean), ...templates])];
-    const limited = options.limit ? selected.slice(0, options.limit) : selected;
-    const queued = new Set(limited);
+      : [...new Set([...pages.map((url) => editorialURL(url)).filter(Boolean), ...templates])]
+    const limited = options.limit ? selected.slice(0, options.limit) : selected
+    const queued = new Set(limited)
     for (const [index, url] of limited.entries()) {
-      const result = await fetchObject(url);
+      const result = await fetchObject(url)
       if (result?.status === 200 && result.type.includes('html')) {
-        const record = pageContent(result.body.toString(), url);
+        const record = pageContent(result.body.toString(), url)
         content.set(record.canonical, {
           ...record,
           file: `content/${digest(record.canonical)}.json`
-        });
+        })
         if (!options.limit) {
           for (const link of record.links) {
-            const target = editorialURL(link.url);
+            const target = editorialURL(link.url)
             if (target && !queued.has(target)) {
-              queued.add(target);
-              limited.push(target);
+              queued.add(target)
+              limited.push(target)
             }
           }
         }
       }
-      console.log(`Page ${index + 1}/${limited.length}: ${url}`);
+      console.log(`Page ${index + 1}/${limited.length}: ${url}`)
     }
-    for (const record of content.values())
-      await writeFile(path.join(output, record.file), JSON.stringify(record, null, 2));
+    for (const record of content.values()) {
+      await writeFile(path.join(output, record.file), JSON.stringify(record, null, 2))
+    }
     await writeFile(
       path.join(output, 'content', 'pages.json'),
       JSON.stringify(
@@ -438,11 +449,11 @@ export async function collect(options) {
         null,
         2
       )
-    );
-    await writeFile(path.join(output, 'unique-seeds.txt'), `${[...content.keys()].join('\n')}\n`);
+    )
+    await writeFile(path.join(output, 'unique-seeds.txt'), `${[...content.keys()].join('\n')}\n`)
   }
   if (options.assets) {
-    for (const asset of assets) await fetchObject(asset);
+    for (const asset of assets) await fetchObject(asset)
   }
   if (!options['data-only']) {
     const resources = [...content.values()].flatMap((record) =>
@@ -452,8 +463,8 @@ export async function collect(options) {
         archived: entries.get(link.url)?.status === 200,
         file: entries.get(link.url)?.file || null
       }))
-    );
-    await writeFile(path.join(output, 'content', 'links.json'), JSON.stringify(resources, null, 2));
+    )
+    await writeFile(path.join(output, 'content', 'links.json'), JSON.stringify(resources, null, 2))
     await writeFile(
       path.join(output, 'content', 'media.json'),
       JSON.stringify(
@@ -467,32 +478,32 @@ export async function collect(options) {
         null,
         2
       )
-    );
+    )
     await writeFile(
       path.join(output, 'content', 'recovered-media.json'),
       JSON.stringify(
         [...assets]
           .filter((url) => url.startsWith(`${origin}/lon1.digitaloceanspaces.com/libraryon/`))
           .map((url) => {
-            const recovered = `https://${new URL(url).pathname.slice(1)}`;
+            const recovered = `https://${new URL(url).pathname.slice(1)}`
             return {
               original: url,
               recovered,
               file: entries.get(recovered)?.file || null,
               status: entries.get(recovered)?.status || null,
               rawSourceUnchanged: true
-            };
+            }
           }),
         null,
         2
       )
-    );
+    )
     const priority = [...content.values()].filter((record) =>
       /pressplay|special-collections|grants|case-stud/.test(record.canonical)
-    );
+    )
     const priorityLinks = resources.filter((resource) =>
       priority.some((record) => record.canonical === resource.page)
-    );
+    )
     await writeFile(
       path.join(output, 'content', 'priority-report.json'),
       JSON.stringify(
@@ -507,9 +518,9 @@ export async function collect(options) {
           ),
           externalReferences: priorityLinks.filter((link) => {
             try {
-              return /^https?:/.test(link.url) && !allowed(link.url);
+              return /^https?:/.test(link.url) && !allowed(link.url)
             } catch {
-              return false;
+              return false
             }
           }),
           note: 'External URLs are preserved as references, not downloaded copies of videos or hosted slide presentations.'
@@ -517,7 +528,7 @@ export async function collect(options) {
         null,
         2
       )
-    );
+    )
   }
   const report = {
     capturedAt: new Date().toISOString(),
@@ -534,14 +545,15 @@ export async function collect(options) {
       'No private CMS content or source templates captured.',
       'Third-party maps, video, geocoding and licence exceptions require separate review.'
     ]
-  };
+  }
   await writeFile(
     path.join(output, options['data-only'] ? 'data-report.json' : 'report.json'),
     JSON.stringify(report, null, 2)
-  );
-  console.log(JSON.stringify(report, null, 2));
-  if (failures.length || Object.values(apiSummary).some((value) => !value.complete))
-    process.exitCode = 1;
+  )
+  console.log(JSON.stringify(report, null, 2))
+  if (failures.length || Object.values(apiSummary).some((value) => !value.complete)) {
+    process.exitCode = 1
+  }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.argv[1])).href) {
@@ -556,14 +568,15 @@ if (process.argv[1] && import.meta.url === pathToFileURL(path.resolve(process.ar
       limit: { type: 'string' },
       delay: { type: 'string', default: '300' }
     }
-  });
-  values.delay = Number(values.delay);
-  values.limit = values.limit === undefined ? undefined : Number(values.limit);
+  })
+  values.delay = Number(values.delay)
+  values.limit = values.limit === undefined ? undefined : Number(values.limit)
   if (
     !Number.isFinite(values.delay) ||
     values.delay < 0 ||
     (values.limit !== undefined && (!Number.isInteger(values.limit) || values.limit < 1))
-  )
-    throw new Error('Invalid delay or limit');
-  await collect(values);
+  ) {
+    throw new Error('Invalid delay or limit')
+  }
+  await collect(values)
 }

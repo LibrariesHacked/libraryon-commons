@@ -1,30 +1,28 @@
 ---
-import SiteLayout from '../layouts/SiteLayout.astro';
-import ArticleCards from '../components/ArticleCards.astro';
-import PageContent from '../components/PageContent.astro';
-import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from '@lucide/astro';
-import { articleTitle, safeURL, settings, sitePath } from '../lib/site.mjs';
-import homepage from '../data/homepage.json';
-const { entry, allPages } = Astro.props;
-const hero = homepage.image ? { url: homepage.image, alt: homepage.image_alt } : null;
+import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from '@lucide/astro'
+
+import ArticleCards from '../components/ArticleCards.astro'
+import PageContent from '../components/PageContent.astro'
+import homepage from '../data/homepage.json'
+import SiteLayout from '../layouts/SiteLayout.astro'
+import { articleTitle, safeURL, settings, sitePath } from '../lib/site.mjs'
+const { entry, allPages } = Astro.props
+const hero = homepage.image ? { url: homepage.image, alt: homepage.image_alt } : null
 const carousel = Array.isArray(homepage.carousel)
   ? homepage.carousel.filter((slide) => slide?.image)
-  : [];
-const copy = settings.ui.home;
-const sourceURL = safeURL(entry.data.source_url);
-const heading = homepage.title || articleTitle(entry);
-const highlightedHeading = heading.match(/^(.*\s)(everyone)$/i);
+  : []
+const copy = settings.ui.home
+const sourceURL = safeURL(entry.data.source_url)
+const heading = homepage.title || articleTitle(entry)
+const highlightedHeading = heading.match(/^(.*\s)(everyone)$/i)
 const selected = (paths) =>
-  paths.map((path) => allPages.find((page) => page.data.path === path)).filter(Boolean);
-const collections = selected(homepage.collection_pages);
+  paths.map((path) => allPages.find((page) => page.data.path === path)).filter(Boolean)
+const collections = selected(homepage.collection_pages)
 ---
 
 <SiteLayout title={settings.site.title} description={settings.site.description}>
   <section
-    class:list={[
-      'hero',
-      carousel.length > 0 ? 'hero-with-carousel' : !hero && 'hero-plain'
-    ]}
+    class:list={['hero', carousel.length > 0 ? 'hero-with-carousel' : !hero && 'hero-plain']}
   >
     {!carousel.length && hero && (
       <img src={sitePath(hero.url)} alt={hero.alt} width="1600" height="600" fetchpriority="high" />
@@ -133,7 +131,9 @@ const collections = selected(homepage.collection_pages);
   </section>
   <section class="section shell">
     <article class="prose original-content home-prose">
-      <PageContent {...Astro.props}><slot /></PageContent>
+      <PageContent {...Astro.props}>
+        <slot />
+      </PageContent>
     </article>
   </section>
   <section class="section section-wash">
@@ -160,95 +160,108 @@ const collections = selected(homepage.collection_pages);
       {sourceURL && <a href={sourceURL}>{settings.ui.editorial.original_source_link}</a>}
     </div>
   </section>
-  {carousel.length > 0 && (
-    <script>
-      import EmblaCarousel from 'embla-carousel';
-      import Autoplay from 'embla-carousel-autoplay';
+  {carousel.length > 0 && <script>
+    import EmblaCarousel from 'embla-carousel'
+    import Autoplay from 'embla-carousel-autoplay'
 
-      (() => {
-        const root = document.querySelector('[data-hero-carousel]');
-        if (!root) return;
-        const viewport = root.querySelector<HTMLElement>('[data-carousel-viewport]');
-        const slides = [...root.querySelectorAll<HTMLElement>('[data-carousel-slide]')];
-        const dots = [...root.querySelectorAll('[data-carousel-dot]')];
-        const prevBtn = root.querySelector('[data-carousel-prev]');
-        const nextBtn = root.querySelector('[data-carousel-next]');
-        const toggleBtn = root.querySelector('[data-carousel-toggle]');
-        const pauseIcon = root.querySelector<HTMLElement>('[data-icon-pause]');
-        const playIcon = root.querySelector<HTMLElement>('[data-icon-play]');
-        if (!viewport || slides.length < 2) return;
+    ;(() => {
+      const root = document.querySelector('[data-hero-carousel]')
+      if (!root) return
+      const viewport = root.querySelector<HTMLElement>('[data-carousel-viewport]')
+      const slides = [...root.querySelectorAll<HTMLElement>('[data-carousel-slide]')]
+      const dots = [...root.querySelectorAll('[data-carousel-dot]')]
+      const prevBtn = root.querySelector('[data-carousel-prev]')
+      const nextBtn = root.querySelector('[data-carousel-next]')
+      const toggleBtn = root.querySelector('[data-carousel-toggle]')
+      const pauseIcon = root.querySelector<HTMLElement>('[data-icon-pause]')
+      const playIcon = root.querySelector<HTMLElement>('[data-icon-play]')
+      if (!viewport || slides.length < 2) return
 
-        const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-        let userPaused = reducedMotion.matches;
-        const autoplay = Autoplay({ delay: 4200, playOnInit: false, stopOnInteraction: true });
-        viewport.dataset.carouselInitialized = 'true';
-        const carousel = EmblaCarousel(viewport, { align: 'start', containScroll: false, loop: true, duration: reducedMotion.matches ? 0 : 25 }, [autoplay]);
+      const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
+      let userPaused = reducedMotion.matches
+      const autoplay = Autoplay({ delay: 4200, playOnInit: false, stopOnInteraction: true })
+      viewport.dataset.carouselInitialized = 'true'
+      const carousel = EmblaCarousel(
+        viewport,
+        {
+          align: 'start',
+          containScroll: false,
+          loop: true,
+          duration: reducedMotion.matches ? 0 : 25
+        },
+        [autoplay]
+      )
 
-        const syncToggleUI = () => {
-          if (!toggleBtn) return;
-          toggleBtn.setAttribute('aria-pressed', String(userPaused));
-          const label = userPaused ? 'Play carousel' : 'Pause carousel';
-          toggleBtn.setAttribute('aria-label', label);
-          toggleBtn.setAttribute('title', label);
-          if (pauseIcon) pauseIcon.hidden = userPaused;
-          if (playIcon) playIcon.hidden = !userPaused;
-        };
+      const syncToggleUI = () => {
+        if (!toggleBtn) return
+        toggleBtn.setAttribute('aria-pressed', String(userPaused))
+        const label = userPaused ? 'Play carousel' : 'Pause carousel'
+        toggleBtn.setAttribute('aria-label', label)
+        toggleBtn.setAttribute('title', label)
+        if (pauseIcon) pauseIcon.hidden = userPaused
+        if (playIcon) playIcon.hidden = !userPaused
+      }
 
-        const syncDots = () => {
-          dots.forEach((dot, index) => dot.setAttribute('aria-current', String(index === carousel.selectedScrollSnap())));
-        };
-        const resume = () => {
-          if (!userPaused && !root.matches(':hover, :focus-within') && !document.hidden) autoplay.play(reducedMotion.matches);
-        };
-        carousel.on('select', syncDots).on('reInit', syncDots);
-        carousel.on('pointerDown', () => {
-          userPaused = true;
-          syncToggleUI();
-        });
+      const syncDots = () => {
+        dots.forEach((dot, index) =>
+          dot.setAttribute('aria-current', String(index === carousel.selectedScrollSnap()))
+        )
+      }
+      const resume = () => {
+        if (!userPaused && !root.matches(':hover, :focus-within') && !document.hidden)
+          autoplay.play(reducedMotion.matches)
+      }
+      carousel.on('select', syncDots).on('reInit', syncDots)
+      carousel.on('pointerDown', () => {
+        userPaused = true
+        syncToggleUI()
+      })
 
-        prevBtn?.addEventListener('click', () => {
-          carousel.scrollPrev(reducedMotion.matches);
-          autoplay.reset();
-        });
+      prevBtn?.addEventListener('click', () => {
+        carousel.scrollPrev(reducedMotion.matches)
+        autoplay.reset()
+      })
 
-        nextBtn?.addEventListener('click', () => {
-          carousel.scrollNext(reducedMotion.matches);
-          autoplay.reset();
-        });
+      nextBtn?.addEventListener('click', () => {
+        carousel.scrollNext(reducedMotion.matches)
+        autoplay.reset()
+      })
 
-        for (const dot of dots) {
-          dot.addEventListener('click', () => {
-            carousel.scrollTo(Number(dot.getAttribute('data-carousel-dot') || 0), reducedMotion.matches);
-            autoplay.reset();
-          });
-        }
+      for (const dot of dots) {
+        dot.addEventListener('click', () => {
+          carousel.scrollTo(
+            Number(dot.getAttribute('data-carousel-dot') || 0),
+            reducedMotion.matches
+          )
+          autoplay.reset()
+        })
+      }
 
-        toggleBtn?.addEventListener('click', () => {
-          userPaused = !userPaused;
-          syncToggleUI();
-          if (userPaused) autoplay.stop();
-          else autoplay.play(reducedMotion.matches);
-        });
+      toggleBtn?.addEventListener('click', () => {
+        userPaused = !userPaused
+        syncToggleUI()
+        if (userPaused) autoplay.stop()
+        else autoplay.play(reducedMotion.matches)
+      })
 
-        root.addEventListener('mouseenter', () => autoplay.stop());
-        root.addEventListener('mouseleave', resume);
-        root.addEventListener('focusin', () => autoplay.stop());
-        root.addEventListener('focusout', (event) => {
-          if (!root.contains(event.relatedTarget)) resume();
-        });
+      root.addEventListener('mouseenter', () => autoplay.stop())
+      root.addEventListener('mouseleave', resume)
+      root.addEventListener('focusin', () => autoplay.stop())
+      root.addEventListener('focusout', (event) => {
+        if (!root.contains(event.relatedTarget)) resume()
+      })
 
-        reducedMotion.addEventListener('change', () => {
-          if (reducedMotion.matches) userPaused = true;
-          carousel.reInit({ duration: reducedMotion.matches ? 0 : 25 });
-          syncToggleUI();
-          if (userPaused) autoplay.stop();
-          else resume();
-        });
+      reducedMotion.addEventListener('change', () => {
+        if (reducedMotion.matches) userPaused = true
+        carousel.reInit({ duration: reducedMotion.matches ? 0 : 25 })
+        syncToggleUI()
+        if (userPaused) autoplay.stop()
+        else resume()
+      })
 
-        syncDots();
-        syncToggleUI();
-        resume();
-      })();
-    </script>
-  )}
+      syncDots()
+      syncToggleUI()
+      resume()
+    })()
+  </script>}
 </SiteLayout>

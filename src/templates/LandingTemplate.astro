@@ -1,8 +1,8 @@
 ---
-import ArticleTemplate from './ArticleTemplate.astro';
-import ArticleCards from '../components/ArticleCards.astro';
-import { settings } from '../lib/site.mjs';
-const { children = [] } = Astro.props;
+import ArticleCards from '../components/ArticleCards.astro'
+import { settings } from '../lib/site.mjs'
+import ArticleTemplate from './ArticleTemplate.astro'
+const { children = [] } = Astro.props
 ---
 
 <ArticleTemplate {...Astro.props} label={settings.ui.editorial.labels.commons}>

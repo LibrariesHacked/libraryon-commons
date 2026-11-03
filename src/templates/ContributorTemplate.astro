@@ -1,8 +1,8 @@
 ---
-import SiteLayout from '../layouts/SiteLayout.astro';
-import { safeURL, settings, sitePath } from '../lib/site.mjs';
-const { contributor } = Astro.props;
-const copy = settings.ui.contributors;
+import SiteLayout from '../layouts/SiteLayout.astro'
+import { safeURL, settings, sitePath } from '../lib/site.mjs'
+const { contributor } = Astro.props
+const copy = settings.ui.contributors
 ---
 
 <SiteLayout title={contributor.name} description={contributor.biography}>

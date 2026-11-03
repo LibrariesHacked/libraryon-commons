@@ -1,8 +1,8 @@
 ---
-import ArticleTemplate from './ArticleTemplate.astro';
-import ResourceLink from '../components/ResourceLink.astro';
-import { settings, sitePath } from '../lib/site.mjs';
-const { sessions = [], resources = new Map() } = Astro.props;
+import ResourceLink from '../components/ResourceLink.astro'
+import { settings, sitePath } from '../lib/site.mjs'
+import ArticleTemplate from './ArticleTemplate.astro'
+const { sessions = [], resources = new Map() } = Astro.props
 ---
 
 <ArticleTemplate {...Astro.props} label={settings.ui.editorial.labels.conferences}>

@@ -1,6 +1,6 @@
 ---
 title: Grants round one | LibraryOn
-path: /grants/round-1
+path: /archive/grants/round-1
 kind: page
 published: true
 description: Explore the 27 public library projects funded in round one of the

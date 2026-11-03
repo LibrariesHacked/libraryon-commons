@@ -1,15 +1,15 @@
 ---
-import SiteLayout from '../layouts/SiteLayout.astro';
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import ResourceLink from '../components/ResourceLink.astro';
-import { safeURL, settings } from '../lib/site.mjs';
-const { resource, usage = [] } = Astro.props;
-const copy = settings.ui.resources;
+import Breadcrumbs from '../components/Breadcrumbs.astro'
+import ResourceLink from '../components/ResourceLink.astro'
+import SiteLayout from '../layouts/SiteLayout.astro'
+import { safeURL, settings } from '../lib/site.mjs'
+const { resource, usage = [] } = Astro.props
+const copy = settings.ui.resources
 const breadcrumbs = [
   { label: settings.ui.editorial.home_breadcrumb, href: '/' },
   { label: copy.breadcrumb, href: '/resources/' },
   { label: resource.title, current: true }
-];
+]
 ---
 
 <SiteLayout title={resource.title} description={resource.description}>
@@ -29,7 +29,9 @@ const breadcrumbs = [
           <h2>{settings.ui.resources.used_in}</h2>
           <ul>
             {usage.map((reference) => (
-              <li><a href={safeURL(reference.href)}>{reference.label}</a></li>
+              <li>
+                <a href={safeURL(reference.href)}>{reference.label}</a>
+              </li>
             ))}
           </ul>
         </section>

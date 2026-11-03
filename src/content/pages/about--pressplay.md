@@ -1,6 +1,6 @@
 ---
 title: Press Play, a celebration of all things digital | LibraryOn
-path: /about/pressplay
+path: /archive/pressplay
 kind: conference
 published: true
 description: Press Play, a LibraryOn event at the British Library in March 2024,
