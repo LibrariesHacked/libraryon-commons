@@ -83,6 +83,8 @@ test('shared library picker redirects by default and credits only displayed name
     new URL('../src/layouts/DirectoryLayout.astro', import.meta.url),
     'utf8'
   )
+  const authority = readFileSync(new URL('../src/templates/AuthorityTemplate.astro', import.meta.url), 'utf8')
+  const library = readFileSync(new URL('../src/templates/LibraryTemplate.astro', import.meta.url), 'utf8')
   assert.ok(component.includes("mode = 'navigate'"))
   assert.ok(component.includes('crypto.randomUUID()'))
   assert.ok(component.includes('window.location.assign(destination)'))
@@ -93,7 +95,9 @@ test('shared library picker redirects by default and credits only displayed name
   assert.ok(component.includes('dataAttribution.osOpenNames'))
   assert.ok(component.includes('dataAttribution.overturePlaces'))
   assert.ok(home.includes('<LibrarySearch id="home-library" />'))
-  assert.ok(layout.includes('<LibrarySearch />'))
+  assert.ok(authority.includes('<LibrarySearch />'))
+  assert.ok(!layout.includes('LibrarySearch'))
+  assert.ok(!library.includes('LibrarySearch'))
 })
 
 test('place picker delegates keyboard navigation to the maintained combobox engine', () => {
@@ -144,6 +148,20 @@ test('directory pages share MapLibre maps and search keeps its filtered listings
   assert.ok(component.includes('.setDOMContent(content)'))
   assert.ok(!component.includes('.setHTML('))
   assert.ok(component.includes('this.map?.remove()'))
+})
+
+test('directory map and listings form one results workspace with load more inside the list pane', () => {
+  const directory = readFileSync(
+    new URL('../src/pages/libraries/index.astro', import.meta.url),
+    'utf8'
+  )
+  const document = load(directory.split('<script>')[0])
+  const workspace = document('.library-results-workspace')
+  assert.equal(workspace.find('#library-results-heading').length, 1)
+  assert.equal(workspace.find('#result-count').length, 1)
+  assert.equal(workspace.find('.library-results-layout > #library-results-map').length, 1)
+  assert.equal(workspace.find('.library-results-column > #library-results').length, 1)
+  assert.equal(workspace.find('.library-results-column > #more-results').length, 1)
 })
 
 test('nearby location action is icon-only with an accessible label and tooltip', () => {

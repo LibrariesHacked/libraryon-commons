@@ -260,34 +260,40 @@ const initialResults = searchRecords.slice(0, 60)
       </div>
     </form>
 
-    <div class="results-heading">
-      <h2>{copy.results_heading}</h2>
-      <p id="result-count" aria-live="polite">
-        {copy.browse_status}
-      </p>
-    </div>
-    <LibraryMap
-      id="library-results-map"
-      label="Matching library locations"
-      emptyMessage="No mapped libraries match these filters."
-    />
-    <ul id="library-results" class="library-results">
-      {initialResults.map((library) => (
-        <li>
-          <h3>
-            <a href={sitePath(library.url)}>{library.name}</a>
-          </h3>
-          <p>{library.address || library.postcode}</p>
-          <p class="authority-label">
-            {library.authorityName}
-            {library.country ? ` · ${library.country}` : ''}
-          </p>
-        </li>
-      ))}
-    </ul>
-    <button id="more-results" class="button button-secondary load-more" type="button">
-      {copy.more_button}
-    </button>
+    <section class="library-results-workspace" aria-labelledby="library-results-heading">
+      <div class="results-heading">
+        <h2 id="library-results-heading">{copy.results_heading}</h2>
+        <p id="result-count" aria-live="polite">
+          {copy.browse_status}
+        </p>
+      </div>
+      <div class="library-results-layout">
+        <LibraryMap
+          id="library-results-map"
+          label="Matching library locations"
+          emptyMessage="No mapped libraries match these filters."
+        />
+        <div class="library-results-column">
+          <ul id="library-results" class="library-results">
+            {initialResults.map((library) => (
+              <li>
+                <h3>
+                  <a href={sitePath(library.url)}>{library.name}</a>
+                </h3>
+                <p>{library.address || library.postcode}</p>
+                <p class="authority-label">
+                  {library.authorityName}
+                  {library.country ? ` · ${library.country}` : ''}
+                </p>
+              </li>
+            ))}
+          </ul>
+          <button id="more-results" class="button button-secondary load-more" type="button">
+            {copy.more_button}
+          </button>
+        </div>
+      </div>
+    </section>
     <p class="notice">{copy.review_notice}</p>
     <details class="disclosure">
       <summary>
@@ -577,13 +583,11 @@ const initialResults = searchRecords.slice(0, 60)
       })
     }
     syncURL(resolvedLoc)
-    document
-      .querySelector('#library-results-map')
-      ?.dispatchEvent(
-        new CustomEvent('library-map-update', {
-          detail: { records: matches, location: resolvedLoc }
-        })
-      )
+    document.querySelector('#library-results-map')?.dispatchEvent(
+      new CustomEvent('library-map-update', {
+        detail: { records: matches, location: resolvedLoc }
+      })
+    )
     render(resolvedLoc)
   }
 
