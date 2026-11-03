@@ -1,0 +1,252 @@
+---
+import { LocateFixed } from '@lucide/astro'
+import { dataAttribution } from '@geovation/gb-name-index'
+import { settings, sitePath } from '../lib/site.mjs'
+
+interface Props {
+  id?: string
+  mode?: 'inline' | 'navigate'
+}
+
+const { id = `library-${crypto.randomUUID()}`, mode = 'navigate' } = Astro.props
+const copy = settings.ui.library_search
+---
+
+<library-place-search
+  class="library-search-form"
+  role={mode === 'navigate' ? 'search' : undefined}
+  aria-label={mode === 'navigate' ? copy.query_label : undefined}
+  data-mode={mode}
+  data-destination={sitePath('/libraries/')}
+  data-current-location={copy.current_location}
+  data-find-nearby={copy.find_nearby}
+  data-finding-nearby={copy.finding_nearby}
+  data-place-loading={copy.place_loading}
+  data-place-error={copy.place_error}
+  data-place-empty={copy.place_empty}
+  data-place-more={copy.place_more}
+  data-place-heading={copy.place_heading}
+>
+  <label class="filter-group-heading" for={`${id}-query`}>
+    {copy.query_label}
+  </label>
+  <div class="library-search-bar">
+    <div class="library-search-input-wrap">
+      <input
+        id={`${id}-query`}
+        type="search"
+        aria-label={copy.query_label}
+        placeholder={copy.query_placeholder}
+        aria-controls={`${id}-places`}
+        autocomplete="off"
+        data-place-query
+      />
+      <button
+        class="find-nearby-button"
+        type="button"
+        aria-label={copy.find_nearby}
+        title={copy.find_nearby}
+        data-find-nearby
+      >
+        <LocateFixed size={20} aria-hidden="true" />
+      </button>
+    </div>
+  </div>
+  <div class="place-matches" data-place-matches hidden>
+    <p class="filter-group-heading" role="status" data-place-status></p>
+    <ul
+      id={`${id}-places`}
+      class="place-results"
+      role="listbox"
+      aria-label={copy.place_heading}
+      data-place-results
+    ></ul>
+    <p class="place-attribution" data-place-attribution hidden>
+      {dataAttribution.osOpenNames}{' '}
+      <a href={dataAttribution.osOpenNamesLicense}>Open Government Licence</a>.{' '}
+      <a href={dataAttribution.overtureAttribution}>{dataAttribution.overturePlaces}</a>.
+    </p>
+  </div>
+</library-place-search>
+
+<script>
+  import Combobox from '@github/combobox-nav'
+
+  type Location = { latitude: number; longitude: number; label: string }
+  type Place = {
+    latitude: number
+    longitude: number
+    name: string
+    locality?: string
+    region?: string
+  }
+  type NameIndex = {
+    search: (
+      query: string,
+      options: { signal: AbortSignal; previewLimit: number }
+    ) => Promise<Place[] & { moreAvailable?: boolean }>
+  }
+
+  class LibraryPlaceSearch extends HTMLElement {
+    connectedCallback() {
+      if (this.dataset.initialized) return
+      this.dataset.initialized = 'true'
+      const input = this.querySelector<HTMLInputElement>('[data-place-query]')!
+      const nearby = this.querySelector<HTMLButtonElement>('[data-find-nearby]')!
+      const matches = this.querySelector<HTMLElement>('[data-place-matches]')!
+      const status = this.querySelector<HTMLElement>('[data-place-status]')!
+      const results = this.querySelector<HTMLElement>('[data-place-results]')!
+      const attribution = this.querySelector<HTMLElement>('[data-place-attribution]')!
+      const combobox = new Combobox(input, results, {
+        tabInsertsSuggestions: false,
+        firstOptionSelectionMode: 'none'
+      })
+      const locations = new WeakMap<Element, Location>()
+      let selected: Location | null = null
+      let timer: ReturnType<typeof setTimeout>
+      let request: AbortController | null = null
+      let indexPromise: Promise<NameIndex> | undefined
+
+      const cancel = () => {
+        clearTimeout(timer)
+        request?.abort()
+        request = null
+        combobox.stop()
+        matches.hidden = true
+        attribution.hidden = true
+        results.replaceChildren()
+      }
+
+      const select = (location: Location) => {
+        cancel()
+        selected = location
+        input.value = location.label
+        if (this.dataset.mode === 'inline') {
+          this.dispatchEvent(
+            new CustomEvent('library-location', { detail: location, bubbles: true })
+          )
+          input.focus()
+        } else {
+          const destination = new URL(this.dataset.destination!, window.location.href)
+          destination.search = new URLSearchParams({
+            q: location.label,
+            loc: `${location.latitude.toFixed(5)},${location.longitude.toFixed(5)}`,
+            distance: '5'
+          }).toString()
+          window.location.assign(destination)
+        }
+      }
+
+      const lookup = async () => {
+        cancel()
+        const query = input.value.trim()
+        if (query.replace(/[^a-z0-9]/gi, '').length < 3 || query === selected?.label) return
+        const current = new AbortController()
+        request = current
+        matches.hidden = false
+        status.textContent = this.dataset.placeLoading!
+        try {
+          indexPromise ??= import('@geovation/gb-name-index').then(({ createNameIndex }) =>
+            createNameIndex()
+          )
+          const index = await indexPromise
+          if (current.signal.aborted) return
+          const places = await index.search(query, { signal: current.signal, previewLimit: 8 })
+          if (current.signal.aborted || input.value.trim() !== query) return
+          const located = places.filter(
+            (place) => Number.isFinite(place.latitude) && Number.isFinite(place.longitude)
+          )
+          status.textContent = !located.length
+            ? this.dataset.placeEmpty!
+            : places.moreAvailable || located.length > 8
+              ? this.dataset.placeMore!
+              : this.dataset.placeHeading!
+          results.replaceChildren(
+            ...located.slice(0, 8).map((place, index) => {
+              const label = [
+                ...new Set([place.name, place.locality, place.region].filter(Boolean))
+              ].join(', ')
+              const item = document.createElement('li')
+              item.id = `${results.id}-${index}`
+              item.setAttribute('role', 'option')
+              item.textContent = label
+              locations.set(item, { latitude: place.latitude, longitude: place.longitude, label })
+              return item
+            })
+          )
+          attribution.hidden = located.length === 0
+          if (located.length) combobox.start()
+        } catch {
+          if (current.signal.aborted || input.value.trim() !== query) return
+          indexPromise = undefined
+          status.textContent = this.dataset.placeError!
+        }
+      }
+
+      input.addEventListener('input', () => {
+        cancel()
+        timer = setTimeout(lookup, 250)
+      })
+      input.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') cancel()
+        if (event.key === 'Enter') event.preventDefault()
+      })
+      input.addEventListener('blur', cancel)
+      results.addEventListener('pointerdown', (event) => event.preventDefault())
+      results.addEventListener('combobox-commit', (event) => {
+        const location = locations.get(event.target as Element)
+        if (location) select(location)
+      })
+      nearby.addEventListener('click', () => {
+        cancel()
+        if (!navigator.geolocation) {
+          matches.hidden = false
+          status.textContent = this.dataset.placeError!
+          return
+        }
+        nearby.disabled = true
+        nearby.ariaLabel = this.dataset.findingNearby!
+        navigator.geolocation.getCurrentPosition(
+          (position) => {
+            nearby.disabled = false
+            nearby.ariaLabel = this.dataset.findNearby!
+            if (this.isConnected)
+              select({
+                latitude: position.coords.latitude,
+                longitude: position.coords.longitude,
+                label: this.dataset.currentLocation!
+              })
+          },
+          () => {
+            nearby.disabled = false
+            nearby.ariaLabel = this.dataset.findNearby!
+            matches.hidden = false
+            status.textContent = this.dataset.placeError!
+          }
+        )
+      })
+      this.addEventListener('library-location-clear', () => {
+        cancel()
+        selected = null
+        input.value = ''
+      })
+
+      if (this.dataset.mode === 'inline') {
+        const params = new URLSearchParams(window.location.search)
+        input.value = params.get('q') || params.get('query') || ''
+        const [latitude, longitude] = (params.get('loc') || '').split(',').map(Number)
+        if (params.get('loc') && Number.isFinite(latitude) && Number.isFinite(longitude)) {
+          selected = { latitude, longitude, label: input.value || this.dataset.currentLocation! }
+          input.value = selected.label
+        } else if (input.value) {
+          lookup()
+        }
+      }
+      window.addEventListener('pagehide', cancel, { once: true })
+    }
+  }
+
+  if (!customElements.get('library-place-search')) {
+    customElements.define('library-place-search', LibraryPlaceSearch)
+  }
+</script>

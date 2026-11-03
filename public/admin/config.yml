@@ -398,6 +398,21 @@ collections:
                   - name: query_placeholder
                     label: Search Placeholder
                     widget: string
+                  - name: place_heading
+                    label: Places Heading
+                    widget: string
+                  - name: place_loading
+                    label: Place Lookup Loading Status
+                    widget: string
+                  - name: place_empty
+                    label: No Places Status
+                    widget: string
+                  - name: place_error
+                    label: Place Lookup Error
+                    widget: string
+                  - name: place_more
+                    label: More Places Status
+                    widget: string
                   - name: find_nearby
                     label: Find Nearby Button
                     widget: string
@@ -445,9 +460,6 @@ collections:
                     widget: string
                   - name: unassigned_authority
                     label: Unassigned Authority Option
-                    widget: string
-                  - name: search_button
-                    label: Search Button
                     widget: string
                   - name: results_heading
                     label: Results Heading

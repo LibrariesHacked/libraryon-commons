@@ -52,6 +52,131 @@ test('carousel and filter mechanics use maintained engines and native browser pr
   assert.ok(!directory.includes("document.addEventListener('keydown'"))
 })
 
+test('directory search uses place selection rather than text filtering or a submit button', () => {
+  const directory = readFileSync(
+    new URL('../src/pages/libraries/index.astro', import.meta.url),
+    'utf8'
+  )
+  const component = readFileSync(
+    new URL('../src/components/LibrarySearch.astro', import.meta.url),
+    'utf8'
+  )
+  assert.ok(directory.includes('<LibrarySearch id="library" mode="inline" />'))
+  assert.ok(directory.includes("picker.addEventListener('library-location'"))
+  assert.ok(!directory.includes('type="submit"'))
+  assert.ok(!component.includes('type="submit"'))
+  assert.ok(!directory.includes('resolveQueryLocation'))
+  assert.ok(!directory.includes('query: textQuery'))
+  const inputHandler = component.split("input.addEventListener('input', () => {")[1].split('})')[0]
+  assert.ok(inputHandler.includes('setTimeout(lookup, 250)'))
+  assert.ok(!inputHandler.includes('update()'))
+  assert.ok(!inputHandler.includes('selected = null'))
+})
+
+test('shared library picker redirects by default and credits only displayed names', () => {
+  const component = readFileSync(
+    new URL('../src/components/LibrarySearch.astro', import.meta.url),
+    'utf8'
+  )
+  const home = readFileSync(new URL('../src/templates/HomeTemplate.astro', import.meta.url), 'utf8')
+  const layout = readFileSync(
+    new URL('../src/layouts/DirectoryLayout.astro', import.meta.url),
+    'utf8'
+  )
+  const authority = readFileSync(new URL('../src/templates/AuthorityTemplate.astro', import.meta.url), 'utf8')
+  const library = readFileSync(new URL('../src/templates/LibraryTemplate.astro', import.meta.url), 'utf8')
+  assert.ok(component.includes("mode = 'navigate'"))
+  assert.ok(component.includes('crypto.randomUUID()'))
+  assert.ok(component.includes('window.location.assign(destination)'))
+  assert.ok(component.includes("sitePath('/libraries/')"))
+  assert.ok(component.includes('data-place-attribution hidden'))
+  assert.ok(component.includes('attribution.hidden = located.length === 0'))
+  assert.ok(!component.includes('>GB Name Index</a>'))
+  assert.ok(component.includes('dataAttribution.osOpenNames'))
+  assert.ok(component.includes('dataAttribution.overturePlaces'))
+  assert.ok(home.includes('<LibrarySearch id="home-library" />'))
+  assert.ok(authority.includes('<LibrarySearch />'))
+  assert.ok(!layout.includes('LibrarySearch'))
+  assert.ok(!library.includes('LibrarySearch'))
+})
+
+test('place picker delegates keyboard navigation to the maintained combobox engine', () => {
+  const component = readFileSync(
+    new URL('../src/components/LibrarySearch.astro', import.meta.url),
+    'utf8'
+  )
+  const document = load(component.split('<script>')[0])
+  assert.equal(document('[data-place-results]').attr('role'), 'listbox')
+  assert.ok(component.includes("from '@github/combobox-nav'"))
+  assert.ok(component.includes('tabInsertsSuggestions: false'))
+  assert.ok(component.includes("firstOptionSelectionMode: 'none'"))
+  assert.ok(component.includes('combobox.start()'))
+  assert.ok(component.includes('combobox.stop()'))
+  assert.ok(component.includes("results.addEventListener('combobox-commit'"))
+  assert.ok(component.includes("item.setAttribute('role', 'option')"))
+  assert.ok(!component.includes("event.key === 'ArrowDown'"))
+  assert.ok(!component.includes("event.key === 'ArrowUp'"))
+})
+
+test('directory pages share MapLibre maps and search keeps its filtered listings', () => {
+  const component = readFileSync(
+    new URL('../src/components/LibraryMap.astro', import.meta.url),
+    'utf8'
+  )
+  const library = readFileSync(
+    new URL('../src/templates/LibraryTemplate.astro', import.meta.url),
+    'utf8'
+  )
+  const authority = readFileSync(
+    new URL('../src/templates/AuthorityTemplate.astro', import.meta.url),
+    'utf8'
+  )
+  const directory = readFileSync(
+    new URL('../src/pages/libraries/index.astro', import.meta.url),
+    'utf8'
+  )
+  assert.ok(library.includes('libraries={[library]}'))
+  assert.ok(authority.includes('libraries={entries}'))
+  assert.ok(directory.includes('id="library-results-map"'))
+  assert.ok(directory.includes('id="library-results"'))
+  assert.match(directory, /new CustomEvent\(\s*'library-map-update'/)
+  assert.ok(directory.includes('records: matches'))
+  assert.ok(component.includes("await import('maplibre-gl')"))
+  assert.ok(component.includes('maplibre-gl-worker.mjs?worker&url'))
+  assert.ok(component.includes('https://tiles.openfreemap.org/styles/positron'))
+  assert.ok(component.includes('cluster: true'))
+  assert.ok(component.includes('.setDOMContent(content)'))
+  assert.ok(!component.includes('.setHTML('))
+  assert.ok(component.includes('this.map?.remove()'))
+})
+
+test('directory map and listings form one results workspace with load more inside the list pane', () => {
+  const directory = readFileSync(
+    new URL('../src/pages/libraries/index.astro', import.meta.url),
+    'utf8'
+  )
+  const document = load(directory.split('<script>')[0])
+  const workspace = document('.library-results-workspace')
+  assert.equal(workspace.find('#library-results-heading').length, 1)
+  assert.equal(workspace.find('#result-count').length, 1)
+  assert.equal(workspace.find('.library-results-layout > #library-results-map').length, 1)
+  assert.equal(workspace.find('.library-results-column > #library-results').length, 1)
+  assert.equal(workspace.find('.library-results-column > #more-results').length, 1)
+})
+
+test('nearby location action is icon-only with an accessible label and tooltip', () => {
+  const component = readFileSync(
+    new URL('../src/components/LibrarySearch.astro', import.meta.url),
+    'utf8'
+  )
+  const document = load(component.split('<script>')[0])
+  const button = document('.find-nearby-button')
+  assert.equal(button.text().trim(), '')
+  assert.equal(button.attr('aria-label'), '{copy.find_nearby}')
+  assert.equal(button.attr('title'), '{copy.find_nearby}')
+  assert.ok(component.includes('<LocateFixed size={20} aria-hidden="true" />'))
+})
+
 test('editorial layouts omit source notes and sidebars when they have no content', () => {
   const layout = readFileSync(
     new URL('../src/layouts/EditorialLayout.astro', import.meta.url),

@@ -53,6 +53,15 @@
   max-width: 560px;
   font-size: var(--font-size-2);
 }
+.hero .library-search-form {
+  max-width: 560px;
+}
+.hero .library-search-form p {
+  font-size: 0.86rem;
+}
+.hero .library-search-form .place-attribution {
+  font-size: 0.75rem;
+}
 .hero .eyebrow {
   color: var(--paper);
 }

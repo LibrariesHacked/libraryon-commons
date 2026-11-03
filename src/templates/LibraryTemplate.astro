@@ -3,6 +3,7 @@ import { ArrowUpRight } from '@lucide/astro'
 
 import ContactDetails from '../components/ContactDetails.astro'
 import DirectoryProvenance from '../components/DirectoryProvenance.astro'
+import LibraryMap from '../components/LibraryMap.astro'
 import OpeningHours from '../components/OpeningHours.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import {
@@ -30,6 +31,11 @@ const tags = [authority?.country, operatingModelLabel(library.facilityOperated)]
   tags={tags}
 >
   {library.permanentlyClosed && <p class="notice">{copy.permanently_closed}</p>}
+  <LibraryMap
+    libraries={[library]}
+    label={`${library.name} location`}
+    emptyMessage="Coordinates are not recorded for this library."
+  />
   <section class="detail-section">
     <h2>{copy.visit_contact}</h2>
     <ContactDetails
