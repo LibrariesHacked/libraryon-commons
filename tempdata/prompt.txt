@@ -1,0 +1,19 @@
+I want you to do an essential data improvement task.
+
+Firstly, we're going to completely restructure the libraries and library services into 2 defined data schemas using the table shema specification from open knowledge foundation. Those are attached here. The data should be stored in that schema (still separated by library) and can still be JSON files.
+
+The site will then be updated to use data and models for that schema.
+
+Then we are going to do a big data update taking multiple data sources, and prioritising them. 
+
+Firstly, this LibraryOn is the most up to date data so should be priority. But we can fill in missing values with other data. Particularly UPRN which is more extensively covered in the libraries csvs attached. If attaching a UPRN or other info be absolutely sure the library and address is a good match
+
+You can also use the Arts Council dataset spreadsheet attached.
+
+The new opening hours schema  are specified in 24-hour clock format (e.g. 09:00-17:00), with split sessions separated by commas (e.g. 09:00-12:00,13:00-17:00)
+
+Finally, also update using similar rules the library services and this spreadsheet of data to fill in missing values.
+
+We want to keep all instances of closed libraries so if a library has moved we close the old building and keep the new one open. 
+
+Be very careful and precise and look at the data in detail
