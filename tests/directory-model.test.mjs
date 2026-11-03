@@ -1,6 +1,114 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { createDirectory } from '../src/lib/directory-model.mjs'
+import { compactDirectory, expandDirectory, matchesLibrary } from '../src/lib/search.mjs'
+import { createNameIndex } from '@geovation/gb-name-index'
+
+test('GB name lookup decodes static shards, caches downloads and locates nearby libraries', async () => {
+  const requests = []
+  const files = {
+    'index.json': {
+      minimumQueryLength: 3,
+      schema: [
+        'name',
+        'category',
+        'subtype',
+        'locality',
+        'postcodeDistrict',
+        'region',
+        'longitude',
+        'latitude',
+        'bbox',
+        'source'
+      ],
+      categories: ['populatedPlace'],
+      regions: ['South West'],
+      sources: ['OS Open Names'],
+      routes: {},
+      truncated: []
+    },
+    'bat.json': [['Bath', 0, null, null, null, 0, -2.36, 51.38, null, 0]]
+  }
+  const index = createNameIndex({
+    baseUrl: 'https://static.example/names',
+    fetch: async (url) => {
+      const file = url.split('/').at(-1)
+      assert.ok(Object.hasOwn(files, file), `Unexpected static request: ${url}`)
+      requests.push(file)
+      return Response.json(files[file])
+    }
+  })
+  const places = await index.search('Bath', { previewLimit: 8 })
+  assert.equal(places[0].name, 'Bath')
+  assert.equal(places[0].region, 'South West')
+  assert.equal(places[0].source, 'OS Open Names')
+  assert.equal(places[0].latitude, 51.38)
+  assert.equal(places[0].longitude, -2.36)
+  assert.ok(
+    matchesLibrary(
+      { latitude: 51.381, longitude: -2.36 },
+      {
+        location: places[0],
+        distance: 5
+      }
+    )
+  )
+  assert.ok(
+    !matchesLibrary(
+      { latitude: 53.5, longitude: -2.36 },
+      {
+        location: places[0],
+        distance: 5
+      }
+    )
+  )
+  await index.search('Bath')
+  assert.deepEqual(requests, ['index.json', 'bat.json'])
+})
+
+test('compact directory preserves search fields and filters with shared authority metadata', () => {
+  const { searchRecords } = createDirectory(
+    [{ name: 'Example', slug: 'example', country: 'England' }],
+    [
+      {
+        name: 'Central Library',
+        slug: 'central',
+        authority: 'example',
+        postcode: 'AB1 2CD',
+        latitude: 51.123456,
+        longitude: -0.123456,
+        services: [{ service: 'Books' }],
+        accessibility: ['step-free-access'],
+        openingTimes: {
+          monday: { timeFrames: [{ startTime: '09:00', endTime: '17:00' }] }
+        }
+      },
+      { name: 'Branch', slug: 'branch', authority: 'example' }
+    ]
+  )
+  const packed = compactDirectory(searchRecords)
+  assert.equal(packed.authorities.length, 1)
+  assert.ok(JSON.stringify(packed).length < JSON.stringify(searchRecords).length)
+  const expanded = expandDirectory(JSON.parse(JSON.stringify(packed)))
+  for (const [index, original] of searchRecords.entries()) {
+    const { id, latitude, longitude, ...fields } = original
+    assert.deepEqual(expanded[index], {
+      ...fields,
+      latitude: latitude === null ? null : Math.round(latitude * 1e4) / 1e4,
+      longitude: longitude === null ? null : Math.round(longitude * 1e4) / 1e4
+    })
+  }
+  assert.ok(
+    matchesLibrary(expanded[1], {
+      query: 'AB12CD',
+      services: ['Books'],
+      accessibility: ['step-free-access'],
+      openNow: true,
+      now: new Date(2026, 10, 2, 10)
+    })
+  )
+  assert.throws(() => expandDirectory({ version: 2 }), /Unsupported directory/)
+})
 
 test('individual library records determine authority membership and stable public paths', () => {
   const result = createDirectory(

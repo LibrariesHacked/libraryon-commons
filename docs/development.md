@@ -84,6 +84,14 @@ Do not add a general-purpose frontend framework merely to reduce a handful of ev
 
 Each library (`src/content/libraries/*.json`) references its parent authority (`src/content/authorities/*.json`) by slug. `src/lib/directory-model.mjs` validates these relationships, computes each authority's member list, calculates nearby libraries, and generates the client search index (`/directory.json`).
 
+### Library Search
+
+The directory needs no search or geocoding API. Astro generates `/directory.json` from the editable library records at build time. `compactDirectory` and `expandDirectory` in `src/lib/search.mjs` share authority metadata, store rows as arrays and round coordinates to four decimal places, following the [library finder widget](https://github.com/LibrariesHacked/libraryfinder-widget) approach. This reduces the current download from 489 KB to 332 KB with gzip. Service, accessibility, opening-hours and distance filters use the decoded records.
+
+Place and postcode choices use the pinned `@geovation/gb-name-index` client. After a 250 ms pause and at least three characters, it fetches the [GB Name Index](https://geovation.github.io/gb-name-index/) static manifest and relevant prefix shards. The client caches downloads. Superseded lookups are cancelled; at most eight choices are displayed. Typing only looks up places: it does not filter library names or change the current library results. Selecting a place finds libraries within the selected distance and saves its label and coordinates in the URL. There is no Search button; Find nearby can also set the location. No library data leaves the browser, but place prefixes are sent as static file requests to GitHub Pages, so place lookup needs an internet connection. GB coverage does not include Northern Ireland; all directory records remain available through authority browsing.
+
+The directory displays OS and Overture attribution. If place files cannot load, the current results, filters, Find nearby and authority browsing remain available. No full place dataset is bundled, and no separate transformation job or API credentials are required. Changes to editable libraries are included on the next site build.
+
 ## Testing
 
 Run `npm test` after code or content changes, and `npm run build` when modifying routes, templates, or schemas.

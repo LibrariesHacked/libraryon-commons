@@ -3,6 +3,56 @@ const compact = (value) => normalise(value).replace(/\s+/g, '')
 const toRadians = (degrees) => (degrees * Math.PI) / 180
 const earthMiles = 3958.8
 const weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
+const searchFields = new WeakMap()
+
+export function compactDirectory(records) {
+  const authorities = []
+  const authorityIndexes = new Map()
+  const rows = records.map((record) => {
+    if (!authorityIndexes.has(record.authority)) {
+      authorityIndexes.set(record.authority, authorities.length)
+      authorities.push([record.authority, record.authorityName, record.country])
+    }
+    return [
+      record.name,
+      record.url,
+      record.address,
+      record.postcode,
+      record.town,
+      authorityIndexes.get(record.authority),
+      record.services,
+      record.accessibility,
+      record.hours,
+      Number(record.closed),
+      Number.isFinite(record.latitude) ? Math.round(record.latitude * 1e4) / 1e4 : null,
+      Number.isFinite(record.longitude) ? Math.round(record.longitude * 1e4) / 1e4 : null
+    ]
+  })
+  return { version: 1, authorities, rows }
+}
+
+export function expandDirectory(data) {
+  if (data.version !== 1) throw new Error('Unsupported directory version')
+  return data.rows.map((row) => {
+    const [authority, authorityName, country] = data.authorities[row[5]]
+    return {
+      name: row[0],
+      url: row[1],
+      address: row[2],
+      postcode: row[3],
+      town: row[4],
+      authority,
+      authorityName,
+      country,
+      services: row[6],
+      accessibility: row[7],
+      hours: row[8],
+      closed: Boolean(row[9]),
+      latitude: row[10],
+      longitude: row[11]
+    }
+  })
+}
 
 const toMinutes = (time) => {
   const match = /^(\d{1,2}):(\d{2})$/.exec(String(time || '').trim())
@@ -145,8 +195,12 @@ export function matchesLibrary(record, filters = {}) {
   }
   const needle = normalise(query)
   if (!needle) return true
-  const fields = [record.name, record.address, record.town, record.postcode, record.authorityName]
-    .filter(Boolean)
-    .join(' ')
-  return normalise(fields).includes(needle) || compact(fields).includes(compact(query))
+  if (!searchFields.has(record)) {
+    const fields = [record.name, record.address, record.town, record.postcode, record.authorityName]
+      .filter(Boolean)
+      .join(' ')
+    searchFields.set(record, [normalise(fields), compact(fields)])
+  }
+  const [text, compactText] = searchFields.get(record)
+  return text.includes(needle) || compactText.includes(compact(query))
 }

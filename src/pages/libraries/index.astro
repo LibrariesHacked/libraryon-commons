@@ -1,5 +1,6 @@
 ---
-import { ChevronDown, MapPin, Search } from '@lucide/astro'
+import { ChevronDown, MapPin, X } from '@lucide/astro'
+import { dataAttribution } from '@geovation/gb-name-index'
 
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import {
@@ -92,7 +93,15 @@ const initialResults = searchRecords.slice(0, 60)
       data-show-less={copy.show_less}
       data-miles-suffix={copy.miles_suffix}
       data-distance-filter={copy.distance_filter}
+      data-place-loading={copy.place_loading}
+      data-place-error={copy.place_error}
+      data-place-empty={copy.place_empty}
+      data-place-more={copy.place_more}
+      data-place-heading={copy.place_heading}
     >
+      <label class="filter-group-heading" for="library-query">
+        {copy.query_label}
+      </label>
       <div class="library-search-bar">
         <div class="library-search-input-wrap">
           <input
@@ -101,16 +110,26 @@ const initialResults = searchRecords.slice(0, 60)
             type="search"
             aria-label={copy.query_label}
             placeholder={copy.query_placeholder}
+            aria-controls="place-results"
+            autocomplete="off"
           />
           <button id="find-nearby" class="find-nearby-button" type="button">
             <MapPin size={17} aria-hidden="true" />
             <span id="find-nearby-label">{copy.find_nearby}</span>
           </button>
         </div>
-        <button class="button library-search-submit" type="submit" aria-label={copy.search_button}>
-          <Search size={19} aria-hidden="true" />
-          <span>{copy.search_button}</span>
-        </button>
+      </div>
+
+      <p class="place-attribution">
+        <a href="https://geovation.github.io/gb-name-index/">GB Name Index</a>:{' '}
+        {dataAttribution.osOpenNames}{' '}
+        <a href={dataAttribution.osOpenNamesLicense}>Open Government Licence</a>.
+        <a href={dataAttribution.overtureAttribution}>{dataAttribution.overturePlaces}</a>.
+      </p>
+
+      <div id="place-matches" class="place-matches" hidden>
+        <p id="place-status" class="filter-group-heading" role="status"></p>
+        <ul id="place-results" class="place-results" aria-label={copy.place_heading}></ul>
       </div>
 
       <div class="library-filter-tabs">
@@ -254,8 +273,14 @@ const initialResults = searchRecords.slice(0, 60)
                   <strong>{copy.location_prefix}</strong>
                   <span id="location-label">{copy.current_location}</span>
                 </div>
-                <button id="clear-location" class="button button-secondary" type="button">
-                  {copy.clear_location}
+                <button
+                  id="clear-location"
+                  class="button button-secondary clear-location-button"
+                  type="button"
+                  aria-label={copy.clear_location}
+                  title={copy.clear_location}
+                >
+                  <X size={16} aria-hidden="true" />
                 </button>
               </div>
             </div>
@@ -316,11 +341,14 @@ const initialResults = searchRecords.slice(0, 60)
 
 <script>
   import { autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom'
-  import { distanceMiles, matchesLibrary, resolveQueryLocation } from '../../lib/search.mjs'
+  import { distanceMiles, expandDirectory, matchesLibrary } from '../../lib/search.mjs'
   import { sitePath } from '../../lib/site.mjs'
 
   const form = document.querySelector('#library-search')
   const queryInput = document.querySelector('#library-query')
+  const placeMatches = document.querySelector('#place-matches')
+  const placeStatus = document.querySelector('#place-status')
+  const placeResults = document.querySelector('#place-results')
   const findNearbyButton = document.querySelector('#find-nearby')
   const findNearbyLabel = document.querySelector('#find-nearby-label')
   const servicesToggle = document.querySelector('#services-toggle')
@@ -382,13 +410,69 @@ const initialResults = searchRecords.slice(0, 60)
       }
       distanceFilterActive = true
     }
-  } else if (params.has('distance')) {
-    distanceFilterActive = true
   }
 
   let records = []
   let matches = []
   let visible = 60
+  let placeTimer: ReturnType<typeof setTimeout>
+  let placeRequest: AbortController | null = null
+
+  const cancelPlaces = () => {
+    clearTimeout(placeTimer)
+    placeRequest?.abort()
+    placeRequest = null
+    placeMatches.hidden = true
+    placeResults.replaceChildren()
+  }
+
+  const lookupPlaces = async () => {
+    cancelPlaces()
+    const query = queryInput.value.trim()
+    if (query.replace(/[^a-z0-9]/gi, '').length < 3 || query === explicitLocation?.label) return
+    const request = new AbortController()
+    placeRequest = request
+    placeMatches.hidden = false
+    placeStatus.textContent = form.dataset.placeLoading
+    try {
+      const { search } = await import('@geovation/gb-name-index')
+      if (request.signal.aborted) return
+      const places = await search(query, { signal: request.signal, previewLimit: 8 })
+      if (request.signal.aborted || queryInput.value.trim() !== query) return
+      const located = places.filter(
+        (place) => Number.isFinite(place.latitude) && Number.isFinite(place.longitude)
+      )
+      placeStatus.textContent = !located.length
+        ? form.dataset.placeEmpty
+        : places.moreAvailable || located.length > 8
+          ? form.dataset.placeMore
+          : form.dataset.placeHeading
+      placeResults.replaceChildren(
+        ...located.slice(0, 8).map((place) => {
+          const label = [
+            ...new Set([place.name, place.locality, place.region].filter(Boolean))
+          ].join(', ')
+          const item = document.createElement('li')
+          const button = document.createElement('button')
+          button.type = 'button'
+          button.textContent = label
+          button.addEventListener('click', () => {
+            explicitLocation = { latitude: place.latitude, longitude: place.longitude, label }
+            distanceFilterActive = true
+            queryInput.value = label
+            cancelPlaces()
+            update()
+            queryInput.focus()
+          })
+          item.append(button)
+          return item
+        })
+      )
+    } catch (error) {
+      if (request.signal.aborted || queryInput.value.trim() !== query) return
+      placeStatus.textContent = form.dataset.placeError
+    }
+  }
 
   const closePanels = () => {
     for (const panel of [servicesPanel, distancePanel])
@@ -480,12 +564,7 @@ const initialResults = searchRecords.slice(0, 60)
     update()
   })
 
-  const activeLocation = () => {
-    if (explicitLocation) return explicitLocation
-    const rawQuery = queryInput.value.trim()
-    if (!rawQuery || rawQuery === form.dataset.currentLocation) return null
-    return resolveQueryLocation(records, rawQuery)
-  }
+  const activeLocation = () => explicitLocation
 
   const syncDistanceUI = (resolvedLoc) => {
     distanceValue.textContent = `${selectedDistance} ${form.dataset.milesSuffix}`
@@ -544,9 +623,8 @@ const initialResults = searchRecords.slice(0, 60)
 
   const syncURL = (resolvedLoc) => {
     const nextParams = new URLSearchParams()
-    const rawQuery = queryInput.value.trim()
-    if (rawQuery && rawQuery !== form.dataset.currentLocation) {
-      nextParams.set('q', rawQuery)
+    if (resolvedLoc && resolvedLoc.label !== form.dataset.currentLocation) {
+      nextParams.set('q', resolvedLoc.label)
     }
     if (selectedServices.size) {
       nextParams.set('service', [...selectedServices].join(','))
@@ -579,13 +657,7 @@ const initialResults = searchRecords.slice(0, 60)
     visible = 60
     const resolvedLoc = activeLocation()
     syncDistanceUI(resolvedLoc)
-    const rawQuery = queryInput.value.trim()
-    const textQuery =
-      rawQuery === form.dataset.currentLocation || (distanceFilterActive && resolvedLoc)
-        ? ''
-        : rawQuery
     const filters = {
-      query: textQuery,
       services: [...selectedServices],
       accessibility: [...selectedAccessibility],
       openNow: openNowInput.checked,
@@ -625,13 +697,12 @@ const initialResults = searchRecords.slice(0, 60)
   })
 
   const clearLocationState = () => {
+    cancelPlaces()
     explicitLocation = null
     distanceFilterActive = false
     selectedDistance = 5
     distanceInput.value = '5'
-    if (queryInput.value.trim() === form.dataset.currentLocation) {
-      queryInput.value = ''
-    }
+    queryInput.value = ''
     update()
     closePanels()
   }
@@ -646,6 +717,7 @@ const initialResults = searchRecords.slice(0, 60)
 
   findNearbyButton.addEventListener('click', () => {
     if (!navigator.geolocation) return
+    cancelPlaces()
     findNearbyButton.disabled = true
     findNearbyLabel.textContent = form.dataset.findingNearby
     navigator.geolocation.getCurrentPosition(
@@ -676,9 +748,10 @@ const initialResults = searchRecords.slice(0, 60)
       return response.json()
     })
     .then((data) => {
-      records = data
+      records = expandDirectory(data)
       syncTagButtons()
       update()
+      if (initialQuery && !explicitLocation) lookupPlaces()
     })
     .catch(() => {
       count.textContent = form.dataset.authorityBrowseStatus
@@ -692,17 +765,13 @@ const initialResults = searchRecords.slice(0, 60)
 
   form.addEventListener('submit', (event) => {
     event.preventDefault()
-    if (queryInput.value.trim() !== form.dataset.currentLocation) {
-      explicitLocation = null
-    }
-    update()
   })
   queryInput.addEventListener('input', () => {
-    if (queryInput.value.trim() !== form.dataset.currentLocation) {
-      explicitLocation = null
-      distanceFilterActive = false
-    }
-    update()
+    cancelPlaces()
+    placeTimer = setTimeout(lookupPlaces, 250)
+  })
+  queryInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') cancelPlaces()
   })
   more.addEventListener('click', () => {
     visible += 60

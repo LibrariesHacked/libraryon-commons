@@ -52,6 +52,23 @@ test('carousel and filter mechanics use maintained engines and native browser pr
   assert.ok(!directory.includes("document.addEventListener('keydown'"))
 })
 
+test('directory search uses place selection rather than text filtering or a submit button', () => {
+  const directory = readFileSync(
+    new URL('../src/pages/libraries/index.astro', import.meta.url),
+    'utf8'
+  )
+  assert.match(directory, /for="library-query">\s*\{copy.query_label\}\s*<\/label\s*>/)
+  assert.ok(!directory.includes('type="submit"'))
+  assert.ok(!directory.includes('resolveQueryLocation'))
+  assert.ok(!directory.includes('query: textQuery'))
+  const inputHandler = directory
+    .split("queryInput.addEventListener('input', () => {")[1]
+    .split('})')[0]
+  assert.ok(inputHandler.includes('setTimeout(lookupPlaces, 250)'))
+  assert.ok(!inputHandler.includes('update()'))
+  assert.ok(!inputHandler.includes('explicitLocation = null'))
+})
+
 test('editorial layouts omit source notes and sidebars when they have no content', () => {
   const layout = readFileSync(
     new URL('../src/layouts/EditorialLayout.astro', import.meta.url),
