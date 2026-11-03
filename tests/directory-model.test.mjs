@@ -3,6 +3,39 @@ import assert from 'node:assert/strict'
 import { createDirectory } from '../src/lib/directory-model.mjs'
 import { compactDirectory, expandDirectory, matchesLibrary } from '../src/lib/search.mjs'
 import { createNameIndex } from '@geovation/gb-name-index'
+import { libraryMapFeatures } from '../src/lib/library-map.mjs'
+
+test('library maps use longitude/latitude, preserve routes and reject missing or invalid points', () => {
+  const data = libraryMapFeatures(
+    [
+      { name: 'Central', url: '/libraries/example/central/', latitude: 51.5, longitude: -0.1 },
+      {
+        name: 'Closed',
+        latitude: 52,
+        longitude: 0,
+        permanentlyClosed: true,
+        url: 'javascript:alert(1)'
+      },
+      { name: 'Missing', latitude: null, longitude: null },
+      { name: 'Out of range', latitude: 91, longitude: 0 },
+      { name: 'Invalid longitude', latitude: 52, longitude: 181 }
+    ],
+    (path) => `/preview${path}`
+  )
+  assert.equal(data.type, 'FeatureCollection')
+  assert.equal(data.features.length, 2)
+  assert.deepEqual(data.features[0].geometry.coordinates, [-0.1, 51.5])
+  assert.equal(data.features[0].properties.url, '/preview/libraries/example/central/')
+  assert.equal(data.features[1].properties.url, '')
+  assert.equal(data.features[1].properties.closed, true)
+  assert.equal(
+    libraryMapFeatures([
+      { name: 'Closed branch', latitude: 51, longitude: 0, facilityOperated: 'Closed' }
+    ]).features[0].properties.closed,
+    true
+  )
+  assert.deepEqual(libraryMapFeatures([]).features, [])
+})
 
 test('GB name lookup decodes static shards, caches downloads and locates nearby libraries', async () => {
   const requests = []

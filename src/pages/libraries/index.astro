@@ -1,7 +1,8 @@
 ---
-import { ChevronDown, MapPin, X } from '@lucide/astro'
-import { dataAttribution } from '@geovation/gb-name-index'
+import { ChevronDown, X } from '@lucide/astro'
 
+import LibrarySearch from '../../components/LibrarySearch.astro'
+import LibraryMap from '../../components/LibraryMap.astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import {
   libraries,
@@ -86,51 +87,13 @@ const initialResults = searchRecords.slice(0, 60)
       data-singular={copy.singular}
       data-plural={copy.plural}
       data-authority-browse-status={copy.authority_browse_status}
-      data-find-nearby={copy.find_nearby}
-      data-finding-nearby={copy.finding_nearby}
       data-current-location={copy.current_location}
       data-view-all={copy.view_all}
       data-show-less={copy.show_less}
       data-miles-suffix={copy.miles_suffix}
       data-distance-filter={copy.distance_filter}
-      data-place-loading={copy.place_loading}
-      data-place-error={copy.place_error}
-      data-place-empty={copy.place_empty}
-      data-place-more={copy.place_more}
-      data-place-heading={copy.place_heading}
     >
-      <label class="filter-group-heading" for="library-query">
-        {copy.query_label}
-      </label>
-      <div class="library-search-bar">
-        <div class="library-search-input-wrap">
-          <input
-            id="library-query"
-            name="q"
-            type="search"
-            aria-label={copy.query_label}
-            placeholder={copy.query_placeholder}
-            aria-controls="place-results"
-            autocomplete="off"
-          />
-          <button id="find-nearby" class="find-nearby-button" type="button">
-            <MapPin size={17} aria-hidden="true" />
-            <span id="find-nearby-label">{copy.find_nearby}</span>
-          </button>
-        </div>
-      </div>
-
-      <p class="place-attribution">
-        <a href="https://geovation.github.io/gb-name-index/">GB Name Index</a>:{' '}
-        {dataAttribution.osOpenNames}{' '}
-        <a href={dataAttribution.osOpenNamesLicense}>Open Government Licence</a>.
-        <a href={dataAttribution.overtureAttribution}>{dataAttribution.overturePlaces}</a>.
-      </p>
-
-      <div id="place-matches" class="place-matches" hidden>
-        <p id="place-status" class="filter-group-heading" role="status"></p>
-        <ul id="place-results" class="place-results" aria-label={copy.place_heading}></ul>
-      </div>
+      <LibrarySearch id="library" mode="inline" />
 
       <div class="library-filter-tabs">
         <div class="tab-filter" id="services-tab">
@@ -303,6 +266,11 @@ const initialResults = searchRecords.slice(0, 60)
         {copy.browse_status}
       </p>
     </div>
+    <LibraryMap
+      id="library-results-map"
+      label="Matching library locations"
+      emptyMessage="No mapped libraries match these filters."
+    />
     <ul id="library-results" class="library-results">
       {initialResults.map((library) => (
         <li>
@@ -345,12 +313,7 @@ const initialResults = searchRecords.slice(0, 60)
   import { sitePath } from '../../lib/site.mjs'
 
   const form = document.querySelector('#library-search')
-  const queryInput = document.querySelector('#library-query')
-  const placeMatches = document.querySelector('#place-matches')
-  const placeStatus = document.querySelector('#place-status')
-  const placeResults = document.querySelector('#place-results')
-  const findNearbyButton = document.querySelector('#find-nearby')
-  const findNearbyLabel = document.querySelector('#find-nearby-label')
+  const picker = form.querySelector('library-place-search')
   const servicesToggle = document.querySelector('#services-toggle')
   const servicesPanel = document.querySelector('#Services-panel')
   const servicesCountBadge = document.querySelector('#services-count')
@@ -372,7 +335,6 @@ const initialResults = searchRecords.slice(0, 60)
 
   const params = new URLSearchParams(window.location.search)
   const initialQuery = params.get('q') || params.get('query') || ''
-  queryInput.value = initialQuery
 
   const selectedServices = new Set(
     (params.get('service') || '')
@@ -415,64 +377,6 @@ const initialResults = searchRecords.slice(0, 60)
   let records = []
   let matches = []
   let visible = 60
-  let placeTimer: ReturnType<typeof setTimeout>
-  let placeRequest: AbortController | null = null
-
-  const cancelPlaces = () => {
-    clearTimeout(placeTimer)
-    placeRequest?.abort()
-    placeRequest = null
-    placeMatches.hidden = true
-    placeResults.replaceChildren()
-  }
-
-  const lookupPlaces = async () => {
-    cancelPlaces()
-    const query = queryInput.value.trim()
-    if (query.replace(/[^a-z0-9]/gi, '').length < 3 || query === explicitLocation?.label) return
-    const request = new AbortController()
-    placeRequest = request
-    placeMatches.hidden = false
-    placeStatus.textContent = form.dataset.placeLoading
-    try {
-      const { search } = await import('@geovation/gb-name-index')
-      if (request.signal.aborted) return
-      const places = await search(query, { signal: request.signal, previewLimit: 8 })
-      if (request.signal.aborted || queryInput.value.trim() !== query) return
-      const located = places.filter(
-        (place) => Number.isFinite(place.latitude) && Number.isFinite(place.longitude)
-      )
-      placeStatus.textContent = !located.length
-        ? form.dataset.placeEmpty
-        : places.moreAvailable || located.length > 8
-          ? form.dataset.placeMore
-          : form.dataset.placeHeading
-      placeResults.replaceChildren(
-        ...located.slice(0, 8).map((place) => {
-          const label = [
-            ...new Set([place.name, place.locality, place.region].filter(Boolean))
-          ].join(', ')
-          const item = document.createElement('li')
-          const button = document.createElement('button')
-          button.type = 'button'
-          button.textContent = label
-          button.addEventListener('click', () => {
-            explicitLocation = { latitude: place.latitude, longitude: place.longitude, label }
-            distanceFilterActive = true
-            queryInput.value = label
-            cancelPlaces()
-            update()
-            queryInput.focus()
-          })
-          item.append(button)
-          return item
-        })
-      )
-    } catch (error) {
-      if (request.signal.aborted || queryInput.value.trim() !== query) return
-      placeStatus.textContent = form.dataset.placeError
-    }
-  }
 
   const closePanels = () => {
     for (const panel of [servicesPanel, distancePanel])
@@ -673,8 +577,21 @@ const initialResults = searchRecords.slice(0, 60)
       })
     }
     syncURL(resolvedLoc)
+    document
+      .querySelector('#library-results-map')
+      ?.dispatchEvent(
+        new CustomEvent('library-map-update', {
+          detail: { records: matches, location: resolvedLoc }
+        })
+      )
     render(resolvedLoc)
   }
+
+  picker.addEventListener('library-location', (event: CustomEvent) => {
+    explicitLocation = event.detail
+    distanceFilterActive = true
+    update()
+  })
 
   clearServicesButton.addEventListener('click', () => {
     selectedServices.clear()
@@ -697,12 +614,11 @@ const initialResults = searchRecords.slice(0, 60)
   })
 
   const clearLocationState = () => {
-    cancelPlaces()
+    picker.dispatchEvent(new CustomEvent('library-location-clear'))
     explicitLocation = null
     distanceFilterActive = false
     selectedDistance = 5
     distanceInput.value = '5'
-    queryInput.value = ''
     update()
     closePanels()
   }
@@ -715,33 +631,6 @@ const initialResults = searchRecords.slice(0, 60)
     closePanels()
   })
 
-  findNearbyButton.addEventListener('click', () => {
-    if (!navigator.geolocation) return
-    cancelPlaces()
-    findNearbyButton.disabled = true
-    findNearbyLabel.textContent = form.dataset.findingNearby
-    navigator.geolocation.getCurrentPosition(
-      (position) => {
-        explicitLocation = {
-          latitude: position.coords.latitude,
-          longitude: position.coords.longitude,
-          label: form.dataset.currentLocation
-        }
-        distanceFilterActive = true
-        selectedDistance = 5
-        distanceInput.value = '5'
-        queryInput.value = form.dataset.currentLocation
-        findNearbyButton.disabled = false
-        findNearbyLabel.textContent = form.dataset.findNearby
-        update()
-      },
-      () => {
-        findNearbyButton.disabled = false
-        findNearbyLabel.textContent = form.dataset.findNearby
-      }
-    )
-  })
-
   fetch(form.dataset.indexUrl)
     .then((response) => {
       if (!response.ok) throw new Error(`HTTP ${response.status}`)
@@ -751,7 +640,6 @@ const initialResults = searchRecords.slice(0, 60)
       records = expandDirectory(data)
       syncTagButtons()
       update()
-      if (initialQuery && !explicitLocation) lookupPlaces()
     })
     .catch(() => {
       count.textContent = form.dataset.authorityBrowseStatus
@@ -765,13 +653,6 @@ const initialResults = searchRecords.slice(0, 60)
 
   form.addEventListener('submit', (event) => {
     event.preventDefault()
-  })
-  queryInput.addEventListener('input', () => {
-    cancelPlaces()
-    placeTimer = setTimeout(lookupPlaces, 250)
-  })
-  queryInput.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') cancelPlaces()
   })
   more.addEventListener('click', () => {
     visible += 60

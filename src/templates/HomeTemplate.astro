@@ -2,6 +2,7 @@
 import { ArrowRight, ChevronLeft, ChevronRight, Pause, Play } from '@lucide/astro'
 
 import ArticleCards from '../components/ArticleCards.astro'
+import LibrarySearch from '../components/LibrarySearch.astro'
 import PageContent from '../components/PageContent.astro'
 import homepage from '../data/homepage.json'
 import SiteLayout from '../layouts/SiteLayout.astro'
@@ -41,9 +42,7 @@ const collections = selected(homepage.collection_pages)
           )}
         </h1>
         <p>{homepage.intro}</p>
-        <a class="button" href={sitePath(copy.find_library_url)}>
-          {copy.find_library} <ArrowRight size={19} aria-hidden="true" />
-        </a>
+        <LibrarySearch id="home-library" />
       </div>
       {carousel.length > 0 && (
         <div
