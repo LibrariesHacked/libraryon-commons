@@ -1,155 +1,71 @@
 {
   "id": "lib_12247334-c3ce-4d9b-b757-5c6ae2d50acb",
-  "source_id": "2715",
-  "name": "Thornaby Library, Gilmour Street (Riverbank Children's Centre)",
   "slug": "thornaby-library-gilmour-street-riverbank-childrens-centre",
-  "address": "Gilmour Street, Thornaby, Stockton-on-Tees, TS17 6PF",
-  "postcode": "TS17 6PF",
-  "town": "Stockton-on-Tees",
-  "phone": "01642 528150",
-  "email": "thornaby.library@stockton.gov.uk",
-  "website": "https://www.stockton.gov.uk/find-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:15",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:15",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:15",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:15",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Thornaby Library was colocated with a Children's Centre in 2014",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.55484,
-  "longitude": -1.30385,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.overdrive.com/apps/libby"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.stockton.gov.uk/article/2466/Library-mobile-services"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.stockton.gov.uk/childrens-library"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.stockton.gov.uk/family-history-research"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.stockton.gov.uk/reading-groups"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "stockton-on-tees",
+  "source_id": "2715",
+  "source_url": "https://libraryon.org/libraries/stockton-on-tees/thornaby-library-gilmour-street-riverbank-childrens-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stockton-on-tees/thornaby-library-gilmour-street-riverbank-childrens-centre",
-  "authority": "stockton-on-tees"
+  "data": {
+    "Local authority": "Stockton-on-Tees",
+    "Local authority code": "E06000004",
+    "Library name": "Thornaby Library, Gilmour Street (Riverbank Children's Centre)",
+    "Library code": null,
+    "Address 1": "Gilmour Street, Thornaby, Stockton-on-Tees, TS17 6PF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS17 6PF",
+    "Unique property reference number": null,
+    "Latitude": 54.55484,
+    "Longitude": -1.30385,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-16:15",
+    "Tuesday staffed hours": "09:00-13:00,14:00-16:15",
+    "Wednesday staffed hours": "09:00-13:00,14:00-16:15",
+    "Thursday staffed hours": "09:00-13:00,14:00-16:15",
+    "Friday staffed hours": "09:00-13:00,14:00-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Digital lending; Books delivered; Children's activities; Family history; British Newspaper Archive; Hobby and interest groups; Findmypast",
+    "Phone number": "01642 528150",
+    "Email address": "thornaby.library@stockton.gov.uk",
+    "URL": "https://www.stockton.gov.uk/find-library",
+    "Notes": "Thornaby Library was colocated with a Children's Centre in 2014"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

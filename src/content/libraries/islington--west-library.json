@@ -1,110 +1,64 @@
 {
   "id": "lib_f5cfaec1-5372-477e-b11e-0f13c363878d",
-  "source_id": "2459",
-  "name": "West Library",
   "slug": "west-library",
-  "address": "Bridgeman Road, London, Middlesex, N1 1BD",
-  "postcode": "N1 1BD",
-  "town": "London",
-  "phone": "020 7527 7920",
-  "email": "west.library@islington.gov.uk",
-  "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/west-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54075,
-  "longitude": -0.11652,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "islington",
+  "source_id": "2459",
+  "source_url": "https://libraryon.org/libraries/islington/west-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/islington/west-library",
-  "authority": "islington"
+  "data": {
+    "Local authority": "Islington",
+    "Local authority code": "E09000019",
+    "Library name": "West Library",
+    "Library code": null,
+    "Address 1": "Bridgeman Road, London, Middlesex, N1 1BD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N1 1BD",
+    "Unique property reference number": null,
+    "Latitude": 51.54075,
+    "Longitude": -0.11652,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-20:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-20:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital skills sessions; Bookable space",
+    "Phone number": "020 7527 7920",
+    "Email address": "west.library@islington.gov.uk",
+    "URL": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/west-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,135 +1,64 @@
 {
   "id": "lib_a6ec7246-432e-411d-8710-ab30ef0bd14b",
-  "source_id": "680",
-  "name": "Leigh Park",
   "slug": "leigh-park",
-  "address": "50 Park Parade, Leigh Park, Hampshire, PO9 5AB",
-  "postcode": "PO9 5AB",
-  "town": "Havant",
-  "phone": "",
-  "email": "County.Library.HQ@hants.gov.uk",
-  "website": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/leigh-park-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities",
-    "service-dog-friendly",
-    "wheelchair-access",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.86666,
-  "longitude": -0.98584,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "680",
+  "source_url": "https://libraryon.org/libraries/hampshire/leigh-park",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/leigh-park",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Leigh Park",
+    "Library code": null,
+    "Address 1": "50 Park Parade, Leigh Park, Hampshire, PO9 5AB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO9 5AB",
+    "Unique property reference number": 100062457615,
+    "Latitude": 50.86666,
+    "Longitude": -0.98584,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Books delivered; Photocopiers; Hobby and interest groups; Children's activities; BFI Replay; Digital lending; Scanning; Family history; Books delivered",
+    "Phone number": null,
+    "Email address": "County.Library.HQ@hants.gov.uk",
+    "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/leigh-park-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

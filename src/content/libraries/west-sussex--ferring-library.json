@@ -1,140 +1,71 @@
 {
   "id": "lib_8a66ab98-6b29-42f3-a990-e2f86ec6df3c",
-  "source_id": "1892",
-  "name": "Ferring Library",
   "slug": "ferring-library",
-  "address": "Ferring Street, Ferring, West Sussex, BN12 5HL",
-  "postcode": "BN12 5HL",
-  "town": "Worthing",
-  "phone": "01903 241811",
-  "email": "ferring.library@westsussex.gov.uk",
-  "website": "https://libraries.westsussex.gov.uk/ferring-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.81376,
-  "longitude": -0.44788,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "west-sussex",
+  "source_id": "1892",
+  "source_url": "https://libraryon.org/libraries/west-sussex/ferring-library",
   "updated_on": "2026-02-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-sussex/ferring-library",
-  "authority": "west-sussex"
+  "data": {
+    "Local authority": "West Sussex",
+    "Local authority code": "E10000032",
+    "Library name": "Ferring Library",
+    "Library code": null,
+    "Address 1": "Ferring Street, Ferring, West Sussex, BN12 5HL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BN12 5HL",
+    "Unique property reference number": null,
+    "Latitude": 50.81376,
+    "Longitude": -0.44788,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00",
+    "Tuesday staffed hours": "09:00-13:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": "09:00-13:00",
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Books delivered; Children's activities; Hobby and interest groups; Family history; Findmypast; British Newspaper Archive",
+    "Phone number": "01903 241811",
+    "Email address": "ferring.library@westsussex.gov.uk",
+    "URL": "https://libraries.westsussex.gov.uk/ferring-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

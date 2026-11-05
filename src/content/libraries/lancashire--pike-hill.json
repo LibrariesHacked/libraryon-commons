@@ -1,125 +1,64 @@
 {
   "id": "lib_20b85253-6149-4c97-81c7-17262b581b58",
-  "source_id": "1242",
-  "name": "Pike Hill",
   "slug": "pike-hill",
-  "address": "Langwyth Road, Burnley, Lancashire , BB10 3JX",
-  "postcode": "BB10 3JX",
-  "town": "Burnley",
-  "phone": "0300 123 6703",
-  "email": "pikehill.library@lancashire.gov.uk",
-  "website": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/pike-hill-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "Closed 2016 re-opened 2018",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.78759,
-  "longitude": -2.2107,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "lancashire",
+  "source_id": "1242",
+  "source_url": "https://libraryon.org/libraries/lancashire/pike-hill",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lancashire/pike-hill",
-  "authority": "lancashire"
+  "data": {
+    "Local authority": "Lancashire",
+    "Local authority code": "E10000017",
+    "Library name": "Pike Hill",
+    "Library code": null,
+    "Address 1": "Langwyth Road, Burnley, Lancashire , BB10 3JX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BB10 3JX",
+    "Unique property reference number": 100012536399,
+    "Latitude": 53.78759,
+    "Longitude": -2.2107,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1975,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "13:00-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Books delivered; British Newspaper Archive; Findmypast; Scanning; Bookable space; Children's activities; Hobby and interest groups",
+    "Phone number": "0300 123 6703",
+    "Email address": "pikehill.library@lancashire.gov.uk",
+    "URL": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/pike-hill-library.aspx",
+    "Notes": "Closed 2016 re-opened 2018"
+  },
+  "validation_exceptions": []
 }

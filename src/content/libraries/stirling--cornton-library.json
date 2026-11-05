@@ -1,86 +1,71 @@
 {
   "id": "lib_8494a112-c4eb-4fb7-a371-c77a65086890",
-  "source_id": "3717",
-  "name": "Cornton Library",
   "slug": "cornton-library",
-  "address": "56 Johnston Avenue Stirling FK9 5DJ",
-  "postcode": "FK9 5DJ",
-  "town": "Stirling",
-  "phone": "01786 237904",
-  "email": "corntonlibrary@stirling.gov.uk",
-  "website": "https://www.stirling.gov.uk/community-life-and-leisure/libraries-and-archives/libraries/libraries-in-stirling/list-of-libraries/cornton-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.13669,
-  "longitude": -3.94018,
+  "authority": "stirling",
+  "source_id": "3717",
+  "source_url": "https://libraryon.org/libraries/stirling/cornton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stirling/cornton-library",
-  "authority": "stirling"
+  "data": {
+    "Local authority": "Stirling",
+    "Local authority code": "S12000030",
+    "Library name": "Cornton Library",
+    "Library code": null,
+    "Address 1": "56 Johnston Avenue Stirling FK9 5DJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "FK9 5DJ",
+    "Unique property reference number": null,
+    "Latitude": 56.13669,
+    "Longitude": -3.94018,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "12:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "11:00-13:00,14:00-19:00",
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": null,
+    "Phone number": "01786 237904",
+    "Email address": "corntonlibrary@stirling.gov.uk",
+    "URL": "https://www.stirling.gov.uk/community-life-and-leisure/libraries-and-archives/libraries/libraries-in-stirling/list-of-libraries/cornton-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

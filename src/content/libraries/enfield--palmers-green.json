@@ -1,145 +1,64 @@
 {
   "id": "lib_528a1c70-a256-4054-8369-8cc129a5b5b2",
-  "source_id": "2088",
-  "name": "Palmers Green",
   "slug": "palmers-green",
-  "address": "Broomfield Lane, Palmers Green, Greater London, N13 4EY",
-  "postcode": "N13 4EY",
-  "town": "London",
-  "phone": "020 8379 2727",
-  "email": "libraries@enfield.gov.uk",
-  "website": "https://www.enfield.gov.uk/services/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "step-free-access",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.615645,
-  "longitude": -0.110296,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "enfield",
+  "source_id": "2088",
+  "source_url": "https://libraryon.org/libraries/enfield/palmers-green",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/enfield/palmers-green",
-  "authority": "enfield"
+  "data": {
+    "Local authority": "Enfield",
+    "Local authority code": "E09000010",
+    "Library name": "Palmers Green",
+    "Library code": null,
+    "Address 1": "Broomfield Lane, Palmers Green, Greater London, N13 4EY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N13 4EY",
+    "Unique property reference number": 207015887,
+    "Latitude": 51.615645,
+    "Longitude": -0.110296,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-20:00",
+    "Tuesday staffed hours": "09:00-20:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-20:00",
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Books delivered; Children's activities; Computers; Digital lending; Digital skills sessions; Hobby and interest groups; Photocopiers; Scanning; Findmypast",
+    "Phone number": "020 8379 2727",
+    "Email address": "libraries@enfield.gov.uk",
+    "URL": "https://www.enfield.gov.uk/services/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

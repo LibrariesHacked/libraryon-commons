@@ -1,117 +1,73 @@
 {
   "id": "lib_2a89d3e7-ca8a-456b-a22c-c3213fbe9792",
-  "source_id": "1415",
-  "name": "Enderby Community Library",
   "slug": "enderby",
-  "address": "Townsend Road, Enderby, Leicestershire, LE19 4PG",
-  "postcode": "LE19 4PG",
-  "town": "Leicester",
-  "phone": "0116 305 3523",
-  "email": "library@enderbyparish.org",
-  "website": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/enderby-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.58808,
-  "longitude": -1.21009,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "leicestershire",
+  "source_id": "1415",
+  "source_url": "https://libraryon.org/libraries/leicestershire/enderby",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicestershire/enderby",
-  "authority": "leicestershire"
+  "data": {
+    "Local authority": "Leicestershire",
+    "Local authority code": "E10000018",
+    "Library name": "Enderby Community Library",
+    "Library code": null,
+    "Address 1": "Townsend Road, Enderby, Leicestershire, LE19 4PG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE19 4PG",
+    "Unique property reference number": 100032073811,
+    "Latitude": 52.58808,
+    "Longitude": -1.21009,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-18:00",
+    "Tuesday staffed hours": "14:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending",
+    "Phone number": "0116 305 3523",
+    "Email address": "library@enderbyparish.org",
+    "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/enderby-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "opening-hours",
+      "reason": "Invalid opening hours: 14:00-12:00,14:00-17:00",
+      "audit_refs": [
+        "migration/directory/report.json#review_87c216bf435bd8883d920cbf"
+      ]
+    }
+  ]
 }

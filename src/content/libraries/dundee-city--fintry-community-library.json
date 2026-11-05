@@ -1,120 +1,71 @@
 {
   "id": "lib_38f97682-8a95-4a2f-ad85-f938a8b14ba9",
-  "source_id": "77",
-  "name": "Fintry Community Library",
   "slug": "fintry-community-library",
-  "address": "24 Findcastle Street, Dundee, DD4 9EW, United Kingdom",
-  "postcode": "DD4 9EW",
-  "town": "Dundee",
-  "phone": "01382 432560",
-  "email": "fintry.library@leisureandculturedundee.com",
-  "website": "http://www.leisureandculturedundee.com/fintry-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.49096,
-  "longitude": -2.94558,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "dundee-city",
+  "source_id": "77",
+  "source_url": "https://libraryon.org/libraries/dundee-city/fintry-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dundee-city/fintry-community-library",
-  "authority": "dundee-city"
+  "data": {
+    "Local authority": "Dundee City",
+    "Local authority code": "S12000042",
+    "Library name": "Fintry Community Library",
+    "Library code": null,
+    "Address 1": "24 Findcastle Street, Dundee, DD4 9EW, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DD4 9EW",
+    "Unique property reference number": null,
+    "Latitude": 56.49096,
+    "Longitude": -2.94558,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-19:00",
+    "Tuesday staffed hours": "09:00-13:00,14:00-17:30",
+    "Wednesday staffed hours": "10:00-13:00,14:00-17:30",
+    "Thursday staffed hours": "09:00-13:00",
+    "Friday staffed hours": "09:00-13:00,14:00-17:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "01382 432560",
+    "Email address": "fintry.library@leisureandculturedundee.com",
+    "URL": "http://www.leisureandculturedundee.com/fintry-community-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

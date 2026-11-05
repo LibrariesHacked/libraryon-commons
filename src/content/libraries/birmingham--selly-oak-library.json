@@ -1,92 +1,64 @@
 {
   "id": "lib_062b3600-6f2b-4210-a9de-c53aa25dcc5e",
-  "source_id": "2366",
-  "name": "Selly Oak Library",
   "slug": "selly-oak-library",
-  "address": "Tbase 750 Bristol Road, Birmingham, West Midlands, B29 6NA",
-  "postcode": "B29 6NA",
-  "town": "Birmingham",
-  "phone": "07548 712 922",
-  "email": "selly.oak.library@birmingham.gov.uk",
-  "website": "https://www.birmingham.gov.uk/directory_record/5145/selly_oak_touchbase_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "arts",
-    "community",
-    "health",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.43998,
-  "longitude": -1.93894,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "birmingham",
+  "source_id": "2366",
+  "source_url": "https://libraryon.org/libraries/birmingham/selly-oak-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/birmingham/selly-oak-library",
-  "authority": "birmingham"
+  "data": {
+    "Local authority": "Birmingham",
+    "Local authority code": "E08000025",
+    "Library name": "Selly Oak Library",
+    "Library code": null,
+    "Address 1": "Tbase 750 Bristol Road, Birmingham, West Midlands, B29 6NA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B29 6NA",
+    "Unique property reference number": null,
+    "Latitude": 52.43998,
+    "Longitude": -1.93894,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2017,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,13:30-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts; community; health; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "07548 712 922",
+    "Email address": "selly.oak.library@birmingham.gov.uk",
+    "URL": "https://www.birmingham.gov.uk/directory_record/5145/selly_oak_touchbase_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

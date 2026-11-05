@@ -1,123 +1,71 @@
 {
   "id": "lib_cd2daa12-b275-4fbe-9b29-5d7469836f03",
-  "source_id": "380",
-  "name": "Danderhall Library",
   "slug": "danderhall-library",
-  "address": "Danderhall Library & Leisure Centre, 59 Edmonstone Road, EH22 1QL",
-  "postcode": "EH22 1QP",
-  "town": "Dalkeith",
-  "phone": "0131 444 9105",
-  "email": "danderhall.library@midlothian.gov.uk",
-  "website": "https://www.midlothian.gov.uk/directory_record/59/danderhall_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "wheelchair-access",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.91629001388702,
-  "longitude": -3.11039329536419,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "midlothian",
+  "source_id": "380",
+  "source_url": "https://libraryon.org/libraries/midlothian/danderhall-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/midlothian/danderhall-library",
-  "authority": "midlothian"
+  "data": {
+    "Local authority": "Midlothian",
+    "Local authority code": "S12000019",
+    "Library name": "Danderhall Library",
+    "Library code": null,
+    "Address 1": "Danderhall Library & Leisure Centre, 59 Edmonstone Road, EH22 1QL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EH22 1QP",
+    "Unique property reference number": null,
+    "Latitude": 55.91629001388702,
+    "Longitude": -3.11039329536419,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Bookable space; Photocopiers; Computers; Scanning; BFI Replay",
+    "Phone number": "0131 444 9105",
+    "Email address": "danderhall.library@midlothian.gov.uk",
+    "URL": "https://www.midlothian.gov.uk/directory_record/59/danderhall_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

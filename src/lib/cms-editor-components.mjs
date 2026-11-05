@@ -213,7 +213,11 @@ export function serializeEditorBlock(name, data) {
       data.content || '',
       name === 'collection-carousel'
         ? { kind: data.kind || 'images', label: data.label || '' }
-        : { label: data.label || '' },
+        : {
+            label: data.label || '',
+            ...(data.video ? { video: data.video } : {}),
+            ...(data.videoTitle ? { videoTitle: data.videoTitle } : {})
+          },
       name === 'collection-carousel' ? ':::::' : '::::'
     )
   }
@@ -436,6 +440,8 @@ export function createEditorComponents() {
       label: 'Collection Accordion',
       fields: [
         stringField('label', 'Accessible Label', true),
+        stringField('video', 'Video Embed URL'),
+        stringField('videoTitle', 'Video Title'),
         markdownSourceField('content', 'Accordion Entries (Markdown)')
       ]
     },

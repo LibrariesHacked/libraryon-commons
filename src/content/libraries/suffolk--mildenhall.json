@@ -1,168 +1,64 @@
 {
   "id": "lib_3706a3a0-e879-4155-a6ea-7e13b1f54b7f",
-  "source_id": "1394",
-  "name": "Mildenhall",
   "slug": "mildenhall",
-  "address": "Mildenhall Hub, Sheldrick Way, Mildenhall, IP28 7JX",
-  "postcode": "IP28 7JX",
-  "town": "Bury St. Edmunds",
-  "phone": "01638 597292",
-  "email": "library.help@suffolk.gov.uk",
-  "website": "https://suffolkcommunitylibraries.co.uk/libraries/mildenhall/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "accessible-parking",
-    "step-free-access",
-    "automatic-doors",
-    "hearing-loop-system",
-    "low-vision-support",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "community",
-    "health",
-    "school_college",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.344023,
-  "longitude": 0.501093,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "suffolk",
+  "source_id": "1394",
+  "source_url": "https://libraryon.org/libraries/suffolk/mildenhall",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/suffolk/mildenhall",
-  "authority": "suffolk"
+  "data": {
+    "Local authority": "Suffolk",
+    "Local authority code": "E10000029",
+    "Library name": "Mildenhall",
+    "Library code": null,
+    "Address 1": "Mildenhall Hub, Sheldrick Way, Mildenhall, IP28 7JX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IP28 7JX",
+    "Unique property reference number": null,
+    "Latitude": 52.344023,
+    "Longitude": 0.501093,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2021,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "09:00-17:30",
+    "Wednesday staffed hours": "09:00-17:30",
+    "Thursday staffed hours": "09:00-17:30",
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": "10:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community; health; school_college; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Family history; Books delivered; Digital lending; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups",
+    "Phone number": "01638 597292",
+    "Email address": "library.help@suffolk.gov.uk",
+    "URL": "https://suffolkcommunitylibraries.co.uk/libraries/mildenhall/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

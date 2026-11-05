@@ -1,144 +1,64 @@
 {
   "id": "lib_1c43e1ef-adc1-4af5-a28f-3b9d19971837",
-  "source_id": "3192",
-  "name": "Wilton",
   "slug": "wilton",
-  "address": "9 South Street, Wilton, Salisbury, Wiltshire, SP2 0JS",
-  "postcode": "SP2 0JS",
-  "town": "Salisbury",
-  "phone": "01722 743230",
-  "email": "libraryenquiries@wiltshire.gov.uk",
-  "website": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/32?isListPage=True",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "19:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "service-dog-friendly",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.07954,
-  "longitude": -1.86413,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "wiltshire",
+  "source_id": "3192",
+  "source_url": "https://libraryon.org/libraries/wiltshire/wilton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wiltshire/wilton",
-  "authority": "wiltshire"
+  "data": {
+    "Local authority": "Wiltshire",
+    "Local authority code": "E06000054",
+    "Library name": "Wilton",
+    "Library code": null,
+    "Address 1": "9 South Street, Wilton, Salisbury, Wiltshire, SP2 0JS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SP2 0JS",
+    "Unique property reference number": 100121361532,
+    "Latitude": 51.07954,
+    "Longitude": -1.86413,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:30,13:30-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:30,13:30-17:00",
+    "Friday staffed hours": "10:00-13:30,13:30-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Digital lending; Computers; Scanning; Children's activities; Hobby and interest groups; British Newspaper Archive; Family history",
+    "Phone number": "01722 743230",
+    "Email address": "libraryenquiries@wiltshire.gov.uk",
+    "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/32?isListPage=True",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

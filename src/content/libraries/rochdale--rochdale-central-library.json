@@ -1,156 +1,64 @@
 {
   "id": "lib_b42d9419-a541-49e9-a7d1-92c270ebc485",
-  "source_id": "1576",
-  "name": "Rochdale Central Library",
   "slug": "rochdale-central-library",
-  "address": "Smith Street, Rochdale, Greater Manchester, OL16 1XU",
-  "postcode": "OL16 1XU",
-  "town": "Rochdale",
-  "phone": "",
-  "email": "library.service@rochdale.gov.uk",
-  "website": "https://www.rochdale.gov.uk/directory-record/1105/rochdale-central-library-and-customer-service-centre-rochdale",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "catering",
-    "civic",
-    "community",
-    "health",
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.616975,
-  "longitude": -2.153478,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "rochdale",
+  "source_id": "1576",
+  "source_url": "https://libraryon.org/libraries/rochdale/rochdale-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rochdale/rochdale-central-library",
-  "authority": "rochdale"
+  "data": {
+    "Local authority": "Rochdale",
+    "Local authority code": "E08000005",
+    "Library name": "Rochdale Central Library",
+    "Library code": null,
+    "Address 1": "Smith Street, Rochdale, Greater Manchester, OL16 1XU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OL16 1XU",
+    "Unique property reference number": null,
+    "Latitude": 53.616975,
+    "Longitude": -2.153478,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; civic; community; health; school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital skills sessions; Hobby and interest groups; Children's activities; Digital lending; Computers; Photocopiers; Scanning; Computers; Bookable space; Books delivered",
+    "Phone number": null,
+    "Email address": "library.service@rochdale.gov.uk",
+    "URL": "https://www.rochdale.gov.uk/directory-record/1105/rochdale-central-library-and-customer-service-centre-rochdale",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

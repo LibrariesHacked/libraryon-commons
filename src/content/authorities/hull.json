@@ -1,50 +1,68 @@
 {
   "id": 94,
-  "name": "Hull",
-  "website": "https://www.hulllibraries.co.uk/",
-  "phone": "01482 210 000",
-  "email": "reference.library@hcandl.co.uk",
   "slug": "hull",
-  "createdAt": "2024-10-08T21:29:37.389Z",
-  "updatedAt": "2026-01-23T08:59:28.069Z",
-  "authorityID": "auth_fadebbd9-d104-4947-9d2a-4afa256ffe4c",
-  "androidApp": null,
-  "iOSApp": null,
-  "catalogue": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
-  "joinOnline": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
-  "country": "England",
-  "about": "",
-  "gss": "E06000010",
-  "operatingOrganisation": null,
-  "social": [
-    {
-      "id": 720,
-      "channel": "twitter",
-      "handle": "hull_libraries",
-      "url": "https://twitter.com/hull_libraries"
-    },
-    {
-      "id": 721,
-      "channel": "facebook",
-      "handle": "hulllibraries",
-      "url": "https://www.facebook.com/hulllibraries"
-    },
-    {
-      "id": 722,
-      "channel": "instagram",
-      "handle": "hull.libraries",
-      "url": "https://www.instagram.com/hull.libraries/"
-    },
-    {
-      "id": 723,
-      "channel": "youtube",
-      "handle": "UC0Gn8oia6ERh1xNVYkDpr6A",
-      "url": "https://www.youtube.com/channel/UC0Gn8oia6ERh1xNVYkDpr6A"
-    }
-  ],
   "source_id": "94",
   "source_url": "https://libraryon.org/libraries/hull",
-  "imported_on": "2026-10-27",
   "updated_on": "2026-01-23",
-  "reviewed_on": ""
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "data": {
+    "Local authority": "Hull",
+    "Local authority code": "E06000010",
+    "Country": "England",
+    "Local authority department": null,
+    "Governance model": null,
+    "Operating organisation": null,
+    "Consortium": null,
+    "Service URL": "https://www.hulllibraries.co.uk/",
+    "Libraries URL": null,
+    "Mobile library URL": null,
+    "Home library service URL": null,
+    "Childrens service URL": null,
+    "Catalogue URL": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
+    "Join online URL": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
+    "Events URL": null,
+    "Eventbrite ID": null,
+    "Computer access URL": null,
+    "Wifi access URL": null,
+    "Room booking URL": null,
+    "Volunteer URL": null,
+    "Fees and charges URL": null,
+    "Adult fine": null,
+    "Child fine": null,
+    "Fine interval": null,
+    "Email address": "reference.library@hcandl.co.uk",
+    "Phone number": "01482 210 000",
+    "App name": null,
+    "Android app URL": null,
+    "iOS app URL": null,
+    "Twitter URL": "https://twitter.com/hull_libraries",
+    "Facebook URL": "https://www.facebook.com/hulllibraries",
+    "Instagram URL": "https://www.instagram.com/hull.libraries/",
+    "YouTube URL": "https://www.youtube.com/channel/UC0Gn8oia6ERh1xNVYkDpr6A",
+    "Blog URL": null,
+    "Podcast URL": null,
+    "Library management system supplier": null,
+    "Library management system": null,
+    "Online catalogue system": null,
+    "Ebook supplier": null,
+    "Ebook URL": null,
+    "Audiobook supplier": null,
+    "Audiobook URL": null,
+    "Emagazine supplier": null,
+    "Enewspaper supplier": null,
+    "Online reference subscriptions": null,
+    "Green library": null,
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "service-name",
+      "reason": "Matched by unique GSS code; check name discrepancy",
+      "audit_refs": [
+        "migration/directory/report.json#review_2521336227dc824582a044a5"
+      ]
+    }
+  ]
 }

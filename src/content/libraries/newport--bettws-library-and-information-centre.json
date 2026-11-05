@@ -1,125 +1,71 @@
 {
   "id": "lib_77167806-91ea-4b7c-8403-6f9164ebdfa0",
-  "source_id": "774",
-  "name": "Bettws Library and Information Centre",
   "slug": "bettws-library-and-information-centre",
-  "address": "43 The Precinct, Bettws, NP20 7TN",
-  "postcode": "NP20 7TN",
-  "town": "Newport",
-  "phone": "",
-  "email": "bettws.library@newport.gov.uk",
-  "website": "http://www.newport.gov.uk/en/Leisure-Tourism/Libraries/Find-a-library/Bettws-Library-and-Information-Centre.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.613067,
-  "longitude": -3.028794,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "newport",
+  "source_id": "774",
+  "source_url": "https://libraryon.org/libraries/newport/bettws-library-and-information-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newport/bettws-library-and-information-centre",
-  "authority": "newport"
+  "data": {
+    "Local authority": "Newport",
+    "Local authority code": "W06000022",
+    "Library name": "Bettws Library and Information Centre",
+    "Library code": null,
+    "Address 1": "43 The Precinct, Bettws, NP20 7TN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NP20 7TN",
+    "Unique property reference number": null,
+    "Latitude": 51.613067,
+    "Longitude": -3.028794,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-17:30",
+    "Tuesday staffed hours": "09:00-13:00,14:00-17:30",
+    "Wednesday staffed hours": "09:00-13:00,14:00-17:30",
+    "Thursday staffed hours": "09:00-13:00,14:00-17:30",
+    "Friday staffed hours": "09:00-13:00,14:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": "bettws.library@newport.gov.uk",
+    "URL": "http://www.newport.gov.uk/en/Leisure-Tourism/Libraries/Find-a-library/Bettws-Library-and-Information-Centre.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,108 +1,73 @@
 {
   "id": "lib_b5ebca93-89b5-4d14-9101-2eec358baf62",
-  "source_id": "3577",
-  "name": "West Wycombe Community Library",
   "slug": "west-wycombe-community-library",
-  "address": "Swan Yard, High Street, West Wycombe, Buckinghamshire, HP14 3AE",
-  "postcode": "HP14 3AE",
-  "town": "High Wycombe",
-  "phone": "01494 449 389",
-  "email": "westwycombelib@gmail.com",
-  "website": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/west-wycombe-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.6445,
-  "longitude": -0.80305,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "buckinghamshire",
+  "source_id": "3577",
+  "source_url": "https://libraryon.org/libraries/buckinghamshire/west-wycombe-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/buckinghamshire/west-wycombe-community-library",
-  "authority": "buckinghamshire"
+  "data": {
+    "Local authority": "Buckinghamshire",
+    "Local authority code": "E06000060",
+    "Library name": "West Wycombe Community Library",
+    "Library code": null,
+    "Address 1": "Swan Yard, High Street, West Wycombe, Buckinghamshire, HP14 3AE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HP14 3AE",
+    "Unique property reference number": null,
+    "Latitude": 51.6445,
+    "Longitude": -0.80305,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00",
+    "Tuesday staffed hours": "10:00-12:00",
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": "10:00-12:00",
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Family history; Books delivered",
+    "Phone number": "01494 449 389",
+    "Email address": "westwycombelib@gmail.com",
+    "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/west-wycombe-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_bb2b5bdb68b1eb4c9757d7c7"
+      ]
+    }
+  ]
 }

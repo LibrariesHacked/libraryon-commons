@@ -3,6 +3,7 @@ import { ChevronDown, X } from '@lucide/astro'
 
 import LibrarySearch from '../../components/LibrarySearch.astro'
 import LibraryMap from '../../components/LibraryMap.astro'
+import LibraryDownloads from '../../components/LibraryDownloads.astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import {
   libraries,
@@ -74,6 +75,7 @@ const initialResults = searchRecords.slice(0, 60)
     </div>
   </section>
   <section class="section shell">
+    <LibraryDownloads entries={libraries} />
     <form
       id="library-search"
       class="library-search-form"

@@ -1,178 +1,64 @@
 {
   "id": "lib_9e83c72a-6cdd-42fa-b52f-d69f5970007b",
-  "source_id": "2081",
-  "name": "Woodseats Library",
   "slug": "woodseats",
-  "address": "The Roddick Building, 900 Chesterfield Rd, Sheffield, Yorkshire, S8 0SH",
-  "postcode": "S8 0SH",
-  "town": "Sheffield",
-  "phone": "0114 293 0411",
-  "email": "woodseats.library@sheffield.gov.uk",
-  "website": "https://www.sheffield.gov.uk/libraries-archives/our-libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "automatic-doors",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.33987,
-  "longitude": -1.48032,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "sheffield",
+  "source_id": "2081",
+  "source_url": "https://libraryon.org/libraries/sheffield/woodseats",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sheffield/woodseats",
-  "authority": "sheffield"
+  "data": {
+    "Local authority": "Sheffield",
+    "Local authority code": "E08000019",
+    "Library name": "Woodseats Library",
+    "Library code": null,
+    "Address 1": "The Roddick Building, 900 Chesterfield Rd, Sheffield, Yorkshire, S8 0SH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S8 0SH",
+    "Unique property reference number": 10093470919,
+    "Latitude": 53.33987,
+    "Longitude": -1.48032,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00,14:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay; Findmypast; Computers; Photocopiers; Scanning; Digital skills sessions; Books delivered; Children's activities; Hobby and interest groups; Bookable space; Digital lending",
+    "Phone number": "0114 293 0411",
+    "Email address": "woodseats.library@sheffield.gov.uk",
+    "URL": "https://www.sheffield.gov.uk/libraries-archives/our-libraries",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

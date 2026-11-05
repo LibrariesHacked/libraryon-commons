@@ -1,129 +1,71 @@
 {
   "id": "lib_268df245-54c3-40e7-b3f1-9e17a37e04e1",
-  "source_id": "2839",
-  "name": "Poppleton Library",
   "slug": "poppleton-library",
-  "address": "The Village, Upper Poppleton, North Yorkshire, YO26 6JT",
-  "postcode": "YO26 6JR",
-  "town": "York",
-  "phone": "ton, York YO26 6JT Tel: ",
-  "email": "poppleton@exploreyork.org.uk",
-  "website": "https://www.exploreyork.org.uk/poppleton-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.98422,
-  "longitude": -1.15337,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "york",
+  "source_id": "2839",
+  "source_url": "https://libraryon.org/libraries/york/poppleton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/york/poppleton-library",
-  "authority": "york"
+  "data": {
+    "Local authority": "York",
+    "Local authority code": "E06000014",
+    "Library name": "Poppleton Library",
+    "Library code": null,
+    "Address 1": "The Village, Upper Poppleton, North Yorkshire, YO26 6JT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "YO26 6JR",
+    "Unique property reference number": null,
+    "Latitude": 53.98422,
+    "Longitude": -1.15337,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:30,14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:30,14:00-17:00",
+    "Thursday staffed hours": "10:00-12:30",
+    "Friday staffed hours": "10:00-12:30,14:00-17:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Digital lending; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "ton, York YO26 6JT Tel:",
+    "Email address": "poppleton@exploreyork.org.uk",
+    "URL": "https://www.exploreyork.org.uk/poppleton-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

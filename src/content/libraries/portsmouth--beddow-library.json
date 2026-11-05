@@ -1,130 +1,64 @@
 {
   "id": "lib_ba4970c7-9120-4439-a7b8-9435805446a1",
-  "source_id": "3207",
-  "name": "Beddow Library",
   "slug": "beddow-library",
-  "address": "Milton Road, Milton, Portsmouth, Hampshire, PO4 8PR",
-  "postcode": "PO4 8PR",
-  "town": "Southsea",
-  "phone": "02392731848",
-  "email": "beddow.library@portsmouthcc.gov.uk",
-  "website": "https://librariesandarchives.portsmouth.gov.uk/public-library-service/find-us/library-branches/beddow-library-milton/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.79493,
-  "longitude": -1.05918,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "portsmouth",
+  "source_id": "3207",
+  "source_url": "https://libraryon.org/libraries/portsmouth/beddow-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/portsmouth/beddow-library",
-  "authority": "portsmouth"
+  "data": {
+    "Local authority": "Portsmouth",
+    "Local authority code": "E06000044",
+    "Library name": "Beddow Library",
+    "Library code": null,
+    "Address 1": "Milton Road, Milton, Portsmouth, Hampshire, PO4 8PR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO4 8PR",
+    "Unique property reference number": 1775056242,
+    "Latitude": 50.79493,
+    "Longitude": -1.05918,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1990,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-18:00",
+    "Thursday staffed hours": "09:30-18:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "10:00-15:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Children's activities; Hobby and interest groups; British Newspaper Archive; Findmypast",
+    "Phone number": "02392731848",
+    "Email address": "beddow.library@portsmouthcc.gov.uk",
+    "URL": "https://librariesandarchives.portsmouth.gov.uk/public-library-service/find-us/library-branches/beddow-library-milton/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

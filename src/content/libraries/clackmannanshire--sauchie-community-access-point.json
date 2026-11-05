@@ -1,117 +1,71 @@
 {
   "id": "lib_8d4574af-93d4-4341-a41e-e3388d9e1ccb",
-  "source_id": "1633",
-  "name": "Sauchie Community Access Point",
   "slug": "sauchie-community-access-point",
-  "address": "Sauchie CAP Mar Place Sauchie FK10 3EA",
-  "postcode": "FK10 3JY",
-  "town": "Alloa",
-  "phone": "01259 452208",
-  "email": "",
-  "website": "http://www.clacksweb.org.uk/culture/sauchiecap/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.12887,
-  "longitude": -3.77732,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "clackmannanshire",
+  "source_id": "1633",
+  "source_url": "https://libraryon.org/libraries/clackmannanshire/sauchie-community-access-point",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/clackmannanshire/sauchie-community-access-point",
-  "authority": "clackmannanshire"
+  "data": {
+    "Local authority": "Clackmannanshire",
+    "Local authority code": "S12000005",
+    "Library name": "Sauchie Community Access Point",
+    "Library code": null,
+    "Address 1": "Sauchie CAP Mar Place Sauchie FK10 3EA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "FK10 3JY",
+    "Unique property reference number": null,
+    "Latitude": 56.12887,
+    "Longitude": -3.77732,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30",
+    "Tuesday staffed hours": "09:30-12:30",
+    "Wednesday staffed hours": "13:30-16:30,17:00-19:00",
+    "Thursday staffed hours": "09:30-12:30,13:30-16:30",
+    "Friday staffed hours": "09:30-12:30",
+    "Saturday staffed hours": "09:30-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": "13:30-16:30",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01259 452208",
+    "Email address": null,
+    "URL": "http://www.clacksweb.org.uk/culture/sauchiecap/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

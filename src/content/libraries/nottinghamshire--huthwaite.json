@@ -1,103 +1,73 @@
 {
   "id": "lib_83db8513-5008-44f2-a367-6a2bb51ee079",
-  "source_id": "1181",
-  "name": "Huthwaite",
   "slug": "huthwaite",
-  "address": "Sutton Road, Huthwaite, Nottinghamshire, NG17 2NG",
-  "postcode": "NG17 2NG",
-  "town": "Sutton-in-Ashfield",
-  "phone": "01623 677 200",
-  "email": "ask@inspireculture.org.uk",
-  "website": "https://www.inspireculture.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.12846,
-  "longitude": -1.29807,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "nottinghamshire",
+  "source_id": "1181",
+  "source_url": "https://libraryon.org/libraries/nottinghamshire/huthwaite",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/nottinghamshire/huthwaite",
-  "authority": "nottinghamshire"
+  "data": {
+    "Local authority": "Nottinghamshire",
+    "Local authority code": "E10000024",
+    "Library name": "Huthwaite",
+    "Library code": null,
+    "Address 1": "Sutton Road, Huthwaite, Nottinghamshire, NG17 2NG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NG17 2NG",
+    "Unique property reference number": null,
+    "Latitude": 53.12846,
+    "Longitude": -1.29807,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-12:30",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "14:00-17:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive",
+    "Phone number": "01623 677 200",
+    "Email address": "ask@inspireculture.org.uk",
+    "URL": "https://www.inspireculture.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_9594b47557c0405a24ba4716"
+      ]
+    }
+  ]
 }

@@ -1,110 +1,71 @@
 {
   "id": "lib_f6368f29-390b-498e-82c8-4adfc91229ff",
-  "source_id": "304",
-  "name": "Llandudno Library",
   "slug": "llandudno-library",
-  "address": "46 Mostyn Street, Llandudno, LL30 2RP, United Kingdom",
-  "postcode": "LL30 2RP",
-  "town": "Llandudno",
-  "phone": "01492 574010",
-  "email": "llandudno.library@conwy.gov.uk",
-  "website": "http://www.conwy.gov.uk/en/Resident/Libraries-Museums-and-Archives/Libraries/Libraries-and-opening-times/Llandudno-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.32365,
-  "longitude": -3.82946,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "conwy",
+  "source_id": "304",
+  "source_url": "https://libraryon.org/libraries/conwy/llandudno-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/conwy/llandudno-library",
-  "authority": "conwy"
+  "data": {
+    "Local authority": "Conwy",
+    "Local authority code": "W06000003",
+    "Library name": "Llandudno Library",
+    "Library code": null,
+    "Address 1": "46 Mostyn Street, Llandudno, LL30 2RP, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LL30 2RP",
+    "Unique property reference number": null,
+    "Latitude": 53.32365,
+    "Longitude": -3.82946,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "09:00-17:30",
+    "Wednesday staffed hours": "09:00-17:30",
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:30-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast",
+    "Phone number": "01492 574010",
+    "Email address": "llandudno.library@conwy.gov.uk",
+    "URL": "http://www.conwy.gov.uk/en/Resident/Libraries-Museums-and-Archives/Libraries/Libraries-and-opening-times/Llandudno-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

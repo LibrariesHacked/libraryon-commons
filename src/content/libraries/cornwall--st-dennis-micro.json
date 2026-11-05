@@ -1,112 +1,71 @@
 {
   "id": "lib_21b891bd-a090-4980-8b7d-9aa594a769f0",
-  "source_id": "2993",
-  "name": "St Dennis Micro",
   "slug": "st-dennis-micro",
-  "address": "Fore Street, St. Dennis, Cornwall, PL26 8AF",
-  "postcode": "PL26 8AX",
-  "town": "St. Austell",
-  "phone": "",
-  "email": "",
-  "website": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/st-dennis-micro-library/",
-  "catalogue": "https://prism.librarymanagementcloud.co.uk/cornwall/",
-  "joinOnline": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/join-the-library/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.38484,
-  "longitude": -4.88281,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.cornwall.gov.uk/people-and-communities/digital-inclusion/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-free-library-resources/online-reference-library/genealogy-and-history-resources/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "cornwall",
+  "source_id": "2993",
+  "source_url": "https://libraryon.org/libraries/cornwall/st-dennis-micro",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cornwall/st-dennis-micro",
-  "authority": "cornwall"
+  "data": {
+    "Local authority": "Cornwall",
+    "Local authority code": "E06000052",
+    "Library name": "St Dennis Micro",
+    "Library code": null,
+    "Address 1": "Fore Street, St. Dennis, Cornwall, PL26 8AF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PL26 8AX",
+    "Unique property reference number": null,
+    "Latitude": 50.38484,
+    "Longitude": -4.88281,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-16:30",
+    "Tuesday staffed hours": "09:30-16:30",
+    "Wednesday staffed hours": "09:30-16:30",
+    "Thursday staffed hours": "09:30-16:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Digital skills sessions; Family history; British Newspaper Archive; Findmypast",
+    "Phone number": null,
+    "Email address": null,
+    "URL": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/st-dennis-micro-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

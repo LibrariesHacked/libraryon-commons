@@ -1,165 +1,64 @@
 {
   "id": "lib_6f33c79a-1638-4777-8792-4b1f5fee8287",
-  "source_id": "1770",
-  "name": "Hyde",
   "slug": "hyde",
-  "address": "Town Hall, Greenfield Street, Hyde, Greater Manchester, SK14 1AL",
-  "postcode": "SK14 1AL",
-  "town": "Hyde",
-  "phone": " 0161 342 4000 #6",
-  "email": "hyde.library@tameside.gov.uk",
-  "website": "https://www.tameside.gov.uk/libraries/openingtimes",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.450859,
-  "longitude": -2.079941,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": ""
-    }
-  ],
+  "authority": "tameside",
+  "source_id": "1770",
+  "source_url": "https://libraryon.org/libraries/tameside/hyde",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/tameside/hyde",
-  "authority": "tameside"
+  "data": {
+    "Local authority": "Tameside",
+    "Local authority code": "E08000008",
+    "Library name": "Hyde",
+    "Library code": null,
+    "Address 1": "Town Hall, Greenfield Street, Hyde, Greater Manchester, SK14 1AL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SK14 1AL",
+    "Unique property reference number": 100012775220,
+    "Latitude": 53.450859,
+    "Longitude": -2.079941,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00",
+    "Tuesday staffed hours": "09:00-13:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-13:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "13:00-20:00",
+    "Tuesday unstaffed hours": "13:00-20:00",
+    "Wednesday unstaffed hours": "09:00-13:00,17:00-20:00",
+    "Thursday unstaffed hours": "09:00-20:00",
+    "Friday unstaffed hours": "13:00-20:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Books delivered; Children's activities; Hobby and interest groups; Computers; Photocopiers; Scanning; Business support",
+    "Phone number": "0161 342 4000 #6",
+    "Email address": "hyde.library@tameside.gov.uk",
+    "URL": "https://www.tameside.gov.uk/libraries/openingtimes",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

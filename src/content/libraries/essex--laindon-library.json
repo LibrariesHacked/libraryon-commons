@@ -1,129 +1,64 @@
 {
   "id": "lib_1b289d42-8e70-4cc4-96a2-c23e85fafa1b",
-  "source_id": "654",
-  "name": "Laindon Library",
   "slug": "laindon-library",
-  "address": "5-7 New Century Road, Basildon, Essex, SS15 6AG",
-  "postcode": "SS15 6AG",
-  "town": "Basildon",
-  "phone": "",
-  "email": "laindon.library@essex.gov.uk",
-  "website": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/laindon-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.573704,
-  "longitude": 0.419418,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "essex",
+  "source_id": "654",
+  "source_url": "https://libraryon.org/libraries/essex/laindon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/essex/laindon-library",
-  "authority": "essex"
+  "data": {
+    "Local authority": "Essex",
+    "Local authority code": "E10000012",
+    "Library name": "Laindon Library",
+    "Library code": null,
+    "Address 1": "5-7 New Century Road, Basildon, Essex, SS15 6AG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SS15 6AG",
+    "Unique property reference number": null,
+    "Latitude": 51.573704,
+    "Longitude": 0.419418,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "09:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-13:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; BFI Replay; Bookable space; Findmypast; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "laindon.library@essex.gov.uk",
+    "URL": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/laindon-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

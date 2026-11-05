@@ -1,164 +1,71 @@
 {
   "id": "lib_d035ca06-abe3-4cf6-84dc-3cdf4d86ac27",
-  "source_id": "1257",
-  "name": "Brandon",
   "slug": "brandon",
-  "address": "Bury Road, Brandon, Suffolk, IP27 0BQ",
-  "postcode": "IP27 0AD",
-  "town": "Brandon",
-  "phone": "01842 773390",
-  "email": "library.help@suffolk.gov.uk",
-  "website": "https://suffolkcommunitylibraries.co.uk/libraries/brandon-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "wheelchair-access"
-  ],
-  "notes": "Community hub with other servcies",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.44681,
-  "longitude": 0.62355,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "suffolk",
+  "source_id": "1257",
+  "source_url": "https://libraryon.org/libraries/suffolk/brandon",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/suffolk/brandon",
-  "authority": "suffolk"
+  "data": {
+    "Local authority": "Suffolk",
+    "Local authority code": "E10000029",
+    "Library name": "Brandon",
+    "Library code": null,
+    "Address 1": "Bury Road, Brandon, Suffolk, IP27 0BQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IP27 0AD",
+    "Unique property reference number": null,
+    "Latitude": 52.44681,
+    "Longitude": 0.62355,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-15:00",
+    "Thursday staffed hours": "10:00-17:30",
+    "Friday staffed hours": "10:00-15:30",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": "10:00-15:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups; Digital skills sessions; Findmypast; British Newspaper Archive",
+    "Phone number": "01842 773390",
+    "Email address": "library.help@suffolk.gov.uk",
+    "URL": "https://suffolkcommunitylibraries.co.uk/libraries/brandon-library/",
+    "Notes": "Community hub with other servcies"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,98 +1,64 @@
 {
   "id": "lib_9883192f-b2af-4c00-972f-a5f2ade288b2",
-  "source_id": "2415",
-  "name": "Idle Library",
   "slug": "idle-library",
-  "address": "Wright Watson Enterprise Centre, Thorpe Garth, Bradford, West Yorkshire, BD10 9LD",
-  "postcode": "BD10 9PY",
-  "town": "Bradford",
-  "phone": "01274 952057",
-  "email": "idle.library@incic.co.uk",
-  "website": "https://www.bradford.gov.uk/libraries/find-your-local-library/idle-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "industrial"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.83459,
-  "longitude": -1.72922,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "bradford",
+  "source_id": "2415",
+  "source_url": "https://libraryon.org/libraries/bradford/idle-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bradford/idle-library",
-  "authority": "bradford"
+  "data": {
+    "Local authority": "Bradford",
+    "Local authority code": "E08000032",
+    "Library name": "Idle Library",
+    "Library code": null,
+    "Address 1": "Wright Watson Enterprise Centre, Thorpe Garth, Bradford, West Yorkshire, BD10 9LD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BD10 9PY",
+    "Unique property reference number": null,
+    "Latitude": 53.83459,
+    "Longitude": -1.72922,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-16:30",
+    "Tuesday staffed hours": "10:00-16:30",
+    "Wednesday staffed hours": "09:30-16:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "industrial",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Hobby and interest groups",
+    "Phone number": "01274 952057",
+    "Email address": "idle.library@incic.co.uk",
+    "URL": "https://www.bradford.gov.uk/libraries/find-your-local-library/idle-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

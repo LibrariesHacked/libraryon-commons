@@ -1,121 +1,77 @@
 {
   "id": "lib_7b011aec-2ccc-413a-8db0-399de9e22bd4",
-  "source_id": "1811",
-  "name": "Stewarton Library",
   "slug": "stewarton-library",
-  "address": "Stewarton Area Centre, Avenue Street, Stewarton KA3 5AP",
-  "postcode": "KA3 5AP",
-  "town": "Kilmarnock",
-  "phone": "01563 553670",
-  "email": "StewartonLibrary@eastayrshireleisure.com",
-  "website": "https://eastayrshireleisure.com/venue/stewarton-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Facility Not Open",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.68205,
-  "longitude": -4.51552,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "east-ayrshire",
+  "source_id": "1811",
+  "source_url": "https://libraryon.org/libraries/east-ayrshire/stewarton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-ayrshire/stewarton-library",
-  "authority": "east-ayrshire"
+  "data": {
+    "Local authority": "East Ayrshire",
+    "Local authority code": "S12000008",
+    "Library name": "Stewarton Library",
+    "Library code": null,
+    "Address 1": "Stewarton Area Centre, Avenue Street, Stewarton KA3 5AP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KA3 5AP",
+    "Unique property reference number": null,
+    "Latitude": 55.68205,
+    "Longitude": -4.51552,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-16:00",
+    "Wednesday staffed hours": "09:30-16:00",
+    "Thursday staffed hours": "09:30-16:00",
+    "Friday staffed hours": "09:30-16:00",
+    "Saturday staffed hours": "09:30-15:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "15:00-21:00",
+    "Tuesday unstaffed hours": "16:00-21:00",
+    "Wednesday unstaffed hours": "16:00-19:00",
+    "Thursday unstaffed hours": "16:00-19:00",
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01563 553670",
+    "Email address": "StewartonLibrary@eastayrshireleisure.com",
+    "URL": "https://eastayrshireleisure.com/venue/stewarton-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,129 +1,64 @@
 {
   "id": "lib_dfe08033-2e01-498f-835d-4c3a724992cf",
-  "source_id": "2998",
-  "name": "St Budeaux Library",
   "slug": "st-budeaux-library",
-  "address": "The Square, Victoria Road, Plymouth, Devon, PL5 1RQ",
-  "postcode": "PL5 1RQ",
-  "town": "Plymouth",
-  "phone": "01752 306237",
-  "email": "library@plymouth.gov.uk",
-  "website": "https://www.plymouth.gov.uk/st-budeaux-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "Old St Budeaux closed 4 August 2018. New St Budeaux opened 27 January 2020",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.40303,
-  "longitude": -4.18685,
-  "services": [
-    {
-      "service": "Books",
-      "url": "https://library.plymouth.gov.uk/web/arena"
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.plymouth.gov.uk/computers-printers-and-wifi"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.plymouth.gov.uk/computers-printers-and-wifi"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.plymouth.gov.uk/computers-printers-and-wifi"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": "https://www.plymouth.gov.uk/computers-printers-and-wifi"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.plymouth.gov.uk/events-list?keyword=%22St+Budeaux+Library%22"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.plymouth.gov.uk/events-list?keyword=%22St+Budeaux+Library%22"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.plymouth.gov.uk/library-meeting-rooms"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "plymouth",
+  "source_id": "2998",
+  "source_url": "https://libraryon.org/libraries/plymouth/st-budeaux-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/plymouth/st-budeaux-library",
-  "authority": "plymouth"
+  "data": {
+    "Local authority": "Plymouth",
+    "Local authority code": "E06000026",
+    "Library name": "St Budeaux Library",
+    "Library code": null,
+    "Address 1": "The Square, Victoria Road, Plymouth, Devon, PL5 1RQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PL5 1RQ",
+    "Unique property reference number": null,
+    "Latitude": 50.40303,
+    "Longitude": -4.18685,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2020,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups; Bookable space; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "01752 306237",
+    "Email address": "library@plymouth.gov.uk",
+    "URL": "https://www.plymouth.gov.uk/st-budeaux-library",
+    "Notes": "Old St Budeaux closed 4 August 2018. New St Budeaux opened 27 January 2020"
+  },
+  "validation_exceptions": []
 }

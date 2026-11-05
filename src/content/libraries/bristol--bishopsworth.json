@@ -1,135 +1,71 @@
 {
   "id": "lib_27c9654d-8157-4e1d-b1db-ddaaf3edd0c1",
-  "source_id": "3203",
-  "name": "Bishopsworth",
   "slug": "bishopsworth",
-  "address": "Bishopsworth Road, Bishopsworth, Bristol, BS13 7LN",
-  "postcode": "BS13 7LN",
-  "town": "Bristol",
-  "phone": "0117 9038566",
-  "email": "bishopsworth.library@bristol.gov.uk",
-  "website": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=4",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "service-dog-friendly",
-    "step-free-access",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.42057,
-  "longitude": -2.61652,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "bristol",
+  "source_id": "3203",
+  "source_url": "https://libraryon.org/libraries/bristol/bishopsworth",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bristol/bishopsworth",
-  "authority": "bristol"
+  "data": {
+    "Local authority": "Bristol",
+    "Local authority code": "E06000023",
+    "Library name": "Bishopsworth",
+    "Library code": null,
+    "Address 1": "Bishopsworth Road, Bishopsworth, Bristol, BS13 7LN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS13 7LN",
+    "Unique property reference number": null,
+    "Latitude": 51.42057,
+    "Longitude": -2.61652,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "11:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "11:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Books delivered; Photocopiers; Children's activities; Hobby and interest groups; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "0117 9038566",
+    "Email address": "bishopsworth.library@bristol.gov.uk",
+    "URL": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=4",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

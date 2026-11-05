@@ -1,194 +1,64 @@
 {
   "id": "lib_60274ba8-44f9-4d9d-8909-3877dce40191",
-  "source_id": "2554",
-  "name": "Upper Norwood",
   "slug": "upper-norwood",
-  "address": "39 Westow Hill, London, SE19 1TQ",
-  "postcode": "SE19 1TQ",
-  "town": "London",
-  "phone": "020 7926 1063",
-  "email": "uppernorwoodlibrary@lambeth.gov.uk",
-  "website": "https://www.lambeth.gov.uk/libraries-0/upper-norwood-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "assistive-technology-available",
-    "low-vision-support",
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "lift-access",
-    "adjustable-seating",
-    "baby-changing-facilities"
-  ],
-  "notes": "Refurbished 2016/17 and new layout to make room for hub",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.42004,
-  "longitude": -0.08133,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Business support",
-      "url": ""
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.com/"
-    }
-  ],
+  "authority": "lambeth",
+  "source_id": "2554",
+  "source_url": "https://libraryon.org/libraries/lambeth/upper-norwood",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lambeth/upper-norwood",
-  "authority": "lambeth"
+  "data": {
+    "Local authority": "Lambeth",
+    "Local authority code": "E09000022",
+    "Library name": "Upper Norwood",
+    "Library code": null,
+    "Address 1": "39 Westow Hill, London, SE19 1TQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE19 1TQ",
+    "Unique property reference number": 100023246690,
+    "Latitude": 51.42004,
+    "Longitude": -0.08133,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1899,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:00,14:00-18:00",
+    "Wednesday staffed hours": "10:00-13:00,14:00-18:00",
+    "Thursday staffed hours": "10:00-13:00,14:00-20:00",
+    "Friday staffed hours": "10:00-13:00,14:00-18:00",
+    "Saturday staffed hours": "10:00-13:00,14:00-18:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "13:00-14:00",
+    "Wednesday unstaffed hours": "13:00-14:00",
+    "Thursday unstaffed hours": "13:00-14:00",
+    "Friday unstaffed hours": "13:00-14:00",
+    "Saturday unstaffed hours": "13:00-14:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Children's activities; Hobby and interest groups; BFI Replay; Business support; Career support; British Newspaper Archive; Findmypast",
+    "Phone number": "020 7926 1063",
+    "Email address": "uppernorwoodlibrary@lambeth.gov.uk",
+    "URL": "https://www.lambeth.gov.uk/libraries-0/upper-norwood-library",
+    "Notes": "Refurbished 2016/17 and new layout to make room for hub"
+  },
+  "validation_exceptions": []
 }

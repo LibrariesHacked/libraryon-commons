@@ -1,104 +1,71 @@
 {
   "id": "lib_681a52b7-4355-4cf1-a860-913f6f5604b1",
-  "source_id": "2294",
-  "name": "East Park Library",
   "slug": "east-park-library",
-  "address": "Central Pavillion, Holderness Road, Hull, East Riding of Yorkshire, HU8 8JU",
-  "postcode": "WV1 2EB",
-  "town": "Wolverhampton",
-  "phone": "01902 556257",
-  "email": "libraries@wolverhampton.gov.uk",
-  "website": "https://www.wolverhampton.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.58116,
-  "longitude": -2.09337,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "wolverhampton",
+  "source_id": "2294",
+  "source_url": "https://libraryon.org/libraries/wolverhampton/east-park-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wolverhampton/east-park-library",
-  "authority": "wolverhampton"
+  "data": {
+    "Local authority": "Wolverhampton",
+    "Local authority code": "E08000031",
+    "Library name": "East Park Library",
+    "Library code": null,
+    "Address 1": "Central Pavillion, Holderness Road, Hull, East Riding of Yorkshire, HU8 8JU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WV1 2EB",
+    "Unique property reference number": null,
+    "Latitude": 52.58116,
+    "Longitude": -2.09337,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00",
+    "Tuesday staffed hours": "09:00-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers",
+    "Phone number": "01902 556257",
+    "Email address": "libraries@wolverhampton.gov.uk",
+    "URL": "https://www.wolverhampton.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

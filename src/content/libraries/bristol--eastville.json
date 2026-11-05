@@ -1,99 +1,64 @@
 {
   "id": "lib_2a1f2bc8-47e7-4f7b-9546-e57a8c696ef8",
-  "source_id": "3615",
-  "name": "The Old Library, Eastville",
   "slug": "eastville",
-  "address": "The Old Library, Muller Road, Eastville, Bristol, England, BS5 6XP",
-  "postcode": "BS5 6XP",
-  "town": "Bristol",
-  "phone": "",
-  "email": "hello@theoldlibrary.org.uk",
-  "website": "https://theoldlibrary.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "Open term time only",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.476627097849075,
-  "longitude": -2.5691564035167858,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    }
-  ],
+  "authority": "bristol",
+  "source_id": "3615",
+  "source_url": "https://libraryon.org/libraries/bristol/eastville",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bristol/eastville",
-  "authority": "bristol"
+  "data": {
+    "Local authority": "Bristol",
+    "Local authority code": "E06000023",
+    "Library name": "The Old Library, Eastville",
+    "Library code": null,
+    "Address 1": "The Old Library, Muller Road, Eastville, Bristol, England, BS5 6XP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS5 6XP",
+    "Unique property reference number": null,
+    "Latitude": 51.476627097849075,
+    "Longitude": -2.5691564035167858,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-15:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-15:00",
+    "Friday staffed hours": "09:00-15:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Open term time only",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Cafe; Children's activities; Bookable space; Hobby and interest groups; Garden",
+    "Phone number": null,
+    "Email address": "hello@theoldlibrary.org.uk",
+    "URL": "https://theoldlibrary.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

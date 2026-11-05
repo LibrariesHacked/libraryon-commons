@@ -1,129 +1,64 @@
 {
   "id": "lib_bdf4f637-5c6a-4a3d-bbab-f5f669868856",
-  "source_id": "2148",
-  "name": "Rounds Green Library",
   "slug": "rounds-green-library",
-  "address": "Martley Road, Oldbury, West Midlands, B69 1DZ",
-  "postcode": "B69 1DZ",
-  "town": "Oldbury",
-  "phone": "0121 569 4934",
-  "email": "roundsgreen_library@sandwell.gov.uk",
-  "website": "http://www.sandwell.gov.uk/info/200261/libraries_in_sandwell/823/rounds_green_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.49305,
-  "longitude": -2.03324,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "sandwell",
+  "source_id": "2148",
+  "source_url": "https://libraryon.org/libraries/sandwell/rounds-green-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sandwell/rounds-green-library",
-  "authority": "sandwell"
+  "data": {
+    "Local authority": "Sandwell",
+    "Local authority code": "E08000028",
+    "Library name": "Rounds Green Library",
+    "Library code": null,
+    "Address 1": "Martley Road, Oldbury, West Midlands, B69 1DZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B69 1DZ",
+    "Unique property reference number": 32054938,
+    "Latitude": 52.49305,
+    "Longitude": -2.03324,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-17:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Books delivered; Children's activities; Hobby and interest groups; Findmypast",
+    "Phone number": "0121 569 4934",
+    "Email address": "roundsgreen_library@sandwell.gov.uk",
+    "URL": "http://www.sandwell.gov.uk/info/200261/libraries_in_sandwell/823/rounds_green_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

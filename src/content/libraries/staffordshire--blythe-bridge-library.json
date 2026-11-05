@@ -1,128 +1,64 @@
 {
   "id": "lib_84da45a6-0782-43db-b4b6-134e550f7732",
-  "source_id": "1063",
-  "name": "Blythe Bridge Library",
   "slug": "blythe-bridge-library",
-  "address": "Uttoxeter Road, Stoke-on-Trent, Staffordshire, ST11 9JR",
-  "postcode": "ST11 9JR",
-  "town": "Stoke-on-Trent",
-  "phone": "01782 485269",
-  "email": "blythebridge.library@staffordshire.gov.uk",
-  "website": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/BlytheBridgeLibrary/BlytheBridgeLibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "previously called Blythe centre",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.967119,
-  "longitude": -2.061578,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "staffordshire",
+  "source_id": "1063",
+  "source_url": "https://libraryon.org/libraries/staffordshire/blythe-bridge-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/staffordshire/blythe-bridge-library",
-  "authority": "staffordshire"
+  "data": {
+    "Local authority": "Staffordshire",
+    "Local authority code": "E10000028",
+    "Library name": "Blythe Bridge Library",
+    "Library code": null,
+    "Address 1": "Uttoxeter Road, Stoke-on-Trent, Staffordshire, ST11 9JR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ST11 9JR",
+    "Unique property reference number": 200001577371,
+    "Latitude": 52.967119,
+    "Longitude": -2.061578,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Digital skills sessions; Family history; Computers; Scanning; Photocopiers; Bookable space; Children's activities",
+    "Phone number": "01782 485269",
+    "Email address": "blythebridge.library@staffordshire.gov.uk",
+    "URL": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/BlytheBridgeLibrary/BlytheBridgeLibrary.aspx",
+    "Notes": "previously called Blythe centre"
+  },
+  "validation_exceptions": []
 }

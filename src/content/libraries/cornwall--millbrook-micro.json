@@ -1,117 +1,64 @@
 {
   "id": "lib_14e44e0d-7744-42e2-a0f0-4c50871c6635",
-  "source_id": "3406",
-  "name": "Millbrook Micro",
   "slug": "millbrook-micro",
-  "address": "The Rame Centre, 3 West Street, Torpoint, Cornwall, PL10 1AA",
-  "postcode": "PL10 1AA",
-  "town": "Torpoint",
-  "phone": "0300 1234 111",
-  "email": "libraries@cornwall.gov.uk",
-  "website": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/millbrook-micro-library/",
-  "catalogue": "https://prism.librarymanagementcloud.co.uk/cornwall/",
-  "joinOnline": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/join-the-library/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.34753,
-  "longitude": -4.21771,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.cornwall.gov.uk/people-and-communities/digital-inclusion/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-free-library-resources/online-reference-library/genealogy-and-history-resources/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "cornwall",
+  "source_id": "3406",
+  "source_url": "https://libraryon.org/libraries/cornwall/millbrook-micro",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cornwall/millbrook-micro",
-  "authority": "cornwall"
+  "data": {
+    "Local authority": "Cornwall",
+    "Local authority code": "E06000052",
+    "Library name": "Millbrook Micro",
+    "Library code": null,
+    "Address 1": "The Rame Centre, 3 West Street, Torpoint, Cornwall, PL10 1AA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PL10 1AA",
+    "Unique property reference number": 10091024367,
+    "Latitude": 50.34753,
+    "Longitude": -4.21771,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Digital skills sessions; Family history; British Newspaper Archive; Findmypast",
+    "Phone number": "0300 1234 111",
+    "Email address": "libraries@cornwall.gov.uk",
+    "URL": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/millbrook-micro-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

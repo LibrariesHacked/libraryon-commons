@@ -1,151 +1,71 @@
 {
   "id": "lib_e2d994a3-5896-4298-957c-840ef0a651aa",
-  "source_id": "2790",
-  "name": "Lichfield Street Hub",
   "slug": "lichfield-street-hub",
-  "address": "Lichfield Street, Walsall, West Midlands , WS1 1TR",
-  "postcode": "WS1 1TR",
-  "town": "Walsall",
-  "phone": "01922653121",
-  "email": "LSHlibrary@walsall.gov.uk",
-  "website": "https://go.walsall.gov.uk/walsall-libraries/lichfield-street-hub",
-  "catalogue": "https://go.walsall.gov.uk/walsall-libraries/resources/247-online-library",
-  "joinOnline": "https://go.walsall.gov.uk/walsall-libraries/joining",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "sign-language-interpretation",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "archives"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.586162,
-  "longitude": -1.978706,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://go.walsall.gov.uk/walsall-libraries/resources/computers"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://go.walsall.gov.uk/walsall-libraries/resources/computers"
-    },
-    {
-      "service": "Computers",
-      "url": "https://go.walsall.gov.uk/walsall-libraries/resources/computers"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://go.walsall.gov.uk/walsall-libraries/resources/computers"
-    },
-    {
-      "service": "Scanning",
-      "url": "https://go.walsall.gov.uk/walsall-libraries/resources/computers"
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://go.walsall.gov.uk/walsall-libraries/lichfield-street-hub/hire-a-room-at-lichfield-street-hub"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://go.walsall.gov.uk/walsall-libraries/resources/e-books-and-e-audiobooks"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "walsall",
+  "source_id": "2790",
+  "source_url": "https://libraryon.org/libraries/walsall/lichfield-street-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/walsall/lichfield-street-hub",
-  "authority": "walsall"
+  "data": {
+    "Local authority": "Walsall",
+    "Local authority code": "E08000030",
+    "Library name": "Lichfield Street Hub",
+    "Library code": null,
+    "Address 1": "Lichfield Street, Walsall, West Midlands , WS1 1TR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WS1 1TR",
+    "Unique property reference number": null,
+    "Latitude": 52.586162,
+    "Longitude": -1.978706,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "08:30-18:00",
+    "Tuesday staffed hours": "08:30-18:00",
+    "Wednesday staffed hours": "08:30-18:00",
+    "Thursday staffed hours": "08:30-18:00",
+    "Friday staffed hours": "08:30-18:00",
+    "Saturday staffed hours": "08:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Career support; Digital skills sessions; Cafe; Hobby and interest groups; Children's activities; Bookable space; Digital lending; Findmypast",
+    "Phone number": "01922653121",
+    "Email address": "LSHlibrary@walsall.gov.uk",
+    "URL": "https://go.walsall.gov.uk/walsall-libraries/lichfield-street-hub",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

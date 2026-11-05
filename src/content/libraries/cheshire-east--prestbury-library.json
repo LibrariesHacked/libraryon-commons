@@ -1,91 +1,71 @@
 {
   "id": "lib_c7153df8-3979-4174-bd4b-f0a14c835cbe",
-  "source_id": "3137",
-  "name": "Prestbury Library",
   "slug": "prestbury-library",
-  "address": "Reading Room, Prestbury, Cheshire, SK10 4AL",
-  "postcode": "SK10 4DG",
-  "town": "Macclesfield",
-  "phone": "01625 827501",
-  "email": "prestbury.library@cheshireeast.gov.uk",
-  "website": "https://www.cheshireeast.gov.uk/libraries/nearest-library/prestbury_library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:15"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.28854,
-  "longitude": -2.15168,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "cheshire-east",
+  "source_id": "3137",
+  "source_url": "https://libraryon.org/libraries/cheshire-east/prestbury-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cheshire-east/prestbury-library",
-  "authority": "cheshire-east"
+  "data": {
+    "Local authority": "Cheshire East",
+    "Local authority code": "E06000049",
+    "Library name": "Prestbury Library",
+    "Library code": null,
+    "Address 1": "Reading Room, Prestbury, Cheshire, SK10 4AL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SK10 4DG",
+    "Unique property reference number": null,
+    "Latitude": 53.28854,
+    "Longitude": -2.15168,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:15-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:15-13:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "14:00-17:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast",
+    "Phone number": "01625 827501",
+    "Email address": "prestbury.library@cheshireeast.gov.uk",
+    "URL": "https://www.cheshireeast.gov.uk/libraries/nearest-library/prestbury_library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

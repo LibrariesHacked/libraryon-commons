@@ -1,171 +1,64 @@
 {
   "id": "lib_49e611d9-3060-442c-9be3-4fd484eef41a",
-  "source_id": "1704",
-  "name": "Great Moor Library",
   "slug": "great-moor",
-  "address": "Gladstone Street, Great Moor, Greater Manchester, SK2 7QF",
-  "postcode": "SK2 7QF",
-  "town": "Stockport",
-  "phone": "",
-  "email": "greatmoor.library@stockport.gov.uk",
-  "website": "https://www.stockport.gov.uk/directories/entry/libraries/great-moor-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "12:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "12:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.38854,
-  "longitude": -2.13351,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "stockport",
+  "source_id": "1704",
+  "source_url": "https://libraryon.org/libraries/stockport/great-moor",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stockport/great-moor",
-  "authority": "stockport"
+  "data": {
+    "Local authority": "Stockport",
+    "Local authority code": "E08000007",
+    "Library name": "Great Moor Library",
+    "Library code": null,
+    "Address 1": "Gladstone Street, Great Moor, Greater Manchester, SK2 7QF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SK2 7QF",
+    "Unique property reference number": 100012779888,
+    "Latitude": 53.38854,
+    "Longitude": -2.13351,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "12:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "12:00-18:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-10:00,16:00-20:00",
+    "Tuesday unstaffed hours": "08:00-20:00",
+    "Wednesday unstaffed hours": "08:00-12:00,18:00-22:00",
+    "Thursday unstaffed hours": "08:00-22:00",
+    "Friday unstaffed hours": "08:00-12:00,18:00-20:00",
+    "Saturday unstaffed hours": "09:00-10:00,14:00-16:00",
+    "Sunday unstaffed hours": "09:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Digital lending; Family history",
+    "Phone number": null,
+    "Email address": "greatmoor.library@stockport.gov.uk",
+    "URL": "https://www.stockport.gov.uk/directories/entry/libraries/great-moor-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

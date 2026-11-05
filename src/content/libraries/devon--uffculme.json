@@ -1,108 +1,73 @@
 {
   "id": "lib_e4467d1e-15db-4ddc-954d-8d59f284b067",
-  "source_id": "835",
-  "name": "Uffculme",
   "slug": "uffculme",
-  "address": "School House, 8 Ashley Road, Cullompton, EX15 3AY",
-  "postcode": "EX15 3AY",
-  "town": "Cullompton",
-  "phone": "01884 840522",
-  "email": "uffculme.library@librariesunlimited.org.uk",
-  "website": "https://www.devonlibraries.org.uk/web/arena/uffculmelibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "15:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/6d8aca191c7e4b86ab8528f7642687a9/",
-  "permanentlyClosed": false,
-  "latitude": 50.90887,
-  "longitude": -3.32546,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "devon",
+  "source_id": "835",
+  "source_url": "https://libraryon.org/libraries/devon/uffculme",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/uffculme",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "Uffculme",
+    "Library code": null,
+    "Address 1": "School House, 8 Ashley Road, Cullompton, EX15 3AY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EX15 3AY",
+    "Unique property reference number": null,
+    "Latitude": 50.90887,
+    "Longitude": -3.32546,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 1919,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "15:30-17:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "15:00-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Books delivered; BFI Replay",
+    "Phone number": "01884 840522",
+    "Email address": "uffculme.library@librariesunlimited.org.uk",
+    "URL": "https://www.devonlibraries.org.uk/web/arena/uffculmelibrary",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_f49e1844c269e662ca55baaa"
+      ]
+    }
+  ]
 }

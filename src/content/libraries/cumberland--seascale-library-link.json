@@ -1,102 +1,77 @@
 {
   "id": "lib_7d5c8dcd-384f-41bc-a52a-6080f0eb3502",
-  "source_id": "3491",
-  "name": "Seascale Library Link",
   "slug": "seascale-library-link",
-  "address": "Gosforth Road, Seascale, Cumbria, CA20 1PN",
-  "postcode": "CA20 1PW",
-  "town": "Seascale",
-  "phone": "019467 28487",
-  "email": "https://cumberland.gov.uk/contact-a-library",
-  "website": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/seascale-library-link",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.39679,
-  "longitude": -3.47954,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "cumberland",
+  "source_id": "3491",
+  "source_url": "https://libraryon.org/libraries/cumberland/seascale-library-link",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cumberland/seascale-library-link",
-  "authority": "cumberland"
+  "data": {
+    "Local authority": "Cumberland",
+    "Local authority code": "E06000063",
+    "Library name": "Seascale Library Link",
+    "Library code": null,
+    "Address 1": "Gosforth Road, Seascale, Cumbria, CA20 1PN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CA20 1PW",
+    "Unique property reference number": null,
+    "Latitude": 54.39679,
+    "Longitude": -3.47954,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:30-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Family history",
+    "Phone number": "019467 28487",
+    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/seascale-library-link",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://cumberland.gov.uk/contact-a-library",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

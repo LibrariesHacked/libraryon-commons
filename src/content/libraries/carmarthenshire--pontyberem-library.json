@@ -1,86 +1,77 @@
 {
   "id": "lib_bc2a7636-3890-4cd7-92d5-af3d5f87d508",
-  "source_id": "652",
-  "name": "Pontyberem Library",
   "slug": "pontyberem-library",
-  "address": "Memorial Hall, Coalbrook Road, Pontyberem, SA15 5HUMemorial Hall, Coalbrook Road, Pontyberem, SA15 5HU",
-  "postcode": "SA15 5HU",
-  "town": "Llanelli",
-  "phone": "",
-  "email": "libraries@carmarthenshire.gov.uk",
-  "website": "01269 870891",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.778377,
-  "longitude": -4.168855,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "carmarthenshire",
+  "source_id": "652",
+  "source_url": "https://libraryon.org/libraries/carmarthenshire/pontyberem-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/carmarthenshire/pontyberem-library",
-  "authority": "carmarthenshire"
+  "data": {
+    "Local authority": "Carmarthenshire",
+    "Local authority code": "W06000010",
+    "Library name": "Pontyberem Library",
+    "Library code": null,
+    "Address 1": "Memorial Hall, Coalbrook Road, Pontyberem, SA15 5HUMemorial Hall, Coalbrook Road, Pontyberem, SA15 5HU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SA15 5HU",
+    "Unique property reference number": null,
+    "Latitude": 51.778377,
+    "Longitude": -4.168855,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "15:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-13:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
+    "Phone number": null,
+    "Email address": "libraries@carmarthenshire.gov.uk",
+    "URL": "01269 870891",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "URL",
+      "code": "uri",
+      "value": "01269 870891",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

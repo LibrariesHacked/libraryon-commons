@@ -1,146 +1,64 @@
 {
   "id": "lib_7734569c-2deb-47f3-aa7b-9d93a1891a22",
-  "source_id": "2878",
-  "name": "Colindale",
   "slug": "colindale",
-  "address": "Colindale Library c/o Barnet & Southgate College,  7 Bristol Avenue, Colindale, Greater London, NW9 5XL",
-  "postcode": "NW9 4BR",
-  "town": "London",
-  "phone": "020 8359 3930",
-  "email": "colindale.library@barnet.gov.uk",
-  "website": "https://www.barnet.gov.uk/libraries/find-your-local-library/colindale-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "Replacement for Grahame Park",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "uni_he",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.59752,
-  "longitude": -0.24575,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "barnet",
+  "source_id": "2878",
+  "source_url": "https://libraryon.org/libraries/barnet/colindale",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/barnet/colindale",
-  "authority": "barnet"
+  "data": {
+    "Local authority": "Barnet",
+    "Local authority code": "E09000003",
+    "Library name": "Colindale",
+    "Library code": null,
+    "Address 1": "Colindale Library c/o Barnet & Southgate College,  7 Bristol Avenue, Colindale, Greater London, NW9 5XL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NW9 4BR",
+    "Unique property reference number": 10093995729,
+    "Latitude": 51.59752,
+    "Longitude": -0.24575,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2016,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-20:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": "09:00-12:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-20:00",
+    "Tuesday unstaffed hours": "09:00-14:00",
+    "Wednesday unstaffed hours": "08:00-14:00,17:00-20:00",
+    "Thursday unstaffed hours": "08:00-09:00,12:30-20:00",
+    "Friday unstaffed hours": "08:00-20:00",
+    "Saturday unstaffed hours": "08:00-09:00",
+    "Sunday unstaffed hours": "10:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "uni_he; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers",
+    "Phone number": "020 8359 3930",
+    "Email address": "colindale.library@barnet.gov.uk",
+    "URL": "https://www.barnet.gov.uk/libraries/find-your-local-library/colindale-library",
+    "Notes": "Replacement for Grahame Park"
+  },
+  "validation_exceptions": []
 }

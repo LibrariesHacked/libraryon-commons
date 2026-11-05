@@ -1,97 +1,77 @@
 {
   "id": "lib_dbf49dcd-8b23-436e-a99d-6c3f2bcb5094",
-  "source_id": "1742",
-  "name": "Stockport Central",
   "slug": "stockport-central",
-  "address": "Wellington Road South, Stockport, Greater Manchester, SK1 3RS",
-  "postcode": "SK1 1DL",
-  "town": "Stockport",
-  "phone": "",
-  "email": "lending.library@stockport.gov.uk",
-  "website": "https://www.stockport.gov.uk/directories/entry/libraries/central-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "Central Library in Stockport town centre is temporarily closed for a short period while we carry out essential maintenance and improvement works.",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "step-free-access",
-    "accessible-parking",
-    "lift-access",
-    "guide-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.40847,
-  "longitude": -2.16095,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://bipcgm.org/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "stockport",
+  "source_id": "1742",
+  "source_url": "https://libraryon.org/libraries/stockport/stockport-central",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stockport/stockport-central",
-  "authority": "stockport"
+  "data": {
+    "Local authority": "Stockport",
+    "Local authority code": "E08000007",
+    "Library name": "Stockport Central",
+    "Library code": null,
+    "Address 1": "Wellington Road South, Stockport, Greater Manchester, SK1 3RS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SK1 1DL",
+    "Unique property reference number": null,
+    "Latitude": 53.40847,
+    "Longitude": -2.16095,
+    "Status": "Closed (temporary)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Central Library in Stockport town centre is temporarily closed for a short period while we carry out essential maintenance and improvement works.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Business support; Computers; Photocopiers; Scanning; Digital lending; Family history",
+    "Phone number": null,
+    "Email address": "lending.library@stockport.gov.uk",
+    "URL": "https://www.stockport.gov.uk/directories/entry/libraries/central-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

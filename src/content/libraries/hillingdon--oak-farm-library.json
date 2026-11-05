@@ -1,139 +1,71 @@
 {
   "id": "lib_bafd72b2-ef3e-4541-8b75-9fdd74234028",
-  "source_id": "2387",
-  "name": "Oak Farm Library",
   "slug": "oak-farm-library",
-  "address": "Sutton Court Road, Hillingdon, Middlesex, UB10 9PB",
-  "postcode": "UB10 9HL",
-  "town": "Uxbridge",
-  "phone": "01895 556242",
-  "email": "oakfarm-library@hillingdon.gov.uk",
-  "website": "https://www.hillingdon.gov.uk/oakfarmlibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system"
-  ],
-  "notes": "Will be refurbished 2020/21",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/hillingdon_oak_farm_library/",
-  "permanentlyClosed": false,
-  "latitude": 51.54128,
-  "longitude": -0.45027,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://spacehire.hillingdon.gov.uk/venues"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hillingdon",
+  "source_id": "2387",
+  "source_url": "https://libraryon.org/libraries/hillingdon/oak-farm-library",
   "updated_on": "2026-06-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hillingdon/oak-farm-library",
-  "authority": "hillingdon"
+  "data": {
+    "Local authority": "Hillingdon",
+    "Local authority code": "E09000017",
+    "Library name": "Oak Farm Library",
+    "Library code": null,
+    "Address 1": "Sutton Court Road, Hillingdon, Middlesex, UB10 9PB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "UB10 9HL",
+    "Unique property reference number": null,
+    "Latitude": 51.54128,
+    "Longitude": -0.45027,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Digital lending; Bookable space; BFI Replay; Books delivered",
+    "Phone number": "01895 556242",
+    "Email address": "oakfarm-library@hillingdon.gov.uk",
+    "URL": "https://www.hillingdon.gov.uk/oakfarmlibrary",
+    "Notes": "Will be refurbished 2020/21"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

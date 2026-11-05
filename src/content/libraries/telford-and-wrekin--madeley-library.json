@@ -1,128 +1,71 @@
 {
   "id": "lib_2061f3c1-62b3-4dca-9e27-4e62e5ecfbb9",
-  "source_id": "3077",
-  "name": "Madeley Community Library",
   "slug": "madeley-library",
-  "address": "The Anstice, Park Avenue, Madeley, Telford, Shropshire, TF7 5BB",
-  "postcode": "TF7 5BD",
-  "town": "Telford",
-  "phone": "01952 382950",
-  "email": "library@madeleytowncouncil.gov.uk",
-  "website": "https://www.telford.gov.uk/info/20406/find_a_library/3433/madeley_community_library/3",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "catering",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.63651,
-  "longitude": -2.45032,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.telford.gov.uk/info/20413/library_services_-_information_help_and_support/605/advice_on_using_library_computers_equipment_and_the_internet"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.telford.gov.uk/info/1012/libraries/667/ebooks_eaudio_and_emagazine_catalogue"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.telford.gov.uk/info/20473/local_history_archives_and_ancestry"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.telford.gov.uk/info/20412/children_and_young_people"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.telford.gov.uk/info/20406/find_a_library/3443/home_library_service"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "telford-and-wrekin",
+  "source_id": "3077",
+  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/madeley-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/madeley-library",
-  "authority": "telford-and-wrekin"
+  "data": {
+    "Local authority": "Telford and Wrekin",
+    "Local authority code": "E06000020",
+    "Library name": "Madeley Community Library",
+    "Library code": null,
+    "Address 1": "The Anstice, Park Avenue, Madeley, Telford, Shropshire, TF7 5BB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TF7 5BD",
+    "Unique property reference number": null,
+    "Latitude": 52.63651,
+    "Longitude": -2.45032,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-16:00",
+    "Friday staffed hours": "09:00-16:00",
+    "Saturday staffed hours": "09:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": "09:30-16:00",
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital lending; Family history; Children's activities; Books delivered; BFI Replay",
+    "Phone number": "01952 382950",
+    "Email address": "library@madeleytowncouncil.gov.uk",
+    "URL": "https://www.telford.gov.uk/info/20406/find_a_library/3433/madeley_community_library/3",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

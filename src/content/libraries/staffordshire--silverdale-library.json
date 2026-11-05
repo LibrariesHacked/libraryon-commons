@@ -1,128 +1,71 @@
 {
   "id": "lib_2bb2c147-6b6d-43c8-9d8f-6c9d1ad3d213",
-  "source_id": "1206",
-  "name": "Silverdale Library",
   "slug": "silverdale-library",
-  "address": "High Street, Silverdale, Newcastle-under-Lyme, Staffordshire, ST5 6LY",
-  "postcode": "ST5 6LY",
-  "town": "Newcastle",
-  "phone": " 01782 485277",
-  "email": "silverdale.library@staffordshire.gov.uk",
-  "website": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/SilverdaleLibrary/SilverdaleLibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.01538,
-  "longitude": -2.2691,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "staffordshire",
+  "source_id": "1206",
+  "source_url": "https://libraryon.org/libraries/staffordshire/silverdale-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/staffordshire/silverdale-library",
-  "authority": "staffordshire"
+  "data": {
+    "Local authority": "Staffordshire",
+    "Local authority code": "E10000028",
+    "Library name": "Silverdale Library",
+    "Library code": null,
+    "Address 1": "High Street, Silverdale, Newcastle-under-Lyme, Staffordshire, ST5 6LY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ST5 6LY",
+    "Unique property reference number": null,
+    "Latitude": 53.01538,
+    "Longitude": -2.2691,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-16:00",
+    "Tuesday staffed hours": "09:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-13:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Family history; Digital lending; Digital skills sessions; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups",
+    "Phone number": "01782 485277",
+    "Email address": "silverdale.library@staffordshire.gov.uk",
+    "URL": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/SilverdaleLibrary/SilverdaleLibrary.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

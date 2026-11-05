@@ -1,99 +1,71 @@
 {
   "id": "lib_c39ae8b6-1e34-4231-a841-9e26247802cf",
-  "source_id": "378",
-  "name": "Plean Library",
   "slug": "plean-library",
-  "address": "Main Street Plean FK7 8BT",
-  "postcode": "FK7 8BS",
-  "town": "Stirling",
-  "phone": "01786816319",
-  "email": "pleanlibrary@stirling.gov.uk",
-  "website": "https://www.stirling.gov.uk/community-life-and-leisure/libraries-and-archives/libraries/libraries-in-stirling/list-of-libraries/plean-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.06571,
-  "longitude": -3.8762,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "stirling",
+  "source_id": "378",
+  "source_url": "https://libraryon.org/libraries/stirling/plean-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stirling/plean-library",
-  "authority": "stirling"
+  "data": {
+    "Local authority": "Stirling",
+    "Local authority code": "S12000030",
+    "Library name": "Plean Library",
+    "Library code": null,
+    "Address 1": "Main Street Plean FK7 8BT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "FK7 8BS",
+    "Unique property reference number": null,
+    "Latitude": 56.06571,
+    "Longitude": -3.8762,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "12:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "01786816319",
+    "Email address": "pleanlibrary@stirling.gov.uk",
+    "URL": "https://www.stirling.gov.uk/community-life-and-leisure/libraries-and-archives/libraries/libraries-in-stirling/list-of-libraries/plean-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

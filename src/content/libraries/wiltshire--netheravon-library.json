@@ -1,110 +1,71 @@
 {
   "id": "lib_d73203ea-6f5e-4bf8-8748-f1acf9406192",
-  "source_id": "3143",
-  "name": "Netheravon Library",
   "slug": "netheravon-library",
-  "address": "High Street, Netheravon,  Salisbury, Wiltshire, SP4 9PJ",
-  "postcode": "SP4 9QJ",
-  "town": "Salisbury",
-  "phone": "01980 670018",
-  "email": "libraryenquiries@wiltshire.gov.uk",
-  "website": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/22?isListPage=True",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.23817,
-  "longitude": -1.79056,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "wiltshire",
+  "source_id": "3143",
+  "source_url": "https://libraryon.org/libraries/wiltshire/netheravon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wiltshire/netheravon-library",
-  "authority": "wiltshire"
+  "data": {
+    "Local authority": "Wiltshire",
+    "Local authority code": "E06000054",
+    "Library name": "Netheravon Library",
+    "Library code": null,
+    "Address 1": "High Street, Netheravon,  Salisbury, Wiltshire, SP4 9PJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SP4 9QJ",
+    "Unique property reference number": null,
+    "Latitude": 51.23817,
+    "Longitude": -1.79056,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Scanning; Digital lending; British Newspaper Archive; Books delivered; Family history",
+    "Phone number": "01980 670018",
+    "Email address": "libraryenquiries@wiltshire.gov.uk",
+    "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/22?isListPage=True",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

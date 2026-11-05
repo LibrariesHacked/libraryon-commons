@@ -1,112 +1,71 @@
 {
   "id": "lib_e1e09680-780d-499c-b409-3134009a559d",
-  "source_id": "2086",
-  "name": "Thames Community Hub",
   "slug": "thames-community-hub",
-  "address": "Thames Community Hub, Bastable Avenue, Barking, Essex, IG11 0LG",
-  "postcode": "IG11 0NX",
-  "town": "Barking",
-  "phone": "020 8270 6619",
-  "email": "libraries@lbbd.gov.uk",
-  "website": "https://www.lbbd.gov.uk/libraries-and-local-history/our-libraries/library-opening-times-and-information/dagenham-learning",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Library is co-sited with Children's Centre",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.52853,
-  "longitude": 0.10355,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "barking-and-dagenham",
+  "source_id": "2086",
+  "source_url": "https://libraryon.org/libraries/barking-and-dagenham/thames-community-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/barking-and-dagenham/thames-community-hub",
-  "authority": "barking-and-dagenham"
+  "data": {
+    "Local authority": "Barking and Dagenham",
+    "Local authority code": "E09000002",
+    "Library name": "Thames Community Hub",
+    "Library code": null,
+    "Address 1": "Thames Community Hub, Bastable Avenue, Barking, Essex, IG11 0LG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IG11 0NX",
+    "Unique property reference number": null,
+    "Latitude": 51.52853,
+    "Longitude": 0.10355,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "020 8270 6619",
+    "Email address": "libraries@lbbd.gov.uk",
+    "URL": "https://www.lbbd.gov.uk/libraries-and-local-history/our-libraries/library-opening-times-and-information/dagenham-learning",
+    "Notes": "Library is co-sited with Children's Centre"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

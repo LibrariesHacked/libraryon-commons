@@ -1,141 +1,64 @@
 {
   "id": "lib_0219f07e-0314-45e9-b9e8-b7ac99e58d1f",
-  "source_id": "898",
-  "name": "Fairford",
   "slug": "fairford",
-  "address": "London Road, Fairford, Gloucestershire, GL7 4AQ",
-  "postcode": "GL7 4AQ",
-  "town": "Fairford",
-  "phone": "01285 712599",
-  "email": "fairfordlibrary@gloucestershire.gov.uk",
-  "website": "https://gloslibraries.uk/library/fairford-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.70712,
-  "longitude": -1.77979,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "gloucestershire",
+  "source_id": "898",
+  "source_url": "https://libraryon.org/libraries/gloucestershire/fairford",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/gloucestershire/fairford",
-  "authority": "gloucestershire"
+  "data": {
+    "Local authority": "Gloucestershire",
+    "Local authority code": "E10000013",
+    "Library name": "Fairford",
+    "Library code": null,
+    "Address 1": "London Road, Fairford, Gloucestershire, GL7 4AQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GL7 4AQ",
+    "Unique property reference number": 100121369781,
+    "Latitude": 51.70712,
+    "Longitude": -1.77979,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Computers; Photocopiers; Scanning; Books delivered; Digital lending; Digital skills sessions; Hobby and interest groups; Family history; Children's activities",
+    "Phone number": "01285 712599",
+    "Email address": "fairfordlibrary@gloucestershire.gov.uk",
+    "URL": "https://gloslibraries.uk/library/fairford-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

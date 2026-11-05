@@ -1,132 +1,73 @@
 {
   "id": "lib_fb8f688f-38fc-43d2-b623-0895cf500982",
-  "source_id": "2668",
-  "name": "South Cave Library",
   "slug": "south-cave-library",
-  "address": "97 Church Street, South Cave, East Riding of Yorkshire, HU15 2EP",
-  "postcode": "HU15 2EP",
-  "town": "Brough",
-  "phone": "01430 422901",
-  "email": "southcave.library@eastriding.gov.uk",
-  "website": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=south_cave_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "accessible-restrooms",
-    "accessible-parking",
-    "service-dog-friendly",
-    "adjustable-seating",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.76767,
-  "longitude": -0.60448,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "east-riding-of-yorkshire",
+  "source_id": "2668",
+  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/south-cave-library",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/south-cave-library",
-  "authority": "east-riding-of-yorkshire"
+  "data": {
+    "Local authority": "East Riding of Yorkshire",
+    "Local authority code": "E06000011",
+    "Library name": "South Cave Library",
+    "Library code": null,
+    "Address 1": "97 Church Street, South Cave, East Riding of Yorkshire, HU15 2EP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HU15 2EP",
+    "Unique property reference number": null,
+    "Latitude": 53.76767,
+    "Longitude": -0.60448,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Books delivered; Digital lending; Family history; Digital skills sessions; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "01430 422901",
+    "Email address": "southcave.library@eastriding.gov.uk",
+    "URL": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=south_cave_library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_bd7d6a0f86501c59ea2f598c"
+      ]
+    }
+  ]
 }

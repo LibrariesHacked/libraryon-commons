@@ -1,139 +1,71 @@
 {
   "id": "lib_a41a1c77-7ab2-49d7-874a-f15d1e60711b",
-  "source_id": "2243",
-  "name": "Wembley",
   "slug": "wembley",
-  "address": "Brent Civic Centre, Engineers Way, Wembley, Middlesex, HA9 0FJ",
-  "postcode": "HA9 0FA",
-  "town": "Wembley",
-  "phone": "020 8937 3400",
-  "email": "libraries@brent.gov.uk",
-  "website": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/wembley-library-and-hub",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "lift-access",
-    "baby-changing-facilities",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.558788,
-  "longitude": -0.281708,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "brent",
+  "source_id": "2243",
+  "source_url": "https://libraryon.org/libraries/brent/wembley",
   "updated_on": "2026-04-29",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brent/wembley",
-  "authority": "brent"
+  "data": {
+    "Local authority": "Brent",
+    "Local authority code": "E09000005",
+    "Library name": "Wembley",
+    "Library code": null,
+    "Address 1": "Brent Civic Centre, Engineers Way, Wembley, Middlesex, HA9 0FJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HA9 0FA",
+    "Unique property reference number": null,
+    "Latitude": 51.558788,
+    "Longitude": -0.281708,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:30-20:00",
+    "Tuesday staffed hours": "10:30-20:00",
+    "Wednesday staffed hours": "10:30-20:00",
+    "Thursday staffed hours": "10:30-20:00",
+    "Friday staffed hours": "10:30-20:00",
+    "Saturday staffed hours": "10:30-17:00",
+    "Sunday staffed hours": "12:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "020 8937 3400",
+    "Email address": "libraries@brent.gov.uk",
+    "URL": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/wembley-library-and-hub",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,116 +1,71 @@
 {
   "id": "lib_c9a93e71-d797-47f7-b437-4addc3784d38",
-  "source_id": "1425",
-  "name": "West Kingsdown Library",
   "slug": "west-kingsdown-library",
-  "address": "London Road, West Kingsdown, Kent, TN15 6EL",
-  "postcode": "ME20 6BZ",
-  "town": "Sevenoaks",
-  "phone": "03000 41 31 31",
-  "email": "westkingsdownlibrary@kent.gov.uk",
-  "website": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=89pCQe0LUF4&communitychannel=9",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.344656,
-  "longitude": 0.258913,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "kent",
+  "source_id": "1425",
+  "source_url": "https://libraryon.org/libraries/kent/west-kingsdown-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kent/west-kingsdown-library",
-  "authority": "kent"
+  "data": {
+    "Local authority": "Kent",
+    "Local authority code": "E10000016",
+    "Library name": "West Kingsdown Library",
+    "Library code": null,
+    "Address 1": "London Road, West Kingsdown, Kent, TN15 6EL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ME20 6BZ",
+    "Unique property reference number": null,
+    "Latitude": 51.344656,
+    "Longitude": 0.258913,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-14:00",
+    "Tuesday staffed hours": "09:00-12:00,13:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": "10:00-15:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": "03000 41 31 31",
+    "Email address": "westkingsdownlibrary@kent.gov.uk",
+    "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=89pCQe0LUF4&communitychannel=9",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

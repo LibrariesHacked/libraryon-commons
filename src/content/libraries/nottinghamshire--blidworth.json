@@ -1,100 +1,73 @@
 {
   "id": "lib_2be52a43-7636-4a09-a8eb-ea153d0ee251",
-  "source_id": "1089",
-  "name": "Blidworth",
   "slug": "blidworth",
-  "address": "New Lane, Blidworth, Nottinghamshire, NG21 0PW",
-  "postcode": "NG21 0PW",
-  "town": "Mansfield",
-  "phone": "",
-  "email": "ask@inspireculture.org.uk",
-  "website": "https://www.inspireculture.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.099407,
-  "longitude": -1.120257,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "nottinghamshire",
+  "source_id": "1089",
+  "source_url": "https://libraryon.org/libraries/nottinghamshire/blidworth",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/nottinghamshire/blidworth",
-  "authority": "nottinghamshire"
+  "data": {
+    "Local authority": "Nottinghamshire",
+    "Local authority code": "E10000024",
+    "Library name": "Blidworth",
+    "Library code": null,
+    "Address 1": "New Lane, Blidworth, Nottinghamshire, NG21 0PW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NG21 0PW",
+    "Unique property reference number": null,
+    "Latitude": 53.099407,
+    "Longitude": -1.120257,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-12:30",
+    "Saturday staffed hours": "09:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "ask@inspireculture.org.uk",
+    "URL": "https://www.inspireculture.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_2a5056e0a42d81ecad9d54a1"
+      ]
+    }
+  ]
 }

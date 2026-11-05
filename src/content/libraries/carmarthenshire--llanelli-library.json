@@ -1,109 +1,71 @@
 {
   "id": "lib_7a51da0d-b288-4b0c-b359-dd05b37c3931",
-  "source_id": "617",
-  "name": "Llanelli Library",
   "slug": "llanelli-library",
-  "address": "Vaughan Street, Llanelli, SA15 3AS",
-  "postcode": "SA15 3TY",
-  "town": "Llanelli",
-  "phone": "01554 744327 ",
-  "email": "libraries@carmarthenshire.gov.uk",
-  "website": "http://www.carmarthenshire.gov.wales/home/residents/libraries-archives/find-a-library/llanelli-library/",
-  "catalogue": "",
-  "joinOnline": "https://carmarthenshire.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.682879,
-  "longitude": -4.161304,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "carmarthenshire",
+  "source_id": "617",
+  "source_url": "https://libraryon.org/libraries/carmarthenshire/llanelli-library",
   "updated_on": "2026-06-16",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/carmarthenshire/llanelli-library",
-  "authority": "carmarthenshire"
+  "data": {
+    "Local authority": "Carmarthenshire",
+    "Local authority code": "W06000010",
+    "Library name": "Llanelli Library",
+    "Library code": null,
+    "Address 1": "Vaughan Street, Llanelli, SA15 3AS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SA15 3TY",
+    "Unique property reference number": null,
+    "Latitude": 51.682879,
+    "Longitude": -4.161304,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-19:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
+    "Phone number": "01554 744327",
+    "Email address": "libraries@carmarthenshire.gov.uk",
+    "URL": "http://www.carmarthenshire.gov.wales/home/residents/libraries-archives/find-a-library/llanelli-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

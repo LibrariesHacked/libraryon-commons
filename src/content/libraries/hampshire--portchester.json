@@ -1,134 +1,64 @@
 {
   "id": "lib_52959fd3-4bb8-45e0-8410-57067ca570ab",
-  "source_id": "745",
-  "name": "Portchester",
   "slug": "portchester",
-  "address": "West Street, Portchester, Hampshire, PO16 9TX",
-  "postcode": "PO16 9TX",
-  "town": "Fareham",
-  "phone": "",
-  "email": "County.Library.HQ@hants.gov.uk",
-  "website": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/portchester-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "wheelchair-access",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.846441,
-  "longitude": -1.126145,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "745",
+  "source_url": "https://libraryon.org/libraries/hampshire/portchester",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/portchester",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Portchester",
+    "Library code": null,
+    "Address 1": "West Street, Portchester, Hampshire, PO16 9TX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO16 9TX",
+    "Unique property reference number": 100062408583,
+    "Latitude": 50.846441,
+    "Longitude": -1.126145,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Bookable space; Children's activities; Hobby and interest groups; BFI Replay; Digital lending; Scanning; Family history; Books delivered",
+    "Phone number": null,
+    "Email address": "County.Library.HQ@hants.gov.uk",
+    "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/portchester-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,113 +1,71 @@
 {
   "id": "lib_37ac1949-6a6a-4f95-adbe-ce5806748ae6",
-  "source_id": "3841",
-  "name": "Paddington Children's Library",
   "slug": "paddington-childrens-library",
-  "address": "Westbourne Park Baptist Church, Westbourne Park Villas, W2 5EA",
-  "postcode": "W2 5EA",
-  "town": "London",
-  "phone": "0207 6416200",
-  "email": "paddingtonlibrary@westminster.gov.uk",
-  "website": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/paddington-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:30"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.51845166424397,
-  "longitude": -0.18957180955902686,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "westminster",
+  "source_id": "3841",
+  "source_url": "https://libraryon.org/libraries/westminster/paddington-childrens-library",
   "updated_on": "2026-09-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/westminster/paddington-childrens-library",
-  "authority": "westminster"
+  "data": {
+    "Local authority": "Westminster",
+    "Local authority code": "E09000033",
+    "Library name": "Paddington Children's Library",
+    "Library code": null,
+    "Address 1": "Westbourne Park Baptist Church, Westbourne Park Villas, W2 5EA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "W2 5EA",
+    "Unique property reference number": null,
+    "Latitude": 51.51845166424397,
+    "Longitude": -0.18957180955902686,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:30-17:30",
+    "Tuesday staffed hours": "10:30-17:30",
+    "Wednesday staffed hours": "10:30-17:30",
+    "Thursday staffed hours": "10:30-17:30",
+    "Friday staffed hours": "10:30-17:30",
+    "Saturday staffed hours": "10:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Children's activities; Computers; Digital lending; Free Wi-Fi; Hobby and interest groups",
+    "Phone number": "0207 6416200",
+    "Email address": "paddingtonlibrary@westminster.gov.uk",
+    "URL": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/paddington-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

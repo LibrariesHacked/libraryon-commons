@@ -1,136 +1,64 @@
 {
   "id": "lib_77bcd76e-4077-498f-922f-94cbfa3dff66",
-  "source_id": "2283",
-  "name": "Mottingham Library",
   "slug": "mottingham-library",
-  "address": "31 Mottingham Road, Bromley, Greater London, SE9 4QZ",
-  "postcode": "SE9 4QZ",
-  "town": "London",
-  "phone": "020 8857 5406",
-  "email": "Mottingham.Library@GLL.ORG",
-  "website": "https://www.better.org.uk/library/london/bromley/mottingham-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "staff-support"
-  ],
-  "notes": "Closed for 1 hour each open day for lunch",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.43746,
-  "longitude": 0.04361,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "bromley",
+  "source_id": "2283",
+  "source_url": "https://libraryon.org/libraries/bromley/mottingham-library",
   "updated_on": "2026-07-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bromley/mottingham-library",
-  "authority": "bromley"
+  "data": {
+    "Local authority": "Bromley",
+    "Local authority code": "E09000006",
+    "Library name": "Mottingham Library",
+    "Library code": null,
+    "Address 1": "31 Mottingham Road, Bromley, Greater London, SE9 4QZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE9 4QZ",
+    "Unique property reference number": 100023283985,
+    "Latitude": 51.43746,
+    "Longitude": 0.04361,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-13:00,14:00-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-13:00,14:00-17:30",
+    "Saturday staffed hours": "09:30-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Books delivered; Children's activities; British Newspaper Archive; Family history; Findmypast",
+    "Phone number": "020 8857 5406",
+    "Email address": "Mottingham.Library@GLL.ORG",
+    "URL": "https://www.better.org.uk/library/london/bromley/mottingham-library",
+    "Notes": "Closed for 1 hour each open day for lunch"
+  },
+  "validation_exceptions": []
 }

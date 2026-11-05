@@ -1,149 +1,71 @@
 {
   "id": "lib_3237a5fc-c0e0-473a-b32a-88d888625dbd",
-  "source_id": "514",
-  "name": "Stroud",
   "slug": "stroud",
-  "address": "Five Valleys Shopping Centre Kings Street, Stroud, Gloucestershire, GL5 1RR",
-  "postcode": "GL5 1BB",
-  "town": "Stroud",
-  "phone": "01452 425555",
-  "email": "stroudlibrary@gloucestershire.gov.uk",
-  "website": "https://www.gloucestershire.gov.uk/libraries/find-a-library/stroud-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.74673,
-  "longitude": -2.21623,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "gloucestershire",
+  "source_id": "514",
+  "source_url": "https://libraryon.org/libraries/gloucestershire/stroud",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/gloucestershire/stroud",
-  "authority": "gloucestershire"
+  "data": {
+    "Local authority": "Gloucestershire",
+    "Local authority code": "E10000013",
+    "Library name": "Stroud",
+    "Library code": null,
+    "Address 1": "Five Valleys Shopping Centre Kings Street, Stroud, Gloucestershire, GL5 1RR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GL5 1BB",
+    "Unique property reference number": null,
+    "Latitude": 51.74673,
+    "Longitude": -2.21623,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-18:30",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Computers; Photocopiers; Scanning; Digital lending; Digital skills sessions; Hobby and interest groups; Family history; Children's activities; Findmypast; British Newspaper Archive",
+    "Phone number": "01452 425555",
+    "Email address": "stroudlibrary@gloucestershire.gov.uk",
+    "URL": "https://www.gloucestershire.gov.uk/libraries/find-a-library/stroud-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

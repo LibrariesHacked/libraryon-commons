@@ -1,142 +1,71 @@
 {
   "id": "lib_8ae9b93b-8d56-4231-8564-cae6e6505506",
-  "source_id": "650",
-  "name": "Havant",
   "slug": "havant",
-  "address": "Havant Meridian Centre, Havant, Hampshire, PO9 1UN",
-  "postcode": "PO9 1UW",
-  "town": "Havant",
-  "phone": "",
-  "email": "County.Library.HQ@hants.gov.uk",
-  "website": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/havant-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "assistive-technology-available",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "retail"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.85251,
-  "longitude": -0.98243,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "650",
+  "source_url": "https://libraryon.org/libraries/hampshire/havant",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/havant",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Havant",
+    "Library code": null,
+    "Address 1": "Havant Meridian Centre, Havant, Hampshire, PO9 1UN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO9 1UW",
+    "Unique property reference number": null,
+    "Latitude": 50.85251,
+    "Longitude": -0.98243,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-13:30",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "retail",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Bookable space; Children's activities; Hobby and interest groups; BFI Replay; Digital lending; Scanning; Family history; Books delivered",
+    "Phone number": null,
+    "Email address": "County.Library.HQ@hants.gov.uk",
+    "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/havant-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

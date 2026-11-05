@@ -1,129 +1,73 @@
 {
   "id": "lib_ad8b3946-9d6d-4e9a-93f0-972d7a049160",
-  "source_id": "1071",
-  "name": "Deal Library",
   "slug": "deal-library",
-  "address": "Broad Street, Deal, Kent, CT14 6ER",
-  "postcode": "CT14 6ER",
-  "town": "Deal",
-  "phone": "03000 41 31 31",
-  "email": "deallibrary@kent.gov.uk",
-  "website": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=5GDeJlwVtCg&communitychannel=9",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "step-free-access",
-    "accessible-parking",
-    "hearing-loop-system",
-    "guide-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/deallibrarykent/",
-  "permanentlyClosed": false,
-  "latitude": 51.22304,
-  "longitude": 1.40354,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "kent",
+  "source_id": "1071",
+  "source_url": "https://libraryon.org/libraries/kent/deal-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kent/deal-library",
-  "authority": "kent"
+  "data": {
+    "Local authority": "Kent",
+    "Local authority code": "E10000016",
+    "Library name": "Deal Library",
+    "Library code": null,
+    "Address 1": "Broad Street, Deal, Kent, CT14 6ER",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CT14 6ER",
+    "Unique property reference number": null,
+    "Latitude": 51.22304,
+    "Longitude": 1.40354,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:30",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": "09:30-13:30",
+    "Thursday staffed hours": "09:30-17:30",
+    "Friday staffed hours": "09:30-17:30",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": "10:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "03000 41 31 31",
+    "Email address": "deallibrary@kent.gov.uk",
+    "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=5GDeJlwVtCg&communitychannel=9",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_bcb2164b6d0d0ed73fea9917"
+      ]
+    }
+  ]
 }

@@ -1,123 +1,74 @@
 {
   "id": "lib_9a5f74d4-afaf-44e9-9320-b736d3f81b52",
-  "source_id": "3348",
-  "name": "Callington Library & Information Service",
   "slug": "callington-library-information-service",
-  "address": "Coronation Road, Callington, Cornwall, PL17 7DR",
-  "postcode": "PL17 7BX",
-  "town": "Callington",
-  "phone": "0300 1234 111",
-  "email": "libraries@cornwall.gov.uk",
-  "website": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/callington-library/",
-  "catalogue": "https://prism.librarymanagementcloud.co.uk/cornwall/",
-  "joinOnline": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/join-the-library/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.50554,
-  "longitude": -4.31156,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.cornwall.gov.uk/people-and-communities/digital-inclusion/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-free-library-resources/online-reference-library/genealogy-and-history-resources/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "cornwall",
+  "source_id": "3348",
+  "source_url": "https://libraryon.org/libraries/cornwall/callington-library-information-service",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cornwall/callington-library-information-service",
-  "authority": "cornwall"
+  "data": {
+    "Local authority": "Cornwall",
+    "Local authority code": "E06000052",
+    "Library name": "Callington Library & Information Service",
+    "Library code": null,
+    "Address 1": "Coronation Road, Callington, Cornwall, PL17 7DR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PL17 7BX",
+    "Unique property reference number": null,
+    "Latitude": 50.50554,
+    "Longitude": -4.31156,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": "09:00-13:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Digital lending; Digital skills sessions; Family history; British Newspaper Archive; Findmypast",
+    "Phone number": "0300 1234 111",
+    "Email address": "libraries@cornwall.gov.uk",
+    "URL": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/callington-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_2fb7f21acc93fe9684ae7ca4",
+        "migration/directory/report.json#review_0c6e01c15a2bafb37d0ffa0c"
+      ]
+    }
+  ]
 }

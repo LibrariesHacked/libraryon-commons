@@ -1,141 +1,71 @@
 {
   "id": "lib_e3d1f4b3-7d2a-4770-a231-525108df4985",
-  "source_id": "780",
-  "name": "Totton",
   "slug": "totton",
-  "address": "Library Road, Southampton, Hampshire, SO40 3RS",
-  "postcode": "SO40 3RS",
-  "town": "Southampton",
-  "phone": "",
-  "email": "County.Library.HQ@hants.gov.uk",
-  "website": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/totton-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "assistive-technology-available",
-    "hearing-loop-system",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.920198,
-  "longitude": -1.489114,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "780",
+  "source_url": "https://libraryon.org/libraries/hampshire/totton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/totton",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Totton",
+    "Library code": null,
+    "Address 1": "Library Road, Southampton, Hampshire, SO40 3RS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SO40 3RS",
+    "Unique property reference number": null,
+    "Latitude": 50.920198,
+    "Longitude": -1.489114,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-13:30",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Children's activities; Hobby and interest groups; Digital skills sessions; BFI Replay; Digital lending; Scanning; Family history; Books delivered",
+    "Phone number": null,
+    "Email address": "County.Library.HQ@hants.gov.uk",
+    "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/totton-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,158 +1,73 @@
 {
   "id": "lib_938745ec-d530-426b-9272-59c79408b977",
-  "source_id": "1477",
-  "name": "St Williams Way Library",
   "slug": "st-williams-way-library",
-  "address": "St William's Way, 11 Williams Loke, Norwich, Norfolk, NR7 0AJ",
-  "postcode": "NR7 0AJ",
-  "town": "Norwich",
-  "phone": "",
-  "email": "st.williams.way.lib@libraries.norfolk.gov.uk",
-  "website": "https://www.norfolk.gov.uk/libraries-local-history-and-archives/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.637207,
-  "longitude": 1.33672,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "norfolk",
+  "source_id": "1477",
+  "source_url": "https://libraryon.org/libraries/norfolk/st-williams-way-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/norfolk/st-williams-way-library",
-  "authority": "norfolk"
+  "data": {
+    "Local authority": "Norfolk",
+    "Local authority code": "E10000020",
+    "Library name": "St Williams Way Library",
+    "Library code": null,
+    "Address 1": "St William's Way, 11 Williams Loke, Norwich, Norfolk, NR7 0AJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NR7 0AJ",
+    "Unique property reference number": null,
+    "Latitude": 52.637207,
+    "Longitude": 1.33672,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "12:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-19:00",
+    "Saturday staffed hours": "12:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-19:00",
+    "Tuesday unstaffed hours": "08:00-12:00",
+    "Wednesday unstaffed hours": "08:00-19:00",
+    "Thursday unstaffed hours": "08:00-10:00",
+    "Friday unstaffed hours": "08:00-10:00",
+    "Saturday unstaffed hours": "08:00-12:00",
+    "Sunday unstaffed hours": "10:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Children's activities; Hobby and interest groups; Digital lending; Computers",
+    "Phone number": null,
+    "Email address": "st.williams.way.lib@libraries.norfolk.gov.uk",
+    "URL": "https://www.norfolk.gov.uk/libraries-local-history-and-archives/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_56733cbc26f28a6178dc97ef"
+      ]
+    }
+  ]
 }

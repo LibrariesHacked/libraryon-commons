@@ -1,74 +1,71 @@
 {
   "id": "lib_264628c4-31b9-4c73-bc6c-18b1ba03bbda",
-  "source_id": "3519",
-  "name": "Burton in Kendal Book Drop",
   "slug": "burton-in-kendal-book-drop",
-  "address": "Burton Memorial Hall, Main Street, Burton-in-Kendal, Cumbria, LA6 1NA",
-  "postcode": "LA6 1LJ",
-  "town": "Carnforth",
-  "phone": "",
-  "email": "kendal.library@cumbria.gov.uk",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "11:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.18101,
-  "longitude": -2.72122,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "westmorland-and-furness",
+  "source_id": "3519",
+  "source_url": "https://libraryon.org/libraries/westmorland-and-furness/burton-in-kendal-book-drop",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/westmorland-and-furness/burton-in-kendal-book-drop",
-  "authority": "westmorland-and-furness"
+  "data": {
+    "Local authority": "Westmorland and Furness",
+    "Local authority code": "E06000064",
+    "Library name": "Burton in Kendal Book Drop",
+    "Library code": null,
+    "Address 1": "Burton Memorial Hall, Main Street, Burton-in-Kendal, Cumbria, LA6 1NA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LA6 1LJ",
+    "Unique property reference number": null,
+    "Latitude": 54.18101,
+    "Longitude": -2.72122,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-11:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "kendal.library@cumbria.gov.uk",
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,106 +1,77 @@
 {
   "id": "lib_4230fc7e-0d58-4312-a592-2b65b02c111d",
-  "source_id": "900",
-  "name": "Dinas Powys Library",
   "slug": "dinas-powys-library",
-  "address": "Dinas Powys Community Library, Fairoaks, The Murch, Dinas Powys, CF64 4QU",
-  "postcode": "",
-  "town": "Dinas Powys",
-  "phone": "029 2051 2556",
-  "email": "info@dinaspowyslibrary.wales",
-  "website": "https://www.valeofglamorgan.gov.uk/en/enjoying/Libraries/Libraries.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.432407,
-  "longitude": -3.211581,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    }
-  ],
+  "authority": "vale-of-glamorgan",
+  "source_id": "900",
+  "source_url": "https://libraryon.org/libraries/vale-of-glamorgan/dinas-powys-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/vale-of-glamorgan/dinas-powys-library",
-  "authority": "vale-of-glamorgan"
+  "data": {
+    "Local authority": "Vale of Glamorgan",
+    "Local authority code": "W06000014",
+    "Library name": "Dinas Powys Library",
+    "Library code": null,
+    "Address 1": "Dinas Powys Community Library, Fairoaks, The Murch, Dinas Powys, CF64 4QU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 51.432407,
+    "Longitude": -3.211581,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:30",
+    "Tuesday staffed hours": "10:00-16:30",
+    "Wednesday staffed hours": "10:00-16:30",
+    "Thursday staffed hours": "10:00-16:30",
+    "Friday staffed hours": "10:00-16:30",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Cafe",
+    "Phone number": "029 2051 2556",
+    "Email address": "info@dinaspowyslibrary.wales",
+    "URL": "https://www.valeofglamorgan.gov.uk/en/enjoying/Libraries/Libraries.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

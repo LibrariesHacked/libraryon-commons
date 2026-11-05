@@ -1,81 +1,77 @@
 {
   "id": "lib_f6e932d2-e409-480c-abfb-25426c22ee0b",
-  "source_id": "1939",
-  "name": "Breck Road",
   "slug": "breck-road",
-  "address": "8-10 The Mall, Breck Road, Liverpool, Merseyside, L5 6PX",
-  "postcode": "L5 6SP",
-  "town": "Liverpool",
-  "phone": "0151 546 5514",
-  "email": "brecklibrary@altvalley.co.uk",
-  "website": "https://altvalley.co.uk/libraries/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "automatic-doors",
-    "accessible-restrooms",
-    "service-dog-friendly",
-    "assistive-technology-available",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.42268,
-  "longitude": -2.958351,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "liverpool",
+  "source_id": "1939",
+  "source_url": "https://libraryon.org/libraries/liverpool/breck-road",
   "updated_on": "2026-02-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/liverpool/breck-road",
-  "authority": "liverpool"
+  "data": {
+    "Local authority": "Liverpool",
+    "Local authority code": "E08000012",
+    "Library name": "Breck Road",
+    "Library code": null,
+    "Address 1": "8-10 The Mall, Breck Road, Liverpool, Merseyside, L5 6PX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "L5 6SP",
+    "Unique property reference number": null,
+    "Latitude": 53.42268,
+    "Longitude": -2.958351,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities",
+    "Phone number": "0151 546 5514",
+    "Email address": "brecklibrary@altvalley.co.uk",
+    "URL": "https://altvalley.co.uk/libraries/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

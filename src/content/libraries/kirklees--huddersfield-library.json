@@ -1,138 +1,71 @@
 {
   "id": "lib_2f74443f-fa24-44ce-8b4b-32dbc7bc5774",
-  "source_id": "2701",
-  "name": "Huddersfield Library",
   "slug": "huddersfield-library",
-  "address": "Civic Centre 3, High Street, Huddersfield, West Yorkshire, HD1 2SU",
-  "postcode": "HD1 2EY",
-  "town": "Huddersfield",
-  "phone": "01484 414868",
-  "email": "frontline.services@kirklees.gov.uk",
-  "website": "https://www.kirklees.gov.uk/Libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "braille-signage",
-    "accessible-parking",
-    "accessible-restrooms",
-    "hearing-loop-system",
-    "wheelchair-access",
-    "step-free-access",
-    "service-dog-friendly",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "archives",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.644075,
-  "longitude": -1.786224,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "kirklees",
+  "source_id": "2701",
+  "source_url": "https://libraryon.org/libraries/kirklees/huddersfield-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kirklees/huddersfield-library",
-  "authority": "kirklees"
+  "data": {
+    "Local authority": "Kirklees",
+    "Local authority code": "E08000034",
+    "Library name": "Huddersfield Library",
+    "Library code": null,
+    "Address 1": "Civic Centre 3, High Street, Huddersfield, West Yorkshire, HD1 2SU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HD1 2EY",
+    "Unique property reference number": 83240942,
+    "Latitude": 53.644075,
+    "Longitude": -1.786224,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": 2022,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-19:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-16:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Bookable space; Career support; Business support; BFI Replay; British Newspaper Archive",
+    "Phone number": "01484 414868",
+    "Email address": "frontline.services@kirklees.gov.uk",
+    "URL": "https://www.kirklees.gov.uk/Libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

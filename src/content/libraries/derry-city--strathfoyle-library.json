@@ -1,139 +1,71 @@
 {
   "id": "lib_817e5f0e-fa57-48d8-905e-52de28a3ec21",
-  "source_id": "3639",
-  "name": "Strathfoyle Library",
   "slug": "strathfoyle-library",
-  "address": "22 Temple Road, Enagh, Londonderry, BT47 6TJ, United Kingdom",
-  "postcode": "BT47 6TJ",
-  "town": "Londonderry",
-  "phone": "028 7186 0385",
-  "email": "strathfoyle.library@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/derry-city/strathfoyle-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "dda-compliant",
-    "lift-access",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.0257,
-  "longitude": -7.26593,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "derry-city",
+  "source_id": "3639",
+  "source_url": "https://libraryon.org/libraries/derry-city/strathfoyle-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/derry-city/strathfoyle-library",
-  "authority": "derry-city"
+  "data": {
+    "Local authority": "Derry City",
+    "Local authority code": "N09000005",
+    "Library name": "Strathfoyle Library",
+    "Library code": null,
+    "Address 1": "22 Temple Road, Enagh, Londonderry, BT47 6TJ, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BT47 6TJ",
+    "Unique property reference number": null,
+    "Latitude": 55.0257,
+    "Longitude": -7.26593,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:30-13:00,14:00-20:00",
+    "Tuesday staffed hours": "10:30-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:30-13:00,14:00-17:00",
+    "Friday staffed hours": "10:30-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; British Newspaper Archive",
+    "Phone number": "028 7186 0385",
+    "Email address": "strathfoyle.library@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/derry-city/strathfoyle-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

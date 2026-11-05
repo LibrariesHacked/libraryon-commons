@@ -1,124 +1,71 @@
 {
   "id": "lib_e456a407-4ec6-4020-a758-dd5ee95a5512",
-  "source_id": "2175",
-  "name": "John Willie Sams Centre, Dudley Community Hub and Library",
   "slug": "dudley-library-john-willie-sams-centre",
-  "address": "John Willie Sams Centre, Market Street, Dudley, Tyne and Wear, NE23 7HS",
-  "postcode": "NE23 7HU",
-  "town": "Cramlington",
-  "phone": "(0191) 643 2035",
-  "email": "dudley.library@northtyneside.gov.uk",
-  "website": "https://my.northtyneside.gov.uk/category/1699/dudley-library-john-willie-sams-centre",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system"
-  ],
-  "notes": "Community Centre and new library opened 2008 as part of £5.7m PFI project. ",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "catering",
-    "civic",
-    "community",
-    "health",
-    "industrial",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.05495,
-  "longitude": -1.59383,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "north-tyneside",
+  "source_id": "2175",
+  "source_url": "https://libraryon.org/libraries/north-tyneside/dudley-library-john-willie-sams-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-tyneside/dudley-library-john-willie-sams-centre",
-  "authority": "north-tyneside"
+  "data": {
+    "Local authority": "North Tyneside",
+    "Local authority code": "E08000022",
+    "Library name": "John Willie Sams Centre, Dudley Community Hub and Library",
+    "Library code": null,
+    "Address 1": "John Willie Sams Centre, Market Street, Dudley, Tyne and Wear, NE23 7HS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE23 7HU",
+    "Unique property reference number": null,
+    "Latitude": 55.05495,
+    "Longitude": -1.59383,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-13:00,14:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-13:00,14:00-17:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; civic; community; health; industrial; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Findmypast; British Newspaper Archive; BFI Replay",
+    "Phone number": "(0191) 643 2035",
+    "Email address": "dudley.library@northtyneside.gov.uk",
+    "URL": "https://my.northtyneside.gov.uk/category/1699/dudley-library-john-willie-sams-centre",
+    "Notes": "Community Centre and new library opened 2008 as part of £5.7m PFI project."
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

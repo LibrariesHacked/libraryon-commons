@@ -1,78 +1,73 @@
 {
   "id": "lib_d0b48484-b376-4861-8430-b48bf85c0bf9",
-  "source_id": "905",
-  "name": "Northiam Village Library",
   "slug": "northiam-village-library",
-  "address": "Village Hall, Frewen Close, Rye, East Sussex, TN31 6AF",
-  "postcode": "TN31 6AF",
-  "town": "Rye",
-  "phone": "",
-  "email": "",
-  "website": "https://northiamparishcouncil.gov.uk/directory/listing/northiam-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.99576,
-  "longitude": 0.60115,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "east-sussex",
+  "source_id": "905",
+  "source_url": "https://libraryon.org/libraries/east-sussex/northiam-village-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-sussex/northiam-village-library",
-  "authority": "east-sussex"
+  "data": {
+    "Local authority": "East Sussex",
+    "Local authority code": "E10000011",
+    "Library name": "Northiam Village Library",
+    "Library code": null,
+    "Address 1": "Village Hall, Frewen Close, Rye, East Sussex, TN31 6AF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TN31 6AF",
+    "Unique property reference number": null,
+    "Latitude": 50.99576,
+    "Longitude": 0.60115,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "14:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": null,
+    "URL": "https://northiamparishcouncil.gov.uk/directory/listing/northiam-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_695f9c343f3d84cef9d934d8"
+      ]
+    }
+  ]
 }

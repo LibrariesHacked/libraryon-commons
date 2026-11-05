@@ -73,7 +73,7 @@ Photo from 'Torday's Newcastle' (Newcastle Libraries Flickr) Source: Newcastle C
 
 :::
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![A sepia photo of a large crowd of several hundred people posing for the camera. The people are dressed formally, with men in suits and women in dresses. All the men and women wear hats or bonnets.](/uploads/archive/a-sepia-photo-of-a-large-crowd-of-several-hundred-2.jpg)
 
@@ -287,7 +287,7 @@ Photographer Lawrence Kaye. Source: Manchester Libraries (via images.manchester.
 
 :::
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![A screenshot of a map of Middleton's photographic walking trail. Overlaid on the map is an old photo of a location on the map, Durnford Street, remarking on how different the location looks today.](/uploads/archive/a-screenshot-of-a-map-of-middletons-photographic-walking-trail-2.jpg)
 
@@ -303,35 +303,41 @@ In preserving photography from bygone times, libraries ensure that as technology
 
 From the streets of northern England to Antarctica, these books feature photographers who immortalised communities and landscapes for the world to enjoy. **Enjoy them for free** [**at a library near you**](/libraries)**.**
 
+:::::collection-recommendations{title="Books at the library about pioneering photography"}
+
+::::recommendation-item{title="Another Country: British Documentary Photography Since 1945" author="Gerry Badger" year="2022"}
+
 ![The cover of 'Another Country: British Documentary Photography Since 1945' by Gerry Badger. It features a boy standing with a bicycle that has a Union Flag on its handlebars.](/uploads/archive/the-cover-of-another-country-british-documentary-photography-2.jpg)
-
-::::collection-accordion{label="Books at the library about pioneering photography"}
-
-:::accordion-item{title="Another Country: British Documentary Photography Since 1945 — Gerry Badger (2022)"}
 
 Featuring a diverse range of photographers, this is a comprehensive overview of how photographers and photo-artists have depicted Britain and British society over the last 70 years.
 
-:::
+::::
 
-:::accordion-item{title="Lewis W. Hine: America at Work — Peter Walther (2018)"}
+::::recommendation-item{title="Lewis W. Hine: America at Work" author="Peter Walther" year="2018"}
+
+![The cover of the book 'Lewis W. Hine: America at Work' by Peter Walther. It features a black and white photo of a man holding a wrench, working on some machinery.](/uploads/archive/local-photo-collections-and-archives-in-libraries-supporting-image-18.jpg)
 
 Lewis Hine was one of the earliest photographers to use the camera as a documentary tool. His images, including those of children in cotton mills, factories, coal mines and fields, became icons of photographic history that helped to transform labour laws in the United States.
 
-:::
+::::
 
-:::accordion-item{title="The North — John Bulmer (2012)"}
+::::recommendation-item{title="The North" author="John Bulmer" year="2012"}
+
+![The cover of the book 'The North' by John Bulmer. It features a photo of two young women wearing headscarves eating chips on a street. The shot looks like it was taken in the fifties or sixties.](/uploads/archive/local-photo-collections-and-archives-in-libraries-supporting-image-23.jpg)
 
 John Bulmer's striking photos capture the impact of the collapse of traditional industry in the north of England on communities in the 60s and 70s.
 
-:::
+::::
 
-:::accordion-item{title="Herbert Ponting: Scott’s Antarctic Photographer and Pioneer Filmmaker — Anne Strathie (2021)"}
+::::recommendation-item{title="Herbert Ponting: Scott’s Antarctic Photographer and Pioneer Filmmaker" author="Anne Strathie" year="2021"}
+
+![The cover of the book 'Herbert Ponting: Scott's Antarctic Photographer and Pioneer Filmmaker' by Anne Strathie. It features a photo of Ponting standing with his camera on a tripod, overlaid on an icy background including two penguins.](/uploads/archive/local-photo-collections-and-archives-in-libraries-supporting-image-26.jpg)
 
 Self-trained professional photographer Herbert Ponting documented Scott's fateful expedition to the Antarctic. He returned with stunning photographs and over 30,000 feet of film recorded under the harshest of conditions.
 
-:::
-
 ::::
+
+:::::
 
 ## More library digital photo collections
 

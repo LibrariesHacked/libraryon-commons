@@ -1,106 +1,64 @@
 {
   "id": "lib_c320961c-a120-4b22-9c69-768ec9a4ce64",
-  "source_id": "3386",
-  "name": "Palmer Park",
   "slug": "palmer-park",
-  "address": "St. Bartholomews Road, Reading, Berkshire, RG1 3QB",
-  "postcode": "RG1 3QB",
-  "town": "Reading",
-  "phone": "0118 937 5106",
-  "email": "info@readinglibraries.org.uk",
-  "website": "https://www.reading.gov.uk/leisure/libraries/all-libraries/palmer-park-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/palmer_park_library/",
-  "permanentlyClosed": false,
-  "latitude": 51.452001,
-  "longitude": -0.942032,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "reading",
+  "source_id": "3386",
+  "source_url": "https://libraryon.org/libraries/reading/palmer-park",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/reading/palmer-park",
-  "authority": "reading"
+  "data": {
+    "Local authority": "Reading",
+    "Local authority code": "E06000038",
+    "Library name": "Palmer Park",
+    "Library code": null,
+    "Address 1": "St. Bartholomews Road, Reading, Berkshire, RG1 3QB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG1 3QB",
+    "Unique property reference number": 310057623,
+    "Latitude": 51.452001,
+    "Longitude": -0.942032,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-12:00,13:00-17:00",
+    "Wednesday staffed hours": "09:00-12:00",
+    "Thursday staffed hours": "09:00-12:00,13:00-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers",
+    "Phone number": "0118 937 5106",
+    "Email address": "info@readinglibraries.org.uk",
+    "URL": "https://www.reading.gov.uk/leisure/libraries/all-libraries/palmer-park-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

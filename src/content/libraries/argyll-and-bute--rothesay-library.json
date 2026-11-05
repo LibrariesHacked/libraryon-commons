@@ -1,99 +1,71 @@
 {
   "id": "lib_0e2163b9-5ca6-4328-bda8-f63dac74eb36",
-  "source_id": "164",
-  "name": "Rothesay Library",
   "slug": "rothesay-library",
-  "address": "3 Stuart Street, Isle of Bute, PA20 0BX",
-  "postcode": "PA20 0EP",
-  "town": "Isle of Bute",
-  "phone": "01700 503266",
-  "email": "rothesaylibrary@liveargyll.co.uk",
-  "website": "https://liveargyll.co.uk/facilities/rothesay-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.83594,
-  "longitude": -5.05447,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "argyll-and-bute",
+  "source_id": "164",
+  "source_url": "https://libraryon.org/libraries/argyll-and-bute/rothesay-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/argyll-and-bute/rothesay-library",
-  "authority": "argyll-and-bute"
+  "data": {
+    "Local authority": "Argyll and Bute",
+    "Local authority code": "S12000035",
+    "Library name": "Rothesay Library",
+    "Library code": null,
+    "Address 1": "3 Stuart Street, Isle of Bute, PA20 0BX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PA20 0EP",
+    "Unique property reference number": null,
+    "Latitude": 55.83594,
+    "Longitude": -5.05447,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-16:30",
+    "Wednesday staffed hours": "09:30-16:30",
+    "Thursday staffed hours": "09:30-18:30",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01700 503266",
+    "Email address": "rothesaylibrary@liveargyll.co.uk",
+    "URL": "https://liveargyll.co.uk/facilities/rothesay-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

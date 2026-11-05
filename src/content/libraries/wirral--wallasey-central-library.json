@@ -1,157 +1,64 @@
 {
   "id": "lib_56824dc1-12ee-45d6-bbe0-3ed246a9ba02",
-  "source_id": "1725",
-  "name": "Wallasey Central Library",
   "slug": "wallasey-central-library",
-  "address": "Earlston Road, Wallasey, Merseyside, CH45 5DX",
-  "postcode": "CH45 5DX",
-  "town": "Wallasey",
-  "phone": "0151 639 2334",
-  "email": "libraries@wirral.gov.uk",
-  "website": "https://www.wirral.gov.uk/libraries-and-archives/find-library/wallasey-central-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities",
-    "accessible-restrooms",
-    "low-vision-support",
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.42864,
-  "longitude": -3.04332,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "wirral",
+  "source_id": "1725",
+  "source_url": "https://libraryon.org/libraries/wirral/wallasey-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wirral/wallasey-central-library",
-  "authority": "wirral"
+  "data": {
+    "Local authority": "Wirral",
+    "Local authority code": "E08000015",
+    "Library name": "Wallasey Central Library",
+    "Library code": null,
+    "Address 1": "Earlston Road, Wallasey, Merseyside, CH45 5DX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CH45 5DX",
+    "Unique property reference number": null,
+    "Latitude": 53.42864,
+    "Longitude": -3.04332,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1911,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "09:00-13:00,14:00-19:00",
+    "Wednesday staffed hours": "09:00-13:00,14:00-17:00",
+    "Thursday staffed hours": "09:00-13:00,14:00-19:00",
+    "Friday staffed hours": "09:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "09:00-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Digital lending; Books delivered; Computers; Photocopiers; Scanning; Bookable space",
+    "Phone number": "0151 639 2334",
+    "Email address": "libraries@wirral.gov.uk",
+    "URL": "https://www.wirral.gov.uk/libraries-and-archives/find-library/wallasey-central-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

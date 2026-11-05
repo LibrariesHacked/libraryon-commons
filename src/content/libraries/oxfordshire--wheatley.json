@@ -1,122 +1,64 @@
 {
   "id": "lib_c17acdfb-cd1e-497d-8c24-bbaeb583fb2b",
-  "source_id": "1022",
-  "name": "Wheatley",
   "slug": "wheatley",
-  "address": "The Merry Bells, High Street, Wheatley, Oxfordshire, OX33 1XP",
-  "postcode": "OX33 1XP",
-  "town": "Oxford",
-  "phone": "01865 815204",
-  "email": "wheatley.library@oxfordshire.gov.uk",
-  "website": "https://www.oxfordshire.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access"
-  ],
-  "notes": "Closes for lunch 1-2 Weds and Fri",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.74688,
-  "longitude": -1.13656,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "oxfordshire",
+  "source_id": "1022",
+  "source_url": "https://libraryon.org/libraries/oxfordshire/wheatley",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/oxfordshire/wheatley",
-  "authority": "oxfordshire"
+  "data": {
+    "Local authority": "Oxfordshire",
+    "Local authority code": "E10000025",
+    "Library name": "Wheatley",
+    "Library code": null,
+    "Address 1": "The Merry Bells, High Street, Wheatley, Oxfordshire, OX33 1XP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OX33 1XP",
+    "Unique property reference number": null,
+    "Latitude": 51.74688,
+    "Longitude": -1.13656,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-19:00",
+    "Wednesday staffed hours": "09:30-13:00,14:00-17:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "09:30-13:00,14:00-18:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "01865 815204",
+    "Email address": "wheatley.library@oxfordshire.gov.uk",
+    "URL": "https://www.oxfordshire.gov.uk/libraries",
+    "Notes": "Closes for lunch 1-2 Weds and Fri"
+  },
+  "validation_exceptions": []
 }

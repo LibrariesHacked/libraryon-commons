@@ -1,100 +1,71 @@
 {
   "id": "lib_8d290cf7-9461-4bd6-9624-83d936ddf2b4",
-  "source_id": "789",
-  "name": "Newport Central Library",
   "slug": "newport-central-library",
-  "address": "John Frost Square, Newport, NP20 1PA",
-  "postcode": "NP20 1HZ",
-  "town": "Newport",
-  "phone": "",
-  "email": "lending.library@newport.gov.uk",
-  "website": "http://www.newport.gov.uk/en/Leisure-Tourism/Libraries/Find-a-library/Central-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.58558,
-  "longitude": -2.99363,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "newport",
+  "source_id": "789",
+  "source_url": "https://libraryon.org/libraries/newport/newport-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newport/newport-central-library",
-  "authority": "newport"
+  "data": {
+    "Local authority": "Newport",
+    "Local authority code": "W06000022",
+    "Library name": "Newport Central Library",
+    "Library code": null,
+    "Address 1": "John Frost Square, Newport, NP20 1PA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NP20 1HZ",
+    "Unique property reference number": null,
+    "Latitude": 51.58558,
+    "Longitude": -2.99363,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-17:30",
+    "Wednesday staffed hours": "09:00-17:30",
+    "Thursday staffed hours": "09:00-17:30",
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": "lending.library@newport.gov.uk",
+    "URL": "http://www.newport.gov.uk/en/Leisure-Tourism/Libraries/Find-a-library/Central-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

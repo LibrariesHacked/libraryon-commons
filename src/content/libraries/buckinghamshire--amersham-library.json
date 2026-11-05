@@ -1,136 +1,71 @@
 {
   "id": "lib_00e9e9c1-8e0a-4fcf-a529-28d1fe7c0644",
-  "source_id": "3535",
-  "name": "Amersham Library",
   "slug": "amersham-library",
-  "address": "Chilterns Lifestyle Centre, Chiltern Avenue, Amersham, Buckinghamshire, HP6 5AH",
-  "postcode": "HP6 5AG",
-  "town": "Amersham",
-  "phone": "",
-  "email": "lib-ame@buckinghamshire.gov.uk",
-  "website": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/amersham-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support",
-    "wheelchair-access",
-    "automatic-doors",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.67397,
-  "longitude": -0.60343,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "buckinghamshire",
+  "source_id": "3535",
+  "source_url": "https://libraryon.org/libraries/buckinghamshire/amersham-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/buckinghamshire/amersham-library",
-  "authority": "buckinghamshire"
+  "data": {
+    "Local authority": "Buckinghamshire",
+    "Local authority code": "E06000060",
+    "Library name": "Amersham Library",
+    "Library code": null,
+    "Address 1": "Chilterns Lifestyle Centre, Chiltern Avenue, Amersham, Buckinghamshire, HP6 5AH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HP6 5AG",
+    "Unique property reference number": null,
+    "Latitude": 51.67397,
+    "Longitude": -0.60343,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Books delivered; Family history; BFI Replay; Children's activities; Hobby and interest groups",
+    "Phone number": null,
+    "Email address": "lib-ame@buckinghamshire.gov.uk",
+    "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/amersham-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

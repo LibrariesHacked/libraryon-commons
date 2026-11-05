@@ -1,100 +1,71 @@
 {
   "id": "lib_71342533-6b8f-4335-aa6e-00bc39d11bb6",
-  "source_id": "594",
-  "name": "Taffs Well Library",
   "slug": "taffs-well-library",
-  "address": "Ffynnon Taf Primary,  Cardiff Road, Taffs Well, CF15 7PR",
-  "postcode": "CF15 7RF",
-  "town": "Cardiff",
-  "phone": "02920 814413",
-  "email": "thehub1@outlook.com",
-  "website": "http://www.taffswellandnantgarwcc.com/Library_Hub_26955.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54223,
-  "longitude": -3.26767,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "rhondda-cynon-taf",
+  "source_id": "594",
+  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/taffs-well-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/taffs-well-library",
-  "authority": "rhondda-cynon-taf"
+  "data": {
+    "Local authority": "Rhondda Cynon Taf",
+    "Local authority code": "W06000016",
+    "Library name": "Taffs Well Library",
+    "Library code": null,
+    "Address 1": "Ffynnon Taf Primary,  Cardiff Road, Taffs Well, CF15 7PR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CF15 7RF",
+    "Unique property reference number": null,
+    "Latitude": 51.54223,
+    "Longitude": -3.26767,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "02920 814413",
+    "Email address": "thehub1@outlook.com",
+    "URL": "http://www.taffswellandnantgarwcc.com/Library_Hub_26955.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

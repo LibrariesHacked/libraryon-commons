@@ -1,146 +1,73 @@
 {
   "id": "lib_f20a583b-85bd-4f2d-b643-225607c43c43",
-  "source_id": "1877",
-  "name": "Durrington Library",
   "slug": "durrington-library",
-  "address": "Salvington Road, Durrington, West Sussex, BN13 2JD",
-  "postcode": "BN13 2JD",
-  "town": "Worthing",
-  "phone": "01903 260439",
-  "email": "durrington.library@westsussex.gov.uk",
-  "website": "https://libraries.westsussex.gov.uk/durrington-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.83527,
-  "longitude": -0.40574,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "west-sussex",
+  "source_id": "1877",
+  "source_url": "https://libraryon.org/libraries/west-sussex/durrington-library",
   "updated_on": "2026-02-13",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-sussex/durrington-library",
-  "authority": "west-sussex"
+  "data": {
+    "Local authority": "West Sussex",
+    "Local authority code": "E10000032",
+    "Library name": "Durrington Library",
+    "Library code": null,
+    "Address 1": "Salvington Road, Durrington, West Sussex, BN13 2JD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BN13 2JD",
+    "Unique property reference number": null,
+    "Latitude": 50.83527,
+    "Longitude": -0.40574,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Family history; British Newspaper Archive; Findmypast; Books delivered; Computers; Photocopiers; Scanning; Hobby and interest groups; Children's activities; Digital skills sessions; BFI Replay",
+    "Phone number": "01903 260439",
+    "Email address": "durrington.library@westsussex.gov.uk",
+    "URL": "https://libraries.westsussex.gov.uk/durrington-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_6042f0b4d209be9940d97309"
+      ]
+    }
+  ]
 }

@@ -1,135 +1,64 @@
 {
   "id": "lib_cf182fb0-de28-46c5-9b5e-0a669fd3bf39",
-  "source_id": "608",
-  "name": "Emsworth",
   "slug": "emsworth",
-  "address": "Community Centre, North Street, Emsworth, Hampshire, PO10 7DD",
-  "postcode": "PO10 7DD",
-  "town": "Emsworth",
-  "phone": "",
-  "email": "County.Library.HQ@hants.gov.uk",
-  "website": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/emsworth-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "service-dog-friendly",
-    "wheelchair-access",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.84839,
-  "longitude": -0.93739,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "608",
+  "source_url": "https://libraryon.org/libraries/hampshire/emsworth",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/emsworth",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Emsworth",
+    "Library code": null,
+    "Address 1": "Community Centre, North Street, Emsworth, Hampshire, PO10 7DD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO10 7DD",
+    "Unique property reference number": 10013681963,
+    "Latitude": 50.84839,
+    "Longitude": -0.93739,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2016,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Children's activities; Hobby and interest groups; BFI Replay; Digital lending; Scanning; Family history; Books delivered",
+    "Phone number": null,
+    "Email address": "County.Library.HQ@hants.gov.uk",
+    "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/emsworth-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

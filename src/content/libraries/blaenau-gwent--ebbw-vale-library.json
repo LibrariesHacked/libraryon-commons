@@ -1,100 +1,77 @@
 {
   "id": "lib_94ed7654-3142-4b1a-b62c-5a3991b9e03a",
-  "source_id": "728",
-  "name": "Ebbw Vale Library",
   "slug": "ebbw-vale-library",
-  "address": "21 Bethcar Street Ebbw Vale Blaenau Gwent NP23 6HS",
-  "postcode": "NP23 6HS",
-  "town": "Ebbw Vale",
-  "phone": "01495 369615",
-  "email": "info@aneurinleisure.org.uk",
-  "website": "https://www.aneurinleisure.org.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Facility Not Open",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.77922,
-  "longitude": -3.20834,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "blaenau-gwent",
+  "source_id": "728",
+  "source_url": "https://libraryon.org/libraries/blaenau-gwent/ebbw-vale-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/blaenau-gwent/ebbw-vale-library",
-  "authority": "blaenau-gwent"
+  "data": {
+    "Local authority": "Blaenau Gwent",
+    "Local authority code": "W06000019",
+    "Library name": "Ebbw Vale Library",
+    "Library code": null,
+    "Address 1": "21 Bethcar Street Ebbw Vale Blaenau Gwent NP23 6HS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NP23 6HS",
+    "Unique property reference number": null,
+    "Latitude": 51.77922,
+    "Longitude": -3.20834,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:30",
+    "Friday staffed hours": "09:30-17:30",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast",
+    "Phone number": "01495 369615",
+    "Email address": "info@aneurinleisure.org.uk",
+    "URL": "https://www.aneurinleisure.org.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

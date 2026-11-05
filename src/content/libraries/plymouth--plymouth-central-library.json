@@ -1,147 +1,64 @@
 {
   "id": "lib_e76d3b50-a543-4d50-a5a8-3988f3ffdbc8",
-  "source_id": "2980",
-  "name": "Plymouth Central Library",
   "slug": "plymouth-central-library",
-  "address": "167 - 171 Armada Way , Plymouth, Devon, PL1 1HZ",
-  "postcode": "PL1 1HZ",
-  "town": "Plymouth",
-  "phone": "01752 305901",
-  "email": "library@plymouth.gov.uk",
-  "website": "https://www.plymouth.gov.uk/central-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "accessible-restrooms",
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.37299,
-  "longitude": -4.14301,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.plymouth.gov.uk/computers-printers-and-wifi"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.plymouth.gov.uk/computers-printers-and-wifi"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.plymouth.gov.uk/family-history"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.plymouth.gov.uk/library-meeting-rooms"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "plymouth",
+  "source_id": "2980",
+  "source_url": "https://libraryon.org/libraries/plymouth/plymouth-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/plymouth/plymouth-central-library",
-  "authority": "plymouth"
+  "data": {
+    "Local authority": "Plymouth",
+    "Local authority code": "E06000026",
+    "Library name": "Plymouth Central Library",
+    "Library code": null,
+    "Address 1": "167 - 171 Armada Way , Plymouth, Devon, PL1 1HZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PL1 1HZ",
+    "Unique property reference number": null,
+    "Latitude": 50.37299,
+    "Longitude": -4.14301,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2016,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Family history; Children's activities; Hobby and interest groups; Bookable space; British Newspaper Archive; Findmypast; BFI Replay",
+    "Phone number": "01752 305901",
+    "Email address": "library@plymouth.gov.uk",
+    "URL": "https://www.plymouth.gov.uk/central-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

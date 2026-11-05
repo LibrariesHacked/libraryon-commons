@@ -1,142 +1,77 @@
 {
   "id": "lib_1f68893c-27f3-4000-8a05-61aaf301ff0d",
-  "source_id": "2739",
-  "name": "Crowle Library",
   "slug": "crowle-community-hub",
-  "address": "Market Hall, Market Place, Crowle, DN17 4LA",
-  "postcode": "",
-  "town": "Scunthorpe",
-  "phone": "01724 296850",
-  "email": "library.enquiries@northlincs.gov.uk",
-  "website": " https://www.opac.northlincs.gov.uk/-/crowle-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Previously listed as Crowle Community Hub - SW renamed 18.3.25",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.606,
-  "longitude": -0.833665,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "north-lincolnshire",
+  "source_id": "2739",
+  "source_url": "https://libraryon.org/libraries/north-lincolnshire/crowle-community-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-lincolnshire/crowle-community-hub",
-  "authority": "north-lincolnshire"
+  "data": {
+    "Local authority": "North Lincolnshire",
+    "Local authority code": "E06000013",
+    "Library name": "Crowle Library",
+    "Library code": null,
+    "Address 1": "Market Hall, Market Place, Crowle, DN17 4LA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 53.606,
+    "Longitude": -0.833665,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30,13:00-17:00",
+    "Tuesday staffed hours": "09:00-12:30,13:00-17:00",
+    "Wednesday staffed hours": "09:00-12:30,13:00-17:00",
+    "Thursday staffed hours": "09:00-12:30,13:00-17:00",
+    "Friday staffed hours": "09:00-12:30,13:00-17:00",
+    "Saturday staffed hours": "09:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers",
+    "Phone number": "01724 296850",
+    "Email address": "library.enquiries@northlincs.gov.uk",
+    "URL": "https://www.opac.northlincs.gov.uk/-/crowle-library",
+    "Notes": "Previously listed as Crowle Community Hub - SW renamed 18.3.25"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

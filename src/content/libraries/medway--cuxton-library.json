@@ -1,119 +1,64 @@
 {
   "id": "lib_9bf1d07a-b4f7-4730-a454-3d8df945f3b0",
-  "source_id": "3230",
-  "name": "Cuxton Library",
   "slug": "cuxton-library",
-  "address": "Bush Road, Cuxton, Kent, ME2 1EY",
-  "postcode": "ME2 1EY",
-  "town": "Rochester",
-  "phone": "01634 337 799",
-  "email": "Cuxton.library@medway.gov.uk",
-  "website": "https://www.medway.gov.uk/directory_record/22/cuxton_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "service-dog-friendly",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.37428,
-  "longitude": 0.45339,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "medway",
+  "source_id": "3230",
+  "source_url": "https://libraryon.org/libraries/medway/cuxton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/medway/cuxton-library",
-  "authority": "medway"
+  "data": {
+    "Local authority": "Medway",
+    "Local authority code": "E06000035",
+    "Library name": "Cuxton Library",
+    "Library code": null,
+    "Address 1": "Bush Road, Cuxton, Kent, ME2 1EY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ME2 1EY",
+    "Unique property reference number": null,
+    "Latitude": 51.37428,
+    "Longitude": 0.45339,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-18:00",
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Digital lending; Photocopiers; Scanning; British Newspaper Archive",
+    "Phone number": "01634 337 799",
+    "Email address": "Cuxton.library@medway.gov.uk",
+    "URL": "https://www.medway.gov.uk/directory_record/22/cuxton_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

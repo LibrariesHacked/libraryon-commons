@@ -1,134 +1,71 @@
 {
   "id": "lib_44f33657-c0d8-4c0a-9fcc-04fa523f58c0",
-  "source_id": "705",
-  "name": "Lyndhurst Community Library",
   "slug": "lyndhurst",
-  "address": "Community Centre, Lyndhurst, Hampshire, SO43 7NY",
-  "postcode": "SO43 7EW",
-  "town": "Lyndhurst",
-  "phone": "023 8028 2267",
-  "email": "admin@lyndhurstcomm.org",
-  "website": "https://lyndhurstcomm.org/",
-  "catalogue": "https://lyndhurst.slls.online/",
-  "joinOnline": "https://lyndhurst.slls.online/Account/Register",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "15:45",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.87194,
-  "longitude": -1.57738,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "705",
+  "source_url": "https://libraryon.org/libraries/hampshire/lyndhurst",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/lyndhurst",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Lyndhurst Community Library",
+    "Library code": null,
+    "Address 1": "Community Centre, Lyndhurst, Hampshire, SO43 7NY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SO43 7EW",
+    "Unique property reference number": null,
+    "Latitude": 50.87194,
+    "Longitude": -1.57738,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": "09:30-12:30",
+    "Thursday staffed hours": "14:00-15:45",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Bookable space; Children's activities; Hobby and interest groups; Computers; Digital lending; Scanning; Family history; Books delivered",
+    "Phone number": "023 8028 2267",
+    "Email address": "admin@lyndhurstcomm.org",
+    "URL": "https://lyndhurstcomm.org/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

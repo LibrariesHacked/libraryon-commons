@@ -1,136 +1,64 @@
 {
   "id": "lib_de46ae99-3aea-4490-97d0-5bf9d7027405",
-  "source_id": "2521",
-  "name": "Palatine",
   "slug": "palatine",
-  "address": "St Annes Road, Blackpool, Lancashire, FY4 2AP",
-  "postcode": "FY4 2AP",
-  "town": "Blackpool",
-  "phone": "01253 478050",
-  "email": "palatine.library@blackpool.gov.uk",
-  "website": "https://www.blackpool.gov.uk/Residents/Libraries-arts-and-heritage/Libraries/Libraries-and-opening-times/Palatine-library.aspx",
-  "catalogue": "https://blackpool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/HOME",
-  "joinOnline": "https://blackpool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.79516,
-  "longitude": -3.04156,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.blackpool.gov.uk/Residents/Libraries-arts-and-heritage/Libraries/Palatine-Library-room-hire.aspx"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.blackpool.gov.uk/Residents/Libraries-arts-and-heritage/Libraries/At-Home-library-service.aspx"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.com/"
-    }
-  ],
+  "authority": "blackpool",
+  "source_id": "2521",
+  "source_url": "https://libraryon.org/libraries/blackpool/palatine",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/blackpool/palatine",
-  "authority": "blackpool"
+  "data": {
+    "Local authority": "Blackpool",
+    "Local authority code": "E06000009",
+    "Library name": "Palatine",
+    "Library code": null,
+    "Address 1": "St Annes Road, Blackpool, Lancashire, FY4 2AP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "FY4 2AP",
+    "Unique property reference number": 10008479602,
+    "Latitude": 53.79516,
+    "Longitude": -3.04156,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Digital lending; Bookable space; Books delivered; BFI Replay; Garden; British Newspaper Archive; Findmypast",
+    "Phone number": "01253 478050",
+    "Email address": "palatine.library@blackpool.gov.uk",
+    "URL": "https://www.blackpool.gov.uk/Residents/Libraries-arts-and-heritage/Libraries/Libraries-and-opening-times/Palatine-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

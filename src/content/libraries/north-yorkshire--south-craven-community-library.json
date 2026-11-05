@@ -1,145 +1,64 @@
 {
   "id": "lib_8d861a5c-adaa-45da-90a6-31e54be0b13e",
-  "source_id": "1913",
-  "name": "South Craven Community Library",
   "slug": "south-craven-community-library",
-  "address": "Main Street, Crosshills, Keighley, North Yorkshire, BD20 8TQ",
-  "postcode": "BD20 8TQ",
-  "town": "Keighley",
-  "phone": "01609 534502",
-  "email": "enquiries@sccls.org.uk",
-  "website": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/crosshills-south-craven-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "automatic-doors",
-    "wheelchair-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "Previously called South Craven community library",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.90103,
-  "longitude": -1.99286,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "north-yorkshire",
+  "source_id": "1913",
+  "source_url": "https://libraryon.org/libraries/north-yorkshire/south-craven-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-yorkshire/south-craven-community-library",
-  "authority": "north-yorkshire"
+  "data": {
+    "Local authority": "North Yorkshire",
+    "Local authority code": "E06000065",
+    "Library name": "South Craven Community Library",
+    "Library code": null,
+    "Address 1": "Main Street, Crosshills, Keighley, North Yorkshire, BD20 8TQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BD20 8TQ",
+    "Unique property reference number": null,
+    "Latitude": 53.90103,
+    "Longitude": -1.99286,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-18:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Digital lending; Family history; Digital skills sessions; Computers; Bookable space; Photocopiers; Scanning; Children's activities; Hobby and interest groups",
+    "Phone number": "01609 534502",
+    "Email address": "enquiries@sccls.org.uk",
+    "URL": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/crosshills-south-craven-community-library",
+    "Notes": "Previously called South Craven community library"
+  },
+  "validation_exceptions": []
 }

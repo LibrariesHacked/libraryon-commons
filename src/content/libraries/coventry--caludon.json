@@ -1,138 +1,64 @@
 {
   "id": "lib_4e0e397e-9f7e-45ff-a335-64c2628cea83",
-  "source_id": "2445",
-  "name": "Caludon",
   "slug": "caludon",
-  "address": "Caludon Castle School, Axholme Road, Coventry, West Midlands, CV2 5BD",
-  "postcode": "CV2 5BD",
-  "town": "Coventry",
-  "phone": "024 7678 8300",
-  "email": "caludon.library@coventry.gov.uk",
-  "website": "https://www.coventry.gov.uk/directory-record/50165/caludon-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "https://www.google.com/maps/embed?pb=!4v1736933449583!6m8!1m7!1sCAoSLEFGMVFpcE5ldi05S3JRaG96Sk03ejZPU3JKdC0zNkRDejBhd1lOYjUxQThL!2m2!1d52.4145320066927!2d-1.452157569871694!3f189.58!4f1.7099999999999937!5f0.4000000000000002",
-  "permanentlyClosed": false,
-  "latitude": 52.41453,
-  "longitude": -1.45371,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Faxing",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "coventry",
+  "source_id": "2445",
+  "source_url": "https://libraryon.org/libraries/coventry/caludon",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/coventry/caludon",
-  "authority": "coventry"
+  "data": {
+    "Local authority": "Coventry",
+    "Local authority code": "E08000026",
+    "Library name": "Caludon",
+    "Library code": null,
+    "Address 1": "Caludon Castle School, Axholme Road, Coventry, West Midlands, CV2 5BD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CV2 5BD",
+    "Unique property reference number": null,
+    "Latitude": 52.41453,
+    "Longitude": -1.45371,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-18:00",
+    "Tuesday staffed hours": "14:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-18:00",
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Children's activities; Digital lending; Faxing; Scanning; Photocopiers; Hobby and interest groups; Computers",
+    "Phone number": "024 7678 8300",
+    "Email address": "caludon.library@coventry.gov.uk",
+    "URL": "https://www.coventry.gov.uk/directory-record/50165/caludon-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

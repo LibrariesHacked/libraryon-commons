@@ -1,126 +1,71 @@
 {
   "id": "lib_f8112040-8f22-49a8-86a3-f5c8587cbf88",
-  "source_id": "3745",
-  "name": "Royston Library",
   "slug": "royston-library-herts",
-  "address": "Market Hill, Royston, Hertfordshire, SG8 9JN",
-  "postcode": "SG8 9JL",
-  "town": "Royston",
-  "phone": "0300 123 4049",
-  "email": "libraries.information@hertfordshire.gov.uk",
-  "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/royston-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.04684,
-  "longitude": -0.02261,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "hertfordshire",
+  "source_id": "3745",
+  "source_url": "https://libraryon.org/libraries/hertfordshire/royston-library-herts",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hertfordshire/royston-library-herts",
-  "authority": "hertfordshire"
+  "data": {
+    "Local authority": "Hertfordshire",
+    "Local authority code": "E10000015",
+    "Library name": "Royston Library",
+    "Library code": null,
+    "Address 1": "Market Hill, Royston, Hertfordshire, SG8 9JN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SG8 9JL",
+    "Unique property reference number": null,
+    "Latitude": 52.04684,
+    "Longitude": -0.02261,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:30",
+    "Tuesday staffed hours": "10:00-17:30",
+    "Wednesday staffed hours": "10:00-17:30",
+    "Thursday staffed hours": "10:00-13:00",
+    "Friday staffed hours": "10:00-17:30",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Computers; Free Wi-Fi; Printing; Scanning; Digital skills sessions; Children's activities; Hobby and interest groups",
+    "Phone number": "0300 123 4049",
+    "Email address": "libraries.information@hertfordshire.gov.uk",
+    "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/royston-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

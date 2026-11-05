@@ -1,139 +1,71 @@
 {
   "id": "lib_0aa935ad-1826-4535-9c44-bdacc4239d15",
-  "source_id": "362",
-  "name": "Lochwinnoch Library",
   "slug": "lochwinnoch-library",
-  "address": "Old School, High Street, Lochwinnoch, Renfrewshire, PA12 4AB",
-  "postcode": "PA12 4AB",
-  "town": "Lochwinnoch",
-  "phone": "0300 300 1188",
-  "email": "libraries@renfrewshire.gov.uk",
-  "website": "http://www.whatsonrenfrewshire.co.uk/listings/lochwinnoch-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.79590981618159,
-  "longitude": -4.627793230409168,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    }
-  ],
+  "authority": "renfrewshire",
+  "source_id": "362",
+  "source_url": "https://libraryon.org/libraries/renfrewshire/lochwinnoch-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/renfrewshire/lochwinnoch-library",
-  "authority": "renfrewshire"
+  "data": {
+    "Local authority": "Renfrewshire",
+    "Local authority code": "S12000038",
+    "Library name": "Lochwinnoch Library",
+    "Library code": null,
+    "Address 1": "Old School, High Street, Lochwinnoch, Renfrewshire, PA12 4AB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PA12 4AB",
+    "Unique property reference number": null,
+    "Latitude": 55.79590981618159,
+    "Longitude": -4.627793230409168,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:15-13:00,14:00-17:00",
+    "Tuesday staffed hours": "09:15-13:00,14:00-17:00",
+    "Wednesday staffed hours": "09:15-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:15-13:00,14:00-17:00",
+    "Saturday staffed hours": "09:15-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Printing",
+    "Phone number": "0300 300 1188",
+    "Email address": "libraries@renfrewshire.gov.uk",
+    "URL": "http://www.whatsonrenfrewshire.co.uk/listings/lochwinnoch-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

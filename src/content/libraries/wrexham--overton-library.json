@@ -1,98 +1,71 @@
 {
   "id": "lib_a06ad7d0-b09a-4d9b-8a10-0323f4cfd966",
-  "source_id": "452",
-  "name": "Overton Library",
   "slug": "overton-library",
-  "address": "4 Pen Y Llan Street, Overton, Wrexham, LL13 0EE, United Kingdom",
-  "postcode": "LL13 0EE",
-  "town": "Wrexham",
-  "phone": "01978 710557",
-  "email": "overton.library@wrexham.gov.uk",
-  "website": "https://www.wrexham.gov.uk/service/your-local-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.96905,
-  "longitude": -2.93483,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "wrexham",
+  "source_id": "452",
+  "source_url": "https://libraryon.org/libraries/wrexham/overton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wrexham/overton-library",
-  "authority": "wrexham"
+  "data": {
+    "Local authority": "Wrexham",
+    "Local authority code": "W06000006",
+    "Library name": "Overton Library",
+    "Library code": null,
+    "Address 1": "4 Pen Y Llan Street, Overton, Wrexham, LL13 0EE, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LL13 0EE",
+    "Unique property reference number": null,
+    "Latitude": 52.96905,
+    "Longitude": -2.93483,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-14:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast",
+    "Phone number": "01978 710557",
+    "Email address": "overton.library@wrexham.gov.uk",
+    "URL": "https://www.wrexham.gov.uk/service/your-local-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,122 +1,71 @@
 {
   "id": "library1234567",
-  "source_id": "3859",
-  "name": "Culture House Sunderland",
   "slug": "culture-house-sunderland",
-  "address": "Keel Square, High Street West, Sunderland, SR1 3DZ",
-  "postcode": "SR1 3DZ",
-  "town": "Sunderland",
-  "phone": "",
-  "email": "culture.house@sunderland.gov.uk",
-  "website": "https://culturehousesunderland.co.uk/culture-house/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "Coming soon to Keel Square...\n\nCulture House Sunderland: The National Centre for Creative Smart Cities will be a multi-purpose cultural venue, home to the City Library.\n\nIt will be packed with interactive, digital features and a year round programme of fun things to do.",
-  "accessibility": [
-    "accessible-parking",
-    "accessible-restrooms",
-    "lift-access",
-    "step-free-access",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "accessible-public-transport-connections",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.907027147579925,
-  "longitude": -1.3868300903670843,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Events",
-      "url": ""
-    },
-    {
-      "service": "Work space",
-      "url": ""
-    },
-    {
-      "service": "Toilets",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Makerspace",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Archives",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "sunderland",
+  "source_id": "3859",
+  "source_url": "https://libraryon.org/libraries/sunderland/culture-house-sunderland",
   "updated_on": "2026-07-08",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sunderland/culture-house-sunderland",
-  "authority": "sunderland"
+  "data": {
+    "Local authority": "Sunderland",
+    "Local authority code": "E08000024",
+    "Library name": "Culture House Sunderland",
+    "Library code": null,
+    "Address 1": "Keel Square, High Street West, Sunderland, SR1 3DZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SR1 3DZ",
+    "Unique property reference number": null,
+    "Latitude": 54.907027147579925,
+    "Longitude": -1.3868300903670843,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Coming soon to Keel Square...\n\nCulture House Sunderland: The National Centre for Creative Smart Cities will be a multi-purpose cultural venue, home to the City Library.\n\nIt will be packed with interactive, digital features and a year round programme of fun things to do.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Bookable space; Cafe; Events; Work space; Toilets; Free Wi-Fi; Children's activities; Computers; Hobby and interest groups; Makerspace; Printing; Photocopiers; Archives; Family history",
+    "Phone number": null,
+    "Email address": "culture.house@sunderland.gov.uk",
+    "URL": "https://culturehousesunderland.co.uk/culture-house/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

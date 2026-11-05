@@ -1,134 +1,64 @@
 {
   "id": "lib_b3b902f6-ecea-458b-8f3c-04a7ad90a6b0",
-  "source_id": "3358",
-  "name": "Pangbourne Library",
   "slug": "pangbourne",
-  "address": "Reading Road, Reading, Berkshire, RG8 7LY",
-  "postcode": "RG8 7LY",
-  "town": "Reading",
-  "phone": "0118 9844117",
-  "email": "pangbournelibrary@westberks.gov.uk",
-  "website": "https://www.westberks.gov.uk/pangbourne-library",
-  "catalogue": "https://www.westberks.gov.uk/library-catalogue",
-  "joinOnline": "https://westberks.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.48356,
-  "longitude": -1.08439,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.westberks.gov.uk/elibrary"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.westberks.gov.uk/family-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.westberks.gov.uk/mobile-library"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "west-berkshire",
+  "source_id": "3358",
+  "source_url": "https://libraryon.org/libraries/west-berkshire/pangbourne",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-berkshire/pangbourne",
-  "authority": "west-berkshire"
+  "data": {
+    "Local authority": "West Berkshire",
+    "Local authority code": "E06000037",
+    "Library name": "Pangbourne Library",
+    "Library code": null,
+    "Address 1": "Reading Road, Reading, Berkshire, RG8 7LY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG8 7LY",
+    "Unique property reference number": null,
+    "Latitude": 51.48356,
+    "Longitude": -1.08439,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "10:30-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-12:00",
+    "Friday staffed hours": "10:30-17:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Digital lending; Photocopiers; Scanning; Family history; Books delivered; Findmypast; British Newspaper Archive",
+    "Phone number": "0118 9844117",
+    "Email address": "pangbournelibrary@westberks.gov.uk",
+    "URL": "https://www.westberks.gov.uk/pangbourne-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

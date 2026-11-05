@@ -1,147 +1,64 @@
 {
   "id": "lib_434fa4d4-eeb5-4141-9f35-ea3ae85fb33a",
-  "source_id": "2906",
-  "name": "Spondon Library",
   "slug": "spondon",
-  "address": "Sitwell Street, Derby, Derbyshire, DE21 7FG",
-  "postcode": "DE21 7FG",
-  "town": "Derby",
-  "phone": "01332 640065",
-  "email": "spondon.library@derby.gov.uk",
-  "website": "https://www.inderby.org.uk/libraries/our-libraries/spondon-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "assistive-technology-available",
-    "automatic-doors",
-    "hearing-loop-system",
-    "step-free-access",
-    "wheelchair-access",
-    "staff-support",
-    "service-dog-friendly",
-    "dda-compliant",
-    "baby-changing-facilities",
-    "adjustable-seating",
-    "accessible-restrooms",
-    "accessible-public-transport-connections",
-    "accessible-parking"
-  ],
-  "notes": "Run by Direct Help and Advice (DHA):\n\nTemporary closure from Aug 2024, still listed as closed 19.3.25",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.920185786891665,
-  "longitude": -1.4048342237624638,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "derby",
+  "source_id": "2906",
+  "source_url": "https://libraryon.org/libraries/derby/spondon",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/derby/spondon",
-  "authority": "derby"
+  "data": {
+    "Local authority": "Derby",
+    "Local authority code": "E06000015",
+    "Library name": "Spondon Library",
+    "Library code": null,
+    "Address 1": "Sitwell Street, Derby, Derbyshire, DE21 7FG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DE21 7FG",
+    "Unique property reference number": 100032005695,
+    "Latitude": 52.920185786891665,
+    "Longitude": -1.4048342237624638,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:30",
+    "Tuesday staffed hours": "10:00-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-16:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups; Computers; Photocopiers; Digital lending; Books delivered; Family history; Findmypast; British Newspaper Archive; Digital skills sessions; Scanning",
+    "Phone number": "01332 640065",
+    "Email address": "spondon.library@derby.gov.uk",
+    "URL": "https://www.inderby.org.uk/libraries/our-libraries/spondon-library/",
+    "Notes": "Run by Direct Help and Advice (DHA):\n\nTemporary closure from Aug 2024, still listed as closed 19.3.25"
+  },
+  "validation_exceptions": []
 }

@@ -1,118 +1,64 @@
 {
   "id": "lib_85eadecb-8ee3-4d5e-8c52-d3e18e5b62dd",
-  "source_id": "2140",
-  "name": "Kirkburton Library",
   "slug": "kirkburton-library",
-  "address": "Turnshaws Road, Huddersfield, West Yorkshire, HD8 0RT",
-  "postcode": "HD8 0RT",
-  "town": "Huddersfield",
-  "phone": "01484 414868",
-  "email": "frontline.services@kirklees.gov.uk",
-  "website": "https://www.kirklees.gov.uk/Libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "step-free-access",
-    "hearing-loop-system",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.61076,
-  "longitude": -1.70163,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "kirklees",
+  "source_id": "2140",
+  "source_url": "https://libraryon.org/libraries/kirklees/kirkburton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kirklees/kirkburton-library",
-  "authority": "kirklees"
+  "data": {
+    "Local authority": "Kirklees",
+    "Local authority code": "E08000034",
+    "Library name": "Kirkburton Library",
+    "Library code": null,
+    "Address 1": "Turnshaws Road, Huddersfield, West Yorkshire, HD8 0RT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HD8 0RT",
+    "Unique property reference number": 83101937,
+    "Latitude": 53.61076,
+    "Longitude": -1.70163,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1994,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "14:00-18:00",
+    "Wednesday staffed hours": "10:00-15:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "01484 414868",
+    "Email address": "frontline.services@kirklees.gov.uk",
+    "URL": "https://www.kirklees.gov.uk/Libraries",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

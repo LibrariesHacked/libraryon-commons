@@ -1,70 +1,77 @@
 {
   "id": "lib_ac9365f7-88a8-47bd-9e52-79b36b966fda",
-  "source_id": "794",
-  "name": "Pillgwenlly Library and Information Centre",
   "slug": "pillgwenlly-library-and-information-centre",
-  "address": "123 Commercial Road, Newport, NP20 2GW, United Kingdom",
-  "postcode": "NP20 2GW",
-  "town": "Newport",
-  "phone": "",
-  "email": "pillgwenlly.library@newport.gov.uk",
-  "website": "http://www.newport.gov.uk/en/Leisure-Tourism/Libraries/Find-a-library/Pillgwenlly-Library-and-Information-Centre.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.57626,
-  "longitude": -2.98805,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "newport",
+  "source_id": "794",
+  "source_url": "https://libraryon.org/libraries/newport/pillgwenlly-library-and-information-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newport/pillgwenlly-library-and-information-centre",
-  "authority": "newport"
+  "data": {
+    "Local authority": "Newport",
+    "Local authority code": "W06000022",
+    "Library name": "Pillgwenlly Library and Information Centre",
+    "Library code": null,
+    "Address 1": "123 Commercial Road, Newport, NP20 2GW, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NP20 2GW",
+    "Unique property reference number": null,
+    "Latitude": 51.57626,
+    "Longitude": -2.98805,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": "pillgwenlly.library@newport.gov.uk",
+    "URL": "http://www.newport.gov.uk/en/Leisure-Tourism/Libraries/Find-a-library/Pillgwenlly-Library-and-Information-Centre.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

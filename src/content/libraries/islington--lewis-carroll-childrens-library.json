@@ -1,110 +1,64 @@
 {
   "id": "lib_b6ce9235-f46f-4625-aa2c-b0e4e8b9c6b9",
-  "source_id": "2488",
-  "name": "Lewis Carroll Children's Library",
   "slug": "lewis-carroll-childrens-library",
-  "address": "166 Copenhagen Street, London,  N1 0ST",
-  "postcode": "N1 0ST",
-  "town": "London",
-  "phone": "020 7527 7936",
-  "email": "Lewiscarroll.library@islington.gov.uk",
-  "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/lewis-carroll-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.5371,
-  "longitude": -0.11931,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "islington",
+  "source_id": "2488",
+  "source_url": "https://libraryon.org/libraries/islington/lewis-carroll-childrens-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/islington/lewis-carroll-childrens-library",
-  "authority": "islington"
+  "data": {
+    "Local authority": "Islington",
+    "Local authority code": "E09000019",
+    "Library name": "Lewis Carroll Children's Library",
+    "Library code": null,
+    "Address 1": "166 Copenhagen Street, London,  N1 0ST",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N1 0ST",
+    "Unique property reference number": null,
+    "Latitude": 51.5371,
+    "Longitude": -0.11931,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-13:00,14:00-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "11:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers",
+    "Phone number": "020 7527 7936",
+    "Email address": "Lewiscarroll.library@islington.gov.uk",
+    "URL": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/lewis-carroll-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

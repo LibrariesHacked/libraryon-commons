@@ -1,106 +1,77 @@
 {
   "id": "lib_73155e18-8710-4f0e-b5ea-7744d7bcc552",
-  "source_id": "1556",
-  "name": "Rochdale Local Studies Centre",
   "slug": "rochdale-local-studies-centre",
-  "address": "Touchstones, Rochdale OL16 1JW, Rochdale, England OL16 1AQ, United Kingdom",
-  "postcode": "OL16 1AQ",
-  "town": "Rochdale",
-  "phone": "",
-  "email": "local.studies@yourtrustrochdale.co.uk",
-  "website": "https://www.yourtrustrochdale.co.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Facility Not Open",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.615096,
-  "longitude": -2.161916,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "rochdale",
+  "source_id": "1556",
+  "source_url": "https://libraryon.org/libraries/rochdale/rochdale-local-studies-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rochdale/rochdale-local-studies-centre",
-  "authority": "rochdale"
+  "data": {
+    "Local authority": "Rochdale",
+    "Local authority code": "E08000005",
+    "Library name": "Rochdale Local Studies Centre",
+    "Library code": null,
+    "Address 1": "Touchstones, Rochdale OL16 1JW, Rochdale, England OL16 1AQ, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OL16 1AQ",
+    "Unique property reference number": null,
+    "Latitude": 53.615096,
+    "Longitude": -2.161916,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:30",
+    "Thursday staffed hours": "10:00-16:30",
+    "Friday staffed hours": "10:00-16:30",
+    "Saturday staffed hours": "10:00-16:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; BFI Replay",
+    "Phone number": null,
+    "Email address": "local.studies@yourtrustrochdale.co.uk",
+    "URL": "https://www.yourtrustrochdale.co.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

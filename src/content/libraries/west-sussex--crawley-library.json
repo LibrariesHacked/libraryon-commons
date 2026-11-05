@@ -1,161 +1,73 @@
 {
   "id": "lib_e9ea738a-d839-47bd-ba36-f94ad8fc9e51",
-  "source_id": "1872",
-  "name": "Crawley Library",
   "slug": "crawley-library",
-  "address": "Southgate Avenue, Crawley, West Sussex, RH10 6HG",
-  "postcode": "RH10 6HG",
-  "town": "Crawley",
-  "phone": "01293 651751 ",
-  "email": "crawley.library@westsussex.gov.uk",
-  "website": "https://libraries.westsussex.gov.uk/crawley-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.113815,
-  "longitude": -0.182415,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://arena.westsussex.gov.uk/-/bipc-sussex"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Faxing",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "west-sussex",
+  "source_id": "1872",
+  "source_url": "https://libraryon.org/libraries/west-sussex/crawley-library",
   "updated_on": "2026-02-13",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-sussex/crawley-library",
-  "authority": "west-sussex"
+  "data": {
+    "Local authority": "West Sussex",
+    "Local authority code": "E10000032",
+    "Library name": "Crawley Library",
+    "Library code": null,
+    "Address 1": "Southgate Avenue, Crawley, West Sussex, RH10 6HG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RH10 6HG",
+    "Unique property reference number": null,
+    "Latitude": 51.113815,
+    "Longitude": -0.182415,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Business support; Computers; Photocopiers; Scanning; Faxing; Books delivered; Digital skills sessions; Children's activities; Hobby and interest groups; Family history; Findmypast; Hobby and interest groups; Cafe; Bookable space",
+    "Phone number": "01293 651751",
+    "Email address": "crawley.library@westsussex.gov.uk",
+    "URL": "https://libraries.westsussex.gov.uk/crawley-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_7ae3b75dfcd054d5cd8d985d"
+      ]
+    }
+  ]
 }

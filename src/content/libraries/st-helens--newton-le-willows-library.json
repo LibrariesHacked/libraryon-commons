@@ -1,134 +1,71 @@
 {
   "id": "lib_d5010e9f-c2bc-4af8-a2d3-74419a3b26b0",
-  "source_id": "1563",
-  "name": "Newton-le-Willows Library",
   "slug": "newton-le-willows-library",
-  "address": "Crow Lane East, Newton, Merseyside, WA12 9TU",
-  "postcode": "WA12 9TS",
-  "town": "Newton-le-Willows",
-  "phone": "01744 676985",
-  "email": "newtonlewillowslibrary@sthelens.gov.uk",
-  "website": "https://www.sthelens.gov.uk/FindALibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.45616,
-  "longitude": -2.63731,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://liverpool.gov.uk/bipc"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "st-helens",
+  "source_id": "1563",
+  "source_url": "https://libraryon.org/libraries/st-helens/newton-le-willows-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/st-helens/newton-le-willows-library",
-  "authority": "st-helens"
+  "data": {
+    "Local authority": "St. Helens",
+    "Local authority code": "E08000013",
+    "Library name": "Newton-le-Willows Library",
+    "Library code": null,
+    "Address 1": "Crow Lane East, Newton, Merseyside, WA12 9TU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA12 9TS",
+    "Unique property reference number": null,
+    "Latitude": 53.45616,
+    "Longitude": -2.63731,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-13:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups; Business support; Findmypast; BFI Replay",
+    "Phone number": "01744 676985",
+    "Email address": "newtonlewillowslibrary@sthelens.gov.uk",
+    "URL": "https://www.sthelens.gov.uk/FindALibrary",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

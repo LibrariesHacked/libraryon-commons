@@ -1,97 +1,71 @@
 {
   "id": "lib_927f2a94-64f2-4a87-bb62-e15bb29c51b9",
-  "source_id": "2252",
-  "name": "Drighlington Community Library",
   "slug": "drighlington-community-library",
-  "address": "Moorside Approach, Drighlington, Bradford, BD11 1LJ",
-  "postcode": "BD11 1JZ",
-  "town": "Bradford",
-  "phone": "07572002952",
-  "email": "driglibrary@gmail.com",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.7531,
-  "longitude": -1.66267,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "leeds",
+  "source_id": "2252",
+  "source_url": "https://libraryon.org/libraries/leeds/drighlington-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leeds/drighlington-community-library",
-  "authority": "leeds"
+  "data": {
+    "Local authority": "Leeds",
+    "Local authority code": "E08000035",
+    "Library name": "Drighlington Community Library",
+    "Library code": null,
+    "Address 1": "Moorside Approach, Drighlington, Bradford, BD11 1LJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BD11 1JZ",
+    "Unique property reference number": null,
+    "Latitude": 53.7531,
+    "Longitude": -1.66267,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities",
+    "Phone number": "07572002952",
+    "Email address": "driglibrary@gmail.com",
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

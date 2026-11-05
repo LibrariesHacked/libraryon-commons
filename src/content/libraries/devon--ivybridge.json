@@ -1,131 +1,71 @@
 {
   "id": "lib_6cbfd264-7010-4995-b43e-a2804856a365",
-  "source_id": "716",
-  "name": "Ivybridge",
   "slug": "ivybridge",
-  "address": "The Watermark, Erme Court, Leonards Road, Ivybridge, PL21 0SZ",
-  "postcode": "PL21 0SZ",
-  "town": "Ivybridge",
-  "phone": "01752 893140",
-  "email": "ivybridge.library@librariesunlimited.org.uk",
-  "website": "https://www.devonlibraries.org.uk/web/arena/ivybridgelibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system",
-    "staff-support",
-    "accessible-restrooms",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "arts"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/ivybridgelibrary/",
-  "permanentlyClosed": false,
-  "latitude": 50.389692,
-  "longitude": -3.919032,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://roomhire.librariesunlimited.org.uk/venues/101-ivybridge-library"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "devon",
+  "source_id": "716",
+  "source_url": "https://libraryon.org/libraries/devon/ivybridge",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/ivybridge",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "Ivybridge",
+    "Library code": null,
+    "Address 1": "The Watermark, Erme Court, Leonards Road, Ivybridge, PL21 0SZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PL21 0SZ",
+    "Unique property reference number": null,
+    "Latitude": 50.389692,
+    "Longitude": -3.919032,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": 2008,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups; Computers; Photocopiers; Scanning; Bookable space; BFI Replay",
+    "Phone number": "01752 893140",
+    "Email address": "ivybridge.library@librariesunlimited.org.uk",
+    "URL": "https://www.devonlibraries.org.uk/web/arena/ivybridgelibrary",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

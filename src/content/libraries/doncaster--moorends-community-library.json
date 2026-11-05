@@ -1,121 +1,64 @@
 {
   "id": "lib_b749af06-7499-4743-ac2f-28898d85d32d",
-  "source_id": "1886",
-  "name": "Moorends Community Library",
   "slug": "moorends-community-library",
-  "address": "Surestart Building, Marshland Road, Moorends, South Yorkshire, DN8 4SB",
-  "postcode": "DN8 4SB",
-  "town": "Doncaster",
-  "phone": "01302 734558",
-  "email": "moorendslibrary@gmail.com",
-  "website": "https://library.doncaster.gov.uk/-/moorends-community-library#/?location=Moorends%20Community%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.62828,
-  "longitude": -0.95104,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "doncaster",
+  "source_id": "1886",
+  "source_url": "https://libraryon.org/libraries/doncaster/moorends-community-library",
   "updated_on": "2026-08-06",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/doncaster/moorends-community-library",
-  "authority": "doncaster"
+  "data": {
+    "Local authority": "Doncaster",
+    "Local authority code": "E08000017",
+    "Library name": "Moorends Community Library",
+    "Library code": null,
+    "Address 1": "Surestart Building, Marshland Road, Moorends, South Yorkshire, DN8 4SB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN8 4SB",
+    "Unique property reference number": null,
+    "Latitude": 53.62828,
+    "Longitude": -0.95104,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-15:00",
+    "Wednesday staffed hours": "09:00-15:00",
+    "Thursday staffed hours": "09:00-15:00",
+    "Friday staffed hours": "09:00-15:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; BFI Replay; Digital lending; Family history; Books delivered; Bookable space",
+    "Phone number": "01302 734558",
+    "Email address": "moorendslibrary@gmail.com",
+    "URL": "https://library.doncaster.gov.uk/-/moorends-community-library#/?location=Moorends%20Community%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

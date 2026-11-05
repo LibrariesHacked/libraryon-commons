@@ -1,109 +1,71 @@
 {
   "id": "lib_9508cd36-5bcf-4566-bb6a-2f5bb4674919",
-  "source_id": "303",
-  "name": "South Neighbourhood Office & Library",
   "slug": "south-neighbourhood-office-library",
-  "address": "South Neighbourhood Office, 40 Captains Road, Edinburgh, EH17 8QF",
-  "postcode": "EH17 8QF",
-  "town": "Edinburgh",
-  "phone": "",
-  "email": "southeast.locality@edinburgh.gov.uk",
-  "website": "https://www.edinburgh.gov.uk/directory-record/1812927/south-neighbourhood-office-and-library-",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:45",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.90299,
-  "longitude": -3.153,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "city-of-edinburgh",
+  "source_id": "303",
+  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/south-neighbourhood-office-library",
   "updated_on": "2026-07-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/south-neighbourhood-office-library",
-  "authority": "city-of-edinburgh"
+  "data": {
+    "Local authority": "City of Edinburgh",
+    "Local authority code": "S12000036",
+    "Library name": "South Neighbourhood Office & Library",
+    "Library code": null,
+    "Address 1": "South Neighbourhood Office, 40 Captains Road, Edinburgh, EH17 8QF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EH17 8QF",
+    "Unique property reference number": null,
+    "Latitude": 55.90299,
+    "Longitude": -3.153,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-15:45",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive; Computers",
+    "Phone number": null,
+    "Email address": "southeast.locality@edinburgh.gov.uk",
+    "URL": "https://www.edinburgh.gov.uk/directory-record/1812927/south-neighbourhood-office-and-library-",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

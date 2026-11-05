@@ -1,94 +1,71 @@
 {
   "id": "lib_cfd3039e-dbc9-451c-95ed-d67b7e5ab0a2",
-  "source_id": "2106",
-  "name": "Fawdon Community Library",
   "slug": "fawdon-partnership-library",
-  "address": "Fawdon Park Road, Newcastle upon Tyne, Tyne and Wear , NE3 2PJ",
-  "postcode": "NE3 2PJ",
-  "town": "Newcastle upon Tyne",
-  "phone": "",
-  "email": "fawdoncommunitylibrary@gmail.com",
-  "website": "https://fawdoncommunitylibrary.com/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "On Mondays, Fawdon library closes 13:00 to 14:00 for lunch",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.01394,
-  "longitude": -1.6474,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "newcastle-city",
+  "source_id": "2106",
+  "source_url": "https://libraryon.org/libraries/newcastle-city/fawdon-partnership-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newcastle-city/fawdon-partnership-library",
-  "authority": "newcastle-city"
+  "data": {
+    "Local authority": "Newcastle",
+    "Local authority code": "E08000021",
+    "Library name": "Fawdon Community Library",
+    "Library code": null,
+    "Address 1": "Fawdon Park Road, Newcastle upon Tyne, Tyne and Wear , NE3 2PJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE3 2PJ",
+    "Unique property reference number": null,
+    "Latitude": 55.01394,
+    "Longitude": -1.6474,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-13:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers",
+    "Phone number": null,
+    "Email address": "fawdoncommunitylibrary@gmail.com",
+    "URL": "https://fawdoncommunitylibrary.com/",
+    "Notes": "On Mondays, Fawdon library closes 13:00 to 14:00 for lunch"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

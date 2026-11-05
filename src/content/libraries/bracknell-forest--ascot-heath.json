@@ -1,196 +1,64 @@
 {
   "id": "lib_0816edde-ef0c-45d4-903b-d6ae19e579bb",
-  "source_id": "3291",
-  "name": "Ascot Heath",
   "slug": "ascot-heath",
-  "address": "Fernbank Road, North Ascot, Berkshire, SL5 8LA",
-  "postcode": "SL5 8LA",
-  "town": "Ascot",
-  "phone": "07554 771395",
-  "email": "AscotHeath.library@bracknell-forest.gov.uk",
-  "website": "https://www.bracknell-forest.gov.uk/libraries/library-directory/ascot-heath-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "step-free-access",
-    "automatic-doors",
-    "accessible-public-transport-connections",
-    "low-vision-support",
-    "assistive-technology-available",
-    "staff-support",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.41992,
-  "longitude": -0.69238,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bracknell-forest",
+  "source_id": "3291",
+  "source_url": "https://libraryon.org/libraries/bracknell-forest/ascot-heath",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bracknell-forest/ascot-heath",
-  "authority": "bracknell-forest"
+  "data": {
+    "Local authority": "Bracknell Forest",
+    "Local authority code": "E06000036",
+    "Library name": "Ascot Heath",
+    "Library code": null,
+    "Address 1": "Fernbank Road, North Ascot, Berkshire, SL5 8LA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SL5 8LA",
+    "Unique property reference number": null,
+    "Latitude": 51.41992,
+    "Longitude": -0.69238,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-09:30,19:00-20:00",
+    "Tuesday unstaffed hours": "08:00-14:00,17:00-20:00",
+    "Wednesday unstaffed hours": "08:00-20:00",
+    "Thursday unstaffed hours": "08:00-09:30,17:00-20:00",
+    "Friday unstaffed hours": "08:00-14:00,17:00-20:00",
+    "Saturday unstaffed hours": "08:00-09:30,12:30-18:00",
+    "Sunday unstaffed hours": "10:00-18:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Career support; Children's activities; Hobby and interest groups; Computers; Findmypast; British Newspaper Archive",
+    "Phone number": "07554 771395",
+    "Email address": "AscotHeath.library@bracknell-forest.gov.uk",
+    "URL": "https://www.bracknell-forest.gov.uk/libraries/library-directory/ascot-heath-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,131 +1,71 @@
 {
   "id": "lib_7fd7959a-8ea8-48fb-aca2-93c2433b842c",
-  "source_id": "3339",
-  "name": "Hungerford Library",
   "slug": "hungerford",
-  "address": "Church Street, Hungerford, Berkshire, RG17 0JG",
-  "postcode": "RG17 0JH",
-  "town": "Hungerford",
-  "phone": "01488 682660",
-  "email": "hungerfordlibrary@westberks.gov.uk",
-  "website": "https://www.westberks.gov.uk/hungerford-library",
-  "catalogue": "https://www.westberks.gov.uk/library-catalogue",
-  "joinOnline": "https://westberks.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.415,
-  "longitude": -1.51638,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.westberks.gov.uk/elibrary"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.westberks.gov.uk/family-history"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.westberks.gov.uk/mobile-library"
-    }
-  ],
+  "authority": "west-berkshire",
+  "source_id": "3339",
+  "source_url": "https://libraryon.org/libraries/west-berkshire/hungerford",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-berkshire/hungerford",
-  "authority": "west-berkshire"
+  "data": {
+    "Local authority": "West Berkshire",
+    "Local authority code": "E06000037",
+    "Library name": "Hungerford Library",
+    "Library code": null,
+    "Address 1": "Church Street, Hungerford, Berkshire, RG17 0JG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG17 0JH",
+    "Unique property reference number": null,
+    "Latitude": 51.415,
+    "Longitude": -1.51638,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-16:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-19:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Computers; Photocopiers; Scanning; Family history; Findmypast; British Newspaper Archive; Books delivered",
+    "Phone number": "01488 682660",
+    "Email address": "hungerfordlibrary@westberks.gov.uk",
+    "URL": "https://www.westberks.gov.uk/hungerford-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

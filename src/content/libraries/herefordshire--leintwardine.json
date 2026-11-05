@@ -1,106 +1,64 @@
 {
   "id": "lib_4319be9e-e607-4bfb-84c9-eddcb95e1cea",
-  "source_id": "3034",
-  "name": "Leintwardine Library",
   "slug": "leintwardine",
-  "address": "Leintwardine Village Hall, High Street, Leintwardine, Herefordshire, SY7 0LB",
-  "postcode": "SY7 0LB",
-  "town": "Bucknell",
-  "phone": "01432 383495",
-  "email": "leintwardinelibrary@herefordshire.gov.uk",
-  "website": "https://www.herefordshire.gov.uk/directory-record/28/leintwardine-library",
-  "catalogue": "https://prism.librarymanagementcloud.co.uk/herefordshire/home",
-  "joinOnline": "https://www.herefordshire.gov.uk/libraries-1/joining-using-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "First Saturday of the month open between 10:00 and 12:00. ",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.36133,
-  "longitude": -2.87662,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/3"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/2"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/2"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/local-family-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.herefordshire.gov.uk/libraries/homedelivery"
-    }
-  ],
+  "authority": "herefordshire",
+  "source_id": "3034",
+  "source_url": "https://libraryon.org/libraries/herefordshire/leintwardine",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/herefordshire/leintwardine",
-  "authority": "herefordshire"
+  "data": {
+    "Local authority": "Herefordshire",
+    "Local authority code": "E06000019",
+    "Library name": "Leintwardine Library",
+    "Library code": null,
+    "Address 1": "Leintwardine Village Hall, High Street, Leintwardine, Herefordshire, SY7 0LB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SY7 0LB",
+    "Unique property reference number": 10093119630,
+    "Latitude": 52.36133,
+    "Longitude": -2.87662,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-16:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Children's activities; Hobby and interest groups; Computers; Family history; Books delivered",
+    "Phone number": "01432 383495",
+    "Email address": "leintwardinelibrary@herefordshire.gov.uk",
+    "URL": "https://www.herefordshire.gov.uk/directory-record/28/leintwardine-library",
+    "Notes": "First Saturday of the month open between 10:00 and 12:00."
+  },
+  "validation_exceptions": []
 }

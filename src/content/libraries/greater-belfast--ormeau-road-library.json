@@ -1,122 +1,71 @@
 {
   "id": "lib_008d341d-9b7c-4b83-9693-48c04c52f3ec",
-  "source_id": "3630",
-  "name": "Ormeau Road Library",
   "slug": "ormeau-road-library",
-  "address": "247 Ormeau Road, Botanic, Belfast, BT7 2EB, United Kingdom",
-  "postcode": "BT7 2EB",
-  "town": "Belfast",
-  "phone": "028 9050 9228",
-  "email": "ormeauroad.library@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/greater-belfast/ormeau-road-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.587412,
-  "longitude": -5.923852,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "greater-belfast",
+  "source_id": "3630",
+  "source_url": "https://libraryon.org/libraries/greater-belfast/ormeau-road-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/greater-belfast/ormeau-road-library",
-  "authority": "greater-belfast"
+  "data": {
+    "Local authority": "Greater Belfast",
+    "Local authority code": "N09000003",
+    "Library name": "Ormeau Road Library",
+    "Library code": null,
+    "Address 1": "247 Ormeau Road, Botanic, Belfast, BT7 2EB, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BT7 2EB",
+    "Unique property reference number": null,
+    "Latitude": 54.587412,
+    "Longitude": -5.923852,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:30",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": "09:30-17:30",
+    "Thursday staffed hours": "09:30-20:00",
+    "Friday staffed hours": "09:30-16:00",
+    "Saturday staffed hours": "09:30-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; Bookable space; Hobby and interest groups",
+    "Phone number": "028 9050 9228",
+    "Email address": "ormeauroad.library@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/greater-belfast/ormeau-road-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,98 +1,71 @@
 {
   "id": "lib_b82b56ba-a9c4-408a-9b91-9e2af0537635",
-  "source_id": "463",
-  "name": "Ruabon Library",
   "slug": "ruabon-library",
-  "address": "9 Dennis Court, Ruabon, Wrexham, LL14 6NB, United Kingdom",
-  "postcode": "LL14 6NB",
-  "town": "Wrexham",
-  "phone": "01978 822002",
-  "email": "ruabon.library@wrexham.gov.uk",
-  "website": "https://www.wrexham.gov.uk/service/your-local-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:15",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.98746,
-  "longitude": -3.03921,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "wrexham",
+  "source_id": "463",
+  "source_url": "https://libraryon.org/libraries/wrexham/ruabon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wrexham/ruabon-library",
-  "authority": "wrexham"
+  "data": {
+    "Local authority": "Wrexham",
+    "Local authority code": "W06000006",
+    "Library name": "Ruabon Library",
+    "Library code": null,
+    "Address 1": "9 Dennis Court, Ruabon, Wrexham, LL14 6NB, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LL14 6NB",
+    "Unique property reference number": null,
+    "Latitude": 52.98746,
+    "Longitude": -3.03921,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "12:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "12:00-17:00",
+    "Thursday staffed hours": "09:00-13:15",
+    "Friday staffed hours": "12:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast",
+    "Phone number": "01978 822002",
+    "Email address": "ruabon.library@wrexham.gov.uk",
+    "URL": "https://www.wrexham.gov.uk/service/your-local-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

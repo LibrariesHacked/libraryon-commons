@@ -1,102 +1,71 @@
 {
   "id": "lib_4a9d7b2b-db2b-4e1f-8f49-287a1cb709f6",
-  "source_id": "2256",
-  "name": "Miles Platting Community Library",
   "slug": "miles-platting-community-library",
-  "address": "Victoria Mill Community Centre, Lower Vickers Street, Miles Platting, Greater Manchester , M40 8EE",
-  "postcode": "M40 7LL",
-  "town": "Manchester",
-  "phone": "0161 227 3787",
-  "email": "beswicklibrary@manchester.gov.uk",
-  "website": "https://www.manchester.gov.uk/directory_record/470329/miles_platting_community_library/category/1957/all_libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "https://my.matterport.com/show/?m=t37injZQMjc",
-  "permanentlyClosed": false,
-  "latitude": 53.48965,
-  "longitude": -2.21429,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "manchester",
+  "source_id": "2256",
+  "source_url": "https://libraryon.org/libraries/manchester/miles-platting-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/manchester/miles-platting-community-library",
-  "authority": "manchester"
+  "data": {
+    "Local authority": "Manchester",
+    "Local authority code": "E08000003",
+    "Library name": "Miles Platting Community Library",
+    "Library code": null,
+    "Address 1": "Victoria Mill Community Centre, Lower Vickers Street, Miles Platting, Greater Manchester , M40 8EE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M40 7LL",
+    "Unique property reference number": null,
+    "Latitude": 53.48965,
+    "Longitude": -2.21429,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Children's activities; Hobby and interest groups",
+    "Phone number": "0161 227 3787",
+    "Email address": "beswicklibrary@manchester.gov.uk",
+    "URL": "https://www.manchester.gov.uk/directory_record/470329/miles_platting_community_library/category/1957/all_libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

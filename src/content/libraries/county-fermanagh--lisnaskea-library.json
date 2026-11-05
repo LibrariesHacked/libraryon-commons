@@ -1,158 +1,77 @@
 {
   "id": "lib_80e17c95-f0c8-4c4d-aa17-475cd7c015b3",
-  "source_id": "3678",
-  "name": "Lisnaskea Library",
   "slug": "lisnaskea-library",
-  "address": "",
-  "postcode": "",
-  "town": "",
-  "phone": "028 6772 1222",
-  "email": "lisnaskea.library@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/county-fermanagh/lisnaskea-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": null,
-  "longitude": null,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "county-fermanagh",
+  "source_id": "3678",
+  "source_url": "https://libraryon.org/libraries/county-fermanagh/lisnaskea-library",
   "updated_on": "2026-01-27",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-fermanagh/lisnaskea-library",
-  "authority": "county-fermanagh"
+  "data": {
+    "Local authority": "County Fermanagh",
+    "Local authority code": "N09000006",
+    "Library name": "Lisnaskea Library",
+    "Library code": null,
+    "Address 1": null,
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": null,
+    "Longitude": null,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:00-19:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-20:00",
+    "Tuesday unstaffed hours": "08:00-12:00",
+    "Wednesday unstaffed hours": "17:00-20:00",
+    "Thursday unstaffed hours": "17:00-20:00",
+    "Friday unstaffed hours": "17:00-20:00",
+    "Saturday unstaffed hours": "13:00-18:00",
+    "Sunday unstaffed hours": "13:00-18:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Scanning; Bookable space; Hobby and interest groups",
+    "Phone number": "028 6772 1222",
+    "Email address": "lisnaskea.library@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/county-fermanagh/lisnaskea-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

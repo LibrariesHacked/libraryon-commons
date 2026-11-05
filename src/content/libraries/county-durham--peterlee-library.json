@@ -1,118 +1,71 @@
 {
   "id": "lib_40d8cff7-bf4e-4e9a-913f-b4fcda81aeb7",
-  "source_id": "2996",
-  "name": "Peterlee Library",
   "slug": "peterlee-library",
-  "address": "St. Cuthberts Way, Peterlee, County Durham, SR8 1AF",
-  "postcode": "SR8 1QR",
-  "town": "Peterlee",
-  "phone": "03000 269 509",
-  "email": "peterlee.lib@durham.gov.uk",
-  "website": "https://www.durham.gov.uk/article/2047/Peterlee-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.756257,
-  "longitude": -1.337135,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "county-durham",
+  "source_id": "2996",
+  "source_url": "https://libraryon.org/libraries/county-durham/peterlee-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-durham/peterlee-library",
-  "authority": "county-durham"
+  "data": {
+    "Local authority": "County Durham",
+    "Local authority code": "E06000047",
+    "Library name": "Peterlee Library",
+    "Library code": null,
+    "Address 1": "St. Cuthberts Way, Peterlee, County Durham, SR8 1AF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SR8 1QR",
+    "Unique property reference number": null,
+    "Latitude": 54.756257,
+    "Longitude": -1.337135,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Hobby and interest groups; Children's activities; Books delivered; Digital skills sessions; Computers; Photocopiers",
+    "Phone number": "03000 269 509",
+    "Email address": "peterlee.lib@durham.gov.uk",
+    "URL": "https://www.durham.gov.uk/article/2047/Peterlee-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,120 +1,71 @@
 {
   "id": "lib_5aca9412-1d7b-41d8-a935-59aeb881e314",
-  "source_id": "2987",
-  "name": "Newton Hall Library",
   "slug": "newton-hall-library",
-  "address": "Alnwick Road, Newton Hall, County Durham, DH1 5NL",
-  "postcode": "DH1 5PJ",
-  "town": "Durham",
-  "phone": "03000 269 503",
-  "email": "newtonhall.lib@durham.gov.uk",
-  "website": "https://www.durham.gov.uk/article/2045/Newton-Hall-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.79899,
-  "longitude": -1.57797,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "county-durham",
+  "source_id": "2987",
+  "source_url": "https://libraryon.org/libraries/county-durham/newton-hall-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-durham/newton-hall-library",
-  "authority": "county-durham"
+  "data": {
+    "Local authority": "County Durham",
+    "Local authority code": "E06000047",
+    "Library name": "Newton Hall Library",
+    "Library code": null,
+    "Address 1": "Alnwick Road, Newton Hall, County Durham, DH1 5NL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DH1 5PJ",
+    "Unique property reference number": null,
+    "Latitude": 54.79899,
+    "Longitude": -1.57797,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Hobby and interest groups; Children's activities; Computers; Photocopiers; Books delivered; Free Wi-Fi; Family history; Scanning",
+    "Phone number": "03000 269 503",
+    "Email address": "newtonhall.lib@durham.gov.uk",
+    "URL": "https://www.durham.gov.uk/article/2045/Newton-Hall-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

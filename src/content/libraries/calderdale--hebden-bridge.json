@@ -1,119 +1,71 @@
 {
   "id": "lib_769ed0dd-db94-43a3-9c5b-9be5115c9a34",
-  "source_id": "2048",
-  "name": "Hebden Bridge",
   "slug": "hebden-bridge",
-  "address": "Cheetham Street, Hebden Bridge, West Yorkshire, HX7 8EP",
-  "postcode": "HX7 8AG",
-  "town": "Hebden Bridge",
-  "phone": "01422 288040",
-  "email": "hebden_bridge.library@calderdale.gov.uk",
-  "website": "http://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/your-local-library/hebden-bridge-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "Refurbished following flooding 2015",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.74138,
-  "longitude": -2.01202,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "calderdale",
+  "source_id": "2048",
+  "source_url": "https://libraryon.org/libraries/calderdale/hebden-bridge",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/calderdale/hebden-bridge",
-  "authority": "calderdale"
+  "data": {
+    "Local authority": "Calderdale",
+    "Local authority code": "E08000033",
+    "Library name": "Hebden Bridge",
+    "Library code": null,
+    "Address 1": "Cheetham Street, Hebden Bridge, West Yorkshire, HX7 8EP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HX7 8AG",
+    "Unique property reference number": null,
+    "Latitude": 53.74138,
+    "Longitude": -2.01202,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-18:30",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "01422 288040",
+    "Email address": "hebden_bridge.library@calderdale.gov.uk",
+    "URL": "http://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/your-local-library/hebden-bridge-library",
+    "Notes": "Refurbished following flooding 2015"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,129 +1,64 @@
 {
   "id": "lib_d7358e73-3926-4983-9206-ba6eba3e0634",
-  "source_id": "2874",
-  "name": "Ditton",
   "slug": "ditton",
-  "address": "Queens Avenue, Widnes, Cheshire, WA8 8HR",
-  "postcode": "WA8 8HR",
-  "town": "Widnes",
-  "phone": "0151 511 7744",
-  "email": "",
-  "website": "https://library.haltonbc.info/",
-  "catalogue": "https://hpl.koha-ptfs.co.uk/",
-  "joinOnline": "https://halton.me/join-the-library/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.36757,
-  "longitude": -2.76934,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://library.haltonbc.info/digital/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://library.haltonbc.info/e-books/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://library.haltonbc.info/home-delivery-service/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://library.haltonbc.info/children/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://library.haltonbc.info/community-family-history/"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    }
-  ],
+  "authority": "halton",
+  "source_id": "2874",
+  "source_url": "https://libraryon.org/libraries/halton/ditton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/halton/ditton",
-  "authority": "halton"
+  "data": {
+    "Local authority": "Halton",
+    "Local authority code": "E06000006",
+    "Library name": "Ditton",
+    "Library code": null,
+    "Address 1": "Queens Avenue, Widnes, Cheshire, WA8 8HR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA8 8HR",
+    "Unique property reference number": null,
+    "Latitude": 53.36757,
+    "Longitude": -2.76934,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital skills sessions; Digital lending; Books delivered; Computers; Children's activities; Family history; Photocopiers; BFI Replay; British Newspaper Archive; Garden",
+    "Phone number": "0151 511 7744",
+    "Email address": null,
+    "URL": "https://library.haltonbc.info/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

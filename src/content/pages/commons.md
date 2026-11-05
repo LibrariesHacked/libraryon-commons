@@ -8,18 +8,13 @@ resources: []
 
 # LibraryCommons
 
-LibraryCommons is an independent community project built on the knowledge,
-stories and resources originally shared by LibraryOn and The British Library.
+LibraryCommons is a project built on the knowledge, stories and resources originally shared by LibraryOn and The British Library.
 
-We preserve that original work with its credits intact, while creating space for
-new articles, useful resources and a directory that the library community can
-continue to maintain.
+We preserve that original work with its credits intact, while creating space for new articles, useful resources and a library branch directory that the library community can continue to maintain.
 
 ## Shared knowledge
 
-Library collections, local projects and practical experience have value beyond
-any single programme. The Commons brings them together as a resource that can
-keep growing.
+Library collections, local projects and practical experience have value beyond any single programme. The Commons brings them together as a resource that can keep growing.
 
 ## Community stewardship
 

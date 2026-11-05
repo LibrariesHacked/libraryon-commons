@@ -1,131 +1,73 @@
 {
   "id": "lib_e51b637c-6597-4b8b-bfbb-49a00f671705",
-  "source_id": "3560",
-  "name": "Flackwell Heath Community Library",
   "slug": "flackwell-heath-community-library",
-  "address": "Chapel Road, Flackwell Heath, Buckinghamshire, HP10 9AA",
-  "postcode": "HP10 9AA",
-  "town": "High Wycombe",
-  "phone": "",
-  "email": "fhcl@flackwellheath.net",
-  "website": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/flackwell-heath-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support",
-    "hearing-loop-system",
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.60184,
-  "longitude": -0.71178,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "buckinghamshire",
+  "source_id": "3560",
+  "source_url": "https://libraryon.org/libraries/buckinghamshire/flackwell-heath-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/buckinghamshire/flackwell-heath-community-library",
-  "authority": "buckinghamshire"
+  "data": {
+    "Local authority": "Buckinghamshire",
+    "Local authority code": "E06000060",
+    "Library name": "Flackwell Heath Community Library",
+    "Library code": null,
+    "Address 1": "Chapel Road, Flackwell Heath, Buckinghamshire, HP10 9AA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HP10 9AA",
+    "Unique property reference number": null,
+    "Latitude": 51.60184,
+    "Longitude": -0.71178,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Bookable space; Books delivered; Family history; Hobby and interest groups; Children's activities",
+    "Phone number": null,
+    "Email address": "fhcl@flackwellheath.net",
+    "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/flackwell-heath-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_2b1fdcf097d06797076c5297"
+      ]
+    }
+  ]
 }

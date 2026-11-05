@@ -1,140 +1,64 @@
 {
   "id": "lib_8e56cbca-72a3-4610-8593-7476a9a10d68",
-  "source_id": "2602",
-  "name": "Manor House Community Library",
   "slug": "manor-house-community-library",
-  "address": "34 Old Road, London, Greater London, SE13 5SY",
-  "postcode": "SE13 5SY",
-  "town": "London",
-  "phone": "020 8463 0420",
-  "email": "contact@mhlibrary.co.uk",
-  "website": "https://mhlibrary.co.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "step-free-access",
-    "wheelchair-access",
-    "automatic-doors",
-    "lift-access",
-    "assistive-technology-available",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "staff-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "arts",
-    "other",
-    "catering"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.457199,
-  "longitude": 0.004653,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.mhlibrary.co.uk/community-rooms/"
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "lewisham",
+  "source_id": "2602",
+  "source_url": "https://libraryon.org/libraries/lewisham/manor-house-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lewisham/manor-house-community-library",
-  "authority": "lewisham"
+  "data": {
+    "Local authority": "Lewisham",
+    "Local authority code": "E09000023",
+    "Library name": "Manor House Community Library",
+    "Library code": null,
+    "Address 1": "34 Old Road, London, Greater London, SE13 5SY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE13 5SY",
+    "Unique property reference number": 10094268377,
+    "Latitude": 51.457199,
+    "Longitude": 0.004653,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts; other; catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Cafe; Computers; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "020 8463 0420",
+    "Email address": "contact@mhlibrary.co.uk",
+    "URL": "https://mhlibrary.co.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

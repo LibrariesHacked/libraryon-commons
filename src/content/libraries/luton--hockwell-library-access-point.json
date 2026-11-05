@@ -1,84 +1,77 @@
 {
   "id": "lib_07d1a95e-a22b-40ab-8bdf-983bb4d821ed",
-  "source_id": "2779",
-  "name": "Hockwell Ring Library Access Point",
   "slug": "hockwell-library-access-point",
-  "address": "Mayne Avenue, Luton, Bedfordshire, LU4 9LB",
-  "postcode": "LU4 9LS",
-  "town": "Luton",
-  "phone": "01582 548392",
-  "email": "hockwellring@luton.gov.uk",
-  "website": "https://m.luton.gov.uk/Page/Show/Community_and_living/community-centres/Pages/Hockwell-Ring-Community-Centre.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "THIS LIBRARY IS NOW PERMANENTLY CLOSED ",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [
-    "community",
-    "catering"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.90514495718301,
-  "longitude": -0.4703954261723595,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Faxing",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.lutonlibraries.co.uk/digital-content/elibrary"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.lutonlibraries.co.uk/digital-content/wellbeing/home-library"
-    }
-  ],
+  "authority": "luton",
+  "source_id": "2779",
+  "source_url": "https://libraryon.org/libraries/luton/hockwell-library-access-point",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/luton/hockwell-library-access-point",
-  "authority": "luton"
+  "data": {
+    "Local authority": "Luton",
+    "Local authority code": "E06000032",
+    "Library name": "Hockwell Ring Library Access Point",
+    "Library code": null,
+    "Address 1": "Mayne Avenue, Luton, Bedfordshire, LU4 9LB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LU4 9LS",
+    "Unique property reference number": null,
+    "Latitude": 51.90514495718301,
+    "Longitude": -0.4703954261723595,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "THIS LIBRARY IS NOW PERMANENTLY CLOSED",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Faxing; Bookable space; Photocopiers; Digital lending; Books delivered",
+    "Phone number": "01582 548392",
+    "Email address": "hockwellring@luton.gov.uk",
+    "URL": "https://m.luton.gov.uk/Page/Show/Community_and_living/community-centres/Pages/Hockwell-Ring-Community-Centre.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

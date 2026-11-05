@@ -1,133 +1,71 @@
 {
   "id": "lib_6c9bc51c-c214-4d7f-af51-0a617f1ce511",
-  "source_id": "2560",
-  "name": "Greenwood Avenue Library",
   "slug": "greenwood-avenue-library",
-  "address": "220 Greenwood Avenue, Hull, East Riding of Yorkshire, HU6 9RU",
-  "postcode": "HU6 9RT",
-  "town": "Hull",
-  "phone": "01482 331 257",
-  "email": "Greenwood.Library@hcandl.co.uk",
-  "website": "https://www.hulllibraries.co.uk/local-library/greenwood-avenue-library",
-  "catalogue": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
-  "joinOnline": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "assistive-technology-available",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.7824,
-  "longitude": -0.37325,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.hulllibraries.co.uk/borrowing/home-library-service#:~:text=If%20you%20have%20difficulty%20getting,libraries%20right%20to%20your%20door.&text=Joining%20is%20easy%20and%20membership,of%20the%20items%20you%20borrow."
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.hulllibraries.co.uk/borrowing/DigitalReadingandListening"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.hulllibraries.co.uk/children"
-    }
-  ],
+  "authority": "hull",
+  "source_id": "2560",
+  "source_url": "https://libraryon.org/libraries/hull/greenwood-avenue-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hull/greenwood-avenue-library",
-  "authority": "hull"
+  "data": {
+    "Local authority": "Hull",
+    "Local authority code": "E06000010",
+    "Library name": "Greenwood Avenue Library",
+    "Library code": null,
+    "Address 1": "220 Greenwood Avenue, Hull, East Riding of Yorkshire, HU6 9RU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HU6 9RT",
+    "Unique property reference number": null,
+    "Latitude": 53.7824,
+    "Longitude": -0.37325,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:30,14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:30,14:00-18:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:30,14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; Books delivered; Computers; Digital lending; Children's activities",
+    "Phone number": "01482 331 257",
+    "Email address": "Greenwood.Library@hcandl.co.uk",
+    "URL": "https://www.hulllibraries.co.uk/local-library/greenwood-avenue-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

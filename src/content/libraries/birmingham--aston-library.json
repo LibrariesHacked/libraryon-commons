@@ -1,87 +1,71 @@
 {
   "id": "lib_d0d4712e-f578-470b-93df-e4e35c89e100",
-  "source_id": "2264",
-  "name": "Aston Library",
   "slug": "aston-library",
-  "address": "Aston Fire Station Ettington Road , Birmingham, West Midlands, B6 6ED",
-  "postcode": "B6 6EB",
-  "town": "Birmingham",
-  "phone": "0121 464 1184",
-  "email": "aston.library@birmingham.gov.uk",
-  "website": "https://www.birmingham.gov.uk/directory_record/5122/aston_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.50477,
-  "longitude": -1.89288,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "birmingham",
+  "source_id": "2264",
+  "source_url": "https://libraryon.org/libraries/birmingham/aston-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/birmingham/aston-library",
-  "authority": "birmingham"
+  "data": {
+    "Local authority": "Birmingham",
+    "Local authority code": "E08000025",
+    "Library name": "Aston Library",
+    "Library code": null,
+    "Address 1": "Aston Fire Station Ettington Road , Birmingham, West Midlands, B6 6ED",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B6 6EB",
+    "Unique property reference number": null,
+    "Latitude": 52.50477,
+    "Longitude": -1.89288,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; BFI Replay",
+    "Phone number": "0121 464 1184",
+    "Email address": "aston.library@birmingham.gov.uk",
+    "URL": "https://www.birmingham.gov.uk/directory_record/5122/aston_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

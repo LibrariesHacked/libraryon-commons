@@ -1,110 +1,71 @@
 {
   "id": "lib_39a04f18-728f-406c-8054-122a333b4f2f",
-  "source_id": "3683",
-  "name": "Draperstown Library",
   "slug": "draperstown-library",
-  "address": "50 High Street, Draperstown, Magherafelt, BT45 7AD, United Kingdom",
-  "postcode": "BT45 7AD",
-  "town": "Magherafelt",
-  "phone": "028 7962 8249",
-  "email": "draperstown.library@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/county-londonderry/draperstown-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.79357,
-  "longitude": -6.78065,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "county-londonderry",
+  "source_id": "3683",
+  "source_url": "https://libraryon.org/libraries/county-londonderry/draperstown-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-londonderry/draperstown-library",
-  "authority": "county-londonderry"
+  "data": {
+    "Local authority": "County Londonderry",
+    "Local authority code": "N05000006",
+    "Library name": "Draperstown Library",
+    "Library code": null,
+    "Address 1": "50 High Street, Draperstown, Magherafelt, BT45 7AD, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BT45 7AD",
+    "Unique property reference number": null,
+    "Latitude": 54.79357,
+    "Longitude": -6.78065,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-20:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-13:00,13:30-17:00",
+    "Saturday staffed hours": "10:00-13:00,13:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Scanning; Computers; Photocopiers",
+    "Phone number": "028 7962 8249",
+    "Email address": "draperstown.library@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/county-londonderry/draperstown-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

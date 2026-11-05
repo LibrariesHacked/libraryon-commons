@@ -1,154 +1,71 @@
 {
   "id": "lib_8557b8de-32fa-4580-a952-349521fea6f8",
-  "source_id": "1983",
-  "name": "Thorpe Hesley Library",
   "slug": "thorpe-hesley-library",
-  "address": "Sough Hall Avenue, Thorpe Hesley, Rotherham, S61 2QJ",
-  "postcode": "S61 2QJ",
-  "town": "Rotherham",
-  "phone": "0114 2457027",
-  "email": "thorpehesley.library@rotherham.gov.uk",
-  "website": "https://www.rotherham.gov.uk/libraries/libraries-neighbourhood-hubs/12",
-  "catalogue": "https://rotherham.ent.sirsidynix.net.uk/client/en_GB/default/?dt=list",
-  "joinOnline": "https://rotherham.ent.sirsidynix.net.uk/custom/web/joining/index.html",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "service-dog-friendly",
-    "hearing-loop-system",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.459726,
-  "longitude": -1.431578,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.rotherham.gov.uk/libraries/learn-digital-skills"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.rotherham.gov.uk/libraries/children-families-1"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.rotherham.gov.uk/libraries/home-library-services/1"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "rotherham",
+  "source_id": "1983",
+  "source_url": "https://libraryon.org/libraries/rotherham/thorpe-hesley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rotherham/thorpe-hesley-library",
-  "authority": "rotherham"
+  "data": {
+    "Local authority": "Rotherham",
+    "Local authority code": "E08000018",
+    "Library name": "Thorpe Hesley Library",
+    "Library code": null,
+    "Address 1": "Sough Hall Avenue, Thorpe Hesley, Rotherham, S61 2QJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S61 2QJ",
+    "Unique property reference number": null,
+    "Latitude": 53.459726,
+    "Longitude": -1.431578,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:30-16:30",
+    "Tuesday staffed hours": "09:30-12:30,13:30-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-12:30,13:30-19:00",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-12:00",
+    "Sunday staffed hours": "09:30-12:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; Computers; Hobby and interest groups; Digital lending; Digital skills sessions; Children's activities; Books delivered; BFI Replay",
+    "Phone number": "0114 2457027",
+    "Email address": "thorpehesley.library@rotherham.gov.uk",
+    "URL": "https://www.rotherham.gov.uk/libraries/libraries-neighbourhood-hubs/12",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

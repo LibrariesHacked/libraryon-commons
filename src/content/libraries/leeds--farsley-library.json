@@ -1,129 +1,64 @@
 {
   "id": "lib_24a7a40e-52fa-4991-9c30-27a9b95f8071",
-  "source_id": "2257",
-  "name": "Farsley Library",
   "slug": "farsley-library",
-  "address": "Old Road, Farsley, West Yorkshire, LS28 5DH",
-  "postcode": "LS28 5DH",
-  "town": "Pudsey",
-  "phone": "0113 378 5005",
-  "email": "leeds.libraries@leeds.gov.uk",
-  "website": "https://libraries.leeds.gov.uk/libraries/farsley",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "wheelchair-access",
-    "hearing-loop-system",
-    "sign-language-interpretation",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.81025,
-  "longitude": -1.673137,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "leeds",
+  "source_id": "2257",
+  "source_url": "https://libraryon.org/libraries/leeds/farsley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leeds/farsley-library",
-  "authority": "leeds"
+  "data": {
+    "Local authority": "Leeds",
+    "Local authority code": "E08000035",
+    "Library name": "Farsley Library",
+    "Library code": null,
+    "Address 1": "Old Road, Farsley, West Yorkshire, LS28 5DH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LS28 5DH",
+    "Unique property reference number": 72275249,
+    "Latitude": 53.81025,
+    "Longitude": -1.673137,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:00,13:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-12:00,13:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-12:00,13:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Children's activities; Hobby and interest groups",
+    "Phone number": "0113 378 5005",
+    "Email address": "leeds.libraries@leeds.gov.uk",
+    "URL": "https://libraries.leeds.gov.uk/libraries/farsley",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

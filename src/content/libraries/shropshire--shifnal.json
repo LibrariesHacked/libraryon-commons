@@ -1,129 +1,73 @@
 {
   "id": "lib_d2fcbb43-9edb-4f7e-8f74-6a79a61e539f",
-  "source_id": "3324",
-  "name": "Shifnal Library",
   "slug": "shifnal",
-  "address": "Broadway, Shifnal, Shropshire, TF11 8AZ",
-  "postcode": "TF11 8AZ",
-  "town": "Shifnal",
-  "phone": "01952 461 018",
-  "email": "Shifnal.Library@shropshire.gov.uk",
-  "website": "http://new.shropshire.gov.uk/libraries/find-a-library/shifnal-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.66896,
-  "longitude": -2.37278,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "shropshire",
+  "source_id": "3324",
+  "source_url": "https://libraryon.org/libraries/shropshire/shifnal",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/shropshire/shifnal",
-  "authority": "shropshire"
+  "data": {
+    "Local authority": "Shropshire",
+    "Local authority code": "E06000051",
+    "Library name": "Shifnal Library",
+    "Library code": null,
+    "Address 1": "Broadway, Shifnal, Shropshire, TF11 8AZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TF11 8AZ",
+    "Unique property reference number": null,
+    "Latitude": 52.66896,
+    "Longitude": -2.37278,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Digital skills sessions; Computers; Photocopiers; Scanning; BFI Replay",
+    "Phone number": "01952 461 018",
+    "Email address": "Shifnal.Library@shropshire.gov.uk",
+    "URL": "http://new.shropshire.gov.uk/libraries/find-a-library/shifnal-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_ca0d5b372836f38768f23657"
+      ]
+    }
+  ]
 }

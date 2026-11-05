@@ -1,105 +1,64 @@
 {
   "id": "lib_a93c9cb4-7d5e-4503-84de-7b902df04b7d",
-  "source_id": "2493",
-  "name": "Mildmay Library",
   "slug": "mildmay-library",
-  "address": "21 Mildmay Park, London, Middlesex, N1 4NA",
-  "postcode": "N1 4NA",
-  "town": "London",
-  "phone": "020 7527 7880",
-  "email": "Mildmay.library@islington.gov.uk",
-  "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/mildmay-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54811,
-  "longitude": -0.08443,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "islington",
+  "source_id": "2493",
+  "source_url": "https://libraryon.org/libraries/islington/mildmay-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/islington/mildmay-library",
-  "authority": "islington"
+  "data": {
+    "Local authority": "Islington",
+    "Local authority code": "E09000019",
+    "Library name": "Mildmay Library",
+    "Library code": null,
+    "Address 1": "21 Mildmay Park, London, Middlesex, N1 4NA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N1 4NA",
+    "Unique property reference number": null,
+    "Latitude": 51.54811,
+    "Longitude": -0.08443,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00",
+    "Tuesday staffed hours": "09:30-20:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-20:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "11:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital skills sessions",
+    "Phone number": "020 7527 7880",
+    "Email address": "Mildmay.library@islington.gov.uk",
+    "URL": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/mildmay-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

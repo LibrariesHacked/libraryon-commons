@@ -1,112 +1,64 @@
 {
   "id": "lib_17d68d30-6d04-43b1-8620-ecd0310527f1",
-  "source_id": "1962",
-  "name": "Lees Library Community Hub",
   "slug": "lees-library-community-hub",
-  "address": "Thomas Street, Oldham, Greater Manchester, OL4 5DA",
-  "postcode": "OL4 5DA",
-  "town": "Oldham",
-  "phone": "0161 770 8000",
-  "email": "libraries@oldham.gov.uk",
-  "website": "https://hla.oldham.gov.uk/libraries/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.537375,
-  "longitude": -2.071689,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "oldham",
+  "source_id": "1962",
+  "source_url": "https://libraryon.org/libraries/oldham/lees-library-community-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/oldham/lees-library-community-hub",
-  "authority": "oldham"
+  "data": {
+    "Local authority": "Oldham",
+    "Local authority code": "E08000004",
+    "Library name": "Lees Library Community Hub",
+    "Library code": null,
+    "Address 1": "Thomas Street, Oldham, Greater Manchester, OL4 5DA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OL4 5DA",
+    "Unique property reference number": 100012739380,
+    "Latitude": 53.537375,
+    "Longitude": -2.071689,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-19:00",
+    "Tuesday staffed hours": "09:00-19:00",
+    "Wednesday staffed hours": "09:00-19:00",
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive",
+    "Phone number": "0161 770 8000",
+    "Email address": "libraries@oldham.gov.uk",
+    "URL": "https://hla.oldham.gov.uk/libraries/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

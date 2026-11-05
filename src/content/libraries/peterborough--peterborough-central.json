@@ -1,124 +1,71 @@
 {
   "id": "lib_dcdc43ce-2cfc-4ff9-9500-d35e25f908ab",
-  "source_id": "3099",
-  "name": "Peterborough Central",
   "slug": "peterborough-central",
-  "address": "Broadway, Peterborough, Cambridgeshire, PE1 1RX",
-  "postcode": "PE1 1RS",
-  "town": "Peterborough",
-  "phone": "01733 864280",
-  "email": "libraryenquiries@peterboroughlimited.co.uk",
-  "website": "https://fis.peterborough.gov.uk/kb5/peterborough/directory/service.page?id=6BB7W-6XCxw",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "lift-access",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "archives"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.576424,
-  "longitude": -0.241351,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://peterboroughlibraries.org.uk/room-hire"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://peterboroughlibraries.org.uk/free-computer-sessions"
-    }
-  ],
+  "authority": "peterborough",
+  "source_id": "3099",
+  "source_url": "https://libraryon.org/libraries/peterborough/peterborough-central",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/peterborough/peterborough-central",
-  "authority": "peterborough"
+  "data": {
+    "Local authority": "Peterborough",
+    "Local authority code": "E06000031",
+    "Library name": "Peterborough Central",
+    "Library code": null,
+    "Address 1": "Broadway, Peterborough, Cambridgeshire, PE1 1RX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PE1 1RS",
+    "Unique property reference number": null,
+    "Latitude": 52.576424,
+    "Longitude": -0.241351,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "09:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Bookable space; Digital skills sessions",
+    "Phone number": "01733 864280",
+    "Email address": "libraryenquiries@peterboroughlimited.co.uk",
+    "URL": "https://fis.peterborough.gov.uk/kb5/peterborough/directory/service.page?id=6BB7W-6XCxw",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

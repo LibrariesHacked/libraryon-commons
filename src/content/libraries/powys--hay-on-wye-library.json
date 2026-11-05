@@ -1,104 +1,71 @@
 {
   "id": "lib_1e677b9e-2019-4de6-981b-0bc3d6fd5d13",
-  "source_id": "829",
-  "name": "Hay on Wye Library",
   "slug": "hay-on-wye-library",
-  "address": "14 Chancery Lane, Hay-on-Wye, Hereford, HR3 5BL, United Kingdom",
-  "postcode": "HR3 5BL",
-  "town": "Hereford",
-  "phone": "01497 820847",
-  "email": "hay.library@powys.gov.uk",
-  "website": "https://en.powys.gov.uk/article/1461/Hay-on-Wye-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.07507,
-  "longitude": -3.12464,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "powys",
+  "source_id": "829",
+  "source_url": "https://libraryon.org/libraries/powys/hay-on-wye-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/powys/hay-on-wye-library",
-  "authority": "powys"
+  "data": {
+    "Local authority": "Powys",
+    "Local authority code": "W06000023",
+    "Library name": "Hay on Wye Library",
+    "Library code": null,
+    "Address 1": "14 Chancery Lane, Hay-on-Wye, Hereford, HR3 5BL, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HR3 5BL",
+    "Unique property reference number": null,
+    "Latitude": 52.07507,
+    "Longitude": -3.12464,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:30-12:30,13:30-18:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:30-12:30,13:30-18:00",
+    "Friday staffed hours": "13:30-18:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "01497 820847",
+    "Email address": "hay.library@powys.gov.uk",
+    "URL": "https://en.powys.gov.uk/article/1461/Hay-on-Wye-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

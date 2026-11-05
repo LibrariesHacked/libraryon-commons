@@ -1,101 +1,71 @@
 {
   "id": "lib_07b1cd18-37ad-48da-bb24-47a15396d304",
-  "source_id": "127",
-  "name": "Shotts Library",
   "slug": "shotts-library",
-  "address": "13 Benhar Road, Shotts, ML7 5EN, United Kingdom",
-  "postcode": "ML7 5EN",
-  "town": "Shotts",
-  "phone": "01501 821556",
-  "email": "shottslibrary@northlan.gov.uk",
-  "website": "https://culturenl.co.uk/libraries/your-library/shotts-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access",
-    "automatic-doors",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.81893,
-  "longitude": -3.79085,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "north-lanarkshire",
+  "source_id": "127",
+  "source_url": "https://libraryon.org/libraries/north-lanarkshire/shotts-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-lanarkshire/shotts-library",
-  "authority": "north-lanarkshire"
+  "data": {
+    "Local authority": "North Lanarkshire",
+    "Local authority code": "S12000050",
+    "Library name": "Shotts Library",
+    "Library code": null,
+    "Address 1": "13 Benhar Road, Shotts, ML7 5EN, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ML7 5EN",
+    "Unique property reference number": null,
+    "Latitude": 55.81893,
+    "Longitude": -3.79085,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "14:00-19:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01501 821556",
+    "Email address": "shottslibrary@northlan.gov.uk",
+    "URL": "https://culturenl.co.uk/libraries/your-library/shotts-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

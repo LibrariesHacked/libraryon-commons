@@ -1,145 +1,71 @@
 {
   "id": "lib_16362a5a-b4f4-4b9e-8ac8-f52b96a687b5",
-  "source_id": "1308",
-  "name": "Thornton",
   "slug": "thornton",
-  "address": "Victoria Road East, Cleveleys, Lancashire , FY5 3SZ",
-  "postcode": "FY5 3SP",
-  "town": "Thornton-Cleveleys",
-  "phone": "0300 123 6703",
-  "email": "norton.library@stockton.gov.uk",
-  "website": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/thornton-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "Closed 2016 re-opened 2018",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.8725,
-  "longitude": -3.01163,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "lancashire",
+  "source_id": "1308",
+  "source_url": "https://libraryon.org/libraries/lancashire/thornton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lancashire/thornton",
-  "authority": "lancashire"
+  "data": {
+    "Local authority": "Lancashire",
+    "Local authority code": "E10000017",
+    "Library name": "Thornton",
+    "Library code": null,
+    "Address 1": "Victoria Road East, Cleveleys, Lancashire , FY5 3SZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "FY5 3SP",
+    "Unique property reference number": null,
+    "Latitude": 53.8725,
+    "Longitude": -3.01163,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-19:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-13:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Books delivered; British Newspaper Archive; Findmypast; Photocopiers; Computers; Scanning; Digital skills sessions; Children's activities; Hobby and interest groups",
+    "Phone number": "0300 123 6703",
+    "Email address": "norton.library@stockton.gov.uk",
+    "URL": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/thornton-library.aspx",
+    "Notes": "Closed 2016 re-opened 2018"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

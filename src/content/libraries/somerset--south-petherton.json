@@ -1,120 +1,64 @@
 {
   "id": "lib_5781e23c-ac3e-44d0-8cbf-b920abd1a6e5",
-  "source_id": "1718",
-  "name": "South Petherton Community Library",
   "slug": "south-petherton",
-  "address": "St. James' Corner, South Petherton, Somerset, TA13 5BS",
-  "postcode": "TA13 5BS",
-  "town": "South Petherton",
-  "phone": "0300 1232224",
-  "email": "spnlib@somerset.gov.uk",
-  "website": "https://www.southpethertonlibrary.co.uk/",
-  "catalogue": "https://www.librarieswest.org.uk/",
-  "joinOnline": "https://www.librarieswest.org.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://maps.app.goo.gl/s9KcATE8zxqhv7299",
-  "permanentlyClosed": false,
-  "latitude": 50.948314,
-  "longitude": -2.806982,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.somerset.gov.uk/libraries/digital-books-audiobooks-and-magazines/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.somerset.gov.uk/libraries/home-library-service/"
-    }
-  ],
+  "authority": "somerset",
+  "source_id": "1718",
+  "source_url": "https://libraryon.org/libraries/somerset/south-petherton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/somerset/south-petherton",
-  "authority": "somerset"
+  "data": {
+    "Local authority": "Somerset",
+    "Local authority code": "E06000066",
+    "Library name": "South Petherton Community Library",
+    "Library code": null,
+    "Address 1": "St. James' Corner, South Petherton, Somerset, TA13 5BS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TA13 5BS",
+    "Unique property reference number": 30052070,
+    "Latitude": 50.948314,
+    "Longitude": -2.806982,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Children's activities; Hobby and interest groups; Digital skills sessions; Computers; Digital lending; Books delivered",
+    "Phone number": "0300 1232224",
+    "Email address": "spnlib@somerset.gov.uk",
+    "URL": "https://www.southpethertonlibrary.co.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

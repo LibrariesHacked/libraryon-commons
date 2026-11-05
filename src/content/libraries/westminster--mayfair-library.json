@@ -1,140 +1,64 @@
 {
   "id": "lib_8e57344e-cb0a-4ea7-9f31-0dd5ab8e9653",
-  "source_id": "2576",
-  "name": "Mayfair Library",
   "slug": "mayfair-library",
-  "address": "25 South Audley Street, London, Middlesex, W1K 2PB",
-  "postcode": "W1K 2PB",
-  "town": "London",
-  "phone": "020 7641 6200",
-  "email": "mayfairlibrary@westminster.gov.uk",
-  "website": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/mayfair-library",
-  "catalogue": "https://trib.ent.sirsidynix.net.uk/client/en_GB/wcc/",
-  "joinOnline": "https://mywestminster.westminster.gov.uk/library-not-logged-in/do-you-have-westminster-address",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.50937,
-  "longitude": -0.15112,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/rooms-hire-libraries-and-archives-centre/mayfair-library"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/children"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libbyapp.com/interview/welcome#doYouHaveACard"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "westminster",
+  "source_id": "2576",
+  "source_url": "https://libraryon.org/libraries/westminster/mayfair-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/westminster/mayfair-library",
-  "authority": "westminster"
+  "data": {
+    "Local authority": "Westminster",
+    "Local authority code": "E09000033",
+    "Library name": "Mayfair Library",
+    "Library code": null,
+    "Address 1": "25 South Audley Street, London, Middlesex, W1K 2PB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "W1K 2PB",
+    "Unique property reference number": 10033566222,
+    "Latitude": 51.50937,
+    "Longitude": -0.15112,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "11:00-19:00",
+    "Tuesday staffed hours": "11:00-19:00",
+    "Wednesday staffed hours": "11:00-19:00",
+    "Thursday staffed hours": "11:00-19:00",
+    "Friday staffed hours": "11:00-19:00",
+    "Saturday staffed hours": "10:30-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Bookable space; Books delivered; Children's activities; Digital lending; British Newspaper Archive; Findmypast",
+    "Phone number": "020 7641 6200",
+    "Email address": "mayfairlibrary@westminster.gov.uk",
+    "URL": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/mayfair-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

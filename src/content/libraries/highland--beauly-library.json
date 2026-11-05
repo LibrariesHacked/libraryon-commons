@@ -1,96 +1,71 @@
 {
   "id": "lib_1f3a147e-53e1-4947-8b0d-590195cc89aa",
-  "source_id": "175",
-  "name": "Beauly Library",
   "slug": "beauly-library",
-  "address": "1 Garden Place, Beauly, IV4 7AW, United Kingdom",
-  "postcode": "IV4 7AW",
-  "town": "Beauly",
-  "phone": "01463 782930",
-  "email": "beauly.library@highlifehighland.com",
-  "website": "https://www.highlifehighland.com/libraries/beauly-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:30",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.48073,
-  "longitude": -4.46601,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "highland",
+  "source_id": "175",
+  "source_url": "https://libraryon.org/libraries/highland/beauly-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/highland/beauly-library",
-  "authority": "highland"
+  "data": {
+    "Local authority": "Highland",
+    "Local authority code": "S12000017",
+    "Library name": "Beauly Library",
+    "Library code": null,
+    "Address 1": "1 Garden Place, Beauly, IV4 7AW, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IV4 7AW",
+    "Unique property reference number": null,
+    "Latitude": 57.48073,
+    "Longitude": -4.46601,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "17:00-20:00",
+    "Tuesday staffed hours": "10:00-12:30",
+    "Wednesday staffed hours": "12:00-14:30",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01463 782930",
+    "Email address": "beauly.library@highlifehighland.com",
+    "URL": "https://www.highlifehighland.com/libraries/beauly-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

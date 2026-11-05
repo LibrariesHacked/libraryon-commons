@@ -1,200 +1,71 @@
 {
   "id": "lib_4a5d1e7c-5c39-4cbe-85df-61fce55f5d29",
-  "source_id": "3202",
-  "name": "Bedford Central Library",
   "slug": "bedford-central-library",
-  "address": "Harpur Street, Bedford, Bedfordshire, MK40 1PG",
-  "postcode": "MK40 1SU",
-  "town": "Bedford",
-  "phone": "01234 718178",
-  "email": "Bedfordshire.Libraries@bedford.gov.uk",
-  "website": "https://www.bedford.gov.uk/libraries/your-local-library-opening-times-facilities-and-activities/bedford-central-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "catering"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.13648,
-  "longitude": -0.46823,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "bedford",
+  "source_id": "3202",
+  "source_url": "https://libraryon.org/libraries/bedford/bedford-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bedford/bedford-central-library",
-  "authority": "bedford"
+  "data": {
+    "Local authority": "Bedford",
+    "Local authority code": "E06000055",
+    "Library name": "Bedford Central Library",
+    "Library code": null,
+    "Address 1": "Harpur Street, Bedford, Bedfordshire, MK40 1PG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "MK40 1SU",
+    "Unique property reference number": null,
+    "Latitude": 52.13648,
+    "Longitude": -0.46823,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "11:00-16:00",
+    "Tuesday staffed hours": "11:00-16:00",
+    "Wednesday staffed hours": "11:00-16:00",
+    "Thursday staffed hours": "11:00-16:00",
+    "Friday staffed hours": "11:00-16:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "11:00-14:00",
+    "Monday unstaffed hours": "09:00-11:00,16:00-18:00",
+    "Tuesday unstaffed hours": "09:00-11:00,16:00-18:00",
+    "Wednesday unstaffed hours": "09:00-11:00,16:00-18:00",
+    "Thursday unstaffed hours": "09:00-11:00,16:00-18:00",
+    "Friday unstaffed hours": "09:00-11:00,16:00-18:00",
+    "Saturday unstaffed hours": "09:00-10:00,17:00-18:00",
+    "Sunday unstaffed hours": "10:00-11:00,14:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Children's activities; Hobby and interest groups",
+    "Phone number": "01234 718178",
+    "Email address": "Bedfordshire.Libraries@bedford.gov.uk",
+    "URL": "https://www.bedford.gov.uk/libraries/your-local-library-opening-times-facilities-and-activities/bedford-central-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

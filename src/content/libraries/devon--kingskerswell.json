@@ -1,116 +1,71 @@
 {
   "id": "lib_d4b481a7-248a-4f8b-b897-a56e0b9d76a3",
-  "source_id": "726",
-  "name": "Kingskerswell",
   "slug": "kingskerswell",
-  "address": "1 Newton Road, Kingskerswell, TQ12 5EH",
-  "postcode": "TQ12 5EZ",
-  "town": "Newton Abbot",
-  "phone": "01803 873723",
-  "email": "kingskerswell.library@librariesunlimited.org.uk",
-  "website": "https://discover.librariesunlimited.org.uk/-/kingskerswell-library#/?location=Kingskerswell%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "low-vision-support",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/kingskerswelllibrary/",
-  "permanentlyClosed": false,
-  "latitude": 50.499799,
-  "longitude": -3.578843,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "devon",
+  "source_id": "726",
+  "source_url": "https://libraryon.org/libraries/devon/kingskerswell",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/kingskerswell",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "Kingskerswell",
+    "Library code": null,
+    "Address 1": "1 Newton Road, Kingskerswell, TQ12 5EH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TQ12 5EZ",
+    "Unique property reference number": null,
+    "Latitude": 50.499799,
+    "Longitude": -3.578843,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "01803 873723",
+    "Email address": "kingskerswell.library@librariesunlimited.org.uk",
+    "URL": "https://discover.librariesunlimited.org.uk/-/kingskerswell-library#/?location=Kingskerswell%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

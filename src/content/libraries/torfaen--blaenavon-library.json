@@ -1,115 +1,71 @@
 {
   "id": "lib_792a3016-4bfb-4b2d-9edd-eab360c2c7e9",
-  "source_id": "738",
-  "name": "Blaenavon Library",
   "slug": "blaenavon-library",
-  "address": "World Heritage Centre, Church Rd., Pontypool, Wales NP4 9AS, United Kingdom",
-  "postcode": "NP4 9AS",
-  "town": "Pontypool",
-  "phone": "01495 742333",
-  "email": "blaenavon.library@torfaen.gov.uk",
-  "website": "https://www.torfaen.gov.uk/en/Libraries/Libraries-mobilelibraryservice/Blaenavon-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "dda-compliant",
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.773074,
-  "longitude": -3.08762,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "torfaen",
+  "source_id": "738",
+  "source_url": "https://libraryon.org/libraries/torfaen/blaenavon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/torfaen/blaenavon-library",
-  "authority": "torfaen"
+  "data": {
+    "Local authority": "Torfaen",
+    "Local authority code": "W06000020",
+    "Library name": "Blaenavon Library",
+    "Library code": null,
+    "Address 1": "World Heritage Centre, Church Rd., Pontypool, Wales NP4 9AS, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NP4 9AS",
+    "Unique property reference number": null,
+    "Latitude": 51.773074,
+    "Longitude": -3.08762,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "10:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; BFI Replay",
+    "Phone number": "01495 742333",
+    "Email address": "blaenavon.library@torfaen.gov.uk",
+    "URL": "https://www.torfaen.gov.uk/en/Libraries/Libraries-mobilelibraryservice/Blaenavon-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

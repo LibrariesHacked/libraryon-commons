@@ -1,128 +1,71 @@
 {
   "id": "lib_c33b76d4-4d80-4dfa-9300-f84bf5d6440d",
-  "source_id": "2824",
-  "name": "Saltburn Library",
   "slug": "saltburn-library",
-  "address": "Windsor Road, Saltburn-by-the-Sea, North Yorkshire, TS12 1AT",
-  "postcode": "TS12 1AU",
-  "town": "Saltburn-by-the-Sea",
-  "phone": "01287 623584",
-  "email": "saltburn_library@redcar-cleveland.gov.uk",
-  "website": "https://libraries.redcar-cleveland.gov.uk/-/saltburn-library#/?location=Saltburn%20Library",
-  "catalogue": "https://libraries.redcar-cleveland.gov.uk/extended-search",
-  "joinOnline": "https://libraries.redcar-cleveland.gov.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.58254,
-  "longitude": -0.97215,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/borrowbox"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/meeting-spaces"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/home-library-service"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "redcar-and-cleveland",
+  "source_id": "2824",
+  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/saltburn-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/saltburn-library",
-  "authority": "redcar-and-cleveland"
+  "data": {
+    "Local authority": "Redcar and Cleveland",
+    "Local authority code": "E06000003",
+    "Library name": "Saltburn Library",
+    "Library code": null,
+    "Address 1": "Windsor Road, Saltburn-by-the-Sea, North Yorkshire, TS12 1AT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS12 1AU",
+    "Unique property reference number": null,
+    "Latitude": 54.58254,
+    "Longitude": -0.97215,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:00-16:30",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Hobby and interest groups; Children's activities; Family history; Computers; Digital lending; Bookable space; Books delivered; BFI Replay",
+    "Phone number": "01287 623584",
+    "Email address": "saltburn_library@redcar-cleveland.gov.uk",
+    "URL": "https://libraries.redcar-cleveland.gov.uk/-/saltburn-library#/?location=Saltburn%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

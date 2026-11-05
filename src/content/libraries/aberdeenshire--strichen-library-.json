@@ -1,81 +1,71 @@
 {
   "id": "lib_4709e4ff-58dc-4370-8dad-7ba0f4585f65",
-  "source_id": "109",
-  "name": "Strichen Library ",
   "slug": "strichen-library-",
-  "address": "Strichen Library, 59a Water Street, Strichen, AB43 6ST",
-  "postcode": "AB43 6ST",
-  "town": "Fraserburgh",
-  "phone": "01771 676601",
-  "email": " strichen.library@aberdeenshire.gov.uk",
-  "website": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/strichen-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.58816,
-  "longitude": -2.09448,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "aberdeenshire",
+  "source_id": "109",
+  "source_url": "https://libraryon.org/libraries/aberdeenshire/strichen-library-",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/aberdeenshire/strichen-library-",
-  "authority": "aberdeenshire"
+  "data": {
+    "Local authority": "Aberdeenshire",
+    "Local authority code": "S12000034",
+    "Library name": "Strichen Library ",
+    "Library code": null,
+    "Address 1": "Strichen Library, 59a Water Street, Strichen, AB43 6ST",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB43 6ST",
+    "Unique property reference number": null,
+    "Latitude": 57.58816,
+    "Longitude": -2.09448,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": "01771 676601",
+    "Email address": "strichen.library@aberdeenshire.gov.uk",
+    "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/strichen-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

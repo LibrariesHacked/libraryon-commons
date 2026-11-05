@@ -1,118 +1,64 @@
 {
   "id": "lib_a7d229cb-5693-4b17-af07-eab87262c5c7",
-  "source_id": "2464",
-  "name": "Brompton Library",
   "slug": "brompton-library",
-  "address": "210 Old Brompton Road, London, Greater London, SW5 0BS",
-  "postcode": "SW5 0BS",
-  "town": "London",
-  "phone": "020 7361 3010",
-  "email": "libraries@rbkc.gov.uk",
-  "website": "https://www.rbkc.gov.uk/libraries-0/libraries-and-room-hire/brompton-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.49008,
-  "longitude": -0.18841,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.rbkc.gov.uk/libraries-0/libraries-and-room-hire/library-room-hire"
-    },
-    {
-      "service": "Business support",
-      "url": "https://www.rbkc.gov.uk/libraries-0/libraries-and-room-hire/kc-co-works"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "kensington-and-chelsea",
+  "source_id": "2464",
+  "source_url": "https://libraryon.org/libraries/kensington-and-chelsea/brompton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kensington-and-chelsea/brompton-library",
-  "authority": "kensington-and-chelsea"
+  "data": {
+    "Local authority": "Kensington and Chelsea",
+    "Local authority code": "E09000020",
+    "Library name": "Brompton Library",
+    "Library code": null,
+    "Address 1": "210 Old Brompton Road, London, Greater London, SW5 0BS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SW5 0BS",
+    "Unique property reference number": 217060921,
+    "Latitude": 51.49008,
+    "Longitude": -0.18841,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-20:00",
+    "Tuesday staffed hours": "09:30-20:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "09:30-20:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Business support; Findmypast",
+    "Phone number": "020 7361 3010",
+    "Email address": "libraries@rbkc.gov.uk",
+    "URL": "https://www.rbkc.gov.uk/libraries-0/libraries-and-room-hire/brompton-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

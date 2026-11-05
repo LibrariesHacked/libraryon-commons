@@ -1,107 +1,71 @@
 {
   "id": "lib_047176d5-1872-4f56-910f-331402f0765b",
-  "source_id": "80",
-  "name": "Coatbridge Library",
   "slug": "coatbridge-library",
-  "address": "126 Main Street, Coatbridge, ML5 3BJ, United Kingdom",
-  "postcode": "ML5 3BJ",
-  "town": "Coatbridge",
-  "phone": "01236 856444",
-  "email": "coatbridgelibrary@northlan.gov.uk",
-  "website": "https://culturenl.co.uk/libraries/your-library/coatbridge-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "accessible-restrooms",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.86168,
-  "longitude": -4.02435,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "north-lanarkshire",
+  "source_id": "80",
+  "source_url": "https://libraryon.org/libraries/north-lanarkshire/coatbridge-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-lanarkshire/coatbridge-library",
-  "authority": "north-lanarkshire"
+  "data": {
+    "Local authority": "North Lanarkshire",
+    "Local authority code": "S12000050",
+    "Library name": "Coatbridge Library",
+    "Library code": null,
+    "Address 1": "126 Main Street, Coatbridge, ML5 3BJ, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ML5 3BJ",
+    "Unique property reference number": null,
+    "Latitude": 55.86168,
+    "Longitude": -4.02435,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-19:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01236 856444",
+    "Email address": "coatbridgelibrary@northlan.gov.uk",
+    "URL": "https://culturenl.co.uk/libraries/your-library/coatbridge-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

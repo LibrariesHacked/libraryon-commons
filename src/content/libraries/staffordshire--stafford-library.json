@@ -1,202 +1,71 @@
 {
   "id": "lib_05f838d0-adb8-4359-b6ae-9335ea1bc619",
-  "source_id": "2837",
-  "name": "Stafford Library",
   "slug": "stafford-library",
-  "address": "1 Staffordshire Place, Tipping Street , Stafford, Staffordshire, ST16 2DH",
-  "postcode": "ST16 2LN",
-  "town": "Stafford",
-  "phone": "01785 278351",
-  "email": "stafford.library@staffordshire.gov.uk",
-  "website": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/StaffordLibrary/StaffordLibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "catering",
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.80607,
-  "longitude": -2.1147,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "staffordshire",
+  "source_id": "2837",
+  "source_url": "https://libraryon.org/libraries/staffordshire/stafford-library",
   "updated_on": "2026-09-03",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/staffordshire/stafford-library",
-  "authority": "staffordshire"
+  "data": {
+    "Local authority": "Staffordshire",
+    "Local authority code": "E10000028",
+    "Library name": "Stafford Library",
+    "Library code": null,
+    "Address 1": "1 Staffordshire Place, Tipping Street , Stafford, Staffordshire, ST16 2DH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ST16 2LN",
+    "Unique property reference number": null,
+    "Latitude": 52.80607,
+    "Longitude": -2.1147,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Tuesday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Wednesday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Thursday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Friday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": "13:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Digital skills sessions; Family history; Computers; Scanning; Photocopiers; Children's activities; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "01785 278351",
+    "Email address": "stafford.library@staffordshire.gov.uk",
+    "URL": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/StaffordLibrary/StaffordLibrary.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

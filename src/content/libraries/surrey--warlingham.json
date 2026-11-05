@@ -1,141 +1,74 @@
 {
   "id": "lib_031c06a7-68a6-4394-9305-91b9ae57a9ef",
-  "source_id": "1670",
-  "name": "Warlingham",
   "slug": "warlingham",
-  "address": "Shelton Avenue , Warlingham, Surrey, CR6 9NF",
-  "postcode": "CR6 9NF",
-  "town": "Warlingham",
-  "phone": "",
-  "email": "wrlibrary@hotmail.co.uk",
-  "website": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/warlingham",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "hearing-loop-system"
-  ],
-  "notes": "Closed 1-2pm Tue/Thu/Fri and 1-1.30pm on Sat",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.3101,
-  "longitude": -0.05712,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "surrey",
+  "source_id": "1670",
+  "source_url": "https://libraryon.org/libraries/surrey/warlingham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/surrey/warlingham",
-  "authority": "surrey"
+  "data": {
+    "Local authority": "Surrey",
+    "Local authority code": "E10000030",
+    "Library name": "Warlingham",
+    "Library code": null,
+    "Address 1": "Shelton Avenue , Warlingham, Surrey, CR6 9NF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CR6 9NF",
+    "Unique property reference number": null,
+    "Latitude": 51.3101,
+    "Longitude": -0.05712,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 1963,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-13:00,14:00-15:00",
+    "Friday staffed hours": "09:30-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00,13:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Hobby and interest groups; Digital skills sessions; Computers; Scanning; Bookable space",
+    "Phone number": null,
+    "Email address": "wrlibrary@hotmail.co.uk",
+    "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/warlingham",
+    "Notes": "Closed 1-2pm Tue/Thu/Fri and 1-1.30pm on Sat"
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_9a1fdfabbb78edea16f38bad",
+        "migration/directory/report.json#review_2782228419dcbec37a0979c2"
+      ]
+    }
+  ]
 }

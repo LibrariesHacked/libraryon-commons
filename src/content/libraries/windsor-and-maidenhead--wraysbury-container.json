@@ -1,88 +1,71 @@
 {
   "id": "lib_5a864d7d-099b-4161-bd81-144fcaf2ccac",
-  "source_id": "3772",
-  "name": "Wraysbury Container",
   "slug": "wraysbury-container",
-  "address": "Village Hall Car Park, The Green, Staines, Berkshire, TW19 5NA",
-  "postcode": "TW19 5NA",
-  "town": "Staines-upon-Thames",
-  "phone": "01628 796555",
-  "email": "container.library@rbwm.gov.uk",
-  "website": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-wraysbury-container",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "lift-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.45816,
-  "longitude": -0.55598,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/digital-library/books-and-media"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/home-library-service"
-    }
-  ],
+  "authority": "windsor-and-maidenhead",
+  "source_id": "3772",
+  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/wraysbury-container",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/wraysbury-container",
-  "authority": "windsor-and-maidenhead"
+  "data": {
+    "Local authority": "Windsor and Maidenhead",
+    "Local authority code": "E06000040",
+    "Library name": "Wraysbury Container",
+    "Library code": null,
+    "Address 1": "Village Hall Car Park, The Green, Staines, Berkshire, TW19 5NA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TW19 5NA",
+    "Unique property reference number": null,
+    "Latitude": 51.45816,
+    "Longitude": -0.55598,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:30-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:30-17:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Digital lending; Books delivered",
+    "Phone number": "01628 796555",
+    "Email address": "container.library@rbwm.gov.uk",
+    "URL": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-wraysbury-container",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

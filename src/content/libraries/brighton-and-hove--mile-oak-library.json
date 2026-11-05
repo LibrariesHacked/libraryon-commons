@@ -1,106 +1,87 @@
 {
   "id": "lib_521e961d-14ff-48e1-825b-c7165f227ccd",
-  "source_id": "3150",
-  "name": "Mile Oak Library",
   "slug": "mile-oak-library",
-  "address": "Portslade Academy, Chalky Road , Portslade, East Sussex, BN41 2WS",
-  "postcode": "BN41 2WS",
-  "town": "Brighton",
-  "phone": "",
-  "email": "libraries@brighton-hove.gov.uk",
-  "website": "https://www.brighton-hove.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.851177,
-  "longitude": -0.225091,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "brighton-and-hove",
+  "source_id": "3150",
+  "source_url": "https://libraryon.org/libraries/brighton-and-hove/mile-oak-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brighton-and-hove/mile-oak-library",
-  "authority": "brighton-and-hove"
+  "data": {
+    "Local authority": "Brighton and Hove",
+    "Local authority code": "E06000043",
+    "Library name": "Mile Oak Library",
+    "Library code": null,
+    "Address 1": "Portslade Academy, Chalky Road , Portslade, East Sussex, BN41 2WS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BN41 2WS",
+    "Unique property reference number": null,
+    "Latitude": 50.851177,
+    "Longitude": -0.225091,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": 2013,
+    "Year closed": 2023,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": "libraries@brighton-hove.gov.uk",
+    "URL": "https://www.brighton-hove.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_97f3481e05334d43cbc64670",
+        "migration/directory/report.json#review_526364d1d332c4688475e015"
+      ]
+    }
+  ]
 }

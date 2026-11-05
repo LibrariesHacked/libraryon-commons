@@ -1,144 +1,64 @@
 {
   "id": "lib_7a18c6e9-6b21-4ee0-82dd-49600069311c",
-  "source_id": "2513",
-  "name": "Surbiton Library",
   "slug": "surbiton-library",
-  "address": "Ewell Rd, Surbiton, Surrey, KT6 6AG",
-  "postcode": "KT6 6AG",
-  "town": "Surbiton",
-  "phone": "020 8547 5006",
-  "email": "surbiton.library@kingston.gov.uk",
-  "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/surbiton",
-  "catalogue": "https://libraries.kingston.gov.uk/home",
-  "joinOnline": "https://libraries.kingston.gov.uk/digital-content/libraries/join-borrow",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.39279,
-  "longitude": -0.29815,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.kingston.gov.uk/digital-content/libraries/community-library-home-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.kingston.gov.uk/digital-content/your-digital-library"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://libraries.kingston.gov.uk/digital-content/children-teens"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://libraries.kingston.gov.uk/digital-content/get-involved"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://libraries.kingston.gov.uk/digital-content/learning-job-support/digital-skills-help"
-    },
-    {
-      "service": "Career support",
-      "url": "https://libraries.kingston.gov.uk/digital-content/learning-job-support/job-searching-help"
-    }
-  ],
+  "authority": "kingston-upon-thames",
+  "source_id": "2513",
+  "source_url": "https://libraryon.org/libraries/kingston-upon-thames/surbiton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kingston-upon-thames/surbiton-library",
-  "authority": "kingston-upon-thames"
+  "data": {
+    "Local authority": "Kingston upon Thames",
+    "Local authority code": "E09000021",
+    "Library name": "Surbiton Library",
+    "Library code": null,
+    "Address 1": "Ewell Rd, Surbiton, Surrey, KT6 6AG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KT6 6AG",
+    "Unique property reference number": 128006816,
+    "Latitude": 51.39279,
+    "Longitude": -0.29815,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1932,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-20:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Scanning; Computers; Books delivered; Digital lending; Family history; Children's activities; Hobby and interest groups; Digital skills sessions; Career support",
+    "Phone number": "020 8547 5006",
+    "Email address": "surbiton.library@kingston.gov.uk",
+    "URL": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/surbiton",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

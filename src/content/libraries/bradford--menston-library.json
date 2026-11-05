@@ -1,128 +1,73 @@
 {
   "id": "lib_7ef1c43f-1517-4a7c-918e-330d557cee16",
-  "source_id": "2446",
-  "name": "Menston Library",
   "slug": "menston-library",
-  "address": "Main Street, Ilkley, West Yorkshire, LS29 6LG",
-  "postcode": "LS29 6LG",
-  "town": "Ilkley",
-  "phone": "01943 876539",
-  "email": "menston.library@gmail.com",
-  "website": "https://www.bradford.gov.uk/libraries/find-your-local-library/menston-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-parking",
-    "service-dog-friendly",
-    "assistive-technology-available",
-    "low-vision-support",
-    "adjustable-seating",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.889606,
-  "longitude": -1.739827,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "bradford",
+  "source_id": "2446",
+  "source_url": "https://libraryon.org/libraries/bradford/menston-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bradford/menston-library",
-  "authority": "bradford"
+  "data": {
+    "Local authority": "Bradford",
+    "Local authority code": "E08000032",
+    "Library name": "Menston Library",
+    "Library code": null,
+    "Address 1": "Main Street, Ilkley, West Yorkshire, LS29 6LG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LS29 6LG",
+    "Unique property reference number": null,
+    "Latitude": 53.889606,
+    "Longitude": -1.739827,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Hobby and interest groups",
+    "Phone number": "01943 876539",
+    "Email address": "menston.library@gmail.com",
+    "URL": "https://www.bradford.gov.uk/libraries/find-your-local-library/menston-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_652a9aebc7aef3fd5dcbf11c"
+      ]
+    }
+  ]
 }

@@ -1,119 +1,64 @@
 {
   "id": "lib_239e448c-5691-4ec7-a6b0-a19c19dabc8d",
-  "source_id": "2209",
-  "name": "Welling Library",
   "slug": "welling-library",
-  "address": "Bellegrove Road, Kent , Greater London, DA16 3PA",
-  "postcode": "DA16 3PA",
-  "town": "Welling",
-  "phone": "020 8303 7777",
-  "email": "libraries@bexley.gov.uk",
-  "website": "https://arena.yourlondonlibrary.net/web/bexley/-/welling-library#/?location=Welling%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "low-vision-support",
-    "service-dog-friendly"
-  ],
-  "notes": "Refurbished in 2017",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "industrial"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.46247,
-  "longitude": 0.10653,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "bexley",
+  "source_id": "2209",
+  "source_url": "https://libraryon.org/libraries/bexley/welling-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bexley/welling-library",
-  "authority": "bexley"
+  "data": {
+    "Local authority": "Bexley",
+    "Local authority code": "E09000004",
+    "Library name": "Welling Library",
+    "Library code": null,
+    "Address 1": "Bellegrove Road, Kent , Greater London, DA16 3PA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DA16 3PA",
+    "Unique property reference number": 100022920830,
+    "Latitude": 51.46247,
+    "Longitude": 0.10653,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:30",
+    "Friday staffed hours": "09:30-17:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": "09:30-17:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "industrial",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Computers; Children's activities; Hobby and interest groups; Photocopiers",
+    "Phone number": "020 8303 7777",
+    "Email address": "libraries@bexley.gov.uk",
+    "URL": "https://arena.yourlondonlibrary.net/web/bexley/-/welling-library#/?location=Welling%20Library",
+    "Notes": "Refurbished in 2017"
+  },
+  "validation_exceptions": []
 }

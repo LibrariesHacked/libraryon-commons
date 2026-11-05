@@ -1,158 +1,71 @@
 {
   "id": "lib_437a867b-fd72-457e-a35f-c710f2175a17",
-  "source_id": "3094",
-  "name": "Devizes Community Hub & Library",
   "slug": "devizes-community-hub-library",
-  "address": "Sheep Street, Devizes, Wiltshire, SN10 1DL",
-  "postcode": "SN10 1DJ",
-  "town": "Devizes",
-  "phone": "01380 826190",
-  "email": "libraryenquiries@wiltshire.gov.uk",
-  "website": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/12?isListPage=True",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "automatic-doors",
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "hearing-loop-system",
-    "lift-access"
-  ],
-  "notes": "Refurbished and rebranded as Community Hub and Library",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.35123,
-  "longitude": -1.99133,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "wiltshire",
+  "source_id": "3094",
+  "source_url": "https://libraryon.org/libraries/wiltshire/devizes-community-hub-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wiltshire/devizes-community-hub-library",
-  "authority": "wiltshire"
+  "data": {
+    "Local authority": "Wiltshire",
+    "Local authority code": "E06000054",
+    "Library name": "Devizes Community Hub & Library",
+    "Library code": null,
+    "Address 1": "Sheep Street, Devizes, Wiltshire, SN10 1DL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SN10 1DJ",
+    "Unique property reference number": null,
+    "Latitude": 51.35123,
+    "Longitude": -1.99133,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-12:30",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Computers; Scanning; Photocopiers; Bookable space; Books delivered; Digital skills sessions; Children's activities; Hobby and interest groups; British Newspaper Archive; Family history",
+    "Phone number": "01380 826190",
+    "Email address": "libraryenquiries@wiltshire.gov.uk",
+    "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/12?isListPage=True",
+    "Notes": "Refurbished and rebranded as Community Hub and Library"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,156 +1,64 @@
 {
   "id": "lib_bcd32ea7-b8fc-4034-a6a9-fba9e06dddc5",
-  "source_id": "2920",
-  "name": "Lymm Library",
   "slug": "lymm-library",
-  "address": "Davies Way, Lymm, Cheshire, WA13 0QW",
-  "postcode": "WA13 0QW",
-  "town": "Lymm",
-  "phone": "01925 754367",
-  "email": "library3@livewirewarrington.org",
-  "website": "https://livewirewarrington.co.uk/library/our-libraries/#1628599084229-dd5e8dfc-b8a3",
-  "catalogue": "https://libonline.livewirewarrington.co.uk/",
-  "joinOnline": "https://livewirewarrington.co.uk/library/our-libraries/join-our-libraries/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "accessible-parking",
-    "accessible-restrooms",
-    "step-free-access",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.38164,
-  "longitude": -2.48165,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://livewirewarrington.co.uk/library/accessibility-support/"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://livewirewarrington.co.uk/library/culture-creativity/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/ebooks-audiobooks/"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://livewirewarrington.co.uk/library/children/"
-    },
-    {
-      "service": "Computers",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    },
-    {
-      "service": "Scanning",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    }
-  ],
+  "authority": "warrington",
+  "source_id": "2920",
+  "source_url": "https://libraryon.org/libraries/warrington/lymm-library",
   "updated_on": "2026-04-24",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/warrington/lymm-library",
-  "authority": "warrington"
+  "data": {
+    "Local authority": "Warrington",
+    "Local authority code": "E06000007",
+    "Library name": "Lymm Library",
+    "Library code": null,
+    "Address 1": "Davies Way, Lymm, Cheshire, WA13 0QW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA13 0QW",
+    "Unique property reference number": 100012829002,
+    "Latitude": 53.38164,
+    "Longitude": -2.48165,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1968,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "13:00-17:00",
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": "13:00-17:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Family history; Findmypast; Hobby and interest groups; Digital lending; Children's activities; Computers; Photocopiers; Scanning; Garden",
+    "Phone number": "01925 754367",
+    "Email address": "library3@livewirewarrington.org",
+    "URL": "https://livewirewarrington.co.uk/library/our-libraries/#1628599084229-dd5e8dfc-b8a3",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

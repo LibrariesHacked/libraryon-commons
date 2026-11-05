@@ -1,131 +1,64 @@
 {
   "id": "lib_2e4297d3-d87d-4981-9eef-0efadf861a5e",
-  "source_id": "3581",
-  "name": "Danesholme Community Library",
   "slug": "danesholme",
-  "address": "14 Neighbourhood Centre, Corby, Northamptonshire, NN18 9EJ",
-  "postcode": "NN18 9EJ",
-  "town": "Corby",
-  "phone": "",
-  "email": "danesholmecml@gmail.com",
-  "website": "https://www.northnorthants.gov.uk/our-libraries/danesholme-community-library",
-  "catalogue": "https://www.northnorthants.gov.uk/books-reading-and-audio/library-catalogue",
-  "joinOnline": "https://www.northnorthants.gov.uk/libraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Expected to become CRL by 01 April 2020",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.47076,
-  "longitude": -0.73372,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.northnorthants.gov.uk/children-and-young-peoples-library"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.northnorthants.gov.uk/visiting-library/accessibility-health-and-wellbeing-our-libraries/library-home"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.northnorthants.gov.uk/books-reading-and-audio/ereads-and-audio"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying"
-    }
-  ],
+  "authority": "north-northamptonshire",
+  "source_id": "3581",
+  "source_url": "https://libraryon.org/libraries/north-northamptonshire/danesholme",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-northamptonshire/danesholme",
-  "authority": "north-northamptonshire"
+  "data": {
+    "Local authority": "North Northamptonshire",
+    "Local authority code": "E06000061",
+    "Library name": "Danesholme Community Library",
+    "Library code": null,
+    "Address 1": "14 Neighbourhood Centre, Corby, Northamptonshire, NN18 9EJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN18 9EJ",
+    "Unique property reference number": 10006865901,
+    "Latitude": 52.47076,
+    "Longitude": -0.73372,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "15:00-17:00",
+    "Tuesday staffed hours": "15:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-16:00",
+    "Friday staffed hours": "10:00-12:00,14:00-16:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Photocopiers; Children's activities; Hobby and interest groups; Digital skills sessions; BFI Replay; Books delivered; Digital lending; Computers",
+    "Phone number": null,
+    "Email address": "danesholmecml@gmail.com",
+    "URL": "https://www.northnorthants.gov.uk/our-libraries/danesholme-community-library",
+    "Notes": "Expected to become CRL by 01 April 2020"
+  },
+  "validation_exceptions": []
 }

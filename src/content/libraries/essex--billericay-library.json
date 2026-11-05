@@ -1,155 +1,64 @@
 {
   "id": "lib_6ed12a50-fa72-4c0b-923e-9959491dd1a0",
-  "source_id": "968",
-  "name": "Billericay Library",
   "slug": "billericay-library",
-  "address": "143 High Street, Billericay, Essex, CM12 9AB",
-  "postcode": "CM12 9AB",
-  "town": "Billericay",
-  "phone": "0345 603 7628",
-  "email": "billericay.library@essex.gov.uk",
-  "website": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/billericay-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "lift-access",
-    "accessible-parking",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "assistive-technology-available",
-    "adjustable-seating",
-    "baby-changing-facilities",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.62311,
-  "longitude": 0.41607,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "essex",
+  "source_id": "968",
+  "source_url": "https://libraryon.org/libraries/essex/billericay-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/essex/billericay-library",
-  "authority": "essex"
+  "data": {
+    "Local authority": "Essex",
+    "Local authority code": "E10000012",
+    "Library name": "Billericay Library",
+    "Library code": null,
+    "Address 1": "143 High Street, Billericay, Essex, CM12 9AB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CM12 9AB",
+    "Unique property reference number": null,
+    "Latitude": 51.62311,
+    "Longitude": 0.41607,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "09:00-19:00",
+    "Wednesday staffed hours": "09:00-17:30",
+    "Thursday staffed hours": "09:00-17:30",
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Bookable space; Digital skills sessions; Children's activities; Hobby and interest groups; Books delivered; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "0345 603 7628",
+    "Email address": "billericay.library@essex.gov.uk",
+    "URL": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/billericay-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

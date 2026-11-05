@@ -1,104 +1,71 @@
 {
   "id": "lib_62d85019-a041-44ae-a7bb-3c4a8e225f35",
-  "source_id": "3470",
-  "name": "Distington Library Link",
   "slug": "distington-library-link",
-  "address": "Church Road, Distington, Cumbria, CA14 5TE",
-  "postcode": "CA14 5TE",
-  "town": "Workington",
-  "phone": "01946 506400",
-  "email": "https://cumberland.gov.uk/contact-a-library",
-  "website": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/distington-library-link",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.59753,
-  "longitude": -3.54073,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "cumberland",
+  "source_id": "3470",
+  "source_url": "https://libraryon.org/libraries/cumberland/distington-library-link",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cumberland/distington-library-link",
-  "authority": "cumberland"
+  "data": {
+    "Local authority": "Cumberland",
+    "Local authority code": "E06000063",
+    "Library name": "Distington Library Link",
+    "Library code": null,
+    "Address 1": "Church Road, Distington, Cumbria, CA14 5TE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CA14 5TE",
+    "Unique property reference number": null,
+    "Latitude": 54.59753,
+    "Longitude": -3.54073,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-14:00",
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-14:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Family history",
+    "Phone number": "01946 506400",
+    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/distington-library-link",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://cumberland.gov.uk/contact-a-library",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

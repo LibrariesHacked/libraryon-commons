@@ -1,106 +1,77 @@
 {
   "id": "lib_8a9e51d2-443c-49a1-977b-71090e014e2b",
-  "source_id": "3483",
-  "name": "Longtown ",
   "slug": "longtown-",
-  "address": "Lochinvar Centre, Longtown, Cumbria, CA6 5UG",
-  "postcode": "CA6 5UF",
-  "town": "Carlisle",
-  "phone": "01228 226695",
-  "email": "https://cumberland.gov.uk/contact-a-library",
-  "website": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/longtown-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.00985,
-  "longitude": -2.96717,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "cumberland",
+  "source_id": "3483",
+  "source_url": "https://libraryon.org/libraries/cumberland/longtown-",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cumberland/longtown-",
-  "authority": "cumberland"
+  "data": {
+    "Local authority": "Cumberland",
+    "Local authority code": "E06000063",
+    "Library name": "Longtown ",
+    "Library code": null,
+    "Address 1": "Lochinvar Centre, Longtown, Cumbria, CA6 5UG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CA6 5UF",
+    "Unique property reference number": null,
+    "Latitude": 55.00985,
+    "Longitude": -2.96717,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Computers; Family history",
+    "Phone number": "01228 226695",
+    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/longtown-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://cumberland.gov.uk/contact-a-library",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

@@ -1,124 +1,77 @@
 {
   "id": "lib_50ad8588-cae3-4f86-bfb7-4e01fc36ac5c",
-  "source_id": "3766",
-  "name": "Whitchurch Library",
   "slug": "whitchurch-library-shropshire",
-  "address": "Unit C, St Mary's Arcade, Whitchurch, 13-17 High Street, Whitchurch, Shropshire SY13 1AX",
-  "postcode": "",
-  "town": "Whitchurch",
-  "phone": "",
-  "email": "whitchurch.library@shropshire.gov.uk",
-  "website": "https://next.shropshire.gov.uk/libraries/find-a-library/whitchurch-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.969544,
-  "longitude": -2.683812,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "shropshire",
+  "source_id": "3766",
+  "source_url": "https://libraryon.org/libraries/shropshire/whitchurch-library-shropshire",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/shropshire/whitchurch-library-shropshire",
-  "authority": "shropshire"
+  "data": {
+    "Local authority": "Shropshire",
+    "Local authority code": "E06000051",
+    "Library name": "Whitchurch Library",
+    "Library code": null,
+    "Address 1": "Unit C, St Mary's Arcade, Whitchurch, 13-17 High Street, Whitchurch, Shropshire SY13 1AX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 52.969544,
+    "Longitude": -2.683812,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30,13:30-17:00",
+    "Tuesday staffed hours": "09:30-12:30,13:30-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-12:30,13:30-17:00",
+    "Friday staffed hours": "09:30-12:30,13:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Digital lending; British Newspaper Archive; Findmypast; BFI Replay",
+    "Phone number": null,
+    "Email address": "whitchurch.library@shropshire.gov.uk",
+    "URL": "https://next.shropshire.gov.uk/libraries/find-a-library/whitchurch-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

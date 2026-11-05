@@ -1,107 +1,71 @@
 {
   "id": "lib_3b3c4dea-17d5-464a-85c5-c7c082454273",
-  "source_id": "544",
-  "name": "Church Village Library",
   "slug": "church-village-library",
-  "address": "Garth Olwg Community Campus, Off St Illtyd’s Road, Church Village, Pontypridd, CF38 1RQ",
-  "postcode": "CF38 1DA",
-  "town": "Pontypridd",
-  "phone": "01443 570088",
-  "email": "ChurchVillage.Library@rctcbc.gov.uk",
-  "website": "http://www.rctcbc.gov.uk/EN/Resident/Libraries/Librarylocationsandopeninghours/ChurchVillageLibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.566399,
-  "longitude": -3.322313,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "rhondda-cynon-taf",
+  "source_id": "544",
+  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/church-village-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/church-village-library",
-  "authority": "rhondda-cynon-taf"
+  "data": {
+    "Local authority": "Rhondda Cynon Taf",
+    "Local authority code": "W06000016",
+    "Library name": "Church Village Library",
+    "Library code": null,
+    "Address 1": "Garth Olwg Community Campus, Off St Illtyd’s Road, Church Village, Pontypridd, CF38 1RQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CF38 1DA",
+    "Unique property reference number": null,
+    "Latitude": 51.566399,
+    "Longitude": -3.322313,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-13:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast",
+    "Phone number": "01443 570088",
+    "Email address": "ChurchVillage.Library@rctcbc.gov.uk",
+    "URL": "http://www.rctcbc.gov.uk/EN/Resident/Libraries/Librarylocationsandopeninghours/ChurchVillageLibrary.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

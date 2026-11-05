@@ -1,145 +1,64 @@
 {
   "id": "lib_b7adc959-0009-422f-a4d4-b1987f5611de",
-  "source_id": "3318",
-  "name": "Ryde",
   "slug": "ryde",
-  "address": "George Street, Ryde, Isle of Wight, PO33 2JE",
-  "postcode": "PO33 2JE",
-  "town": "Ryde",
-  "phone": "01983 823825",
-  "email": "rydelibrary@iow.gov.uk",
-  "website": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/isle-of-wight-council-libraries/ryde-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.72814,
-  "longitude": -1.16149,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "isle-of-wight",
+  "source_id": "3318",
+  "source_url": "https://libraryon.org/libraries/isle-of-wight/ryde",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-wight/ryde",
-  "authority": "isle-of-wight"
+  "data": {
+    "Local authority": "Isle of Wight",
+    "Local authority code": "E06000046",
+    "Library name": "Ryde",
+    "Library code": null,
+    "Address 1": "George Street, Ryde, Isle of Wight, PO33 2JE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO33 2JE",
+    "Unique property reference number": null,
+    "Latitude": 50.72814,
+    "Longitude": -1.16149,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30,13:30-17:30",
+    "Tuesday staffed hours": "09:00-12:30,13:30-17:30",
+    "Wednesday staffed hours": "10:30-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-12:30,13:30-17:30",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Computers; Findmypast; Scanning; Photocopiers; Children's activities; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "01983 823825",
+    "Email address": "rydelibrary@iow.gov.uk",
+    "URL": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/isle-of-wight-council-libraries/ryde-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

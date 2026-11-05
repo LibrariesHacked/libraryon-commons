@@ -1,113 +1,77 @@
 {
   "id": "lib_8572b8a2-7f26-461f-997f-68e521d02857",
-  "source_id": "372",
-  "name": "Ralston Library",
   "slug": "ralston-library",
-  "address": "Ralston Community Centre, Allanton Ave, Paisley, Renfrewshire, PA1 3BL",
-  "postcode": "",
-  "town": "Paisley",
-  "phone": "0300 300 1188",
-  "email": "libraries@renfrewshire.gov.uk",
-  "website": "https://libcat.renfrewshire.gov.uk/iguana/www.main.cls?v=96c85272-ef02-4d78-8ef0-f831bf46dc19",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.845047,
-  "longitude": -4.375704,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "renfrewshire",
+  "source_id": "372",
+  "source_url": "https://libraryon.org/libraries/renfrewshire/ralston-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/renfrewshire/ralston-library",
-  "authority": "renfrewshire"
+  "data": {
+    "Local authority": "Renfrewshire",
+    "Local authority code": "S12000038",
+    "Library name": "Ralston Library",
+    "Library code": null,
+    "Address 1": "Ralston Community Centre, Allanton Ave, Paisley, Renfrewshire, PA1 3BL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 55.845047,
+    "Longitude": -4.375704,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:15-13:00,14:00-17:00",
+    "Wednesday staffed hours": "09:15-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:15-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning",
+    "Phone number": "0300 300 1188",
+    "Email address": "libraries@renfrewshire.gov.uk",
+    "URL": "https://libcat.renfrewshire.gov.uk/iguana/www.main.cls?v=96c85272-ef02-4d78-8ef0-f831bf46dc19",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

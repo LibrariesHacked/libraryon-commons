@@ -1,140 +1,64 @@
 {
   "id": "lib_465eb6d2-418e-4726-b26e-1f2949e1b1f5",
-  "source_id": "1580",
-  "name": "Lightwater",
   "slug": "lightwater",
-  "address": "83A Guildford Road , Lightwater, Surrey, GU18 5SB",
-  "postcode": "GU18 5SB",
-  "town": "Lightwater",
-  "phone": "",
-  "email": "lightwater.library@surreycc.gov.uk",
-  "website": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/lightwater",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "hearing-loop-system",
-    "low-vision-support"
-  ],
-  "notes": "Closed 1-2pm Tue/Wed/Fri. Run by volunteers only every Wednesday",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.351322,
-  "longitude": -0.665269,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "surrey",
+  "source_id": "1580",
+  "source_url": "https://libraryon.org/libraries/surrey/lightwater",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/surrey/lightwater",
-  "authority": "surrey"
+  "data": {
+    "Local authority": "Surrey",
+    "Local authority code": "E10000030",
+    "Library name": "Lightwater",
+    "Library code": null,
+    "Address 1": "83A Guildford Road , Lightwater, Surrey, GU18 5SB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GU18 5SB",
+    "Unique property reference number": 100062330503,
+    "Latitude": 51.351322,
+    "Longitude": -0.665269,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1994,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Photocopiers; Cafe; Hobby and interest groups; Children's activities; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "lightwater.library@surreycc.gov.uk",
+    "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/lightwater",
+    "Notes": "Closed 1-2pm Tue/Wed/Fri. Run by volunteers only every Wednesday"
+  },
+  "validation_exceptions": []
 }

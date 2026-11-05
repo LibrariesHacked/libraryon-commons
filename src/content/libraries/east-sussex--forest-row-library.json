@@ -1,119 +1,77 @@
 {
   "id": "lib_0fc9c2e0-5c81-45b5-b1b8-b592641738a3",
-  "source_id": "864",
-  "name": "Forest Row Library",
   "slug": "forest-row-library",
-  "address": "The Community Centre, Hartfield Road, Forest Row, East Sussex, RH18 5DZ",
-  "postcode": "RH18 5DY",
-  "town": "Forest Row",
-  "phone": "0345 6080196",
-  "email": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-  "website": "https://www.eastsussex.gov.uk/libraries/local/locations/forest-row",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "baby-changing-facilities",
-    "accessible-restrooms",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.09621,
-  "longitude": 0.03663,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "east-sussex",
+  "source_id": "864",
+  "source_url": "https://libraryon.org/libraries/east-sussex/forest-row-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-sussex/forest-row-library",
-  "authority": "east-sussex"
+  "data": {
+    "Local authority": "East Sussex",
+    "Local authority code": "E10000011",
+    "Library name": "Forest Row Library",
+    "Library code": null,
+    "Address 1": "The Community Centre, Hartfield Road, Forest Row, East Sussex, RH18 5DZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RH18 5DY",
+    "Unique property reference number": null,
+    "Latitude": 51.09621,
+    "Longitude": 0.03663,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-13:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "13:00-16:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "0345 6080196",
+    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/forest-row",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

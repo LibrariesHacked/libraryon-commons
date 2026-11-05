@@ -1,126 +1,71 @@
 {
   "id": "lib_fad0510c-75dd-48e3-ac7c-f5c2d3945677",
-  "source_id": "2174",
-  "name": "Homerton Library",
   "slug": "homerton-library",
-  "address": "Homerton High Street, London, E9 6AS",
-  "postcode": "E9 6AS",
-  "town": "London",
-  "phone": "020 8356 1066",
-  "email": "libraries@hackney.gov.uk",
-  "website": "https://hackney.gov.uk/homerton-library",
-  "catalogue": "https://llc.ent.sirsidynix.net.uk/client/en_GB/hackney",
-  "joinOnline": "https://libraries.hackney.gov.uk/user/register",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54886,
-  "longitude": -0.04142,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://hackney.gov.uk/e-library"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://hackney.gov.uk/community-library-service"
-    }
-  ],
+  "authority": "hackney",
+  "source_id": "2174",
+  "source_url": "https://libraryon.org/libraries/hackney/homerton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hackney/homerton-library",
-  "authority": "hackney"
+  "data": {
+    "Local authority": "Hackney",
+    "Local authority code": "E09000012",
+    "Library name": "Homerton Library",
+    "Library code": null,
+    "Address 1": "Homerton High Street, London, E9 6AS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "E9 6AS",
+    "Unique property reference number": null,
+    "Latitude": 51.54886,
+    "Longitude": -0.04142,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-20:00",
+    "Tuesday staffed hours": "10:00-20:00",
+    "Wednesday staffed hours": "13:00-18:00",
+    "Thursday staffed hours": "10:00-20:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Hobby and interest groups; Digital lending; Books delivered",
+    "Phone number": "020 8356 1066",
+    "Email address": "libraries@hackney.gov.uk",
+    "URL": "https://hackney.gov.uk/homerton-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

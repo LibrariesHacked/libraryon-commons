@@ -1,121 +1,64 @@
 {
   "id": "lib_9b7b222e-3d6f-4500-9c8b-a6b490855bc7",
-  "source_id": "2352",
-  "name": "Northfield Library",
   "slug": "northfield-library",
-  "address": "77 Church Road, Birmingham, West Midlands, B31 2LB",
-  "postcode": "B31 2LB",
-  "town": "Birmingham",
-  "phone": "0121 464 1007",
-  "email": "northfield.library@birmingham.gov.uk",
-  "website": "https://www.birmingham.gov.uk/directory_record/5142/northfield_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "Closed for lunch 1-2pm",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.414696,
-  "longitude": -1.96676,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "birmingham",
+  "source_id": "2352",
+  "source_url": "https://libraryon.org/libraries/birmingham/northfield-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/birmingham/northfield-library",
-  "authority": "birmingham"
+  "data": {
+    "Local authority": "Birmingham",
+    "Local authority code": "E08000025",
+    "Library name": "Northfield Library",
+    "Library code": null,
+    "Address 1": "77 Church Road, Birmingham, West Midlands, B31 2LB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B31 2LB",
+    "Unique property reference number": 100071453854,
+    "Latitude": 52.414696,
+    "Longitude": -1.96676,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1906,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "09:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; BFI Replay",
+    "Phone number": "0121 464 1007",
+    "Email address": "northfield.library@birmingham.gov.uk",
+    "URL": "https://www.birmingham.gov.uk/directory_record/5142/northfield_library",
+    "Notes": "Closed for lunch 1-2pm"
+  },
+  "validation_exceptions": []
 }

@@ -1,100 +1,71 @@
 {
   "id": "lib_eff93f28-a041-4782-a1b4-be59b6d64f93",
-  "source_id": "2304",
-  "name": "Long Knowle Library",
   "slug": "long-knowle-library",
-  "address": "Long Knowle Community Hub, Wood End Road, Wolverhampton, West Midlands, WV11 1YG",
-  "postcode": "WV11 1EF",
-  "town": "Wolverhampton",
-  "phone": "01902 556290",
-  "email": "libraries@wolverhampton.gov.uk",
-  "website": "https://www.wolverhampton.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.61234,
-  "longitude": -2.08475,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "wolverhampton",
+  "source_id": "2304",
+  "source_url": "https://libraryon.org/libraries/wolverhampton/long-knowle-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wolverhampton/long-knowle-library",
-  "authority": "wolverhampton"
+  "data": {
+    "Local authority": "Wolverhampton",
+    "Local authority code": "E08000031",
+    "Library name": "Long Knowle Library",
+    "Library code": null,
+    "Address 1": "Long Knowle Community Hub, Wood End Road, Wolverhampton, West Midlands, WV11 1YG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WV11 1EF",
+    "Unique property reference number": null,
+    "Latitude": 52.61234,
+    "Longitude": -2.08475,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-14:00",
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers",
+    "Phone number": "01902 556290",
+    "Email address": "libraries@wolverhampton.gov.uk",
+    "URL": "https://www.wolverhampton.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,130 +1,71 @@
 {
   "id": "lib_bda0f3ef-55a6-447f-80ad-4a8cb467a633",
-  "source_id": "2217",
-  "name": "Bramley Library",
   "slug": "bramley-library",
-  "address": "Hough Lane, Bramley, West Yorkshire, LS13 3ND",
-  "postcode": "LS13 3EH",
-  "town": "Leeds",
-  "phone": "0113 378 5005",
-  "email": "leeds.libraries@leeds.gov.uk",
-  "website": "https://libraries.leeds.gov.uk/libraries/bramley",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities",
-    "accessible-restrooms",
-    "assistive-technology-available",
-    "wheelchair-access",
-    "hearing-loop-system",
-    "step-free-access",
-    "sign-language-interpretation",
-    "automatic-doors",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.81072,
-  "longitude": -1.63044,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "leeds",
+  "source_id": "2217",
+  "source_url": "https://libraryon.org/libraries/leeds/bramley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leeds/bramley-library",
-  "authority": "leeds"
+  "data": {
+    "Local authority": "Leeds",
+    "Local authority code": "E08000035",
+    "Library name": "Bramley Library",
+    "Library code": null,
+    "Address 1": "Hough Lane, Bramley, West Yorkshire, LS13 3ND",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LS13 3EH",
+    "Unique property reference number": null,
+    "Latitude": 53.81072,
+    "Longitude": -1.63044,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "09:00-19:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Children's activities; Hobby and interest groups",
+    "Phone number": "0113 378 5005",
+    "Email address": "leeds.libraries@leeds.gov.uk",
+    "URL": "https://libraries.leeds.gov.uk/libraries/bramley",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

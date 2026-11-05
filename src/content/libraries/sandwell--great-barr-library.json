@@ -1,222 +1,71 @@
 {
   "id": "lib_70ff4ecb-b3fc-43aa-ac99-adf1ea7387fb",
-  "source_id": "2121",
-  "name": "Great Barr Library",
   "slug": "great-barr-library",
-  "address": "Birmingham Road, Great Barr, West Midlands, B43 6NW",
-  "postcode": "B43 6PF",
-  "town": "Birmingham",
-  "phone": "0121 569 4929",
-  "email": "greatbarr_library@sandwell.gov.uk",
-  "website": "http://www.sandwell.gov.uk/info/200261/libraries_in_sandwell/815/great_barr_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.54646,
-  "longitude": -1.9328,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "sandwell",
+  "source_id": "2121",
+  "source_url": "https://libraryon.org/libraries/sandwell/great-barr-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sandwell/great-barr-library",
-  "authority": "sandwell"
+  "data": {
+    "Local authority": "Sandwell",
+    "Local authority code": "E08000028",
+    "Library name": "Great Barr Library",
+    "Library code": null,
+    "Address 1": "Birmingham Road, Great Barr, West Midlands, B43 6NW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B43 6PF",
+    "Unique property reference number": null,
+    "Latitude": 52.54646,
+    "Longitude": -1.9328,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-17:00",
+    "Tuesday staffed hours": "09:30-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-13:00,14:00-16:00",
+    "Friday staffed hours": "09:30-13:00,14:00-16:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "07:00-09:30,13:00-14:00,17:00-22:00",
+    "Tuesday unstaffed hours": "07:00-09:30,13:00-14:00,17:00-22:00",
+    "Wednesday unstaffed hours": "13:00-22:00",
+    "Thursday unstaffed hours": "07:00-09:30,13:00-14:00,16:00-22:00",
+    "Friday unstaffed hours": "07:00-09:30,13:00-14:00,16:00-22:00",
+    "Saturday unstaffed hours": "07:00-10:00,16:00-22:00",
+    "Sunday unstaffed hours": "07:00-22:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Bookable space; Children's activities; Hobby and interest groups; Findmypast",
+    "Phone number": "0121 569 4929",
+    "Email address": "greatbarr_library@sandwell.gov.uk",
+    "URL": "http://www.sandwell.gov.uk/info/200261/libraries_in_sandwell/815/great_barr_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

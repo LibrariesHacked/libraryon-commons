@@ -1,126 +1,64 @@
 {
   "id": "lib_aa59e5f7-3387-4e03-8eb7-13751516bd10",
-  "source_id": "2378",
-  "name": "Burley Library",
   "slug": "burley-library",
-  "address": "Grange Road, Burley-in-Wharfedale, Ilkley, LS29 7HD",
-  "postcode": "LS29 7HD",
-  "town": "Ilkley",
-  "phone": "01943 863714",
-  "email": "burleylibrary@gmail.com",
-  "website": "https://www.bradford.gov.uk/libraries/find-your-local-library/burley-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "assistive-technology-available",
-    "adjustable-seating",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.9127,
-  "longitude": -1.74776,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "bradford",
+  "source_id": "2378",
+  "source_url": "https://libraryon.org/libraries/bradford/burley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bradford/burley-library",
-  "authority": "bradford"
+  "data": {
+    "Local authority": "Bradford",
+    "Local authority code": "E08000032",
+    "Library name": "Burley Library",
+    "Library code": null,
+    "Address 1": "Grange Road, Burley-in-Wharfedale, Ilkley, LS29 7HD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LS29 7HD",
+    "Unique property reference number": null,
+    "Latitude": 53.9127,
+    "Longitude": -1.74776,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-19:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Children's activities; Hobby and interest groups; Family history",
+    "Phone number": "01943 863714",
+    "Email address": "burleylibrary@gmail.com",
+    "URL": "https://www.bradford.gov.uk/libraries/find-your-local-library/burley-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

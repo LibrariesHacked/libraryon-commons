@@ -1,128 +1,64 @@
 {
   "id": "lib_667310d4-5d5a-4fe9-b12b-aea1b27e043d",
-  "source_id": "3342",
-  "name": "Barnard Castle Library",
   "slug": "barnard-castle-library",
-  "address": "2 Hall Street, Barnard Castle, County Durham, DL12 8JB",
-  "postcode": "DL12 8JB",
-  "town": "Barnard Castle",
-  "phone": "03000 263 409",
-  "email": "bdcaslibrary@durham.gov.uk",
-  "website": "https://www.durham.gov.uk/article/2022/Barnard-Castle-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.54355,
-  "longitude": -1.92237,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "county-durham",
+  "source_id": "3342",
+  "source_url": "https://libraryon.org/libraries/county-durham/barnard-castle-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-durham/barnard-castle-library",
-  "authority": "county-durham"
+  "data": {
+    "Local authority": "County Durham",
+    "Local authority code": "E06000047",
+    "Library name": "Barnard Castle Library",
+    "Library code": null,
+    "Address 1": "2 Hall Street, Barnard Castle, County Durham, DL12 8JB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DL12 8JB",
+    "Unique property reference number": null,
+    "Latitude": 54.54355,
+    "Longitude": -1.92237,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2014,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Children's activities; Hobby and interest groups; Family history; Books delivered",
+    "Phone number": "03000 263 409",
+    "Email address": "bdcaslibrary@durham.gov.uk",
+    "URL": "https://www.durham.gov.uk/article/2022/Barnard-Castle-Library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

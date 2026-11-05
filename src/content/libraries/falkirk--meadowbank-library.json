@@ -1,125 +1,71 @@
 {
   "id": "lib_6068a930-89c4-45e7-8cea-a8c9aab5d915",
-  "source_id": "136",
-  "name": "Meadowbank Library",
   "slug": "meadowbank-library",
-  "address": "6A Stevenson Street, Polmont, FK2 0GU",
-  "postcode": "FK2 0GU",
-  "town": "Falkirk",
-  "phone": "01324 503870",
-  "email": "meadowbanklibrary@falkirk.gov.uk",
-  "website": "http://www.falkirkcommunitytrust.org/venues/meadowbank-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.986941094672204,
-  "longitude": -3.7196970765893127,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.falkirkleisureandculture.org/learning/libraries/groups-events/"
-    },
-    {
-      "service": "Computers",
-      "url": "https://icambookings.falkirkleisureandculture.org/Account/LogOn?ReturnUrl=%2fBooking&_ga=2.152139897.1111917353.1769503855-262187149.1769503855"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.falkirkleisureandculture.org/learning/libraries/home-library-service/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.falkirkleisureandculture.org/learning/libraries/library-online/"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.falkirkleisureandculture.org/learning/libraries/hire-a-library-space/"
-    }
-  ],
+  "authority": "falkirk",
+  "source_id": "136",
+  "source_url": "https://libraryon.org/libraries/falkirk/meadowbank-library",
   "updated_on": "2026-01-27",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/falkirk/meadowbank-library",
-  "authority": "falkirk"
+  "data": {
+    "Local authority": "Falkirk",
+    "Local authority code": "S12000014",
+    "Library name": "Meadowbank Library",
+    "Library code": null,
+    "Address 1": "6A Stevenson Street, Polmont, FK2 0GU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "FK2 0GU",
+    "Unique property reference number": null,
+    "Latitude": 55.986941094672204,
+    "Longitude": -3.7196970765893127,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-20:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Hobby and interest groups; Computers; Books delivered; Digital lending; Bookable space",
+    "Phone number": "01324 503870",
+    "Email address": "meadowbanklibrary@falkirk.gov.uk",
+    "URL": "http://www.falkirkcommunitytrust.org/venues/meadowbank-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,138 +1,71 @@
 {
   "id": "lib_ab9eff22-0d16-4a07-a721-b0d695666e08",
-  "source_id": "2421",
-  "name": "Beavers Community Hub & Library",
   "slug": "beavers-community-hub-and-Library",
-  "address": "103 Salisbury Road, Hounslow, Middlesex, TW4 7NW",
-  "postcode": "TW4 7NW",
-  "town": "Hounslow",
-  "phone": "020 8583 4220",
-  "email": "beavers.library@hounslow.gov.uk",
-  "website": "https://www.hounslow.gov.uk/directory_record/2976/beavers_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "11:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "11:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "automatic-doors",
-    "wheelchair-access",
-    "adjustable-seating",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.47013,
-  "longitude": -0.39636,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1677/free_internet_access"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.hounslow.gov.uk/homepage/99/library_service_for_children"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.hounslow.gov.uk/info/20134/247_elibrary_services"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1687/library_at_home"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1692/local_history_and_archives"
-    }
-  ],
+  "authority": "hounslow",
+  "source_id": "2421",
+  "source_url": "https://libraryon.org/libraries/hounslow/beavers-community-hub-and-Library",
   "updated_on": "2026-02-16",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hounslow/beavers-community-hub-and-Library",
-  "authority": "hounslow"
+  "data": {
+    "Local authority": "Hounslow",
+    "Local authority code": "E09000018",
+    "Library name": "Beavers Community Hub & Library",
+    "Library code": null,
+    "Address 1": "103 Salisbury Road, Hounslow, Middlesex, TW4 7NW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TW4 7NW",
+    "Unique property reference number": null,
+    "Latitude": 51.47013,
+    "Longitude": -0.39636,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-15:00",
+    "Tuesday staffed hours": "11:30-17:30",
+    "Wednesday staffed hours": "11:30-17:30",
+    "Thursday staffed hours": "09:00-15:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Digital lending; Computers; Scanning; Photocopiers; Hobby and interest groups; Books delivered; Family history",
+    "Phone number": "020 8583 4220",
+    "Email address": "beavers.library@hounslow.gov.uk",
+    "URL": "https://www.hounslow.gov.uk/directory_record/2976/beavers_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

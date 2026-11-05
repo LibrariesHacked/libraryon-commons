@@ -1,95 +1,71 @@
 {
   "id": "lib_efa4cfcf-05f6-472e-9248-1b8a37397782",
-  "source_id": "2851",
-  "name": "Bassingbourn Book Café",
   "slug": "bassingbourn-book-cafe",
-  "address": "The Old School Community Centre High Street Bassingbourn Hertfordshire, SG8 5LD",
-  "postcode": "SG8 5LD",
-  "town": "Royston",
-  "phone": "07593 853189",
-  "email": "",
-  "website": "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/service.page?id=Pd5gVAofmdQ",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.0782,
-  "longitude": -0.05564,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "cambridgeshire",
+  "source_id": "2851",
+  "source_url": "https://libraryon.org/libraries/cambridgeshire/bassingbourn-book-cafe",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cambridgeshire/bassingbourn-book-cafe",
-  "authority": "cambridgeshire"
+  "data": {
+    "Local authority": "Cambridgeshire",
+    "Local authority code": "E10000003",
+    "Library name": "Bassingbourn Book Café",
+    "Library code": null,
+    "Address 1": "The Old School Community Centre High Street Bassingbourn Hertfordshire, SG8 5LD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SG8 5LD",
+    "Unique property reference number": null,
+    "Latitude": 52.0782,
+    "Longitude": -0.05564,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": 2010,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-16:30,18:00-20:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "07593 853189",
+    "Email address": null,
+    "URL": "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/service.page?id=Pd5gVAofmdQ",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

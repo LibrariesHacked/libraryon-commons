@@ -1,148 +1,64 @@
 {
   "id": "lib_7b162113-4523-4c35-8938-ddcdc9f51af4",
-  "source_id": "1570",
-  "name": "Knaphill",
   "slug": "knaphill",
-  "address": "4 Anchor Crescent , Knaphill, Surrey, GU21 2PD",
-  "postcode": "GU21 2PD",
-  "town": "Woking",
-  "phone": "",
-  "email": "knaphill.library@surreycc.gov.uk",
-  "website": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/knaphill",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "automatic-doors",
-    "accessible-restrooms",
-    "low-vision-support"
-  ],
-  "notes": "Closed 1-2pm Tue/Thu/Fri",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/17c3f27d4227464c8f7349ce9407d5ad/",
-  "permanentlyClosed": false,
-  "latitude": 51.31844,
-  "longitude": -0.61538,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "surrey",
+  "source_id": "1570",
+  "source_url": "https://libraryon.org/libraries/surrey/knaphill",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/surrey/knaphill",
-  "authority": "surrey"
+  "data": {
+    "Local authority": "Surrey",
+    "Local authority code": "E10000030",
+    "Library name": "Knaphill",
+    "Library code": null,
+    "Address 1": "4 Anchor Crescent , Knaphill, Surrey, GU21 2PD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GU21 2PD",
+    "Unique property reference number": 10002421711,
+    "Latitude": 51.31844,
+    "Longitude": -0.61538,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2007,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-17:00",
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Computers; Hobby and interest groups; Children's activities; Digital skills sessions; Books delivered; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "knaphill.library@surreycc.gov.uk",
+    "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/knaphill",
+    "Notes": "Closed 1-2pm Tue/Thu/Fri"
+  },
+  "validation_exceptions": []
 }

@@ -1,123 +1,64 @@
 {
   "id": "lib_69b87330-2ddf-4f00-8f25-58fd7becd5a0",
-  "source_id": "1660",
-  "name": "Virginia Water Community Library",
   "slug": "virginia-water",
-  "address": "6 Station Parade , Virginia Water, Surrey, GU25 4AD",
-  "postcode": "GU25 4AD",
-  "town": "Virginia Water",
-  "phone": "",
-  "email": "vwaterlibrary@gmail.com",
-  "website": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/virginia-water",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "hearing-loop-system"
-  ],
-  "notes": "Refurbishment and interior changes in 2018",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.40186,
-  "longitude": -0.56376,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    }
-  ],
+  "authority": "surrey",
+  "source_id": "1660",
+  "source_url": "https://libraryon.org/libraries/surrey/virginia-water",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/surrey/virginia-water",
-  "authority": "surrey"
+  "data": {
+    "Local authority": "Surrey",
+    "Local authority code": "E10000030",
+    "Library name": "Virginia Water Community Library",
+    "Library code": null,
+    "Address 1": "6 Station Parade , Virginia Water, Surrey, GU25 4AD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GU25 4AD",
+    "Unique property reference number": 100062338598,
+    "Latitude": 51.40186,
+    "Longitude": -0.56376,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 1978,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-12:30",
+    "Wednesday staffed hours": "17:00-19:00",
+    "Thursday staffed hours": "10:00-12:30",
+    "Friday staffed hours": "10:00-16:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Hobby and interest groups; Computers; Photocopiers; Cafe",
+    "Phone number": null,
+    "Email address": "vwaterlibrary@gmail.com",
+    "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/virginia-water",
+    "Notes": "Refurbishment and interior changes in 2018"
+  },
+  "validation_exceptions": []
 }

@@ -1,112 +1,64 @@
 {
   "id": "lib_d15a1751-7886-4764-9816-11ebb25bdc0c",
-  "source_id": "2612",
-  "name": "Pepys Community Library",
   "slug": "pepys-community-library",
-  "address": "Old Library, London, Greater London, SE8 3BA",
-  "postcode": "SE8 3BA",
-  "town": "London",
-  "phone": "020 8691 3146",
-  "email": "pepyslibrary@ecocom.org.uk",
-  "website": "https://pepyscommunitylibrary.tumblr.com/about",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.490019,
-  "longitude": -0.030855,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "lewisham",
+  "source_id": "2612",
+  "source_url": "https://libraryon.org/libraries/lewisham/pepys-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lewisham/pepys-community-library",
-  "authority": "lewisham"
+  "data": {
+    "Local authority": "Lewisham",
+    "Local authority code": "E09000023",
+    "Library name": "Pepys Community Library",
+    "Library code": null,
+    "Address 1": "Old Library, London, Greater London, SE8 3BA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE8 3BA",
+    "Unique property reference number": 10023235118,
+    "Latitude": 51.490019,
+    "Longitude": -0.030855,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Bookable space",
+    "Phone number": "020 8691 3146",
+    "Email address": "pepyslibrary@ecocom.org.uk",
+    "URL": "https://pepyscommunitylibrary.tumblr.com/about",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

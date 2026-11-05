@@ -1,114 +1,64 @@
 {
   "id": "lib_0e341d24-f337-4c49-a4a9-51f71d80706e",
-  "source_id": "1037",
-  "name": "Wychwood",
   "slug": "wychwood",
-  "address": "29 High Street, Milton-under-Wychwood, Oxfordshire, OX7 6LD",
-  "postcode": "OX7 6LD",
-  "town": "Chipping Norton",
-  "phone": "01865 815225",
-  "email": "wychwood.library@oxfordshire.gov.uk",
-  "website": "https://www.oxfordshire.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "Closes for lunch 1-2 on Weds",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.86106,
-  "longitude": -1.6189,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "oxfordshire",
+  "source_id": "1037",
+  "source_url": "https://libraryon.org/libraries/oxfordshire/wychwood",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/oxfordshire/wychwood",
-  "authority": "oxfordshire"
+  "data": {
+    "Local authority": "Oxfordshire",
+    "Local authority code": "E10000025",
+    "Library name": "Wychwood",
+    "Library code": null,
+    "Address 1": "29 High Street, Milton-under-Wychwood, Oxfordshire, OX7 6LD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OX7 6LD",
+    "Unique property reference number": null,
+    "Latitude": 51.86106,
+    "Longitude": -1.6189,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-19:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "01865 815225",
+    "Email address": "wychwood.library@oxfordshire.gov.uk",
+    "URL": "https://www.oxfordshire.gov.uk/libraries",
+    "Notes": "Closes for lunch 1-2 on Weds"
+  },
+  "validation_exceptions": []
 }

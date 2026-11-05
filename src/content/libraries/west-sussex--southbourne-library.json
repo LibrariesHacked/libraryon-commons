@@ -1,150 +1,73 @@
 {
   "id": "lib_250c1dbc-c6a3-49a8-a80c-e5fac0eda51b",
-  "source_id": "1968",
-  "name": "Southbourne Library",
   "slug": "southbourne-library",
-  "address": "First Avenue, Southbourne, West Sussex, PO10 8HN",
-  "postcode": "PO10 8HN",
-  "town": "Emsworth",
-  "phone": "01243 375924",
-  "email": "southbourne.library@westsussex.gov.uk",
-  "website": "https://libraries.westsussex.gov.uk/southbourne-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.84787,
-  "longitude": -0.91034,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "west-sussex",
+  "source_id": "1968",
+  "source_url": "https://libraryon.org/libraries/west-sussex/southbourne-library",
   "updated_on": "2026-02-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-sussex/southbourne-library",
-  "authority": "west-sussex"
+  "data": {
+    "Local authority": "West Sussex",
+    "Local authority code": "E10000032",
+    "Library name": "Southbourne Library",
+    "Library code": null,
+    "Address 1": "First Avenue, Southbourne, West Sussex, PO10 8HN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO10 8HN",
+    "Unique property reference number": null,
+    "Latitude": 50.84787,
+    "Longitude": -0.91034,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Books delivered; Digital skills sessions; Children's activities; Hobby and interest groups; Family history; Findmypast; British Newspaper Archive; BFI Replay",
+    "Phone number": "01243 375924",
+    "Email address": "southbourne.library@westsussex.gov.uk",
+    "URL": "https://libraries.westsussex.gov.uk/southbourne-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_670390274f292a393eae1f3e"
+      ]
+    }
+  ]
 }

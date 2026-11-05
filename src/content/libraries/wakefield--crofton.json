@@ -1,68 +1,71 @@
 {
   "id": "lib_82d5b7ee-2eb1-47ec-9235-37ce6090a696",
-  "source_id": "2389",
-  "name": "Crofton Community Library",
   "slug": "crofton",
-  "address": "95a High Street, crofton parish centre, Wakefield, West Yorkshire, WF4 1JB",
-  "postcode": "WF4 1JA",
-  "town": "Wakefield",
-  "phone": "01924 332694",
-  "email": "croftonpc@gmail.com",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Community led from local community centre, former premises reabsorbed into school now located at 95a High Street crofton parish hall UPRN",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "faith"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.65427,
-  "longitude": -1.42627,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "wakefield",
+  "source_id": "2389",
+  "source_url": "https://libraryon.org/libraries/wakefield/crofton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wakefield/crofton",
-  "authority": "wakefield"
+  "data": {
+    "Local authority": "Wakefield",
+    "Local authority code": "E08000036",
+    "Library name": "Crofton Community Library",
+    "Library code": null,
+    "Address 1": "95a High Street, crofton parish centre, Wakefield, West Yorkshire, WF4 1JB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WF4 1JA",
+    "Unique property reference number": null,
+    "Latitude": 53.65427,
+    "Longitude": -1.42627,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "faith",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01924 332694",
+    "Email address": "croftonpc@gmail.com",
+    "URL": null,
+    "Notes": "Community led from local community centre, former premises reabsorbed into school now located at 95a High Street crofton parish hall UPRN"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

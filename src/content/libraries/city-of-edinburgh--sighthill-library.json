@@ -1,109 +1,71 @@
 {
   "id": "lib_aca900d2-9158-4bd6-aa73-fab7938a5ac1",
-  "source_id": "298",
-  "name": "Sighthill Library",
   "slug": "sighthill-library",
-  "address": "Gate 55, 55 Sighthill Road, Edinburgh, EH11 4PB",
-  "postcode": "EH11 4PB",
-  "town": "Edinburgh",
-  "phone": "0131 529 5566",
-  "email": "sighthill.library@edinburgh.gov.uk",
-  "website": "https://www.edinburgh.gov.uk/directory-record/1812926/sighthill-library-",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "dda-compliant",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.92011,
-  "longitude": -3.28802,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "city-of-edinburgh",
+  "source_id": "298",
+  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/sighthill-library",
   "updated_on": "2026-07-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/sighthill-library",
-  "authority": "city-of-edinburgh"
+  "data": {
+    "Local authority": "City of Edinburgh",
+    "Local authority code": "S12000036",
+    "Library name": "Sighthill Library",
+    "Library code": null,
+    "Address 1": "Gate 55, 55 Sighthill Road, Edinburgh, EH11 4PB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EH11 4PB",
+    "Unique property reference number": null,
+    "Latitude": 55.92011,
+    "Longitude": -3.28802,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-20:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "13:00-20:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive",
+    "Phone number": "0131 529 5566",
+    "Email address": "sighthill.library@edinburgh.gov.uk",
+    "URL": "https://www.edinburgh.gov.uk/directory-record/1812926/sighthill-library-",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,124 +1,71 @@
 {
   "id": "lib_d780edd5-d220-4c30-86cb-42423f913c30",
-  "source_id": "352",
-  "name": "Johnstone Library",
   "slug": "johnstone-library",
-  "address": "25 Church Street, Johnstone, PA5 8FA",
-  "postcode": "PA5 8FA",
-  "town": "Johnstone",
-  "phone": "0300 300 1188",
-  "email": "libraries@renfrewshire.gov.uk",
-  "website": "https://libcat.renfrewshire.gov.uk/iguana/www.main.cls?v=96c85272-ef02-4d78-8ef0-f831bf46dc19",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "accessible-parking",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.83511,
-  "longitude": -4.51267,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    }
-  ],
+  "authority": "renfrewshire",
+  "source_id": "352",
+  "source_url": "https://libraryon.org/libraries/renfrewshire/johnstone-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/renfrewshire/johnstone-library",
-  "authority": "renfrewshire"
+  "data": {
+    "Local authority": "Renfrewshire",
+    "Local authority code": "S12000038",
+    "Library name": "Johnstone Library",
+    "Library code": null,
+    "Address 1": "25 Church Street, Johnstone, PA5 8FA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PA5 8FA",
+    "Unique property reference number": null,
+    "Latitude": 55.83511,
+    "Longitude": -4.51267,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:15-17:00",
+    "Tuesday staffed hours": "09:15-20:00",
+    "Wednesday staffed hours": "09:15-17:00",
+    "Thursday staffed hours": "09:15-17:00",
+    "Friday staffed hours": "09:15-17:00",
+    "Saturday staffed hours": "09:15-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Printing",
+    "Phone number": "0300 300 1188",
+    "Email address": "libraries@renfrewshire.gov.uk",
+    "URL": "https://libcat.renfrewshire.gov.uk/iguana/www.main.cls?v=96c85272-ef02-4d78-8ef0-f831bf46dc19",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

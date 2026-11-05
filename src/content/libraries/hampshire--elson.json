@@ -1,138 +1,64 @@
 {
   "id": "lib_5eced084-1a4a-457d-bfb3-ce21b136259b",
-  "source_id": "603",
-  "name": "Elson Community Library and Hub",
   "slug": "elson",
-  "address": "136 Chantry Road, Gosport, Hampshire, PO12 4NG",
-  "postcode": "PO12 4NG",
-  "town": "Gosport",
-  "phone": "(023) 9435 0099",
-  "email": "enquiries@elsonlibrary.org.uk",
-  "website": "https://www.elsonlibrary.org.uk/",
-  "catalogue": "https://www.elsonlibrary.org.uk/catalogue-search/",
-  "joinOnline": "https://www.elsonlibrary.org.uk/membership/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.80835,
-  "longitude": -1.14579,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "603",
+  "source_url": "https://libraryon.org/libraries/hampshire/elson",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/elson",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Elson Community Library and Hub",
+    "Library code": null,
+    "Address 1": "136 Chantry Road, Gosport, Hampshire, PO12 4NG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO12 4NG",
+    "Unique property reference number": 37023428,
+    "Latitude": 50.80835,
+    "Longitude": -1.14579,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-16:00",
+    "Tuesday staffed hours": "09:30-16:00",
+    "Wednesday staffed hours": "09:30-16:00",
+    "Thursday staffed hours": "09:30-16:00",
+    "Friday staffed hours": "09:30-16:00",
+    "Saturday staffed hours": "09:30-14:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Cafe; Bookable space; BFI Replay; Digital lending; Scanning; Family history; Books delivered",
+    "Phone number": "(023) 9435 0099",
+    "Email address": "enquiries@elsonlibrary.org.uk",
+    "URL": "https://www.elsonlibrary.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

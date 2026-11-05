@@ -1,101 +1,71 @@
 {
   "id": "lib_a2248a29-fe27-401d-99e1-e28a5be2b356",
-  "source_id": "156",
-  "name": "Benllech Library",
   "slug": "benllech-library",
-  "address": "2 Dôlafon, Benllech, Tyn-y-Gongl, LL74 8TF, United Kingdom",
-  "postcode": "LL74 8TF",
-  "town": "Tyn-y-Gongl",
-  "phone": "(01248) 852348",
-  "email": "dcxlh@anglesey.gov.uk",
-  "website": "https://www.anglesey.gov.wales/en/Residents/Libraries/Find-your-local-library/Benllech-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.3197,
-  "longitude": -4.22639,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "isle-of-anglesey",
+  "source_id": "156",
+  "source_url": "https://libraryon.org/libraries/isle-of-anglesey/benllech-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-anglesey/benllech-library",
-  "authority": "isle-of-anglesey"
+  "data": {
+    "Local authority": "Isle of Anglesey",
+    "Local authority code": "W06000001",
+    "Library name": "Benllech Library",
+    "Library code": null,
+    "Address 1": "2 Dôlafon, Benllech, Tyn-y-Gongl, LL74 8TF, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LL74 8TF",
+    "Unique property reference number": null,
+    "Latitude": 53.3197,
+    "Longitude": -4.22639,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "(01248) 852348",
+    "Email address": "dcxlh@anglesey.gov.uk",
+    "URL": "https://www.anglesey.gov.wales/en/Residents/Libraries/Find-your-local-library/Benllech-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

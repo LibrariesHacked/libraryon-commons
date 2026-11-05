@@ -1,120 +1,77 @@
 {
   "id": "lib_a035ee03-e8b4-429a-b279-890e5a3c566f",
-  "source_id": "3479",
-  "name": "Harraby Library Link",
   "slug": "harraby-library-link",
-  "address": "Harraby Community Centre, Edgehill Road, Carlisle, Cumbria, CA1 3PP",
-  "postcode": "CA1 3SE",
-  "town": "Carlisle",
-  "phone": "01228 227312",
-  "email": "https://cumberland.gov.uk/contact-a-library",
-  "website": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/harraby-library-link",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.88167,
-  "longitude": -2.89239,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "cumberland",
+  "source_id": "3479",
+  "source_url": "https://libraryon.org/libraries/cumberland/harraby-library-link",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cumberland/harraby-library-link",
-  "authority": "cumberland"
+  "data": {
+    "Local authority": "Cumberland",
+    "Local authority code": "E06000063",
+    "Library name": "Harraby Library Link",
+    "Library code": null,
+    "Address 1": "Harraby Community Centre, Edgehill Road, Carlisle, Cumbria, CA1 3PP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CA1 3SE",
+    "Unique property reference number": null,
+    "Latitude": 54.88167,
+    "Longitude": -2.89239,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Computers; Family history",
+    "Phone number": "01228 227312",
+    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/harraby-library-link",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://cumberland.gov.uk/contact-a-library",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

@@ -405,7 +405,7 @@ Illustration would be used on posters to capture the public's imagination. Sourc
 
 **Wakefield Libraries** engaged the help of [**Dr. Steve Ward**](https://steve-ward.weebly.com/) to assess the significance of the Cryer Collection's circus bills. Here he recommends further reading for anyone interested in learning more about the history of circus.
 
-:::::collection-recommendations{title="Five books about the history of circus"}
+:::::collection-recommendations{title="Four books about the history of circus"}
 
 ::::recommendation-item{title="Pablo Fanque and The Victorian Circus" author="Gareth H. H. Davies" year="2017"}
 

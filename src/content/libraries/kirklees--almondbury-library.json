@@ -1,112 +1,71 @@
 {
   "id": "lib_ce36a664-9b54-4f28-8235-52109846063d",
-  "source_id": "2080",
-  "name": "Almondbury Library",
   "slug": "almondbury-library",
-  "address": "Off Farfield Road, Almondbury, Huddersfield, West Yorkshire, HD5 8TD",
-  "postcode": "HD5 8RX",
-  "town": "Huddersfield",
-  "phone": "01484 414868",
-  "email": "frontline.services@kirklees.gov.uk",
-  "website": "https://www.kirklees.gov.uk/Libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "step-free-access",
-    "automatic-doors",
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "assistive-technology-available"
-  ],
-  "notes": "Relocated to a modern building and refurbished to be dementia friendly",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.6339,
-  "longitude": -1.74811,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "kirklees",
+  "source_id": "2080",
+  "source_url": "https://libraryon.org/libraries/kirklees/almondbury-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kirklees/almondbury-library",
-  "authority": "kirklees"
+  "data": {
+    "Local authority": "Kirklees",
+    "Local authority code": "E08000034",
+    "Library name": "Almondbury Library",
+    "Library code": null,
+    "Address 1": "Off Farfield Road, Almondbury, Huddersfield, West Yorkshire, HD5 8TD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HD5 8RX",
+    "Unique property reference number": null,
+    "Latitude": 53.6339,
+    "Longitude": -1.74811,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; British Newspaper Archive",
+    "Phone number": "01484 414868",
+    "Email address": "frontline.services@kirklees.gov.uk",
+    "URL": "https://www.kirklees.gov.uk/Libraries",
+    "Notes": "Relocated to a modern building and refurbished to be dementia friendly"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

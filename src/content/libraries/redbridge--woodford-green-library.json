@@ -1,150 +1,64 @@
 {
   "id": "lib_6bcc7d79-906f-440d-a9b6-3baf2fb19ecf",
-  "source_id": "2737",
-  "name": "Woodford Green Library",
   "slug": "woodford-green-library",
-  "address": "Snakes Lane West, Woodford Green, Greater London, IG8 0DX",
-  "postcode": "IG8 0DX",
-  "town": "Woodford Green",
-  "phone": "020 8708 7444",
-  "email": "woodfordgreen.library@visionrcl.org.uk",
-  "website": "https://visionrcl.org.uk/centre/woodford-green-library-and-gym/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.607446,
-  "longitude": 0.032182,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.redbridge.gov.uk/libraries/book-a-pc-and-wifi/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.redbridge.gov.uk/libraries/book-a-pc-and-wifi/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.redbridge.gov.uk/libraries/archives-and-history/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://visionrcl.org.uk/online-resources/"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.redbridge.gov.uk/libraries/get-confident-online/"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.redbridge.gov.uk/libraries/hub-central-business-and-employment-skills-support/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://visionrcl.org.uk/homelibrary/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "redbridge",
+  "source_id": "2737",
+  "source_url": "https://libraryon.org/libraries/redbridge/woodford-green-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redbridge/woodford-green-library",
-  "authority": "redbridge"
+  "data": {
+    "Local authority": "Redbridge",
+    "Local authority code": "E09000026",
+    "Library name": "Woodford Green Library",
+    "Library code": null,
+    "Address 1": "Snakes Lane West, Woodford Green, Greater London, IG8 0DX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IG8 0DX",
+    "Unique property reference number": null,
+    "Latitude": 51.607446,
+    "Longitude": 0.032182,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "06:00-22:00",
+    "Tuesday staffed hours": "06:00-22:00",
+    "Wednesday staffed hours": "06:00-22:00",
+    "Thursday staffed hours": "06:00-22:00",
+    "Friday staffed hours": "06:00-22:00",
+    "Saturday staffed hours": "08:00-18:00",
+    "Sunday staffed hours": "08:00-18:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Computers; Family history; Digital lending; Digital skills sessions; Career support; Books delivered; British Newspaper Archive; Findmypast",
+    "Phone number": "020 8708 7444",
+    "Email address": "woodfordgreen.library@visionrcl.org.uk",
+    "URL": "https://visionrcl.org.uk/centre/woodford-green-library-and-gym/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

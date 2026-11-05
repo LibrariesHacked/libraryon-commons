@@ -1,150 +1,71 @@
 {
   "id": "lib_55cf056a-9214-4aa7-a60b-929245f62914",
-  "source_id": "2239",
-  "name": "Hornsey Library",
   "slug": "hornsey-library",
-  "address": "Haringey Park, London, N8 9JA",
-  "postcode": "N8 9JD",
-  "town": "London",
-  "phone": " 020 8489 4560",
-  "email": "libraries@haringey.gov.uk",
-  "website": "https://www.haringey.gov.uk/libraries/libraries-haringey/hornsey-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-public-transport-connections",
-    "step-free-access",
-    "wheelchair-access",
-    "automatic-doors",
-    "adjustable-seating",
-    "assistive-technology-available",
-    "lift-access",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.57789,
-  "longitude": -0.12169,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.haringey.gov.uk/libraries/computers-printing"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.haringey.gov.uk/libraries/childrens-libraries"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.haringey.gov.uk/libraries/computers-printing"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.haringey.gov.uk/digital-content/meeting-room-hire/hornsey"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.haringey.gov.uk/libraries/home-library-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.haringey.gov.uk/libraries/ebooks-eaudiobooks-newspapers"
-    }
-  ],
+  "authority": "haringey",
+  "source_id": "2239",
+  "source_url": "https://libraryon.org/libraries/haringey/hornsey-library",
   "updated_on": "2026-03-12",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/haringey/hornsey-library",
-  "authority": "haringey"
+  "data": {
+    "Local authority": "Haringey",
+    "Local authority code": "E09000014",
+    "Library name": "Hornsey Library",
+    "Library code": null,
+    "Address 1": "Haringey Park, London, N8 9JA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N8 9JD",
+    "Unique property reference number": null,
+    "Latitude": 51.57789,
+    "Longitude": -0.12169,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "12:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Hobby and interest groups; Children's activities; Computers; Photocopiers; Bookable space; Books delivered; Digital lending",
+    "Phone number": "020 8489 4560",
+    "Email address": "libraries@haringey.gov.uk",
+    "URL": "https://www.haringey.gov.uk/libraries/libraries-haringey/hornsey-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

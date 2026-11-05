@@ -1,90 +1,64 @@
 {
   "id": "lib_a42d73b4-a6b2-4701-8111-1b0348f5ec4b",
-  "source_id": "3039",
-  "name": "Liden Library",
   "slug": "liden-library",
-  "address": "Barrington Close, Swindon, Wiltshire, SN3 6HF",
-  "postcode": "SN3 6HF",
-  "town": "Swindon",
-  "phone": "01793 420540",
-  "email": "liden.library@gmail.com",
-  "website": "https://www.swindon.gov.uk/directory_record/23820/liden_library_and_community_hub",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Run by Swindon Community Library Trust since 2017",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54652,
-  "longitude": -1.72881,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "swindon",
+  "source_id": "3039",
+  "source_url": "https://libraryon.org/libraries/swindon/liden-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/swindon/liden-library",
-  "authority": "swindon"
+  "data": {
+    "Local authority": "Swindon",
+    "Local authority code": "E06000030",
+    "Library name": "Liden Library",
+    "Library code": null,
+    "Address 1": "Barrington Close, Swindon, Wiltshire, SN3 6HF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SN3 6HF",
+    "Unique property reference number": null,
+    "Latitude": 51.54652,
+    "Longitude": -1.72881,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 1981,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "01793 420540",
+    "Email address": "liden.library@gmail.com",
+    "URL": "https://www.swindon.gov.uk/directory_record/23820/liden_library_and_community_hub",
+    "Notes": "Run by Swindon Community Library Trust since 2017"
+  },
+  "validation_exceptions": []
 }

@@ -1,145 +1,64 @@
 {
   "id": "lib_b76dff24-8ad2-4899-910e-74d06fd7d0c0",
-  "source_id": "1162",
-  "name": "Leek Library",
   "slug": "leek-library",
-  "address": "Nicholson Institute, Stockwell Street, Leek, Staffordshire, ST13 6DW",
-  "postcode": "ST13 6DW",
-  "town": "Leek",
-  "phone": "01538 332061",
-  "email": "leek.library@staffordshire.gov.uk",
-  "website": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/LeekLibrary/LeekLibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "arts",
-    "civic",
-    "museum",
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.107316,
-  "longitude": -2.023692,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "staffordshire",
+  "source_id": "1162",
+  "source_url": "https://libraryon.org/libraries/staffordshire/leek-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/staffordshire/leek-library",
-  "authority": "staffordshire"
+  "data": {
+    "Local authority": "Staffordshire",
+    "Local authority code": "E10000028",
+    "Library name": "Leek Library",
+    "Library code": null,
+    "Address 1": "Nicholson Institute, Stockwell Street, Leek, Staffordshire, ST13 6DW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ST13 6DW",
+    "Unique property reference number": 200001575509,
+    "Latitude": 53.107316,
+    "Longitude": -2.023692,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "08:30-17:00",
+    "Tuesday staffed hours": "08:30-17:00",
+    "Wednesday staffed hours": "08:30-17:00",
+    "Thursday staffed hours": "08:30-17:00",
+    "Friday staffed hours": "08:30-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts; civic; museum; school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Digital skills sessions; Family history; Scanning; Photocopiers; Children's activities; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "01538 332061",
+    "Email address": "leek.library@staffordshire.gov.uk",
+    "URL": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/LeekLibrary/LeekLibrary.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

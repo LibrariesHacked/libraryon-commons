@@ -1,134 +1,71 @@
 {
   "id": "lib_5b75112c-4147-4b8b-80a6-d4be15cea3ce",
-  "source_id": "3335",
-  "name": "Burghfield Common Library",
   "slug": "burghfield-common",
-  "address": "School Lane, Reading, Berkshire, RG7 3JZ",
-  "postcode": "RG7 3JY",
-  "town": "Reading",
-  "phone": "0118 9833632",
-  "email": "burghfieldlibrary@westberks.gov.uk",
-  "website": "https://www.westberks.gov.uk/burghfield-common-library",
-  "catalogue": "https://www.westberks.gov.uk/library-catalogue",
-  "joinOnline": "https://westberks.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/JOIN",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.39648,
-  "longitude": -1.06856,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Scanning",
-      "url": "https://www.westberks.gov.uk/library-computers"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.westberks.gov.uk/elibrary"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.westberks.gov.uk/family-history"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.westberks.gov.uk/mobile-library"
-    }
-  ],
+  "authority": "west-berkshire",
+  "source_id": "3335",
+  "source_url": "https://libraryon.org/libraries/west-berkshire/burghfield-common",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-berkshire/burghfield-common",
-  "authority": "west-berkshire"
+  "data": {
+    "Local authority": "West Berkshire",
+    "Local authority code": "E06000037",
+    "Library name": "Burghfield Common Library",
+    "Library code": null,
+    "Address 1": "School Lane, Reading, Berkshire, RG7 3JZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG7 3JY",
+    "Unique property reference number": null,
+    "Latitude": 51.39648,
+    "Longitude": -1.06856,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "14:30-18:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Digital lending; Family history; Findmypast; British Newspaper Archive; Books delivered",
+    "Phone number": "0118 9833632",
+    "Email address": "burghfieldlibrary@westberks.gov.uk",
+    "URL": "https://www.westberks.gov.uk/burghfield-common-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

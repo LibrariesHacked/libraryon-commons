@@ -2,7 +2,11 @@
 import { readdirSync, readFileSync } from 'node:fs'
 import { createDirectory } from './directory-model.mjs'
 
-/** Node's test runner does not transform Vite globs; read the same JSON files there. */
+/**
+ * Read the same editable records when Node tests cannot transform Vite globs.
+ * @param {'libraries'|'authorities'} folder - Directory collection to read.
+ * @returns {object[]} Parsed canonical JSON records in filename order.
+ */
 function localRecords(folder) {
   const directory = new URL(`../content/${folder}/`, import.meta.url)
   return readdirSync(directory)
@@ -22,7 +26,7 @@ const libraryRecords = import.meta.env?.SSR
   : localRecords('libraries')
 
 export const { libraries, authorities, authorityByLibrary, libraryPath, searchRecords } =
-  createDirectory(authorityRecords, libraryRecords)
+  createDirectory(authorityRecords, libraryRecords, { requireCanonical: true })
 export {
   libraryAddress,
   facilityLabel,

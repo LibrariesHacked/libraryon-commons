@@ -1,124 +1,64 @@
 {
   "id": "lib_b84b87cd-1381-4d83-83fe-752dbdd40b2a",
-  "source_id": "2225",
-  "name": "Meriden",
   "slug": "meriden",
-  "address": "Arden Cottage, The Green, Meriden, West Midlands, CV7 7LN",
-  "postcode": "CV7 7LN",
-  "town": "Coventry",
-  "phone": "01676 522717",
-  "email": "libraries@solihull.gov.uk",
-  "website": "https://www.solihull.gov.uk/Libraries/Meriden-library",
-  "catalogue": "https://solihull.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://www.solihull.gov.uk/Libraries/Join-a-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "accessible-parking",
-    "assistive-technology-available",
-    "step-free-access",
-    "hearing-loop-system",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.43812,
-  "longitude": -1.6493,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.solihull.gov.uk/Libraries/Home-library-service"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://solihull.spydus.co.uk/cgi-bin/spydus.exe/MSGTRNGEN/WPAC/READ?HOMEPRMS=UD_READING"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.solihull.gov.uk/Libraries/virtual-reference-library"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.solihull.gov.uk/Libraries/Children-and-young-peoples-library"
-    }
-  ],
+  "authority": "solihull",
+  "source_id": "2225",
+  "source_url": "https://libraryon.org/libraries/solihull/meriden",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/solihull/meriden",
-  "authority": "solihull"
+  "data": {
+    "Local authority": "Solihull",
+    "Local authority code": "E08000029",
+    "Library name": "Meriden",
+    "Library code": null,
+    "Address 1": "Arden Cottage, The Green, Meriden, West Midlands, CV7 7LN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CV7 7LN",
+    "Unique property reference number": 100071519038,
+    "Latitude": 52.43812,
+    "Longitude": -1.6493,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "10:00-12:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-12:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; Computers; Books delivered; Hobby and interest groups; Digital lending; Children's activities",
+    "Phone number": "01676 522717",
+    "Email address": "libraries@solihull.gov.uk",
+    "URL": "https://www.solihull.gov.uk/Libraries/Meriden-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

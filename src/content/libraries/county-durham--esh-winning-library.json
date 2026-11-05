@@ -1,118 +1,71 @@
 {
   "id": "lib_5d8e38af-bacf-41a1-b538-e68ec2555213",
-  "source_id": "3403",
-  "name": "Esh Winning Library",
   "slug": "esh-winning-library",
-  "address": "The Wynds, Durham, County Durham, DH7 9AD",
-  "postcode": "DH7 9NY",
-  "town": "Durham",
-  "phone": "03000 265 002",
-  "email": "eshwinning.lib@durham.gov.uk",
-  "website": "https://www.durham.gov.uk/article/2038/Esh-Winning-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.767826,
-  "longitude": -1.70742,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "county-durham",
+  "source_id": "3403",
+  "source_url": "https://libraryon.org/libraries/county-durham/esh-winning-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-durham/esh-winning-library",
-  "authority": "county-durham"
+  "data": {
+    "Local authority": "County Durham",
+    "Local authority code": "E06000047",
+    "Library name": "Esh Winning Library",
+    "Library code": null,
+    "Address 1": "The Wynds, Durham, County Durham, DH7 9AD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DH7 9NY",
+    "Unique property reference number": null,
+    "Latitude": 54.767826,
+    "Longitude": -1.70742,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Books delivered; Children's activities; Hobby and interest groups; Family history",
+    "Phone number": "03000 265 002",
+    "Email address": "eshwinning.lib@durham.gov.uk",
+    "URL": "https://www.durham.gov.uk/article/2038/Esh-Winning-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

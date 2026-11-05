@@ -1,156 +1,71 @@
 {
   "id": "lib_275b3ed6-9645-4b9f-9926-dc7bb74329d2",
-  "source_id": "2868",
-  "name": "Arcadia Library & Leisure Centre",
   "slug": "arcadia-library-leisure-centre",
-  "address": "Yew Tree Avenue, Levenshulme, Greater Manchester , M19 3PH",
-  "postcode": "M19 3BP",
-  "town": "Manchester",
-  "phone": "0161 227 3725",
-  "email": "levenshulmelibrary@manchester.gov.uk",
-  "website": "https://www.manchester.gov.uk/directory_record/470326/arcadia_library_and_leisure_centre_levenshulme/category/1957/all_libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "06:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "06:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "06:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "06:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "06:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "20:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "https://my.matterport.com/show/?m=LBzuFfWUmmS",
-  "permanentlyClosed": false,
-  "latitude": 53.44618,
-  "longitude": -2.19202,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "manchester",
+  "source_id": "2868",
+  "source_url": "https://libraryon.org/libraries/manchester/arcadia-library-leisure-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/manchester/arcadia-library-leisure-centre",
-  "authority": "manchester"
+  "data": {
+    "Local authority": "Manchester",
+    "Local authority code": "E08000003",
+    "Library name": "Arcadia Library & Leisure Centre",
+    "Library code": null,
+    "Address 1": "Yew Tree Avenue, Levenshulme, Greater Manchester , M19 3PH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M19 3BP",
+    "Unique property reference number": 100012680102,
+    "Latitude": 53.44618,
+    "Longitude": -2.19202,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": 2016,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "13:00-20:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "06:30-09:00,17:00-22:00",
+    "Tuesday unstaffed hours": "06:30-22:00",
+    "Wednesday unstaffed hours": "06:30-13:00,20:00-22:00",
+    "Thursday unstaffed hours": "06:30-09:00,17:00-22:00",
+    "Friday unstaffed hours": "06:30-22:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": "09:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Computers; British Newspaper Archive",
+    "Phone number": "0161 227 3725",
+    "Email address": "levenshulmelibrary@manchester.gov.uk",
+    "URL": "https://www.manchester.gov.uk/directory_record/470326/arcadia_library_and_leisure_centre_levenshulme/category/1957/all_libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

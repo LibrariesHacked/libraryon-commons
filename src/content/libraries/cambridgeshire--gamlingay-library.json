@@ -1,128 +1,64 @@
 {
   "id": "lib_df87779c-d17a-430f-883c-e4efd6e1086c",
-  "source_id": "2871",
-  "name": "Gamlingay Library",
   "slug": "gamlingay-library",
-  "address": "The Eco Hub, Stocks Lane, Gamlingay, Cambridgeshire, SG19 3JR",
-  "postcode": "SG19 3JR",
-  "town": "Sandy",
-  "phone": "01767 651226",
-  "email": "gamlingaylap@yahoo.com",
-  "website": "https://gamlingayecohub.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.15291,
-  "longitude": -0.19026,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "cambridgeshire",
+  "source_id": "2871",
+  "source_url": "https://libraryon.org/libraries/cambridgeshire/gamlingay-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cambridgeshire/gamlingay-library",
-  "authority": "cambridgeshire"
+  "data": {
+    "Local authority": "Cambridgeshire",
+    "Local authority code": "E10000003",
+    "Library name": "Gamlingay Library",
+    "Library code": null,
+    "Address 1": "The Eco Hub, Stocks Lane, Gamlingay, Cambridgeshire, SG19 3JR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SG19 3JR",
+    "Unique property reference number": null,
+    "Latitude": 52.15291,
+    "Longitude": -0.19026,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2010,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:00-16:00,18:00-19:00",
+    "Thursday staffed hours": "10:00-12:00",
+    "Friday staffed hours": "10:30-12:30",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Findmypast; Bookable space; Hobby and interest groups; BFI Replay",
+    "Phone number": "01767 651226",
+    "Email address": "gamlingaylap@yahoo.com",
+    "URL": "https://gamlingayecohub.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

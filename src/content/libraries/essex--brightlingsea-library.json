@@ -1,133 +1,64 @@
 {
   "id": "lib_6e7e5cfc-71ba-450b-8d73-86a7e4598047",
-  "source_id": "981",
-  "name": "Brightlingsea Library",
   "slug": "brightlingsea-library",
-  "address": "New Street, Colchester, Essex, CO7 0BZ",
-  "postcode": "CO7 0BZ",
-  "town": "Colchester",
-  "phone": "0345 603 7628",
-  "email": "brightlingsea.library@essex.gov.uk",
-  "website": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/brightlingsea-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "automatic-doors",
-    "wheelchair-access",
-    "hearing-loop-system",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.81001,
-  "longitude": 1.02567,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "essex",
+  "source_id": "981",
+  "source_url": "https://libraryon.org/libraries/essex/brightlingsea-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/essex/brightlingsea-library",
-  "authority": "essex"
+  "data": {
+    "Local authority": "Essex",
+    "Local authority code": "E10000012",
+    "Library name": "Brightlingsea Library",
+    "Library code": null,
+    "Address 1": "New Street, Colchester, Essex, CO7 0BZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CO7 0BZ",
+    "Unique property reference number": null,
+    "Latitude": 51.81001,
+    "Longitude": 1.02567,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-17:30",
+    "Wednesday staffed hours": "09:00-13:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-19:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups; Digital skills sessions; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "0345 603 7628",
+    "Email address": "brightlingsea.library@essex.gov.uk",
+    "URL": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/brightlingsea-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

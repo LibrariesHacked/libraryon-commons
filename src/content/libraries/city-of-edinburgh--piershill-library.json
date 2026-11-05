@@ -1,115 +1,71 @@
 {
   "id": "lib_a865c687-67d0-4966-a838-8f644497af9c",
-  "source_id": "283",
-  "name": "Piershill Library",
   "slug": "piershill-library",
-  "address": "Piershill Library, 30 Piersfield Terrace, Edinburgh, EH8 7BQ",
-  "postcode": "EH8 7BQ",
-  "town": "Edinburgh",
-  "phone": "0131 529 5685",
-  "email": "piershill.library@edinburgh.gov.uk",
-  "website": "https://www.edinburgh.gov.uk/directory-record/1812922/piershill-library-",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "dda-compliant",
-    "wheelchair-access",
-    "step-free-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.95518,
-  "longitude": -3.1423,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "city-of-edinburgh",
+  "source_id": "283",
+  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/piershill-library",
   "updated_on": "2026-07-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/piershill-library",
-  "authority": "city-of-edinburgh"
+  "data": {
+    "Local authority": "City of Edinburgh",
+    "Local authority code": "S12000036",
+    "Library name": "Piershill Library",
+    "Library code": null,
+    "Address 1": "Piershill Library, 30 Piersfield Terrace, Edinburgh, EH8 7BQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EH8 7BQ",
+    "Unique property reference number": null,
+    "Latitude": 55.95518,
+    "Longitude": -3.1423,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-20:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "13:00-20:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive",
+    "Phone number": "0131 529 5685",
+    "Email address": "piershill.library@edinburgh.gov.uk",
+    "URL": "https://www.edinburgh.gov.uk/directory-record/1812922/piershill-library-",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

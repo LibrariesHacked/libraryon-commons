@@ -1,113 +1,64 @@
 {
   "id": "lib_fff75f59-d1bf-43f8-97ba-f183c432e1fa",
-  "source_id": "2866",
-  "name": "Fulbourn Village Library",
   "slug": "fulbourn-village-library",
-  "address": "The Swifts, Haggis Gap, Cambridge, Cambridgeshire, CB21 5HD",
-  "postcode": "CB21 5HD",
-  "town": "Cambridge",
-  "phone": "01223 882728",
-  "email": "",
-  "website": "https://fulbournlibrary.weebly.com/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "hearing-loop-system",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.18177,
-  "longitude": 0.21804,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "cambridgeshire",
+  "source_id": "2866",
+  "source_url": "https://libraryon.org/libraries/cambridgeshire/fulbourn-village-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cambridgeshire/fulbourn-village-library",
-  "authority": "cambridgeshire"
+  "data": {
+    "Local authority": "Cambridgeshire",
+    "Local authority code": "E10000003",
+    "Library name": "Fulbourn Village Library",
+    "Library code": null,
+    "Address 1": "The Swifts, Haggis Gap, Cambridge, Cambridgeshire, CB21 5HD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CB21 5HD",
+    "Unique property reference number": null,
+    "Latitude": 52.18177,
+    "Longitude": 0.21804,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2010,
+    "Year closed": null,
+    "Monday staffed hours": "15:00-17:00",
+    "Tuesday staffed hours": "15:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "15:00-17:00",
+    "Friday staffed hours": "15:00-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Bookable space; BFI Replay",
+    "Phone number": "01223 882728",
+    "Email address": null,
+    "URL": "https://fulbournlibrary.weebly.com/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

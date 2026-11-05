@@ -1,108 +1,71 @@
 {
   "id": "lib_1e743775-971b-4057-957d-51b605923209",
-  "source_id": "2033",
-  "name": "Beechwood Road",
   "slug": "beechwood-road",
-  "address": "Beechwood Road, Illingworth, Halifax, West Yorkshire, HX2 9BU",
-  "postcode": "HX2 9BS",
-  "town": "Halifax",
-  "phone": "",
-  "email": "beechwood_road.library@calderdale.gov.uk",
-  "website": "http://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/your-local-library/beechwood-road-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.74713,
-  "longitude": -1.88345,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "calderdale",
+  "source_id": "2033",
+  "source_url": "https://libraryon.org/libraries/calderdale/beechwood-road",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/calderdale/beechwood-road",
-  "authority": "calderdale"
+  "data": {
+    "Local authority": "Calderdale",
+    "Local authority code": "E08000033",
+    "Library name": "Beechwood Road",
+    "Library code": null,
+    "Address 1": "Beechwood Road, Illingworth, Halifax, West Yorkshire, HX2 9BU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HX2 9BS",
+    "Unique property reference number": null,
+    "Latitude": 53.74713,
+    "Longitude": -1.88345,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": null,
+    "Email address": "beechwood_road.library@calderdale.gov.uk",
+    "URL": "http://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/your-local-library/beechwood-road-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

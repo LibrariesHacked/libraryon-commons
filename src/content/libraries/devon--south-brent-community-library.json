@@ -1,101 +1,71 @@
 {
   "id": "lib_38df9f0f-a043-49a2-8db8-c1f51ddfb524",
-  "source_id": "3851",
-  "name": "South Brent Community Library",
   "slug": "south-brent-community-library",
-  "address": "South Brent Old School Community Centre, Totnes Road, South Brent, Devon, TQ10 9BP",
-  "postcode": "TQ10 9BX",
-  "town": "South Brent",
-  "phone": "07707 723637",
-  "email": "info@theoldschool.org.uk",
-  "website": "https://www.theoldschool.org.uk/facilities/community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.4257425857474,
-  "longitude": -3.8333130923972476,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "devon",
+  "source_id": "3851",
+  "source_url": "https://libraryon.org/libraries/devon/south-brent-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/south-brent-community-library",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "South Brent Community Library",
+    "Library code": null,
+    "Address 1": "South Brent Old School Community Centre, Totnes Road, South Brent, Devon, TQ10 9BP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TQ10 9BX",
+    "Unique property reference number": null,
+    "Latitude": 50.4257425857474,
+    "Longitude": -3.8333130923972476,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:00-16:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": "10:00-12:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Photocopiers; Computers; Free Wi-Fi; Bookable space",
+    "Phone number": "07707 723637",
+    "Email address": "info@theoldschool.org.uk",
+    "URL": "https://www.theoldschool.org.uk/facilities/community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

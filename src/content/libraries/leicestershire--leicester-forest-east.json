@@ -1,139 +1,73 @@
 {
   "id": "lib_bd4a536a-bdbc-444b-9beb-c02f0d6a00ee",
-  "source_id": "1474",
-  "name": "Leicester Forest East",
   "slug": "leicester-forest-east",
-  "address": "76 Rushmere Walk, Leicester, Leicestershire, LE3 3PD",
-  "postcode": "LE3 3PD",
-  "town": "Leicester",
-  "phone": " 0116 233 6273",
-  "email": "leicesterforesteastcommlibrary@gmail.com",
-  "website": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/leicester-forest-east-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "accessible-parking",
-    "baby-changing-facilities",
-    "accessible-restrooms"
-  ],
-  "notes": "Previously called Forest East Community Library. Hours closed: W&Th 12:00-14:00",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.62121,
-  "longitude": -1.21576,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "leicestershire",
+  "source_id": "1474",
+  "source_url": "https://libraryon.org/libraries/leicestershire/leicester-forest-east",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicestershire/leicester-forest-east",
-  "authority": "leicestershire"
+  "data": {
+    "Local authority": "Leicestershire",
+    "Local authority code": "E10000018",
+    "Library name": "Leicester Forest East",
+    "Library code": null,
+    "Address 1": "76 Rushmere Walk, Leicester, Leicestershire, LE3 3PD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE3 3PD",
+    "Unique property reference number": null,
+    "Latitude": 52.62121,
+    "Longitude": -1.21576,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:00,18:00-20:00",
+    "Thursday staffed hours": "10:00-12:00,14:00-16:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Cafe; Digital lending; Computers; Hobby and interest groups; Bookable space; Children's activities",
+    "Phone number": "0116 233 6273",
+    "Email address": "leicesterforesteastcommlibrary@gmail.com",
+    "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/leicester-forest-east-library",
+    "Notes": "Previously called Forest East Community Library. Hours closed: W&Th 12:00-14:00"
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_0d79a9f4ee6a24bee73ab892"
+      ]
+    }
+  ]
 }

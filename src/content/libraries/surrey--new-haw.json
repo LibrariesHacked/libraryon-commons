@@ -1,136 +1,71 @@
 {
   "id": "lib_5f9df9b1-676e-4b42-aa5b-6e3f2ecf1890",
-  "source_id": "1598",
-  "name": "New Haw Community Library",
   "slug": "new-haw",
-  "address": "The Broadway , New Haw, Surrey, KT15 3HA",
-  "postcode": "KT15 3EY",
-  "town": "Addlestone",
-  "phone": "",
-  "email": "management@nhlcp.org.uk",
-  "website": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/new-haw",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "accessible-parking",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.34929,
-  "longitude": -0.50339,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "surrey",
+  "source_id": "1598",
+  "source_url": "https://libraryon.org/libraries/surrey/new-haw",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/surrey/new-haw",
-  "authority": "surrey"
+  "data": {
+    "Local authority": "Surrey",
+    "Local authority code": "E10000030",
+    "Library name": "New Haw Community Library",
+    "Library code": null,
+    "Address 1": "The Broadway , New Haw, Surrey, KT15 3HA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KT15 3EY",
+    "Unique property reference number": null,
+    "Latitude": 51.34929,
+    "Longitude": -0.50339,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:30",
+    "Tuesday staffed hours": "13:30-16:30",
+    "Wednesday staffed hours": "10:00-16:30",
+    "Thursday staffed hours": "13:30-16:30",
+    "Friday staffed hours": "10:00-16:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Computers; Photocopiers; Bookable space; Scanning; Hobby and interest groups",
+    "Phone number": null,
+    "Email address": "management@nhlcp.org.uk",
+    "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/new-haw",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

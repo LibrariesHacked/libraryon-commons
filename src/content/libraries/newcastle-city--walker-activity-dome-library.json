@@ -1,134 +1,71 @@
 {
   "id": "lib_686f7606-a662-405a-bf41-b7123d2d6b42",
-  "source_id": "2670",
-  "name": "Walker Library",
   "slug": "walker-activity-dome-library",
-  "address": "Wharrier Street Walker Newcastle upon Tyne NE6 3BR",
-  "postcode": "NE6 2PA",
-  "town": "Newcastle upon Tyne",
-  "phone": "",
-  "email": "information@newcastle.gov.uk",
-  "website": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/walker-library-walker-activity-dome",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "Previously operating in another location",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.97479857406205,
-  "longitude": -1.5543837124480149,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "newcastle-city",
+  "source_id": "2670",
+  "source_url": "https://libraryon.org/libraries/newcastle-city/walker-activity-dome-library",
   "updated_on": "2026-07-27",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newcastle-city/walker-activity-dome-library",
-  "authority": "newcastle-city"
+  "data": {
+    "Local authority": "Newcastle",
+    "Local authority code": "E08000021",
+    "Library name": "Walker Library",
+    "Library code": null,
+    "Address 1": "Wharrier Street Walker Newcastle upon Tyne NE6 3BR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE6 2PA",
+    "Unique property reference number": null,
+    "Latitude": 54.97479857406205,
+    "Longitude": -1.5543837124480149,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-15:30",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; British Newspaper Archive; Findmypast; BFI Replay; Children's activities; Hobby and interest groups; Scanning; Books delivered; Digital lending",
+    "Phone number": null,
+    "Email address": "information@newcastle.gov.uk",
+    "URL": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/walker-library-walker-activity-dome",
+    "Notes": "Previously operating in another location"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

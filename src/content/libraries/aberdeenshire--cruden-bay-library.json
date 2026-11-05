@@ -1,82 +1,71 @@
 {
   "id": "lib_8d62ce55-e84b-4190-a4e4-a833cd2151a3",
-  "source_id": "509",
-  "name": "Cruden Bay Library",
   "slug": "cruden-bay-library",
-  "address": "7 Station Road, Cruden Bay, Peterhead, AB42 0NL, United Kingdom",
-  "postcode": "AB42 0NL",
-  "town": "Peterhead",
-  "phone": "01779 403731",
-  "email": "crudenbay.library@aberdeenshire.gov.uk",
-  "website": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/cruden-bay-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.41608,
-  "longitude": -1.86169,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "aberdeenshire",
+  "source_id": "509",
+  "source_url": "https://libraryon.org/libraries/aberdeenshire/cruden-bay-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/aberdeenshire/cruden-bay-library",
-  "authority": "aberdeenshire"
+  "data": {
+    "Local authority": "Aberdeenshire",
+    "Local authority code": "S12000034",
+    "Library name": "Cruden Bay Library",
+    "Library code": null,
+    "Address 1": "7 Station Road, Cruden Bay, Peterhead, AB42 0NL, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB42 0NL",
+    "Unique property reference number": null,
+    "Latitude": 57.41608,
+    "Longitude": -1.86169,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": "09:00-13:00",
+    "Saturday unstaffed hours": "10:00-12:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": "01779 403731",
+    "Email address": "crudenbay.library@aberdeenshire.gov.uk",
+    "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/cruden-bay-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

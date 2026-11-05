@@ -1,131 +1,71 @@
 {
   "id": "lib_c20a6fb2-cb61-4118-8383-0d06a7cc7ce4",
-  "source_id": "832",
-  "name": "Bovingdon Community Library",
   "slug": "bovingdon-community-library",
-  "address": "High Street, Bovingdon, Hertfordshire, HP3 0HJ",
-  "postcode": "HP3 0HJ",
-  "town": "Hemel Hempstead",
-  "phone": "0300 123 4049",
-  "email": "libraries.information@hertfordshire.gov.uk",
-  "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/bovingdon-community-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system",
-    "automatic-doors",
-    "low-vision-support",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "Supported Self Service 09:00 - 11:00 Mon TTO",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.7234,
-  "longitude": -0.53249,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "hertfordshire",
+  "source_id": "832",
+  "source_url": "https://libraryon.org/libraries/hertfordshire/bovingdon-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hertfordshire/bovingdon-community-library",
-  "authority": "hertfordshire"
+  "data": {
+    "Local authority": "Hertfordshire",
+    "Local authority code": "E10000015",
+    "Library name": "Bovingdon Community Library",
+    "Library code": null,
+    "Address 1": "High Street, Bovingdon, Hertfordshire, HP3 0HJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HP3 0HJ",
+    "Unique property reference number": null,
+    "Latitude": 51.7234,
+    "Longitude": -0.53249,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-18:00",
+    "Friday staffed hours": "09:00-13:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Scanning; Digital lending; Books delivered; Family history; Children's activities",
+    "Phone number": "0300 123 4049",
+    "Email address": "libraries.information@hertfordshire.gov.uk",
+    "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/bovingdon-community-library.aspx",
+    "Notes": "Supported Self Service 09:00 - 11:00 Mon TTO"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

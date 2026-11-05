@@ -1,130 +1,64 @@
 {
   "id": "lib_96d92636-bd7f-4f1a-8ad6-a065db448374",
-  "source_id": "2468",
-  "name": "Osterley Community Hub & Library",
   "slug": "osterley-community-hub-and-library",
-  "address": "St. Mary's Crescent, Hounslow, Middlesex, TW7 4NB",
-  "postcode": "TW7 4NB",
-  "town": "Isleworth",
-  "phone": "020 8583 5566",
-  "email": "osterley.library@hounslow.gov.uk",
-  "website": "https://www.hounslow.gov.uk/directory_record/2986/osterley_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "automatic-doors",
-    "adjustable-seating",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.48236,
-  "longitude": -0.34643,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1677/free_internet_access"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1677/free_internet_access"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.hounslow.gov.uk/homepage/99/library_service_for_children"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1687/library_at_home"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1692/local_history_and_archives"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.hounslow.gov.uk/info/20134/247_elibrary_services"
-    }
-  ],
+  "authority": "hounslow",
+  "source_id": "2468",
+  "source_url": "https://libraryon.org/libraries/hounslow/osterley-community-hub-and-library",
   "updated_on": "2026-02-16",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hounslow/osterley-community-hub-and-library",
-  "authority": "hounslow"
+  "data": {
+    "Local authority": "Hounslow",
+    "Local authority code": "E09000018",
+    "Library name": "Osterley Community Hub & Library",
+    "Library code": null,
+    "Address 1": "St. Mary's Crescent, Hounslow, Middlesex, TW7 4NB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TW7 4NB",
+    "Unique property reference number": null,
+    "Latitude": 51.48236,
+    "Longitude": -0.34643,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-20:00",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-20:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-17:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Hobby and interest groups; Children's activities; Books delivered; Family history; Digital lending",
+    "Phone number": "020 8583 5566",
+    "Email address": "osterley.library@hounslow.gov.uk",
+    "URL": "https://www.hounslow.gov.uk/directory_record/2986/osterley_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,0 +1,514 @@
+---
+import { ArrowLeft, ArrowRight, ClipboardCheck, Pencil, X } from '@lucide/astro'
+import SiteLayout from '../../layouts/SiteLayout.astro'
+import { loadDirectoryReview, reviewIndex, reviewCategories } from '../../lib/directory-review.mjs'
+import { sitePath } from '../../lib/site.mjs'
+
+const rows = loadDirectoryReview()
+const categories = reviewCategories(rows)
+const publicSiteURL = import.meta.env.PUBLIC_SITE_URL
+/** @param path - Public record path. @returns A link on the public host when review is deployed with the separate CMS. */
+const publicPath = (path: string) =>
+  publicSiteURL
+    ? new URL(path.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
+    : sitePath(path)
+const index = reviewIndex(rows).map((row) => ({
+  ...row,
+  publicPath: publicPath(row.publicPath),
+  editPath: sitePath('/admin/') + row.editPath.slice('/admin/'.length),
+  detailPath: sitePath(row.detailPath)
+}))
+const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
+---
+
+<SiteLayout
+  title="Data review"
+  description="Library directory validation and editorial review."
+  noindex
+  publicSiteURL={publicSiteURL}
+>
+  <section class="page-heading review-heading">
+    <div class="shell">
+      <h1>Data review</h1>
+      <p>
+        {rows.length.toLocaleString('en-GB')} flagged records;{' '}
+        {rows.reduce((total, row) => total + row.exceptionCount, 0).toLocaleString('en-GB')}{' '}
+        validation exceptions;{' '}
+        {rows.reduce((total, row) => total + row.manualCount, 0).toLocaleString('en-GB')} manual
+        checks
+      </p>
+      <a href={sitePath('/admin/')} class="button button-secondary">
+        <Pencil size={17} aria-hidden="true" /> CMS
+      </a>
+    </div>
+  </section>
+  <section class="section shell" data-review-page>
+    <form class="review-filters" role="search" aria-label="Review records">
+      <label>
+        Search
+        <input id="review-search" type="search" placeholder="Library, service or field" />
+      </label>
+      <label>
+        Record type
+        <select id="review-type">
+          <option value="">All records</option>
+          <option value="libraries">Libraries</option>
+          <option value="authorities">Library services</option>
+        </select>
+      </label>
+      <label>
+        Issue type
+        <select id="review-category">
+          <option value="">All issues</option>
+          {categories.map((category) => (
+            <option value={category.value}>{category.label}</option>
+          ))}
+        </select>
+      </label>
+    </form>
+    <p id="review-status" role="status" aria-live="polite">
+      {rows.length} records
+    </p>
+    <div class="review-table-wrap" tabindex="0" role="region" aria-label="Records awaiting review">
+      <table class="review-table">
+        <thead>
+          <tr>
+            <th scope="col">Record</th>
+            <th scope="col">Authority</th>
+            <th scope="col">Exceptions</th>
+            <th scope="col">Checks</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="review-rows">
+          {index.slice(0, 50).map((row) => (
+            <tr>
+              <td>
+                <a href={row.publicPath}>{row.name}</a>
+                <small>{row.collection === 'libraries' ? 'Library' : 'Library service'}</small>
+              </td>
+              <td>{row.authority}</td>
+              <td>{row.exceptionCount}</td>
+              <td>{row.manualCount}</td>
+              <td>
+                <div class="review-actions">
+                  <button
+                    type="button"
+                    class="review-icon"
+                    data-review-key={row.key}
+                    title={`Review ${row.name}`}
+                    aria-label={`Review ${row.name}`}
+                  >
+                    <ClipboardCheck size={19} aria-hidden="true" />
+                  </button>
+                  <a
+                    class="review-icon"
+                    href={row.editPath}
+                    title={`Edit ${row.name} in CMS`}
+                    aria-label={`Edit ${row.name} in CMS`}
+                  >
+                    <Pencil size={18} aria-hidden="true" />
+                  </a>
+                </div>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+    <p id="review-empty" hidden>
+      No records match.
+    </p>
+    <nav class="review-pagination" aria-label="Review pages">
+      <button
+        id="review-previous"
+        type="button"
+        class="review-icon"
+        title="Previous page"
+        aria-label="Previous page"
+      >
+        <ArrowLeft size={20} aria-hidden="true" />
+      </button>
+      <span id="review-page-number"></span>
+      <button
+        id="review-next"
+        type="button"
+        class="review-icon"
+        title="Next page"
+        aria-label="Next page"
+      >
+        <ArrowRight size={20} aria-hidden="true" />
+      </button>
+    </nav>
+    <template id="review-row-template">
+      <tr>
+        <td>
+          <a data-record-link></a>
+          <small data-record-type></small>
+        </td>
+        <td data-authority></td>
+        <td data-exceptions></td>
+        <td data-checks></td>
+        <td>
+          <div class="review-actions">
+            <button type="button" class="review-icon" data-review-key>
+              <ClipboardCheck size={19} aria-hidden="true" />
+            </button>
+            <a class="review-icon" data-edit-link>
+              <Pencil size={18} aria-hidden="true" />
+            </a>
+          </div>
+        </td>
+      </tr>
+    </template>
+    <dialog id="review-dialog" aria-labelledby="review-dialog-title">
+      <header class="review-dialog-heading">
+        <h2 id="review-dialog-title"></h2>
+        <button
+          id="review-close"
+          type="button"
+          class="review-icon"
+          title="Close review"
+          aria-label="Close review"
+        >
+          <X size={20} aria-hidden="true" />
+        </button>
+      </header>
+      <p id="review-dialog-authority" class="muted"></p>
+      <nav class="review-dialog-links" aria-label="Selected record">
+        <a id="review-public-link">Public page</a>
+        <a id="review-edit-link">Edit in CMS</a>
+      </nav>
+      <div id="review-body" aria-live="polite"></div>
+    </dialog>
+    <script id="review-index" type="application/json" set:html={serialized} />
+  </section>
+</SiteLayout>
+
+<script>
+  type ReviewRow = {
+    key: string
+    name: string
+    authority: string
+    collection: string
+    categories: string[]
+    searchText: string
+    exceptionCount: number
+    manualCount: number
+    publicPath: string
+    editPath: string
+    detailPath: string
+  }
+  type ReviewDetail = {
+    exceptions: { field: string; code: string; reason: string; value: unknown }[]
+    manual: { label: string; reason: string; evidence: Record<string, unknown>[] }[]
+  }
+  const rows: ReviewRow[] = JSON.parse(document.querySelector('#review-index')!.textContent!)
+  const search = document.querySelector<HTMLInputElement>('#review-search')!
+  const recordType = document.querySelector<HTMLSelectElement>('#review-type')!
+  const category = document.querySelector<HTMLSelectElement>('#review-category')!
+  const body = document.querySelector<HTMLTableSectionElement>('#review-rows')!
+  const template = document.querySelector<HTMLTemplateElement>('#review-row-template')!
+  const previous = document.querySelector<HTMLButtonElement>('#review-previous')!
+  const next = document.querySelector<HTMLButtonElement>('#review-next')!
+  const dialog = document.querySelector<HTMLDialogElement>('#review-dialog')!
+  const detailBody = document.querySelector<HTMLElement>('#review-body')!
+  const query = new URLSearchParams(location.search)
+  search.value = query.get('q') || ''
+  recordType.value = query.get('type') || ''
+  category.value = query.get('issue') || ''
+  let pageNumber = Math.max(0, (Number(query.get('page')) || 1) - 1)
+  let controller: AbortController | undefined
+  const cache = new Map<string, ReviewDetail>()
+
+  /** Persist current filters and pagination without navigating or exposing review evidence in the URL. */
+  function syncURL() {
+    const url = new URL(location.href)
+    for (const [key, value] of [
+      ['q', search.value],
+      ['type', recordType.value],
+      ['issue', category.value],
+      ['page', pageNumber ? String(pageNumber + 1) : '']
+    ])
+      value ? url.searchParams.set(key, value) : url.searchParams.delete(key)
+    history.replaceState(null, '', url)
+  }
+
+  /** Filter the compact index, render at most 50 rows, and synchronize pagination and accessible counts. */
+  function render() {
+    const words = search.value.toLowerCase().trim().split(/\s+/).filter(Boolean)
+    const matches = rows.filter(
+      (row) =>
+        (!recordType.value || row.collection === recordType.value) &&
+        (!category.value || row.categories.includes(category.value)) &&
+        words.every((word) => row.searchText.includes(word))
+    )
+    const pages = Math.max(1, Math.ceil(matches.length / 50))
+    pageNumber = Math.min(pageNumber, pages - 1)
+    body.replaceChildren()
+    for (const row of matches.slice(pageNumber * 50, pageNumber * 50 + 50)) {
+      const fragment = template.content.cloneNode(true) as DocumentFragment
+      const link = fragment.querySelector<HTMLAnchorElement>('[data-record-link]')!
+      link.textContent = row.name
+      link.href = row.publicPath
+      fragment.querySelector('[data-record-type]')!.textContent =
+        row.collection === 'libraries' ? 'Library' : 'Library service'
+      fragment.querySelector('[data-authority]')!.textContent = row.authority
+      fragment.querySelector('[data-exceptions]')!.textContent = String(row.exceptionCount)
+      fragment.querySelector('[data-checks]')!.textContent = String(row.manualCount)
+      const button = fragment.querySelector<HTMLButtonElement>('[data-review-key]')!
+      button.dataset.reviewKey = row.key
+      button.title = `Review ${row.name}`
+      button.setAttribute('aria-label', button.title)
+      const edit = fragment.querySelector<HTMLAnchorElement>('[data-edit-link]')!
+      edit.href = row.editPath
+      edit.title = `Edit ${row.name} in CMS`
+      edit.setAttribute('aria-label', edit.title)
+      body.append(fragment)
+    }
+    document.querySelector('#review-status')!.textContent =
+      `${matches.length.toLocaleString('en-GB')} ${matches.length === 1 ? 'record' : 'records'}`
+    document.querySelector('#review-page-number')!.textContent = `${pageNumber + 1} / ${pages}`
+    document.querySelector<HTMLElement>('#review-empty')!.hidden = matches.length > 0
+    previous.disabled = pageNumber === 0
+    next.disabled = pageNumber >= pages - 1
+    syncURL()
+  }
+
+  /** @param text - Untrusted evidence text. @param parent - Dialog section. Render text without interpreting HTML. */
+  function paragraph(text: string, parent: HTMLElement) {
+    const element = document.createElement('p')
+    element.textContent = text
+    parent.append(element)
+  }
+
+  /** @param text - Safe text content. @param parent - Dialog section. @param level - Semantic nesting level for evidence headings. */
+  function heading(text: string, parent: HTMLElement, level: 'h3' | 'h4' = 'h3') {
+    const element = document.createElement(level)
+    element.textContent = text
+    parent.append(element)
+  }
+
+  /**
+   * Load one record's evidence lazily, cancelling obsolete requests and caching successful responses.
+   * @param row - Selected worklist entry with precomputed public, CMS and detail links.
+   * @returns Resolves after text-only evidence or a retryable error is rendered.
+   */
+  async function openReview(row: ReviewRow) {
+    controller?.abort()
+    controller = new AbortController()
+    document.querySelector('#review-dialog-title')!.textContent = row.name
+    document.querySelector('#review-dialog-authority')!.textContent = row.authority
+    document.querySelector<HTMLAnchorElement>('#review-public-link')!.href = row.publicPath
+    document.querySelector<HTMLAnchorElement>('#review-edit-link')!.href = row.editPath
+    detailBody.replaceChildren()
+    paragraph('Loading review evidence...', detailBody)
+    dialog.showModal()
+    try {
+      let detail = cache.get(row.key)
+      if (!detail) {
+        const response = await fetch(row.detailPath, { signal: controller.signal })
+        if (!response.ok)
+          throw new Error(
+            'Review evidence could not be loaded. Retry the record or open it in the CMS.'
+          )
+        detail = (await response.json()) as ReviewDetail
+        cache.set(row.key, detail)
+      }
+      detailBody.replaceChildren()
+      if (detail.exceptions.length) {
+        heading('Validation exceptions', detailBody)
+        for (const issue of detail.exceptions) {
+          const section = document.createElement('section')
+          heading(`${issue.field}: ${issue.code}`, section, 'h4')
+          paragraph(issue.reason, section)
+          paragraph(
+            `Current value: ${issue.value === null ? 'Not recorded' : typeof issue.value === 'string' ? issue.value : JSON.stringify(issue.value)}`,
+            section
+          )
+          detailBody.append(section)
+        }
+      }
+      if (detail.manual.length) {
+        heading('Manual checks', detailBody)
+        for (const check of detail.manual) {
+          const section = document.createElement('section')
+          heading(check.label, section, 'h4')
+          paragraph(check.reason, section)
+          for (const evidence of check.evidence) {
+            const details = document.createElement('details')
+            const summary = document.createElement('summary')
+            summary.textContent = `Evidence${evidence.field ? `: ${evidence.field}` : ''}${evidence.source ? ` (${evidence.source})` : ''}`
+            const content = document.createElement('pre')
+            content.textContent = JSON.stringify(evidence, null, 2)
+            details.append(summary, content)
+            section.append(details)
+          }
+          detailBody.append(section)
+        }
+      }
+    } catch (error) {
+      if (error instanceof Error && error.name !== 'AbortError') {
+        detailBody.replaceChildren()
+        paragraph(error.message, detailBody)
+      }
+    }
+  }
+
+  document
+    .querySelector('.review-filters')!
+    .addEventListener('submit', (event) => event.preventDefault())
+  for (const control of [search, recordType, category])
+    control.addEventListener(control === search ? 'input' : 'change', () => {
+      pageNumber = 0
+      render()
+    })
+  previous.addEventListener('click', () => {
+    pageNumber--
+    render()
+  })
+  next.addEventListener('click', () => {
+    pageNumber++
+    render()
+  })
+  body.addEventListener('click', (event) => {
+    const button = (event.target as Element).closest<HTMLButtonElement>('[data-review-key]')
+    const row = rows.find((item) => item.key === button?.dataset.reviewKey)
+    if (row) void openReview(row)
+  })
+  document.querySelector('#review-close')!.addEventListener('click', () => dialog.close())
+  dialog.addEventListener('close', () => controller?.abort())
+  render()
+</script>
+
+<style>
+  .review-heading h1 {
+    font-size: 2rem;
+  }
+  .review-filters {
+    display: grid;
+    grid-template-columns: minmax(0, 2fr) repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .review-filters label {
+    display: grid;
+    gap: 0.35rem;
+    min-width: 0;
+  }
+  .review-filters input,
+  .review-filters select {
+    width: 100%;
+    min-width: 0;
+  }
+  .review-table-wrap {
+    overflow: auto;
+    max-width: 100%;
+  }
+  .review-table {
+    width: 100%;
+    min-width: 42rem;
+    border-collapse: collapse;
+  }
+  .review-table th,
+  .review-table td {
+    text-align: left;
+    padding: 0.75rem;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+  }
+  .review-table th {
+    font-size: 0.85rem;
+  }
+  .review-table small {
+    display: block;
+    color: var(--muted);
+  }
+  .review-actions,
+  .review-pagination,
+  .review-dialog-links {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+  }
+  .review-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    padding: 0;
+    border: 1px solid var(--line-strong);
+    border-radius: 4px;
+    background: var(--paper);
+    color: var(--brand-primary);
+    cursor: pointer;
+  }
+  .review-icon:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+  .review-pagination {
+    justify-content: center;
+    margin-block: 1.5rem;
+  }
+  #review-dialog {
+    width: min(58rem, calc(100% - 2rem));
+    max-height: 85svh;
+    overflow: auto;
+    padding: 1.5rem;
+    border: 1px solid var(--line-strong);
+    border-radius: 4px;
+    color: var(--ink);
+    background: var(--paper);
+  }
+  #review-dialog::backdrop {
+    background: var(--lightbox-overlay);
+  }
+  .review-dialog-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 1rem;
+  }
+  .review-dialog-heading h2 {
+    font-size: 1.4rem;
+    overflow-wrap: anywhere;
+    margin: 0;
+  }
+  .review-dialog-links {
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+  }
+  #review-body :global(section) {
+    border-bottom: 1px solid var(--line);
+    padding-block: 1rem;
+  }
+  #review-body :global(h3) {
+    font-size: 1.25rem;
+  }
+  #review-body :global(h4) {
+    font-size: 1rem;
+    margin-block: 0 0.5rem;
+  }
+  #review-body :global(p) {
+    overflow-wrap: anywhere;
+  }
+  #review-body :global(pre) {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    max-height: 24rem;
+    overflow: auto;
+    background: var(--canvas);
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+  #review-body :global(summary) {
+    cursor: pointer;
+  }
+  @media (max-width: 760px) {
+    .review-filters {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,113 +1,64 @@
 {
   "id": "lib_c761e412-b51f-4964-8fbf-60999fb4511e",
-  "source_id": "1771",
-  "name": "Blackrod Library",
   "slug": "blackrod-library",
-  "address": "Church Street, Bolton, Greater Manchester, BL6 5EQ",
-  "postcode": "BL6 5EQ",
-  "town": "Bolton",
-  "phone": "01204 332380",
-  "email": "blackrod.library@bolton.gov.uk",
-  "website": "http://www.bolton.gov.uk/website/pages/Blackrodlibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.59433,
-  "longitude": -2.58547,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bolton",
+  "source_id": "1771",
+  "source_url": "https://libraryon.org/libraries/bolton/blackrod-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bolton/blackrod-library",
-  "authority": "bolton"
+  "data": {
+    "Local authority": "Bolton",
+    "Local authority code": "E08000001",
+    "Library name": "Blackrod Library",
+    "Library code": null,
+    "Address 1": "Church Street, Bolton, Greater Manchester, BL6 5EQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BL6 5EQ",
+    "Unique property reference number": 100012561842,
+    "Latitude": 53.59433,
+    "Longitude": -2.58547,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Hobby and interest groups; Children's activities; British Newspaper Archive",
+    "Phone number": "01204 332380",
+    "Email address": "blackrod.library@bolton.gov.uk",
+    "URL": "http://www.bolton.gov.uk/website/pages/Blackrodlibrary.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

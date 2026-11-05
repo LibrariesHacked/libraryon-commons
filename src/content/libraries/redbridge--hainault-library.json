@@ -1,136 +1,64 @@
 {
   "id": "lib_da5b17c6-d695-4b23-9dff-fd9fc9815427",
-  "source_id": "2713",
-  "name": "Hainault Library",
   "slug": "hainault-library",
-  "address": "100 Manford Way, Chigwell, Greater London, IG7 4DD",
-  "postcode": "IG7 4DD",
-  "town": "Chigwell",
-  "phone": "020 8708 8233",
-  "email": "hainault.library@visionrcl.org.uk",
-  "website": "https://visionrcl.org.uk/centre/hainault-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.60804,
-  "longitude": 0.10416,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.redbridge.gov.uk/libraries/book-a-pc-and-wifi/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.redbridge.gov.uk/libraries/book-a-pc-and-wifi/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.redbridge.gov.uk/libraries/archives-and-history/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://visionrcl.org.uk/online-resources/"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.redbridge.gov.uk/libraries/get-confident-online/"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.redbridge.gov.uk/libraries/hub-central-business-and-employment-skills-support/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://visionrcl.org.uk/homelibrary/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "redbridge",
+  "source_id": "2713",
+  "source_url": "https://libraryon.org/libraries/redbridge/hainault-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redbridge/hainault-library",
-  "authority": "redbridge"
+  "data": {
+    "Local authority": "Redbridge",
+    "Local authority code": "E09000026",
+    "Library name": "Hainault Library",
+    "Library code": null,
+    "Address 1": "100 Manford Way, Chigwell, Greater London, IG7 4DD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IG7 4DD",
+    "Unique property reference number": null,
+    "Latitude": 51.60804,
+    "Longitude": 0.10416,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Computers; Family history; Digital lending; Digital skills sessions; Career support; Books delivered; British Newspaper Archive; Findmypast",
+    "Phone number": "020 8708 8233",
+    "Email address": "hainault.library@visionrcl.org.uk",
+    "URL": "https://visionrcl.org.uk/centre/hainault-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

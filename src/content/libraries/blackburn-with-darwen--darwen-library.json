@@ -1,143 +1,71 @@
 {
   "id": "lib_cd027149-eef7-421f-a63f-f2a450df46f2",
-  "source_id": "2964",
-  "name": "Darwen Library",
   "slug": "darwen-library",
-  "address": "Knott Street, Darwen, BB3 3BU",
-  "postcode": "BB3 2RN",
-  "town": "Darwen",
-  "phone": "01254 706021",
-  "email": "darwen.library@blackburn.gov.uk",
-  "website": "https://bwdlibraries.com/our-libraries/darwen-library/",
-  "catalogue": "https://bwdlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://www.blackburn.gov.uk/bwdlibraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.696638,
-  "longitude": -2.465628,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.blackburn.gov.uk/bwdlibraries/library-services-guide/home-library-service"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.blackburn.gov.uk/bwdlibraries/library-services-guide/it-courses"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.blackburn.gov.uk/bwdlibraries/library-services-guide/e-books-and-audio-books"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "blackburn-with-darwen",
+  "source_id": "2964",
+  "source_url": "https://libraryon.org/libraries/blackburn-with-darwen/darwen-library",
   "updated_on": "2026-02-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/blackburn-with-darwen/darwen-library",
-  "authority": "blackburn-with-darwen"
+  "data": {
+    "Local authority": "Blackburn with Darwen",
+    "Local authority code": "E06000008",
+    "Library name": "Darwen Library",
+    "Library code": null,
+    "Address 1": "Knott Street, Darwen, BB3 3BU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BB3 2RN",
+    "Unique property reference number": null,
+    "Latitude": 53.696638,
+    "Longitude": -2.465628,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Hobby and interest groups; Scanning; Photocopiers; Computers; Children's activities; Books delivered; Digital skills sessions; Digital lending; Findmypast; BFI Replay; British Newspaper Archive",
+    "Phone number": "01254 706021",
+    "Email address": "darwen.library@blackburn.gov.uk",
+    "URL": "https://bwdlibraries.com/our-libraries/darwen-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

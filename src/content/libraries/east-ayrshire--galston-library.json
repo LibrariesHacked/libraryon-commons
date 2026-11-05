@@ -1,111 +1,77 @@
 {
   "id": "lib_d0f65693-8de9-4ac9-a3bc-5ee0e6ba42f6",
-  "source_id": "1797",
-  "name": "Galston Library",
   "slug": "galston-library",
-  "address": "24 Henrietta Street, Galston, KA4 8HQ",
-  "postcode": "KA4 8HQ",
-  "town": "Galston",
-  "phone": "01563 821994",
-  "email": "GalstonLibrary@eastayrshireleisure.com",
-  "website": "https://eastayrshireleisure.com/venue/galston-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:45",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:45",
-          "startTime": "13:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:45",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Facility Not Open",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.60072,
-  "longitude": -4.37818,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "east-ayrshire",
+  "source_id": "1797",
+  "source_url": "https://libraryon.org/libraries/east-ayrshire/galston-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-ayrshire/galston-library",
-  "authority": "east-ayrshire"
+  "data": {
+    "Local authority": "East Ayrshire",
+    "Local authority code": "S12000008",
+    "Library name": "Galston Library",
+    "Library code": null,
+    "Address 1": "24 Henrietta Street, Galston, KA4 8HQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KA4 8HQ",
+    "Unique property reference number": null,
+    "Latitude": 55.60072,
+    "Longitude": -4.37818,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:30-13:45,14:00-18:00",
+    "Wednesday staffed hours": "10:30-13:45,14:00-18:00",
+    "Thursday staffed hours": "13:30-16:45,17:00-20:00",
+    "Friday staffed hours": "10:30-16:00",
+    "Saturday staffed hours": "10:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01563 821994",
+    "Email address": "GalstonLibrary@eastayrshireleisure.com",
+    "URL": "https://eastayrshireleisure.com/venue/galston-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

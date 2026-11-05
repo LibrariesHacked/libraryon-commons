@@ -1,94 +1,71 @@
 {
   "id": "lib_4b4cd834-867e-448f-b89e-8eab521ee681",
-  "source_id": "470",
-  "name": "Alford Library",
   "slug": "alford-library",
-  "address": "21 Greystone Road, Alford, AB33 8TY, United Kingdom",
-  "postcode": "AB33 8TY",
-  "town": "Alford",
-  "phone": "01975 520380",
-  "email": "alford.library@aberdeenshire.gov.uk",
-  "website": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/alford-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.23201,
-  "longitude": -2.70797,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "aberdeenshire",
+  "source_id": "470",
+  "source_url": "https://libraryon.org/libraries/aberdeenshire/alford-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/aberdeenshire/alford-library",
-  "authority": "aberdeenshire"
+  "data": {
+    "Local authority": "Aberdeenshire",
+    "Local authority code": "S12000034",
+    "Library name": "Alford Library",
+    "Library code": null,
+    "Address 1": "21 Greystone Road, Alford, AB33 8TY, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB33 8TY",
+    "Unique property reference number": null,
+    "Latitude": 57.23201,
+    "Longitude": -2.70797,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "15:00-17:00",
+    "Thursday staffed hours": "13:00-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": "01975 520380",
+    "Email address": "alford.library@aberdeenshire.gov.uk",
+    "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/alford-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

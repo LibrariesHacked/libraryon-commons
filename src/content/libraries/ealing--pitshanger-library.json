@@ -1,100 +1,71 @@
 {
   "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
-  "source_id": "2324",
-  "name": "Pitshanger Library",
   "slug": "pitshanger-library",
-  "address": "143-145 Pitshanger Lane, London, Middlesex, W5 1RH",
-  "postcode": "WV4 6RZ",
-  "town": "Wolverhampton",
-  "phone": "020 8997 0230",
-  "email": "",
-  "website": "https://www.ealing.gov.uk/info/201241/find_your_library/2403/pitshanger_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "wheelchair-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.56177,
-  "longitude": -2.11398,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "ealing",
+  "source_id": "2324",
+  "source_url": "https://libraryon.org/libraries/ealing/pitshanger-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/ealing/pitshanger-library",
-  "authority": "ealing"
+  "data": {
+    "Local authority": "Ealing",
+    "Local authority code": "E09000009",
+    "Library name": "Pitshanger Library",
+    "Library code": null,
+    "Address 1": "143-145 Pitshanger Lane, London, Middlesex, W5 1RH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WV4 6RZ",
+    "Unique property reference number": null,
+    "Latitude": 52.56177,
+    "Longitude": -2.11398,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "11:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "11:00-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; BFI Replay",
+    "Phone number": "020 8997 0230",
+    "Email address": null,
+    "URL": "https://www.ealing.gov.uk/info/201241/find_your_library/2403/pitshanger_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

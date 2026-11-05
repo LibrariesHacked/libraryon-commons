@@ -1,150 +1,64 @@
 {
   "id": "lib_00aebdaf-3259-4728-a722-f7b8e622a3c3",
-  "source_id": "3073",
-  "name": "Bradford on Avon Library",
   "slug": "bradford-on-avon-library",
-  "address": "Bridge Street, Bradford On Avon , Wiltshire, BA15 1BY",
-  "postcode": "BA15 1BY",
-  "town": "Bradford-on-Avon",
-  "phone": "01225 863280",
-  "email": "libraryenquiries@wiltshire.gov.uk",
-  "website": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/7?isListPage=True",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access",
-    "service-dog-friendly",
-    "automatic-doors",
-    "accessible-restrooms",
-    "hearing-loop-system",
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.34631,
-  "longitude": -2.25035,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "wiltshire",
+  "source_id": "3073",
+  "source_url": "https://libraryon.org/libraries/wiltshire/bradford-on-avon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wiltshire/bradford-on-avon-library",
-  "authority": "wiltshire"
+  "data": {
+    "Local authority": "Wiltshire",
+    "Local authority code": "E06000054",
+    "Library name": "Bradford on Avon Library",
+    "Library code": null,
+    "Address 1": "Bridge Street, Bradford On Avon , Wiltshire, BA15 1BY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BA15 1BY",
+    "Unique property reference number": 100121341481,
+    "Latitude": 51.34631,
+    "Longitude": -2.25035,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Digital skills sessions; Hobby and interest groups; Digital lending; Computers; Scanning; Books delivered; British Newspaper Archive; BFI Replay; Family history; Bookable space",
+    "Phone number": "01225 863280",
+    "Email address": "libraryenquiries@wiltshire.gov.uk",
+    "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/7?isListPage=True",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

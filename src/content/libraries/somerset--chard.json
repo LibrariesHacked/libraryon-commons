@@ -1,121 +1,71 @@
 {
   "id": "lib_93e0bedb-a0b6-4db2-800d-8314e1c3f6e0",
-  "source_id": "1632",
-  "name": "Chard Library",
   "slug": "chard",
-  "address": "Holyrood Lace Mill, Chard, Somerset, TA20 2YA",
-  "postcode": "TA20 2AX",
-  "town": "Chard",
-  "phone": "",
-  "email": "chalib@somerset.gov.uk",
-  "website": "https://www.somerset.gov.uk/locations/chard-library/",
-  "catalogue": "https://www.librarieswest.org.uk/",
-  "joinOnline": "https://www.librarieswest.org.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "neurodivergent-spaces"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "https://maps.app.goo.gl/S3FTH5QEdgsDpbdg6",
-  "permanentlyClosed": false,
-  "latitude": 50.87154,
-  "longitude": -2.96382,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.somerset.gov.uk/libraries/digital-books-audiobooks-and-magazines/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.somerset.gov.uk/libraries/home-library-service/"
-    }
-  ],
+  "authority": "somerset",
+  "source_id": "1632",
+  "source_url": "https://libraryon.org/libraries/somerset/chard",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/somerset/chard",
-  "authority": "somerset"
+  "data": {
+    "Local authority": "Somerset",
+    "Local authority code": "E06000066",
+    "Library name": "Chard Library",
+    "Library code": null,
+    "Address 1": "Holyrood Lace Mill, Chard, Somerset, TA20 2YA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TA20 2AX",
+    "Unique property reference number": null,
+    "Latitude": 50.87154,
+    "Longitude": -2.96382,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-16:30",
+    "Tuesday staffed hours": "09:30-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-16:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Children's activities; Digital lending; Books delivered",
+    "Phone number": null,
+    "Email address": "chalib@somerset.gov.uk",
+    "URL": "https://www.somerset.gov.uk/locations/chard-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

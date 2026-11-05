@@ -1,110 +1,71 @@
 {
   "id": "lib_5aae2b0c-6ea3-41d1-a912-992d26c03b40",
-  "source_id": "2758",
-  "name": "Neptune Centre Library",
   "slug": "neptune-centre-library",
-  "address": "Neptune Centre, Ormesby Road, Middlesbrough, North Yorkshire, TS3 7RP",
-  "postcode": "TS3 7JS",
-  "town": "Middlesbrough",
-  "phone": "01642 243581",
-  "email": "North_Ormesby_Library@middlesbrough.gov.uk",
-  "website": "https://libraries.middlesbrough.gov.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "06:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.55938,
-  "longitude": -1.20453,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "middlesbrough",
+  "source_id": "2758",
+  "source_url": "https://libraryon.org/libraries/middlesbrough/neptune-centre-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/middlesbrough/neptune-centre-library",
-  "authority": "middlesbrough"
+  "data": {
+    "Local authority": "Middlesbrough",
+    "Local authority code": "E06000002",
+    "Library name": "Neptune Centre Library",
+    "Library code": null,
+    "Address 1": "Neptune Centre, Ormesby Road, Middlesbrough, North Yorkshire, TS3 7RP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS3 7JS",
+    "Unique property reference number": null,
+    "Latitude": 54.55938,
+    "Longitude": -1.20453,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "06:00-22:00",
+    "Tuesday unstaffed hours": "06:00-22:00",
+    "Wednesday unstaffed hours": "06:00-22:00",
+    "Thursday unstaffed hours": "06:00-22:00",
+    "Friday unstaffed hours": "06:00-21:00",
+    "Saturday unstaffed hours": "08:00-16:00",
+    "Sunday unstaffed hours": "09:00-18:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; BFI Replay",
+    "Phone number": "01642 243581",
+    "Email address": "North_Ormesby_Library@middlesbrough.gov.uk",
+    "URL": "https://libraries.middlesbrough.gov.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

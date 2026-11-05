@@ -1,88 +1,64 @@
 {
   "id": "lib_271111a8-154d-487e-9dec-127b505d78ab",
-  "source_id": "3603",
-  "name": "Middleton Cheney Library",
   "slug": "middleton-cheney",
-  "address": "Main Road, Middleton Cheney, Northamptonshire, OX17 2PD",
-  "postcode": "OX17 2PD",
-  "town": "Banbury",
-  "phone": "",
-  "email": "MiddletonCheneyCML@gmail.com",
-  "website": "https://www.westnorthants.gov.uk/list-libraries/middleton-cheney-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Expected to become CRL by 01 April 2020",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.07154,
-  "longitude": -1.27179,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "west-northamptonshire",
+  "source_id": "3603",
+  "source_url": "https://libraryon.org/libraries/west-northamptonshire/middleton-cheney",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-northamptonshire/middleton-cheney",
-  "authority": "west-northamptonshire"
+  "data": {
+    "Local authority": "West Northamptonshire",
+    "Local authority code": "E06000062",
+    "Library name": "Middleton Cheney Library",
+    "Library code": null,
+    "Address 1": "Main Road, Middleton Cheney, Northamptonshire, OX17 2PD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OX17 2PD",
+    "Unique property reference number": 100032157012,
+    "Latitude": 52.07154,
+    "Longitude": -1.27179,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-18:00",
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "MiddletonCheneyCML@gmail.com",
+    "URL": "https://www.westnorthants.gov.uk/list-libraries/middleton-cheney-community-library",
+    "Notes": "Expected to become CRL by 01 April 2020"
+  },
+  "validation_exceptions": []
 }

@@ -1,112 +1,71 @@
 {
   "id": "lib_0c214076-e0e3-4bad-9b9d-70fef752f194",
-  "source_id": "1194",
-  "name": "Keyworth",
   "slug": "keyworth",
-  "address": "Church Drive, Keyworth, Nottinghamshire, NG12 5FF",
-  "postcode": "NG12 5FG",
-  "town": "Nottingham",
-  "phone": "01623 677 200",
-  "email": "ask@inspireculture.org.uk",
-  "website": "https://www.inspireculture.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Refurbished in 2017",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.87415,
-  "longitude": -1.08481,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "nottinghamshire",
+  "source_id": "1194",
+  "source_url": "https://libraryon.org/libraries/nottinghamshire/keyworth",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/nottinghamshire/keyworth",
-  "authority": "nottinghamshire"
+  "data": {
+    "Local authority": "Nottinghamshire",
+    "Local authority code": "E10000024",
+    "Library name": "Keyworth",
+    "Library code": null,
+    "Address 1": "Church Drive, Keyworth, Nottinghamshire, NG12 5FF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NG12 5FG",
+    "Unique property reference number": null,
+    "Latitude": 52.87415,
+    "Longitude": -1.08481,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:30",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:30",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; British Newspaper Archive",
+    "Phone number": "01623 677 200",
+    "Email address": "ask@inspireculture.org.uk",
+    "URL": "https://www.inspireculture.org.uk/",
+    "Notes": "Refurbished in 2017"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

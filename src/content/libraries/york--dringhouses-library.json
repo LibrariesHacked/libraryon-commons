@@ -1,129 +1,64 @@
 {
   "id": "lib_1c98b8db-745c-4092-903d-3f2986f99d95",
-  "source_id": "2801",
-  "name": "Dringhouses Library",
   "slug": "dringhouses-library",
-  "address": "56 Tadcaster Road, York, North Yorkshire, YO24 1LR",
-  "postcode": "YO24 1LR",
-  "town": "York",
-  "phone": "01904 552 674",
-  "email": "dringhouses@exploreyork.org.uk",
-  "website": "https://www.exploreyork.org.uk/dringhouses-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.93926,
-  "longitude": -1.1078,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "york",
+  "source_id": "2801",
+  "source_url": "https://libraryon.org/libraries/york/dringhouses-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/york/dringhouses-library",
-  "authority": "york"
+  "data": {
+    "Local authority": "York",
+    "Local authority code": "E06000014",
+    "Library name": "Dringhouses Library",
+    "Library code": null,
+    "Address 1": "56 Tadcaster Road, York, North Yorkshire, YO24 1LR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "YO24 1LR",
+    "Unique property reference number": 100052162628,
+    "Latitude": 53.93926,
+    "Longitude": -1.1078,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-18:00",
+    "Tuesday staffed hours": "09:30-12:30,14:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-12:30,14:00-17:30",
+    "Friday staffed hours": "14:00-17:30",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Computers; Children's activities; Digital lending; British Newspaper Archive",
+    "Phone number": "01904 552 674",
+    "Email address": "dringhouses@exploreyork.org.uk",
+    "URL": "https://www.exploreyork.org.uk/dringhouses-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

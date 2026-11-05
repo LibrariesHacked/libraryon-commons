@@ -1,116 +1,71 @@
 {
   "id": "lib_bd5a7f9b-f7bf-4c6b-a0be-eb4522f52421",
-  "source_id": "3272",
-  "name": "Shefford Library",
   "slug": "shefford-library",
-  "address": "High Street, Shefford, Bedfordshire, SG17 5DD",
-  "postcode": "SG17 5DD",
-  "town": "Shefford",
-  "phone": "0300 300 8067",
-  "email": "shefford.library@centralbedfordshire.gov.uk",
-  "website": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "hearing-loop-system"
-  ],
-  "notes": "No restrooms",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.03818,
-  "longitude": -0.33451,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "central-bedfordshire",
+  "source_id": "3272",
+  "source_url": "https://libraryon.org/libraries/central-bedfordshire/shefford-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/central-bedfordshire/shefford-library",
-  "authority": "central-bedfordshire"
+  "data": {
+    "Local authority": "Central Bedfordshire",
+    "Local authority code": "E06000056",
+    "Library name": "Shefford Library",
+    "Library code": null,
+    "Address 1": "High Street, Shefford, Bedfordshire, SG17 5DD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SG17 5DD",
+    "Unique property reference number": null,
+    "Latitude": 52.03818,
+    "Longitude": -0.33451,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Bookable space; British Newspaper Archive",
+    "Phone number": "0300 300 8067",
+    "Email address": "shefford.library@centralbedfordshire.gov.uk",
+    "URL": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
+    "Notes": "No restrooms"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

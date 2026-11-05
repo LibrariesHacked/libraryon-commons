@@ -1,135 +1,64 @@
 {
   "id": "lib_f536f14e-2a2b-4e82-95ed-bfdedd93a5f1",
-  "source_id": "2262",
-  "name": "Garforth Library",
   "slug": "garforth-library",
-  "address": "Lidgett Lane, Garforth, West Yorkshire, LS25 1EH",
-  "postcode": "LS25 1EH",
-  "town": "Leeds",
-  "phone": "0113 378 5005",
-  "email": "leeds.libraries@leeds.gov.uk",
-  "website": "https://libraries.leeds.gov.uk/libraries/garforth",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities",
-    "accessible-restrooms",
-    "assistive-technology-available",
-    "sign-language-interpretation",
-    "accessible-parking",
-    "wheelchair-access",
-    "automatic-doors",
-    "lift-access",
-    "hearing-loop-system",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.79189,
-  "longitude": -1.38823,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "leeds",
+  "source_id": "2262",
+  "source_url": "https://libraryon.org/libraries/leeds/garforth-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leeds/garforth-library",
-  "authority": "leeds"
+  "data": {
+    "Local authority": "Leeds",
+    "Local authority code": "E08000035",
+    "Library name": "Garforth Library",
+    "Library code": null,
+    "Address 1": "Lidgett Lane, Garforth, West Yorkshire, LS25 1EH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LS25 1EH",
+    "Unique property reference number": 72555707,
+    "Latitude": 53.79189,
+    "Longitude": -1.38823,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "09:00-19:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Cafe; BFI Replay; Computers; Children's activities; Hobby and interest groups",
+    "Phone number": "0113 378 5005",
+    "Email address": "leeds.libraries@leeds.gov.uk",
+    "URL": "https://libraries.leeds.gov.uk/libraries/garforth",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

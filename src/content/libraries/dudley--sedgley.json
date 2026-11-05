@@ -1,120 +1,64 @@
 {
   "id": "lib_31ccf334-29d8-487a-af66-a26eeb5c8e3f",
-  "source_id": "2079",
-  "name": "Sedgley",
   "slug": "sedgley",
-  "address": "Ladies Walk, Dudley, West Midlands, DY3 3UA",
-  "postcode": "DY3 3UA",
-  "town": "Dudley",
-  "phone": "01384 812790",
-  "email": "sedgley.library@gll.org",
-  "website": "https://www.better.org.uk/library/dudley/sedgley",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access",
-    "staff-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.539233,
-  "longitude": -2.122299,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "dudley",
+  "source_id": "2079",
+  "source_url": "https://libraryon.org/libraries/dudley/sedgley",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dudley/sedgley",
-  "authority": "dudley"
+  "data": {
+    "Local authority": "Dudley",
+    "Local authority code": "E08000027",
+    "Library name": "Sedgley",
+    "Library code": null,
+    "Address 1": "Ladies Walk, Dudley, West Midlands, DY3 3UA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DY3 3UA",
+    "Unique property reference number": 90155302,
+    "Latitude": 52.539233,
+    "Longitude": -2.122299,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-16:00",
+    "Wednesday staffed hours": "09:30-16:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "09:30-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; Computers",
+    "Phone number": "01384 812790",
+    "Email address": "sedgley.library@gll.org",
+    "URL": "https://www.better.org.uk/library/dudley/sedgley",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

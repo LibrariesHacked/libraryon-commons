@@ -1,121 +1,64 @@
 {
   "id": "lib_8e45eea1-76ab-47e7-bc84-b5416175896f",
-  "source_id": "601",
-  "name": "Axminster",
   "slug": "axminster",
-  "address": "5 South Street, Axminster, Devon EX13 5AD",
-  "postcode": "EX13 5AD",
-  "town": "Axminster",
-  "phone": "01297 32693",
-  "email": "axminster.library@librariesunlimited.org.uk",
-  "website": "https://www.devonlibraries.org.uk/web/arena/axminsterlibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/axminsterlibrary/",
-  "permanentlyClosed": false,
-  "latitude": 50.7812,
-  "longitude": -2.99778,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "devon",
+  "source_id": "601",
+  "source_url": "https://libraryon.org/libraries/devon/axminster",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/axminster",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "Axminster",
+    "Library code": null,
+    "Address 1": "5 South Street, Axminster, Devon EX13 5AD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EX13 5AD",
+    "Unique property reference number": 100041128328,
+    "Latitude": 50.7812,
+    "Longitude": -2.99778,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 1971,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Photocopiers; Scanning; Books delivered; Hobby and interest groups; BFI Replay",
+    "Phone number": "01297 32693",
+    "Email address": "axminster.library@librariesunlimited.org.uk",
+    "URL": "https://www.devonlibraries.org.uk/web/arena/axminsterlibrary",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

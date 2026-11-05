@@ -1,115 +1,71 @@
 {
   "id": "lib_8f8faf78-fd75-42b5-8ad1-1a683d89d05d",
-  "source_id": "2811",
-  "name": "Explore at York Stadium",
   "slug": "explore-at-york-stadium",
-  "address": "Kathryn Avenue, Monks Cross Drive, Huntington, North Yorkshire, YO32 9AF",
-  "postcode": "YO32 9AF",
-  "town": "York",
-  "phone": "",
-  "email": "stadium@exploreyork.org.uk",
-  "website": "https://exploreyork.org.uk/explore-at-york-stadium/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:30",
-          "startTime": "06:50"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:30",
-          "startTime": "06:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:30",
-          "startTime": "06:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:30",
-          "startTime": "06:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:30",
-          "startTime": "06:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "health",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.984774,
-  "longitude": -1.052027,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "york",
+  "source_id": "2811",
+  "source_url": "https://libraryon.org/libraries/york/explore-at-york-stadium",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/york/explore-at-york-stadium",
-  "authority": "york"
+  "data": {
+    "Local authority": "York",
+    "Local authority code": "E06000014",
+    "Library name": "Explore at York Stadium",
+    "Library code": null,
+    "Address 1": "Kathryn Avenue, Monks Cross Drive, Huntington, North Yorkshire, YO32 9AF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "YO32 9AF",
+    "Unique property reference number": null,
+    "Latitude": 53.984774,
+    "Longitude": -1.052027,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "06:30-21:30",
+    "Tuesday staffed hours": "06:30-21:30",
+    "Wednesday staffed hours": "06:30-21:30",
+    "Thursday staffed hours": "06:30-21:30",
+    "Friday staffed hours": "06:50-21:30",
+    "Saturday staffed hours": "08:00-18:00",
+    "Sunday staffed hours": "08:00-18:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "stadium@exploreyork.org.uk",
+    "URL": "https://exploreyork.org.uk/explore-at-york-stadium/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

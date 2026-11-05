@@ -1,136 +1,64 @@
 {
   "id": "lib_34b4fe15-0028-4a2a-aed0-defb14a855ca",
-  "source_id": "1751",
-  "name": "Darfield",
   "slug": "darfield",
-  "address": "Church Street, Darfield, South Yorkshire, S73 9LG",
-  "postcode": "S73 9LG",
-  "town": "Barnsley",
-  "phone": "(01226) 773555",
-  "email": "BarnsleyLibraryEnquiries@barnsley.gov.uk",
-  "website": "https://www.barnsley.gov.uk/services/libraries/find-a-library/darfield-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-restrooms"
-  ],
-  "notes": "Closed for lunch 13.00 - 14.00, Mon, Tues & Thurs",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.53361,
-  "longitude": -1.37359,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    }
-  ],
+  "authority": "barnsley",
+  "source_id": "1751",
+  "source_url": "https://libraryon.org/libraries/barnsley/darfield",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/barnsley/darfield",
-  "authority": "barnsley"
+  "data": {
+    "Local authority": "Barnsley",
+    "Local authority code": "E08000016",
+    "Library name": "Darfield",
+    "Library code": null,
+    "Address 1": "Church Street, Darfield, South Yorkshire, S73 9LG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S73 9LG",
+    "Unique property reference number": 100052201818,
+    "Latitude": 53.53361,
+    "Longitude": -1.37359,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1965,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; Children's activities; Hobby and interest groups; Computers; BFI Replay; Findmypast; British Newspaper Archive; Garden",
+    "Phone number": "(01226) 773555",
+    "Email address": "BarnsleyLibraryEnquiries@barnsley.gov.uk",
+    "URL": "https://www.barnsley.gov.uk/services/libraries/find-a-library/darfield-library/",
+    "Notes": "Closed for lunch 13.00 - 14.00, Mon, Tues & Thurs"
+  },
+  "validation_exceptions": []
 }

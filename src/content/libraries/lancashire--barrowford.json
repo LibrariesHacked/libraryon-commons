@@ -1,141 +1,64 @@
 {
   "id": "lib_c6fbd8a7-940a-4849-9fda-c1ea28b75ef2",
-  "source_id": "1002",
-  "name": "Barrowford",
   "slug": "barrowford",
-  "address": "Ann Street, Barrowford, Lancashire , BB9 8QH",
-  "postcode": "BB9 8QH",
-  "town": "Nelson",
-  "phone": "0300 123 6703",
-  "email": "Barrowford.Library@lancashire.gov.uk",
-  "website": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/barrowford-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Closed 2016 re-opened 2018",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.84926,
-  "longitude": -2.21773,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "lancashire",
+  "source_id": "1002",
+  "source_url": "https://libraryon.org/libraries/lancashire/barrowford",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lancashire/barrowford",
-  "authority": "lancashire"
+  "data": {
+    "Local authority": "Lancashire",
+    "Local authority code": "E10000017",
+    "Library name": "Barrowford",
+    "Library code": null,
+    "Address 1": "Ann Street, Barrowford, Lancashire , BB9 8QH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BB9 8QH",
+    "Unique property reference number": 100012550554,
+    "Latitude": 53.84926,
+    "Longitude": -2.21773,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1956,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-14:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Books delivered; Digital lending; Findmypast; British Newspaper Archive; Children's activities; Hobby and interest groups; Family history; Digital skills sessions",
+    "Phone number": "0300 123 6703",
+    "Email address": "Barrowford.Library@lancashire.gov.uk",
+    "URL": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/barrowford-library.aspx",
+    "Notes": "Closed 2016 re-opened 2018"
+  },
+  "validation_exceptions": []
 }

@@ -1,121 +1,71 @@
 {
   "id": "lib_64e2c2c8-104f-405d-bfcf-5156d08f5b85",
-  "source_id": "3417",
-  "name": "Lanchester Library",
   "slug": "lanchester-library",
-  "address": "Newbiggen Lane, Lanchester, County Durham, DH7 0NT",
-  "postcode": "DH7 0EH",
-  "town": "Durham",
-  "phone": " 03000 269 514",
-  "email": "lanchester.lib@durham.gov.uk",
-  "website": "https://www.durham.gov.uk/article/2041/Lanchester-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support",
-    "accessible-public-transport-connections"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.82271,
-  "longitude": -1.74554,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "county-durham",
+  "source_id": "3417",
+  "source_url": "https://libraryon.org/libraries/county-durham/lanchester-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-durham/lanchester-library",
-  "authority": "county-durham"
+  "data": {
+    "Local authority": "County Durham",
+    "Local authority code": "E06000047",
+    "Library name": "Lanchester Library",
+    "Library code": null,
+    "Address 1": "Newbiggen Lane, Lanchester, County Durham, DH7 0NT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DH7 0EH",
+    "Unique property reference number": null,
+    "Latitude": 54.82271,
+    "Longitude": -1.74554,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:30",
+    "Tuesday staffed hours": "14:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Books delivered; Family history; Hobby and interest groups; Children's activities",
+    "Phone number": "03000 269 514",
+    "Email address": "lanchester.lib@durham.gov.uk",
+    "URL": "https://www.durham.gov.uk/article/2041/Lanchester-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

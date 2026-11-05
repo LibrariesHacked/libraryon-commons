@@ -1,142 +1,64 @@
 {
   "id": "lib_74b95759-88b0-4d95-be4d-55effc26477a",
-  "source_id": "2427",
-  "name": "Ossett",
   "slug": "ossett",
-  "address": "Town Hall, Market Place Ossett, West Yorkshire, WF5 8BE",
-  "postcode": "WF5 8BE",
-  "town": "Ossett",
-  "phone": "01924 303 040",
-  "email": "Ossettlibrary@wakefield.gov.uk",
-  "website": "http://www.wakefield.gov.uk/libraries-and-local-history/your-local-library/ossett-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system",
-    "accessible-restrooms"
-  ],
-  "notes": "Planned for major refurbishment 2020",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.680149,
-  "longitude": -1.57912,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "wakefield",
+  "source_id": "2427",
+  "source_url": "https://libraryon.org/libraries/wakefield/ossett",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wakefield/ossett",
-  "authority": "wakefield"
+  "data": {
+    "Local authority": "Wakefield",
+    "Local authority code": "E08000036",
+    "Library name": "Ossett",
+    "Library code": null,
+    "Address 1": "Town Hall, Market Place Ossett, West Yorkshire, WF5 8BE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WF5 8BE",
+    "Unique property reference number": 63138034,
+    "Latitude": 53.680149,
+    "Longitude": -1.57912,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1898,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Digital lending; Family history; Computers; Scanning; Children's activities; Hobby and interest groups; Digital skills sessions",
+    "Phone number": "01924 303 040",
+    "Email address": "Ossettlibrary@wakefield.gov.uk",
+    "URL": "http://www.wakefield.gov.uk/libraries-and-local-history/your-local-library/ossett-library",
+    "Notes": "Planned for major refurbishment 2020"
+  },
+  "validation_exceptions": []
 }

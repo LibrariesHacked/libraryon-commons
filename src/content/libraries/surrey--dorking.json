@@ -1,211 +1,64 @@
 {
   "id": "lib_be2a34cc-37a6-4b48-a7b1-fb559f6e70dd",
-  "source_id": "1497",
-  "name": "Dorking",
   "slug": "dorking",
-  "address": "St. Martin's Walk , Dorking, Surrey, RH4 1UT",
-  "postcode": "RH4 1UT",
-  "town": "Dorking",
-  "phone": "",
-  "email": "dorking.library@surreycc.gov.uk",
-  "website": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/dorking",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:45"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:45"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:45"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "low-vision-support"
-  ],
-  "notes": "Moved to new location in 2012",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "retail"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/51da3ac58f8d4e23b8d93177adec01fa/",
-  "permanentlyClosed": false,
-  "latitude": 51.23316,
-  "longitude": -0.33136,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "surrey",
+  "source_id": "1497",
+  "source_url": "https://libraryon.org/libraries/surrey/dorking",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/surrey/dorking",
-  "authority": "surrey"
+  "data": {
+    "Local authority": "Surrey",
+    "Local authority code": "E10000030",
+    "Library name": "Dorking",
+    "Library code": null,
+    "Address 1": "St. Martin's Walk , Dorking, Surrey, RH4 1UT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RH4 1UT",
+    "Unique property reference number": 10000827697,
+    "Latitude": 51.23316,
+    "Longitude": -0.33136,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2012,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:30",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": "09:30-17:30",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-17:30",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-09:30,17:45-20:00",
+    "Tuesday unstaffed hours": "08:00-09:30,19:15-20:00",
+    "Wednesday unstaffed hours": "08:00-09:30,17:45-20:00",
+    "Thursday unstaffed hours": "08:00-09:30,19:15-20:00",
+    "Friday unstaffed hours": "08:00-09:30,17:45-20:00",
+    "Saturday unstaffed hours": "08:00-09:30,17:15-20:00",
+    "Sunday unstaffed hours": "08:00-20:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "retail",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Bookable space; Photocopiers; Children's activities; Hobby and interest groups; Digital skills sessions; Digital lending; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "dorking.library@surreycc.gov.uk",
+    "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/dorking",
+    "Notes": "Moved to new location in 2012"
+  },
+  "validation_exceptions": []
 }

@@ -1,124 +1,71 @@
 {
   "id": "lib_d0cdacda-2b8f-4cea-8f75-ebcec5a65d53",
-  "source_id": "3723",
-  "name": "Broomhill Community Library",
   "slug": "broomhill-community-library",
-  "address": "10 Taptonville Rd, Sheffield, S10 5BR",
-  "postcode": "S10 5BQ",
-  "town": "Sheffield",
-  "phone": "0114 273 4276",
-  "email": "enquiries@broomhill-library.org.uk",
-  "website": "https://www.broomhill-library.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.37756,
-  "longitude": -1.50317,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "sheffield",
+  "source_id": "3723",
+  "source_url": "https://libraryon.org/libraries/sheffield/broomhill-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sheffield/broomhill-community-library",
-  "authority": "sheffield"
+  "data": {
+    "Local authority": "Sheffield",
+    "Local authority code": "E08000019",
+    "Library name": "Broomhill Community Library",
+    "Library code": null,
+    "Address 1": "10 Taptonville Rd, Sheffield, S10 5BR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S10 5BQ",
+    "Unique property reference number": null,
+    "Latitude": 53.37756,
+    "Longitude": -1.50317,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:30",
+    "Tuesday staffed hours": "10:00-17:30",
+    "Wednesday staffed hours": "10:00-17:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Digital skills sessions; Books delivered; Children's activities; Hobby and interest groups",
+    "Phone number": "0114 273 4276",
+    "Email address": "enquiries@broomhill-library.org.uk",
+    "URL": "https://www.broomhill-library.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

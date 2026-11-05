@@ -1,101 +1,71 @@
 {
   "id": "lib_2afe9f82-d207-4915-b31c-37d529cba73e",
-  "source_id": "2412",
-  "name": "Walmley Library",
   "slug": "walmley-library",
-  "address": "Walmley Road, Birmingham, West Midlands, B76 1NP",
-  "postcode": "B76 1NQ",
-  "town": "Sutton Coldfield",
-  "phone": "0121 464 1842",
-  "email": "walmley.library@birmingham.gov.uk",
-  "website": "https://www.birmingham.gov.uk/directory_record/5155/walmley_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "Closed for lunch 1-2pm",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.54041,
-  "longitude": -1.8008,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "birmingham",
+  "source_id": "2412",
+  "source_url": "https://libraryon.org/libraries/birmingham/walmley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/birmingham/walmley-library",
-  "authority": "birmingham"
+  "data": {
+    "Local authority": "Birmingham",
+    "Local authority code": "E08000025",
+    "Library name": "Walmley Library",
+    "Library code": null,
+    "Address 1": "Walmley Road, Birmingham, West Midlands, B76 1NP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B76 1NQ",
+    "Unique property reference number": null,
+    "Latitude": 52.54041,
+    "Longitude": -1.8008,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; BFI Replay",
+    "Phone number": "0121 464 1842",
+    "Email address": "walmley.library@birmingham.gov.uk",
+    "URL": "https://www.birmingham.gov.uk/directory_record/5155/walmley_library",
+    "Notes": "Closed for lunch 1-2pm"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

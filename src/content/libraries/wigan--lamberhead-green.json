@@ -1,125 +1,64 @@
 {
   "id": "lib_1ec884c7-678c-4051-b98b-37f7f6526e21",
-  "source_id": "1883",
-  "name": "Lamberhead Green",
   "slug": "lamberhead-green",
-  "address": "The Dean Trust Wigan, Greenhey, Orrell, Greater Manchester, WN5 0DQ",
-  "postcode": "WN5 0DQ",
-  "town": "Wigan",
-  "phone": "01942 705060",
-  "email": "lamberhead.library@wigan.gov.uk",
-  "website": "https://www.wigan.gov.uk/Resident/Libraries/Lamberhead-Green-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.54154,
-  "longitude": -2.68794,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "wigan",
+  "source_id": "1883",
+  "source_url": "https://libraryon.org/libraries/wigan/lamberhead-green",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wigan/lamberhead-green",
-  "authority": "wigan"
+  "data": {
+    "Local authority": "Wigan",
+    "Local authority code": "E08000010",
+    "Library name": "Lamberhead Green",
+    "Library code": null,
+    "Address 1": "The Dean Trust Wigan, Greenhey, Orrell, Greater Manchester, WN5 0DQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WN5 0DQ",
+    "Unique property reference number": 10014066515,
+    "Latitude": 53.54154,
+    "Longitude": -2.68794,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-14:00",
+    "Tuesday staffed hours": "09:00-14:00",
+    "Wednesday staffed hours": "09:00-14:00",
+    "Thursday staffed hours": "12:00-17:00",
+    "Friday staffed hours": "12:00-17:00",
+    "Saturday staffed hours": "09:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Books delivered; Hobby and interest groups; Digital lending",
+    "Phone number": "01942 705060",
+    "Email address": "lamberhead.library@wigan.gov.uk",
+    "URL": "https://www.wigan.gov.uk/Resident/Libraries/Lamberhead-Green-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

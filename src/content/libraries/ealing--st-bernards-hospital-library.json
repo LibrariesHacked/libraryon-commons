@@ -1,112 +1,71 @@
 {
   "id": "lib_95568cf1-34ca-4dab-ac7f-3949c27784fd",
-  "source_id": "3737",
-  "name": "St Bernard's Hospital Library",
   "slug": "st-bernards-hospital-library",
-  "address": "Patient's Library, St Bernard's Hospital, Uxbridge Road, Southall, London UB1 3EU",
-  "postcode": "UB1 3EW",
-  "town": "Southall",
-  "phone": "020 8354 8518",
-  "email": "HospitalLibrary@ealing.gov.uk",
-  "website": "https://www.ealing.gov.uk/info/201241/find_your_library/2405/st_bernards_hospital_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.50921,
-  "longitude": -0.34797,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "ealing",
+  "source_id": "3737",
+  "source_url": "https://libraryon.org/libraries/ealing/st-bernards-hospital-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/ealing/st-bernards-hospital-library",
-  "authority": "ealing"
+  "data": {
+    "Local authority": "Ealing",
+    "Local authority code": "E09000009",
+    "Library name": "St Bernard's Hospital Library",
+    "Library code": null,
+    "Address 1": "Patient's Library, St Bernard's Hospital, Uxbridge Road, Southall, London UB1 3EU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "UB1 3EW",
+    "Unique property reference number": null,
+    "Latitude": 51.50921,
+    "Longitude": -0.34797,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30,13:30-16:30",
+    "Tuesday staffed hours": "09:30-12:30",
+    "Wednesday staffed hours": "09:30-12:30,13:30-16:30",
+    "Thursday staffed hours": "09:30-12:30",
+    "Friday staffed hours": "09:30-12:30,13:30-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi",
+    "Phone number": "020 8354 8518",
+    "Email address": "HospitalLibrary@ealing.gov.uk",
+    "URL": "https://www.ealing.gov.uk/info/201241/find_your_library/2405/st_bernards_hospital_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

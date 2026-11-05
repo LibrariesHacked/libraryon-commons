@@ -1,114 +1,64 @@
 {
   "id": "lib_864facc6-ec9d-4e38-baba-c331f7666ad9",
-  "source_id": "2176",
-  "name": "Shepley Library",
   "slug": "shepley-library",
-  "address": "8 Marsh Lane, Huddersfield, West Yorkshire, HD8 8AE",
-  "postcode": "HD8 8AE",
-  "town": "Huddersfield",
-  "phone": "01484 414868",
-  "email": "frontline.services@kirklees.gov.uk",
-  "website": "https://www.kirklees.gov.uk/Libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "step-free-access",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.584,
-  "longitude": -1.71042,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "kirklees",
+  "source_id": "2176",
+  "source_url": "https://libraryon.org/libraries/kirklees/shepley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kirklees/shepley-library",
-  "authority": "kirklees"
+  "data": {
+    "Local authority": "Kirklees",
+    "Local authority code": "E08000034",
+    "Library name": "Shepley Library",
+    "Library code": null,
+    "Address 1": "8 Marsh Lane, Huddersfield, West Yorkshire, HD8 8AE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HD8 8AE",
+    "Unique property reference number": 83100676,
+    "Latitude": 53.584,
+    "Longitude": -1.71042,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-17:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; British Newspaper Archive",
+    "Phone number": "01484 414868",
+    "Email address": "frontline.services@kirklees.gov.uk",
+    "URL": "https://www.kirklees.gov.uk/Libraries",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

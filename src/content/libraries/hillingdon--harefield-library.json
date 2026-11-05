@@ -1,149 +1,64 @@
 {
   "id": "lib_ee46532a-f042-486f-b22a-42ff34617457",
-  "source_id": "2353",
-  "name": "Harefield Library",
   "slug": "harefield-library",
-  "address": "Park Lane, Harefield, Middlesex, UB9 6BJ",
-  "postcode": "UB9 6BJ",
-  "town": "Uxbridge",
-  "phone": "01895 558184",
-  "email": "harefield-library@hillingdon.gov.uk",
-  "website": "https://www.hillingdon.gov.uk/harefieldlibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "Will be refurbished 2020/21",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.60456,
-  "longitude": -0.48356,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://spacehire.hillingdon.gov.uk/venues"
-    }
-  ],
+  "authority": "hillingdon",
+  "source_id": "2353",
+  "source_url": "https://libraryon.org/libraries/hillingdon/harefield-library",
   "updated_on": "2026-06-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hillingdon/harefield-library",
-  "authority": "hillingdon"
+  "data": {
+    "Local authority": "Hillingdon",
+    "Local authority code": "E09000017",
+    "Library name": "Harefield Library",
+    "Library code": null,
+    "Address 1": "Park Lane, Harefield, Middlesex, UB9 6BJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "UB9 6BJ",
+    "Unique property reference number": null,
+    "Latitude": 51.60456,
+    "Longitude": -0.48356,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-17:00",
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Digital lending; BFI Replay; Bookable space",
+    "Phone number": "01895 558184",
+    "Email address": "harefield-library@hillingdon.gov.uk",
+    "URL": "https://www.hillingdon.gov.uk/harefieldlibrary",
+    "Notes": "Will be refurbished 2020/21"
+  },
+  "validation_exceptions": []
 }

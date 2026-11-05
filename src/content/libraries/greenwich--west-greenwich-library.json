@@ -1,136 +1,71 @@
 {
   "id": "lib_8554f5f7-b90e-4371-857c-c59375881987",
-  "source_id": "2152",
-  "name": "West Greenwich Library",
   "slug": "west-greenwich-library",
-  "address": "Greenwich High Road, West Greenwich, SE10 8NN",
-  "postcode": "SE10 8NN",
-  "town": "London",
-  "phone": "020 8858 4289",
-  "email": "Greenwich.libraries@gll.org",
-  "website": "http://www.better.org.uk/areas/greenwich/venues/west-greenwich-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access",
-    "staff-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.478,
-  "longitude": -0.01127,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "greenwich",
+  "source_id": "2152",
+  "source_url": "https://libraryon.org/libraries/greenwich/west-greenwich-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/greenwich/west-greenwich-library",
-  "authority": "greenwich"
+  "data": {
+    "Local authority": "Greenwich",
+    "Local authority code": "E09000011",
+    "Library name": "West Greenwich Library",
+    "Library code": null,
+    "Address 1": "Greenwich High Road, West Greenwich, SE10 8NN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE10 8NN",
+    "Unique property reference number": null,
+    "Latitude": 51.478,
+    "Longitude": -0.01127,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-19:00",
+    "Tuesday staffed hours": "09:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "14:00-17:30",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Books delivered; Children's activities; Digital skills sessions; Bookable space; Family history; Findmypast; British Newspaper Archive; BFI Replay",
+    "Phone number": "020 8858 4289",
+    "Email address": "Greenwich.libraries@gll.org",
+    "URL": "http://www.better.org.uk/areas/greenwich/venues/west-greenwich-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

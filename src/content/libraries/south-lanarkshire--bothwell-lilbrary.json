@@ -1,122 +1,71 @@
 {
   "id": "lib_7dd86205-1347-4074-9d49-8db923d8d351",
-  "source_id": "222",
-  "name": "Bothwell Lilbrary",
   "slug": "bothwell-lilbrary",
-  "address": "The Donald Institute, 2 Main Street, Bothwell, G71 8RG",
-  "postcode": "G71 8RF",
-  "town": "Glasgow",
-  "phone": "07825850943",
-  "email": "bothwell@library.s-lanark.org.uk",
-  "website": "http://www.slleisureandculture.co.uk/info/76/bothwell_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:15",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:15"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.8022,
-  "longitude": -4.06566,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "south-lanarkshire",
+  "source_id": "222",
+  "source_url": "https://libraryon.org/libraries/south-lanarkshire/bothwell-lilbrary",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-lanarkshire/bothwell-lilbrary",
-  "authority": "south-lanarkshire"
+  "data": {
+    "Local authority": "South Lanarkshire",
+    "Local authority code": "S12000029",
+    "Library name": "Bothwell Lilbrary",
+    "Library code": null,
+    "Address 1": "The Donald Institute, 2 Main Street, Bothwell, G71 8RG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "G71 8RF",
+    "Unique property reference number": null,
+    "Latitude": 55.8022,
+    "Longitude": -4.06566,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:15-12:30,13:30-17:00",
+    "Wednesday staffed hours": "09:15-13:00",
+    "Thursday staffed hours": "09:15-12:30,13:30-17:00",
+    "Friday staffed hours": "09:15-13:00",
+    "Saturday staffed hours": "09:15-12:15",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay",
+    "Phone number": "07825850943",
+    "Email address": "bothwell@library.s-lanark.org.uk",
+    "URL": "http://www.slleisureandculture.co.uk/info/76/bothwell_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,135 +1,71 @@
 {
   "id": "lib_41606aea-34aa-435b-9737-834b41b393fe",
-  "source_id": "1970",
-  "name": "Garston",
   "slug": "garston",
-  "address": "Bowden Road, Garston, Merseyside, L19 1QN",
-  "postcode": "L19 1QG",
-  "town": "Liverpool",
-  "phone": "01512333069",
-  "email": "garston.library@liverpool.gov.uk",
-  "website": "https://liverpool.gov.uk/libraries/local-libraries/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "lift-access",
-    "automatic-doors",
-    "accessible-parking",
-    "wheelchair-access",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.35841,
-  "longitude": -2.9058,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Faxing",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "liverpool",
+  "source_id": "1970",
+  "source_url": "https://libraryon.org/libraries/liverpool/garston",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/liverpool/garston",
-  "authority": "liverpool"
+  "data": {
+    "Local authority": "Liverpool",
+    "Local authority code": "E08000012",
+    "Library name": "Garston",
+    "Library code": null,
+    "Address 1": "Bowden Road, Garston, Merseyside, L19 1QN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "L19 1QG",
+    "Unique property reference number": null,
+    "Latitude": 53.35841,
+    "Longitude": -2.9058,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-16:30",
+    "Tuesday staffed hours": "09:00-16:30",
+    "Wednesday staffed hours": "09:00-16:30",
+    "Thursday staffed hours": "09:00-16:30",
+    "Friday staffed hours": "09:00-16:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Faxing; Children's activities; Hobby and interest groups; British Newspaper Archive; Findmypast; BFI Replay",
+    "Phone number": "01512333069",
+    "Email address": "garston.library@liverpool.gov.uk",
+    "URL": "https://liverpool.gov.uk/libraries/local-libraries/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

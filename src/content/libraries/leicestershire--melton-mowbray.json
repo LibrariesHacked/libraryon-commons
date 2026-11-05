@@ -1,140 +1,73 @@
 {
   "id": "lib_7c485f1c-a007-4029-9dfa-81e23f9362a6",
-  "source_id": "1509",
-  "name": "Melton Mowbray",
   "slug": "melton-mowbray",
-  "address": "Wilton Road, Melton Mowbray, Leicestershire, LE13 0UJ",
-  "postcode": "LE13 0UJ",
-  "town": "Melton Mowbray",
-  "phone": "0116 305 3646",
-  "email": "meltonmowbraylibrary@leics.gov.uk",
-  "website": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/melton-mowbray-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "automatic-doors",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.765719,
-  "longitude": -0.889394,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "leicestershire",
+  "source_id": "1509",
+  "source_url": "https://libraryon.org/libraries/leicestershire/melton-mowbray",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicestershire/melton-mowbray",
-  "authority": "leicestershire"
+  "data": {
+    "Local authority": "Leicestershire",
+    "Local authority code": "E10000018",
+    "Library name": "Melton Mowbray",
+    "Library code": null,
+    "Address 1": "Wilton Road, Melton Mowbray, Leicestershire, LE13 0UJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE13 0UJ",
+    "Unique property reference number": null,
+    "Latitude": 52.765719,
+    "Longitude": -0.889394,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Digital lending; Children's activities; Hobby and interest groups; Computers; Photocopiers; Family history; Books delivered",
+    "Phone number": "0116 305 3646",
+    "Email address": "meltonmowbraylibrary@leics.gov.uk",
+    "URL": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/melton-mowbray-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_f230ca19089528e810afd0f6"
+      ]
+    }
+  ]
 }

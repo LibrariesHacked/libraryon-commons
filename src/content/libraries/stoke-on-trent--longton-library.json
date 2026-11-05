@@ -1,151 +1,64 @@
 {
   "id": "lib_51e965ee-3ff0-4ace-ade7-52ac28692baf",
-  "source_id": "3112",
-  "name": "Longton Library",
   "slug": "longton-library",
-  "address": "Sutherland Institute, Lightwood Road, Stoke-on-Trent, Staffordshire , ST3 4HY",
-  "postcode": "ST3 4HY",
-  "town": "Stoke-on-Trent",
-  "phone": "01782 238424",
-  "email": "Longton.library@stoke.gov.uk",
-  "website": "https://librariesonline.stoke.gov.uk/iguana/www.main.cls?surl=Redesign_LongtonLibrary",
-  "catalogue": "https://librariesonline.stoke.gov.uk/iguana/www.main.cls?surl=search",
-  "joinOnline": "https://www.stoke.gov.uk/info/20036/libraries/68/how_to_join_the_library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "automatic-doors",
-    "accessible-parking",
-    "hearing-loop-system",
-    "assistive-technology-available",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "industrial"
-  ],
-  "virtualTourUrl": "https://my.360picture.uk/tour/sot-libraries-longton",
-  "permanentlyClosed": false,
-  "latitude": 52.983723,
-  "longitude": -2.132684,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://librariesonline.stoke.gov.uk/iguana/www.main.cls?p=371f7dc0-e3f3-4806-a7e6-f651620cdc0d&v=152b68f7-3701-4fb9-8ab7-2707744118ca"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://librariesonline.stoke.gov.uk/iguana/www.main.cls?p=371f7dc0-e3f3-4806-a7e6-f651620cdc0d&v=4a9399d3-365a-41fc-8489-4c5d9564d82b"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://librariesonline.stoke.gov.uk/iguana/www.main.cls?p=371f7dc0-e3f3-4806-a7e6-f651620cdc0d&v=88e70254-ab30-4c60-a137-7b7b72d61003"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "stoke-on-trent",
+  "source_id": "3112",
+  "source_url": "https://libraryon.org/libraries/stoke-on-trent/longton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stoke-on-trent/longton-library",
-  "authority": "stoke-on-trent"
+  "data": {
+    "Local authority": "Stoke-on-Trent",
+    "Local authority code": "E06000021",
+    "Library name": "Longton Library",
+    "Library code": null,
+    "Address 1": "Sutherland Institute, Lightwood Road, Stoke-on-Trent, Staffordshire , ST3 4HY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ST3 4HY",
+    "Unique property reference number": null,
+    "Latitude": 52.983723,
+    "Longitude": -2.132684,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:30,13:30-17:00",
+    "Tuesday staffed hours": "09:00-12:30,13:30-17:00",
+    "Wednesday staffed hours": "09:00-12:30,13:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-12:30,13:30-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "industrial",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Computers; Photocopiers; Scanning; Digital skills sessions; Children's activities; Books delivered; BFI Replay",
+    "Phone number": "01782 238424",
+    "Email address": "Longton.library@stoke.gov.uk",
+    "URL": "https://librariesonline.stoke.gov.uk/iguana/www.main.cls?surl=Redesign_LongtonLibrary",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

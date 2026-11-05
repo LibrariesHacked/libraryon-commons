@@ -1,105 +1,64 @@
 {
   "id": "lib_b6a0ed52-1ea8-48b6-b862-0239e240e128",
-  "source_id": "3299",
-  "name": "East Cowes Community Library",
   "slug": "east-cowes-community-library",
-  "address": "East Cowes Town Hall, York Avenue, East Cowes, Isle of Wight, PO32 6RU",
-  "postcode": "PO32 6RU",
-  "town": "East Cowes",
-  "phone": "01983 299082",
-  "email": "library@eastcowestowncouncil.co.uk",
-  "website": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/east-cowes-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.7576,
-  "longitude": -1.2875,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "isle-of-wight",
+  "source_id": "3299",
+  "source_url": "https://libraryon.org/libraries/isle-of-wight/east-cowes-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-wight/east-cowes-community-library",
-  "authority": "isle-of-wight"
+  "data": {
+    "Local authority": "Isle of Wight",
+    "Local authority code": "E06000046",
+    "Library name": "East Cowes Community Library",
+    "Library code": null,
+    "Address 1": "East Cowes Town Hall, York Avenue, East Cowes, Isle of Wight, PO32 6RU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO32 6RU",
+    "Unique property reference number": null,
+    "Latitude": 50.7576,
+    "Longitude": -1.2875,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2011,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Photocopiers",
+    "Phone number": "01983 299082",
+    "Email address": "library@eastcowestowncouncil.co.uk",
+    "URL": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/east-cowes-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

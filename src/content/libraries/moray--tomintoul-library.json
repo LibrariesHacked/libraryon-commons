@@ -1,87 +1,71 @@
 {
   "id": "lib_2af580da-d0bf-4904-9521-dd7d1dd12ee0",
-  "source_id": "466",
-  "name": "Tomintoul Library",
   "slug": "tomintoul-library",
-  "address": "Tomintoul Primary School, Cults Drive, Tomintoul, AB37 9HA",
-  "postcode": "AB37 9HA",
-  "town": "Ballindalloch",
-  "phone": "01807 580755",
-  "email": "tomintoul.library@moray.gov.uk",
-  "website": "http://www.moray.gov.uk/moray_standard/page_39973.html",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.25414,
-  "longitude": -3.38239,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "moray",
+  "source_id": "466",
+  "source_url": "https://libraryon.org/libraries/moray/tomintoul-library",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/moray/tomintoul-library",
-  "authority": "moray"
+  "data": {
+    "Local authority": "Moray",
+    "Local authority code": "S12000020",
+    "Library name": "Tomintoul Library",
+    "Library code": null,
+    "Address 1": "Tomintoul Primary School, Cults Drive, Tomintoul, AB37 9HA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB37 9HA",
+    "Unique property reference number": null,
+    "Latitude": 57.25414,
+    "Longitude": -3.38239,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "15:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": "01807 580755",
+    "Email address": "tomintoul.library@moray.gov.uk",
+    "URL": "http://www.moray.gov.uk/moray_standard/page_39973.html",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,134 +1,64 @@
 {
   "id": "lib_aab43bd6-6351-45b0-8e1d-3cd8fff6ecfe",
-  "source_id": "3441",
-  "name": "Wylam Library",
   "slug": "wylam-library",
-  "address": "Falcon Community Centre, Falcon Terrace,  Wylam, Northumberland, NE41 8EE",
-  "postcode": "NE41 8EE",
-  "town": "Wylam",
-  "phone": "01661 852174",
-  "email": "wylam.library@northumberland.gov.uk",
-  "website": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=WYL",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.97717,
-  "longitude": -1.81606,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "northumberland",
+  "source_id": "3441",
+  "source_url": "https://libraryon.org/libraries/northumberland/wylam-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/northumberland/wylam-library",
-  "authority": "northumberland"
+  "data": {
+    "Local authority": "Northumberland",
+    "Local authority code": "E06000057",
+    "Library name": "Wylam Library",
+    "Library code": null,
+    "Address 1": "Falcon Community Centre, Falcon Terrace,  Wylam, Northumberland, NE41 8EE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE41 8EE",
+    "Unique property reference number": null,
+    "Latitude": 54.97717,
+    "Longitude": -1.81606,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:30-12:30,13:30-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:30-12:30,13:30-16:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Digital lending; Family history; Books delivered; Computers; Scanning; Hobby and interest groups",
+    "Phone number": "01661 852174",
+    "Email address": "wylam.library@northumberland.gov.uk",
+    "URL": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=WYL",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

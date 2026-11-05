@@ -1,74 +1,71 @@
 {
   "id": "lib_b27ae178-f9f8-47ed-a1a3-d96febfdb521",
-  "source_id": "1673",
-  "name": "Irby",
   "slug": "irby",
-  "address": "Thurstaston Road, Irby, Merseyside, CH61 0HE",
-  "postcode": "CH61 0HE",
-  "town": "Wirral",
-  "phone": "",
-  "email": "libraries@wirral.gov.uk",
-  "website": "http://wirral.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.35311,
-  "longitude": -3.12124,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "wirral",
+  "source_id": "1673",
+  "source_url": "https://libraryon.org/libraries/wirral/irby",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wirral/irby",
-  "authority": "wirral"
+  "data": {
+    "Local authority": "Wirral",
+    "Local authority code": "E08000015",
+    "Library name": "Irby",
+    "Library code": null,
+    "Address 1": "Thurstaston Road, Irby, Merseyside, CH61 0HE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CH61 0HE",
+    "Unique property reference number": null,
+    "Latitude": 53.35311,
+    "Longitude": -3.12124,
+    "Status": "Closed (permanent)",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": 1964,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast",
+    "Phone number": null,
+    "Email address": "libraries@wirral.gov.uk",
+    "URL": "http://wirral.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

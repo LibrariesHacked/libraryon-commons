@@ -1,135 +1,64 @@
 {
   "id": "lib_7b39b974-e32e-4cd4-9b35-230903917092",
-  "source_id": "2928",
-  "name": "Central Library & Archives Halifax",
   "slug": "central-library-archives-halifax",
-  "address": "Square Road, Halifax, West Yorkshire, HX1 1QG",
-  "postcode": "HX1 1QG",
-  "town": "Halifax",
-  "phone": "",
-  "email": "CentralLibraryOpsTeam@calderdale.gov.uk",
-  "website": "https://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/your-local-library/central-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "lift-access",
-    "guide-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "archives"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.7224,
-  "longitude": -1.85507,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://new.calderdale.gov.uk/libraries/library-meeting-rooms"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "calderdale",
+  "source_id": "2928",
+  "source_url": "https://libraryon.org/libraries/calderdale/central-library-archives-halifax",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/calderdale/central-library-archives-halifax",
-  "authority": "calderdale"
+  "data": {
+    "Local authority": "Calderdale",
+    "Local authority code": "E08000033",
+    "Library name": "Central Library & Archives Halifax",
+    "Library code": null,
+    "Address 1": "Square Road, Halifax, West Yorkshire, HX1 1QG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HX1 1QG",
+    "Unique property reference number": null,
+    "Latitude": 53.7224,
+    "Longitude": -1.85507,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2017,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:30",
+    "Tuesday staffed hours": "10:00-17:30",
+    "Wednesday staffed hours": "10:00-17:30",
+    "Thursday staffed hours": "10:00-18:30",
+    "Friday staffed hours": "10:00-17:30",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Family history; Bookable space; British Newspaper Archive; Findmypast",
+    "Phone number": null,
+    "Email address": "CentralLibraryOpsTeam@calderdale.gov.uk",
+    "URL": "https://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/your-local-library/central-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

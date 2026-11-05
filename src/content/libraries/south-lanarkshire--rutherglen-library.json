@@ -1,119 +1,71 @@
 {
   "id": "lib_b2437f7d-a12b-4405-a414-2c688b867c11",
-  "source_id": "297",
-  "name": "Rutherglen Library",
   "slug": "rutherglen-library",
-  "address": "163 Main Street, Rutherglen, Glasgow, G73 2HB, United Kingdom",
-  "postcode": "G73 2HB",
-  "town": "Glasgow",
-  "phone": "0141 643 1296",
-  "email": "rutherglen@library.s-lanark.org.uk",
-  "website": "http://www.slleisureandculture.co.uk/info/92/rutherglen_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "dda-compliant",
-    "service-dog-friendly",
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.82867,
-  "longitude": -4.21359,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "south-lanarkshire",
+  "source_id": "297",
+  "source_url": "https://libraryon.org/libraries/south-lanarkshire/rutherglen-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-lanarkshire/rutherglen-library",
-  "authority": "south-lanarkshire"
+  "data": {
+    "Local authority": "South Lanarkshire",
+    "Local authority code": "S12000029",
+    "Library name": "Rutherglen Library",
+    "Library code": null,
+    "Address 1": "163 Main Street, Rutherglen, Glasgow, G73 2HB, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "G73 2HB",
+    "Unique property reference number": 484129723,
+    "Latitude": 55.82867,
+    "Longitude": -4.21359,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:15-17:00",
+    "Tuesday staffed hours": "09:15-17:00",
+    "Wednesday staffed hours": "09:15-17:00",
+    "Thursday staffed hours": "09:15-20:00",
+    "Friday staffed hours": "09:15-17:00",
+    "Saturday staffed hours": "09:15-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "0141 643 1296",
+    "Email address": "rutherglen@library.s-lanark.org.uk",
+    "URL": "http://www.slleisureandculture.co.uk/info/92/rutherglen_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

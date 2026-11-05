@@ -1,117 +1,71 @@
 {
   "id": "lib_795b42b8-fef8-4075-be45-eec23d0b5695",
-  "source_id": "3731",
-  "name": "Winton Library",
   "slug": "winton",
-  "address": "624 Wimborne Road Bournemouth BH9 2EN",
-  "postcode": "BH9 2QH",
-  "town": "Bournemouth",
-  "phone": "01202 127 700",
-  "email": "wintonlibrary@bcpcouncil.gov.uk",
-  "website": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/winton-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.746664978685374,
-  "longitude": -1.8783720004427948,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    }
-  ],
+  "authority": "bournemouth-christchurch-and-poole",
+  "source_id": "3731",
+  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/winton",
   "updated_on": "2026-02-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/winton",
-  "authority": "bournemouth-christchurch-and-poole"
+  "data": {
+    "Local authority": "Bournemouth, Christchurch and Poole",
+    "Local authority code": "E06000058",
+    "Library name": "Winton Library",
+    "Library code": null,
+    "Address 1": "624 Wimborne Road Bournemouth BH9 2EN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BH9 2QH",
+    "Unique property reference number": null,
+    "Latitude": 50.746664978685374,
+    "Longitude": -1.8783720004427948,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-18:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Printing; Hobby and interest groups; Computers; Photocopiers; BFI Replay; British Newspaper Archive; Garden",
+    "Phone number": "01202 127 700",
+    "Email address": "wintonlibrary@bcpcouncil.gov.uk",
+    "URL": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/winton-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

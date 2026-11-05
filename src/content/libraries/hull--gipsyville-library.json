@@ -1,121 +1,71 @@
 {
   "id": "lib_2c8d0329-33a1-42bb-8a71-b06d73f0bca3",
-  "source_id": "2555",
-  "name": "Gipsyville Library",
   "slug": "gipsyville-library",
-  "address": "728-730 Hessle High Road, Hull, East Riding of Yorkshire, HU4 6JA",
-  "postcode": "HU4 6LJ",
-  "town": "Hull",
-  "phone": "01482 616 973",
-  "email": "Gipsyville.Library@hcandl.co.uk",
-  "website": "https://www.hulllibraries.co.uk/local-library/gipsyville-library",
-  "catalogue": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
-  "joinOnline": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "hearing-loop-system",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "community",
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.73319,
-  "longitude": -0.3877,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.hulllibraries.co.uk/borrowing/DigitalReadingandListening"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.hulllibraries.co.uk/children"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.hulllibraries.co.uk/borrowing/home-library-service#:~:text=If%20you%20have%20difficulty%20getting,libraries%20right%20to%20your%20door.&text=Joining%20is%20easy%20and%20membership,of%20the%20items%20you%20borrow."
-    }
-  ],
+  "authority": "hull",
+  "source_id": "2555",
+  "source_url": "https://libraryon.org/libraries/hull/gipsyville-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hull/gipsyville-library",
-  "authority": "hull"
+  "data": {
+    "Local authority": "Hull",
+    "Local authority code": "E06000010",
+    "Library name": "Gipsyville Library",
+    "Library code": null,
+    "Address 1": "728-730 Hessle High Road, Hull, East Riding of Yorkshire, HU4 6JA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HU4 6LJ",
+    "Unique property reference number": null,
+    "Latitude": 53.73319,
+    "Longitude": -0.3877,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; Computers; Digital lending; Children's activities; Books delivered",
+    "Phone number": "01482 616 973",
+    "Email address": "Gipsyville.Library@hcandl.co.uk",
+    "URL": "https://www.hulllibraries.co.uk/local-library/gipsyville-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

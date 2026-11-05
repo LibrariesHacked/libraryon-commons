@@ -1,104 +1,71 @@
 {
   "id": "lib_a303bdfd-3845-4713-9b90-eb2f69ac9b13",
-  "source_id": "2711",
-  "name": "The Gingerbread House Library",
   "slug": "humberston-library",
-  "address": "The Gingerbread House, Church Lane, Humberston , NE Lincolnshire, DN36 4HT",
-  "postcode": "DN36 4HT",
-  "town": "Grimsby",
-  "phone": "01472 592616",
-  "email": "",
-  "website": "https://gingerbreadlibrary.wixsite.com/library",
-  "catalogue": "https://gingerbreadlibrary.wixsite.com/library/all-books",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "catering"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.52915,
-  "longitude": -0.0232,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "north-east-lincolnshire",
+  "source_id": "2711",
+  "source_url": "https://libraryon.org/libraries/north-east-lincolnshire/humberston-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-east-lincolnshire/humberston-library",
-  "authority": "north-east-lincolnshire"
+  "data": {
+    "Local authority": "North East Lincolnshire",
+    "Local authority code": "E06000012",
+    "Library name": "The Gingerbread House Library",
+    "Library code": null,
+    "Address 1": "The Gingerbread House, Church Lane, Humberston , NE Lincolnshire, DN36 4HT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN36 4HT",
+    "Unique property reference number": null,
+    "Latitude": 53.52915,
+    "Longitude": -0.0232,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01472 592616",
+    "Email address": null,
+    "URL": "https://gingerbreadlibrary.wixsite.com/library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

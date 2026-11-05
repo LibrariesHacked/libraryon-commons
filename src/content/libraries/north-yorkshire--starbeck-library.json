@@ -1,141 +1,73 @@
 {
   "id": "lib_1c0995d9-86f7-4ca6-8206-5d9442a76146",
-  "source_id": "1582",
-  "name": "Starbeck Community Library",
   "slug": "starbeck-library",
-  "address": "68a High Street,Starbeck,  Harrogate, North Yorkshire, HG2 7LW",
-  "postcode": "HG2 7LW",
-  "town": "Harrogate",
-  "phone": " 01609 536662 ",
-  "email": "info.starbeckcl@gmail.com",
-  "website": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/starbeck-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.00178,
-  "longitude": -1.49546,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "north-yorkshire",
+  "source_id": "1582",
+  "source_url": "https://libraryon.org/libraries/north-yorkshire/starbeck-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-yorkshire/starbeck-library",
-  "authority": "north-yorkshire"
+  "data": {
+    "Local authority": "North Yorkshire",
+    "Local authority code": "E06000065",
+    "Library name": "Starbeck Community Library",
+    "Library code": null,
+    "Address 1": "68a High Street,Starbeck,  Harrogate, North Yorkshire, HG2 7LW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HG2 7LW",
+    "Unique property reference number": null,
+    "Latitude": 54.00178,
+    "Longitude": -1.49546,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Children's activities; Digital skills sessions; Computers; Bookable space; Photocopiers; Scanning; Hobby and interest groups",
+    "Phone number": "01609 536662",
+    "Email address": "info.starbeckcl@gmail.com",
+    "URL": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/starbeck-community-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_37e1e5da7c697fbce1f7a11b"
+      ]
+    }
+  ]
 }

@@ -1,98 +1,73 @@
 {
   "id": "lib_a473e630-6a7b-4e83-b6d2-6820aab7b931",
-  "source_id": "1074",
-  "name": "Boultham Community Hub Library",
   "slug": "boultham-community-hub-library",
-  "address": "Boultham Park Road, Lincoln, Lincolnshire, LN6 7ST",
-  "postcode": "LN6 7ST",
-  "town": "Lincoln",
-  "phone": "01522 782010",
-  "email": "",
-  "website": "https://www.lincolnshire.gov.uk/directory-record/63969/boultham-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "faith"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.21046,
-  "longitude": -0.56197,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "lincolnshire",
+  "source_id": "1074",
+  "source_url": "https://libraryon.org/libraries/lincolnshire/boultham-community-hub-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lincolnshire/boultham-community-hub-library",
-  "authority": "lincolnshire"
+  "data": {
+    "Local authority": "Lincolnshire",
+    "Local authority code": "E10000019",
+    "Library name": "Boultham Community Hub Library",
+    "Library code": null,
+    "Address 1": "Boultham Park Road, Lincoln, Lincolnshire, LN6 7ST",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LN6 7ST",
+    "Unique property reference number": null,
+    "Latitude": 53.21046,
+    "Longitude": -0.56197,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-16:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "faith",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Bookable space; BFI Replay",
+    "Phone number": "01522 782010",
+    "Email address": null,
+    "URL": "https://www.lincolnshire.gov.uk/directory-record/63969/boultham-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_dc6fbce3245039871a9419df"
+      ]
+    }
+  ]
 }

@@ -1,90 +1,73 @@
 {
   "id": "lib_50d79c13-08be-4378-9392-a8d18439db05",
-  "source_id": "1064",
-  "name": "Birchwood Community Hub Library",
   "slug": "birchwood-community-hub-library",
-  "address": "Larchwood Crescent, Lincoln, Lincolnshire, LN6 0NA",
-  "postcode": "LN6 0NA",
-  "town": "Lincoln",
-  "phone": "01522 782010",
-  "email": "",
-  "website": "https://www.lincolnshire.gov.uk/directory-record/63966/birchwood-library-and-community-hub",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "faith"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.21971,
-  "longitude": -0.60014,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "lincolnshire",
+  "source_id": "1064",
+  "source_url": "https://libraryon.org/libraries/lincolnshire/birchwood-community-hub-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lincolnshire/birchwood-community-hub-library",
-  "authority": "lincolnshire"
+  "data": {
+    "Local authority": "Lincolnshire",
+    "Local authority code": "E10000019",
+    "Library name": "Birchwood Community Hub Library",
+    "Library code": null,
+    "Address 1": "Larchwood Crescent, Lincoln, Lincolnshire, LN6 0NA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LN6 0NA",
+    "Unique property reference number": null,
+    "Latitude": 53.21971,
+    "Longitude": -0.60014,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2016,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "faith",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; BFI Replay",
+    "Phone number": "01522 782010",
+    "Email address": null,
+    "URL": "https://www.lincolnshire.gov.uk/directory-record/63966/birchwood-library-and-community-hub",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_8421cf9d4703d601b70590f5"
+      ]
+    }
+  ]
 }

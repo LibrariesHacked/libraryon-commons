@@ -1,116 +1,64 @@
 {
   "id": "lib_95b696a8-9ef0-42c7-9203-210b47573816",
-  "source_id": "2279",
-  "name": "Bilston Library",
   "slug": "bilston-library",
-  "address": "Mount Pleasant, Wolverhampton, West Midlands, WV14 7LU",
-  "postcode": "WV14 7LU",
-  "town": "Bilston",
-  "phone": "01902 556253",
-  "email": "libraries@wolverhampton.gov.uk",
-  "website": "https://www.wolverhampton.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "arts"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.56826,
-  "longitude": -2.071798,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.wolverhampton.gov.uk/libraries/room-hire"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "wolverhampton",
+  "source_id": "2279",
+  "source_url": "https://libraryon.org/libraries/wolverhampton/bilston-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wolverhampton/bilston-library",
-  "authority": "wolverhampton"
+  "data": {
+    "Local authority": "Wolverhampton",
+    "Local authority code": "E08000031",
+    "Library name": "Bilston Library",
+    "Library code": null,
+    "Address 1": "Mount Pleasant, Wolverhampton, West Midlands, WV14 7LU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WV14 7LU",
+    "Unique property reference number": 100071560116,
+    "Latitude": 52.56826,
+    "Longitude": -2.071798,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1937,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Bookable space; Photocopiers; Computers",
+    "Phone number": "01902 556253",
+    "Email address": "libraries@wolverhampton.gov.uk",
+    "URL": "https://www.wolverhampton.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

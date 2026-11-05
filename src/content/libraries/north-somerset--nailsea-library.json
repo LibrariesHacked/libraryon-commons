@@ -1,184 +1,64 @@
 {
   "id": "lib_3bc0de22-0fd8-47a5-88fc-4d97dba6b424",
-  "source_id": "3329",
-  "name": "Nailsea Library",
   "slug": "nailsea-library",
-  "address": "6-8 Colliers Walk, Nailsea, Somerset, BS48 1RH",
-  "postcode": "BS48 1RH",
-  "town": "Bristol",
-  "phone": "01934 426 030",
-  "email": "nailsea.library@n-somerset.gov.uk",
-  "website": "https://n-somerset.gov.uk/directories/libraries/nailsea-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "13:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.43278,
-  "longitude": -2.75953,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/computer-internet-access"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/computer-internet-access"
-    },
-    {
-      "service": "Family history",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/local-history-archives"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/bringing-library-you/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/young-peoples-library-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.librarieswest.org.uk/BorrowBox"
-    }
-  ],
+  "authority": "north-somerset",
+  "source_id": "3329",
+  "source_url": "https://libraryon.org/libraries/north-somerset/nailsea-library",
   "updated_on": "2026-09-10",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-somerset/nailsea-library",
-  "authority": "north-somerset"
+  "data": {
+    "Local authority": "North Somerset",
+    "Local authority code": "E06000024",
+    "Library name": "Nailsea Library",
+    "Library code": null,
+    "Address 1": "6-8 Colliers Walk, Nailsea, Somerset, BS48 1RH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS48 1RH",
+    "Unique property reference number": 24067030,
+    "Latitude": 51.43278,
+    "Longitude": -2.75953,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2023,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-20:00",
+    "Tuesday unstaffed hours": "08:00-10:00,10:00-17:00",
+    "Wednesday unstaffed hours": "08:00-09:30,17:15-20:00",
+    "Thursday unstaffed hours": "08:00-09:30,17:15-20:00",
+    "Friday unstaffed hours": "08:00-09:30,17:15-20:00",
+    "Saturday unstaffed hours": "08:00-09:30,13:15-20:00",
+    "Sunday unstaffed hours": "08:00-20:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Family history; Books delivered; Children's activities; Digital lending",
+    "Phone number": "01934 426 030",
+    "Email address": "nailsea.library@n-somerset.gov.uk",
+    "URL": "https://n-somerset.gov.uk/directories/libraries/nailsea-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

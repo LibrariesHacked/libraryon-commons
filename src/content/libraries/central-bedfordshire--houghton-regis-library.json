@@ -1,122 +1,64 @@
 {
   "id": "lib_42b74308-e5e0-4b1a-a322-808a22c089b7",
-  "source_id": "3254",
-  "name": "Houghton Regis Library",
   "slug": "houghton-regis-library",
-  "address": "Bedford Square, Houghton Regis, Bedfordshire, LU5 5ES",
-  "postcode": "LU5 5ES",
-  "town": "Dunstable",
-  "phone": "",
-  "email": "houghtonregis.library@centralbedfordshire.gov.uk",
-  "website": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "wheelchair-access",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.90498,
-  "longitude": -0.51938,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "central-bedfordshire",
+  "source_id": "3254",
+  "source_url": "https://libraryon.org/libraries/central-bedfordshire/houghton-regis-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/central-bedfordshire/houghton-regis-library",
-  "authority": "central-bedfordshire"
+  "data": {
+    "Local authority": "Central Bedfordshire",
+    "Local authority code": "E06000056",
+    "Library name": "Houghton Regis Library",
+    "Library code": null,
+    "Address 1": "Bedford Square, Houghton Regis, Bedfordshire, LU5 5ES",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LU5 5ES",
+    "Unique property reference number": 10001023308,
+    "Latitude": 51.90498,
+    "Longitude": -0.51938,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1966,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Children's activities; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "houghtonregis.library@centralbedfordshire.gov.uk",
+    "URL": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

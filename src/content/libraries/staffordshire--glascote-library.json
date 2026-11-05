@@ -1,127 +1,64 @@
 {
   "id": "lib_4dbd08b4-8c4f-4dfc-9534-a509209f6ff8",
-  "source_id": "1114",
-  "name": "Glascote Library",
   "slug": "glascote-library",
-  "address": "Caledonian, Tamworth, Staffordshire, B77 2ED",
-  "postcode": "B77 2ED",
-  "town": "Tamworth",
-  "phone": "01827 782122",
-  "email": "glascote.library@staffordshire.gov.uk",
-  "website": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/GlascoteLibrary/GlascoteLibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.62181,
-  "longitude": -1.6644,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "staffordshire",
+  "source_id": "1114",
+  "source_url": "https://libraryon.org/libraries/staffordshire/glascote-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/staffordshire/glascote-library",
-  "authority": "staffordshire"
+  "data": {
+    "Local authority": "Staffordshire",
+    "Local authority code": "E10000028",
+    "Library name": "Glascote Library",
+    "Library code": null,
+    "Address 1": "Caledonian, Tamworth, Staffordshire, B77 2ED",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B77 2ED",
+    "Unique property reference number": 394036928,
+    "Latitude": 52.62181,
+    "Longitude": -1.6644,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Digital skills sessions; Family history; Photocopiers; Scanning; Hobby and interest groups",
+    "Phone number": "01827 782122",
+    "Email address": "glascote.library@staffordshire.gov.uk",
+    "URL": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/GlascoteLibrary/GlascoteLibrary.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

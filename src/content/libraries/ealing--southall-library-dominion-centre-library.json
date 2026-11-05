@@ -1,139 +1,64 @@
 {
   "id": "lib_ff4e119d-2818-498b-a5af-cb5d8f963eb6",
-  "source_id": "2492",
-  "name": "Southall Library (Dominion Centre & Library)",
   "slug": "southall-library-dominion-centre-library",
-  "address": "112 The Green, Southall, Middlesex, UB2 4BQ",
-  "postcode": "UB2 4BQ",
-  "town": "Southall",
-  "phone": "020 8825 6540",
-  "email": "southalllibrary@ealing.gov.uk",
-  "website": "https://www.ealing.gov.uk/info/201241/find_your_library/2404/southall_library_and_dominion_centre",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "hearing-loop-system",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "archives",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.50273,
-  "longitude": -0.38195,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "ealing",
+  "source_id": "2492",
+  "source_url": "https://libraryon.org/libraries/ealing/southall-library-dominion-centre-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/ealing/southall-library-dominion-centre-library",
-  "authority": "ealing"
+  "data": {
+    "Local authority": "Ealing",
+    "Local authority code": "E09000009",
+    "Library name": "Southall Library (Dominion Centre & Library)",
+    "Library code": null,
+    "Address 1": "112 The Green, Southall, Middlesex, UB2 4BQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "UB2 4BQ",
+    "Unique property reference number": null,
+    "Latitude": 51.50273,
+    "Longitude": -0.38195,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2014,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "13:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Bookable space; Digital skills sessions; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "020 8825 6540",
+    "Email address": "southalllibrary@ealing.gov.uk",
+    "URL": "https://www.ealing.gov.uk/info/201241/find_your_library/2404/southall_library_and_dominion_centre",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

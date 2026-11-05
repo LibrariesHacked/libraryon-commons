@@ -1,101 +1,71 @@
 {
   "id": "lib_0ef4518e-5cda-4c94-abd5-24d60354491a",
-  "source_id": "78",
-  "name": "Duns Library Contact Centre",
   "slug": "duns-library-contact-centre",
-  "address": "40 Newtown Street, Duns, TD11 3AU, United Kingdom",
-  "postcode": "TD11 3AU",
-  "town": "Duns",
-  "phone": "0300 100 1800",
-  "email": "customeradvice@scotborders.gov.uk",
-  "website": "http://www.liveborders.org.uk/libraries_and_archives(1)/libraries/find_your_nearest_library/duns_library_contact_centre(1).aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "assistive-technology-available",
-    "accessible-restrooms"
-  ],
-  "notes": "Saturday (Every 2nd and 4th Sat of the month): 09:00 – 12:00",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.77783,
-  "longitude": -2.34819,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "scottish-borders",
+  "source_id": "78",
+  "source_url": "https://libraryon.org/libraries/scottish-borders/duns-library-contact-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/scottish-borders/duns-library-contact-centre",
-  "authority": "scottish-borders"
+  "data": {
+    "Local authority": "Scottish Borders",
+    "Local authority code": "S12000026",
+    "Library name": "Duns Library Contact Centre",
+    "Library code": null,
+    "Address 1": "40 Newtown Street, Duns, TD11 3AU, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TD11 3AU",
+    "Unique property reference number": null,
+    "Latitude": 55.77783,
+    "Longitude": -2.34819,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "12:30-17:00",
+    "Tuesday staffed hours": "12:30-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-12:30",
+    "Friday staffed hours": "10:00-15:00",
+    "Saturday staffed hours": "09:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "0300 100 1800",
+    "Email address": "customeradvice@scotborders.gov.uk",
+    "URL": "http://www.liveborders.org.uk/libraries_and_archives(1)/libraries/find_your_nearest_library/duns_library_contact_centre(1).aspx",
+    "Notes": "Saturday (Every 2nd and 4th Sat of the month): 09:00 – 12:00"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

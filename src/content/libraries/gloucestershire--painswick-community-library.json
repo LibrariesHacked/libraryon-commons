@@ -1,135 +1,64 @@
 {
   "id": "lib_88a052e1-5028-41c4-87fb-467b9f5ea274",
-  "source_id": "973",
-  "name": "Painswick Community Library",
   "slug": "painswick-community-library",
-  "address": "Town Hall, Victoria Square, Painswick, Gloucestershire, GL6 6QA",
-  "postcode": "GL6 6QA",
-  "town": "Stroud",
-  "phone": "01452 814744",
-  "email": "painswicklibrary@btconnect.com",
-  "website": "https://gloslibraries.uk/library/painswick-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "18:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.785865,
-  "longitude": -2.194236,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "gloucestershire",
+  "source_id": "973",
+  "source_url": "https://libraryon.org/libraries/gloucestershire/painswick-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/gloucestershire/painswick-community-library",
-  "authority": "gloucestershire"
+  "data": {
+    "Local authority": "Gloucestershire",
+    "Local authority code": "E10000013",
+    "Library name": "Painswick Community Library",
+    "Library code": null,
+    "Address 1": "Town Hall, Victoria Square, Painswick, Gloucestershire, GL6 6QA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GL6 6QA",
+    "Unique property reference number": 100121257063,
+    "Latitude": 51.785865,
+    "Longitude": -2.194236,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2012,
+    "Year closed": null,
+    "Monday staffed hours": "14:30-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:30-12:30,14:30-18:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:30-12:30,14:30-16:30",
+    "Saturday staffed hours": "10:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Books delivered; Digital lending; Digital skills sessions; Hobby and interest groups; Family history",
+    "Phone number": "01452 814744",
+    "Email address": "painswicklibrary@btconnect.com",
+    "URL": "https://gloslibraries.uk/library/painswick-community-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

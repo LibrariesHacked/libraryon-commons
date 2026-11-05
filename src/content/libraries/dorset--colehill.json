@@ -1,131 +1,64 @@
 {
   "id": "lib_ae887f8e-2203-4672-bc3f-0aef7c990c3e",
-  "source_id": "3486",
-  "name": "Colehill Community Library",
   "slug": "colehill",
-  "address": "Middlehill Road, Wimborne, Dorset, BH21 2HL",
-  "postcode": "BH21 2HL",
-  "town": "Wimborne",
-  "phone": "01202 886676",
-  "email": "clerk@colehill.gove.uk",
-  "website": "https://colehill.gov.uk/about-colehill/colehill-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.80775,
-  "longitude": -1.95102,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "dorset",
+  "source_id": "3486",
+  "source_url": "https://libraryon.org/libraries/dorset/colehill",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dorset/colehill",
-  "authority": "dorset"
+  "data": {
+    "Local authority": "Dorset",
+    "Local authority code": "E06000059",
+    "Library name": "Colehill Community Library",
+    "Library code": null,
+    "Address 1": "Middlehill Road, Wimborne, Dorset, BH21 2HL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BH21 2HL",
+    "Unique property reference number": null,
+    "Latitude": 50.80775,
+    "Longitude": -1.95102,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "09:30-12:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Family history; Books delivered; Digital lending; Hobby and interest groups",
+    "Phone number": "01202 886676",
+    "Email address": "clerk@colehill.gove.uk",
+    "URL": "https://colehill.gov.uk/about-colehill/colehill-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

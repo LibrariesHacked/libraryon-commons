@@ -1,96 +1,71 @@
 {
   "id": "lib_234c5217-99a9-4e3b-a06c-245a8e9fa585",
-  "source_id": "221",
-  "name": "Kelty Library",
   "slug": "kelty-library",
-  "address": "Kelty Library, 90-92 Main Street, Kelty, KY4 0AQ",
-  "postcode": "KY4 0BB",
-  "town": "Kelty",
-  "phone": "01383 602367",
-  "email": "kelty.library@onfife.com",
-  "website": "http://onfife.com/venues/kelty-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.142867,
-  "longitude": -3.386996,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "fife",
+  "source_id": "221",
+  "source_url": "https://libraryon.org/libraries/fife/kelty-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/fife/kelty-library",
-  "authority": "fife"
+  "data": {
+    "Local authority": "Fife",
+    "Local authority code": "S12000047",
+    "Library name": "Kelty Library",
+    "Library code": null,
+    "Address 1": "Kelty Library, 90-92 Main Street, Kelty, KY4 0AQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KY4 0BB",
+    "Unique property reference number": null,
+    "Latitude": 56.142867,
+    "Longitude": -3.386996,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-12:30,13:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-12:30,13:30-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
+    "Phone number": "01383 602367",
+    "Email address": "kelty.library@onfife.com",
+    "URL": "http://onfife.com/venues/kelty-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

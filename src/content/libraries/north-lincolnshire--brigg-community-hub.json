@@ -1,127 +1,64 @@
 {
   "id": "lib_e7968ffd-8caf-43c2-b68d-eee9d0c1532d",
-  "source_id": "2504",
-  "name": "Brigg Library",
   "slug": "brigg-community-hub",
-  "address": "The Angel, Market Place, Brigg, North Lincolnshire, DN20 8LD",
-  "postcode": "DN20 8LD",
-  "town": "Brigg",
-  "phone": "01724 296776",
-  "email": "library.enquiries@northlincs.gov.uk",
-  "website": "https://www.opac.northlincs.gov.uk/-/brigg-library#/?location=Brigg%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Previously listed as Brigg Community Hub, SW renamed 18.3.25 ",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "community",
-    "museum",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.55183,
-  "longitude": -0.49304,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "north-lincolnshire",
+  "source_id": "2504",
+  "source_url": "https://libraryon.org/libraries/north-lincolnshire/brigg-community-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-lincolnshire/brigg-community-hub",
-  "authority": "north-lincolnshire"
+  "data": {
+    "Local authority": "North Lincolnshire",
+    "Local authority code": "E06000013",
+    "Library name": "Brigg Library",
+    "Library code": null,
+    "Address 1": "The Angel, Market Place, Brigg, North Lincolnshire, DN20 8LD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN20 8LD",
+    "Unique property reference number": 10024384197,
+    "Latitude": 53.55183,
+    "Longitude": -0.49304,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2012,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community; museum; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; British Newspaper Archive; Findmypast",
+    "Phone number": "01724 296776",
+    "Email address": "library.enquiries@northlincs.gov.uk",
+    "URL": "https://www.opac.northlincs.gov.uk/-/brigg-library#/?location=Brigg%20Library",
+    "Notes": "Previously listed as Brigg Community Hub, SW renamed 18.3.25"
+  },
+  "validation_exceptions": []
 }

@@ -1,166 +1,73 @@
 {
   "id": "lib_09a72843-9dbc-4d23-be44-702ec8b4135d",
-  "source_id": "3359",
-  "name": "Bradley Stoke",
   "slug": "bradley-stoke",
-  "address": "Fiddlers Wood Lane, Bradley Stoke, South Gloucestershire, BS32 9BS",
-  "postcode": "BS32 9BS",
-  "town": "Bristol",
-  "phone": "01454 868006",
-  "email": "bradleystoke.library@southglos.gov.uk",
-  "website": "https://beta.southglos.gov.uk/bradley-stoke-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:15",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "09:45",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:45",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:45",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:45",
-          "startTime": "12:45"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:45",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "21:45",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.535947,
-  "longitude": -2.545755,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "south-gloucestershire",
+  "source_id": "3359",
+  "source_url": "https://libraryon.org/libraries/south-gloucestershire/bradley-stoke",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-gloucestershire/bradley-stoke",
-  "authority": "south-gloucestershire"
+  "data": {
+    "Local authority": "South Gloucestershire",
+    "Local authority code": "E06000025",
+    "Library name": "Bradley Stoke",
+    "Library code": null,
+    "Address 1": "Fiddlers Wood Lane, Bradley Stoke, South Gloucestershire, BS32 9BS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS32 9BS",
+    "Unique property reference number": 642613,
+    "Latitude": 51.535947,
+    "Longitude": -2.545755,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "08:00-10:00,17:15-21:45",
+    "Wednesday unstaffed hours": "08:00-21:45",
+    "Thursday unstaffed hours": "08:00-10:00,17:15-21:45",
+    "Friday unstaffed hours": "08:00-10:00,17:15-21:15",
+    "Saturday unstaffed hours": "08:00-09:30,12:45-18:45",
+    "Sunday unstaffed hours": "08:00-20:45",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities",
+    "Phone number": "01454 868006",
+    "Email address": "bradleystoke.library@southglos.gov.uk",
+    "URL": "https://beta.southglos.gov.uk/bradley-stoke-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "opening-hours",
+      "reason": "Invalid opening hours: 08:00-10:00,17:15-09:45",
+      "audit_refs": [
+        "migration/directory/report.json#review_6135b03b6d50b61f7d37c3b9"
+      ]
+    }
+  ]
 }

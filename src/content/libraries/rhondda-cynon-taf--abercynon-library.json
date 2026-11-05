@@ -1,108 +1,71 @@
 {
   "id": "lib_29a421d4-eddf-43ea-b712-9cac7dab26d5",
-  "source_id": "528",
-  "name": "Abercynon Library",
   "slug": "abercynon-library",
-  "address": "Ynysmeurig Road, Abercynon, CF45 4SU",
-  "postcode": "CF45 4SU",
-  "town": "Mountain Ash",
-  "phone": "01443 741926",
-  "email": "Abercynon.Library@rctcbc.gov.uk",
-  "website": "http://www.rctcbc.gov.uk/EN/Resident/Libraries/Librarylocationsandopeninghours/AbercynonLibrary.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.64653,
-  "longitude": -3.32905,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "rhondda-cynon-taf",
+  "source_id": "528",
+  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/abercynon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/abercynon-library",
-  "authority": "rhondda-cynon-taf"
+  "data": {
+    "Local authority": "Rhondda Cynon Taf",
+    "Local authority code": "W06000016",
+    "Library name": "Abercynon Library",
+    "Library code": null,
+    "Address 1": "Ynysmeurig Road, Abercynon, CF45 4SU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CF45 4SU",
+    "Unique property reference number": null,
+    "Latitude": 51.64653,
+    "Longitude": -3.32905,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast",
+    "Phone number": "01443 741926",
+    "Email address": "Abercynon.Library@rctcbc.gov.uk",
+    "URL": "http://www.rctcbc.gov.uk/EN/Resident/Libraries/Librarylocationsandopeninghours/AbercynonLibrary.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

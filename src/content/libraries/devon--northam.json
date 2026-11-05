@@ -1,109 +1,64 @@
 {
   "id": "lib_18ee2229-d121-4f23-8e31-5a7ff9a2af81",
-  "source_id": "751",
-  "name": "Northam",
   "slug": "northam",
-  "address": "Fore Street, Northam, EX39 1AW",
-  "postcode": "EX39 1AW",
-  "town": "Bideford",
-  "phone": "01237 475111",
-  "email": "northam.library@librariesunlimited.org.uk",
-  "website": "https://discover.librariesunlimited.org.uk/-/northam-library#/?location=Northam%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/northamlibrary/",
-  "permanentlyClosed": false,
-  "latitude": 51.03932,
-  "longitude": -4.2133,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "devon",
+  "source_id": "751",
+  "source_url": "https://libraryon.org/libraries/devon/northam",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/northam",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "Northam",
+    "Library code": null,
+    "Address 1": "Fore Street, Northam, EX39 1AW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EX39 1AW",
+    "Unique property reference number": 100041032318,
+    "Latitude": 51.03932,
+    "Longitude": -4.2133,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 1966,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups; Books delivered; BFI Replay",
+    "Phone number": "01237 475111",
+    "Email address": "northam.library@librariesunlimited.org.uk",
+    "URL": "https://discover.librariesunlimited.org.uk/-/northam-library#/?location=Northam%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,105 +1,71 @@
 {
   "id": "lib_331b5252-3140-4576-b8ec-454fe9e4ed0e",
-  "source_id": "52",
-  "name": "Stevenston Library",
   "slug": "stevenston-library",
-  "address": "1 Main Street, Stevenston, Ayrshire, KA20 3AB",
-  "postcode": "KA20 3AB",
-  "town": "Stevenston",
-  "phone": "01294 469535",
-  "email": "stevenstonlibrary@north-ayrshire.gov.uk",
-  "website": "https://north-ayrshire.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=ST",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "The library is open alternate Wednesdays and Saturdays",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.64063634348497,
-  "longitude": -4.756568562262743,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "north-ayrshire",
+  "source_id": "52",
+  "source_url": "https://libraryon.org/libraries/north-ayrshire/stevenston-library",
   "updated_on": "2026-10-14",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-ayrshire/stevenston-library",
-  "authority": "north-ayrshire"
+  "data": {
+    "Local authority": "North Ayrshire",
+    "Local authority code": "S12000021",
+    "Library name": "Stevenston Library",
+    "Library code": null,
+    "Address 1": "1 Main Street, Stevenston, Ayrshire, KA20 3AB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KA20 3AB",
+    "Unique property reference number": null,
+    "Latitude": 55.64063634348497,
+    "Longitude": -4.756568562262743,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "10:00-13:30",
+    "Thursday staffed hours": "10:00-13:00,14:00-17:30",
+    "Friday staffed hours": "10:00-13:00,14:00-17:30",
+    "Saturday staffed hours": "10:00-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "The library is open alternate Wednesdays and Saturdays",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01294 469535",
+    "Email address": "stevenstonlibrary@north-ayrshire.gov.uk",
+    "URL": "https://north-ayrshire.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=ST",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

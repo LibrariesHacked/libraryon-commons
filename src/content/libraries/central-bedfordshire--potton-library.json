@@ -1,122 +1,64 @@
 {
   "id": "lib_a6faeecf-2313-4b54-a37f-ee800c0aa0dc",
-  "source_id": "3263",
-  "name": "Potton Library",
   "slug": "potton-library",
-  "address": "Clock House, Potton, Bedfordshire, SG19 2NP",
-  "postcode": "SG19 2NP",
-  "town": "Sandy",
-  "phone": "",
-  "email": "potton.library@centralbedfordshire.gov.uk",
-  "website": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "wheelchair-access",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.12744,
-  "longitude": -0.21423,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "central-bedfordshire",
+  "source_id": "3263",
+  "source_url": "https://libraryon.org/libraries/central-bedfordshire/potton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/central-bedfordshire/potton-library",
-  "authority": "central-bedfordshire"
+  "data": {
+    "Local authority": "Central Bedfordshire",
+    "Local authority code": "E06000056",
+    "Library name": "Potton Library",
+    "Library code": null,
+    "Address 1": "Clock House, Potton, Bedfordshire, SG19 2NP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SG19 2NP",
+    "Unique property reference number": 100081310570,
+    "Latitude": 52.12744,
+    "Longitude": -0.21423,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1956,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-13:00",
+    "Wednesday staffed hours": "14:00-18:00",
+    "Thursday staffed hours": "09:00-13:00",
+    "Friday staffed hours": "09:00-13:00,14:00-18:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "potton.library@centralbedfordshire.gov.uk",
+    "URL": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,115 +1,71 @@
 {
   "id": "lib_bc3416ec-2961-471a-967f-2b25b8f08855",
-  "source_id": "1672",
-  "name": "Martock Library",
   "slug": "martock",
-  "address": "North Street, Martock, Somerset, TA12 6DL",
-  "postcode": "TA12 6DH",
-  "town": "Martock",
-  "phone": "",
-  "email": "marlib@somerset.gov.uk",
-  "website": "https://www.somerset.gov.uk/locations/martock-library/",
-  "catalogue": "https://www.librarieswest.org.uk/",
-  "joinOnline": "https://www.librarieswest.org.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "neurodivergent-spaces"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://maps.app.goo.gl/aHChJa5dFQP5xNCY8",
-  "permanentlyClosed": false,
-  "latitude": 50.971434,
-  "longitude": -2.766212,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.somerset.gov.uk/libraries/digital-books-audiobooks-and-magazines/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.somerset.gov.uk/libraries/home-library-service/"
-    }
-  ],
+  "authority": "somerset",
+  "source_id": "1672",
+  "source_url": "https://libraryon.org/libraries/somerset/martock",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/somerset/martock",
-  "authority": "somerset"
+  "data": {
+    "Local authority": "Somerset",
+    "Local authority code": "E06000066",
+    "Library name": "Martock Library",
+    "Library code": null,
+    "Address 1": "North Street, Martock, Somerset, TA12 6DL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TA12 6DH",
+    "Unique property reference number": null,
+    "Latitude": 50.971434,
+    "Longitude": -2.766212,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-13:00",
+    "Wednesday staffed hours": "13:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Digital lending; Books delivered",
+    "Phone number": null,
+    "Email address": "marlib@somerset.gov.uk",
+    "URL": "https://www.somerset.gov.uk/locations/martock-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

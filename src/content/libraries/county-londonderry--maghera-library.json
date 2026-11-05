@@ -1,154 +1,71 @@
 {
   "id": "lib_9dd47eaa-b031-443a-a4d6-a31ce73388ea",
-  "source_id": "3696",
-  "name": "Maghera Library",
   "slug": "maghera-library",
-  "address": "1 Church Street, Gulladuff, Maghera, BT46 5EA, United Kingdom",
-  "postcode": "BT46 5EA",
-  "town": "Maghera",
-  "phone": "028 7964 2578",
-  "email": "maghera.library@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/county-londonderry/maghera-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.84367,
-  "longitude": -6.66979,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "county-londonderry",
+  "source_id": "3696",
+  "source_url": "https://libraryon.org/libraries/county-londonderry/maghera-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-londonderry/maghera-library",
-  "authority": "county-londonderry"
+  "data": {
+    "Local authority": "County Londonderry",
+    "Local authority code": "N05000006",
+    "Library name": "Maghera Library",
+    "Library code": null,
+    "Address 1": "1 Church Street, Gulladuff, Maghera, BT46 5EA, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BT46 5EA",
+    "Unique property reference number": null,
+    "Latitude": 54.84367,
+    "Longitude": -6.66979,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "13:30-20:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "17:00-22:00",
+    "Tuesday unstaffed hours": "08:00-12:00",
+    "Wednesday unstaffed hours": "17:00-22:00",
+    "Thursday unstaffed hours": "17:00-22:00",
+    "Friday unstaffed hours": "17:00-22:00",
+    "Saturday unstaffed hours": "16:00-20:00",
+    "Sunday unstaffed hours": "13:00-18:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning",
+    "Phone number": "028 7964 2578",
+    "Email address": "maghera.library@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/county-londonderry/maghera-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

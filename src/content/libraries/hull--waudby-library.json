@@ -1,125 +1,71 @@
 {
   "id": "lib_c90239e5-d94c-4797-ba70-698a5d9f4e43",
-  "source_id": "2580",
-  "name": "Waudby Library",
   "slug": "waudby-library",
-  "address": "Isaac Newton Library & Sports Centre, Hull, East Riding of Yorkshire, HU9 5LD",
-  "postcode": "HU9 5LD",
-  "town": "Hull",
-  "phone": "01482 331 264",
-  "email": "Waudby.Library@hcandl.co.uk",
-  "website": "https://www.hulllibraries.co.uk/local-library/waudby-library",
-  "catalogue": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
-  "joinOnline": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.75387,
-  "longitude": -0.25912,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.hulllibraries.co.uk/borrowing/DigitalReadingandListening"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.hulllibraries.co.uk/children"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.hulllibraries.co.uk/borrowing/home-library-service#:~:text=If%20you%20have%20difficulty%20getting,libraries%20right%20to%20your%20door.&text=Joining%20is%20easy%20and%20membership,of%20the%20items%20you%20borrow."
-    }
-  ],
+  "authority": "hull",
+  "source_id": "2580",
+  "source_url": "https://libraryon.org/libraries/hull/waudby-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hull/waudby-library",
-  "authority": "hull"
+  "data": {
+    "Local authority": "Hull",
+    "Local authority code": "E06000010",
+    "Library name": "Waudby Library",
+    "Library code": null,
+    "Address 1": "Isaac Newton Library & Sports Centre, Hull, East Riding of Yorkshire, HU9 5LD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HU9 5LD",
+    "Unique property reference number": null,
+    "Latitude": 53.75387,
+    "Longitude": -0.25912,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": 2013,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": "10:00-13:00",
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; Computers; Digital lending; Children's activities; Books delivered",
+    "Phone number": "01482 331 264",
+    "Email address": "Waudby.Library@hcandl.co.uk",
+    "URL": "https://www.hulllibraries.co.uk/local-library/waudby-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

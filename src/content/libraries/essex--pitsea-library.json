@@ -1,99 +1,71 @@
 {
   "id": "lib_a0dc8118-6fd4-4ba3-956a-3f2860ca361d",
-  "source_id": "694",
-  "name": "Pitsea Library",
   "slug": "pitsea-library",
-  "address": "Community Centre, Off Maydells, Pitsea, Essex, SS13 3DU",
-  "postcode": "SS13 3DU",
-  "town": "Basildon",
-  "phone": "",
-  "email": "pitsea.library@essex.gov.uk",
-  "website": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/pitsea-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.56624,
-  "longitude": 0.50406,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "essex",
+  "source_id": "694",
+  "source_url": "https://libraryon.org/libraries/essex/pitsea-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/essex/pitsea-library",
-  "authority": "essex"
+  "data": {
+    "Local authority": "Essex",
+    "Local authority code": "E10000012",
+    "Library name": "Pitsea Library",
+    "Library code": null,
+    "Address 1": "Community Centre, Off Maydells, Pitsea, Essex, SS13 3DU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SS13 3DU",
+    "Unique property reference number": null,
+    "Latitude": 51.56624,
+    "Longitude": 0.50406,
+    "Status": "Closed (temporary)",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Bookable space; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": null,
+    "Email address": "pitsea.library@essex.gov.uk",
+    "URL": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/pitsea-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

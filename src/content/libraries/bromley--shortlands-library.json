@@ -1,145 +1,64 @@
 {
   "id": "lib_4491d576-e706-4cd5-aedd-d7c881176732",
-  "source_id": "2303",
-  "name": "Shortlands Library",
   "slug": "shortlands-library",
-  "address": "110 Shortlands Road, Bromley, Greater London, BR2 0JP",
-  "postcode": "BR2 0JP",
-  "town": "Bromley",
-  "phone": "020 8460 9692",
-  "email": "Shortlands.Library@GLL.ORG",
-  "website": "https://www.better.org.uk/library/london/bromley/shortlands-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "staff-support",
-    "accessible-parking"
-  ],
-  "notes": "Closed for 1 hour each open day for lunch",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.39977,
-  "longitude": -0.00718,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "bromley",
+  "source_id": "2303",
+  "source_url": "https://libraryon.org/libraries/bromley/shortlands-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bromley/shortlands-library",
-  "authority": "bromley"
+  "data": {
+    "Local authority": "Bromley",
+    "Local authority code": "E09000006",
+    "Library name": "Shortlands Library",
+    "Library code": null,
+    "Address 1": "110 Shortlands Road, Bromley, Greater London, BR2 0JP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BR2 0JP",
+    "Unique property reference number": 100022891493,
+    "Latitude": 51.39977,
+    "Longitude": -0.00718,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-17:30",
+    "Tuesday staffed hours": "09:30-13:00,14:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-13:00,14:00-17:30",
+    "Saturday staffed hours": "09:30-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Books delivered; Digital skills sessions; Family history; Findmypast; British Newspaper Archive; BFI Replay",
+    "Phone number": "020 8460 9692",
+    "Email address": "Shortlands.Library@GLL.ORG",
+    "URL": "https://www.better.org.uk/library/london/bromley/shortlands-library",
+    "Notes": "Closed for 1 hour each open day for lunch"
+  },
+  "validation_exceptions": []
 }

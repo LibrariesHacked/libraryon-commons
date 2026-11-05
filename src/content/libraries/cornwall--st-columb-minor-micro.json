@@ -1,66 +1,83 @@
 {
   "id": "lib_dc5ea1f7-f772-43f7-ba44-3fc80debf01e",
-  "source_id": "3467",
-  "name": "St. Columb Minor Micro",
   "slug": "st-columb-minor-micro",
-  "address": "The Farmers Arms, Church Street, Newquay, Cornwall, TR7 3EZ",
-  "postcode": "TR7 3HA",
-  "town": "Newquay",
-  "phone": "",
-  "email": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.42071,
-  "longitude": -5.04288,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "cornwall",
+  "source_id": "3467",
+  "source_url": "https://libraryon.org/libraries/cornwall/st-columb-minor-micro",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cornwall/st-columb-minor-micro",
-  "authority": "cornwall"
+  "data": {
+    "Local authority": "Cornwall",
+    "Local authority code": "E06000052",
+    "Library name": "St. Columb Minor Micro",
+    "Library code": null,
+    "Address 1": "The Farmers Arms, Church Street, Newquay, Cornwall, TR7 3EZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TR7 3HA",
+    "Unique property reference number": null,
+    "Latitude": 50.42071,
+    "Longitude": -5.04288,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

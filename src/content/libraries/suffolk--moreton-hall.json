@@ -1,194 +1,71 @@
 {
   "id": "lib_1e350d00-b155-4aab-8db6-1f91f54f8f8c",
-  "source_id": "3553",
-  "name": "Moreton Hall ",
   "slug": "moreton-hall",
-  "address": "Moreton Hall Community Centre, Symonds Road, Bury St Edmunds, IP32 7EE",
-  "postcode": "IP32 7EW",
-  "town": "Bury St. Edmunds",
-  "phone": "01284 338835",
-  "email": "library.help@suffolk.gov.uk",
-  "website": "https://suffolkcommunitylibraries.co.uk/libraries/moreton-hall/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:30",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:30",
-          "startTime": "16:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:45",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:45",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:30",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:45",
-          "startTime": "16:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "accessible-parking",
-    "step-free-access",
-    "automatic-doors",
-    "low-vision-support",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.244975,
-  "longitude": 0.741012,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "suffolk",
+  "source_id": "3553",
+  "source_url": "https://libraryon.org/libraries/suffolk/moreton-hall",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/suffolk/moreton-hall",
-  "authority": "suffolk"
+  "data": {
+    "Local authority": "Suffolk",
+    "Local authority code": "E10000029",
+    "Library name": "Moreton Hall ",
+    "Library code": null,
+    "Address 1": "Moreton Hall Community Centre, Symonds Road, Bury St Edmunds, IP32 7EE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IP32 7EW",
+    "Unique property reference number": null,
+    "Latitude": 52.244975,
+    "Longitude": 0.741012,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "13:00-16:30",
+    "Thursday staffed hours": "09:00-12:30",
+    "Friday staffed hours": "13:00-16:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "08:30-18:45",
+    "Wednesday unstaffed hours": "08:30-12:30,16:30-17:45",
+    "Thursday unstaffed hours": "12:30-17:45",
+    "Friday unstaffed hours": "08:30-12:30,16:30-18:30",
+    "Saturday unstaffed hours": "13:00-16:00",
+    "Sunday unstaffed hours": "12:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive; Findmypast; Family history; Digital lending; Books delivered; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups",
+    "Phone number": "01284 338835",
+    "Email address": "library.help@suffolk.gov.uk",
+    "URL": "https://suffolkcommunitylibraries.co.uk/libraries/moreton-hall/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

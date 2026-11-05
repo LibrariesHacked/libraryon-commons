@@ -1,108 +1,71 @@
 {
   "id": "lib_c194495b-9da5-4f0a-acf6-118445a0d9a5",
-  "source_id": "3555",
-  "name": "Red Lodge (Suffolk Libraries Local)",
   "slug": "red-lodge-suffolk-libraries-local",
-  "address": "Red Lodge Sports Pavilion, Hundred Acre Way, Bury Saint Edmunds, IP28 8FQ",
-  "postcode": "IP28 8FQ",
-  "town": "Bury St. Edmunds",
-  "phone": "",
-  "email": "library.help@suffolk.gov.uk",
-  "website": "https://www.suffolklibraries.co.uk/visit/libraries/red-lodge-suffolk-libraries-local",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "11:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.30497,
-  "longitude": 0.49802,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "suffolk",
+  "source_id": "3555",
+  "source_url": "https://libraryon.org/libraries/suffolk/red-lodge-suffolk-libraries-local",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/suffolk/red-lodge-suffolk-libraries-local",
-  "authority": "suffolk"
+  "data": {
+    "Local authority": "Suffolk",
+    "Local authority code": "E10000029",
+    "Library name": "Red Lodge (Suffolk Libraries Local)",
+    "Library code": null,
+    "Address 1": "Red Lodge Sports Pavilion, Hundred Acre Way, Bury Saint Edmunds, IP28 8FQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IP28 8FQ",
+    "Unique property reference number": null,
+    "Latitude": 52.30497,
+    "Longitude": 0.49802,
+    "Status": "Closed (permanent)",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": 2022,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-11:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Family history; Books delivered; Digital lending; Computers; Children's activities; Hobby and interest groups",
+    "Phone number": null,
+    "Email address": "library.help@suffolk.gov.uk",
+    "URL": "https://www.suffolklibraries.co.uk/visit/libraries/red-lodge-suffolk-libraries-local",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

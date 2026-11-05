@@ -2,6 +2,13 @@ import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
+/**
+ * Package built CMS routes, review evidence, runtime assets and community uploads only.
+ * Public editorial pages and preserved archive uploads remain on the main site's host.
+ * @param {{root?: string}} [options] - Repository root or temporary packaging fixture.
+ * @returns {string} Netlify deployment directory with a root redirect and noindex headers.
+ * @throws {Error} When required built CMS assets are absent.
+ */
 export function packageNetlifyAdmin({ root = process.cwd() } = {}) {
   const dist = path.join(root, 'dist')
   const output = path.join(root, '.deploy/netlify-admin')
@@ -12,6 +19,7 @@ export function packageNetlifyAdmin({ root = process.cwd() } = {}) {
   }
 
   mkdirSync(output, { recursive: true })
+  writeFileSync(path.join(output, '_headers'), '/admin/*\n  X-Robots-Tag: noindex, nofollow\n')
   cpSync(path.join(dist, 'admin'), path.join(output, 'admin'), { recursive: true })
   cpSync(path.join(dist, '_astro'), path.join(output, '_astro'), { recursive: true })
   const communityUploads = path.join(dist, 'uploads/community')

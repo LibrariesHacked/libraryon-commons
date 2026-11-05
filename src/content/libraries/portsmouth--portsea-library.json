@@ -1,124 +1,64 @@
 {
   "id": "lib_0dab341e-a272-470c-97a3-660d3ff1e15b",
-  "source_id": "3223",
-  "name": "Portsea Library",
   "slug": "portsea-library",
-  "address": "C/O John Pounds Community Centre,  23 Queen Street, Portsmouth, Hampshire, PO1 3HN",
-  "postcode": "PO1 3HN",
-  "town": "Portsmouth",
-  "phone": "02392688777",
-  "email": "johnpounds.library@portsmouthcc.gov.uk",
-  "website": "https://librariesandarchives.portsmouth.gov.uk/public-library-service/find-us/library-branches/portsea-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "catering",
-    "community",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.7991,
-  "longitude": -1.09989,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "portsmouth",
+  "source_id": "3223",
+  "source_url": "https://libraryon.org/libraries/portsmouth/portsea-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/portsmouth/portsea-library",
-  "authority": "portsmouth"
+  "data": {
+    "Local authority": "Portsmouth",
+    "Local authority code": "E06000044",
+    "Library name": "Portsea Library",
+    "Library code": null,
+    "Address 1": "C/O John Pounds Community Centre,  23 Queen Street, Portsmouth, Hampshire, PO1 3HN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO1 3HN",
+    "Unique property reference number": 1775106490,
+    "Latitude": 50.7991,
+    "Longitude": -1.09989,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2005,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:30",
+    "Tuesday staffed hours": "10:30-16:30",
+    "Wednesday staffed hours": "10:30-16:30",
+    "Thursday staffed hours": "10:30-16:30",
+    "Friday staffed hours": "10:30-16:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; community; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Cafe; Children's activities; British Newspaper Archive; Findmypast",
+    "Phone number": "02392688777",
+    "Email address": "johnpounds.library@portsmouthcc.gov.uk",
+    "URL": "https://librariesandarchives.portsmouth.gov.uk/public-library-service/find-us/library-branches/portsea-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

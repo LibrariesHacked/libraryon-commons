@@ -1,138 +1,64 @@
 {
   "id": "lib_7e69f0fd-5d29-4099-aa19-cfb5a608910f",
-  "source_id": "3089",
-  "name": "Cricklade Library",
   "slug": "cricklade-library",
-  "address": "113 High Street, Swindon, Wiltshire, SN6 6AE",
-  "postcode": "SN6 6AE",
-  "town": "Swindon",
-  "phone": "01793 750694",
-  "email": "libraryenquiries@wiltshire.gov.uk",
-  "website": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/11?isListPage=True",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "lift-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.64041,
-  "longitude": -1.85656,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "wiltshire",
+  "source_id": "3089",
+  "source_url": "https://libraryon.org/libraries/wiltshire/cricklade-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wiltshire/cricklade-library",
-  "authority": "wiltshire"
+  "data": {
+    "Local authority": "Wiltshire",
+    "Local authority code": "E06000054",
+    "Library name": "Cricklade Library",
+    "Library code": null,
+    "Address 1": "113 High Street, Swindon, Wiltshire, SN6 6AE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SN6 6AE",
+    "Unique property reference number": 10070783068,
+    "Latitude": 51.64041,
+    "Longitude": -1.85656,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:00",
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "14:00-16:00",
+    "Thursday staffed hours": "14:00-19:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Scanning; Books delivered; British Newspaper Archive; BFI Replay; Family history; Computers",
+    "Phone number": "01793 750694",
+    "Email address": "libraryenquiries@wiltshire.gov.uk",
+    "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/11?isListPage=True",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

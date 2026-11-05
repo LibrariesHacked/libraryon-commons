@@ -1,154 +1,71 @@
 {
   "id": "lib_5235f339-2576-434b-89be-e388a4c3546b",
-  "source_id": "1431",
-  "name": "Stoke Library",
   "slug": "stoke",
-  "address": "High School, Maidenhall Approach, Ipswich, Suffolk, IP2 8PL",
-  "postcode": "IP2 8NZ",
-  "town": "Ipswich",
-  "phone": "01473 851378",
-  "email": "library.help@suffolk.gov.uk",
-  "website": "https://suffolkcommunitylibraries.co.uk/libraries/stoke/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "automatic-doors",
-    "accessible-parking"
-  ],
-  "notes": "On high school site and joint use library",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.04338,
-  "longitude": 1.14809,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "suffolk",
+  "source_id": "1431",
+  "source_url": "https://libraryon.org/libraries/suffolk/stoke",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/suffolk/stoke",
-  "authority": "suffolk"
+  "data": {
+    "Local authority": "Suffolk",
+    "Local authority code": "E10000029",
+    "Library name": "Stoke Library",
+    "Library code": null,
+    "Address 1": "High School, Maidenhall Approach, Ipswich, Suffolk, IP2 8PL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IP2 8NZ",
+    "Unique property reference number": null,
+    "Latitude": 52.04338,
+    "Longitude": 1.14809,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-12:30,14:00-17:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "09:30-12:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": "10:00-13:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Computers; Photocopiers; Scanning; Hobby and interest groups; Children's activities; British Newspaper Archive; Findmypast",
+    "Phone number": "01473 851378",
+    "Email address": "library.help@suffolk.gov.uk",
+    "URL": "https://suffolkcommunitylibraries.co.uk/libraries/stoke/",
+    "Notes": "On high school site and joint use library"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

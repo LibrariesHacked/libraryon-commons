@@ -1,139 +1,64 @@
 {
   "id": "lib_528c9441-3377-4378-9ae5-08e4b3023165",
-  "source_id": "2891",
-  "name": "Mickleover Library",
   "slug": "mickleover",
-  "address": "Holly End Road,  Derby, Derbyshire, DE3 0GA",
-  "postcode": "DE3 0GA",
-  "town": "Derby",
-  "phone": "01332 647884",
-  "email": "mickleover.library@derby.gov.uk",
-  "website": "https://www.inderby.org.uk/libraries/our-libraries/mickleover-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "assistive-technology-available",
-    "automatic-doors",
-    "hearing-loop-system",
-    "wheelchair-access",
-    "accessible-parking",
-    "adjustable-seating",
-    "baby-changing-facilities",
-    "dda-compliant",
-    "service-dog-friendly",
-    "staff-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.90496,
-  "longitude": -1.54529,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "derby",
+  "source_id": "2891",
+  "source_url": "https://libraryon.org/libraries/derby/mickleover",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/derby/mickleover",
-  "authority": "derby"
+  "data": {
+    "Local authority": "Derby",
+    "Local authority code": "E06000015",
+    "Library name": "Mickleover Library",
+    "Library code": null,
+    "Address 1": "Holly End Road,  Derby, Derbyshire, DE3 0GA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DE3 0GA",
+    "Unique property reference number": 10010686133,
+    "Latitude": 52.90496,
+    "Longitude": -1.54529,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Hobby and interest groups; British Newspaper Archive; Digital lending; Digital skills sessions; Scanning; Bookable space",
+    "Phone number": "01332 647884",
+    "Email address": "mickleover.library@derby.gov.uk",
+    "URL": "https://www.inderby.org.uk/libraries/our-libraries/mickleover-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

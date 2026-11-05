@@ -1,113 +1,64 @@
 {
   "id": "lib_112e4510-786f-4ca3-bc84-9e9a4b9b6246",
-  "source_id": "2679",
-  "name": "Manor Park Library",
   "slug": "manor-park-library",
-  "address": "685-693 Romford Road, Manor Park, London, E12 5AD",
-  "postcode": "E12 5AD",
-  "town": "London",
-  "phone": "0203 373 0858",
-  "email": " ManorParkLibrary@newham.gov.uk",
-  "website": "https://www.newham.gov.uk/Pages/ServiceChild/Manor-Park-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Library has had refurbishment since 2010",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.55069,
-  "longitude": 0.04689,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "newham",
+  "source_id": "2679",
+  "source_url": "https://libraryon.org/libraries/newham/manor-park-library",
   "updated_on": "2026-04-30",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newham/manor-park-library",
-  "authority": "newham"
+  "data": {
+    "Local authority": "Newham",
+    "Local authority code": "E09000025",
+    "Library name": "Manor Park Library",
+    "Library code": null,
+    "Address 1": "685-693 Romford Road, Manor Park, London, E12 5AD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "E12 5AD",
+    "Unique property reference number": 10008990819,
+    "Latitude": 51.55069,
+    "Longitude": 0.04689,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2013,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-20:00",
+    "Tuesday staffed hours": "10:00-20:00",
+    "Wednesday staffed hours": "10:00-20:00",
+    "Thursday staffed hours": "10:00-20:00",
+    "Friday staffed hours": "10:00-20:00",
+    "Saturday staffed hours": "10:00-20:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "0203 373 0858",
+    "Email address": "ManorParkLibrary@newham.gov.uk",
+    "URL": "https://www.newham.gov.uk/Pages/ServiceChild/Manor-Park-Library.aspx",
+    "Notes": "Library has had refurbishment since 2010"
+  },
+  "validation_exceptions": []
 }

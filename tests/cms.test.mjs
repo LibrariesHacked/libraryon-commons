@@ -723,7 +723,7 @@ test('all original directory listings are represented in the editable CMS source
     const editable = libraries.find((library) => String(library.source_id) === String(source.id))
     assert.equal(
       editable?.uprn,
-      source.attributes.uprn,
+      Number(source.attributes.uprn),
       `UPRN lost for source library ${source.id}`
     )
   }
@@ -736,10 +736,14 @@ test('all original directory listings are represented in the editable CMS source
   const libraryFields = config.collections.find(
     (collection) => collection.name === 'libraries'
   ).fields
-  const uprn = libraryFields.find((field) => field.name === 'uprn')
-  assert.equal(uprn.widget, 'string')
+  const uprn = libraryFields
+    .find((field) => field.name === 'data')
+    .fields.find((field) => field.name === 'Unique property reference number')
+  assert.equal(uprn.widget, 'number')
   assert.equal(uprn.required, false)
-  const countries = authorityFields.find((field) => field.name === 'country').options
+  const countries = authorityFields
+    .find((field) => field.name === 'data')
+    .fields.find((field) => field.name === 'Country').options
   for (const authority of authorities) {
     assert.ok(countries.includes(authority.country), `Country not editable: ${authority.country}`)
   }
@@ -784,11 +788,35 @@ test('saving in the CMS stamps a date field that exists in each collection', () 
   }
 })
 
+test('directory CMS exposes manual checks and validation exceptions without editing source values', () => {
+  for (const name of ['libraries', 'authorities']) {
+    const collection = config.collections.find((item) => item.name === name)
+    for (const field of ['manual_checks', 'validation_exceptions']) {
+      const widget = collection.fields.find((item) => item.name === field)
+      assert.equal(widget.widget, 'list')
+      assert.equal(widget.collapsed, true)
+      assert.equal(widget.allow_add, false)
+      assert.ok(widget.fields.some((item) => item.name === 'reason' && item.widget === 'text'))
+    }
+    assert.equal(
+      collection.fields
+        .find((item) => item.name === 'validation_exceptions')
+        .fields.find((item) => item.name === 'value').widget,
+      'hidden'
+    )
+  }
+  assert.ok(
+    readFileSync('src/pages/admin/index.astro', 'utf8').includes("sitePath('/admin/review/')")
+  )
+})
+
 test('library records carry their services and the original update date', () => {
   const withServices = libraries.filter((library) => library.services?.length)
   assert.ok(withServices.length > 3700)
   for (const library of libraries) {
-    assert.match(library.updated_on, /^\d{4}-\d{2}-\d{2}$/, `${library.name} has an update date`)
+    if (String(library.id).startsWith('historical_')) assert.equal(library.updated_on, null)
+    else
+      assert.match(library.updated_on, /^\d{4}-\d{2}-\d{2}$/, `${library.name} has an update date`)
     for (const item of library.services || []) {
       assert.ok(item.service, `${library.name} service name`)
     }

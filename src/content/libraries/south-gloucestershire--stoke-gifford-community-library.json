@@ -1,80 +1,71 @@
 {
   "id": "lib_0aa54ec3-ef0f-4790-a227-e5a3c51a4f3a",
-  "source_id": "2528",
-  "name": "Stoke Gifford Community Library",
   "slug": "stoke-gifford-community-library",
-  "address": "St Michael’s Church, St Michael's Centre, The Green, Stoke Gifford, Bristol, BS34 8PD",
-  "postcode": "BS34 8PD",
-  "town": "Bristol",
-  "phone": "",
-  "email": "osrlibrary@gmail.com",
-  "website": "https://www.stmichaelsbristol.org/stoke-gifford-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "11:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Website states it is open \"Fortnightly on Tuesday Afternoons (2pm-4pm) and Thursday mornings (9am – 11am)\" Unclear whether it's fortnightly for both of these days or just Tues",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "faith"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.51551,
-  "longitude": -2.54414,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "south-gloucestershire",
+  "source_id": "2528",
+  "source_url": "https://libraryon.org/libraries/south-gloucestershire/stoke-gifford-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-gloucestershire/stoke-gifford-community-library",
-  "authority": "south-gloucestershire"
+  "data": {
+    "Local authority": "South Gloucestershire",
+    "Local authority code": "E06000025",
+    "Library name": "Stoke Gifford Community Library",
+    "Library code": null,
+    "Address 1": "St Michael’s Church, St Michael's Centre, The Green, Stoke Gifford, Bristol, BS34 8PD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS34 8PD",
+    "Unique property reference number": null,
+    "Latitude": 51.51551,
+    "Longitude": -2.54414,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-11:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "faith",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "osrlibrary@gmail.com",
+    "URL": "https://www.stmichaelsbristol.org/stoke-gifford-community-library/",
+    "Notes": "Website states it is open \"Fortnightly on Tuesday Afternoons (2pm-4pm) and Thursday mornings (9am – 11am)\" Unclear whether it's fortnightly for both of these days or just Tues"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,116 +1,64 @@
 {
   "id": "lib_68a63956-f11d-4adb-ae47-88bce571f554",
-  "source_id": "2792",
-  "name": "Laburnum Road Library",
   "slug": "laburnum-road-library",
-  "address": "338 Laburnum Road, Redcar, North Yorkshire, TS10 3QR",
-  "postcode": "TS10 3QR",
-  "town": "Redcar",
-  "phone": "01642 484142",
-  "email": "laburnum_library@redcar-cleveland.gov.uk",
-  "website": "https://libraries.redcar-cleveland.gov.uk/-/laburnum-road-community-library#/?location=Laburnum%20Road%20Community%20Library",
-  "catalogue": "https://libraries.redcar-cleveland.gov.uk/extended-search",
-  "joinOnline": "https://libraries.redcar-cleveland.gov.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:15",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:45"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:15",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:45"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.60519,
-  "longitude": -1.04777,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/borrowbox"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/home-library-service"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/meeting-spaces"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "redcar-and-cleveland",
+  "source_id": "2792",
+  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/laburnum-road-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/laburnum-road-library",
-  "authority": "redcar-and-cleveland"
+  "data": {
+    "Local authority": "Redcar and Cleveland",
+    "Local authority code": "E06000003",
+    "Library name": "Laburnum Road Library",
+    "Library code": null,
+    "Address 1": "338 Laburnum Road, Redcar, North Yorkshire, TS10 3QR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS10 3QR",
+    "Unique property reference number": 100110793123,
+    "Latitude": 54.60519,
+    "Longitude": -1.04777,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-12:15,12:45-17:00",
+    "Wednesday staffed hours": "09:30-12:15,12:45-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Children's activities; Books delivered; Bookable space; Family history; Computers; BFI Replay",
+    "Phone number": "01642 484142",
+    "Email address": "laburnum_library@redcar-cleveland.gov.uk",
+    "URL": "https://libraries.redcar-cleveland.gov.uk/-/laburnum-road-community-library#/?location=Laburnum%20Road%20Community%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

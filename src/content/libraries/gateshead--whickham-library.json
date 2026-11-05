@@ -1,134 +1,64 @@
 {
   "id": "lib_d0255f7b-7f48-488b-856d-187cdd49340b",
-  "source_id": "2049",
-  "name": "Whickham Library",
   "slug": "whickham-library",
-  "address": "St. Mary's Green, Newcastle-upon-Tyne, Tyne and Wear, NE16 4DN",
-  "postcode": "NE16 4DN",
-  "town": "Newcastle upon Tyne",
-  "phone": "0191 433 6424",
-  "email": "whickhamlibrary@gateshead.gov.uk",
-  "website": "https://www.whickhamlibrary.com/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.9462,
-  "longitude": -1.67751,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Faxing",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "gateshead",
+  "source_id": "2049",
+  "source_url": "https://libraryon.org/libraries/gateshead/whickham-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/gateshead/whickham-library",
-  "authority": "gateshead"
+  "data": {
+    "Local authority": "Gateshead",
+    "Local authority code": "E08000037",
+    "Library name": "Whickham Library",
+    "Library code": null,
+    "Address 1": "St. Mary's Green, Newcastle-upon-Tyne, Tyne and Wear, NE16 4DN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE16 4DN",
+    "Unique property reference number": null,
+    "Latitude": 54.9462,
+    "Longitude": -1.67751,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-13:00",
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-16:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Faxing; Photocopiers; Family history; Bookable space; British Newspaper Archive; Findmypast",
+    "Phone number": "0191 433 6424",
+    "Email address": "whickhamlibrary@gateshead.gov.uk",
+    "URL": "https://www.whickhamlibrary.com/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

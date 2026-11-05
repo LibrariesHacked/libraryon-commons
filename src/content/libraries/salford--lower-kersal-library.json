@@ -1,129 +1,64 @@
 {
   "id": "lib_79d29ceb-5013-4057-bc6d-e60686a7263d",
-  "source_id": "1641",
-  "name": "Lower Kersal Library",
   "slug": "lower-kersal-library",
-  "address": "Salford Sports Village, Littleton Road , Salford , Greater Manchester, M7 3NQ",
-  "postcode": "M7 3NQ",
-  "town": "Salford",
-  "phone": "0161 921 1236",
-  "email": "lowerkersal.library@scll.co.uk",
-  "website": "https://salfordcommunityleisure.co.uk/library/lower-kersal/",
-  "catalogue": "https://salfordlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://salfordcommunityleisure.co.uk/libraries/join/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.50833,
-  "longitude": -2.28635,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "salford",
+  "source_id": "1641",
+  "source_url": "https://libraryon.org/libraries/salford/lower-kersal-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/salford/lower-kersal-library",
-  "authority": "salford"
+  "data": {
+    "Local authority": "Salford",
+    "Local authority code": "E08000006",
+    "Library name": "Lower Kersal Library",
+    "Library code": null,
+    "Address 1": "Salford Sports Village, Littleton Road , Salford , Greater Manchester, M7 3NQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M7 3NQ",
+    "Unique property reference number": 10007894004,
+    "Latitude": 53.50833,
+    "Longitude": -2.28635,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "13:30-17:30",
+    "Wednesday staffed hours": "13:30-17:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Computers; Children's activities; Hobby and interest groups; Photocopiers; Scanning; BFI Replay",
+    "Phone number": "0161 921 1236",
+    "Email address": "lowerkersal.library@scll.co.uk",
+    "URL": "https://salfordcommunityleisure.co.uk/library/lower-kersal/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

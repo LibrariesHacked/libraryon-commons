@@ -1,108 +1,71 @@
 {
   "id": "lib_16959bc2-924d-4096-9f48-835a0e08364d",
-  "source_id": "3595",
-  "name": "Abington Library",
   "slug": "abington",
-  "address": "Lindsay Avenue, Northampton, Northamptonshire, NN3 2SJ",
-  "postcode": "NN3 2SW",
-  "town": "Northampton",
-  "phone": "",
-  "email": "AbingtonCML@gmail.com",
-  "website": "http://www3.northamptonshire.gov.uk/councilservices/library-service/visiting-your-library/list-of-libraries/Pages/default.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "Expected to become CRL by 01 April 2020. Library opens first Saturday of month only. Library is open 22 hours in the weeks when not open on a Saturday",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.25343,
-  "longitude": -0.86139,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "west-northamptonshire",
+  "source_id": "3595",
+  "source_url": "https://libraryon.org/libraries/west-northamptonshire/abington",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-northamptonshire/abington",
-  "authority": "west-northamptonshire"
+  "data": {
+    "Local authority": "West Northamptonshire",
+    "Local authority code": "E06000062",
+    "Library name": "Abington Library",
+    "Library code": null,
+    "Address 1": "Lindsay Avenue, Northampton, Northamptonshire, NN3 2SJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN3 2SW",
+    "Unique property reference number": null,
+    "Latitude": 52.25343,
+    "Longitude": -0.86139,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-17:00",
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "AbingtonCML@gmail.com",
+    "URL": "http://www3.northamptonshire.gov.uk/councilservices/library-service/visiting-your-library/list-of-libraries/Pages/default.aspx",
+    "Notes": "Expected to become CRL by 01 April 2020. Library opens first Saturday of month only. Library is open 22 hours in the weeks when not open on a Saturday"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

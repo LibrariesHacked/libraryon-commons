@@ -1,118 +1,64 @@
 {
   "id": "lib_3c500288-f57f-4a3d-97d9-9f8663e6a810",
-  "source_id": "1863",
-  "name": "Edenthorpe Community Library",
   "slug": "edenthorpe-community-library",
-  "address": "Communal Hall, Bardon Road, Edenthorpe, South Yorkshire, DN3 2ND",
-  "postcode": "DN3 2ND",
-  "town": "Doncaster",
-  "phone": "01302 734538",
-  "email": "edenthorpelibrary@hotmail.co.uk",
-  "website": "http://library.doncaster.gov.uk/web/arena/edenthorpe-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.55607,
-  "longitude": -1.069,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    }
-  ],
+  "authority": "doncaster",
+  "source_id": "1863",
+  "source_url": "https://libraryon.org/libraries/doncaster/edenthorpe-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/doncaster/edenthorpe-community-library",
-  "authority": "doncaster"
+  "data": {
+    "Local authority": "Doncaster",
+    "Local authority code": "E08000017",
+    "Library name": "Edenthorpe Community Library",
+    "Library code": null,
+    "Address 1": "Communal Hall, Bardon Road, Edenthorpe, South Yorkshire, DN3 2ND",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN3 2ND",
+    "Unique property reference number": null,
+    "Latitude": 53.55607,
+    "Longitude": -1.069,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-12:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Books delivered; Digital lending; Family history; BFI Replay",
+    "Phone number": "01302 734538",
+    "Email address": "edenthorpelibrary@hotmail.co.uk",
+    "URL": "http://library.doncaster.gov.uk/web/arena/edenthorpe-community-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

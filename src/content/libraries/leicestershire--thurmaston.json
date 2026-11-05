@@ -1,111 +1,71 @@
 {
   "id": "lib_3646bcc2-c3d6-4252-b63c-0ccf22a094d0",
-  "source_id": "1050",
-  "name": "Thurmaston Community Library",
   "slug": "thurmaston",
-  "address": "Thurmaston Community Centre , Silverdale Drive, Thurmaston, Leicestershire, LE4 8NJ",
-  "postcode": "LE4 8NJ",
-  "town": "Leicester",
-  "phone": "0116 269 2277",
-  "email": "thurmastonlibrary16@gmail.com",
-  "website": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/thurmaston-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Hours closed: M 12:00-15:00",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.67333,
-  "longitude": -1.09057,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "leicestershire",
+  "source_id": "1050",
+  "source_url": "https://libraryon.org/libraries/leicestershire/thurmaston",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicestershire/thurmaston",
-  "authority": "leicestershire"
+  "data": {
+    "Local authority": "Leicestershire",
+    "Local authority code": "E10000018",
+    "Library name": "Thurmaston Community Library",
+    "Library code": null,
+    "Address 1": "Thurmaston Community Centre , Silverdale Drive, Thurmaston, Leicestershire, LE4 8NJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE4 8NJ",
+    "Unique property reference number": null,
+    "Latitude": 52.67333,
+    "Longitude": -1.09057,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00,14:00-16:00",
+    "Tuesday staffed hours": "14:00-16:00",
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": "14:00-19:00",
+    "Friday staffed hours": "14:00-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending",
+    "Phone number": "0116 269 2277",
+    "Email address": "thurmastonlibrary16@gmail.com",
+    "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/thurmaston-library",
+    "Notes": "Hours closed: M 12:00-15:00"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

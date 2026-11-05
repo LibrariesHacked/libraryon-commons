@@ -1,95 +1,89 @@
 {
   "id": "lib_0cb74cc6-6a27-497b-9a0c-e4b542b9296c",
-  "source_id": "3820",
-  "name": "La Nouvelle Maraitaine Community Library",
   "slug": "la-nouvelle-maraitaine-community-library",
-  "address": "Rue Maraitaine, GY3 5QD",
-  "postcode": "GY3 5",
-  "town": "Vale",
-  "phone": "01481 720392",
-  "email": "ga@library.gg",
-  "website": "ga@library.gg",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 49.49012795129593,
-  "longitude": -2.5254746371515466,
-  "services": [
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "guernsey",
+  "source_id": "3820",
+  "source_url": "https://libraryon.org/libraries/guernsey/la-nouvelle-maraitaine-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/guernsey/la-nouvelle-maraitaine-community-library",
-  "authority": "guernsey"
+  "data": {
+    "Local authority": "Guernsey",
+    "Local authority code": null,
+    "Library name": "La Nouvelle Maraitaine Community Library",
+    "Library code": null,
+    "Address 1": "Rue Maraitaine, GY3 5QD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 49.49012795129593,
+    "Longitude": -2.5254746371515466,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00",
+    "Tuesday staffed hours": "10:00-12:00",
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": "10:00-12:00",
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Free Wi-Fi; Books; Children's activities",
+    "Phone number": "01481 720392",
+    "Email address": "ga@library.gg",
+    "URL": "ga@library.gg",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Local authority code",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "URL",
+      "code": "uri",
+      "value": "ga@library.gg",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

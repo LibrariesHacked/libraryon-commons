@@ -1,110 +1,64 @@
 {
   "id": "lib_17fbcd1f-01d3-435e-b1e4-49e1e198c7f0",
-  "source_id": "2345",
-  "name": "Whitmore Reans Library",
   "slug": "whitmore-reans-library",
-  "address": "Bargate Drive, Wolverhampton, West Midlands, WV6 0QW",
-  "postcode": "WV6 0QW",
-  "town": "Wolverhampton",
-  "phone": "01902 556269",
-  "email": "libraries@wolverhampton.gov.uk",
-  "website": "https://www.wolverhampton.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.594084,
-  "longitude": -2.141963,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "wolverhampton",
+  "source_id": "2345",
+  "source_url": "https://libraryon.org/libraries/wolverhampton/whitmore-reans-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wolverhampton/whitmore-reans-library",
-  "authority": "wolverhampton"
+  "data": {
+    "Local authority": "Wolverhampton",
+    "Local authority code": "E08000031",
+    "Library name": "Whitmore Reans Library",
+    "Library code": null,
+    "Address 1": "Bargate Drive, Wolverhampton, West Midlands, WV6 0QW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WV6 0QW",
+    "Unique property reference number": 100071565927,
+    "Latitude": 52.594084,
+    "Longitude": -2.141963,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers",
+    "Phone number": "01902 556269",
+    "Email address": "libraries@wolverhampton.gov.uk",
+    "URL": "https://www.wolverhampton.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

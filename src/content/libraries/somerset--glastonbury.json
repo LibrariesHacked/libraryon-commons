@@ -1,126 +1,64 @@
 {
   "id": "lib_0c507727-35e5-4cbd-a162-d336d55fde00",
-  "source_id": "1657",
-  "name": "Glastonbury Library",
   "slug": "glastonbury",
-  "address": "1 Orchard Court, The Archers Way, Glastonbury, Somerset, BA6 9JD",
-  "postcode": "BA6 9JB",
-  "town": "Glastonbury",
-  "phone": "",
-  "email": "glalib@somerset.gov.uk",
-  "website": "https://www.somerset.gov.uk/locations/glastonbury-library/",
-  "catalogue": "https://www.librarieswest.org.uk/",
-  "joinOnline": "https://www.librarieswest.org.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "https://maps.app.goo.gl/iMbXtheRTy6m6Ayj7",
-  "permanentlyClosed": false,
-  "latitude": 51.14909,
-  "longitude": -2.7157,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.somerset.gov.uk/libraries/digital-books-audiobooks-and-magazines/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.somerset.gov.uk/libraries/home-library-service/"
-    }
-  ],
+  "authority": "somerset",
+  "source_id": "1657",
+  "source_url": "https://libraryon.org/libraries/somerset/glastonbury",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/somerset/glastonbury",
-  "authority": "somerset"
+  "data": {
+    "Local authority": "Somerset",
+    "Local authority code": "E06000066",
+    "Library name": "Glastonbury Library",
+    "Library code": null,
+    "Address 1": "1 Orchard Court, The Archers Way, Glastonbury, Somerset, BA6 9JD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BA6 9JB",
+    "Unique property reference number": 250061448,
+    "Latitude": 51.14909,
+    "Longitude": -2.7157,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Children's activities; Computers; Digital lending; Books delivered",
+    "Phone number": null,
+    "Email address": "glalib@somerset.gov.uk",
+    "URL": "https://www.somerset.gov.uk/locations/glastonbury-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

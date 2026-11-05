@@ -1,148 +1,71 @@
 {
   "id": "lib_e32fa6ad-1a2b-420d-9017-da19b6bf3289",
-  "source_id": "3175",
-  "name": "Westcliff Library",
   "slug": "westcliff",
-  "address": "649 London Road, Westcliff-on-Sea, Essex, SS0 9PD",
-  "postcode": "SS0 9PD",
-  "town": "Westcliff-on-Sea",
-  "phone": "01702 215011",
-  "email": "library@southend.gov.uk",
-  "website": "https://www.southend.gov.uk/directory-record/31985/westcliff-library",
-  "catalogue": "https://southend.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://www.southend.gov.uk/libraries-1/join-library-1",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54594,
-  "longitude": 0.68358,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.southend.gov.uk/libraries-1/childrens-library"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://southend.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.southend.gov.uk/library-services/library-community-services-1"
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    }
-  ],
+  "authority": "southend-on-sea",
+  "source_id": "3175",
+  "source_url": "https://libraryon.org/libraries/southend-on-sea/westcliff",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/southend-on-sea/westcliff",
-  "authority": "southend-on-sea"
+  "data": {
+    "Local authority": "Southend-on-Sea",
+    "Local authority code": "E06000033",
+    "Library name": "Westcliff Library",
+    "Library code": null,
+    "Address 1": "649 London Road, Westcliff-on-Sea, Essex, SS0 9PD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SS0 9PD",
+    "Unique property reference number": 100091582187,
+    "Latitude": 51.54594,
+    "Longitude": 0.68358,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Bookable space; Children's activities; Digital lending; Books delivered; Bookable space; Findmypast; British Newspaper Archive; Garden",
+    "Phone number": "01702 215011",
+    "Email address": "library@southend.gov.uk",
+    "URL": "https://www.southend.gov.uk/directory-record/31985/westcliff-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

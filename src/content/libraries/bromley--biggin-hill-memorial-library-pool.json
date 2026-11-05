@@ -1,145 +1,64 @@
 {
   "id": "lib_d56eea35-9909-4b4c-917b-280b999e7831",
-  "source_id": "2258",
-  "name": "Biggin Hill Memorial Library & Pool",
   "slug": "biggin-hill-memorial-library-pool",
-  "address": "Church Road, Biggin Hill, Greater London, TN16 3LB",
-  "postcode": "TN16 3LB",
-  "town": "Westerham",
-  "phone": "01959 528053",
-  "email": "bigginhill.library@gll.org",
-  "website": "https://www.better.org.uk/library/london/bromley/biggin-hill-memorial-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "staff-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.312124,
-  "longitude": 0.034593,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "bromley",
+  "source_id": "2258",
+  "source_url": "https://libraryon.org/libraries/bromley/biggin-hill-memorial-library-pool",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bromley/biggin-hill-memorial-library-pool",
-  "authority": "bromley"
+  "data": {
+    "Local authority": "Bromley",
+    "Local authority code": "E09000006",
+    "Library name": "Biggin Hill Memorial Library & Pool",
+    "Library code": null,
+    "Address 1": "Church Road, Biggin Hill, Greater London, TN16 3LB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TN16 3LB",
+    "Unique property reference number": 10070007971,
+    "Latitude": 51.312124,
+    "Longitude": 0.034593,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": "09:30-19:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-19:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": "10:00-13:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Digital skills sessions; British Newspaper Archive; Findmypast; Books delivered; Children's activities; Hobby and interest groups",
+    "Phone number": "01959 528053",
+    "Email address": "bigginhill.library@gll.org",
+    "URL": "https://www.better.org.uk/library/london/bromley/biggin-hill-memorial-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

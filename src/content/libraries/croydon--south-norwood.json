@@ -1,96 +1,64 @@
 {
   "id": "lib_7960a2a8-4cab-448d-bfe6-9c87c6810a78",
-  "source_id": "2433",
-  "name": "South Norwood Library",
   "slug": "south-norwood",
-  "address": "Lawrence Road, South Norwood, SE25 5AA",
-  "postcode": "SE25 5AA",
-  "town": "London",
-  "phone": "020 7884 5195",
-  "email": "southnorwoodlibrary@croydon.gov.uk",
-  "website": "https://www.croydon.gov.uk/libraries-leisure-and-culture/libraries/find-your-library/south-norwood-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "New library building under construction; due to open Summer 2020",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.397405,
-  "longitude": -0.078783,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "croydon",
+  "source_id": "2433",
+  "source_url": "https://libraryon.org/libraries/croydon/south-norwood",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/croydon/south-norwood",
-  "authority": "croydon"
+  "data": {
+    "Local authority": "Croydon",
+    "Local authority code": "E09000008",
+    "Library name": "South Norwood Library",
+    "Library code": null,
+    "Address 1": "Lawrence Road, South Norwood, SE25 5AA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE25 5AA",
+    "Unique property reference number": 200001210571,
+    "Latitude": 51.397405,
+    "Longitude": -0.078783,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1967,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers",
+    "Phone number": "020 7884 5195",
+    "Email address": "southnorwoodlibrary@croydon.gov.uk",
+    "URL": "https://www.croydon.gov.uk/libraries-leisure-and-culture/libraries/find-your-library/south-norwood-library",
+    "Notes": "New library building under construction; due to open Summer 2020"
+  },
+  "validation_exceptions": []
 }

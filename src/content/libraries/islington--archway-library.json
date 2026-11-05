@@ -1,104 +1,64 @@
 {
   "id": "lib_78b98ef5-90b2-4807-abce-c1dbaca1f64b",
-  "source_id": "2473",
-  "name": "Archway Library",
   "slug": "archway-library",
-  "address": "Hamlyn House, Highgate Hill, London, Middlesex, N19 5PH",
-  "postcode": "N19 5PH",
-  "town": "London",
-  "phone": "020 7527 7820",
-  "email": "Archway.library@islington.gov.uk",
-  "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/archway-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.565729,
-  "longitude": -0.13561,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "islington",
+  "source_id": "2473",
+  "source_url": "https://libraryon.org/libraries/islington/archway-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/islington/archway-library",
-  "authority": "islington"
+  "data": {
+    "Local authority": "Islington",
+    "Local authority code": "E09000019",
+    "Library name": "Archway Library",
+    "Library code": null,
+    "Address 1": "Hamlyn House, Highgate Hill, London, Middlesex, N19 5PH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N19 5PH",
+    "Unique property reference number": 10012791132,
+    "Latitude": 51.565729,
+    "Longitude": -0.13561,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-20:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-20:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital skills sessions",
+    "Phone number": "020 7527 7820",
+    "Email address": "Archway.library@islington.gov.uk",
+    "URL": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/archway-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

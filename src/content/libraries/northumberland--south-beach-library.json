@@ -1,116 +1,64 @@
 {
   "id": "lib_f917e7b9-839d-4e5d-836f-16bf07841ea7",
-  "source_id": "3429",
-  "name": "South Beach Library",
   "slug": "south-beach-library",
-  "address": "Fulmar Drive, Blyth, Northumberland, NE24 3RJ",
-  "postcode": "NE24 3RJ",
-  "town": "Blyth",
-  "phone": "01670 363091",
-  "email": "mylibrary@northumberland.gov.uk",
-  "website": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=SOU",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.110484,
-  "longitude": -1.510841,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "northumberland",
+  "source_id": "3429",
+  "source_url": "https://libraryon.org/libraries/northumberland/south-beach-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/northumberland/south-beach-library",
-  "authority": "northumberland"
+  "data": {
+    "Local authority": "Northumberland",
+    "Local authority code": "E06000057",
+    "Library name": "South Beach Library",
+    "Library code": null,
+    "Address 1": "Fulmar Drive, Blyth, Northumberland, NE24 3RJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE24 3RJ",
+    "Unique property reference number": null,
+    "Latitude": 55.110484,
+    "Longitude": -1.510841,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:30-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Digital lending; Family history; Books delivered; Computers; Hobby and interest groups; Children's activities",
+    "Phone number": "01670 363091",
+    "Email address": "mylibrary@northumberland.gov.uk",
+    "URL": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=SOU",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

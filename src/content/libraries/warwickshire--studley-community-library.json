@@ -1,112 +1,73 @@
 {
   "id": "lib_8590d750-ddc6-4ee1-827c-9a61cc0db231",
-  "source_id": "1806",
-  "name": "Studley Community Library",
   "slug": "studley-community-library",
-  "address": "Studley Village Hall, High Street, Studley, Warwickshire, B80 7HJ",
-  "postcode": "B80 7HJ",
-  "town": "Studley",
-  "phone": "01527 853753",
-  "email": "studleycml@gmail.com",
-  "website": "https://www.warwickshire.gov.uk/directory-record/608/studley-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.2728,
-  "longitude": -1.89644,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    }
-  ],
+  "authority": "warwickshire",
+  "source_id": "1806",
+  "source_url": "https://libraryon.org/libraries/warwickshire/studley-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/warwickshire/studley-community-library",
-  "authority": "warwickshire"
+  "data": {
+    "Local authority": "Warwickshire",
+    "Local authority code": "E10000031",
+    "Library name": "Studley Community Library",
+    "Library code": null,
+    "Address 1": "Studley Village Hall, High Street, Studley, Warwickshire, B80 7HJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B80 7HJ",
+    "Unique property reference number": null,
+    "Latitude": 52.2728,
+    "Longitude": -1.89644,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "09:30-12:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Family history; Books delivered; Scanning; BFI Replay; Printing",
+    "Phone number": "01527 853753",
+    "Email address": "studleycml@gmail.com",
+    "URL": "https://www.warwickshire.gov.uk/directory-record/608/studley-community-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_4b33554b231fd1c57a103f07"
+      ]
+    }
+  ]
 }

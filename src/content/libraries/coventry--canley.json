@@ -1,136 +1,64 @@
 {
   "id": "lib_6ea16cf7-60bf-4d52-beb0-0ad671dfc1a0",
-  "source_id": "2449",
-  "name": "Canley",
   "slug": "canley",
-  "address": "Prior Deram Walk, Canley, West Midlands, CV4 8FT",
-  "postcode": "CV4 8FT",
-  "town": "Coventry",
-  "phone": "024 7678 6963",
-  "email": "canley.library@coventry.gov.uk",
-  "website": "https://www.coventry.gov.uk/directory-record/50164/canley-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://www.google.com/maps/embed?pb=!4v1736933489240!6m8!1m7!1sCAoSLEFGMVFpcE9ZTllEeHN6ZjF1eHY4eldUelRnX2FzMGk4U25tb3U2UlhmcXZj!2m2!1d52.39418601078644!2d-1.557376146761362!3f7.46!4f-9.010000000000005!5f0.5970117501821992",
-  "permanentlyClosed": false,
-  "latitude": 52.39462,
-  "longitude": -1.55943,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Faxing",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "coventry",
+  "source_id": "2449",
+  "source_url": "https://libraryon.org/libraries/coventry/canley",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/coventry/canley",
-  "authority": "coventry"
+  "data": {
+    "Local authority": "Coventry",
+    "Local authority code": "E08000026",
+    "Library name": "Canley",
+    "Library code": null,
+    "Address 1": "Prior Deram Walk, Canley, West Midlands, CV4 8FT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CV4 8FT",
+    "Unique property reference number": null,
+    "Latitude": 52.39462,
+    "Longitude": -1.55943,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "12:00-18:00",
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "12:00-18:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Children's activities; Computers; Digital lending; Faxing; Hobby and interest groups; Photocopiers; Scanning",
+    "Phone number": "024 7678 6963",
+    "Email address": "canley.library@coventry.gov.uk",
+    "URL": "https://www.coventry.gov.uk/directory-record/50164/canley-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

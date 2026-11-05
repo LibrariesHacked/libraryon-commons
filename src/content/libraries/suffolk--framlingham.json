@@ -1,140 +1,64 @@
 {
   "id": "lib_8c2a7f70-a24a-4761-b02b-6c96c35b768b",
-  "source_id": "1310",
-  "name": "Framlingham",
   "slug": "framlingham",
-  "address": "The Old Court House, Bridge Street, Framlingham, Suffolk, IP13 9BA",
-  "postcode": "IP13 9BA",
-  "town": "Woodbridge",
-  "phone": "01728 587104",
-  "email": "library.help@suffolk.gov.uk",
-  "website": "https://suffolkcommunitylibraries.co.uk/libraries/framlingham/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "automatic-doors",
-    "step-free-access",
-    "accessible-restrooms"
-  ],
-  "notes": "Shared building with Town Council",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.22196,
-  "longitude": 1.34372,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "suffolk",
+  "source_id": "1310",
+  "source_url": "https://libraryon.org/libraries/suffolk/framlingham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/suffolk/framlingham",
-  "authority": "suffolk"
+  "data": {
+    "Local authority": "Suffolk",
+    "Local authority code": "E10000029",
+    "Library name": "Framlingham",
+    "Library code": null,
+    "Address 1": "The Old Court House, Bridge Street, Framlingham, Suffolk, IP13 9BA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IP13 9BA",
+    "Unique property reference number": null,
+    "Latitude": 52.22196,
+    "Longitude": 1.34372,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:30",
+    "Friday staffed hours": "09:30-17:30",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": "11:00-15:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Photocopiers; British Newspaper Archive; Hobby and interest groups; Children's activities; Findmypast",
+    "Phone number": "01728 587104",
+    "Email address": "library.help@suffolk.gov.uk",
+    "URL": "https://suffolkcommunitylibraries.co.uk/libraries/framlingham/",
+    "Notes": "Shared building with Town Council"
+  },
+  "validation_exceptions": []
 }

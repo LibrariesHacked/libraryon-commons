@@ -1,118 +1,64 @@
 {
   "id": "lib_6425bfae-74d0-401d-8e8c-ced29c9e700c",
-  "source_id": "2025",
-  "name": "Park Library",
   "slug": "park",
-  "address": "243 Duke St, Sheffield S2 5QP",
-  "postcode": "S2 5QP",
-  "town": "Sheffield",
-  "phone": " 0114 275 7497",
-  "email": "parklibrary29@gmail.com",
-  "website": "https://volunteerlibrariesinsheffield.org/park/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.37799,
-  "longitude": -1.45392,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "sheffield",
+  "source_id": "2025",
+  "source_url": "https://libraryon.org/libraries/sheffield/park",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sheffield/park",
-  "authority": "sheffield"
+  "data": {
+    "Local authority": "Sheffield",
+    "Local authority code": "E08000019",
+    "Library name": "Park Library",
+    "Library code": null,
+    "Address 1": "243 Duke St, Sheffield S2 5QP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S2 5QP",
+    "Unique property reference number": 100052215767,
+    "Latitude": 53.37799,
+    "Longitude": -1.45392,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Digital skills sessions; Books delivered; Children's activities; Hobby and interest groups",
+    "Phone number": "0114 275 7497",
+    "Email address": "parklibrary29@gmail.com",
+    "URL": "https://volunteerlibrariesinsheffield.org/park/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

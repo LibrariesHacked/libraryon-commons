@@ -1,152 +1,73 @@
 {
   "id": "lib_832a084b-bd5f-4619-87d7-ee5e3596d9c6",
-  "source_id": "1499",
-  "name": "Markfield Community Library",
   "slug": "markfield",
-  "address": "Oakfield Avenue, Markfield, Leicestershire, LE67 9WG",
-  "postcode": "LE67 9WG",
-  "town": "Markfield",
-  "phone": "0116 305 3642",
-  "email": "markfieldlibrary@gmail.com",
-  "website": "http://www.markfieldcommunitylibrary.co.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "Hours closed: M&Tu 10:00-13:00 and 15:00-18:00; Th 10:00-12:30 and 15:00-18:00; F 10:00-13:00",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.684,
-  "longitude": -1.27737,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "leicestershire",
+  "source_id": "1499",
+  "source_url": "https://libraryon.org/libraries/leicestershire/markfield",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicestershire/markfield",
-  "authority": "leicestershire"
+  "data": {
+    "Local authority": "Leicestershire",
+    "Local authority code": "E10000018",
+    "Library name": "Markfield Community Library",
+    "Library code": null,
+    "Address 1": "Oakfield Avenue, Markfield, Leicestershire, LE67 9WG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE67 9WG",
+    "Unique property reference number": null,
+    "Latitude": 52.684,
+    "Longitude": -1.27737,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-10:00,13:00-15:00,18:00-19:00",
+    "Tuesday staffed hours": "09:00-10:00,13:00-15:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-10:00,12:30-15:00",
+    "Friday staffed hours": "09:00-10:00,13:00-15:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Photocopiers; Computers; Children's activities; Hobby and interest groups; Bookable space",
+    "Phone number": "0116 305 3642",
+    "Email address": "markfieldlibrary@gmail.com",
+    "URL": "http://www.markfieldcommunitylibrary.co.uk/",
+    "Notes": "Hours closed: M&Tu 10:00-13:00 and 15:00-18:00; Th 10:00-12:30 and 15:00-18:00; F 10:00-13:00"
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_a080756a5a97e1ebde467f3b"
+      ]
+    }
+  ]
 }

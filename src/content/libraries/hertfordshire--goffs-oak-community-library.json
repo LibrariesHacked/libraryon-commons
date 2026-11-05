@@ -1,132 +1,71 @@
 {
   "id": "lib_c1b4f947-7cb2-4c60-abe2-be0a6366cc32",
-  "source_id": "873",
-  "name": "Goffs Oak Community Library",
   "slug": "goffs-oak-community-library",
-  "address": "Goffs Lane, Goffs Oak, Hertfordshire, EN7 5ET",
-  "postcode": "EN7 5HL",
-  "town": "Waltham Cross",
-  "phone": "",
-  "email": "libraries.information@hertfordshire.gov.uk",
-  "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/goffs-oak-community-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.7104,
-  "longitude": -0.08585,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    }
-  ],
+  "authority": "hertfordshire",
+  "source_id": "873",
+  "source_url": "https://libraryon.org/libraries/hertfordshire/goffs-oak-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hertfordshire/goffs-oak-community-library",
-  "authority": "hertfordshire"
+  "data": {
+    "Local authority": "Hertfordshire",
+    "Local authority code": "E10000015",
+    "Library name": "Goffs Oak Community Library",
+    "Library code": null,
+    "Address 1": "Goffs Lane, Goffs Oak, Hertfordshire, EN7 5ET",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EN7 5HL",
+    "Unique property reference number": null,
+    "Latitude": 51.7104,
+    "Longitude": -0.08585,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-14:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-16:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Scanning; Children's activities; Hobby and interest groups; Family history; Digital lending; BFI Replay",
+    "Phone number": null,
+    "Email address": "libraries.information@hertfordshire.gov.uk",
+    "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/goffs-oak-community-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

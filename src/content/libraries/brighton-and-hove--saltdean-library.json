@@ -1,146 +1,77 @@
 {
   "id": "lib_de068b53-a70c-442e-b5bf-572ccd52fe73",
-  "source_id": "3174",
-  "name": "Saltdean Library",
   "slug": "saltdean-library",
-  "address": "Saltdean Lido, Brighton, East Sussex, BN2 8SP",
-  "postcode": "",
-  "town": "Brighton",
-  "phone": "01273 290 800",
-  "email": "libraries@brighton-hove.gov.uk",
-  "website": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/saltdean-library?origin_node=33916&original_query%5Bpage%5D=0",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "accessible-parking",
-    "step-free-access",
-    "visual-alarms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community",
-    "other"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/saltdean_library/",
-  "permanentlyClosed": false,
-  "latitude": 50.801792,
-  "longitude": -0.04198,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "brighton-and-hove",
+  "source_id": "3174",
+  "source_url": "https://libraryon.org/libraries/brighton-and-hove/saltdean-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brighton-and-hove/saltdean-library",
-  "authority": "brighton-and-hove"
+  "data": {
+    "Local authority": "Brighton and Hove",
+    "Local authority code": "E06000043",
+    "Library name": "Saltdean Library",
+    "Library code": null,
+    "Address 1": "Saltdean Lido, Brighton, East Sussex, BN2 8SP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 50.801792,
+    "Longitude": -0.04198,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:00-19:00",
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": "09:00-19:00",
+    "Thursday unstaffed hours": "09:00-19:00",
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": "11:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Scanning; Children's activities; Hobby and interest groups; British Newspaper Archive; Findmypast",
+    "Phone number": "01273 290 800",
+    "Email address": "libraries@brighton-hove.gov.uk",
+    "URL": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/saltdean-library?origin_node=33916&original_query%5Bpage%5D=0",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

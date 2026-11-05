@@ -1,138 +1,73 @@
 {
   "id": "lib_c41c79eb-a056-452e-b24d-a2189dd2f2f0",
-  "source_id": "1592",
-  "name": "Tadcaster Community Library",
   "slug": "tadcaster-library",
-  "address": "Station Road, Tadcaster, North Yorkshire, LS24 9JG",
-  "postcode": "LS24 9JG",
-  "town": "Tadcaster",
-  "phone": "01609 534525",
-  "email": "tadcastercommunitylibrary@gmail.com",
-  "website": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/tadcaster-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.88454,
-  "longitude": -1.26811,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "north-yorkshire",
+  "source_id": "1592",
+  "source_url": "https://libraryon.org/libraries/north-yorkshire/tadcaster-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-yorkshire/tadcaster-library",
-  "authority": "north-yorkshire"
+  "data": {
+    "Local authority": "North Yorkshire",
+    "Local authority code": "E06000065",
+    "Library name": "Tadcaster Community Library",
+    "Library code": null,
+    "Address 1": "Station Road, Tadcaster, North Yorkshire, LS24 9JG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LS24 9JG",
+    "Unique property reference number": null,
+    "Latitude": 53.88454,
+    "Longitude": -1.26811,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-18:00",
+    "Tuesday staffed hours": "13:30-18:00",
+    "Wednesday staffed hours": "14:30-17:00",
+    "Thursday staffed hours": "09:00-13:00",
+    "Friday staffed hours": "09:00-13:00",
+    "Saturday staffed hours": "09:30-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Digital skills sessions; Computers; Photocopiers; Scanning; Bookable space",
+    "Phone number": "01609 534525",
+    "Email address": "tadcastercommunitylibrary@gmail.com",
+    "URL": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/tadcaster-community-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_960115adf0c86c1f45ae74ef"
+      ]
+    }
+  ]
 }

@@ -1,122 +1,71 @@
 {
   "id": "lib_9c6a9aa0-9c55-471d-b60a-2fd72c39bb76",
-  "source_id": "2585",
-  "name": "Western Library",
   "slug": "western-library",
-  "address": "254 Boulevard, Hessle Road, Hull, East Riding of Yorkshire, HU3 3ED",
-  "postcode": "HU3 3ED",
-  "town": "Hull",
-  "phone": "01482 331 217",
-  "email": "WesternLibrary@hcandl.co.uk",
-  "website": "https://www.hulllibraries.co.uk/local-library/western-library",
-  "catalogue": "https://hull.ent.sirsidynix.net.uk/client/en_GB/default",
-  "joinOnline": "https://www.hulllibraries.co.uk/borrowing/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "assistive-technology-available",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.73559,
-  "longitude": -0.36373,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.hulllibraries.co.uk/borrowing/DigitalReadingandListening"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.hulllibraries.co.uk/children"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.hulllibraries.co.uk/borrowing/home-library-service#:~:text=If%20you%20have%20difficulty%20getting,libraries%20right%20to%20your%20door.&text=Joining%20is%20easy%20and%20membership,of%20the%20items%20you%20borrow."
-    }
-  ],
+  "authority": "hull",
+  "source_id": "2585",
+  "source_url": "https://libraryon.org/libraries/hull/western-library",
   "updated_on": "2026-05-19",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hull/western-library",
-  "authority": "hull"
+  "data": {
+    "Local authority": "Hull",
+    "Local authority code": "E06000010",
+    "Library name": "Western Library",
+    "Library code": null,
+    "Address 1": "254 Boulevard, Hessle Road, Hull, East Riding of Yorkshire, HU3 3ED",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HU3 3ED",
+    "Unique property reference number": null,
+    "Latitude": 53.73559,
+    "Longitude": -0.36373,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": 1895,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-18:00",
+    "Tuesday staffed hours": "09:30-13:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; Computers; Bookable space; Digital lending; Children's activities; Books delivered",
+    "Phone number": "01482 331 217",
+    "Email address": "WesternLibrary@hcandl.co.uk",
+    "URL": "https://www.hulllibraries.co.uk/local-library/western-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

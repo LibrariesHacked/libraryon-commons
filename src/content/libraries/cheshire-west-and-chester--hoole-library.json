@@ -1,114 +1,64 @@
 {
   "id": "lib_1efdaa2c-6b6c-4c89-b6bd-13e8123a8b5a",
-  "source_id": "2639",
-  "name": "Hoole Library",
   "slug": "hoole-library",
-  "address": "Hoole Community Centre, Westminster Road, Hoole, Cheshire, CH2 3AU",
-  "postcode": "CH2 3AU",
-  "town": "Chester",
-  "phone": "",
-  "email": "libraries@cheshirewestandchester.gov.uk",
-  "website": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/hoole-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.19878,
-  "longitude": -2.87441,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "cheshire-west-and-chester",
+  "source_id": "2639",
+  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/hoole-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/hoole-library",
-  "authority": "cheshire-west-and-chester"
+  "data": {
+    "Local authority": "Cheshire West and Chester",
+    "Local authority code": "E06000050",
+    "Library name": "Hoole Library",
+    "Library code": null,
+    "Address 1": "Hoole Community Centre, Westminster Road, Hoole, Cheshire, CH2 3AU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CH2 3AU",
+    "Unique property reference number": null,
+    "Latitude": 53.19878,
+    "Longitude": -2.87441,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2013,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "16:00-17:00",
+    "Tuesday unstaffed hours": "14:00-17:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": "16:00-17:00",
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": "10:00-13:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Hobby and interest groups; Family history; Findmypast; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "libraries@cheshirewestandchester.gov.uk",
+    "URL": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/hoole-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

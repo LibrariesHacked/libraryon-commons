@@ -1,84 +1,71 @@
 {
   "id": "lib_73c9dec1-90e7-4bfb-8cf2-f52d07ffb9f1",
-  "source_id": "355",
-  "name": "Coupar Angus Library",
   "slug": "coupar-angus-library",
-  "address": "Strathmore Community Hub Library, Strathmore Community Hub, Trades Lane, Coupar Angus, Blairgowrie, UK",
-  "postcode": "PH13 9AQ",
-  "town": "Blairgowrie",
-  "phone": "01828 958020",
-  "email": "admin@strathmorehub.org",
-  "website": "https://strathmorehub.org/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.54655,
-  "longitude": -3.26537,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "perth-and-kinross",
+  "source_id": "355",
+  "source_url": "https://libraryon.org/libraries/perth-and-kinross/coupar-angus-library",
   "updated_on": "2026-07-27",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/perth-and-kinross/coupar-angus-library",
-  "authority": "perth-and-kinross"
+  "data": {
+    "Local authority": "Perth and Kinross",
+    "Local authority code": "S12000048",
+    "Library name": "Coupar Angus Library",
+    "Library code": null,
+    "Address 1": "Strathmore Community Hub Library, Strathmore Community Hub, Trades Lane, Coupar Angus, Blairgowrie, UK",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PH13 9AQ",
+    "Unique property reference number": null,
+    "Latitude": 56.54655,
+    "Longitude": -3.26537,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-12:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "15:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01828 958020",
+    "Email address": "admin@strathmorehub.org",
+    "URL": "https://strathmorehub.org/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

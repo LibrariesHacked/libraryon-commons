@@ -1,101 +1,64 @@
 {
   "id": "lib_53b1a5d1-2097-423f-baf0-0f60a523c554",
-  "source_id": "1198",
-  "name": "Navenby Community Hub",
   "slug": "navenby-community-hub",
-  "address": "The Venue, Grantham Road, Lincoln, Lincolnshire, LN5 0JJ",
-  "postcode": "LN5 0JJ",
-  "town": "Lincoln",
-  "phone": "01522 782010",
-  "email": "",
-  "website": "https://www.lincolnshire.gov.uk/directory-record/63994/navenby-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.10352,
-  "longitude": -0.5263,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "lincolnshire",
+  "source_id": "1198",
+  "source_url": "https://libraryon.org/libraries/lincolnshire/navenby-community-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lincolnshire/navenby-community-hub",
-  "authority": "lincolnshire"
+  "data": {
+    "Local authority": "Lincolnshire",
+    "Local authority code": "E10000019",
+    "Library name": "Navenby Community Hub",
+    "Library code": null,
+    "Address 1": "The Venue, Grantham Road, Lincoln, Lincolnshire, LN5 0JJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LN5 0JJ",
+    "Unique property reference number": 10006539535,
+    "Latitude": 53.10352,
+    "Longitude": -0.5263,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2016,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "15:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; BFI Replay",
+    "Phone number": "01522 782010",
+    "Email address": null,
+    "URL": "https://www.lincolnshire.gov.uk/directory-record/63994/navenby-community-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

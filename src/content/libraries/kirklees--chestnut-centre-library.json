@@ -1,115 +1,71 @@
 {
   "id": "lib_6efde8f6-7817-4af9-828d-75c587887ced",
-  "source_id": "2100",
-  "name": "Chestnut Centre Library",
   "slug": "chestnut-centre-library",
-  "address": "The Chestnut Centre, 2a Chestnut Street, Sheepridge, Huddersfield, West Yorkshire, HD2 1HJ",
-  "postcode": "HD2 1HJ",
-  "town": "Huddersfield",
-  "phone": "01484 414868",
-  "email": "frontline.services@kirklees.gov.uk",
-  "website": "https://www.kirklees.gov.uk/Libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "accessible-parking",
-    "automatic-doors",
-    "wheelchair-access",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.66815,
-  "longitude": -1.76844,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "kirklees",
+  "source_id": "2100",
+  "source_url": "https://libraryon.org/libraries/kirklees/chestnut-centre-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kirklees/chestnut-centre-library",
-  "authority": "kirklees"
+  "data": {
+    "Local authority": "Kirklees",
+    "Local authority code": "E08000034",
+    "Library name": "Chestnut Centre Library",
+    "Library code": null,
+    "Address 1": "The Chestnut Centre, 2a Chestnut Street, Sheepridge, Huddersfield, West Yorkshire, HD2 1HJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HD2 1HJ",
+    "Unique property reference number": null,
+    "Latitude": 53.66815,
+    "Longitude": -1.76844,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers",
+    "Phone number": "01484 414868",
+    "Email address": "frontline.services@kirklees.gov.uk",
+    "URL": "https://www.kirklees.gov.uk/Libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

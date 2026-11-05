@@ -1,82 +1,71 @@
 {
   "id": "lib_81720068-a8d9-42cc-a8d1-b4ec72515737",
-  "source_id": "79",
-  "name": "Newtonhill Library",
   "slug": "newtonhill-library",
-  "address": "22 Greystone Place, Newtonhill, Stonehaven, AB39 3UL, United Kingdom",
-  "postcode": "AB39 3UL",
-  "town": "Stonehaven",
-  "phone": "01569 690530",
-  "email": "newtonhill.library@aberdeenshire.gov.uk",
-  "website": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/newtonhill-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "15:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.03092,
-  "longitude": -2.14849,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "aberdeenshire",
+  "source_id": "79",
+  "source_url": "https://libraryon.org/libraries/aberdeenshire/newtonhill-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/aberdeenshire/newtonhill-library",
-  "authority": "aberdeenshire"
+  "data": {
+    "Local authority": "Aberdeenshire",
+    "Local authority code": "S12000034",
+    "Library name": "Newtonhill Library",
+    "Library code": null,
+    "Address 1": "22 Greystone Place, Newtonhill, Stonehaven, AB39 3UL, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB39 3UL",
+    "Unique property reference number": null,
+    "Latitude": 57.03092,
+    "Longitude": -2.14849,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "15:30-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:00-15:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": "01569 690530",
+    "Email address": "newtonhill.library@aberdeenshire.gov.uk",
+    "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/newtonhill-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

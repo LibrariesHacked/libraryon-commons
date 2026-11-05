@@ -1,141 +1,71 @@
 {
   "id": "lib_d75fd5d1-1e61-4457-a653-4703c21eb4ad",
-  "source_id": "1440",
-  "name": "Wood Avenue Library",
   "slug": "wood-avenue-library",
-  "address": "Wood Avenue, Folkestone, Kent, CT19 6HS",
-  "postcode": "CT19 6HS",
-  "town": "Folkestone",
-  "phone": "03000 41 31 31",
-  "email": "woodavenuelibrary@kent.gov.uk",
-  "website": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=AUDMjdlV_ZI&communitychannel=9",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/woodavenuelibrarykent/",
-  "permanentlyClosed": true,
-  "latitude": 51.09315,
-  "longitude": 1.18312,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "kent",
+  "source_id": "1440",
+  "source_url": "https://libraryon.org/libraries/kent/wood-avenue-library",
   "updated_on": "2026-09-03",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kent/wood-avenue-library",
-  "authority": "kent"
+  "data": {
+    "Local authority": "Kent",
+    "Local authority code": "E10000016",
+    "Library name": "Wood Avenue Library",
+    "Library code": null,
+    "Address 1": "Wood Avenue, Folkestone, Kent, CT19 6HS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CT19 6HS",
+    "Unique property reference number": null,
+    "Latitude": 51.09315,
+    "Longitude": 1.18312,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-13:00",
+    "Thursday staffed hours": "10:00-13:00,14:00-16:30",
+    "Friday staffed hours": "10:00-13:00,14:00-16:30",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Children's activities; Bookable space; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": "03000 41 31 31",
+    "Email address": "woodavenuelibrary@kent.gov.uk",
+    "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=AUDMjdlV_ZI&communitychannel=9",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

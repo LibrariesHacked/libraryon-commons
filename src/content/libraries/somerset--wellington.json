@@ -1,125 +1,71 @@
 {
   "id": "lib_c1773622-c002-4115-ab79-bff6932e33bc",
-  "source_id": "1740",
-  "name": "Wellington Library",
   "slug": "wellington",
-  "address": "16 Fore Street, Wellington, Somerset, TA21 8AQ",
-  "postcode": "TA21 8AQ",
-  "town": "Wellington",
-  "phone": "",
-  "email": "wlnlib@somerset.gov.uk",
-  "website": "https://www.somerset.gov.uk/locations/wellington-library/",
-  "catalogue": "https://www.librarieswest.org.uk/",
-  "joinOnline": "https://www.librarieswest.org.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "neurodivergent-spaces"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://maps.app.goo.gl/5LCgxUiXyspVjTjs5",
-  "permanentlyClosed": false,
-  "latitude": 50.97779,
-  "longitude": -3.22807,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.somerset.gov.uk/libraries/digital-books-audiobooks-and-magazines/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.somerset.gov.uk/libraries/home-library-service/"
-    }
-  ],
+  "authority": "somerset",
+  "source_id": "1740",
+  "source_url": "https://libraryon.org/libraries/somerset/wellington",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/somerset/wellington",
-  "authority": "somerset"
+  "data": {
+    "Local authority": "Somerset",
+    "Local authority code": "E06000066",
+    "Library name": "Wellington Library",
+    "Library code": null,
+    "Address 1": "16 Fore Street, Wellington, Somerset, TA21 8AQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TA21 8AQ",
+    "Unique property reference number": 100041071357,
+    "Latitude": 50.97779,
+    "Longitude": -3.22807,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-13:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Children's activities; Digital lending; Books delivered",
+    "Phone number": null,
+    "Email address": "wlnlib@somerset.gov.uk",
+    "URL": "https://www.somerset.gov.uk/locations/wellington-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

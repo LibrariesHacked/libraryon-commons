@@ -1,151 +1,64 @@
 {
   "id": "lib_dabb13b0-4e65-47ad-85a1-10c6e425a282",
-  "source_id": "3139",
-  "name": "Hove Library",
   "slug": "hove-library",
-  "address": "182-186 Church Road, Hove, East Sussex, BN3 2EG",
-  "postcode": "BN3 2EG",
-  "town": "Hove",
-  "phone": "01273 290 800",
-  "email": "libraries@brighton-hove.gov.uk",
-  "website": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/hove-library?origin_node=33916",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-parking",
-    "lift-access"
-  ],
-  "notes": "Refurbished in 2018 to include a cafe and to make room for a nusery on the lower ground floor",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other",
-    "catering"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/hove_library/",
-  "permanentlyClosed": false,
-  "latitude": 50.828458,
-  "longitude": -0.177087,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/how-hire-room-our-libraries"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "brighton-and-hove",
+  "source_id": "3139",
+  "source_url": "https://libraryon.org/libraries/brighton-and-hove/hove-library",
   "updated_on": "2026-09-16",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brighton-and-hove/hove-library",
-  "authority": "brighton-and-hove"
+  "data": {
+    "Local authority": "Brighton and Hove",
+    "Local authority code": "E06000043",
+    "Library name": "Hove Library",
+    "Library code": null,
+    "Address 1": "182-186 Church Road, Hove, East Sussex, BN3 2EG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BN3 2EG",
+    "Unique property reference number": 22021562,
+    "Latitude": 50.828458,
+    "Longitude": -0.177087,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1908,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other; catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Bookable space; Computers; Scanning; Photocopiers; Cafe; Children's activities; Hobby and interest groups; British Newspaper Archive; Findmypast",
+    "Phone number": "01273 290 800",
+    "Email address": "libraries@brighton-hove.gov.uk",
+    "URL": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/hove-library?origin_node=33916",
+    "Notes": "Refurbished in 2018 to include a cafe and to make room for a nusery on the lower ground floor"
+  },
+  "validation_exceptions": []
 }

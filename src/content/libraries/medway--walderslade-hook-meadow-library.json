@@ -1,120 +1,64 @@
 {
   "id": "lib_f1cb9ac4-0b61-4435-9b9c-f76c4d311ee6",
-  "source_id": "3275",
-  "name": "Walderslade Hook Meadow Library",
   "slug": "walderslade-hook-meadow-library",
-  "address": "King George Road, Walderslade, Chatham, Kent, ME5 0TZ",
-  "postcode": "ME5 0TZ",
-  "town": "Chatham",
-  "phone": "01634 337799",
-  "email": "waldersladeh.library@medway.gov.uk",
-  "website": "https://www.medway.gov.uk/directory_record/42/walderslade_hook_meadow_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.35051,
-  "longitude": 0.52289,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "medway",
+  "source_id": "3275",
+  "source_url": "https://libraryon.org/libraries/medway/walderslade-hook-meadow-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/medway/walderslade-hook-meadow-library",
-  "authority": "medway"
+  "data": {
+    "Local authority": "Medway",
+    "Local authority code": "E06000035",
+    "Library name": "Walderslade Hook Meadow Library",
+    "Library code": null,
+    "Address 1": "King George Road, Walderslade, Chatham, Kent, ME5 0TZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ME5 0TZ",
+    "Unique property reference number": null,
+    "Latitude": 51.35051,
+    "Longitude": 0.52289,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-14:00",
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Scanning; Photocopiers; British Newspaper Archive",
+    "Phone number": "01634 337799",
+    "Email address": "waldersladeh.library@medway.gov.uk",
+    "URL": "https://www.medway.gov.uk/directory_record/42/walderslade_hook_meadow_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

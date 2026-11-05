@@ -1,116 +1,80 @@
 {
   "id": "lib_3be20c8d-8102-4dd7-9e92-7d69193b1785",
-  "source_id": "1378",
-  "name": "Castle Donington Community Library",
   "slug": "castle-donington",
-  "address": "101 Bondgate, Castle Donington, Leicestershire, DE74 2NR",
-  "postcode": "DE74 2NR",
-  "town": "Derby",
-  "phone": "01332 805 009",
-  "email": "admin@castledoningtonlibrary.org",
-  "website": "castledoningtonlibrary.org",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.84351,
-  "longitude": -1.33827,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "leicestershire",
+  "source_id": "1378",
+  "source_url": "https://libraryon.org/libraries/leicestershire/castle-donington",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicestershire/castle-donington",
-  "authority": "leicestershire"
+  "data": {
+    "Local authority": "Leicestershire",
+    "Local authority code": "E10000018",
+    "Library name": "Castle Donington Community Library",
+    "Library code": null,
+    "Address 1": "101 Bondgate, Castle Donington, Leicestershire, DE74 2NR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DE74 2NR",
+    "Unique property reference number": null,
+    "Latitude": 52.84351,
+    "Longitude": -1.33827,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2019,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": "10:00-14:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; BFI Replay; Children's activities",
+    "Phone number": "01332 805 009",
+    "Email address": "admin@castledoningtonlibrary.org",
+    "URL": "castledoningtonlibrary.org",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "URL",
+      "code": "uri",
+      "value": "castledoningtonlibrary.org",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_cce066964eb16ee629490033"
+      ]
+    }
+  ]
 }

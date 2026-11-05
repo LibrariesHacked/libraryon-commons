@@ -1,106 +1,73 @@
 {
   "id": "lib_fcba135d-27c3-4362-a466-365fa463d6ac",
-  "source_id": "613",
-  "name": "Fair Oak Community Library",
   "slug": "fair-oak",
-  "address": "Campbell Way, Eastleigh, Hampshire, SO50 7AX",
-  "postcode": "SO50 7AX",
-  "town": "Eastleigh",
-  "phone": "023 8017 6744",
-  "email": "hello@fairoakcommunitylibrary.org",
-  "website": "https://www.fairoakcommunitylibrary.org/",
-  "catalogue": "https://fairoak.slls.online/",
-  "joinOnline": "https://www.fairoakcommunitylibrary.org/join/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Closed between 1300 and 1400 on Thu",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.96498,
-  "longitude": -1.30007,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "613",
+  "source_url": "https://libraryon.org/libraries/hampshire/fair-oak",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/fair-oak",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Fair Oak Community Library",
+    "Library code": null,
+    "Address 1": "Campbell Way, Eastleigh, Hampshire, SO50 7AX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SO50 7AX",
+    "Unique property reference number": null,
+    "Latitude": 50.96498,
+    "Longitude": -1.30007,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "023 8017 6744",
+    "Email address": "hello@fairoakcommunitylibrary.org",
+    "URL": "https://www.fairoakcommunitylibrary.org/",
+    "Notes": "Closed between 1300 and 1400 on Thu"
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_6c2317759f43a4264530eb4d"
+      ]
+    }
+  ]
 }

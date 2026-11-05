@@ -1,98 +1,83 @@
 {
   "id": "lib_3c912748-d6f1-4fe0-9350-e4d8e29d2702",
-  "source_id": "3830",
-  "name": "The Ward Library",
   "slug": "the-ward-library",
-  "address": "​​Ward Library, 38 Castle Street, Peel, IM5 1AL",
-  "postcode": "IM5 1",
-  "town": "Peel",
-  "phone": "01624 843533",
-  "email": "ward_library@hotmail.com",
-  "website": "https://www.peelonline.net/ward-library/",
-  "catalogue": "",
-  "joinOnline": "https://www.peelonline.net/ward-library/membership/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.2239656006731,
-  "longitude": -4.69688777158666,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "isle-of-man",
+  "source_id": "3830",
+  "source_url": "https://libraryon.org/libraries/isle-of-man/the-ward-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-man/the-ward-library",
-  "authority": "isle-of-man"
+  "data": {
+    "Local authority": "Isle of Man",
+    "Local authority code": null,
+    "Library name": "The Ward Library",
+    "Library code": null,
+    "Address 1": "​​Ward Library, 38 Castle Street, Peel, IM5 1AL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 54.2239656006731,
+    "Longitude": -4.69688777158666,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00",
+    "Tuesday staffed hours": "13:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:30-17:00",
+    "Saturday staffed hours": "09:00-13:00,13:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Computers; Free Wi-Fi; Digital lending",
+    "Phone number": "01624 843533",
+    "Email address": "ward_library@hotmail.com",
+    "URL": "https://www.peelonline.net/ward-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Local authority code",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

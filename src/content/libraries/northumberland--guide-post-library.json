@@ -1,103 +1,80 @@
 {
   "id": "lib_9da14b53-e4f5-4acc-8e2f-a0b48daaeb77",
-  "source_id": "3346",
-  "name": "Guide Post Library",
   "slug": "guide-post-library",
-  "address": "Cleaswell Hill, Choppington Northumberland NE62 5DW",
-  "postcode": "NE62 5BZ",
-  "town": "Choppington",
-  "phone": "01670 620453",
-  "email": "guidepost.library@northumberland.gov.uk",
-  "website": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=GUI",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Lunchtime closure",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.15927,
-  "longitude": -1.60255,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "northumberland",
+  "source_id": "3346",
+  "source_url": "https://libraryon.org/libraries/northumberland/guide-post-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/northumberland/guide-post-library",
-  "authority": "northumberland"
+  "data": {
+    "Local authority": "Northumberland",
+    "Local authority code": "E06000057",
+    "Library name": "Guide Post Library",
+    "Library code": null,
+    "Address 1": "Cleaswell Hill, Choppington Northumberland NE62 5DW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE62 5BZ",
+    "Unique property reference number": null,
+    "Latitude": 55.15927,
+    "Longitude": -1.60255,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:30,13:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Books delivered; Digital lending; Family history",
+    "Phone number": "01670 620453",
+    "Email address": "guidepost.library@northumberland.gov.uk",
+    "URL": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=GUI",
+    "Notes": "Lunchtime closure"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "postcode-lookup",
+      "reason": "Review the supporting evidence in the migration audit",
+      "audit_refs": [
+        "migration/directory/report.json#review_586960a7372a84e6dba2cf4d"
+      ]
+    }
+  ]
 }

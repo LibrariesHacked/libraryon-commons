@@ -1,108 +1,71 @@
 {
   "id": "lib_42b72911-544b-4e4d-8834-33ee54bc931f",
-  "source_id": "3054",
-  "name": "Old Town Library",
   "slug": "old-town-library",
-  "address": "Arts Centre, Devizes Road, Swindon, Wiltshire, SN1 4BJ",
-  "postcode": "SN1 4BJ",
-  "town": "Swindon",
-  "phone": "07538 767042",
-  "email": "oldtownlibrary@southswindon-pc.gov.uk/old-town-library",
-  "website": "https://southswindon-pc.gov.uk/old-town-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "11:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Run by Swindon Swindon South Parish since September 2017",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "arts",
-    "catering"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.55184,
-  "longitude": -1.77698,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "swindon",
+  "source_id": "3054",
+  "source_url": "https://libraryon.org/libraries/swindon/old-town-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/swindon/old-town-library",
-  "authority": "swindon"
+  "data": {
+    "Local authority": "Swindon",
+    "Local authority code": "E06000030",
+    "Library name": "Old Town Library",
+    "Library code": null,
+    "Address 1": "Arts Centre, Devizes Road, Swindon, Wiltshire, SN1 4BJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SN1 4BJ",
+    "Unique property reference number": null,
+    "Latitude": 51.55184,
+    "Longitude": -1.77698,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "11:00-16:30",
+    "Tuesday staffed hours": "11:00-16:30",
+    "Wednesday staffed hours": "11:00-16:30",
+    "Thursday staffed hours": "11:00-16:30",
+    "Friday staffed hours": "11:00-16:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts; catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "07538 767042",
+    "Email address": "oldtownlibrary@southswindon-pc.gov.uk/old-town-library",
+    "URL": "https://southswindon-pc.gov.uk/old-town-library/",
+    "Notes": "Run by Swindon Swindon South Parish since September 2017"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "oldtownlibrary@southswindon-pc.gov.uk/old-town-library",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

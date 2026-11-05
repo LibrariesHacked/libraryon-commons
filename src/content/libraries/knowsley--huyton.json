@@ -1,128 +1,64 @@
 {
   "id": "lib_2f1db903-a605-4e47-9ad4-214b0a001079",
-  "source_id": "1929",
-  "name": "Huyton",
   "slug": "huyton",
-  "address": "Civic Way, Huyton, Merseyside, L36 9GD",
-  "postcode": "L36 9GD",
-  "town": "Liverpool",
-  "phone": "0151 443 3734",
-  "email": "yourlibrary@knowsley.gov.uk",
-  "website": "https://yourlibrary.knowsley.gov.uk/find-your-local-library/huyton-library/",
-  "catalogue": "https://catalogue.knowsley.gov.uk/",
-  "joinOnline": "https://catalogue.knowsley.gov.uk/cgi-bin/koha/opac-memberentry.pl",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.410854,
-  "longitude": -2.841943,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "knowsley",
+  "source_id": "1929",
+  "source_url": "https://libraryon.org/libraries/knowsley/huyton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/knowsley/huyton",
-  "authority": "knowsley"
+  "data": {
+    "Local authority": "Knowsley",
+    "Local authority code": "E08000011",
+    "Library name": "Huyton",
+    "Library code": null,
+    "Address 1": "Civic Way, Huyton, Merseyside, L36 9GD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "L36 9GD",
+    "Unique property reference number": 40056961,
+    "Latitude": 53.410854,
+    "Longitude": -2.841943,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2010,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Computers; Photocopiers; Scanning; BFI Replay",
+    "Phone number": "0151 443 3734",
+    "Email address": "yourlibrary@knowsley.gov.uk",
+    "URL": "https://yourlibrary.knowsley.gov.uk/find-your-local-library/huyton-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

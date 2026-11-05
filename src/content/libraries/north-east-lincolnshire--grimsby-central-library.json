@@ -1,83 +1,80 @@
 {
   "id": "lib_6938f1e5-19ce-4c6d-8d11-9803b71f7b81",
-  "source_id": "2706",
-  "name": "Grimsby Central Library",
   "slug": "grimsby-central-library",
-  "address": "Town Hall Square, Grimsby , NE Lincolnshire, DN31 1HG",
-  "postcode": "DN31 1HG",
-  "town": "Grimsby",
-  "phone": "01472 323600",
-  "email": "Grimsby.Library@lincsinspire.com",
-  "website": "https://lincsinspire.com/libraries-archives/branches/grimsby-central-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.565564,
-  "longitude": -0.083646,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://www.hulllibraries.co.uk/bipchull"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "north-east-lincolnshire",
+  "source_id": "2706",
+  "source_url": "https://libraryon.org/libraries/north-east-lincolnshire/grimsby-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-east-lincolnshire/grimsby-central-library",
-  "authority": "north-east-lincolnshire"
+  "data": {
+    "Local authority": "North East Lincolnshire",
+    "Local authority code": "E06000012",
+    "Library name": "Grimsby Central Library",
+    "Library code": null,
+    "Address 1": "Town Hall Square, Grimsby , NE Lincolnshire, DN31 1HG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN31 1HG",
+    "Unique property reference number": null,
+    "Latitude": 53.565564,
+    "Longitude": -0.083646,
+    "Status": "Closed (temporary)",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Business support; Computers; Photocopiers; Children's activities",
+    "Phone number": "01472 323600",
+    "Email address": "Grimsby.Library@lincsinspire.com",
+    "URL": "https://lincsinspire.com/libraries-archives/branches/grimsby-central-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_08342ba173158658d900c5b8"
+      ]
+    }
+  ]
 }

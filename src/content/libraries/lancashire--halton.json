@@ -1,125 +1,64 @@
 {
   "id": "lib_c94d658f-aac6-46a3-8b6f-cac17d4f9bdb",
-  "source_id": "1131",
-  "name": "Halton",
   "slug": "halton",
-  "address": "Penny Stone Road, Lancaster , Lancashire , LA2 6QE",
-  "postcode": "LA2 6QE",
-  "town": "Lancaster",
-  "phone": "0300 123 6703",
-  "email": "halton.library@lancashire.gov.uk",
-  "website": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/halton-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.08017,
-  "longitude": -2.75824,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "lancashire",
+  "source_id": "1131",
+  "source_url": "https://libraryon.org/libraries/lancashire/halton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lancashire/halton",
-  "authority": "lancashire"
+  "data": {
+    "Local authority": "Lancashire",
+    "Local authority code": "E10000017",
+    "Library name": "Halton",
+    "Library code": null,
+    "Address 1": "Penny Stone Road, Lancaster , Lancashire , LA2 6QE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LA2 6QE",
+    "Unique property reference number": 200001497963,
+    "Latitude": 54.08017,
+    "Longitude": -2.75824,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1960,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:00-19:00",
+    "Wednesday staffed hours": "09:00-13:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; Digital lending; Books delivered; British Newspaper Archive; Findmypast; Children's activities; Hobby and interest groups",
+    "Phone number": "0300 123 6703",
+    "Email address": "halton.library@lancashire.gov.uk",
+    "URL": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/halton-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

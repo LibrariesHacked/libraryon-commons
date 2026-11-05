@@ -1,131 +1,71 @@
 {
   "id": "lib_427006c7-418f-40e5-965b-7d61636a11c0",
-  "source_id": "3462",
-  "name": "Cockermouth Library",
   "slug": "cockermouth-library-link",
-  "address": "88 Main Street, Cockermouth, Cumbria, CA13 9LU",
-  "postcode": "CA13 9LU",
-  "town": "Cockermouth",
-  "phone": "01900 822634",
-  "email": "https://cumberland.gov.uk/contact-a-library",
-  "website": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/cockermouth-library-link",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run Unstaffed",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.6637,
-  "longitude": -3.36705,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "cumberland",
+  "source_id": "3462",
+  "source_url": "https://libraryon.org/libraries/cumberland/cockermouth-library-link",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cumberland/cockermouth-library-link",
-  "authority": "cumberland"
+  "data": {
+    "Local authority": "Cumberland",
+    "Local authority code": "E06000063",
+    "Library name": "Cockermouth Library",
+    "Library code": null,
+    "Address 1": "88 Main Street, Cockermouth, Cumbria, CA13 9LU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CA13 9LU",
+    "Unique property reference number": null,
+    "Latitude": 54.6637,
+    "Longitude": -3.36705,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL-",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "10:00-16:00",
+    "Tuesday unstaffed hours": "10:00-16:00",
+    "Wednesday unstaffed hours": "10:00-17:00",
+    "Thursday unstaffed hours": "10:00-16:00",
+    "Friday unstaffed hours": "10:00-16:00",
+    "Saturday unstaffed hours": "10:00-14:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Family history; Computers; Photocopiers",
+    "Phone number": "01900 822634",
+    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/cockermouth-library-link",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://cumberland.gov.uk/contact-a-library",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

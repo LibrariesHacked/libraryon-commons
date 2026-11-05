@@ -1,134 +1,64 @@
 {
   "id": "lib_4ba96c24-4edf-4d0c-a00b-07662ed3c1b4",
-  "source_id": "2927",
-  "name": "Broughton Library",
   "slug": "broughton-hub-library",
-  "address": "50 Rigby Street, Salford , Greater Manchester, M7 4BQ",
-  "postcode": "M7 4BQ",
-  "town": "Salford",
-  "phone": "0161 686 5405",
-  "email": "broughton.library@scll.co.uk",
-  "website": "https://salfordcommunityleisure.co.uk/library/broughton/",
-  "catalogue": "https://salfordlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://salfordcommunityleisure.co.uk/libraries/join/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "accessible-restrooms",
-    "step-free-access",
-    "automatic-doors",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "civic",
-    "health",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.50553,
-  "longitude": -2.25874,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "salford",
+  "source_id": "2927",
+  "source_url": "https://libraryon.org/libraries/salford/broughton-hub-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/salford/broughton-hub-library",
-  "authority": "salford"
+  "data": {
+    "Local authority": "Salford",
+    "Local authority code": "E08000006",
+    "Library name": "Broughton Library",
+    "Library code": null,
+    "Address 1": "50 Rigby Street, Salford , Greater Manchester, M7 4BQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M7 4BQ",
+    "Unique property reference number": 10090619201,
+    "Latitude": 53.50553,
+    "Longitude": -2.25874,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 2011,
+    "Year closed": null,
+    "Monday staffed hours": "08:00-22:00",
+    "Tuesday staffed hours": "08:00-22:00",
+    "Wednesday staffed hours": "08:00-22:00",
+    "Thursday staffed hours": "08:00-22:00",
+    "Friday staffed hours": "08:00-18:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; health; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Photocopiers; Scanning; Hobby and interest groups; Books delivered; BFI Replay",
+    "Phone number": "0161 686 5405",
+    "Email address": "broughton.library@scll.co.uk",
+    "URL": "https://salfordcommunityleisure.co.uk/library/broughton/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

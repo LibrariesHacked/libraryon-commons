@@ -1,181 +1,73 @@
 {
   "id": "lib_fa0e0ed7-65e3-4ea1-bdb4-2d3a01b1dba9",
-  "source_id": "3096",
-  "name": "Newport Pagnell Library",
   "slug": "newport-pagnell-library",
-  "address": "St. John Street, Milton Keynes, Buckinghamshire, MK16 8HQ",
-  "postcode": "MK16 8HQ",
-  "town": "Newport Pagnell",
-  "phone": "01908 610933",
-  "email": "library.enquiries@milton-keynes.gov.uk",
-  "website": "https://www.milton-keynes.gov.uk/libraries/nearest-library/newport-pagnell-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "automatic-doors",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.086208,
-  "longitude": -0.720726,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "milton-keynes",
+  "source_id": "3096",
+  "source_url": "https://libraryon.org/libraries/milton-keynes/newport-pagnell-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/milton-keynes/newport-pagnell-library",
-  "authority": "milton-keynes"
+  "data": {
+    "Local authority": "Milton Keynes",
+    "Local authority code": "E06000042",
+    "Library name": "Newport Pagnell Library",
+    "Library code": null,
+    "Address 1": "St. John Street, Milton Keynes, Buckinghamshire, MK16 8HQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "MK16 8HQ",
+    "Unique property reference number": null,
+    "Latitude": 52.086208,
+    "Longitude": -0.720726,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1969,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Wednesday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Thursday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Friday unstaffed hours": "08:00-10:00,17:15-20:00",
+    "Saturday unstaffed hours": "08:00-10:00,13:15-17:00",
+    "Sunday unstaffed hours": "10:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Computers; Books delivered; Scanning; Photocopiers",
+    "Phone number": "01908 610933",
+    "Email address": "library.enquiries@milton-keynes.gov.uk",
+    "URL": "https://www.milton-keynes.gov.uk/libraries/nearest-library/newport-pagnell-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_a7fda111f2f2aca2185871bc"
+      ]
+    }
+  ]
 }

@@ -1,131 +1,71 @@
 {
   "id": "lib_525c7181-3cbe-4af0-8ccb-424be071fe00",
-  "source_id": "2958",
-  "name": "Leicester Central Library",
   "slug": "leicester-central-library",
-  "address": "Bishop Street (Town Hall Square), Leicester, Leicestershire, LE1 6AA",
-  "postcode": "LE1 6AF",
-  "town": "Leicester",
-  "phone": "01164540290",
-  "email": "central.library@leicester.gov.uk",
-  "website": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/find-a-library/leicester-central-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "wheelchair-access",
-    "accessible-restrooms",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.63314,
-  "longitude": -1.13218,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "leicester",
+  "source_id": "2958",
+  "source_url": "https://libraryon.org/libraries/leicester/leicester-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicester/leicester-central-library",
-  "authority": "leicester"
+  "data": {
+    "Local authority": "Leicester",
+    "Local authority code": "E06000016",
+    "Library name": "Leicester Central Library",
+    "Library code": null,
+    "Address 1": "Bishop Street (Town Hall Square), Leicester, Leicestershire, LE1 6AA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE1 6AF",
+    "Unique property reference number": null,
+    "Latitude": 52.63314,
+    "Longitude": -1.13218,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": "09:30-19:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Family history; Scanning; Photocopiers; Digital skills sessions; BFI Replay",
+    "Phone number": "01164540290",
+    "Email address": "central.library@leicester.gov.uk",
+    "URL": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/find-a-library/leicester-central-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

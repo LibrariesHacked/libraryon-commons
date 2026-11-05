@@ -1,107 +1,64 @@
 {
   "id": "lib_891f2ef4-6dbb-41b9-850b-266e8c5605ac",
-  "source_id": "2540",
-  "name": "Wootton",
   "slug": "wootton",
-  "address": "Wootton Community Centre, Curtlee Hill, , Northampton, Northamptonshire, NN4 6ED",
-  "postcode": "NN4 6ED",
-  "town": "Northampton",
-  "phone": "",
-  "email": "WoottonCML@gmail.com",
-  "website": "https://www.westnorthants.gov.uk/list-libraries/wootton-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Expected to become CRL by 01 April 2020. Library closed Monday 13:00-14:00 for lunch",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "catering",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.201647,
-  "longitude": -0.88176,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "west-northamptonshire",
+  "source_id": "2540",
+  "source_url": "https://libraryon.org/libraries/west-northamptonshire/wootton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-northamptonshire/wootton",
-  "authority": "west-northamptonshire"
+  "data": {
+    "Local authority": "West Northamptonshire",
+    "Local authority code": "E06000062",
+    "Library name": "Wootton",
+    "Library code": null,
+    "Address 1": "Wootton Community Centre, Curtlee Hill, , Northampton, Northamptonshire, NN4 6ED",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN4 6ED",
+    "Unique property reference number": 15100778,
+    "Latitude": 52.201647,
+    "Longitude": -0.88176,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2012,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "WoottonCML@gmail.com",
+    "URL": "https://www.westnorthants.gov.uk/list-libraries/wootton-community-library",
+    "Notes": "Expected to become CRL by 01 April 2020. Library closed Monday 13:00-14:00 for lunch"
+  },
+  "validation_exceptions": []
 }

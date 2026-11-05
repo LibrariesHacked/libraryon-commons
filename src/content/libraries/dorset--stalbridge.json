@@ -1,127 +1,64 @@
 {
   "id": "lib_ea3e2943-2e87-4982-ba2a-3e922b7f38e6",
-  "source_id": "3513",
-  "name": "Stalbridge Library",
   "slug": "stalbridge",
-  "address": "Station Road, Sturminster Newton, Dorset, DT10 2RG",
-  "postcode": "DT10 2RG",
-  "town": "Sturminster Newton",
-  "phone": "01963 362142",
-  "email": "stalbridgelibrary@gmail.com",
-  "website": "https://www.dorsetcouncil.gov.uk/libraries-history-culture/libraries/find-your-local-library/dorset-libraries/-/ddl_display/ddl/279365/432951/maximized",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:30",
-          "startTime": "12:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.95976,
-  "longitude": -2.37715,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "dorset",
+  "source_id": "3513",
+  "source_url": "https://libraryon.org/libraries/dorset/stalbridge",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dorset/stalbridge",
-  "authority": "dorset"
+  "data": {
+    "Local authority": "Dorset",
+    "Local authority code": "E06000059",
+    "Library name": "Stalbridge Library",
+    "Library code": null,
+    "Address 1": "Station Road, Sturminster Newton, Dorset, DT10 2RG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DT10 2RG",
+    "Unique property reference number": null,
+    "Latitude": 50.95976,
+    "Longitude": -2.37715,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": "12:00-14:30",
+    "Thursday staffed hours": "14:30-17:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Family history; Hobby and interest groups; Books delivered; Digital lending",
+    "Phone number": "01963 362142",
+    "Email address": "stalbridgelibrary@gmail.com",
+    "URL": "https://www.dorsetcouncil.gov.uk/libraries-history-culture/libraries/find-your-local-library/dorset-libraries/-/ddl_display/ddl/279365/432951/maximized",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

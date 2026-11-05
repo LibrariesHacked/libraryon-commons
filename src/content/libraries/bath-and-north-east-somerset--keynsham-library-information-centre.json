@@ -1,136 +1,71 @@
 {
   "id": "lib_180101f5-30c3-4bb7-81ae-25444e3e3071",
-  "source_id": "3151",
-  "name": "Keynsham Library & Information Centre",
   "slug": "keynsham-library-information-centre",
-  "address": "Market Walk, Keynsham, Somerset, BS31 1FS",
-  "postcode": "BS31 1EH",
-  "town": "Bristol",
-  "phone": "01225 39 40 41",
-  "email": "council_connect@bathnes.gov.uk",
-  "website": "https://www.bathnes.gov.uk/keynsham-library-and-information-service",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "sensory-friendly-environment"
-  ],
-  "notes": "Moved to new build location in 2014.  Merged with B&NES One Stop Shop Services. Hosts lots of council services, incl. benefits, council tax, etc.",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.41368,
-  "longitude": -2.4979,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    }
-  ],
+  "authority": "bath-and-north-east-somerset",
+  "source_id": "3151",
+  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/keynsham-library-information-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/keynsham-library-information-centre",
-  "authority": "bath-and-north-east-somerset"
+  "data": {
+    "Local authority": "Bath and North East Somerset",
+    "Local authority code": "E06000022",
+    "Library name": "Keynsham Library & Information Centre",
+    "Library code": null,
+    "Address 1": "Market Walk, Keynsham, Somerset, BS31 1FS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS31 1EH",
+    "Unique property reference number": null,
+    "Latitude": 51.41368,
+    "Longitude": -2.4979,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-16:30",
+    "Saturday staffed hours": "09:30-16:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Bookable space; Digital lending; BFI Replay; Career support; Bookable space",
+    "Phone number": "01225 39 40 41",
+    "Email address": "council_connect@bathnes.gov.uk",
+    "URL": "https://www.bathnes.gov.uk/keynsham-library-and-information-service",
+    "Notes": "Moved to new build location in 2014.  Merged with B&NES One Stop Shop Services. Hosts lots of council services, incl. benefits, council tax, etc."
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

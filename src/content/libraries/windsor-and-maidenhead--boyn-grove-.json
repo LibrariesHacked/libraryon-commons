@@ -1,137 +1,64 @@
 {
   "id": "lib_07b5fbbd-87ca-4dc6-b2fc-7f0a3fa695b8",
-  "source_id": "3000",
-  "name": "Boyn Grove Library",
   "slug": "boyn-grove-",
-  "address": "11 Courthouse Road, Maidenhead, Berkshire, SL6 6JE",
-  "postcode": "SL6 6JE",
-  "town": "Maidenhead",
-  "phone": "01628 685617",
-  "email": "boyngrove.library@rbwm.gov.uk",
-  "website": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-boyn-grove-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "wheelchair-access",
-    "step-free-access",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.520555,
-  "longitude": -0.744894,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/computers-and-it-services"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-clubs"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/digital-library/books-and-media"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/employment-support"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-spaces-and-it-rooms-hire/boyn-grove-library"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/home-library-service"
-    }
-  ],
+  "authority": "windsor-and-maidenhead",
+  "source_id": "3000",
+  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/boyn-grove-",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/boyn-grove-",
-  "authority": "windsor-and-maidenhead"
+  "data": {
+    "Local authority": "Windsor and Maidenhead",
+    "Local authority code": "E06000040",
+    "Library name": "Boyn Grove Library",
+    "Library code": null,
+    "Address 1": "11 Courthouse Road, Maidenhead, Berkshire, SL6 6JE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SL6 6JE",
+    "Unique property reference number": null,
+    "Latitude": 51.520555,
+    "Longitude": -0.744894,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2014,
+    "Year closed": null,
+    "Monday staffed hours": "14:30-17:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:30-18:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:30-17:30",
+    "Saturday staffed hours": "13:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Hobby and interest groups; Children's activities; Digital lending; Career support; Bookable space; Books delivered",
+    "Phone number": "01628 685617",
+    "Email address": "boyngrove.library@rbwm.gov.uk",
+    "URL": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-boyn-grove-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

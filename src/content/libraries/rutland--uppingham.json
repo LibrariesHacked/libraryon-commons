@@ -1,131 +1,64 @@
 {
   "id": "lib_647ceadf-3cb7-47ff-8c18-e835470f2fe2",
-  "source_id": "2959",
-  "name": "Uppingham",
   "slug": "uppingham",
-  "address": "Queen Street, Uppingham, East Midlands, LE15 9QR",
-  "postcode": "LE15 9QR",
-  "town": "Oakham",
-  "phone": "01572 823218",
-  "email": "libraries@rutland.gov.uk",
-  "website": "https://rutlandlibraries.org.uk/uppingham-library/",
-  "catalogue": "https://emlib.ent.sirsidynix.net.uk/client/en_GB/rutland/",
-  "joinOnline": "https://emlib.ent.sirsidynix.net.uk/client/en_GB/rutland/?rm=JOIN+ONLINE1%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "wheelchair-access"
-  ],
-  "notes": "Closed 12.00 - 3.00 Tue & Fri",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.58774,
-  "longitude": -0.7208,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "rutland",
+  "source_id": "2959",
+  "source_url": "https://libraryon.org/libraries/rutland/uppingham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rutland/uppingham",
-  "authority": "rutland"
+  "data": {
+    "Local authority": "Rutland",
+    "Local authority code": "E06000017",
+    "Library name": "Uppingham",
+    "Library code": null,
+    "Address 1": "Queen Street, Uppingham, East Midlands, LE15 9QR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE15 9QR",
+    "Unique property reference number": 100032047313,
+    "Latitude": 52.58774,
+    "Longitude": -0.7208,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1968,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-13:00,13:30-17:00",
+    "Wednesday staffed hours": "13:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-13:00,13:30-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Digital lending; Family history; British Newspaper Archive; Findmypast; Photocopiers",
+    "Phone number": "01572 823218",
+    "Email address": "libraries@rutland.gov.uk",
+    "URL": "https://rutlandlibraries.org.uk/uppingham-library/",
+    "Notes": "Closed 12.00 - 3.00 Tue & Fri"
+  },
+  "validation_exceptions": []
 }

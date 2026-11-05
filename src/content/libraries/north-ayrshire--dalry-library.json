@@ -1,99 +1,71 @@
 {
   "id": "lib_1266e1b9-36e4-4d9d-b740-a5157ba462b7",
-  "source_id": "492",
-  "name": "Dalry Library",
   "slug": "dalry-library",
-  "address": "14 The Cross, Dalry, Ayrshire, KA24 5AW",
-  "postcode": "KA24 5AW",
-  "town": "Dalry",
-  "phone": "01294 833196",
-  "email": "dalrylibrary@north-ayrshire.gov.uk",
-  "website": "https://north-ayrshire.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=D",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "The library is open alternate Wednesdays and Saturdays",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.70858,
-  "longitude": -4.71985,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "north-ayrshire",
+  "source_id": "492",
+  "source_url": "https://libraryon.org/libraries/north-ayrshire/dalry-library",
   "updated_on": "2026-10-14",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-ayrshire/dalry-library",
-  "authority": "north-ayrshire"
+  "data": {
+    "Local authority": "North Ayrshire",
+    "Local authority code": "S12000021",
+    "Library name": "Dalry Library",
+    "Library code": null,
+    "Address 1": "14 The Cross, Dalry, Ayrshire, KA24 5AW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KA24 5AW",
+    "Unique property reference number": null,
+    "Latitude": 55.70858,
+    "Longitude": -4.71985,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:30",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:30",
+    "Wednesday staffed hours": "10:00-13:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "The library is open alternate Wednesdays and Saturdays",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01294 833196",
+    "Email address": "dalrylibrary@north-ayrshire.gov.uk",
+    "URL": "https://north-ayrshire.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=D",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

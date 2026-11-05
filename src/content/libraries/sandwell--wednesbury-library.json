@@ -1,126 +1,71 @@
 {
   "id": "lib_8a385198-6c71-4387-a417-e95c4cf8551d",
-  "source_id": "2173",
-  "name": "Wednesbury Library",
   "slug": "wednesbury-library",
-  "address": "Walsall Street, Wednesbury, West Midlands, WS10 9EH",
-  "postcode": "WS10 9EQ",
-  "town": "Wednesbury",
-  "phone": "0121 569 4945",
-  "email": "wednesbury_library@sandwell.gov.uk",
-  "website": "https://prism.librarymanagementcloud.co.uk/sandwell/assets/-/libraries.html#stonecross",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.55404,
-  "longitude": -2.01693,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "sandwell",
+  "source_id": "2173",
+  "source_url": "https://libraryon.org/libraries/sandwell/wednesbury-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sandwell/wednesbury-library",
-  "authority": "sandwell"
+  "data": {
+    "Local authority": "Sandwell",
+    "Local authority code": "E08000028",
+    "Library name": "Wednesbury Library",
+    "Library code": null,
+    "Address 1": "Walsall Street, Wednesbury, West Midlands, WS10 9EH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WS10 9EQ",
+    "Unique property reference number": null,
+    "Latitude": 52.55404,
+    "Longitude": -2.01693,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:30",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": "09:30-17:30",
+    "Thursday staffed hours": "09:30-13:30",
+    "Friday staffed hours": "09:30-17:30",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Books delivered; Children's activities; Hobby and interest groups; Findmypast",
+    "Phone number": "0121 569 4945",
+    "Email address": "wednesbury_library@sandwell.gov.uk",
+    "URL": "https://prism.librarymanagementcloud.co.uk/sandwell/assets/-/libraries.html#stonecross",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

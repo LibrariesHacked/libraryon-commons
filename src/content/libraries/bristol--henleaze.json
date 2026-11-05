@@ -1,155 +1,64 @@
 {
   "id": "lib_6f274938-8b83-425a-9abb-15abcb0dc744",
-  "source_id": "3237",
-  "name": "Henleaze Library",
   "slug": "henleaze",
-  "address": "Northumbria Drive, Henleaze, Bristol, BS9 4HP",
-  "postcode": "BS9 4HP",
-  "town": "Bristol",
-  "phone": "0117 9038541",
-  "email": "henleaze.library@bristol.gov.uk",
-  "website": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=11",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "assistive-technology-available",
-    "accessible-parking",
-    "step-free-access",
-    "automatic-doors",
-    "hearing-loop-system",
-    "low-vision-support",
-    "lift-access",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.48089,
-  "longitude": -2.61188,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/print-online-using-wi-fi-in-a-bristol-library"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/ebooks-and-eaudiobooks"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/local-and-family-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/accessible-library-services"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/services-for-children-and-young-people"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bristol",
+  "source_id": "3237",
+  "source_url": "https://libraryon.org/libraries/bristol/henleaze",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bristol/henleaze",
-  "authority": "bristol"
+  "data": {
+    "Local authority": "Bristol",
+    "Local authority code": "E06000023",
+    "Library name": "Henleaze Library",
+    "Library code": null,
+    "Address 1": "Northumbria Drive, Henleaze, Bristol, BS9 4HP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS9 4HP",
+    "Unique property reference number": 260189,
+    "Latitude": 51.48089,
+    "Longitude": -2.61188,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1970,
+    "Year closed": null,
+    "Monday staffed hours": "11:00-17:00",
+    "Tuesday staffed hours": "11:00-17:00",
+    "Wednesday staffed hours": "13:00-19:00",
+    "Thursday staffed hours": "11:00-17:00",
+    "Friday staffed hours": "13:00-19:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Books delivered; Photocopiers; Children's activities; Hobby and interest groups; Computers; Scanning; Findmypast; British Newspaper Archive",
+    "Phone number": "0117 9038541",
+    "Email address": "henleaze.library@bristol.gov.uk",
+    "URL": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=11",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

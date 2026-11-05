@@ -1,129 +1,71 @@
 {
   "id": "lib_331dbf33-71b4-41d5-bbad-29c3592d839d",
-  "source_id": "2901",
-  "name": "Sinfin Library",
   "slug": "sinfin",
-  "address": "District Centre, Arleston Lane, Sinfin, Derbyshire, DE24 3DS",
-  "postcode": "DE24 3DS",
-  "town": "Derby",
-  "phone": "01332 647933",
-  "email": "libraries@derby.gov.uk",
-  "website": "https://www.inderby.org.uk/libraries/our-libraries/sinfin-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "accessible-public-transport-connections",
-    "accessible-restrooms",
-    "adjustable-seating",
-    "assistive-technology-available",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "braille-signage",
-    "dda-compliant",
-    "hearing-loop-system",
-    "service-dog-friendly",
-    "staff-support",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "Run by Direct Help and Advice (DHA):",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.87712,
-  "longitude": -1.49379,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "derby",
+  "source_id": "2901",
+  "source_url": "https://libraryon.org/libraries/derby/sinfin",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/derby/sinfin",
-  "authority": "derby"
+  "data": {
+    "Local authority": "Derby",
+    "Local authority code": "E06000015",
+    "Library name": "Sinfin Library",
+    "Library code": null,
+    "Address 1": "District Centre, Arleston Lane, Sinfin, Derbyshire, DE24 3DS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DE24 3DS",
+    "Unique property reference number": 10010676956,
+    "Latitude": 52.87712,
+    "Longitude": -1.49379,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Bookable space; Children's activities; Computers; Digital lending; Digital skills sessions; Hobby and interest groups; Photocopiers; Scanning",
+    "Phone number": "01332 647933",
+    "Email address": "libraries@derby.gov.uk",
+    "URL": "https://www.inderby.org.uk/libraries/our-libraries/sinfin-library/",
+    "Notes": "Run by Direct Help and Advice (DHA):"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

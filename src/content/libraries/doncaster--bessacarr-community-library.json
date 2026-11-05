@@ -1,116 +1,64 @@
 {
   "id": "lib_4a6b8bab-2a4d-4815-830c-b3c42134b95f",
-  "source_id": "1843",
-  "name": "Bessacarr Community Library",
   "slug": "bessacarr-community-library",
-  "address": "Alston Road, Bessacarr, South Yorkshire, DN4 7EZ",
-  "postcode": "DN4 7EZ",
-  "town": "Doncaster",
-  "phone": "01302 734515",
-  "email": "bessacarrcommunitylibrary@hotmail.co.uk",
-  "website": "https://library.doncaster.gov.uk/-/bessacarr-community-library#/?location=Bessacarr%20Community%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "11:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "11:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.50079,
-  "longitude": -1.08705,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "doncaster",
+  "source_id": "1843",
+  "source_url": "https://libraryon.org/libraries/doncaster/bessacarr-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/doncaster/bessacarr-community-library",
-  "authority": "doncaster"
+  "data": {
+    "Local authority": "Doncaster",
+    "Local authority code": "E08000017",
+    "Library name": "Bessacarr Community Library",
+    "Library code": null,
+    "Address 1": "Alston Road, Bessacarr, South Yorkshire, DN4 7EZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN4 7EZ",
+    "Unique property reference number": null,
+    "Latitude": 53.50079,
+    "Longitude": -1.08705,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-11:30",
+    "Tuesday staffed hours": "14:00-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-11:30",
+    "Friday staffed hours": "14:00-16:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Books delivered; Photocopiers; Computers",
+    "Phone number": "01302 734515",
+    "Email address": "bessacarrcommunitylibrary@hotmail.co.uk",
+    "URL": "https://library.doncaster.gov.uk/-/bessacarr-community-library#/?location=Bessacarr%20Community%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

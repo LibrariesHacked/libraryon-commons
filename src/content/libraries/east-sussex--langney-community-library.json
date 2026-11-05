@@ -1,113 +1,80 @@
 {
   "id": "lib_dd52a3de-bc78-4285-8209-69c5efb3c768",
-  "source_id": "3845",
-  "name": "Langney Community Library",
   "slug": "langney-community-library",
-  "address": "Unit 13, Langney Shopping Centre, 64 Kingfisher Drive, Eastbourne BN23 7RT",
-  "postcode": "BN23 7RT",
-  "town": "Eastbourne",
-  "phone": "07565 936987",
-  "email": "langneycommunitylibrary@outlook.com",
-  "website": "https://langneycommunitylibrary.wordpress.com/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.80330474767763,
-  "longitude": 0.3039164598869206,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "east-sussex",
+  "source_id": "3845",
+  "source_url": "https://libraryon.org/libraries/east-sussex/langney-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-sussex/langney-community-library",
-  "authority": "east-sussex"
+  "data": {
+    "Local authority": "East Sussex",
+    "Local authority code": "E10000011",
+    "Library name": "Langney Community Library",
+    "Library code": null,
+    "Address 1": "Unit 13, Langney Shopping Centre, 64 Kingfisher Drive, Eastbourne BN23 7RT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BN23 7RT",
+    "Unique property reference number": null,
+    "Latitude": 50.80330474767763,
+    "Longitude": 0.3039164598869206,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Bookable space; Computers; Children's activities; Free Wi-Fi; Hobby and interest groups; Printing; Photocopiers; Scanning",
+    "Phone number": "07565 936987",
+    "Email address": "langneycommunitylibrary@outlook.com",
+    "URL": "https://langneycommunitylibrary.wordpress.com/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_927786afe4f02820cc879b30"
+      ]
+    }
+  ]
 }

@@ -1,92 +1,64 @@
 {
   "id": "lib_e8d63475-c998-435a-aa9e-3b2dc834a9a4",
-  "source_id": "2396",
-  "name": "Great Horton Library",
   "slug": "great-horton-library",
-  "address": "69 Beldon Road, Bradford, West Yorkshire, BD7 3PE",
-  "postcode": "BD7 3PE",
-  "town": "Bradford",
-  "phone": "01274 431583",
-  "email": "greathortonlibrary@gmail.com",
-  "website": "https://www.bradford.gov.uk/libraries/find-your-local-library/great-horton-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.77853,
-  "longitude": -1.78514,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "bradford",
+  "source_id": "2396",
+  "source_url": "https://libraryon.org/libraries/bradford/great-horton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bradford/great-horton-library",
-  "authority": "bradford"
+  "data": {
+    "Local authority": "Bradford",
+    "Local authority code": "E08000032",
+    "Library name": "Great Horton Library",
+    "Library code": null,
+    "Address 1": "69 Beldon Road, Bradford, West Yorkshire, BD7 3PE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BD7 3PE",
+    "Unique property reference number": null,
+    "Latitude": 53.77853,
+    "Longitude": -1.78514,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-15:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-14:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Hobby and interest groups",
+    "Phone number": "01274 431583",
+    "Email address": "greathortonlibrary@gmail.com",
+    "URL": "https://www.bradford.gov.uk/libraries/find-your-local-library/great-horton-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

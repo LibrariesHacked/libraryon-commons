@@ -1,72 +1,77 @@
 {
   "id": "lib_1340b433-bfc1-4df6-a93b-0e185f11bac7",
-  "source_id": "1171",
-  "name": "Gotham",
   "slug": "gotham",
-  "address": "Village Hall, Nottingham Road, Gotham, Nottinghamshire, NG11 0HE",
-  "postcode": "NG11 0HE",
-  "town": "Nottingham",
-  "phone": "",
-  "email": "ask@inspireculture.org.uk",
-  "website": "https://www.inspireculture.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.86942,
-  "longitude": -1.20493,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "nottinghamshire",
+  "source_id": "1171",
+  "source_url": "https://libraryon.org/libraries/nottinghamshire/gotham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/nottinghamshire/gotham",
-  "authority": "nottinghamshire"
+  "data": {
+    "Local authority": "Nottinghamshire",
+    "Local authority code": "E10000024",
+    "Library name": "Gotham",
+    "Library code": null,
+    "Address 1": "Village Hall, Nottingham Road, Gotham, Nottinghamshire, NG11 0HE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NG11 0HE",
+    "Unique property reference number": null,
+    "Latitude": 52.86942,
+    "Longitude": -1.20493,
+    "Status": "Closed (temporary)",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": "ask@inspireculture.org.uk",
+    "URL": "https://www.inspireculture.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

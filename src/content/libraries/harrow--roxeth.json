@@ -1,130 +1,71 @@
 {
   "id": "lib_d0b57202-4bf8-4f9a-8efb-dd975e7b07d8",
-  "source_id": "2281",
-  "name": "Roxeth Library",
   "slug": "roxeth",
-  "address": "Northolt Road, South Harrow, Greater London, HA2 8EQ",
-  "postcode": "HA2 8EG",
-  "town": "Harrow",
-  "phone": "020 3714 7705",
-  "email": "roxeth.library@harrowlibraries.org.uk",
-  "website": "https://www.harrow.gov.uk/libraries/harrow-library-branches",
-  "catalogue": "https://www.harrow.gov.uk/libraries/digital-newspapers-magazines-ebooks",
-  "joinOnline": "https://www.harrow.gov.uk/libraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "automatic-doors",
-    "hearing-loop-system",
-    "wheelchair-access",
-    "assistive-technology-available",
-    "accessible-restrooms",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.56283,
-  "longitude": -0.35654,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.harrow.gov.uk/libraries/online-resources-learning"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.harrow.gov.uk/libraries/online-resources-learning"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.harrow.gov.uk/libraries/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.harrow.gov.uk/libraries/childrens-library-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.harrow.gov.uk/libraries/digital-newspapers-magazines-ebooks"
-    }
-  ],
+  "authority": "harrow",
+  "source_id": "2281",
+  "source_url": "https://libraryon.org/libraries/harrow/roxeth",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/harrow/roxeth",
-  "authority": "harrow"
+  "data": {
+    "Local authority": "Harrow",
+    "Local authority code": "E09000015",
+    "Library name": "Roxeth Library",
+    "Library code": null,
+    "Address 1": "Northolt Road, South Harrow, Greater London, HA2 8EQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HA2 8EG",
+    "Unique property reference number": null,
+    "Latitude": 51.56283,
+    "Longitude": -0.35654,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": "10:00-13:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-18:00",
+    "Sunday staffed hours": "11:00-15:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Family history; Career support; Books delivered; Children's activities; Digital lending",
+    "Phone number": "020 3714 7705",
+    "Email address": "roxeth.library@harrowlibraries.org.uk",
+    "URL": "https://www.harrow.gov.uk/libraries/harrow-library-branches",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

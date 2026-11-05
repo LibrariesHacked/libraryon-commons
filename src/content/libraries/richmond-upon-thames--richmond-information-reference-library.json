@@ -1,137 +1,64 @@
 {
   "id": "lib_85430e26-4282-4353-a6a2-9391bbdaf381",
-  "source_id": "2774",
-  "name": "Richmond Information and Reference Library",
   "slug": "richmond-information-reference-library",
-  "address": "Old Town Hall, Whittaker Avenue, Richmond, Surrey, TW9 1TP",
-  "postcode": "TW9 1TP",
-  "town": "Richmond",
-  "phone": "020 8734 3308",
-  "email": "libraries@richmond.gov.uk",
-  "website": "https://www.richmond.gov.uk/services/libraries/branch_libraries/reference_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "archives",
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.458921,
-  "longitude": -0.306516,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_facilities/peoples_network"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_facilities/peoples_network"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.richmond.gov.uk/services/libraries/libraries_whats_on/it_taster_sessions"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.richmond.gov.uk/services/libraries/digital_library"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_services_for_children_and_teens"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.richmond.gov.uk/local_studies_collection"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.richmond.gov.uk/services/libraries/home_library_service"
-    }
-  ],
+  "authority": "richmond-upon-thames",
+  "source_id": "2774",
+  "source_url": "https://libraryon.org/libraries/richmond-upon-thames/richmond-information-reference-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/richmond-upon-thames/richmond-information-reference-library",
-  "authority": "richmond-upon-thames"
+  "data": {
+    "Local authority": "Richmond upon Thames",
+    "Local authority code": "E09000027",
+    "Library name": "Richmond Information and Reference Library",
+    "Library code": null,
+    "Address 1": "Old Town Hall, Whittaker Avenue, Richmond, Surrey, TW9 1TP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TW9 1TP",
+    "Unique property reference number": 100023408643,
+    "Latitude": 51.458921,
+    "Longitude": -0.306516,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-18:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "09:30-18:00",
+    "Friday staffed hours": "09:30-18:00",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives; museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Scanning; Digital skills sessions; Digital lending; Children's activities; Family history; Books delivered",
+    "Phone number": "020 8734 3308",
+    "Email address": "libraries@richmond.gov.uk",
+    "URL": "https://www.richmond.gov.uk/services/libraries/branch_libraries/reference_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

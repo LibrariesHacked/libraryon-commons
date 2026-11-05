@@ -1,151 +1,71 @@
 {
   "id": "lib_81074634-9dc2-4492-80a1-1332e890e020",
-  "source_id": "472",
-  "name": "Aberaeron Library",
   "slug": "aberaeron-library",
-  "address": "Castle Lane, Aberaeron, SA46 0AT, United Kingdom",
-  "postcode": "SA46 0AT",
-  "town": "Aberaeron",
-  "phone": "01545 572500",
-  "email": "library@ceredigion.gov.uk",
-  "website": "https://www.ceredigion.gov.uk/resident/tourism-leisure/ceredigion-library/branch-locations/aberaeron/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.243001,
-  "longitude": -4.259402,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.com/"
-    }
-  ],
+  "authority": "ceredigion",
+  "source_id": "472",
+  "source_url": "https://libraryon.org/libraries/ceredigion/aberaeron-library",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/ceredigion/aberaeron-library",
-  "authority": "ceredigion"
+  "data": {
+    "Local authority": "Ceredigion",
+    "Local authority code": "W06000008",
+    "Library name": "Aberaeron Library",
+    "Library code": null,
+    "Address 1": "Castle Lane, Aberaeron, SA46 0AT, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SA46 0AT",
+    "Unique property reference number": null,
+    "Latitude": 52.243001,
+    "Longitude": -4.259402,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00,14:00-18:00",
+    "Tuesday staffed hours": "09:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": "09:00-13:00,14:00-17:00",
+    "Thursday staffed hours": "09:00-13:00,14:00-17:00",
+    "Friday staffed hours": "09:00-13:00,14:00-16:30",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Printing; Family history; Findmypast",
+    "Phone number": "01545 572500",
+    "Email address": "library@ceredigion.gov.uk",
+    "URL": "https://www.ceredigion.gov.uk/resident/tourism-leisure/ceredigion-library/branch-locations/aberaeron/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

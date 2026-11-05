@@ -1,127 +1,64 @@
 {
   "id": "lib_7061fd08-8ad9-4c23-ae01-1544199b6dae",
-  "source_id": "2408",
-  "name": "West Drayton Library",
   "slug": "west-drayton-library",
-  "address": "Station Road, West Drayton, Middlesex, UB7 7JS",
-  "postcode": "UB7 7JS",
-  "town": "West Drayton",
-  "phone": "01895 558195",
-  "email": "westdrayton-library@hillingdon.gov.uk",
-  "website": "https://www.hillingdon.gov.uk/westdraytonlibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "hearing-loop-system"
-  ],
-  "notes": "Will be refurbished 2020/21",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.50558,
-  "longitude": -0.47003,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "hillingdon",
+  "source_id": "2408",
+  "source_url": "https://libraryon.org/libraries/hillingdon/west-drayton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hillingdon/west-drayton-library",
-  "authority": "hillingdon"
+  "data": {
+    "Local authority": "Hillingdon",
+    "Local authority code": "E09000017",
+    "Library name": "West Drayton Library",
+    "Library code": null,
+    "Address 1": "Station Road, West Drayton, Middlesex, UB7 7JS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "UB7 7JS",
+    "Unique property reference number": null,
+    "Latitude": 51.50558,
+    "Longitude": -0.47003,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Digital lending; BFI Replay; Books delivered; Children's activities",
+    "Phone number": "01895 558195",
+    "Email address": "westdrayton-library@hillingdon.gov.uk",
+    "URL": "https://www.hillingdon.gov.uk/westdraytonlibrary",
+    "Notes": "Will be refurbished 2020/21"
+  },
+  "validation_exceptions": []
 }

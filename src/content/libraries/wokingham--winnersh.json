@@ -1,100 +1,71 @@
 {
   "id": "lib_55cde206-6eab-4487-b580-e2d76a703a91",
-  "source_id": "3075",
-  "name": "Winnersh Library",
   "slug": "winnersh",
-  "address": "The Forest School, Robin Hood Lane, Winnersh, Berkshire, RG41 5ND",
-  "postcode": "RG41 5ND",
-  "town": "Wokingham",
-  "phone": " 0118 979 7519",
-  "email": "libraries@wokingham.gov.uk",
-  "website": "https://directory.wokingham.gov.uk/kb5/wokingham/directory/service.page?id=ZUAJHz8GKIU",
-  "catalogue": "https://wokingham.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/EVENTS?HOMEPRMS=EVSESPARAMS",
-  "joinOnline": "https://www.wokingham.gov.uk/libraries/joinfind-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "The library is in the process of being relocated.  The current library is now closed to the public, but the details around the opening of the temporary base are not yet confirmed.",
-  "accessibility": [
-    "wheelchair-access",
-    "neurodivergent-spaces",
-    "staff-support",
-    "accessible-parking",
-    "baby-changing-facilities",
-    "step-free-access",
-    "accessible-public-transport-connections",
-    "accessible-restrooms"
-  ],
-  "notes": "The Library stands in the grounds of the Forest Seconday School-dual use library",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.43169,
-  "longitude": -0.87611,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.wokingham.gov.uk/libraries/groups-and-clubs"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.wokingham.gov.uk/libraries/library-services/home-library-services"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "wokingham",
+  "source_id": "3075",
+  "source_url": "https://libraryon.org/libraries/wokingham/winnersh",
   "updated_on": "2026-03-30",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wokingham/winnersh",
-  "authority": "wokingham"
+  "data": {
+    "Local authority": "Wokingham",
+    "Local authority code": "E06000041",
+    "Library name": "Winnersh Library",
+    "Library code": null,
+    "Address 1": "The Forest School, Robin Hood Lane, Winnersh, Berkshire, RG41 5ND",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG41 5ND",
+    "Unique property reference number": null,
+    "Latitude": 51.43169,
+    "Longitude": -0.87611,
+    "Status": "Closed (temporary)",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "The library is in the process of being relocated.  The current library is now closed to the public, but the details around the opening of the temporary base are not yet confirmed.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Digital lending; Photocopiers; Hobby and interest groups; Books delivered; British Newspaper Archive",
+    "Phone number": "0118 979 7519",
+    "Email address": "libraries@wokingham.gov.uk",
+    "URL": "https://directory.wokingham.gov.uk/kb5/wokingham/directory/service.page?id=ZUAJHz8GKIU",
+    "Notes": "The Library stands in the grounds of the Forest Seconday School-dual use library"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

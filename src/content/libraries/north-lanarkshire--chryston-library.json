@@ -1,106 +1,71 @@
 {
   "id": "lib_8d116197-4443-45c4-890e-8e1b9d0072c8",
-  "source_id": "70",
-  "name": "Chryston Library",
   "slug": "chryston-library",
-  "address": "4 Burnett Court, Chryston, Glasgow, G69 9DE, United Kingdom",
-  "postcode": "G69 9DE",
-  "town": "Glasgow",
-  "phone": "01236 856281",
-  "email": "chrystonlibrary@northlan.gov.uk ",
-  "website": "https://culturenl.co.uk/libraries/your-library/chryston-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "automatic-doors",
-    "hearing-loop-system",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.90443,
-  "longitude": -4.10512,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "north-lanarkshire",
+  "source_id": "70",
+  "source_url": "https://libraryon.org/libraries/north-lanarkshire/chryston-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-lanarkshire/chryston-library",
-  "authority": "north-lanarkshire"
+  "data": {
+    "Local authority": "North Lanarkshire",
+    "Local authority code": "S12000050",
+    "Library name": "Chryston Library",
+    "Library code": null,
+    "Address 1": "4 Burnett Court, Chryston, Glasgow, G69 9DE, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "G69 9DE",
+    "Unique property reference number": null,
+    "Latitude": 55.90443,
+    "Longitude": -4.10512,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-13:00,14:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01236 856281",
+    "Email address": "chrystonlibrary@northlan.gov.uk",
+    "URL": "https://culturenl.co.uk/libraries/your-library/chryston-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

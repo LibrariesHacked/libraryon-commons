@@ -1,120 +1,71 @@
 {
   "id": "lib_84c92e3f-003f-4d0d-aef5-249805864347",
-  "source_id": "1526",
-  "name": "Broadway Library",
   "slug": "broadway-library",
-  "address": "Leamington Road, Broadway, Worcestershire, WR12 7DZ",
-  "postcode": "WR12 7EF",
-  "town": "Broadway",
-  "phone": "",
-  "email": "BroadwayLib@worcestershire.gov.uk",
-  "website": "https://www.worcestershire.gov.uk/council-services/worcestershire-libraries/find-library/broadway-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.03655,
-  "longitude": -1.85588,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "worcestershire",
+  "source_id": "1526",
+  "source_url": "https://libraryon.org/libraries/worcestershire/broadway-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/worcestershire/broadway-library",
-  "authority": "worcestershire"
+  "data": {
+    "Local authority": "Worcestershire",
+    "Local authority code": "E10000034",
+    "Library name": "Broadway Library",
+    "Library code": null,
+    "Address 1": "Leamington Road, Broadway, Worcestershire, WR12 7DZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WR12 7EF",
+    "Unique property reference number": null,
+    "Latitude": 52.03655,
+    "Longitude": -1.85588,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-16:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-16:30",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Books delivered; Photocopiers; Scanning; Children's activities; Hobby and interest groups",
+    "Phone number": null,
+    "Email address": "BroadwayLib@worcestershire.gov.uk",
+    "URL": "https://www.worcestershire.gov.uk/council-services/worcestershire-libraries/find-library/broadway-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -50,7 +50,7 @@ Part pageant, part battle, part ritual, part drinking contest — and always an 
 
 These traditions are stitched from scraps of folklore, full of disputed origin stories and old family feuds. To this day they still bring out huge displays of local pride and community spirit.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![A wooden sign depicting the Haxey Hood. A church in the background.](/uploads/archive/a-wooden-sign-depicting-the-haxey-hood-a-church-in-the-background.jpg)
 
@@ -104,7 +104,11 @@ The **winning pub** gets to hang the Hood above the bar until the next year’s 
 
 ::::collection-aside{title="The 2025 Haxey Hood"}
 
-Members of the LibraryOn team attended the Haxey Hood in 2025, hosted by North Lincolnshire Libraries. It was the 666th instalment of the competition, and The Loco won that year. The notes alongside the images explain the Hood's officials, objects and rituals.
+**Members of the LibraryOn team, hosted by** [**North Lincolnshire Libraries**](/libraries/north-lincolnshire)**, were lucky enough to attend the Haxey Hood in 2025.**
+
+It was the **666th** instalment of the competition and was won by **The Loco**.
+
+Explore the notes alongside the photos below to discover the Hood's key figures, objects and rituals.
 
 ::::
 
@@ -188,12 +192,6 @@ The Haxey Hood is played come rain or shine. The Sway frequently breaks down, fo
 
 :::::
 
-**Members of the LibraryOn team, hosted by** [**North Lincolnshire Libraries**](/libraries/north-lincolnshire)**, were lucky enough to attend the Haxey Hood in 2025.**
-
-It was the **666th** instalment of the competition and was won by **The Loco**.
-
-Explore the notes beneath the photos above to discover the Hood's key figures, objects and rituals.
-
 ### Contested beginnings
 
 Local legend says the Hood game began in the 14th century.
@@ -238,9 +236,7 @@ The poem's origins are **ancient and unknown**. Some believe the final line was 
 
 **Tim Davies** from North Lincolnshire Libraries explains how the local studies section at [**Scunthorpe Central Library**](/libraries/north-lincolnshire/scunthorpe-central) helps people learn more about the Hood and its history.
 
-::video{src="https://www.youtube.com/embed/Rqhy807OO30" title="Video: Recommendations"}
-
-::::collection-accordion{label="Useful local studies resources"}
+::::collection-accordion{label="Useful local studies resources" video="https://www.youtube.com/embed/Rqhy807OO30" videoTitle="Video: Recommendations"}
 
 :::accordion-item{title="Specialist books"}
 
@@ -262,7 +258,7 @@ Microfilm is an early form of digitisation, developed in the post-war period. Pr
 
 ::::
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![Two sepia photos side-by-side of the same man. In one he makes a very ugly, funny face.](/uploads/archive/two-sepia-photos-side-by-side-of-the-same-man-2.jpg)
 
@@ -486,6 +482,16 @@ It's a free-for-all. Whoever is holding the ball when the church bell strikes **
 
 ### On the ball
 
+::::collection-aside{title="💡 Historically, the game was always started by a footballer or rugby player." layout="float-right"}
+
+The most famous example was legendary England goalkeeper **Gordon Banks**, who kicked off proceedings in 1995.
+
+In recent years this honour has been widened to celebrities from other fields, with famous faces including **Sid James** and **Ken Dodd.**
+
+In 2024, the game was started by locally-born comedian **Josh Pugh**.
+
+::::
+
 Events like the Atherstone Ball Game **evolve over time**, with each new generation putting their own stamp on the occasion.
 
 **Sometimes they inspire entirely new sports.**
@@ -495,14 +501,6 @@ According to local historians, Warwickshire schoolboy **William Webb Ellis (1806
 With that, **the game of rugby** was born, named after Webb Ellis' school.
 
 Whilst there's not much proof for this story, it invites us to **look at the sports played, watched, and enjoyed around the world today** and consider the weird and wonderful historical games from which they originate.
-
-**💡 Historically, the game was always started by a footballer or rugby player.**
-
-The most famous example was legendary England goalkeeper **Gordon Banks**, who kicked off proceedings in 1995.
-
-In recent years this honour has been widened to celebrities from other fields, with famous faces including **Sid James** and **Ken Dodd.**
-
-In 2024, the game was started by locally-born comedian **Josh Pugh**.
 
 :::quote{author="The Tribune (1947)"}
 

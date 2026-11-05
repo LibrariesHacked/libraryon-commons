@@ -1,81 +1,71 @@
 {
   "id": "lib_f28a4ead-da7b-471c-83d6-9603f6b77125",
-  "source_id": "2765",
-  "name": "Messingham Community Hub",
   "slug": "messingham-community-hub",
-  "address": "Wendover Road, Messingham, North Lincolnshire, DN17 3SN",
-  "postcode": "DN17 3TS",
-  "town": "Scunthorpe",
-  "phone": "",
-  "email": "library.enquiries@northlincs.gov.uk",
-  "website": "https://www.opac.northlincs.gov.uk/-/messingham-library#/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.53022,
-  "longitude": -0.6538,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "north-lincolnshire",
+  "source_id": "2765",
+  "source_url": "https://libraryon.org/libraries/north-lincolnshire/messingham-community-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-lincolnshire/messingham-community-hub",
-  "authority": "north-lincolnshire"
+  "data": {
+    "Local authority": "North Lincolnshire",
+    "Local authority code": "E06000013",
+    "Library name": "Messingham Community Hub",
+    "Library code": null,
+    "Address 1": "Wendover Road, Messingham, North Lincolnshire, DN17 3SN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN17 3TS",
+    "Unique property reference number": null,
+    "Latitude": 53.53022,
+    "Longitude": -0.6538,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "library.enquiries@northlincs.gov.uk",
+    "URL": "https://www.opac.northlincs.gov.uk/-/messingham-library#/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

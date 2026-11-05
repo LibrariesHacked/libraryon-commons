@@ -155,6 +155,10 @@ test('individual library records determine authority membership and stable publi
 
 test('unknown authorities and duplicate routes fail instead of losing records', () => {
   assert.throws(
+    () => createDirectory([], [{ name: 'Legacy', slug: 'legacy' }], { requireCanonical: true }),
+    /Invalid libraries record/
+  )
+  assert.throws(
     () => createDirectory([], [{ authority: 'missing', name: 'Library', slug: 'library' }]),
     /Unknown authority/
   )

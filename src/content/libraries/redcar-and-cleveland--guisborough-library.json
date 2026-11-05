@@ -1,134 +1,71 @@
 {
   "id": "lib_4fabe7f7-514f-429d-b026-17c392862cf0",
-  "source_id": "2788",
-  "name": "Guisborough Library",
   "slug": "guisborough-library",
-  "address": "90 Westgate, Guisborough, North Yorkshire, TS14 6AP",
-  "postcode": "TS14 6AR",
-  "town": "Guisborough",
-  "phone": "01287 632668",
-  "email": "guisborough_library@redcar-cleveland.gov.uk",
-  "website": "https://libraries.redcar-cleveland.gov.uk/-/guisborough-library-community-hub#/?location=Guisborough%20Library%20%26%20Community%20Hub",
-  "catalogue": "https://libraries.redcar-cleveland.gov.uk/-/meeting-spaces",
-  "joinOnline": "https://libraries.redcar-cleveland.gov.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": true,
-  "latitude": 54.53527,
-  "longitude": -1.05663,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/borrowbox"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/home-library-service"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/meeting-spaces"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "redcar-and-cleveland",
+  "source_id": "2788",
+  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/guisborough-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/guisborough-library",
-  "authority": "redcar-and-cleveland"
+  "data": {
+    "Local authority": "Redcar and Cleveland",
+    "Local authority code": "E06000003",
+    "Library name": "Guisborough Library",
+    "Library code": null,
+    "Address 1": "90 Westgate, Guisborough, North Yorkshire, TS14 6AP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS14 6AR",
+    "Unique property reference number": null,
+    "Latitude": 54.53527,
+    "Longitude": -1.05663,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "11:00-19:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Hobby and interest groups; Digital lending; Books delivered; Bookable space; Family history; Computers; Children's activities; BFI Replay",
+    "Phone number": "01287 632668",
+    "Email address": "guisborough_library@redcar-cleveland.gov.uk",
+    "URL": "https://libraries.redcar-cleveland.gov.uk/-/guisborough-library-community-hub#/?location=Guisborough%20Library%20%26%20Community%20Hub",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

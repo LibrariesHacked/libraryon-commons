@@ -1,107 +1,71 @@
 {
   "id": "lib_acce4fbe-fa44-4797-a3aa-7345718f532b",
-  "source_id": "3459",
-  "name": "Tuckton Library",
   "slug": "tuckton-library",
-  "address": "Wick Lane , Bournemouth, Dorset, BH6 4LF",
-  "postcode": "BH6 4LG",
-  "town": "Bournemouth",
-  "phone": "01202 127 654",
-  "email": "tucktonlibrary@bcpcouncil.gov.uk",
-  "website": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/tuckton-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.72736,
-  "longitude": -1.78674,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bournemouth-christchurch-and-poole",
+  "source_id": "3459",
+  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/tuckton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/tuckton-library",
-  "authority": "bournemouth-christchurch-and-poole"
+  "data": {
+    "Local authority": "Bournemouth, Christchurch and Poole",
+    "Local authority code": "E06000058",
+    "Library name": "Tuckton Library",
+    "Library code": null,
+    "Address 1": "Wick Lane , Bournemouth, Dorset, BH6 4LF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BH6 4LG",
+    "Unique property reference number": null,
+    "Latitude": 50.72736,
+    "Longitude": -1.78674,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "01202 127 654",
+    "Email address": "tucktonlibrary@bcpcouncil.gov.uk",
+    "URL": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/tuckton-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

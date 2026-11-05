@@ -1,108 +1,64 @@
 {
   "id": "lib_1b96f446-8cb0-4b4e-b5b7-6e48c58b8909",
-  "source_id": "3062",
-  "name": "Dawley and Malinslee Community Library",
   "slug": "dawley-malinslee-community-library",
-  "address": "Dawley House, 22 Burton Street, Dawley, Telford, Shropshire, TF4 2ES",
-  "postcode": "TF4 2ES",
-  "town": "Telford",
-  "phone": "01952 382901",
-  "email": "libraryenquiries@telford.gov.uk",
-  "website": "https://www.telford.gov.uk/info/20406/find_a_library/3439/dawley_and_malinslee_community_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.66468,
-  "longitude": -2.47002,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.telford.gov.uk/info/20413/library_services_-_information_help_and_support/605/advice_on_using_library_computers_equipment_and_the_internet"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.telford.gov.uk/info/1012/libraries/667/ebooks_eaudio_and_emagazine_catalogue"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.telford.gov.uk/info/20406/find_a_library/3443/home_library_service"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "telford-and-wrekin",
+  "source_id": "3062",
+  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/dawley-malinslee-community-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/dawley-malinslee-community-library",
-  "authority": "telford-and-wrekin"
+  "data": {
+    "Local authority": "Telford and Wrekin",
+    "Local authority code": "E06000020",
+    "Library name": "Dawley and Malinslee Community Library",
+    "Library code": null,
+    "Address 1": "Dawley House, 22 Burton Street, Dawley, Telford, Shropshire, TF4 2ES",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TF4 2ES",
+    "Unique property reference number": 452066537,
+    "Latitude": 52.66468,
+    "Longitude": -2.47002,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2017,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-13:00",
+    "Tuesday staffed hours": "12:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "12:00-16:00",
+    "Friday staffed hours": "09:00-13:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Digital lending; Books delivered; BFI Replay",
+    "Phone number": "01952 382901",
+    "Email address": "libraryenquiries@telford.gov.uk",
+    "URL": "https://www.telford.gov.uk/info/20406/find_a_library/3439/dawley_and_malinslee_community_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

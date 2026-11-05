@@ -1,131 +1,71 @@
 {
   "id": "lib_1c625a13-74ec-4c1b-ada8-5694d22e20ae",
-  "source_id": "3434",
-  "name": "Kinson Hub",
   "slug": "kinson-hub",
-  "address": "The Kinson Hub, Wimborne Road, Bournemouth, Dorset, BH11 9AW",
-  "postcode": "BH11 9AP",
-  "town": "Bournemouth",
-  "phone": "01202 127 333",
-  "email": "kinsonlibrary@bcpcouncil.gov.uk",
-  "website": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/kinson-library-in-kinson-hub",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities",
-    "step-free-access",
-    "hearing-loop-system",
-    "accessible-parking",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.76921,
-  "longitude": -1.90231,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bournemouth-christchurch-and-poole",
+  "source_id": "3434",
+  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/kinson-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/kinson-hub",
-  "authority": "bournemouth-christchurch-and-poole"
+  "data": {
+    "Local authority": "Bournemouth, Christchurch and Poole",
+    "Local authority code": "E06000058",
+    "Library name": "Kinson Hub",
+    "Library code": null,
+    "Address 1": "The Kinson Hub, Wimborne Road, Bournemouth, Dorset, BH11 9AW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BH11 9AP",
+    "Unique property reference number": null,
+    "Latitude": 50.76921,
+    "Longitude": -1.90231,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital skills sessions; Bookable space; Children's activities; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "01202 127 333",
+    "Email address": "kinsonlibrary@bcpcouncil.gov.uk",
+    "URL": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/kinson-library-in-kinson-hub",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

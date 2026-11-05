@@ -1,121 +1,64 @@
 {
   "id": "lib_41b71d28-c38f-41bb-9654-0082b1a8ebf8",
-  "source_id": "837",
-  "name": "Brookmans Park Community Library",
   "slug": "brookmans-park-community-library",
-  "address": "31 Bradmore Green, Brookmans Park, Hertfordshire, AL9 7QR",
-  "postcode": "AL9 7QR",
-  "town": "Hatfield",
-  "phone": "0300 123 4049",
-  "email": "libraries.information@hertfordshire.gov.uk",
-  "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/brookmans-park-community-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "low-vision-support",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.72216,
-  "longitude": -0.20188,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "hertfordshire",
+  "source_id": "837",
+  "source_url": "https://libraryon.org/libraries/hertfordshire/brookmans-park-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hertfordshire/brookmans-park-community-library",
-  "authority": "hertfordshire"
+  "data": {
+    "Local authority": "Hertfordshire",
+    "Local authority code": "E10000015",
+    "Library name": "Brookmans Park Community Library",
+    "Library code": null,
+    "Address 1": "31 Bradmore Green, Brookmans Park, Hertfordshire, AL9 7QR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AL9 7QR",
+    "Unique property reference number": 100081158360,
+    "Latitude": 51.72216,
+    "Longitude": -0.20188,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:30",
+    "Tuesday staffed hours": "14:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-17:30",
+    "Friday staffed hours": "14:00-17:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Books delivered; Family history; Digital lending",
+    "Phone number": "0300 123 4049",
+    "Email address": "libraries.information@hertfordshire.gov.uk",
+    "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/brookmans-park-community-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

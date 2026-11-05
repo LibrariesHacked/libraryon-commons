@@ -1,112 +1,64 @@
 {
   "id": "lib_32bf9518-8abd-401e-a59f-14279f2eb248",
-  "source_id": "1452",
-  "name": "North Leigh",
   "slug": "north-leigh",
-  "address": "Memorial Hall, Park Road, Witney, Oxfordshire, OX29 6SA",
-  "postcode": "OX29 6SA",
-  "town": "Witney",
-  "phone": "",
-  "email": "northleigh.library@oxfordshire.gov.uk",
-  "website": "https://www.oxfordshire.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community",
-    "retail"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.8136,
-  "longitude": -1.43832,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "oxfordshire",
+  "source_id": "1452",
+  "source_url": "https://libraryon.org/libraries/oxfordshire/north-leigh",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/oxfordshire/north-leigh",
-  "authority": "oxfordshire"
+  "data": {
+    "Local authority": "Oxfordshire",
+    "Local authority code": "E10000025",
+    "Library name": "North Leigh",
+    "Library code": null,
+    "Address 1": "Memorial Hall, Park Road, Witney, Oxfordshire, OX29 6SA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OX29 6SA",
+    "Unique property reference number": null,
+    "Latitude": 51.8136,
+    "Longitude": -1.43832,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "15:00-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-16:30",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; retail",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": null,
+    "Email address": "northleigh.library@oxfordshire.gov.uk",
+    "URL": "https://www.oxfordshire.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

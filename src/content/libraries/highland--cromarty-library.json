@@ -1,84 +1,71 @@
 {
   "id": "lib_92d92e06-70d2-4c9b-a1d7-e529c19d70ab",
-  "source_id": "204",
-  "name": "Cromarty Library",
   "slug": "cromarty-library",
-  "address": "36 Church Street, Cromarty, IV11 8XA, United Kingdom",
-  "postcode": "IV11 8XA",
-  "town": "Cromarty",
-  "phone": "01381 600318",
-  "email": "cromarty.library@highlifehighland.com",
-  "website": "https://www.highlifehighland.com/libraries/cromarty-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.68061,
-  "longitude": -4.0314,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "highland",
+  "source_id": "204",
+  "source_url": "https://libraryon.org/libraries/highland/cromarty-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/highland/cromarty-library",
-  "authority": "highland"
+  "data": {
+    "Local authority": "Highland",
+    "Local authority code": "S12000017",
+    "Library name": "Cromarty Library",
+    "Library code": null,
+    "Address 1": "36 Church Street, Cromarty, IV11 8XA, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IV11 8XA",
+    "Unique property reference number": null,
+    "Latitude": 57.68061,
+    "Longitude": -4.0314,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00",
+    "Tuesday staffed hours": "14:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "12:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01381 600318",
+    "Email address": "cromarty.library@highlifehighland.com",
+    "URL": "https://www.highlifehighland.com/libraries/cromarty-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,114 +1,77 @@
 {
   "id": "lib_3e163f43-3a55-4e21-881e-a3c8d3fdd4be",
-  "source_id": "1393",
-  "name": "Hingham Library",
   "slug": "hingham-library",
-  "address": "The Fairland, Hingham, Norfolk, NR9 4HW",
-  "postcode": "NR9 4RG",
-  "town": "Norwich",
-  "phone": "",
-  "email": "hingham.lib@libraries.norfolk.gov.uk",
-  "website": "https://www.norfolk.gov.uk/article/40199/Hingham-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "Hingham Library is closed indefinitely while  some structural issues with the building are resolved. A mobile library will begin running for two hours on a Monday, starting 11th May at 10am.",
-  "accessibility": [
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.5796,
-  "longitude": 0.98039,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "norfolk",
+  "source_id": "1393",
+  "source_url": "https://libraryon.org/libraries/norfolk/hingham-library",
   "updated_on": "2026-04-28",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/norfolk/hingham-library",
-  "authority": "norfolk"
+  "data": {
+    "Local authority": "Norfolk",
+    "Local authority code": "E10000020",
+    "Library name": "Hingham Library",
+    "Library code": null,
+    "Address 1": "The Fairland, Hingham, Norfolk, NR9 4HW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NR9 4RG",
+    "Unique property reference number": null,
+    "Latitude": 52.5796,
+    "Longitude": 0.98039,
+    "Status": "Closed (temporary)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Hingham Library is closed indefinitely while  some structural issues with the building are resolved. A mobile library will begin running for two hours on a Monday, starting 11th May at 10am.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Digital lending; Children's activities; Hobby and interest groups; Computers",
+    "Phone number": null,
+    "Email address": "hingham.lib@libraries.norfolk.gov.uk",
+    "URL": "https://www.norfolk.gov.uk/article/40199/Hingham-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

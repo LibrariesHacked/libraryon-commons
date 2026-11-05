@@ -1,109 +1,71 @@
 {
   "id": "lib_fa488ee2-a0c5-4cf0-81ec-d5d13deffc7c",
-  "source_id": "293",
-  "name": "Ratho Library and Early Years Childcare Site",
   "slug": "ratho-library",
-  "address": "6 School Wynd Ratho Edinburgh EH28 8TT",
-  "postcode": "EH28 8TT",
-  "town": "Newbridge",
-  "phone": "01313335297",
-  "email": "ratho.library@edinburgh.gov.uk",
-  "website": "https://www.edinburgh.gov.uk/directory-record/1812924/ratho-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.92218601156412,
-  "longitude": -3.3802286011888896,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "city-of-edinburgh",
+  "source_id": "293",
+  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/ratho-library",
   "updated_on": "2026-08-06",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/city-of-edinburgh/ratho-library",
-  "authority": "city-of-edinburgh"
+  "data": {
+    "Local authority": "City of Edinburgh",
+    "Local authority code": "S12000036",
+    "Library name": "Ratho Library and Early Years Childcare Site",
+    "Library code": null,
+    "Address 1": "6 School Wynd Ratho Edinburgh EH28 8TT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EH28 8TT",
+    "Unique property reference number": null,
+    "Latitude": 55.92218601156412,
+    "Longitude": -3.3802286011888896,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-20:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "13:00-20:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive",
+    "Phone number": "01313335297",
+    "Email address": "ratho.library@edinburgh.gov.uk",
+    "URL": "https://www.edinburgh.gov.uk/directory-record/1812924/ratho-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

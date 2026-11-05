@@ -1,132 +1,64 @@
 {
   "id": "lib_f03f35b0-07b1-474c-8702-adaabc2549a1",
-  "source_id": "2723",
-  "name": "Community Hub Seaton Carew",
   "slug": "community-hub-seaton-carew",
-  "address": "Station Lane, Hartlepool, County Durham, TS25 1BN",
-  "postcode": "TS25 1BN",
-  "town": "Hartlepool",
-  "phone": "01429 269808",
-  "email": "communityhub.seaton@hartlepool.gov.uk",
-  "website": "https://www.hartlepool.gov.uk/communityhubs",
-  "catalogue": "",
-  "joinOnline": "https://hartlepool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/JOIN",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.661072271392584,
-  "longitude": -1.1904092106239261,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "hartlepool",
+  "source_id": "2723",
+  "source_url": "https://libraryon.org/libraries/hartlepool/community-hub-seaton-carew",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hartlepool/community-hub-seaton-carew",
-  "authority": "hartlepool"
+  "data": {
+    "Local authority": "Hartlepool",
+    "Local authority code": "E06000001",
+    "Library name": "Community Hub Seaton Carew",
+    "Library code": null,
+    "Address 1": "Station Lane, Hartlepool, County Durham, TS25 1BN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS25 1BN",
+    "Unique property reference number": 100110785788,
+    "Latitude": 54.661072271392584,
+    "Longitude": -1.1904092106239261,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1974,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:30,13:00-17:00",
+    "Thursday staffed hours": "10:00-12:30,13:00-17:00",
+    "Friday staffed hours": "09:00-12:30",
+    "Saturday staffed hours": "09:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Children's activities; Cafe; Hobby and interest groups; Findmypast; British Newspaper Archive",
+    "Phone number": "01429 269808",
+    "Email address": "communityhub.seaton@hartlepool.gov.uk",
+    "URL": "https://www.hartlepool.gov.uk/communityhubs",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,167 +1,71 @@
 {
   "id": "lib_e75fac37-b242-49cd-a837-06582040eb4b",
-  "source_id": "2722",
-  "name": "Redbridge Central Library",
   "slug": "redbridge-central-library",
-  "address": "Clements Road, Ilford, Greater London, IG1 1EA",
-  "postcode": "IG1 1BP",
-  "town": "Ilford",
-  "phone": "020 8708 2414",
-  "email": "central.library@visionrcl.org.uk",
-  "website": "https://visionrcl.org.uk/centre/redbridge-central-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Library underwent substantial refurbishment in 2012 & 2017",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "archives",
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.55807,
-  "longitude": 0.075196,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.redbridge.gov.uk/libraries/book-a-pc-and-wifi/"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://visionrcl.org.uk/online-resources/"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.redbridge.gov.uk/libraries/get-confident-online/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://visionrcl.org.uk/centre/hub-central/"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.redbridge.gov.uk/libraries/book-a-pc-and-wifi/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.redbridge.gov.uk/libraries/archives-and-history/"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://visionrcl.org.uk/venues/redbridge-central-library/"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.redbridge.gov.uk/libraries/hub-central-business-and-employment-skills-support/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://visionrcl.org.uk/homelibrary/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "redbridge",
+  "source_id": "2722",
+  "source_url": "https://libraryon.org/libraries/redbridge/redbridge-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redbridge/redbridge-central-library",
-  "authority": "redbridge"
+  "data": {
+    "Local authority": "Redbridge",
+    "Local authority code": "E09000026",
+    "Library name": "Redbridge Central Library",
+    "Library code": null,
+    "Address 1": "Clements Road, Ilford, Greater London, IG1 1EA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IG1 1BP",
+    "Unique property reference number": null,
+    "Latitude": 51.55807,
+    "Longitude": 0.075196,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-20:00",
+    "Tuesday staffed hours": "10:00-20:00",
+    "Wednesday staffed hours": "10:00-20:00",
+    "Thursday staffed hours": "10:00-20:00",
+    "Friday staffed hours": "10:00-20:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "11:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives; museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Scanning; Children's activities; Digital lending; Digital skills sessions; BFI Replay; Cafe; Business support; Computers; Family history; Bookable space; Career support; Books delivered; British Newspaper Archive; Findmypast",
+    "Phone number": "020 8708 2414",
+    "Email address": "central.library@visionrcl.org.uk",
+    "URL": "https://visionrcl.org.uk/centre/redbridge-central-library/",
+    "Notes": "Library underwent substantial refurbishment in 2012 & 2017"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

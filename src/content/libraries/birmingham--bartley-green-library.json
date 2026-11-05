@@ -1,98 +1,73 @@
 {
   "id": "lib_fe16cd09-eefc-4d96-ae1f-a359f8fc2b66",
-  "source_id": "2272",
-  "name": "Bartley Green Library",
   "slug": "bartley-green-library",
-  "address": "Adams Hill , Birmingham, West Midlands, B32 3QG",
-  "postcode": "B32 3QG",
-  "town": "Birmingham",
-  "phone": "0121 464 4473",
-  "email": "bartley.green.library@birmingham.gov.uk",
-  "website": "https://www.birmingham.gov.uk/directory_record/5124/bartley_green_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Closed for lunch 1-2pm",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.43592,
-  "longitude": -1.99821,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "birmingham",
+  "source_id": "2272",
+  "source_url": "https://libraryon.org/libraries/birmingham/bartley-green-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/birmingham/bartley-green-library",
-  "authority": "birmingham"
+  "data": {
+    "Local authority": "Birmingham",
+    "Local authority code": "E08000025",
+    "Library name": "Bartley Green Library",
+    "Library code": null,
+    "Address 1": "Adams Hill , Birmingham, West Midlands, B32 3QG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B32 3QG",
+    "Unique property reference number": null,
+    "Latitude": 52.43592,
+    "Longitude": -1.99821,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1905,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-13:00,14:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; BFI Replay",
+    "Phone number": "0121 464 4473",
+    "Email address": "bartley.green.library@birmingham.gov.uk",
+    "URL": "https://www.birmingham.gov.uk/directory_record/5124/bartley_green_library",
+    "Notes": "Closed for lunch 1-2pm"
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_e5b4b064b405c66f41ffd8cf"
+      ]
+    }
+  ]
 }

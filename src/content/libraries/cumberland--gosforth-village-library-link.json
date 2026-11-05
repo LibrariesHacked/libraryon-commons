@@ -1,98 +1,71 @@
 {
   "id": "lib_87d40062-7e40-4386-a470-2519eba8c1d6",
-  "source_id": "3477",
-  "name": "Gosforth Village Library Link",
   "slug": "gosforth-village-library-link",
-  "address": "Public Hall, Gosforth, Cumbria, CA20 1AS",
-  "postcode": "CA20 1BW",
-  "town": "Seascale",
-  "phone": "019467 25888",
-  "email": "gosforthlibrarylink@gmail.com",
-  "website": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/gosforth-village-library-link",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "14:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.41838,
-  "longitude": -3.43655,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    }
-  ],
+  "authority": "cumberland",
+  "source_id": "3477",
+  "source_url": "https://libraryon.org/libraries/cumberland/gosforth-village-library-link",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cumberland/gosforth-village-library-link",
-  "authority": "cumberland"
+  "data": {
+    "Local authority": "Cumberland",
+    "Local authority code": "E06000063",
+    "Library name": "Gosforth Village Library Link",
+    "Library code": null,
+    "Address 1": "Public Hall, Gosforth, Cumbria, CA20 1AS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CA20 1BW",
+    "Unique property reference number": null,
+    "Latitude": 54.41838,
+    "Longitude": -3.43655,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-14:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "16:00-17:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Findmypast; Family history; British Newspaper Archive; BFI Replay",
+    "Phone number": "019467 25888",
+    "Email address": "gosforthlibrarylink@gmail.com",
+    "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/gosforth-village-library-link",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

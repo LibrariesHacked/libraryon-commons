@@ -1,115 +1,71 @@
 {
   "id": "lib_52269dda-7456-4eaf-81f0-240260402f4a",
-  "source_id": "2056",
-  "name": "Mixenden",
   "slug": "mixenden",
-  "address": "Clough Lane, Mixenden, Halifax, West Yorkshire, HX2 8SH",
-  "postcode": "HX2 8PU",
-  "town": "Halifax",
-  "phone": "01422 244694",
-  "email": "mixenden.library@calderdale.gov.uk",
-  "website": "https://new.calderdale.gov.uk/council-locations/mixenden-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.75067404616189,
-  "longitude": -1.9079062154040116,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "calderdale",
+  "source_id": "2056",
+  "source_url": "https://libraryon.org/libraries/calderdale/mixenden",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/calderdale/mixenden",
-  "authority": "calderdale"
+  "data": {
+    "Local authority": "Calderdale",
+    "Local authority code": "E08000033",
+    "Library name": "Mixenden",
+    "Library code": null,
+    "Address 1": "Clough Lane, Mixenden, Halifax, West Yorkshire, HX2 8SH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HX2 8PU",
+    "Unique property reference number": null,
+    "Latitude": 53.75067404616189,
+    "Longitude": -1.9079062154040116,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-12:30,13:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-12:30,13:00-17:00",
+    "Friday staffed hours": "10:00-12:30,13:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "01422 244694",
+    "Email address": "mixenden.library@calderdale.gov.uk",
+    "URL": "https://new.calderdale.gov.uk/council-locations/mixenden-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

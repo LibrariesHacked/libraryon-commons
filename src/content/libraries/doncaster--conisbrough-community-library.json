@@ -1,127 +1,64 @@
 {
   "id": "lib_e16a927a-e399-457f-9d8b-dd025f6ad580",
-  "source_id": "1853",
-  "name": "Conisbrough Community Library",
   "slug": "conisbrough-community-library",
-  "address": "Old Road, Conisbrough, South Yorkshire, DN12 3ND",
-  "postcode": "DN12 3ND",
-  "town": "Doncaster",
-  "phone": "01302 734588",
-  "email": "conisbroughcommunitylibrary@gmail.com",
-  "website": "https://library.doncaster.gov.uk/-/conisbrough-community-libra-1#/?location=Conisbrough%20Community%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.48196,
-  "longitude": -1.23329,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "doncaster",
+  "source_id": "1853",
+  "source_url": "https://libraryon.org/libraries/doncaster/conisbrough-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/doncaster/conisbrough-community-library",
-  "authority": "doncaster"
+  "data": {
+    "Local authority": "Doncaster",
+    "Local authority code": "E08000017",
+    "Library name": "Conisbrough Community Library",
+    "Library code": null,
+    "Address 1": "Old Road, Conisbrough, South Yorkshire, DN12 3ND",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN12 3ND",
+    "Unique property reference number": null,
+    "Latitude": 53.48196,
+    "Longitude": -1.23329,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "13:00-16:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "11:00-14:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Books delivered; Photocopiers; Bookable space; Children's activities",
+    "Phone number": "01302 734588",
+    "Email address": "conisbroughcommunitylibrary@gmail.com",
+    "URL": "https://library.doncaster.gov.uk/-/conisbrough-community-libra-1#/?location=Conisbrough%20Community%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

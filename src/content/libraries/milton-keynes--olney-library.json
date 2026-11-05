@@ -1,144 +1,71 @@
 {
   "id": "lib_04373e48-f515-4c13-a6c7-626f91dd9f6d",
-  "source_id": "3100",
-  "name": "Olney Library",
   "slug": "olney-library",
-  "address": "Olney Centre, High Street, Olney, Buckinghamshire, MK46 4EF",
-  "postcode": "MK46 4EF",
-  "town": "Olney",
-  "phone": "01234 711474",
-  "email": "library.enquiries@milton-keynes.gov.uk",
-  "website": "https://www.milton-keynes.gov.uk/libraries/nearest-library/olney-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "staff-support",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.15735,
-  "longitude": -0.70196,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.milton-keynes.gov.uk/libraries/learn-research/digital-help"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "milton-keynes",
+  "source_id": "3100",
+  "source_url": "https://libraryon.org/libraries/milton-keynes/olney-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/milton-keynes/olney-library",
-  "authority": "milton-keynes"
+  "data": {
+    "Local authority": "Milton Keynes",
+    "Local authority code": "E06000042",
+    "Library name": "Olney Library",
+    "Library code": null,
+    "Address 1": "Olney Centre, High Street, Olney, Buckinghamshire, MK46 4EF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "MK46 4EF",
+    "Unique property reference number": null,
+    "Latitude": 52.15735,
+    "Longitude": -0.70196,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "11:00-13:00,13:00-17:30",
+    "Wednesday staffed hours": "10:00-14:30",
+    "Thursday staffed hours": "10:00-14:30,14:30-16:30",
+    "Friday staffed hours": "13:00-17:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Computers; Digital skills sessions; Hobby and interest groups; Books delivered; Scanning; Photocopiers",
+    "Phone number": "01234 711474",
+    "Email address": "library.enquiries@milton-keynes.gov.uk",
+    "URL": "https://www.milton-keynes.gov.uk/libraries/nearest-library/olney-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,135 +1,71 @@
 {
   "id": "lib_f1ced29d-8c2a-4e2e-8f49-aa1752c984b9",
-  "source_id": "196",
-  "name": "Duloch Library",
   "slug": "duloch-library",
-  "address": "Duloch Library, Community Campus, Nightingale Place, Dunfermline, KY11 8LW",
-  "postcode": "KY11 8LW",
-  "town": "Dunfermline",
-  "phone": "01383 602208",
-  "email": "duloch.library@onfife.com",
-  "website": "http://onfife.com/venues/duloch-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.061935,
-  "longitude": -3.402967,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "fife",
+  "source_id": "196",
+  "source_url": "https://libraryon.org/libraries/fife/duloch-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/fife/duloch-library",
-  "authority": "fife"
+  "data": {
+    "Local authority": "Fife",
+    "Local authority code": "S12000047",
+    "Library name": "Duloch Library",
+    "Library code": null,
+    "Address 1": "Duloch Library, Community Campus, Nightingale Place, Dunfermline, KY11 8LW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KY11 8LW",
+    "Unique property reference number": null,
+    "Latitude": 56.061935,
+    "Longitude": -3.402967,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": "09:00-12:30",
+    "Wednesday staffed hours": "09:00-12:30,13:30-17:00",
+    "Thursday staffed hours": "09:00-12:30,13:30-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:30,13:30-16:00",
+    "Sunday staffed hours": "12:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "13:30-17:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
+    "Phone number": "01383 602208",
+    "Email address": "duloch.library@onfife.com",
+    "URL": "http://onfife.com/venues/duloch-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

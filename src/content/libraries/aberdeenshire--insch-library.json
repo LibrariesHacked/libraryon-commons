@@ -1,78 +1,71 @@
 {
   "id": "lib_072d0c5e-fd7e-4bdb-a9e3-466a8219536f",
-  "source_id": "26",
-  "name": "Insch Library",
   "slug": "insch-library",
-  "address": "20 Rannes Street, Insch, AB52 6JJ, United Kingdom",
-  "postcode": "AB52 6JJ",
-  "town": "Insch",
-  "phone": "01464 635190",
-  "email": "insch.library@aberdeenshire.gov.uk",
-  "website": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/insch-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.3409,
-  "longitude": -2.61202,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "aberdeenshire",
+  "source_id": "26",
+  "source_url": "https://libraryon.org/libraries/aberdeenshire/insch-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/aberdeenshire/insch-library",
-  "authority": "aberdeenshire"
+  "data": {
+    "Local authority": "Aberdeenshire",
+    "Local authority code": "S12000034",
+    "Library name": "Insch Library",
+    "Library code": null,
+    "Address 1": "20 Rannes Street, Insch, AB52 6JJ, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB52 6JJ",
+    "Unique property reference number": null,
+    "Latitude": 57.3409,
+    "Longitude": -2.61202,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "15:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01464 635190",
+    "Email address": "insch.library@aberdeenshire.gov.uk",
+    "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/insch-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

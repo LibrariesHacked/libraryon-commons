@@ -1,124 +1,71 @@
 {
   "id": "lib_d74ac863-0e7a-450f-87d5-ff41b35b2eec",
-  "source_id": "3572",
-  "name": "Micklefield Community Library",
   "slug": "micklefield-community-library",
-  "address": "Micklefield Road , High Wycombe, Buckinghamshire, HP13 7HU",
-  "postcode": "HP13 7HU",
-  "town": "High Wycombe",
-  "phone": "01296 382 415",
-  "email": "lib-mic@buckinghamshire.gov.uk",
-  "website": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/micklefield-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.63016,
-  "longitude": -0.71141,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "buckinghamshire",
+  "source_id": "3572",
+  "source_url": "https://libraryon.org/libraries/buckinghamshire/micklefield-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/buckinghamshire/micklefield-community-library",
-  "authority": "buckinghamshire"
+  "data": {
+    "Local authority": "Buckinghamshire",
+    "Local authority code": "E06000060",
+    "Library name": "Micklefield Community Library",
+    "Library code": null,
+    "Address 1": "Micklefield Road , High Wycombe, Buckinghamshire, HP13 7HU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HP13 7HU",
+    "Unique property reference number": null,
+    "Latitude": 51.63016,
+    "Longitude": -0.71141,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-18:00",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Books delivered; Family history; BFI Replay; Computers; Photocopiers; Scanning; Children's activities",
+    "Phone number": "01296 382 415",
+    "Email address": "lib-mic@buckinghamshire.gov.uk",
+    "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/micklefield-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

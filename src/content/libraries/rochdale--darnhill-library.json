@@ -1,124 +1,64 @@
 {
   "id": "lib_8dd8b133-dd49-4c6f-9fa7-9b8306ae6599",
-  "source_id": "1534",
-  "name": "Darnhill Library",
   "slug": "darnhill-library",
-  "address": "Argyle Parade, Heywood , Greater Manchester, OL10 3RY",
-  "postcode": "OL10 3RY",
-  "town": "Heywood",
-  "phone": "0300 303 8876",
-  "email": "library.service@rochdale.gov.uk",
-  "website": "https://www.rochdale.gov.uk/directory-record/1115/darnhill-library-heywood",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.5879,
-  "longitude": -2.24107,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "rochdale",
+  "source_id": "1534",
+  "source_url": "https://libraryon.org/libraries/rochdale/darnhill-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rochdale/darnhill-library",
-  "authority": "rochdale"
+  "data": {
+    "Local authority": "Rochdale",
+    "Local authority code": "E08000005",
+    "Library name": "Darnhill Library",
+    "Library code": null,
+    "Address 1": "Argyle Parade, Heywood , Greater Manchester, OL10 3RY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OL10 3RY",
+    "Unique property reference number": null,
+    "Latitude": 53.5879,
+    "Longitude": -2.24107,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-14:00",
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-14:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Family history; Hobby and interest groups",
+    "Phone number": "0300 303 8876",
+    "Email address": "library.service@rochdale.gov.uk",
+    "URL": "https://www.rochdale.gov.uk/directory-record/1115/darnhill-library-heywood",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

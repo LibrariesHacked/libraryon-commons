@@ -1,122 +1,73 @@
 {
   "id": "lib_a8459d97-e450-4ba2-8025-d88e19fe6aff",
-  "source_id": "1346",
-  "name": "St. Margaret's-at-Cliffe Library",
   "slug": "st-margarets-at-cliffe-library",
-  "address": "Community Centre, 16 Kingsdown Road, St. Margarets-at-Cliffe, Kent, CT15 6AZ",
-  "postcode": "CT15 6AZ",
-  "town": "Dover",
-  "phone": "03000 41 31 31",
-  "email": "stmargaretsatcliffelibrary@kent.gov.uk",
-  "website": "http://www.kent.gov.uk/leisure-and-community/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.15582,
-  "longitude": 1.37211,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "kent",
+  "source_id": "1346",
+  "source_url": "https://libraryon.org/libraries/kent/st-margarets-at-cliffe-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kent/st-margarets-at-cliffe-library",
-  "authority": "kent"
+  "data": {
+    "Local authority": "Kent",
+    "Local authority code": "E10000016",
+    "Library name": "St. Margaret's-at-Cliffe Library",
+    "Library code": null,
+    "Address 1": "Community Centre, 16 Kingsdown Road, St. Margarets-at-Cliffe, Kent, CT15 6AZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CT15 6AZ",
+    "Unique property reference number": null,
+    "Latitude": 51.15582,
+    "Longitude": 1.37211,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "12:30-17:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-13:00,14:00-17:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-13:00,14:00-17:30",
+    "Saturday staffed hours": "09:30-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": "03000 41 31 31",
+    "Email address": "stmargaretsatcliffelibrary@kent.gov.uk",
+    "URL": "http://www.kent.gov.uk/leisure-and-community/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_a21227e26e9881f32d8030e8"
+      ]
+    }
+  ]
 }

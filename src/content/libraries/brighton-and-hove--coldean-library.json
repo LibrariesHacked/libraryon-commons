@@ -1,144 +1,71 @@
 {
   "id": "lib_a5e35434-a9fb-4934-8e2e-c6008cb7f481",
-  "source_id": "3125",
-  "name": "Coldean Library",
   "slug": "coldean-library",
-  "address": "Library Court, 24 Beatty Avenue, Brighton, East Sussex, BN1 9ED",
-  "postcode": "BN1 9EW",
-  "town": "Brighton",
-  "phone": "01273 290 800",
-  "email": "libraries@brighton-hove.gov.uk",
-  "website": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/coldean-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "care"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/coldean_library/",
-  "permanentlyClosed": false,
-  "latitude": 50.863574,
-  "longitude": -0.11281,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/how-hire-room-our-libraries"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "brighton-and-hove",
+  "source_id": "3125",
+  "source_url": "https://libraryon.org/libraries/brighton-and-hove/coldean-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brighton-and-hove/coldean-library",
-  "authority": "brighton-and-hove"
+  "data": {
+    "Local authority": "Brighton and Hove",
+    "Local authority code": "E06000043",
+    "Library name": "Coldean Library",
+    "Library code": null,
+    "Address 1": "Library Court, 24 Beatty Avenue, Brighton, East Sussex, BN1 9ED",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BN1 9EW",
+    "Unique property reference number": null,
+    "Latitude": 50.863574,
+    "Longitude": -0.11281,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:00-19:00",
+    "Tuesday unstaffed hours": "09:00-19:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": "09:00-19:00",
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": "09:30-17:00",
+    "Sunday unstaffed hours": "11:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "care",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Scanning; Bookable space; Children's activities; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "01273 290 800",
+    "Email address": "libraries@brighton-hove.gov.uk",
+    "URL": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/coldean-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

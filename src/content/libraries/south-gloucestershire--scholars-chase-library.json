@@ -1,97 +1,64 @@
 {
   "id": "lib_18eed3d2-8a5c-4f00-8e60-11eb10da510d",
-  "source_id": "2599",
-  "name": "Scholars Chase Library",
   "slug": "scholars-chase-library",
-  "address": "ExtraCare Stoke Gifford Retirement Village, Edward Parker Road , South Gloucestershire, BS16 1YG",
-  "postcode": "BS16 1YG",
-  "town": "Bristol",
-  "phone": "",
-  "email": "scholarschase.library@southglos.gov.uk",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:30"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.499249,
-  "longitude": -2.541306,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "south-gloucestershire",
+  "source_id": "2599",
+  "source_url": "https://libraryon.org/libraries/south-gloucestershire/scholars-chase-library",
   "updated_on": "2026-05-22",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-gloucestershire/scholars-chase-library",
-  "authority": "south-gloucestershire"
+  "data": {
+    "Local authority": "South Gloucestershire",
+    "Local authority code": "E06000025",
+    "Library name": "Scholars Chase Library",
+    "Library code": null,
+    "Address 1": "ExtraCare Stoke Gifford Retirement Village, Edward Parker Road , South Gloucestershire, BS16 1YG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS16 1YG",
+    "Unique property reference number": 677691,
+    "Latitude": 51.499249,
+    "Longitude": -2.541306,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2019,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30",
+    "Tuesday staffed hours": "13:30-16:00",
+    "Wednesday staffed hours": "13:30-16:00",
+    "Thursday staffed hours": "09:30-12:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "scholarschase.library@southglos.gov.uk",
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

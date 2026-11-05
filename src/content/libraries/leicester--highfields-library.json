@@ -1,124 +1,73 @@
 {
   "id": "lib_f2501d7b-e0ca-4059-9cc1-801b99b33cc1",
-  "source_id": "2952",
-  "name": "Highfields Library",
   "slug": "highfields-library",
-  "address": "98 Melbourne Road, Leicester, Leicestershire, LE2 0DS",
-  "postcode": "LE2 0DS",
-  "town": "Leicester",
-  "phone": "0116 454 0350",
-  "email": "highfields.lib@leicester.gov.uk",
-  "website": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/find-a-library/highfields-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "assistive-technology-available"
-  ],
-  "notes": "Refurbished Jan 2020",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.63285,
-  "longitude": -1.11454,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/computers-internet-and-wifi/computer-skills-for-beginners/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "leicester",
+  "source_id": "2952",
+  "source_url": "https://libraryon.org/libraries/leicester/highfields-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicester/highfields-library",
-  "authority": "leicester"
+  "data": {
+    "Local authority": "Leicester",
+    "Local authority code": "E06000016",
+    "Library name": "Highfields Library",
+    "Library code": null,
+    "Address 1": "98 Melbourne Road, Leicester, Leicestershire, LE2 0DS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE2 0DS",
+    "Unique property reference number": null,
+    "Latitude": 52.63285,
+    "Longitude": -1.11454,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Digital skills sessions; BFI Replay",
+    "Phone number": "0116 454 0350",
+    "Email address": "highfields.lib@leicester.gov.uk",
+    "URL": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/find-a-library/highfields-library/",
+    "Notes": "Refurbished Jan 2020"
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_e6abfce4bb506c99c18dd6b0"
+      ]
+    }
+  ]
 }

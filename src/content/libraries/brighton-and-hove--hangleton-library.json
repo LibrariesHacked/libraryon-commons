@@ -1,140 +1,71 @@
 {
   "id": "lib_4f021f6e-fe45-4ade-8d12-a7069accf393",
-  "source_id": "3130",
-  "name": "Hangleton Library",
   "slug": "hangleton-library",
-  "address": "West Way, Hangleton, Hove, East Sussex, BN3 8LD",
-  "postcode": "BN3 8LE",
-  "town": "Hove",
-  "phone": "01273 290 800",
-  "email": "libraries@brighton-hove.gov.uk",
-  "website": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/hangleton-library?origin_node=33916",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "lift-access",
-    "accessible-parking",
-    "step-free-access",
-    "visual-alarms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/hangleton_library/",
-  "permanentlyClosed": false,
-  "latitude": 50.84556,
-  "longitude": -0.19577,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/how-hire-room-our-libraries"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "brighton-and-hove",
+  "source_id": "3130",
+  "source_url": "https://libraryon.org/libraries/brighton-and-hove/hangleton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brighton-and-hove/hangleton-library",
-  "authority": "brighton-and-hove"
+  "data": {
+    "Local authority": "Brighton and Hove",
+    "Local authority code": "E06000043",
+    "Library name": "Hangleton Library",
+    "Library code": null,
+    "Address 1": "West Way, Hangleton, Hove, East Sussex, BN3 8LD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BN3 8LE",
+    "Unique property reference number": null,
+    "Latitude": 50.84556,
+    "Longitude": -0.19577,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "09:00-19:00",
+    "Wednesday unstaffed hours": "09:00-19:00",
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": "09:00-17:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": "11:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Scanning; Bookable space; British Newspaper Archive; Findmypast",
+    "Phone number": "01273 290 800",
+    "Email address": "libraries@brighton-hove.gov.uk",
+    "URL": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/hangleton-library?origin_node=33916",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,124 +1,80 @@
 {
   "id": "lib_aac591ad-6149-4a5f-be3e-6d9dc425d4c5",
-  "source_id": "2798",
-  "name": "Loftus Library",
   "slug": "loftus-library",
-  "address": "Duncan Place, Loftus, North Yorkshire, TS13 4PR",
-  "postcode": "TS13 4PR",
-  "town": "Saltburn-by-the-Sea",
-  "phone": "01287 640582",
-  "email": "loftus_library@redcar-cleveland.gov.uk",
-  "website": "https://libraries.redcar-cleveland.gov.uk/-/loftus-library#/?location=Loftus%20Library",
-  "catalogue": "https://libraries.redcar-cleveland.gov.uk/extended-search",
-  "joinOnline": "https://libraries.redcar-cleveland.gov.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.55427,
-  "longitude": -0.88799,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/borrowbox"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/meeting-spaces"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/home-library-service"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "redcar-and-cleveland",
+  "source_id": "2798",
+  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/loftus-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/loftus-library",
-  "authority": "redcar-and-cleveland"
+  "data": {
+    "Local authority": "Redcar and Cleveland",
+    "Local authority code": "E06000003",
+    "Library name": "Loftus Library",
+    "Library code": null,
+    "Address 1": "Duncan Place, Loftus, North Yorkshire, TS13 4PR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS13 4PR",
+    "Unique property reference number": null,
+    "Latitude": 54.55427,
+    "Longitude": -0.88799,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-16:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Family history; Computers; Digital lending; Bookable space; Books delivered; BFI Replay",
+    "Phone number": "01287 640582",
+    "Email address": "loftus_library@redcar-cleveland.gov.uk",
+    "URL": "https://libraries.redcar-cleveland.gov.uk/-/loftus-library#/?location=Loftus%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_c5570ab22f0fa08bafb92cd6"
+      ]
+    }
+  ]
 }

@@ -1,134 +1,64 @@
 {
   "id": "lib_0afcd435-7472-4b23-80ed-2dabc389686f",
-  "source_id": "3024",
-  "name": "Twickenham Library",
   "slug": "twickenham",
-  "address": "Garfield Road, Twickenham, Middlesex, TW1 3JS",
-  "postcode": "TW1 3JS",
-  "town": "Twickenham",
-  "phone": "020 8734 3340",
-  "email": "libraries@richmond.gov.uk",
-  "website": "https://www.richmond.gov.uk/services/libraries/branch_libraries/twickenham_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Closed for interior refurbishment  January 2020  - April 2020",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.44742,
-  "longitude": -0.32772,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_facilities/peoples_network"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.richmond.gov.uk/services/libraries/digital_library"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_services_for_children_and_teens"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_facilities/peoples_network"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.richmond.gov.uk/local_studies_collection"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.richmond.gov.uk/services/libraries/home_library_service"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.richmond.gov.uk/services/events_and_venue_hire/hall_and_venue_bookings/twickenham_library_venue_hire"
-    }
-  ],
+  "authority": "richmond-upon-thames",
+  "source_id": "3024",
+  "source_url": "https://libraryon.org/libraries/richmond-upon-thames/twickenham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/richmond-upon-thames/twickenham",
-  "authority": "richmond-upon-thames"
+  "data": {
+    "Local authority": "Richmond upon Thames",
+    "Local authority code": "E09000027",
+    "Library name": "Twickenham Library",
+    "Library code": null,
+    "Address 1": "Garfield Road, Twickenham, Middlesex, TW1 3JS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TW1 3JS",
+    "Unique property reference number": null,
+    "Latitude": 51.44742,
+    "Longitude": -0.32772,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-18:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "09:30-18:00",
+    "Friday staffed hours": "09:30-18:00",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Hobby and interest groups; Digital lending; Children's activities; Computers; Family history; Books delivered; Bookable space",
+    "Phone number": "020 8734 3340",
+    "Email address": "libraries@richmond.gov.uk",
+    "URL": "https://www.richmond.gov.uk/services/libraries/branch_libraries/twickenham_library",
+    "Notes": "Closed for interior refurbishment  January 2020  - April 2020"
+  },
+  "validation_exceptions": []
 }

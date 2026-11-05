@@ -1,106 +1,71 @@
 {
   "id": "lib_2ace9597-c100-4550-abf6-2cec3b4b466b",
-  "source_id": "440",
-  "name": "Blackburn Connected",
   "slug": "blackburn-connected",
-  "address": "Blackburn Partnership Centre  Blackburn library  Ash Grove  Blackburn  EH47 7LL",
-  "postcode": "EH47 7DE",
-  "town": "Bathgate",
-  "phone": "01506 283990",
-  "email": "blackburn.lib@westlothian.gov.uk",
-  "website": "https://www.westlothian.gov.uk/article/33623/Blackburn-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "09:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.87478965263165,
-  "longitude": -3.621539803190643,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "west-lothian",
+  "source_id": "440",
+  "source_url": "https://libraryon.org/libraries/west-lothian/blackburn-connected",
   "updated_on": "2026-09-03",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-lothian/blackburn-connected",
-  "authority": "west-lothian"
+  "data": {
+    "Local authority": "West Lothian",
+    "Local authority code": "S12000040",
+    "Library name": "Blackburn Connected",
+    "Library code": null,
+    "Address 1": "Blackburn Partnership Centre  Blackburn library  Ash Grove  Blackburn  EH47 7LL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EH47 7DE",
+    "Unique property reference number": null,
+    "Latitude": 55.87478965263165,
+    "Longitude": -3.621539803190643,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-15:00",
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-12:00,12:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:00-17:00",
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01506 283990",
+    "Email address": "blackburn.lib@westlothian.gov.uk",
+    "URL": "https://www.westlothian.gov.uk/article/33623/Blackburn-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,104 +1,71 @@
 {
   "id": "lib_6828f97f-9fc7-4bf8-9a07-6a199ce5ae0d",
-  "source_id": "2069",
-  "name": "John Jackson",
   "slug": "john-jackson",
-  "address": "Agricola Place, Enfield, Greater London, EN1 1DW",
-  "postcode": "EN1 1DW",
-  "town": "Enfield",
-  "phone": "020 3821 1927",
-  "email": "libraries@enfield.gov.uk",
-  "website": "https://www.enfield.gov.uk/services/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-restrooms",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": true,
-  "latitude": 51.64543,
-  "longitude": -0.0665,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "enfield",
+  "source_id": "2069",
+  "source_url": "https://libraryon.org/libraries/enfield/john-jackson",
   "updated_on": "2026-09-16",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/enfield/john-jackson",
-  "authority": "enfield"
+  "data": {
+    "Local authority": "Enfield",
+    "Local authority code": "E09000010",
+    "Library name": "John Jackson",
+    "Library code": null,
+    "Address 1": "Agricola Place, Enfield, Greater London, EN1 1DW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EN1 1DW",
+    "Unique property reference number": 207040251,
+    "Latitude": 51.64543,
+    "Longitude": -0.0665,
+    "Status": "Closed (permanent)",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Children's activities; Computers; Digital lending; Hobby and interest groups; Photocopiers; Scanning; Findmypast",
+    "Phone number": "020 3821 1927",
+    "Email address": "libraries@enfield.gov.uk",
+    "URL": "https://www.enfield.gov.uk/services/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

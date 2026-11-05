@@ -1,132 +1,71 @@
 {
   "id": "lib_36d03519-00ff-43e6-a78e-56af70415e22",
-  "source_id": "852",
-  "name": "Crowborough Library",
   "slug": "crowborough-library",
-  "address": "Pine Grove, Crowborough, East Sussex, TN6 1DH",
-  "postcode": "TN6 1DH",
-  "town": "Crowborough",
-  "phone": "0345 6080196",
-  "email": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-  "website": "https://www.eastsussex.gov.uk/libraries/local/locations/crowborough",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "wheelchair-access",
-    "step-free-access"
-  ],
-  "notes": "Major refurb in 2019",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.058345,
-  "longitude": 0.158925,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "east-sussex",
+  "source_id": "852",
+  "source_url": "https://libraryon.org/libraries/east-sussex/crowborough-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-sussex/crowborough-library",
-  "authority": "east-sussex"
+  "data": {
+    "Local authority": "East Sussex",
+    "Local authority code": "E10000011",
+    "Library name": "Crowborough Library",
+    "Library code": null,
+    "Address 1": "Pine Grove, Crowborough, East Sussex, TN6 1DH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TN6 1DH",
+    "Unique property reference number": 10033417558,
+    "Latitude": 51.058345,
+    "Longitude": 0.158925,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "12:30-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": "11:00-18:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Family history; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "0345 6080196",
+    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/crowborough",
+    "Notes": "Major refurb in 2019"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

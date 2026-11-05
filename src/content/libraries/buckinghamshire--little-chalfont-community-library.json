@@ -1,135 +1,73 @@
 {
   "id": "lib_2554258a-a2ec-4b27-9d29-98379b2e3182",
-  "source_id": "3569",
-  "name": "Little Chalfont Community Library",
   "slug": "little-chalfont-community-library",
-  "address": "Cokes Lane, Little Chalfont, Buckinghamshire, HP7 9QA",
-  "postcode": "HP7 9QA",
-  "town": "Amersham",
-  "phone": "01494 764 602",
-  "email": "littlechalfontlibrary@gmail.com",
-  "website": "https://www.littlechalfontlibrary.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.666318,
-  "longitude": -0.566367,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "buckinghamshire",
+  "source_id": "3569",
+  "source_url": "https://libraryon.org/libraries/buckinghamshire/little-chalfont-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/buckinghamshire/little-chalfont-community-library",
-  "authority": "buckinghamshire"
+  "data": {
+    "Local authority": "Buckinghamshire",
+    "Local authority code": "E06000060",
+    "Library name": "Little Chalfont Community Library",
+    "Library code": null,
+    "Address 1": "Cokes Lane, Little Chalfont, Buckinghamshire, HP7 9QA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HP7 9QA",
+    "Unique property reference number": null,
+    "Latitude": 51.666318,
+    "Longitude": -0.566367,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-13:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Family history; Books delivered; Bookable space; Computers; Photocopiers; Digital skills sessions; Children's activities; Hobby and interest groups",
+    "Phone number": "01494 764 602",
+    "Email address": "littlechalfontlibrary@gmail.com",
+    "URL": "https://www.littlechalfontlibrary.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_e5ca95eaa29691d853e1bb0e"
+      ]
+    }
+  ]
 }

@@ -1,70 +1,77 @@
 {
   "id": "lib_fffcf5c5-ca6f-4a2d-9521-10032b264c6c",
-  "source_id": "2556",
-  "name": "Oldhams Neighbourhood Collection",
   "slug": "oldhams-neighbourhood-collection",
-  "address": "20 Forfar Street, Bolton, BL1 6RN, United Kingdom",
-  "postcode": "BL1 6RN",
-  "town": "Bolton",
-  "phone": "",
-  "email": "oldhamschildrenscentre@bolton.gov.uk",
-  "website": "http://www.bolton.gov.uk/website/pages/OldhamsChildrensCentre.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "On Fri closed for lunch between 12.00 and 15.00",
-  "facilityOperated": "Facility Not Open",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.60532,
-  "longitude": -2.43877,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "bolton",
+  "source_id": "2556",
+  "source_url": "https://libraryon.org/libraries/bolton/oldhams-neighbourhood-collection",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bolton/oldhams-neighbourhood-collection",
-  "authority": "bolton"
+  "data": {
+    "Local authority": "Bolton",
+    "Local authority code": "E08000001",
+    "Library name": "Oldhams Neighbourhood Collection",
+    "Library code": null,
+    "Address 1": "20 Forfar Street, Bolton, BL1 6RN, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BL1 6RN",
+    "Unique property reference number": 10070915271,
+    "Latitude": 53.60532,
+    "Longitude": -2.43877,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": 2012,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": "oldhamschildrenscentre@bolton.gov.uk",
+    "URL": "http://www.bolton.gov.uk/website/pages/OldhamsChildrensCentre.aspx",
+    "Notes": "On Fri closed for lunch between 12.00 and 15.00"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

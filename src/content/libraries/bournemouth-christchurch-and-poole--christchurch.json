@@ -1,133 +1,64 @@
 {
   "id": "lib_af3d112f-b421-4f79-b463-2a751a85f0ac",
-  "source_id": "3475",
-  "name": "Christchurch",
   "slug": "christchurch",
-  "address": "Druitt Buildings 29 High Street, Christchurch, Dorset, BH23 1AW",
-  "postcode": "BH23 1AW",
-  "town": "Christchurch",
-  "phone": "01202 127 200",
-  "email": "christchurchlibrary@bcpcouncil.gov.uk",
-  "website": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/christchurch-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.7345,
-  "longitude": -1.77761,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bournemouth-christchurch-and-poole",
+  "source_id": "3475",
+  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/christchurch",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bournemouth-christchurch-and-poole/christchurch",
-  "authority": "bournemouth-christchurch-and-poole"
+  "data": {
+    "Local authority": "Bournemouth, Christchurch and Poole",
+    "Local authority code": "E06000058",
+    "Library name": "Christchurch",
+    "Library code": null,
+    "Address 1": "Druitt Buildings 29 High Street, Christchurch, Dorset, BH23 1AW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BH23 1AW",
+    "Unique property reference number": 100041102406,
+    "Latitude": 50.7345,
+    "Longitude": -1.77761,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Photocopiers; Children's activities; Hobby and interest groups; Digital skills sessions; British Newspaper Archive",
+    "Phone number": "01202 127 200",
+    "Email address": "christchurchlibrary@bcpcouncil.gov.uk",
+    "URL": "https://www.bcpcouncil.gov.uk/libraries/find-a-library/christchurch-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

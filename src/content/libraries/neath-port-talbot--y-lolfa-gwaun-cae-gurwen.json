@@ -1,102 +1,71 @@
 {
   "id": "lib_5c224295-67f8-4f8e-a9c9-7f3627c36b89",
-  "source_id": "822",
-  "name": "Y Lolfa (Gwaun Cae Gurwen)",
   "slug": "y-lolfa-gwaun-cae-gurwen",
-  "address": "Y Lolfa Community Library, New Community Hall, New Road, Gwaun Cae Gurwen, Ammanford, Neath Port Talbot, SA18 1UN",
-  "postcode": "SA18 1UN",
-  "town": "Ammanford",
-  "phone": "01269 825904",
-  "email": "ylolfa.gcg@gmail.com",
-  "website": "https://gcglibrary.co.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.792963,
-  "longitude": -3.875683,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "neath-port-talbot",
+  "source_id": "822",
+  "source_url": "https://libraryon.org/libraries/neath-port-talbot/y-lolfa-gwaun-cae-gurwen",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/neath-port-talbot/y-lolfa-gwaun-cae-gurwen",
-  "authority": "neath-port-talbot"
+  "data": {
+    "Local authority": "Neath Port Talbot",
+    "Local authority code": "W06000012",
+    "Library name": "Y Lolfa (Gwaun Cae Gurwen)",
+    "Library code": null,
+    "Address 1": "Y Lolfa Community Library, New Community Hall, New Road, Gwaun Cae Gurwen, Ammanford, Neath Port Talbot, SA18 1UN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SA18 1UN",
+    "Unique property reference number": null,
+    "Latitude": 51.792963,
+    "Longitude": -3.875683,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:30-16:30",
+    "Tuesday staffed hours": "10:00-12:00",
+    "Wednesday staffed hours": "10:00-16:30",
+    "Thursday staffed hours": "13:00-16:00",
+    "Friday staffed hours": "10:30-12:30",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01269 825904",
+    "Email address": "ylolfa.gcg@gmail.com",
+    "URL": "https://gcglibrary.co.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

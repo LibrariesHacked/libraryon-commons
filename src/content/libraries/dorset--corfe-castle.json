@@ -1,119 +1,64 @@
 {
   "id": "lib_1fedbd9e-2986-46c4-848f-e96eeec82f30",
-  "source_id": "3488",
-  "name": "Corfe Castle Library",
   "slug": "corfe-castle",
-  "address": "East Street, Wareham , Dorset, BH20 5EE",
-  "postcode": "BH20 5EE",
-  "town": "Wareham",
-  "phone": "01929 480760",
-  "email": "corfecastlelibrary@gmail.com",
-  "website": "https://sites.google.com/site/corfecastlecommunitylibrary/home",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.63555,
-  "longitude": -2.05414,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "dorset",
+  "source_id": "3488",
+  "source_url": "https://libraryon.org/libraries/dorset/corfe-castle",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dorset/corfe-castle",
-  "authority": "dorset"
+  "data": {
+    "Local authority": "Dorset",
+    "Local authority code": "E06000059",
+    "Library name": "Corfe Castle Library",
+    "Library code": null,
+    "Address 1": "East Street, Wareham , Dorset, BH20 5EE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BH20 5EE",
+    "Unique property reference number": 100041099145,
+    "Latitude": 50.63555,
+    "Longitude": -2.05414,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "15:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:00,15:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Hobby and interest groups; Books delivered; Family history; Digital lending",
+    "Phone number": "01929 480760",
+    "Email address": "corfecastlelibrary@gmail.com",
+    "URL": "https://sites.google.com/site/corfecastlecommunitylibrary/home",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

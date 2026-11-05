@@ -1,0 +1,545 @@
+{
+  "fields": [
+    {
+      "name": "Local authority",
+      "description": "Local authority responsible for the library service",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "Local authority code",
+      "description": "Official Government Statistical Service (GSS/ONS) 9-character code for the local authority",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true,
+        "pattern": "^[ENSW][0-9]{8}$"
+      }
+    },
+    {
+      "name": "Library name",
+      "description": "Full public name by which the library branch or service point is known",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true
+      }
+    },
+    {
+      "name": "Library code",
+      "description": "Identifier or code used locally or nationally for the library branch",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Address 1",
+      "description": "Address line 1",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Address 2",
+      "description": "Address line 2",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Address 3",
+      "description": "Address line 3",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Postcode",
+      "description": "Postcode for the library building",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true,
+        "pattern": "^([A-Z][A-HJ-Y]?[0-9][A-Z0-9]? ?[0-9][A-Z]{2}|GIR ?0A{2})$"
+      }
+    },
+    {
+      "name": "Unique property reference number",
+      "description": "Unique property reference number for the building unit the library is located in",
+      "type": "integer",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Latitude",
+      "description": "Latitude coordinate in WGS84 decimal degrees",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": -90,
+        "maximum": 90
+      }
+    },
+    {
+      "name": "Longitude",
+      "description": "Longitude coordinate in WGS84 decimal degrees",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": -180,
+        "maximum": 180
+      }
+    },
+    {
+      "name": "Status",
+      "description": "Current operating status of the library",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "Open",
+          "Closed (permanent)",
+          "Closed (temporary)",
+          "Planned"
+        ]
+      }
+    },
+    {
+      "name": "Statutory",
+      "description": "Whether the library is part of the statutory public library service",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Facility type",
+      "description": "The physical facility type of the service point",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Static library",
+          "Static local history library",
+          "Archive",
+          "Mobile library",
+          "Prison library"
+        ]
+      }
+    },
+    {
+      "name": "Type of library",
+      "description": "The operating model of the public library branch",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "LAL",
+          "LAL-",
+          "CL",
+          "CRL",
+          "ICL"
+        ]
+      }
+    },
+    {
+      "name": "Year opened",
+      "description": "Year the library opened",
+      "type": "year",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Year closed",
+      "description": "Year the library permanently closed",
+      "type": "year",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Monday staffed hours",
+      "description": "Staffed opening hours for Monday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Tuesday staffed hours",
+      "description": "Staffed opening hours for Tuesday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Wednesday staffed hours",
+      "description": "Staffed opening hours for Wednesday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Thursday staffed hours",
+      "description": "Staffed opening hours for Thursday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Friday staffed hours",
+      "description": "Staffed opening hours for Friday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Saturday staffed hours",
+      "description": "Staffed opening hours for Saturday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Sunday staffed hours",
+      "description": "Staffed opening hours for Sunday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Monday unstaffed hours",
+      "description": "Unstaffed opening hours for Monday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Tuesday unstaffed hours",
+      "description": "Unstaffed opening hours for Tuesday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Wednesday unstaffed hours",
+      "description": "Unstaffed opening hours for Wednesday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Thursday unstaffed hours",
+      "description": "Unstaffed opening hours for Thursday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Friday unstaffed hours",
+      "description": "Unstaffed opening hours for Friday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Saturday unstaffed hours",
+      "description": "Unstaffed opening hours for Saturday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Sunday unstaffed hours",
+      "description": "Unstaffed opening hours for Sunday",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Special hours",
+      "description": "Changes to normal opening hours such as for public holidays",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Weekly staffed hours",
+      "description": "Total number of staffed hours per regular week",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Weekly total hours",
+      "description": "Total number of open hours (staffed plus unstaffed) per regular week",
+      "type": "number",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "minimum": 0
+      }
+    },
+    {
+      "name": "Automated access system",
+      "description": "Automated access control or self-service system used to support visitors during unstaffed opening hours (e.g. Open+, Lyngsoe, Self-service kiosk)",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Co-located",
+      "description": "Whether the library is co-located with other services or organizations in the same building unit",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Co-located with",
+      "description": "Details of services or facilities co-located with the library. For multiple co-locations, separate values with a semicolon (;), e.g. 'Council customer services; Community centre; Post office'.",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Guest wifi",
+      "description": "Whether free public Wi-Fi is available to any visitor without requiring library membership",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Member wifi",
+      "description": "Whether Wi-Fi is available to registered library members using library card authentication",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Public computers",
+      "description": "Whether the library provides public access computers for visitors",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Printing",
+      "description": "Whether printing, copying, or scanning facilities are available for public use",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Meeting rooms",
+      "description": "Whether meeting rooms, study rooms, or hireable event spaces are available for public or community use",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Quiet study space",
+      "description": "Whether dedicated quiet study areas, study carrels, or desk spaces with power outlets are provided",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Step-free access",
+      "description": "Whether the library entrance and main service areas have step-free / level access for wheelchair users and pushchairs",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No",
+          "Partial"
+        ]
+      }
+    },
+    {
+      "name": "Accessible toilet",
+      "description": "Whether an accessible wheelchair-friendly public toilet or Changing Places facility is available on site",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Hearing loop",
+      "description": "Whether an induction loop or hearing loop system is installed to support hearing aid users",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false,
+        "enum": [
+          "Yes",
+          "No"
+        ]
+      }
+    },
+    {
+      "name": "Facilities and services",
+      "description": "Semicolon-separated list of all public facilities, amenities, and specialized digital resources available at the library branch (e.g. 'Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; BFI Replay; Meeting rooms')",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Phone number",
+      "description": "Direct public phone number for this specific library branch",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Email address",
+      "description": "Direct public email address for this library branch, or the general service email if not available",
+      "type": "string",
+      "format": "email",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "URL",
+      "description": "Public web page URL specifically for this library branch",
+      "type": "string",
+      "format": "uri",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "Notes",
+      "description": "Public notes regarding library services, facilities, or planned changes",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    }
+  ],
+  "foreignKeys": [
+    {
+      "fields": "Local authority code",
+      "reference": {
+        "resource": "library-services.csv",
+        "fields": "Local authority code"
+      }
+    }
+  ]
+}

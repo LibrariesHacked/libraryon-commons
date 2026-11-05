@@ -1,123 +1,73 @@
 {
   "id": "lib_9c3a7ccc-81b1-468e-9178-4252d0c1e664",
-  "source_id": "3276",
-  "name": "Stotfold Library",
   "slug": "stotfold-library",
-  "address": "Hitchin Road, Stotfold, Bedfordshire, SG5 4HP",
-  "postcode": "SG5 4HP",
-  "town": "Hitchin",
-  "phone": "",
-  "email": "stotfold.library@centralbedfordshire.gov.uk",
-  "website": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "accessible-parking",
-    "hearing-loop-system",
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.01501,
-  "longitude": -0.234,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "central-bedfordshire",
+  "source_id": "3276",
+  "source_url": "https://libraryon.org/libraries/central-bedfordshire/stotfold-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/central-bedfordshire/stotfold-library",
-  "authority": "central-bedfordshire"
+  "data": {
+    "Local authority": "Central Bedfordshire",
+    "Local authority code": "E06000056",
+    "Library name": "Stotfold Library",
+    "Library code": null,
+    "Address 1": "Hitchin Road, Stotfold, Bedfordshire, SG5 4HP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SG5 4HP",
+    "Unique property reference number": null,
+    "Latitude": 52.01501,
+    "Longitude": -0.234,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1966,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-13:00",
+    "Wednesday staffed hours": "14:00-18:00",
+    "Thursday staffed hours": "09:00-13:00",
+    "Friday staffed hours": "09:00-13:00,14:00-18:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "stotfold.library@centralbedfordshire.gov.uk",
+    "URL": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_39489fd7222de15894f5eb87"
+      ]
+    }
+  ]
 }

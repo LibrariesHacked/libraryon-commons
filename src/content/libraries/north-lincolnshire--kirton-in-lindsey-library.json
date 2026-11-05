@@ -1,107 +1,64 @@
 {
   "id": "lib_dba911e3-09ac-4dc7-b025-2a480a0629b2",
-  "source_id": "2760",
-  "name": "Kirton in Lindsey Library",
   "slug": "kirton-in-lindsey-library",
-  "address": "20 King Edward Street, Kirton in Lindsey, Gainsborough, North Lincolnshire, DN21 4NQ",
-  "postcode": "DN21 4NQ",
-  "town": "Gainsborough",
-  "phone": "01652 648406",
-  "email": "library.enquiries@northlincs.gov.uk",
-  "website": "https://www.opac.northlincs.gov.uk/-/kirton-library#/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.47731,
-  "longitude": -0.58975,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "north-lincolnshire",
+  "source_id": "2760",
+  "source_url": "https://libraryon.org/libraries/north-lincolnshire/kirton-in-lindsey-library",
   "updated_on": "2026-04-30",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-lincolnshire/kirton-in-lindsey-library",
-  "authority": "north-lincolnshire"
+  "data": {
+    "Local authority": "North Lincolnshire",
+    "Local authority code": "E06000013",
+    "Library name": "Kirton in Lindsey Library",
+    "Library code": null,
+    "Address 1": "20 King Edward Street, Kirton in Lindsey, Gainsborough, North Lincolnshire, DN21 4NQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN21 4NQ",
+    "Unique property reference number": 200000877952,
+    "Latitude": 53.47731,
+    "Longitude": -0.58975,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1966,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "12:30-17:00",
+    "Wednesday staffed hours": "11:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-15:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; British Newspaper Archive; Findmypast",
+    "Phone number": "01652 648406",
+    "Email address": "library.enquiries@northlincs.gov.uk",
+    "URL": "https://www.opac.northlincs.gov.uk/-/kirton-library#/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,120 +1,64 @@
 {
   "id": "lib_4a8e77ed-e9a9-4118-866a-04fc1a4196a9",
-  "source_id": "1581",
-  "name": "Smallbridge Library",
   "slug": "smallbridge-library",
-  "address": "Stevenson Square, Rochdale, Greater Manchester, OL12 9SA",
-  "postcode": "OL12 9SA",
-  "town": "Rochdale",
-  "phone": "",
-  "email": "library.service@rochdale.gov.uk",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.633,
-  "longitude": -2.13605,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "rochdale",
+  "source_id": "1581",
+  "source_url": "https://libraryon.org/libraries/rochdale/smallbridge-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rochdale/smallbridge-library",
-  "authority": "rochdale"
+  "data": {
+    "Local authority": "Rochdale",
+    "Local authority code": "E08000005",
+    "Library name": "Smallbridge Library",
+    "Library code": null,
+    "Address 1": "Stevenson Square, Rochdale, Greater Manchester, OL12 9SA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "OL12 9SA",
+    "Unique property reference number": null,
+    "Latitude": 53.633,
+    "Longitude": -2.13605,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-16:00",
+    "Tuesday staffed hours": "09:00-16:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-16:00",
+    "Friday staffed hours": "09:00-16:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Digital lending; Hobby and interest groups; Children's activities",
+    "Phone number": null,
+    "Email address": "library.service@rochdale.gov.uk",
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

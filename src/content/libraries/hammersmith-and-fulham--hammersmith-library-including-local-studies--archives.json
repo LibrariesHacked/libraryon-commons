@@ -1,133 +1,64 @@
 {
   "id": "lib_a31481af-273a-4997-bdc1-ace7d4cb9285",
-  "source_id": "2213",
-  "name": "Hammersmith Library (including Local Studies & Archives)",
   "slug": "hammersmith-library-including-local-studies--archives",
-  "address": "Shepherds Bush Road, London, Greater London, W6 7AT",
-  "postcode": "W6 7AT",
-  "town": "London",
-  "phone": "020 8753 3820",
-  "email": "libraries@lbhf.gov.uk",
-  "website": "https://www.lbhf.gov.uk/libraries/find-your-library/hammersmith-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/hammersmith_library/",
-  "permanentlyClosed": false,
-  "latitude": 51.494638,
-  "longitude": -0.223779,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "hammersmith-and-fulham",
+  "source_id": "2213",
+  "source_url": "https://libraryon.org/libraries/hammersmith-and-fulham/hammersmith-library-including-local-studies--archives",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hammersmith-and-fulham/hammersmith-library-including-local-studies--archives",
-  "authority": "hammersmith-and-fulham"
+  "data": {
+    "Local authority": "Hammersmith and Fulham",
+    "Local authority code": "E09000013",
+    "Library name": "Hammersmith Library (including Local Studies & Archives)",
+    "Library code": null,
+    "Address 1": "Shepherds Bush Road, London, Greater London, W6 7AT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "W6 7AT",
+    "Unique property reference number": 34027231,
+    "Latitude": 51.494638,
+    "Longitude": -0.223779,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "11:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups; Photocopiers; Family history; British Newspaper Archive",
+    "Phone number": "020 8753 3820",
+    "Email address": "libraries@lbhf.gov.uk",
+    "URL": "https://www.lbhf.gov.uk/libraries/find-your-library/hammersmith-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,114 +1,71 @@
 {
   "id": "lib_0e5ee299-4956-4e27-a3af-2a20f69a930a",
-  "source_id": "2226",
-  "name": "Whitburn",
   "slug": "whitburn",
-  "address": "1 Hedworth Terrace, Whitburn, Tyne and Wear, SR6 7EN",
-  "postcode": "SR6 7EN",
-  "town": "Sunderland",
-  "phone": "0191 529 3098",
-  "email": "info@whitburnlibrary.co.uk",
-  "website": "https://whitburnlibrary.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.95101,
-  "longitude": -1.36466,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "south-tyneside",
+  "source_id": "2226",
+  "source_url": "https://libraryon.org/libraries/south-tyneside/whitburn",
   "updated_on": "2026-10-14",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-tyneside/whitburn",
-  "authority": "south-tyneside"
+  "data": {
+    "Local authority": "South Tyneside",
+    "Local authority code": "E08000023",
+    "Library name": "Whitburn",
+    "Library code": null,
+    "Address 1": "1 Hedworth Terrace, Whitburn, Tyne and Wear, SR6 7EN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SR6 7EN",
+    "Unique property reference number": null,
+    "Latitude": 54.95101,
+    "Longitude": -1.36466,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30,13:30-16:30",
+    "Tuesday staffed hours": "09:30-12:30,13:30-16:30",
+    "Wednesday staffed hours": "09:30-12:30,13:30-16:30",
+    "Thursday staffed hours": "09:30-12:30,13:30-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "0191 529 3098",
+    "Email address": "info@whitburnlibrary.co.uk",
+    "URL": "https://whitburnlibrary.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

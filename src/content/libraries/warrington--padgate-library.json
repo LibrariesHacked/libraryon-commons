@@ -1,146 +1,64 @@
 {
   "id": "lib_0f7cb051-d4d9-4248-831d-96ab7f079c0b",
-  "source_id": "2924",
-  "name": "Padgate Library",
   "slug": "padgate-library",
-  "address": "Install Road, Padgate, Cheshire, WA2 0HD",
-  "postcode": "WA2 0HD",
-  "town": "Warrington",
-  "phone": "01925 818096",
-  "email": "library3@livewirewarrington.org",
-  "website": "https://livewirewarrington.co.uk/library/our-libraries/#1628599180563-261b2919-3adf",
-  "catalogue": "https://libonline.livewirewarrington.co.uk/",
-  "joinOnline": "https://livewirewarrington.co.uk/library/our-libraries/join-our-libraries/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "Unstaffed on Thursdays between 10.00am-2.00pm. During unstaffed hours books can be issued and returned via self-service machine. Use of public computers is via self-service, printing services are unavailable. 1st floor silent/neurodivergent area and toilets are also unavailable at this time.",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "accessible-restrooms",
-    "lift-access",
-    "step-free-access",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.41129,
-  "longitude": -2.55949,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://livewirewarrington.co.uk/library/accessibility-support/"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://livewirewarrington.co.uk/library/culture-creativity/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/ebooks-audiobooks/"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://livewirewarrington.co.uk/library/children/"
-    },
-    {
-      "service": "Computers",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    },
-    {
-      "service": "Scanning",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    }
-  ],
+  "authority": "warrington",
+  "source_id": "2924",
+  "source_url": "https://libraryon.org/libraries/warrington/padgate-library",
   "updated_on": "2026-02-26",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/warrington/padgate-library",
-  "authority": "warrington"
+  "data": {
+    "Local authority": "Warrington",
+    "Local authority code": "E06000007",
+    "Library name": "Padgate Library",
+    "Library code": null,
+    "Address 1": "Install Road, Padgate, Cheshire, WA2 0HD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA2 0HD",
+    "Unique property reference number": 200000977715,
+    "Latitude": 53.41129,
+    "Longitude": -2.55949,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1982,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": "14:00-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": "10:00-14:00",
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Unstaffed on Thursdays between 10.00am-2.00pm. During unstaffed hours books can be issued and returned via self-service machine. Use of public computers is via self-service, printing services are unavailable. 1st floor silent/neurodivergent area and toilets are also unavailable at this time.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Family history; Findmypast; Hobby and interest groups; Digital lending; Children's activities; Computers; Photocopiers; Scanning",
+    "Phone number": "01925 818096",
+    "Email address": "library3@livewirewarrington.org",
+    "URL": "https://livewirewarrington.co.uk/library/our-libraries/#1628599180563-261b2919-3adf",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,144 +1,64 @@
 {
   "id": "lib_c0f5bab8-38c7-429a-95bb-2e32156fa18a",
-  "source_id": "3007",
-  "name": "Cox Green Library",
   "slug": "cox-green",
-  "address": "49 Highfield Lane, Maidenhead, Berkshire, SL6 3AX",
-  "postcode": "SL6 3AX",
-  "town": "Maidenhead",
-  "phone": "01628 683876",
-  "email": "coxgreenlib@rbwm.gov.uk",
-  "website": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-cox-green-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "accessible-restrooms",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "school_college",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.50838,
-  "longitude": -0.75757,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/computers-and-it-services"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-clubs"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/digital-library/books-and-media"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/employment-support"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-spaces-and-it-rooms-hire/cox-green-library"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/home-library-service"
-    }
-  ],
+  "authority": "windsor-and-maidenhead",
+  "source_id": "3007",
+  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/cox-green",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/cox-green",
-  "authority": "windsor-and-maidenhead"
+  "data": {
+    "Local authority": "Windsor and Maidenhead",
+    "Local authority code": "E06000040",
+    "Library name": "Cox Green Library",
+    "Library code": null,
+    "Address 1": "49 Highfield Lane, Maidenhead, Berkshire, SL6 3AX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SL6 3AX",
+    "Unique property reference number": null,
+    "Latitude": 51.50838,
+    "Longitude": -0.75757,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2006,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:30-17:30",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:30-17:30",
+    "Friday staffed hours": "14:30-17:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Hobby and interest groups; Children's activities; Digital lending; Career support; Bookable space; Books delivered",
+    "Phone number": "01628 683876",
+    "Email address": "coxgreenlib@rbwm.gov.uk",
+    "URL": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-cox-green-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,85 +1,80 @@
 {
   "id": "lib_b5254b01-e5ce-48c4-9e07-89aac39df0bd",
-  "source_id": "3132",
-  "name": "Trentham Reads (Book Collection)",
   "slug": "trentham-reads-book-collection",
-  "address": "Trentham Community Learning Centre, Trentham Academy, Allerton Road, Trentham, Staffordshire , ST4 8PQ",
-  "postcode": "ST4 8PQ",
-  "town": "Stoke-on-Trent",
-  "phone": "",
-  "email": "trenthamreads@gmail.com",
-  "website": "https://www.stoke.gov.uk/directory_record/331237/trentham_reads_volunteer-led_library_service",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Moved from GP surgery to new community building in 2019. Closes 12:00-13:30. The library service provides a collection of books, but has no further management involvement.",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.97108,
-  "longitude": -2.19301,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "stoke-on-trent",
+  "source_id": "3132",
+  "source_url": "https://libraryon.org/libraries/stoke-on-trent/trentham-reads-book-collection",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stoke-on-trent/trentham-reads-book-collection",
-  "authority": "stoke-on-trent"
+  "data": {
+    "Local authority": "Stoke-on-Trent",
+    "Local authority code": "E06000021",
+    "Library name": "Trentham Reads (Book Collection)",
+    "Library code": null,
+    "Address 1": "Trentham Community Learning Centre, Trentham Academy, Allerton Road, Trentham, Staffordshire , ST4 8PQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ST4 8PQ",
+    "Unique property reference number": null,
+    "Latitude": 52.97108,
+    "Longitude": -2.19301,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2019,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "trenthamreads@gmail.com",
+    "URL": "https://www.stoke.gov.uk/directory_record/331237/trentham_reads_volunteer-led_library_service",
+    "Notes": "Moved from GP surgery to new community building in 2019. Closes 12:00-13:30. The library service provides a collection of books, but has no further management involvement."
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "opening-hours",
+      "reason": "Invalid opening hours: 10:00-12:00,13:30-13:30",
+      "audit_refs": [
+        "migration/directory/report.json#review_d87e4000beb1ac07dbd253a8"
+      ]
+    }
+  ]
 }

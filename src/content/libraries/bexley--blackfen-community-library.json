@@ -1,109 +1,64 @@
 {
   "id": "lib_17fcc4a4-6d0e-4803-a1e2-2ae506c772f5",
-  "source_id": "2165",
-  "name": "Blackfen Community Library",
   "slug": "blackfen-community-library",
-  "address": "7-9 Blackfen Parade, Blackfen Road, Kent, Greater London, DA15 9LU",
-  "postcode": "DA15 9LU",
-  "town": "Sidcup",
-  "phone": "020 8301 1433",
-  "email": "hello@blackfencommunitylibrary.org",
-  "website": "https://blackfencommunitylibrary.org/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "accessible-restrooms",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.450294,
-  "longitude": 0.104256,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "bexley",
+  "source_id": "2165",
+  "source_url": "https://libraryon.org/libraries/bexley/blackfen-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bexley/blackfen-community-library",
-  "authority": "bexley"
+  "data": {
+    "Local authority": "Bexley",
+    "Local authority code": "E09000004",
+    "Library name": "Blackfen Community Library",
+    "Library code": null,
+    "Address 1": "7-9 Blackfen Parade, Blackfen Road, Kent, Greater London, DA15 9LU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DA15 9LU",
+    "Unique property reference number": 10023305013,
+    "Latitude": 51.450294,
+    "Longitude": 0.104256,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Cafe; Computers",
+    "Phone number": "020 8301 1433",
+    "Email address": "hello@blackfencommunitylibrary.org",
+    "URL": "https://blackfencommunitylibrary.org/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

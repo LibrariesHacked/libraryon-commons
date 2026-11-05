@@ -1,134 +1,64 @@
 {
   "id": "lib_35f77409-5b53-4c44-a496-962457f09fc6",
-  "source_id": "818",
-  "name": "Witham Library",
   "slug": "witham-library",
-  "address": "18 Newland Street, Witham, Essex, CM8 2AQ",
-  "postcode": "CM8 2AQ",
-  "town": "Witham",
-  "phone": "",
-  "email": "witham.library@essex.gov.uk",
-  "website": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/witham-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system",
-    "baby-changing-facilities",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "archives",
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.80109,
-  "longitude": 0.64129,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "essex",
+  "source_id": "818",
+  "source_url": "https://libraryon.org/libraries/essex/witham-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/essex/witham-library",
-  "authority": "essex"
+  "data": {
+    "Local authority": "Essex",
+    "Local authority code": "E10000012",
+    "Library name": "Witham Library",
+    "Library code": null,
+    "Address 1": "18 Newland Street, Witham, Essex, CM8 2AQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CM8 2AQ",
+    "Unique property reference number": null,
+    "Latitude": 51.80109,
+    "Longitude": 0.64129,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "09:00-17:30",
+    "Wednesday staffed hours": "09:00-19:00",
+    "Thursday staffed hours": "09:00-17:30",
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives; civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Bookable space; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": null,
+    "Email address": "witham.library@essex.gov.uk",
+    "URL": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/witham-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

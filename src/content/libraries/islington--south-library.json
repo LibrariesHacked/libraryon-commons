@@ -1,102 +1,64 @@
 {
   "id": "lib_3f18d692-c6f2-4381-9d14-93ca1a98a3a6",
-  "source_id": "2453",
-  "name": "South Library",
   "slug": "south-library",
-  "address": "115 Essex Road, London, Middlesex, N1 2SL",
-  "postcode": "N1 2SL",
-  "town": "London",
-  "phone": "020 7527 7860",
-  "email": "south.library@islington.gov.uk",
-  "website": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/south-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.53895,
-  "longitude": -0.09888,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "islington",
+  "source_id": "2453",
+  "source_url": "https://libraryon.org/libraries/islington/south-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/islington/south-library",
-  "authority": "islington"
+  "data": {
+    "Local authority": "Islington",
+    "Local authority code": "E09000019",
+    "Library name": "South Library",
+    "Library code": null,
+    "Address 1": "115 Essex Road, London, Middlesex, N1 2SL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N1 2SL",
+    "Unique property reference number": null,
+    "Latitude": 51.53895,
+    "Longitude": -0.09888,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-20:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-20:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital skills sessions",
+    "Phone number": "020 7527 7860",
+    "Email address": "south.library@islington.gov.uk",
+    "URL": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/your-local-libraries/south-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

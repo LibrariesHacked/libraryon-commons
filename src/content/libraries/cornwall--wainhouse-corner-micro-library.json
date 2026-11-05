@@ -1,68 +1,77 @@
 {
   "id": "lib_746e0e5f-b686-4100-89d8-4f61e408f3a0",
-  "source_id": "3048",
-  "name": "Wainhouse Corner Micro Library",
   "slug": "wainhouse-corner-micro-library",
-  "address": "The Old Wainhouse Inn, Eden Road , Bude, Cornwall, EX23 0BA",
-  "postcode": "EX23 0BA",
-  "town": "Bude",
-  "phone": "",
-  "email": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.73042,
-  "longitude": -4.577959,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "cornwall",
+  "source_id": "3048",
+  "source_url": "https://libraryon.org/libraries/cornwall/wainhouse-corner-micro-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cornwall/wainhouse-corner-micro-library",
-  "authority": "cornwall"
+  "data": {
+    "Local authority": "Cornwall",
+    "Local authority code": "E06000052",
+    "Library name": "Wainhouse Corner Micro Library",
+    "Library code": null,
+    "Address 1": "The Old Wainhouse Inn, Eden Road , Bude, Cornwall, EX23 0BA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EX23 0BA",
+    "Unique property reference number": 10003309118,
+    "Latitude": 50.73042,
+    "Longitude": -4.577959,
+    "Status": "Closed (permanent)",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

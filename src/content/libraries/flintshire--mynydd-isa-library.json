@@ -1,106 +1,71 @@
 {
   "id": "lib_6d526e15-8e79-434f-882a-2684f30e0440",
-  "source_id": "412",
-  "name": "Mynydd Isa Library",
   "slug": "mynydd-isa-library",
-  "address": "25 Mercia Drive, Mynydd Isa, Mold, CH7 6UH, United Kingdom",
-  "postcode": "CH7 6UH",
-  "town": "Mold",
-  "phone": "",
-  "email": "",
-  "website": "http://caffi-isa.co.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.16878,
-  "longitude": -3.10893,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "flintshire",
+  "source_id": "412",
+  "source_url": "https://libraryon.org/libraries/flintshire/mynydd-isa-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/flintshire/mynydd-isa-library",
-  "authority": "flintshire"
+  "data": {
+    "Local authority": "Flintshire",
+    "Local authority code": "W06000005",
+    "Library name": "Mynydd Isa Library",
+    "Library code": null,
+    "Address 1": "25 Mercia Drive, Mynydd Isa, Mold, CH7 6UH, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CH7 6UH",
+    "Unique property reference number": null,
+    "Latitude": 53.16878,
+    "Longitude": -3.10893,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:15-17:30",
+    "Tuesday staffed hours": "09:15-17:30",
+    "Wednesday staffed hours": "09:15-17:30",
+    "Thursday staffed hours": "09:15-17:30",
+    "Friday staffed hours": "09:15-17:30",
+    "Saturday staffed hours": "09:15-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast",
+    "Phone number": null,
+    "Email address": null,
+    "URL": "http://caffi-isa.co.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

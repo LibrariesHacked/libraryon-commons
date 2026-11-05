@@ -1,133 +1,64 @@
 {
   "id": "lib_dd5e95b3-cf40-4b9d-8e1b-3e3fa28175f1",
-  "source_id": "3326",
-  "name": "Shanklin Community Library",
   "slug": "shanklin-community-library",
-  "address": "Falcon Cross Rd, , Shanklin, Isle of Wight, PO37 7LA",
-  "postcode": "PO37 7LA",
-  "town": "Shanklin",
-  "phone": "01983 717184",
-  "email": "shanklincommunitylibrary@hotmail.co.uk",
-  "website": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/shanklin-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.63116,
-  "longitude": -1.17922,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "isle-of-wight",
+  "source_id": "3326",
+  "source_url": "https://libraryon.org/libraries/isle-of-wight/shanklin-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-wight/shanklin-community-library",
-  "authority": "isle-of-wight"
+  "data": {
+    "Local authority": "Isle of Wight",
+    "Local authority code": "E06000046",
+    "Library name": "Shanklin Community Library",
+    "Library code": null,
+    "Address 1": "Falcon Cross Rd, , Shanklin, Isle of Wight, PO37 7LA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO37 7LA",
+    "Unique property reference number": null,
+    "Latitude": 50.63116,
+    "Longitude": -1.17922,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2020,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30,13:30-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-12:30,13:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-12:30,13:30-17:00",
+    "Saturday staffed hours": "09:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Digital lending; Computers; Scanning; Photocopiers; Children's activities; Hobby and interest groups",
+    "Phone number": "01983 717184",
+    "Email address": "shanklincommunitylibrary@hotmail.co.uk",
+    "URL": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/shanklin-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -139,20 +139,17 @@ test('editorial headings and blockquotes use distinct accents', () => {
   assert.equal(noteValues.has('border-top'), false)
 })
 
-test('Nottingham lace inset images use the full article width', () => {
+test('collection component figures are not restyled as article media', () => {
   const editorial = postcss.parse(read('pages/editorial.css'))
-  const rule = editorial.nodes.find(
-    (node) =>
-      node.type === 'rule' &&
-      node.selector.replace(/\s+/g, ' ').trim() ===
-        ".article-layout [data-content-path='/special-collections/lacemaking-in-nottingham'] .collection-image--inset"
+  const selectors = editorial.nodes
+    .filter((node) => node.type === 'rule' && node.selector.includes('figure'))
+    .map((node) => node.selector)
+  assert.ok(selectors.length)
+  assert.ok(selectors.every((selector) => selector.includes('figure:not([class])')))
+  assert.equal(
+    selectors.some((selector) => selector.includes('lacemaking')),
+    false
   )
-  assert.ok(rule)
-  const declarations = new Map(
-    rule.nodes.filter((node) => node.type === 'decl').map((node) => [node.prop, node.value])
-  )
-  assert.equal(declarations.get('width'), '100%')
-  assert.equal(declarations.get('max-width'), 'none')
 })
 
 test('homepage carousel has a distinct light surface and quiet inactive dots', () => {

@@ -1,115 +1,64 @@
 {
   "id": "lib_8e4b144e-6795-45b3-9e24-c2c36e3ce76f",
-  "source_id": "1858",
-  "name": "Denaby Community Library & Hub",
   "slug": "denaby-community-library-hub",
-  "address": "Springwell Centre, Church Road, Denaby, South Yorkshire, DN12 4AB",
-  "postcode": "DN12 4AB",
-  "town": "Doncaster",
-  "phone": "01302 737003",
-  "email": "conversationpoint2@gmail.com",
-  "website": "https://library.doncaster.gov.uk/-/denaby-community-library#/?location=Denaby%20Community%20Library%20and%20Hub",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.49069,
-  "longitude": -1.24579,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "doncaster",
+  "source_id": "1858",
+  "source_url": "https://libraryon.org/libraries/doncaster/denaby-community-library-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/doncaster/denaby-community-library-hub",
-  "authority": "doncaster"
+  "data": {
+    "Local authority": "Doncaster",
+    "Local authority code": "E08000017",
+    "Library name": "Denaby Community Library & Hub",
+    "Library code": null,
+    "Address 1": "Springwell Centre, Church Road, Denaby, South Yorkshire, DN12 4AB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN12 4AB",
+    "Unique property reference number": null,
+    "Latitude": 53.49069,
+    "Longitude": -1.24579,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-15:30",
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": "10:00-13:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Books delivered; Photocopiers",
+    "Phone number": "01302 737003",
+    "Email address": "conversationpoint2@gmail.com",
+    "URL": "https://library.doncaster.gov.uk/-/denaby-community-library#/?location=Denaby%20Community%20Library%20and%20Hub",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

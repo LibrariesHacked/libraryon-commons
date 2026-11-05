@@ -84,23 +84,25 @@ export function initializeCollectionMedia() {
   if (document.documentElement.dataset.collectionMediaReady) return
   document.documentElement.dataset.collectionMediaReady = 'true'
 
-  document.querySelectorAll('[data-collection-carousel]').forEach(setupCarousel)
-
   document.addEventListener(
     'toggle',
     (event) => {
       const opened = event.target
-      if (
-        !(opened instanceof HTMLDetailsElement) ||
-        !opened.open ||
-        !opened.matches('.collection-accordion-item')
-      ) {
+      if (!(opened instanceof HTMLDetailsElement) || !opened.open) {
         return
       }
-      const accordion = opened.closest('.collection-accordion')
-      accordion?.querySelectorAll('details.collection-accordion-item[open]').forEach((item) => {
-        if (item !== opened) item.open = false
-      })
+      if (opened.matches('.collection-accordion-item')) {
+        const accordion = opened.closest('.collection-accordion, .collection-accordion-items')
+        accordion?.querySelectorAll('details.collection-accordion-item[open]').forEach((item) => {
+          if (item !== opened) item.open = false
+        })
+      }
+      if (opened.matches('.collection-recommendation-item')) {
+        const list = opened.closest('.collection-recommendations-list')
+        list?.querySelectorAll('details.collection-recommendation-item[open]').forEach((item) => {
+          if (item !== opened) item.open = false
+        })
+      }
     },
     true
   )
@@ -109,31 +111,18 @@ export function initializeCollectionMedia() {
     const target = event.target instanceof Element ? event.target : null
     if (!target) return
 
+    const summary = target.closest('.collection-recommendation-select')
+    if (summary) {
+      const details = summary.closest('details.collection-recommendation-item')
+      if (details?.open) {
+        event.preventDefault()
+        return
+      }
+    }
+
     const zoom = target.closest('[data-collection-zoom]')
     if (zoom) {
       openImage(zoom)
-      return
-    }
-
-    const recommendation = target.closest('[data-recommendation-select]')
-    if (recommendation) {
-      const section = recommendation.closest('[data-collection-recommendations]')
-      if (!section) return
-      const isOpen = recommendation.getAttribute('aria-expanded') === 'true'
-      const selected = isOpen ? null : recommendation.dataset.recommendationSelect
-      section.classList.toggle('collection-recommendations--collapsed', selected === null)
-      section.querySelectorAll('[data-recommendation-select]').forEach((button) => {
-        const isSelected = selected !== null && button.dataset.recommendationSelect === selected
-        button.setAttribute('aria-pressed', String(isSelected))
-        button.setAttribute('aria-expanded', String(isSelected))
-      })
-      section.querySelectorAll('[data-recommendation-cover]').forEach((cover) => {
-        cover.hidden = selected === null || cover.dataset.recommendationCover !== selected
-      })
-      section.querySelectorAll('[data-recommendation-description]').forEach((description) => {
-        description.hidden =
-          selected === null || description.dataset.recommendationDescription !== selected
-      })
       return
     }
 
@@ -166,4 +155,6 @@ export function initializeCollectionMedia() {
       note.hidden = note.dataset.hotspotNote !== selected
     })
   })
+
+  document.querySelectorAll('[data-collection-carousel]').forEach(setupCarousel)
 }

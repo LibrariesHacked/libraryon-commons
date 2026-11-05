@@ -1,119 +1,64 @@
 {
   "id": "lib_2eff95b0-90fb-43aa-a206-e3720ea024c9",
-  "source_id": "1899",
-  "name": "Platt Bridge",
   "slug": "platt-bridge",
-  "address": "Rivington Avenue, Platt Bridge, Greater Manchester, WN2 5NG",
-  "postcode": "WN2 5NG",
-  "town": "Wigan",
-  "phone": "01942 487997",
-  "email": "plattbridge.library@wigan.gov.uk",
-  "website": "https://www.wigan.gov.uk/Resident/Libraries/Platt-Bridge-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "school_college",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.522322,
-  "longitude": -2.593322,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "wigan",
+  "source_id": "1899",
+  "source_url": "https://libraryon.org/libraries/wigan/platt-bridge",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wigan/platt-bridge",
-  "authority": "wigan"
+  "data": {
+    "Local authority": "Wigan",
+    "Local authority code": "E08000010",
+    "Library name": "Platt Bridge",
+    "Library code": null,
+    "Address 1": "Rivington Avenue, Platt Bridge, Greater Manchester, WN2 5NG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WN2 5NG",
+    "Unique property reference number": 10091699523,
+    "Latitude": 53.522322,
+    "Longitude": -2.593322,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-14:00",
+    "Tuesday staffed hours": "09:00-14:00",
+    "Wednesday staffed hours": "09:00-14:00",
+    "Thursday staffed hours": "12:00-17:00",
+    "Friday staffed hours": "12:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Hobby and interest groups; Digital lending; Books delivered",
+    "Phone number": "01942 487997",
+    "Email address": "plattbridge.library@wigan.gov.uk",
+    "URL": "https://www.wigan.gov.uk/Resident/Libraries/Platt-Bridge-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,133 +1,71 @@
 {
   "id": "lib_2897225a-45b8-44a1-932f-04c4847f10db",
-  "source_id": "2263",
-  "name": "Bromley Central Library",
   "slug": "bromley-central-library",
-  "address": "High Street, Bromley, Greater London, BR1 1EX",
-  "postcode": "BR1 1HG",
-  "town": "Bromley",
-  "phone": "0203 9310900",
-  "email": "Bromley.Library@GLL.ORG",
-  "website": "https://www.better.org.uk/library/london/bromley/bromley-central-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access",
-    "staff-support"
-  ],
-  "notes": "Refurbished Dec. 2019",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "archives",
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.403612,
-  "longitude": 0.01436,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "bromley",
+  "source_id": "2263",
+  "source_url": "https://libraryon.org/libraries/bromley/bromley-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bromley/bromley-central-library",
-  "authority": "bromley"
+  "data": {
+    "Local authority": "Bromley",
+    "Local authority code": "E09000006",
+    "Library name": "Bromley Central Library",
+    "Library code": null,
+    "Address 1": "High Street, Bromley, Greater London, BR1 1EX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BR1 1HG",
+    "Unique property reference number": null,
+    "Latitude": 51.403612,
+    "Longitude": 0.01436,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": "09:30-19:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-19:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "archives; museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Bookable space; Books delivered; Children's activities; British Newspaper Archive; Findmypast",
+    "Phone number": "0203 9310900",
+    "Email address": "Bromley.Library@GLL.ORG",
+    "URL": "https://www.better.org.uk/library/london/bromley/bromley-central-library",
+    "Notes": "Refurbished Dec. 2019"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

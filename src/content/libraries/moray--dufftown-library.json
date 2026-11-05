@@ -1,87 +1,71 @@
 {
   "id": "lib_5b2c1195-6cde-4d77-a3f0-7e76a696f9ff",
-  "source_id": "439",
-  "name": "Dufftown Library",
   "slug": "dufftown-library",
-  "address": "Balvenie Street, Dufftown, AB55 4AB",
-  "postcode": "AB55 4AB",
-  "town": "Keith",
-  "phone": "01340 820272",
-  "email": "dufftown.library@moray.gov.uk",
-  "website": "http://www.moray.gov.uk/moray_standard/page_39963.html",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.44546,
-  "longitude": -3.12835,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "moray",
+  "source_id": "439",
+  "source_url": "https://libraryon.org/libraries/moray/dufftown-library",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/moray/dufftown-library",
-  "authority": "moray"
+  "data": {
+    "Local authority": "Moray",
+    "Local authority code": "S12000020",
+    "Library name": "Dufftown Library",
+    "Library code": null,
+    "Address 1": "Balvenie Street, Dufftown, AB55 4AB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB55 4AB",
+    "Unique property reference number": null,
+    "Latitude": 57.44546,
+    "Longitude": -3.12835,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "15:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": "01340 820272",
+    "Email address": "dufftown.library@moray.gov.uk",
+    "URL": "http://www.moray.gov.uk/moray_standard/page_39963.html",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

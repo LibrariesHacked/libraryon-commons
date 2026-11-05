@@ -1,78 +1,71 @@
 {
   "id": "lib_48846cb7-6795-49a8-bf84-613a8b1cbbc8",
-  "source_id": "3549",
-  "name": "Lamarsh Community Library",
   "slug": "lamarsh-community-library",
-  "address": "Lamarsh Village Hall, Henny Road, Lamarsh, Bures, Essex, CO8 5EU",
-  "postcode": "CO8 5ET",
-  "town": "Bures",
-  "phone": "",
-  "email": "",
-  "website": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/our-community-libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "11:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "11:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.98817,
-  "longitude": 0.75165,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "essex",
+  "source_id": "3549",
+  "source_url": "https://libraryon.org/libraries/essex/lamarsh-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/essex/lamarsh-community-library",
-  "authority": "essex"
+  "data": {
+    "Local authority": "Essex",
+    "Local authority code": "E10000012",
+    "Library name": "Lamarsh Community Library",
+    "Library code": null,
+    "Address 1": "Lamarsh Village Hall, Henny Road, Lamarsh, Bures, Essex, CO8 5EU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CO8 5ET",
+    "Unique property reference number": null,
+    "Latitude": 51.98817,
+    "Longitude": 0.75165,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:30-11:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:30-11:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": null,
+    "URL": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/our-community-libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

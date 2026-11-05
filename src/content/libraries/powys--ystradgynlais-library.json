@@ -1,104 +1,71 @@
 {
   "id": "lib_6c866ea7-3e9b-46ea-8226-fefd8fc196d6",
-  "source_id": "2812",
-  "name": "Ystradgynlais Library",
   "slug": "ystradgynlais-library",
-  "address": "1 Henneuadd, Abercraf, Swansea, SA9 1XQ, United Kingdom",
-  "postcode": "SA9 1XQ",
-  "town": "Swansea",
-  "phone": "01639 845353",
-  "email": "ystrad.library@powys.gov.uk",
-  "website": "https://en.powys.gov.uk/ystradgynlaislibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Ystradgynlais Library will be closed from Sunday 7 January to Sunday 14 April 2024 while works are undertaken, and improvements made, to the building and facilities. Normal opening hours are expected to resume from Monday 15 April 2024.",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.80059,
-  "longitude": -3.7197,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    }
-  ],
+  "authority": "powys",
+  "source_id": "2812",
+  "source_url": "https://libraryon.org/libraries/powys/ystradgynlais-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/powys/ystradgynlais-library",
-  "authority": "powys"
+  "data": {
+    "Local authority": "Powys",
+    "Local authority code": "W06000023",
+    "Library name": "Ystradgynlais Library",
+    "Library code": null,
+    "Address 1": "1 Henneuadd, Abercraf, Swansea, SA9 1XQ, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SA9 1XQ",
+    "Unique property reference number": null,
+    "Latitude": 51.80059,
+    "Longitude": -3.7197,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Garden",
+    "Phone number": "01639 845353",
+    "Email address": "ystrad.library@powys.gov.uk",
+    "URL": "https://en.powys.gov.uk/ystradgynlaislibrary",
+    "Notes": "Ystradgynlais Library will be closed from Sunday 7 January to Sunday 14 April 2024 while works are undertaken, and improvements made, to the building and facilities. Normal opening hours are expected to resume from Monday 15 April 2024."
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

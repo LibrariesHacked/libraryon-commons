@@ -1,113 +1,64 @@
 {
   "id": "lib_c18dc371-5473-42b3-9861-fc7ba5f73890",
-  "source_id": "2657",
-  "name": "Beckton Globe Library",
   "slug": "beckton-library",
-  "address": "1 Kingsford Way, Beckton, London, E6 5JQ",
-  "postcode": "E6 5JQ",
-  "town": "London",
-  "phone": "020 3373 0853",
-  "email": "BecktonGlobeLibrary@newham.gov.uk",
-  "website": "https://libraries.newham.gov.uk/digital-content/libraries/find-a-library/beckton-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Library has had refurbishment since 2010",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.51503,
-  "longitude": 0.0554,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "newham",
+  "source_id": "2657",
+  "source_url": "https://libraryon.org/libraries/newham/beckton-library",
   "updated_on": "2026-04-30",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newham/beckton-library",
-  "authority": "newham"
+  "data": {
+    "Local authority": "Newham",
+    "Local authority code": "E09000025",
+    "Library name": "Beckton Globe Library",
+    "Library code": null,
+    "Address 1": "1 Kingsford Way, Beckton, London, E6 5JQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "E6 5JQ",
+    "Unique property reference number": 10008997116,
+    "Latitude": 51.51503,
+    "Longitude": 0.0554,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-20:00",
+    "Tuesday staffed hours": "10:00-20:00",
+    "Wednesday staffed hours": "10:00-20:00",
+    "Thursday staffed hours": "10:00-20:00",
+    "Friday staffed hours": "10:00-20:00",
+    "Saturday staffed hours": "10:00-20:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; BFI Replay",
+    "Phone number": "020 3373 0853",
+    "Email address": "BecktonGlobeLibrary@newham.gov.uk",
+    "URL": "https://libraries.newham.gov.uk/digital-content/libraries/find-a-library/beckton-library",
+    "Notes": "Library has had refurbishment since 2010"
+  },
+  "validation_exceptions": []
 }

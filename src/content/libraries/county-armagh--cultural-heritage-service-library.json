@@ -1,94 +1,77 @@
 {
   "id": "lib_7967f2cd-f0f5-4baa-9b76-5bf1c709e79d",
-  "source_id": "3662",
-  "name": "Cultural Heritage Service Library",
   "slug": "cultural-heritage-service-library",
-  "address": "BT60 1NR, Armagh, Armagh City, Northern Ireland, United Kingdom",
-  "postcode": "",
-  "town": "Armagh",
-  "phone": "028 3752 7851",
-  "email": "armaghirishandlocal@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/county-armagh/cultural-heritage-service-library-armagh/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.33553,
-  "longitude": -6.63535,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "county-armagh",
+  "source_id": "3662",
+  "source_url": "https://libraryon.org/libraries/county-armagh/cultural-heritage-service-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-armagh/cultural-heritage-service-library",
-  "authority": "county-armagh"
+  "data": {
+    "Local authority": "County Armagh",
+    "Local authority code": "N09000002",
+    "Library name": "Cultural Heritage Service Library",
+    "Library code": null,
+    "Address 1": "BT60 1NR, Armagh, Armagh City, Northern Ireland, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 54.33553,
+    "Longitude": -6.63535,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "09:30-17:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": "09:30-17:00",
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Hobby and interest groups",
+    "Phone number": "028 3752 7851",
+    "Email address": "armaghirishandlocal@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/county-armagh/cultural-heritage-service-library-armagh/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

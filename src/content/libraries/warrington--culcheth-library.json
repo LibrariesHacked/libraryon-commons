@@ -1,152 +1,71 @@
 {
   "id": "lib_9d73f5c9-5cfe-484c-90b5-71d373ae4b13",
-  "source_id": "2910",
-  "name": "Culcheth Library",
   "slug": "culcheth-library",
-  "address": "Warrington Road, Culcheth, Cheshire, WA3 5SL",
-  "postcode": "WA3 5DL",
-  "town": "Warrington",
-  "phone": "01925 763293",
-  "email": "library3@livewirewarrington.org",
-  "website": "https://livewirewarrington.co.uk/library/our-libraries/#1628598999484-ced13814-d54a",
-  "catalogue": "https://libonline.livewirewarrington.co.uk/",
-  "joinOnline": "https://livewirewarrington.co.uk/library/our-libraries/join-our-libraries/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "accessible-parking",
-    "accessible-restrooms",
-    "automatic-doors",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.45205,
-  "longitude": -2.51837,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://livewirewarrington.co.uk/library/accessibility-support/"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://livewirewarrington.co.uk/library/culture-creativity/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/ebooks-audiobooks/"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://livewirewarrington.co.uk/library/children/"
-    },
-    {
-      "service": "Computers",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    },
-    {
-      "service": "Scanning",
-      "url": "https://livewirewarrington.co.uk/library/information-digital/using-computers/"
-    }
-  ],
+  "authority": "warrington",
+  "source_id": "2910",
+  "source_url": "https://libraryon.org/libraries/warrington/culcheth-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/warrington/culcheth-library",
-  "authority": "warrington"
+  "data": {
+    "Local authority": "Warrington",
+    "Local authority code": "E06000007",
+    "Library name": "Culcheth Library",
+    "Library code": null,
+    "Address 1": "Warrington Road, Culcheth, Cheshire, WA3 5SL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA3 5DL",
+    "Unique property reference number": null,
+    "Latitude": 53.45205,
+    "Longitude": -2.51837,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-17:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Family history; Findmypast; Hobby and interest groups; Digital lending; Children's activities; Computers; Photocopiers; Scanning",
+    "Phone number": "01925 763293",
+    "Email address": "library3@livewirewarrington.org",
+    "URL": "https://livewirewarrington.co.uk/library/our-libraries/#1628598999484-ced13814-d54a",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,113 +1,71 @@
 {
   "id": "lib_14ba9199-86a1-408f-aef6-de8e2a8bc45c",
-  "source_id": "577",
-  "name": "Burry Port Library",
   "slug": "burry-port-library",
-  "address": "Brynmor House, Carway Street, Burry Port SA16 0AE",
-  "postcode": "SA16 0AE",
-  "town": "Burry Port",
-  "phone": "01554 834478",
-  "email": " libraries@carmarthenshire.gov.uk",
-  "website": "http://www.carmarthenshire.gov.wales/home/residents/libraries-archives/find-a-library/burry-port-library.aspx#.Wk5ZYY_XLIU",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.685007,
-  "longitude": -4.252631,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "carmarthenshire",
+  "source_id": "577",
+  "source_url": "https://libraryon.org/libraries/carmarthenshire/burry-port-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/carmarthenshire/burry-port-library",
-  "authority": "carmarthenshire"
+  "data": {
+    "Local authority": "Carmarthenshire",
+    "Local authority code": "W06000010",
+    "Library name": "Burry Port Library",
+    "Library code": null,
+    "Address 1": "Brynmor House, Carway Street, Burry Port SA16 0AE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SA16 0AE",
+    "Unique property reference number": null,
+    "Latitude": 51.685007,
+    "Longitude": -4.252631,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30,14:00-18:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-12:30,14:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-12:30,14:00-17:30",
+    "Saturday staffed hours": "09:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
+    "Phone number": "01554 834478",
+    "Email address": "libraries@carmarthenshire.gov.uk",
+    "URL": "http://www.carmarthenshire.gov.wales/home/residents/libraries-archives/find-a-library/burry-port-library.aspx#.Wk5ZYY_XLIU",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

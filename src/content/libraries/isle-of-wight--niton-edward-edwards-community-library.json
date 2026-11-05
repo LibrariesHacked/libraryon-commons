@@ -1,102 +1,71 @@
 {
   "id": "lib_ae25c706-fb4b-4f4f-9cbe-669633078a37",
-  "source_id": "3313",
-  "name": "Niton - Edward Edwards Community Library",
   "slug": "niton-edward-edwards-community-library",
-  "address": "Old School House, Church Street, Niton, Isle of Wight, PO38 2AZ",
-  "postcode": "PO38 2BX",
-  "town": "Ventnor",
-  "phone": "01983 719868",
-  "email": "edwardslibrary@outloook.com",
-  "website": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/edward-edwards-community-library-niton/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.588308,
-  "longitude": -1.285761,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "isle-of-wight",
+  "source_id": "3313",
+  "source_url": "https://libraryon.org/libraries/isle-of-wight/niton-edward-edwards-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-wight/niton-edward-edwards-community-library",
-  "authority": "isle-of-wight"
+  "data": {
+    "Local authority": "Isle of Wight",
+    "Local authority code": "E06000046",
+    "Library name": "Niton - Edward Edwards Community Library",
+    "Library code": null,
+    "Address 1": "Old School House, Church Street, Niton, Isle of Wight, PO38 2AZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO38 2BX",
+    "Unique property reference number": null,
+    "Latitude": 50.588308,
+    "Longitude": -1.285761,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-12:00",
+    "Thursday staffed hours": "14:00-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Computers; Scanning",
+    "Phone number": "01983 719868",
+    "Email address": "edwardslibrary@outloook.com",
+    "URL": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/edward-edwards-community-library-niton/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,138 +1,64 @@
 {
   "id": "lib_ce146bcd-161d-44d8-915f-1dd886499b32",
-  "source_id": "2286",
-  "name": "Stanmore Library",
   "slug": "stanmore",
-  "address": "8 Stanmore Hill, Stanmore, Greater London, HA7 3BQ",
-  "postcode": "HA7 3BQ",
-  "town": "Stanmore",
-  "phone": "020 3714 7728",
-  "email": "stanmore.library@harrowlibraries.org.uk",
-  "website": "https://www.harrow.gov.uk/libraries/harrow-library-branches",
-  "catalogue": "https://www.harrow.gov.uk/libraries/digital-newspapers-magazines-ebooks",
-  "joinOnline": "https://www.harrow.gov.uk/libraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "baby-changing-facilities"
-  ],
-  "notes": "Library refurbished in March-April 2016. Total spend was approx. 拢150k.",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.61839,
-  "longitude": -0.31189,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.harrow.gov.uk/libraries/online-resources-learning"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.harrow.gov.uk/libraries/online-resources-learning"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.harrow.gov.uk/libraries/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.harrow.gov.uk/libraries/childrens-library-service"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.harrow.gov.uk/libraries/book-meeting-room-exhibition-space"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.harrow.gov.uk/libraries/digital-newspapers-magazines-ebooks"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "harrow",
+  "source_id": "2286",
+  "source_url": "https://libraryon.org/libraries/harrow/stanmore",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/harrow/stanmore",
-  "authority": "harrow"
+  "data": {
+    "Local authority": "Harrow",
+    "Local authority code": "E09000015",
+    "Library name": "Stanmore Library",
+    "Library code": null,
+    "Address 1": "8 Stanmore Hill, Stanmore, Greater London, HA7 3BQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HA7 3BQ",
+    "Unique property reference number": 100023038856,
+    "Latitude": 51.61839,
+    "Longitude": -0.31189,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": "10:00-13:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-18:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; Computers; Family history; Career support; Books delivered; Children's activities; Bookable space; Digital lending; BFI Replay",
+    "Phone number": "020 3714 7728",
+    "Email address": "stanmore.library@harrowlibraries.org.uk",
+    "URL": "https://www.harrow.gov.uk/libraries/harrow-library-branches",
+    "Notes": "Library refurbished in March-April 2016. Total spend was approx. 拢150k."
+  },
+  "validation_exceptions": []
 }

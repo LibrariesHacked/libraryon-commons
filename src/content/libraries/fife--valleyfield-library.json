@@ -1,103 +1,71 @@
 {
   "id": "lib_becfccf3-b801-425d-89f8-fc2bf1e23711",
-  "source_id": "306",
-  "name": "Valleyfield Library",
   "slug": "valleyfield-library",
-  "address": "Valleyfield Library, Valleyfield Community Centre, Abbey Street, High Valleyfield, KY12 8UA",
-  "postcode": "KY12 8UA",
-  "town": "Dunfermline",
-  "phone": "01383 602372",
-  "email": "valleyfield.library@onfife.com",
-  "website": "http://onfife.com/venues/valleyfield-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "accessible-parking",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.062358,
-  "longitude": -3.597044,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "fife",
+  "source_id": "306",
+  "source_url": "https://libraryon.org/libraries/fife/valleyfield-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/fife/valleyfield-library",
-  "authority": "fife"
+  "data": {
+    "Local authority": "Fife",
+    "Local authority code": "S12000047",
+    "Library name": "Valleyfield Library",
+    "Library code": null,
+    "Address 1": "Valleyfield Library, Valleyfield Community Centre, Abbey Street, High Valleyfield, KY12 8UA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KY12 8UA",
+    "Unique property reference number": null,
+    "Latitude": 56.062358,
+    "Longitude": -3.597044,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-19:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
+    "Phone number": "01383 602372",
+    "Email address": "valleyfield.library@onfife.com",
+    "URL": "http://onfife.com/venues/valleyfield-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

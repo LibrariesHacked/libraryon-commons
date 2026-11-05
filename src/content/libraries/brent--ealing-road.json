@@ -1,138 +1,71 @@
 {
   "id": "lib_4f47a0f4-f255-4773-9189-9bcefc77e31d",
-  "source_id": "2219",
-  "name": "Ealing Road",
   "slug": "ealing-road",
-  "address": "43, Ealing Road, Wembley, Brent,  HA0 4BA",
-  "postcode": "HA0 4BA",
-  "town": "Wembley",
-  "phone": "020 8937 3400",
-  "email": "libraries@brent.gov.uk",
-  "website": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/ealing-road-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54926,
-  "longitude": -0.29746,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Garden",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "brent",
+  "source_id": "2219",
+  "source_url": "https://libraryon.org/libraries/brent/ealing-road",
   "updated_on": "2026-04-29",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brent/ealing-road",
-  "authority": "brent"
+  "data": {
+    "Local authority": "Brent",
+    "Local authority code": "E09000005",
+    "Library name": "Ealing Road",
+    "Library code": null,
+    "Address 1": "43, Ealing Road, Wembley, Brent,  HA0 4BA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HA0 4BA",
+    "Unique property reference number": null,
+    "Latitude": 51.54926,
+    "Longitude": -0.29746,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:30-18:00",
+    "Tuesday staffed hours": "10:30-18:00",
+    "Wednesday staffed hours": "10:30-18:00",
+    "Thursday staffed hours": "10:30-18:00",
+    "Friday staffed hours": "10:30-18:00",
+    "Saturday staffed hours": "10:30-17:00",
+    "Sunday staffed hours": "12:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Photocopiers; Scanning; Garden; BFI Replay",
+    "Phone number": "020 8937 3400",
+    "Email address": "libraries@brent.gov.uk",
+    "URL": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/ealing-road-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,128 +1,73 @@
 {
   "id": "lib_87b834f7-3071-4cf3-a0b0-4188a8e33973",
-  "source_id": "2977",
-  "name": "St. Barnabas Library",
   "slug": "st-barnabas-library",
-  "address": "French Road, Leicester, Leicestershire, LE5 4AH",
-  "postcode": "LE5 4AH",
-  "town": "Leicester",
-  "phone": "0116 454 3250",
-  "email": "barnabas.lib@leicester.gov.uk",
-  "website": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/find-a-library/st-barnabas-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.64055,
-  "longitude": -1.09792,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/computers-internet-and-wifi/computer-skills-for-beginners/"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "leicester",
+  "source_id": "2977",
+  "source_url": "https://libraryon.org/libraries/leicester/st-barnabas-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicester/st-barnabas-library",
-  "authority": "leicester"
+  "data": {
+    "Local authority": "Leicester",
+    "Local authority code": "E06000016",
+    "Library name": "St. Barnabas Library",
+    "Library code": null,
+    "Address 1": "French Road, Leicester, Leicestershire, LE5 4AH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE5 4AH",
+    "Unique property reference number": null,
+    "Latitude": 52.64055,
+    "Longitude": -1.09792,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": "09:30-19:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Digital skills sessions; Hobby and interest groups; BFI Replay",
+    "Phone number": "0116 454 3250",
+    "Email address": "barnabas.lib@leicester.gov.uk",
+    "URL": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/find-a-library/st-barnabas-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_3ff87634cfa5cdfc493ebddf"
+      ]
+    }
+  ]
 }

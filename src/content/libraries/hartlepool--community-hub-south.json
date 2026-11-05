@@ -1,140 +1,71 @@
 {
   "id": "lib_9e6381f0-30ca-4fe6-96e8-ecc5e23237ce",
-  "source_id": "2718",
-  "name": "Community Hub South",
   "slug": "community-hub-south",
-  "address": "Wynard Road, Hartlepool, County Durham, TS25 3LQ",
-  "postcode": "TS25 3LB",
-  "town": "Hartlepool",
-  "phone": "01429 272631",
-  "email": "CommunityHub.South@hartlepool.gov.uk",
-  "website": "https://hartlepool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRNGEN/WPAC/LOCATIONS?HOMEPRMS=UD_LOCATIONS",
-  "catalogue": "",
-  "joinOnline": "https://hartlepool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/JOIN",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "accessible-restrooms",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "service-dog-friendly",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/communityhubsouth/",
-  "permanentlyClosed": false,
-  "latitude": 54.66073,
-  "longitude": -1.23723,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "hartlepool",
+  "source_id": "2718",
+  "source_url": "https://libraryon.org/libraries/hartlepool/community-hub-south",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hartlepool/community-hub-south",
-  "authority": "hartlepool"
+  "data": {
+    "Local authority": "Hartlepool",
+    "Local authority code": "E06000001",
+    "Library name": "Community Hub South",
+    "Library code": null,
+    "Address 1": "Wynard Road, Hartlepool, County Durham, TS25 3LQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS25 3LB",
+    "Unique property reference number": null,
+    "Latitude": 54.66073,
+    "Longitude": -1.23723,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": "10:00-16:00",
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Printing; Children's activities; Hobby and interest groups; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": "01429 272631",
+    "Email address": "CommunityHub.South@hartlepool.gov.uk",
+    "URL": "https://hartlepool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRNGEN/WPAC/LOCATIONS?HOMEPRMS=UD_LOCATIONS",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

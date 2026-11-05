@@ -1,110 +1,71 @@
 {
   "id": "lib_010e8c2e-d2d6-4609-b74e-6badb092f61e",
-  "source_id": "200",
-  "name": "Bangor Library",
   "slug": "bangor-library",
-  "address": "Tan-Y-Fynwent, Bangor, LL57 1DT, United Kingdom",
-  "postcode": "LL57 1DT",
-  "town": "Bangor",
-  "phone": "(01248) 353479",
-  "email": "LLBangor@gwynedd.llyw.cymru",
-  "website": "https://www.gwynedd.llyw.cymru/en/Residents/Libraries-and-archives/Your-local-library/Bangor-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.227155,
-  "longitude": -4.126636,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "gwynedd",
+  "source_id": "200",
+  "source_url": "https://libraryon.org/libraries/gwynedd/bangor-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/gwynedd/bangor-library",
-  "authority": "gwynedd"
+  "data": {
+    "Local authority": "Gwynedd",
+    "Local authority code": "W06000002",
+    "Library name": "Bangor Library",
+    "Library code": null,
+    "Address 1": "Tan-Y-Fynwent, Bangor, LL57 1DT, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LL57 1DT",
+    "Unique property reference number": null,
+    "Latitude": 53.227155,
+    "Longitude": -4.126636,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-18:00",
+    "Tuesday staffed hours": "09:30-18:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:30-18:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast",
+    "Phone number": "(01248) 353479",
+    "Email address": "LLBangor@gwynedd.llyw.cymru",
+    "URL": "https://www.gwynedd.llyw.cymru/en/Residents/Libraries-and-archives/Your-local-library/Bangor-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,90 +1,71 @@
 {
   "id": "lib_09a0614a-16fe-4728-abc2-fa37c20e0a32",
-  "source_id": "159",
-  "name": "Cove Community Library",
   "slug": "cove-community-library",
-  "address": "Cove Library, Burgh Hall, Shore Road, Cove, Helensburgh, G84 0LY",
-  "postcode": "G84 0LR",
-  "town": "Helensburgh",
-  "phone": "01436 842504",
-  "email": "",
-  "website": "https://coveburghhall.org.uk/group/cove-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.993008,
-  "longitude": -4.854027,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "argyll-and-bute",
+  "source_id": "159",
+  "source_url": "https://libraryon.org/libraries/argyll-and-bute/cove-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/argyll-and-bute/cove-community-library",
-  "authority": "argyll-and-bute"
+  "data": {
+    "Local authority": "Argyll and Bute",
+    "Local authority code": "S12000035",
+    "Library name": "Cove Community Library",
+    "Library code": null,
+    "Address 1": "Cove Library, Burgh Hall, Shore Road, Cove, Helensburgh, G84 0LY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "G84 0LR",
+    "Unique property reference number": null,
+    "Latitude": 55.993008,
+    "Longitude": -4.854027,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01436 842504",
+    "Email address": null,
+    "URL": "https://coveburghhall.org.uk/group/cove-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,137 +1,64 @@
 {
   "id": "lib_d6a850e5-3067-4a7c-8f09-373d1208a110",
-  "source_id": "1656",
-  "name": "Walkden Library",
   "slug": "walkden-gateway-library",
-  "address": "2 Smith Street, Worsley, Greater Manchester, M28 3EZ",
-  "postcode": "M28 3EZ",
-  "town": "Manchester",
-  "phone": "0161 607 6639",
-  "email": "walkden.library@scll.co.uk",
-  "website": "https://salfordcommunityleisure.co.uk/library/walkden/",
-  "catalogue": "https://salfordlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://salfordcommunityleisure.co.uk/libraries/join/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "22:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.52491,
-  "longitude": -2.39854,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "salford",
+  "source_id": "1656",
+  "source_url": "https://libraryon.org/libraries/salford/walkden-gateway-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/salford/walkden-gateway-library",
-  "authority": "salford"
+  "data": {
+    "Local authority": "Salford",
+    "Local authority code": "E08000006",
+    "Library name": "Walkden Library",
+    "Library code": null,
+    "Address 1": "2 Smith Street, Worsley, Greater Manchester, M28 3EZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M28 3EZ",
+    "Unique property reference number": 10024417283,
+    "Latitude": 53.52491,
+    "Longitude": -2.39854,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "08:00-22:00",
+    "Tuesday staffed hours": "08:00-22:00",
+    "Wednesday staffed hours": "08:00-22:00",
+    "Thursday staffed hours": "08:00-22:00",
+    "Friday staffed hours": "08:00-18:30",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Books delivered; Computers; Photocopiers; Scanning; Hobby and interest groups; BFI Replay",
+    "Phone number": "0161 607 6639",
+    "Email address": "walkden.library@scll.co.uk",
+    "URL": "https://salfordcommunityleisure.co.uk/library/walkden/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

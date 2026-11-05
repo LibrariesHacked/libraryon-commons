@@ -1,115 +1,71 @@
 {
   "id": "lib_ac460b58-3999-4029-9158-f583af5ba382",
-  "source_id": "819",
-  "name": "Builth Wells Library",
   "slug": "builth-wells-library",
-  "address": "Builth Library, Antur Gwy, Park Road Builth Wells, Powys,  LD2 3BA",
-  "postcode": "LD2 3BA",
-  "town": "Builth Wells",
-  "phone": "01982 552722",
-  "email": "builth.library@powys.gov.uk",
-  "website": "http://www.powys.gov.uk/en/libraries/find-nearest-library/builth-wells-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:15",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:45",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.14988,
-  "longitude": -3.40693,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "powys",
+  "source_id": "819",
+  "source_url": "https://libraryon.org/libraries/powys/builth-wells-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/powys/builth-wells-library",
-  "authority": "powys"
+  "data": {
+    "Local authority": "Powys",
+    "Local authority code": "W06000023",
+    "Library name": "Builth Wells Library",
+    "Library code": null,
+    "Address 1": "Builth Library, Antur Gwy, Park Road Builth Wells, Powys,  LD2 3BA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LD2 3BA",
+    "Unique property reference number": null,
+    "Latitude": 52.14988,
+    "Longitude": -3.40693,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-16:30",
+    "Tuesday staffed hours": "09:30-13:00,14:00-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-13:00,14:00-17:45",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-12:15",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": "01982 552722",
+    "Email address": "builth.library@powys.gov.uk",
+    "URL": "http://www.powys.gov.uk/en/libraries/find-nearest-library/builth-wells-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

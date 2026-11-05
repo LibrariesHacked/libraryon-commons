@@ -1,118 +1,64 @@
 {
   "id": "lib_282e6399-6133-48ee-a849-08ff1b2a4d01",
-  "source_id": "1894",
-  "name": "Marsh Green",
   "slug": "marsh-green",
-  "address": "Harrow Road, Marsh Green, Greater Manchester, WN5 0QL",
-  "postcode": "WN5 0QL",
-  "town": "Wigan",
-  "phone": "01942 760041",
-  "email": "marshgreen.library@wigan.gov.uk",
-  "website": "https://www.wigan.gov.uk/Resident/Libraries/Marsh-Green-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.54948,
-  "longitude": -2.66794,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "wigan",
+  "source_id": "1894",
+  "source_url": "https://libraryon.org/libraries/wigan/marsh-green",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wigan/marsh-green",
-  "authority": "wigan"
+  "data": {
+    "Local authority": "Wigan",
+    "Local authority code": "E08000010",
+    "Library name": "Marsh Green",
+    "Library code": null,
+    "Address 1": "Harrow Road, Marsh Green, Greater Manchester, WN5 0QL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WN5 0QL",
+    "Unique property reference number": 100012817122,
+    "Latitude": 53.54948,
+    "Longitude": -2.66794,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-14:00",
+    "Tuesday staffed hours": "09:00-14:00",
+    "Wednesday staffed hours": "09:00-14:00",
+    "Thursday staffed hours": "12:00-17:00",
+    "Friday staffed hours": "12:00-17:00",
+    "Saturday staffed hours": "09:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Books delivered; Hobby and interest groups; Digital lending",
+    "Phone number": "01942 760041",
+    "Email address": "marshgreen.library@wigan.gov.uk",
+    "URL": "https://www.wigan.gov.uk/Resident/Libraries/Marsh-Green-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

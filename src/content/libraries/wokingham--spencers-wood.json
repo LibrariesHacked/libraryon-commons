@@ -1,123 +1,71 @@
 {
   "id": "lib_00ab953c-3dfc-4cf1-ade7-0b70b8c0f2ba",
-  "source_id": "3061",
-  "name": "Spencers Wood Library",
   "slug": "spencers-wood",
-  "address": "Basingstoke Road, Reading, Berkshire, RG7 1AJ",
-  "postcode": "RG7 1AQ",
-  "town": "Reading",
-  "phone": "0118 988 4771",
-  "email": "libraries@wokingham.gov.uk",
-  "website": "https://directory.wokingham.gov.uk/kb5/wokingham/directory/service.page?id=nyqU9WC8SUc",
-  "catalogue": "https://wokingham.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/EVENTS?HOMEPRMS=EVSESPARAMS",
-  "joinOnline": "https://www.wokingham.gov.uk/libraries/joinfind-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "accessible-public-transport-connections"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.394645,
-  "longitude": -0.973757,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.wokingham.gov.uk/libraries/groups-and-clubs"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.wokingham.gov.uk/libraries/library-services/home-library-services"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "wokingham",
+  "source_id": "3061",
+  "source_url": "https://libraryon.org/libraries/wokingham/spencers-wood",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wokingham/spencers-wood",
-  "authority": "wokingham"
+  "data": {
+    "Local authority": "Wokingham",
+    "Local authority code": "E06000041",
+    "Library name": "Spencers Wood Library",
+    "Library code": null,
+    "Address 1": "Basingstoke Road, Reading, Berkshire, RG7 1AJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG7 1AQ",
+    "Unique property reference number": null,
+    "Latitude": 51.394645,
+    "Longitude": -0.973757,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:30-17:00",
+    "Tuesday staffed hours": "14:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-12:30,14:30-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital lending; Hobby and interest groups; Books delivered; British Newspaper Archive",
+    "Phone number": "0118 988 4771",
+    "Email address": "libraries@wokingham.gov.uk",
+    "URL": "https://directory.wokingham.gov.uk/kb5/wokingham/directory/service.page?id=nyqU9WC8SUc",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

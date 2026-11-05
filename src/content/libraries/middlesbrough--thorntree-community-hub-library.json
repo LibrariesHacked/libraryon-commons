@@ -1,120 +1,71 @@
 {
   "id": "lib_23ee7c40-601f-48f5-a63f-dfbe5b1eaff0",
-  "source_id": "2772",
-  "name": "Thorntree Community Hub & Library",
   "slug": "thorntree-community-hub-library",
-  "address": "Birkhall Road, Thorntree, Middlesbrough, North Yorkshire, TS3 9JW",
-  "postcode": "TS3 9JP",
-  "town": "Middlesbrough",
-  "phone": "01642 246827",
-  "email": "Thorntree_Library@middlesbrough.gov.uk",
-  "website": "https://libraries.middlesbrough.gov.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.56486,
-  "longitude": -1.18341,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.middlesbrough.gov.uk/roomhire"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "middlesbrough",
+  "source_id": "2772",
+  "source_url": "https://libraryon.org/libraries/middlesbrough/thorntree-community-hub-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/middlesbrough/thorntree-community-hub-library",
-  "authority": "middlesbrough"
+  "data": {
+    "Local authority": "Middlesbrough",
+    "Local authority code": "E06000002",
+    "Library name": "Thorntree Community Hub & Library",
+    "Library code": null,
+    "Address 1": "Birkhall Road, Thorntree, Middlesbrough, North Yorkshire, TS3 9JW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS3 9JP",
+    "Unique property reference number": null,
+    "Latitude": 54.56486,
+    "Longitude": -1.18341,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Photocopiers; Computers; Hobby and interest groups; Findmypast; British Newspaper Archive; BFI Replay",
+    "Phone number": "01642 246827",
+    "Email address": "Thorntree_Library@middlesbrough.gov.uk",
+    "URL": "https://libraries.middlesbrough.gov.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

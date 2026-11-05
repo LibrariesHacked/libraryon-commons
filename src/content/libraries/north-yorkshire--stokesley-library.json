@@ -1,132 +1,64 @@
 {
   "id": "lib_b911eb3f-8b3b-4042-87da-84b5fe7fe940",
-  "source_id": "1587",
-  "name": "The Globe (Stokesley Community Library)",
   "slug": "stokesley-library",
-  "address": "Town Close, North Road, Stokesley, North Yorkshire, TS9 5DH",
-  "postcode": "TS9 5DH",
-  "town": "Middlesbrough",
-  "phone": "01609 533461",
-  "email": "library.theglobe@gmail.com",
-  "website": "https://www.theglobelibrarystokesley.org/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "automatic-doors",
-    "wheelchair-access",
-    "step-free-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "care"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.47181,
-  "longitude": -1.19351,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "north-yorkshire",
+  "source_id": "1587",
+  "source_url": "https://libraryon.org/libraries/north-yorkshire/stokesley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-yorkshire/stokesley-library",
-  "authority": "north-yorkshire"
+  "data": {
+    "Local authority": "North Yorkshire",
+    "Local authority code": "E06000065",
+    "Library name": "The Globe (Stokesley Community Library)",
+    "Library code": null,
+    "Address 1": "Town Close, North Road, Stokesley, North Yorkshire, TS9 5DH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS9 5DH",
+    "Unique property reference number": 10008645085,
+    "Latitude": 54.47181,
+    "Longitude": -1.19351,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-16:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "care",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Digital skills sessions; Computers; Photocopiers; Scanning",
+    "Phone number": "01609 533461",
+    "Email address": "library.theglobe@gmail.com",
+    "URL": "https://www.theglobelibrarystokesley.org/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

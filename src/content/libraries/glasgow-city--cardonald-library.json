@@ -1,78 +1,77 @@
 {
   "id": "lib_68ce3f1f-cb82-4d21-871e-1cfcb5b0151f",
-  "source_id": "403",
-  "name": "Cardonald Library",
   "slug": "cardonald-library",
-  "address": "1003 Mosspark Drive, Glasgow, G52 3BU, United Kingdom",
-  "postcode": "G52 3BU",
-  "town": "Glasgow",
-  "phone": "",
-  "email": "",
-  "website": "http://www.glasgowlife.org.uk/libraries/your-local-library/cardonald-library/Pages/home.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.84499,
-  "longitude": -4.34783,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "glasgow-city",
+  "source_id": "403",
+  "source_url": "https://libraryon.org/libraries/glasgow-city/cardonald-library",
   "updated_on": "2026-06-03",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/glasgow-city/cardonald-library",
-  "authority": "glasgow-city"
+  "data": {
+    "Local authority": "Glasgow City",
+    "Local authority code": "S12000049",
+    "Library name": "Cardonald Library",
+    "Library code": null,
+    "Address 1": "1003 Mosspark Drive, Glasgow, G52 3BU, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "G52 3BU",
+    "Unique property reference number": null,
+    "Latitude": 55.84499,
+    "Longitude": -4.34783,
+    "Status": "Closed (temporary)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": null,
+    "Email address": null,
+    "URL": "http://www.glasgowlife.org.uk/libraries/your-local-library/cardonald-library/Pages/home.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,212 +1,71 @@
 {
   "id": "lib_77a940af-ebc3-4b0a-b631-fee10a91869a",
-  "source_id": "1940",
-  "name": "Midhurst Library",
   "slug": "midhurst-library",
-  "address": "The Grange, Bepton Road, Midhurst, West Sussex, GU29 9HD",
-  "postcode": "GU29 9NB",
-  "town": "Midhurst",
-  "phone": "01730 716671",
-  "email": "midhurst.library@westsussex.gov.uk",
-  "website": "https://libraries.westsussex.gov.uk/midhurst-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.98528,
-  "longitude": -0.74003,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "west-sussex",
+  "source_id": "1940",
+  "source_url": "https://libraryon.org/libraries/west-sussex/midhurst-library",
   "updated_on": "2026-02-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-sussex/midhurst-library",
-  "authority": "west-sussex"
+  "data": {
+    "Local authority": "West Sussex",
+    "Local authority code": "E10000032",
+    "Library name": "Midhurst Library",
+    "Library code": null,
+    "Address 1": "The Grange, Bepton Road, Midhurst, West Sussex, GU29 9HD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GU29 9NB",
+    "Unique property reference number": null,
+    "Latitude": 50.98528,
+    "Longitude": -0.74003,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "07:00-09:00,18:00-22:00",
+    "Tuesday unstaffed hours": "07:00-09:00,18:00-22:00",
+    "Wednesday unstaffed hours": "07:00-09:00,18:00-22:00",
+    "Thursday unstaffed hours": "07:00-09:00,18:00-22:00",
+    "Friday unstaffed hours": "07:00-09:00,18:00-22:00",
+    "Saturday unstaffed hours": "07:30-09:00",
+    "Sunday unstaffed hours": "09:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Books delivered; Digital skills sessions; Family history; Bookable space; Findmypast; British Newspaper Archive; Children's activities; Hobby and interest groups",
+    "Phone number": "01730 716671",
+    "Email address": "midhurst.library@westsussex.gov.uk",
+    "URL": "https://libraries.westsussex.gov.uk/midhurst-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

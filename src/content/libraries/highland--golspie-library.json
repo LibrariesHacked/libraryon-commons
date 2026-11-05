@@ -1,108 +1,71 @@
 {
   "id": "lib_7ba1d7ac-2b71-4e60-8f4e-dcb7849b3bc6",
-  "source_id": "244",
-  "name": "Golspie Library",
   "slug": "golspie-library",
-  "address": "Main Street, Golspie, KW10 6RF, United Kingdom",
-  "postcode": "KW10 6RF",
-  "town": "Golspie",
-  "phone": "01408 634084",
-  "email": "golspie.library@highlifehighland.com",
-  "website": "https://www.highlifehighland.com/libraries/golspie-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:30",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "health",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.974662,
-  "longitude": -3.972678,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "highland",
+  "source_id": "244",
+  "source_url": "https://libraryon.org/libraries/highland/golspie-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/highland/golspie-library",
-  "authority": "highland"
+  "data": {
+    "Local authority": "Highland",
+    "Local authority code": "S12000017",
+    "Library name": "Golspie Library",
+    "Library code": null,
+    "Address 1": "Main Street, Golspie, KW10 6RF, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KW10 6RF",
+    "Unique property reference number": null,
+    "Latitude": 57.974662,
+    "Longitude": -3.972678,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:30-17:00,18:00-19:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:30-12:30,13:30-17:00",
+    "Friday staffed hours": "10:30-12:30,13:30-17:00",
+    "Saturday staffed hours": "10:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01408 634084",
+    "Email address": "golspie.library@highlifehighland.com",
+    "URL": "https://www.highlifehighland.com/libraries/golspie-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

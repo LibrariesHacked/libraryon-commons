@@ -1,76 +1,71 @@
 {
   "id": "lib_2b8a0293-fbdb-4cb1-8e5f-99697e973c5c",
-  "source_id": "730",
-  "name": "Odiham Book Exchange (formerly Odiham Library)",
   "slug": "odiham-book-exchange",
-  "address": "The Bury, Odiham, Hampshire, RG29 1NB",
-  "postcode": "RG29 1LU",
-  "town": "Hook",
-  "phone": "",
-  "email": "bookexchange@odiham.org.uk",
-  "website": "https://www.odihambookexchange.co.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.25331,
-  "longitude": -0.94127,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "730",
+  "source_url": "https://libraryon.org/libraries/hampshire/odiham-book-exchange",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/odiham-book-exchange",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Odiham Book Exchange (formerly Odiham Library)",
+    "Library code": null,
+    "Address 1": "The Bury, Odiham, Hampshire, RG29 1NB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG29 1LU",
+    "Unique property reference number": null,
+    "Latitude": 51.25331,
+    "Longitude": -0.94127,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-16:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books",
+    "Phone number": null,
+    "Email address": "bookexchange@odiham.org.uk",
+    "URL": "https://www.odihambookexchange.co.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,0 +1,59 @@
+{
+  "authority_aliases": {},
+  "matches": {},
+  "excluded_sources": [],
+  "field_overrides": [],
+  "review_resolutions": [
+    {
+      "kind": "current-service-url",
+      "status": "approved",
+      "decision": "retain-current-values",
+      "decided_on": "2026-11-04",
+      "rationale": "Maintainer approved existing LibraryOn URL retained checks. Preserve current URLs without claiming successful live verification."
+    },
+    {
+      "check_reason": "Review the supporting evidence in the migration audit",
+      "exclude_kinds": ["postcode-lookup"],
+      "status": "approved",
+      "decision": "retain-current-values",
+      "decided_on": "2026-11-04",
+      "rationale": "Maintainer accepted checks with this generic audit-review label. Retain existing values and missing fields; do not promote candidates or waive validation exceptions. Postcode checks follow the more specific instruction below."
+    },
+    {
+      "kind": "postcode-lookup",
+      "condition": "null-postcode-and-lookup",
+      "status": "deferred",
+      "decision": "leave-missing-values",
+      "decided_on": "2026-11-04",
+      "rationale": "Maintainer does not want missing postcodes filled now when both postcode and lookup are null. Keep schema validation exceptions but remove the redundant manual lookup task."
+    },
+    {
+      "kind": "unmapped-source-details",
+      "status": "archived",
+      "decision": "audit-only",
+      "decided_on": "2026-11-04",
+      "rationale": "Maintainer considers source details without an exact schema field non-actionable. Preserve them in the audit without an open manual check or parallel live data structure."
+    },
+    {
+      "kind": "historical-lms",
+      "status": "archived",
+      "decision": "leave-unconfirmed-fields-blank",
+      "decided_on": "2026-11-04",
+      "rationale": "Maintainer approved archiving historical LMS and catalogue hints that were not independently confirmed. Preserve evidence without promoting old software or supplier claims into canonical data."
+    },
+    {
+      "kind": "historical-supplier",
+      "status": "archived",
+      "decision": "leave-unconfirmed-fields-blank",
+      "decided_on": "2026-11-04",
+      "rationale": "Maintainer approved archiving historical ebook and audiobook supplier hints. Leave unconfirmed supplier fields blank and retain the original candidates in the audit."
+    },
+    {
+      "kind": "unmatched-source",
+      "status": "deferred",
+      "decision": "preserve-unmatched-source-backlog",
+      "decided_on": "2026-11-04",
+      "rationale": "Maintainer approved deferring unmatched source rows rather than forcing matches or discarding evidence. Possible duplicates and additional historical buildings remain available in the audit for future investigation; existing directory records are unchanged."
+    }
+  ]
+}

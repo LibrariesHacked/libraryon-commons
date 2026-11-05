@@ -1,160 +1,71 @@
 {
   "id": "lib_3ddda363-e421-41be-b547-2b1ee70ee56a",
-  "source_id": "3397",
-  "name": "Patchway",
   "slug": "patchway",
-  "address": "Patchway Hub, Rodway Road, Patchway, South Gloucestershire, BS34 5PE",
-  "postcode": "BS34 5HG",
-  "town": "Bristol",
-  "phone": "01454 868006",
-  "email": "patchway.library@southglos.gov.uk",
-  "website": "https://beta.southglos.gov.uk/patchway-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:30",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:30",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:30",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:30",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:30",
-          "startTime": "12:45"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:30",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:30",
-          "startTime": "15:15"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.53197,
-  "longitude": -2.57708,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "south-gloucestershire",
+  "source_id": "3397",
+  "source_url": "https://libraryon.org/libraries/south-gloucestershire/patchway",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-gloucestershire/patchway",
-  "authority": "south-gloucestershire"
+  "data": {
+    "Local authority": "South Gloucestershire",
+    "Local authority code": "E06000025",
+    "Library name": "Patchway",
+    "Library code": null,
+    "Address 1": "Patchway Hub, Rodway Road, Patchway, South Gloucestershire, BS34 5PE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS34 5HG",
+    "Unique property reference number": null,
+    "Latitude": 51.53197,
+    "Longitude": -2.57708,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-15:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-19:30",
+    "Tuesday unstaffed hours": "08:00-10:00,17:15-19:30",
+    "Wednesday unstaffed hours": "08:00-10:00,15:15-19:30",
+    "Thursday unstaffed hours": "08:00-19:30",
+    "Friday unstaffed hours": "08:00-10:00,17:15-19:30",
+    "Saturday unstaffed hours": "08:00-09:30,12:45-19:30",
+    "Sunday unstaffed hours": "08:00-19:30",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups",
+    "Phone number": "01454 868006",
+    "Email address": "patchway.library@southglos.gov.uk",
+    "URL": "https://beta.southglos.gov.uk/patchway-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

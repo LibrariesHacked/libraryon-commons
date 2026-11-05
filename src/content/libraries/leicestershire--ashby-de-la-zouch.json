@@ -1,202 +1,71 @@
 {
   "id": "lib_d07ffd41-3d05-4216-8d97-a2a923390bd0",
-  "source_id": "1339",
-  "name": "Ashby-De-La-Zouch",
   "slug": "ashby-de-la-zouch",
-  "address": "North Street, Ashby-de-la-Zouch, Leicestershire, LE65 1HU",
-  "postcode": "LE65 1HS",
-  "town": "Ashby-de-la-Zouch",
-  "phone": "0116 305 5917",
-  "email": "ashbydelazouchlibrary@leics.gov.uk",
-  "website": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/ashby-de-la-zouch-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "accessible-restrooms",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.74837,
-  "longitude": -1.47052,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "leicestershire",
+  "source_id": "1339",
+  "source_url": "https://libraryon.org/libraries/leicestershire/ashby-de-la-zouch",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/leicestershire/ashby-de-la-zouch",
-  "authority": "leicestershire"
+  "data": {
+    "Local authority": "Leicestershire",
+    "Local authority code": "E10000018",
+    "Library name": "Ashby-De-La-Zouch",
+    "Library code": null,
+    "Address 1": "North Street, Ashby-de-la-Zouch, Leicestershire, LE65 1HU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LE65 1HS",
+    "Unique property reference number": null,
+    "Latitude": 52.74837,
+    "Longitude": -1.47052,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-10:00,13:00-19:00",
+    "Tuesday unstaffed hours": "08:00-14:00,17:00-19:00",
+    "Wednesday unstaffed hours": "08:00-19:00",
+    "Thursday unstaffed hours": "08:00-14:00,17:00-19:00",
+    "Friday unstaffed hours": "08:00-10:00,13:00-19:00",
+    "Saturday unstaffed hours": "08:00-10:00,14:00-18:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Findmypast; British Newspaper Archive; Bookable space; Photocopiers; Family history; Hobby and interest groups; Children's activities; Books delivered; Digital skills sessions",
+    "Phone number": "0116 305 5917",
+    "Email address": "ashbydelazouchlibrary@leics.gov.uk",
+    "URL": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/ashby-de-la-zouch-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

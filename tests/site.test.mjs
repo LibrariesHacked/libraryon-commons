@@ -83,8 +83,14 @@ test('shared library picker redirects by default and credits only displayed name
     new URL('../src/layouts/DirectoryLayout.astro', import.meta.url),
     'utf8'
   )
-  const authority = readFileSync(new URL('../src/templates/AuthorityTemplate.astro', import.meta.url), 'utf8')
-  const library = readFileSync(new URL('../src/templates/LibraryTemplate.astro', import.meta.url), 'utf8')
+  const authority = readFileSync(
+    new URL('../src/templates/AuthorityTemplate.astro', import.meta.url),
+    'utf8'
+  )
+  const library = readFileSync(
+    new URL('../src/templates/LibraryTemplate.astro', import.meta.url),
+    'utf8'
+  )
   assert.ok(component.includes("mode = 'navigate'"))
   assert.ok(component.includes('crypto.randomUUID()'))
   assert.ok(component.includes('window.location.assign(destination)'))
@@ -319,7 +325,9 @@ Printed in 1908.
   assert.equal(document('.collection-hotspot-toggle input[checked]').length, 1)
   assert.equal(document('.collection-hotspot-marker[aria-pressed="true"]').length, 2)
   assert.equal(document('.collection-hotspot-note:not([hidden])').length, 2)
-  assert.equal(document('.collection-hotspot-intro').length, 2)
+  assert.equal(document('.collection-hotspot-intro').length, 1)
+  assert.equal(document('.collection-hotspot-aside .collection-hotspot-intro').length, 0)
+  assert.ok(document('.collection-hotspot-intro').next().is('.collection-carousel-viewport'))
   assert.equal(document('.collection-hotspot-intro h3').first().text(), 'About this gallery')
   assert.equal(
     document('.collection-hotspot-intro p').first().text(),
@@ -417,30 +425,23 @@ Second description.
   const document = load((await processor.render(source)).code)
 
   assert.equal(document('.collection-recommendations-heading').text(), 'Five books about circus')
-  assert.equal(document('.collection-recommendation-select').length, 2)
+  assert.equal(document('details.collection-recommendation-item').length, 2)
+  assert.equal(document('summary.collection-recommendation-select').length, 2)
+  const names = document('details.collection-recommendation-item')
+    .map((_, item) => item.attribs.name)
+    .get()
+  assert.ok(names[0])
+  assert.equal(new Set(names).size, 1)
+  assert.equal(document('details[open]').length, 1)
+  const open = document('details[open]')
+  assert.ok(open.find('summary').text().includes('Ring history'))
+  assert.equal(open.find('.collection-recommendation-cover img').attr('alt'), 'First book cover')
   assert.equal(
-    document('.collection-recommendation-select[aria-pressed="true"]')
-      .text()
-      .includes('Ring history'),
-    true
-  )
-  assert.equal(document('.collection-recommendation-select[aria-expanded="true"]').length, 1)
-  assert.equal(
-    document('.collection-recommendation-cover:not([hidden]) img').attr('alt'),
-    'First book cover'
-  )
-  assert.equal(
-    document('.collection-recommendation-description:not([hidden])').text().trim(),
+    open.find('.collection-recommendation-description').text().trim(),
     'First description.'
   )
   assert.equal(
-    document('.collection-recommendations-list li')
-      .first()
-      .find('.collection-recommendation-description').length,
-    1
-  )
-  assert.equal(
-    document('.collection-recommendation-cover[hidden] img').attr('alt'),
+    document('details:not([open]) .collection-recommendation-cover img').attr('alt'),
     'Second book cover'
   )
 })
@@ -940,9 +941,12 @@ test('special collection galleries, notes and book entries stay in the article M
       quoteSlides: 6,
       hotspotSlides: 5,
       markers: 18,
-      accordionItems: 7,
+      accordionItems: 0,
       zoomButtons: 12,
-      imageRows: 5
+      imageRows: 5,
+      recommendationSections: 1,
+      recommendationItems: 7,
+      recommendationCovers: 7
     },
     {
       file: 'special-collections--curious-competitions.md',
@@ -954,7 +958,7 @@ test('special collection galleries, notes and book entries stay in the article M
       markers: 19,
       accordionItems: 3,
       zoomButtons: 11,
-      asides: 3,
+      asides: 4,
       imageRows: 4
     },
     {
@@ -993,9 +997,12 @@ test('special collection galleries, notes and book entries stay in the article M
       quoteSlides: 0,
       hotspotSlides: 3,
       markers: 13,
-      accordionItems: 4,
+      accordionItems: 0,
       zoomButtons: 10,
-      imageRows: 4
+      imageRows: 4,
+      recommendationSections: 1,
+      recommendationItems: 4,
+      recommendationCovers: 4
     }
   ]
 
@@ -1029,7 +1036,7 @@ test('special collection galleries, notes and book entries stay in the article M
     assert.equal(document('.collection-hotspot-marker').length, page.markers, page.file)
     assert.equal(document('.collection-hotspot-note').length, page.markers, page.file)
     assert.equal(
-      document('.collection-accordion > .collection-accordion-item').length,
+      document('.collection-accordion .collection-accordion-item').length,
       page.accordionItems,
       page.file
     )

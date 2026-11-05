@@ -1,181 +1,73 @@
 {
   "id": "lib_e169e21b-f799-4a9c-8baf-0dbe64cda706",
-  "source_id": "2709",
-  "name": "Haltemprice Library & Customer Service Centre",
   "slug": "haltemprice-library-customer-service-centre",
-  "address": "120 Springfield Way, Anlaby, East Riding of Yorkshire, HU10 6QJ",
-  "postcode": "HU10 6QJ",
-  "town": "Hull",
-  "phone": "01482 3939393",
-  "email": "CSCAnlaby@eastriding.gov.uk",
-  "website": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=haltemprice_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "16:45"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "18:45"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "17:45"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "12:45"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "17:45"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "17:45"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "adjustable-seating",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "catering",
-    "retail",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.74851,
-  "longitude": -0.43434,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "east-riding-of-yorkshire",
+  "source_id": "2709",
+  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/haltemprice-library-customer-service-centre",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/haltemprice-library-customer-service-centre",
-  "authority": "east-riding-of-yorkshire"
+  "data": {
+    "Local authority": "East Riding of Yorkshire",
+    "Local authority code": "E06000011",
+    "Library name": "Haltemprice Library & Customer Service Centre",
+    "Library code": null,
+    "Address 1": "120 Springfield Way, Anlaby, East Riding of Yorkshire, HU10 6QJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HU10 6QJ",
+    "Unique property reference number": null,
+    "Latitude": 53.74851,
+    "Longitude": -0.43434,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2014,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-18:30",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": "09:30-17:30",
+    "Thursday staffed hours": "09:30-17:30",
+    "Friday staffed hours": "09:30-16:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "18:45-21:00",
+    "Tuesday unstaffed hours": "17:45-21:00",
+    "Wednesday unstaffed hours": "17:45-21:00",
+    "Thursday unstaffed hours": "17:45-21:00",
+    "Friday unstaffed hours": "16:45-21:00",
+    "Saturday unstaffed hours": "12:45-19:00",
+    "Sunday unstaffed hours": "09:30-19:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; retail; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Books delivered; Digital lending; Family history; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "01482 3939393",
+    "Email address": "CSCAnlaby@eastriding.gov.uk",
+    "URL": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=haltemprice_library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_782d160eb0f61cc82aa77c15"
+      ]
+    }
+  ]
 }

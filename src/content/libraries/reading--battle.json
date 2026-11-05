@@ -1,96 +1,64 @@
 {
   "id": "lib_ccbc54fc-24b8-4b2b-baf5-9ebc013772a7",
-  "source_id": "3376",
-  "name": "Battle",
   "slug": "battle",
-  "address": "420 Oxford Road, Reading, Berkshire, RG30 1EE",
-  "postcode": "RG30 1EE",
-  "town": "Reading",
-  "phone": "0118 937 5100",
-  "email": "info@readinglibraries.org.uk",
-  "website": "https://www.reading.gov.uk/leisure/libraries/all-libraries/battle-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Refurbished 2019",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://tour.giraffe360.com/battle_library/",
-  "permanentlyClosed": false,
-  "latitude": 51.45789,
-  "longitude": -1.0001,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "reading",
+  "source_id": "3376",
+  "source_url": "https://libraryon.org/libraries/reading/battle",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/reading/battle",
-  "authority": "reading"
+  "data": {
+    "Local authority": "Reading",
+    "Local authority code": "E06000038",
+    "Library name": "Battle",
+    "Library code": null,
+    "Address 1": "420 Oxford Road, Reading, Berkshire, RG30 1EE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG30 1EE",
+    "Unique property reference number": 310058680,
+    "Latitude": 51.45789,
+    "Longitude": -1.0001,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-12:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers",
+    "Phone number": "0118 937 5100",
+    "Email address": "info@readinglibraries.org.uk",
+    "URL": "https://www.reading.gov.uk/leisure/libraries/all-libraries/battle-library/",
+    "Notes": "Refurbished 2019"
+  },
+  "validation_exceptions": []
 }

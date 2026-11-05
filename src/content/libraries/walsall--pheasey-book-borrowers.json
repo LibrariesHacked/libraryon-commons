@@ -1,75 +1,80 @@
 {
   "id": "lib_4ed43e5f-1020-4970-8a8e-81186ab13661",
-  "source_id": "3838",
-  "name": "Pheasey Book Borrowers Community Library",
   "slug": "pheasey-book-borrowers",
-  "address": "Collingwood Community Centre, Birmingham B43 7HN",
-  "postcode": "B43 7HN",
-  "town": "Birmingham",
-  "phone": "07435568266",
-  "email": "",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.55682041224844,
-  "longitude": -1.9048107372532002,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    }
-  ],
+  "authority": "walsall",
+  "source_id": "3838",
+  "source_url": "https://libraryon.org/libraries/walsall/pheasey-book-borrowers",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/walsall/pheasey-book-borrowers",
-  "authority": "walsall"
+  "data": {
+    "Local authority": "Walsall",
+    "Local authority code": "E08000030",
+    "Library name": "Pheasey Book Borrowers Community Library",
+    "Library code": null,
+    "Address 1": "Collingwood Community Centre, Birmingham B43 7HN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B43 7HN",
+    "Unique property reference number": null,
+    "Latitude": 52.55682041224844,
+    "Longitude": -1.9048107372532002,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books",
+    "Phone number": "07435568266",
+    "Email address": null,
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_ff4bb853194ee0db39001ae0"
+      ]
+    }
+  ]
 }

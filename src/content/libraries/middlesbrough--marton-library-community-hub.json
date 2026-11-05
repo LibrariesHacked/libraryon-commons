@@ -1,120 +1,64 @@
 {
   "id": "lib_6245c4d3-950c-4e7e-93f4-f9da16fe90a7",
-  "source_id": "2754",
-  "name": "Marton Library & Community Hub",
   "slug": "marton-library-community-hub",
-  "address": "The Willows, Marton, Middlesbrough, North Yorkshire, TS7 8BL",
-  "postcode": "TS7 8BL",
-  "town": "Middlesbrough",
-  "phone": "01642 300255",
-  "email": "marton_library@middlesbrough.gov.uk",
-  "website": "https://libraries.middlesbrough.gov.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.5321,
-  "longitude": -1.19801,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.middlesbrough.gov.uk/roomhire"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "middlesbrough",
+  "source_id": "2754",
+  "source_url": "https://libraryon.org/libraries/middlesbrough/marton-library-community-hub",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/middlesbrough/marton-library-community-hub",
-  "authority": "middlesbrough"
+  "data": {
+    "Local authority": "Middlesbrough",
+    "Local authority code": "E06000002",
+    "Library name": "Marton Library & Community Hub",
+    "Library code": null,
+    "Address 1": "The Willows, Marton, Middlesbrough, North Yorkshire, TS7 8BL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS7 8BL",
+    "Unique property reference number": null,
+    "Latitude": 54.5321,
+    "Longitude": -1.19801,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:00,13:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-12:00,13:00-17:00",
+    "Friday staffed hours": "09:30-12:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; Bookable space; Photocopiers; BFI Replay",
+    "Phone number": "01642 300255",
+    "Email address": "marton_library@middlesbrough.gov.uk",
+    "URL": "https://libraries.middlesbrough.gov.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

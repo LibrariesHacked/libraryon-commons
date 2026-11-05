@@ -1,134 +1,64 @@
 {
   "id": "lib_68cc3701-7f2a-4ade-a63d-ea2aad5c35d9",
-  "source_id": "2288",
-  "name": "Orpington Library",
   "slug": "orpington-library",
-  "address": "The Walnuts, Orpington, Greater London, BR6 0TW",
-  "postcode": "BR6 0TW",
-  "town": "Orpington",
-  "phone": "01689 831551",
-  "email": "Orpington.Library@GLL.ORG",
-  "website": "https://www.better.org.uk/library/london/bromley/orpington-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "Orpington Library is open in a temporary location at Unit 27, The Walnuts Shopping Centre (near the Central Atrium), Orpington, BR6 0TW. The library will be operating normal opening hours with adult and children's lending, a programme of activities, PC access and printing services. Please note: payments by card only at this time.",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "lift-access",
-    "guide-dog-friendly"
-  ],
-  "notes": "Moved to new premises 2011",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.37616475800246,
-  "longitude": 0.1011924591093134,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "bromley",
+  "source_id": "2288",
+  "source_url": "https://libraryon.org/libraries/bromley/orpington-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bromley/orpington-library",
-  "authority": "bromley"
+  "data": {
+    "Local authority": "Bromley",
+    "Local authority code": "E09000006",
+    "Library name": "Orpington Library",
+    "Library code": null,
+    "Address 1": "The Walnuts, Orpington, Greater London, BR6 0TW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BR6 0TW",
+    "Unique property reference number": 10070009943,
+    "Latitude": 51.37616475800246,
+    "Longitude": 0.1011924591093134,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": "09:30-17:30",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-17:30",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Orpington Library is open in a temporary location at Unit 27, The Walnuts Shopping Centre (near the Central Atrium), Orpington, BR6 0TW. The library will be operating normal opening hours with adult and children's lending, a programme of activities, PC access and printing services. Please note: payments by card only at this time.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Children's activities; Hobby and interest groups; Computers",
+    "Phone number": "01689 831551",
+    "Email address": "Orpington.Library@GLL.ORG",
+    "URL": "https://www.better.org.uk/library/london/bromley/orpington-library",
+    "Notes": "Moved to new premises 2011"
+  },
+  "validation_exceptions": []
 }

@@ -1,101 +1,71 @@
 {
   "id": "lib_efc98abf-f883-4121-9986-853eef887318",
-  "source_id": "474",
-  "name": "Linlithgow Library",
   "slug": "linlithgow-library",
-  "address": "Linlithgow Partnership Centre  Tam Dalyell House  High Street  Linlithgow  EH49 7EZ",
-  "postcode": "EH49 7EZ",
-  "town": "Linlithgow",
-  "phone": "01506 283880",
-  "email": "linlithgow.lib@westlothian.gov.uk",
-  "website": "https://www.westlothian.gov.uk/article/33629/Linlithgow-Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.97643,
-  "longitude": -3.60075,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "west-lothian",
+  "source_id": "474",
+  "source_url": "https://libraryon.org/libraries/west-lothian/linlithgow-library",
   "updated_on": "2026-09-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-lothian/linlithgow-library",
-  "authority": "west-lothian"
+  "data": {
+    "Local authority": "West Lothian",
+    "Local authority code": "S12000040",
+    "Library name": "Linlithgow Library",
+    "Library code": null,
+    "Address 1": "Linlithgow Partnership Centre  Tam Dalyell House  High Street  Linlithgow  EH49 7EZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EH49 7EZ",
+    "Unique property reference number": null,
+    "Latitude": 55.97643,
+    "Longitude": -3.60075,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-19:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "07:00-19:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01506 283880",
+    "Email address": "linlithgow.lib@westlothian.gov.uk",
+    "URL": "https://www.westlothian.gov.uk/article/33629/Linlithgow-Library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

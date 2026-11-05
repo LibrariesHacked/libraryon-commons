@@ -1,142 +1,64 @@
 {
   "id": "lib_a100e74f-13e0-48cf-b288-b5cf723fa28c",
-  "source_id": "3195",
-  "name": "Alderman Lacey Library",
   "slug": "alderman-lacey-library",
-  "address": "Tangier Road, Copnor, Portsmouth, Hampshire, PO3 6HU",
-  "postcode": "PO3 6HU",
-  "town": "Portsmouth",
-  "phone": "02392823991",
-  "email": "alderman.library@portsmouthcc.gov.uk",
-  "website": "https://librariesandarchives.portsmouth.gov.uk/public-library-service/find-us/library-branches/alderman-lacey/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.808,
-  "longitude": -1.05777,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "portsmouth",
+  "source_id": "3195",
+  "source_url": "https://libraryon.org/libraries/portsmouth/alderman-lacey-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/portsmouth/alderman-lacey-library",
-  "authority": "portsmouth"
+  "data": {
+    "Local authority": "Portsmouth",
+    "Local authority code": "E06000044",
+    "Library name": "Alderman Lacey Library",
+    "Library code": null,
+    "Address 1": "Tangier Road, Copnor, Portsmouth, Hampshire, PO3 6HU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO3 6HU",
+    "Unique property reference number": 1775078276,
+    "Latitude": 50.808,
+    "Longitude": -1.05777,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1964,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30,13:30-18:00",
+    "Tuesday staffed hours": "09:30-12:30,13:30-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-12:30,13:30-17:00",
+    "Friday staffed hours": "09:30-12:30,13:30-17:00",
+    "Saturday staffed hours": "10:00-15:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Scanning; Photocopiers; Children's activities; Hobby and interest groups; British Newspaper Archive; Findmypast",
+    "Phone number": "02392823991",
+    "Email address": "alderman.library@portsmouthcc.gov.uk",
+    "URL": "https://librariesandarchives.portsmouth.gov.uk/public-library-service/find-us/library-branches/alderman-lacey/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

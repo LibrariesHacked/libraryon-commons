@@ -1,137 +1,64 @@
 {
   "id": "lib_079a2afd-851a-4753-9f09-e5e8449b2663",
-  "source_id": "1825",
-  "name": "Whitnash Civic Centre & Library",
   "slug": "whitnash-civic-centre-library",
-  "address": "Acre Close, Whitnash, Warwickshire, CV31 2ND",
-  "postcode": "CV31 2ND",
-  "town": "Leamington Spa",
-  "phone": "0300 555 8171",
-  "email": "libraryenquiryteam@warwickshire.gov.uk",
-  "website": "https://www.warwickshire.gov.uk/directory-record/600/whitnash-library-and-information-centre",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "low-vision-support",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.26929,
-  "longitude": -1.52801,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "warwickshire",
+  "source_id": "1825",
+  "source_url": "https://libraryon.org/libraries/warwickshire/whitnash-civic-centre-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/warwickshire/whitnash-civic-centre-library",
-  "authority": "warwickshire"
+  "data": {
+    "Local authority": "Warwickshire",
+    "Local authority code": "E10000031",
+    "Library name": "Whitnash Civic Centre & Library",
+    "Library code": null,
+    "Address 1": "Acre Close, Whitnash, Warwickshire, CV31 2ND",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CV31 2ND",
+    "Unique property reference number": null,
+    "Latitude": 52.26929,
+    "Longitude": -1.52801,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2021,
+    "Year closed": null,
+    "Monday staffed hours": "10:30-17:00",
+    "Tuesday staffed hours": "10:30-17:00",
+    "Wednesday staffed hours": "13:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:30-16:00",
+    "Saturday staffed hours": "10:30-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Family history; Books delivered; Scanning; Computers; Photocopiers; Children's activities",
+    "Phone number": "0300 555 8171",
+    "Email address": "libraryenquiryteam@warwickshire.gov.uk",
+    "URL": "https://www.warwickshire.gov.uk/directory-record/600/whitnash-library-and-information-centre",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

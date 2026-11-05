@@ -1,149 +1,71 @@
 {
   "id": "lib_4f9428d0-f237-479e-82ae-485d168c8100",
-  "source_id": "3198",
-  "name": "Bedminster Library",
   "slug": "bedminster",
-  "address": "Bedminster Parade, Bedminster, Bristol, BS3 4AQ",
-  "postcode": "BS3 4HL",
-  "town": "Bristol",
-  "phone": "0117 9038529",
-  "email": "bedminster.library@bristol.gov.uk",
-  "website": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=2",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "service-dog-friendly",
-    "accessible-restrooms",
-    "assistive-technology-available",
-    "automatic-doors",
-    "step-free-access",
-    "wheelchair-access",
-    "hearing-loop-system",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.44405,
-  "longitude": -2.59322,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/print-online-using-wi-fi-in-a-bristol-library"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/ebooks-and-eaudiobooks"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/local-and-family-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/accessible-library-services"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/services-for-children-and-young-people"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/book-library-spaces-for-events-meetings-and-exhibitions"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bristol",
+  "source_id": "3198",
+  "source_url": "https://libraryon.org/libraries/bristol/bedminster",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bristol/bedminster",
-  "authority": "bristol"
+  "data": {
+    "Local authority": "Bristol",
+    "Local authority code": "E06000023",
+    "Library name": "Bedminster Library",
+    "Library code": null,
+    "Address 1": "Bedminster Parade, Bedminster, Bristol, BS3 4AQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS3 4HL",
+    "Unique property reference number": null,
+    "Latitude": 51.44405,
+    "Longitude": -2.59322,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Books delivered; Photocopiers; Children's activities; Hobby and interest groups; Computers; Bookable space; Findmypast; British Newspaper Archive",
+    "Phone number": "0117 9038529",
+    "Email address": "bedminster.library@bristol.gov.uk",
+    "URL": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=2",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,199 +1,64 @@
 {
   "id": "lib_06354b31-81e8-4cee-96b9-e547f33f8e89",
-  "source_id": "1790",
-  "name": "Altrincham",
   "slug": "altrincham",
-  "address": "2 Pott Street, Altrincham, Greater Manchester, WA14 1AH",
-  "postcode": "WA14 1AH",
-  "town": "Altrincham",
-  "phone": "0161 912 3189",
-  "email": "libraries@trafford.gov.uk",
-  "website": "https://beta.trafford.gov.uk/residents/leisure-and-lifestyle/libraries/libraries-in-trafford/altrincham-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:30",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:30",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:30",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:30",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:30",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "step-free-access",
-    "accessible-parking",
-    "hearing-loop-system",
-    "lift-access",
-    "guide-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.38703,
-  "longitude": -2.35257,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://bipcgm.org/"
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "trafford",
+  "source_id": "1790",
+  "source_url": "https://libraryon.org/libraries/trafford/altrincham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/trafford/altrincham",
-  "authority": "trafford"
+  "data": {
+    "Local authority": "Trafford",
+    "Local authority code": "E08000009",
+    "Library name": "Altrincham",
+    "Library code": null,
+    "Address 1": "2 Pott Street, Altrincham, Greater Manchester, WA14 1AH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA14 1AH",
+    "Unique property reference number": 10070460471,
+    "Latitude": 53.38703,
+    "Longitude": -2.35257,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "09:00-10:00,10:00-17:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:00-10:00,17:00-20:30",
+    "Tuesday unstaffed hours": "09:00-10:00,17:00-20:30",
+    "Wednesday unstaffed hours": "09:00-10:00,19:00-20:30",
+    "Thursday unstaffed hours": "09:00-10:00,17:00-20:30",
+    "Friday unstaffed hours": "17:00-20:30",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Business support; Bookable space; Digital lending; Children's activities; Computers; Photocopiers; Hobby and interest groups; Findmypast; Scanning",
+    "Phone number": "0161 912 3189",
+    "Email address": "libraries@trafford.gov.uk",
+    "URL": "https://beta.trafford.gov.uk/residents/leisure-and-lifestyle/libraries/libraries-in-trafford/altrincham-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

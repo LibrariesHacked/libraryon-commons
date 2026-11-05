@@ -1,141 +1,64 @@
 {
   "id": "lib_f51bc499-9eac-47ca-bde7-63643de1e8f0",
-  "source_id": "2517",
-  "name": "Tolworth Community Library",
   "slug": "tolworth-community-library",
-  "address": "The Broadway, Tolworth, Surrey, KT6 7DJ",
-  "postcode": "KT6 7DJ",
-  "town": "Surbiton",
-  "phone": "020 8547 5006",
-  "email": "tolworth.library@kingston.gov.uk",
-  "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/tolworth",
-  "catalogue": "https://libraries.kingston.gov.uk/home",
-  "joinOnline": "https://libraries.kingston.gov.uk/digital-content/libraries/join-borrow",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.38108,
-  "longitude": -0.28225,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.kingston.gov.uk/digital-content/libraries/community-library-home-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.kingston.gov.uk/digital-content/your-digital-library"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://libraries.kingston.gov.uk/digital-content/children-teens"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://libraries.kingston.gov.uk/digital-content/get-involved"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://libraries.kingston.gov.uk/digital-content/learning-job-support/digital-skills-help"
-    },
-    {
-      "service": "Career support",
-      "url": "https://libraries.kingston.gov.uk/digital-content/learning-job-support/job-searching-help"
-    }
-  ],
+  "authority": "kingston-upon-thames",
+  "source_id": "2517",
+  "source_url": "https://libraryon.org/libraries/kingston-upon-thames/tolworth-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kingston-upon-thames/tolworth-community-library",
-  "authority": "kingston-upon-thames"
+  "data": {
+    "Local authority": "Kingston upon Thames",
+    "Local authority code": "E09000021",
+    "Library name": "Tolworth Community Library",
+    "Library code": null,
+    "Address 1": "The Broadway, Tolworth, Surrey, KT6 7DJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KT6 7DJ",
+    "Unique property reference number": 128002519,
+    "Latitude": 51.38108,
+    "Longitude": -0.28225,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1996,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Scanning; Computers; Books delivered; Digital lending; Family history; Children's activities; Hobby and interest groups; Digital skills sessions; Career support",
+    "Phone number": "020 8547 5006",
+    "Email address": "tolworth.library@kingston.gov.uk",
+    "URL": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/tolworth",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

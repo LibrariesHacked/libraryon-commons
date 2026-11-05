@@ -1,147 +1,64 @@
 {
   "id": "lib_1a2a3814-f2e5-4a10-8d83-2f258c3dbbdd",
-  "source_id": "821",
-  "name": "Baldock Library",
   "slug": "baldock-library",
-  "address": "Simpson Drive, Baldock, Hertfordshire, SG7 6DH",
-  "postcode": "SG7 6DH",
-  "town": "Baldock",
-  "phone": "0300 123 4049",
-  "email": "libraries.information@hertfordshire.gov.uk",
-  "website": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/baldock-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "hearing-loop-system",
-    "low-vision-support",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.988744,
-  "longitude": -0.187151,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "hertfordshire",
+  "source_id": "821",
+  "source_url": "https://libraryon.org/libraries/hertfordshire/baldock-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hertfordshire/baldock-library",
-  "authority": "hertfordshire"
+  "data": {
+    "Local authority": "Hertfordshire",
+    "Local authority code": "E10000015",
+    "Library name": "Baldock Library",
+    "Library code": null,
+    "Address 1": "Simpson Drive, Baldock, Hertfordshire, SG7 6DH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SG7 6DH",
+    "Unique property reference number": 100081259556,
+    "Latitude": 51.988744,
+    "Longitude": -0.187151,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Digital lending; Books delivered; Scanning; Digital skills sessions; Family history; British Newspaper Archive; Findmypast; Children's activities; Hobby and interest groups",
+    "Phone number": "0300 123 4049",
+    "Email address": "libraries.information@hertfordshire.gov.uk",
+    "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/baldock-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

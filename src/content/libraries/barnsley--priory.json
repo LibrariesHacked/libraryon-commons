@@ -1,97 +1,64 @@
 {
   "id": "lib_eb9e194f-c789-4b17-8174-2deac14ae27e",
-  "source_id": "1789",
-  "name": "Priory",
   "slug": "priory",
-  "address": "Priory Campus, Pontefract Road, Barnsley, South Yorkshire, S71 5PN",
-  "postcode": "S71 5PN",
-  "town": "Barnsley",
-  "phone": "(01226) 773555",
-  "email": "BarnsleyLibraryEnquiries@barnsley.gov.uk",
-  "website": "https://www.barnsley.gov.uk/services/libraries/find-a-library/priory-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "Statutory provision, delivered by an organisation under a MOU, but not staffed by volunteers or Local Authority",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "community",
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.556467,
-  "longitude": -1.440659,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "barnsley",
+  "source_id": "1789",
+  "source_url": "https://libraryon.org/libraries/barnsley/priory",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/barnsley/priory",
-  "authority": "barnsley"
+  "data": {
+    "Local authority": "Barnsley",
+    "Local authority code": "E08000016",
+    "Library name": "Priory",
+    "Library code": null,
+    "Address 1": "Priory Campus, Pontefract Road, Barnsley, South Yorkshire, S71 5PN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S71 5PN",
+    "Unique property reference number": 100052114097,
+    "Latitude": 53.556467,
+    "Longitude": -1.440659,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 1995,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:30-16:00",
+    "Tuesday unstaffed hours": "09:30-16:00",
+    "Wednesday unstaffed hours": "09:30-16:00",
+    "Thursday unstaffed hours": "09:30-16:00",
+    "Friday unstaffed hours": "09:30-16:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; BFI Replay",
+    "Phone number": "(01226) 773555",
+    "Email address": "BarnsleyLibraryEnquiries@barnsley.gov.uk",
+    "URL": "https://www.barnsley.gov.uk/services/libraries/find-a-library/priory-library/",
+    "Notes": "Statutory provision, delivered by an organisation under a MOU, but not staffed by volunteers or Local Authority"
+  },
+  "validation_exceptions": []
 }

@@ -1,135 +1,64 @@
 {
   "id": "lib_334ee4a0-abee-4c86-a7b0-0098dd1f2256",
-  "source_id": "2463",
-  "name": "Isleworth Community Hub & Library",
   "slug": "isleworth-community-hub-and-library",
-  "address": "Isleworth Leisure Centre & Library, Twickenham Road, Hounslow, Middlesex, TW7 7EU",
-  "postcode": "TW7 7EU",
-  "town": "Isleworth",
-  "phone": "020 8583 5559",
-  "email": "isleworth.library@hounslow.gov.uk",
-  "website": "https://www.hounslow.gov.uk/directory_record/2985/isleworth_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "step-free-access",
-    "wheelchair-access",
-    "automatic-doors",
-    "hearing-loop-system",
-    "adjustable-seating",
-    "assistive-technology-available",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.466548,
-  "longitude": -0.329988,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1677/free_internet_access"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1677/free_internet_access"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.hounslow.gov.uk/homepage/99/library_service_for_children"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1687/library_at_home"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.hounslow.gov.uk/info/20136/other_library_services/1692/local_history_and_archives"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.hounslow.gov.uk/info/20134/247_elibrary_services"
-    }
-  ],
+  "authority": "hounslow",
+  "source_id": "2463",
+  "source_url": "https://libraryon.org/libraries/hounslow/isleworth-community-hub-and-library",
   "updated_on": "2026-02-16",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hounslow/isleworth-community-hub-and-library",
-  "authority": "hounslow"
+  "data": {
+    "Local authority": "Hounslow",
+    "Local authority code": "E09000018",
+    "Library name": "Isleworth Community Hub & Library",
+    "Library code": null,
+    "Address 1": "Isleworth Leisure Centre & Library, Twickenham Road, Hounslow, Middlesex, TW7 7EU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TW7 7EU",
+    "Unique property reference number": null,
+    "Latitude": 51.466548,
+    "Longitude": -0.329988,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-20:00",
+    "Tuesday staffed hours": "09:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-20:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-17:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Hobby and interest groups; Children's activities; Books delivered; Family history; Digital lending",
+    "Phone number": "020 8583 5559",
+    "Email address": "isleworth.library@hounslow.gov.uk",
+    "URL": "https://www.hounslow.gov.uk/directory_record/2985/isleworth_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

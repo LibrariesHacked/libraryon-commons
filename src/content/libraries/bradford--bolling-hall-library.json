@@ -1,106 +1,71 @@
 {
   "id": "lib_f9ce45e2-80c0-4e9f-9dc2-c49a7fe927d4",
-  "source_id": "2373",
-  "name": "Bolling Hall Library",
   "slug": "bolling-hall-library",
-  "address": "Bolling Hall, Bowling Hall Road, Bradford , West Yorkshire, BD4 7LP",
-  "postcode": "BD4 7LN",
-  "town": "Bradford",
-  "phone": "07582 108216",
-  "email": "BollingHall.Library@gmail.com",
-  "website": "https://www.bradford.gov.uk/libraries/find-your-local-library/bolling-hall-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.77898,
-  "longitude": -1.73978,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "bradford",
+  "source_id": "2373",
+  "source_url": "https://libraryon.org/libraries/bradford/bolling-hall-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bradford/bolling-hall-library",
-  "authority": "bradford"
+  "data": {
+    "Local authority": "Bradford",
+    "Local authority code": "E08000032",
+    "Library name": "Bolling Hall Library",
+    "Library code": null,
+    "Address 1": "Bolling Hall, Bowling Hall Road, Bradford , West Yorkshire, BD4 7LP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BD4 7LN",
+    "Unique property reference number": null,
+    "Latitude": 53.77898,
+    "Longitude": -1.73978,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "11:00-16:00",
+    "Sunday staffed hours": "11:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers",
+    "Phone number": "07582 108216",
+    "Email address": "BollingHall.Library@gmail.com",
+    "URL": "https://www.bradford.gov.uk/libraries/find-your-local-library/bolling-hall-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

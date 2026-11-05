@@ -1,67 +1,71 @@
 {
   "id": "lib_3a03114d-e818-4900-a4e2-86c73b6c7997",
-  "source_id": "3740",
-  "name": "Great Bromley Community Library",
   "slug": "great-bromley-community-library",
-  "address": "The Great Bromley Cross Inn, Ardleigh Rd, Colchester CO7 7TL",
-  "postcode": "CO7 7TL",
-  "town": "Colchester",
-  "phone": "",
-  "email": "",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "catering",
-    "retail"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.907441,
-  "longitude": 1.005552,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    }
-  ],
+  "authority": "essex",
+  "source_id": "3740",
+  "source_url": "https://libraryon.org/libraries/essex/great-bromley-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/essex/great-bromley-community-library",
-  "authority": "essex"
+  "data": {
+    "Local authority": "Essex",
+    "Local authority code": "E10000012",
+    "Library name": "Great Bromley Community Library",
+    "Library code": null,
+    "Address 1": "The Great Bromley Cross Inn, Ardleigh Rd, Colchester CO7 7TL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CO7 7TL",
+    "Unique property reference number": null,
+    "Latitude": 51.907441,
+    "Longitude": 1.005552,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2019,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; retail",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books",
+    "Phone number": null,
+    "Email address": null,
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

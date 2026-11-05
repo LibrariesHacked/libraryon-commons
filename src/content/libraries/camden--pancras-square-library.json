@@ -1,135 +1,64 @@
 {
   "id": "lib_7cf6c469-93b0-414c-a21d-f07d869e5727",
-  "source_id": "2351",
-  "name": "Pancras Square Library",
   "slug": "pancras-square-library",
-  "address": "5 Pancras Square, London, Greater London, N1C 4AG",
-  "postcode": "N1C 4AG",
-  "town": "London",
-  "phone": "020 7974 4444",
-  "email": "libraries@camden.gov.uk",
-  "website": "https://www.camden.gov.uk/pancras-square-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "step-free-access",
-    "accessible-parking",
-    "lift-access",
-    "guide-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.53348,
-  "longitude": -0.12504,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    }
-  ],
+  "authority": "camden",
+  "source_id": "2351",
+  "source_url": "https://libraryon.org/libraries/camden/pancras-square-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/camden/pancras-square-library",
-  "authority": "camden"
+  "data": {
+    "Local authority": "Camden",
+    "Local authority code": "E09000007",
+    "Library name": "Pancras Square Library",
+    "Library code": null,
+    "Address 1": "5 Pancras Square, London, Greater London, N1C 4AG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "N1C 4AG",
+    "Unique property reference number": null,
+    "Latitude": 51.53348,
+    "Longitude": -0.12504,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2014,
+    "Year closed": null,
+    "Monday staffed hours": "08:00-20:00",
+    "Tuesday staffed hours": "08:00-20:00",
+    "Wednesday staffed hours": "08:00-20:00",
+    "Thursday staffed hours": "08:00-20:00",
+    "Friday staffed hours": "08:00-20:00",
+    "Saturday staffed hours": "08:00-20:00",
+    "Sunday staffed hours": "11:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Scanning; BFI Replay; Photocopiers; Cafe",
+    "Phone number": "020 7974 4444",
+    "Email address": "libraries@camden.gov.uk",
+    "URL": "https://www.camden.gov.uk/pancras-square-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

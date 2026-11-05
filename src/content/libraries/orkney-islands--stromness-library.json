@@ -1,102 +1,71 @@
 {
   "id": "lib_601bc48e-fa63-443f-9061-4a2a6a81a115",
-  "source_id": "68",
-  "name": "Stromness Library",
   "slug": "stromness-library",
-  "address": "Warehouse Buildings 2-12 Victoria Street Stromness, Orkney, KW16 3AA",
-  "postcode": "KW16 3BS",
-  "town": "Stromness",
-  "phone": "01856 850907",
-  "email": "stromnesscs@orkney.gov.uk",
-  "website": "https://orkneylibrary.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:45",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:45",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:45",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:45",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:45",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:45",
-          "startTime": "09:15"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 58.962717,
-  "longitude": -3.298897,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "orkney-islands",
+  "source_id": "68",
+  "source_url": "https://libraryon.org/libraries/orkney-islands/stromness-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/orkney-islands/stromness-library",
-  "authority": "orkney-islands"
+  "data": {
+    "Local authority": "Orkney Islands",
+    "Local authority code": "S12000023",
+    "Library name": "Stromness Library",
+    "Library code": null,
+    "Address 1": "Warehouse Buildings 2-12 Victoria Street Stromness, Orkney, KW16 3AA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KW16 3BS",
+    "Unique property reference number": null,
+    "Latitude": 58.962717,
+    "Longitude": -3.298897,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:15-17:45",
+    "Tuesday staffed hours": "09:15-16:45",
+    "Wednesday staffed hours": "09:15-16:45",
+    "Thursday staffed hours": "09:15-16:45",
+    "Friday staffed hours": "09:15-16:45",
+    "Saturday staffed hours": "11:00-15:45",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01856 850907",
+    "Email address": "stromnesscs@orkney.gov.uk",
+    "URL": "https://orkneylibrary.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

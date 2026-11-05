@@ -1,120 +1,64 @@
 {
   "id": "lib_9c342311-aab3-48f4-ac98-4b10e04f5c1e",
-  "source_id": "2579",
-  "name": "Prescot",
   "slug": "prescot",
-  "address": "Prescot Shopping Centre, Aspinall Street, Prescot, Merseyside, L34 5GA",
-  "postcode": "L34 5GA",
-  "town": "Prescot",
-  "phone": "0151 443 3734",
-  "email": "yourlibrary@knowsley.gov.uk",
-  "website": "https://yourlibrary.knowsley.gov.uk/find-your-local-library/prescot-library/",
-  "catalogue": "https://catalogue.knowsley.gov.uk/",
-  "joinOnline": "https://catalogue.knowsley.gov.uk/cgi-bin/koha/opac-memberentry.pl",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.428734,
-  "longitude": -2.803644,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "knowsley",
+  "source_id": "2579",
+  "source_url": "https://libraryon.org/libraries/knowsley/prescot",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/knowsley/prescot",
-  "authority": "knowsley"
+  "data": {
+    "Local authority": "Knowsley",
+    "Local authority code": "E08000011",
+    "Library name": "Prescot",
+    "Library code": null,
+    "Address 1": "Prescot Shopping Centre, Aspinall Street, Prescot, Merseyside, L34 5GA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "L34 5GA",
+    "Unique property reference number": 40080202,
+    "Latitude": 53.428734,
+    "Longitude": -2.803644,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2012,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Computers; Scanning; BFI Replay",
+    "Phone number": "0151 443 3734",
+    "Email address": "yourlibrary@knowsley.gov.uk",
+    "URL": "https://yourlibrary.knowsley.gov.uk/find-your-local-library/prescot-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

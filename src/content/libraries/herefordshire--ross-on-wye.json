@@ -1,130 +1,64 @@
 {
   "id": "lib_155b1f0c-ca23-409f-98ca-743f25102f93",
-  "source_id": "3052",
-  "name": "Ross-on-Wye Library",
   "slug": "ross-on-wye",
-  "address": "Cantilupe Road, Ross-on-Wye, Herefordshire, HR9 7AN",
-  "postcode": "HR9 7AN",
-  "town": "Ross-on-Wye",
-  "phone": "01432 383280",
-  "email": "rosslibrary@herefordshire.gov.uk",
-  "website": "https://www.herefordshire.gov.uk/directory-record/31/ross-on-wye-library",
-  "catalogue": "https://prism.librarymanagementcloud.co.uk/herefordshire/home",
-  "joinOnline": "https://www.herefordshire.gov.uk/libraries-1/joining-using-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "automatic-doors",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.914678,
-  "longitude": -2.580697,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/3"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "ordshire.gov.uk/libraries-1/libraries-opening-hours/2"
-    },
-    {
-      "service": "Computers",
-      "url": "ordshire.gov.uk/libraries-1/libraries-opening-hours/2"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/3"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/local-family-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.herefordshire.gov.uk/libraries/homedelivery"
-    }
-  ],
+  "authority": "herefordshire",
+  "source_id": "3052",
+  "source_url": "https://libraryon.org/libraries/herefordshire/ross-on-wye",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/herefordshire/ross-on-wye",
-  "authority": "herefordshire"
+  "data": {
+    "Local authority": "Herefordshire",
+    "Local authority code": "E06000019",
+    "Library name": "Ross-on-Wye Library",
+    "Library code": null,
+    "Address 1": "Cantilupe Road, Ross-on-Wye, Herefordshire, HR9 7AN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HR9 7AN",
+    "Unique property reference number": 200002636903,
+    "Latitude": 51.914678,
+    "Longitude": -2.580697,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital lending; Hobby and interest groups; Children's activities; Family history; Books delivered",
+    "Phone number": "01432 383280",
+    "Email address": "rosslibrary@herefordshire.gov.uk",
+    "URL": "https://www.herefordshire.gov.uk/directory-record/31/ross-on-wye-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

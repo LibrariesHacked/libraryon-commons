@@ -1,150 +1,64 @@
 {
   "id": "lib_49943b21-da36-4613-90ee-35d051df08b1",
-  "source_id": "1804",
-  "name": "Thurnscoe",
   "slug": "thurnscoe",
-  "address": "2 Shepherd Lane, Rotherham, South Yorkshire, S63 0JS",
-  "postcode": "S63 0JS",
-  "town": "Rotherham",
-  "phone": "(01226) 773555",
-  "email": "BarnsleyLibraryEnquiries@barnsley.gov.uk",
-  "website": "https://www.barnsley.gov.uk/services/libraries/find-a-library/thurnscoe-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "baby-changing-facilities",
-    "accessible-restrooms"
-  ],
-  "notes": "Closed for lunch 13.00 - 14.00, Mon, Tues & Thurs",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.544894,
-  "longitude": -1.311227,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "barnsley",
+  "source_id": "1804",
+  "source_url": "https://libraryon.org/libraries/barnsley/thurnscoe",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/barnsley/thurnscoe",
-  "authority": "barnsley"
+  "data": {
+    "Local authority": "Barnsley",
+    "Local authority code": "E08000016",
+    "Library name": "Thurnscoe",
+    "Library code": null,
+    "Address 1": "2 Shepherd Lane, Rotherham, South Yorkshire, S63 0JS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S63 0JS",
+    "Unique property reference number": 100052104371,
+    "Latitude": 53.544894,
+    "Longitude": -1.311227,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1964,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00,14:00-17:00",
+    "Tuesday staffed hours": "10:00-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-13:00,14:00-17:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Hobby and interest groups; Children's activities; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": "(01226) 773555",
+    "Email address": "BarnsleyLibraryEnquiries@barnsley.gov.uk",
+    "URL": "https://www.barnsley.gov.uk/services/libraries/find-a-library/thurnscoe-library/",
+    "Notes": "Closed for lunch 13.00 - 14.00, Mon, Tues & Thurs"
+  },
+  "validation_exceptions": []
 }

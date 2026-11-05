@@ -1,114 +1,64 @@
 {
   "id": "lib_4a1f6165-ec4c-43ee-a8b6-1c6539aaa754",
-  "source_id": "2405",
-  "name": "Norbury Library",
   "slug": "norbury",
-  "address": "Beatrice Avenue, Norbury, SW16 4UW",
-  "postcode": "SW16 4UW",
-  "town": "London",
-  "phone": "020 7884 5215",
-  "email": "norburylibrary@croydon.gov.uk",
-  "website": "https://www.croydon.gov.uk/libraries-leisure-and-culture/libraries/find-your-library/norbury-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.4054,
-  "longitude": -0.12134,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "croydon",
+  "source_id": "2405",
+  "source_url": "https://libraryon.org/libraries/croydon/norbury",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/croydon/norbury",
-  "authority": "croydon"
+  "data": {
+    "Local authority": "Croydon",
+    "Local authority code": "E09000008",
+    "Library name": "Norbury Library",
+    "Library code": null,
+    "Address 1": "Beatrice Avenue, Norbury, SW16 4UW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SW16 4UW",
+    "Unique property reference number": 100023319420,
+    "Latitude": 51.4054,
+    "Longitude": -0.12134,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1931,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:00-19:00",
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": "09:00-19:00",
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": "09:00-17:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Computers",
+    "Phone number": "020 7884 5215",
+    "Email address": "norburylibrary@croydon.gov.uk",
+    "URL": "https://www.croydon.gov.uk/libraries-leisure-and-culture/libraries/find-your-library/norbury-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

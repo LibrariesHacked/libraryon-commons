@@ -1,168 +1,80 @@
 {
   "id": "lib_8091e376-3f6d-4d3d-ae26-b1e39106a8df",
-  "source_id": "2564",
-  "name": "West Norwood Library",
   "slug": "west-norwood",
-  "address": "1-5 Norwood High Street, London, SE27 9JU",
-  "postcode": "SE27 9JU",
-  "town": "London",
-  "phone": "020 7926 8092",
-  "email": "WestNorwoodLibrary@lambeth.gov.uk",
-  "website": "https://www.lambeth.gov.uk/libraries-0/west-norwood-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "accessible-parking",
-    "baby-changing-facilities",
-    "accessible-restrooms",
-    "lift-access",
-    "hearing-loop-system",
-    "low-vision-support",
-    "adjustable-seating",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "Refurbished and new layout with cinema 2017-2018, was in another site from 2011-2018 while work was done",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other",
-    "catering",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.43311,
-  "longitude": -0.10339,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.lambeth.gov.uk/libraries-0/west-norwood-library"
-    },
-    {
-      "service": "Business support",
-      "url": ""
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.com/"
-    }
-  ],
+  "authority": "lambeth",
+  "source_id": "2564",
+  "source_url": "https://libraryon.org/libraries/lambeth/west-norwood",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lambeth/west-norwood",
-  "authority": "lambeth"
+  "data": {
+    "Local authority": "Lambeth",
+    "Local authority code": "E09000022",
+    "Library name": "West Norwood Library",
+    "Library code": null,
+    "Address 1": "1-5 Norwood High Street, London, SE27 9JU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE27 9JU",
+    "Unique property reference number": null,
+    "Latitude": 51.43311,
+    "Longitude": -0.10339,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1969,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-20:00",
+    "Tuesday staffed hours": "10:00-20:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-20:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-18:00",
+    "Sunday staffed hours": "13:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other; catering; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Business support; Career support; Children's activities; Cafe; Digital lending; Photocopiers; Scanning; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": "020 7926 8092",
+    "Email address": "WestNorwoodLibrary@lambeth.gov.uk",
+    "URL": "https://www.lambeth.gov.uk/libraries-0/west-norwood-library",
+    "Notes": "Refurbished and new layout with cinema 2017-2018, was in another site from 2011-2018 while work was done"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_ffd8435420e7e42065a64f41"
+      ]
+    }
+  ]
 }

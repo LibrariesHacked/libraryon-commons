@@ -1,84 +1,71 @@
 {
   "id": "lib_273ab45d-edf4-4b5e-9f2e-0188d6ab0fc3",
-  "source_id": "669",
-  "name": "Kingsclere",
   "slug": "kingsclere",
-  "address": "35 George Street, Kingsclere, Hampshire, RG20 5NH",
-  "postcode": "RG20 5NH",
-  "town": "Newbury",
-  "phone": "01635 297464",
-  "email": "https://kingsclerecommunitylibrary.co.uk/contact-us/",
-  "website": "https://kingsclerecommunitylibrary.co.uk/",
-  "catalogue": "https://kingsclerecommunitylibrary.co.uk/all-items/",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.325,
-  "longitude": -1.24386,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "hampshire",
+  "source_id": "669",
+  "source_url": "https://libraryon.org/libraries/hampshire/kingsclere",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hampshire/kingsclere",
-  "authority": "hampshire"
+  "data": {
+    "Local authority": "Hampshire",
+    "Local authority code": "E10000014",
+    "Library name": "Kingsclere",
+    "Library code": null,
+    "Address 1": "35 George Street, Kingsclere, Hampshire, RG20 5NH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG20 5NH",
+    "Unique property reference number": 10000449086,
+    "Latitude": 51.325,
+    "Longitude": -1.24386,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:00-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-17:30",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; BFI Replay; Hobby and interest groups",
+    "Phone number": "01635 297464",
+    "Email address": "https://kingsclerecommunitylibrary.co.uk/contact-us/",
+    "URL": "https://kingsclerecommunitylibrary.co.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://kingsclerecommunitylibrary.co.uk/contact-us/",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

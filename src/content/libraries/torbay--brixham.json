@@ -1,139 +1,64 @@
 {
   "id": "lib_cc0108fd-166b-401d-9065-de7b3628f911",
-  "source_id": "3004",
-  "name": "Brixham",
   "slug": "brixham",
-  "address": "Market Street, Brixham, Devon, TQ5 8EU",
-  "postcode": "TQ5 8EU",
-  "town": "Brixham",
-  "phone": "01803 853870",
-  "email": "brixham.library@librariesunlimited.org.uk",
-  "website": "https://discover.librariesunlimited.org.uk/-/brixham-library#/?location=Brixham%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "step-free-access",
-    "staff-support",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "https://roomhire.librariesunlimited.org.uk/venues/110-brixham-library",
-  "permanentlyClosed": false,
-  "latitude": 50.39476,
-  "longitude": -3.51598,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://roomhire.librariesunlimited.org.uk/spaces"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "torbay",
+  "source_id": "3004",
+  "source_url": "https://libraryon.org/libraries/torbay/brixham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/torbay/brixham",
-  "authority": "torbay"
+  "data": {
+    "Local authority": "Torbay",
+    "Local authority code": "E06000027",
+    "Library name": "Brixham",
+    "Library code": null,
+    "Address 1": "Market Street, Brixham, Devon, TQ5 8EU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TQ5 8EU",
+    "Unique property reference number": 100041051986,
+    "Latitude": 50.39476,
+    "Longitude": -3.51598,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-18:00",
+    "Wednesday staffed hours": "09:30-13:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-13:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Bookable space; Hobby and interest groups; Children's activities; Digital skills sessions; BFI Replay",
+    "Phone number": "01803 853870",
+    "Email address": "brixham.library@librariesunlimited.org.uk",
+    "URL": "https://discover.librariesunlimited.org.uk/-/brixham-library#/?location=Brixham%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

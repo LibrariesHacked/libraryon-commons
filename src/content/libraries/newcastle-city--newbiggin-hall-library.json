@@ -1,88 +1,71 @@
 {
   "id": "lib_61014fbb-66d8-4e22-8bea-e72b599288c6",
-  "source_id": "2815",
-  "name": "Newbiggin Hall Library",
   "slug": "newbiggin-hall-library",
-  "address": "Galafield Family Hub, Newbiggin Lane, Newcastle upon Tyne, Tyne and Wear, NE5 1LZ",
-  "postcode": "NE5 4BS",
-  "town": "Newcastle upon Tyne",
-  "phone": "",
-  "email": "information@newcastle.gov.uk",
-  "website": "https://new.newcastle.gov.uk/libraries/find-library/newbiggin-hall-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "Currently open fortnightly - will be open weekly from 29 Sept 2026",
-  "accessibility": [
-    "wheelchair-access",
-    "baby-changing-facilities",
-    "automatic-doors",
-    "dda-compliant",
-    "step-free-access"
-  ],
-  "notes": "Previously open in Newbiggin Hall Shopping Centre",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "catering",
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.007,
-  "longitude": -1.68763,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "newcastle-city",
+  "source_id": "2815",
+  "source_url": "https://libraryon.org/libraries/newcastle-city/newbiggin-hall-library",
   "updated_on": "2026-08-06",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/newcastle-city/newbiggin-hall-library",
-  "authority": "newcastle-city"
+  "data": {
+    "Local authority": "Newcastle",
+    "Local authority code": "E08000021",
+    "Library name": "Newbiggin Hall Library",
+    "Library code": null,
+    "Address 1": "Galafield Family Hub, Newbiggin Lane, Newcastle upon Tyne, Tyne and Wear, NE5 1LZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE5 4BS",
+    "Unique property reference number": null,
+    "Latitude": 55.007,
+    "Longitude": -1.68763,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": "10:00-14:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Currently open fortnightly - will be open weekly from 29 Sept 2026",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering; community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Cafe; Children's activities; Books delivered",
+    "Phone number": null,
+    "Email address": "information@newcastle.gov.uk",
+    "URL": "https://new.newcastle.gov.uk/libraries/find-library/newbiggin-hall-library",
+    "Notes": "Previously open in Newbiggin Hall Shopping Centre"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

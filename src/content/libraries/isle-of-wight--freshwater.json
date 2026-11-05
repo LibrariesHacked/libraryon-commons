@@ -1,139 +1,64 @@
 {
   "id": "lib_a1f6ca40-7ade-4ce9-a04a-8b010310018f",
-  "source_id": "3304",
-  "name": "Freshwater",
   "slug": "freshwater",
-  "address": "School Green Road, Freshwater, Isle of Wight, PO40 9AP",
-  "postcode": "PO40 9AP",
-  "town": "Freshwater",
-  "phone": "01983 752377",
-  "email": "freshwaterlibrary@iow.gov.uk",
-  "website": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/isle-of-wight-council-libraries/freshwater-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.68266,
-  "longitude": -1.52295,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "isle-of-wight",
+  "source_id": "3304",
+  "source_url": "https://libraryon.org/libraries/isle-of-wight/freshwater",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-wight/freshwater",
-  "authority": "isle-of-wight"
+  "data": {
+    "Local authority": "Isle of Wight",
+    "Local authority code": "E06000046",
+    "Library name": "Freshwater",
+    "Library code": null,
+    "Address 1": "School Green Road, Freshwater, Isle of Wight, PO40 9AP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO40 9AP",
+    "Unique property reference number": null,
+    "Latitude": 50.68266,
+    "Longitude": -1.52295,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:30",
+    "Tuesday staffed hours": "09:30-12:30,13:30-16:30",
+    "Wednesday staffed hours": "09:30-12:30,13:30-16:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-12:30,13:30-16:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Findmypast; Children's activities; Photocopiers; Scanning; Digital lending; British Newspaper Archive",
+    "Phone number": "01983 752377",
+    "Email address": "freshwaterlibrary@iow.gov.uk",
+    "URL": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/isle-of-wight-council-libraries/freshwater-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

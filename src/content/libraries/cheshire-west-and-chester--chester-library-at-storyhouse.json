@@ -1,215 +1,71 @@
 {
   "id": "lib_598f2265-f1d2-448c-9f2d-39227067b78a",
-  "source_id": "2918",
-  "name": "Chester Library at Storyhouse",
   "slug": "chester-library-at-storyhouse",
-  "address": "Hunter Street, Chester, Cheshire, CH1 2AR",
-  "postcode": "CH1 2HQ",
-  "town": "Chester",
-  "phone": "01244 409113",
-  "email": "libraries@cheshirewestandchester.gov.uk",
-  "website": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/chester-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "08:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "23:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "08:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "23:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "23:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "08:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "23:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "08:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "23:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "08:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "23:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "08:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "08:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "23:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.19239,
-  "longitude": -2.89281,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "cheshire-west-and-chester",
+  "source_id": "2918",
+  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/chester-library-at-storyhouse",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/chester-library-at-storyhouse",
-  "authority": "cheshire-west-and-chester"
+  "data": {
+    "Local authority": "Cheshire West and Chester",
+    "Local authority code": "E06000050",
+    "Library name": "Chester Library at Storyhouse",
+    "Library code": null,
+    "Address 1": "Hunter Street, Chester, Cheshire, CH1 2AR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CH1 2HQ",
+    "Unique property reference number": null,
+    "Latitude": 53.19239,
+    "Longitude": -2.89281,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "08:30-19:00",
+    "Tuesday staffed hours": "08:30-19:00",
+    "Wednesday staffed hours": "08:30-19:00",
+    "Thursday staffed hours": "08:30-19:00",
+    "Friday staffed hours": "08:30-19:00",
+    "Saturday staffed hours": "08:30-19:00",
+    "Sunday staffed hours": "09:30-18:00",
+    "Monday unstaffed hours": "08:00-08:30,19:00-23:00",
+    "Tuesday unstaffed hours": "08:00-08:30,19:00-23:00",
+    "Wednesday unstaffed hours": "08:00-08:30,19:00-23:00",
+    "Thursday unstaffed hours": "08:00-08:30,19:00-23:00",
+    "Friday unstaffed hours": "08:00-08:30,19:00-23:00",
+    "Saturday unstaffed hours": "08:00-08:30,19:00-23:00",
+    "Sunday unstaffed hours": "18:00-23:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Children's activities; Hobby and interest groups; Bookable space; Family history; Findmypast; British Newspaper Archive; Digital skills sessions",
+    "Phone number": "01244 409113",
+    "Email address": "libraries@cheshirewestandchester.gov.uk",
+    "URL": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/chester-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

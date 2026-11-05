@@ -1,56 +1,68 @@
 {
   "id": 118,
-  "name": "Newcastle",
-  "website": "https://www.newcastle.gov.uk/services/newcastle-libraries-community-hubs",
-  "phone": "0191 278 7878",
-  "email": "information@newcastle.gov.uk",
   "slug": "newcastle-city",
-  "createdAt": "2024-10-08T21:29:39.530Z",
-  "updatedAt": "2026-01-23T08:59:23.596Z",
-  "authorityID": "auth_c0fb54d3-046a-466f-8e5a-720b7997a21a",
-  "androidApp": null,
-  "iOSApp": "https://itunes.apple.com/gb/app/newcastle-libraries/id589003285?ls=1&mt=8",
-  "catalogue": "https://libraries.newcastle.gov.uk",
-  "joinOnline": "https://libraries.newcastle.gov.uk/MyAccount/SelfReg",
-  "country": "England",
-  "about": "",
-  "gss": "E08000021",
-  "operatingOrganisation": null,
-  "social": [
-    {
-      "id": 776,
-      "channel": "twitter",
-      "handle": "ToonLibraries",
-      "url": "https://twitter.com/ToonLibraries"
-    },
-    {
-      "id": 777,
-      "channel": "facebook",
-      "handle": "NewcastleLibraries",
-      "url": "https://www.facebook.com/NewcastleLibraries"
-    },
-    {
-      "id": 778,
-      "channel": "instagram",
-      "handle": "toonlibraries",
-      "url": "https://www.instagram.com/toonlibraries"
-    },
-    {
-      "id": 780,
-      "channel": "youtube",
-      "handle": "toonlibraries8754",
-      "url": "https://www.youtube.com/channel/UCx91MkYYfwBeJW-bOww-_ng"
-    },
-    {
-      "id": 779,
-      "channel": "flickr",
-      "handle": "39821974@N06",
-      "url": "https://www.flickr.com/photos/39821974@N06"
-    }
-  ],
   "source_id": "118",
   "source_url": "https://libraryon.org/libraries/newcastle-city",
-  "imported_on": "2026-10-27",
   "updated_on": "2026-01-23",
-  "reviewed_on": ""
+  "reviewed_on": "",
+  "imported_on": "2026-10-27",
+  "data": {
+    "Local authority": "Newcastle",
+    "Local authority code": "E08000021",
+    "Country": "England",
+    "Local authority department": null,
+    "Governance model": null,
+    "Operating organisation": null,
+    "Consortium": null,
+    "Service URL": "https://www.newcastle.gov.uk/services/newcastle-libraries-community-hubs",
+    "Libraries URL": null,
+    "Mobile library URL": null,
+    "Home library service URL": null,
+    "Childrens service URL": null,
+    "Catalogue URL": "https://libraries.newcastle.gov.uk",
+    "Join online URL": "https://libraries.newcastle.gov.uk/MyAccount/SelfReg",
+    "Events URL": null,
+    "Eventbrite ID": null,
+    "Computer access URL": null,
+    "Wifi access URL": null,
+    "Room booking URL": null,
+    "Volunteer URL": null,
+    "Fees and charges URL": null,
+    "Adult fine": null,
+    "Child fine": null,
+    "Fine interval": null,
+    "Email address": "information@newcastle.gov.uk",
+    "Phone number": "0191 278 7878",
+    "App name": null,
+    "Android app URL": null,
+    "iOS app URL": "https://itunes.apple.com/gb/app/newcastle-libraries/id589003285?ls=1&mt=8",
+    "Twitter URL": "https://twitter.com/ToonLibraries",
+    "Facebook URL": "https://www.facebook.com/NewcastleLibraries",
+    "Instagram URL": "https://www.instagram.com/toonlibraries",
+    "YouTube URL": "https://www.youtube.com/channel/UCx91MkYYfwBeJW-bOww-_ng",
+    "Blog URL": null,
+    "Podcast URL": null,
+    "Library management system supplier": null,
+    "Library management system": null,
+    "Online catalogue system": null,
+    "Ebook supplier": null,
+    "Ebook URL": null,
+    "Audiobook supplier": null,
+    "Audiobook URL": null,
+    "Emagazine supplier": null,
+    "Enewspaper supplier": null,
+    "Online reference subscriptions": null,
+    "Green library": null,
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "service-name",
+      "reason": "Matched by unique GSS code; check name discrepancy",
+      "audit_refs": [
+        "migration/directory/report.json#review_a813be9a698d0cb2ef42e953"
+      ]
+    }
+  ]
 }

@@ -137,7 +137,7 @@ svg {
 .prose li {
   margin-block: 0.4rem;
 }
-.prose details:not(.faq-item):not(.collection-accordion-item) {
+.prose details:not(.faq-item):not(.collection-accordion-item):not(.collection-recommendation-item) {
   margin-block: var(--size-5);
   padding: var(--size-4);
   border: 0;
@@ -149,7 +149,9 @@ svg {
   color: var(--brand-berry);
   font-weight: var(--font-weight-6);
 }
-.prose details:not(.faq-item):not(.collection-accordion-item)[open] > summary {
+.prose
+  details:not(.faq-item):not(.collection-accordion-item):not(.collection-recommendation-item)[open]
+  > summary {
   margin-bottom: var(--size-3);
   padding-bottom: var(--size-3);
   border-bottom: var(--border-size-2) solid var(--brand-rose);

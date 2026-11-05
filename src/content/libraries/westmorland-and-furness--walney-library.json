@@ -1,126 +1,64 @@
 {
   "id": "lib_03b0c4ee-f818-4425-8346-782f3883f366",
-  "source_id": "1870",
-  "name": "Walney Library",
   "slug": "walney-library",
-  "address": "Central Drive, Walney, Barrow-in-Furness , Cumbria, LA14 3HY",
-  "postcode": "LA14 3HY",
-  "town": "Barrow-in-Furness",
-  "phone": "01229 404127",
-  "email": "barrow.library@westmorlandandfurness.gov.uk",
-  "website": "https://www.westmorlandandfurness.gov.uk/libraries-and-archives/find-library-near-you/walney-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.10715,
-  "longitude": -3.25492,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "westmorland-and-furness",
+  "source_id": "1870",
+  "source_url": "https://libraryon.org/libraries/westmorland-and-furness/walney-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/westmorland-and-furness/walney-library",
-  "authority": "westmorland-and-furness"
+  "data": {
+    "Local authority": "Westmorland and Furness",
+    "Local authority code": "E06000064",
+    "Library name": "Walney Library",
+    "Library code": null,
+    "Address 1": "Central Drive, Walney, Barrow-in-Furness , Cumbria, LA14 3HY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LA14 3HY",
+    "Unique property reference number": null,
+    "Latitude": 54.10715,
+    "Longitude": -3.25492,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:30",
+    "Tuesday staffed hours": "10:00-17:30",
+    "Wednesday staffed hours": "10:00-17:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Digital lending; Digital skills sessions; Books delivered; Computers",
+    "Phone number": "01229 404127",
+    "Email address": "barrow.library@westmorlandandfurness.gov.uk",
+    "URL": "https://www.westmorlandandfurness.gov.uk/libraries-and-archives/find-library-near-you/walney-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

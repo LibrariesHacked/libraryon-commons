@@ -1,125 +1,77 @@
 {
   "id": "lib_284461e5-dfc2-4257-8d74-a8e9d6c758a3",
-  "source_id": "2632",
-  "name": "Morden Library",
   "slug": "morden-library",
-  "address": "Merton Civic Centre, London Road, Morden, Surrey, SM4 5DX",
-  "postcode": "SM4 5DA",
-  "town": "Morden",
-  "phone": "0208 545 4040",
-  "email": "Morden.Library@merton.gov.uk",
-  "website": "https://libraries.merton.gov.uk/digital-content/libraries/library-branches/morden-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": " Morden Library has now temporarily moved to Morden Baptist Church,  just over the road from the Civic Centre.   \n\nThe library is expected to operate at this new temporary site between 13 January and late June 2026. ",
-  "accessibility": [
-    "lift-access"
-  ],
-  "notes": "The Heritage & Local Studies Centre is also located in the library\n\nSpecial collections listed as at 19/2/25:\n\nPolish collection\nChinese Collection\nTamil Collection\nUrdu Collection\nBengali Collection\nDyslexia and learning to read\nVocal scores\nGraphic novels and Manga\nParent and child collection\nChristmas Collection\nLocal History (2nd Floor Heritage services)",
-  "facilityOperated": "Temporary Closure",
-  "coLocated": [
-    "civic",
-    "community",
-    "health",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.40153,
-  "longitude": -0.19636,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "merton",
+  "source_id": "2632",
+  "source_url": "https://libraryon.org/libraries/merton/morden-library",
   "updated_on": "2026-04-24",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/merton/morden-library",
-  "authority": "merton"
+  "data": {
+    "Local authority": "Merton",
+    "Local authority code": "E09000024",
+    "Library name": "Morden Library",
+    "Library code": null,
+    "Address 1": "Merton Civic Centre, London Road, Morden, Surrey, SM4 5DX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SM4 5DA",
+    "Unique property reference number": null,
+    "Latitude": 51.40153,
+    "Longitude": -0.19636,
+    "Status": "Closed (temporary)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": "09:30-19:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-19:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Morden Library has now temporarily moved to Morden Baptist Church,  just over the road from the Civic Centre.   \n\nThe library is expected to operate at this new temporary site between 13 January and late June 2026.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; community; health; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Scanning; Computers; Cafe; BFI Replay",
+    "Phone number": "0208 545 4040",
+    "Email address": "Morden.Library@merton.gov.uk",
+    "URL": "https://libraries.merton.gov.uk/digital-content/libraries/library-branches/morden-library",
+    "Notes": "The Heritage & Local Studies Centre is also located in the library\n\nSpecial collections listed as at 19/2/25:\n\nPolish collection\nChinese Collection\nTamil Collection\nUrdu Collection\nBengali Collection\nDyslexia and learning to read\nVocal scores\nGraphic novels and Manga\nParent and child collection\nChristmas Collection\nLocal History (2nd Floor Heritage services)"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

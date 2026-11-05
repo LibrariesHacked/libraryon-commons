@@ -1,121 +1,71 @@
 {
   "id": "lib_043e3586-fc00-427d-8ca1-e32ca948999a",
-  "source_id": "3167",
-  "name": "Midsomer Norton Library & Information Centre",
   "slug": "midsomer-norton-library-information-centre",
-  "address": "The Hollies, High Street, Midsomer Norton, Somerset, BA3 2DP",
-  "postcode": "BA3 2DT",
-  "town": "Radstock",
-  "phone": "01225 39 40 41",
-  "email": "council_connect@bathnes.gov.uk",
-  "website": "https://beta.bathnes.gov.uk/midsomer-norton-library-and-information-service",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "sensory-friendly-environment"
-  ],
-  "notes": "Moved from former library to newly refurbished location in 2018. Merged with B&NES One Stop Shop Services.",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other",
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.286335,
-  "longitude": -2.482073,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "bath-and-north-east-somerset",
+  "source_id": "3167",
+  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/midsomer-norton-library-information-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/midsomer-norton-library-information-centre",
-  "authority": "bath-and-north-east-somerset"
+  "data": {
+    "Local authority": "Bath and North East Somerset",
+    "Local authority code": "E06000022",
+    "Library name": "Midsomer Norton Library & Information Centre",
+    "Library code": null,
+    "Address 1": "The Hollies, High Street, Midsomer Norton, Somerset, BA3 2DP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BA3 2DT",
+    "Unique property reference number": null,
+    "Latitude": 51.286335,
+    "Longitude": -2.482073,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:30-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-16:30",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other; civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Digital lending",
+    "Phone number": "01225 39 40 41",
+    "Email address": "council_connect@bathnes.gov.uk",
+    "URL": "https://beta.bathnes.gov.uk/midsomer-norton-library-and-information-service",
+    "Notes": "Moved from former library to newly refurbished location in 2018. Merged with B&NES One Stop Shop Services."
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,119 +1,64 @@
 {
   "id": "lib_494d6cbb-4ca3-4efd-a152-0b1e02ac9b85",
-  "source_id": "1662",
-  "name": "Ilminster Library",
   "slug": "ilminster",
-  "address": "Ditton Street, Ilminster, Somerset, TA19 0BW",
-  "postcode": "TA19 0BW",
-  "town": "Ilminster",
-  "phone": "",
-  "email": "ilmlib@somerset.gov.uk",
-  "website": "https://www.somerset.gov.uk/locations/ilminster-library/",
-  "catalogue": "https://www.librarieswest.org.uk/",
-  "joinOnline": "https://www.librarieswest.org.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "neurodivergent-spaces"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://maps.app.goo.gl/xtV9EYzYUWomWc837",
-  "permanentlyClosed": false,
-  "latitude": 50.92471,
-  "longitude": -2.91099,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.somerset.gov.uk/libraries/digital-books-audiobooks-and-magazines/"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.somerset.gov.uk/libraries/home-library-service/"
-    }
-  ],
+  "authority": "somerset",
+  "source_id": "1662",
+  "source_url": "https://libraryon.org/libraries/somerset/ilminster",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/somerset/ilminster",
-  "authority": "somerset"
+  "data": {
+    "Local authority": "Somerset",
+    "Local authority code": "E06000066",
+    "Library name": "Ilminster Library",
+    "Library code": null,
+    "Address 1": "Ditton Street, Ilminster, Somerset, TA19 0BW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TA19 0BW",
+    "Unique property reference number": 30061690,
+    "Latitude": 50.92471,
+    "Longitude": -2.91099,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-12:00",
+    "Tuesday staffed hours": "09:30-16:30",
+    "Wednesday staffed hours": "09:30-12:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-16:30",
+    "Saturday staffed hours": "09:30-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Children's activities; Digital lending; Books delivered",
+    "Phone number": null,
+    "Email address": "ilmlib@somerset.gov.uk",
+    "URL": "https://www.somerset.gov.uk/locations/ilminster-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

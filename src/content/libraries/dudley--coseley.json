@@ -1,122 +1,64 @@
 {
   "id": "lib_249a83b1-fa99-406d-8de4-5faca73ac4f8",
-  "source_id": "2027",
-  "name": "Coseley",
   "slug": "coseley",
-  "address": "Castle Street, Bilston, West Midlands, WV14 9DW",
-  "postcode": "WV14 9DW",
-  "town": "Bilston",
-  "phone": "01384 812775",
-  "email": "coseley.library@gll.org",
-  "website": "https://www.better.org.uk/library/dudley/coseley-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "staff-support",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.541713,
-  "longitude": -2.08773,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "dudley",
+  "source_id": "2027",
+  "source_url": "https://libraryon.org/libraries/dudley/coseley",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dudley/coseley",
-  "authority": "dudley"
+  "data": {
+    "Local authority": "Dudley",
+    "Local authority code": "E08000027",
+    "Library name": "Coseley",
+    "Library code": null,
+    "Address 1": "Castle Street, Bilston, West Midlands, WV14 9DW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WV14 9DW",
+    "Unique property reference number": 90156907,
+    "Latitude": 52.541713,
+    "Longitude": -2.08773,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "09:30-16:00",
+    "Wednesday staffed hours": "09:30-16:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Computers",
+    "Phone number": "01384 812775",
+    "Email address": "coseley.library@gll.org",
+    "URL": "https://www.better.org.uk/library/dudley/coseley-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

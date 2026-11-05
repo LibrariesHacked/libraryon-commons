@@ -1,117 +1,71 @@
 {
   "id": "lib_86c3c04a-e4ed-4afd-ac11-4cc20fa74566",
-  "source_id": "3242",
-  "name": "Burgess Road Library",
   "slug": "burgess-road",
-  "address": "Burgess Road, Soton, Hampshire, SO16 3HF",
-  "postcode": "SO16 3HF",
-  "town": "Southampton",
-  "phone": "023 8058 6804",
-  "email": "libraries@southampton.gov.uk",
-  "website": "http://burgessroadlibrary.org.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "11:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "community",
-    "faith",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.93826,
-  "longitude": -1.39528,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "southampton",
+  "source_id": "3242",
+  "source_url": "https://libraryon.org/libraries/southampton/burgess-road",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/southampton/burgess-road",
-  "authority": "southampton"
+  "data": {
+    "Local authority": "Southampton",
+    "Local authority code": "E06000045",
+    "Library name": "Burgess Road Library",
+    "Library code": null,
+    "Address 1": "Burgess Road, Soton, Hampshire, SO16 3HF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SO16 3HF",
+    "Unique property reference number": null,
+    "Latitude": 50.93826,
+    "Longitude": -1.39528,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "12:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "11:30-13:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; faith; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Digital lending; Photocopiers; Scanning",
+    "Phone number": "023 8058 6804",
+    "Email address": "libraries@southampton.gov.uk",
+    "URL": "http://burgessroadlibrary.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

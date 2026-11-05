@@ -1,109 +1,71 @@
 {
   "id": "lib_97fd0746-e144-436c-9e7a-bed2f1b0d8c7",
-  "source_id": "3694",
-  "name": "Killyleagh Library",
   "slug": "killyleagh-library",
-  "address": "52 High Street, Killyleagh, Downpatrick, BT30 9QF, United Kingdom",
-  "postcode": "BT30 9QF",
-  "town": "Downpatrick",
-  "phone": "028 4482 8407",
-  "email": "killyleagh.library@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/county-down/killyleagh-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.40138,
-  "longitude": -5.65302,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "county-down",
+  "source_id": "3694",
+  "source_url": "https://libraryon.org/libraries/county-down/killyleagh-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-down/killyleagh-library",
-  "authority": "county-down"
+  "data": {
+    "Local authority": "County Down",
+    "Local authority code": "N09000011",
+    "Library name": "Killyleagh Library",
+    "Library code": null,
+    "Address 1": "52 High Street, Killyleagh, Downpatrick, BT30 9QF, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BT30 9QF",
+    "Unique property reference number": null,
+    "Latitude": 54.40138,
+    "Longitude": -5.65302,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "14:00-20:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; Bookable space; Hobby and interest groups",
+    "Phone number": "028 4482 8407",
+    "Email address": "killyleagh.library@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/county-down/killyleagh-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

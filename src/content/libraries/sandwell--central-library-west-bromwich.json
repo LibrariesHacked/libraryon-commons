@@ -1,126 +1,71 @@
 {
   "id": "lib_f21df0c3-e915-43f1-9391-9a238a1f312c",
-  "source_id": "2104",
-  "name": "Central Library (West Bromwich)",
   "slug": "central-library-west-bromwich",
-  "address": "High Street, West Bromwich, West Midlands, B70 8DZ",
-  "postcode": "B70 8LU",
-  "town": "West Bromwich",
-  "phone": "0121 569 4900",
-  "email": "central_library@sandwell.gov.uk",
-  "website": "http://www.sandwell.gov.uk/info/200261/libraries_in_sandwell/811/central_library_west_bromwich",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.52056,
-  "longitude": -1.99708,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "sandwell",
+  "source_id": "2104",
+  "source_url": "https://libraryon.org/libraries/sandwell/central-library-west-bromwich",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sandwell/central-library-west-bromwich",
-  "authority": "sandwell"
+  "data": {
+    "Local authority": "Sandwell",
+    "Local authority code": "E08000028",
+    "Library name": "Central Library (West Bromwich)",
+    "Library code": null,
+    "Address 1": "High Street, West Bromwich, West Midlands, B70 8DZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B70 8LU",
+    "Unique property reference number": null,
+    "Latitude": 52.52056,
+    "Longitude": -1.99708,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-19:00",
+    "Tuesday staffed hours": "09:30-18:00",
+    "Wednesday staffed hours": "09:30-18:00",
+    "Thursday staffed hours": "09:30-18:00",
+    "Friday staffed hours": "09:30-18:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Books delivered; Children's activities; Hobby and interest groups; Findmypast",
+    "Phone number": "0121 569 4900",
+    "Email address": "central_library@sandwell.gov.uk",
+    "URL": "http://www.sandwell.gov.uk/info/200261/libraries_in_sandwell/811/central_library_west_bromwich",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

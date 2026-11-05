@@ -1,80 +1,71 @@
 {
   "id": "lib_4256a6b0-f6cc-403b-91b7-49ec833ae9c7",
-  "source_id": "2403",
-  "name": "Sutton Coldfield Library",
   "slug": "sutton-coldfield-library",
-  "address": "Lower Parade, Birmingham, West Midlands, B72 1XX",
-  "postcode": "B72 1XX",
-  "town": "Sutton Coldfield",
-  "phone": "0121 464 2274",
-  "email": "sutton.coldfield.library@birmingham.gov.uk",
-  "website": "https://www.birmingham.gov.uk/directory_record/5153/sutton_coldfield_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "This library is now permanently closed",
-  "accessibility": [
-    "accessible-restrooms",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "step-free-access",
-    "lift-access",
-    "guide-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.56262,
-  "longitude": -1.82324,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "birmingham",
+  "source_id": "2403",
+  "source_url": "https://libraryon.org/libraries/birmingham/sutton-coldfield-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/birmingham/sutton-coldfield-library",
-  "authority": "birmingham"
+  "data": {
+    "Local authority": "Birmingham",
+    "Local authority code": "E08000025",
+    "Library name": "Sutton Coldfield Library",
+    "Library code": null,
+    "Address 1": "Lower Parade, Birmingham, West Midlands, B72 1XX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "B72 1XX",
+    "Unique property reference number": 10024338062,
+    "Latitude": 52.56262,
+    "Longitude": -1.82324,
+    "Status": "Closed (permanent)",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": null,
+    "Year opened": 1974,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "This library is now permanently closed",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; BFI Replay",
+    "Phone number": "0121 464 2274",
+    "Email address": "sutton.coldfield.library@birmingham.gov.uk",
+    "URL": "https://www.birmingham.gov.uk/directory_record/5153/sutton_coldfield_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

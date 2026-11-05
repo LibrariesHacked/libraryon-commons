@@ -1,137 +1,73 @@
 {
   "id": "lib_467b2c74-91c6-4a7d-8203-a839c4bfeb42",
-  "source_id": "2561",
-  "name": "Little Venice Sports Centre Library Satellite library",
   "slug": "little-venice-sports-centre-library-satellite-library",
-  "address": "10 Crompton Street, London, Middlesex, W2 1ND",
-  "postcode": "W2 1ND",
-  "town": "London",
-  "phone": "020 7641 6200",
-  "email": "libraries@westminster.gov.uk",
-  "website": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/little-venice-sports-centre-library",
-  "catalogue": "https://trib.ent.sirsidynix.net.uk/client/en_GB/wcc/",
-  "joinOnline": "https://mywestminster.westminster.gov.uk/library-not-logged-in/do-you-have-westminster-address",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.52377,
-  "longitude": -0.17673,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/children"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libbyapp.com/interview/welcome#doYouHaveACard"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "westminster",
+  "source_id": "2561",
+  "source_url": "https://libraryon.org/libraries/westminster/little-venice-sports-centre-library-satellite-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/westminster/little-venice-sports-centre-library-satellite-library",
-  "authority": "westminster"
+  "data": {
+    "Local authority": "Westminster",
+    "Local authority code": "E09000033",
+    "Library name": "Little Venice Sports Centre Library Satellite library",
+    "Library code": null,
+    "Address 1": "10 Crompton Street, London, Middlesex, W2 1ND",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "W2 1ND",
+    "Unique property reference number": null,
+    "Latitude": 51.52377,
+    "Longitude": -0.17673,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2009,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:00-22:30",
+    "Tuesday unstaffed hours": "09:00-22:30",
+    "Wednesday unstaffed hours": "09:00-22:30",
+    "Thursday unstaffed hours": "09:00-22:30",
+    "Friday unstaffed hours": "09:00-22:30",
+    "Saturday unstaffed hours": "10:00-17:30",
+    "Sunday unstaffed hours": "10:00-17:30",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Books delivered; Children's activities; Digital lending; British Newspaper Archive; Findmypast",
+    "Phone number": "020 7641 6200",
+    "Email address": "libraries@westminster.gov.uk",
+    "URL": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/little-venice-sports-centre-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_95a87c45ca9452dea3e1f122"
+      ]
+    }
+  ]
 }

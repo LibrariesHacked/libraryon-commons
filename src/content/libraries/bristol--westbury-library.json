@@ -1,211 +1,71 @@
 {
   "id": "lib_e1236a32-71a9-4219-905b-41ee0fa838ab",
-  "source_id": "3761",
-  "name": "Westbury Library",
   "slug": "westbury-library",
-  "address": "Falcondale Road, Westbury, Bristol, BS9 3JZ",
-  "postcode": "BS9 3QH",
-  "town": "Bristol",
-  "phone": "0117 9038552",
-  "email": "westbury.library@bristol.gov.uk",
-  "website": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=25",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "16:15"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "16:15"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "16:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "16:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "11:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "11:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "16:15"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-public-transport-connections",
-    "automatic-doors",
-    "wheelchair-access",
-    "step-free-access",
-    "tactile-flooring",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.49265,
-  "longitude": -2.62256,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/print-online-using-wi-fi-in-a-bristol-library"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/accessible-library-services"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/ebooks-and-eaudiobooks"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/services-for-children-and-young-people"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/local-and-family-history"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bristol",
+  "source_id": "3761",
+  "source_url": "https://libraryon.org/libraries/bristol/westbury-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bristol/westbury-library",
-  "authority": "bristol"
+  "data": {
+    "Local authority": "Bristol",
+    "Local authority code": "E06000023",
+    "Library name": "Westbury Library",
+    "Library code": null,
+    "Address 1": "Falcondale Road, Westbury, Bristol, BS9 3JZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS9 3QH",
+    "Unique property reference number": null,
+    "Latitude": 51.49265,
+    "Longitude": -2.62256,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-19:00",
+    "Tuesday staffed hours": "11:00-16:00",
+    "Wednesday staffed hours": "11:00-16:00",
+    "Thursday staffed hours": "11:00-16:00",
+    "Friday staffed hours": "11:00-16:00",
+    "Saturday staffed hours": "11:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-14:00",
+    "Tuesday unstaffed hours": "08:00-11:00,16:15-19:00",
+    "Wednesday unstaffed hours": "08:00-11:00,16:15-19:00",
+    "Thursday unstaffed hours": "08:00-11:00,16:15-19:00",
+    "Friday unstaffed hours": "08:00-11:00,16:15-19:00",
+    "Saturday unstaffed hours": "08:00-11:00,16:15-19:00",
+    "Sunday unstaffed hours": "13:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Books delivered; Digital lending; Children's activities; Family history; BFI Replay; Photocopiers; Findmypast; British Newspaper Archive",
+    "Phone number": "0117 9038552",
+    "Email address": "westbury.library@bristol.gov.uk",
+    "URL": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=25",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

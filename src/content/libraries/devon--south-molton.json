@@ -1,131 +1,64 @@
 {
   "id": "lib_47e2a926-afba-44e1-9c4d-889fe461320c",
-  "source_id": "791",
-  "name": "South Molton",
   "slug": "south-molton",
-  "address": "Amory Centre, 125 East Street, South Molton, EX36 3BU",
-  "postcode": "EX36 3BU",
-  "town": "South Molton",
-  "phone": "",
-  "email": "southmolton.library@librariesunlimited.org.uk",
-  "website": "https://www.devonlibraries.org.uk/web/arena/stthomaslibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "hearing-loop-system",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/southmaltonlibrary/",
-  "permanentlyClosed": false,
-  "latitude": 51.01813,
-  "longitude": -3.83313,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://roomhire.librariesunlimited.org.uk/venues/106-south-molton-library"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "devon",
+  "source_id": "791",
+  "source_url": "https://libraryon.org/libraries/devon/south-molton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/south-molton",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "South Molton",
+    "Library code": null,
+    "Address 1": "Amory Centre, 125 East Street, South Molton, EX36 3BU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EX36 3BU",
+    "Unique property reference number": 100041139541,
+    "Latitude": 51.01813,
+    "Longitude": -3.83313,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 2008,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-13:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Children's activities; Computers; Photocopiers; Scanning; Books delivered; BFI Replay",
+    "Phone number": null,
+    "Email address": "southmolton.library@librariesunlimited.org.uk",
+    "URL": "https://www.devonlibraries.org.uk/web/arena/stthomaslibrary",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

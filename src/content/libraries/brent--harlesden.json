@@ -1,134 +1,64 @@
 {
   "id": "lib_c0b8f9db-437a-43b9-bf1e-7d59dcd22f25",
-  "source_id": "2224",
-  "name": "Harlesden",
   "slug": "harlesden",
-  "address": "Craven Park Road, London, Middlesex, NW10 8SE",
-  "postcode": "NW10 8SE",
-  "town": "London",
-  "phone": "020 8937 3400",
-  "email": "libraries@brent.gov.uk",
-  "website": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/harlesden-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.5381,
-  "longitude": -0.24992,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "brent",
+  "source_id": "2224",
+  "source_url": "https://libraryon.org/libraries/brent/harlesden",
   "updated_on": "2026-04-29",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brent/harlesden",
-  "authority": "brent"
+  "data": {
+    "Local authority": "Brent",
+    "Local authority code": "E09000005",
+    "Library name": "Harlesden",
+    "Library code": null,
+    "Address 1": "Craven Park Road, London, Middlesex, NW10 8SE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NW10 8SE",
+    "Unique property reference number": null,
+    "Latitude": 51.5381,
+    "Longitude": -0.24992,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:30-18:00",
+    "Tuesday staffed hours": "10:30-18:00",
+    "Wednesday staffed hours": "10:30-18:00",
+    "Thursday staffed hours": "10:30-18:00",
+    "Friday staffed hours": "10:30-18:00",
+    "Saturday staffed hours": "10:30-17:00",
+    "Sunday staffed hours": "12:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Children's activities; Hobby and interest groups; Computers; Photocopiers; BFI Replay",
+    "Phone number": "020 8937 3400",
+    "Email address": "libraries@brent.gov.uk",
+    "URL": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/harlesden-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

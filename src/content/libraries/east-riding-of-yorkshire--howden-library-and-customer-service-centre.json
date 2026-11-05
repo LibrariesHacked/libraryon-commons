@@ -1,132 +1,71 @@
 {
   "id": "lib_c478d396-b41a-44b0-a478-2487e949b497",
-  "source_id": "2638",
-  "name": "Howden Library & Customer Service Centre",
   "slug": "howden-library-and-customer-service-centre",
-  "address": "69 Hailgate, Howden, East Riding of Yorkshire, DN14 7SX",
-  "postcode": "DN14 7SX",
-  "town": "Goole",
-  "phone": "01428 393939",
-  "email": "howden.library@eastriding.gov.uk",
-  "website": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=howden_library#additional",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.74395,
-  "longitude": -0.86438,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "east-riding-of-yorkshire",
+  "source_id": "2638",
+  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/howden-library-and-customer-service-centre",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/howden-library-and-customer-service-centre",
-  "authority": "east-riding-of-yorkshire"
+  "data": {
+    "Local authority": "East Riding of Yorkshire",
+    "Local authority code": "E06000011",
+    "Library name": "Howden Library & Customer Service Centre",
+    "Library code": null,
+    "Address 1": "69 Hailgate, Howden, East Riding of Yorkshire, DN14 7SX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DN14 7SX",
+    "Unique property reference number": null,
+    "Latitude": 53.74395,
+    "Longitude": -0.86438,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:00-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-14:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Digital lending; Children's activities; Hobby and interest groups; Digital skills sessions; Family history; BFI Replay",
+    "Phone number": "01428 393939",
+    "Email address": "howden.library@eastriding.gov.uk",
+    "URL": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=howden_library#additional",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

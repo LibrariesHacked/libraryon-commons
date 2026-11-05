@@ -1,134 +1,64 @@
 {
   "id": "lib_1db9ac58-4eca-4d9a-bb6d-0f0f704080f9",
-  "source_id": "2834",
-  "name": "South Bank Library",
   "slug": "south-bank-library",
-  "address": "Low Grange Medical Centre \r\nNormanby Road, South Bank, North Yorkshire, TS6 6TD",
-  "postcode": "TS6 6TD",
-  "town": "Middlesbrough",
-  "phone": "01642 513699",
-  "email": "south_bank_library@redcar-cleveland.gov.uk",
-  "website": "https://libraries.redcar-cleveland.gov.uk/-/south-bank-library-community-hub#/?location=South%20Bank%20Library%20%26%20Community%20Hub",
-  "catalogue": "https://libraries.redcar-cleveland.gov.uk/extended-search",
-  "joinOnline": "https://libraries.redcar-cleveland.gov.uk/protected/join-the-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.57068,
-  "longitude": -1.16757,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/borrowbox"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/home-library-service"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.redcar-cleveland.gov.uk/-/meeting-spaces"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "redcar-and-cleveland",
+  "source_id": "2834",
+  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/south-bank-library",
   "updated_on": "2026-05-01",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/redcar-and-cleveland/south-bank-library",
-  "authority": "redcar-and-cleveland"
+  "data": {
+    "Local authority": "Redcar and Cleveland",
+    "Local authority code": "E06000003",
+    "Library name": "South Bank Library",
+    "Library code": null,
+    "Address 1": "Low Grange Medical Centre \r\nNormanby Road, South Bank, North Yorkshire, TS6 6TD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS6 6TD",
+    "Unique property reference number": 10023902383,
+    "Latitude": 54.57068,
+    "Longitude": -1.16757,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "11:00-19:00",
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups; Digital lending; Books delivered; Bookable space; Computers; Family history; BFI Replay",
+    "Phone number": "01642 513699",
+    "Email address": "south_bank_library@redcar-cleveland.gov.uk",
+    "URL": "https://libraries.redcar-cleveland.gov.uk/-/south-bank-library-community-hub#/?location=South%20Bank%20Library%20%26%20Community%20Hub",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

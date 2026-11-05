@@ -1,98 +1,71 @@
 {
   "id": "lib_41452c32-06f9-43de-b169-cb0aa6fbbcb6",
-  "source_id": "1596",
-  "name": "Welland Library",
   "slug": "welland-library",
-  "address": "Welland Village Hall, Marlbank Road, Welland, Worcestershire, WR13 6LA",
-  "postcode": "WR13 6LA",
-  "town": "Malvern",
-  "phone": "",
-  "email": "wellandlib@worcestershire.gov.uk",
-  "website": "http://www.worcestershire.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "09:45",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.057826,
-  "longitude": -2.298067,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    }
-  ],
+  "authority": "worcestershire",
+  "source_id": "1596",
+  "source_url": "https://libraryon.org/libraries/worcestershire/welland-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/worcestershire/welland-library",
-  "authority": "worcestershire"
+  "data": {
+    "Local authority": "Worcestershire",
+    "Local authority code": "E10000034",
+    "Library name": "Welland Library",
+    "Library code": null,
+    "Address 1": "Welland Village Hall, Marlbank Road, Welland, Worcestershire, WR13 6LA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WR13 6LA",
+    "Unique property reference number": null,
+    "Latitude": 52.057826,
+    "Longitude": -2.298067,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:00",
+    "Tuesday staffed hours": "08:30-09:45",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-12:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Digital lending",
+    "Phone number": null,
+    "Email address": "wellandlib@worcestershire.gov.uk",
+    "URL": "http://www.worcestershire.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,137 +1,64 @@
 {
   "id": "lib_bb0d7e9f-6f26-4358-90df-57e76e31e5f4",
-  "source_id": "2301",
-  "name": "Elm Park Library",
   "slug": "elm-park-library",
-  "address": "St Nicholas Avenue, Hornchurch, Essex, RM12 4PT",
-  "postcode": "RM12 4PT",
-  "town": "Hornchurch",
-  "phone": "01708 434919",
-  "email": "elmpark.library@havering.gov.uk",
-  "website": "https://libraries.havering.gov.uk/digital-content/libraries/find-a-library/elm-park-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "step-free-access",
-    "automatic-doors",
-    "hearing-loop-system",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.55231,
-  "longitude": 0.19853,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://libraries.havering.gov.uk/digital-content/libraries/book-a-pc"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.havering.gov.uk/digital-content/meeting-rooms"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://libraries.havering.gov.uk/digital-content/libraries/childrens-library"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.havering.gov.uk/digital-content/ebooks-and-audiobooks"
-    },
-    {
-      "service": "Family history",
-      "url": "https://libraries.havering.gov.uk/digital-content/digital-resources/family-local-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.havering.gov.uk/digital-content/housebound-library"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "havering",
+  "source_id": "2301",
+  "source_url": "https://libraryon.org/libraries/havering/elm-park-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/havering/elm-park-library",
-  "authority": "havering"
+  "data": {
+    "Local authority": "Havering",
+    "Local authority code": "E09000016",
+    "Library name": "Elm Park Library",
+    "Library code": null,
+    "Address 1": "St Nicholas Avenue, Hornchurch, Essex, RM12 4PT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RM12 4PT",
+    "Unique property reference number": 100023214017,
+    "Latitude": 51.55231,
+    "Longitude": 0.19853,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1956,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "14:00-20:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Bookable space; Children's activities; Digital lending; Family history; Books delivered; British Newspaper Archive; Findmypast",
+    "Phone number": "01708 434919",
+    "Email address": "elmpark.library@havering.gov.uk",
+    "URL": "https://libraries.havering.gov.uk/digital-content/libraries/find-a-library/elm-park-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

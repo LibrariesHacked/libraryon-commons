@@ -1,124 +1,64 @@
 {
   "id": "lib_eafb5216-76e9-4243-9b85-dcd5de9828b7",
-  "source_id": "2740",
-  "name": "Easterside Community Hub & Library",
   "slug": "easterside-community-hub-library",
-  "address": "Broughton Avenue, Easterside, Middlesbrough, North Yorkshire, TS4 3PZ",
-  "postcode": "TS4 3PZ",
-  "town": "Middlesbrough",
-  "phone": "01642 513150",
-  "email": "easterside_library@middlesbrough.gov.uk",
-  "website": "https://libraries.middlesbrough.gov.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.54336,
-  "longitude": -1.21578,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.middlesbrough.gov.uk/roomhire"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "middlesbrough",
+  "source_id": "2740",
+  "source_url": "https://libraryon.org/libraries/middlesbrough/easterside-community-hub-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/middlesbrough/easterside-community-hub-library",
-  "authority": "middlesbrough"
+  "data": {
+    "Local authority": "Middlesbrough",
+    "Local authority code": "E06000002",
+    "Library name": "Easterside Community Hub & Library",
+    "Library code": null,
+    "Address 1": "Broughton Avenue, Easterside, Middlesbrough, North Yorkshire, TS4 3PZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS4 3PZ",
+    "Unique property reference number": null,
+    "Latitude": 54.54336,
+    "Longitude": -1.21578,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; Photocopiers; Printing; Bookable space; Children's activities; Computers; BFI Replay",
+    "Phone number": "01642 513150",
+    "Email address": "easterside_library@middlesbrough.gov.uk",
+    "URL": "https://libraries.middlesbrough.gov.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

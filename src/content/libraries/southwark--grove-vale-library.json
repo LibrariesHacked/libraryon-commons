@@ -1,120 +1,73 @@
 {
   "id": "lib_8ba6bb1e-8dae-4349-a3fe-956a7920abd7",
-  "source_id": "2830",
-  "name": "Grove Vale Library",
   "slug": "grove-vale-library",
-  "address": "18-22 Grove Vale, East Dulwich, Southwark, Surrey, SE22 8EF",
-  "postcode": "SE22 8EF",
-  "town": "London",
-  "phone": "020 7525 2000",
-  "email": "libraries@southwark.gov.uk",
-  "website": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/grove-vale-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.461462,
-  "longitude": -0.08001,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-services/hire-library-hall-or-meeting-room"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "southwark",
+  "source_id": "2830",
+  "source_url": "https://libraryon.org/libraries/southwark/grove-vale-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/southwark/grove-vale-library",
-  "authority": "southwark"
+  "data": {
+    "Local authority": "Southwark",
+    "Local authority code": "E09000028",
+    "Library name": "Grove Vale Library",
+    "Library code": null,
+    "Address 1": "18-22 Grove Vale, East Dulwich, Southwark, Surrey, SE22 8EF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE22 8EF",
+    "Unique property reference number": null,
+    "Latitude": 51.461462,
+    "Longitude": -0.08001,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2019,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-15:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups; Bookable space; British Newspaper Archive; Findmypast",
+    "Phone number": "020 7525 2000",
+    "Email address": "libraries@southwark.gov.uk",
+    "URL": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/grove-vale-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_af7f3b6f756948274683ae18"
+      ]
+    }
+  ]
 }

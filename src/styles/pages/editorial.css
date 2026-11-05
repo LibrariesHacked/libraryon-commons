@@ -8,24 +8,18 @@
   grid-template-columns: minmax(0, 780px);
   justify-content: center;
 }
-.article-layout
-  [data-content-path='/special-collections/lacemaking-in-nottingham']
-  .collection-image--inset {
-  width: 100%;
-  max-width: none;
-}
-.article-layout figure:not(.video-embed):not(.testimonial-card):not(.testimonial-quote) {
+.article-layout figure:not([class]) {
   margin: 0 0 var(--size-7);
 }
-.article-layout figure:not(.video-embed):not(.testimonial-card):not(.testimonial-quote) > img {
+.article-layout figure:not([class]) > img {
   display: block;
   width: 100%;
   max-height: 460px;
   object-fit: cover;
   border-radius: 4px;
 }
-.article-layout figure:not(.video-embed):not(.testimonial-card):not(.testimonial-quote) figcaption,
-.article-layout figure:not(.video-embed):not(.testimonial-card):not(.testimonial-quote) small {
+.article-layout figure:not([class]) figcaption,
+.article-layout figure:not([class]) small {
   display: block;
   margin-top: 0.5rem;
   font-size: 0.78rem;

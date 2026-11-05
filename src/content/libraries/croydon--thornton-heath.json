@@ -1,96 +1,64 @@
 {
   "id": "lib_71a70782-cb98-43bb-a02c-e9ab899355bc",
-  "source_id": "2438",
-  "name": "Thornton Heath Library",
   "slug": "thornton-heath",
-  "address": "Brigstock Road, Thornton Heath, CR7 7JB",
-  "postcode": "CR7 7JB",
-  "town": "Thornton Heath",
-  "phone": "020 7884 5185",
-  "email": "thorntonheathlibrary@croydon.gov.uk",
-  "website": "https://www.croydon.gov.uk/libraries-leisure-and-culture/libraries/find-your-library/thornton-heath-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.39709,
-  "longitude": -0.10531,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "croydon",
+  "source_id": "2438",
+  "source_url": "https://libraryon.org/libraries/croydon/thornton-heath",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/croydon/thornton-heath",
-  "authority": "croydon"
+  "data": {
+    "Local authority": "Croydon",
+    "Local authority code": "E09000008",
+    "Library name": "Thornton Heath Library",
+    "Library code": null,
+    "Address 1": "Brigstock Road, Thornton Heath, CR7 7JB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CR7 7JB",
+    "Unique property reference number": 200001206453,
+    "Latitude": 51.39709,
+    "Longitude": -0.10531,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1914,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers",
+    "Phone number": "020 7884 5185",
+    "Email address": "thorntonheathlibrary@croydon.gov.uk",
+    "URL": "https://www.croydon.gov.uk/libraries-leisure-and-culture/libraries/find-your-library/thornton-heath-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

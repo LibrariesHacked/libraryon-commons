@@ -1,105 +1,64 @@
 {
   "id": "lib_18626724-8309-4139-8af2-0a2606b2b8f4",
-  "source_id": "820",
-  "name": "Topsham",
   "slug": "topsham",
-  "address": "Nelson Close, Topsham, EX3 0DX",
-  "postcode": "EX3 0DX",
-  "town": "Exeter",
-  "phone": "01392 874955",
-  "email": "topsham.library@librariesunlimited.org.uk",
-  "website": "https://www.devonlibraries.org.uk/web/arena/topshamlibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:45"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:15",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:15",
-          "startTime": "11:45"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "community",
-    "health",
-    "retail"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/topshamlibrary/",
-  "permanentlyClosed": false,
-  "latitude": 50.68523,
-  "longitude": -3.46828,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "devon",
+  "source_id": "820",
+  "source_url": "https://libraryon.org/libraries/devon/topsham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/devon/topsham",
-  "authority": "devon"
+  "data": {
+    "Local authority": "Devon",
+    "Local authority code": "E10000008",
+    "Library name": "Topsham",
+    "Library code": null,
+    "Address 1": "Nelson Close, Topsham, EX3 0DX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "EX3 0DX",
+    "Unique property reference number": 100041135963,
+    "Latitude": 50.68523,
+    "Longitude": -3.46828,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 1969,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:45-13:00,13:30-16:15",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "11:45-16:15",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; health; retail",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; BFI Replay",
+    "Phone number": "01392 874955",
+    "Email address": "topsham.library@librariesunlimited.org.uk",
+    "URL": "https://www.devonlibraries.org.uk/web/arena/topshamlibrary",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

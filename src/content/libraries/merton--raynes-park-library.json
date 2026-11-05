@@ -1,166 +1,74 @@
 {
   "id": "lib_3a9f8d16-7e4a-4032-846a-e4df6b583bde",
-  "source_id": "2642",
-  "name": "Raynes Park Library",
   "slug": "raynes-park-library",
-  "address": "Approach Road, Raynes Park, Surrey, SW20 8BA",
-  "postcode": "SW20 8BA",
-  "town": "London",
-  "phone": "020 8274 5718",
-  "email": "raynespark.library@merton.gov.uk",
-  "website": "https://libraries.merton.gov.uk/client/en_GB/merton/?rm=RAYNES+PARK+LI0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community",
-    "health",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.40909,
-  "longitude": -0.22777,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "merton",
+  "source_id": "2642",
+  "source_url": "https://libraryon.org/libraries/merton/raynes-park-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/merton/raynes-park-library",
-  "authority": "merton"
+  "data": {
+    "Local authority": "Merton",
+    "Local authority code": "E09000024",
+    "Library name": "Raynes Park Library",
+    "Library code": null,
+    "Address 1": "Approach Road, Raynes Park, Surrey, SW20 8BA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SW20 8BA",
+    "Unique property reference number": null,
+    "Latitude": 51.40909,
+    "Longitude": -0.22777,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-19:00",
+    "Tuesday staffed hours": "13:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-19:00",
+    "Friday staffed hours": "13:00-19:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-13:00,19:00-20:00",
+    "Tuesday unstaffed hours": "08:00-13:00,19:00-20:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": "08:00-13:00,19:00-20:00",
+    "Friday unstaffed hours": "08:00-13:00,19:00-20:00",
+    "Saturday unstaffed hours": "08:00-09:30",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; health; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Scanning; Computers; Children's activities; BFI Replay",
+    "Phone number": "020 8274 5718",
+    "Email address": "raynespark.library@merton.gov.uk",
+    "URL": "https://libraries.merton.gov.uk/client/en_GB/merton/?rm=RAYNES+PARK+LI0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_837152988e0ad08337847a94",
+        "migration/directory/report.json#review_f43feeee42035cd63d1e034b"
+      ]
+    }
+  ]
 }

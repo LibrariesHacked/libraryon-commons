@@ -1,132 +1,71 @@
 {
   "id": "lib_89389957-83f3-4985-ad65-7df83f48e737",
-  "source_id": "3165",
-  "name": "Southchurch Library",
   "slug": "southchurch",
-  "address": "221 Lifstan Way, Southend-on-Sea, Essex, SS1 2XG",
-  "postcode": "SS1 2XY",
-  "town": "Southend-on-Sea",
-  "phone": "01702 215011",
-  "email": "library@southend.gov.uk",
-  "website": "https://www.southend.gov.uk/directory-record/31984/southchurch-library",
-  "catalogue": "https://southend.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://www.southend.gov.uk/libraries-1/join-library-1",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54118,
-  "longitude": 0.73802,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.southend.gov.uk/libraries-1/childrens-library"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://southend.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.southend.gov.uk/library-services/library-community-services-1"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "southend-on-sea",
+  "source_id": "3165",
+  "source_url": "https://libraryon.org/libraries/southend-on-sea/southchurch",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/southend-on-sea/southchurch",
-  "authority": "southend-on-sea"
+  "data": {
+    "Local authority": "Southend-on-Sea",
+    "Local authority code": "E06000033",
+    "Library name": "Southchurch Library",
+    "Library code": null,
+    "Address 1": "221 Lifstan Way, Southend-on-Sea, Essex, SS1 2XG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SS1 2XY",
+    "Unique property reference number": null,
+    "Latitude": 51.54118,
+    "Longitude": 0.73802,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; BFI Replay; Children's activities; Digital lending; Books delivered; Findmypast; British Newspaper Archive",
+    "Phone number": "01702 215011",
+    "Email address": "library@southend.gov.uk",
+    "URL": "https://www.southend.gov.uk/directory-record/31984/southchurch-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

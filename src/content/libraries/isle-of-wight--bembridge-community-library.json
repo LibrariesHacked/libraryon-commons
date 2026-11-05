@@ -1,109 +1,71 @@
 {
   "id": "lib_8180e915-e40f-4918-89c2-4ed61c60651b",
-  "source_id": "3288",
-  "name": "Bembridge Community Library",
   "slug": "bembridge-community-library",
-  "address": "Church Road, Bembridge, Isle of Wight, PO35 5NA",
-  "postcode": "PO35 5NA",
-  "town": "Bembridge",
-  "phone": "01983 719868",
-  "email": "https://bembridgelibrary.com/?page_id=38",
-  "website": "https://bembridgelibrary.com/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.690491,
-  "longitude": -1.090613,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "isle-of-wight",
+  "source_id": "3288",
+  "source_url": "https://libraryon.org/libraries/isle-of-wight/bembridge-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-wight/bembridge-community-library",
-  "authority": "isle-of-wight"
+  "data": {
+    "Local authority": "Isle of Wight",
+    "Local authority code": "E06000046",
+    "Library name": "Bembridge Community Library",
+    "Library code": null,
+    "Address 1": "Church Road, Bembridge, Isle of Wight, PO35 5NA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO35 5NA",
+    "Unique property reference number": null,
+    "Latitude": 50.690491,
+    "Longitude": -1.090613,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2011,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-12:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-12:30,13:30-16:30",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Computers; Photocopiers; Scanning; Digital skills sessions",
+    "Phone number": "01983 719868",
+    "Email address": "https://bembridgelibrary.com/?page_id=38",
+    "URL": "https://bembridgelibrary.com/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://bembridgelibrary.com/?page_id=38",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

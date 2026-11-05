@@ -1,110 +1,71 @@
 {
   "id": "lib_ade5d64c-05de-4631-8574-50d9abc3ced8",
-  "source_id": "3585",
-  "name": "Irchester Community Library",
   "slug": "irchester",
-  "address": "High Street, Irchester, Northamptonshire, NN29 7AA",
-  "postcode": "NN29 7AA",
-  "town": "Wellingborough",
-  "phone": "",
-  "email": "irchestercml@gmail.com",
-  "website": "https://www.northnorthants.gov.uk/list-libraries/irchester-community-library",
-  "catalogue": "https://www.northnorthants.gov.uk/books-reading-and-audio/library-catalogue",
-  "joinOnline": "https://www.northnorthants.gov.uk/libraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Expected to become CRL by 01 April 2020",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.28295,
-  "longitude": -0.64396,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.northnorthants.gov.uk/children-and-young-peoples-library"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.northnorthants.gov.uk/visiting-library/accessibility-health-and-wellbeing-our-libraries/library-home"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.northnorthants.gov.uk/books-reading-and-audio/ereads-and-audio"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    }
-  ],
+  "authority": "north-northamptonshire",
+  "source_id": "3585",
+  "source_url": "https://libraryon.org/libraries/north-northamptonshire/irchester",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-northamptonshire/irchester",
-  "authority": "north-northamptonshire"
+  "data": {
+    "Local authority": "North Northamptonshire",
+    "Local authority code": "E06000061",
+    "Library name": "Irchester Community Library",
+    "Library code": null,
+    "Address 1": "High Street, Irchester, Northamptonshire, NN29 7AA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN29 7AA",
+    "Unique property reference number": null,
+    "Latitude": 52.28295,
+    "Longitude": -0.64396,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:00-18:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Children's activities; Hobby and interest groups; BFI Replay; Books delivered; Digital lending; Computers; Photocopiers",
+    "Phone number": null,
+    "Email address": "irchestercml@gmail.com",
+    "URL": "https://www.northnorthants.gov.uk/list-libraries/irchester-community-library",
+    "Notes": "Expected to become CRL by 01 April 2020"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,91 +1,71 @@
 {
   "id": "lib_6e47531a-3830-4258-8be8-b9c5a906045a",
-  "source_id": "3855",
-  "name": "Bradwell Community Library",
   "slug": "bradwell-community-library",
-  "address": "Bradwell Memorial Hall, Netherside, Bradwell, Hope Valley, S33 9JL,",
-  "postcode": "S33 9AA",
-  "town": "Hope Valley",
-  "phone": "",
-  "email": "bradwellcommunitylibrary@gmail.com",
-  "website": "https://bradda.org/village_organisation/bradwell-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "19:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.32886857139815,
-  "longitude": -1.741997936637631,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "derbyshire",
+  "source_id": "3855",
+  "source_url": "https://libraryon.org/libraries/derbyshire/bradwell-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/derbyshire/bradwell-community-library",
-  "authority": "derbyshire"
+  "data": {
+    "Local authority": "Derbyshire",
+    "Local authority code": "E10000007",
+    "Library name": "Bradwell Community Library",
+    "Library code": null,
+    "Address 1": "Bradwell Memorial Hall, Netherside, Bradwell, Hope Valley, S33 9JL,",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S33 9AA",
+    "Unique property reference number": null,
+    "Latitude": 53.32886857139815,
+    "Longitude": -1.741997936637631,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-12:00",
+    "Tuesday staffed hours": "18:00-19:00",
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": "15:00-17:00",
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Hobby and interest groups",
+    "Phone number": null,
+    "Email address": "bradwellcommunitylibrary@gmail.com",
+    "URL": "https://bradda.org/village_organisation/bradwell-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

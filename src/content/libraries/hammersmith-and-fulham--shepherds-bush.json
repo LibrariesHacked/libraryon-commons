@@ -1,137 +1,73 @@
 {
   "id": "lib_450154be-3f78-49f2-964f-024adb099bca",
-  "source_id": "2218",
-  "name": "Shepherds Bush",
   "slug": "shepherds-bush",
-  "address": "6 Wood Lane, London, Greater London, W12 7BF",
-  "postcode": "W12 7BF",
-  "town": "London",
-  "phone": "020 8753 3842",
-  "email": "libraries@lbhf.gov.uk",
-  "website": "https://www.lbhf.gov.uk/libraries/find-your-library/shepherds-bush-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/shepherds_bush_library/",
-  "permanentlyClosed": false,
-  "latitude": 51.506113,
-  "longitude": -0.224279,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "hammersmith-and-fulham",
+  "source_id": "2218",
+  "source_url": "https://libraryon.org/libraries/hammersmith-and-fulham/shepherds-bush",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hammersmith-and-fulham/shepherds-bush",
-  "authority": "hammersmith-and-fulham"
+  "data": {
+    "Local authority": "Hammersmith and Fulham",
+    "Local authority code": "E09000013",
+    "Library name": "Shepherds Bush",
+    "Library code": null,
+    "Address 1": "6 Wood Lane, London, Greater London, W12 7BF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "W12 7BF",
+    "Unique property reference number": null,
+    "Latitude": 51.506113,
+    "Longitude": -0.224279,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-19:00",
+    "Tuesday staffed hours": "10:00-19:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": "10:00-19:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "11:00-17:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Computers; Hobby and interest groups; Children's activities; Photocopiers; British Newspaper Archive",
+    "Phone number": "020 8753 3842",
+    "Email address": "libraries@lbhf.gov.uk",
+    "URL": "https://www.lbhf.gov.uk/libraries/find-your-library/shepherds-bush-library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN postcode association differs or is missing",
+      "audit_refs": [
+        "migration/directory/report.json#review_ee2edb02b873be73d323faa7"
+      ]
+    }
+  ]
 }

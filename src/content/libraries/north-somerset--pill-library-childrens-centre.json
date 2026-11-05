@@ -1,127 +1,64 @@
 {
   "id": "lib_3e42addf-8170-452c-b05a-7e5626463444",
-  "source_id": "3340",
-  "name": "Pill Library and Children's Centre",
   "slug": "pill-library-childrens-centre",
-  "address": "Crockerne House, Underbanks, Pill, Somerset, BS20 0AT",
-  "postcode": "BS20 0AT",
-  "town": "Bristol",
-  "phone": "01934 426 070",
-  "email": "pill.library@n-somerset.gov.uk",
-  "website": "https://n-somerset.gov.uk/directories/libraries/pill-library-childrens-centre",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.480482,
-  "longitude": -2.685002,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/computer-internet-access/printing-scanning-cameras"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/computer-internet-access/printing-scanning-cameras"
-    },
-    {
-      "service": "Family history",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/local-history-archives"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/bringing-library-you/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/young-peoples-library-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.librarieswest.org.uk/BorrowBox"
-    }
-  ],
+  "authority": "north-somerset",
+  "source_id": "3340",
+  "source_url": "https://libraryon.org/libraries/north-somerset/pill-library-childrens-centre",
   "updated_on": "2026-09-10",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-somerset/pill-library-childrens-centre",
-  "authority": "north-somerset"
+  "data": {
+    "Local authority": "North Somerset",
+    "Local authority code": "E06000024",
+    "Library name": "Pill Library and Children's Centre",
+    "Library code": null,
+    "Address 1": "Crockerne House, Underbanks, Pill, Somerset, BS20 0AT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS20 0AT",
+    "Unique property reference number": 24114834,
+    "Latitude": 51.480482,
+    "Longitude": -2.685002,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2006,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-12:30,13:30-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-12:30,13:30-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Family history; Books delivered; Children's activities; Digital lending",
+    "Phone number": "01934 426 070",
+    "Email address": "pill.library@n-somerset.gov.uk",
+    "URL": "https://n-somerset.gov.uk/directories/libraries/pill-library-childrens-centre",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

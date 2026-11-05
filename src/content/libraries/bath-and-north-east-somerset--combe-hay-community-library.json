@@ -1,114 +1,71 @@
 {
   "id": "lib_68b3d40c-53a8-4ca6-9433-6a716e3b1666",
-  "source_id": "3146",
-  "name": "Combe Hay Community Library",
   "slug": "combe-hay-community-library",
-  "address": "Combe Hay Church, Combe Hay, Somerset, BA2 7EG",
-  "postcode": "BA2 7EH",
-  "town": "Bath",
-  "phone": "",
-  "email": "councilconnect@bathnes.gov.uk",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "faith"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.33775,
-  "longitude": -2.38315,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "bath-and-north-east-somerset",
+  "source_id": "3146",
+  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/combe-hay-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/combe-hay-community-library",
-  "authority": "bath-and-north-east-somerset"
+  "data": {
+    "Local authority": "Bath and North East Somerset",
+    "Local authority code": "E06000022",
+    "Library name": "Combe Hay Community Library",
+    "Library code": null,
+    "Address 1": "Combe Hay Church, Combe Hay, Somerset, BA2 7EG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BA2 7EH",
+    "Unique property reference number": null,
+    "Latitude": 51.33775,
+    "Longitude": -2.38315,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-20:00",
+    "Tuesday staffed hours": "09:00-20:00",
+    "Wednesday staffed hours": "09:00-20:00",
+    "Thursday staffed hours": "09:00-20:00",
+    "Friday staffed hours": "09:00-20:00",
+    "Saturday staffed hours": "09:00-20:00",
+    "Sunday staffed hours": "09:00-20:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "faith",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
+    "Phone number": null,
+    "Email address": "councilconnect@bathnes.gov.uk",
+    "URL": null,
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

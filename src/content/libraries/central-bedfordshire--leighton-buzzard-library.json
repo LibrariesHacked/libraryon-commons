@@ -1,110 +1,64 @@
 {
   "id": "lib_b59284aa-eebc-4b36-a43d-6fc451a094e9",
-  "source_id": "3259",
-  "name": "Leighton Buzzard Library",
   "slug": "leighton-buzzard-library",
-  "address": "Lake Street, Leighton Buzzard, Bedfordshire, LU7 1RX",
-  "postcode": "LU7 1RX",
-  "town": "Leighton Buzzard",
-  "phone": "0300 300 8059",
-  "email": "leightonbuzzard.library@centralbedfordshire.gov.uk",
-  "website": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.91502,
-  "longitude": -0.65905,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    }
-  ],
+  "authority": "central-bedfordshire",
+  "source_id": "3259",
+  "source_url": "https://libraryon.org/libraries/central-bedfordshire/leighton-buzzard-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/central-bedfordshire/leighton-buzzard-library",
-  "authority": "central-bedfordshire"
+  "data": {
+    "Local authority": "Central Bedfordshire",
+    "Local authority code": "E06000056",
+    "Library name": "Leighton Buzzard Library",
+    "Library code": null,
+    "Address 1": "Lake Street, Leighton Buzzard, Bedfordshire, LU7 1RX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "LU7 1RX",
+    "Unique property reference number": 100081198554,
+    "Latitude": 51.91502,
+    "Longitude": -0.65905,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1979,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; British Newspaper Archive",
+    "Phone number": "0300 300 8059",
+    "Email address": "leightonbuzzard.library@centralbedfordshire.gov.uk",
+    "URL": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,120 +1,73 @@
 {
   "id": "lib_a53284b4-9f1c-41d0-a68c-cf60770c7048",
-  "source_id": "2161",
-  "name": "Bexley Community Library",
   "slug": "bexley-community-library",
-  "address": "Bourne Road, Kent, Greater London, DA5 1LU",
-  "postcode": "DA5 1LU",
-  "town": "Bexley",
-  "phone": "01322 412716",
-  "email": "librarybexleyvillage@outlook.com",
-  "website": "https://arena.yourlondonlibrary.net/web/bexley/-/bexley-village-community-library#/?location=Bexley%20Village%20Community%20Library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.44388,
-  "longitude": 0.15147,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    }
-  ],
+  "authority": "bexley",
+  "source_id": "2161",
+  "source_url": "https://libraryon.org/libraries/bexley/bexley-community-library",
   "updated_on": "2026-08-17",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bexley/bexley-community-library",
-  "authority": "bexley"
+  "data": {
+    "Local authority": "Bexley",
+    "Local authority code": "E09000004",
+    "Library name": "Bexley Community Library",
+    "Library code": null,
+    "Address 1": "Bourne Road, Kent, Greater London, DA5 1LU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DA5 1LU",
+    "Unique property reference number": null,
+    "Latitude": 51.44388,
+    "Longitude": 0.15147,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:00-17:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Cafe; Computers; Digital lending; Children's activities; Hobby and interest groups; Photocopiers; Printing; Scanning; Digital skills sessions",
+    "Phone number": "01322 412716",
+    "Email address": "librarybexleyvillage@outlook.com",
+    "URL": "https://arena.yourlondonlibrary.net/web/bexley/-/bexley-village-community-library#/?location=Bexley%20Village%20Community%20Library",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_adeaf2951689a929327890e8"
+      ]
+    }
+  ]
 }

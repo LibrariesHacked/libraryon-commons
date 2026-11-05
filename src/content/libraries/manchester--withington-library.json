@@ -1,130 +1,64 @@
 {
   "id": "lib_e312128a-20a1-4e24-b96a-7be7b0625a5b",
-  "source_id": "1936",
-  "name": "Withington Library",
   "slug": "withington-library",
-  "address": "410 Wilmslow Road, Withington, Greater Manchester , M20 3BN",
-  "postcode": "M20 3BN",
-  "town": "Manchester",
-  "phone": "0161 227 3720",
-  "email": "withingtonlibrary@manchester.gov.uk",
-  "website": "https://www.manchester.gov.uk/directory_record/470335/withington_library/category/1957/all_libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Major refurbishment and implementation of Oipen+ 2018",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://my.matterport.com/show/?m=6hWPSGbag5e",
-  "permanentlyClosed": false,
-  "latitude": 53.43568,
-  "longitude": -2.22684,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "manchester",
+  "source_id": "1936",
+  "source_url": "https://libraryon.org/libraries/manchester/withington-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/manchester/withington-library",
-  "authority": "manchester"
+  "data": {
+    "Local authority": "Manchester",
+    "Local authority code": "E08000003",
+    "Library name": "Withington Library",
+    "Library code": null,
+    "Address 1": "410 Wilmslow Road, Withington, Greater Manchester , M20 3BN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M20 3BN",
+    "Unique property reference number": 10023048593,
+    "Latitude": 53.43568,
+    "Longitude": -2.22684,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-20:00",
+    "Tuesday staffed hours": "13:00-20:00",
+    "Wednesday staffed hours": "09:00-20:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-09:00",
+    "Tuesday unstaffed hours": "08:00-13:00",
+    "Wednesday unstaffed hours": "08:00-09:00",
+    "Thursday unstaffed hours": "08:00-20:00",
+    "Friday unstaffed hours": "08:00-09:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive",
+    "Phone number": "0161 227 3720",
+    "Email address": "withingtonlibrary@manchester.gov.uk",
+    "URL": "https://www.manchester.gov.uk/directory_record/470335/withington_library/category/1957/all_libraries",
+    "Notes": "Major refurbishment and implementation of Oipen+ 2018"
+  },
+  "validation_exceptions": []
 }

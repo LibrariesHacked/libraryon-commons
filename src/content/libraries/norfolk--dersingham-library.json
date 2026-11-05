@@ -1,167 +1,73 @@
 {
   "id": "lib_5498fc3e-c6c6-4be4-8c47-0cc46d0f7379",
-  "source_id": "1338",
-  "name": "Dersingham Library",
   "slug": "dersingham-library",
-  "address": "Chapel Road , Dersingham, Norfolk, PE31 6PN",
-  "postcode": "PE31 6PN",
-  "town": "King's Lynn",
-  "phone": "",
-  "email": "dersingham.lib@libraries.norfolk.gov.uk",
-  "website": "https://www.norfolk.gov.uk/libraries-local-history-and-archives/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.84787,
-  "longitude": 0.50527,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "norfolk",
+  "source_id": "1338",
+  "source_url": "https://libraryon.org/libraries/norfolk/dersingham-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/norfolk/dersingham-library",
-  "authority": "norfolk"
+  "data": {
+    "Local authority": "Norfolk",
+    "Local authority code": "E10000020",
+    "Library name": "Dersingham Library",
+    "Library code": null,
+    "Address 1": "Chapel Road , Dersingham, Norfolk, PE31 6PN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PE31 6PN",
+    "Unique property reference number": null,
+    "Latitude": 52.84787,
+    "Longitude": 0.50527,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-19:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "10:00-19:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-14:00",
+    "Tuesday unstaffed hours": "08:00-19:00",
+    "Wednesday unstaffed hours": "08:00-10:00",
+    "Thursday unstaffed hours": "08:00-10:00",
+    "Friday unstaffed hours": "08:00-19:00",
+    "Saturday unstaffed hours": "08:00-10:00",
+    "Sunday unstaffed hours": "10:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; British Newspaper Archive; Findmypast; Computers; Digital lending; Photocopiers; Career support; Children's activities; Hobby and interest groups",
+    "Phone number": null,
+    "Email address": "dersingham.lib@libraries.norfolk.gov.uk",
+    "URL": "https://www.norfolk.gov.uk/libraries-local-history-and-archives/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN not independently located",
+      "audit_refs": [
+        "migration/directory/report.json#review_c58992c64a913604e115f7e3"
+      ]
+    }
+  ]
 }

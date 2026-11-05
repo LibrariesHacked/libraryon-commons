@@ -40,7 +40,7 @@ resources:
 
 [Nottingham Local Studies](https://www.nottinghamcitylibraries.co.uk/our-services/local-studies-family-history/), part of Nottingham City Libraries, preserves a wealth of artefacts that illustrate how the lace craft became an industry central to the British Empire's growth.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![Princess Elizabeth in the 1950s admiring Nottingham lace alongside local dignitaries.](/uploads/archive/princess-elizabeth-in-the-1950s-admiring-nottingham-lace-2.jpg)
 
@@ -62,7 +62,7 @@ St. Mary's Gate, in the Lace Market area, still bears lace motifs today. Source:
 
 :::
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![A drawing of a woman posing in a floor length orange lace dress with a white trim topped with a matching cape. To the right of the image is a carriage clock balancing on blue, purple, orange and yellow flowing lace.](/uploads/archive/a-drawing-of-a-woman-posing-in-a-floor-length-2.jpg)
 
@@ -80,7 +80,7 @@ The contrast between delicate finery and the harshness of its means of productio
 
 Textiles were a big driver of the industrial revolution: steam-powered machinery in factories **increased demand for coal and iron**. And the need to transport goods for longer distances led to the growth of **canals and railways**.
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![A black & white photo of an intricate lace tablecloth in Arts & Crafts style covering a dining room. The table also features silver tableware and cutlery, crystal glassware and a prominent candlestick.](/uploads/archive/a-black-and-white-photo-of-an-intricate-lace-tablecloth-2.png)
 
@@ -372,9 +372,7 @@ Mrs Ethel Clarke's letter
 
 Want to learn more about Nottingham’s fascinating history of lace? Lisa Hopwood, a Local Studies Specialist Advisor for [Nottingham City Libraries](https://www.nottinghamcitylibraries.co.uk/), provides a shortlist of books for you explore.
 
-::video{src="https://www.youtube.com/embed/KB5AouNkiSU" title="Video: Recommendations"}
-
-::::collection-accordion{label="Reading recommendations from Nottingham Local Studies"}
+::::collection-accordion{label="Reading recommendations from Nottingham Local Studies" video="https://www.youtube.com/embed/KB5AouNkiSU" videoTitle="Video: Recommendations"}
 
 :::accordion-item{title="Felkin’s History of the Machine-wrought Hosiery and Lace Manufactures — William Felkin (1967)"}
 

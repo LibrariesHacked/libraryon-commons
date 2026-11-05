@@ -1,93 +1,71 @@
 {
   "id": "5555",
-  "source_id": "3858",
-  "name": "Winnersh Micro Library",
   "slug": "winnersh-micro-library",
-  "address": "Rainbow Community and Children’s Centre Rainbow Park Winnersh RG41 5SG",
-  "postcode": "RG41 5SF",
-  "town": "Wokingham",
-  "phone": "",
-  "email": "",
-  "website": "https://wokingham.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=WNR",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:30",
-          "startTime": "10:30"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.428410738505335,
-  "longitude": -0.8803082326982405,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    }
-  ],
+  "authority": "wokingham",
+  "source_id": "3858",
+  "source_url": "https://libraryon.org/libraries/wokingham/winnersh-micro-library",
   "updated_on": "2026-05-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wokingham/winnersh-micro-library",
-  "authority": "wokingham"
+  "data": {
+    "Local authority": "Wokingham",
+    "Local authority code": "E06000041",
+    "Library name": "Winnersh Micro Library",
+    "Library code": null,
+    "Address 1": "Rainbow Community and Children’s Centre Rainbow Park Winnersh RG41 5SG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG41 5SF",
+    "Unique property reference number": null,
+    "Latitude": 51.428410738505335,
+    "Longitude": -0.8803082326982405,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "09:00-17:00",
+    "Tuesday unstaffed hours": "10:30-17:00",
+    "Wednesday unstaffed hours": "10:30-16:30",
+    "Thursday unstaffed hours": "10:30-18:30",
+    "Friday unstaffed hours": "09:30-13:30",
+    "Saturday unstaffed hours": "09:30-12:30",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books",
+    "Phone number": null,
+    "Email address": null,
+    "URL": "https://wokingham.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=WNR",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,133 +1,64 @@
 {
   "id": "lib_6f5ec03a-371c-4422-a3a4-7aa70dcd3494",
-  "source_id": "3522",
-  "name": "Wareham",
   "slug": "wareham",
-  "address": "South Street, Wareham, Dorset, BH20 4LR",
-  "postcode": "BH20 4LR",
-  "town": "Wareham",
-  "phone": "01929 556146",
-  "email": "warehamlibrary@dorsetcouncil.gov.uk",
-  "website": "https://www.dorsetcouncil.gov.uk/libraries-history-culture/libraries/find-your-local-library/dorset-libraries/-/ddl_display/ddl/279420/432951/maximized",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.684523,
-  "longitude": -2.109548,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    }
-  ],
+  "authority": "dorset",
+  "source_id": "3522",
+  "source_url": "https://libraryon.org/libraries/dorset/wareham",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dorset/wareham",
-  "authority": "dorset"
+  "data": {
+    "Local authority": "Dorset",
+    "Local authority code": "E06000059",
+    "Library name": "Wareham",
+    "Library code": null,
+    "Address 1": "South Street, Wareham, Dorset, BH20 4LR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BH20 4LR",
+    "Unique property reference number": 100041098936,
+    "Latitude": 50.684523,
+    "Longitude": -2.109548,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": "12:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": "10:00-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Family history; Digital lending; Computers; Photocopiers; Children's activities; Digital skills sessions; Hobby and interest groups; Books delivered",
+    "Phone number": "01929 556146",
+    "Email address": "warehamlibrary@dorsetcouncil.gov.uk",
+    "URL": "https://www.dorsetcouncil.gov.uk/libraries-history-culture/libraries/find-your-local-library/dorset-libraries/-/ddl_display/ddl/279420/432951/maximized",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,122 +1,71 @@
 {
   "id": "lib_9df35d45-ee45-48f1-8f8a-da3cda74f0bc",
-  "source_id": "678",
-  "name": "New Tredegar Library",
   "slug": "new-tredegar-library",
-  "address": "Whiterose Learning and Resource Centre, School Street, Elliottown, New Tredegar, NP24 6EF",
-  "postcode": "NP24 6EF",
-  "town": "New Tredegar",
-  "phone": "01443 875550",
-  "email": "whrrc@caerphilly.gov.uk",
-  "website": "http://www.caerphilly.gov.uk/Services/Libraries/Library-locations-and-opening-times/New-Tedegar-library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.716859,
-  "longitude": -3.235323,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "caerphilly",
+  "source_id": "678",
+  "source_url": "https://libraryon.org/libraries/caerphilly/new-tredegar-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/caerphilly/new-tredegar-library",
-  "authority": "caerphilly"
+  "data": {
+    "Local authority": "Caerphilly",
+    "Local authority code": "W06000018",
+    "Library name": "New Tredegar Library",
+    "Library code": null,
+    "Address 1": "Whiterose Learning and Resource Centre, School Street, Elliottown, New Tredegar, NP24 6EF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NP24 6EF",
+    "Unique property reference number": null,
+    "Latitude": 51.716859,
+    "Longitude": -3.235323,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-18:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-13:00,14:00-18:00",
+    "Thursday staffed hours": "09:30-13:00,14:00-18:00",
+    "Friday staffed hours": "09:30-13:00,14:00-18:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay",
+    "Phone number": "01443 875550",
+    "Email address": "whrrc@caerphilly.gov.uk",
+    "URL": "http://www.caerphilly.gov.uk/Services/Libraries/Library-locations-and-opening-times/New-Tedegar-library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

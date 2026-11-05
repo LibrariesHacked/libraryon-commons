@@ -1,144 +1,64 @@
 {
   "id": "lib_ce471636-174d-402a-8129-f81d181ec2bc",
-  "source_id": "2898",
-  "name": "Dales Centre Library",
   "slug": "dales-centre-library",
-  "address": "206 Sneinton Dale, Nottingham, Nottinghamshire, NG2 4HJ",
-  "postcode": "NG2 4HJ",
-  "town": "Nottingham",
-  "phone": "0115 915 2801",
-  "email": "dales.library@nottinghamcity.gov.uk",
-  "website": "https://www.nottinghamcitylibraries.co.uk/library/dales-centre-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "automatic-doors"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.95472,
-  "longitude": -1.12073,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "nottingham",
+  "source_id": "2898",
+  "source_url": "https://libraryon.org/libraries/nottingham/dales-centre-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/nottingham/dales-centre-library",
-  "authority": "nottingham"
+  "data": {
+    "Local authority": "Nottingham",
+    "Local authority code": "E06000018",
+    "Library name": "Dales Centre Library",
+    "Library code": null,
+    "Address 1": "206 Sneinton Dale, Nottingham, Nottinghamshire, NG2 4HJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NG2 4HJ",
+    "Unique property reference number": 100032108846,
+    "Latitude": 52.95472,
+    "Longitude": -1.12073,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2017,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:30",
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-17:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital skills sessions; Books delivered; Children's activities; Hobby and interest groups; Computers; Scanning; Photocopiers; Bookable space; British Newspaper Archive; Findmypast; BFI Replay",
+    "Phone number": "0115 915 2801",
+    "Email address": "dales.library@nottinghamcity.gov.uk",
+    "URL": "https://www.nottinghamcitylibraries.co.uk/library/dales-centre-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

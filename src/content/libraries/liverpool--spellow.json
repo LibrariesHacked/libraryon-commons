@@ -1,132 +1,71 @@
 {
   "id": "lib_dba23568-f689-4bc1-a49f-30c027bc3526",
-  "source_id": "2007",
-  "name": "Spellow Library",
   "slug": "spellow",
-  "address": "County Road, Liverpool , Merseyside, L4 3QF",
-  "postcode": "L4 3QF",
-  "town": "Liverpool",
-  "phone": "01512333069",
-  "email": "spellow.library@liverpool.gov.uk",
-  "website": "https://liverpool.gov.uk/libraries/local-libraries/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "step-free-access",
-    "assistive-technology-available",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "health",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.44215,
-  "longitude": -2.97106,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://liverpool.gov.uk/bipc"
-    },
-    {
-      "service": "Career support",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "liverpool",
+  "source_id": "2007",
+  "source_url": "https://libraryon.org/libraries/liverpool/spellow",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/liverpool/spellow",
-  "authority": "liverpool"
+  "data": {
+    "Local authority": "Liverpool",
+    "Local authority code": "E08000012",
+    "Library name": "Spellow Library",
+    "Library code": null,
+    "Address 1": "County Road, Liverpool , Merseyside, L4 3QF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "L4 3QF",
+    "Unique property reference number": null,
+    "Latitude": 53.44215,
+    "Longitude": -2.97106,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-18:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Business support; Career support; Children's activities; Hobby and interest groups; Computers; British Newspaper Archive; Findmypast; BFI Replay",
+    "Phone number": "01512333069",
+    "Email address": "spellow.library@liverpool.gov.uk",
+    "URL": "https://liverpool.gov.uk/libraries/local-libraries/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,180 +1,71 @@
 {
   "id": "lib_974ad515-f36d-4491-b5a0-7efc604139f8",
-  "source_id": "2870",
-  "name": "Westcroft",
   "slug": "westcroft",
-  "address": "Westcroft Road, Carshalton, Greater London, SM5 2TG",
-  "postcode": "SM5 2TG",
-  "town": "Carshalton",
-  "phone": "020 8770 5000",
-  "email": "westcroft.library@sutton.gov.uk",
-  "website": "https://libraries.sutton.gov.uk/digital-content/libraries/westcroft-library",
-  "catalogue": "",
-  "joinOnline": "https://libraries.sutton.gov.uk/user/register",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "07:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "21:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.36744,
-  "longitude": -0.15778,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://libraries.sutton.gov.uk/digital-content/digital-resources/digital-archive"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.sutton.gov.uk/digital-content/digital-resources/digital-library"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "sutton",
+  "source_id": "2870",
+  "source_url": "https://libraryon.org/libraries/sutton/westcroft",
   "updated_on": "2026-01-28",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sutton/westcroft",
-  "authority": "sutton"
+  "data": {
+    "Local authority": "Sutton",
+    "Local authority code": "E09000029",
+    "Library name": "Westcroft",
+    "Library code": null,
+    "Address 1": "Westcroft Road, Carshalton, Greater London, SM5 2TG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SM5 2TG",
+    "Unique property reference number": null,
+    "Latitude": 51.36744,
+    "Longitude": -0.15778,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "07:00-21:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "07:00-21:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": "08:00-19:00",
+    "Monday unstaffed hours": "07:00-09:00,17:00-21:00",
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": "07:00-09:00,17:00-21:00",
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": "07:00-09:00,17:00-21:00",
+    "Saturday unstaffed hours": "08:00-09:00,17:00-19:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; Family history; Findmypast; British Newspaper Archive; Digital lending; BFI Replay",
+    "Phone number": "020 8770 5000",
+    "Email address": "westcroft.library@sutton.gov.uk",
+    "URL": "https://libraries.sutton.gov.uk/digital-content/libraries/westcroft-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

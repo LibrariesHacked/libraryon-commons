@@ -1,109 +1,64 @@
 {
   "id": "lib_ea48b763-66df-4ada-9226-c12737917e32",
-  "source_id": "1953",
-  "name": "Croxteth",
   "slug": "croxteth",
-  "address": "The Communiversity, Altcross House, Altcross Road, Croxteth, Merseyside, L11 0BS",
-  "postcode": "L11 0BS",
-  "town": "Liverpool",
-  "phone": "0151 546 5514",
-  "email": "enquiries@altvalley.co.uk",
-  "website": "https://altvalley.co.uk/libraries/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "assistive-technology-available",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.45549,
-  "longitude": -2.89817,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "liverpool",
+  "source_id": "1953",
+  "source_url": "https://libraryon.org/libraries/liverpool/croxteth",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/liverpool/croxteth",
-  "authority": "liverpool"
+  "data": {
+    "Local authority": "Liverpool",
+    "Local authority code": "E08000012",
+    "Library name": "Croxteth",
+    "Library code": null,
+    "Address 1": "The Communiversity, Altcross House, Altcross Road, Croxteth, Merseyside, L11 0BS",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "L11 0BS",
+    "Unique property reference number": 38006106,
+    "Latitude": 53.45549,
+    "Longitude": -2.89817,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "08:30-16:30",
+    "Tuesday staffed hours": "08:30-16:30",
+    "Wednesday staffed hours": "08:30-18:00",
+    "Thursday staffed hours": "08:30-16:30",
+    "Friday staffed hours": "08:30-15:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Hobby and interest groups",
+    "Phone number": "0151 546 5514",
+    "Email address": "enquiries@altvalley.co.uk",
+    "URL": "https://altvalley.co.uk/libraries/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

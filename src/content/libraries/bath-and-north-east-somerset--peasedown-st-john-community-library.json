@@ -1,98 +1,71 @@
 {
   "id": "lib_45642e56-5d61-4605-b8f5-122b3ef04dc9",
-  "source_id": "2594",
-  "name": "Peasedown St. John Community Library",
   "slug": "peasedown-st-john-community-library",
-  "address": " The Hive, Bath Road, Peasedown Saint John, BA2 8DH",
-  "postcode": "BA2 8DJ",
-  "town": "Bath",
-  "phone": "",
-  "email": "peasedownlibrary@hotmail.com",
-  "website": "https://www.facebook.com/PSJCommunityLibrary/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.31436117443707,
-  "longitude": -2.430174994427091,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "bath-and-north-east-somerset",
+  "source_id": "2594",
+  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/peasedown-st-john-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bath-and-north-east-somerset/peasedown-st-john-community-library",
-  "authority": "bath-and-north-east-somerset"
+  "data": {
+    "Local authority": "Bath and North East Somerset",
+    "Local authority code": "E06000022",
+    "Library name": "Peasedown St. John Community Library",
+    "Library code": null,
+    "Address 1": "The Hive, Bath Road, Peasedown Saint John, BA2 8DH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BA2 8DJ",
+    "Unique property reference number": null,
+    "Latitude": 51.31436117443707,
+    "Longitude": -2.430174994427091,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "11:00-15:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:00-16:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; BFI Replay",
+    "Phone number": null,
+    "Email address": "peasedownlibrary@hotmail.com",
+    "URL": "https://www.facebook.com/PSJCommunityLibrary/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,120 +1,73 @@
 {
   "id": "lib_685ccfb0-2036-4332-baeb-6801e5a306b6",
-  "source_id": "3274",
-  "name": "Thornhill Community Library",
   "slug": "thornhill-community-library",
-  "address": "328 Hinkler Rd, Thornhill, Southampton SO19 6DF",
-  "postcode": "SO19 6DF",
-  "town": "Southampton",
-  "phone": "023 8043 2761",
-  "email": "libraries@southampton.gov.uk",
-  "website": "https://www.southampton.gov.uk/libraries/find-library/community-libraries/thornhill-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "hearing-loop-system",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "community",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.90823,
-  "longitude": -1.33401,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "southampton",
+  "source_id": "3274",
+  "source_url": "https://libraryon.org/libraries/southampton/thornhill-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/southampton/thornhill-community-library",
-  "authority": "southampton"
+  "data": {
+    "Local authority": "Southampton",
+    "Local authority code": "E06000045",
+    "Library name": "Thornhill Community Library",
+    "Library code": null,
+    "Address 1": "328 Hinkler Rd, Thornhill, Southampton SO19 6DF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SO19 6DF",
+    "Unique property reference number": null,
+    "Latitude": 50.90823,
+    "Longitude": -1.33401,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:30",
+    "Tuesday staffed hours": "09:30-12:00",
+    "Wednesday staffed hours": "14:00-16:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Books delivered; Digital lending; Computers; Photocopiers; Scanning",
+    "Phone number": "023 8043 2761",
+    "Email address": "libraries@southampton.gov.uk",
+    "URL": "https://www.southampton.gov.uk/libraries/find-library/community-libraries/thornhill-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_0889b54d009a1b0da84cc354"
+      ]
+    }
+  ]
 }

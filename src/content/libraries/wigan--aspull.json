@@ -1,118 +1,64 @@
 {
   "id": "lib_9d3eb17d-c0fb-4172-9d9c-e741fc47e074",
-  "source_id": "1852",
-  "name": "Aspull Library",
   "slug": "aspull",
-  "address": "Oakfield Crescent, Aspull, Greater Manchester, WN2 1XJ",
-  "postcode": "WN2 1XJ",
-  "town": "Wigan",
-  "phone": "",
-  "email": "aspull.library@wigan.gov.uk",
-  "website": "https://www.wigan.gov.uk/Resident/Libraries/Aspull-Library.aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:15",
-          "startTime": "09:45"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.56984,
-  "longitude": -2.58565,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "wigan",
+  "source_id": "1852",
+  "source_url": "https://libraryon.org/libraries/wigan/aspull",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/wigan/aspull",
-  "authority": "wigan"
+  "data": {
+    "Local authority": "Wigan",
+    "Local authority code": "E08000010",
+    "Library name": "Aspull Library",
+    "Library code": null,
+    "Address 1": "Oakfield Crescent, Aspull, Greater Manchester, WN2 1XJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WN2 1XJ",
+    "Unique property reference number": 100012814349,
+    "Latitude": 53.56984,
+    "Longitude": -2.58565,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-13:00",
+    "Tuesday staffed hours": "10:00-12:00",
+    "Wednesday staffed hours": "15:00-17:00",
+    "Thursday staffed hours": "09:45-12:15",
+    "Friday staffed hours": "10:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Digital lending; Books delivered; Hobby and interest groups; Computers",
+    "Phone number": null,
+    "Email address": "aspull.library@wigan.gov.uk",
+    "URL": "https://www.wigan.gov.uk/Resident/Libraries/Aspull-Library.aspx",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

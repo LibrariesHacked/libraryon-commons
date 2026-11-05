@@ -1,150 +1,64 @@
 {
   "id": "lib_446832da-95e6-4472-b1d4-fd9bda6c7126",
-  "source_id": "2117",
-  "name": "Edgware",
   "slug": "edgware",
-  "address": "Hale Lane, Edgware, Greater London, HA8 8NN",
-  "postcode": "HA8 8NN",
-  "town": "Edgware",
-  "phone": "020 8359 2626",
-  "email": "edgware.library@barnet.gov.uk",
-  "website": "https://www.barnet.gov.uk/libraries/find-your-local-library/edgware-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "22:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "lift-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community",
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.616273,
-  "longitude": -0.274007,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "barnet",
+  "source_id": "2117",
+  "source_url": "https://libraryon.org/libraries/barnet/edgware",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/barnet/edgware",
-  "authority": "barnet"
+  "data": {
+    "Local authority": "Barnet",
+    "Local authority code": "E09000003",
+    "Library name": "Edgware",
+    "Library code": null,
+    "Address 1": "Hale Lane, Edgware, Greater London, HA8 8NN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HA8 8NN",
+    "Unique property reference number": 200220766,
+    "Latitude": 51.616273,
+    "Longitude": -0.274007,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30",
+    "Tuesday staffed hours": "14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "14:00-20:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-09:00,12:30-20:00",
+    "Tuesday unstaffed hours": "08:00-14:00,17:00-20:00",
+    "Wednesday unstaffed hours": "08:00-20:00",
+    "Thursday unstaffed hours": "08:00-14:00",
+    "Friday unstaffed hours": "07:00-22:00",
+    "Saturday unstaffed hours": "08:00-09:00",
+    "Sunday unstaffed hours": "10:00-17:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community; other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers",
+    "Phone number": "020 8359 2626",
+    "Email address": "edgware.library@barnet.gov.uk",
+    "URL": "https://www.barnet.gov.uk/libraries/find-your-local-library/edgware-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

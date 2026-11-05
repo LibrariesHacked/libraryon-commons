@@ -1,102 +1,71 @@
 {
   "id": "lib_d6cddbcf-181f-4f75-a561-d745d9a9882c",
-  "source_id": "2766",
-  "name": "Neath Library",
   "slug": "neath-library",
-  "address": "Neath Library Water Street, Neath, Neath Port Talbot, SA11 3EP",
-  "postcode": "SA11 3DB",
-  "town": "Neath",
-  "phone": "01639 644 604",
-  "email": "neath.library@npt.gov.uk",
-  "website": "https://www.npt.gov.uk/libraries/find-your-library/managed-by-npt-libraries/neath-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.66343,
-  "longitude": -3.79935,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "neath-port-talbot",
+  "source_id": "2766",
+  "source_url": "https://libraryon.org/libraries/neath-port-talbot/neath-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/neath-port-talbot/neath-library",
-  "authority": "neath-port-talbot"
+  "data": {
+    "Local authority": "Neath Port Talbot",
+    "Local authority code": "W06000012",
+    "Library name": "Neath Library",
+    "Library code": null,
+    "Address 1": "Neath Library Water Street, Neath, Neath Port Talbot, SA11 3EP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SA11 3DB",
+    "Unique property reference number": null,
+    "Latitude": 51.66343,
+    "Longitude": -3.79935,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:30",
+    "Tuesday staffed hours": "09:00-17:30",
+    "Wednesday staffed hours": "09:00-17:30",
+    "Thursday staffed hours": "09:00-17:30",
+    "Friday staffed hours": "09:00-17:30",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01639 644 604",
+    "Email address": "neath.library@npt.gov.uk",
+    "URL": "https://www.npt.gov.uk/libraries/find-your-library/managed-by-npt-libraries/neath-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

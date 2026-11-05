@@ -1,6 +1,6 @@
 # Editing Content
 
-LibraryCommons uses Decap CMS to edit Markdown and JSON files directly in the repository.
+LibraryCommons uses Decap CMS to edit Markdown and JSON files directly in the source.
 
 Editors can also use the public **Editing guide** linked from the site footer. It explains common tasks without requiring repository knowledge.
 
@@ -35,6 +35,32 @@ Local edits write directly to your working tree without committing. Stop `decap-
 | Resources And Downloads    | PDFs, slide decks, recordings, external links, and credits                           |
 | Conference Sessions        | Session descriptions, speakers, parent conference, and linked resources              |
 | Contributors               | Contributor biographies and profile images                                           |
+
+### Directory Records
+
+The **Library data** and **Library service data** groups use the supplied Table Schema field names. Keep the existing URL slug, authority relationship, and source identifiers unchanged. Empty values are stored as `null`; unknown required values are recorded as validation exceptions rather than guessed. The save handler rejects invalid new values and removes resolved exceptions.
+
+Staffed and unstaffed opening hours are separate fields. Use `09:00-17:00` or split sessions such as `09:00-12:00,13:00-17:00`. Leave the field blank when closed; saves store it as `null`, never the text `Closed`. Invalid imported sessions are kept in the source audit and flagged for manual review rather than silently repaired. The overall library `Status` is separate from its daily hours.
+
+Live files contain only canonical schema data, routing/provenance metadata, validation exceptions, and optional manual-check references. There is no legacy `extensions` payload. Source details without an exact schema field are preserved only in the audit for review, not used as a parallel site model.
+
+### Review Checks And Exceptions
+
+Both directory forms show expandable **Manual checks** and **Validation exceptions** sections. A check shows its type, reason, and audit references. An exception shows its schema field, issue code, and reason; correct the actual data field rather than editing exception metadata. Resolved exceptions are removed automatically on save. An unresolved exception cannot be cleared just by deleting its list item.
+
+The **Data review** link above the CMS opens `/admin/review/`. Search by library/service name, authority, field, or reason; filter by record type and issue type. The worklist prioritizes hours and identifier conflicts, then validation gaps. Each record links to its public page and exact CMS entry. Open its review dialog to see exception values, candidate values, original invalid hours, lookup outcomes, and archived source-only details. Evidence is fetched only for the selected record.
+
+Complete a manual review by correcting the canonical fields, then removing the corresponding check from **Manual checks** and saving through the normal draft/review workflow. The original migration audit is retained. The worklist and downloads reflect saved repository data on the next site build, not unsaved forms or unpublished drafts. Missing or unrelated audit evidence is flagged rather than silently attached to a record.
+
+The worklist is a read-only page in the CMS deployment, not a private authenticated resource. It and its evidence endpoints are marked `noindex`; CMS editing still requires authentication. The ordinary public library pages do not display technical review flags. In the split deployment, use the CMS host's `/admin/review/`; the public Pages deployment intentionally excludes `/admin/`.
+
+Moved libraries have separate building records: close the old building and retain the new building as open. Historical additions have no invented last-updated date. Normal CMS saves still stamp the actual edit/review date. The migration itself preserves all original dates. See the [audit and override procedure](../migration/directory/README.md) before rerunning a migration or approving uncertain identifiers.
+
+### Library CSV Downloads
+
+The public library directory offers an all-library CSV; each authority page offers its own library CSV. Exports include current and closed buildings, exact schema column order, no CMS metadata, and blank cells for `null` values. Quoting preserves commas, quotes, and embedded newlines. The **Validation and schema** disclosure also provides the Table Schema, a row-level validation report, and a strictly validated subset CSV.
+
+The all-records CSV retains libraries with documented required-field or format exceptions; it must not be described as fully schema-valid. The separate validated CSV contains only rows that pass every library-schema field constraint. It may therefore contain fewer libraries, and an authority with no qualifying rows receives a header-only file. The validation report identifies excluded records and fields; row numbers refer to CSV records, including the header, rather than physical lines within quoted text.
 
 ## Editorial Content
 

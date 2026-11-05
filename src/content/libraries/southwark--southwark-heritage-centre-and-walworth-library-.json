@@ -1,144 +1,71 @@
 {
   "id": "lib_ccfdd49b-8ae8-4a7d-a71f-88dc3bbd033a",
-  "source_id": "2696",
-  "name": "Southwark Heritage Centre and Walworth Library ",
   "slug": "southwark-heritage-centre-and-walworth-library-",
-  "address": "145-147 Walworth Road, London , Southwark, Surrey, SE17 1RW",
-  "postcode": "SE17 1FZ",
-  "town": "London",
-  "phone": "020 7525 2000 ",
-  "email": "libraries@southwark.gov.uk",
-  "website": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/southwark-heritage-centre-and-walworth-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access",
-    "accessible-restrooms",
-    "step-free-access",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.49174,
-  "longitude": -0.09741,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-services/hire-library-hall-or-meeting-room"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "southwark",
+  "source_id": "2696",
+  "source_url": "https://libraryon.org/libraries/southwark/southwark-heritage-centre-and-walworth-library-",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/southwark/southwark-heritage-centre-and-walworth-library-",
-  "authority": "southwark"
+  "data": {
+    "Local authority": "Southwark",
+    "Local authority code": "E09000028",
+    "Library name": "Southwark Heritage Centre and Walworth Library ",
+    "Library code": null,
+    "Address 1": "145-147 Walworth Road, London , Southwark, Surrey, SE17 1RW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE17 1FZ",
+    "Unique property reference number": null,
+    "Latitude": 51.49174,
+    "Longitude": -0.09741,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-20:00",
+    "Tuesday staffed hours": "10:00-20:00",
+    "Wednesday staffed hours": "10:00-20:00",
+    "Thursday staffed hours": "10:00-20:00",
+    "Friday staffed hours": "10:00-20:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "12:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Digital lending; Hobby and interest groups; Bookable space; British Newspaper Archive; Findmypast",
+    "Phone number": "020 7525 2000",
+    "Email address": "libraries@southwark.gov.uk",
+    "URL": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/southwark-heritage-centre-and-walworth-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

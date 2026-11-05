@@ -1,126 +1,71 @@
 {
   "id": "lib_b97147c0-0fb2-4d41-a3b1-6b13753b1c00",
-  "source_id": "1591",
-  "name": "Upton-Upon-Severn Library",
   "slug": "upton-upon-severn-library",
-  "address": "School Lane, Upton-upon-Severn, Worcestershire, WR8 0LE",
-  "postcode": "WR8 0LZ",
-  "town": "Worcester",
-  "phone": "",
-  "email": "UptonLib@worcestershire.gov.uk",
-  "website": "http://www.worcestershire.gov.uk/libraries",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.06164,
-  "longitude": -2.21731,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "worcestershire",
+  "source_id": "1591",
+  "source_url": "https://libraryon.org/libraries/worcestershire/upton-upon-severn-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/worcestershire/upton-upon-severn-library",
-  "authority": "worcestershire"
+  "data": {
+    "Local authority": "Worcestershire",
+    "Local authority code": "E10000034",
+    "Library name": "Upton-Upon-Severn Library",
+    "Library code": null,
+    "Address 1": "School Lane, Upton-upon-Severn, Worcestershire, WR8 0LE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WR8 0LZ",
+    "Unique property reference number": null,
+    "Latitude": 52.06164,
+    "Longitude": -2.21731,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-16:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:30-16:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-16:30",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Bookable space; Digital lending; Books delivered; Computers; Photocopiers; Scanning; Children's activities",
+    "Phone number": null,
+    "Email address": "UptonLib@worcestershire.gov.uk",
+    "URL": "http://www.worcestershire.gov.uk/libraries",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

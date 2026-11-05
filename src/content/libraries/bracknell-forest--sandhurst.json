@@ -1,192 +1,64 @@
 {
   "id": "lib_291df458-473c-4965-9b5b-44877c5fdb31",
-  "source_id": "3325",
-  "name": "Sandhurst",
   "slug": "sandhurst",
-  "address": "The Broadway, Sandhurst, Berkshire, GU47 9BL",
-  "postcode": "GU47 9BL",
-  "town": "Sandhurst",
-  "phone": "01252 870161",
-  "email": "Sandhurst.library@bracknell-forest.gov.uk",
-  "website": "https://www.bracknell-forest.gov.uk/libraries/library-directory/sandhurst-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "accessible-public-transport-connections",
-    "step-free-access",
-    "wheelchair-access",
-    "automatic-doors",
-    "adjustable-seating",
-    "assistive-technology-available",
-    "low-vision-support",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.345717,
-  "longitude": -0.796656,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "bracknell-forest",
+  "source_id": "3325",
+  "source_url": "https://libraryon.org/libraries/bracknell-forest/sandhurst",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bracknell-forest/sandhurst",
-  "authority": "bracknell-forest"
+  "data": {
+    "Local authority": "Bracknell Forest",
+    "Local authority code": "E06000036",
+    "Library name": "Sandhurst",
+    "Library code": null,
+    "Address 1": "The Broadway, Sandhurst, Berkshire, GU47 9BL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GU47 9BL",
+    "Unique property reference number": null,
+    "Latitude": 51.345717,
+    "Longitude": -0.796656,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-09:30,17:00-20:00",
+    "Tuesday unstaffed hours": "08:00-09:30,19:00-20:00",
+    "Wednesday unstaffed hours": "08:00-20:00",
+    "Thursday unstaffed hours": "08:00-09:30,17:00-20:00",
+    "Friday unstaffed hours": "08:00-09:30,17:00-20:00",
+    "Saturday unstaffed hours": "08:00-09:30,16:00-18:00",
+    "Sunday unstaffed hours": "10:00-18:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Children's activities; Hobby and interest groups; Findmypast; British Newspaper Archive",
+    "Phone number": "01252 870161",
+    "Email address": "Sandhurst.library@bracknell-forest.gov.uk",
+    "URL": "https://www.bracknell-forest.gov.uk/libraries/library-directory/sandhurst-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

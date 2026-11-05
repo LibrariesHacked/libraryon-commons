@@ -1,115 +1,64 @@
 {
   "id": "lib_975c5199-ae5f-4cf9-a2e6-e700e6b43ea6",
-  "source_id": "2474",
-  "name": "Kensal Library",
   "slug": "kensal-library",
-  "address": "20 Golborne Road, London, Greater London, W10 5PF",
-  "postcode": "W10 5PF",
-  "town": "London",
-  "phone": "020 7361 3010",
-  "email": "libraries@rbkc.gov.uk",
-  "website": "https://www.rbkc.gov.uk/libraries-0/libraries-and-room-hire/kensal-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.52384,
-  "longitude": -0.20686,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "kensington-and-chelsea",
+  "source_id": "2474",
+  "source_url": "https://libraryon.org/libraries/kensington-and-chelsea/kensal-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kensington-and-chelsea/kensal-library",
-  "authority": "kensington-and-chelsea"
+  "data": {
+    "Local authority": "Kensington and Chelsea",
+    "Local authority code": "E09000020",
+    "Library name": "Kensal Library",
+    "Library code": null,
+    "Address 1": "20 Golborne Road, London, Greater London, W10 5PF",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "W10 5PF",
+    "Unique property reference number": 217035223,
+    "Latitude": 51.52384,
+    "Longitude": -0.20686,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-18:00",
+    "Tuesday staffed hours": "13:00-18:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:00-18:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Hobby and interest groups; Findmypast",
+    "Phone number": "020 7361 3010",
+    "Email address": "libraries@rbkc.gov.uk",
+    "URL": "https://www.rbkc.gov.uk/libraries-0/libraries-and-room-hire/kensal-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

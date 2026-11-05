@@ -1,144 +1,64 @@
 {
   "id": "lib_0916f1ba-d75d-48c4-b43f-d9b37cec244a",
-  "source_id": "1636",
-  "name": "Little Hulton Library",
   "slug": "little-hulton-library",
-  "address": "Longshaw Drive, Little Hulton , Greater Manchester, M28 0AZ",
-  "postcode": "M28 0AZ",
-  "town": "Manchester",
-  "phone": "0161 921 2397",
-  "email": "littlehulton.library@scll.co.uk",
-  "website": "https://salfordcommunityleisure.co.uk/library/little-hulton/",
-  "catalogue": "https://salfordlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://salfordcommunityleisure.co.uk/libraries/join/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "step-free-access",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.529498,
-  "longitude": -2.420873,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "salford",
+  "source_id": "1636",
+  "source_url": "https://libraryon.org/libraries/salford/little-hulton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/salford/little-hulton-library",
-  "authority": "salford"
+  "data": {
+    "Local authority": "Salford",
+    "Local authority code": "E08000006",
+    "Library name": "Little Hulton Library",
+    "Library code": null,
+    "Address 1": "Longshaw Drive, Little Hulton , Greater Manchester, M28 0AZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M28 0AZ",
+    "Unique property reference number": 100012693514,
+    "Latitude": 53.529498,
+    "Longitude": -2.420873,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30,13:30-17:30",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-12:30,13:30-17:30",
+    "Thursday staffed hours": "09:00-12:30,13:30-17:30",
+    "Friday staffed hours": "09:00-12:30,13:30-17:30",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Computers; Children's activities; Photocopiers; Scanning; BFI Replay",
+    "Phone number": "0161 921 2397",
+    "Email address": "littlehulton.library@scll.co.uk",
+    "URL": "https://salfordcommunityleisure.co.uk/library/little-hulton/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

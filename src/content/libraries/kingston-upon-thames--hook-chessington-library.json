@@ -1,144 +1,71 @@
 {
   "id": "lib_97248a4c-a9a8-44b0-a869-ddfb57647497",
-  "source_id": "2491",
-  "name": "Hook & Chessington Library",
   "slug": "hook-chessington-library",
-  "address": "Hook Road, Hook, Chessington, Surrey, KT9 1EJ",
-  "postcode": "KT9 1NY",
-  "town": "Chessington",
-  "phone": "020 8547 5006 or",
-  "email": "hook.library@kingston.gov.uk",
-  "website": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/hook-chessington",
-  "catalogue": "https://libraries.kingston.gov.uk/home",
-  "joinOnline": "https://libraries.kingston.gov.uk/digital-content/libraries/join-borrow",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.36786,
-  "longitude": -0.30678,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://libraries.kingston.gov.uk/digital-content/libraries/community-library-home-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://libraries.kingston.gov.uk/digital-content/your-digital-library"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://libraries.kingston.gov.uk/digital-content/children-teens"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://libraries.kingston.gov.uk/digital-content/get-involved"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://libraries.kingston.gov.uk/digital-content/learning-job-support/digital-skills-help"
-    },
-    {
-      "service": "Career support",
-      "url": "https://libraries.kingston.gov.uk/digital-content/learning-job-support/job-searching-help"
-    }
-  ],
+  "authority": "kingston-upon-thames",
+  "source_id": "2491",
+  "source_url": "https://libraryon.org/libraries/kingston-upon-thames/hook-chessington-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/kingston-upon-thames/hook-chessington-library",
-  "authority": "kingston-upon-thames"
+  "data": {
+    "Local authority": "Kingston upon Thames",
+    "Local authority code": "E09000021",
+    "Library name": "Hook & Chessington Library",
+    "Library code": null,
+    "Address 1": "Hook Road, Hook, Chessington, Surrey, KT9 1EJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "KT9 1NY",
+    "Unique property reference number": null,
+    "Latitude": 51.36786,
+    "Longitude": -0.30678,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-20:00",
+    "Wednesday staffed hours": "10:00-18:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-18:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Scanning; Computers; Books delivered; Digital lending; Family history; Children's activities; Hobby and interest groups; Digital skills sessions; Career support",
+    "Phone number": "020 8547 5006 or",
+    "Email address": "hook.library@kingston.gov.uk",
+    "URL": "https://libraries.kingston.gov.uk/digital-content/libraries/library-branches/hook-chessington",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

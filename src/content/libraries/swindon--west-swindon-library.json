@@ -1,107 +1,64 @@
 {
   "id": "lib_0ee16bef-6cc3-40a7-b422-911593b43880",
-  "source_id": "3078",
-  "name": "West Swindon Library",
   "slug": "west-swindon-library",
-  "address": "Link Centre, Whitehill Way, Swindon, Wiltshire, SN5 7DL",
-  "postcode": "SN5 7DL",
-  "town": "Swindon",
-  "phone": "01793 465555",
-  "email": "libraries@swindon.gov.uk",
-  "website": "https://www.swindon.gov.uk/directory_record/17884/west_swindon_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.5583,
-  "longitude": -1.82879,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "swindon",
+  "source_id": "3078",
+  "source_url": "https://libraryon.org/libraries/swindon/west-swindon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/swindon/west-swindon-library",
-  "authority": "swindon"
+  "data": {
+    "Local authority": "Swindon",
+    "Local authority code": "E06000030",
+    "Library name": "West Swindon Library",
+    "Library code": null,
+    "Address 1": "Link Centre, Whitehill Way, Swindon, Wiltshire, SN5 7DL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SN5 7DL",
+    "Unique property reference number": null,
+    "Latitude": 51.5583,
+    "Longitude": -1.82879,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1985,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-14:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "01793 465555",
+    "Email address": "libraries@swindon.gov.uk",
+    "URL": "https://www.swindon.gov.uk/directory_record/17884/west_swindon_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

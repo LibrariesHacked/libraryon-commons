@@ -1,138 +1,64 @@
 {
   "id": "lib_361ae043-0ad7-4e98-bbb6-683c1c878f41",
-  "source_id": "1956",
-  "name": "Kimberworth Library",
   "slug": "kimberworth-library",
-  "address": "Church Street, Kimberworth, Rotherham, S61 1HA",
-  "postcode": "S61 1HA",
-  "town": "Rotherham",
-  "phone": "01709 558581",
-  "email": "kimberworth.library@rotherham.gov.uk",
-  "website": "https://www.rotherham.gov.uk/libraries/libraries-neighbourhood-hubs/5",
-  "catalogue": "https://rotherham.ent.sirsidynix.net.uk/client/en_GB/default/?",
-  "joinOnline": "https://rotherham.ent.sirsidynix.net.uk/custom/web/joining/index.html",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "automatic-doors",
-    "service-dog-friendly",
-    "hearing-loop-system"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.43347,
-  "longitude": -1.39309,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.rotherham.gov.uk/libraries/learn-digital-skills"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.rotherham.gov.uk/libraries/children-families-1"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.rotherham.gov.uk/libraries/home-library-services/1"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "rotherham",
+  "source_id": "1956",
+  "source_url": "https://libraryon.org/libraries/rotherham/kimberworth-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rotherham/kimberworth-library",
-  "authority": "rotherham"
+  "data": {
+    "Local authority": "Rotherham",
+    "Local authority code": "E08000018",
+    "Library name": "Kimberworth Library",
+    "Library code": null,
+    "Address 1": "Church Street, Kimberworth, Rotherham, S61 1HA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S61 1HA",
+    "Unique property reference number": null,
+    "Latitude": 53.43347,
+    "Longitude": -1.39309,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1971,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00",
+    "Tuesday staffed hours": "09:30-13:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:30-19:00",
+    "Friday staffed hours": "13:30-17:30",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; Computers; Digital lending; Family history; Digital skills sessions; Children's activities; Books delivered; BFI Replay",
+    "Phone number": "01709 558581",
+    "Email address": "kimberworth.library@rotherham.gov.uk",
+    "URL": "https://www.rotherham.gov.uk/libraries/libraries-neighbourhood-hubs/5",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

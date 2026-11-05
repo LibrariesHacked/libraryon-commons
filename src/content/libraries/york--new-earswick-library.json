@@ -1,120 +1,64 @@
 {
   "id": "lib_a7da50cc-8bf5-403d-bfcb-361442d9d219",
-  "source_id": "2833",
-  "name": "New Earswick Library",
   "slug": "new-earswick-library",
-  "address": "The Folk Hall, Hawthorn Terrace, New Earswick, North Yorkshire, YO32 4AQ",
-  "postcode": "YO32 4AQ",
-  "town": "York",
-  "phone": "01904 552 629",
-  "email": "newearswick@exploreyork.org.uk",
-  "website": "https://www.exploreyork.org.uk/new-earswick-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Moved to current premises May 2018.  Allows for longer opening - now open for self-service when Folk Hall is open outside of library hours",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "care",
-    "community",
-    "retail"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.989124,
-  "longitude": -1.073498,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "york",
+  "source_id": "2833",
+  "source_url": "https://libraryon.org/libraries/york/new-earswick-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/york/new-earswick-library",
-  "authority": "york"
+  "data": {
+    "Local authority": "York",
+    "Local authority code": "E06000014",
+    "Library name": "New Earswick Library",
+    "Library code": null,
+    "Address 1": "The Folk Hall, Hawthorn Terrace, New Earswick, North Yorkshire, YO32 4AQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "YO32 4AQ",
+    "Unique property reference number": 200004758552,
+    "Latitude": 53.989124,
+    "Longitude": -1.073498,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": 2016,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30",
+    "Tuesday staffed hours": "09:00-12:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:30-17:00",
+    "Friday staffed hours": "13:30-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "care; community; retail",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Computers; Digital lending; Hobby and interest groups; British Newspaper Archive",
+    "Phone number": "01904 552 629",
+    "Email address": "newearswick@exploreyork.org.uk",
+    "URL": "https://www.exploreyork.org.uk/new-earswick-library/",
+    "Notes": "Moved to current premises May 2018.  Allows for longer opening - now open for self-service when Folk Hall is open outside of library hours"
+  },
+  "validation_exceptions": []
 }

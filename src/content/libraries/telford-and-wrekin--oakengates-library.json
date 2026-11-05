@@ -1,117 +1,77 @@
 {
   "id": "lib_55ce9d16-7631-40b1-9443-141b1eeffef6",
-  "source_id": "3085",
-  "name": "Oakengates Library",
   "slug": "oakengates-library",
-  "address": "The Wakes, Theatre Square, Oakengates, Telford, Shropshire, TF2 6EP",
-  "postcode": "",
-  "town": "Telford",
-  "phone": "01952 382390",
-  "email": "oakengates.library@telford.gov.uk",
-  "website": "https://www.telford.gov.uk/info/20406/find_a_library/3436/oakengates_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "arts",
-    "catering"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.695623,
-  "longitude": -2.450898,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.telford.gov.uk/info/1012/libraries/667/ebooks_eaudio_and_emagazine_catalogue"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.telford.gov.uk/info/20413/library_services_-_information_help_and_support/605/advice_on_using_library_computers_equipment_and_the_internet"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.telford.gov.uk/info/20473/local_history_archives_and_ancestry"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.telford.gov.uk/info/20412/children_and_young_people"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.telford.gov.uk/info/20406/find_a_library/3443/home_library_service"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "telford-and-wrekin",
+  "source_id": "3085",
+  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/oakengates-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/oakengates-library",
-  "authority": "telford-and-wrekin"
+  "data": {
+    "Local authority": "Telford and Wrekin",
+    "Local authority code": "E06000020",
+    "Library name": "Oakengates Library",
+    "Library code": null,
+    "Address 1": "The Wakes, Theatre Square, Oakengates, Telford, Shropshire, TF2 6EP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 52.695623,
+    "Longitude": -2.450898,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "10:00-14:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts; catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Computers; Family history; Children's activities; Books delivered; BFI Replay",
+    "Phone number": "01952 382390",
+    "Email address": "oakengates.library@telford.gov.uk",
+    "URL": "https://www.telford.gov.uk/info/20406/find_a_library/3436/oakengates_library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

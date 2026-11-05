@@ -1,74 +1,77 @@
 {
   "id": "lib_58801da7-0978-45ce-9343-a1c2a5b558de",
-  "source_id": "564",
-  "name": "Maerdy Hwb",
   "slug": "maerdy-hwb",
-  "address": "18 Dyfodwg Street, Treorchy, CF42 6NN, United Kingdom",
-  "postcode": "CF42 6NN",
-  "town": "Treorchy",
-  "phone": "01443 732256",
-  "email": "https://www.fernpartnership.co.uk/#welcome",
-  "website": "https://www.fernpartnership.co.uk/#welcome",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.65903,
-  "longitude": -3.50831,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "rhondda-cynon-taf",
+  "source_id": "564",
+  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/maerdy-hwb",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rhondda-cynon-taf/maerdy-hwb",
-  "authority": "rhondda-cynon-taf"
+  "data": {
+    "Local authority": "Rhondda Cynon Taf",
+    "Local authority code": "W06000016",
+    "Library name": "Maerdy Hwb",
+    "Library code": null,
+    "Address 1": "18 Dyfodwg Street, Treorchy, CF42 6NN, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CF42 6NN",
+    "Unique property reference number": null,
+    "Latitude": 51.65903,
+    "Longitude": -3.50831,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast",
+    "Phone number": "01443 732256",
+    "Email address": "https://www.fernpartnership.co.uk/#welcome",
+    "URL": "https://www.fernpartnership.co.uk/#welcome",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://www.fernpartnership.co.uk/#welcome",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

@@ -1,88 +1,77 @@
 {
   "id": "lib_15a9baf1-5574-4d6e-b5ea-b09bba90da78",
-  "source_id": "60",
-  "name": "Oldmeldrum Library",
   "slug": "oldmeldrum-library",
-  "address": "Oldmeldrum Library, Aberdeenshire, Meldrum, Meg Way, Oldmeldrum, AB51 0GN",
-  "postcode": "AB51 0EZ",
-  "town": "Inverurie",
-  "phone": "oldmeldrum.library@aberdeenshire.gov.uk",
-  "email": "01651 267391",
-  "website": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/oldmeldrum-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.331988,
-  "longitude": -2.326527,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "aberdeenshire",
+  "source_id": "60",
+  "source_url": "https://libraryon.org/libraries/aberdeenshire/oldmeldrum-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/aberdeenshire/oldmeldrum-library",
-  "authority": "aberdeenshire"
+  "data": {
+    "Local authority": "Aberdeenshire",
+    "Local authority code": "S12000034",
+    "Library name": "Oldmeldrum Library",
+    "Library code": null,
+    "Address 1": "Oldmeldrum Library, Aberdeenshire, Meldrum, Meg Way, Oldmeldrum, AB51 0GN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "AB51 0EZ",
+    "Unique property reference number": null,
+    "Latitude": 57.331988,
+    "Longitude": -2.326527,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:00-18:00",
+    "Wednesday staffed hours": "09:00-14:00",
+    "Thursday staffed hours": "12:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
+    "Phone number": "oldmeldrum.library@aberdeenshire.gov.uk",
+    "Email address": "01651 267391",
+    "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/oldmeldrum-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "01651 267391",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

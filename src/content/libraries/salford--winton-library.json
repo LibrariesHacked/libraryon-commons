@@ -1,145 +1,64 @@
 {
   "id": "lib_0283b3ed-f214-4820-aea4-5cde3d9ecd64",
-  "source_id": "1661",
-  "name": "Winton Library",
   "slug": "winton-library",
-  "address": "Old Parrin Lane, Winton , Greater Manchester, M30 8BY",
-  "postcode": "M30 8BY",
-  "town": "Manchester",
-  "phone": "0161 921 2180",
-  "email": "winton.library@scll.co.uk",
-  "website": "https://salfordcommunityleisure.co.uk/library/winton/",
-  "catalogue": "https://salfordlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/WPAC/HOME",
-  "joinOnline": "https://salfordcommunityleisure.co.uk/libraries/join/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "accessible-parking",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.48974,
-  "longitude": -2.36832,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "salford",
+  "source_id": "1661",
+  "source_url": "https://libraryon.org/libraries/salford/winton-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/salford/winton-library",
-  "authority": "salford"
+  "data": {
+    "Local authority": "Salford",
+    "Local authority code": "E08000006",
+    "Library name": "Winton Library",
+    "Library code": null,
+    "Address 1": "Old Parrin Lane, Winton , Greater Manchester, M30 8BY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "M30 8BY",
+    "Unique property reference number": 100012698418,
+    "Latitude": 53.48974,
+    "Longitude": -2.36832,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30,13:30-17:30",
+    "Tuesday staffed hours": "09:00-12:30,13:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-12:30,13:30-17:30",
+    "Friday staffed hours": "09:00-12:30,13:30-17:30",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Books delivered; Computers; Children's activities; Photocopiers; Scanning",
+    "Phone number": "0161 921 2180",
+    "Email address": "winton.library@scll.co.uk",
+    "URL": "https://salfordcommunityleisure.co.uk/library/winton/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

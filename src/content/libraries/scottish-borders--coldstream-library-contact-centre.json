@@ -1,88 +1,71 @@
 {
   "id": "lib_0e5b5a33-388e-4b8a-9e42-5548d1b478a7",
-  "source_id": "73",
-  "name": "Coldstream Library Contact Centre",
   "slug": "coldstream-library-contact-centre",
-  "address": "77 High Street, Coldstream, TD12 4AE, United Kingdom",
-  "postcode": "TD12 4AE",
-  "town": "Coldstream",
-  "phone": "0300 100 1800",
-  "email": " libcold@scotborders.gov.uk",
-  "website": "http://www.liveborders.org.uk/libraries_and_archives(1)/libraries/find_your_nearest_library/coldstream_library_contact_centre(1).aspx",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "assistive-technology-available",
-    "accessible-restrooms",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.6521,
-  "longitude": -2.2509,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "scottish-borders",
+  "source_id": "73",
+  "source_url": "https://libraryon.org/libraries/scottish-borders/coldstream-library-contact-centre",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/scottish-borders/coldstream-library-contact-centre",
-  "authority": "scottish-borders"
+  "data": {
+    "Local authority": "Scottish Borders",
+    "Local authority code": "S12000026",
+    "Library name": "Coldstream Library Contact Centre",
+    "Library code": null,
+    "Address 1": "77 High Street, Coldstream, TD12 4AE, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TD12 4AE",
+    "Unique property reference number": null,
+    "Latitude": 55.6521,
+    "Longitude": -2.2509,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "10:00-14:00",
+    "Tuesday unstaffed hours": "13:00-18:00",
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": "14:00-17:00",
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "0300 100 1800",
+    "Email address": "libcold@scotborders.gov.uk",
+    "URL": "http://www.liveborders.org.uk/libraries_and_archives(1)/libraries/find_your_nearest_library/coldstream_library_contact_centre(1).aspx",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

@@ -1,129 +1,71 @@
 {
   "id": "lib_1a6bb187-8a45-44dd-818a-d59a4f0794de",
-  "source_id": "2171",
-  "name": "Hackney Central Library",
   "slug": "hackney-central-library",
-  "address": "Hackney Technology and Learning Centre, 1 Reading Lane, London, E8 1GQ",
-  "postcode": "E8 1GR",
-  "town": "London",
-  "phone": "020 8356 3000",
-  "email": " libraries@hackney.gov.uk",
-  "website": "https://hackney.gov.uk/hackney-central-library",
-  "catalogue": "https://llc.ent.sirsidynix.net.uk/client/en_GB/hackney",
-  "joinOnline": "https://libraries.hackney.gov.uk/user/register",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access",
-    "accessible-restrooms",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.54451,
-  "longitude": -0.05564,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://hackney.gov.uk/e-library"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://hackney.gov.uk/community-library-service"
-    }
-  ],
+  "authority": "hackney",
+  "source_id": "2171",
+  "source_url": "https://libraryon.org/libraries/hackney/hackney-central-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hackney/hackney-central-library",
-  "authority": "hackney"
+  "data": {
+    "Local authority": "Hackney",
+    "Local authority code": "E09000012",
+    "Library name": "Hackney Central Library",
+    "Library code": null,
+    "Address 1": "Hackney Technology and Learning Centre, 1 Reading Lane, London, E8 1GQ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "E8 1GR",
+    "Unique property reference number": null,
+    "Latitude": 51.54451,
+    "Longitude": -0.05564,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-20:00",
+    "Tuesday staffed hours": "09:00-20:00",
+    "Wednesday staffed hours": "09:00-20:00",
+    "Thursday staffed hours": "09:00-20:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities; Hobby and interest groups; Digital lending; Books delivered",
+    "Phone number": "020 8356 3000",
+    "Email address": "libraries@hackney.gov.uk",
+    "URL": "https://hackney.gov.uk/hackney-central-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

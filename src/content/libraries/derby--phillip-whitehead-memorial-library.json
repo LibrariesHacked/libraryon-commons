@@ -1,125 +1,80 @@
 {
   "id": "lib_1085de17-c4a9-439b-a1a4-99a439d8128e",
-  "source_id": "2896",
-  "name": "Phillip Whitehead Memorial Library, Chaddesden Park",
   "slug": "phillip-whitehead-memorial-library",
-  "address": "Chaddesden Lane, Derby, Derbyshire, Derby, DE21 6LN",
-  "postcode": "DE21 6LN",
-  "town": "Derby",
-  "phone": "01332 640062",
-  "email": "libraries@derby.gov.uk",
-  "website": "https://www.inderby.org.uk/libraries/our-libraries/chaddesden-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "accessible-public-transport-connections",
-    "accessible-restrooms",
-    "adjustable-seating",
-    "assistive-technology-available",
-    "automatic-doors",
-    "baby-changing-facilities",
-    "hearing-loop-system",
-    "dda-compliant",
-    "neurodivergent-spaces",
-    "service-dog-friendly",
-    "staff-support",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "Run by Direct Help and Advice (DHA):",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.9273,
-  "longitude": -1.43483,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "derby",
+  "source_id": "2896",
+  "source_url": "https://libraryon.org/libraries/derby/phillip-whitehead-memorial-library",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/derby/phillip-whitehead-memorial-library",
-  "authority": "derby"
+  "data": {
+    "Local authority": "Derby",
+    "Local authority code": "E06000015",
+    "Library name": "Phillip Whitehead Memorial Library, Chaddesden Park",
+    "Library code": null,
+    "Address 1": "Chaddesden Lane, Derby, Derbyshire, Derby, DE21 6LN",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DE21 6LN",
+    "Unique property reference number": null,
+    "Latitude": 52.9273,
+    "Longitude": -1.43483,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-16:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-16:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Books delivered; Children's activities; Computers; Digital lending; Hobby and interest groups; Photocopiers; Scanning",
+    "Phone number": "01332 640062",
+    "Email address": "libraries@derby.gov.uk",
+    "URL": "https://www.inderby.org.uk/libraries/our-libraries/chaddesden-library/",
+    "Notes": "Run by Direct Help and Advice (DHA):"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "uprn",
+      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
+      "audit_refs": [
+        "migration/directory/report.json#review_de11c3a8495620fda67ea57e"
+      ]
+    }
+  ]
 }

@@ -1,80 +1,64 @@
 {
   "id": "lib_0a23cd1c-41bd-49c3-9c12-876b49af364d",
-  "source_id": "2018",
-  "name": "Wilsden Library",
   "slug": "wilsden-library",
-  "address": "Village Hall, Bradford, West Yorkshire, BD15 0HT",
-  "postcode": "BD15 0HT",
-  "town": "Bradford",
-  "phone": "07469 843624",
-  "email": "wilsdenlibrary@gmail.com",
-  "website": "https://www.bradford.gov.uk/libraries/find-your-local-library/wilsden-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:30",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "accessible-parking",
-    "baby-changing-facilities",
-    "neurodivergent-spaces",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.822,
-  "longitude": -1.86188,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "bradford",
+  "source_id": "2018",
+  "source_url": "https://libraryon.org/libraries/bradford/wilsden-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bradford/wilsden-library",
-  "authority": "bradford"
+  "data": {
+    "Local authority": "Bradford",
+    "Local authority code": "E08000032",
+    "Library name": "Wilsden Library",
+    "Library code": null,
+    "Address 1": "Village Hall, Bradford, West Yorkshire, BD15 0HT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BD15 0HT",
+    "Unique property reference number": null,
+    "Latitude": 53.822,
+    "Longitude": -1.86188,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:30-17:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; BFI Replay",
+    "Phone number": "07469 843624",
+    "Email address": "wilsdenlibrary@gmail.com",
+    "URL": "https://www.bradford.gov.uk/libraries/find-your-local-library/wilsden-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

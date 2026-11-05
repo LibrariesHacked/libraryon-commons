@@ -1,157 +1,64 @@
 {
   "id": "lib_75afef8b-43cc-40e7-8042-1766968bbb14",
-  "source_id": "3166",
-  "name": "Helsby Library",
   "slug": "helsby-library",
-  "address": "Lower Robin Hood Lane, Helsby, Cheshire, WA6 0BW",
-  "postcode": "WA6 0BW",
-  "town": "Frodsham",
-  "phone": "01244 981150",
-  "email": "libraries@cheshirewestandchester.gov.uk",
-  "website": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/helsby-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access",
-    "automatic-doors",
-    "adjustable-seating",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "service-dog-friendly",
-    "low-vision-support"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.270055,
-  "longitude": -2.772006,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "cheshire-west-and-chester",
+  "source_id": "3166",
+  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/helsby-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/helsby-library",
-  "authority": "cheshire-west-and-chester"
+  "data": {
+    "Local authority": "Cheshire West and Chester",
+    "Local authority code": "E06000050",
+    "Library name": "Helsby Library",
+    "Library code": null,
+    "Address 1": "Lower Robin Hood Lane, Helsby, Cheshire, WA6 0BW",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA6 0BW",
+    "Unique property reference number": 100012807271,
+    "Latitude": 53.270055,
+    "Longitude": -2.772006,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-17:00",
+    "Tuesday staffed hours": "09:30-13:00,14:00-19:00",
+    "Wednesday staffed hours": "09:30-13:00,14:00-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-13:00,14:00-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Books delivered; Digital skills sessions; Children's activities; Computers; Scanning; Family history; British Newspaper Archive; Findmypast",
+    "Phone number": "01244 981150",
+    "Email address": "libraries@cheshirewestandchester.gov.uk",
+    "URL": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/helsby-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

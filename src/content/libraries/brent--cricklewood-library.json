@@ -1,115 +1,77 @@
 {
   "id": "lib_def64c62-c1bc-4203-afdd-017824fce9ba",
-  "source_id": "3834",
-  "name": "Cricklewood Library",
   "slug": "cricklewood-library",
-  "address": "152 Olive Road, London, NW2 6UY",
-  "postcode": "",
-  "town": "London",
-  "phone": "020 8438 8705",
-  "email": "librarian@cricklewoodlibrary.org.uk",
-  "website": "https://www.cricklewoodlibrary.org.uk/",
-  "catalogue": "https://www.librarycat.org/lib/CricklewoodLibrary",
-  "joinOnline": "https://www.cricklewoodlibrary.org.uk/membership/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "15:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "Closed on Bank Holidays, and between Christmas and New Year.",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.556858,
-  "longitude": -0.227396,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.cricklewoodlibrary.org.uk/room-hire/"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "brent",
+  "source_id": "3834",
+  "source_url": "https://libraryon.org/libraries/brent/cricklewood-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/brent/cricklewood-library",
-  "authority": "brent"
+  "data": {
+    "Local authority": "Brent",
+    "Local authority code": "E09000005",
+    "Library name": "Cricklewood Library",
+    "Library code": null,
+    "Address 1": "152 Olive Road, London, NW2 6UY",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 51.556858,
+    "Longitude": -0.227396,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "09:30-13:00",
+    "Friday staffed hours": "15:00-18:00",
+    "Saturday staffed hours": "09:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": "Closed on Bank Holidays, and between Christmas and New Year.",
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Bookable space; Free Wi-Fi; Cafe; Children's activities; Hobby and interest groups; Computers; BFI Replay",
+    "Phone number": "020 8438 8705",
+    "Email address": "librarian@cricklewoodlibrary.org.uk",
+    "URL": "https://www.cricklewoodlibrary.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

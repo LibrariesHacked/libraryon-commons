@@ -1,141 +1,64 @@
 {
   "id": "lib_b5e1e0c1-6900-4e43-a840-ae29362bd505",
-  "source_id": "2850",
-  "name": "Peckham Library",
   "slug": "peckham-library",
-  "address": "122 Peckham Hill Street, Southwark, Surrey, SE15 5JR",
-  "postcode": "SE15 5JR",
-  "town": "London",
-  "phone": "020 7525 2000",
-  "email": "Peckham.Library@southwark.gov.uk",
-  "website": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/peckham-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "lift-access",
-    "accessible-restrooms",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.47438,
-  "longitude": -0.06935,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.southwark.gov.uk/culture-and-sport/libraries/library-services/hire-library-hall-or-meeting-room"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "southwark",
+  "source_id": "2850",
+  "source_url": "https://libraryon.org/libraries/southwark/peckham-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/southwark/peckham-library",
-  "authority": "southwark"
+  "data": {
+    "Local authority": "Southwark",
+    "Local authority code": "E09000028",
+    "Library name": "Peckham Library",
+    "Library code": null,
+    "Address 1": "122 Peckham Hill Street, Southwark, Surrey, SE15 5JR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE15 5JR",
+    "Unique property reference number": 200003394812,
+    "Latitude": 51.47438,
+    "Longitude": -0.06935,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2000,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-20:00",
+    "Tuesday staffed hours": "09:00-20:00",
+    "Wednesday staffed hours": "10:00-20:00",
+    "Thursday staffed hours": "09:00-20:00",
+    "Friday staffed hours": "09:00-20:00",
+    "Saturday staffed hours": "10:00-17:00",
+    "Sunday staffed hours": "12:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Hobby and interest groups; Digital skills sessions; Bookable space; British Newspaper Archive; Findmypast",
+    "Phone number": "020 7525 2000",
+    "Email address": "Peckham.Library@southwark.gov.uk",
+    "URL": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/peckham-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

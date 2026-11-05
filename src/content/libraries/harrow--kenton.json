@@ -1,138 +1,71 @@
 {
   "id": "lib_031beb6d-005a-4444-97bc-4703d1d7012b",
-  "source_id": "2270",
-  "name": "Kenton Library",
   "slug": "kenton",
-  "address": "141 Kenton Lane, Kenton, Greater London , HA3 8UJ",
-  "postcode": "HA3 8ND",
-  "town": "Harrow",
-  "phone": "020 3714 7712",
-  "email": "kenton.library@harrowlibraries.org.uk",
-  "website": "https://www.harrow.gov.uk/libraries/harrow-library-branches",
-  "catalogue": "https://www.harrow.gov.uk/libraries/digital-newspapers-magazines-ebooks",
-  "joinOnline": "https://www.harrow.gov.uk/libraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "step-free-access",
-    "automatic-doors",
-    "hearing-loop-system",
-    "wheelchair-access",
-    "assistive-technology-available",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "service-dog-friendly"
-  ],
-  "notes": "Library refurbished in Feb-March 2018. Total spend was approx. 拢120k",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.59261,
-  "longitude": -0.31162,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.harrow.gov.uk/libraries/online-resources-learning"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.harrow.gov.uk/libraries/online-resources-learning"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.harrow.gov.uk/libraries/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.harrow.gov.uk/libraries/childrens-library-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.harrow.gov.uk/libraries/digital-newspapers-magazines-ebooks"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "harrow",
+  "source_id": "2270",
+  "source_url": "https://libraryon.org/libraries/harrow/kenton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/harrow/kenton",
-  "authority": "harrow"
+  "data": {
+    "Local authority": "Harrow",
+    "Local authority code": "E09000015",
+    "Library name": "Kenton Library",
+    "Library code": null,
+    "Address 1": "141 Kenton Lane, Kenton, Greater London , HA3 8UJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HA3 8ND",
+    "Unique property reference number": null,
+    "Latitude": 51.59261,
+    "Longitude": -0.31162,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-18:00",
+    "Wednesday staffed hours": "10:00-13:00",
+    "Thursday staffed hours": "10:00-18:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-18:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Family history; Career support; Books delivered; Children's activities; Digital lending; BFI Replay",
+    "Phone number": "020 3714 7712",
+    "Email address": "kenton.library@harrowlibraries.org.uk",
+    "URL": "https://www.harrow.gov.uk/libraries/harrow-library-branches",
+    "Notes": "Library refurbished in Feb-March 2018. Total spend was approx. 拢120k"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

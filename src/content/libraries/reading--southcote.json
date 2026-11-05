@@ -1,108 +1,64 @@
 {
   "id": "lib_ba50a664-58fc-4f17-bffc-d957295ff1c8",
-  "source_id": "3395",
-  "name": "Southcote",
   "slug": "southcote",
-  "address": "Community Hub, Coronation Square, Southcote Lane, Reading , Berkshire, RG30 3QP",
-  "postcode": "RG30 3QP",
-  "town": "Reading",
-  "phone": "0118 937 5109",
-  "email": "info@readinglibraries.org.uk",
-  "website": "https://www.reading.gov.uk/leisure/libraries/all-libraries/southcote-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access"
-  ],
-  "notes": "Moved into colocated space September 2018",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "https://tour.giraffe360.com/southcote_library/",
-  "permanentlyClosed": false,
-  "latitude": 51.44214,
-  "longitude": -1.01236,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    }
-  ],
+  "authority": "reading",
+  "source_id": "3395",
+  "source_url": "https://libraryon.org/libraries/reading/southcote",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/reading/southcote",
-  "authority": "reading"
+  "data": {
+    "Local authority": "Reading",
+    "Local authority code": "E06000038",
+    "Library name": "Southcote",
+    "Library code": null,
+    "Address 1": "Community Hub, Coronation Square, Southcote Lane, Reading , Berkshire, RG30 3QP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "RG30 3QP",
+    "Unique property reference number": 310035668,
+    "Latitude": 51.44214,
+    "Longitude": -1.01236,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-12:00,13:00-19:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:00-12:00,13:00-16:00",
+    "Friday staffed hours": "09:00-12:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers",
+    "Phone number": "0118 937 5109",
+    "Email address": "info@readinglibraries.org.uk",
+    "URL": "https://www.reading.gov.uk/leisure/libraries/all-libraries/southcote-library/",
+    "Notes": "Moved into colocated space September 2018"
+  },
+  "validation_exceptions": []
 }

@@ -1,3 +1,6 @@
+import { validateRecords } from './directory-schema.mjs'
+import { libraryView, authorityView } from './directory-view.ts'
+
 /** Return the editable address, with compatibility for original source records. */
 export function libraryAddress(library) {
   return library.address || library.streetAddress || library.location?.place_name || ''
@@ -60,6 +63,7 @@ export function collectValues(records, read) {
   return [...seen]
 }
 
+/** @param {number} degrees - Decimal angle. @returns {number} Angle in radians. */
 const toRadians = (degrees) => (degrees * Math.PI) / 180
 const earthMiles = 3958.8
 const weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
@@ -129,9 +133,26 @@ export function nearbyLibraries(library, candidates, count = 5) {
  * Relationships come from the editable authority field, never stale source ID lists.
  * @param {object[]} authorityRecords - Editable authorities.
  * @param {object[]} libraryRecords - Individually editable libraries.
+ * @param {{requireCanonical?: boolean}} [options] - Reject legacy fixtures in production.
  * @returns {object} Directory records, stable paths and a minimal browser search index.
  */
-export function createDirectory(authorityRecords, libraryRecords) {
+export function createDirectory(
+  authorityRecords,
+  libraryRecords,
+  { requireCanonical = false } = {}
+) {
+  validateRecords(
+    requireCanonical ? authorityRecords : authorityRecords.filter((record) => record.data),
+    'authorities'
+  )
+  validateRecords(
+    requireCanonical ? libraryRecords : libraryRecords.filter((record) => record.data),
+    'libraries'
+  )
+  authorityRecords = authorityRecords.map((record) =>
+    record.data ? authorityView(record) : record
+  )
+  libraryRecords = libraryRecords.map((record) => (record.data ? libraryView(record) : record))
   const authorities = [...authorityRecords].sort((first, second) =>
     first.name.localeCompare(second.name, 'en')
   )
@@ -146,7 +167,8 @@ export function createDirectory(authorityRecords, libraryRecords) {
   const paths = new Set()
   const ids = new Set()
   const libraries = []
-  const add = (record) => {
+  /** @param {object} record - Presentation record to register with unique routing and authority membership. */
+  const addLibrary = (record) => {
     const slug = record.authority || ''
     if (!record.name || !/^[A-Za-z0-9][A-Za-z0-9-]*$/.test(record.slug || '')) {
       throw new Error(`Invalid library name or slug: ${record.name || '(unnamed)'}`)
@@ -167,7 +189,8 @@ export function createDirectory(authorityRecords, libraryRecords) {
       authority.library_ids.push(id)
     }
   }
-  for (const library of libraryRecords) add(library)
+  for (const library of libraryRecords) addLibrary(library)
+  /** @param {{url: string}} library - Registered library. @returns {string} Stable public route. */
   const libraryPath = (library) => library.url
   const searchRecords = libraries
     .map((library) => ({

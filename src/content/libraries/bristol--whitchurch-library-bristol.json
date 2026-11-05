@@ -1,144 +1,64 @@
 {
   "id": "lib_5db14fa5-cc39-4280-b25d-640e395d0449",
-  "source_id": "3762",
-  "name": "Whitchurch Library",
   "slug": "whitchurch-library-bristol",
-  "address": "Oatlands Avenue, Whitchurch, Bristol, BS14 0SX",
-  "postcode": "BS14 0SX",
-  "town": "Bristol",
-  "phone": "0117 9031185",
-  "email": "whitchurch.library@bristol.gov.uk",
-  "website": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=26",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-public-transport-connections",
-    "automatic-doors",
-    "step-free-access",
-    "wheelchair-access",
-    "hearing-loop-system",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.41401,
-  "longitude": -2.57182,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/print-online-using-wi-fi-in-a-bristol-library"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/accessible-library-services"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/ebooks-and-eaudiobooks"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/services-for-children-and-young-people"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/local-and-family-history"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "bristol",
+  "source_id": "3762",
+  "source_url": "https://libraryon.org/libraries/bristol/whitchurch-library-bristol",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bristol/whitchurch-library-bristol",
-  "authority": "bristol"
+  "data": {
+    "Local authority": "Bristol",
+    "Local authority code": "E06000023",
+    "Library name": "Whitchurch Library",
+    "Library code": null,
+    "Address 1": "Oatlands Avenue, Whitchurch, Bristol, BS14 0SX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS14 0SX",
+    "Unique property reference number": 276047,
+    "Latitude": 51.41401,
+    "Longitude": -2.57182,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2010,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:00-17:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Scanning; Photocopiers; Books delivered; Digital lending; Children's activities; Family history; BFI Replay; British Newspaper Archive; Findmypast",
+    "Phone number": "0117 9031185",
+    "Email address": "whitchurch.library@bristol.gov.uk",
+    "URL": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=26",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

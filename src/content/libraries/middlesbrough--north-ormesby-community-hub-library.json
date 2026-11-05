@@ -1,132 +1,64 @@
 {
   "id": "lib_9aa5f9d3-fd5a-41f4-ad97-6bc8a1ddb136",
-  "source_id": "2762",
-  "name": "North Ormesby Community Hub & Library",
   "slug": "north-ormesby-community-hub-library",
-  "address": "Derwent Street, North Ormesby, Middlesbrough, North Yorkshire, TS3 6JB",
-  "postcode": "TS3 6JB",
-  "town": "Middlesbrough",
-  "phone": "01642 243581 / 726196",
-  "email": "north_ormesby_library@middlesbrough.gov.uk",
-  "website": "https://libraries.middlesbrough.gov.uk/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.57076,
-  "longitude": -1.21165,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://libraries.middlesbrough.gov.uk/roomhire"
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "middlesbrough",
+  "source_id": "2762",
+  "source_url": "https://libraryon.org/libraries/middlesbrough/north-ormesby-community-hub-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/middlesbrough/north-ormesby-community-hub-library",
-  "authority": "middlesbrough"
+  "data": {
+    "Local authority": "Middlesbrough",
+    "Local authority code": "E06000002",
+    "Library name": "North Ormesby Community Hub & Library",
+    "Library code": null,
+    "Address 1": "Derwent Street, North Ormesby, Middlesbrough, North Yorkshire, TS3 6JB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS3 6JB",
+    "Unique property reference number": null,
+    "Latitude": 54.57076,
+    "Longitude": -1.21165,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-17:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:30-12:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Findmypast; British Newspaper Archive; Photocopiers; Children's activities; Hobby and interest groups; BFI Replay",
+    "Phone number": "01642 243581 / 726196",
+    "Email address": "north_ormesby_library@middlesbrough.gov.uk",
+    "URL": "https://libraries.middlesbrough.gov.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

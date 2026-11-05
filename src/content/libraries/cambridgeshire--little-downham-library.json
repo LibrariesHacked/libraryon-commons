@@ -1,74 +1,64 @@
 {
   "id": "lib_d9c2619a-9f99-4728-be7b-bbb360420db6",
-  "source_id": "2677",
-  "name": "Little Downham Library",
   "slug": "little-downham-library",
-  "address": "Village Centre, Main Street, Ely, Cambridgeshire, CB6 2ST",
-  "postcode": "CB6 2ST",
-  "town": "Ely",
-  "phone": "",
-  "email": "",
-  "website": "https://www.cambridgeshire.gov.uk/directory/listings/little-downham-library-access-pont",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:30",
-          "startTime": "12:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.43279,
-  "longitude": 0.24099,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "cambridgeshire",
+  "source_id": "2677",
+  "source_url": "https://libraryon.org/libraries/cambridgeshire/little-downham-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cambridgeshire/little-downham-library",
-  "authority": "cambridgeshire"
+  "data": {
+    "Local authority": "Cambridgeshire",
+    "Local authority code": "E10000003",
+    "Library name": "Little Downham Library",
+    "Library code": null,
+    "Address 1": "Village Centre, Main Street, Ely, Cambridgeshire, CB6 2ST",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CB6 2ST",
+    "Unique property reference number": null,
+    "Latitude": 52.43279,
+    "Longitude": 0.24099,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "12:30-16:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": null,
+    "URL": "https://www.cambridgeshire.gov.uk/directory/listings/little-downham-library-access-pont",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

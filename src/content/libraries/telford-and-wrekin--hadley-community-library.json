@@ -1,90 +1,64 @@
 {
   "id": "lib_aa224e30-c20c-4a59-a4db-d3945baf0070",
-  "source_id": "3072",
-  "name": "Hadley Community Library",
   "slug": "hadley-community-library",
-  "address": "Hadley Learning Community, Crescent Road, Hadley, Telford, Shropshire, TF1 5NU",
-  "postcode": "TF1 5NU",
-  "town": "Telford",
-  "phone": "01952 388475",
-  "email": "libraryenquiries@telford.gov.uk",
-  "website": "https://www.telford.gov.uk/info/20406/find_a_library/3441/hadley_community_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.701904,
-  "longitude": -2.484731,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.telford.gov.uk/info/20413/library_services_-_information_help_and_support/605/advice_on_using_library_computers_equipment_and_the_internet"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.telford.gov.uk/info/1012/libraries/667/ebooks_eaudio_and_emagazine_catalogue"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.telford.gov.uk/info/20406/find_a_library/3443/home_library_service"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://replay.bfi.org.uk/"
-    }
-  ],
+  "authority": "telford-and-wrekin",
+  "source_id": "3072",
+  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/hadley-community-library",
   "updated_on": "2026-08-04",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/telford-and-wrekin/hadley-community-library",
-  "authority": "telford-and-wrekin"
+  "data": {
+    "Local authority": "Telford and Wrekin",
+    "Local authority code": "E06000020",
+    "Library name": "Hadley Community Library",
+    "Library code": null,
+    "Address 1": "Hadley Learning Community, Crescent Road, Hadley, Telford, Shropshire, TF1 5NU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TF1 5NU",
+    "Unique property reference number": 10090445907,
+    "Latitude": 52.701904,
+    "Longitude": -2.484731,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2006,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Digital lending; Books delivered; BFI Replay",
+    "Phone number": "01952 388475",
+    "Email address": "libraryenquiries@telford.gov.uk",
+    "URL": "https://www.telford.gov.uk/info/20406/find_a_library/3441/hadley_community_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

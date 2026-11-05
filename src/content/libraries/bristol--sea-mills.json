@@ -1,151 +1,71 @@
 {
   "id": "lib_42edd092-200b-41bb-bfbd-5a4d86b5086c",
-  "source_id": "3268",
-  "name": "Sea Mills Library",
   "slug": "sea-mills",
-  "address": "Sylvan Way, Sea Mills, Bristol, BS9 2NA",
-  "postcode": "BS9 2NH",
-  "town": "Bristol",
-  "phone": "0117 9038555",
-  "email": "seamills.library@bristol.gov.uk",
-  "website": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=19",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "automatic-doors",
-    "low-vision-support",
-    "step-free-access",
-    "accessible-public-transport-connections",
-    "tactile-flooring",
-    "wheelchair-access",
-    "assistive-technology-available",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "https://youtu.be/U3i-_fvqsqc",
-  "permanentlyClosed": false,
-  "latitude": 51.49114,
-  "longitude": -2.64969,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/print-online-using-wi-fi-in-a-bristol-library"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/ebooks-and-eaudiobooks"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/local-and-family-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/accessible-library-services"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.bristol.gov.uk/residents/libraries-and-archives/services-for-children-and-young-people"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "bristol",
+  "source_id": "3268",
+  "source_url": "https://libraryon.org/libraries/bristol/sea-mills",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bristol/sea-mills",
-  "authority": "bristol"
+  "data": {
+    "Local authority": "Bristol",
+    "Local authority code": "E06000023",
+    "Library name": "Sea Mills Library",
+    "Library code": null,
+    "Address 1": "Sylvan Way, Sea Mills, Bristol, BS9 2NA",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS9 2NH",
+    "Unique property reference number": null,
+    "Latitude": 51.49114,
+    "Longitude": -2.64969,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-14:00",
+    "Tuesday staffed hours": "10:00-14:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": "13:00-17:00",
+    "Friday staffed hours": "10:00-15:00",
+    "Saturday staffed hours": "10:00-15:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Family history; Books delivered; Photocopiers; Children's activities; Hobby and interest groups; Computers; British Newspaper Archive; Findmypast",
+    "Phone number": "0117 9038555",
+    "Email address": "seamills.library@bristol.gov.uk",
+    "URL": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=19",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

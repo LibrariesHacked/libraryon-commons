@@ -251,69 +251,43 @@ export function contentDirectives() {
           fail('include one or more recommendation-item blocks and no other content')
         }
 
-        const covers = []
-        const recommendationItems = []
-        items.forEach((item, index) => {
+        // A shared name makes the native details elements behave as one exclusive set.
+        const group = `collection-recommendations-${node.position.start.line}`
+        const recommendationItems = items.map((item, index) => {
           const bookTitle = item.attributes.title?.trim()
           const images = item.children.filter(imageParagraph)
           if (!bookTitle) fail('each recommendation needs a title')
           if (images.length !== 1) fail('each recommendation needs one cover image')
-          const identifier = `${node.position.start.line}-${index}`
           const meta = [item.attributes.author, item.attributes.year].filter(Boolean).join(' · ')
-          covers.push(
-            element('figure', 'collection-recommendation-cover', [images[0]], {
-              dataRecommendationCover: String(index),
-              ...(index ? { hidden: true } : {})
-            })
-          )
-          recommendationItems.push(
-            element('li', 'collection-recommendation-item', [
-              element(
-                'button',
-                'collection-recommendation-select',
-                [
-                  element('span', 'collection-recommendation-title', [text(bookTitle)]),
-                  ...(meta ? [element('span', 'collection-recommendation-meta', [text(meta)])] : [])
-                ],
-                {
-                  type: 'button',
-                  ariaPressed: index === 0 ? 'true' : 'false',
-                  ariaExpanded: index === 0 ? 'true' : 'false',
-                  ariaControls: `collection-book-cover-${identifier} collection-book-description-${identifier}`,
-                  dataRecommendationSelect: String(index)
-                }
-              ),
+          return element(
+            'details',
+            'collection-recommendation-item',
+            [
+              element('summary', 'collection-recommendation-select', [
+                element('span', 'collection-recommendation-title', [text(bookTitle)]),
+                ...(meta ? [element('span', 'collection-recommendation-meta', [text(meta)])] : [])
+              ]),
+              element('figure', 'collection-recommendation-cover', [images[0]]),
               element(
                 'div',
                 'collection-recommendation-description',
-                item.children.filter((child) => child !== images[0]),
-                {
-                  id: `collection-book-description-${identifier}`,
-                  dataRecommendationDescription: String(index),
-                  ...(index ? { hidden: true } : {})
-                }
+                item.children.filter((child) => child !== images[0])
               )
-            ])
+            ],
+            { name: group, ...(index === 0 ? { open: true } : {}) }
           )
-          covers.at(-1).data.hProperties.id = `collection-book-cover-${identifier}`
         })
         node.data = {
           hName: 'section',
           hProperties: {
             className: ['collection-recommendations'],
             role: 'region',
-            ariaLabel: title,
-            dataCollectionRecommendations: ''
+            ariaLabel: title
           }
         }
         node.children = [
           element('h2', 'collection-recommendations-heading', [text(title)]),
-          element('div', 'collection-recommendations-layout', [
-            element('div', 'collection-recommendations-media', covers),
-            element('div', 'collection-recommendations-copy', [
-              element('ul', 'collection-recommendations-list', recommendationItems)
-            ])
-          ])
+          element('div', 'collection-recommendations-list', recommendationItems)
         ]
       } else if (node.name === 'collection-carousel') {
         const kind = attributes.kind
@@ -429,18 +403,7 @@ export function contentDirectives() {
             }
             slide.children = [
               element('div', 'collection-hotspot-image', [images[0], ...markers]),
-              element('aside', 'collection-hotspot-aside', [
-                ...(introAside
-                  ? [
-                      element(
-                        'div',
-                        'collection-hotspot-intro',
-                        structuredClone(introAside.children)
-                      )
-                    ]
-                  : []),
-                ...notes
-              ])
+              element('aside', 'collection-hotspot-aside', notes)
             ]
           }
         })
@@ -456,6 +419,7 @@ export function contentDirectives() {
           }
         }
         node.children = [
+          ...(introAside ? [element('div', 'collection-hotspot-intro', introAside.children)] : []),
           element(
             'div',
             'collection-carousel-viewport',
@@ -578,12 +542,41 @@ export function contentDirectives() {
             element('div', 'collection-accordion-content', item.children)
           ]
         }
-        node.data = {
-          hName: 'div',
-          hProperties: {
-            className: ['collection-accordion'],
-            role: 'region',
-            ariaLabel: attributes.label || 'Collection details'
+        const videoSrc = attributes.video?.trim()
+        const videoTitle =
+          attributes.videoTitle?.trim() || attributes.label || 'Video recommendations'
+        if (videoSrc) {
+          node.data = {
+            hName: 'div',
+            hProperties: {
+              className: ['collection-accordion', 'collection-accordion--with-media'],
+              role: 'region',
+              ariaLabel: attributes.label || 'Collection details'
+            }
+          }
+          node.children = [
+            element('div', 'collection-accordion-media', [
+              element('iframe', 'collection-accordion-iframe', [], {
+                src: videoSrc,
+                title: videoTitle,
+                width: '315',
+                height: '560',
+                loading: 'lazy',
+                allow: 'encrypted-media; picture-in-picture; web-share',
+                referrerPolicy: 'strict-origin-when-cross-origin',
+                allowFullScreen: ''
+              })
+            ]),
+            element('div', 'collection-accordion-items', items)
+          ]
+        } else {
+          node.data = {
+            hName: 'div',
+            hProperties: {
+              className: ['collection-accordion'],
+              role: 'region',
+              ariaLabel: attributes.label || 'Collection details'
+            }
           }
         }
       } else if (['testimonial', 'quote'].includes(node.name)) {

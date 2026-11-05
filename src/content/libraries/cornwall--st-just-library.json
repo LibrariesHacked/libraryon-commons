@@ -1,127 +1,64 @@
 {
   "id": "lib_c6c3a870-c67a-4a47-99a5-e61826d8509b",
-  "source_id": "3003",
-  "name": "St. Just Library",
   "slug": "st-just-library",
-  "address": "Market Street, St. Just, Cornwall, TR19 7HX",
-  "postcode": "TR19 7HX",
-  "town": "Penzance",
-  "phone": "0300 1234 111",
-  "email": "stjust.library@liscornwall.org.uk",
-  "website": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/st-just-library/",
-  "catalogue": "https://prism.librarymanagementcloud.co.uk/cornwall/",
-  "joinOnline": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/join-the-library/",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.123957,
-  "longitude": -5.681868,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.cornwall.gov.uk/people-and-communities/digital-inclusion/"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-free-library-resources/online-reference-library/genealogy-and-history-resources/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "cornwall",
+  "source_id": "3003",
+  "source_url": "https://libraryon.org/libraries/cornwall/st-just-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cornwall/st-just-library",
-  "authority": "cornwall"
+  "data": {
+    "Local authority": "Cornwall",
+    "Local authority code": "E06000052",
+    "Library name": "St. Just Library",
+    "Library code": null,
+    "Address 1": "Market Street, St. Just, Cornwall, TR19 7HX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TR19 7HX",
+    "Unique property reference number": 100041029528,
+    "Latitude": 50.123957,
+    "Longitude": -5.681868,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-13:30",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Children's activities; Digital lending; Digital skills sessions; Family history; Findmypast; British Newspaper Archive",
+    "Phone number": "0300 1234 111",
+    "Email address": "stjust.library@liscornwall.org.uk",
+    "URL": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/st-just-library/",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

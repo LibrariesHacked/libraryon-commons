@@ -1,113 +1,71 @@
 {
   "id": "lib_a6c836e6-e57e-4f40-a039-e6a8cd806daa",
-  "source_id": "1754",
-  "name": "Wigtown, John McNeillie Library",
   "slug": "wigtown-john-mc-neillie-library",
-  "address": "Customer Service Centre, Wigtown County Buildings, Wigtown, DG8 9JH",
-  "postcode": "DG8 9EJ",
-  "town": "Newton Stewart",
-  "phone": "030 33 33 3004",
-  "email": "yourlibrary@dumgal.gov.uk",
-  "website": "http://www.dumgal.gov.uk/article/15588/DG-Customer-Services---John-McNellie-Library-Wigtown",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.86851,
-  "longitude": -4.44114,
-  "services": [
-    {
-      "service": "Books",
-      "url": "https://www.dumgal.gov.uk/article/15311/Borrow-items-from-the-library"
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.dumgal.gov.uk/article/15311/Borrow-items-from-the-library"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "dumfries-and-galloway",
+  "source_id": "1754",
+  "source_url": "https://libraryon.org/libraries/dumfries-and-galloway/wigtown-john-mc-neillie-library",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/dumfries-and-galloway/wigtown-john-mc-neillie-library",
-  "authority": "dumfries-and-galloway"
+  "data": {
+    "Local authority": "Dumfries and Galloway",
+    "Local authority code": "S12000006",
+    "Library name": "Wigtown, John McNeillie Library",
+    "Library code": null,
+    "Address 1": "Customer Service Centre, Wigtown County Buildings, Wigtown, DG8 9JH",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "DG8 9EJ",
+    "Unique property reference number": null,
+    "Latitude": 54.86851,
+    "Longitude": -4.44114,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "13:00-17:00",
+    "Tuesday staffed hours": "09:00-12:00,13:00-17:00",
+    "Wednesday staffed hours": "13:00-17:00",
+    "Thursday staffed hours": "09:00-12:00,13:00-17:00",
+    "Friday staffed hours": "09:00-12:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; BFI Replay",
+    "Phone number": "030 33 33 3004",
+    "Email address": "yourlibrary@dumgal.gov.uk",
+    "URL": "http://www.dumgal.gov.uk/article/15588/DG-Customer-Services---John-McNellie-Library-Wigtown",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

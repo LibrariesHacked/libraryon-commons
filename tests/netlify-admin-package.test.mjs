@@ -11,6 +11,8 @@ test('Netlify CMS package contains only the editor, runtime assets, and communit
   for (const file of [
     'dist/admin/index.html',
     'dist/admin/config.yml',
+    'dist/admin/review/index.html',
+    'dist/admin/review-data/authorities/merthyr-tydfil.json',
     'dist/_astro/editor.js',
     'dist/uploads/community/library-guide.jpg',
     'dist/uploads/archive/original.pdf',
@@ -24,6 +26,12 @@ test('Netlify CMS package contains only the editor, runtime assets, and communit
   const output = packageNetlifyAdmin({ root })
   assert.ok(existsSync(path.join(output, 'admin/index.html')))
   assert.ok(existsSync(path.join(output, 'admin/config.yml')))
+  assert.ok(existsSync(path.join(output, 'admin/review/index.html')))
+  assert.ok(existsSync(path.join(output, 'admin/review-data/authorities/merthyr-tydfil.json')))
+  assert.match(
+    readFileSync(path.join(output, '_headers'), 'utf8'),
+    /\/admin\/\*[\s\S]*X-Robots-Tag: noindex, nofollow/
+  )
   assert.ok(existsSync(path.join(output, '_astro/editor.js')))
   assert.ok(existsSync(path.join(output, 'uploads/community/library-guide.jpg')))
   assert.ok(!existsSync(path.join(output, 'uploads/archive/original.pdf')))

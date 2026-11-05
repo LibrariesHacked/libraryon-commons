@@ -1,0 +1,65 @@
+---
+import { Download, FileCheck, FileJson } from '@lucide/astro'
+import { libraryValidationReport } from '../lib/directory-export.mjs'
+import { sitePath } from '../lib/site.mjs'
+
+const { entries, authoritySlug } = Astro.props
+const prefix = authoritySlug ? `/libraries/${authoritySlug}/libraries` : '/libraries'
+const report = libraryValidationReport(entries)
+---
+
+<section class="detail-section library-downloads" aria-label="Library data downloads">
+  <h2>{authoritySlug ? 'Library data' : 'All library data'}</h2>
+  <p class="muted">
+    {report.totalRecords.toLocaleString('en-GB')} records;{' '}
+    {report.invalidRecords.toLocaleString('en-GB')} with validation issues
+  </p>
+  <a
+    class="button button-secondary"
+    href={sitePath(`${prefix}.csv`)}
+    download={authoritySlug ? `libraries-${authoritySlug}.csv` : 'libraries.csv'}
+  >
+    <Download size={17} aria-hidden="true" /> Download CSV
+  </a>
+  <details>
+    <summary>Validation and schema</summary>
+    <ul class="contact-list">
+      <li>
+        <a
+          href={sitePath(`${prefix}.validated.csv`)}
+          download={
+            authoritySlug ? `libraries-${authoritySlug}.validated.csv` : 'libraries.validated.csv'
+          }
+        >
+          <FileCheck size={17} aria-hidden="true" /> Validated records CSV (
+          {report.validRecords.toLocaleString('en-GB')})
+        </a>
+      </li>
+      <li>
+        <a href={sitePath(`${prefix}.validation.json`)} download>
+          <FileJson size={17} aria-hidden="true" /> Validation report
+        </a>
+      </li>
+      <li>
+        <a href={sitePath('/schemas/libraries.json')} download>
+          <FileJson size={17} aria-hidden="true" /> Table Schema
+        </a>
+      </li>
+    </ul>
+  </details>
+</section>
+
+<style>
+  .library-downloads {
+    margin-block: 1.5rem;
+  }
+  .library-downloads h2 {
+    font-size: 1.25rem;
+  }
+  .library-downloads details {
+    margin-top: 0.75rem;
+  }
+  .library-downloads summary {
+    cursor: pointer;
+  }
+</style>

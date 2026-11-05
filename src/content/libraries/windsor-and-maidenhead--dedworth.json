@@ -1,160 +1,71 @@
 {
   "id": "lib_14e82264-0210-477e-b916-86286131e976",
-  "source_id": "3018",
-  "name": "Dedworth Library",
   "slug": "dedworth",
-  "address": "Dedworth School, Smiths Lane, Windsor, Berkshire, SL4 5PE",
-  "postcode": "SL4 5PE",
-  "town": "Windsor",
-  "phone": "01753 868733",
-  "email": "dedworth.library@rbwm.gov.uk",
-  "website": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-dedworth-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "neurodivergent-spaces",
-    "accessible-restrooms",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "school_college"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.47847,
-  "longitude": -0.64523,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/computers-and-it-services"
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-clubs"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/digital-library/books-and-media"
-    },
-    {
-      "service": "Career support",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/employment-support"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-spaces-and-it-rooms-hire/dedworth-library"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/home-library-service"
-    }
-  ],
+  "authority": "windsor-and-maidenhead",
+  "source_id": "3018",
+  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/dedworth",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/windsor-and-maidenhead/dedworth",
-  "authority": "windsor-and-maidenhead"
+  "data": {
+    "Local authority": "Windsor and Maidenhead",
+    "Local authority code": "E06000040",
+    "Library name": "Dedworth Library",
+    "Library code": null,
+    "Address 1": "Dedworth School, Smiths Lane, Windsor, Berkshire, SL4 5PE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SL4 5PE",
+    "Unique property reference number": null,
+    "Latitude": 51.47847,
+    "Longitude": -0.64523,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:30-17:30",
+    "Tuesday staffed hours": "14:30-17:30",
+    "Wednesday staffed hours": "14:30-17:30",
+    "Thursday staffed hours": "10:00-13:00,14:00-19:00",
+    "Friday staffed hours": "14:30-17:30",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": "11:00-14:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "school_college",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Hobby and interest groups; Children's activities; Digital lending; Career support; Bookable space; Books delivered",
+    "Phone number": "01753 868733",
+    "Email address": "dedworth.library@rbwm.gov.uk",
+    "URL": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/library-dedworth-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

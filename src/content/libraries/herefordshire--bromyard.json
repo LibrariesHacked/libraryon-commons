@@ -1,136 +1,71 @@
 {
   "id": "lib_d5396271-9a7f-4fe4-a186-31be2cab0209",
-  "source_id": "3016",
-  "name": "Bromyard Library",
   "slug": "bromyard",
-  "address": "The Bromyard Centre, 1 Cruxwell Street, Bromyard, Herefordshire, HR7 4EB",
-  "postcode": "HR7 4EB",
-  "town": "Bromyard",
-  "phone": "01432 260214",
-  "email": "bromyardlibrary@herefordshire.gov.uk",
-  "website": "https://www.herefordshire.gov.uk/directory-record/23/bromyard-library",
-  "catalogue": "https://prism.librarymanagementcloud.co.uk/herefordshire/home",
-  "joinOnline": "https://www.herefordshire.gov.uk/libraries-1/joining-using-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "07:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.1899,
-  "longitude": -2.50851,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/3"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/2"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/2"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/libraries-opening-hours/3"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.herefordshire.gov.uk/libraries-1/local-family-history"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.herefordshire.gov.uk/libraries/homedelivery"
-    }
-  ],
+  "authority": "herefordshire",
+  "source_id": "3016",
+  "source_url": "https://libraryon.org/libraries/herefordshire/bromyard",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/herefordshire/bromyard",
-  "authority": "herefordshire"
+  "data": {
+    "Local authority": "Herefordshire",
+    "Local authority code": "E06000019",
+    "Library name": "Bromyard Library",
+    "Library code": null,
+    "Address 1": "The Bromyard Centre, 1 Cruxwell Street, Bromyard, Herefordshire, HR7 4EB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HR7 4EB",
+    "Unique property reference number": null,
+    "Latitude": 52.1899,
+    "Longitude": -2.50851,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "07:00-21:00",
+    "Tuesday staffed hours": "07:00-21:00",
+    "Wednesday staffed hours": "07:00-21:00",
+    "Thursday staffed hours": "07:00-21:00",
+    "Friday staffed hours": "07:00-20:00",
+    "Saturday staffed hours": "08:00-13:00",
+    "Sunday staffed hours": "08:00-13:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Digital lending; Computers; Photocopiers; Family history; Books delivered",
+    "Phone number": "01432 260214",
+    "Email address": "bromyardlibrary@herefordshire.gov.uk",
+    "URL": "https://www.herefordshire.gov.uk/directory-record/23/bromyard-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

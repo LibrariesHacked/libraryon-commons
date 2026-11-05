@@ -1,112 +1,77 @@
 {
   "id": "lib_87266305-0fa3-4627-bd57-9eb3df59a34f",
-  "source_id": "160",
-  "name": "Ardnamurchan Community Library",
   "slug": "ardnamurchan-community-library",
-  "address": "Bluebell Croft Driveway, Strontian, Acharacle, PH36 4JA, United Kingdom",
-  "postcode": "PH36 4JA",
-  "town": "Acharacle",
-  "phone": "01397 709226",
-  "email": "ardnamurchan.library@highlifehighland.com",
-  "website": "https://www.highlifehighland.com/libraries/ardnamurchan-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "21:00",
-          "startTime": "19:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Facility Not Open",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 56.703642,
-  "longitude": -5.571279,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "highland",
+  "source_id": "160",
+  "source_url": "https://libraryon.org/libraries/highland/ardnamurchan-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/highland/ardnamurchan-community-library",
-  "authority": "highland"
+  "data": {
+    "Local authority": "Highland",
+    "Local authority code": "S12000017",
+    "Library name": "Ardnamurchan Community Library",
+    "Library code": null,
+    "Address 1": "Bluebell Croft Driveway, Strontian, Acharacle, PH36 4JA, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PH36 4JA",
+    "Unique property reference number": null,
+    "Latitude": 56.703642,
+    "Longitude": -5.571279,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-16:00",
+    "Tuesday staffed hours": "09:00-16:00,19:00-21:00",
+    "Wednesday staffed hours": "09:00-16:00",
+    "Thursday staffed hours": "09:00-16:00,19:00-21:00",
+    "Friday staffed hours": "09:00-16:00",
+    "Saturday staffed hours": "14:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01397 709226",
+    "Email address": "ardnamurchan.library@highlifehighland.com",
+    "URL": "https://www.highlifehighland.com/libraries/ardnamurchan-community-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

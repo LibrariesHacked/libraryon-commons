@@ -1,124 +1,64 @@
 {
   "id": "lib_c5aaacbd-186b-4039-aebe-49d7a09873ed",
-  "source_id": "2877",
-  "name": "Haddenham Library",
   "slug": "haddenham-library",
-  "address": "Arkenstall Centre, 7 Station Road, Ely, Cambridgeshire, CB6 3XD",
-  "postcode": "CB6 3XD",
-  "town": "Ely",
-  "phone": "07851 812524",
-  "email": "haddlibcambs@outlook.com",
-  "website": "https://www.haddenhamlibrarycambs.co.uk",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        },
-        {
-          "type": "Volunteer-run",
-          "endTime": "19:30",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:30"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.36146,
-  "longitude": 0.14921,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "cambridgeshire",
+  "source_id": "2877",
+  "source_url": "https://libraryon.org/libraries/cambridgeshire/haddenham-library",
   "updated_on": "2026-06-03",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cambridgeshire/haddenham-library",
-  "authority": "cambridgeshire"
+  "data": {
+    "Local authority": "Cambridgeshire",
+    "Local authority code": "E10000003",
+    "Library name": "Haddenham Library",
+    "Library code": null,
+    "Address 1": "Arkenstall Centre, 7 Station Road, Ely, Cambridgeshire, CB6 3XD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CB6 3XD",
+    "Unique property reference number": null,
+    "Latitude": 52.36146,
+    "Longitude": 0.14921,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2010,
+    "Year closed": null,
+    "Monday staffed hours": "14:30-17:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "14:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:30-17:00,18:00-19:30",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Hobby and interest groups; Books delivered; Computers; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "07851 812524",
+    "Email address": "haddlibcambs@outlook.com",
+    "URL": "https://www.haddenhamlibrarycambs.co.uk",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

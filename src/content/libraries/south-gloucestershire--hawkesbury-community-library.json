@@ -1,74 +1,71 @@
 {
   "id": "lib_dfdc0077-ac2e-45d3-9210-1f9c391e5dd2",
-  "source_id": "2908",
-  "name": "Hawkesbury Upton Community Library",
   "slug": "hawkesbury-community-library",
-  "address": "Hawkesbury Upton Village Hall, High Street, Hawkesbury Upton, South Gloucestershire, GL9 1AU",
-  "postcode": "GL9 1AU",
-  "town": "Badminton",
-  "phone": "",
-  "email": "hawkesburyuptonlibrary@gmail.com",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Open fortnightly (alternate Fridays)",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.581234,
-  "longitude": -2.322133,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "south-gloucestershire",
+  "source_id": "2908",
+  "source_url": "https://libraryon.org/libraries/south-gloucestershire/hawkesbury-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/south-gloucestershire/hawkesbury-community-library",
-  "authority": "south-gloucestershire"
+  "data": {
+    "Local authority": "South Gloucestershire",
+    "Local authority code": "E06000025",
+    "Library name": "Hawkesbury Upton Community Library",
+    "Library code": null,
+    "Address 1": "Hawkesbury Upton Village Hall, High Street, Hawkesbury Upton, South Gloucestershire, GL9 1AU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "GL9 1AU",
+    "Unique property reference number": null,
+    "Latitude": 51.581234,
+    "Longitude": -2.322133,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "14:30-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "hawkesburyuptonlibrary@gmail.com",
+    "URL": null,
+    "Notes": "Open fortnightly (alternate Fridays)"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

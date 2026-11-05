@@ -1,102 +1,77 @@
 {
   "id": "lib_1f27d109-6af5-4b38-a9e2-f5150708f813",
-  "source_id": "2416",
-  "name": "Yiewsley Library",
   "slug": "yiewsley-library",
-  "address": "High Street, Yiewsley, Middlesex, UB7 7BE",
-  "postcode": "UB7 7BE",
-  "town": "West Drayton",
-  "phone": "01895 558286",
-  "email": "yiewsley-library@hillingdon.gov.uk",
-  "website": "https://www.hillingdon.gov.uk/yiewsleylibrary",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "hearing-loop-system"
-  ],
-  "notes": "Will be rebuilt, date unknown",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.51479,
-  "longitude": -0.47373,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "hillingdon",
+  "source_id": "2416",
+  "source_url": "https://libraryon.org/libraries/hillingdon/yiewsley-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/hillingdon/yiewsley-library",
-  "authority": "hillingdon"
+  "data": {
+    "Local authority": "Hillingdon",
+    "Local authority code": "E09000017",
+    "Library name": "Yiewsley Library",
+    "Library code": null,
+    "Address 1": "High Street, Yiewsley, Middlesex, UB7 7BE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "UB7 7BE",
+    "Unique property reference number": null,
+    "Latitude": 51.51479,
+    "Longitude": -0.47373,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Digital lending; BFI Replay; Bookable space; Hobby and interest groups",
+    "Phone number": "01895 558286",
+    "Email address": "yiewsley-library@hillingdon.gov.uk",
+    "URL": "https://www.hillingdon.gov.uk/yiewsleylibrary",
+    "Notes": "Will be rebuilt, date unknown"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

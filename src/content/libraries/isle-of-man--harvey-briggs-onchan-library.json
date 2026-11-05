@@ -1,129 +1,89 @@
 {
   "id": "lib_4081f2fc-67ea-43c6-97ea-439cf019d595",
-  "source_id": "3829",
-  "name": "Harvey Briggs Onchan Library",
   "slug": "harvey-briggs-onchan-library",
-  "address": "Willow House, Main Road, Onchan, IM3 1AJ",
-  "postcode": "IM3 4",
-  "town": "Onchan",
-  "phone": "01624 621228​",
-  "email": "Onchan.library@onchan.org.im",
-  "website": "https://www.onchan.org.im/library",
-  "catalogue": "https://onchan.cirqahosting.com/HeritageScripts/Hapi.dll/search1?CookieCheck=45841.6782470718",
-  "joinOnline": "https://www.onchan.org.im/library/join-our-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.175167867435675,
-  "longitude": -4.453881144085358,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.onchan.org.im/library/audio-books"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.onchan.org.im/library/photocopier"
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.onchan.org.im/library/photocopier"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.onchan.org.im/library/events"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": "https://www.onchan.org.im/library/events"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.onchan.org.im/library/read-local"
-    }
-  ],
+  "authority": "isle-of-man",
+  "source_id": "3829",
+  "source_url": "https://libraryon.org/libraries/isle-of-man/harvey-briggs-onchan-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-man/harvey-briggs-onchan-library",
-  "authority": "isle-of-man"
+  "data": {
+    "Local authority": "Isle of Man",
+    "Local authority code": null,
+    "Library name": "Harvey Briggs Onchan Library",
+    "Library code": null,
+    "Address 1": "Willow House, Main Road, Onchan, IM3 1AJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 54.175167867435675,
+    "Longitude": -4.453881144085358,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "10:00-17:00",
+    "Thursday staffed hours": "09:30-19:00",
+    "Friday staffed hours": "09:30-17:00",
+    "Saturday staffed hours": "09:30-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Computers; Free Wi-Fi; Digital lending; Children's activities; Photocopiers; Printing; Digital skills sessions; Hobby and interest groups; Family history",
+    "Phone number": "01624 621228​",
+    "Email address": "Onchan.library@onchan.org.im",
+    "URL": "https://www.onchan.org.im/library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Local authority code",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

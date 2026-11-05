@@ -1,127 +1,71 @@
 {
   "id": "lib_66e3eb33-73de-454b-98c4-fd43d212c5f3",
-  "source_id": "3592",
-  "name": "Thrapston Community Library",
   "slug": "thrapston",
-  "address": "High Street, Thrapston, Northamptonshire, NN14 4JJ",
-  "postcode": "NN14 4JJ",
-  "town": "Kettering",
-  "phone": "01832 742005",
-  "email": "thrapstoncml@gmail.com",
-  "website": "https://www.northnorthants.gov.uk/our-libraries/thrapston-community-library",
-  "catalogue": "https://www.northnorthants.gov.uk/books-reading-and-audio/library-catalogue",
-  "joinOnline": "https://www.northnorthants.gov.uk/libraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "wheelchair-access"
-  ],
-  "notes": "Expected to become CRL by 01 April 2020",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.39698,
-  "longitude": -0.53912,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.northnorthants.gov.uk/children-and-young-peoples-library"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.northnorthants.gov.uk/books-reading-and-audio/ereads-and-audio"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.northnorthants.gov.uk/visiting-library/accessibility-health-and-wellbeing-our-libraries/library-home"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    }
-  ],
+  "authority": "north-northamptonshire",
+  "source_id": "3592",
+  "source_url": "https://libraryon.org/libraries/north-northamptonshire/thrapston",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-northamptonshire/thrapston",
-  "authority": "north-northamptonshire"
+  "data": {
+    "Local authority": "North Northamptonshire",
+    "Local authority code": "E06000061",
+    "Library name": "Thrapston Community Library",
+    "Library code": null,
+    "Address 1": "High Street, Thrapston, Northamptonshire, NN14 4JJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN14 4JJ",
+    "Unique property reference number": null,
+    "Latitude": 52.39698,
+    "Longitude": -0.53912,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "10:00-13:00",
+    "Wednesday staffed hours": "14:00-17:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "10:00-13:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Children's activities; Hobby and interest groups; Digital lending; BFI Replay; Books delivered; Photocopiers",
+    "Phone number": "01832 742005",
+    "Email address": "thrapstoncml@gmail.com",
+    "URL": "https://www.northnorthants.gov.uk/our-libraries/thrapston-community-library",
+    "Notes": "Expected to become CRL by 01 April 2020"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

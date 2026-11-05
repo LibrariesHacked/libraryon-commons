@@ -1,121 +1,71 @@
 {
   "id": "lib_cde46d72-af3e-4e02-b55c-80311e75ec4f",
-  "source_id": "264",
-  "name": "Invergordon Library",
   "slug": "invergordon-library",
-  "address": "41 High Street, Invergordon, IV18 0DG, United Kingdom",
-  "postcode": "IV18 0DG",
-  "town": "Invergordon",
-  "phone": "01349 852698",
-  "email": "invergordon.library@highlifehighland.com",
-  "website": "https://www.highlifehighland.com/libraries/invergordon-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "19:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 57.68837,
-  "longitude": -4.17136,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "highland",
+  "source_id": "264",
+  "source_url": "https://libraryon.org/libraries/highland/invergordon-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/highland/invergordon-library",
-  "authority": "highland"
+  "data": {
+    "Local authority": "Highland",
+    "Local authority code": "S12000017",
+    "Library name": "Invergordon Library",
+    "Library code": null,
+    "Address 1": "41 High Street, Invergordon, IV18 0DG, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "IV18 0DG",
+    "Unique property reference number": null,
+    "Latitude": 57.68837,
+    "Longitude": -4.17136,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-12:30",
+    "Tuesday staffed hours": "09:00-12:30",
+    "Wednesday staffed hours": "09:00-12:30",
+    "Thursday staffed hours": "09:00-12:30",
+    "Friday staffed hours": "09:00-12:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "13:30-17:00",
+    "Tuesday unstaffed hours": "13:30-17:00",
+    "Wednesday unstaffed hours": "13:30-19:00",
+    "Thursday unstaffed hours": "13:30-17:00",
+    "Friday unstaffed hours": "13:30-18:00",
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": "01349 852698",
+    "Email address": "invergordon.library@highlifehighland.com",
+    "URL": "https://www.highlifehighland.com/libraries/invergordon-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

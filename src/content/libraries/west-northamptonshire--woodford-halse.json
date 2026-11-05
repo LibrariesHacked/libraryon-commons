@@ -1,96 +1,64 @@
 {
   "id": "lib_1d0962d5-e0dc-4e42-8d3d-e6455000d872",
-  "source_id": "3440",
-  "name": "Woodford Halse",
   "slug": "woodford-halse",
-  "address": "Village Hall, Woodford Halse, Northamptonshire, NN11 3RL",
-  "postcode": "NN11 3RL",
-  "town": "Daventry",
-  "phone": "",
-  "email": "WoodfordHalseCML@gmail.com",
-  "website": "https://www.westnorthants.gov.uk/list-libraries/woodford-halse-community-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "Changed to CRL January 2020",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "catering"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.17141,
-  "longitude": -1.20628,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "west-northamptonshire",
+  "source_id": "3440",
+  "source_url": "https://libraryon.org/libraries/west-northamptonshire/woodford-halse",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-northamptonshire/woodford-halse",
-  "authority": "west-northamptonshire"
+  "data": {
+    "Local authority": "West Northamptonshire",
+    "Local authority code": "E06000062",
+    "Library name": "Woodford Halse",
+    "Library code": null,
+    "Address 1": "Village Hall, Woodford Halse, Northamptonshire, NN11 3RL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN11 3RL",
+    "Unique property reference number": 28002142,
+    "Latitude": 52.17141,
+    "Longitude": -1.20628,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-14:00",
+    "Thursday staffed hours": "14:00-17:00",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "catering",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": "WoodfordHalseCML@gmail.com",
+    "URL": "https://www.westnorthants.gov.uk/list-libraries/woodford-halse-community-library",
+    "Notes": "Changed to CRL January 2020"
+  },
+  "validation_exceptions": []
 }

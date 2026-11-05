@@ -1,104 +1,64 @@
 {
   "id": "lib_d5269a51-93ca-49e5-9bdc-1a0324b4b8c1",
-  "source_id": "3744",
-  "name": "Leven Library",
   "slug": "leven",
-  "address": "Recreation Hall, 74 East Street, Leven, East Riding of Yorkshire, HU17 5NG",
-  "postcode": "HU17 5NG",
-  "town": "Beverley",
-  "phone": "01964 543360",
-  "email": "leven.library@eastriding.gov.uk",
-  "website": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=leven_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "15:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "service-dog-friendly",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.89247,
-  "longitude": -0.31097,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "east-riding-of-yorkshire",
+  "source_id": "3744",
+  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/leven",
   "updated_on": "2026-07-21",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/east-riding-of-yorkshire/leven",
-  "authority": "east-riding-of-yorkshire"
+  "data": {
+    "Local authority": "East Riding of Yorkshire",
+    "Local authority code": "E06000011",
+    "Library name": "Leven Library",
+    "Library code": null,
+    "Address 1": "Recreation Hall, 74 East Street, Leven, East Riding of Yorkshire, HU17 5NG",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "HU17 5NG",
+    "Unique property reference number": 100052019528,
+    "Latitude": 53.89247,
+    "Longitude": -0.31097,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:30-12:30,15:30-19:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Children's activities; Computers; Digital lending; Digital skills sessions; Printing; Photocopiers; Hobby and interest groups; BFI Replay",
+    "Phone number": "01964 543360",
+    "Email address": "leven.library@eastriding.gov.uk",
+    "URL": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=leven_library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

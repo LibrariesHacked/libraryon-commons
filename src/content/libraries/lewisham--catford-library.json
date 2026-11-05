@@ -1,146 +1,64 @@
 {
   "id": "lib_f2986728-838f-4198-97f6-beabe4c00a39",
-  "source_id": "2574",
-  "name": "Catford Library",
   "slug": "catford-library",
-  "address": "23-24 Winslade Way, London, Greater London, SE6 4JU",
-  "postcode": "SE6 4JU",
-  "town": "London",
-  "phone": "020 8314 8816",
-  "email": "catfordlibrary@lewisham.gov.uk",
-  "website": "https://lewisham.gov.uk/myservices/libraries/branches/catford-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "automatic-doors",
-    "accessible-restrooms",
-    "service-dog-friendly"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.44617,
-  "longitude": -0.02155,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Business support",
-      "url": "https://libraries.lewisham.gov.uk/digital-content/bipc"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "lewisham",
+  "source_id": "2574",
+  "source_url": "https://libraryon.org/libraries/lewisham/catford-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lewisham/catford-library",
-  "authority": "lewisham"
+  "data": {
+    "Local authority": "Lewisham",
+    "Local authority code": "E09000023",
+    "Library name": "Catford Library",
+    "Library code": null,
+    "Address 1": "23-24 Winslade Way, London, Greater London, SE6 4JU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SE6 4JU",
+    "Unique property reference number": 100023570595,
+    "Latitude": 51.44617,
+    "Longitude": -0.02155,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2022,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-19:00",
+    "Tuesday staffed hours": "09:00-19:00",
+    "Wednesday staffed hours": "09:00-19:00",
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-19:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": "10:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Business support; Scanning; Children's activities; Hobby and interest groups; BFI Replay; Findmypast; British Newspaper Archive",
+    "Phone number": "020 8314 8816",
+    "Email address": "catfordlibrary@lewisham.gov.uk",
+    "URL": "https://lewisham.gov.uk/myservices/libraries/branches/catford-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

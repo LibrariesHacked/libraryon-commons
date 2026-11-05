@@ -1,104 +1,80 @@
 {
   "id": "lib_9a51821e-7e42-4153-97b4-2deaa61d5116",
-  "source_id": "2915",
-  "name": "Grappenhall Library",
   "slug": "grappenhall-library",
-  "address": "Victoria Avenue, Grappenhall, Warrington, Cheshire, WA4 2PE",
-  "postcode": "WA4 2PF",
-  "town": "Warrington",
-  "phone": "01925 268077",
-  "email": "hello@grappenhall.org.uk",
-  "website": "https://www.grappenhall.org.uk/",
-  "catalogue": "",
-  "joinOnline": "https://www.grappenhall.org.uk/contact-us",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "15:30",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.37448,
-  "longitude": -2.54982,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.grappenhall.org.uk/about-us#room-hire"
-    }
-  ],
+  "authority": "warrington",
+  "source_id": "2915",
+  "source_url": "https://libraryon.org/libraries/warrington/grappenhall-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/warrington/grappenhall-library",
-  "authority": "warrington"
+  "data": {
+    "Local authority": "Warrington",
+    "Local authority code": "E06000007",
+    "Library name": "Grappenhall Library",
+    "Library code": null,
+    "Address 1": "Victoria Avenue, Grappenhall, Warrington, Cheshire, WA4 2PE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WA4 2PF",
+    "Unique property reference number": null,
+    "Latitude": 53.37448,
+    "Longitude": -2.54982,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-16:00",
+    "Tuesday staffed hours": "13:30-15:30",
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": "10:00-12:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Hobby and interest groups; Bookable space",
+    "Phone number": "01925 268077",
+    "Email address": "hello@grappenhall.org.uk",
+    "URL": "https://www.grappenhall.org.uk/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ],
+  "manual_checks": [
+    {
+      "kind": "historical-postcode-correction",
+      "reason": "SQL correction is matching evidence, not permission to override current LibraryOn data",
+      "audit_refs": [
+        "migration/directory/report.json#review_e10b594a8608756c778a0a20"
+      ]
+    }
+  ]
 }

@@ -1,127 +1,64 @@
 {
   "id": "lib_c03907ae-a679-4a25-89e0-b2b8c2116b77",
-  "source_id": "2787",
-  "name": "Strood Community Hub",
   "slug": "strood-community-hub",
-  "address": "Strood Community Hub, 133 High Street, Strood, Rochester, Kent ME2 4TJ",
-  "postcode": "ME2 4TJ",
-  "town": "Rochester",
-  "phone": "01634 337 799",
-  "email": "strood.library@medway.gov.uk",
-  "website": "https://www.medway.gov.uk/directory_record/31/strood_community_hub",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking",
-    "hearing-loop-system",
-    "lift-access"
-  ],
-  "notes": "脗拢1million spent on converting large retail unit in the High Street.",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.39571,
-  "longitude": 0.49432,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "medway",
+  "source_id": "2787",
+  "source_url": "https://libraryon.org/libraries/medway/strood-community-hub",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/medway/strood-community-hub",
-  "authority": "medway"
+  "data": {
+    "Local authority": "Medway",
+    "Local authority code": "E06000035",
+    "Library name": "Strood Community Hub",
+    "Library code": null,
+    "Address 1": "Strood Community Hub, 133 High Street, Strood, Rochester, Kent ME2 4TJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ME2 4TJ",
+    "Unique property reference number": null,
+    "Latitude": 51.39571,
+    "Longitude": 0.49432,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2015,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; British Newspaper Archive",
+    "Phone number": "01634 337 799",
+    "Email address": "strood.library@medway.gov.uk",
+    "URL": "https://www.medway.gov.uk/directory_record/31/strood_community_hub",
+    "Notes": "脗拢1million spent on converting large retail unit in the High Street."
+  },
+  "validation_exceptions": []
 }

@@ -1,112 +1,64 @@
 {
   "id": "lib_2105a5c1-68a3-4acb-bab8-3e5f5d6c83f2",
-  "source_id": "3109",
-  "name": "Thorney",
   "slug": "thorney",
-  "address": "Church Street, Peterborough, Cambridgeshire, PE6 0QB",
-  "postcode": "PE6 0QB",
-  "town": "Peterborough",
-  "phone": "01733 864 542",
-  "email": "thorneylibrary@peterboroughlimited.co.uk",
-  "website": "https://fis.peterborough.gov.uk/kb5/peterborough/directory/service.page?id=vwRfT7qtQvU",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "13:30",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "14:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "18:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.62117,
-  "longitude": -0.10657,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://peterboroughlibraries.org.uk/free-computer-sessions"
-    }
-  ],
+  "authority": "peterborough",
+  "source_id": "3109",
+  "source_url": "https://libraryon.org/libraries/peterborough/thorney",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/peterborough/thorney",
-  "authority": "peterborough"
+  "data": {
+    "Local authority": "Peterborough",
+    "Local authority code": "E06000031",
+    "Library name": "Thorney",
+    "Library code": null,
+    "Address 1": "Church Street, Peterborough, Cambridgeshire, PE6 0QB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PE6 0QB",
+    "Unique property reference number": null,
+    "Latitude": 52.62117,
+    "Longitude": -0.10657,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-12:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:30-17:00",
+    "Saturday staffed hours": "14:00-17:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": "12:00-18:00",
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": "09:00-13:30",
+    "Saturday unstaffed hours": "09:00-14:00",
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital skills sessions",
+    "Phone number": "01733 864 542",
+    "Email address": "thorneylibrary@peterboroughlimited.co.uk",
+    "URL": "https://fis.peterborough.gov.uk/kb5/peterborough/directory/service.page?id=vwRfT7qtQvU",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

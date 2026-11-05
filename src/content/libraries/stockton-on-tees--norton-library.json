@@ -1,126 +1,64 @@
 {
   "id": "lib_bd630c10-01b7-4c36-9dde-6807a8705095",
-  "source_id": "1535",
-  "name": "Norton Library",
   "slug": "norton-library",
-  "address": "87 High Street, Norton, Stockton-on-Tees, TS20 1AE",
-  "postcode": "TS20 1AE",
-  "town": "Stockton-on-Tees",
-  "phone": "01642 528019",
-  "email": "norton.library@stockton.gov.uk",
-  "website": "https://www.stockton.gov.uk/find-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.58958206194623,
-  "longitude": -1.3119946747739846,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.overdrive.com/apps/libby"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.stockton.gov.uk/article/2466/Library-mobile-services#:~:text=Home%20Library%20Service&text=Visits%20are%20made%20on%20a,gov.uk%20or%2001642%20528045."
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    }
-  ],
+  "authority": "stockton-on-tees",
+  "source_id": "1535",
+  "source_url": "https://libraryon.org/libraries/stockton-on-tees/norton-library",
   "updated_on": "2026-08-06",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stockton-on-tees/norton-library",
-  "authority": "stockton-on-tees"
+  "data": {
+    "Local authority": "Stockton-on-Tees",
+    "Local authority code": "E06000004",
+    "Library name": "Norton Library",
+    "Library code": null,
+    "Address 1": "87 High Street, Norton, Stockton-on-Tees, TS20 1AE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TS20 1AE",
+    "Unique property reference number": null,
+    "Latitude": 54.58958206194623,
+    "Longitude": -1.3119946747739846,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "09:30-17:00",
+    "Wednesday staffed hours": "09:30-19:00",
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": "09:30-19:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Digital lending; Books delivered; British Newspaper Archive; Findmypast",
+    "Phone number": "01642 528019",
+    "Email address": "norton.library@stockton.gov.uk",
+    "URL": "https://www.stockton.gov.uk/find-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

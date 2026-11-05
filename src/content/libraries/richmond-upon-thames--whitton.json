@@ -1,134 +1,71 @@
 {
   "id": "lib_12632895-30ef-4334-8fe8-4cb137897b9d",
-  "source_id": "2794",
-  "name": "Whitton Library",
   "slug": "whitton",
-  "address": "141 Nelson Road, Whitton, TW2 7BB",
-  "postcode": "TW2 7AP",
-  "town": "Twickenham",
-  "phone": "020 8734 3343",
-  "email": "libraries@richmond.gov.uk",
-  "website": "https://www.richmond.gov.uk/services/libraries/branch_libraries/whitton_library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Interior refurbishment in 2018.",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.45245,
-  "longitude": -0.35914,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_facilities/peoples_network"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.richmond.gov.uk/services/libraries/digital_library"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_services_for_children_and_teens"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.richmond.gov.uk/services/libraries/library_facilities/peoples_network"
-    },
-    {
-      "service": "Family history",
-      "url": "https://www.richmond.gov.uk/local_studies_collection"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.richmond.gov.uk/services/libraries/home_library_service"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.richmond.gov.uk/services/events_and_venue_hire/hall_and_venue_bookings/whitton_library_venue_hire"
-    }
-  ],
+  "authority": "richmond-upon-thames",
+  "source_id": "2794",
+  "source_url": "https://libraryon.org/libraries/richmond-upon-thames/whitton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/richmond-upon-thames/whitton",
-  "authority": "richmond-upon-thames"
+  "data": {
+    "Local authority": "Richmond upon Thames",
+    "Local authority code": "E09000027",
+    "Library name": "Whitton Library",
+    "Library code": null,
+    "Address 1": "141 Nelson Road, Whitton, TW2 7BB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "TW2 7AP",
+    "Unique property reference number": null,
+    "Latitude": 51.45245,
+    "Longitude": -0.35914,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-18:00",
+    "Tuesday staffed hours": "09:30-18:00",
+    "Wednesday staffed hours": "10:00-19:00",
+    "Thursday staffed hours": "09:30-18:00",
+    "Friday staffed hours": "09:30-18:00",
+    "Saturday staffed hours": "09:30-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Hobby and interest groups; Digital lending; Children's activities; Computers; Family history; Books delivered; Bookable space",
+    "Phone number": "020 8734 3343",
+    "Email address": "libraries@richmond.gov.uk",
+    "URL": "https://www.richmond.gov.uk/services/libraries/branch_libraries/whitton_library",
+    "Notes": "Interior refurbishment in 2018."
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

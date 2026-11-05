@@ -1,75 +1,83 @@
 {
   "id": "lib_f85e9b51-bfdb-4e8c-acc7-1d28ab709420",
-  "source_id": "3822",
-  "name": "The Bridge Community Library",
   "slug": "the-bridge-community-library",
-  "address": "Salvation Army Community Centre & Cafe, Nocq Road, GY2 4PB",
-  "postcode": "GY2 4",
-  "town": "Saint Sampson",
-  "phone": "01481 720392",
-  "email": "ga@library.gg",
-  "website": "https://www.library.gg/bridge",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "10:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking",
-    "step-free-access",
-    "wheelchair-access"
-  ],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 49.48306184967646,
-  "longitude": -2.520848136557987,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    }
-  ],
+  "authority": "guernsey",
+  "source_id": "3822",
+  "source_url": "https://libraryon.org/libraries/guernsey/the-bridge-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/guernsey/the-bridge-community-library",
-  "authority": "guernsey"
+  "data": {
+    "Local authority": "Guernsey",
+    "Local authority code": null,
+    "Library name": "The Bridge Community Library",
+    "Library code": null,
+    "Address 1": "Salvation Army Community Centre & Cafe, Nocq Road, GY2 4PB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": null,
+    "Unique property reference number": null,
+    "Latitude": 49.48306184967646,
+    "Longitude": -2.520848136557987,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-12:30",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books",
+    "Phone number": "01481 720392",
+    "Email address": "ga@library.gg",
+    "URL": "https://www.library.gg/bridge",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Local authority code",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Postcode",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

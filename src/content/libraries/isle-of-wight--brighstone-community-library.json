@@ -1,102 +1,64 @@
 {
   "id": "lib_5f1ff189-91a2-4d17-87b2-88ca97133885",
-  "source_id": "3292",
-  "name": "Brighstone Community Library",
   "slug": "brighstone-community-library",
-  "address": "North Street, Brighstone, Isle of Wight, PO30 4AX",
-  "postcode": "PO30 4AX",
-  "town": "Newport",
-  "phone": "01983 740446",
-  "email": "brighstonecommunitylibrary@hotmail.co.uk",
-  "website": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/brighstone-community-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "15:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "October to March opening times: 09:30 - 13:30",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "museum"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 50.643739,
-  "longitude": -1.395887,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "isle-of-wight",
+  "source_id": "3292",
+  "source_url": "https://libraryon.org/libraries/isle-of-wight/brighstone-community-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/isle-of-wight/brighstone-community-library",
-  "authority": "isle-of-wight"
+  "data": {
+    "Local authority": "Isle of Wight",
+    "Local authority code": "E06000046",
+    "Library name": "Brighstone Community Library",
+    "Library code": null,
+    "Address 1": "North Street, Brighstone, Isle of Wight, PO30 4AX",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PO30 4AX",
+    "Unique property reference number": null,
+    "Latitude": 50.643739,
+    "Longitude": -1.395887,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": 2011,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:00-12:30",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "13:30-16:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-15:30",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "museum",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Scanning; Computers; Photocopiers",
+    "Phone number": "01983 740446",
+    "Email address": "brighstonecommunitylibrary@hotmail.co.uk",
+    "URL": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/brighstone-community-library/",
+    "Notes": "October to March opening times: 09:30 - 13:30"
+  },
+  "validation_exceptions": []
 }

@@ -1,120 +1,64 @@
 {
   "id": "lib_c9259fdb-fbf2-4f4b-9054-b8b86cb70d21",
-  "source_id": "3584",
-  "name": "Finedon Community Library",
   "slug": "finedon",
-  "address": "Berry Green Road, Finedon, Northamptonshire, NN9 5JL",
-  "postcode": "NN9 5JL",
-  "town": "Wellingborough",
-  "phone": "",
-  "email": "finedoncml@gmail.com",
-  "website": "https://www.northnorthants.gov.uk/list-libraries/finedon-community-library",
-  "catalogue": "https://www.northnorthants.gov.uk/books-reading-and-audio/library-catalogue",
-  "joinOnline": "https://www.northnorthants.gov.uk/libraries/join-library",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "13:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Volunteer-run",
-          "endTime": "12:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access"
-  ],
-  "notes": "Expected to become CRL by 01 April 2020",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "civic"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.33878,
-  "longitude": -0.65787,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.northnorthants.gov.uk/children-and-young-peoples-library"
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.northnorthants.gov.uk/books-reading-and-audio/ereads-and-audio"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.northnorthants.gov.uk/visiting-library/accessibility-health-and-wellbeing-our-libraries/library-home"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    }
-  ],
+  "authority": "north-northamptonshire",
+  "source_id": "3584",
+  "source_url": "https://libraryon.org/libraries/north-northamptonshire/finedon",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-northamptonshire/finedon",
-  "authority": "north-northamptonshire"
+  "data": {
+    "Local authority": "North Northamptonshire",
+    "Local authority code": "E06000061",
+    "Library name": "Finedon Community Library",
+    "Library code": null,
+    "Address 1": "Berry Green Road, Finedon, Northamptonshire, NN9 5JL",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN9 5JL",
+    "Unique property reference number": 100032265450,
+    "Latitude": 52.33878,
+    "Longitude": -0.65787,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "13:30-17:00",
+    "Wednesday staffed hours": "10:00-12:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "13:30-17:00",
+    "Saturday staffed hours": "10:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Children's activities; Hobby and interest groups; Digital lending; BFI Replay; Books delivered; Computers; Photocopiers",
+    "Phone number": null,
+    "Email address": "finedoncml@gmail.com",
+    "URL": "https://www.northnorthants.gov.uk/list-libraries/finedon-community-library",
+    "Notes": "Expected to become CRL by 01 April 2020"
+  },
+  "validation_exceptions": []
 }

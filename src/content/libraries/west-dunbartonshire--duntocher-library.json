@@ -1,107 +1,71 @@
 {
   "id": "lib_db5f1cef-6a3f-42a9-8d5b-40d7485b64ab",
-  "source_id": "410",
-  "name": "Duntocher Library",
   "slug": "duntocher-library",
-  "address": "3 Duntiglennan Road, Clydebank, G81 6HF, United Kingdom",
-  "postcode": "G81 6HF",
-  "town": "Clydebank",
-  "phone": "0141 562 2469",
-  "email": "duntocher.library@west-dunbarton.gov.uk",
-  "website": "http://www.west-dunbarton.gov.uk/libraries/library-branches/duntocher-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:30",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 55.92467,
-  "longitude": -4.4161,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "west-dunbartonshire",
+  "source_id": "410",
+  "source_url": "https://libraryon.org/libraries/west-dunbartonshire/duntocher-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/west-dunbartonshire/duntocher-library",
-  "authority": "west-dunbartonshire"
+  "data": {
+    "Local authority": "West Dunbartonshire",
+    "Local authority code": "S12000039",
+    "Library name": "Duntocher Library",
+    "Library code": null,
+    "Address 1": "3 Duntiglennan Road, Clydebank, G81 6HF, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "G81 6HF",
+    "Unique property reference number": null,
+    "Latitude": 55.92467,
+    "Longitude": -4.4161,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "14:00-17:00",
+    "Tuesday staffed hours": "14:00-18:30",
+    "Wednesday staffed hours": "09:30-13:00",
+    "Thursday staffed hours": "09:30-12:30",
+    "Friday staffed hours": "14:00-17:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
+    "Phone number": "0141 562 2469",
+    "Email address": "duntocher.library@west-dunbarton.gov.uk",
+    "URL": "http://www.west-dunbarton.gov.uk/libraries/library-branches/duntocher-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

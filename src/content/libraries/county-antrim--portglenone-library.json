@@ -1,126 +1,71 @@
 {
   "id": "lib_55056b7a-c7a0-4a0b-bb8d-03922ec3c484",
-  "source_id": "3663",
-  "name": "Portglenone Library",
   "slug": "portglenone-library",
-  "address": "19 Townhill Road, Portglenone, Ballymena, BT44 8AD, United Kingdom",
-  "postcode": "BT44 8AD",
-  "town": "Ballymena",
-  "phone": "028 2582 2228",
-  "email": "portglenone.library@librariesni.org.uk",
-  "website": "https://www.librariesni.org.uk/libraries/county-antrim/portglenone-library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "20:00",
-          "startTime": "17:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "10:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.87447,
-  "longitude": -6.47426,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "county-antrim",
+  "source_id": "3663",
+  "source_url": "https://libraryon.org/libraries/county-antrim/portglenone-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/county-antrim/portglenone-library",
-  "authority": "county-antrim"
+  "data": {
+    "Local authority": "County Antrim",
+    "Local authority code": "N09000001",
+    "Library name": "Portglenone Library",
+    "Library code": null,
+    "Address 1": "19 Townhill Road, Portglenone, Ballymena, BT44 8AD, United Kingdom",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BT44 8AD",
+    "Unique property reference number": null,
+    "Latitude": 54.87447,
+    "Longitude": -6.47426,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "14:00-17:00,17:30-20:00",
+    "Wednesday staffed hours": "10:30-13:00",
+    "Thursday staffed hours": "10:30-13:00,14:00-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "10:30-13:00,14:00-16:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Hobby and interest groups",
+    "Phone number": "028 2582 2228",
+    "Email address": "portglenone.library@librariesni.org.uk",
+    "URL": "https://www.librariesni.org.uk/libraries/county-antrim/portglenone-library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

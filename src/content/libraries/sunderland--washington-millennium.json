@@ -1,122 +1,71 @@
 {
   "id": "lib_16278745-41da-4416-80da-cf15bf607e43",
-  "source_id": "2249",
-  "name": "Washington Millennium",
   "slug": "washington-millennium",
-  "address": "Washington Millennium Centre, The Oval, Washington, Tyne and Wear, NE37 2QD",
-  "postcode": "NE37 2QR",
-  "town": "Washington",
-  "phone": "0191 5946050",
-  "email": "",
-  "website": "https://www.washingtonmillenniumcentre.org.uk/library/",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "20:30",
-          "startTime": "08:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Independent Community",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.91434,
-  "longitude": -1.52193,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Faxing",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    }
-  ],
+  "authority": "sunderland",
+  "source_id": "2249",
+  "source_url": "https://libraryon.org/libraries/sunderland/washington-millennium",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/sunderland/washington-millennium",
-  "authority": "sunderland"
+  "data": {
+    "Local authority": "Sunderland",
+    "Local authority code": "E08000024",
+    "Library name": "Washington Millennium",
+    "Library code": null,
+    "Address 1": "Washington Millennium Centre, The Oval, Washington, Tyne and Wear, NE37 2QD",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NE37 2QR",
+    "Unique property reference number": null,
+    "Latitude": 54.91434,
+    "Longitude": -1.52193,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "ICL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "08:30-20:30",
+    "Tuesday staffed hours": "08:30-20:30",
+    "Wednesday staffed hours": "08:30-20:30",
+    "Thursday staffed hours": "08:30-20:30",
+    "Friday staffed hours": "08:30-17:00",
+    "Saturday staffed hours": "09:00-16:00",
+    "Sunday staffed hours": "09:00-16:00",
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Faxing; Scanning",
+    "Phone number": "0191 5946050",
+    "Email address": null,
+    "URL": "https://www.washingtonmillenniumcentre.org.uk/library/",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

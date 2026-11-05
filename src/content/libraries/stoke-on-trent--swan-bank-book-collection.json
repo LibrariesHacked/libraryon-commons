@@ -1,66 +1,77 @@
 {
   "id": "lib_81700c56-14a7-4120-b0af-2a1307484ea7",
-  "source_id": "3127",
-  "name": "Swan Bank (Book Collection)",
   "slug": "swan-bank-book-collection",
-  "address": "Swan Square, Stoke-on-Trent, Staffordshire , ST6 1ES",
-  "postcode": "ST6 1ET",
-  "town": "Stoke-on-Trent",
-  "phone": "",
-  "email": "",
-  "website": "",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "The library service provides a collection of books, but has no further management involvement.",
-  "facilityOperated": "Closed",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.05051,
-  "longitude": -2.18591,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    }
-  ],
+  "authority": "stoke-on-trent",
+  "source_id": "3127",
+  "source_url": "https://libraryon.org/libraries/stoke-on-trent/swan-bank-book-collection",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stoke-on-trent/swan-bank-book-collection",
-  "authority": "stoke-on-trent"
+  "data": {
+    "Local authority": "Stoke-on-Trent",
+    "Local authority code": "E06000021",
+    "Library name": "Swan Bank (Book Collection)",
+    "Library code": null,
+    "Address 1": "Swan Square, Stoke-on-Trent, Staffordshire , ST6 1ES",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "ST6 1ET",
+    "Unique property reference number": null,
+    "Latitude": 53.05051,
+    "Longitude": -2.18591,
+    "Status": "Closed (permanent)",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": null,
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi",
+    "Phone number": null,
+    "Email address": null,
+    "URL": null,
+    "Notes": "The library service provides a collection of books, but has no further management involvement."
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    },
+    {
+      "field": "Type of library",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

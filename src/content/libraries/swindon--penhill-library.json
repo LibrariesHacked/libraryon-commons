@@ -1,100 +1,64 @@
 {
   "id": "lib_d8a6689b-12d4-45b5-852d-7ab3d8e010f7",
-  "source_id": "3064",
-  "name": "Penhill Library",
   "slug": "penhill-library",
-  "address": "Penhill Drive, Swindon, Wiltshire, SN2 5DU",
-  "postcode": "SN2 5DU",
-  "town": "Swindon",
-  "phone": "01793 703238",
-  "email": "penhill-library@centralswindonnorth-pc.gov.uk",
-  "website": "https://www.centralswindonnorthtrust.org/penhill-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "12:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "12:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "11:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "Run by Swindon North Central Parish since September 2017 and now a separate trust",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.59127,
-  "longitude": -1.78142,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    }
-  ],
+  "authority": "swindon",
+  "source_id": "3064",
+  "source_url": "https://libraryon.org/libraries/swindon/penhill-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/swindon/penhill-library",
-  "authority": "swindon"
+  "data": {
+    "Local authority": "Swindon",
+    "Local authority code": "E06000030",
+    "Library name": "Penhill Library",
+    "Library code": null,
+    "Address 1": "Penhill Drive, Swindon, Wiltshire, SN2 5DU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SN2 5DU",
+    "Unique property reference number": null,
+    "Latitude": 51.59127,
+    "Longitude": -1.78142,
+    "Status": "Open",
+    "Statutory": "No",
+    "Facility type": "Static library",
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "12:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "11:00-17:00",
+    "Friday staffed hours": "09:00-13:00",
+    "Saturday staffed hours": "09:00-12:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Children's activities",
+    "Phone number": "01793 703238",
+    "Email address": "penhill-library@centralswindonnorth-pc.gov.uk",
+    "URL": "https://www.centralswindonnorthtrust.org/penhill-library",
+    "Notes": "Run by Swindon North Central Parish since September 2017 and now a separate trust"
+  },
+  "validation_exceptions": []
 }

@@ -1,111 +1,71 @@
 {
   "id": "lib_356a312f-fc6a-429c-bdd4-0ff4452412f9",
-  "source_id": "3454",
-  "name": "Carlisle West Library Link",
   "slug": "carlisle-west-library-link",
-  "address": "19-23 Shadygrove Road, Carlisle, Cumbria, CA2 7LE",
-  "postcode": "CA2 7LE",
-  "town": "Carlisle",
-  "phone": "01228 227312",
-  "email": "https://services.digital.cumberland.gov.uk/w/webpage/librarycontactus?context_record_id=100591383&webpage_token=aa36e5f8f182c59e2d1ca5adb01e4db16f8f692bbfa5b247d5f290bfb4410de1",
-  "website": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/carlisle-west-library-link",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "community"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 54.89005,
-  "longitude": -2.96678,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "cumberland",
+  "source_id": "3454",
+  "source_url": "https://libraryon.org/libraries/cumberland/carlisle-west-library-link",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cumberland/carlisle-west-library-link",
-  "authority": "cumberland"
+  "data": {
+    "Local authority": "Cumberland",
+    "Local authority code": "E06000063",
+    "Library name": "Carlisle West Library Link",
+    "Library code": null,
+    "Address 1": "19-23 Shadygrove Road, Carlisle, Cumbria, CA2 7LE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CA2 7LE",
+    "Unique property reference number": null,
+    "Latitude": 54.89005,
+    "Longitude": -2.96678,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-16:00",
+    "Thursday staffed hours": "10:00-16:00",
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "community",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": null,
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Family history",
+    "Phone number": "01228 227312",
+    "Email address": "https://services.digital.cumberland.gov.uk/w/webpage/librarycontactus?context_record_id=100591383&webpage_token=aa36e5f8f182c59e2d1ca5adb01e4db16f8f692bbfa5b247d5f290bfb4410de1",
+    "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/carlisle-west-library-link",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Email address",
+      "code": "email",
+      "value": "https://services.digital.cumberland.gov.uk/w/webpage/librarycontactus?context_record_id=100591383&webpage_token=aa36e5f8f182c59e2d1ca5adb01e4db16f8f692bbfa5b247d5f290bfb4410de1",
+      "reason": "Preserved source value outside supplied schema; requires editorial verification"
+    }
+  ]
 }

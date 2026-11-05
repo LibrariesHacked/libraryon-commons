@@ -420,7 +420,7 @@ The British Government took over every unused piece of land so food could be gro
 
 In his memoirs, Prime Minister Lloyd George wrote: "The food question ultimately decided the issue of this war."
 
-:::collection-image{layout="inset" zoom="true"}
+:::collection-image{layout="full" zoom="true"}
 
 ![Engraved illustration of a house within a floral border with gardening tools, text "Mary T. Musgrave."](/uploads/archive/engraved-illustration-of-a-house-within-a-floral-border.jpg)
 
@@ -494,57 +494,65 @@ Viscountess Wolseley painted this picture of Massetts Place, where she lived wit
 
 In the course of her career Frances Wolseley published several books, covering horticulture, garden design and the county of Sussex, where she lived for much of her life.
 
-:::collection-image{layout="inset"}
+:::::collection-recommendations{title="Books by Frances Garnet Wolseley"}
+
+::::recommendation-item{title="Gardening for Women" author="Frances Garnet Wolseley" year="1908"}
 
 ![The cover of the book 'Gardening for Women' by Frances Wolseley.](/uploads/archive/the-cover-of-the-book-gardening-for-women-by-frances-wolseley.jpg)
 
-:::
-
-::::collection-accordion{label="Books by Frances Garnet Wolseley"}
-
-:::accordion-item{title="Gardening for Women" author="Frances Garnet Wolseley" year="1908"}
-
 Wolseley’s first book urges women to consider gardening as a career. It explains practical growing techniques and stresses why proper training is important. The book argues that women can make a big difference in the world of horticulture.
 
-:::
+::::
 
-:::accordion-item{title="In a College Garden" author="Frances Garnet Wolseley" year="1916"}
+::::recommendation-item{title="In a College Garden" author="Frances Garnet Wolseley" year="1916"}
+
+![Spine of a worn book, 'In a College Garden' by Viscountess Wolseley.](/uploads/archive/spine-of-a-worn-book-in-a-college-garden-original.jpg)
 
 Published during wartime, this book shares Wolseley’s insights on running a college for female gardeners. She advocates for skilled women to enter the workplace, but also voices concerns about unsuitable 'rough-mannered, undisciplined middle-class women'.
 
-:::
+::::
 
-:::accordion-item{title="Women and the Land" author="Frances Garnet Wolseley" year="1916"}
+::::recommendation-item{title="Women and the Land" author="Frances Garnet Wolseley" year="1916"}
+
+![Brown hardcover book with 'Women And The Land' and 'Viscountess Wolseley' embossed.](/uploads/archive/brown-hardcover-book-with-women-and-the-land-original.jpg)
 
 Broader than her previous books, this title focuses on the need to grow food and boost the countryside's economy during wartime and beyond. It criticises the existing educational system and suggests it’s a reason why so many women leave rural communities for towns.
 
-:::
+::::
 
-:::accordion-item{title="Gardens: Their Form and Design" author="Frances Garnet Wolseley" year="1919"}
+::::recommendation-item{title="Gardens: Their Form and Design" author="Frances Garnet Wolseley" year="1919"}
+
+![Spine of a beige hardcover book with 'Gardens: Their Form and Design' and 'Viscountess Wolseley' embossed.](/uploads/archive/spine-of-a-beige-hardcover-book-with-gardens-their-form-original.jpg)
 
 Here Wolseley examines how garden design can be considered an art in itself, particularly in combination with aesthetically pleasing architecture.
 
-:::
+::::
 
-:::accordion-item{title="The Countryman's Log-book" author="Frances Garnet Wolseley" year="1921"}
+::::recommendation-item{title="The Countryman's Log-book" author="Frances Garnet Wolseley" year="1921"}
+
+![Spine of a dark-coloured book with 'The Countryman's Log-Book' and Viscountess Wolseley embossed.](/uploads/archive/spine-of-a-dark-coloured-book-with-the-countrymans-log-original.jpg)
 
 This title explores old English traditions, farming and life in the countryside. It gives a detailed look at the customs and history of living in rural Britain, told through stories and observations
 
-:::
+::::
 
-:::accordion-item{title="Some of the Smaller Manor Houses of Sussex" author="Frances Garnet Wolseley" year="1925"}
+::::recommendation-item{title="Some of the Smaller Manor Houses of Sussex" author="Frances Garnet Wolseley" year="1925"}
+
+![Spine of a beige hardcover book with 'Some of the Smaller Manor Houses of Sussex' and Viscountess Wolseley embossed.](/uploads/archive/spine-of-a-beige-hardcover-book-with-and-viscountess-wolseley.jpg)
 
 This book brings together articles by Wolseley from Sussex County Magazine. It takes a look inside many old, often private, homes in Sussex. It shares detailed descriptions and personal thoughts on these beautiful buildings and their links to local families.
 
-:::
+::::
 
-:::accordion-item{title="Historic Houses of East Sussex and their Owners" author="Frances Garnet Wolseley" year="2008"}
+::::recommendation-item{title="Historic Houses of East Sussex and their Owners" author="Frances Garnet Wolseley" year="2008"}
+
+![Cover of a softcover book with 'Historic Houses of East Sussex and their Owners' and Viscountess Wolseley in text on the cover alongside a picture of a manor house.](/uploads/archive/coverof-a-softcover-book-with-historic-houses-of-east-sussex.jpg)
 
 This is a second collection of Wolseley's articles from Sussex County Magazine, written after 1926. It describes elements of the region's architecture, history, and family links, giving a personal and factual look at Sussex's rich past.
 
-:::
-
 ::::
+
+:::::
 
 ## Visit the Unearthed exhibition in libraries
 

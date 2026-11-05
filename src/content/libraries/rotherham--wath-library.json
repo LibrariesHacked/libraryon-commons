@@ -1,152 +1,64 @@
 {
   "id": "lib_fd002c68-d23b-4eea-9d51-cdd67521e531",
-  "source_id": "1993",
-  "name": "Wath Library",
   "slug": "wath-library",
-  "address": "Montgomery Square, Wath, Rotherham,  S63 7RZ",
-  "postcode": "S63 7RZ",
-  "town": "Rotherham",
-  "phone": "01709 873542",
-  "email": "wath.library@rotherham.gov.uk",
-  "website": "https://www.rotherham.gov.uk/libraries/libraries-neighbourhood-hubs/14",
-  "catalogue": "https://rotherham.ent.sirsidynix.net.uk/client/en_GB/default/?dt=list",
-  "joinOnline": "https://rotherham.ent.sirsidynix.net.uk/custom/web/joining/index.html",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "step-free-access",
-    "wheelchair-access",
-    "lift-access",
-    "automatic-doors",
-    "service-dog-friendly",
-    "hearing-loop-system",
-    "accessible-parking",
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.50259,
-  "longitude": -1.34483,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": "https://www.rotherham.gov.uk/libraries/learn-digital-skills"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.rotherham.gov.uk/libraries/children-families-1"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.rotherham.gov.uk/libraries/home-library-services/1"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    }
-  ],
+  "authority": "rotherham",
+  "source_id": "1993",
+  "source_url": "https://libraryon.org/libraries/rotherham/wath-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rotherham/wath-library",
-  "authority": "rotherham"
+  "data": {
+    "Local authority": "Rotherham",
+    "Local authority code": "E08000018",
+    "Library name": "Wath Library",
+    "Library code": null,
+    "Address 1": "Montgomery Square, Wath, Rotherham,  S63 7RZ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "S63 7RZ",
+    "Unique property reference number": null,
+    "Latitude": 53.50259,
+    "Longitude": -1.34483,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 1970,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-17:00",
+    "Tuesday staffed hours": "09:00-17:00",
+    "Wednesday staffed hours": "09:00-17:00",
+    "Thursday staffed hours": "09:00-19:00",
+    "Friday staffed hours": "09:00-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": "Yes",
+    "Accessible toilet": null,
+    "Hearing loop": "Yes",
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; Computers; Digital lending; Family history; Hobby and interest groups; Digital skills sessions; Children's activities; Books delivered; BFI Replay",
+    "Phone number": "01709 873542",
+    "Email address": "wath.library@rotherham.gov.uk",
+    "URL": "https://www.rotherham.gov.uk/libraries/libraries-neighbourhood-hubs/14",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

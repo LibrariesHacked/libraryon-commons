@@ -1,175 +1,71 @@
 {
   "id": "lib_e47392a1-da4e-453e-8c77-abfe9b3caa1e",
-  "source_id": "1694",
-  "name": "Cheadle Hulme",
   "slug": "cheadle-hulme",
-  "address": "Mellor Road, Cheadle Hulme, Greater Manchester, SK8 5AU",
-  "postcode": "SK8 5AJ",
-  "town": "Cheadle",
-  "phone": "",
-  "email": "cheadlehulme.library@stockport.gov.uk",
-  "website": "https://www.stockport.gov.uk/directories/entry/libraries/cheadle-hulme-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "16:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "16:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "16:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "10:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "14:00",
-          "startTime": "10:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "12:00",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "12:00"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "18:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.374057,
-  "longitude": -2.188756,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    }
-  ],
+  "authority": "stockport",
+  "source_id": "1694",
+  "source_url": "https://libraryon.org/libraries/stockport/cheadle-hulme",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/stockport/cheadle-hulme",
-  "authority": "stockport"
+  "data": {
+    "Local authority": "Stockport",
+    "Local authority code": "E08000007",
+    "Library name": "Cheadle Hulme",
+    "Library code": null,
+    "Address 1": "Mellor Road, Cheadle Hulme, Greater Manchester, SK8 5AU",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "SK8 5AJ",
+    "Unique property reference number": null,
+    "Latitude": 53.374057,
+    "Longitude": -2.188756,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "10:00-16:00",
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "12:00-18:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "10:00-16:00",
+    "Saturday staffed hours": "10:00-14:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-10:00,16:00-20:00",
+    "Tuesday unstaffed hours": "08:00-20:00",
+    "Wednesday unstaffed hours": "08:00-12:00,18:00-20:00",
+    "Thursday unstaffed hours": "08:00-20:00",
+    "Friday unstaffed hours": "08:00-10:00,16:00-20:00",
+    "Saturday unstaffed hours": "09:00-10:00,14:00-17:00",
+    "Sunday unstaffed hours": "09:00-16:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Children's activities; Computers; Photocopiers; Scanning; Digital lending; Family history",
+    "Phone number": null,
+    "Email address": "cheadlehulme.library@stockport.gov.uk",
+    "URL": "https://www.stockport.gov.uk/directories/entry/libraries/cheadle-hulme-library",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

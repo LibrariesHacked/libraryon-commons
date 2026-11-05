@@ -1,154 +1,64 @@
 {
   "id": "lib_b1aaa919-0ee7-4702-96b1-4ab9619e3889",
-  "source_id": "3177",
-  "name": "Lache Library",
   "slug": "lache-library",
-  "address": "Lache Park Avenue, Chester, Cheshire, CH4 8HR",
-  "postcode": "CH4 8HR",
-  "town": "Chester",
-  "phone": "01244 973974",
-  "email": "libraries@cheshirewestandchester.gov.uk",
-  "website": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/lache-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "19:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.17741,
-  "longitude": -2.91219,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Digital skills sessions",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    }
-  ],
+  "authority": "cheshire-west-and-chester",
+  "source_id": "3177",
+  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/lache-library",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/cheshire-west-and-chester/lache-library",
-  "authority": "cheshire-west-and-chester"
+  "data": {
+    "Local authority": "Cheshire West and Chester",
+    "Local authority code": "E06000050",
+    "Library name": "Lache Library",
+    "Library code": null,
+    "Address 1": "Lache Park Avenue, Chester, Cheshire, CH4 8HR",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "CH4 8HR",
+    "Unique property reference number": 100012571720,
+    "Latitude": 53.17741,
+    "Longitude": -2.91219,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-13:00,14:00-19:00",
+    "Tuesday staffed hours": "09:30-13:00,14:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-13:00,14:00-19:00",
+    "Friday staffed hours": "09:30-13:00,14:00-17:00",
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Digital skills sessions; Books delivered; Hobby and interest groups; Children's activities; Computers; Scanning; Family history; Findmypast; British Newspaper Archive",
+    "Phone number": "01244 973974",
+    "Email address": "libraries@cheshirewestandchester.gov.uk",
+    "URL": "https://www.cheshirewestandchester.gov.uk/residents/libraries/find-a-library/lache-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

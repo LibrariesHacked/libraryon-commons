@@ -1,125 +1,71 @@
 {
   "id": "lib_c6488c99-a171-4e75-82d6-ff38899e95b9",
-  "source_id": "2944",
-  "name": "Ketton",
   "slug": "ketton",
-  "address": "67, High Street, Ketton, East Midlands, PE9 3TE",
-  "postcode": "PE9 3TE",
-  "town": "Stamford",
-  "phone": " 01780 720580",
-  "email": "libraries@rutland.gov.uk",
-  "website": "https://rutlandlibraries.org.uk/ketton-library/",
-  "catalogue": "https://emlib.ent.sirsidynix.net.uk/client/en_GB/rutland/",
-  "joinOnline": "https://emlib.ent.sirsidynix.net.uk/client/en_GB/rutland/?rm=JOIN+ONLINE1%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "13:30"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "neurodivergent-spaces"
-  ],
-  "notes": "Closed 12.00 - 2.00 Wed & Fri",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.62839,
-  "longitude": -0.55284,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    }
-  ],
+  "authority": "rutland",
+  "source_id": "2944",
+  "source_url": "https://libraryon.org/libraries/rutland/ketton",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/rutland/ketton",
-  "authority": "rutland"
+  "data": {
+    "Local authority": "Rutland",
+    "Local authority code": "E06000017",
+    "Library name": "Ketton",
+    "Library code": null,
+    "Address 1": "67, High Street, Ketton, East Midlands, PE9 3TE",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "PE9 3TE",
+    "Unique property reference number": null,
+    "Latitude": 52.62839,
+    "Longitude": -0.55284,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": "09:00-13:00,13:30-17:00",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:00-13:00,13:30-17:00",
+    "Saturday staffed hours": "09:00-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; Children's activities; Computers; Family history; Digital lending; Photocopiers",
+    "Phone number": "01780 720580",
+    "Email address": "libraries@rutland.gov.uk",
+    "URL": "https://rutlandlibraries.org.uk/ketton-library/",
+    "Notes": "Closed 12.00 - 2.00 Wed & Fri"
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }

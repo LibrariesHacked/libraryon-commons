@@ -1,155 +1,64 @@
 {
   "id": "lib_fe752de4-ce69-4988-8487-7e5f63d4a4f5",
-  "source_id": "3591",
-  "name": "Rushden Library",
   "slug": "rushden",
-  "address": "Newton Road, Rushden, Northamptonshire, NN10 0PT",
-  "postcode": "NN10 0PT",
-  "town": "Rushden",
-  "phone": "",
-  "email": "rushden.libraryplus@northnorthants.gov.uk",
-  "website": "https://www.northnorthants.gov.uk/our-libraries/rushden-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "18:00",
-          "startTime": "09:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "accessible-restrooms",
-    "baby-changing-facilities",
-    "wheelchair-access",
-    "neurodivergent-spaces",
-    "assistive-technology-available"
-  ],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "civic",
-    "health"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 52.289082,
-  "longitude": -0.596207,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying"
-    },
-    {
-      "service": "Scanning",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.northnorthants.gov.uk/books-reading-and-audio/ereads-and-audio"
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": "https://www.britishnewspaperarchive.co.uk/"
-    },
-    {
-      "service": "Findmypast",
-      "url": "https://www.findmypast.co.uk/"
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://www.northnorthants.gov.uk/visiting-library/accessibility-health-and-wellbeing-our-libraries/library-home"
-    },
-    {
-      "service": "Computers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying"
-    },
-    {
-      "service": "Photocopiers",
-      "url": "https://www.northnorthants.gov.uk/libraries/computers-printing-and-photocopying/printing-and-photocopying"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://www.northnorthants.gov.uk/children-and-young-peoples-library"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://www.northnorthants.gov.uk/libraries/room-hire-libraries"
-    }
-  ],
+  "authority": "north-northamptonshire",
+  "source_id": "3591",
+  "source_url": "https://libraryon.org/libraries/north-northamptonshire/rushden",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-northamptonshire/rushden",
-  "authority": "north-northamptonshire"
+  "data": {
+    "Local authority": "North Northamptonshire",
+    "Local authority code": "E06000061",
+    "Library name": "Rushden Library",
+    "Library code": null,
+    "Address 1": "Newton Road, Rushden, Northamptonshire, NN10 0PT",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "NN10 0PT",
+    "Unique property reference number": 200000740024,
+    "Latitude": 52.289082,
+    "Longitude": -0.596207,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": "09:00-18:00",
+    "Tuesday staffed hours": "09:00-18:00",
+    "Wednesday staffed hours": "09:00-18:00",
+    "Thursday staffed hours": "09:00-18:00",
+    "Friday staffed hours": "09:00-18:00",
+    "Saturday staffed hours": "09:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "civic; health",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Scanning; Hobby and interest groups; Digital lending; British Newspaper Archive; Findmypast; BFI Replay; Books delivered; Computers; Photocopiers; Children's activities; Bookable space",
+    "Phone number": null,
+    "Email address": "rushden.libraryplus@northnorthants.gov.uk",
+    "URL": "https://www.northnorthants.gov.uk/our-libraries/rushden-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

@@ -1,175 +1,64 @@
 {
   "id": "lib_580c1892-8324-433f-bffb-1d141da87e50",
-  "source_id": "3354",
-  "name": "Yatton Library and Children's Centre",
   "slug": "yatton-library-childrens-centre",
-  "address": "48 High Street, Yatton, Somerset, BS49 4HJ",
-  "postcode": "BS49 4HJ",
-  "town": "Bristol",
-  "phone": "01934 426 100",
-  "email": "yatton.library@n-somerset.gov.uk",
-  "website": "https://n-somerset.gov.uk/directories/libraries/yatton-library-childrens-centre",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "sunday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "10:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "13:15"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "09:30",
-          "startTime": "08:00"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "17:15"
-        }
-      ]
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Self-service",
-          "endTime": "20:00",
-          "startTime": "08:00"
-        }
-      ]
-    }
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Local Authority Run",
-  "coLocated": [
-    "other"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.38639,
-  "longitude": -2.81797,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/computer-internet-access/printing-scanning-cameras"
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "BFI Replay",
-      "url": "https://www.bfi.org.uk/bfi-replay"
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Photocopiers",
-      "url": ""
-    },
-    {
-      "service": "Scanning",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/computer-internet-access/printing-scanning-cameras"
-    },
-    {
-      "service": "Family history",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/local-history-archives"
-    },
-    {
-      "service": "Bookable space",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/community-venues/yatton-library-childrens-centre-meeting-room"
-    },
-    {
-      "service": "Books delivered",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/bringing-library-you/home-library-service"
-    },
-    {
-      "service": "Children's activities",
-      "url": "https://n-somerset.gov.uk/my-services/libraries-leisure-open-spaces/libraries/library-services/young-peoples-library-service"
-    },
-    {
-      "service": "Digital lending",
-      "url": "https://www.librarieswest.org.uk/BorrowBox"
-    }
-  ],
+  "authority": "north-somerset",
+  "source_id": "3354",
+  "source_url": "https://libraryon.org/libraries/north-somerset/yatton-library-childrens-centre",
   "updated_on": "2026-09-10",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/north-somerset/yatton-library-childrens-centre",
-  "authority": "north-somerset"
+  "data": {
+    "Local authority": "North Somerset",
+    "Local authority code": "E06000024",
+    "Library name": "Yatton Library and Children's Centre",
+    "Library code": null,
+    "Address 1": "48 High Street, Yatton, Somerset, BS49 4HJ",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BS49 4HJ",
+    "Unique property reference number": 24098686,
+    "Latitude": 51.38639,
+    "Longitude": -2.81797,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "LAL",
+    "Year opened": 2006,
+    "Year closed": null,
+    "Monday staffed hours": "09:30-17:00",
+    "Tuesday staffed hours": "10:00-17:00",
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": "09:30-17:00",
+    "Friday staffed hours": null,
+    "Saturday staffed hours": "09:30-13:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": "08:00-09:30,17:15-20:00",
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": "08:00-20:00",
+    "Thursday unstaffed hours": "08:00-09:30,17:15-20:00",
+    "Friday unstaffed hours": "08:00-20:00",
+    "Saturday unstaffed hours": "08:00-09:30,13:15-20:00",
+    "Sunday unstaffed hours": "08:00-20:00",
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "other",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Scanning; Family history; Bookable space; Books delivered; Children's activities; Digital lending",
+    "Phone number": "01934 426 100",
+    "Email address": "yatton.library@n-somerset.gov.uk",
+    "URL": "https://n-somerset.gov.uk/directories/libraries/yatton-library-childrens-centre",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

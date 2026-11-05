@@ -1,134 +1,64 @@
 {
   "id": "lib_2ec45489-7937-484e-95b1-d71639d82b43",
-  "source_id": "3611",
-  "name": "Southborough Library",
   "slug": "southborough-library-bromley",
-  "address": "Southborough Lane, Bromley, Greater London, BR2 8AP",
-  "postcode": "BR2 8AP",
-  "town": "Bromley",
-  "phone": "020 8467 0355",
-  "email": "southborough.library@gll.org",
-  "website": "https://www.better.org.uk/library/london/bromley/southborough-library",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "saturday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:00",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": [
-        {
-          "type": "Staffed",
-          "endTime": "13:00",
-          "startTime": "09:30"
-        },
-        {
-          "type": "Staffed",
-          "endTime": "17:30",
-          "startTime": "14:00"
-        }
-      ]
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [
-    "wheelchair-access",
-    "staff-support",
-    "accessible-parking"
-  ],
-  "notes": "",
-  "facilityOperated": "Commissioned",
-  "coLocated": [],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 51.389905,
-  "longitude": 0.043414,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Children's activities",
-      "url": ""
-    },
-    {
-      "service": "Books delivered",
-      "url": ""
-    },
-    {
-      "service": "British Newspaper Archive",
-      "url": ""
-    },
-    {
-      "service": "Family history",
-      "url": ""
-    },
-    {
-      "service": "Findmypast",
-      "url": ""
-    }
-  ],
+  "authority": "bromley",
+  "source_id": "3611",
+  "source_url": "https://libraryon.org/libraries/bromley/southborough-library-bromley",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/bromley/southborough-library-bromley",
-  "authority": "bromley"
+  "data": {
+    "Local authority": "Bromley",
+    "Local authority code": "E09000006",
+    "Library name": "Southborough Library",
+    "Library code": null,
+    "Address 1": "Southborough Lane, Bromley, Greater London, BR2 8AP",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "BR2 8AP",
+    "Unique property reference number": 100022892170,
+    "Latitude": 51.389905,
+    "Longitude": 0.043414,
+    "Status": "Open",
+    "Statutory": "Yes",
+    "Facility type": "Static library",
+    "Type of library": "CL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": "09:30-13:00,14:00-17:30",
+    "Wednesday staffed hours": "09:30-13:00,14:00-17:30",
+    "Thursday staffed hours": null,
+    "Friday staffed hours": "09:30-13:00,14:00-17:30",
+    "Saturday staffed hours": "09:30-13:00,14:00-17:00",
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": null,
+    "Co-located with": null,
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": null,
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Free Wi-Fi; Computers; Children's activities; Books delivered; British Newspaper Archive; Family history; Findmypast",
+    "Phone number": "020 8467 0355",
+    "Email address": "southborough.library@gll.org",
+    "URL": "https://www.better.org.uk/library/london/bromley/southborough-library",
+    "Notes": null
+  },
+  "validation_exceptions": []
 }

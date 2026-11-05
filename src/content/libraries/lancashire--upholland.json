@@ -1,84 +1,71 @@
 {
   "id": "lib_1852da63-3116-4a45-8299-94da4522a1e0",
-  "source_id": "1318",
-  "name": "Upholland",
   "slug": "upholland",
-  "address": "Artz Centre Upholland, Hall Green, Upholland, Lancashire , WN8 0PB",
-  "postcode": "WN8 0HF",
-  "town": "Skelmersdale",
-  "phone": " 01695 733 080",
-  "email": "",
-  "website": "https://www.lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/artz-centre-upholland/?jumpToVenue=https%3A%2F%2Fwww.lancashire.gov.uk%2Flibraries-and-archives%2Flibraries%2Ffind-a-library%2Fartz-centre-upholland%2F",
-  "catalogue": "",
-  "joinOnline": "",
-  "openingTimes": {
-    "friday": {
-      "timeFrames": []
-    },
-    "monday": {
-      "timeFrames": []
-    },
-    "sunday": {
-      "timeFrames": []
-    },
-    "tuesday": {
-      "timeFrames": []
-    },
-    "saturday": {
-      "timeFrames": []
-    },
-    "thursday": {
-      "timeFrames": []
-    },
-    "wednesday": {
-      "timeFrames": []
-    },
-    "exceptions": []
-  },
-  "openingTimesNotes": "",
-  "accessibility": [],
-  "notes": "",
-  "facilityOperated": "Community Run",
-  "coLocated": [
-    "arts"
-  ],
-  "virtualTourUrl": "",
-  "permanentlyClosed": false,
-  "latitude": 53.54201,
-  "longitude": -2.72663,
-  "services": [
-    {
-      "service": "Books",
-      "url": ""
-    },
-    {
-      "service": "Printing",
-      "url": ""
-    },
-    {
-      "service": "Free Wi-Fi",
-      "url": ""
-    },
-    {
-      "service": "Computers",
-      "url": ""
-    },
-    {
-      "service": "Bookable space",
-      "url": ""
-    },
-    {
-      "service": "Cafe",
-      "url": ""
-    },
-    {
-      "service": "Hobby and interest groups",
-      "url": ""
-    }
-  ],
+  "authority": "lancashire",
+  "source_id": "1318",
+  "source_url": "https://libraryon.org/libraries/lancashire/upholland",
   "updated_on": "2026-01-23",
   "reviewed_on": "",
   "imported_on": "2026-10-27",
-  "source_url": "https://libraryon.org/libraries/lancashire/upholland",
-  "authority": "lancashire"
+  "data": {
+    "Local authority": "Lancashire",
+    "Local authority code": "E10000017",
+    "Library name": "Upholland",
+    "Library code": null,
+    "Address 1": "Artz Centre Upholland, Hall Green, Upholland, Lancashire , WN8 0PB",
+    "Address 2": null,
+    "Address 3": null,
+    "Postcode": "WN8 0HF",
+    "Unique property reference number": null,
+    "Latitude": 53.54201,
+    "Longitude": -2.72663,
+    "Status": "Open",
+    "Statutory": null,
+    "Facility type": null,
+    "Type of library": "CRL",
+    "Year opened": null,
+    "Year closed": null,
+    "Monday staffed hours": null,
+    "Tuesday staffed hours": null,
+    "Wednesday staffed hours": null,
+    "Thursday staffed hours": null,
+    "Friday staffed hours": null,
+    "Saturday staffed hours": null,
+    "Sunday staffed hours": null,
+    "Monday unstaffed hours": null,
+    "Tuesday unstaffed hours": null,
+    "Wednesday unstaffed hours": null,
+    "Thursday unstaffed hours": null,
+    "Friday unstaffed hours": null,
+    "Saturday unstaffed hours": null,
+    "Sunday unstaffed hours": null,
+    "Special hours": null,
+    "Weekly staffed hours": null,
+    "Weekly total hours": null,
+    "Automated access system": null,
+    "Co-located": "Yes",
+    "Co-located with": "arts",
+    "Guest wifi": null,
+    "Member wifi": null,
+    "Public computers": "Yes",
+    "Printing": "Yes",
+    "Meeting rooms": null,
+    "Quiet study space": null,
+    "Step-free access": null,
+    "Accessible toilet": null,
+    "Hearing loop": null,
+    "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Bookable space; Cafe; Hobby and interest groups",
+    "Phone number": "01695 733 080",
+    "Email address": null,
+    "URL": "https://www.lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/artz-centre-upholland/?jumpToVenue=https%3A%2F%2Fwww.lancashire.gov.uk%2Flibraries-and-archives%2Flibraries%2Ffind-a-library%2Fartz-centre-upholland%2F",
+    "Notes": null
+  },
+  "validation_exceptions": [
+    {
+      "field": "Statutory",
+      "code": "required",
+      "value": null,
+      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
+    }
+  ]
 }
