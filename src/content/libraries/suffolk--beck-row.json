@@ -20,9 +20,9 @@
     "Latitude": 52.3735,
     "Longitude": 0.49427,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CL",
     "Year opened": 2024,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.suffolklibraries.co.uk/visit/libraries/beck-row",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

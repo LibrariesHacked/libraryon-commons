@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for Netlify admin bundle packaging and asset distribution.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { existsSync, mkdirSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs'

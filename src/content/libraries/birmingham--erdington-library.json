@@ -60,14 +60,5 @@
     "URL": "https://www.birmingham.gov.uk/directory_record/5131/erdington_library",
     "Notes": "Closed for lunch 1-2pm"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_6a5f841b8d02da0b5234c933"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

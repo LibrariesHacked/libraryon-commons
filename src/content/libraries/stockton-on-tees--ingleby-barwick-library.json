@@ -20,7 +20,7 @@
     "Latitude": 54.51881,
     "Longitude": -1.31931,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.stockton.gov.uk/find-library",
     "Notes": "Ingleby Barwick Library is moving to a larger, purpose built space in the new Leisure Facility building in Summer 2020"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -15,12 +15,12 @@
     "Address 1": "Cwmafan Library, Depot Road, Cwmafan, Port Talbot, Neath Port Talbot, SA12 9DF",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "SA12 9DF",
     "Unique property reference number": null,
     "Latitude": 51.613857,
     "Longitude": -3.763082,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.npt.gov.uk/libraries/find-your-library/managed-by-npt-libraries/cwmafan-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

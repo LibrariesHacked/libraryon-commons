@@ -20,7 +20,7 @@
     "Latitude": 51.42894,
     "Longitude": -0.3362,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.richmond.gov.uk/services/libraries/branch_libraries/teddington_library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

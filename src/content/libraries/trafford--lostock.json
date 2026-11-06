@@ -20,7 +20,7 @@
     "Latitude": 53.45488383779201,
     "Longitude": -2.3304206050403593,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://beta.trafford.gov.uk/libraries-archives/find-library/lostock-library",
     "Notes": "Staffed by the school in term time"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

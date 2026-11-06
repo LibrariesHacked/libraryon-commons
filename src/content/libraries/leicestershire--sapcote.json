@@ -60,14 +60,5 @@
     "URL": null,
     "Notes": "Hours closed: Tu 12:00-17:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_8fa3ba8297d966b3869d9919"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

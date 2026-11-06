@@ -20,7 +20,7 @@
     "Latitude": 51.90511,
     "Longitude": -2.05143,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Children's activities; Free Wi-Fi; Computers; Digital lending; Books delivered; Bookable space; Printing",
     "Phone number": "01452 426479",
-    "Email address": "https://gloslibraries.uk/form/ask-us-enquiries",
+    "Email address": "libraryhelp@gloucestershire.gov.uk",
     "URL": "https://gloslibraries.uk/library/oakley-interactive-space",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://gloslibraries.uk/form/ask-us-enquiries",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

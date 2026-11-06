@@ -20,7 +20,7 @@
     "Latitude": 55.04277,
     "Longitude": -1.44581,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://my.northtyneside.gov.uk/category/1703/whitley-bay-library",
     "Notes": "Current library was a new build £7m PFI project; old library on Park Road closed. BSL via video relay."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

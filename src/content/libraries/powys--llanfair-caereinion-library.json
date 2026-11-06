@@ -15,12 +15,12 @@
     "Address 1": "SY21 0RY, Welshpool, Powys, Wales, United Kingdom",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "SY21 0RY",
     "Unique property reference number": null,
     "Latitude": 52.64884,
     "Longitude": -3.325215,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "http://www.powys.gov.uk/en/libraries/find-nearest-library/llanfair-caereinion-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

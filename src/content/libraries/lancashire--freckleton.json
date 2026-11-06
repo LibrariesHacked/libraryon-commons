@@ -60,15 +60,5 @@
     "URL": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/freckleton-library.aspx",
     "Notes": "Closed 2016 re-opened 2018"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_f856a616b48fd4d8e1e7a4ae",
-        "migration/directory/report.json#review_e0996da21012ef626b6213a3"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://www.lincolnshire.gov.uk/directory-record/63984/horncastle-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_7ceac7cae28b9eb4863fd6ef"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

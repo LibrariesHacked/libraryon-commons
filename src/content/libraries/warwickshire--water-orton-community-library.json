@@ -20,7 +20,7 @@
     "Latitude": 52.51708,
     "Longitude": -1.74179,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.warwickshire.gov.uk/directory-record/614/water-orton-community-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_f0cc7e19a20f5b791fd115e7"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

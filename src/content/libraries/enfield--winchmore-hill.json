@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "N21 3AP",
     "Unique property reference number": 207014981,
-    "Latitude": 51.628407,
-    "Longitude": -0.098248,
+    "Latitude": 51.62840627821948,
+    "Longitude": -0.09844392752763613,
     "Status": "Closed (permanent)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.enfield.gov.uk/services/libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

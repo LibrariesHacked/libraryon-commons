@@ -57,24 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Bookable space; Hobby and interest groups; Children's activities; Computers; Photocopiers",
     "Phone number": "0116 237 6162",
     "Email address": "info@rothleycommunitylibrary.co.uk",
-    "URL": "rothleycommunitylibrary.co.uk",
+    "URL": "https://rothleycommunitylibrary.co.uk/",
     "Notes": "Hours closed: Th 12:00-14:00"
   },
-  "validation_exceptions": [
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "rothleycommunitylibrary.co.uk",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_584978e02f6467031e082895"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

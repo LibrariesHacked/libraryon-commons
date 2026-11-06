@@ -31,7 +31,7 @@
     "Adult fine": null,
     "Child fine": null,
     "Fine interval": null,
-    "Email address": "https://forms.office.com/Pages/ResponsePage.aspx?id=tdiBPwfuF0yGnB20OQGNm1daiMvzp4ZOgOK132GIg6FUM05CWFlYWUpaNkVEQ0xWU0pINTE3OUVOQS4u&wdLOR=c26FF1D5C-292F-4C1F-9B7A-F7E86A5D16D8",
+    "Email address": "library@hants.gov.uk",
     "Phone number": null,
     "App name": null,
     "Android app URL": null,
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://forms.office.com/Pages/ResponsePage.aspx?id=tdiBPwfuF0yGnB20OQGNm1daiMvzp4ZOgOK132GIg6FUM05CWFlYWUpaNkVEQ0xWU0pINTE3OUVOQS4u&wdLOR=c26FF1D5C-292F-4C1F-9B7A-F7E86A5D16D8",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

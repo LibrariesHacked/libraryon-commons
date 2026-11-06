@@ -1,0 +1,22 @@
+---
+import { ArrowUpRight } from '@lucide/astro'
+import { safeURL } from '../lib/site.mjs'
+
+const { heading, links = [] } = Astro.props
+const validLinks = links.filter((link) => safeURL(link?.url))
+---
+
+{validLinks.length > 0 && (
+  <section class="detail-section">
+    {heading && <h2>{heading}</h2>}
+    <ul class="contact-list">
+      {validLinks.map((link) => (
+        <li>
+          <a href={safeURL(link.url)}>
+            {link.channel} <ArrowUpRight size={15} aria-hidden="true" />
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

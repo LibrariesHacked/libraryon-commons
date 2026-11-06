@@ -56,14 +56,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_003f10eb52bbeffab5a16ea9"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

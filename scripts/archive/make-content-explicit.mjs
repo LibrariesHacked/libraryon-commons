@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Transformation converting implicit legacy markup structures into explicit directive syntax.
+ */
+
 import { readFile, readdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -22,6 +26,11 @@ const attributes = (values) => {
     : ''
 }
 
+/**
+ * Replace implicit legacy HTML patterns with explicit directive syntax.
+ * @param {string} body - Markdown body text.
+ * @returns {Promise<{body: string, groups: number, cleanup: number}>} Transformed markdown body and stats.
+ */
 export async function explicitMarkdown(body) {
   let sourceTree
   let renderedTree
@@ -194,6 +203,11 @@ export async function explicitMarkdown(body) {
   }
 }
 
+/**
+ * Process all content pages, upgrading legacy components into explicit directive containers.
+ * @param {{root?: string, apply?: boolean}} [options={}] - Options.
+ * @returns {Promise<Array<{file: string, groups: number, cleanup: number}>>} Array of modified pages and migration stats.
+ */
 export async function makeContentExplicit({ root = process.cwd(), apply = false } = {}) {
   const absolute = (file) => path.join(root, file)
   const json = async (file) => JSON.parse(await readFile(absolute(file), 'utf8'))

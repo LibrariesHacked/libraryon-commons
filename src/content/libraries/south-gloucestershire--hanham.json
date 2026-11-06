@@ -20,7 +20,7 @@
     "Latitude": 51.44794,
     "Longitude": -2.51359,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://beta.southglos.gov.uk/hanham-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

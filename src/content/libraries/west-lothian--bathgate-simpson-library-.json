@@ -20,9 +20,9 @@
     "Latitude": 55.901566754114754,
     "Longitude": -3.6443910802631763,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "08:30-20:00",
@@ -60,18 +60,5 @@
     "URL": "https://www.westlothian.gov.uk/article/33632/Simpson-Library-Bathgate",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

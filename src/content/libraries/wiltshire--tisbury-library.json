@@ -60,14 +60,5 @@
     "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/37?isListPage=True",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_1d7be06fb28b898e9736040d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

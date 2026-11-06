@@ -12,15 +12,15 @@
     "Local authority code": "E09000001",
     "Library name": "Shoe Lane Library",
     "Library code": null,
-    "Address 1": "Little New Street, London, Greater London, EC4A 3JR",
+    "Address 1": "Hill House, 1 Little New Street, London",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "EC4A 3TR",
-    "Unique property reference number": null,
-    "Latitude": 51.51545,
-    "Longitude": -0.10666,
+    "Postcode": "EC4A 3JR",
+    "Unique property reference number": 200000075492,
+    "Latitude": 51.51543959067608,
+    "Longitude": -0.10658264067306077,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.cityoflondon.gov.uk/services/libraries/shoe-lane-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_efd9f61633d83039266e6ffd"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

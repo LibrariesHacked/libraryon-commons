@@ -60,14 +60,5 @@
     "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/fleet-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_e252b108b2043fa797256999"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

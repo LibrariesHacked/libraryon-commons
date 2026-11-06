@@ -60,14 +60,5 @@
     "URL": "https://www.ansteylibrary.com",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_7c93fa1dd9e0f0a2c7293ad0"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

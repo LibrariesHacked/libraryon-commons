@@ -60,15 +60,5 @@
     "URL": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/callington-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_2fb7f21acc93fe9684ae7ca4",
-        "migration/directory/report.json#review_0c6e01c15a2bafb37d0ffa0c"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

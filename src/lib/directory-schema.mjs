@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Table Schema validation, data constraint checks, and CMS entry normalization.
+ */
+
 import { z } from 'zod'
 import libraries from '../data/schemas/libraries.json' with { type: 'json' }
 import services from '../data/schemas/library-services.json' with { type: 'json' }

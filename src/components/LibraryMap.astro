@@ -3,22 +3,6 @@ import 'maplibre-gl/dist/maplibre-gl.css'
 import { libraryMapFeatures } from '../lib/library-map.mjs'
 import { sitePath } from '../lib/site.mjs'
 
-interface Props {
-  id?: string
-  libraries?: Array<{
-    name: string
-    url?: string
-    address?: string
-    postcode?: string
-    latitude?: number | null
-    longitude?: number | null
-    closed?: boolean
-    permanentlyClosed?: boolean
-  }>
-  label?: string
-  emptyMessage?: string
-}
-
 const {
   id = `library-map-${crypto.randomUUID()}`,
   libraries = [],
@@ -52,36 +36,31 @@ const data = libraryMapFeatures(libraries, sitePath)
 </library-map>
 
 <script>
-  import type { Map as MapLibreMap, GeoJSONSource, Popup } from 'maplibre-gl'
-  import type { FeatureCollection, Point } from 'geojson'
   import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
   import { libraryMapFeatures } from '../lib/library-map.mjs'
   import { sitePath } from '../lib/site.mjs'
 
-  type Location = { latitude: number; longitude: number; label?: string }
-  type MapUpdate = { records: Parameters<typeof libraryMapFeatures>[0]; location?: Location | null }
-
   class LibraryMap extends HTMLElement {
-    private map?: MapLibreMap
-    private popup?: Popup
-    private observer?: IntersectionObserver
-    private data: FeatureCollection<Point> = { type: 'FeatureCollection', features: [] }
-    private location: Location | null = null
-    private initializing = false
-    private lifetime?: AbortController
+    map = undefined
+    popup = undefined
+    observer = undefined
+    data = { type: 'FeatureCollection', features: [] }
+    location = null
+    initializing = false
+    lifetime = undefined
 
     connectedCallback() {
       if (this.lifetime && !this.lifetime.signal.aborted) return
       this.lifetime = new AbortController()
       const { signal } = this.lifetime
       if (!this.dataset.initialized)
-        this.data = JSON.parse(this.querySelector('[data-map-data]')!.textContent!)
+        this.data = JSON.parse(this.querySelector('[data-map-data]').textContent)
       this.dataset.initialized = 'true'
       this.addEventListener(
         'library-map-update',
         (event) => {
-          const { records, location = null } = (event as CustomEvent<MapUpdate>).detail
-          this.data = libraryMapFeatures(records, sitePath) as FeatureCollection<Point>
+          const { records, location = null } = event.detail
+          this.data = libraryMapFeatures(records, sitePath)
           this.location = location
           this.updateMap()
         },
@@ -108,13 +87,14 @@ const data = libraryMapFeatures(libraries, sitePath)
       delete this.dataset.mapReady
     }
 
-    private setStatus(message = '') {
-      const status = this.querySelector<HTMLElement>('[data-map-status]')!
+    setStatus(message = '') {
+      const status = this.querySelector('[data-map-status]')
+      if (!status) return
       status.textContent = message
       status.hidden = !message
     }
 
-    private async initializeMap(signal: AbortSignal) {
+    async initializeMap(signal) {
       if (this.map || this.initializing) return
       this.initializing = true
       try {
@@ -123,7 +103,7 @@ const data = libraryMapFeatures(libraries, sitePath)
         if (!this.isConnected || signal.aborted) return
         setWorkerUrl(workerUrl)
         const map = new Map({
-          container: this.querySelector<HTMLElement>('[data-map-canvas]')!,
+          container: this.querySelector('[data-map-canvas]'),
           style: 'https://tiles.openfreemap.org/styles/positron',
           center: [-3.5, 55],
           zoom: 4.5,
@@ -205,12 +185,12 @@ const data = libraryMapFeatures(libraries, sitePath)
           map.on('click', 'library-clusters', async (event) => {
             const feature = event.features?.[0]
             if (!feature || feature.geometry.type !== 'Point') return
-            const source = map.getSource('libraries') as GeoJSONSource
+            const source = map.getSource('libraries')
             const zoom = await source
               .getClusterExpansionZoom(Number(feature.properties.cluster_id))
               .catch(() => null)
             if (zoom !== null && this.isConnected && this.map === map)
-              map.easeTo({ center: feature.geometry.coordinates as [number, number], zoom })
+              map.easeTo({ center: feature.geometry.coordinates, zoom })
           })
           map.on('click', 'library-points', (event) => {
             const feature = event.features?.[0]
@@ -229,7 +209,7 @@ const data = libraryMapFeatures(libraries, sitePath)
             }
             this.popup?.remove()
             this.popup = new Popup({ maxWidth: '280px' })
-              .setLngLat(feature.geometry.coordinates as [number, number])
+              .setLngLat(feature.geometry.coordinates)
               .setDOMContent(content)
               .addTo(map)
           })
@@ -250,13 +230,13 @@ const data = libraryMapFeatures(libraries, sitePath)
       }
     }
 
-    private updateMap() {
+    updateMap() {
       this.dataset.mapCount = String(this.data.features.length)
-      const source = this.map?.getSource('libraries') as GeoJSONSource | undefined
+      const source = this.map?.getSource('libraries')
       if (!this.map || !source) return
       this.popup?.remove()
       source.setData(this.data)
-      const origin: FeatureCollection<Point> = {
+      const origin = {
         type: 'FeatureCollection',
         features: this.location
           ? [
@@ -271,9 +251,9 @@ const data = libraryMapFeatures(libraries, sitePath)
             ]
           : []
       }
-      ;(this.map.getSource('search-location') as GeoJSONSource).setData(origin)
+      this.map.getSource('search-location').setData(origin)
       const points = [...this.data.features, ...origin.features].map(
-        (feature) => feature.geometry.coordinates as [number, number]
+        (feature) => feature.geometry.coordinates
       )
       if (points.length === 1) {
         this.map.jumpTo({ center: points[0], zoom: 15 })

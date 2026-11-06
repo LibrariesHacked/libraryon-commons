@@ -12,17 +12,17 @@
     "Local authority code": "E10000016",
     "Library name": "Folkestone Library",
     "Library code": null,
-    "Address 1": "5 Grace Hill, Folkestone, Kent, CT20 1HA",
+    "Address 1": "2 Grace Hill, Folkestone, Kent",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "CT20 1HD",
+    "Postcode": "CT20 1HA",
     "Unique property reference number": null,
     "Latitude": 51.08179,
     "Longitude": 1.18103,
     "Status": "Closed (temporary)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,27 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=YRWoQMs70mE&communitychannel=9",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_6c7ce1c5ff70855e9fee75e7"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -1,8 +1,15 @@
+/**
+ * @fileoverview Endpoint publishing validation reports for the nationwide library dataset.
+ */
+
 import { libraries } from '../lib/directory.mjs'
 import { libraryValidationReport } from '../lib/directory-export.mjs'
 import { sitePath } from '../lib/site.mjs'
 
-/** @returns {Response} Strict field failures for the complete CSV, including schema URL and original CSV record numbers. */
+/**
+ * Handle GET requests for the nationwide library validation report.
+ * @returns {Response} JSON Response containing strict field failures, schema link, and record numbers.
+ */
 export function GET() {
   return Response.json({
     schema: sitePath('/schemas/libraries.json'),

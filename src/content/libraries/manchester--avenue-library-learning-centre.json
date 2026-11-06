@@ -20,7 +20,7 @@
     "Latitude": 53.53202,
     "Longitude": -2.20782,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.manchester.gov.uk/directory_record/470325/avenue_library_and_learning_centre/category/1957/all_libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

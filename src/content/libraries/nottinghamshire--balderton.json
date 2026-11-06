@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_b5bc393ff3110bc8f528dd7d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

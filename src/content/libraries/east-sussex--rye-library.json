@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "TN31 7JG",
-    "Unique property reference number": 200001880915,
+    "Unique property reference number": null,
     "Latitude": 50.95078,
     "Longitude": 0.73216,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Computers; Photocopiers; Family history; Bookable space; Findmypast; British Newspaper Archive",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/rye",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 51.51551,
     "Longitude": -2.54414,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.stmichaelsbristol.org/stoke-gifford-community-library/",
     "Notes": "Website states it is open \"Fortnightly on Tuesday Afternoons (2pm-4pm) and Thursday mornings (9am – 11am)\" Unclear whether it's fortnightly for both of these days or just Tues"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

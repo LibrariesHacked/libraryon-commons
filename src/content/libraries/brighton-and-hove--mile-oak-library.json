@@ -20,9 +20,9 @@
     "Latitude": 50.851177,
     "Longitude": -0.225091,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": 2013,
     "Year closed": 2023,
     "Monday staffed hours": "14:00-17:00",
@@ -60,28 +60,5 @@
     "URL": "https://www.brighton-hove.gov.uk/libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_97f3481e05334d43cbc64670",
-        "migration/directory/report.json#review_526364d1d332c4688475e015"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

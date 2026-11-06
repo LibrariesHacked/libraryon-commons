@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP14 3AE",
-    "Unique property reference number": null,
-    "Latitude": 51.6445,
-    "Longitude": -0.80305,
+    "Unique property reference number": 100081172335,
+    "Latitude": 51.644394071849256,
+    "Longitude": -0.8031730132536075,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/west-wycombe-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_bb2b5bdb68b1eb4c9757d7c7"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

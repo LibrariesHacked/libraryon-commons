@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=FfDaVENLNBk&communitychannel=9",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_a665160a0111eea7c48deef2"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

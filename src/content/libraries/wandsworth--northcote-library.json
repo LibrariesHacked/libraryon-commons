@@ -12,15 +12,15 @@
     "Local authority code": "E09000032",
     "Library name": "Northcote Library",
     "Library code": null,
-    "Address 1": "150 Northcote Road, Northcote, Greater London, SW11 6DR",
+    "Address 1": "150 Northcote Road, London",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "SW11 6HW",
+    "Postcode": "SW11 6RD",
     "Unique property reference number": null,
     "Latitude": 51.455252,
     "Longitude": -0.164414,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.better.org.uk/library/london/wandsworth/northcote-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_e6b6e895c45b192e874bae5a"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

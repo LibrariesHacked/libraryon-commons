@@ -20,7 +20,7 @@
     "Latitude": 51.65903,
     "Longitude": -3.50831,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast",
     "Phone number": "01443 732256",
-    "Email address": "https://www.fernpartnership.co.uk/#welcome",
+    "Email address": "info@fernpartnership.co.uk",
     "URL": "https://www.fernpartnership.co.uk/#welcome",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.fernpartnership.co.uk/#welcome",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

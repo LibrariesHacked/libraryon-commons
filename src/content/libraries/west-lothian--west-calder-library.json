@@ -20,7 +20,7 @@
     "Latitude": 55.85214235316269,
     "Longitude": -3.5680596280744226,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi",
     "Phone number": "01506 283550",
-    "Email address": "mailto:westcalder.lib@westlothian.gov.uk",
+    "Email address": "westcalder.lib@westlothian.gov.uk",
     "URL": "https://www.westlothian.gov.uk/article/33633/West-Calder-Library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "mailto:westcalder.lib@westlothian.gov.uk",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

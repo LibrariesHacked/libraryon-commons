@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "DE24 3DS",
-    "Unique property reference number": 10010676956,
+    "Unique property reference number": null,
     "Latitude": 52.87712,
     "Longitude": -1.49379,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.inderby.org.uk/libraries/our-libraries/sinfin-library/",
     "Notes": "Run by Direct Help and Advice (DHA):"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

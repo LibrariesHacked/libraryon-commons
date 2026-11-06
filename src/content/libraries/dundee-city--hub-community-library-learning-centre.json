@@ -20,9 +20,9 @@
     "Latitude": 56.48286,
     "Longitude": -2.93483,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "CRL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:00-13:00,14:00-19:00",
@@ -60,18 +60,5 @@
     "URL": "http://www.leisureandculturedundee.com/hub-community-library-and-learning-centre",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

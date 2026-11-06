@@ -60,14 +60,5 @@
     "URL": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/tadcaster-community-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_960115adf0c86c1f45ae74ef"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

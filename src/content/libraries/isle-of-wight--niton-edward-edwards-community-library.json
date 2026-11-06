@@ -20,7 +20,7 @@
     "Latitude": 50.588308,
     "Longitude": -1.285761,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.iow.gov.uk/libraries-leisure-and-heritage/libraries/community-libraries/edward-edwards-community-library-niton/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

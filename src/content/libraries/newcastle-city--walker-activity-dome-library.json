@@ -20,7 +20,7 @@
     "Latitude": 54.97479857406205,
     "Longitude": -1.5543837124480149,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/walker-library-walker-activity-dome",
     "Notes": "Previously operating in another location"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

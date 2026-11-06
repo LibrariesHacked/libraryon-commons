@@ -8,7 +8,7 @@
   "imported_on": "2026-10-27",
   "data": {
     "Local authority": "Jersey",
-    "Local authority code": null,
+    "Local authority code": "L99999999",
     "Country": "Crown Dependencies",
     "Local authority department": null,
     "Governance model": null,
@@ -55,18 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Local authority code",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Country",
-      "code": "enum",
-      "value": "Crown Dependencies",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

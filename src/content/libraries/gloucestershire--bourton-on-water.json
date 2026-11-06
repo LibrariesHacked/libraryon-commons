@@ -60,14 +60,5 @@
     "URL": "https://www.gloucestershire.gov.uk/libraries/find-a-library/bourton-on-the-water-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_81cd6190ce88d18f7caa89a8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

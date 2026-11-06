@@ -60,14 +60,5 @@
     "URL": "https://www.fairoakcommunitylibrary.org/",
     "Notes": "Closed between 1300 and 1400 on Thu"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_6c2317759f43a4264530eb4d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 53.53022,
     "Longitude": -0.6538,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.opac.northlincs.gov.uk/-/messingham-library#/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

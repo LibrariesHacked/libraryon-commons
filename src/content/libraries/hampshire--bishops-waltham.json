@@ -20,7 +20,7 @@
     "Latitude": 50.956459,
     "Longitude": -1.208459,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/bishops-waltham-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_79c8e735f9e8901ac8ae70a6"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "BS39 5UU",
-    "Unique property reference number": 10001143373,
+    "Unique property reference number": null,
     "Latitude": 51.335946,
     "Longitude": -2.593746,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://chewvalleylibrary.org.uk/",
     "Notes": "Run by volunteers"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

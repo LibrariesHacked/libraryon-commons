@@ -20,7 +20,7 @@
     "Latitude": 50.84479181473256,
     "Longitude": 0.4363448995844408,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": null,
     "Type of library": "ICL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.facebook.com/people/The-Community-Library-Little-Common/100067371733567/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "TN21 8LU",
     "Unique property reference number": 100062556334,
-    "Latitude": 50.97143,
-    "Longitude": 0.25166,
+    "Latitude": 50.97139487101618,
+    "Longitude": 0.25166711017580073,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Computers; Family history; BFI Replay; British Newspaper Archive; Findmypast",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/heathfield",
     "Notes": "Major refurb in 2019"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

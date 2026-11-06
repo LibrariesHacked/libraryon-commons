@@ -20,7 +20,7 @@
     "Latitude": 53.74138,
     "Longitude": -2.01202,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/your-local-library/hebden-bridge-library",
     "Notes": "Refurbished following flooding 2015"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

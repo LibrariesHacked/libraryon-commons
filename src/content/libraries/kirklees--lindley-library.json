@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "HD3 3JP",
     "Unique property reference number": 83187615,
-    "Latitude": 53.66106,
-    "Longitude": -1.82358,
+    "Latitude": 53.6609049458855,
+    "Longitude": -1.8235327317079446,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": 1938,
@@ -60,12 +60,5 @@
     "URL": "https://www.kirklees.gov.uk/Libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

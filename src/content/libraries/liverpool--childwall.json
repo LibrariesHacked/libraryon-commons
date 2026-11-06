@@ -60,15 +60,5 @@
     "URL": "https://liverpool.gov.uk/libraries/local-libraries/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_aa0b0de3d4e76d4669ab2152",
-        "migration/directory/report.json#review_e240009aa8d3441c5a7c4bf6"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

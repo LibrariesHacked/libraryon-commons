@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Hobby and interest groups; Photocopiers; British Newspaper Archive; Findmypast",
     "Phone number": "01865 815100",
-    "Email address": "https://www.oxfordshire.gov.uk/contactus/contact-bampton-library",
+    "Email address": "County.Library@Oxfordshire.gov.uk",
     "URL": "https://www.oxfordshire.gov.uk/libraries/find-library/bampton-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.oxfordshire.gov.uk/contactus/contact-bampton-library",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 56.029441,
     "Longitude": -3.398558,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "http://onfife.com/venues/inverkeithing-library-and-heritage-centre",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_2ae96b0c1a29b899c23c2f05"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

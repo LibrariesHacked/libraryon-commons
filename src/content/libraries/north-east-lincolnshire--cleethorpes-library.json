@@ -60,14 +60,5 @@
     "URL": "https://lincsinspire.com/libraries-archives/branches/cleethorpes-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_3d9a9d2d6f386f4ab644a3c4"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay",
     "Phone number": "07538 767042",
-    "Email address": "oldtownlibrary@southswindon-pc.gov.uk/old-town-library",
+    "Email address": "oldtownlibrary@southswindon-pc.gov.uk",
     "URL": "https://southswindon-pc.gov.uk/old-town-library/",
     "Notes": "Run by Swindon Swindon South Parish since September 2017"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "oldtownlibrary@southswindon-pc.gov.uk/old-town-library",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

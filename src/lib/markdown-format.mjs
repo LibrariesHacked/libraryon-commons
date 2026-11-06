@@ -1,7 +1,12 @@
+/**
+ * @fileoverview Markdown formatting options and list indentation normalization.
+ */
+
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkDirective from 'remark-directive'
 
+/** @type {object} Options for mdast-util-to-markdown serialization. */
 export const markdownOptions = {
   bullet: '-',
   listItemIndent: 'one',
@@ -10,6 +15,11 @@ export const markdownOptions = {
   fences: true
 }
 
+/**
+ * Normalize Markdown list markers to use a single space indentation after list bullets/numbers.
+ * @param {string} source - Markdown source text.
+ * @returns {string} Normalized Markdown string.
+ */
 export function normalizeListSpacing(source) {
   const tree = unified().use(remarkParse).use(remarkDirective).parse(source)
   const edits = []

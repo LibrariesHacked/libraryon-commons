@@ -1,5 +1,17 @@
+/**
+ * @fileoverview Remark plugin transforming container directives into semantic HTML structures.
+ */
+
 import { ArrowUpRight } from 'lucide'
 
+/**
+ * Construct an AST node with custom HTML tag and attributes.
+ * @param {string} tagName - HTML tag name to render.
+ * @param {string} [className] - Optional CSS class name.
+ * @param {object[]} children - Child AST nodes.
+ * @param {object} [properties={}] - Additional HTML attributes.
+ * @returns {object} Paragraph AST node configured for rehype translation.
+ */
 function element(tagName, className, children, properties = {}) {
   return {
     type: 'paragraph',
@@ -20,6 +32,10 @@ const nodeText = (node) =>
 const imageParagraph = (node) =>
   node.type === 'paragraph' && node.children.length === 1 && node.children[0].type === 'image'
 
+/**
+ * Remark plugin for custom content directives (carousels, accordions, asides, cards, quotes, recommendations, videos).
+ * @returns {(tree: object, file: object) => void} AST transformer function.
+ */
 export function contentDirectives() {
   return (tree, file) => {
     const textParagraph = (node) =>

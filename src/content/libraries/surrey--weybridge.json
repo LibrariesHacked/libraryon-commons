@@ -20,7 +20,7 @@
     "Latitude": 51.37222495535616,
     "Longitude": -0.4602302199512849,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/weybridge",
     "Notes": "Refurbishment in 2014"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

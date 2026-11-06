@@ -20,7 +20,7 @@
     "Latitude": 51.56277,
     "Longitude": -1.80333,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://centralswindonnorth-pc.gov.uk/parish-libraries",
     "Notes": "Run by Swindon Central North Parish since September 2017 and now a separate trust"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

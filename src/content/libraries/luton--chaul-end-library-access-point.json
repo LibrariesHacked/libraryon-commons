@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "LU4 8QN",
     "Unique property reference number": 10004924115,
-    "Latitude": 51.89163,
-    "Longitude": -0.45811,
+    "Latitude": 51.89167078814526,
+    "Longitude": -0.4585717702693235,
     "Status": "Closed (permanent)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CL",
     "Year opened": 2015,
     "Year closed": 2020,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": "https://m.luton.gov.uk/Page/Show/Community_and_living/community-centres/Pages/Chaul-End-Community-Centre.aspx",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

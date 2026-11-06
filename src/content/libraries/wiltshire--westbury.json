@@ -15,12 +15,12 @@
     "Address 1": "Westbury Library, Westbury House, 15 Edward Street, Westbury, Wiltshire. BA13 3BD",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "BA13 3BD",
     "Unique property reference number": null,
     "Latitude": 53.118966,
     "Longitude": -1.112873,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/31?isListPage=True",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "BL1 5LF",
     "Unique property reference number": 10070919482,
-    "Latitude": 53.58491,
-    "Longitude": -2.46469,
+    "Latitude": 53.58503561164391,
+    "Longitude": -2.464694887429464,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL-",
     "Year opened": 2012,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

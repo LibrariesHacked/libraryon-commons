@@ -20,9 +20,9 @@
     "Latitude": 51.55266,
     "Longitude": -0.34825,
     "Status": "Closed (permanent)",
-    "Statutory": "No",
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": 1938,
     "Year closed": null,
     "Monday staffed hours": "12:00-17:00",
@@ -60,12 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 51.4003,
     "Longitude": -0.13169,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://libraries.merton.gov.uk/client/en_GB/merton/?rm=POLLARDS+HILL+0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue",
     "Notes": "New library opened in 2009 with funding from the Big Lottery Fund"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

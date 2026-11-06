@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/findon-valley-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_29ea277cdffd6dd32a5eae52"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

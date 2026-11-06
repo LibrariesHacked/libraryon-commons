@@ -20,7 +20,7 @@
     "Latitude": 51.791702,
     "Longitude": -0.081592,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/hertfordshire-archives-and-local-studies.aspx",
     "Notes": "Sat open 1st and 2nd Sat of month 10:00 - 14:00; Tues: 1st Tues of month open 17:00 - 19:30 by appointment only."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

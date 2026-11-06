@@ -2,7 +2,7 @@
 import { settings, sitePath } from '../../lib/site.mjs'
 const publicSiteURL = import.meta.env.PUBLIC_SITE_URL || settings.site.url
 /** @param value - Public-site help path. @returns A link to the public host rather than the CMS-only deployment. */
-const publicSitePath = (value: string) =>
+const publicSitePath = (value) =>
   publicSiteURL
     ? new URL(value.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
     : sitePath(value)
@@ -30,21 +30,8 @@ const publicSitePath = (value: string) =>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script>
       import { prepareDirectoryEdit } from '../../lib/directory-schema.mjs'
-      interface CmsData {
-        /** Return the plain-object copy normalized before saving. */
-        toJS(): Record<string, unknown>
-        /** Return an immutable map with one metadata value replaced. */
-        set(field: string, value: unknown): CmsData
-        /** Update a nested schema field without replacing Decap's immutable data map. */
-        setIn(path: string[], value: unknown): CmsData
-      }
-      interface CmsEntry {
-        /** Identify the collection used for normalization and date policy. */
-        get(key: 'collection'): string
-        /** Read the immutable editor values, including review annotations. */
-        get(key: 'data'): CmsData
-      }
-      const stampedFields: Record<string, string[]> = {
+
+      const stampedFields = {
         pages: ['updated_on'],
         resources: ['updated_on'],
         sessions: ['updated_on'],
@@ -56,7 +43,7 @@ const publicSitePath = (value: string) =>
       cms.registerEventListener({
         name: 'preSave',
         /** @param context - Decap entry being saved. @returns Normalized immutable values with actual edit/review dates stamped. */
-        handler: ({ entry }: { entry: CmsEntry }) => {
+        handler: ({ entry }) => {
           const today = new Date().toLocaleDateString('en-CA')
           const collection = entry.get('collection')
           let data = entry.get('data')

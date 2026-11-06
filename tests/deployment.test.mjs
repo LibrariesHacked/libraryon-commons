@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for split deployment workflows (GitHub Pages public site and Netlify CMS bundle).
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'

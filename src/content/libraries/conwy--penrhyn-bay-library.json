@@ -20,7 +20,7 @@
     "Latitude": 53.31521,
     "Longitude": -3.77037,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.conwy.gov.uk/en/Resident/Libraries-Museums-and-Archives/Libraries/Libraries-and-opening-times/Penrhyn-Bay-Library.aspx",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

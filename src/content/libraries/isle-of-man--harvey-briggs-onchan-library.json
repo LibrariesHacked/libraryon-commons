@@ -9,20 +9,20 @@
   "imported_on": "2026-10-27",
   "data": {
     "Local authority": "Isle of Man",
-    "Local authority code": null,
+    "Local authority code": "M99999999",
     "Library name": "Harvey Briggs Onchan Library",
     "Library code": null,
     "Address 1": "Willow House, Main Road, Onchan, IM3 1AJ",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "IM3 1AJ",
     "Unique property reference number": null,
     "Latitude": 54.175167867435675,
     "Longitude": -4.453881144085358,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:30-17:00",
@@ -60,30 +60,5 @@
     "URL": "https://www.onchan.org.im/library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Local authority code",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 50.825166,
     "Longitude": -0.13841,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/jubilee-library?origin_node=33916",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

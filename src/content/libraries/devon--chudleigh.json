@@ -20,7 +20,7 @@
     "Latitude": 50.60603,
     "Longitude": -3.60172,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.devonlibraries.org.uk/web/arena/chudleighlibrary",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "DA6 7AS",
     "Unique property reference number": 100022922362,
-    "Latitude": 51.455971,
-    "Longitude": 0.144016,
+    "Latitude": 51.45599550513424,
+    "Longitude": 0.14374899626154222,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://arena.yourlondonlibrary.net/web/bexley/-/central-library#/?location=Central%20Library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "original-uprn",
-      "reason": "Original LibraryOn value retained; inspect lookup evidence",
-      "audit_refs": [
-        "migration/directory/report.json#review_eb728d5a54525e45f7ca0806"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

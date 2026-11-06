@@ -31,11 +31,11 @@
     "Adult fine": null,
     "Child fine": null,
     "Fine interval": null,
-    "Email address": "https://www.westsussex.gov.uk/libraries/contact-the-library-service/",
+    "Email address": "county.libraries@westsussex.gov.uk",
     "Phone number": "01243 777100",
     "App name": null,
-    "Android app URL": "https://play.google.com/store/apps/details?id=uk.co.solus.WestSussexLibraries",
-    "iOS app URL": "https://apps.apple.com/gb/app/west-sussex-libraries/id979596966",
+    "Android app URL": null,
+    "iOS app URL": null,
     "Twitter URL": "https://twitter.com/wscclibraries",
     "Facebook URL": "https://www.facebook.com/WestSussexLibraries",
     "Instagram URL": "https://www.instagram.com/westsussexlibraries/",
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.westsussex.gov.uk/libraries/contact-the-library-service/",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

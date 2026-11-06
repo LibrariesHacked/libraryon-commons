@@ -9,18 +9,18 @@
   "imported_on": "2026-10-27",
   "data": {
     "Local authority": "Guernsey",
-    "Local authority code": null,
+    "Local authority code": "L99999998",
     "Library name": "La Nouvelle Maraitaine Community Library",
     "Library code": null,
     "Address 1": "Rue Maraitaine, GY3 5QD",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "GY3 5QD",
     "Unique property reference number": null,
     "Latitude": 49.49012795129593,
     "Longitude": -2.5254746371515466,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -57,33 +57,8 @@
     "Facilities and services": "Free Wi-Fi; Books; Children's activities",
     "Phone number": "01481 720392",
     "Email address": "ga@library.gg",
-    "URL": "ga@library.gg",
+    "URL": "https://www.library.gg/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Local authority code",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "ga@library.gg",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

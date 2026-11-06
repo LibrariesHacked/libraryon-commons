@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Packaging script for isolated Netlify Decap CMS administration deployments.
+ */
+
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'

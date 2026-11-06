@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=bkl1xIp9MXE&communitychannel=9",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_0ff333b9e2ec67e9181db28e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

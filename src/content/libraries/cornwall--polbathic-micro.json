@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "PL11 3EY",
     "Unique property reference number": 10003910155,
-    "Latitude": 50.388761,
-    "Longitude": -4.324874,
+    "Latitude": 50.38861819433495,
+    "Longitude": -4.324955858843056,
     "Status": "Closed (permanent)",
-    "Statutory": "No",
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL-",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi",
     "Phone number": null,
-    "Email address": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
+    "Email address": "mobile@cornwall.gov.uk",
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

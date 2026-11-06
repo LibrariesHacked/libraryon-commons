@@ -1,7 +1,12 @@
 ---
+import { existsSync, readdirSync } from 'node:fs'
 import { getCollection } from 'astro:content'
 import ContributorTemplate from '../../templates/ContributorTemplate.astro'
 export async function getStaticPaths() {
+  const hasContributors =
+    existsSync('./src/content/contributors') &&
+    readdirSync('./src/content/contributors').some((file) => file.endsWith('.json'))
+  if (!hasContributors) return []
   return (await getCollection('contributors')).map((entry) => ({
     params: { person: entry.data.slug },
     props: { contributor: entry.data }

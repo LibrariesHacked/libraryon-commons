@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Migration script renaming asset files and content paths to human-readable descriptive slugs.
+ */
+
 import path from 'node:path'
 import { createHash } from 'node:crypto'
 import { existsSync, readFileSync, readdirSync, renameSync, writeFileSync } from 'node:fs'
@@ -5,6 +9,11 @@ import { pathToFileURL } from 'node:url'
 import { gunzipSync } from 'node:zlib'
 import { parse, parseDocument } from 'yaml'
 
+/**
+ * Convert an arbitrary title, label or filename into a descriptive, URL-safe slug.
+ * @param {string} value - Input string to slugify.
+ * @returns {string} URL-safe alphanumeric slug with hyphens.
+ */
 export function descriptiveSlug(value) {
   return String(value || '')
     .normalize('NFKD')
@@ -19,6 +28,13 @@ export function descriptiveSlug(value) {
     .replace(/-$/g, '')
 }
 
+/**
+ * Generate a collision-free filename given a label, extension, and set of already-used names.
+ * @param {string} label - Input label for slugification.
+ * @param {string} extension - File extension including leading dot.
+ * @param {Set<string>} used - Set of lowercase filenames already assigned.
+ * @returns {string} Unique filename.
+ */
 export function uniqueFilename(label, extension, used) {
   const stem = /\.(?:jpe?g|png|gif|webp|avif|svg|tiff?|ico|heic|img)$/i.test(extension)
     ? imageFilenameStem(label)
@@ -33,6 +49,11 @@ export function uniqueFilename(label, extension, used) {
   return candidate
 }
 
+/**
+ * Extract a concise, readable filename stem for an image from descriptive text.
+ * @param {string} label - Descriptive text or alt text.
+ * @returns {string} Short hyphenated stem or empty string if not descriptive.
+ */
 export function imageFilenameStem(label) {
   if (!isDescriptiveImageLabel(label)) return ''
   const variant = /(?:\s|-)(original|master)(?:-\d+)?$/i.exec(String(label))
@@ -62,6 +83,11 @@ export function imageFilenameStem(label) {
   return stem ? `${stem}${suffix}` : ''
 }
 
+/**
+ * Check whether an image label is sufficiently descriptive (not a generic or placeholder name).
+ * @param {string} value - Candidate label or filename.
+ * @returns {boolean} True if descriptive.
+ */
 export function isDescriptiveImageLabel(value) {
   const stem = descriptiveSlug(value)
   return (
@@ -72,12 +98,22 @@ export function isDescriptiveImageLabel(value) {
   )
 }
 
+/**
+ * Load reviewed image descriptions indexed by SHA-256 checksum.
+ * @param {string} [root=process.cwd()] - Project root directory.
+ * @returns {Map<string, object>} Map of SHA-256 hash to description object.
+ */
 export function reviewedImageDescriptions(root = process.cwd()) {
   const file = path.join(root, 'migration/image-descriptions.json')
   if (!existsSync(file)) return new Map()
   return new Map(readJSON(file).images.map((image) => [image.sha256, image]))
 }
 
+/**
+ * Extract a descriptive filename stem from a source URL or query parameters.
+ * @param {string} url - Source asset URL.
+ * @returns {string} Descriptive slug or empty string.
+ */
 export function sourceFilename(url) {
   try {
     const parsed = new URL(url, 'https://local.invalid')
@@ -112,6 +148,12 @@ function replacementFunction(replacements) {
   return (value) => value.replace(pattern, (match) => lookup.get(match))
 }
 
+/**
+ * Reverse migrated asset references in a markdown or text body back to their original paths.
+ * @param {string} body - Text content containing asset paths.
+ * @param {Array<{from: string, to: string}>} mappings - Rename mappings.
+ * @returns {string} Text with restored original paths.
+ */
 export function originalAssetReferences(body, mappings) {
   const history = new Map(
     mappings
@@ -136,6 +178,11 @@ export function originalAssetReferences(body, mappings) {
   )(body)
 }
 
+/**
+ * Perform or dry-run filename migration for uploaded media assets and markdown references.
+ * @param {{root?: string, apply?: boolean, resourceIds?: string[]}} [options={}] - Migration options.
+ * @returns {{renames: Array<{from: string, to: string}>, unchanged: number, updatedFiles: string[]}} Migration result summary.
+ */
 export function migrateFilenames({ root = process.cwd(), apply = false, resourceIds = [] } = {}) {
   const absolute = (filename) => path.join(root, filename)
   const mappingFile = absolute('migration/filenames.json')
@@ -153,7 +200,7 @@ export function migrateFilenames({ root = process.cwd(), apply = false, resource
     const data = filename.endsWith('.md')
       ? parse(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/.exec(text)[1])
       : JSON.parse(text)
-    return { file: path.relative(root, filename), text, data }
+    return { file: path.relative(root, filename).replace(/\\/g, '/'), text, data }
   })
   const labels = new Map()
   const addLabel = (url, label, priority) => {
@@ -226,7 +273,9 @@ export function migrateFilenames({ root = process.cwd(), apply = false, resource
   const renames = []
   for (const collection of ['faqs', 'resources', 'sessions']) {
     const folder = `src/content/${collection}`
-    const entries = records.filter((record) => path.dirname(record.file) === folder)
+    const entries = records.filter(
+      (record) => path.dirname(record.file).replace(/\\/g, '/') === folder
+    )
     const opaque = (file) => /(?:^|[-_])[a-f0-9]{16,}(?=\.)/.test(path.basename(file))
     const used = new Set(
       entries
@@ -266,7 +315,7 @@ export function migrateFilenames({ root = process.cwd(), apply = false, resource
     usedByFolder.get(folder).add(path.basename(filename).toLowerCase())
   }
   for (const filename of uploadFiles.filter(opaqueUpload)) {
-    const from = path.relative(root, filename)
+    const from = path.relative(root, filename).replace(/\\/g, '/')
     const url = from.slice('public'.length)
     const sources = report.assets.filter((asset) => asset.file === from)
     const sha256 = checksum(readFileSync(filename))
@@ -290,8 +339,8 @@ export function migrateFilenames({ root = process.cwd(), apply = false, resource
     if (!usedByFolder.has(folder)) usedByFolder.set(folder, new Set())
     renames.push({
       from,
-      to: path.join(
-        path.dirname(from),
+      to: path.posix.join(
+        path.posix.dirname(from),
         uniqueFilename(
           label,
           description?.extension || path.extname(from),
@@ -322,7 +371,7 @@ export function migrateFilenames({ root = process.cwd(), apply = false, resource
       .map((entry) => [path.basename(entry.from, '.json'), path.basename(entry.to, '.json')])
   )
   const replaceResourceReferences = (file, source) => {
-    const relative = path.relative(root, file)
+    const relative = path.relative(root, file).replace(/\\/g, '/')
     if (relative.startsWith('src/content/pages/') && relative.endsWith('.md')) {
       const frontmatter = /^---\r?\n([\s\S]*?)\r?\n---/.exec(source)
       if (!frontmatter) return source

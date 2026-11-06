@@ -60,14 +60,5 @@
     "URL": "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/service.page?id=DTwsS_PulLM",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_0ddcbfb0ea3f31101b517c57"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

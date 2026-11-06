@@ -8,8 +8,8 @@
   "reviewed_on": "",
   "imported_on": "2026-10-27",
   "data": {
-    "Local authority": null,
-    "Local authority code": null,
+    "Local authority": "County Antrim",
+    "Local authority code": "N09000001",
     "Library name": "Larne Library",
     "Library code": null,
     "Address 1": "36 Pound Street, Gardenmore, Larne, BT40 1SQ, United Kingdom",
@@ -20,7 +20,7 @@
     "Latitude": 54.85219,
     "Longitude": -5.82361,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,24 +60,5 @@
     "URL": "https://www.librariesni.org.uk/libraries/county-antrim/larne-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Local authority",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Local authority code",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 51.883482,
     "Longitude": -3.990032,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.carmarthenshire.gov.wales/home/residents/libraries-archives/find-a-library/llandeilo-library.aspx#.Wk_0Dkx2vIU",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

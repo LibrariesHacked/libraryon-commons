@@ -22,7 +22,7 @@
     "Status": "Closed (permanent)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": 1960,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,21 +60,5 @@
     "URL": "https://libraries.havering.gov.uk/digital-content/libraries/find-a-library/harold-wood-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_2856a7f85945127a1fe899a8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

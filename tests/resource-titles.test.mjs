@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for downloadable resource titles, slug stability, and uniqueness.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync, readdirSync } from 'node:fs'

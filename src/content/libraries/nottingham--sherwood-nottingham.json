@@ -15,14 +15,14 @@
     "Address 1": "Spondon Street, Nottingham, Nottinghamshire, NG5 4AB",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "NG5 4AB",
     "Unique property reference number": null,
     "Latitude": 52.979887,
     "Longitude": -1.146793,
     "Status": "Closed (temporary)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,24 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

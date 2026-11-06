@@ -16,13 +16,13 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "B35 7PR",
-    "Unique property reference number": 10090243132,
+    "Unique property reference number": null,
     "Latitude": 52.52117,
     "Longitude": -1.78404,
     "Status": "Closed (temporary)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CRL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": null,
     "Notes": "Closed for lunch 1-2pm"
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

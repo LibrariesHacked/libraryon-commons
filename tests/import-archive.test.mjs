@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for importing source content, media deduplication, and markdown conversion.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { mkdtemp, readFile, rm, stat, utimes, writeFile, mkdir, readdir } from 'node:fs/promises'

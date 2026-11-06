@@ -10,19 +10,19 @@
   "data": {
     "Local authority": "Sheffield",
     "Local authority code": "E08000019",
-    "Library name": "Woodhouse",
+    "Library name": "Woodhouse Community Hub and Library",
     "Library code": null,
-    "Address 1": "Tannery Street, Sheffield, Yorkshire, S13 7JU",
+    "Address 1": "524 Stradbroke Road, Woodhouse, Sheffield",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "S13 7JU",
+    "Postcode": "S13 7GD",
     "Unique property reference number": null,
     "Latitude": 53.35785,
     "Longitude": -1.372578,
     "Status": "Open",
     "Statutory": "No",
     "Facility type": "Static library",
-    "Type of library": "CRL",
+    "Type of library": "ICL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "10:00-17:00",
@@ -56,40 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Bookable space; Computers; Photocopiers; Scanning",
     "Phone number": "07394 081747",
-    "Email address": "mail@mywoodhouse.co.uk.",
+    "Email address": "mail@mywoodhouse.co.uk",
     "URL": "https://www.mywoodhouse.co.uk/woodhouse_library.html",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "mail@mywoodhouse.co.uk.",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_ac9e3d9dce1ce1a2322bb187",
-        "migration/directory/report.json#review_09989cdd2da4a2baffa04e10"
-      ]
-    },
-    {
-      "kind": "historical-postcode-correction",
-      "reason": "SQL correction is matching evidence, not permission to override current LibraryOn data",
-      "audit_refs": [
-        "migration/directory/report.json#review_e175ac4220467b82b67d074e"
-      ]
-    },
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_e7230bbe81540edb0a60df82"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

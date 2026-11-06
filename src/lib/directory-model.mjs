@@ -1,9 +1,19 @@
-import { validateRecords } from './directory-schema.mjs'
-import { libraryView, authorityView } from './directory-view.ts'
+/**
+ * @fileoverview Directory assembly, validation, map links, and spatial proximity calculations.
+ */
 
-/** Return the editable address, with compatibility for original source records. */
+import { validateRecords } from './directory-schema.mjs'
+import { Library, LibraryService, distanceMiles, compactOpeningHours } from './directory-models.mjs'
+
+export { Library, LibraryService, distanceMiles, compactOpeningHours }
+
+/**
+ * Return the formatted address string for a library.
+ * @param {object|Library} library - Library record.
+ * @returns {string} Address string or empty string.
+ */
 export function libraryAddress(library) {
-  return library.address || library.streetAddress || library.location?.place_name || ''
+  return library?.address || ''
 }
 
 const facilityLabels = {
@@ -14,7 +24,11 @@ const facilityLabels = {
   uni_he: 'University or higher education'
 }
 
-/** Format data identifiers without inventing facilities or accessibility claims. */
+/**
+ * Format data identifiers without inventing facilities or accessibility claims.
+ * @param {string} value - Machine-readable facility identifier.
+ * @returns {string} Human-readable facility label.
+ */
 export function facilityLabel(value) {
   return (
     facilityLabels[value] ||
@@ -35,15 +49,24 @@ const operatingLabels = {
   Closed: 'Permanently closed'
 }
 
-/** Describe who runs a library using the original site's wording. */
+/**
+ * Describe who runs a library using the original site's wording.
+ * @param {string} value - Machine-readable operating model code or label.
+ * @returns {string} Human-readable operating model description.
+ */
 export function operatingModelLabel(value) {
   return operatingLabels[value] || value || ''
 }
 
-/** Build map links from the address, falling back to coordinates only where needed. */
+/**
+ * Build map links from the library, falling back to coordinates only where needed.
+ * @param {object|Library} library - Library record with address and coordinates.
+ * @returns {{google: string, apple: string}|null} Map links or null if coordinates/address are missing.
+ */
 export function mapLinks(library) {
+  if (library instanceof Library) return library.mapLinks
   const address = libraryAddress(library)
-  const hasPoint = Number.isFinite(library.latitude) && Number.isFinite(library.longitude)
+  const hasPoint = Number.isFinite(library?.latitude) && Number.isFinite(library?.longitude)
   if (!address && !hasPoint) return null
   const point = `${library.latitude},${library.longitude}`
   return {
@@ -56,54 +79,17 @@ export function mapLinks(library) {
   }
 }
 
-/** Return the unique values of a field across records, in first-seen order. */
+/**
+ * Return the unique values of a field across records, in first-seen order.
+ * @template T
+ * @param {T[]} records - Array of records to process.
+ * @param {(record: T) => unknown[]} read - Function extracting an array of values from each record.
+ * @returns {unknown[]} Array of unique values in first-seen order.
+ */
 export function collectValues(records, read) {
   const seen = new Set()
   for (const record of records) for (const value of read(record) || []) seen.add(value)
   return [...seen]
-}
-
-/** @param {number} degrees - Decimal angle. @returns {number} Angle in radians. */
-const toRadians = (degrees) => (degrees * Math.PI) / 180
-const earthMiles = 3958.8
-const weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
-
-/**
- * Calculate straight-line distance in miles between two coordinate records.
- * @param {{latitude?: number, longitude?: number}} first - Origin coordinates.
- * @param {{latitude?: number, longitude?: number}} second - Target coordinates.
- * @returns {number|null} Distance in miles, or null when either coordinate is missing.
- */
-export function distanceMiles(first, second) {
-  if (
-    !Number.isFinite(first?.latitude) ||
-    !Number.isFinite(first?.longitude) ||
-    !Number.isFinite(second?.latitude) ||
-    !Number.isFinite(second?.longitude)
-  ) {
-    return null
-  }
-  const lat = toRadians(first.latitude)
-  const otherLat = toRadians(second.latitude)
-  const haversine =
-    Math.sin((otherLat - lat) / 2) ** 2 +
-    Math.cos(lat) *
-      Math.cos(otherLat) *
-      Math.sin(toRadians(second.longitude - first.longitude) / 2) ** 2
-  return 2 * earthMiles * Math.asin(Math.sqrt(haversine))
-}
-
-/** Extract compact weekly [startTime, endTime] pairs for client-side "Open now" filtering. */
-export function compactOpeningHours(openingTimes) {
-  if (!openingTimes || typeof openingTimes !== 'object') return null
-  const hours = {}
-  for (const day of weekDays) {
-    const slots = (openingTimes[day]?.timeFrames || [])
-      .filter((frame) => frame?.startTime && frame?.endTime)
-      .map((frame) => [frame.startTime, frame.endTime])
-    if (slots.length) hours[day] = slots
-  }
-  return Object.keys(hours).length ? hours : null
 }
 
 /**
@@ -114,7 +100,8 @@ export function compactOpeningHours(openingTimes) {
  * @returns {Array<{library: object, miles: number}>} Nearest first.
  */
 export function nearbyLibraries(library, candidates, count = 5) {
-  if (!Number.isFinite(library.latitude) || !Number.isFinite(library.longitude)) return []
+  if (library instanceof Library) return library.nearby(candidates, count)
+  if (!Number.isFinite(library?.latitude) || !Number.isFinite(library?.longitude)) return []
   const nearest = []
   for (const other of candidates) {
     if (other.id === library.id || other.permanentlyClosed) continue
@@ -150,9 +137,11 @@ export function createDirectory(
     'libraries'
   )
   authorityRecords = authorityRecords.map((record) =>
-    record.data ? authorityView(record) : record
+    record instanceof LibraryService ? record : new LibraryService(record)
   )
-  libraryRecords = libraryRecords.map((record) => (record.data ? libraryView(record) : record))
+  libraryRecords = libraryRecords.map((record) =>
+    record instanceof Library ? record : new Library(record)
+  )
   const authorities = [...authorityRecords].sort((first, second) =>
     first.name.localeCompare(second.name, 'en')
   )
@@ -161,7 +150,8 @@ export function createDirectory(
     if (!/^[A-Za-z0-9][A-Za-z0-9-]*$/.test(authority.slug || '') || bySlug.has(authority.slug)) {
       throw new Error(`Missing or duplicate authority slug: ${authority.slug}`)
     }
-    bySlug.set(authority.slug, { ...authority, library_ids: [] })
+    authority.library_ids = []
+    bySlug.set(authority.slug, authority)
   }
   const authorityByLibrary = new Map()
   const paths = new Set()
@@ -182,7 +172,10 @@ export function createDirectory(
     }
     ids.add(id)
     paths.add(url)
-    const library = { ...record, id, authority: slug, url }
+    const library = record instanceof Library ? record : new Library(record)
+    library.id = id
+    library.authority = slug
+    library.url = url
     libraries.push(library)
     if (authority) {
       authorityByLibrary.set(id, authority)

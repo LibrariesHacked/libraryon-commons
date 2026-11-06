@@ -22,7 +22,7 @@
     "Status": "Closed (permanent)",
     "Statutory": "No",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "ICL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "10:00-20:00",
@@ -60,12 +60,5 @@
     "URL": "http://www.mylibrary.co.uk/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

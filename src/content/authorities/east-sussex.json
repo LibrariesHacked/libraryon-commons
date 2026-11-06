@@ -31,11 +31,11 @@
     "Adult fine": null,
     "Child fine": null,
     "Fine interval": null,
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-library-enquiries/",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "Phone number": "0345 60 80 196",
     "App name": null,
-    "Android app URL": "https://play.google.com/store/apps/details?id=com.civicalld.spydusmobile",
-    "iOS app URL": "https://itunes.apple.com/gb/app/spydus-mobile/id657672156",
+    "Android app URL": null,
+    "iOS app URL": null,
     "Twitter URL": null,
     "Facebook URL": "https://www.facebook.com/eastsussexlibraries",
     "Instagram URL": null,
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-library-enquiries/",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

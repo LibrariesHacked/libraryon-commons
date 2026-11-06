@@ -56,14 +56,5 @@
     "URL": null,
     "Notes": "Renamed Oxfordshire County Library"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_d127eb5cab1602784574b072"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

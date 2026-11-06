@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "BL1 6RN",
     "Unique property reference number": 10070915271,
-    "Latitude": 53.60532,
-    "Longitude": -2.43877,
+    "Latitude": 53.60492862025037,
+    "Longitude": -2.438828704502862,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL-",
     "Year opened": 2012,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": "http://www.bolton.gov.uk/website/pages/OldhamsChildrensCentre.aspx",
     "Notes": "On Fri closed for lunch between 12.00 and 15.00"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

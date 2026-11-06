@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "LE19 4PG",
     "Unique property reference number": 100032073811,
-    "Latitude": 52.58808,
-    "Longitude": -1.21009,
+    "Latitude": 52.587806485914584,
+    "Longitude": -1.210102294964771,
     "Status": "Open",
     "Statutory": "No",
     "Facility type": "Static library",
@@ -27,7 +27,7 @@
     "Year closed": null,
     "Monday staffed hours": "14:00-18:00",
     "Tuesday staffed hours": "14:00-18:00",
-    "Wednesday staffed hours": null,
+    "Wednesday staffed hours": "10:00-12:00,14:00-17:00",
     "Thursday staffed hours": "14:00-17:00",
     "Friday staffed hours": "14:00-18:00",
     "Saturday staffed hours": "10:00-13:00",
@@ -60,14 +60,5 @@
     "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/enderby-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "opening-hours",
-      "reason": "Invalid opening hours: 14:00-12:00,14:00-17:00",
-      "audit_refs": [
-        "migration/directory/report.json#review_87c216bf435bd8883d920cbf"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

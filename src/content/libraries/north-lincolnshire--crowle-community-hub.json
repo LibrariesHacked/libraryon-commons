@@ -15,12 +15,12 @@
     "Address 1": "Market Hall, Market Place, Crowle, DN17 4LA",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "DN17 4LA",
     "Unique property reference number": null,
     "Latitude": 53.606,
     "Longitude": -0.833665,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.opac.northlincs.gov.uk/-/crowle-library",
     "Notes": "Previously listed as Crowle Community Hub - SW renamed 18.3.25"
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

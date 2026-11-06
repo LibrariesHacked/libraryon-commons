@@ -20,7 +20,7 @@
     "Latitude": 55.823463522041806,
     "Longitude": -4.431986301265425,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -55,23 +55,10 @@
     "Accessible toilet": null,
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; Scanning; Computers",
-    "Phone number": "libraries@renfrewshire.gov.uk",
-    "Email address": "0300 300 1188",
+    "Phone number": "0300 300 1188",
+    "Email address": "libraries@renfrewshire.gov.uk",
     "URL": "https://libcat.renfrewshire.gov.uk/iguana/www.main.cls?v=96c85272-ef02-4d78-8ef0-f831bf46dc19",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "0300 300 1188",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

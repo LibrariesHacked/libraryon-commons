@@ -16,7 +16,7 @@
     "Latitude": null,
     "Longitude": null,
     "Status": "Closed (permanent)",
-    "Statutory": "No",
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 1975,
@@ -56,14 +56,5 @@
     "URL": null,
     "Notes": "Library relocated to Barnsley Central Library at Wellington House"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_da52b16d356da25235772a68"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

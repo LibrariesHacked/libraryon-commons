@@ -60,14 +60,5 @@
     "URL": "http://www.kent.gov.uk/leisure-and-community/libraries",
     "Notes": "Access: Public car park in Temple Hill Square with designated bay for Blue Badge holder"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_36d7c6314e73935567230075"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

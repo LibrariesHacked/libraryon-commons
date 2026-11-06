@@ -1,18 +1,85 @@
+/**
+ * @fileoverview Search, indexing, distance calculations, and filter matching for the LibraryOn directory.
+ */
+
+/**
+ * Normalise a string by trimming whitespace and converting to lowercase.
+ * @param {string} [value=''] - String to normalise.
+ * @returns {string} Normalised lowercase string.
+ */
 export const normalise = (value) => (value || '').toLowerCase().trim()
+
+/**
+ * Remove all whitespace from a normalised string.
+ * @param {string} [value=''] - String to compact.
+ * @returns {string} Lowercase string with all whitespace removed.
+ */
 const compact = (value) => normalise(value).replace(/\s+/g, '')
+
+/**
+ * Convert degrees to radians.
+ * @param {number} degrees - Angle in degrees.
+ * @returns {number} Angle in radians.
+ */
 const toRadians = (degrees) => (degrees * Math.PI) / 180
+
 const earthMiles = 3958.8
 const weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 const searchFields = new WeakMap()
 
+/**
+ * Compact library search records into a bandwidth-efficient JSON payload with shared authorities, services, and accessibility dictionaries.
+ * @param {object[]} records - Unpacked library search records.
+ * @returns {{version: number, authorities: Array<[string, string, string]>, services: string[], accessibility: string[], rows: Array}} Compacted directory payload.
+ */
 export function compactDirectory(records) {
   const authorities = []
   const authorityIndexes = new Map()
+  const services = []
+  const serviceIndexes = new Map()
+  const accessibility = []
+  const accessibilityIndexes = new Map()
+
+  for (const record of records) {
+    for (const s of record.services || []) {
+      const name = typeof s === 'string' ? s : s?.service
+      if (name && !serviceIndexes.has(name)) {
+        serviceIndexes.set(name, services.length)
+        services.push(name)
+      }
+    }
+    for (const a of record.accessibility || []) {
+      if (a && !accessibilityIndexes.has(a)) {
+        accessibilityIndexes.set(a, accessibility.length)
+        accessibility.push(a)
+      }
+    }
+  }
+
   const rows = records.map((record) => {
     if (!authorityIndexes.has(record.authority)) {
       authorityIndexes.set(record.authority, authorities.length)
       authorities.push([record.authority, record.authorityName, record.country])
     }
+    const s = (record.services || [])
+      .map((item) => serviceIndexes.get(typeof item === 'string' ? item : item?.service))
+      .filter((i) => i !== undefined)
+    const a = (record.accessibility || [])
+      .map((item) => accessibilityIndexes.get(item))
+      .filter((i) => i !== undefined)
+
+    let hours = null
+    if (record.hours && typeof record.hours === 'object') {
+      const slots = []
+      for (const [day, daySlots] of Object.entries(record.hours)) {
+        const dayIdx = weekDays.indexOf(day)
+        if (dayIdx !== -1 && Array.isArray(daySlots) && daySlots.length > 0) {
+          slots.push([dayIdx, daySlots.map(([start, end]) => [toMinutes(start), toMinutes(end)])])
+        }
+      }
+      if (slots.length > 0) hours = slots
+    }
+
     return [
       record.name,
       record.url,
@@ -20,21 +87,55 @@ export function compactDirectory(records) {
       record.postcode,
       record.town,
       authorityIndexes.get(record.authority),
-      record.services,
-      record.accessibility,
-      record.hours,
+      s,
+      a,
+      hours,
       Number(record.closed),
       Number.isFinite(record.latitude) ? Math.round(record.latitude * 1e4) / 1e4 : null,
       Number.isFinite(record.longitude) ? Math.round(record.longitude * 1e4) / 1e4 : null
     ]
   })
-  return { version: 1, authorities, rows }
+  return { version: 1, authorities, services, accessibility, rows }
 }
 
+/**
+ * Reconstruct rich library search records from a compacted directory payload.
+ * @param {{version: number, authorities: Array<[string, string, string]>, services?: string[], accessibility?: string[], rows: Array}} data - Compacted directory payload.
+ * @returns {object[]} Array of unpacked library search records.
+ */
 export function expandDirectory(data) {
   if (data.version !== 1) throw new Error('Unsupported directory version')
+  const toTime = (m) =>
+    typeof m === 'number'
+      ? `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`
+      : m
+
   return data.rows.map((row) => {
     const [authority, authorityName, country] = data.authorities[row[5]]
+    const services = Array.isArray(row[6])
+      ? data.services
+        ? row[6].map((i) => data.services[i] ?? i)
+        : row[6]
+      : []
+    const accessibility = Array.isArray(row[7])
+      ? data.accessibility
+        ? row[7].map((i) => data.accessibility[i] ?? i)
+        : row[7]
+      : []
+
+    let hours = null
+    if (Array.isArray(row[8])) {
+      hours = {}
+      for (const [dayIdx, slots] of row[8]) {
+        const dayName = typeof dayIdx === 'number' ? weekDays[dayIdx] : dayIdx
+        if (dayName) {
+          hours[dayName] = slots.map(([start, end]) => [toTime(start), toTime(end)])
+        }
+      }
+    } else if (row[8]) {
+      hours = row[8]
+    }
+
     return {
       name: row[0],
       url: row[1],
@@ -44,9 +145,9 @@ export function expandDirectory(data) {
       authority,
       authorityName,
       country,
-      services: row[6],
-      accessibility: row[7],
-      hours: row[8],
+      services,
+      accessibility,
+      hours,
       closed: Boolean(row[9]),
       latitude: row[10],
       longitude: row[11]
@@ -54,6 +155,11 @@ export function expandDirectory(data) {
   })
 }
 
+/**
+ * Convert a time string in "HH:MM" format to minutes from midnight.
+ * @param {string|null} time - Time string (e.g. "09:30").
+ * @returns {number|null} Minutes from midnight, or null if invalid.
+ */
 const toMinutes = (time) => {
   const match = /^(\d{1,2}):(\d{2})$/.exec(String(time || '').trim())
   if (!match) return null

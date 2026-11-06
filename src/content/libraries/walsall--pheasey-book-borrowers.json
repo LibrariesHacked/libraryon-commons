@@ -20,7 +20,7 @@
     "Latitude": 52.55682041224844,
     "Longitude": -1.9048107372532002,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_ff4bb853194ee0db39001ae0"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

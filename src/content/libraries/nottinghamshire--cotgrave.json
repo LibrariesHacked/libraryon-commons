@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": "Moved to the new MSC"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_1141016f2638f463dadcb6a8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

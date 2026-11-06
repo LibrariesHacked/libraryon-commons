@@ -60,15 +60,5 @@
     "URL": "https://www.enfield.gov.uk/services/libraries",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_0e8da48c521098fd2a8299b2",
-        "migration/directory/report.json#review_2f74d2fdcc62289a86cbf097"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

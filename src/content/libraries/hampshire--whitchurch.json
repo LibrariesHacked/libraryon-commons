@@ -60,14 +60,5 @@
     "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/whitchurch-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_cfe7d4cfb33dc976ef83f451"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

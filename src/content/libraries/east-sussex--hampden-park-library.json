@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "BN22 9NQ",
     "Unique property reference number": 10010663587,
-    "Latitude": 50.79776,
-    "Longitude": 0.27807,
+    "Latitude": 50.79792201261741,
+    "Longitude": 0.2776273289924005,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Family history; Photocopiers; BFI Replay; British Newspaper Archive; Findmypast",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/hampden-park",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

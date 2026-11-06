@@ -20,7 +20,7 @@
     "Latitude": 53.67751,
     "Longitude": -0.43744,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.opac.northlincs.gov.uk/-/barton-library#/",
     "Notes": "Previously listed here as Baysgarth Community Hub - SW changed to Barton Library 18.3.25"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://gloslibraries.uk/library/longlevens-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_b2b8af08bf273032bc3a78a2"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

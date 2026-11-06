@@ -60,14 +60,5 @@
     "URL": null,
     "Notes": "Former library building now demolished, the library is now a community library run from Standbridge Community Centre UPRN 63163708"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_e6b9fe6384a3161737b9a770"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

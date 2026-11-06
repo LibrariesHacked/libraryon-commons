@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "EC2Y 8DS",
-    "Unique property reference number": 200000072620,
+    "Unique property reference number": null,
     "Latitude": 51.52003,
     "Longitude": -0.094101,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": 1982,
@@ -60,12 +60,5 @@
     "URL": "https://www.cityoflondon.gov.uk/services/libraries/barbican-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -15,12 +15,12 @@
     "Address 1": "Binford Place, Bridgwater TA6 3LF",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "TA6 3LF",
     "Unique property reference number": null,
     "Latitude": 51.128045,
     "Longitude": -3.000784,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.somerset.gov.uk/locations/bridgwater-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

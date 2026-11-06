@@ -20,9 +20,9 @@
     "Latitude": 52.06728,
     "Longitude": 1.18275,
     "Status": "Closed (permanent)",
-    "Statutory": "No",
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CL",
     "Year opened": 2018,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 51.66451,
     "Longitude": -3.30439,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 1909,
@@ -60,12 +60,5 @@
     "URL": "http://www.merthyrlibraries.co.uk/our-libraries/treharris-library.aspx",
     "Notes": "Treharris Library currently has a hub based at Treharris Comunity Centre whilst building works are carried out on the Library"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

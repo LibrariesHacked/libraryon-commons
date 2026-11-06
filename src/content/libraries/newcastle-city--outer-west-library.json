@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "NE5 2QZ",
     "Unique property reference number": 4510716619,
-    "Latitude": 54.992881,
-    "Longitude": -1.699405,
+    "Latitude": 54.99277774420979,
+    "Longitude": -1.699806301694081,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/outer-west-library",
     "Notes": "Previously operating as West Denton Library"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -15,12 +15,12 @@
     "Address 1": "Bagillt, Flintshire, Wales, United Kingdom",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "CH6 6EQ",
     "Unique property reference number": null,
     "Latitude": 53.26941,
     "Longitude": -3.170512,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://bagillt-library.uk/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

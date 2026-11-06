@@ -60,14 +60,5 @@
     "URL": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=south_cave_library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_bd7d6a0f86501c59ea2f598c"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

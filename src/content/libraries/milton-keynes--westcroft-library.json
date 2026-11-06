@@ -60,14 +60,5 @@
     "URL": "https://www.milton-keynes.gov.uk/libraries/nearest-library/westcroft-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_fe4108df22049cf2fdf7a0dc"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://www.devonlibraries.org.uk/web/arena/uffculmelibrary",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_f49e1844c269e662ca55baaa"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

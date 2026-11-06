@@ -20,7 +20,7 @@
     "Latitude": 51.403612,
     "Longitude": 0.01436,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.better.org.uk/library/london/bromley/bromley-central-library",
     "Notes": "Refurbished Dec. 2019"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

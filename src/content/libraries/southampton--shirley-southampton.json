@@ -20,7 +20,7 @@
     "Latitude": 50.92374,
     "Longitude": -1.43443,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": "Yes",
     "Facilities and services": "Books; Free Wi-Fi; Printing; Photocopiers; Scanning; Children's activities; Hobby and interest groups; Digital lending; Digital skills sessions; Books delivered; British Newspaper Archive; Findmypast",
     "Phone number": "023 8083 3007",
-    "Email address": "https://www.southampton.gov.uk/libraries/libraries-contact/",
+    "Email address": "libraries@southampton.gov.uk",
     "URL": "https://www.southampton.gov.uk/libraries/find-library/shirley-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.southampton.gov.uk/libraries/libraries-contact/",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

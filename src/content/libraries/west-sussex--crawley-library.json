@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/crawley-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_7ae3b75dfcd054d5cd8d985d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

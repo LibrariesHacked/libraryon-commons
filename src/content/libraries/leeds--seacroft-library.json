@@ -60,14 +60,5 @@
     "URL": "https://libraries.leeds.gov.uk/libraries/seacroft",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_330976c2405b0873591ab700"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

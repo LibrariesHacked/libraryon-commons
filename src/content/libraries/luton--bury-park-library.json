@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "LU1 1BW",
     "Unique property reference number": 10007768486,
-    "Latitude": 51.88441,
-    "Longitude": -0.42766,
+    "Latitude": 51.88440148643715,
+    "Longitude": -0.42768269500411427,
     "Status": "Closed (permanent)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CL",
     "Year opened": null,
     "Year closed": 2020,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

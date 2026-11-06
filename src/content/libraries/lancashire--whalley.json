@@ -60,15 +60,5 @@
     "URL": "http://lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/whalley-library.aspx",
     "Notes": "Closed 2016 re-opened 2018"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_2d7cbc7ad64640226527651e",
-        "migration/directory/report.json#review_eb82ab80b6afc0eb9c9e978a"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

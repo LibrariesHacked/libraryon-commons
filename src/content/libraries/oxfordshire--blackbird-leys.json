@@ -20,7 +20,7 @@
     "Latitude": 51.71966,
     "Longitude": -1.20106,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.oxfordshire.gov.uk/libraries",
     "Notes": "Closes for lunch 12-13.30 Mon, Weds and Thurs"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

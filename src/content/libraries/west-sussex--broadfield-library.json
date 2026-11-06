@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/broadfield-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_f20d5522ad361744fb2ff8a2"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

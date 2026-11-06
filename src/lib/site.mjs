@@ -1,6 +1,16 @@
+/**
+ * @fileoverview Site configuration helpers, media resolution, path canonicalization, and metadata utilities.
+ */
+
 import settings from '../data/settings.json' with { type: 'json' }
 import mediaMasters from '../data/media-masters.json' with { type: 'json' }
 
+/**
+ * Resolve a media path against preserved master media aliases.
+ * @param {string} value - Media path or URL.
+ * @param {Record<string, {url: string}>} [aliases=mediaMasters.aliases] - Aliases dictionary.
+ * @returns {string} Resolved media URL.
+ */
 export function mediaURL(value, aliases = mediaMasters.aliases) {
   if (typeof value !== 'string') return value
   const suffixIndex = value.search(/[?#]/)
@@ -9,7 +19,11 @@ export function mediaURL(value, aliases = mediaMasters.aliases) {
   return `${aliases[pathname]?.url || pathname}${suffix}`
 }
 
-/** Canonicalize extensionless internal routes without changing files or URL suffixes. */
+/**
+ * Canonicalize extensionless internal routes with a trailing slash without changing files or URL suffixes.
+ * @param {string} value - Input path or URL.
+ * @returns {string} Canonicalized path.
+ */
 export function canonicalInternalPath(value) {
   if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value
   const suffixIndex = value.search(/[?#]/)
@@ -21,14 +35,22 @@ export function canonicalInternalPath(value) {
   return `${pathname}/${suffix}`
 }
 
-/** Prefix same-site URLs for static hosting at a domain root or a subpath. */
+/**
+ * Prefix same-site URLs for static hosting at a domain root or a subpath.
+ * @param {string} value - Absolute local path.
+ * @returns {string} Base-prefixed URL path.
+ */
 export function sitePath(value) {
   if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value
   const base = (import.meta.env?.BASE_URL || '/').replace(/\/$/, '')
   return `${base}${canonicalInternalPath(mediaURL(value))}`
 }
 
-/** Only render navigation URLs with safe protocols or absolute local paths. */
+/**
+ * Only render navigation URLs with safe protocols or absolute local paths.
+ * @param {string} value - Candidate URL string.
+ * @returns {string|null} Safe URL string or null.
+ */
 export function safeURL(value) {
   if (typeof value !== 'string' || !value.trim()) return null
   if (value.startsWith('/') && !value.startsWith('//')) return sitePath(value)
@@ -40,7 +62,11 @@ export function safeURL(value) {
   }
 }
 
-/** Use explicit CMS provenance when set; otherwise recognize preserved LibraryOn source URLs. */
+/**
+ * Use explicit CMS provenance when set; otherwise recognize preserved LibraryOn source URLs.
+ * @param {{data: {content_origin?: string, source_url?: string}}} entry - Content entry.
+ * @returns {boolean} True if original LibraryOn content.
+ */
 export function isOriginalContent(entry) {
   if (entry.data.content_origin === 'libraryon') return true
   if (entry.data.content_origin === 'commons') return false
@@ -51,12 +77,20 @@ export function isOriginalContent(entry) {
   }
 }
 
-/** Treat content as public unless an editor explicitly archives it. */
+/**
+ * Treat content as public unless an editor explicitly archives it.
+ * @param {{data: {published?: boolean}}} entry - Content entry.
+ * @returns {boolean} True if published.
+ */
 export function isPublishedPage(entry) {
   return entry.data.published !== false
 }
 
-/** Prefer the article's own H1 over its old search-engine title. */
+/**
+ * Prefer the article's own H1 over its old search-engine title.
+ * @param {{body?: string, data: {title: string}}} entry - Article content entry.
+ * @returns {string} Clean article title.
+ */
 export function articleTitle(entry) {
   const heading = /^#\s+(.+)$/m.exec(entry.body || '')?.[1]
   const title = heading?.endsWith('  ') ? entry.data.title : heading || entry.data.title
@@ -66,7 +100,13 @@ export function articleTitle(entry) {
     .trim()
 }
 
-/** Build a breadcrumb trail from published pages that are actual route ancestors. */
+/**
+ * Build a breadcrumb trail from published pages that are actual route ancestors.
+ * @param {{data: {path: string, title: string}, body?: string}} entry - Current page entry.
+ * @param {Array<{data: {path: string, title: string}, body?: string}>} [pages=[]] - All pages.
+ * @param {string} [homeLabel=settings.ui.editorial.home_breadcrumb] - Label for home breadcrumb.
+ * @returns {Array<{label: string, href?: string, current?: boolean}>} Breadcrumb items.
+ */
 export function breadcrumbsForPage(
   entry,
   pages = [],
@@ -97,7 +137,11 @@ export function breadcrumbsForPage(
   ]
 }
 
-/** Read the first locally preserved image for article previews. */
+/**
+ * Read the first locally preserved image for article previews.
+ * @param {{body?: string, data: {hero?: {image: string, alt?: string}}}} entry - Content entry.
+ * @returns {{url: string, alt?: string}|null} Image details or null.
+ */
 export function articleImage(entry) {
   if (entry.data.hero?.image) return { url: entry.data.hero.image, alt: entry.data.hero.alt }
   const image = /!\[([^\]]*)\]\((\/uploads\/[^\s)]+)\)/.exec(entry.body || '')
@@ -114,7 +158,11 @@ export const navigation = settings.navigation.length
       { label: 'Press Play', url: '/about/pressplay/' }
     ]
 
-/** Format a date-only value as written, regardless of the viewer's timezone. */
+/**
+ * Format a date-only value as written, regardless of the viewer's timezone.
+ * @param {string|number|Date} value - Date value.
+ * @returns {string} Formatted date string in British English.
+ */
 export function formatDate(value) {
   return new Date(value).toLocaleDateString('en-GB', {
     day: 'numeric',

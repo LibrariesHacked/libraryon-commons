@@ -31,11 +31,11 @@
     "Adult fine": null,
     "Child fine": null,
     "Fine interval": null,
-    "Email address": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/other-library-services/ask-a-librarian/ask-a-librarian.aspx",
+    "Email address": "libraries.information@hertfordshire.gov.uk",
     "Phone number": "0300 123 4049",
     "App name": null,
     "Android app URL": "https://play.google.com/store/apps/details?id=uk.co.solus.hertfordshire",
-    "iOS app URL": "https://itunes.apple.com/gb/app/hertfordshire-libraries/id893961858",
+    "iOS app URL": "https://apps.apple.com/gb/app/hertfordshire-libraries/id893961858",
     "Twitter URL": "https://twitter.com/hertslibraries",
     "Facebook URL": "https://www.facebook.com/hertslibraries",
     "Instagram URL": "https://www.instagram.com/hertfordshirelibraries",
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/other-library-services/ask-a-librarian/ask-a-librarian.aspx",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

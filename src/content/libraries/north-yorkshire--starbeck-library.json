@@ -60,14 +60,5 @@
     "URL": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/starbeck-community-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_37e1e5da7c697fbce1f7a11b"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

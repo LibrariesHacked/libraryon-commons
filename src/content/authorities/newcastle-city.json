@@ -14,7 +14,7 @@
     "Governance model": null,
     "Operating organisation": null,
     "Consortium": null,
-    "Service URL": "https://www.newcastle.gov.uk/services/newcastle-libraries-community-hubs",
+    "Service URL": "https://new.newcastle.gov.uk/libraries",
     "Libraries URL": null,
     "Mobile library URL": null,
     "Home library service URL": null,
@@ -55,14 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "service-name",
-      "reason": "Matched by unique GSS code; check name discrepancy",
-      "audit_refs": [
-        "migration/directory/report.json#review_a813be9a698d0cb2ef42e953"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

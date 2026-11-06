@@ -31,7 +31,7 @@
     "Adult fine": null,
     "Child fine": null,
     "Fine interval": null,
-    "Email address": "https://www.islington.gov.uk/enquiries",
+    "Email address": "central.library@islington.gov.uk",
     "Phone number": "020 7527 2000",
     "App name": null,
     "Android app URL": null,
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.islington.gov.uk/enquiries",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

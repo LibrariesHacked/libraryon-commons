@@ -60,14 +60,5 @@
     "URL": "http://www.kent.gov.uk/leisure-and-community/libraries",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_6a7fd796b175f3b80271bfb3"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

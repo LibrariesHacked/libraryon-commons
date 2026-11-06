@@ -5,28 +5,21 @@ import ContactDetails from '../components/ContactDetails.astro'
 import DirectoryProvenance from '../components/DirectoryProvenance.astro'
 import LibraryMap from '../components/LibraryMap.astro'
 import OpeningHours from '../components/OpeningHours.astro'
+import TagListSection from '../components/TagListSection.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
-import {
-  libraries,
-  libraryAddress,
-  libraryPath,
-  facilityLabel,
-  mapLinks,
-  nearbyLibraries,
-  operatingModelLabel
-} from '../lib/directory.mjs'
+import { libraries, facilityLabel } from '../lib/directory.mjs'
 import { safeURL, settings, sitePath } from '../lib/site.mjs'
 const { library, authority } = Astro.props
 const copy = settings.ui.directory
-const maps = mapLinks(library)
-const nearby = nearbyLibraries(library, libraries)
-const tags = [authority?.country, operatingModelLabel(library.facilityOperated)].filter(Boolean)
+const maps = library.mapLinks
+const nearby = library.nearby(libraries)
+const tags = [authority?.country, library.operatingModel].filter(Boolean)
 ---
 
 <DirectoryLayout
   title={library.name}
-  description={`${library.name}. ${libraryAddress(library)}. ${copy.description_suffix}`}
-  subtitle={libraryAddress(library)}
+  description={`${library.name}. ${library.address}. ${copy.description_suffix}`}
+  subtitle={library.address}
   authority={authority}
   tags={tags}
 >
@@ -40,41 +33,20 @@ const tags = [authority?.country, operatingModelLabel(library.facilityOperated)]
     <h2>{copy.visit_contact}</h2>
     <ContactDetails
       record={library}
-      address={libraryAddress(library)}
+      address={library.address}
       fallbackWebsite={authority?.website}
     />
   </section>
   <slot />
-  {library.services?.length > 0 && (
-    <section class="detail-section">
-      <h2>{copy.services_heading}</h2>
-      <ul class="tags">
-        {library.services.map(({ service, url }) => (
-          <li>{safeURL(url) ? <a href={safeURL(url)}>{service}</a> : service}</li>
-        ))}
-      </ul>
-    </section>
-  )}
-  {library.accessibility?.length > 0 && (
-    <section class="detail-section">
-      <h2>{copy.accessibility}</h2>
-      <ul class="tags">
-        {library.accessibility.map((value) => (
-          <li>{facilityLabel(value)}</li>
-        ))}
-      </ul>
-    </section>
-  )}
-  {library.coLocated?.length > 0 && (
-    <section class="detail-section">
-      <h2>{copy.co_located_services}</h2>
-      <ul class="tags">
-        {library.coLocated.map((value) => (
-          <li>{facilityLabel(value)}</li>
-        ))}
-      </ul>
-    </section>
-  )}
+  <TagListSection heading={copy.services_heading} items={library.services} />
+  <TagListSection
+    heading={copy.accessibility}
+    items={library.accessibility?.map((value) => facilityLabel(value))}
+  />
+  <TagListSection
+    heading={copy.co_located_services}
+    items={library.coLocated?.map((value) => facilityLabel(value))}
+  />
   {library.notes && (
     <section class="detail-section">
       <h2>{copy.library_notes}</h2>
@@ -105,7 +77,7 @@ const tags = [authority?.country, operatingModelLabel(library.facilityOperated)]
         {nearby.map(({ library: other, miles }) => (
           <li>
             <h3>
-              <a href={sitePath(libraryPath(other))}>{other.name}</a>
+              <a href={sitePath(other.url)}>{other.name}</a>
             </h3>
             <p>
               {miles.toFixed(1)} {copy.miles}

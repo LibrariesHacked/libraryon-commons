@@ -1,3 +1,7 @@
+/**
+ * @fileoverview AST markup transformation translating legacy HTML into structured editorial components.
+ */
+
 import { canonicalInternalPath } from '../../src/lib/site.mjs'
 
 function nodeText(node) {
@@ -514,6 +518,12 @@ function transformChildren(nodes, prefix) {
   return cleaned
 }
 
+/**
+ * Recursively transform imported HTML AST nodes into modern structured directives and semantic elements.
+ * @param {object} node - Root or branch AST element node.
+ * @param {string} prefix - Media and link path prefix.
+ * @returns {void}
+ */
 function transformImportedMarkup(node, prefix) {
   if (node.type === 'element' && node.tagName === 'a') {
     const frame = videoFrame(node)

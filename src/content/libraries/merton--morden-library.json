@@ -20,9 +20,9 @@
     "Latitude": 51.40153,
     "Longitude": -0.19636,
     "Status": "Closed (temporary)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:30-19:00",
@@ -60,18 +60,5 @@
     "URL": "https://libraries.merton.gov.uk/digital-content/libraries/library-branches/morden-library",
     "Notes": "The Heritage & Local Studies Centre is also located in the library\n\nSpecial collections listed as at 19/2/25:\n\nPolish collection\nChinese Collection\nTamil Collection\nUrdu Collection\nBengali Collection\nDyslexia and learning to read\nVocal scores\nGraphic novels and Manga\nParent and child collection\nChristmas Collection\nLocal History (2nd Floor Heritage services)"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

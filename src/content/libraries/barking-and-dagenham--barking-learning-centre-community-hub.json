@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "IG11 7NB",
-    "Unique property reference number": 100053358,
+    "Unique property reference number": null,
     "Latitude": 51.53632,
     "Longitude": 0.07982,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.lbbd.gov.uk/libraries-and-local-history/our-libraries/library-opening-times-and-information/barking-learning",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

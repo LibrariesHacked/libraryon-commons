@@ -60,14 +60,5 @@
     "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/fleckney-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_7a469193b4ca467c0e6ff5d5"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

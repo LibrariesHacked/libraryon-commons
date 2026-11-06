@@ -1,6 +1,11 @@
+/**
+ * @fileoverview Automated tests for directory data models, search indexing, routing, and map features.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { createDirectory } from '../src/lib/directory-model.mjs'
+import { Library, LibraryService } from '../src/lib/directory-models.mjs'
 import { compactDirectory, expandDirectory, matchesLibrary } from '../src/lib/search.mjs'
 import { createNameIndex } from '@geovation/gb-name-index'
 import { libraryMapFeatures } from '../src/lib/library-map.mjs'
@@ -149,6 +154,8 @@ test('individual library records determine authority membership and stable publi
     [{ name: 'Central Library', slug: 'central', id: 'one', authority: 'example' }]
   )
   assert.equal(result.libraries.length, 1)
+  assert.ok(result.libraries[0] instanceof Library)
+  assert.ok(result.authorities[0] instanceof LibraryService)
   assert.deepEqual(result.authorities[0].library_ids, ['one'])
   assert.equal(result.libraryPath(result.libraries[0]), '/libraries/example/central/')
 })
@@ -210,4 +217,55 @@ test('library pages reproduce operating model, map links and nearby libraries', 
     collectValues([{ a: ['x', 'y'] }, { a: ['y', 'z'] }, {}], (item) => item.a),
     ['x', 'y', 'z']
   )
+})
+
+test('Library model encapsulates address, operatingModel, mapLinks, and nearby search', () => {
+  const library = new Library({
+    id: 'test-1',
+    name: 'Test Central',
+    authority: 'example',
+    slug: 'test-central',
+    data: {
+      'Library name': 'Test Central',
+      'Address 1': '10 High Street',
+      Postcode: 'TE1 1ST',
+      Latitude: 51.5,
+      Longitude: -0.1,
+      'Type of library': 'LAL',
+      Status: 'Open'
+    }
+  })
+  assert.equal(library.address, '10 High Street')
+  assert.equal(library.facilityOperated, 'Local Authority Run')
+  assert.equal(library.operatingModel, 'Local authority staffed')
+  assert.ok(library.hasCoordinates)
+  assert.equal(library.isClosed, false)
+  assert.ok(library.mapLinks.google.includes('10%20High%20Street'))
+  assert.ok(library.mapLinks.apple.includes('51.5,-0.1'))
+
+  const other = new Library({
+    id: 'test-2',
+    name: 'Test Branch',
+    data: { Latitude: 51.51, Longitude: -0.1 }
+  })
+  const nearest = library.nearby([other])
+  assert.equal(nearest.length, 1)
+  assert.equal(nearest[0].library.id, 'test-2')
+})
+
+test('LibraryService model encapsulates authority fields and channels', () => {
+  const service = new LibraryService({
+    slug: 'example',
+    data: {
+      'Local authority': 'Example Council',
+      'Local authority code': 'E09000001',
+      Country: 'England',
+      'Twitter URL': 'https://twitter.com/example'
+    }
+  })
+  assert.equal(service.name, 'Example Council')
+  assert.equal(service.gss, 'E09000001')
+  assert.equal(service.country, 'England')
+  assert.equal(service.hasSocial, true)
+  assert.equal(service.url, '/libraries/example/')
 })

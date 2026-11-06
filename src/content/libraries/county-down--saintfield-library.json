@@ -15,12 +15,12 @@
     "Address 1": "BT24, Ballymaglave, Ballynahinch, Newry, Northern Ireland, United Kingdom",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "BT24 7AD",
     "Unique property reference number": null,
     "Latitude": 54.4111,
     "Longitude": -5.9155,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -35,7 +35,7 @@
     "Monday unstaffed hours": "09:00-21:00",
     "Tuesday unstaffed hours": null,
     "Wednesday unstaffed hours": "09:00-21:00",
-    "Thursday unstaffed hours": null,
+    "Thursday unstaffed hours": "17:00-21:00",
     "Friday unstaffed hours": null,
     "Saturday unstaffed hours": "13:00-18:00",
     "Sunday unstaffed hours": "13:00-18:00",
@@ -60,27 +60,5 @@
     "URL": "https://www.librariesni.org.uk/libraries/county-down/saintfield-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "opening-hours",
-      "reason": "Invalid opening hours: 17:00-09:00",
-      "audit_refs": [
-        "migration/directory/report.json#review_bebf61b16f2d8483d176817d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -17,12 +17,12 @@
       "constraints": {
         "required": true,
         "unique": true,
-        "pattern": "^[ENSW][0-9]{8}$"
+        "pattern": "^[ELMNSW][0-9]{8}$"
       }
     },
     {
       "name": "Country",
-      "description": "Country within the United Kingdom",
+      "description": "Country within the United Kingdom or Crown Dependencies",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -31,7 +31,8 @@
           "England",
           "Scotland",
           "Wales",
-          "Northern Ireland"
+          "Northern Ireland",
+          "Crown Dependencies"
         ]
       }
     },

@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "KT11 2AA",
     "Unique property reference number": 10033327606,
-    "Latitude": 51.32901,
-    "Longitude": -0.40993,
+    "Latitude": 51.328886581537624,
+    "Longitude": -0.4101544957467966,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 2015,
@@ -60,12 +60,5 @@
     "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/cobham",
     "Notes": "Rebuilt adjacent to previous site, opening in 2015"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "SL1 7HR",
-    "Unique property reference number": null,
-    "Latitude": 51.531024,
-    "Longitude": -0.655715,
+    "Unique property reference number": 100081264955,
+    "Latitude": 51.531158859095164,
+    "Longitude": -0.6560079405870956,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/burnham-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_ef76928bda8e0ba82443884b"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

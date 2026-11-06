@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "SL7 1BL",
-    "Unique property reference number": null,
-    "Latitude": 51.570792,
-    "Longitude": -0.77414,
+    "Unique property reference number": 100081278501,
+    "Latitude": 51.57079572393422,
+    "Longitude": -0.7743288712906806,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/marlow-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_c47e060b8a652dfd836286a7"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40237/Taverham-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_b3963b1185be83ee3acc7406"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

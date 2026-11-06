@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Normalization of Markdown lists and card links across editorial content.
+ */
+
 import { readFile, readdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -9,6 +13,11 @@ import { normalizeListSpacing } from '../src/lib/markdown-format.mjs'
 import { originalAssetReferences } from './migrate-filenames.mjs'
 import { digest } from './archive/collect.mjs'
 
+/**
+ * Normalize single-link card directives by hoisting their link to a container attribute href.
+ * @param {string} source - Markdown source text.
+ * @returns {{source: string, linked: number}} Normalized source and count of converted cards.
+ */
 export function normalizeLinkedCards(source) {
   const tree = unified().use(remarkParse).use(remarkDirective).parse(source)
   const edits = []
@@ -65,6 +74,11 @@ export function normalizeLinkedCards(source) {
   return { source, linked }
 }
 
+/**
+ * Scan all markdown pages and FAQs, normalize formatting, and optionally apply updates.
+ * @param {{root?: string, apply?: boolean}} [options={}] - Options.
+ * @returns {Promise<Array<{file: string, linked: number}>>} Array of updated files and stats.
+ */
 export async function normalizeContent({ root = process.cwd(), apply = false } = {}) {
   const absolute = (file) => path.join(root, file)
   const json = async (file) => JSON.parse(await readFile(absolute(file), 'utf8'))

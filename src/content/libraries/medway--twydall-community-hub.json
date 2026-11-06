@@ -20,7 +20,7 @@
     "Latitude": 51.37499,
     "Longitude": 0.58264,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://medway.gov.uk/libraries",
     "Notes": "脗拢500k reburbishment in 2016. This increased the size of the building by half."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

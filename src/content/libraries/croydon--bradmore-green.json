@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "CR5 1PE",
     "Unique property reference number": 200001206439,
-    "Latitude": 51.30765,
-    "Longitude": -0.1243,
+    "Latitude": 51.30756629373173,
+    "Longitude": -0.12400372729523619,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": 1963,
     "Year closed": 2024,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.croydon.gov.uk/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

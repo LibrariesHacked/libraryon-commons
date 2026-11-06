@@ -60,14 +60,5 @@
     "URL": "https://www.bostall-librarycg.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_7b116feeff447b2ed7b0a488"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

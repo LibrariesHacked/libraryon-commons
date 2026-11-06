@@ -15,12 +15,12 @@
     "Address 1": "Roose Temporary Library, at Barrow Park ATP Building Greengate St Barrow-in-Furness LA13 9DT United Kingdom",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "LA13 9DT",
     "Unique property reference number": null,
     "Latitude": 54.116353,
     "Longitude": -3.212197,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,28 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Computers; Printing; Hobby and interest groups",
     "Phone number": "01229 404 370",
-    "Email address": "https://services.digital.westmorlandandfurness.gov.uk/w/webpage/librarycontactus?context_record_id=98893659&webpage_token=168b3b25c97c057224e707139463a8d314d4079af58a8dce177a99da7c2bb7ed",
+    "Email address": "barrow.library@westmorlandandfurness.gov.uk",
     "URL": "https://www.westmorlandandfurness.gov.uk/libraries-and-archives/find-library-near-you/roose-temporary-library-barrow-park",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://services.digital.westmorlandandfurness.gov.uk/w/webpage/librarycontactus?context_record_id=98893659&webpage_token=168b3b25c97c057224e707139463a8d314d4079af58a8dce177a99da7c2bb7ed",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

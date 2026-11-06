@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "NE1 8AX",
     "Unique property reference number": 4510091960,
-    "Latitude": 54.975,
-    "Longitude": -1.61045,
+    "Latitude": 54.97488429765685,
+    "Longitude": -1.610344278544849,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/city-library",
     "Notes": "Open as Central Library since 1969"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

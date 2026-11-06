@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for directory CSV export, schema validation, and review rows.
+ */
+
 import test from 'node:test'
 import { parse as parseCsv } from 'csv-parse/sync'
 import { libraryCsv, libraryValidationReport } from '../src/lib/directory-export.mjs'
@@ -46,7 +50,7 @@ import {
 } from '../scripts/directory/migrate.mjs'
 import { parseServicePage, parseOnsPostcode, parseNsul } from '../scripts/directory/lookups.mjs'
 import { createDirectory } from '../src/lib/directory-model.mjs'
-import { libraryView, authorityView } from '../src/lib/directory-view.ts'
+import { Library, LibraryService } from '../src/lib/directory-models.mjs'
 
 test("review worklist follows live flags, prioritizes risks and never attaches another record's evidence", () => {
   const issue = { field: 'Statutory', code: 'required', value: null, reason: 'Unknown' }
@@ -172,14 +176,14 @@ test('complete and authority-scoped CSVs preserve every record while strict expo
   }
 })
 
-test('public views use canonical fields without legacy payload fallbacks', () => {
+test('Library and LibraryService models use canonical fields without legacy payload fallbacks', () => {
   const data = Object.fromEntries(
     directorySchemas.libraries.fields.map((field) => [field.name, null])
   )
   data['Library name'] = 'Canonical Library'
   data['Facilities and services'] = 'Books'
   data['Monday staffed hours'] = '09:00-17:00'
-  const view = libraryView({
+  const library = new Library({
     data,
     extensions: {
       town: 'Legacy town',
@@ -188,12 +192,12 @@ test('public views use canonical fields without legacy payload fallbacks', () =>
       openingTimes: { monday: { timeFrames: [] } }
     }
   })
-  assert.equal(view.name, 'Canonical Library')
-  assert.equal(view.town, undefined)
-  assert.deepEqual(view.services, [{ service: 'Books' }])
-  assert.deepEqual(view.accessibility, [])
-  assert.equal(view.openingTimes.monday.timeFrames[0].startTime, '09:00')
-  const service = authorityView({
+  assert.equal(library.name, 'Canonical Library')
+  assert.equal(library.town, undefined)
+  assert.deepEqual(library.services, [{ service: 'Books' }])
+  assert.deepEqual(library.accessibility, [])
+  assert.equal(library.openingTimes.monday.timeFrames[0].startTime, '09:00')
+  const service = new LibraryService({
     data: { 'Local authority': 'Canonical Authority' },
     extensions: {
       about: 'Old about text',
@@ -643,11 +647,11 @@ test('LibraryOn hours separate staffed, volunteer and self-service without chang
   assert.equal(record.data['Tuesday unstaffed hours'], null)
   assert.equal(record.data['Wednesday staffed hours'], null)
   assert.equal(record.updated_on, '2025-01-02')
-  const view = libraryView(record)
-  assert.equal(view.name, 'One')
-  assert.equal(view.openingTimes.monday.timeFrames.length, 3)
-  assert.equal(view.openingTimes.monday.timeFrames[2].type, 'Self-service')
-  assert.equal(view.updated_on, '2025-01-02')
+  const library = new Library(record)
+  assert.equal(library.name, 'One')
+  assert.equal(library.openingTimes.monday.timeFrames.length, 3)
+  assert.equal(library.openingTimes.monday.timeFrames[2].type, 'Self-service')
+  assert.equal(library.updated_on, '2025-01-02')
   record.validation_exceptions = dataIssues(record.data, directorySchemas.libraries).map(
     (issue) => ({ ...issue, reason: 'Missing source value' })
   )

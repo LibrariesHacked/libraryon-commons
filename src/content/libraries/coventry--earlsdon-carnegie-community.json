@@ -20,7 +20,7 @@
     "Latitude": 52.40025,
     "Longitude": -1.53011,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://earlsdonlibrary.org.uk/",
     "Notes": "Community-led library (delivered by Earlsdon Carnegie Community Library) Previously called Earlsdon Library"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

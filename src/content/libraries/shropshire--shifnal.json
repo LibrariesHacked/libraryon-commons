@@ -60,14 +60,5 @@
     "URL": "http://new.shropshire.gov.uk/libraries/find-a-library/shifnal-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_ca0d5b372836f38768f23657"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

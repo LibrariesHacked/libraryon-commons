@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "SK6 6BA",
     "Unique property reference number": 200000781479,
-    "Latitude": 53.396524,
-    "Longitude": -2.061959,
+    "Latitude": 53.396661673513265,
+    "Longitude": -2.061934877015849,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.stockport.gov.uk/directories/entry/libraries/marple-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

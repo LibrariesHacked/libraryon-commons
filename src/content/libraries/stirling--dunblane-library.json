@@ -20,9 +20,9 @@
     "Latitude": 56.18872,
     "Longitude": -3.96322,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:00-13:00,14:00-17:00",
@@ -60,18 +60,5 @@
     "URL": "https://www.stirling.gov.uk/community-life-and-leisure/libraries-and-archives/libraries/libraries-in-stirling/list-of-libraries/dunblane-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

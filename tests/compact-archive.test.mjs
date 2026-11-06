@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for compact archive bundling and template asset extraction.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { mkdtemp, mkdir, writeFile, readFile, rm } from 'node:fs/promises'

@@ -20,7 +20,7 @@
     "Latitude": 52.722539,
     "Longitude": -4.055964,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.gwynedd.llyw.cymru/en/Residents/Libraries-and-archives/Your-local-library/Abermaw-Library.aspx",
     "Notes": "Referred to as Abermaw Library by Gwynedd Council (Cyngor Gwynedd)"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

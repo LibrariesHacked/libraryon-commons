@@ -60,14 +60,5 @@
     "URL": "https://www.cambridgeshire.gov.uk/directory/listings/burwell-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_a3988496cfef6db0ec0d95b2"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

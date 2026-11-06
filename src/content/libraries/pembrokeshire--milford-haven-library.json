@@ -15,12 +15,12 @@
     "Address 1": "19A, Cedar Court, Hakin, Milford Haven, SA73 3LS",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "SA73 3LS",
     "Unique property reference number": null,
     "Latitude": 51.715099,
     "Longitude": -5.04367,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.pembrokeshire.gov.uk/pembrokeshire-libraries/milford-haven-library-and-information-centre",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

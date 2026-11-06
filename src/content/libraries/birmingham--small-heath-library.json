@@ -60,14 +60,5 @@
     "URL": "https://www.birmingham.gov.uk/directory_record/5148/small_heath_library",
     "Notes": "Closed for lunch 1-2pm"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_c45c55fcd6d82c66d62ca72e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

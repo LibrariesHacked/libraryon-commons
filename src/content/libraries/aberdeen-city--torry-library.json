@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "AB11 9NJ",
     "Unique property reference number": 9051081045,
-    "Latitude": 57.1367,
-    "Longitude": -2.08627,
+    "Latitude": 57.13672153196471,
+    "Longitude": -2.086468249599514,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.aberdeencity.gov.uk/services/libraries-and-archives/find-your-local-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

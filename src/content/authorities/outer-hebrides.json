@@ -14,13 +14,13 @@
     "Governance model": null,
     "Operating organisation": null,
     "Consortium": null,
-    "Service URL": "https://www.cne-siar.gov.uk/leisure-sport-and-culture/libraries-and-archives/leabharlannan-nan-eilean-siar/",
+    "Service URL": "https://www.cne-siar.gov.uk/leisure-sport-and-culture/libraries-and-archives/",
     "Libraries URL": null,
     "Mobile library URL": null,
     "Home library service URL": null,
     "Childrens service URL": null,
     "Catalogue URL": "https://wi.koha-ptfs.co.uk/",
-    "Join online URL": "https://www.cne-siar.gov.uk/leisure-sport-and-culture/libraries-and-archives/leabharlannan-nan-eilean-siar/library-membership-and-joining/",
+    "Join online URL": "https://www.cne-siar.gov.uk/leisure-sport-and-culture/libraries-and-archives/",
     "Events URL": null,
     "Eventbrite ID": null,
     "Computer access URL": null,
@@ -55,14 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "service-name",
-      "reason": "Matched by unique GSS code; check name discrepancy",
-      "audit_refs": [
-        "migration/directory/report.json#review_33d94b7204c71705c7ceb9df"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 51.40889,
     "Longitude": 0.23737,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.kent.gov.uk/leisure-and-community/libraries",
     "Notes": "Access: Level access but front doors are heavy"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

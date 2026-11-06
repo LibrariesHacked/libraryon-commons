@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40241/Tuckswood-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_bffac54e2c3d861a93d2fb32"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

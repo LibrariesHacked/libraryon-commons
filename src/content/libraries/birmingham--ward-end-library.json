@@ -60,14 +60,5 @@
     "URL": "https://www.birmingham.gov.uk/directory_record/5156/ward_end_library",
     "Notes": "Closed for lunch 1-2pm"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_b1572038910c5bc76114405b"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

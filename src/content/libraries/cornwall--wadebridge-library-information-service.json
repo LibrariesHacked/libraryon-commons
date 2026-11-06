@@ -60,14 +60,5 @@
     "URL": "https://www.cornwall.gov.uk/libraries-museums-and-archives/libraries/your-local-library/wadebridge-library-and-information-service/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_da37688261eb8db2f1713d39"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

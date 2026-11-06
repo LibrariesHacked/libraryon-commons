@@ -60,14 +60,5 @@
     "URL": "https://www.birmingham.gov.uk/directory_record/5158/yardley_wood_library",
     "Notes": "Closed for lunch 1-2pm"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_a6bd3e42379f1b99d290ea8d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

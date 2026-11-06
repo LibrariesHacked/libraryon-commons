@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "YO1 7AF",
-    "Unique property reference number": 10093959558,
+    "Unique property reference number": null,
     "Latitude": 53.9587159119755,
     "Longitude": -1.0754892863945429,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "CL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://exploreyork.org.uk/cafes/hungate-york-reading-cafe/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

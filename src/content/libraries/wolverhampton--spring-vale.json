@@ -60,15 +60,5 @@
     "URL": "https://www.wolverhampton.gov.uk/libraries/find-your-nearest-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_47029a6eb66b31ed451e2059",
-        "migration/directory/report.json#review_36fd6b284b9ef1abd2e22627"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

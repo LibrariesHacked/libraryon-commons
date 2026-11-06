@@ -20,7 +20,7 @@
     "Latitude": 55.91032610716641,
     "Longitude": -4.51022978554596,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://libcat.renfrewshire.gov.uk/iguana/www.main.cls?v=96c85272-ef02-4d78-8ef0-f831bf46dc19",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

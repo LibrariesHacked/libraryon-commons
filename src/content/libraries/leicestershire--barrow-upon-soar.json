@@ -60,14 +60,5 @@
     "URL": "http://www.busca.org.uk/community-groups/library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_5b11a2a45ffc93181c938611"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

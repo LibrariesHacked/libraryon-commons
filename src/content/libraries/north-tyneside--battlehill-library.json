@@ -20,7 +20,7 @@
     "Latitude": 55.00587,
     "Longitude": -1.51894,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://my.northtyneside.gov.uk/category/1695/battlehill-library",
     "Notes": "Current library opened 2009 in new shopping centre development, old library closed."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

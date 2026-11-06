@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "SS9 5UU",
     "Unique property reference number": 100091605712,
-    "Latitude": 51.563134,
-    "Longitude": 0.66499,
+    "Latitude": 51.56323160111887,
+    "Longitude": 0.6651606955847512,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 1964,
@@ -60,12 +60,5 @@
     "URL": "https://www.southend.gov.uk/directory-record/31982/kent-elms-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

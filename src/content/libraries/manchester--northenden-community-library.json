@@ -20,7 +20,7 @@
     "Latitude": 53.40745,
     "Longitude": -2.25364,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.manchester.gov.uk/directory_record/470334/northenden_community_library/category/1957/all_libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_62f9a17e9659f29fcb1c6e80"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

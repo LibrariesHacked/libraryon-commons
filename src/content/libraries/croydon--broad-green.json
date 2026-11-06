@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "CR0 3HH",
     "Unique property reference number": 10000104509,
-    "Latitude": 51.38533,
-    "Longitude": -0.11744,
+    "Latitude": 51.385378718997586,
+    "Longitude": -0.11715848623921592,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": 1998,
     "Year closed": 2024,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.croydon.gov.uk/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

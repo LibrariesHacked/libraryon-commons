@@ -20,7 +20,7 @@
     "Latitude": 51.53466,
     "Longitude": 0.77635,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 2015,
@@ -60,21 +60,5 @@
     "URL": "https://www.southend.gov.uk/directory-record/31986/shoeburyness-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_2dda2e48a7dd8a5f23dd8672"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

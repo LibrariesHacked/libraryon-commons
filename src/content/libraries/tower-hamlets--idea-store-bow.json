@@ -60,15 +60,5 @@
     "URL": "https://www.ideastore.co.uk/visit-us/idea-store-bow",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_e2ad759f5c5c4bb21ba74456",
-        "migration/directory/report.json#review_f5e0a3c43f177dd18ef74bf6"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

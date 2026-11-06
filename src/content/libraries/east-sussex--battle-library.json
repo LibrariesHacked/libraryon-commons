@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "TN33 0XB",
     "Unique property reference number": 10002662118,
-    "Latitude": 50.91815,
-    "Longitude": 0.48242,
+    "Latitude": 50.918189382243106,
+    "Longitude": 0.48223625725416264,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Family history; BFI Replay; British Newspaper Archive; Findmypast",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/battle",
     "Notes": "Major refurb in 2017"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

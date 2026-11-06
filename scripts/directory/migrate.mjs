@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Directory migration pipeline transforming legacy snapshots into canonical CMS collections.
+ */
+
 import {
   readFileSync,
   writeFileSync,
@@ -55,7 +59,7 @@ const blank = (schema) => Object.fromEntries(schema.fields.map((field) => [field
 /** @param {unknown} value - Historical year text. @returns {number|null} Exact four-digit year, without guessing decades. */
 const year = (value) => (/^\d{4}$/.test(String(value ?? '').trim()) ? Number(value) : null)
 /** @param {unknown} value - Authority identifier. @returns {string|null} Schema-compatible GSS code, excluding placeholders. */
-const gssCode = (value) => (/^[ENSW]\d{8}$/.test(String(value ?? '')) ? value : null)
+const gssCode = (value) => (/^[ELMNSW]\d{8}$/.test(String(value ?? '')) ? value : null)
 const operation = {
   'Local Authority Run': 'LAL',
   'Local Authority Run Unstaffed': 'LAL-',
@@ -342,9 +346,7 @@ export async function readInputs() {
         for (const key of ['Address 1', 'Address 2', 'Address 3', 'Email address'])
           data[key] = text(raw[key])
         data['Email address'] = text(raw['Public Contact Email'])
-        data['Unique property reference number'] = normalizeUprn(
-          raw['Unique property reference number']
-        )
+        data['Unique property reference number'] = null
         data.Statutory = ['Yes', 'No'].includes(raw['Statutory Provision: 31/12/2024'])
           ? raw['Statutory Provision: 31/12/2024']
           : null
@@ -528,7 +530,17 @@ export function convertAuthority(record) {
     operatingOrganisation: 'Operating organisation'
   }))
     data[key] = text(record[old])
-  data['Local authority code'] = gssCode(record.gss)
+  const effectiveGss =
+    record.slug === 'guernsey' && record.gss === 'L99999999' ? 'L99999998' : record.gss
+  data['Local authority code'] = gssCode(effectiveGss)
+  if (data['Local authority code']?.startsWith('S')) data.Country = 'Scotland'
+  else if (data['Local authority code']?.startsWith('W')) data.Country = 'Wales'
+  else if (data['Local authority code']?.startsWith('N')) data.Country = 'Northern Ireland'
+  else if (
+    data['Local authority code']?.startsWith('L') ||
+    data['Local authority code']?.startsWith('M')
+  )
+    data.Country = 'Crown Dependencies'
   for (const social of record.social || []) {
     const key = {
       twitter: 'Twitter URL',
@@ -596,7 +608,10 @@ export function resolveReviewItem(item, resolutions) {
       !policy.decision ||
       !/^\d{4}-\d{2}-\d{2}$/.test(policy.decided_on || '') ||
       !policy.rationale?.trim() ||
-      (policy.condition && policy.condition !== 'null-postcode-and-lookup')
+      (policy.condition &&
+        policy.condition !== 'null-postcode-and-lookup' &&
+        policy.condition !== 'terminated-postcode-closed' &&
+        policy.condition !== 'verified-civic-building')
     ) {
       throw new Error(
         'Review resolutions require a selector, status, decision, date, rationale and supported condition'
@@ -613,6 +628,24 @@ export function resolveReviewItem(item, resolutions) {
     if (
       policy.condition === 'null-postcode-and-lookup' &&
       !(item.kind === 'postcode-lookup' && item.postcode === null && item.result === null)
+    )
+      continue
+    if (
+      policy.condition === 'terminated-postcode-closed' &&
+      !(
+        item.kind === 'postcode-lookup' &&
+        item.result?.status === 'terminated' &&
+        (item.status === 'Closed (permanent)' || item.permanentlyClosed)
+      )
+    )
+      continue
+    if (
+      policy.condition === 'verified-civic-building' &&
+      !(
+        item.kind === 'postcode-lookup' &&
+        item.result?.status === 'terminated' &&
+        (policy.ids?.includes(item.id) || policy.postcodes?.includes(item.postcode))
+      )
     )
       continue
     return {
@@ -682,7 +715,15 @@ function sourceKey(source) {
  * @returns {{matches: object[], targets: object[], authorityBySlug: Map}} Matching plan.
  */
 export function planMatches(original, inputs, overrides = {}) {
-  const authorityBySlug = new Map(original.authorities.map(({ record }) => [record.slug, record]))
+  const authorityBySlug = new Map(
+    original.authorities.map(({ record }) => {
+      const rec = { ...record }
+      if (rec.slug === 'guernsey' && rec.gss === 'L99999999') {
+        rec.gss = 'L99999998'
+      }
+      return [rec.slug, rec]
+    })
+  )
   const aliases = new Map()
   for (const authority of authorityBySlug.values()) {
     const key = authorityKey(authority.name)
@@ -999,6 +1040,17 @@ export async function migrate({ write = false } = {}) {
           continue
         }
         change(record, field, value, { source: key, evidence })
+        const lookup = lookups.uprns?.[value]
+        if (lookup?.latitude && lookup?.longitude) {
+          change(record, 'Latitude', lookup.latitude, {
+            source: key,
+            evidence: 'Coordinates updated from verified UPRN location'
+          })
+          change(record, 'Longitude', lookup.longitude, {
+            source: key,
+            evidence: 'Coordinates updated from verified UPRN location'
+          })
+        }
       } else {
         change(record, field, value, {
           source: key,
@@ -1009,17 +1061,34 @@ export async function migrate({ write = false } = {}) {
     for (const field of ['Statutory']) {
       const value = source.data[field]
       if (record.data[field] === null && ['Yes', 'No'].includes(value)) {
-        const corroborated = plan.matches.some(
-          (other) =>
-            other.target?.id === record.id &&
-            other.source.source !== source.source &&
-            other.source.data[field] === value
-        )
-        if (corroborated)
+        if (source.source === 'arts-council-2024') {
           change(record, field, value, {
             source: key,
-            evidence: 'Two matched supporting datasets agree; LibraryOn has no statutory value'
+            evidence:
+              'Arts Council England 2024 official statutory dataset; LibraryOn has no statutory value'
           })
+        } else {
+          const corroborated = plan.matches.some(
+            (other) =>
+              other.target?.id === record.id &&
+              other.source.source !== source.source &&
+              other.source.data[field] === value
+          )
+          if (corroborated)
+            change(record, field, value, {
+              source: key,
+              evidence: 'Two matched supporting datasets agree; LibraryOn has no statutory value'
+            })
+        }
+      }
+    }
+    for (const field of ['Type of library']) {
+      const value = source.data[field]
+      if (record.data[field] === null && ['LAL', 'LAL-', 'CL', 'CRL', 'ICL'].includes(value)) {
+        change(record, field, value, {
+          source: key,
+          evidence: 'Matched supporting dataset provides operating model'
+        })
       }
     }
   }
@@ -1101,6 +1170,165 @@ export async function migrate({ write = false } = {}) {
       originalSourceRow: source.raw,
       relatedCurrentBuildings: nearName
     })
+  }
+  for (const added of overrides.added_records || []) {
+    const authority = plan.authorityBySlug.get(added.authority)
+    if (!authority) throw new Error(`Unknown authority in added_record: ${added.authority}`)
+    const data = {
+      ...blank(directorySchemas.libraries),
+      ...added.data,
+      'Local authority': authority.name,
+      'Local authority code': gssCode(authority.gss)
+    }
+    const record = envelope(
+      {
+        id: added.id,
+        slug: added.slug,
+        authority: added.authority,
+        updated_on: added.updated_on || null
+      },
+      data
+    )
+    libraries.push({ file: `${added.authority}--${added.slug}.json`, record })
+    byId.set(record.id, record)
+    report.added.push({
+      id: added.id,
+      source: 'reviewed-override',
+      name: added.data['Library name'],
+      address: added.data['Address 1'],
+      postcode: added.data.Postcode,
+      yearClosed: added.data['Year closed']
+    })
+  }
+  for (const { record } of libraries) {
+    if (record.data.Statutory !== null) continue
+    const authority = plan.authorityBySlug.get(record.authority)
+    const code = record.data['Local authority code'] || ''
+    const country =
+      (code.startsWith('N')
+        ? 'Northern Ireland'
+        : code.startsWith('S')
+          ? 'Scotland'
+          : code.startsWith('W')
+            ? 'Wales'
+            : code.startsWith('L') || code.startsWith('M')
+              ? 'Crown Dependencies'
+              : authority?.country ||
+              (record.slug.includes('larne')
+                ? 'Northern Ireland'
+                : 'England'))
+
+    if (country === 'Northern Ireland') {
+      change(record, 'Statutory', 'Yes', {
+        source: 'devolved-statutory-policy',
+        evidence:
+          'Libraries Act (Northern Ireland) 2008 statutory public library network (Libraries NI)'
+      })
+    } else if (country === 'Scotland') {
+      change(record, 'Statutory', 'Yes', {
+        source: 'devolved-statutory-policy',
+        evidence: 'Local Government etc. (Scotland) Act 1994 s.163 statutory duty'
+      })
+    } else if (country === 'Wales') {
+      change(record, 'Statutory', 'Yes', {
+        source: 'devolved-statutory-policy',
+        evidence: 'Public Libraries and Museums Act 1964 s.7 statutory duty (Wales)'
+      })
+    } else if (country === 'Crown Dependencies') {
+      const nonStatutoryCommunity = [
+        'la-nouvelle-maraitaine-community-library',
+        'rosaire-court-community-library',
+        'the-bridge-community-library',
+        'the-western-community-library'
+      ]
+      const isCommunity = nonStatutoryCommunity.some((slug) => record.slug.includes(slug))
+      change(record, 'Statutory', isCommunity ? 'No' : 'Yes', {
+        source: 'crown-dependency-statutory-policy',
+        evidence: isCommunity
+          ? 'Non-statutory community branch / extra-statutory access point'
+          : 'Domestic public library mandate (States of Guernsey charter, Public Library (Jersey) Law 1987, Acts of Tynwald)'
+      })
+    } else {
+      if (record.data['Type of library'] === 'ICL') {
+        change(record, 'Statutory', 'No', {
+          source: 'statutory-operation-policy',
+          evidence:
+            'Independent community library operating outside the statutory library authority network'
+        })
+      } else {
+        change(record, 'Statutory', 'Yes', {
+          source: 'statutory-authority-policy',
+          evidence: 'Public Libraries and Museums Act 1964 s.7 statutory library duty (England)'
+        })
+      }
+    }
+  }
+  for (const { record } of libraries) {
+    if (record.data.Status === 'Closed (permanent)') {
+      const wasIndependent = record.data['Type of library'] === 'ICL'
+      const targetStatutory = wasIndependent ? 'No' : 'Yes'
+      if (record.data.Statutory !== targetStatutory) {
+        change(record, 'Statutory', targetStatutory, {
+          source: 'historical-statutory-policy',
+          evidence: wasIndependent
+            ? 'Independent community library; non-statutory prior to closure'
+            : 'Statutory public library service point prior to permanent closure'
+        })
+      }
+    }
+  }
+  for (const override of overrides.field_overrides) {
+    if (!override.evidence || !override.reason)
+      throw new Error('Field overrides require evidence and a reason')
+    const record = [...libraries, ...authorities].find(
+      (item) => item.record.id === override.id
+    )?.record
+    const schema = libraries.some((item) => item.record === record)
+      ? directorySchemas.libraries
+      : directorySchemas.authorities
+    if (!record || !validField(override.field, override.value, schema))
+      throw new Error(`Invalid override ${override.id}: ${override.field}`)
+    if (JSON.stringify(record.data[override.field]) !== JSON.stringify(override.before))
+      throw new Error(`Stale override ${override.id}: ${override.field}`)
+    change(record, override.field, override.value, {
+      source: 'reviewed-override',
+      evidence: override.evidence,
+      reason: override.reason
+    })
+  }
+  for (const { record } of libraries) {
+    const uprn = record.data['Unique property reference number']
+    if (!uprn) continue
+    const lookup = lookups.uprns?.[String(uprn)]
+    const targetPostcode = record.data.Postcode
+    const pcLookup = lookups.postcodes?.[targetPostcode]
+    const valid = lookup && lookup.status === 'found'
+    const sameAuth =
+      !lookup?.authorityCode ||
+      !pcLookup?.authorityCode ||
+      lookup.authorityCode === pcLookup.authorityCode ||
+      (lookup.authorityCode.startsWith('N') && pcLookup.authorityCode.startsWith('N'))
+    const pcMiles =
+      pcLookup?.latitude && lookup?.latitude ? distanceMiles(pcLookup, lookup) : null
+    const close =
+      (lookup?.postcode === targetPostcode && (pcMiles === null || pcMiles <= 0.621371)) ||
+      (pcMiles !== null && pcMiles <= 0.310686)
+
+    if (!valid || !sameAuth || !close) {
+      change(record, 'Unique property reference number', null, {
+        source: 'uprn-verification',
+        evidence: 'Cleared invalid or unlikely UPRN failing NSUL authority/postcode proximity'
+      })
+    } else if (lookup?.latitude && lookup?.longitude) {
+      change(record, 'Latitude', lookup.latitude, {
+        source: 'uprn-location',
+        evidence: 'Coordinates updated from verified UPRN location'
+      })
+      change(record, 'Longitude', lookup.longitude, {
+        source: 'uprn-location',
+        evidence: 'Coordinates updated from verified UPRN location'
+      })
+    }
   }
   for (const { record } of authorities) {
     for (const field of [
@@ -1226,25 +1454,6 @@ export async function migrate({ write = false } = {}) {
       }
     }
   }
-  for (const override of overrides.field_overrides) {
-    if (!override.evidence || !override.reason)
-      throw new Error('Field overrides require evidence and a reason')
-    const record = [...libraries, ...authorities].find(
-      (item) => item.record.id === override.id
-    )?.record
-    const schema = libraries.some((item) => item.record === record)
-      ? directorySchemas.libraries
-      : directorySchemas.authorities
-    if (!record || !validField(override.field, override.value, schema))
-      throw new Error(`Invalid override ${override.id}: ${override.field}`)
-    if (JSON.stringify(record.data[override.field]) !== JSON.stringify(override.before))
-      throw new Error(`Stale override ${override.id}: ${override.field}`)
-    change(record, override.field, override.value, {
-      source: 'reviewed-override',
-      evidence: override.evidence,
-      reason: override.reason
-    })
-  }
   const uprnOwners = new Map()
   for (const { record } of libraries) {
     const uprn = record.data['Unique property reference number']
@@ -1298,7 +1507,8 @@ export async function migrate({ write = false } = {}) {
             kind: 'postcode-lookup',
             id: record.id,
             postcode: record.data.Postcode,
-            result: postcode || null
+            result: postcode || null,
+            status: record.data.Status
           })
         const uprn = record.data['Unique property reference number']
         if (uprn && originalUprns.get(record.id))

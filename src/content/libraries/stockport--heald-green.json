@@ -20,7 +20,7 @@
     "Latitude": 53.37035,
     "Longitude": -2.22923,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -32,7 +32,7 @@
     "Friday staffed hours": "10:00-16:00",
     "Saturday staffed hours": "10:00-14:00",
     "Sunday staffed hours": null,
-    "Monday unstaffed hours": null,
+    "Monday unstaffed hours": "08:00-10:00,16:00-20:00",
     "Tuesday unstaffed hours": "10:00-12:00,18:00-20:00",
     "Wednesday unstaffed hours": "08:00-20:00",
     "Thursday unstaffed hours": "08:00-20:00",
@@ -60,21 +60,5 @@
     "URL": "https://www.stockport.gov.uk/libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "opening-hours",
-      "reason": "Invalid opening hours: 10:00-10:00,16:00-20:00",
-      "audit_refs": [
-        "migration/directory/report.json#review_6e9bf7547b8dc71bb2c59397"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

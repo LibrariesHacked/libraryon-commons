@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "CF14 7XA",
     "Unique property reference number": 100101043739,
-    "Latitude": 51.516052,
-    "Longitude": -3.225213,
+    "Latitude": 51.51599646704178,
+    "Longitude": -3.2254144869493295,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://cardiffhubs.co.uk/hub/whitchurch-hub/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

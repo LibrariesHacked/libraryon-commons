@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40228/Sheringham-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_9c2f6835718457b93234d591"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

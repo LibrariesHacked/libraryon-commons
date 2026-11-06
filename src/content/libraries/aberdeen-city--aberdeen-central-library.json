@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "AB25 1GW",
     "Unique property reference number": 9051066329,
-    "Latitude": 57.147899,
-    "Longitude": -2.105941,
+    "Latitude": 57.14792139027987,
+    "Longitude": -2.105862003868106,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.aberdeencity.gov.uk/services/libraries-and-archives/find-your-local-library/central-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

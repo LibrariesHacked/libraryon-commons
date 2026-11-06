@@ -1,8 +1,22 @@
+/**
+ * @fileoverview Hierarchy and tree builder for the public sitemap.
+ */
+
 import { articleTitle } from './site.mjs'
 
+/**
+ * Convert a URL path segment into a title-cased fallback label.
+ * @param {string} segment - URL path segment (e.g. "special-collections").
+ * @returns {string} Formatted label (e.g. "Special Collections").
+ */
 const segmentLabel = (segment) =>
   segment.replace(/[-_]+/g, ' ').replace(/\b\w/g, (letter) => letter.toUpperCase())
 
+/**
+ * Build a nested navigation tree representing page hierarchy from flat page entries.
+ * @param {Array<{data: {path: string, title: string}, body?: string}>} pages - Collection of content pages.
+ * @returns {Array<{label: string, href: string|null, children: Array<object>}>} Nested tree of sitemap nodes.
+ */
 export function buildPageTree(pages) {
   const root = { children: [], lookup: new Map() }
 

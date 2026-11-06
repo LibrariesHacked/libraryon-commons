@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/willowhale-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_83295d279d7bbc62270497b9"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

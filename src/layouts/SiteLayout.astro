@@ -1,5 +1,6 @@
 ---
-import { Menu, ArrowUpRight, BookOpen } from '@lucide/astro'
+import { Menu, ArrowUpRight } from '@lucide/astro'
+import Brand from '../components/Brand.astro'
 import SiteNavigation from '../components/SiteNavigation.astro'
 import { canonicalInternalPath, settings, sitePath, safeURL } from '../lib/site.mjs'
 import '../styles/global.css'
@@ -11,13 +12,12 @@ const {
   publicSiteURL
 } = Astro.props
 /** @param value - Site path or external URL. @returns Public-host link in the separate CMS deployment, otherwise a base-aware local link. */
-const publicPath = (value: string) =>
+const publicPath = (value) =>
   publicSiteURL && value.startsWith('/') && !value.startsWith('//')
     ? new URL(value.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
     : sitePath(value)
-type NavigationItem = { label: string; url?: string; children?: NavigationItem[] }
 /** @param items - Navigation tree, including URL-less groups. @returns A copied tree with public-host links and preserved group structure. */
-const navigationItems = (items: NavigationItem[]): NavigationItem[] =>
+const navigationItems = (items) =>
   items.map((item) => ({
     ...item,
     ...(item.url ? { url: publicPath(item.url) } : {}),
@@ -52,15 +52,7 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
     </a>
     <header class="site-header-bar">
       <div class="site-header shell">
-        <a class="brand" href={publicPath('/')} aria-label={settings.site.title}>
-          <BookOpen size={30} stroke-width={1.7} aria-hidden="true" />
-          <span>
-            {settings.ui.brand.primary}
-            {settings.ui.brand.qualifier && (
-              <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>
-            )}
-          </span>
-        </a>
+        <Brand href={publicPath('/')} size={30} strokeWidth={1.7} />
         <nav class="desktop-nav" aria-label={navigationCopy.main_navigation}>
           <SiteNavigation items={navigation} />
         </nav>
@@ -81,15 +73,7 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
     <footer class="site-footer">
       <div class="shell footer-grid">
         <div>
-          <a class="brand" href={publicPath('/')} aria-label={settings.site.title}>
-            <BookOpen size={27} aria-hidden="true" />
-            <span>
-              {settings.ui.brand.primary}
-              {settings.ui.brand.qualifier && (
-                <span class="brand-qualifier">{settings.ui.brand.qualifier}</span>
-              )}
-            </span>
-          </a>
+          <Brand href={publicPath('/')} size={27} strokeWidth={2} />
           <p>{footer.attribution}</p>
           <h2>{footer.links_heading}</h2>
           <nav aria-label={footer.aria_label}>
@@ -116,9 +100,9 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
       document.addEventListener(
         'toggle',
         (event) => {
-          const opened = event.target as HTMLDetailsElement
+          const opened = event.target
           if (!opened.open || !opened.closest('.site-header')) return
-          for (const menu of document.querySelectorAll<HTMLDetailsElement>('.site-header details'))
+          for (const menu of document.querySelectorAll('.site-header details'))
             if (menu !== opened && !menu.contains(opened) && !opened.contains(menu))
               menu.open = false
         },

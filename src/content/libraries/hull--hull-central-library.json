@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "HU1 3TF",
     "Unique property reference number": 10000201794,
-    "Latitude": 53.746742,
-    "Longitude": -0.34321,
+    "Latitude": 53.746793459189064,
+    "Longitude": -0.3432103566672648,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": 1901,
@@ -60,12 +60,5 @@
     "URL": "https://www.hulllibraries.co.uk/local-library/central-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

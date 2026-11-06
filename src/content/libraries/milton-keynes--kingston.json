@@ -60,14 +60,5 @@
     "URL": "https://www.milton-keynes.gov.uk/libraries/nearest-library/kingston-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_7ec2e20db76fc59347aa636f"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

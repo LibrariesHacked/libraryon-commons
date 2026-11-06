@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/haywards-heath-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_64dfbf740553e930110658e1"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

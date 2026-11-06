@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=yRPsOKHNzPU&communitychannel=9",
     "Notes": "RE: opening hours:\n'Monday: 9:30am - 5pm while Folkestone Library is closed'"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_c871700117097fb08b895238"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

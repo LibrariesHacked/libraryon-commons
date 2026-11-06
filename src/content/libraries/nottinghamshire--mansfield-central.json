@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "NG18 1NH",
-    "Unique property reference number": null,
-    "Latitude": 53.145338,
-    "Longitude": -1.198206,
+    "Unique property reference number": 10012818508,
+    "Latitude": 53.14541463361406,
+    "Longitude": -1.1981929553098158,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": "Major refurbishmentcompleted 2012"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_4d8258e3ae0522afb9454229"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

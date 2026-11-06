@@ -15,12 +15,12 @@
     "Address 1": "IV40 8AB, Kyle, Highland, Scotland, United Kingdom",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "IV40 8AB",
     "Unique property reference number": null,
     "Latitude": 57.281696,
     "Longitude": -5.715899,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.highlifehighland.com/libraries/kyle-of-lochalsh-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

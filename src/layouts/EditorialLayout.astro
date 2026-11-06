@@ -18,9 +18,11 @@ const breadcrumbs = breadcrumbsForPage(entry, allPages, copy.home_breadcrumb)
 const originalSource = safeURL(entry.data.source_url)
 const hasSourceNote = Boolean(entry.data.attribution || originalSource || entry.data.updated_on)
 const hasAside = headings.length > 0 || neighbours.length > 0 || Astro.slots.has('aside')
-const contributors = (await getCollection('contributors')).filter((profile) =>
-  entry.data.contributors?.includes(profile.id)
-)
+const contributors = entry.data.contributors?.length
+  ? (await getCollection('contributors')).filter((profile) =>
+      entry.data.contributors.includes(profile.id)
+    )
+  : []
 ---
 
 <SiteLayout title={title} description={entry.data.description}>

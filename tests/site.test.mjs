@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for site paths, breadcrumbs, media resolution, and layout components.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {

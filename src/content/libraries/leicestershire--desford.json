@@ -60,14 +60,5 @@
     "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/desford-library",
     "Notes": "Hours closed: Th 12:00-14:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_1bdd95e82679ab59d6a84646"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

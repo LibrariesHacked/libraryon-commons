@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "KT7 0BS",
-    "Unique property reference number": null,
-    "Latitude": 51.3873,
-    "Longitude": -0.33546,
+    "Unique property reference number": 100062372180,
+    "Latitude": 51.38736138175657,
+    "Longitude": -0.33609621415428603,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/dittons",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_3ce6b051fb98af370097880e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

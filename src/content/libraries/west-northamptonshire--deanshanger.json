@@ -60,14 +60,5 @@
     "URL": "https://www.westnorthants.gov.uk/list-libraries/deanshanger-library",
     "Notes": "Social story: https://cms.westnorthants.gov.uk/media/16403/download"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_f61c56874b4443302643691e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -1,10 +1,15 @@
+/**
+ * @fileoverview Export generation for CSV downloads and schema validation reports.
+ */
+
 import { stringify } from 'csv-stringify/sync'
 import { dataIssues, directorySchemas } from './directory-schema.mjs'
 
-/** @typedef {{id?: string | number, data: import('./directory-types.ts').LibraryData}} ExportLibrary */
+/** @typedef {import('./directory-models.mjs').Library} ExportLibrary */
 
 const librarySchema = directorySchemas.libraries
 const csvColumns = librarySchema.fields.map((field) => field.name)
+const reportCache = new WeakMap()
 
 /**
  * Report unwaived schema failures, retaining the complete export's record numbers.
@@ -13,6 +18,9 @@ const csvColumns = librarySchema.fields.map((field) => field.name)
  * @returns {{totalRecords: number, validRecords: number, invalidRecords: number, issues: object[]}}
  */
 export function libraryValidationReport(records) {
+  if (Array.isArray(records) && reportCache.has(records)) {
+    return reportCache.get(records)
+  }
   const issues = records.flatMap((record, index) =>
     dataIssues(record.data, librarySchema).map((issue) => ({
       id: record.id,
@@ -22,12 +30,16 @@ export function libraryValidationReport(records) {
     }))
   )
   const invalidRecordNumbers = new Set(issues.map((issue) => issue.csvRecord))
-  return {
+  const report = {
     totalRecords: records.length,
     validRecords: records.length - invalidRecordNumbers.size,
     invalidRecords: invalidRecordNumbers.size,
     issues
   }
+  if (Array.isArray(records)) {
+    reportCache.set(records, report)
+  }
+  return report
 }
 
 /**

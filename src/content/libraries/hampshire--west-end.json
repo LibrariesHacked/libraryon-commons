@@ -60,14 +60,5 @@
     "URL": "https://www.hants.gov.uk/librariesandarchives/library/libraryfinder/west-end-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_0d14399fcb71ca2a3ca2f320"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

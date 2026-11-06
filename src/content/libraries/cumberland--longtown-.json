@@ -20,7 +20,7 @@
     "Latitude": 55.00985,
     "Longitude": -2.96717,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Computers; Family history",
     "Phone number": "01228 226695",
-    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "Email address": "libraries@cumberland.gov.uk",
     "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/longtown-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://cumberland.gov.uk/contact-a-library",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

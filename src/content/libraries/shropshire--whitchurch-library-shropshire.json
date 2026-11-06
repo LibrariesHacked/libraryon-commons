@@ -15,12 +15,12 @@
     "Address 1": "Unit C, St Mary's Arcade, Whitchurch, 13-17 High Street, Whitchurch, Shropshire SY13 1AX",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "SY13 1AX",
     "Unique property reference number": null,
     "Latitude": 52.969544,
     "Longitude": -2.683812,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://next.shropshire.gov.uk/libraries/find-a-library/whitchurch-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

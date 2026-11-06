@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "DA1 1EU",
-    "Unique property reference number": null,
-    "Latitude": 51.443128,
-    "Longitude": 0.218933,
+    "Unique property reference number": 200000533638,
+    "Latitude": 51.4431281542433,
+    "Longitude": 0.21904216981234065,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=VpTiviu6G0Q&communitychannel=9",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_cb233851a7b23bd2aea849ad"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

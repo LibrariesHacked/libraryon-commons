@@ -15,12 +15,12 @@
     "Address 1": "160-170 Grove Road, Chadwell Heath, Greater London, RM6 4XB",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "RM6 4XB",
     "Unique property reference number": null,
     "Latitude": 51.575184,
     "Longitude": 0.121614,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://visionrcl.org.uk/centre/keith-axon-centre/",
     "Notes": "Children's Centre closed in 2019"
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

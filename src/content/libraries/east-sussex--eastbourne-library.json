@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "BN21 4TL",
     "Unique property reference number": 100062251887,
-    "Latitude": 50.768673,
-    "Longitude": 0.279596,
+    "Latitude": 50.76866871833152,
+    "Longitude": 0.2792553064870179,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": "Yes",
     "Facilities and services": "Books; Printing; Free Wi-Fi; Business support; BFI Replay; Family history; Computers; Photocopiers; Findmypast; British Newspaper Archive",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/eastbourne",
     "Notes": "Major refurb in 2019"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

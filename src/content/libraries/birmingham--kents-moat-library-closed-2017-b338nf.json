@@ -16,7 +16,7 @@
     "Latitude": null,
     "Longitude": null,
     "Status": "Closed (permanent)",
-    "Statutory": "No",
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,14 +56,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_3299aea48dcaf94f92e0e667"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

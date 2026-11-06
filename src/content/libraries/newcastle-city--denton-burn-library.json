@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "NE15 7QQ",
     "Unique property reference number": 4510051973,
-    "Latitude": 54.98314,
-    "Longitude": -1.68756,
+    "Latitude": 54.98305908747502,
+    "Longitude": -1.6872844312521036,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 1961,
@@ -60,12 +60,5 @@
     "URL": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/denton-burn-library",
     "Notes": "Closes for lunch Mon & Thurs 13:00 to 13:30."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

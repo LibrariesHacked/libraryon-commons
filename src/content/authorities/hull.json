@@ -55,14 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "service-name",
-      "reason": "Matched by unique GSS code; check name discrepancy",
-      "audit_refs": [
-        "migration/directory/report.json#review_2521336227dc824582a044a5"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP17 8EE",
-    "Unique property reference number": null,
-    "Latitude": 51.773441,
-    "Longitude": -0.925551,
+    "Unique property reference number": 766036345,
+    "Latitude": 51.773310850211175,
+    "Longitude": -0.9255714684518617,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.haddenhamcommunitylibrary.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_71957eb675198b5589e1cb9f"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

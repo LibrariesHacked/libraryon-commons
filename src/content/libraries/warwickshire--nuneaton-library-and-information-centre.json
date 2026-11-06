@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "CV11 4DR",
-    "Unique property reference number": null,
-    "Latitude": 52.522383,
-    "Longitude": -1.464117,
+    "Unique property reference number": 100071495631,
+    "Latitude": 52.522207116291945,
+    "Longitude": -1.4639995412800688,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.warwickshire.gov.uk/directory-record/587/nuneaton-library-and-information-centre",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_e804f5ea5769a7fe11263db3"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

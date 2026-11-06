@@ -60,14 +60,5 @@
     "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/shepshed-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_6b4a2aa5bcd8dba344907474"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

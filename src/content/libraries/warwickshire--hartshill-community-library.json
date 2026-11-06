@@ -60,14 +60,5 @@
     "URL": "https://www.warwickshire.gov.uk/directory-record/612/hartshill-community-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_76dd97acf004866f4b2ada33"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -56,14 +56,5 @@
     "URL": null,
     "Notes": "Building demolished"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_386e7686bf6b0303cee025b3"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=khDUXOtwwGY&communitychannel=9",
     "Notes": "Located in Community Centre"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_9f54926fb734c5731fc877ad"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

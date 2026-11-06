@@ -20,7 +20,7 @@
     "Latitude": 52.9273,
     "Longitude": -1.43483,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.inderby.org.uk/libraries/our-libraries/chaddesden-library/",
     "Notes": "Run by Direct Help and Advice (DHA):"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_de11c3a8495620fda67ea57e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

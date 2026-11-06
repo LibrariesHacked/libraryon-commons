@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for CSS design tokens, Open Props imports, and style conventions.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync, readdirSync } from 'node:fs'

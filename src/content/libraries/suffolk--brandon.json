@@ -20,7 +20,7 @@
     "Latitude": 52.44681,
     "Longitude": 0.62355,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://suffolkcommunitylibraries.co.uk/libraries/brandon-library/",
     "Notes": "Community hub with other servcies"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP9 2NJ",
-    "Unique property reference number": null,
-    "Latitude": 51.612842,
-    "Longitude": -0.649668,
+    "Unique property reference number": 100081188571,
+    "Latitude": 51.61282944466983,
+    "Longitude": -0.649481260424137,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/beaconsfield-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_2b8c007d9efa3999af2266c9"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

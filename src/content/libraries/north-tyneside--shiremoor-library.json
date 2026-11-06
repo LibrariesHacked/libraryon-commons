@@ -20,7 +20,7 @@
     "Latitude": 55.037977,
     "Longitude": -1.507157,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://my.northtyneside.gov.uk/category/1702/shiremoor-library",
     "Notes": "New build library opened 2007 as part of 茂驴陆1.56m PFI project. Library closed for lunch between 13:00 - 14:00."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

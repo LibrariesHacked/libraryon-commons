@@ -20,7 +20,7 @@
     "Latitude": 51.58632,
     "Longitude": -3.05667,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.newport.gov.uk/en/Leisure-Tourism/Libraries/Find-a-library/Rogerstone-Library-and-Information-Centre.aspx",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

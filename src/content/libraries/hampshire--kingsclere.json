@@ -16,7 +16,7 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "RG20 5NH",
-    "Unique property reference number": 10000449086,
+    "Unique property reference number": null,
     "Latitude": 51.325,
     "Longitude": -1.24386,
     "Status": "Open",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; BFI Replay; Hobby and interest groups",
     "Phone number": "01635 297464",
-    "Email address": "https://kingsclerecommunitylibrary.co.uk/contact-us/",
+    "Email address": "kingsclerelibrary@gmail.com",
     "URL": "https://kingsclerecommunitylibrary.co.uk/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://kingsclerecommunitylibrary.co.uk/contact-us/",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

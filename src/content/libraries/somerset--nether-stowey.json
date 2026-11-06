@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "TA5 1LN",
     "Unique property reference number": 200000439810,
-    "Latitude": 51.15078,
-    "Longitude": -3.1588,
+    "Latitude": 51.15091765261078,
+    "Longitude": -3.158940484024815,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.somerset.gov.uk/locations/nether-stowey-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

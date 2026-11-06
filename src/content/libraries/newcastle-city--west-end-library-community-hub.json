@@ -20,7 +20,7 @@
     "Latitude": 54.97168,
     "Longitude": -1.66059,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/west-end-library-and-community-hub",
     "Notes": "Open as Benwell library since 1909"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

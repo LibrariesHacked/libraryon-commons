@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "TN37 7AG",
     "Unique property reference number": 10002503230,
-    "Latitude": 50.87413,
-    "Longitude": 0.55329,
+    "Latitude": 50.874134845305406,
+    "Longitude": 0.553259131027256,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Computers; Family history; Findmypast; British Newspaper Archive",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/hollington",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

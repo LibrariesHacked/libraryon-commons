@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=2S91ioky59c&communitychannel=9",
     "Notes": "Access: Changing Places room available in the Link"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_211038e94ea78c4a69a194a9"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

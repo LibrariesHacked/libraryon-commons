@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=sVJijEy65Tw&communitychannel=9",
     "Notes": "The Eden Centre"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_3a975fffb2bcc889531919eb"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

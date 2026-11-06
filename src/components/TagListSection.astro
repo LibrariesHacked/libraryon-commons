@@ -1,0 +1,22 @@
+---
+import { safeURL } from '../lib/site.mjs'
+
+const { heading, items = [] } = Astro.props
+const validItems = items.filter(Boolean)
+---
+
+{validItems.length > 0 && (
+  <section class="detail-section">
+    <h2>{heading}</h2>
+    <ul class="tags">
+      {validItems.map((item) => {
+        if (typeof item === 'string') {
+          return <li>{item}</li>
+        }
+        const label = item.label || item.service || ''
+        const url = safeURL(item.url)
+        return <li>{url ? <a href={url}>{label}</a> : label}</li>
+      })}
+    </ul>
+  </section>
+)}

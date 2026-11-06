@@ -60,14 +60,5 @@
     "URL": "https://www.devonlibraries.org.uk/web/arena/brauntonlibrary",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_05796e5a4de5abc785dafacf"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

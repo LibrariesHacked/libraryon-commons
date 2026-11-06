@@ -9,18 +9,18 @@
   "imported_on": "2026-10-27",
   "data": {
     "Local authority": "Isle of Man",
-    "Local authority code": null,
+    "Local authority code": "M99999999",
     "Library name": "Ramsey Library",
     "Library code": null,
     "Address 1": "Parliament Square, Ramsey, IM8 1RT",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "IM8 1RT",
     "Unique property reference number": null,
     "Latitude": 54.322380408000726,
     "Longitude": -4.386494620950884,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,24 +60,5 @@
     "URL": "https://www.ramsey.gov.im/services/ramsey-town-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Local authority code",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

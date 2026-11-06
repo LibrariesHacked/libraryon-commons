@@ -15,12 +15,12 @@
     "Address 1": "Leith Library, 28-30 Ferry Road, Edinburgh, EH6 4AE",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "EH6 4AE",
     "Unique property reference number": null,
     "Latitude": 55.975277,
     "Longitude": -3.180789,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.edinburgh.gov.uk/directory-record/1812913/leith-library-",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

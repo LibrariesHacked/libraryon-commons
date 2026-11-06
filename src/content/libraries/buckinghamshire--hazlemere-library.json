@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP15 7PY",
-    "Unique property reference number": null,
-    "Latitude": 51.65052,
-    "Longitude": -0.71385,
+    "Unique property reference number": 100081174052,
+    "Latitude": 51.65051761008767,
+    "Longitude": -0.71387030003973,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/hazlemere-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_75a66f54a6580894aeb8c1d1"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

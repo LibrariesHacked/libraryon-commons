@@ -15,12 +15,12 @@
     "Address 1": "Hull History Centre, Worship Street, Hull, HU2 8BG",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "HU2 8BG",
     "Unique property reference number": null,
     "Latitude": 53.7478,
     "Longitude": -0.336073,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.hulllibraries.co.uk/local-library/hull-history-centre",
     "Notes": "Open first and third Saturday of the month."
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/market-harborough-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_d90e491ef761d9130e995fb8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

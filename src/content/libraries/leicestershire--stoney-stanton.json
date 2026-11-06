@@ -60,14 +60,5 @@
     "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/stoney-stanton-library",
     "Notes": "Hours closed: Tu 12:00-14:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_9309cc03a4487c0349b12eb8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

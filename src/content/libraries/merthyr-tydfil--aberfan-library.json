@@ -20,7 +20,7 @@
     "Latitude": 51.695984,
     "Longitude": -3.346114,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.merthyrlibraries.co.uk/our-libraries/aberfan-community-library.aspx#firstab-2",
     "Notes": "Aberfan Community Library is located on the ground floor of the Aberfan and Merthyr Vale Community Centre and has all the library services available on a smaller scale."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

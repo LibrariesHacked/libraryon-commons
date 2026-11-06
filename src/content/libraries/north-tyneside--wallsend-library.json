@@ -20,7 +20,7 @@
     "Latitude": 54.99186,
     "Longitude": -1.53499,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://my.northtyneside.gov.uk/category/1705/wallsend-library",
     "Notes": "Current library opened 2014 in a refurbished former supermarket in the town's shopping centre; the old library on Ferndale Avenue closed.  Building is to be further developed as a Community Hub to include additional services. BSL via video relay."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

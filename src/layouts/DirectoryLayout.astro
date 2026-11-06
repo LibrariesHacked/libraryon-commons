@@ -1,14 +1,9 @@
 ---
 import Breadcrumbs from '../components/Breadcrumbs.astro'
-import { settings } from '../lib/site.mjs'
+import { directoryBreadcrumbs } from '../lib/directory.mjs'
 import SiteLayout from './SiteLayout.astro'
 const { title, description, subtitle, authority, tags = [] } = Astro.props
-const breadcrumbs = [
-  { label: settings.ui.editorial.home_breadcrumb, href: '/' },
-  { label: settings.ui.directory.breadcrumb, href: '/libraries/' },
-  ...(authority ? [{ label: authority.name, href: `/libraries/${authority.slug}/` }] : []),
-  { label: title, current: true }
-]
+const breadcrumbs = directoryBreadcrumbs(title, authority)
 ---
 
 <SiteLayout title={title} description={description}>

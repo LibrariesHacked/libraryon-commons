@@ -8,7 +8,7 @@ const rows = loadDirectoryReview()
 const categories = reviewCategories(rows)
 const publicSiteURL = import.meta.env.PUBLIC_SITE_URL
 /** @param path - Public record path. @returns A link on the public host when review is deployed with the separate CMS. */
-const publicPath = (path: string) =>
+const publicPath = (path) =>
   publicSiteURL
     ? new URL(path.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
     : sitePath(path)
@@ -186,40 +186,24 @@ const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
 </SiteLayout>
 
 <script>
-  type ReviewRow = {
-    key: string
-    name: string
-    authority: string
-    collection: string
-    categories: string[]
-    searchText: string
-    exceptionCount: number
-    manualCount: number
-    publicPath: string
-    editPath: string
-    detailPath: string
-  }
-  type ReviewDetail = {
-    exceptions: { field: string; code: string; reason: string; value: unknown }[]
-    manual: { label: string; reason: string; evidence: Record<string, unknown>[] }[]
-  }
-  const rows: ReviewRow[] = JSON.parse(document.querySelector('#review-index')!.textContent!)
-  const search = document.querySelector<HTMLInputElement>('#review-search')!
-  const recordType = document.querySelector<HTMLSelectElement>('#review-type')!
-  const category = document.querySelector<HTMLSelectElement>('#review-category')!
-  const body = document.querySelector<HTMLTableSectionElement>('#review-rows')!
-  const template = document.querySelector<HTMLTemplateElement>('#review-row-template')!
-  const previous = document.querySelector<HTMLButtonElement>('#review-previous')!
-  const next = document.querySelector<HTMLButtonElement>('#review-next')!
-  const dialog = document.querySelector<HTMLDialogElement>('#review-dialog')!
-  const detailBody = document.querySelector<HTMLElement>('#review-body')!
+  const indexEl = document.querySelector('#review-index')
+  const rows = JSON.parse(indexEl ? indexEl.textContent : '[]')
+  const search = document.querySelector('#review-search')
+  const recordType = document.querySelector('#review-type')
+  const category = document.querySelector('#review-category')
+  const body = document.querySelector('#review-rows')
+  const template = document.querySelector('#review-row-template')
+  const previous = document.querySelector('#review-previous')
+  const next = document.querySelector('#review-next')
+  const dialog = document.querySelector('#review-dialog')
+  const detailBody = document.querySelector('#review-body')
   const query = new URLSearchParams(location.search)
   search.value = query.get('q') || ''
   recordType.value = query.get('type') || ''
   category.value = query.get('issue') || ''
   let pageNumber = Math.max(0, (Number(query.get('page')) || 1) - 1)
-  let controller: AbortController | undefined
-  const cache = new Map<string, ReviewDetail>()
+  let controller
+  const cache = new Map()
 
   /** Persist current filters and pagination without navigating or exposing review evidence in the URL. */
   function syncURL() {
@@ -247,43 +231,43 @@ const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
     pageNumber = Math.min(pageNumber, pages - 1)
     body.replaceChildren()
     for (const row of matches.slice(pageNumber * 50, pageNumber * 50 + 50)) {
-      const fragment = template.content.cloneNode(true) as DocumentFragment
-      const link = fragment.querySelector<HTMLAnchorElement>('[data-record-link]')!
+      const fragment = template.content.cloneNode(true)
+      const link = fragment.querySelector('[data-record-link]')
       link.textContent = row.name
       link.href = row.publicPath
-      fragment.querySelector('[data-record-type]')!.textContent =
+      fragment.querySelector('[data-record-type]').textContent =
         row.collection === 'libraries' ? 'Library' : 'Library service'
-      fragment.querySelector('[data-authority]')!.textContent = row.authority
-      fragment.querySelector('[data-exceptions]')!.textContent = String(row.exceptionCount)
-      fragment.querySelector('[data-checks]')!.textContent = String(row.manualCount)
-      const button = fragment.querySelector<HTMLButtonElement>('[data-review-key]')!
+      fragment.querySelector('[data-authority]').textContent = row.authority
+      fragment.querySelector('[data-exceptions]').textContent = String(row.exceptionCount)
+      fragment.querySelector('[data-checks]').textContent = String(row.manualCount)
+      const button = fragment.querySelector('[data-review-key]')
       button.dataset.reviewKey = row.key
       button.title = `Review ${row.name}`
       button.setAttribute('aria-label', button.title)
-      const edit = fragment.querySelector<HTMLAnchorElement>('[data-edit-link]')!
+      const edit = fragment.querySelector('[data-edit-link]')
       edit.href = row.editPath
       edit.title = `Edit ${row.name} in CMS`
       edit.setAttribute('aria-label', edit.title)
       body.append(fragment)
     }
-    document.querySelector('#review-status')!.textContent =
+    document.querySelector('#review-status').textContent =
       `${matches.length.toLocaleString('en-GB')} ${matches.length === 1 ? 'record' : 'records'}`
-    document.querySelector('#review-page-number')!.textContent = `${pageNumber + 1} / ${pages}`
-    document.querySelector<HTMLElement>('#review-empty')!.hidden = matches.length > 0
+    document.querySelector('#review-page-number').textContent = `${pageNumber + 1} / ${pages}`
+    document.querySelector('#review-empty').hidden = matches.length > 0
     previous.disabled = pageNumber === 0
     next.disabled = pageNumber >= pages - 1
     syncURL()
   }
 
   /** @param text - Untrusted evidence text. @param parent - Dialog section. Render text without interpreting HTML. */
-  function paragraph(text: string, parent: HTMLElement) {
+  function paragraph(text, parent) {
     const element = document.createElement('p')
     element.textContent = text
     parent.append(element)
   }
 
   /** @param text - Safe text content. @param parent - Dialog section. @param level - Semantic nesting level for evidence headings. */
-  function heading(text: string, parent: HTMLElement, level: 'h3' | 'h4' = 'h3') {
+  function heading(text, parent, level = 'h3') {
     const element = document.createElement(level)
     element.textContent = text
     parent.append(element)
@@ -294,13 +278,13 @@ const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
    * @param row - Selected worklist entry with precomputed public, CMS and detail links.
    * @returns Resolves after text-only evidence or a retryable error is rendered.
    */
-  async function openReview(row: ReviewRow) {
+  async function openReview(row) {
     controller?.abort()
     controller = new AbortController()
-    document.querySelector('#review-dialog-title')!.textContent = row.name
-    document.querySelector('#review-dialog-authority')!.textContent = row.authority
-    document.querySelector<HTMLAnchorElement>('#review-public-link')!.href = row.publicPath
-    document.querySelector<HTMLAnchorElement>('#review-edit-link')!.href = row.editPath
+    document.querySelector('#review-dialog-title').textContent = row.name
+    document.querySelector('#review-dialog-authority').textContent = row.authority
+    document.querySelector('#review-public-link').href = row.publicPath
+    document.querySelector('#review-edit-link').href = row.editPath
     detailBody.replaceChildren()
     paragraph('Loading review evidence...', detailBody)
     dialog.showModal()
@@ -312,7 +296,7 @@ const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
           throw new Error(
             'Review evidence could not be loaded. Retry the record or open it in the CMS.'
           )
-        detail = (await response.json()) as ReviewDetail
+        detail = await response.json()
         cache.set(row.key, detail)
       }
       detailBody.replaceChildren()
@@ -356,7 +340,7 @@ const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
   }
 
   document
-    .querySelector('.review-filters')!
+    .querySelector('.review-filters')
     .addEventListener('submit', (event) => event.preventDefault())
   for (const control of [search, recordType, category])
     control.addEventListener(control === search ? 'input' : 'change', () => {
@@ -372,11 +356,11 @@ const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
     render()
   })
   body.addEventListener('click', (event) => {
-    const button = (event.target as Element).closest<HTMLButtonElement>('[data-review-key]')
+    const button = event.target.closest('[data-review-key]')
     const row = rows.find((item) => item.key === button?.dataset.reviewKey)
     if (row) void openReview(row)
   })
-  document.querySelector('#review-close')!.addEventListener('click', () => dialog.close())
+  document.querySelector('#review-close').addEventListener('click', () => dialog.close())
   dialog.addEventListener('close', () => controller?.abort())
   render()
 </script>

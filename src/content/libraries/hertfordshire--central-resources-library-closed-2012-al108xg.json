@@ -56,14 +56,5 @@
     "URL": null,
     "Notes": "Closed and relocated to new site"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_a969021a275e4cb141813a7e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

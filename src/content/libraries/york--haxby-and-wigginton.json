@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "YO32 3QW",
-    "Unique property reference number": 100052185247,
+    "Unique property reference number": null,
     "Latitude": 54.01767,
     "Longitude": -1.0714,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "CL",
     "Year opened": 2023,
@@ -60,12 +60,5 @@
     "URL": "https://exploreyork.org.uk/libraries/haxby-explore/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

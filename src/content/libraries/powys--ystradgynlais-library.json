@@ -20,7 +20,7 @@
     "Latitude": 51.80059,
     "Longitude": -3.7197,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://en.powys.gov.uk/ystradgynlaislibrary",
     "Notes": "Ystradgynlais Library will be closed from Sunday 7 January to Sunday 14 April 2024 while works are undertaken, and improvements made, to the building and facilities. Normal opening hours are expected to resume from Monday 15 April 2024."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

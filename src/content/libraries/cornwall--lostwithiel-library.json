@@ -20,7 +20,7 @@
     "Latitude": 50.40771,
     "Longitude": -4.67029,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; Digital skills sessions; Family history; Findmypast; British Newspaper Archive",
     "Phone number": null,
-    "Email address": "Lostwithiel Library <lostwithiel.library@liscornwall.org.uk>",
+    "Email address": "lostwithiel.library@liscornwall.org.uk",
     "URL": "https://www.cornwall.gov.uk/leisure-and-culture/libraries/your-local-library/lostwithiel-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "Lostwithiel Library <lostwithiel.library@liscornwall.org.uk>",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

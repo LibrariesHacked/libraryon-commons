@@ -15,12 +15,12 @@
     "Address 1": "Central Pavillion, Holderness Road, Hull, East Riding of Yorkshire, HU8 8JU",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "HU8 8JU",
     "Unique property reference number": null,
     "Latitude": 53.763005,
     "Longitude": -0.299213,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.hulllibraries.co.uk/local-library/east-park-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

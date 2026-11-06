@@ -20,7 +20,7 @@
     "Latitude": 52.0782,
     "Longitude": -0.05564,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": 2010,
@@ -60,12 +60,5 @@
     "URL": "https://info.cambridgeshire.gov.uk/kb5/cambridgeshire/directory/service.page?id=Pd5gVAofmdQ",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

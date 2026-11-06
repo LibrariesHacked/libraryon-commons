@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Migration script extracting inline FAQ sections from articles into standalone modular collection entries.
+ */
+
 import { mkdirSync, readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -6,6 +10,11 @@ import { parse, stringify } from 'yaml'
 import { uniqueFilename, originalAssetReferences } from '../migrate-filenames.mjs'
 import { digest } from './collect.mjs'
 
+/**
+ * Extract inline FAQ questions from markdown articles into standalone reusable FAQ collection records.
+ * @param {{root?: string}} [options={}] - Options.
+ * @returns {{extracted: number, modularized: number}} Count of extracted questions and modularized pages.
+ */
 export function extractFaqs({ root = process.cwd() } = {}) {
   const absolute = (file) => path.join(root, file)
   const folder = 'src/content/faqs'

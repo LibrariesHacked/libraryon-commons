@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "WD5 0AA",
     "Unique property reference number": 100081290836,
-    "Latitude": 51.70796,
-    "Longitude": -0.41587,
+    "Latitude": 51.708252107410544,
+    "Longitude": -0.41629902196167223,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/abbots-langley-library.aspx",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "original-uprn",
-      "reason": "Original LibraryOn value retained; inspect lookup evidence",
-      "audit_refs": [
-        "migration/directory/report.json#review_7555a0f084b13db0bdd384a8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

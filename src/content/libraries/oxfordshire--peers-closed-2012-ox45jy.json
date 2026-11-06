@@ -56,14 +56,5 @@
     "URL": null,
     "Notes": "Renamed as Littlemore"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_30074b066c1bacdf6c013882"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

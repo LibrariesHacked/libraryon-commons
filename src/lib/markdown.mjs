@@ -1,5 +1,14 @@
+/**
+ * @fileoverview Rehype plugins and link/email decoders for Markdown content processing.
+ */
+
 import { canonicalInternalPath, mediaURL } from './site.mjs'
 
+/**
+ * Rehype plugin to preserve internal links, normalize media URLs, and decode Cloudflare-obfuscated email links.
+ * @param {{base?: string}} [options={}] - Base path options.
+ * @returns {(tree: object) => void} AST transformer function.
+ */
 export function preservedLinks({ base = '/' } = {}) {
   const prefix = base.replace(/\/$/, '')
   return (tree) => {
@@ -41,6 +50,11 @@ export function preservedLinks({ base = '/' } = {}) {
   }
 }
 
+/**
+ * Decode Cloudflare email protection tokens into standard mailto: URLs.
+ * @param {string} value - URL or string containing /cdn-cgi/l/email-protection#<hex>.
+ * @returns {string} Decoded mailto: link, or the original value if not protected.
+ */
 export function decodeProtectedEmail(value) {
   if (!value.includes('/cdn-cgi/l/email-protection#')) return value
   const token = value.split('#')[1]

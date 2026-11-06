@@ -20,7 +20,7 @@
     "Latitude": 51.778377,
     "Longitude": -4.168855,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -57,21 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
     "Phone number": null,
     "Email address": "libraries@carmarthenshire.gov.uk",
-    "URL": "01269 870891",
+    "URL": "https://www.carmarthenshire.gov.wales/home/council-services/libraries-archives/find-a-library/pontyberem-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "01269 870891",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 54.18101,
     "Longitude": -2.72122,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": null,
     "Type of library": "ICL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

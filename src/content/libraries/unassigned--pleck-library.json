@@ -8,9 +8,9 @@
   "reviewed_on": "",
   "imported_on": "2026-10-27",
   "data": {
-    "Local authority": null,
-    "Local authority code": null,
-    "Library name": "Pleck Library Community Cenmtre",
+    "Local authority": "Walsall",
+    "Local authority code": "E08000030",
+    "Library name": "Pleck Library Community Centre",
     "Library code": null,
     "Address 1": "Pleck Library Community Centre, Darlaston Road, Walsall WS2 9RE",
     "Address 2": null,
@@ -20,7 +20,7 @@
     "Latitude": 52.57461113865958,
     "Longitude": -2.003209945458508,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,24 +60,5 @@
     "URL": "https://www.walsallcollege.ac.uk/pleck-library-community-learning/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Local authority",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Local authority code",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

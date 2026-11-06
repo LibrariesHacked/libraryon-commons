@@ -15,12 +15,12 @@
     "Address 1": "Victoria Avenue, Grappenhall, Warrington, Cheshire, WA4 2PE",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "WA4 2PF",
+    "Postcode": "WA4 2PE",
     "Unique property reference number": null,
     "Latitude": 53.37448,
     "Longitude": -2.54982,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.grappenhall.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "historical-postcode-correction",
-      "reason": "SQL correction is matching evidence, not permission to override current LibraryOn data",
-      "audit_refs": [
-        "migration/directory/report.json#review_e10b594a8608756c778a0a20"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

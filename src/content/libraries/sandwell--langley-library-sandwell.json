@@ -15,12 +15,12 @@
     "Address 1": "Barrs Road Oldbury West Midlands B68 8QT",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "B68 8QT",
     "Unique property reference number": null,
     "Latitude": 52.487406,
     "Longitude": -2.009735,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -32,7 +32,7 @@
     "Friday staffed hours": "09:30-13:00,14:00-17:30",
     "Saturday staffed hours": "10:00-14:00",
     "Sunday staffed hours": "07:00-22:00",
-    "Monday unstaffed hours": null,
+    "Monday unstaffed hours": "07:00-09:30,13:00-14:00,17:30-22:00",
     "Tuesday unstaffed hours": "07:00-22:00",
     "Wednesday unstaffed hours": "07:00-09:30,13:00-14:00,17:30-22:00",
     "Thursday unstaffed hours": "07:00-22:00",
@@ -60,27 +60,5 @@
     "URL": "https://prism.librarymanagementcloud.co.uk/sandwell/assets/-/libraries.html#langley",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "opening-hours",
-      "reason": "Invalid opening hours: 07:00-09:30,13:00-14:00,17:30-10:00",
-      "audit_refs": [
-        "migration/directory/report.json#review_84ed6d1afa3d687bbf2d9f0d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

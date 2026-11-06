@@ -20,7 +20,7 @@
     "Latitude": 51.286335,
     "Longitude": -2.482073,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://beta.bathnes.gov.uk/midsomer-norton-library-and-information-service",
     "Notes": "Moved from former library to newly refurbished location in 2018. Merged with B&NES One Stop Shop Services."
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

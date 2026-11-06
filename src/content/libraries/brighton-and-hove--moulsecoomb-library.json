@@ -20,7 +20,7 @@
     "Latitude": 50.846756,
     "Longitude": -0.115546,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/our-libraries-and-their-opening-times/moulsecoomb-library?origin_node=33916&original_query%5Bpage%5D=0",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

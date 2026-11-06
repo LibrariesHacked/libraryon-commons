@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "NN6 0ND",
     "Unique property reference number": 100032151218,
-    "Latitude": 52.26479,
-    "Longitude": -0.75081,
+    "Latitude": 52.26477753360392,
+    "Longitude": -0.7508313781031983,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://eblandcc.com/",
     "Notes": "Expected to become CRL by 01 April 2020"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

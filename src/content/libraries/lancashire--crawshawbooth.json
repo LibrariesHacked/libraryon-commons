@@ -20,7 +20,7 @@
     "Latitude": 53.72541,
     "Longitude": -2.28577,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.lancashire.gov.uk/libraries-and-archives/libraries/find-a-library/crawshawbooth-community-library/?jumpToVenue=https%3A%2F%2Fwww.lancashire.gov.uk%2Flibraries-and-archives%2Flibraries%2Ffind-a-library%2Fcrawshawbooth-community-library%2F",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

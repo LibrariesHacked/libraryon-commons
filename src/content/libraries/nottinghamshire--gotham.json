@@ -20,9 +20,9 @@
     "Latitude": 52.86942,
     "Longitude": -1.20493,
     "Status": "Closed (temporary)",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CRL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

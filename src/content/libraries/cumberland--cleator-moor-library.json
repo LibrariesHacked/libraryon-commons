@@ -20,7 +20,7 @@
     "Latitude": 54.52103,
     "Longitude": -3.51557,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Family history; Findmypast; British Newspaper Archive; BFI Replay; Computers; Photocopiers; Children's activities; Hobby and interest groups; Digital skills sessions",
     "Phone number": "01946 506085",
-    "Email address": "https://services.digital.cumberland.gov.uk/w/webpage/librarycontactus?context_record_id=84523775&webpage_token=bb184f08d56491f522fc62ae56704866aa144d0aaf81095a4aea62d16e31cd95",
+    "Email address": "libraries@cumberland.gov.uk",
     "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/cleator-moor-library",
     "Notes": "Social story: https://www.cumberland.gov.uk/sites/default/files/2024-08/cleator_moor_library_social_story.pdf"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://services.digital.cumberland.gov.uk/w/webpage/librarycontactus?context_record_id=84523775&webpage_token=bb184f08d56491f522fc62ae56704866aa144d0aaf81095a4aea62d16e31cd95",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

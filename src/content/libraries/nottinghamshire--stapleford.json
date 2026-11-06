@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": "Refurbished 2013"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_3801e0b24eaca2f431b10ea5"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

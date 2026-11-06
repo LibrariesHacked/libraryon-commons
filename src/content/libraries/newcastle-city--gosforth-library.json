@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "NE3 3HD",
     "Unique property reference number": 4510731135,
-    "Latitude": 55.010597,
-    "Longitude": -1.622842,
+    "Latitude": 55.0105182558654,
+    "Longitude": -1.6228835368170151,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.newcastle.gov.uk/services/libraries-culture/libraries-newcastle/gosforth-library",
     "Notes": "Open in previous building since transferring to NCC on 1.4.1974"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

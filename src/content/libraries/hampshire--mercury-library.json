@@ -20,7 +20,7 @@
     "Latitude": 50.85906093293514,
     "Longitude": -1.3189290438319574,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": null,
     "Type of library": "ICL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.eastleigh.gov.uk/our-community/the-mercury-library-and-community-hub",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

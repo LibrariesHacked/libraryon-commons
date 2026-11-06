@@ -20,7 +20,7 @@
     "Latitude": 51.41363,
     "Longitude": -0.31321,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.richmond.gov.uk/services/libraries/branch_libraries/hampton_wick_library",
     "Notes": "Closed for lunch 12:30 - 13:30"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://www.warwickshire.gov.uk/directory-record/613/henley-community-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_be2fa394ee850d3725b7a305"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

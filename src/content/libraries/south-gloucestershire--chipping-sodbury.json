@@ -20,7 +20,7 @@
     "Latitude": 51.53793,
     "Longitude": -2.39421,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.sodburytowncouncil.gov.uk/town-council-services/library/?fbclid=IwY2xjawIylLtleHRuA2FlbQIxMAABHa8mo-HnnBUEKpST2POBef8MOmAlbE1U2D1Krt3YUcHMAsD-JnwCXCjsdQ_aem_lF_zTEu4wOhFdImamEPj0w",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 51.64884,
     "Longitude": -0.12915,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -57,15 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; Bookable space; Books delivered; Children's activities; Computers; Digital lending; Hobby and interest groups; Photocopiers; Scanning; Findmypast",
     "Phone number": "020 8379 1645",
     "Email address": "libraries@enfield.gov.uk",
-    "URL": "https://libraries.enfield.gov.uk/client/en_GB/enfield",
+    "URL": "https://www.enfield.gov.uk/services/libraries-archive-and-community-hubs/contact-us-and-opening-hours",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

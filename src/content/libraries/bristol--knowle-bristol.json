@@ -15,12 +15,12 @@
     "Address 1": "1st Floor, Broadwalk Shopping Centre, Knowle, Bristol, BS4 2QU",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "BS4 2QU",
     "Unique property reference number": null,
     "Latitude": 51.434425,
     "Longitude": -2.568009,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.bristol.gov.uk/residents/libraries-and-archives/find-a-library/library-finder/library?id=15",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

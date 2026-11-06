@@ -15,12 +15,12 @@
     "Address 1": "277 Bancroft Road, Greater London, E1 4DQ",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "E1 4DQ",
     "Unique property reference number": null,
     "Latitude": 51.523819,
     "Longitude": -0.042374,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.ideastore.co.uk/local-history/visitor-information",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

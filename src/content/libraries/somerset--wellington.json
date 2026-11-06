@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "TA21 8AQ",
     "Unique property reference number": 100041071357,
-    "Latitude": 50.97779,
-    "Longitude": -3.22807,
+    "Latitude": 50.9777976692089,
+    "Longitude": -3.228055193336591,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.somerset.gov.uk/locations/wellington-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

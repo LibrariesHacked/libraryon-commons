@@ -60,14 +60,5 @@
     "URL": "https://www.westminster.gov.uk/leisure-libraries-and-community/libraries/little-venice-sports-centre-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_95a87c45ca9452dea3e1f122"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

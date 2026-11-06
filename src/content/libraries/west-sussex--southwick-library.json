@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/southwick-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_a71e06339eb0148ce9da9ba9"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

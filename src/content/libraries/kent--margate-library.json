@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "CT9 1RE",
-    "Unique property reference number": null,
-    "Latitude": 51.387524,
-    "Longitude": 1.382395,
+    "Unique property reference number": 100062305105,
+    "Latitude": 51.38754468076546,
+    "Longitude": 1.3821650152024192,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=8mtjhskPZa4&communitychannel=9",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_3f1a0af740d85c299754d93a"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

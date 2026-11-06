@@ -1,8 +1,17 @@
+/**
+ * @fileoverview Discovery, extraction, and resolution of responsive images and embedded master assets.
+ */
+
 import { load } from 'cheerio'
 import sharp from 'sharp'
 import { parse } from 'acorn'
 import { allowed, origin } from './scope.mjs'
 
+/**
+ * Extract serialized JSON and Next.js flight data records from page script tags.
+ * @param {string} html - Raw HTML source.
+ * @returns {object[]} Parsed JSON payload records.
+ */
 export function serializedPageData(html) {
   const document = load(html)
   const records = []
@@ -42,6 +51,13 @@ export function serializedPageData(html) {
   return records
 }
 
+/**
+ * Parse responsive srcset and src image descriptors into resolved candidate URLs.
+ * @param {string} source - Primary src URL.
+ * @param {string} [srcset=''] - Responsive srcset attribute.
+ * @param {string} [base=origin] - Base URL for relative references.
+ * @returns {Array<{url: string, width: number}>} Candidate image variants sorted by width descending.
+ */
 export function responsiveSources(source, srcset = '', base = origin) {
   const candidates = [
     { source, width: 0 },
@@ -73,6 +89,12 @@ export function responsiveSources(source, srcset = '', base = origin) {
   return [...found.values()]
 }
 
+/**
+ * Extract all image candidates (HTML images and serialized data structures) from a page.
+ * @param {string} html - Raw HTML source.
+ * @param {string} base - Base URL for relative paths.
+ * @returns {Array<{source: string, alt: string, srcset: string, candidates: Array<{url: string, width: number}>}>} Discovered image items.
+ */
 export function pageImages(html, base) {
   const document = load(html)
   const images = document('img')
@@ -149,6 +171,12 @@ export function pageImages(html, base) {
   return images
 }
 
+/**
+ * Probe candidate image variants and return the largest accessible image.
+ * @param {Array<{url: string, width?: number}>} candidates - Candidate URLs to test.
+ * @param {(url: string) => Promise<{bytes: Buffer}>} read - Async fetch/read function.
+ * @returns {Promise<{image: object|null, failures: Array<{url: string, error: string}>, available: Array<object>}>} Selection result.
+ */
 export async function largestAvailableImage(candidates, read) {
   const failures = []
   const available = []

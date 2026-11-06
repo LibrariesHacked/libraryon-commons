@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40160/Attleborough-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_2ad6625a1a5fd61ad6d1c9d5"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -1,6 +1,16 @@
+/**
+ * @fileoverview Article HTML module splitting and resource link deduplication.
+ */
+
 import { load } from 'cheerio'
 import { safeURL, mediaURL } from './site.mjs'
 
+/**
+ * Split rendered article HTML into modular content blocks around FAQ and resource markers.
+ * @param {string} html - Rendered HTML from article markdown.
+ * @param {{faqHeading?: string, base?: string, leadImage?: boolean}} [options={}] - Processing options.
+ * @returns {Array<{type: 'html'|'faqs'|'resources', html?: string, headingId?: string, introduction?: string}>} Modular content blocks.
+ */
 export function splitContentModules(
   html,
   { faqHeading, base = import.meta.env?.BASE_URL || '/', leadImage = false } = {}
@@ -86,6 +96,12 @@ export function splitContentModules(
   return blocks
 }
 
+/**
+ * Filter resources to exclude URLs that are already linked directly in the article body.
+ * @param {string} html - Article body HTML.
+ * @param {Array<{url: string, [key: string]: unknown}>} resources - Candidate resources.
+ * @returns {Array<{url: string, [key: string]: unknown}>} Resources not linked in body text.
+ */
 export function unlinkedResources(html, resources) {
   const document = load(html, null, false)
   const linked = new Set(

@@ -60,14 +60,5 @@
     "URL": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=hornsea_library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_37867d74742485609b31f1fe"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

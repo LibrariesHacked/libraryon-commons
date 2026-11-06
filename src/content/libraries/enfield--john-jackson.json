@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "EN1 1DW",
     "Unique property reference number": 207040251,
-    "Latitude": 51.64543,
-    "Longitude": -0.0665,
+    "Latitude": 51.645429152798656,
+    "Longitude": -0.06652543679129175,
     "Status": "Closed (permanent)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.enfield.gov.uk/services/libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40201/Holt-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_c6876854571483aa5ecad015"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

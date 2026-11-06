@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": "Mini refurbishment work starting Feb 2020; Closed lunchtimes Tues 1.00-1.30; Thurs 1.00-1.30"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_218267af9b24f9ec3031f7ce"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

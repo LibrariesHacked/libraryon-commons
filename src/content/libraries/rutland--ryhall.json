@@ -60,15 +60,5 @@
     "URL": "https://rutlandlibraries.org.uk/ryhall-library/",
     "Notes": "Closed 12.00 - 2.00 Mon & Thu\nVolunteer-run 2pm - 4pm Tuesday, Wednesday and Friday"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_bc638a5db16958bd3948eb99",
-        "migration/directory/report.json#review_9ab7c169ae85b0b40a605bf1"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/oadby-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_b9d25e07f8fe33c8512b312f"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

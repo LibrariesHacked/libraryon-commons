@@ -16,7 +16,7 @@
     "Latitude": null,
     "Longitude": null,
     "Status": "Closed (permanent)",
-    "Statutory": "No",
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL-",
     "Year opened": null,
@@ -52,16 +52,9 @@
     "Hearing loop": null,
     "Facilities and services": null,
     "Phone number": null,
-    "Email address": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
+    "Email address": "mobile@cornwall.gov.uk",
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

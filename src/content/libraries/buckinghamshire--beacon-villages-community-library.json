@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "LU7 9EP",
-    "Unique property reference number": null,
-    "Latitude": 51.835628,
-    "Longitude": -0.630361,
+    "Unique property reference number": 766273382,
+    "Latitude": 51.8356904540737,
+    "Longitude": -0.6301976793097473,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/beacon-villages-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_023347407ea087987d7365f1"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

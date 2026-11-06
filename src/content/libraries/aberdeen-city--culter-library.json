@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "AB14 0UJ",
     "Unique property reference number": 9051000819,
-    "Latitude": 57.09598,
-    "Longitude": -2.2665,
+    "Latitude": 57.095996195290624,
+    "Longitude": -2.2664969395225523,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.aberdeencity.gov.uk/services/libraries-and-archives/find-your-local-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

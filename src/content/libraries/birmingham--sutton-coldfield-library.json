@@ -16,13 +16,13 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "B72 1XX",
-    "Unique property reference number": 10024338062,
+    "Unique property reference number": null,
     "Latitude": 52.56262,
     "Longitude": -1.82324,
     "Status": "Closed (permanent)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": 1974,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.birmingham.gov.uk/directory_record/5153/sutton_coldfield_library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

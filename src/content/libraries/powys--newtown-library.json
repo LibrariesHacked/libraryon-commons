@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "SY16 1EJ",
     "Unique property reference number": 10011780300,
-    "Latitude": 52.511612,
-    "Longitude": -3.317825,
+    "Latitude": 52.51164273823252,
+    "Longitude": -3.3182385839054938,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.powys.gov.uk/en/libraries/find-nearest-library/newtown-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

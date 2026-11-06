@@ -20,7 +20,7 @@
     "Latitude": 51.68107,
     "Longitude": -4.11982,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -57,21 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; BFI Replay",
     "Phone number": "01554 778402",
     "Email address": null,
-    "URL": "libraries@carmarthenshire.gov.uk",
+    "URL": "https://www.carmarthenshire.gov.wales/home/council-services/libraries-archives/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "libraries@carmarthenshire.gov.uk",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

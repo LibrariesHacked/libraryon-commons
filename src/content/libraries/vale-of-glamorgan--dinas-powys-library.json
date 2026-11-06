@@ -15,12 +15,12 @@
     "Address 1": "Dinas Powys Community Library, Fairoaks, The Murch, Dinas Powys, CF64 4QU",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "CF64 4QU",
     "Unique property reference number": null,
     "Latitude": 51.432407,
     "Longitude": -3.211581,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.valeofglamorgan.gov.uk/en/enjoying/Libraries/Libraries.aspx",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "DE21 6ET",
-    "Unique property reference number": 10010676674,
+    "Unique property reference number": null,
     "Latitude": 52.93055,
     "Longitude": -1.44837,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.inderby.org.uk/libraries/our-libraries/derwent-community-library/",
     "Notes": "Due to be Run by Direct Help and Advice (DHA)"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

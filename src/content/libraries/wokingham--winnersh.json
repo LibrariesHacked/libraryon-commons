@@ -22,7 +22,7 @@
     "Status": "Closed (temporary)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": "https://directory.wokingham.gov.uk/kb5/wokingham/directory/service.page?id=ZUAJHz8GKIU",
     "Notes": "The Library stands in the grounds of the Forest Seconday School-dual use library"
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

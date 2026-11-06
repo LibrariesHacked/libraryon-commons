@@ -20,7 +20,7 @@
     "Latitude": 51.761123,
     "Longitude": -3.353798,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 1907,
@@ -60,12 +60,5 @@
     "URL": "http://www.merthyrlibraries.co.uk/our-libraries/dowlais-library.aspx",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

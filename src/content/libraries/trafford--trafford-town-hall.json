@@ -20,7 +20,7 @@
     "Latitude": 53.45925,
     "Longitude": -2.28643,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://beta.trafford.gov.uk/residents/leisure-and-lifestyle/libraries/libraries-in-trafford/town-hall-library.aspx",
     "Notes": "Temporary location at present, will return to new building on the original site in Autumn 2020"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

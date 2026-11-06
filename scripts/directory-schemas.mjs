@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Schema generator and Decap CMS config updater for directory collections.
+ */
+
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { parseDocument } from 'yaml'
@@ -55,7 +59,9 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
       }
       if (constraints.enum)
         result.options =
-          field.name === 'Country' ? [...constraints.enum, 'Crown Dependencies'] : constraints.enum
+          field.name === 'Country'
+            ? Array.from(new Set([...constraints.enum, 'Crown Dependencies']))
+            : constraints.enum
       if (result.widget === 'number') {
         result.value_type = field.type === 'number' ? 'float' : 'int'
         if (constraints.minimum !== undefined) result.min = constraints.minimum

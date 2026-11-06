@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Scraper and importer for the original LibraryOn homepage banner carousel slides and media.
+ */
+
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -6,6 +10,12 @@ import { digest } from './collect.mjs'
 import { uniqueFilename, reviewedImageDescriptions } from '../migrate-filenames.mjs'
 import { pageImages, largestAvailableImage } from './media.mjs'
 
+/**
+ * Extract original banner carousel images and descriptions from homepage HTML.
+ * @param {string} html - Raw homepage HTML.
+ * @param {string} [sourceURL='https://libraryon.org/'] - Source URL for relative links.
+ * @returns {Array<{source: string, alt: string}>} Array of carousel slide images.
+ */
 export function originalHomeCarousel(html, sourceURL = 'https://libraryon.org/') {
   const document = load(html)
   const seen = new Set()
@@ -31,6 +41,11 @@ export function originalHomeCarousel(html, sourceURL = 'https://libraryon.org/')
     })
 }
 
+/**
+ * Download homepage carousel slides, match them with largest available images, and update homepage.json.
+ * @param {{root?: string, fetcher?: typeof fetch}} [options={}] - Options.
+ * @returns {Promise<Array<{source: string, alt: string, localImage: string}>>} Imported slide items.
+ */
 export async function importHomeCarousel({ root = process.cwd(), fetcher = fetch } = {}) {
   const sourceURL = 'https://libraryon.org/'
   const response = await fetcher(sourceURL)

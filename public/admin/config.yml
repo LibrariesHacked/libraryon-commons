@@ -423,13 +423,16 @@ collections:
                     label: Current Location Label
                     widget: string
                   - name: services_filter
-                    label: Services Filter Button
+                    label: Search Options Filter Button
                     widget: string
                   - name: distance_filter
                     label: Distance Filter Button
                     widget: string
                   - name: open_now_label
                     label: Open Now Toggle Label
+                    widget: string
+                  - name: include_closed_label
+                    label: Include Closed Libraries Label
                     widget: string
                   - name: services_heading
                     label: Services Filter Heading
@@ -1168,13 +1171,13 @@ collections:
             required: false
             hint: Official Government Statistical Service (GSS/ONS) 9-character code for the authority
             pattern:
-              - ^[ENSW][0-9]{8}$
+              - ^[ELMNSW][0-9]{8}$
               - Official Government Statistical Service (GSS/ONS) 9-character code for the authority
           - name: Country
             label: Country
             widget: select
             required: false
-            hint: Country within the United Kingdom
+            hint: Country within the United Kingdom or Crown Dependencies
             options:
               - England
               - Scotland
@@ -1517,7 +1520,7 @@ collections:
             required: false
             hint: Official Government Statistical Service (GSS/ONS) 9-character code for the local authority
             pattern:
-              - ^[ENSW][0-9]{8}$
+              - ^[ELMNSW][0-9]{8}$
               - Official Government Statistical Service (GSS/ONS) 9-character code for the local authority
           - name: Library name
             label: Library name

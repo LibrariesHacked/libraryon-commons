@@ -1,6 +1,9 @@
+/**
+ * @fileoverview Automated tests for Decap CMS configuration, custom editor widgets, and content schemas.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
-/** @file Validate CMS configuration and the committable content without raw captures. */
 import {
   readFileSync,
   existsSync,
@@ -754,7 +757,7 @@ test('imported archive media is checksummed, deduplicated and within ordinary-Gi
   const report = JSON.parse(readFileSync('migration/import-report.json', 'utf8'))
   const expected = new Map(report.assets.map((asset) => [asset.file, asset.sha256]))
   for (const file of readdirSync('public/uploads/archive')) {
-    const filename = path.join('public/uploads/archive', file)
+    const filename = path.posix.join('public/uploads/archive', file)
     const checksum = digest(readFileSync(filename))
     assert.equal(checksum, expected.get(filename), `Changed imported media: ${file}`)
     assert.ok(!checksums.has(checksum), `Duplicate imported media: ${file}`)

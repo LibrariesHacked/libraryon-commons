@@ -20,7 +20,7 @@
     "Latitude": 53.54762,
     "Longitude": -0.10823,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": null,
     "Type of library": "ICL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.centre4.org.uk/Centre4_Library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

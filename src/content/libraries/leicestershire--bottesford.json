@@ -60,14 +60,5 @@
     "URL": "http://www.bottesfordcommunitylibrary.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_82b44714c5cd9e0cb1f13740"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "http://www.kent.gov.uk/leisure-and-community/libraries",
     "Notes": "Access: Social Story visual aid, helpful for anyone visiting the library with autism or other neuro diverse condition."
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_57fcfad52b1ec1025cbab8f4"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

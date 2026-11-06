@@ -60,14 +60,5 @@
     "URL": "https://www.southampton.gov.uk/libraries/find-library/community-libraries/thornhill-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_0889b54d009a1b0da84cc354"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

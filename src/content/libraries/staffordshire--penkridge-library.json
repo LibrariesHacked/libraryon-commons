@@ -60,15 +60,5 @@
     "URL": "https://www.staffordshire.gov.uk/Libraries/branchlibraries/PenkridgeLibrary/PenkridgeLibrary.aspx",
     "Notes": "Closed Wednesdays and Fridays 13:00 to 14:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_73e5dbb68d86e8e35d95d055",
-        "migration/directory/report.json#review_30a29d592401878512d36988"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

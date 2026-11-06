@@ -60,14 +60,5 @@
     "URL": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/leicester-forest-east-library",
     "Notes": "Previously called Forest East Community Library. Hours closed: W&Th 12:00-14:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_0d79a9f4ee6a24bee73ab892"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

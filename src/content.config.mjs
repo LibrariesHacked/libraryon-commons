@@ -1,3 +1,9 @@
+/**
+ * @fileoverview Astro content collection definitions and Zod schemas for pages, FAQs, resources, sessions, and contributors.
+ */
+
+import { existsSync, readdirSync, readFileSync } from 'node:fs'
+import path from 'node:path'
 import { defineCollection, reference, z } from 'astro:content'
 import { glob } from 'astro/loaders'
 
@@ -82,7 +88,16 @@ const sessions = defineCollection({
 })
 
 const contributors = defineCollection({
-  loader: glob({ pattern: '**/*.json', base: './src/content/contributors' }),
+  loader: async () => {
+    const dir = './src/content/contributors'
+    if (!existsSync(dir)) return []
+    const files = readdirSync(dir).filter((file) => file.endsWith('.json'))
+    return files.map((file) => {
+      const id = path.basename(file, '.json')
+      const data = JSON.parse(readFileSync(path.join(dir, file), 'utf8'))
+      return { id, ...data }
+    })
+  },
   schema: z.object({
     name: z.string(),
     slug: z.string(),

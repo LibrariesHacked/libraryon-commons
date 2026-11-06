@@ -60,14 +60,5 @@
     "URL": "https://www.birmingham.gov.uk/directory_record/5124/bartley_green_library",
     "Notes": "Closed for lunch 1-2pm"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_e5b4b064b405c66f41ffd8cf"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

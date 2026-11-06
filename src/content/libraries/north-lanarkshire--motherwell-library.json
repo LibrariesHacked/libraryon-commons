@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "ML1 3BZ",
     "Unique property reference number": 118073840,
-    "Latitude": 55.7894,
-    "Longitude": -3.994338,
+    "Latitude": 55.789162276502374,
+    "Longitude": -3.99395767556486,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://culturenl.co.uk/libraries/your-library/motherwell-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

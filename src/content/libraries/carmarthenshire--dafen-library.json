@@ -12,19 +12,19 @@
     "Local authority code": "W06000010",
     "Library name": "Dafen Library",
     "Library code": null,
-    "Address 1": "Parish Church Hall; Dafen Llanelli, Wales SA15 8LR",
+    "Address 1": "Parish Church Hall, Bryngwyn Road, Dafen, Llanelli",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "SA14 8LW",
     "Unique property reference number": null,
     "Latitude": 51.701525,
     "Longitude": -4.114221,
-    "Status": "Open",
-    "Statutory": null,
+    "Status": "Closed (permanent)",
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
-    "Year closed": null,
+    "Year closed": 2011,
     "Monday staffed hours": null,
     "Tuesday staffed hours": null,
     "Wednesday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

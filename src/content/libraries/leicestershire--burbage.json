@@ -57,24 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Bookable space; Photocopiers; Children's activities; Computers",
     "Phone number": "0116 3053558",
     "Email address": "mail@naldrett.co.uk",
-    "URL": "burbagecommunitylibrary.org.uk",
+    "URL": "https://burbagecommunitylibrary.org.uk/",
     "Notes": "Hours closed: Th 13:00-16:00"
   },
-  "validation_exceptions": [
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "burbagecommunitylibrary.org.uk",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_4afef58baa73b84d3a4c9b0e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

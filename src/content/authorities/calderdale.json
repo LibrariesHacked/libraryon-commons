@@ -14,13 +14,13 @@
     "Governance model": null,
     "Operating organisation": null,
     "Consortium": null,
-    "Service URL": "https://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries",
+    "Service URL": "https://new.calderdale.gov.uk/libraries",
     "Libraries URL": null,
     "Mobile library URL": null,
     "Home library service URL": null,
     "Childrens service URL": null,
     "Catalogue URL": "https://calderdale.spydus.co.uk",
-    "Join online URL": "https://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/join-library",
+    "Join online URL": "https://new.calderdale.gov.uk/libraries/join-library",
     "Events URL": null,
     "Eventbrite ID": null,
     "Computer access URL": null,
@@ -31,11 +31,11 @@
     "Adult fine": null,
     "Child fine": null,
     "Fine interval": null,
-    "Email address": "libraries@calderdale.gov.uk.",
+    "Email address": "libraries@calderdale.gov.uk",
     "Phone number": "01422 392633",
     "App name": null,
-    "Android app URL": "https://play.google.com/store/apps/details?id=com.civicalld.spydusmobile&gl=GB",
-    "iOS app URL": "https://apps.apple.com/gb/app/spydus-mobile/id657672156",
+    "Android app URL": null,
+    "iOS app URL": null,
     "Twitter URL": "https://twitter.com/cmbclibraries",
     "Facebook URL": "https://www.facebook.com/calderdalelibraries",
     "Instagram URL": "https://www.instagram.com/Calderdalelibraries",
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "libraries@calderdale.gov.uk.",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

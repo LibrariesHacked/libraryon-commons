@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "UB3 1PB",
     "Unique property reference number": 100023415669,
-    "Latitude": 51.497211,
-    "Longitude": -0.436731,
+    "Latitude": 51.4971104643002,
+    "Longitude": -0.4365213576089825,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": 2023,
     "Monday staffed hours": null,
@@ -60,18 +60,5 @@
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

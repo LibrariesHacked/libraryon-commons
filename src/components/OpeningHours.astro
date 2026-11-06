@@ -11,7 +11,7 @@ const hours = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday
 <section class="detail-section">
   <h2>{copy.heading}</h2>
   {hours.some((day) => day.frames.length) ? (
-    <table class="hours">
+    <table class="hours" aria-label={copy.heading}>
       <tbody>
         {hours.map(({ day, frames }) => (
           <tr>

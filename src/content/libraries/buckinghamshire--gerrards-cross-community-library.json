@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "SL9 8EL",
-    "Unique property reference number": null,
-    "Latitude": 51.58781,
-    "Longitude": -0.5508,
+    "Unique property reference number": 100081280943,
+    "Latitude": 51.587806478350295,
+    "Longitude": -0.5508246661034543,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/gerrards-cross-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_182fbab4e9ea86460dad3e29"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

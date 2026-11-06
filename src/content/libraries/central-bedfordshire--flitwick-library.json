@@ -60,14 +60,5 @@
     "URL": "http://virtual-library.culturalservices.net/cgi-bin/vlib.sh",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_a2fbabab2605855c7451bc30"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "G3 7DN",
     "Unique property reference number": 906700091802,
-    "Latitude": 55.86506,
-    "Longitude": -4.27219,
+    "Latitude": 55.865067567563685,
+    "Longitude": -4.272207880110456,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.glasgowlife.org.uk/libraries/the-mitchell-library/Pages/home.aspx",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

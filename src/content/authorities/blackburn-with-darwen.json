@@ -20,7 +20,7 @@
     "Home library service URL": null,
     "Childrens service URL": null,
     "Catalogue URL": "https://bwdlibraries.spydus.co.uk",
-    "Join online URL": "hthttps://bwdlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN",
+    "Join online URL": "https://bwdlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN",
     "Events URL": null,
     "Eventbrite ID": null,
     "Computer access URL": null,
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Join online URL",
-      "code": "uri",
-      "value": "hthttps://bwdlibraries.spydus.co.uk/cgi-bin/spydus.exe/MSGTRN/OPAC/JOIN",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Astro static site build configuration, remark/rehype markdown pipeline, and redirects.
+ */
+
 import { defineConfig } from 'astro/config'
 import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
@@ -18,12 +22,22 @@ export default defineConfig({
   devToolbar: { enabled: false },
   site: process.env.SITE_URL || settings.site.url || undefined,
   base,
-  redirects: Object.fromEntries(settings.redirects.map((redirect) => [redirect.from, redirect.to])),
+  redirects: Object.fromEntries(
+    settings.redirects.map((redirect) => [
+      redirect.from.endsWith('/') ? redirect.from : `${redirect.from}/`,
+      redirect.to
+    ])
+  ),
   markdown: {
     processor: unified({
       remarkPlugins: [remarkDirective, contentDirectives],
       rehypePlugins: [[preservedLinks, { base, rendererDigest }]]
     })
   },
-  trailingSlash: 'ignore'
+  trailingSlash: 'ignore',
+  vite: {
+    build: {
+      chunkSizeWarningLimit: 1200
+    }
+  }
 })

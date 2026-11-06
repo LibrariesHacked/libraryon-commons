@@ -20,7 +20,7 @@
     "Latitude": 51.53639180822631,
     "Longitude": 0.03531799356218812,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://libraries.newham.gov.uk/digital-content/libraries/find-a-library/green-street-library",
     "Notes": "Library has had refurbishment since 2010"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

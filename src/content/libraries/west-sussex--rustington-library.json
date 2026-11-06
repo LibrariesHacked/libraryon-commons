@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/rustington-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_49ed6bc83d7161a4824f8cb2"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

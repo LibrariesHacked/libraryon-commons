@@ -20,7 +20,7 @@
     "Latitude": 53.72656,
     "Longitude": -1.35097,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.wakefield.gov.uk/libraries-and-local-history/your-local-library/castleford-forum-library-and-museum",
     "Notes": "New build 2015 on same site"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "SL8 5SX",
-    "Unique property reference number": null,
-    "Latitude": 51.5789,
-    "Longitude": -0.71092,
+    "Unique property reference number": 100081279874,
+    "Latitude": 51.57952781745275,
+    "Longitude": -0.7106361833795442,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://bourneendcommunitylibrary.weebly.com/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_7ad94342337a9a31ef2f507c"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

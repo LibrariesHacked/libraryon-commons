@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "SE21 8QR",
     "Unique property reference number": 200003436418,
-    "Latitude": 51.43056,
-    "Longitude": -0.08055,
+    "Latitude": 51.430442069242964,
+    "Longitude": -0.08172948297813865,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.southwark.gov.uk/culture-and-sport/libraries/find-library/kingswood-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

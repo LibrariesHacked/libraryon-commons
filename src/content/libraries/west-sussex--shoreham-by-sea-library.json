@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/shoreham-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_58b76a5baac55398ee77caa1"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

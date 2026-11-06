@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "NE2 2DL",
     "Unique property reference number": 4510137552,
-    "Latitude": 54.99351,
-    "Longitude": -1.6063,
+    "Latitude": 54.993257473254054,
+    "Longitude": -1.6063996417608915,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": null,
     "Type of library": "ICL",
     "Year opened": 2013,
@@ -60,12 +60,5 @@
     "URL": "http://jesmondlibrary.org",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

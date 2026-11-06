@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": "Closed Lunchtime Fri 1.00-2.00, Included in Carlton hrs total"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_7223dab9901e70a0f6328daf"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

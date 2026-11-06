@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "G67 1EE",
     "Unique property reference number": 118143429,
-    "Latitude": 55.94691,
-    "Longitude": -3.98985,
+    "Latitude": 55.94691247978242,
+    "Longitude": -3.989856570933944,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://culturenl.co.uk/libraries/your-library/cumbernauld-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

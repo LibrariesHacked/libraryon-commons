@@ -60,14 +60,5 @@
     "URL": "http://www.southampton.gov.uk/libraries",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_1bc8ac9566ad374358ac104a"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

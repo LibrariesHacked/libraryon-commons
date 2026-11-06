@@ -60,14 +60,5 @@
     "URL": "http://new.shropshire.gov.uk/libraries/find-a-library/wem-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_729c99ea20001ea451dd5d6a"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Completeness, integrity, and media resolution auditor for the preserved web archive.
+ */
+
 import { readFile, readdir, mkdir, writeFile, appendFile } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -39,6 +43,11 @@ const normalURL = (value) => {
   return url.href.replace(/\/$/, '')
 }
 
+/**
+ * Audit the archived preservation data, verifying pages, datasets, assets, and images.
+ * @param {{root?: string, repair?: boolean}} [options={}] - Audit options.
+ * @returns {Promise<object>} Audit report containing findings and stats.
+ */
 export async function auditArchive({ root = process.cwd(), repair = false } = {}) {
   const absolute = (file) => path.join(root, file)
   const json = async (file) => JSON.parse(await readFile(absolute(file), 'utf8'))

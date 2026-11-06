@@ -1,11 +1,18 @@
 ---
 import { sitePath } from '../lib/site.mjs'
-const { image } = Astro.props
+
+const { image, loading = 'lazy', priority = false } = Astro.props
 ---
 
 {image && (
   <figure>
-    <img src={sitePath(image.image)} alt={image.alt} loading="lazy" />
+    <img
+      src={sitePath(image.image)}
+      alt={image.alt}
+      loading={priority ? 'eager' : loading}
+      fetchpriority={priority ? 'high' : 'auto'}
+      decoding="async"
+    />
     {image.caption && <figcaption>{image.caption}</figcaption>}
     {image.credit && <small>{image.credit}</small>}
   </figure>

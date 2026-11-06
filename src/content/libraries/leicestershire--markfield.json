@@ -60,14 +60,5 @@
     "URL": "http://www.markfieldcommunitylibrary.co.uk/",
     "Notes": "Hours closed: M&Tu 10:00-13:00 and 15:00-18:00; Th 10:00-12:30 and 15:00-18:00; F 10:00-13:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_a080756a5a97e1ebde467f3b"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

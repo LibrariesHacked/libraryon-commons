@@ -20,7 +20,7 @@
     "Latitude": 54.350233,
     "Longitude": -6.284935,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -38,7 +38,7 @@
     "Thursday unstaffed hours": "07:30-09:30",
     "Friday unstaffed hours": "07:30-09:30",
     "Saturday unstaffed hours": "07:30-09:30",
-    "Sunday unstaffed hours": null,
+    "Sunday unstaffed hours": "13:00-22:00",
     "Special hours": null,
     "Weekly staffed hours": null,
     "Weekly total hours": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.librariesni.org.uk/libraries/county-down/banbridge-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "opening-hours",
-      "reason": "Invalid opening hours: 13:00-10:00",
-      "audit_refs": [
-        "migration/directory/report.json#review_7705531dddf7884d9fc4bf8d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

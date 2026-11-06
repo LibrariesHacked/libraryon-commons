@@ -20,7 +20,7 @@
     "Latitude": 54.55427,
     "Longitude": -0.88799,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://libraries.redcar-cleveland.gov.uk/-/loftus-library#/?location=Loftus%20Library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_c5570ab22f0fa08bafb92cd6"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

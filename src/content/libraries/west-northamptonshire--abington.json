@@ -20,7 +20,7 @@
     "Latitude": 52.25343,
     "Longitude": -0.86139,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www3.northamptonshire.gov.uk/councilservices/library-service/visiting-your-library/list-of-libraries/Pages/default.aspx",
     "Notes": "Expected to become CRL by 01 April 2020. Library opens first Saturday of month only. Library is open 22 hours in the weeks when not open on a Saturday"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

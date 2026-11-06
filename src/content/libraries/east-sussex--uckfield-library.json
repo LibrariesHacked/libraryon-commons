@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "TN22 1AR",
     "Unique property reference number": 100062636531,
-    "Latitude": 50.972293,
-    "Longitude": 0.096548,
+    "Latitude": 50.97214929282467,
+    "Longitude": 0.09641017502110234,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Photocopiers; BFI Replay; Family history; Computers; Findmypast; British Newspaper Archive",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/uckfield",
     "Notes": "Major refurb planned 2020"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

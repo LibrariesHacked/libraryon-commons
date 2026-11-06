@@ -60,14 +60,5 @@
     "URL": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/braunstone-town-library",
     "Notes": "Hours closed: W&F 12:00-14:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_b18647bc64a295df2ea6dcdf"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

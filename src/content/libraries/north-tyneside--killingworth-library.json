@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "NE12 6SS",
-    "Unique property reference number": 47102521,
+    "Unique property reference number": null,
     "Latitude": 55.035523,
     "Longitude": -1.564681,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": 1999,
@@ -60,12 +60,5 @@
     "URL": "https://my.northtyneside.gov.uk/category/1706/killingworth-library",
     "Notes": "BSL provided by video relay: https://my.northtyneside.gov.uk/page/26639/video-relay-service-british-sign-language-users"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

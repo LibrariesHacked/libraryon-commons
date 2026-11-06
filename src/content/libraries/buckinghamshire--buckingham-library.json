@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "MK18 1JP",
-    "Unique property reference number": null,
-    "Latitude": 52.000138,
-    "Longitude": -0.986232,
+    "Unique property reference number": 766241904,
+    "Latitude": 52.00022071374721,
+    "Longitude": -0.9861625021164265,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/buckingham-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_e2719c4b71c255466dfdf893"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 51.316659,
     "Longitude": -2.210219,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://apps.wiltshire.gov.uk/librariesinformation/Library/Index/29?isListPage=True",
     "Notes": "New library combining both lending & reference services"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

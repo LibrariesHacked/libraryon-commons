@@ -60,15 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/farnham-common-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_59d9ec88042d226cdf601c75",
-        "migration/directory/report.json#review_9845eed63acb5ba9cd53808e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 55.90182701051356,
     "Longitude": -3.5459990517350377,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.westlothian.gov.uk/article/33625/Carmondean-Library-Livingston-North-Partnership-Centre-Carmondean-EH54-8PT",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

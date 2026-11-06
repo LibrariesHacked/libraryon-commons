@@ -60,14 +60,5 @@
     "URL": "https://discover.librariesunlimited.org.uk/-/bovey-tracey-library#/?location=Bovey%20Tracey%20Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_251204304d327125cc4b4cfc"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

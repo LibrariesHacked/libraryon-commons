@@ -1,19 +1,24 @@
 ---
+import { existsSync, readdirSync } from 'node:fs'
 import { getCollection, getEntries } from 'astro:content'
 
 import Breadcrumbs from '../components/Breadcrumbs.astro'
 import SitemapTree from '../components/SitemapTree.astro'
 import SiteLayout from '../layouts/SiteLayout.astro'
-import { authorities, libraries, libraryPath } from '../lib/directory.mjs'
+import { authorities, libraries } from '../lib/directory.mjs'
 import { isPublishedPage, articleTitle, settings, sitePath } from '../lib/site.mjs'
 import { buildPageTree } from '../lib/sitemap.mjs'
+
+const hasContributors =
+  existsSync('./src/content/contributors') &&
+  readdirSync('./src/content/contributors').some((file) => file.endsWith('.json'))
 
 const [pageEntries, sessions, resources, faqs, contributors] = await Promise.all([
   getCollection('pages'),
   getCollection('sessions'),
   getCollection('resources'),
   getCollection('faqs'),
-  getCollection('contributors')
+  hasContributors ? getCollection('contributors') : Promise.resolve([])
 ])
 const pages = pageEntries.filter(
   (entry) => isPublishedPage(entry) && entry.data.path !== '/libraries'
@@ -161,7 +166,7 @@ const copy = settings.ui.sitemap
               <ul>
                 {authority.entries.map((library) => (
                   <li>
-                    <a href={sitePath(libraryPath(library))}>{library.name}</a>
+                    <a href={sitePath(library.url)}>{library.name}</a>
                   </li>
                 ))}
               </ul>

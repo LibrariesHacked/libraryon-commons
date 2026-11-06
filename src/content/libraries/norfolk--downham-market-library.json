@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/libraries-local-history-and-archives/libraries",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_e07920ae117eac2c69d9f133"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

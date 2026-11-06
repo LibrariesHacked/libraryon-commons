@@ -20,7 +20,7 @@
     "Latitude": 54.980169,
     "Longitude": -1.613,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": null,
     "Type of library": "ICL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": null,
     "Notes": "This is an Independent Library and has never been the responsibility of Newcastle City Council, but it is a facility available to our residents"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

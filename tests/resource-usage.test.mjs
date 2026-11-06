@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for resource usage tracking across published content and conference sessions.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { resourceUsage } from '../src/lib/resource-usage.mjs'

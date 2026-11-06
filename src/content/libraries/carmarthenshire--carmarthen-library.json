@@ -15,12 +15,12 @@
     "Address 1": "St.Peters Street, Carmarthen, SA31 1LN",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "SA31 1LN",
     "Unique property reference number": null,
     "Latitude": 51.858362,
     "Longitude": -4.302659,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "http://www.carmarthenshire.gov.wales/home/residents/libraries-archives/find-a-library/carmarthen-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

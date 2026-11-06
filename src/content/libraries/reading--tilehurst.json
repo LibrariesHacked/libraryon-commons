@@ -60,14 +60,5 @@
     "URL": "https://www.reading.gov.uk/leisure/libraries/all-libraries/tilehurst-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_ba3c2e2e3fc75b89909695d4"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

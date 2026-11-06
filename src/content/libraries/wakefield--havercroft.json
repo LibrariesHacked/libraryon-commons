@@ -60,15 +60,5 @@
     "URL": null,
     "Notes": "Former library now run as a community library within a local community centre Mulberry Place, Ryhill UPRN 63162075 WF4 2BD Wakefield and the original library building is now a day nursery."
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_22ce6388467eff6e1f37c990",
-        "migration/directory/report.json#review_c6e15961c40acf671c603dc2"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 55.94270512505713,
     "Longitude": -3.0563696736465715,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.eastlothian.gov.uk/libraries-leisure-and-tourism/libraries/east-lothian-libraries/musselburgh-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

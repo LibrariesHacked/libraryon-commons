@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "M19 3BP",
     "Unique property reference number": 100012680102,
-    "Latitude": 53.44618,
-    "Longitude": -2.19202,
+    "Latitude": 53.44616478355852,
+    "Longitude": -2.1920192798868374,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 2016,
@@ -60,12 +60,5 @@
     "URL": "https://www.manchester.gov.uk/directory_record/470326/arcadia_library_and_leisure_centre_levenshulme/category/1957/all_libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

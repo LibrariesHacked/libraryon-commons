@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP11 2DH",
-    "Unique property reference number": null,
-    "Latitude": 51.63054,
-    "Longitude": -0.75516,
+    "Unique property reference number": 10033197166,
+    "Latitude": 51.63053347787721,
+    "Longitude": -0.7551795983932457,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/high-wycombe-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_66f76f31a2831004714df847"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

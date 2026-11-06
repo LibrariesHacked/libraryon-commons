@@ -60,14 +60,5 @@
     "URL": "https://www.warwickshire.gov.uk/directory-record/606/kineton-community-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_b7d2d6877b4158c44b48febf"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

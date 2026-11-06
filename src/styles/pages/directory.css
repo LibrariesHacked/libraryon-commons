@@ -223,10 +223,14 @@
   display: grid;
   gap: var(--size-4);
 }
-.open-now-row {
+.open-now-row,
+.search-options-row {
+  display: grid;
+  gap: 0.75rem;
   padding-bottom: 0.25rem;
 }
-.open-now-toggle {
+.open-now-toggle,
+.search-option-toggle {
   display: flex;
   align-items: center;
   gap: 0.85rem;
@@ -234,12 +238,14 @@
   font-size: 0.88rem;
   font-weight: var(--font-weight-6);
 }
-.open-now-divider {
+.open-now-divider,
+.search-option-divider {
   flex: 1;
   height: 1px;
   background: var(--brand-rose);
 }
-.open-now-toggle input[type='checkbox'] {
+.open-now-toggle input[type='checkbox'],
+.search-option-toggle input[type='checkbox'] {
   width: 1.25rem;
   height: 1.25rem;
   min-height: 0;

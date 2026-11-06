@@ -16,13 +16,13 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "DN31 1HG",
-    "Unique property reference number": null,
-    "Latitude": 53.565564,
-    "Longitude": -0.083646,
+    "Unique property reference number": 11069903,
+    "Latitude": 53.56539464063894,
+    "Longitude": -0.08355785238984674,
     "Status": "Closed (temporary)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,21 +60,5 @@
     "URL": "https://lincsinspire.com/libraries-archives/branches/grimsby-central-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_08342ba173158658d900c5b8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

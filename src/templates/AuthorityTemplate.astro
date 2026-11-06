@@ -6,9 +6,11 @@ import DirectoryProvenance from '../components/DirectoryProvenance.astro'
 import LibraryMap from '../components/LibraryMap.astro'
 import LibrarySearch from '../components/LibrarySearch.astro'
 import LibraryDownloads from '../components/LibraryDownloads.astro'
+import SocialLinks from '../components/SocialLinks.astro'
+import TagListSection from '../components/TagListSection.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
-import { libraryPath, libraryAddress, collectValues, facilityLabel } from '../lib/directory.mjs'
-import { settings, sitePath, safeURL } from '../lib/site.mjs'
+import { collectValues, facilityLabel } from '../lib/directory.mjs'
+import { settings, sitePath } from '../lib/site.mjs'
 const { authority, entries } = Astro.props
 const copy = settings.ui.directory
 const services = collectValues(entries, (library) => library.services?.map((item) => item.service))
@@ -21,42 +23,27 @@ const accessibility = collectValues(entries, (library) => library.accessibility)
   description={`${copy.authority_description_prefix} ${authority.name}.`}
 >
   <LibrarySearch />
-  <LibraryDownloads entries={entries} authoritySlug={authority.slug} />
   <h2>{copy.libraries_heading}</h2>
   <LibraryMap libraries={entries} label={`Libraries in ${authority.name}`} />
   <ul class="library-results">
     {entries.map((library) => (
       <li>
         <h3>
-          <a href={sitePath(libraryPath(library))}>
+          <a href={sitePath(library.url)}>
             {library.name} <ArrowUpRight size={17} aria-hidden="true" />
           </a>
         </h3>
-        <p>{libraryAddress(library)}</p>
+        <p>{library.address}</p>
         {library.permanentlyClosed && <p>{copy.marked_permanently_closed}</p>}
       </li>
     ))}
   </ul>
-  {services.length > 0 && (
-    <section class="detail-section">
-      <h2>{copy.services_heading}</h2>
-      <ul class="tags">
-        {services.map((service) => (
-          <li>{service}</li>
-        ))}
-      </ul>
-    </section>
-  )}
-  {accessibility.length > 0 && (
-    <section class="detail-section">
-      <h2>{copy.accessibility}</h2>
-      <ul class="tags">
-        {accessibility.map((value) => (
-          <li>{facilityLabel(value)}</li>
-        ))}
-      </ul>
-    </section>
-  )}
+  <TagListSection heading={copy.services_heading} items={services} />
+  <TagListSection
+    heading={copy.accessibility}
+    items={accessibility.map((value) => facilityLabel(value))}
+  />
+  <LibraryDownloads entries={entries} authoritySlug={authority.slug} />
   <Fragment slot="aside">
     <section class="detail-section">
       <h2>{copy.library_service}</h2>
@@ -68,22 +55,7 @@ const accessibility = collectValues(entries, (library) => library.accessibility)
         <p>{authority.about}</p>
       </section>
     )}
-    {authority.social?.length > 0 && (
-      <section class="detail-section">
-        <h2>{copy.connect}</h2>
-        <ul class="contact-list">
-          {authority.social
-            .filter((link) => safeURL(link.url))
-            .map((link) => (
-              <li>
-                <a href={safeURL(link.url)}>
-                  {link.channel} <ArrowUpRight size={15} aria-hidden="true" />
-                </a>
-              </li>
-            ))}
-        </ul>
-      </section>
-    )}
+    <SocialLinks heading={copy.connect} links={authority.social} />
     <DirectoryProvenance record={authority} />
   </Fragment>
 </DirectoryLayout>

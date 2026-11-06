@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "BS32 9BS",
     "Unique property reference number": 642613,
-    "Latitude": 51.535947,
-    "Longitude": -2.545755,
+    "Latitude": 51.536205363982866,
+    "Longitude": -2.5458314913916547,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -32,7 +32,7 @@
     "Friday staffed hours": "10:00-17:00",
     "Saturday staffed hours": "09:30-12:30",
     "Sunday staffed hours": null,
-    "Monday unstaffed hours": null,
+    "Monday unstaffed hours": "08:00-10:00,17:15-21:45",
     "Tuesday unstaffed hours": "08:00-10:00,17:15-21:45",
     "Wednesday unstaffed hours": "08:00-21:45",
     "Thursday unstaffed hours": "08:00-10:00,17:15-21:45",
@@ -60,14 +60,5 @@
     "URL": "https://beta.southglos.gov.uk/bradley-stoke-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "opening-hours",
-      "reason": "Invalid opening hours: 08:00-10:00,17:15-09:45",
-      "audit_refs": [
-        "migration/directory/report.json#review_6135b03b6d50b61f7d37c3b9"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

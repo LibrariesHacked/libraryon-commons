@@ -15,14 +15,14 @@
     "Address 1": "Blackwood & Kirkmuirhill Community Wing, Carlisle Rd, Blackwood, Kirkmuirhill, Lanark, ML11 9SB",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "ML11 9SB",
     "Unique property reference number": null,
     "Latitude": 55.667548,
     "Longitude": -3.916802,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:00-21:00",
@@ -60,24 +60,5 @@
     "URL": "http://www.slleisureandculture.co.uk/info/453/blackwood_and_kirkmuirhill",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

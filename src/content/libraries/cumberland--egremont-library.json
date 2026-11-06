@@ -20,7 +20,7 @@
     "Latitude": 54.48437,
     "Longitude": -3.52864,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive; Findmypast; BFI Replay; Family history; Computers; Photocopiers; Hobby and interest groups; Children's activities; Digital skills sessions",
     "Phone number": "01946 505585",
-    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "Email address": "libraries@cumberland.gov.uk",
     "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/egremont-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://cumberland.gov.uk/contact-a-library",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

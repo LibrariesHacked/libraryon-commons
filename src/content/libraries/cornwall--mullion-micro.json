@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "TR12 7HN",
     "Unique property reference number": 100041206681,
-    "Latitude": 50.028017,
-    "Longitude": -5.242785,
+    "Latitude": 50.02801328847903,
+    "Longitude": -5.24283143438976,
     "Status": "Closed (permanent)",
-    "Statutory": "No",
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL-",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi",
     "Phone number": null,
-    "Email address": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
+    "Email address": "mobile@cornwall.gov.uk",
     "URL": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "Mobile and Micro Library <mobile@cornwall.gov.uk>",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

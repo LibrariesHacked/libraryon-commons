@@ -20,9 +20,9 @@
     "Latitude": 57.074956,
     "Longitude": -2.793664,
     "Status": "Closed (temporary)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:30-12:00,14:00-18:00",
@@ -60,18 +60,5 @@
     "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/aboyne-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

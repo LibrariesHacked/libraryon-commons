@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": "Mini Refurbishment 2017; Closed lunchtimes Tues, Thurs & Fri 12.30-1.30"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_4f1f85c8bf599f38b10b9c42"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

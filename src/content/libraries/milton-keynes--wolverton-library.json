@@ -60,14 +60,5 @@
     "URL": "https://www.milton-keynes.gov.uk/libraries/nearest-library/wolverton-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_44e84c5d3222e747a2624a1f"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "NN17 1QG",
     "Unique property reference number": 10024042370,
-    "Latitude": 52.487336,
-    "Longitude": -0.704098,
+    "Latitude": 52.48729209076653,
+    "Longitude": -0.7044494278574269,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 2010,
@@ -60,12 +60,5 @@
     "URL": "https://www.northnorthants.gov.uk/our-libraries/corby-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

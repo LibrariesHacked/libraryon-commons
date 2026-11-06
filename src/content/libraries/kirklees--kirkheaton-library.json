@@ -60,15 +60,5 @@
     "URL": "https://www.kirklees.gov.uk/Libraries",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_4b9c263712db90c6a3883f8d",
-        "migration/directory/report.json#review_e0bc20968efd1bf66e4ce431"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,15 +60,5 @@
     "URL": "https://www.southchingfordlibrary.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_b33162eabbeda1f9f7c6f4d2",
-        "migration/directory/report.json#review_4ecd24518e7fc892b9fd7a01"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

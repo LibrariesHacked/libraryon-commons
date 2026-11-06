@@ -60,14 +60,5 @@
     "URL": "https://discover.librariesunlimited.org.uk/-/princetown-library#/?location=Princetown%20Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_79f3d86c5bdeabe29bcf17c4"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "BN11 1HD",
-    "Unique property reference number": null,
-    "Latitude": 50.814021,
-    "Longitude": -0.372306,
+    "Unique property reference number": 10093718727,
+    "Latitude": 50.81418122185571,
+    "Longitude": -0.37236063749066367,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/worthing-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_1122170e91fab080b904164e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

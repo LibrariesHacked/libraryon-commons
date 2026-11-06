@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "G73 2HB",
     "Unique property reference number": 484129723,
-    "Latitude": 55.82867,
-    "Longitude": -4.21359,
+    "Latitude": 55.828676566774384,
+    "Longitude": -4.213608022746805,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "http://www.slleisureandculture.co.uk/info/92/rutherglen_library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

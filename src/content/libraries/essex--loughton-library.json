@@ -20,7 +20,7 @@
     "Latitude": 51.64879,
     "Longitude": 0.05998,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://libraries.essex.gov.uk/digital-content/our-library-locations-and-opening-times/loughton-library",
     "Notes": "3 separate partners"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

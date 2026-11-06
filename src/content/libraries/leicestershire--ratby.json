@@ -57,24 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Digital lending; Children's activities; Hobby and interest groups; Photocopiers; Computers; Cafe; Bookable space",
     "Phone number": "0116 239 3157",
     "Email address": "info@ratbylibrary.org.uk",
-    "URL": "ratbylibrary.org.uk",
+    "URL": "https://ratbylibrary.org.uk/",
     "Notes": "Hours closed: M-F 12:00-14:00"
   },
-  "validation_exceptions": [
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "ratbylibrary.org.uk",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_e51ec43f29349893b777886a"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

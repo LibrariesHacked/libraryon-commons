@@ -20,9 +20,9 @@
     "Latitude": 51.6155,
     "Longitude": -0.13109,
     "Status": "Closed (permanent)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -57,21 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; Findmypast",
     "Phone number": null,
     "Email address": "libraries@enfield.gov.uk",
-    "URL": "https://libraries.enfield.gov.uk/client/en_GB/enfield",
+    "URL": "https://www.enfield.gov.uk/services/libraries-archive-and-community-hubs/contact-us-and-opening-hours",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

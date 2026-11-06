@@ -60,14 +60,5 @@
     "URL": "https://www.cambridgeshire.gov.uk/directory/listings/chatteris-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_f560a80ce10499ddc586e118"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

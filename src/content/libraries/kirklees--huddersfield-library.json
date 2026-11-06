@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "HD1 2EY",
     "Unique property reference number": 83240942,
-    "Latitude": 53.644075,
-    "Longitude": -1.786224,
+    "Latitude": 53.64433268882725,
+    "Longitude": -1.7860905053173262,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": 2022,
@@ -60,12 +60,5 @@
     "URL": "https://www.kirklees.gov.uk/Libraries",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

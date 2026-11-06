@@ -16,13 +16,13 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "GL50 3JT",
-    "Unique property reference number": 100121229727,
+    "Unique property reference number": null,
     "Latitude": 51.901315,
     "Longitude": -2.078182,
     "Status": "Closed (temporary)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:00-19:00",
@@ -60,12 +60,5 @@
     "URL": "https://gloslibraries.uk/library/cheltenham-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -20,7 +20,7 @@
     "Latitude": 54.66073,
     "Longitude": -1.23723,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://hartlepool.spydus.co.uk/cgi-bin/spydus.exe/MSGTRNGEN/WPAC/LOCATIONS?HOMEPRMS=UD_LOCATIONS",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

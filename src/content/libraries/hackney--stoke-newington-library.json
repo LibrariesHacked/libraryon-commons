@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "N16 0JS",
     "Unique property reference number": 10008300603,
-    "Latitude": 51.56162,
-    "Longitude": -0.0828,
+    "Latitude": 51.56161697717575,
+    "Longitude": -0.08282204409898968,
     "Status": "Closed (temporary)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": "https://hackney.gov.uk/stoke-newington-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40239/Thetford-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_1f731abe647f0de4328b6fc3"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Review worklist aggregation and evidence linking for community maintainers.
+ */
+
 import { readdirSync, readFileSync } from 'node:fs'
 import { validateRecords } from './directory-schema.mjs'
 import audit from '../../migration/directory/report.json' with { type: 'json' }

@@ -60,14 +60,5 @@
     "URL": "https://libraries.havering.gov.uk/digital-content/libraries/find-a-library/rainham-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_7441696b178245f3cba8aea4"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

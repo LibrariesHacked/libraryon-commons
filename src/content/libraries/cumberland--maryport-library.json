@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Findmypast; British Newspaper Archive; Computers; Family history; Hobby and interest groups; Children's activities",
     "Phone number": "01900 706135",
-    "Email address": "https://cumberland.gov.uk/contact-a-library",
+    "Email address": "libraries@cumberland.gov.uk",
     "URL": "https://www.cumberland.gov.uk/libraries-and-archives/find-library-near-you/maryport-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://cumberland.gov.uk/contact-a-library",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

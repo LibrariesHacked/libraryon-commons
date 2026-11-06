@@ -20,7 +20,7 @@
     "Latitude": 51.49767,
     "Longitude": 0.12297,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": 2023,
@@ -60,21 +60,5 @@
     "URL": "https://arena.yourlondonlibrary.net/web/bexley/-/thamesmead-library#/?location=Thamesmead%20Library",
     "Notes": "Relocation to new building planned for 2021"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_6a40a5fa815e1d075de409c0"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

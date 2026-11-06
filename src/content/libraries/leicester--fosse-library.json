@@ -60,14 +60,5 @@
     "URL": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/find-a-library/fosse-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_7191a5baeea4912af30ab7fe"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

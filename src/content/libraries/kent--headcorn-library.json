@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=URzb3nWPaMQ&communitychannel=9",
     "Notes": "No public toilet"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_09f6dd09ad5f1758a28e4713"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

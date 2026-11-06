@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "TN40 1DY",
     "Unique property reference number": 100062588403,
-    "Latitude": 50.84015,
-    "Longitude": 0.47028,
+    "Latitude": 50.84021635026012,
+    "Longitude": 0.47008365417973125,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Family history; Photocopiers; BFI Replay; Findmypast; British Newspaper Archive",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/bexhill",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

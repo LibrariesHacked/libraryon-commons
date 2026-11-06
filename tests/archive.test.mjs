@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for web archive collection, media discovery, and metadata parsing.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import sharp from 'sharp'

@@ -57,24 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi; Digital lending; BFI Replay; Children's activities",
     "Phone number": "01332 805 009",
     "Email address": "admin@castledoningtonlibrary.org",
-    "URL": "castledoningtonlibrary.org",
+    "URL": "https://castledoningtonlibrary.org/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "castledoningtonlibrary.org",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_cce066964eb16ee629490033"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

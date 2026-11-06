@@ -60,14 +60,5 @@
     "URL": "https://www.lincolnshire.gov.uk/findalibrary",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_1986d398f4ce5fe3b38dd039"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

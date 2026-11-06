@@ -60,14 +60,5 @@
     "URL": "https://www.lbhf.gov.uk/libraries/find-your-library/shepherds-bush-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_ee2edb02b873be73d323faa7"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -31,7 +31,7 @@
     "Adult fine": null,
     "Child fine": null,
     "Fine interval": null,
-    "Email address": "https://libraries.enfield.gov.uk/contact-us",
+    "Email address": "libraries@enfield.gov.uk",
     "Phone number": "020 8379 1000",
     "App name": null,
     "Android app URL": "https://play.google.com/store/apps/details?id=uk.co.solus.LLC",
@@ -55,12 +55,5 @@
     "Green library": null,
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://libraries.enfield.gov.uk/contact-us",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

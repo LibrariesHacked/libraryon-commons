@@ -60,14 +60,5 @@
     "URL": "https://www.warwickshire.gov.uk/directory-record/594/bedworth-library-and-information-centre",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_e926535314d5158f0c942024"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

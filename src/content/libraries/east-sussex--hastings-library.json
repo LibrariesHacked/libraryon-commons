@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "TN34 1HE",
     "Unique property reference number": 100062570460,
-    "Latitude": 50.85523,
-    "Longitude": 0.57628,
+    "Latitude": 50.85523366474922,
+    "Longitude": 0.5762540814553622,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": "Yes",
     "Facilities and services": "Books; Printing; Free Wi-Fi; Business support; BFI Replay; Bookable space; Computers; Photocopiers; Findmypast; British Newspaper Archive",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/hastings",
     "Notes": "Complete refurb in 2017/18"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

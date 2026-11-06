@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "BN7 2LZ",
     "Unique property reference number": 10033256035,
-    "Latitude": 50.87299,
-    "Longitude": 0.01321,
+    "Latitude": 50.87289518904709,
+    "Longitude": 0.013503226367953525,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; BFI Replay; British Newspaper Archive; Findmypast",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/lewes",
     "Notes": "Major refurb in 2019"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

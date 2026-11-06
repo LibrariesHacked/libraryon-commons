@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP5 2JD",
-    "Unique property reference number": null,
-    "Latitude": 51.706647,
-    "Longitude": -0.613324,
+    "Unique property reference number": 100081185048,
+    "Latitude": 51.706726138410126,
+    "Longitude": -0.6135737715196571,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/chesham-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_8886e73b47b9254cebba011e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

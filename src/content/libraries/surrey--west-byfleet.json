@@ -20,7 +20,7 @@
     "Latitude": 51.337733,
     "Longitude": -0.504433,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.surreycc.gov.uk/libraries/your-library/find-your-nearest/west-byfleet",
     "Notes": "Closed 1-2pm Tue/Thu/Fri"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

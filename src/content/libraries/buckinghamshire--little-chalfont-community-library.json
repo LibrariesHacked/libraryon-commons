@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP7 9QA",
-    "Unique property reference number": null,
-    "Latitude": 51.666318,
-    "Longitude": -0.566367,
+    "Unique property reference number": 100081186808,
+    "Latitude": 51.666419799552365,
+    "Longitude": -0.5666963888140744,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.littlechalfontlibrary.org.uk/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_e5ca95eaa29691d853e1bb0e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

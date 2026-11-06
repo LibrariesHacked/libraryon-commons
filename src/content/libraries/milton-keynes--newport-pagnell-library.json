@@ -60,14 +60,5 @@
     "URL": "https://www.milton-keynes.gov.uk/libraries/nearest-library/newport-pagnell-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_a7fda111f2f2aca2185871bc"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

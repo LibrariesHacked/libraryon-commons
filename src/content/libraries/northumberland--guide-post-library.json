@@ -12,15 +12,15 @@
     "Local authority code": "E06000057",
     "Library name": "Guide Post Library",
     "Library code": null,
-    "Address 1": "Cleaswell Hill, Choppington Northumberland NE62 5DW",
+    "Address 1": "Cleaswell Hill, Choppington, Northumberland",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "NE62 5BZ",
+    "Postcode": "NE62 5DW",
     "Unique property reference number": null,
     "Latitude": 55.15927,
     "Longitude": -1.60255,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://northumberland.spydus.co.uk/cgi-bin/spydus.exe/ENQ/WPAC/GENENQ/?LOCX=GUI",
     "Notes": "Lunchtime closure"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_586960a7372a84e6dba2cf4d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

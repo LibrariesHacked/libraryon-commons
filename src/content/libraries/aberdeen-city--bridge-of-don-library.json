@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "AB22 8HH",
     "Unique property reference number": 9051102266,
-    "Latitude": 57.18124,
-    "Longitude": -2.09997,
+    "Latitude": 57.1815109286215,
+    "Longitude": -2.1000929355803115,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.aberdeencity.gov.uk/services/libraries-and-archives/find-your-local-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

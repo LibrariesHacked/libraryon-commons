@@ -20,7 +20,7 @@
     "Latitude": 53.75387,
     "Longitude": -0.25912,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CL",
     "Year opened": 2013,
@@ -60,12 +60,5 @@
     "URL": "https://www.hulllibraries.co.uk/local-library/waudby-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

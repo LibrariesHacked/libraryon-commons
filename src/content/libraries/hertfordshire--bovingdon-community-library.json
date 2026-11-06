@@ -20,7 +20,7 @@
     "Latitude": 51.7234,
     "Longitude": -0.53249,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-opening-hours/bovingdon-community-library.aspx",
     "Notes": "Supported Self Service 09:00 - 11:00 Mon TTO"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -12,15 +12,15 @@
     "Local authority code": "E08000008",
     "Library name": "Ashton Library",
     "Library code": null,
-    "Address 1": "Tameside One, Market Place, Ashton, Greater Manchester, OL6 6BH",
+    "Address 1": "Tameside One, Market Place, Ashton, Greater Manchester",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "OL6 7JX",
+    "Postcode": "OL6 6BH",
     "Unique property reference number": null,
     "Latitude": 53.48973,
     "Longitude": -2.09453,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.tameside.gov.uk/libraries/openingtimes#Ashton",
     "Notes": "Tameside Central Library was relocated into the new Council headqaurters building in Mar 2019, and was renamed Ashton Library"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_a3ca3be9a09da3806dec1b5c"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

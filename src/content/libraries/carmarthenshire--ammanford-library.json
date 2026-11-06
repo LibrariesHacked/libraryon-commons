@@ -20,7 +20,7 @@
     "Latitude": 51.79268,
     "Longitude": -3.98889,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -29,7 +29,7 @@
     "Tuesday staffed hours": "09:00-18:00",
     "Wednesday staffed hours": "09:00-18:00",
     "Thursday staffed hours": "09:00-19:00",
-    "Friday staffed hours": null,
+    "Friday staffed hours": "09:00-18:00",
     "Saturday staffed hours": "09:00-17:00",
     "Sunday staffed hours": null,
     "Monday unstaffed hours": null,
@@ -60,21 +60,5 @@
     "URL": "http://www.carmarthenshire.gov.wales/home/residents/libraries-archives/find-a-library/ammanford-library.aspx#.Wku34o_XLIU",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "opening-hours",
-      "reason": "Invalid opening hours: 09:00-08:00",
-      "audit_refs": [
-        "migration/directory/report.json#review_76c0231732097adeb605e3d1"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

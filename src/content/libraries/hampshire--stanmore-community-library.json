@@ -16,13 +16,13 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "SO22 4EJ",
-    "Unique property reference number": 100062647752,
+    "Unique property reference number": null,
     "Latitude": 51.05179,
     "Longitude": -1.33668,
     "Status": "Closed (permanent)",
     "Statutory": "No",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "ICL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,12 +60,5 @@
     "URL": null,
     "Notes": "Library left LA control in 2017 and is independently run"
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

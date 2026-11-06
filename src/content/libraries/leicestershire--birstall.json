@@ -60,14 +60,5 @@
     "URL": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/birstall-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_53a44c3de9aa3cc8a453c36d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

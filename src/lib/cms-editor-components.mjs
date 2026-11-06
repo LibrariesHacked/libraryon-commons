@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Decap CMS custom editor components for rich editorial directives and components.
+ */
+
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkDirective from 'remark-directive'
@@ -90,6 +94,11 @@ const linkField = (name, label) => ({
   pattern: ['^(?:/(?!/)|https?://).*$|^$', 'Use an HTTP(S) URL or a local path.']
 })
 
+/**
+ * Parse an AST node representing a card into structured card data.
+ * @param {object} node - Directive node for a card.
+ * @returns {object} Card data object.
+ */
 function parseCard(node) {
   const children = [...node.children]
   const imageIndex = children.findIndex(imageParagraph)
@@ -107,6 +116,11 @@ function parseCard(node) {
   }
 }
 
+/**
+ * Serialize structured card data into card directive markdown.
+ * @param {object} data - Card data.
+ * @returns {string} Serialized card markdown.
+ */
 function cardMarkdown(data) {
   const children = []
   if (data.image) children.push(imageNode(data))
@@ -115,6 +129,11 @@ function cardMarkdown(data) {
   return wrap('card', markdown(children), { href: data.href })
 }
 
+/**
+ * Parse raw markdown directive block into structured data for CMS editor widgets.
+ * @param {string} source - Raw directive markdown text.
+ * @returns {object} Structured data fields.
+ */
 export function parseEditorBlock(source) {
   const node = parse(source)[0]
   if (!node?.name) throw new Error('Expected a named Markdown block')
@@ -184,6 +203,12 @@ export function parseEditorBlock(source) {
   throw new Error(`Unsupported editor block: ${node.name}`)
 }
 
+/**
+ * Serialize CMS editor widget data back into directive markdown.
+ * @param {string} name - Directive block name.
+ * @param {object} data - Form data from CMS.
+ * @returns {string} Serialized directive markdown.
+ */
 export function serializeEditorBlock(name, data) {
   if (['testimonial', 'quote'].includes(name)) {
     const children = []
@@ -268,6 +293,13 @@ const escapeHTML = (value) =>
       ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[character]
   )
 
+/**
+ * Render a live HTML preview of an editor component for Decap CMS.
+ * @param {string} name - Directive block name.
+ * @param {object} data - Form data.
+ * @param {((path: string) => string)|undefined} [getAsset] - CMS asset resolver.
+ * @returns {string} Rendered HTML string.
+ */
 export function previewEditorBlock(name, data, getAsset) {
   if (name === 'faqs') {
     return '<section><h2>Frequently asked questions</h2></section>'
@@ -324,6 +356,10 @@ const containerPattern = (name, count = 3) =>
     `^(:{${count},})${name}(?:\\{[^\\r\\n]*\\})?[\\t ]*\\r?\\n[\\s\\S]*?\\r?\\n\\1[\\t ]*(?=\\r?\\n|$)`
   )
 
+/**
+ * Create Decap CMS editor component definitions for all supported directives.
+ * @returns {object[]} Array of editor component configurations.
+ */
 export function createEditorComponents() {
   return [
     {
@@ -492,6 +528,11 @@ export function createEditorComponents() {
   }))
 }
 
+/**
+ * Register all custom editor components with Decap CMS.
+ * @param {{registerEditorComponent: (component: object) => void}} cms - Decap CMS instance.
+ * @returns {void}
+ */
 export function registerEditorComponents(cms) {
   for (const component of createEditorComponents()) {
     cms.registerEditorComponent(component)

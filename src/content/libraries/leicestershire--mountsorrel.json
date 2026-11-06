@@ -60,14 +60,5 @@
     "URL": "http://www.leicestershire.gov.uk/leisure-and-community/libraries/find-a-library/mountsorrel-library",
     "Notes": "Hours closed: Tu 13:00-14:00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_c169fd59a7cf4c2e97320cd2"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

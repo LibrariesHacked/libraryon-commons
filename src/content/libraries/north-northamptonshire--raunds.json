@@ -20,7 +20,7 @@
     "Latitude": 52.34633,
     "Longitude": -0.53491,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.northnorthants.gov.uk/our-libraries/raunds-community-library",
     "Notes": "Expected to become CRL by 01 April 2020. Library opens first Saturday of month only. Library is open 25 hours in the weeks when not open on a Saturday"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

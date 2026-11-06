@@ -20,7 +20,7 @@
     "Latitude": 51.652488,
     "Longitude": -3.647087,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -57,21 +57,8 @@
     "Facilities and services": "Books; Printing; Free Wi-Fi",
     "Phone number": "01639 850 505",
     "Email address": "enquiries@libraryplus.wales",
-    "URL": "www.cymmercommunitylibrary.org/",
+    "URL": "https://www.cymmercommunitylibrary.org/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "URL",
-      "code": "uri",
-      "value": "www.cymmercommunitylibrary.org/",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -15,12 +15,12 @@
     "Address 1": "8 St. Owen's Street, Hereford, Herefordshire, HR1 2PJ",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "HR1 2PJ",
     "Unique property reference number": null,
     "Latitude": 52.055503,
     "Longitude": -2.713138,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.herefordshire.gov.uk/directory-record/25/hereford-library",
     "Notes": "Temp location (Town Hall) until September 2026"
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

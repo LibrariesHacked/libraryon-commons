@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40243/Watton-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_03749ef7d06e348cab1261f8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

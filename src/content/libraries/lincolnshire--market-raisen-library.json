@@ -60,14 +60,5 @@
     "URL": "http://www.better.org.uk/library/lincolnshire/marketrasenlibrary",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_b4558e7411036bd40525700a"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

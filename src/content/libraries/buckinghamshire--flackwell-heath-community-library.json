@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "HP10 9AA",
-    "Unique property reference number": null,
-    "Latitude": 51.60184,
-    "Longitude": -0.71178,
+    "Unique property reference number": 10000170285,
+    "Latitude": 51.6014982431328,
+    "Longitude": -0.711761223101766,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/flackwell-heath-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_2b1fdcf097d06797076c5297"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

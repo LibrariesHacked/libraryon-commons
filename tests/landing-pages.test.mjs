@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for landing page structures, child page links, and section navigation.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'

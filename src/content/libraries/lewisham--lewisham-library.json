@@ -20,9 +20,9 @@
     "Latitude": 51.459346,
     "Longitude": -0.011662,
     "Status": "Closed (temporary)",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,35 +60,5 @@
     "URL": "https://lewisham.gov.uk/myservices/libraries/branches/lewisham-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_65d78ee4062eaee3fa990b58",
-        "migration/directory/report.json#review_0bdab29ddbef6f2dbb92eb33"
-      ]
-    },
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_eda90f43d87393b69fdbba1f"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

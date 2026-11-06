@@ -17,12 +17,12 @@
     "Address 3": null,
     "Postcode": "BR1 5AF",
     "Unique property reference number": 100022890161,
-    "Latitude": 51.419866,
-    "Longitude": 0.019636,
+    "Latitude": 51.419817706649155,
+    "Longitude": 0.019670350715758067,
     "Status": "Closed (temporary)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "CL",
     "Year opened": null,
     "Year closed": null,
     "Monday staffed hours": "09:30-13:00,14:00-17:30",
@@ -60,12 +60,5 @@
     "URL": "https://www.better.org.uk/library/london/bromley/burnt-ash-library",
     "Notes": "Closed for 1 hour each open day for lunch"
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -15,12 +15,12 @@
     "Address 1": "William Brown Street, Liverpool, L3 8EW",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "L3 8EW",
     "Unique property reference number": 38165204,
-    "Latitude": 53.409969,
-    "Longitude": -2.980826,
+    "Latitude": 53.40996890544963,
+    "Longitude": -2.980825938275936,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,27 +60,5 @@
     "URL": "https://liverpool.gov.uk/libraries/explore-central-library/central-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "original-uprn",
-      "reason": "Original LibraryOn value retained; inspect lookup evidence",
-      "audit_refs": [
-        "migration/directory/report.json#review_e49371775ec63195b48052dc"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

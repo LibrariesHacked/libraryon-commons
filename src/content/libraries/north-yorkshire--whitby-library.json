@@ -60,14 +60,5 @@
     "URL": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/local-libraries/whitby-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_8d448b273718088d3be6da5e"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -9,7 +9,11 @@ import { pathToFileURL } from 'node:url'
 const origin = 'https://libraryon.org'
 const pageSize = 100
 
-/** Download every library's services, keyed by source ID. */
+/**
+ * Download every library's services, keyed by source ID.
+ * @param {number} [delay=300] - Delay between API requests in milliseconds.
+ * @returns {Promise<Record<string, Array<{service: string, url: string}>>>} Services lookup by ID.
+ */
 async function fetchServices(delay = 300) {
   const services = {}
   for (let page = 1, pages = 1; page <= pages; page++) {
@@ -36,7 +40,12 @@ async function fetchServices(delay = 300) {
   return services
 }
 
-/** Return a record with new fields placed before its review and import dates. */
+/**
+ * Return a record with new fields placed before its review and import dates.
+ * @param {object} record - Source record.
+ * @param {object} fields - Fields to insert.
+ * @returns {object} Updated record.
+ */
 function withFields(record, fields) {
   const result = {}
   for (const [key, value] of Object.entries(record)) {
@@ -48,7 +57,11 @@ function withFields(record, fields) {
 
 const day = (timestamp) => (timestamp ? String(timestamp).slice(0, 10) : '')
 
-/** Flatten the source's rich-text blocks into plain paragraphs and bullet lines. */
+/**
+ * Flatten the source's rich-text blocks into plain paragraphs and bullet lines.
+ * @param {Array<object>|unknown} value - Array of block nodes.
+ * @returns {string|unknown} Plain text representation or original value if not array.
+ */
 export function blocksToText(value) {
   if (!Array.isArray(value)) return value
   const inline = (node) => node.text ?? (node.children || []).map(inline).join('')

@@ -20,7 +20,7 @@
     "Latitude": 51.279549,
     "Longitude": 0.517085,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=liI3dtl0wQg&communitychannel=9",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_288e9f309af26440df8eb8c7"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

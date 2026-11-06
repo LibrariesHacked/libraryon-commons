@@ -20,7 +20,7 @@
     "Latitude": 57.331988,
     "Longitude": -2.326527,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -55,23 +55,10 @@
     "Accessible toilet": null,
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; British Newspaper Archive",
-    "Phone number": "oldmeldrum.library@aberdeenshire.gov.uk",
-    "Email address": "01651 267391",
+    "Phone number": "01651 267391",
+    "Email address": "oldmeldrum.library@aberdeenshire.gov.uk",
     "URL": "https://www.livelifeaberdeenshire.org.uk/libraries/local-libraries/oldmeldrum-library/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "01651 267391",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

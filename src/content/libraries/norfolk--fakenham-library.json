@@ -60,14 +60,5 @@
     "URL": "https://www.norfolk.gov.uk/article/40184/Fakenham-Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_3b1297614daf87af575aec8f"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

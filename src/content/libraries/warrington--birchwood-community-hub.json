@@ -20,7 +20,7 @@
     "Latitude": 53.414806,
     "Longitude": -2.526444,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": 2023,
@@ -60,12 +60,5 @@
     "URL": "https://livewirewarrington.co.uk/birchwood-community-hub/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

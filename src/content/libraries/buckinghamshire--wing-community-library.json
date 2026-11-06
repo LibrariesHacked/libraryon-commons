@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "LU7 0NN",
-    "Unique property reference number": null,
-    "Latitude": 51.89709,
-    "Longitude": -0.71542,
+    "Unique property reference number": 766335770,
+    "Latitude": 51.897139668153095,
+    "Longitude": -0.7156340452637594,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://www.buckinghamshire.gov.uk/libraries/information-about-local-library/wing-community-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_e6ac07d30d3ca777eb3998ea"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

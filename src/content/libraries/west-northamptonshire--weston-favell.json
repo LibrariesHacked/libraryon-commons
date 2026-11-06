@@ -20,7 +20,7 @@
     "Latitude": 52.25669293720259,
     "Longitude": -0.8351239698580741,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.westnorthants.gov.uk/list-libraries/weston-favell-library",
     "Notes": "Social story: https://cms.westnorthants.gov.uk/media/16418/download"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

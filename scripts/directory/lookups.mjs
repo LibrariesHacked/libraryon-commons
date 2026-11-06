@@ -1,3 +1,7 @@
+/**
+ * @fileoverview ONS Postcode Directory (ONSPD) and National Statistics UPRN Lookup (NSUL) cache and verification.
+ */
+
 import { existsSync, readFileSync, createReadStream } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { spawn, execFileSync } from 'node:child_process'

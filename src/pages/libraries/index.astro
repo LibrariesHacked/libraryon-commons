@@ -60,7 +60,7 @@ const allAccessibility = collectValues(libraries, (library) => library.accessibi
     first.label.localeCompare(second.label, 'en-GB', { sensitivity: 'base' })
   )
 const initialVisibleTags = 7
-const initialResults = searchRecords.slice(0, 60)
+const initialResults = searchRecords.filter((record) => !record.closed).slice(0, 60)
 ---
 
 <SiteLayout title={copy.title} description={copy.description}>
@@ -75,7 +75,6 @@ const initialResults = searchRecords.slice(0, 60)
     </div>
   </section>
   <section class="section shell">
-    <LibraryDownloads entries={libraries} />
     <form
       id="library-search"
       class="library-search-form"
@@ -83,7 +82,11 @@ const initialResults = searchRecords.slice(0, 60)
       aria-label="Library search"
       data-testid="libraries-search"
       data-index-url={sitePath('/directory.json')}
+      data-all-index-url={sitePath('/directory-all.json')}
       data-unassigned-authority={copy.unassigned_authority}
+      data-marked-permanently-closed={
+        settings.ui.directory.marked_permanently_closed || 'Marked as permanently closed'
+      }
       data-no-matches={copy.no_matches}
       data-index-error={copy.index_error}
       data-singular={copy.singular}
@@ -121,11 +124,16 @@ const initialResults = searchRecords.slice(0, 60)
             popover="auto"
           >
             <div class="tab-filter-body">
-              <div class="open-now-row">
-                <label class="open-now-toggle" for="library-open-now">
+              <div class="search-options-row">
+                <label class="search-option-toggle" for="library-open-now">
                   <span>{copy.open_now_label}</span>
-                  <span class="open-now-divider" aria-hidden="true"></span>
+                  <span class="search-option-divider" aria-hidden="true"></span>
                   <input id="library-open-now" name="openNow" type="checkbox" />
+                </label>
+                <label class="search-option-toggle" for="library-include-closed">
+                  <span>{copy.include_closed_label || 'Include closed libraries'}</span>
+                  <span class="search-option-divider" aria-hidden="true"></span>
+                  <input id="library-include-closed" name="closed" type="checkbox" />
                 </label>
               </div>
 
@@ -312,6 +320,7 @@ const initialResults = searchRecords.slice(0, 60)
         ))}
       </ul>
     </details>
+    <LibraryDownloads entries={libraries} />
   </section>
 </SiteLayout>
 
@@ -337,6 +346,7 @@ const initialResults = searchRecords.slice(0, 60)
   const clearLocationButton = document.querySelector('#clear-location')
   const clearDistanceButton = document.querySelector('#clear-distance')
   const applyDistanceButton = document.querySelector('#apply-distance')
+  const includeClosedInput = document.querySelector('#library-include-closed')
   const list = document.querySelector('#library-results')
   const count = document.querySelector('#result-count')
   const more = document.querySelector('#more-results')
@@ -357,6 +367,9 @@ const initialResults = searchRecords.slice(0, 60)
       .filter(Boolean)
   )
   openNowInput.checked = params.get('openNow') === 'true' || params.get('openNow') === '1'
+  if (includeClosedInput) {
+    includeClosedInput.checked = params.get('closed') === 'true' || params.get('closed') === '1'
+  }
 
   const parsedDistance = Number.parseInt(params.get('distance') || '5', 10)
   let selectedDistance =
@@ -367,21 +380,31 @@ const initialResults = searchRecords.slice(0, 60)
 
   let explicitLocation = null
   let distanceFilterActive = false
-  const locParam = params.get('loc')
-  if (locParam) {
-    const [latStr, lngStr] = locParam.split(',')
-    const latitude = Number.parseFloat(latStr)
-    const longitude = Number.parseFloat(lngStr)
-    if (Number.isFinite(latitude) && Number.isFinite(longitude)) {
-      explicitLocation = {
-        latitude,
-        longitude,
-        label: initialQuery || form.dataset.currentLocation
+  const latParam = params.get('latitude') || params.get('lat')
+  const lngParam = params.get('longitude') || params.get('lng') || params.get('lon')
+  let initialLat = latParam ? Number.parseFloat(latParam) : Number.NaN
+  let initialLng = lngParam ? Number.parseFloat(lngParam) : Number.NaN
+  if (!Number.isFinite(initialLat) || !Number.isFinite(initialLng)) {
+    const locParam = params.get('loc')
+    if (locParam) {
+      const [locLat, locLng] = locParam.split(',').map(Number)
+      if (Number.isFinite(locLat) && Number.isFinite(locLng)) {
+        initialLat = locLat
+        initialLng = locLng
       }
-      distanceFilterActive = true
     }
   }
+  if (Number.isFinite(initialLat) && Number.isFinite(initialLng)) {
+    explicitLocation = {
+      latitude: initialLat,
+      longitude: initialLng,
+      label: initialQuery || form.dataset.currentLocation
+    }
+    distanceFilterActive = true
+  }
 
+  let openRecords = null
+  let allRecords = null
   let records = []
   let matches = []
   let visible = 60
@@ -395,7 +418,7 @@ const initialResults = searchRecords.slice(0, 60)
     [servicesPanel, servicesToggle],
     [distancePanel, distanceToggle]
   ]) {
-    let cleanup: (() => void) | undefined
+    let cleanup
     panel.addEventListener('beforetoggle', () => panel.removeAttribute('data-positioned'))
     panel.addEventListener('toggle', () => {
       const open = panel.matches(':popover-open')
@@ -446,7 +469,10 @@ const initialResults = searchRecords.slice(0, 60)
       if (active) button.hidden = false
     }
     const activeCount =
-      selectedServices.size + selectedAccessibility.size + (openNowInput.checked ? 1 : 0)
+      selectedServices.size +
+      selectedAccessibility.size +
+      (openNowInput.checked ? 1 : 0) +
+      (includeClosedInput?.checked ? 1 : 0)
     servicesCountBadge.hidden = activeCount === 0
     servicesCountBadge.textContent = String(activeCount)
   }
@@ -510,6 +536,9 @@ const initialResults = searchRecords.slice(0, 60)
     if (miles !== null && Number.isFinite(miles)) {
       metaParts.push(`${miles.toFixed(1)} ${form.dataset.milesSuffix}`)
     }
+    if (item.closed) {
+      metaParts.push(form.dataset.markedPermanentlyClosed)
+    }
     authority.textContent = metaParts.join(' · ')
     li.append(title, address, authority)
     return li
@@ -547,13 +576,14 @@ const initialResults = searchRecords.slice(0, 60)
     if (openNowInput.checked) {
       nextParams.set('openNow', 'true')
     }
+    if (includeClosedInput?.checked) {
+      nextParams.set('closed', 'true')
+    }
     if (distanceFilterActive && resolvedLoc) {
       nextParams.set('distance', String(selectedDistance))
       if (explicitLocation) {
-        nextParams.set(
-          'loc',
-          `${explicitLocation.latitude.toFixed(5)},${explicitLocation.longitude.toFixed(5)}`
-        )
+        nextParams.set('latitude', explicitLocation.latitude.toFixed(5))
+        nextParams.set('longitude', explicitLocation.longitude.toFixed(5))
       }
     }
     const search = nextParams.toString()
@@ -593,7 +623,7 @@ const initialResults = searchRecords.slice(0, 60)
     render(resolvedLoc)
   }
 
-  picker.addEventListener('library-location', (event: CustomEvent) => {
+  picker.addEventListener('library-location', (event) => {
     explicitLocation = event.detail
     distanceFilterActive = true
     update()
@@ -603,8 +633,17 @@ const initialResults = searchRecords.slice(0, 60)
     selectedServices.clear()
     selectedAccessibility.clear()
     openNowInput.checked = false
+    const closedWasChecked = includeClosedInput?.checked
+    if (includeClosedInput) includeClosedInput.checked = false
     syncTagButtons()
-    update()
+    if (closedWasChecked) {
+      loadDirectory(false).catch(() => {
+        count.textContent = form.dataset.authorityBrowseStatus
+        more.hidden = true
+      })
+    } else {
+      update()
+    }
     closePanels()
   })
 
@@ -637,25 +676,45 @@ const initialResults = searchRecords.slice(0, 60)
     closePanels()
   })
 
-  fetch(form.dataset.indexUrl)
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`)
-      return response.json()
-    })
-    .then((data) => {
-      records = expandDirectory(data)
-      syncTagButtons()
-      update()
-    })
-    .catch(() => {
+  const loadDirectory = async (includeClosed) => {
+    if (includeClosed) {
+      if (!allRecords) {
+        const response = await fetch(form.dataset.allIndexUrl)
+        if (!response.ok) throw new Error(`HTTP ${response.status}`)
+        const data = await response.json()
+        allRecords = expandDirectory(data)
+      }
+      records = allRecords
+    } else {
+      if (!openRecords) {
+        const response = await fetch(form.dataset.indexUrl)
+        if (!response.ok) throw new Error(`HTTP ${response.status}`)
+        const data = await response.json()
+        openRecords = expandDirectory(data)
+      }
+      records = openRecords
+    }
+    syncTagButtons()
+    update()
+  }
+
+  includeClosedInput?.addEventListener('change', () => {
+    syncTagButtons()
+    loadDirectory(includeClosedInput.checked).catch(() => {
       count.textContent = form.dataset.authorityBrowseStatus
       more.hidden = true
-      const notice = document.createElement('p')
-      notice.className = 'notice'
-      notice.setAttribute('role', 'status')
-      notice.textContent = form.dataset.indexError
-      form.after(notice)
     })
+  })
+
+  loadDirectory(includeClosedInput?.checked).catch(() => {
+    count.textContent = form.dataset.authorityBrowseStatus
+    more.hidden = true
+    const notice = document.createElement('p')
+    notice.className = 'notice'
+    notice.setAttribute('role', 'status')
+    notice.textContent = form.dataset.indexError
+    form.after(notice)
+  })
 
   form.addEventListener('submit', (event) => {
     event.preventDefault()

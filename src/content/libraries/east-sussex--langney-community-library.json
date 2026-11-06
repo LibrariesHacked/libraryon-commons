@@ -20,7 +20,7 @@
     "Latitude": 50.80330474767763,
     "Longitude": 0.3039164598869206,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "ICL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://langneycommunitylibrary.wordpress.com/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_927786afe4f02820cc879b30"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

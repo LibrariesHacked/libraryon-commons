@@ -60,15 +60,5 @@
     "URL": "https://www.facebook.com/people/Upton-Community-Centre-and-Library/100081918792883/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_c1551d653d6c3ae7b142d6e5",
-        "migration/directory/report.json#review_d51363e2e3095f790cd6fd1d"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

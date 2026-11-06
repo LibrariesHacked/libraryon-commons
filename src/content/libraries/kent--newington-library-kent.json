@@ -16,9 +16,9 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "CT12 6FA",
-    "Unique property reference number": null,
-    "Latitude": 51.349776,
-    "Longitude": 1.392096,
+    "Unique property reference number": 100062284273,
+    "Latitude": 51.35020286265813,
+    "Longitude": 1.3925271253161915,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -60,14 +60,5 @@
     "URL": "https://local.kent.gov.uk/kb5/kent/directory/service.page?id=0QEC9sf2m84&communitychannel=9",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_a169b729b8a000350f288714"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,14 +60,5 @@
     "URL": "https://arena.yourlondonlibrary.net/web/bexley/-/bexley-village-community-library#/?location=Bexley%20Village%20Community%20Library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_adeaf2951689a929327890e8"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -60,15 +60,5 @@
     "URL": "http://new.shropshire.gov.uk/libraries/find-a-library/craven-arms-library/",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_c950d0b2872c2ef7c62b854b",
-        "migration/directory/report.json#review_fcd34d1d3e1b23858d428246"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

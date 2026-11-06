@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Data normalization and parsing helpers for postcodes, UPRNs, and opening hours.
+ */
+
 /** @type {readonly ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']} */
 export const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 

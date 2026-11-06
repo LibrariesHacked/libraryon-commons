@@ -16,11 +16,11 @@
     "Address 2": null,
     "Address 3": null,
     "Postcode": "BN24 6EH",
-    "Unique property reference number": 10070939685,
+    "Unique property reference number": null,
     "Latitude": 50.812387,
     "Longitude": 0.35264,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "ICL",
     "Year opened": null,
@@ -56,22 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Computers",
     "Phone number": "01323 398227",
-    "Email address": "https://en-gb.facebook.com/PevenseyCommunityLibrary",
+    "Email address": "pevensey122@btinternet.com",
     "URL": "https://1space.eastsussex.gov.uk/Services/4071/Pevensey-Community-L",
     "Notes": "Now operating as ICL"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://en-gb.facebook.com/PevenseyCommunityLibrary",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

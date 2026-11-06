@@ -1,0 +1,15 @@
+---
+import { BookOpen } from '@lucide/astro'
+import { settings, sitePath } from '../lib/site.mjs'
+
+const { href = sitePath('/'), size = 30, strokeWidth = 1.7 } = Astro.props
+const { brand } = settings.ui
+---
+
+<a class="brand" href={href} aria-label={settings.site.title}>
+  <BookOpen size={size} stroke-width={strokeWidth} aria-hidden="true" />
+  <span>
+    {brand.primary}
+    {brand.qualifier && <span class="brand-qualifier">{brand.qualifier}</span>}
+  </span>
+</a>

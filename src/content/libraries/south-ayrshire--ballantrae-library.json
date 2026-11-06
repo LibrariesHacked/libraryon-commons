@@ -20,7 +20,7 @@
     "Latitude": 55.10122,
     "Longitude": -5.00487,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.south-ayrshire.gov.uk/ballantrae-library",
     "Notes": "The Hall, Ballantrae KA26 0NB"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

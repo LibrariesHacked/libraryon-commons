@@ -1,7 +1,15 @@
+/**
+ * @fileoverview Client-side interactive media controllers for carousels, lightboxes, accordions, and timelines.
+ */
+
 import EmblaCarousel from 'embla-carousel'
 
 let lightbox
 
+/**
+ * Retrieve or create the singleton DOM lightbox viewer dialog.
+ * @returns {{dialog: HTMLDialogElement, image: HTMLImageElement, caption: HTMLElement}} Lightbox elements.
+ */
 function getLightbox() {
   if (lightbox) return lightbox
 
@@ -26,6 +34,11 @@ function getLightbox() {
   return lightbox
 }
 
+/**
+ * Open a figure's image inside the shared lightbox modal viewer.
+ * @param {HTMLButtonElement} button - Trigger button inside or associated with a figure.
+ * @returns {void}
+ */
 function openImage(button) {
   const figure = button.closest('figure')
   const image = figure?.querySelector('img')
@@ -37,6 +50,11 @@ function openImage(button) {
   viewer.dialog.showModal()
 }
 
+/**
+ * Initialize an Embla Carousel instance on a collection carousel DOM element.
+ * @param {HTMLElement} root - Carousel container element with data-collection-carousel.
+ * @returns {void}
+ */
 function setupCarousel(root) {
   const viewport = root.querySelector('[data-carousel-viewport]')
   const track = root.querySelector('.collection-carousel-track')
@@ -80,6 +98,10 @@ function setupCarousel(root) {
   update()
 }
 
+/**
+ * Initialize event listeners for carousels, accordions, book recommendations, timelines, and zoom buttons.
+ * @returns {void}
+ */
 export function initializeCollectionMedia() {
   if (document.documentElement.dataset.collectionMediaReady) return
   document.documentElement.dataset.collectionMediaReady = 'true'

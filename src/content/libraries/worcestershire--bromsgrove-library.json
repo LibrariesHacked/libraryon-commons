@@ -60,15 +60,5 @@
     "URL": "https://www.worcestershire.gov.uk/council-services/worcestershire-libraries/find-library/bromsgrove-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_a3e94f6b8fea22f6a4817590",
-        "migration/directory/report.json#review_4c5b1187e5b6f0be98071681"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

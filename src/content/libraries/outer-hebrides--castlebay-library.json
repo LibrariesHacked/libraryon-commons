@@ -15,12 +15,12 @@
     "Address 1": "Castlebay School, Castlebay, Isle of Barra, HS9 5XD",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": null,
+    "Postcode": "HS9 5XD",
     "Unique property reference number": null,
     "Latitude": 56.955077,
     "Longitude": -7.486103,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,18 +60,5 @@
     "URL": "https://www.wilibraries.org.uk/Libraryinfo",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Postcode",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    },
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

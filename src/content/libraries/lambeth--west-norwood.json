@@ -20,7 +20,7 @@
     "Latitude": 51.43311,
     "Longitude": -0.10339,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": "Static library",
     "Type of library": "LAL",
     "Year opened": 1969,
@@ -60,21 +60,5 @@
     "URL": "https://www.lambeth.gov.uk/libraries-0/west-norwood-library",
     "Notes": "Refurbished and new layout with cinema 2017-2018, was in another site from 2011-2018 while work was done"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_ffd8435420e7e42065a64f41"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

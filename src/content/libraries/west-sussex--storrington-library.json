@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/storrington-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_3834f8e707d52993fbb8667f"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

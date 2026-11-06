@@ -60,14 +60,5 @@
     "URL": "https://www.eastridinglibraries.co.uk/find-a-library/library/?entry=swanland_library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_a0a2b0b5457a11a2bf65dae7"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

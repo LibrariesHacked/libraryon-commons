@@ -12,15 +12,15 @@
     "Local authority code": "E10000034",
     "Library name": "Droitwich Spa Library",
     "Library code": null,
-    "Address 1": "Victoria Square, Droitwich, Worcestershire, WR9 8DQ",
+    "Address 1": "Victoria Square, Droitwich, Worcestershire",
     "Address 2": null,
     "Address 3": null,
-    "Postcode": "WR9 8DG",
-    "Unique property reference number": null,
-    "Latitude": 52.26729,
-    "Longitude": -2.14986,
+    "Postcode": "WR9 8DQ",
+    "Unique property reference number": 100121282801,
+    "Latitude": 52.266946811830834,
+    "Longitude": -2.150043576382948,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,21 +60,5 @@
     "URL": "https://www.worcestershire.gov.uk/council-services/worcestershire-libraries/find-library/droitwich-spa-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "postcode-lookup",
-      "reason": "Review the supporting evidence in the migration audit",
-      "audit_refs": [
-        "migration/directory/report.json#review_90bbafa5f1d35bcd16f8f472"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "SS0 9PD",
     "Unique property reference number": 100091582187,
-    "Latitude": 51.54594,
-    "Longitude": 0.68358,
+    "Latitude": 51.54594026994545,
+    "Longitude": 0.6835503052841044,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "LAL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.southend.gov.uk/directory-record/31985/westcliff-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

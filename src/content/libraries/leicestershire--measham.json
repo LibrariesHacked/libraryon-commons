@@ -60,14 +60,5 @@
     "URL": "http://www.meashamlibrary.btck.co.uk",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN not independently located",
-      "audit_refs": [
-        "migration/directory/report.json#review_d302cbc9c60cd4d789cc3455"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

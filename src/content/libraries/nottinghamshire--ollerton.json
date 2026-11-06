@@ -60,14 +60,5 @@
     "URL": "https://www.inspireculture.org.uk/",
     "Notes": "Closed lunchtimes Mon 1.00-2.00; Fri 1.00-2.00"
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_86012103ea634096742db708"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

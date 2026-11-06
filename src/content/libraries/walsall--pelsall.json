@@ -17,10 +17,10 @@
     "Address 3": null,
     "Postcode": "WS3 4LX",
     "Unique property reference number": 10090900280,
-    "Latitude": 52.63027299306685,
-    "Longitude": -1.968770900667181,
+    "Latitude": 52.630440142586465,
+    "Longitude": -1.9690014922461434,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "No",
     "Facility type": "Static library",
     "Type of library": "ICL",
     "Year opened": 2013,
@@ -60,12 +60,5 @@
     "URL": "https://www.facebook.com/PelsallBookExchange/",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

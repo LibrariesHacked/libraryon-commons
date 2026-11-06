@@ -60,14 +60,5 @@
     "URL": "https://libraries.westsussex.gov.uk/lancing-library",
     "Notes": null
   },
-  "validation_exceptions": [],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN postcode association differs or is missing",
-      "audit_refs": [
-        "migration/directory/report.json#review_aa6101a8e698621f71bba024"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

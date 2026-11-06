@@ -17,8 +17,8 @@
     "Address 3": null,
     "Postcode": "TN6 1DH",
     "Unique property reference number": 10033417558,
-    "Latitude": 51.058345,
-    "Longitude": 0.158925,
+    "Latitude": 51.05846399359698,
+    "Longitude": 0.15874474792334878,
     "Status": "Open",
     "Statutory": "Yes",
     "Facility type": "Static library",
@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; BFI Replay; Photocopiers; Family history; Computers; British Newspaper Archive; Findmypast",
     "Phone number": "0345 6080196",
-    "Email address": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
+    "Email address": "library.enquiries@eastsussex.gov.uk",
     "URL": "https://www.eastsussex.gov.uk/libraries/local/locations/crowborough",
     "Notes": "Major refurb in 2019"
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "https://www.eastsussex.gov.uk/libraries/form-enquiry",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

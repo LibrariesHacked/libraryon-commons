@@ -22,7 +22,7 @@
     "Status": "Closed (temporary)",
     "Statutory": "Yes",
     "Facility type": "Static library",
-    "Type of library": null,
+    "Type of library": "LAL",
     "Year opened": 1895,
     "Year closed": null,
     "Monday staffed hours": null,
@@ -60,21 +60,5 @@
     "URL": null,
     "Notes": "Closed for lunch 1-2pm"
   },
-  "validation_exceptions": [
-    {
-      "field": "Type of library",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ],
-  "manual_checks": [
-    {
-      "kind": "uprn",
-      "reason": "UPRN is missing coordinates or more than 100 metres from LibraryOn point",
-      "audit_refs": [
-        "migration/directory/report.json#review_4ec72329297357a55e5fa83b"
-      ]
-    }
-  ]
+  "validation_exceptions": []
 }

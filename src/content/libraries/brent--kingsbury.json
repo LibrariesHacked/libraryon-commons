@@ -56,16 +56,9 @@
     "Hearing loop": null,
     "Facilities and services": "Books; Printing; Free Wi-Fi; Computers; Photocopiers; Scanning; Children's activities; Hobby and interest groups; BFI Replay",
     "Phone number": "020 8937 3400",
-    "Email address": "libraries@brent.gov.uk Address:",
+    "Email address": "libraries@brent.gov.uk",
     "URL": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/kingsbury-library",
     "Notes": null
   },
-  "validation_exceptions": [
-    {
-      "field": "Email address",
-      "code": "email",
-      "value": "libraries@brent.gov.uk Address:",
-      "reason": "Preserved source value outside supplied schema; requires editorial verification"
-    }
-  ]
+  "validation_exceptions": []
 }

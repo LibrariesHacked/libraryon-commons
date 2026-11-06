@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Automated tests for nested sitemap tree building and route hierarchy grouping.
+ */
+
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { buildPageTree } from '../src/lib/sitemap.mjs'

@@ -20,7 +20,7 @@
     "Latitude": 52.15848,
     "Longitude": -0.89632,
     "Status": "Open",
-    "Statutory": null,
+    "Statutory": "Yes",
     "Facility type": null,
     "Type of library": "CRL",
     "Year opened": null,
@@ -60,12 +60,5 @@
     "URL": "https://www.westnorthants.gov.uk/list-libraries/roade-community-library",
     "Notes": "Transferred to CRL status October 2019. Library opens first and third Saturday of month only. Library is open 12 hours in the weeks when not open on a Saturday.\n\n[Note: as of 30.1.25, there is no evidence that the above note is true.]"
   },
-  "validation_exceptions": [
-    {
-      "field": "Statutory",
-      "code": "required",
-      "value": null,
-      "reason": "Not recorded by LibraryOn and not safely established from matched supporting sources"
-    }
-  ]
+  "validation_exceptions": []
 }

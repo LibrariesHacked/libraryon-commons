@@ -7,7 +7,7 @@ const { entry, label = settings.ui.editorial.labels.articles } = Astro.props
 ---
 
 <EditorialLayout {...Astro.props} label={label}>
-  <ArticleMedia image={entry.data.hero} />
+  <ArticleMedia image={entry.data.hero} priority />
   <article class="prose original-content" data-content-path={entry.data.path}>
     <PageContent {...Astro.props}>
       <slot />
