@@ -1,5 +1,5 @@
 ---
-import { ArrowUpRight } from '@lucide/astro'
+import { ArrowUpRight, MapPin, Navigation } from '@lucide/astro'
 
 import ContactDetails from '../components/ContactDetails.astro'
 import DirectoryProvenance from '../components/DirectoryProvenance.astro'
@@ -54,34 +54,70 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
     </section>
   )}
   {maps && (
-    <section class="detail-section">
+    <section class="detail-section getting-here-section">
       <h2>{copy.getting_here}</h2>
-      <ul class="contact-list">
-        <li>
-          <a href={maps.google}>
-            {copy.google_maps} <ArrowUpRight size={15} aria-hidden="true" />
-          </a>
-        </li>
-        <li>
-          <a href={maps.apple}>
-            {copy.apple_maps} <ArrowUpRight size={15} aria-hidden="true" />
-          </a>
-        </li>
-      </ul>
+      <div class="getting-here-actions">
+        <a
+          href={maps.google}
+          class="directions-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="directions-card-icon" aria-hidden="true">
+            <Navigation size={22} />
+          </div>
+          <div class="directions-card-body">
+            <span class="directions-card-title">
+              {copy.google_maps} <ArrowUpRight size={15} aria-hidden="true" />
+            </span>
+            <span class="directions-card-subtitle">
+              Plan driving, walking or public transit routes
+            </span>
+          </div>
+        </a>
+        <a
+          href={maps.apple}
+          class="directions-card"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div class="directions-card-icon" aria-hidden="true">
+            <MapPin size={22} />
+          </div>
+          <div class="directions-card-body">
+            <span class="directions-card-title">
+              {copy.apple_maps} <ArrowUpRight size={15} aria-hidden="true" />
+            </span>
+            <span class="directions-card-subtitle">
+              Launch Maps on iPhone, iPad or Mac
+            </span>
+          </div>
+        </a>
+      </div>
     </section>
   )}
   {nearby.length > 0 && (
-    <section class="detail-section">
+    <section class="detail-section nearby-section">
       <h2>{copy.nearby_libraries}</h2>
-      <ul class="library-results">
+      <ul class="library-results" data-library-list>
         {nearby.map(({ library: other, miles }) => (
-          <li>
-            <h3>
-              <a href={sitePath(other.url)}>{other.name}</a>
-            </h3>
-            <p>
-              {miles.toFixed(1)} {copy.miles}
-            </p>
+          <li data-hours={JSON.stringify(other.hours || other.openingTimes || null)}>
+            <div class="library-result-header">
+              <h3>
+                <a href={sitePath(other.url)}>{other.name}</a>
+              </h3>
+              <span class="distance-badge">
+                {miles.toFixed(1)} {copy.miles}
+              </span>
+            </div>
+            <p>{other.address || other.postcode}</p>
+            <div class="library-result-meta">
+              <span class="authority-label">
+                {other.authorityName || copy.unassigned_authority}
+                {other.country ? ` · ${other.country}` : ''}
+              </span>
+              <span class="live-status-pill live-status-pill--small" data-open-status />
+            </div>
           </li>
         ))}
       </ul>
@@ -105,3 +141,8 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
     )}
   </Fragment>
 </DirectoryLayout>
+
+<script>
+  import { updateLibraryListStatus } from '../lib/directory-live.mjs'
+  updateLibraryListStatus()
+</script>

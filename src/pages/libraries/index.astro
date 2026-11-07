@@ -4,6 +4,7 @@ import { ChevronDown, X } from '@lucide/astro'
 import LibrarySearch from '../../components/LibrarySearch.astro'
 import LibraryMap from '../../components/LibraryMap.astro'
 import LibraryDownloads from '../../components/LibraryDownloads.astro'
+import TagListSection from '../../components/TagListSection.astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import {
   libraries,
@@ -131,67 +132,29 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
                   <input id="library-open-now" name="openNow" type="checkbox" />
                 </label>
                 <label class="search-option-toggle" for="library-include-closed">
-                  <span>{copy.include_closed_label || 'Include closed libraries'}</span>
+                  <span>{copy.include_closed_label || 'Include permanently closed libraries'}</span>
                   <span class="search-option-divider" aria-hidden="true"></span>
                   <input id="library-include-closed" name="closed" type="checkbox" />
                 </label>
               </div>
 
-              <div class="filter-group">
-                <p class="filter-group-heading">{copy.services_heading}</p>
-                <div class="filter-tag-list" data-tag-group="services">
-                  {allServices.map((service, index) => (
-                    <button
-                      type="button"
-                      class="filter-tag"
-                      data-service={service}
-                      data-extra-tag={index >= initialVisibleTags ? 'true' : undefined}
-                      hidden={index >= initialVisibleTags ? true : undefined}
-                      aria-pressed="false"
-                    >
-                      {service}
-                    </button>
-                  ))}
-                  {allServices.length > initialVisibleTags && (
-                    <button
-                      type="button"
-                      class="filter-tag-more"
-                      data-toggle-tags="services"
-                      data-expanded="false"
-                    >
-                      {copy.view_all}
-                    </button>
-                  )}
-                </div>
-              </div>
+              <TagListSection
+                heading={copy.services_heading}
+                items={allServices}
+                mode="select"
+                tagGroup="services"
+                initialVisible={initialVisibleTags}
+                viewAllLabel={copy.view_all}
+              />
 
-              <div class="filter-group">
-                <p class="filter-group-heading">{copy.accessibility_heading}</p>
-                <div class="filter-tag-list" data-tag-group="accessibility">
-                  {allAccessibility.map(({ value, label }, index) => (
-                    <button
-                      type="button"
-                      class="filter-tag"
-                      data-accessibility={value}
-                      data-extra-tag={index >= initialVisibleTags ? 'true' : undefined}
-                      hidden={index >= initialVisibleTags ? true : undefined}
-                      aria-pressed="false"
-                    >
-                      {label}
-                    </button>
-                  ))}
-                  {allAccessibility.length > initialVisibleTags && (
-                    <button
-                      type="button"
-                      class="filter-tag-more"
-                      data-toggle-tags="accessibility"
-                      data-expanded="false"
-                    >
-                      {copy.view_all}
-                    </button>
-                  )}
-                </div>
-              </div>
+              <TagListSection
+                heading={copy.accessibility_heading}
+                items={allAccessibility}
+                mode="select"
+                tagGroup="accessibility"
+                initialVisible={initialVisibleTags}
+                viewAllLabel={copy.view_all}
+              />
             </div>
             <div class="tab-filter-footer">
               <button id="clear-services" class="button button-secondary" type="button">
@@ -287,14 +250,18 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
           <ul id="library-results" class="library-results">
             {initialResults.map((library) => (
               <li>
-                <h3>
-                  <a href={sitePath(library.url)}>{library.name}</a>
-                </h3>
+                <div class="library-result-header">
+                  <h3>
+                    <a href={sitePath(library.url)}>{library.name}</a>
+                  </h3>
+                </div>
                 <p>{library.address || library.postcode}</p>
-                <p class="authority-label">
-                  {library.authorityName}
-                  {library.country ? ` · ${library.country}` : ''}
-                </p>
+                <div class="library-result-meta">
+                  <span class="authority-label">
+                    {library.authorityName}
+                    {library.country ? ` · ${library.country}` : ''}
+                  </span>
+                </div>
               </li>
             ))}
           </ul>
@@ -522,25 +489,50 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
 
   const itemElement = (item, miles) => {
     const li = document.createElement('li')
+    const header = document.createElement('div')
+    header.className = 'library-result-header'
     const title = document.createElement('h3')
     const link = document.createElement('a')
     link.href = sitePath(item.url)
     link.textContent = item.name
     title.append(link)
+    header.append(title)
+    if (miles !== null && Number.isFinite(miles)) {
+      const dist = document.createElement('span')
+      dist.className = 'distance-badge'
+      dist.textContent = `${miles.toFixed(1)} ${form.dataset.milesSuffix}`
+      header.append(dist)
+    }
     const address = document.createElement('p')
     address.textContent = item.address || item.postcode
-    const authority = document.createElement('p')
+    const metaRow = document.createElement('div')
+    metaRow.className = 'library-result-meta'
+    const authority = document.createElement('span')
     authority.className = 'authority-label'
     const metaParts = [item.authorityName || form.dataset.unassignedAuthority]
     if (item.country) metaParts.push(item.country)
-    if (miles !== null && Number.isFinite(miles)) {
-      metaParts.push(`${miles.toFixed(1)} ${form.dataset.milesSuffix}`)
-    }
     if (item.closed) {
       metaParts.push(form.dataset.markedPermanentlyClosed)
     }
     authority.textContent = metaParts.join(' · ')
-    li.append(title, address, authority)
+    metaRow.append(authority)
+
+    if (!item.closed && item.hours) {
+      const hasHours = Object.values(item.hours).some((slots) => Array.isArray(slots) && slots.length > 0)
+      if (isLibraryOpenAt(item, new Date())) {
+        const pill = document.createElement('span')
+        pill.className = 'live-status-pill live-status-pill--small is-open'
+        pill.innerHTML = '<span class="live-status-dot" aria-hidden="true"></span><span>Open now</span>'
+        metaRow.append(pill)
+      } else if (hasHours) {
+        const pill = document.createElement('span')
+        pill.className = 'live-status-pill live-status-pill--small is-closed'
+        pill.innerHTML = '<span class="live-status-dot" aria-hidden="true"></span><span>Closed</span>'
+        metaRow.append(pill)
+      }
+    }
+
+    li.append(header, address, metaRow)
     return li
   }
 

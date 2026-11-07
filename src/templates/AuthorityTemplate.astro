@@ -11,39 +11,87 @@ import TagListSection from '../components/TagListSection.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import { collectValues, facilityLabel } from '../lib/directory.mjs'
 import { settings, sitePath } from '../lib/site.mjs'
-const { authority, entries } = Astro.props
+
+const { authority, entries = [] } = Astro.props
 const copy = settings.ui.directory
-const services = collectValues(entries, (library) => library.services?.map((item) => item.service))
-const accessibility = collectValues(entries, (library) => library.accessibility)
+
+const activeEntries = entries.filter((library) => !library.permanentlyClosed)
+const closedEntries = entries.filter((library) => library.permanentlyClosed)
+const hasClosedLibraries = closedEntries.length > 0
+
+const activeForSummary = activeEntries.length > 0 ? activeEntries : entries
+const services = collectValues(activeForSummary, (library) =>
+  library.services?.map((item) => item.service)
+)
+const accessibility = collectValues(activeForSummary, (library) => library.accessibility)
+
+const librariesSubtitle = `${activeEntries.length} ${copy.libraries_heading.toLowerCase()}${hasClosedLibraries ? ` · ${closedEntries.length} closed` : ''}${services.length ? ` · ${services.length} ${copy.services_count}` : ''}${authority.country ? ` · ${authority.country}` : ''}`
+const heroTags = [
+  authority.country,
+  `${activeEntries.length} ${copy.libraries_heading.toLowerCase()}`,
+  hasClosedLibraries ? `${closedEntries.length} closed` : ''
+].filter(Boolean)
 ---
 
 <DirectoryLayout
   title={authority.name}
-  subtitle={`${entries.length} ${copy.libraries_heading.toLowerCase()}${services.length ? ` · ${services.length} ${copy.services_count}` : ''}${authority.country ? ` · ${authority.country}` : ''}`}
+  subtitle={librariesSubtitle}
   description={`${copy.authority_description_prefix} ${authority.name}.`}
+  tags={heroTags}
 >
   <LibrarySearch />
-  <h2>{copy.libraries_heading}</h2>
-  <LibraryMap libraries={entries} label={`Libraries in ${authority.name}`} />
-  <ul class="library-results">
+
+  <div class="authority-libraries-heading-row">
+    <h2>{copy.libraries_heading}</h2>
+    {hasClosedLibraries && (
+      <label class="search-option-toggle authority-closed-toggle" for="authority-include-closed">
+        <span>Include permanently closed libraries</span>
+        <input id="authority-include-closed" type="checkbox" />
+      </label>
+    )}
+  </div>
+
+  <LibraryMap
+    libraries={entries}
+    label={`Libraries in ${authority.name}`}
+  />
+
+  {hasClosedLibraries && (
+    <script
+      type="application/json"
+      id="authority-map-data"
+      set:html={JSON.stringify({ active: activeEntries, all: entries }).replace(/</g, '\\u003c')}
+    />
+  )}
+
+  <ul class="library-results" data-library-list>
     {entries.map((library) => (
-      <li>
-        <h3>
-          <a href={sitePath(library.url)}>
-            {library.name} <ArrowUpRight size={17} aria-hidden="true" />
-          </a>
-        </h3>
+      <li
+        data-hours={JSON.stringify(library.hours || library.openingTimes || null)}
+        data-permanently-closed={library.permanentlyClosed ? 'true' : undefined}
+        hidden={library.permanentlyClosed ? true : undefined}
+      >
+        <div class="library-result-header">
+          <h3>
+            <a href={sitePath(library.url)}>
+              {library.name} <ArrowUpRight size={17} aria-hidden="true" />
+            </a>
+          </h3>
+          <span class="live-status-pill live-status-pill--small" data-open-status />
+        </div>
         <p>{library.address}</p>
-        {library.permanentlyClosed && <p>{copy.marked_permanently_closed}</p>}
+        {library.permanentlyClosed && <p class="notice">{copy.marked_permanently_closed}</p>}
       </li>
     ))}
   </ul>
+
   <TagListSection heading={copy.services_heading} items={services} />
   <TagListSection
     heading={copy.accessibility}
     items={accessibility.map((value) => facilityLabel(value))}
   />
   <LibraryDownloads entries={entries} authoritySlug={authority.slug} />
+
   <Fragment slot="aside">
     <section class="detail-section">
       <h2>{copy.library_service}</h2>
@@ -59,3 +107,36 @@ const accessibility = collectValues(entries, (library) => library.accessibility)
     <DirectoryProvenance record={authority} />
   </Fragment>
 </DirectoryLayout>
+
+<script>
+  import { updateLibraryListStatus } from '../lib/directory-live.mjs'
+
+  updateLibraryListStatus()
+
+  const closedToggle = document.getElementById('authority-include-closed')
+  if (closedToggle) {
+    closedToggle.addEventListener('change', () => {
+      const showClosed = closedToggle.checked
+      const closedItems = document.querySelectorAll('[data-permanently-closed="true"]')
+      for (const item of closedItems) {
+        item.hidden = !showClosed
+      }
+
+      const mapDataEl = document.getElementById('authority-map-data')
+      const mapEl = document.querySelector('library-map')
+      if (mapDataEl && mapEl) {
+        try {
+          const { active, all } = JSON.parse(mapDataEl.textContent)
+          const records = showClosed ? all : active
+          mapEl.dispatchEvent(new CustomEvent('library-map-update', { detail: { records } }))
+        } catch {
+          // Ignore JSON parse errors silently
+        }
+      }
+
+      if (showClosed) {
+        updateLibraryListStatus()
+      }
+    })
+  }
+</script>

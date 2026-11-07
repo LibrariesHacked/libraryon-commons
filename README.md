@@ -25,7 +25,7 @@ See [running and hosting the site](docs/site.md).
 
 ## Contributing
 
-See [content editing](docs/cms.md), [development guidance](docs/development.md), and [reviewing changes](docs/preservation.md#reviewing-changes).
+See [content editing](docs/cms.md), [development guidance](docs/development.md), [coding standards](docs/coding-standards.md), and [reviewing changes](docs/preservation.md#reviewing-changes).
 
 ## Authors
 

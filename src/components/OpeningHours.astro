@@ -1,46 +1,85 @@
 ---
+import { Clock } from '@lucide/astro'
 import { facilityLabel } from '../lib/directory.mjs'
 import { settings } from '../lib/site.mjs'
+
 const { library } = Astro.props
 const copy = settings.ui.opening_hours
-const hours = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'].map(
-  (day) => ({ day, frames: library.openingTimes?.[day]?.timeFrames || [] })
-)
+const days = ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+const hours = days.map((day) => ({
+  day,
+  frames: library.openingTimes?.[day]?.timeFrames || []
+}))
+const hasHours = hours.some((day) => day.frames.length)
 ---
 
-<section class="detail-section">
-  <h2>{copy.heading}</h2>
-  {hours.some((day) => day.frames.length) ? (
-    <table class="hours" aria-label={copy.heading}>
+<section
+  class="opening-hours-card"
+  data-opening-times={JSON.stringify(library.openingTimes || {})}
+  aria-labelledby="opening-hours-heading"
+>
+  <div class="opening-hours-header">
+    <div class="opening-hours-title">
+      <Clock size={19} class="opening-hours-icon" aria-hidden="true" />
+      <h2 id="opening-hours-heading">{copy.heading}</h2>
+    </div>
+    {hasHours && (
+      <div class="live-status-pill" data-live-status-pill>
+        <span class="live-status-dot" aria-hidden="true"></span>
+        <span class="live-status-text" data-live-status-text>Checking hours...</span>
+      </div>
+    )}
+  </div>
+
+  {hasHours ? (
+    <table class="hours hours-table" aria-label={copy.heading}>
       <tbody>
         {hours.map(({ day, frames }) => (
-          <tr>
-            <th scope="row">{facilityLabel(day)}</th>
+          <tr data-day={day}>
+            <th scope="row">
+              <span class="day-name">{facilityLabel(day)}</span>
+              <span class="today-tag" aria-hidden="true">Today</span>
+            </th>
             <td>
-              {frames.length
-                ? frames.map((frame) => (
-                    <div>
-                      {frame.startTime}–{frame.endTime}
-                      {frame.type && frame.type !== 'Staffed' && <small> · {frame.type}</small>}
-                    </div>
-                  ))
-                : copy.closed_not_recorded}
+              {frames.length ? (
+                frames.map((frame) => (
+                  <div
+                    class="hours-frame"
+                    data-start={frame.startTime}
+                    data-end={frame.endTime}
+                  >
+                    <span class="hours-time">{frame.startTime}–{frame.endTime}</span>
+                    {frame.type && frame.type !== 'Staffed' && (
+                      <span class="hours-type-badge"> · {frame.type}</span>
+                    )}
+                    <span class="current-session-badge" aria-hidden="true">Now</span>
+                  </div>
+                ))
+              ) : (
+                <span class="hours-closed">{copy.closed_not_recorded}</span>
+              )}
             </td>
           </tr>
         ))}
       </tbody>
     </table>
   ) : (
-    <p>{copy.not_supplied}</p>
+    <p class="hours-empty">{copy.not_supplied}</p>
   )}
+
   {library.openingTimesNotes && (
-    <p class="muted" style="font-size:.8rem;margin-top:1rem">
+    <p class="hours-note">
       {library.openingTimesNotes}
     </p>
   )}
-  {hours.some((day) => day.frames.length) && (
-    <p class="muted" style="font-size:.8rem;margin-top:1rem">
+  {hasHours && (
+    <p class="hours-note hours-holiday-note">
       {copy.holiday_note}
     </p>
   )}
 </section>
+
+<script>
+  import { updateOpeningHoursCards } from '../lib/directory-live.mjs'
+  updateOpeningHoursCards()
+</script>

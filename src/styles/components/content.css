@@ -852,11 +852,14 @@
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
   gap: var(--size-9);
+  align-items: start;
+}
+.detail-grid > div > :first-child,
+.detail-grid > aside > :first-child {
+  margin-top: 0;
 }
 .detail-section {
-  padding-bottom: var(--size-7);
-  border-bottom: var(--border-size-1) solid var(--line);
-  margin-bottom: var(--size-7);
+  margin-bottom: var(--size-8);
 }
 .detail-section h2 {
   font-size: 1.6rem;
@@ -884,7 +887,6 @@
 .hours td {
   text-align: left;
   padding: 0.75rem 0.4rem;
-  border-bottom: var(--border-size-1) solid var(--line);
   vertical-align: top;
 }
 .hours th {

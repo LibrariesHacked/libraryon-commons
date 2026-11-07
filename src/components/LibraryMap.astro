@@ -108,7 +108,7 @@ const data = libraryMapFeatures(libraries, sitePath)
           center: [-3.5, 55],
           zoom: 4.5,
           renderWorldCopies: false,
-          cooperativeGestures: true
+          cooperativeGestures: false
         })
         this.map = map
         map.addControl(new NavigationControl(), 'top-right')
@@ -256,7 +256,7 @@ const data = libraryMapFeatures(libraries, sitePath)
         (feature) => feature.geometry.coordinates
       )
       if (points.length === 1) {
-        this.map.jumpTo({ center: points[0], zoom: 15 })
+        this.map.jumpTo({ center: points[0], zoom: 16 })
       } else if (points.length > 1) {
         const longitudes = points.map(([longitude]) => longitude)
         const latitudes = points.map(([, latitude]) => latitude)

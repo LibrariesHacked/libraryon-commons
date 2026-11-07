@@ -1,21 +1,181 @@
 ---
+import {
+  Accessibility,
+  Archive,
+  ArrowUpDown,
+  ArrowUpRight,
+  Baby,
+  BookOpen,
+  Briefcase,
+  Building,
+  Calendar,
+  Car,
+  CircleCheck,
+  Coffee,
+  DoorOpen,
+  Ear,
+  GraduationCap,
+  Heart,
+  HeartPulse,
+  Info,
+  Landmark,
+  Mail,
+  Monitor,
+  Printer,
+  Scan,
+  Shield,
+  Sparkles,
+  TreePine,
+  Truck,
+  Users,
+  Wifi,
+  Wrench
+} from '@lucide/astro'
 import { safeURL } from '../lib/site.mjs'
 
-const { heading, items = [] } = Astro.props
-const validItems = items.filter(Boolean)
+const {
+  heading,
+  items = [],
+  mode = 'display',
+  tagGroup,
+  initialVisible,
+  viewAllLabel = 'View all'
+} = Astro.props
+
+const validItems = items.filter((item) =>
+  item && (typeof item === 'string' ? item.trim() : (item.label || item.service || item.value))
+)
+
+function getFacilityDetails(label = '', index = 0) {
+  const l = String(label).toLowerCase()
+
+  // 1. Digital & Technology (Plum)
+  if (l.includes('wi-fi') || l.includes('wifi')) return { icon: Wifi, color: 'plum' }
+  if (l.includes('computer') || l.includes('digital skills') || l.includes('replay'))
+    return { icon: Monitor, color: 'plum' }
+  if (l.includes('printer') || l.includes('print')) return { icon: Printer, color: 'plum' }
+  if (l.includes('photocopier')) return { icon: Printer, color: 'plum' }
+  if (l.includes('scan') || l.includes('fax')) return { icon: Scan, color: 'plum' }
+  if (l.includes('maker')) return { icon: Wrench, color: 'plum' }
+
+  // 2. Spaces, Environment & Hospitality (Apricot)
+  if (l.includes('cafe') || l.includes('coffee') || l.includes('tea'))
+    return { icon: Coffee, color: 'apricot' }
+  if (l.includes('garden')) return { icon: TreePine, color: 'apricot' }
+  if (l.includes('space') || l.includes('room') || l.includes('work'))
+    return { icon: Users, color: 'apricot' }
+  if (l.includes('toilet') || l.includes('changing places'))
+    return { icon: CircleCheck, color: 'apricot' }
+
+  // 3. Books, Heritage & Culture (Rose)
+  if (l.includes('book') || l.includes('reading') || l.includes('lending'))
+    return { icon: BookOpen, color: 'rose' }
+  if (l.includes('child') || l.includes('baby') || l.includes('toddler'))
+    return { icon: Baby, color: 'rose' }
+  if (l.includes('archive') || l.includes('history') || l.includes('newspaper'))
+    return { icon: Archive, color: 'rose' }
+  if (l.includes('event')) return { icon: Calendar, color: 'rose' }
+  if (l.includes('hobby') || l.includes('craft') || l.includes('interest'))
+    return { icon: Sparkles, color: 'rose' }
+
+  // 4. Access, Wellbeing & Community Support (Green)
+  if (
+    l.includes('step-free') ||
+    l.includes('level access') ||
+    l.includes('wheelchair') ||
+    l.includes('accessible')
+  )
+    return { icon: Accessibility, color: 'green' }
+  if (l.includes('hearing') || l.includes('loop')) return { icon: Ear, color: 'green' }
+  if (l.includes('automatic door') || l.includes('door')) return { icon: DoorOpen, color: 'green' }
+  if (l.includes('lift') || l.includes('elevator')) return { icon: ArrowUpDown, color: 'green' }
+  if (l.includes('parking')) return { icon: Car, color: 'green' }
+  if (l.includes('dementia') || l.includes('autism') || l.includes('sensory'))
+    return { icon: Heart, color: 'green' }
+  if (l.includes('business') || l.includes('career')) return { icon: Briefcase, color: 'green' }
+  if (l.includes('delivered') || l.includes('delivery') || l.includes('mobile'))
+    return { icon: Truck, color: 'green' }
+  if (l.includes('post office')) return { icon: Mail, color: 'green' }
+  if (l.includes('council') || l.includes('government')) return { icon: Landmark, color: 'green' }
+  if (l.includes('police')) return { icon: Shield, color: 'green' }
+  if (l.includes('health') || l.includes('clinic')) return { icon: HeartPulse, color: 'green' }
+  if (l.includes('school') || l.includes('college') || l.includes('uni'))
+    return { icon: GraduationCap, color: 'green' }
+  if (l.includes('community')) return { icon: Building, color: 'green' }
+  if (l.includes('info') || l.includes('advice')) return { icon: Info, color: 'green' }
+
+  // Harmonious round-robin across brand color palette for any unclassified item
+  const colors = ['plum', 'rose', 'green', 'apricot']
+  return { icon: CircleCheck, color: colors[index % colors.length] }
+}
 ---
 
-{validItems.length > 0 && (
-  <section class="detail-section">
-    <h2>{heading}</h2>
-    <ul class="tags">
-      {validItems.map((item) => {
-        if (typeof item === 'string') {
-          return <li>{item}</li>
-        }
-        const label = item.label || item.service || ''
-        const url = safeURL(item.url)
-        return <li>{url ? <a href={url}>{label}</a> : label}</li>
+{validItems.length > 0 && mode === 'select' && (
+  <div class="filter-group">
+    {heading && <p class="filter-group-heading">{heading}</p>}
+    <div class="facility-chips filter-tag-list" data-tag-group={tagGroup}>
+      {validItems.map((item, index) => {
+        const label = typeof item === 'string' ? item : item.label || item.service || ''
+        const value =
+          typeof item === 'object' && item.value
+            ? item.value
+            : (typeof item === 'object' && item.service ? item.service : label)
+        const { icon: IconComponent, color } = getFacilityDetails(label, index)
+        const isExtra = typeof initialVisible === 'number' && index >= initialVisible
+        return (
+          <button
+            type="button"
+            class={`facility-chip facility-chip--${color} filter-tag`}
+            data-service={tagGroup === 'services' ? value : undefined}
+            data-accessibility={tagGroup === 'accessibility' ? value : undefined}
+            data-extra-tag={isExtra ? 'true' : undefined}
+            hidden={isExtra ? true : undefined}
+            aria-pressed="false"
+          >
+            <span class="facility-chip-icon" aria-hidden="true">
+              <IconComponent size={15} />
+            </span>
+            <span class="facility-chip-label">{label}</span>
+          </button>
+        )
+      })}
+      {typeof initialVisible === 'number' && validItems.length > initialVisible && (
+        <button
+          type="button"
+          class="filter-tag-more"
+          data-toggle-tags={tagGroup}
+          data-expanded="false"
+        >
+          {viewAllLabel}
+        </button>
+      )}
+    </div>
+  </div>
+)}
+
+{validItems.length > 0 && mode !== 'select' && (
+  <section class="detail-section facility-section">
+    {heading && <h2>{heading}</h2>}
+    <ul class="facility-chips">
+      {validItems.map((item, index) => {
+        const label = typeof item === 'string' ? item : item.label || item.service || ''
+        const url = typeof item === 'object' && item.url ? safeURL(item.url) : null
+        const { icon: IconComponent, color } = getFacilityDetails(label, index)
+        return (
+          <li class={`facility-chip facility-chip--${color}`}>
+            <span class="facility-chip-icon" aria-hidden="true">
+              <IconComponent size={15} />
+            </span>
+            {url ? (
+              <a href={url} class="facility-chip-link">
+                <span>{label}</span>
+                <ArrowUpRight size={13} aria-hidden="true" />
+              </a>
+            ) : (
+              <span class="facility-chip-label">{label}</span>
+            )}
+          </li>
+        )
       })}
     </ul>
   </section>

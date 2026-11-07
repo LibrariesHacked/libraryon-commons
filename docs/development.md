@@ -1,5 +1,7 @@
 # Code And Templates
 
+For detailed coding standards, plain English conventions, design token rules, and directory data integrity requirements, see [coding standards](coding-standards.md).
+
 ## Architecture
 
 The Astro site is organised into three layers:

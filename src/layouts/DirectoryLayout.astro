@@ -1,9 +1,31 @@
 ---
+import { Building, Globe, Library } from '@lucide/astro'
 import Breadcrumbs from '../components/Breadcrumbs.astro'
 import { directoryBreadcrumbs } from '../lib/directory.mjs'
 import SiteLayout from './SiteLayout.astro'
 const { title, description, subtitle, authority, tags = [] } = Astro.props
 const breadcrumbs = directoryBreadcrumbs(title, authority)
+
+const getHeroTagIcon = (tag = '') => {
+  const lower = String(tag).toLowerCase()
+  if (
+    [
+      'england',
+      'scotland',
+      'wales',
+      'northern ireland',
+      'isle of man',
+      'jersey',
+      'guernsey'
+    ].some((country) => lower.includes(country))
+  ) {
+    return Globe
+  }
+  if (lower.includes('librar') || lower.includes('service')) {
+    return Library
+  }
+  return Building
+}
 ---
 
 <SiteLayout title={title} description={description}>
@@ -13,10 +35,16 @@ const breadcrumbs = directoryBreadcrumbs(title, authority)
       <h1>{title}</h1>
       {subtitle && <p>{subtitle}</p>}
       {tags.length > 0 && (
-        <ul class="tags">
-          {tags.map((tag) => (
-            <li>{tag}</li>
-          ))}
+        <ul class="tags hero-tags">
+          {tags.map((tag) => {
+            const Icon = getHeroTagIcon(tag)
+            return (
+              <li class="hero-tag">
+                <Icon size={14} class="hero-tag-icon" aria-hidden="true" />
+                <span>{tag}</span>
+              </li>
+            )
+          })}
         </ul>
       )}
     </div>

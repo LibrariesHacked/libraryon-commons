@@ -206,3 +206,17 @@ test('grey line tokens are not used as filled backgrounds', () => {
       )
   }
 })
+
+test('stylesheets do not use uppercase text transformations', () => {
+  for (const file of modules) {
+    postcss
+      .parse(read(file), { from: path.join('src/styles', file) })
+      .walkDecls('text-transform', (declaration) =>
+        assert.notEqual(
+          declaration.value.toLowerCase(),
+          'uppercase',
+          `${file}: uppercase transformation is forbidden`
+        )
+      )
+  }
+})
