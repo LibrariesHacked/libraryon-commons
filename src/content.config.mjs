@@ -110,4 +110,20 @@ const contributors = defineCollection({
   })
 })
 
-export const collections = { pages, faqs, resources, sessions, contributors }
+const organisations = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/organisations' }),
+  schema: z.object({
+    name: z.string().min(1),
+    slug: z.string().min(1),
+    acronym: z.string().optional(),
+    role: z.string().optional(),
+    description: z.string().optional(),
+    website: z.string().url().optional(),
+    logo: z.string().optional(),
+    country: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    updated_on: z.coerce.date().optional()
+  })
+})
+
+export const collections = { pages, faqs, resources, sessions, contributors, organisations }

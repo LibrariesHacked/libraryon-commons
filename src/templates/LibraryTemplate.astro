@@ -7,16 +7,19 @@ import LibraryMap from '../components/LibraryMap.astro'
 import OpeningHours from '../components/OpeningHours.astro'
 import ShareButtons from '../components/ShareButtons.astro'
 import TagListSection from '../components/TagListSection.astro'
+import NewsList from '../components/NewsList.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import { libraries, facilityLabel } from '../lib/directory.mjs'
 import { canonicalInternalPath, safeURL, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
 import { generateLibrarySchema } from '../lib/helpers/seoHelpers.mjs'
+import { getNewsForLibrary } from '../lib/news.mjs'
 
 const { library, authority } = Astro.props
 const copy = settings.ui.directory
 const maps = library.mapLinks
 const nearby = library.nearby(libraries)
 const tags = [authority?.country, library.operatingModel].filter(Boolean)
+const newsStories = getNewsForLibrary(library.id)
 
 const siteBase = Astro.site ? Astro.site.href : settings.site.url
 const canonicalUrl = Astro.site
@@ -128,6 +131,16 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
       <a href={safeURL(library.virtualTourUrl)}>
         {copy.open_virtual_tour} <ArrowUpRight size={16} aria-hidden="true" />
       </a>
+    </section>
+  )}
+
+  {newsStories.length > 0 && (
+    <section class="detail-section">
+      <NewsList
+        stories={newsStories}
+        title={`News & Updates for ${library.name} (${newsStories.length})`}
+        subtitle="Stories mentioning this library in Public Libraries News."
+      />
     </section>
   )}
 

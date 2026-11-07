@@ -1,0 +1,69 @@
+---
+import NewsCard from './NewsCard.astro'
+
+const {
+  stories = [],
+  title = 'Public Libraries News Stories',
+  subtitle = '',
+  emptyMessage = 'No news stories recorded.'
+} = Astro.props
+---
+
+<section class="news-list-section" aria-labelledby="news-list-heading">
+  {title && (
+    <div class="news-list-header">
+      <h2 id="news-list-heading">{title}</h2>
+      {subtitle && <p class="news-list-subtitle">{subtitle}</p>}
+    </div>
+  )}
+
+  {stories.length > 0 ? (
+    <div class="news-list-grid">
+      {stories.map((story) => (
+        <NewsCard story={story} />
+      ))}
+    </div>
+  ) : (
+    <p class="news-empty-message">{emptyMessage}</p>
+  )}
+</section>
+
+<style>
+  .news-list-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4, 1.25rem);
+    margin-block: var(--size-4, 1.5rem);
+  }
+
+  .news-list-header {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-1, 0.25rem);
+  }
+
+  .news-list-header h2 {
+    font-size: var(--font-size-3, 1.25rem);
+    color: var(--text-1, #0f172a);
+    margin: 0;
+  }
+
+  .news-list-subtitle {
+    font-size: var(--font-size-1, 0.9375rem);
+    color: var(--text-2, #64748b);
+    margin: 0;
+  }
+
+  .news-list-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--size-3, 0.875rem);
+  }
+
+  .news-empty-message {
+    font-size: var(--font-size-1, 0.9375rem);
+    color: var(--text-2, #64748b);
+    font-style: italic;
+    margin: 0;
+  }
+</style>

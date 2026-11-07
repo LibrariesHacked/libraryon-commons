@@ -1977,3 +1977,45 @@ collections:
         time_format: false
         hint: Set automatically each time this profile is saved.
         required: false
+  - name: organisations
+    label: Organisations
+    label_singular: Organisation
+    folder: src/content/organisations
+    create: true
+    slug: '{{slug}}'
+    identifier_field: name
+    editor:
+      preview: false
+    fields:
+      - name: name
+        label: Organisation Name
+        widget: string
+      - name: acronym
+        label: Acronym / Abbreviation
+        widget: string
+        required: false
+      - name: slug
+        label: URL Slug
+        widget: string
+      - name: website
+        label: Official Website URL
+        widget: string
+        required: false
+      - name: category
+        label: Category
+        widget: select
+        options:
+          - government
+          - funding-development
+          - professional-body
+          - sector-development
+          - charity
+          - trade-union
+          - national-library
+          - campaign
+      - name: description
+        label: Short Summary
+        widget: text
+      - name: body
+        label: Body Content
+        widget: markdown

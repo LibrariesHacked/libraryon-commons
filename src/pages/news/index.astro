@@ -1,0 +1,564 @@
+---
+import { ChevronDown, Filter, X, Search, RotateCcw } from '@lucide/astro'
+import SiteLayout from '../../layouts/SiteLayout.astro'
+import NewsCard from '../../components/NewsCard.astro'
+import NewsMap from '../../components/NewsMap.astro'
+import {
+  getNewsMetadata,
+  CATEGORY_LABELS,
+  CHANGE_TYPE_LABELS
+} from '../../lib/news.mjs'
+import { sitePath } from '../../lib/helpers/siteHelpers.mjs'
+import { readFileSync, existsSync } from 'node:fs'
+import { pathToFileURL } from 'node:url'
+
+const metadata = getNewsMetadata()
+const localNewsUrl = new URL('../../data/news/news-index.json', import.meta.url)
+const rootNewsUrl = new URL('./src/data/news/news-index.json', pathToFileURL(`${process.cwd()}/`))
+const newsIndexUrl = existsSync(localNewsUrl) ? localNewsUrl : rootNewsUrl
+let allStories = []
+if (existsSync(newsIndexUrl)) {
+  try {
+    allStories = JSON.parse(readFileSync(newsIndexUrl, 'utf8'))
+  } catch (err) {
+    console.warn('Failed reading news-index.json:', err.message)
+  }
+}
+
+// Initial 40 stories for SSR
+const initialStories = allStories.slice(0, 40)
+// Initial stories with valid coordinates for the initial map render
+const initialMapStories = allStories.filter(s => typeof s.lat === 'number' && typeof s.lng === 'number').slice(0, 150)
+
+const categoriesList = Object.entries(metadata.categories || {})
+  .map(([key, count]) => ({ key, label: CATEGORY_LABELS[key] || key.replace(/_/g, ' '), count }))
+  .sort((a, b) => b.count - a.count)
+
+const changeTypesList = Object.entries(metadata.change_types || {})
+  .map(([key, count]) => ({ key, label: CHANGE_TYPE_LABELS[key] || key.replace(/_/g, ' '), count }))
+  .sort((a, b) => b.count - a.count)
+
+const orgsList = Object.entries(metadata.organisations || {})
+  .map(([key, count]) => ({ key, label: key, count }))
+  .sort((a, b) => b.count - a.count)
+
+const countriesList = Object.entries(metadata.countries || {})
+  .map(([key, count]) => ({ key, label: key, count }))
+  .sort((a, b) => b.count - a.count)
+
+const authoritiesList = Object.entries(metadata.authorities || {})
+  .map(([key, count]) => ({ key, label: key, count }))
+  .sort((a, b) => a.label.localeCompare(b.label, 'en'))
+---
+
+<SiteLayout
+  title="Public Libraries News | LibraryCommons"
+  description="Searchable news archive and interactive map of 38,000+ public library stories, funding updates, closures, and campaigns."
+>
+  <header class="page-heading">
+    <div class="shell">
+      <p class="eyebrow">Sector News & Archive</p>
+      <h1>Public Libraries News</h1>
+      <p>
+        Browse and map over {metadata.total_stories ? metadata.total_stories.toLocaleString('en-GB') : '38,000'} stories
+        from the weekly digests published by <strong>Ian Anstice</strong> on
+        <a href="https://www.publiclibrariesnews.com/" target="_blank" rel="noopener noreferrer">Public Libraries News</a>,
+        in partnership with <a href="https://www.librarycampaign.com/" target="_blank" rel="noopener noreferrer">The Library Campaign</a>.
+      </p>
+    </div>
+  </header>
+
+  <main class="section shell">
+    <form id="news-filter-form" class="library-search-form" role="search" aria-label="Filter news stories">
+      <div class="library-search-bar">
+        <div class="library-search-input-wrap">
+          <Search size={18} aria-hidden="true" style="color: var(--text-2, #64748b);" />
+          <input
+            id="news-search-query"
+            type="search"
+            placeholder="Search keywords, council names, library branches..."
+            aria-label="Search news stories"
+            autocomplete="off"
+          />
+        </div>
+        <button id="clear-all-filters" class="button button-secondary" type="button" title="Reset all filters">
+          <RotateCcw size={16} aria-hidden="true" />
+          <span>Reset</span>
+        </button>
+      </div>
+
+      <div class="library-filter-tabs">
+        <!-- Category Filter -->
+        <div class="tab-filter" id="category-tab">
+          <button
+            id="category-toggle"
+            class="tab-filter-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="category-panel"
+            popovertarget="category-panel"
+          >
+            <span>Category</span>
+            <span id="category-count" class="filter-badge" hidden>0</span>
+            <ChevronDown size={16} aria-hidden="true" />
+          </button>
+          <div id="category-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Category" popover="auto">
+            <div class="tab-filter-body">
+              <fieldset class="filter-fieldset">
+                <legend class="filter-legend">Library Themes</legend>
+                <div class="filter-checkbox-grid">
+                  {categoriesList.map(({ key, label, count }) => (
+                    <label class="filter-checkbox-label">
+                      <input type="checkbox" name="category" value={key} />
+                      <span class="label-text">{label}</span>
+                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <!-- Change Type Filter -->
+        <div class="tab-filter" id="change-tab">
+          <button
+            id="change-toggle"
+            class="tab-filter-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="change-panel"
+            popovertarget="change-panel"
+          >
+            <span>Change Type</span>
+            <span id="change-count" class="filter-badge" hidden>0</span>
+            <ChevronDown size={16} aria-hidden="true" />
+          </button>
+          <div id="change-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Change Type" popover="auto">
+            <div class="tab-filter-body">
+              <fieldset class="filter-fieldset">
+                <legend class="filter-legend">Type of Service Change</legend>
+                <div class="filter-checkbox-grid">
+                  {changeTypesList.map(({ key, label, count }) => (
+                    <label class="filter-checkbox-label">
+                      <input type="checkbox" name="change_type" value={key} />
+                      <span class="label-text">{label}</span>
+                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <!-- Organisation Filter -->
+        <div class="tab-filter" id="org-tab">
+          <button
+            id="org-toggle"
+            class="tab-filter-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="org-panel"
+            popovertarget="org-panel"
+          >
+            <span>Organisation</span>
+            <span id="org-count" class="filter-badge" hidden>0</span>
+            <ChevronDown size={16} aria-hidden="true" />
+          </button>
+          <div id="org-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Sector Organisation" popover="auto">
+            <div class="tab-filter-body">
+              <fieldset class="filter-fieldset">
+                <legend class="filter-legend">National Bodies & Unions</legend>
+                <div class="filter-checkbox-grid">
+                  {orgsList.map(({ key, label, count }) => (
+                    <label class="filter-checkbox-label">
+                      <input type="checkbox" name="organisation" value={key} />
+                      <span class="label-text">{label}</span>
+                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <!-- Country Filter -->
+        <div class="tab-filter" id="country-tab">
+          <button
+            id="country-toggle"
+            class="tab-filter-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="country-panel"
+            popovertarget="country-panel"
+          >
+            <span>Country</span>
+            <span id="country-count" class="filter-badge" hidden>0</span>
+            <ChevronDown size={16} aria-hidden="true" />
+          </button>
+          <div id="country-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Country" popover="auto">
+            <div class="tab-filter-body">
+              <fieldset class="filter-fieldset">
+                <legend class="filter-legend">Countries</legend>
+                <div class="filter-checkbox-grid">
+                  {countriesList.slice(0, 20).map(({ key, label, count }) => (
+                    <label class="filter-checkbox-label">
+                      <input type="checkbox" name="country" value={key} />
+                      <span class="label-text">{label}</span>
+                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
+                    </label>
+                  ))}
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        <!-- Library Authority Filter -->
+        <div class="tab-filter" id="authority-tab">
+          <select id="authority-select" class="tab-filter-select" aria-label="Filter by Library Authority">
+            <option value="">All Library Authorities ({authoritiesList.length})</option>
+            {authoritiesList.map(({ key, label, count }) => (
+              <option value={key}>{label} ({count})</option>
+            ))}
+          </select>
+        </div>
+      </div>
+    </form>
+
+    <section class="library-results-workspace" aria-labelledby="news-results-heading">
+      <div class="results-heading">
+        <h2 id="news-results-heading">News Stories</h2>
+        <p id="news-result-count" aria-live="polite">
+          Showing latest stories
+        </p>
+      </div>
+
+      <div class="library-results-layout">
+        <!-- Interactive Map -->
+        <div class="news-map-pane">
+          <NewsMap
+            id="news-results-map"
+            stories={initialMapStories}
+            label="Mapped public libraries news stories"
+          />
+        </div>
+
+        <!-- Results Column -->
+        <div class="library-results-column">
+          <div id="news-results-container" class="news-cards-container">
+            {initialStories.map((story) => (
+              <NewsCard story={story} />
+            ))}
+          </div>
+
+          <button id="load-more-news" class="button button-secondary load-more" type="button">
+            Load more stories
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+</SiteLayout>
+
+<style>
+  .filter-fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .filter-legend {
+    font-weight: var(--font-weight-6, 600);
+    font-size: var(--font-size-1, 0.9375rem);
+    margin-bottom: var(--size-3, 0.75rem);
+    color: var(--text-1, #0f172a);
+  }
+
+  .filter-checkbox-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2, 0.5rem);
+    max-height: 280px;
+    overflow-y: auto;
+    padding-right: var(--size-2, 0.5rem);
+  }
+
+  .filter-checkbox-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--size-2, 0.5rem);
+    font-size: var(--font-size-0, 0.8125rem);
+    cursor: pointer;
+    padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
+    border-radius: var(--radius-1, 4px);
+    transition: background 0.15s ease;
+  }
+
+  .filter-checkbox-label:hover {
+    background: var(--surface-2, #f1f5f9);
+  }
+
+  .filter-checkbox-label input[type='checkbox'] {
+    margin: 0;
+  }
+
+  .label-text {
+    flex-grow: 1;
+    color: var(--text-1, #1e293b);
+  }
+
+  .count-pill {
+    font-size: var(--font-size-00, 0.75rem);
+    background: var(--surface-2, #f1f5f9);
+    color: var(--text-2, #64748b);
+    padding: 0.1rem 0.4rem;
+    border-radius: var(--radius-round, 9999px);
+  }
+
+  .tab-filter-select {
+    min-height: 44px;
+    padding: 0.55rem var(--size-3);
+    background: var(--paper, #ffffff);
+    color: var(--ink, #0f172a);
+    border: var(--border-size-1, 1px) solid var(--line-strong, #cbd5e1);
+    border-radius: 999px;
+    font-size: 0.86rem;
+    font-weight: var(--font-weight-5, 500);
+    cursor: pointer;
+  }
+
+  .news-map-pane {
+    position: sticky;
+    top: var(--size-4, 1.25rem);
+    align-self: start;
+  }
+
+  .news-cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3, 0.875rem);
+  }
+</style>
+
+<script>
+  import { autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom'
+
+  let allStories = []
+  let filteredStories = []
+  let displayedCount = 40
+  const PAGE_SIZE = 30
+
+  const form = document.getElementById('news-filter-form')
+  const searchInput = document.getElementById('news-search-query')
+  const authoritySelect = document.getElementById('authority-select')
+  const resultsContainer = document.getElementById('news-results-container')
+  const resultCount = document.getElementById('news-result-count')
+  const loadMoreBtn = document.getElementById('load-more-news')
+  const resetBtn = document.getElementById('clear-all-filters')
+  const newsMapEl = document.querySelector('news-map')
+
+  // Panels & Popovers setup
+  const popoverToggles = [
+    { toggle: '#category-toggle', panel: '#category-panel', countBadge: '#category-count', name: 'category' },
+    { toggle: '#change-toggle', panel: '#change-panel', countBadge: '#change-count', name: 'change_type' },
+    { toggle: '#org-toggle', panel: '#org-panel', countBadge: '#org-count', name: 'organisation' },
+    { toggle: '#country-toggle', panel: '#country-panel', countBadge: '#country-count', name: 'country' }
+  ]
+
+  popoverToggles.forEach(({ toggle, panel }) => {
+    const btn = document.querySelector(toggle)
+    const pnl = document.querySelector(panel)
+    if (btn && pnl) {
+      btn.addEventListener('click', () => {
+        computePosition(btn, pnl, {
+          placement: 'bottom-start',
+          middleware: [offset(6), flip(), shift({ padding: 8 })]
+        }).then(({ x, y }) => {
+          Object.assign(pnl.style, { left: `${x}px`, top: `${y}px` })
+        })
+      })
+    }
+  })
+
+  // Load news index async
+  async function loadIndex() {
+    try {
+      const res = await fetch('/news.json')
+      if (res.ok) {
+        allStories = await res.json()
+        applyFilters()
+      }
+    } catch (err) {
+      console.warn('Error loading news.json:', err)
+    }
+  }
+
+  function getSelectedValues(name) {
+    const checked = form.querySelectorAll(`input[name="${name}"]:checked`)
+    return Array.from(checked).map(c => c.value)
+  }
+
+  function updateBadge(name, countBadgeId) {
+    const selected = getSelectedValues(name)
+    const badge = document.querySelector(countBadgeId)
+    if (badge) {
+      badge.textContent = selected.length
+      badge.hidden = selected.length === 0
+    }
+  }
+
+  function applyFilters() {
+    if (!allStories || allStories.length === 0) return
+
+    const query = (searchInput.value || '').toLowerCase().trim()
+    const selectedCats = new Set(getSelectedValues('category'))
+    const selectedChanges = new Set(getSelectedValues('change_type'))
+    const selectedOrgs = new Set(getSelectedValues('organisation'))
+    const selectedCountries = new Set(getSelectedValues('country'))
+    const selectedAuthority = authoritySelect.value
+
+    popoverToggles.forEach(({ name, countBadge }) => updateBadge(name, countBadge))
+
+    filteredStories = allStories.filter(story => {
+      // Query filter
+      if (query) {
+        const textMatch = (story.text || '').toLowerCase().includes(query)
+        const entityMatch = (story.entity || '').toLowerCase().includes(query)
+        const authMatch = (story.authority_name || '').toLowerCase().includes(query)
+        const libMatch = (story.library_names || []).some(n => n.toLowerCase().includes(query))
+        if (!textMatch && !entityMatch && !authMatch && !libMatch) return false
+      }
+
+      // Category
+      if (selectedCats.size > 0) {
+        const matchesCat = (story.categories || []).some(c => selectedCats.has(c))
+        if (!matchesCat) return false
+      }
+
+      // Change Type
+      if (selectedChanges.size > 0) {
+        if (!selectedChanges.has(story.change_type)) return false
+      }
+
+      // Organisation
+      if (selectedOrgs.size > 0) {
+        const matchesOrg = (story.organisations || []).some(o => selectedOrgs.has(o))
+        if (!matchesOrg) return false
+      }
+
+      // Country
+      if (selectedCountries.size > 0) {
+        if (!selectedCountries.has(story.country)) return false
+      }
+
+      // Authority
+      if (selectedAuthority) {
+        if (story.authority_name !== selectedAuthority) return false
+      }
+
+      return true
+    })
+
+    displayedCount = PAGE_SIZE
+    renderResults()
+    updateMap()
+  }
+
+  function renderResults() {
+    const visible = filteredStories.slice(0, displayedCount)
+    resultCount.textContent = `Showing ${visible.length.toLocaleString('en-GB')} of ${filteredStories.length.toLocaleString('en-GB')} stories`
+
+    resultsContainer.innerHTML = ''
+    if (visible.length === 0) {
+      resultsContainer.innerHTML = '<p class="news-empty-message">No news stories match the current filters.</p>'
+      loadMoreBtn.hidden = true
+      return
+    }
+
+    const fragment = document.createDocumentFragment()
+    visible.forEach(story => {
+      const card = document.createElement('article')
+      card.className = 'news-card'
+
+      const dateStr = story.date || ''
+      const entityStr = story.entity || story.authority_name || ''
+      const textStr = story.text || ''
+
+      const pillsHtml = [
+        story.change_type ? `<span class="news-pill news-pill--change">${story.change_type.replace(/_/g, ' ')}</span>` : '',
+        ...(story.categories || []).slice(0, 2).map(c => `<span class="news-pill news-pill--category">${c.replace(/_/g, ' ')}</span>`),
+        ...(story.organisations || []).map(o => `<span class="news-pill news-pill--org">${o}</span>`)
+      ].join('')
+
+      const sourceLinkHtml = story.url
+        ? `<a href="${story.url}" class="news-source-link" target="_blank" rel="noopener noreferrer">${story.domain || 'Source article'} →</a>`
+        : ''
+
+      card.innerHTML = `
+        <header class="news-card-header">
+          <div class="news-card-meta">
+            <time datetime="${dateStr}" class="news-date">📅 ${dateStr}</time>
+            ${story.authority_name ? `<span class="news-authority-badge">🏛️ ${story.authority_name}</span>` : ''}
+            ${story.country && !story.authority_name ? `<span class="news-country-badge">📍 ${story.country}</span>` : ''}
+          </div>
+          ${entityStr ? `<h3 class="news-entity-title">${entityStr}</h3>` : ''}
+        </header>
+        <div class="news-body">
+          <p class="news-text">${textStr}</p>
+        </div>
+        <footer class="news-card-footer">
+          <div class="news-tags">${pillsHtml}</div>
+          ${sourceLinkHtml}
+        </footer>
+      `
+      fragment.appendChild(card)
+    })
+
+    resultsContainer.appendChild(fragment)
+    loadMoreBtn.hidden = displayedCount >= filteredStories.length
+  }
+
+  function updateMap() {
+    if (newsMapEl) {
+      // Pick stories that have coordinates
+      const mapped = filteredStories.filter(s => typeof s.lat === 'number' && typeof s.lng === 'number').slice(0, 200)
+      newsMapEl.dispatchEvent(new CustomEvent('news-map-update', { detail: { stories: mapped } }))
+    }
+  }
+
+  // Event Listeners
+  let searchTimer
+  searchInput.addEventListener('input', () => {
+    clearTimeout(searchTimer)
+    searchTimer = setTimeout(applyFilters, 250)
+  })
+
+  authoritySelect.addEventListener('change', applyFilters)
+
+  form.querySelectorAll('input[type="checkbox"]').forEach(box => {
+    box.addEventListener('change', applyFilters)
+  })
+
+  loadMoreBtn.addEventListener('click', () => {
+    displayedCount += PAGE_SIZE
+    renderResults()
+  })
+
+  resetBtn.addEventListener('click', () => {
+    searchInput.value = ''
+    authoritySelect.value = ''
+    form.querySelectorAll('input[type="checkbox"]').forEach(box => { box.checked = false })
+    popoverToggles.forEach(({ countBadge }) => {
+      const b = document.querySelector(countBadge)
+      if (b) b.hidden = true
+    })
+    applyFilters()
+  })
+
+  // Start background index load
+  loadIndex()
+</script>

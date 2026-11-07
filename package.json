@@ -11,6 +11,7 @@
     "preview": "astro preview --host 127.0.0.1 --port 4322",
     "package:netlify-admin": "node scripts/package-netlify-admin.mjs",
     "test": "node --test",
+    "sync:news": "node scripts/sync-news.mjs",
     "directory:schemas": "node scripts/directory-schemas.mjs",
     "directory:lookups": "node scripts/directory/lookups.mjs",
     "directory:migrate": "node scripts/directory/migrate.mjs",

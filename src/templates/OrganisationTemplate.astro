@@ -1,0 +1,233 @@
+---
+import { render } from 'astro:content'
+import { ArrowUpRight, Building2, Globe, Tag } from '@lucide/astro'
+import SiteLayout from '../layouts/SiteLayout.astro'
+import NewsList from '../components/NewsList.astro'
+import { getNewsForOrganisation } from '../lib/news.mjs'
+
+const { organisation } = Astro.props
+const { Content } = await render(organisation)
+const stories = getNewsForOrganisation(organisation.data.slug)
+---
+
+<SiteLayout
+  title={organisation.data.name}
+  description={organisation.data.description || `${organisation.data.name} profile and public library news stories.`}
+>
+  <header class="page-heading">
+    <div class="shell">
+      <p class="eyebrow">Library Sector Organisation</p>
+      <h1>{organisation.data.name}</h1>
+      {organisation.data.role && (
+        <p class="org-role-badge">
+          <Building2 size={16} aria-hidden="true" />
+          <span>{organisation.data.role}</span>
+        </p>
+      )}
+      {organisation.data.description && (
+        <p class="org-lead-description">{organisation.data.description}</p>
+      )}
+    </div>
+  </header>
+
+  <main class="section shell">
+    <div class="org-profile-layout">
+      <div class="org-main-content">
+        <section class="org-biography-section">
+          <h2>About {organisation.data.acronym || organisation.data.name}</h2>
+          <div class="prose">
+            <Content />
+          </div>
+        </section>
+
+        <section class="org-news-section">
+          <NewsList
+            stories={stories}
+            title={`Public Libraries News Stories (${stories.length})`}
+            subtitle={`Roundups and reports mentioning ${organisation.data.name} in Public Libraries News.`}
+            emptyMessage={`No news stories currently recorded mentioning ${organisation.data.name}.`}
+          />
+        </section>
+      </div>
+
+      <aside class="org-sidebar">
+        <div class="sidebar-card">
+          <h3>Organisation Details</h3>
+          <dl class="org-details-list">
+            {organisation.data.acronym && (
+              <div class="detail-row">
+                <dt>Acronym</dt>
+                <dd>{organisation.data.acronym}</dd>
+              </div>
+            )}
+            {organisation.data.country && (
+              <div class="detail-row">
+                <dt>Country</dt>
+                <dd>{organisation.data.country}</dd>
+              </div>
+            )}
+            {organisation.data.website && (
+              <div class="detail-row">
+                <dt>Official Website</dt>
+                <dd>
+                  <a
+                    href={organisation.data.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="external-link"
+                  >
+                    <span>Visit website</span>
+                    <ArrowUpRight size={14} aria-hidden="true" />
+                  </a>
+                </dd>
+              </div>
+            )}
+            <div class="detail-row">
+              <dt>News Mentions</dt>
+              <dd>
+                <strong>{stories.length.toLocaleString('en-GB')} stories</strong>
+              </dd>
+            </div>
+          </dl>
+
+          {organisation.data.tags && organisation.data.tags.length > 0 && (
+            <div class="org-tags-block">
+              <h4>Themes</h4>
+              <div class="tag-pills">
+                {organisation.data.tags.map((tag) => (
+                  <span class="tag-pill">{tag}</span>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
+      </aside>
+    </div>
+  </main>
+</SiteLayout>
+
+<style>
+  .org-role-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-2, 0.5rem);
+    font-size: var(--font-size-1, 0.9375rem);
+    font-weight: var(--font-weight-6, 600);
+    color: var(--brand, #0f766e);
+    margin-top: var(--size-2, 0.5rem);
+  }
+
+  .org-lead-description {
+    font-size: var(--font-size-2, 1.125rem);
+    line-height: var(--font-lineheight-3, 1.5);
+    color: var(--text-2, #334155);
+    max-width: 75ch;
+    margin-top: var(--size-2, 0.5rem);
+  }
+
+  .org-profile-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--size-6, 2rem);
+  }
+
+  @media (min-width: 768px) {
+    .org-profile-layout {
+      grid-template-columns: 2fr 1fr;
+    }
+  }
+
+  .org-main-content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-6, 2rem);
+  }
+
+  .org-biography-section h2 {
+    font-size: var(--font-size-3, 1.25rem);
+    color: var(--text-1, #0f172a);
+    margin-bottom: var(--size-3, 0.75rem);
+  }
+
+  .prose {
+    font-size: var(--font-size-1, 0.9375rem);
+    line-height: var(--font-lineheight-4, 1.6);
+    color: var(--text-2, #334155);
+  }
+
+  .prose :global(p) {
+    margin-bottom: var(--size-3, 0.75rem);
+  }
+
+  .sidebar-card {
+    background: var(--surface-1, #ffffff);
+    border: 1px solid var(--surface-3, #e2e8f0);
+    border-radius: var(--radius-2, 8px);
+    padding: var(--size-4, 1.25rem);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-4, 1.25rem);
+    position: sticky;
+    top: var(--size-4, 1.25rem);
+  }
+
+  .sidebar-card h3 {
+    font-size: var(--font-size-2, 1.125rem);
+    color: var(--text-1, #0f172a);
+    margin: 0;
+    padding-bottom: var(--size-2, 0.5rem);
+    border-bottom: 1px solid var(--surface-2, #f1f5f9);
+  }
+
+  .org-details-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3, 0.75rem);
+    margin: 0;
+  }
+
+  .detail-row dt {
+    font-size: var(--font-size-0, 0.8125rem);
+    color: var(--text-2, #64748b);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: var(--font-weight-6, 600);
+  }
+
+  .detail-row dd {
+    margin: var(--size-1, 0.25rem) 0 0 0;
+    font-size: var(--font-size-1, 0.9375rem);
+    color: var(--text-1, #1e293b);
+  }
+
+  .external-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-1, 0.25rem);
+    color: var(--brand, #0f766e);
+    text-decoration: underline;
+    font-weight: var(--font-weight-5, 500);
+  }
+
+  .org-tags-block h4 {
+    font-size: var(--font-size-0, 0.8125rem);
+    color: var(--text-2, #64748b);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin: 0 0 var(--size-2, 0.5rem) 0;
+  }
+
+  .tag-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-1, 0.25rem);
+  }
+
+  .tag-pill {
+    font-size: var(--font-size-00, 0.75rem);
+    background: var(--surface-2, #f1f5f9);
+    color: var(--text-2, #475569);
+    padding: 0.15rem 0.5rem;
+    border-radius: var(--radius-round, 9999px);
+  }
+</style>

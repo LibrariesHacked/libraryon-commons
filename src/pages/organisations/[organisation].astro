@@ -1,0 +1,16 @@
+---
+import { getCollection } from 'astro:content'
+import OrganisationTemplate from '../../templates/OrganisationTemplate.astro'
+
+export async function getStaticPaths() {
+  const organisations = await getCollection('organisations')
+  return organisations.map((org) => ({
+    params: { organisation: org.data.slug },
+    props: { organisation: org }
+  }))
+}
+
+const { organisation } = Astro.props
+---
+
+<OrganisationTemplate organisation={organisation} />
