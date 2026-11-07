@@ -10,7 +10,14 @@ const { entries } = Astro.props
     return (
       <a class="article-card content-card" href={sitePath(entry.data.path)}>
         {image ? (
-          <img src={sitePath(image.url)} alt={image.alt} loading="lazy" width="640" height="400" />
+          <img
+            src={sitePath(image.url)}
+            alt={image.alt}
+            loading="lazy"
+            decoding="async"
+            width="640"
+            height="400"
+          />
         ) : (
           <div class="card-placeholder" aria-hidden="true">
             LibraryCommons
