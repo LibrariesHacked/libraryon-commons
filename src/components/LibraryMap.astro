@@ -20,7 +20,7 @@ const data = libraryMapFeatures(libraries, sitePath)
   data-empty-message={emptyMessage}
 >
   <div class="library-map-canvas" data-map-canvas></div>
-  <p class="library-map-status" data-map-status role="status">
+  <p class="library-map-status" data-map-status role="status" hidden>
     Loading map...
   </p>
   <script
@@ -62,19 +62,28 @@ const data = libraryMapFeatures(libraries, sitePath)
           const { records, location = null } = event.detail
           this.data = libraryMapFeatures(records, sitePath)
           this.location = location
-          this.updateMap()
+          this.updateMap({ isInitial: false })
         },
         { signal }
       )
-      this.observer = new IntersectionObserver(
-        (entries) => {
-          if (!entries.some((entry) => entry.isIntersecting)) return
-          this.observer?.disconnect()
-          this.initializeMap(signal)
-        },
-        { rootMargin: '200px' }
-      )
-      this.observer.observe(this)
+
+      // Start loading immediately if map is in or near viewport; otherwise observe with generous margin
+      const rect = this.getBoundingClientRect()
+      const inView =
+        typeof window !== 'undefined' && rect.top < window.innerHeight + 400 && rect.bottom > -400
+      if (inView) {
+        this.initializeMap(signal)
+      } else {
+        this.observer = new IntersectionObserver(
+          (entries) => {
+            if (!entries.some((entry) => entry.isIntersecting)) return
+            this.observer?.disconnect()
+            this.initializeMap(signal)
+          },
+          { rootMargin: '400px' }
+        )
+        this.observer.observe(this)
+      }
     }
 
     disconnectedCallback() {
@@ -97,16 +106,50 @@ const data = libraryMapFeatures(libraries, sitePath)
     async initializeMap(signal) {
       if (this.map || this.initializing) return
       this.initializing = true
+
+      const loadingTimer = setTimeout(() => {
+        if (!this.dataset.mapReady) this.setStatus('Loading map...')
+      }, 300)
+
       try {
         const { Map, NavigationControl, FullscreenControl, ScaleControl, Popup, setWorkerUrl } =
           await import('maplibre-gl')
-        if (!this.isConnected || signal.aborted) return
+        if (!this.isConnected || signal.aborted) {
+          clearTimeout(loadingTimer)
+          return
+        }
         setWorkerUrl(workerUrl)
+
+        // Pre-compute initial camera so the map starts directly at its target without flickering from UK overview
+        const originPoints = this.location
+          ? [[this.location.longitude, this.location.latitude]]
+          : []
+        const points = [
+          ...(this.data?.features || []).map((f) => f.geometry?.coordinates),
+          ...originPoints
+        ].filter(Boolean)
+
+        const cameraOptions = {
+          center: [-3.5, 55],
+          zoom: 4.5
+        }
+        if (points.length === 1) {
+          cameraOptions.center = points[0]
+          cameraOptions.zoom = 15.5
+        } else if (points.length > 1) {
+          const longitudes = points.map(([lng]) => lng)
+          const latitudes = points.map(([, lat]) => lat)
+          cameraOptions.bounds = [
+            [Math.min(...longitudes), Math.min(...latitudes)],
+            [Math.max(...longitudes), Math.max(...latitudes)]
+          ]
+          cameraOptions.fitBoundsOptions = { padding: 48, maxZoom: 14 }
+        }
+
         const map = new Map({
           container: this.querySelector('[data-map-canvas]'),
           style: 'https://tiles.openfreemap.org/styles/positron',
-          center: [-3.5, 55],
-          zoom: 4.5,
+          ...cameraOptions,
           renderWorldCopies: false,
           cooperativeGestures: false
         })
@@ -115,11 +158,13 @@ const data = libraryMapFeatures(libraries, sitePath)
         map.addControl(new FullscreenControl(), 'top-right')
         map.addControl(new ScaleControl({ unit: 'imperial' }))
         map.on('error', () => {
+          clearTimeout(loadingTimer)
           this.setStatus(
             'The map could not be fully loaded. Library details and listings remain available.'
           )
         })
         map.on('load', () => {
+          clearTimeout(loadingTimer)
           const colors = getComputedStyle(this)
           const primary = colors.getPropertyValue('--brand-primary').trim()
           const paper = colors.getPropertyValue('--paper').trim()
@@ -190,7 +235,12 @@ const data = libraryMapFeatures(libraries, sitePath)
               .getClusterExpansionZoom(Number(feature.properties.cluster_id))
               .catch(() => null)
             if (zoom !== null && this.isConnected && this.map === map)
-              map.easeTo({ center: feature.geometry.coordinates, zoom })
+              map.easeTo({
+                center: feature.geometry.coordinates,
+                zoom,
+                duration: 500,
+                essential: true
+              })
           })
           map.on('click', 'library-points', (event) => {
             const feature = event.features?.[0]
@@ -221,16 +271,17 @@ const data = libraryMapFeatures(libraries, sitePath)
               map.getCanvas().style.cursor = ''
             })
           }
-          this.updateMap()
+          this.updateMap({ isInitial: true })
         })
       } catch {
+        clearTimeout(loadingTimer)
         this.setStatus(
           'The map is unavailable in this browser. Library details and listings remain available.'
         )
       }
     }
 
-    updateMap() {
+    updateMap({ isInitial = false } = {}) {
       this.dataset.mapCount = String(this.data.features.length)
       const source = this.map?.getSource('libraries')
       if (!this.map || !source) return
@@ -251,22 +302,38 @@ const data = libraryMapFeatures(libraries, sitePath)
             ]
           : []
       }
-      this.map.getSource('search-location').setData(origin)
+      this.map.getSource('search-location')?.setData(origin)
       const points = [...this.data.features, ...origin.features].map(
         (feature) => feature.geometry.coordinates
       )
+      const prefersReduced =
+        typeof window !== 'undefined' &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
       if (points.length === 1) {
-        this.map.jumpTo({ center: points[0], zoom: 16 })
+        if (isInitial || prefersReduced) {
+          this.map.jumpTo({ center: points[0], zoom: 15.5 })
+        } else {
+          this.map.flyTo({
+            center: points[0],
+            zoom: 15.5,
+            duration: 900,
+            essential: true
+          })
+        }
       } else if (points.length > 1) {
         const longitudes = points.map(([longitude]) => longitude)
         const latitudes = points.map(([, latitude]) => latitude)
-        this.map.fitBounds(
-          [
-            [Math.min(...longitudes), Math.min(...latitudes)],
-            [Math.max(...longitudes), Math.max(...latitudes)]
-          ],
-          { padding: 48, maxZoom: 14, duration: 0 }
-        )
+        const bounds = [
+          [Math.min(...longitudes), Math.min(...latitudes)],
+          [Math.max(...longitudes), Math.max(...latitudes)]
+        ]
+        this.map.fitBounds(bounds, {
+          padding: 48,
+          maxZoom: 14,
+          duration: isInitial || prefersReduced ? 0 : 900,
+          essential: true
+        })
       }
       this.setStatus(this.data.features.length ? '' : this.dataset.emptyMessage)
       this.dataset.mapReady = 'true'
