@@ -1,8 +1,18 @@
 ---
-import { settings } from '../lib/helpers/siteHelpers.mjs'
+import { settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
 import ArticleTemplate from './ArticleTemplate.astro'
 ---
 
 <ArticleTemplate {...Astro.props} label={settings.ui.editorial.labels.legal}>
+  <div class="archived-legal-banner">
+    <p>
+      <strong>Archived page:</strong> This legal notice was originally published under the previous
+      LibraryOn website (led by the British Library) and is preserved here for historical reference.
+      For current LibraryCommons policies, see our{' '}
+      <a href={sitePath('/privacy/')}>Privacy policy</a>,{' '}
+      <a href={sitePath('/accessibility/')}>Accessibility statement</a>, and{' '}
+      <a href={sitePath('/ai/')}>AI statement</a>.
+    </p>
+  </div>
   <slot />
 </ArticleTemplate>

@@ -611,7 +611,7 @@ test('resource links use descriptive labels across editable content and CMS reco
   }
 })
 
-test('obsolete legal pages remain in the CMS but are unpublished', () => {
+test('archived legal pages remain in the CMS and are published under the archive', () => {
   const pages = contentRecords('src/content/pages', '.md')
   for (const id of [
     'legal--privacy-notice',
@@ -619,7 +619,8 @@ test('obsolete legal pages remain in the CMS but are unpublished', () => {
     'legal--accessibility-statement'
   ]) {
     assert.ok(pages.has(id), `${id} remains editable in the CMS`)
-    assert.equal(pages.get(id).data.published, false, `${id} is archived from the public site`)
+    assert.equal(pages.get(id).data.published, true, `${id} is published in the archive`)
+    assert.match(pages.get(id).data.path, /^\/archive\//)
   }
 })
 

@@ -297,6 +297,18 @@
       {
         "label": "Editing guide",
         "url": "/editing-guide/"
+      },
+      {
+        "label": "Accessibility",
+        "url": "/accessibility/"
+      },
+      {
+        "label": "Privacy policy",
+        "url": "/privacy/"
+      },
+      {
+        "label": "AI statement",
+        "url": "/ai/"
       }
     ],
     "directory_note": "Library information is now community-maintained.",
@@ -304,6 +316,86 @@
     "management_label": "Content management"
   },
   "redirects": [
+    {
+      "from": "/privacy-policy",
+      "to": "/privacy/"
+    },
+    {
+      "from": "/privacy-policy/",
+      "to": "/privacy/"
+    },
+    {
+      "from": "/accessibility-statement",
+      "to": "/accessibility/"
+    },
+    {
+      "from": "/accessibility-statement/",
+      "to": "/accessibility/"
+    },
+    {
+      "from": "/ai-statement",
+      "to": "/ai/"
+    },
+    {
+      "from": "/ai-statement/",
+      "to": "/ai/"
+    },
+    {
+      "from": "/legal",
+      "to": "/archive/"
+    },
+    {
+      "from": "/legal/",
+      "to": "/archive/"
+    },
+    {
+      "from": "/legal/privacy-notice",
+      "to": "/archive/privacy-notice/"
+    },
+    {
+      "from": "/legal/privacy-notice/",
+      "to": "/archive/privacy-notice/"
+    },
+    {
+      "from": "/legal/accessibility-statement",
+      "to": "/archive/accessibility-statement/"
+    },
+    {
+      "from": "/legal/accessibility-statement/",
+      "to": "/archive/accessibility-statement/"
+    },
+    {
+      "from": "/legal/ai-statement",
+      "to": "/archive/ai-statement/"
+    },
+    {
+      "from": "/legal/ai-statement/",
+      "to": "/archive/ai-statement/"
+    },
+    {
+      "from": "/archive/legal/privacy-notice",
+      "to": "/archive/privacy-notice/"
+    },
+    {
+      "from": "/archive/legal/privacy-notice/",
+      "to": "/archive/privacy-notice/"
+    },
+    {
+      "from": "/archive/legal/accessibility-statement",
+      "to": "/archive/accessibility-statement/"
+    },
+    {
+      "from": "/archive/legal/accessibility-statement/",
+      "to": "/archive/accessibility-statement/"
+    },
+    {
+      "from": "/archive/legal/ai-statement",
+      "to": "/archive/ai-statement/"
+    },
+    {
+      "from": "/archive/legal/ai-statement/",
+      "to": "/archive/ai-statement/"
+    },
     {
       "from": "/about",
       "to": "/archive/about-libraryon/"

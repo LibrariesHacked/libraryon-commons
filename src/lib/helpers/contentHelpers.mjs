@@ -131,6 +131,13 @@ export function templateFor(entry) {
   if (entry.data.path === '/') return 'home'
   if (entry.data.kind !== 'page') return entry.data.kind
   if (entry.data.path.startsWith('/archive/grants')) return 'grant'
-  if (entry.data.path.startsWith('/legal/')) return 'legal'
+  if (
+    entry.data.path.startsWith('/legal/') ||
+    entry.data.path.startsWith('/archive/legal/') ||
+    entry.data.path === '/archive/privacy-notice' ||
+    entry.data.path === '/archive/accessibility-statement' ||
+    entry.data.path === '/archive/ai-statement'
+  )
+    return 'legal'
   return 'article'
 }

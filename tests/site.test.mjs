@@ -25,7 +25,8 @@ import {
   isPublishedPage,
   breadcrumbsForPage,
   sitePath,
-  mediaURL
+  mediaURL,
+  settings
 } from '../src/lib/helpers/siteHelpers.mjs'
 import { preservedLinks, decodeProtectedEmail } from '../src/lib/helpers/markdownHelpers.mjs'
 import {
@@ -692,6 +693,38 @@ test('content provenance distinguishes LibraryOn source pages from new Commons p
       data: { content_origin: 'commons', source_url: 'https://libraryon.org/reading' }
     }),
     false
+  )
+})
+
+test('privacy policy, accessibility statement, and AI statement pages are published Commons content with footer links', () => {
+  const privacy = readFileSync(new URL('../src/content/pages/privacy.md', import.meta.url), 'utf8')
+  const accessibility = readFileSync(
+    new URL('../src/content/pages/accessibility.md', import.meta.url),
+    'utf8'
+  )
+  const ai = readFileSync(new URL('../src/content/pages/ai.md', import.meta.url), 'utf8')
+  assert.ok(privacy.includes('path: /privacy'))
+  assert.ok(privacy.includes('content_origin: commons'))
+  assert.ok(privacy.includes('info@librarieshacked.org'))
+  assert.ok(accessibility.includes('path: /accessibility'))
+  assert.ok(accessibility.includes('content_origin: commons'))
+  assert.ok(accessibility.includes('WCAG') && accessibility.includes('2.2'))
+  assert.ok(ai.includes('path: /ai'))
+  assert.ok(ai.includes('content_origin: commons'))
+  assert.ok(ai.includes('/archive/ai-statement/'))
+
+  assert.ok(
+    settings.footer.links.some(
+      (link) => link.label === 'Privacy policy' && link.url === '/privacy/'
+    )
+  )
+  assert.ok(
+    settings.footer.links.some(
+      (link) => link.label === 'Accessibility' && link.url === '/accessibility/'
+    )
+  )
+  assert.ok(
+    settings.footer.links.some((link) => link.label === 'AI statement' && link.url === '/ai/')
   )
 })
 

@@ -47,7 +47,10 @@ test('landing page child order follows the original editorial sequence', () => {
   assert.deepEqual(readPage('archive').child_pages, [
     '/archive/about-libraryon',
     '/archive/grants',
-    '/archive/pressplay'
+    '/archive/pressplay',
+    '/archive/accessibility-statement',
+    '/archive/ai-statement',
+    '/archive/privacy-notice'
   ])
   assert.equal(readPage('about').child_pages, undefined)
   assert.equal(readPage('about--pressplay').path, '/archive/pressplay')

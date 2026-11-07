@@ -915,6 +915,23 @@
   padding: 0.5rem var(--size-3);
   color: var(--muted);
 }
+.archived-legal-banner {
+  margin: 0 0 var(--size-5);
+  padding: var(--size-3) var(--size-4);
+  border-left: 3px solid var(--brand-forest);
+  background: var(--wash);
+  border-radius: var(--radius-2);
+  font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-3);
+  color: var(--ink);
+}
+.archived-legal-banner p {
+  margin: 0;
+}
+.archived-legal-banner a {
+  color: var(--brand-forest);
+  text-decoration: underline;
+}
 .empty-state {
   padding: var(--size-7) 0;
   color: var(--muted);

@@ -1,9 +1,9 @@
 ---
 title: Privacy notice | LibraryOn
-path: /legal/privacy-notice
+path: /archive/privacy-notice
 kind: legal
-published: false
-description: How LibraryOn and the British Library collect, use, and protect personal data.
+published: true
+description: Archived privacy notice originally published by LibraryOn / The British Library, preserved for historical reference.
 source_url: https://libraryon.org/legal/privacy-notice
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0
   except where otherwise noted; retain individual credits and rights notices.

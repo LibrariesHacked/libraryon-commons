@@ -1,10 +1,9 @@
 ---
 title: Accessibility statement | LibraryOn - Legal
-path: /legal/accessibility-statement
+path: /archive/accessibility-statement
 kind: legal
-published: false
-description: LibraryOn, led by the British Library, is committed to ensuring
-  that our digital services are accessible to the widest possible audience.
+published: true
+description: Archived accessibility statement originally published by LibraryOn / The British Library, preserved for historical reference.
 updated_on: 2025-10-31
 source_url: https://libraryon.org/legal/accessibility-statement
 attribution: Originally published by LibraryOn / The British Library. CC BY 4.0

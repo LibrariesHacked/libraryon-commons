@@ -804,7 +804,7 @@ collections:
         pattern: ^/grants
       - label: Policies And Legal
         field: path
-        pattern: ^/legal/
+        pattern: ^/(?:legal/|archive/(?:accessibility-statement|ai-statement|privacy-notice)|privacy|accessibility|ai)
     editor:
       preview: false
     fields:
