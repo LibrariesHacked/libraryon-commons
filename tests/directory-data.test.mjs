@@ -672,9 +672,26 @@ test('written schema records preserve every original ID, route and date and subs
   )
   const report = JSON.parse(readFileSync('migration/directory/report.json', 'utf8'))
   const lookups = JSON.parse(readFileSync('migration/directory/lookups.json', 'utf8'))
+  const niSlugs = new Set([
+    'county-antrim',
+    'county-armagh',
+    'county-down',
+    'county-fermanagh',
+    'county-londonderry',
+    'county-tyrone',
+    'derry-city',
+    'greater-belfast'
+  ])
   for (const [kind, records] of Object.entries(baseline)) {
     for (const { file, record } of records) {
-      const migrated = JSON.parse(readFileSync(`src/content/${kind}/${file}`, 'utf8'))
+      if (kind === 'authorities' && niSlugs.has(record.slug)) continue
+      const isNiLib =
+        kind === 'libraries' &&
+        (niSlugs.has(record.authority) ||
+          record.slug.includes('larne') ||
+          record.postcode?.startsWith('BT'))
+      const targetFile = isNiLib ? `northern-ireland--${record.slug}.json` : file
+      const migrated = JSON.parse(readFileSync(`src/content/${kind}/${targetFile}`, 'utf8'))
       validateRecord(migrated, kind)
       for (const field of [
         'id',
@@ -685,7 +702,7 @@ test('written schema records preserve every original ID, route and date and subs
         'reviewed_on',
         'imported_on'
       ])
-        assert.deepEqual(migrated[field], record[field], `${file}: ${field}`)
+        assert.deepEqual(migrated[field], record[field], `${targetFile}: ${field}`)
       if (kind === 'libraries') {
         const uprn = migrated.data['Unique property reference number']
         if (uprn && !record.uprn) {
@@ -694,13 +711,18 @@ test('written schema records preserve every original ID, route and date and subs
             { postcode: migrated.data.Postcode, record },
             lookups
           )
-          assert.ok(evidence.accepted, `${file}: ${evidence.reason}`)
+          assert.ok(evidence.accepted, `${targetFile}: ${evidence.reason}`)
           assert.equal(lookups.uprns[uprn].product, 'nsul')
         }
-        if (migrated.data.Status === 'Open') assert.equal(migrated.data['Year closed'], null, file)
+        if (migrated.data.Status === 'Open') assert.equal(migrated.data['Year closed'], null, targetFile)
       }
     }
   }
+  const niAuthority = JSON.parse(readFileSync('src/content/authorities/northern-ireland.json', 'utf8'))
+  validateRecord(niAuthority, 'authorities')
+  assert.equal(niAuthority.data['Local authority'], 'Northern Ireland')
+  assert.equal(niAuthority.data['Local authority code'], 'N92000002')
+  assert.equal(niAuthority.data['Operating organisation'], 'Libraries NI')
   assert.ok(report.summary.filledUprns > 0)
   for (const added of report.added) {
     assert.ok(added.yearClosed)

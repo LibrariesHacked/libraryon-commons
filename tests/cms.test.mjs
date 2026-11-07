@@ -730,7 +730,15 @@ test('all original directory listings are represented in the editable CMS source
       `UPRN lost for source library ${source.id}`
     )
   }
+  const consolidatedNi = new Set(['211', '212', '213', '214', '215', '216', '217', '218'])
   for (const authority of sourceAuthorities) {
+    if (consolidatedNi.has(String(authority.id))) {
+      assert.ok(
+        authorityIds.has('ni') || authorityIds.has('northern-ireland'),
+        'Northern Ireland represents consolidated NI services'
+      )
+      continue
+    }
     assert.ok(authorityIds.has(String(authority.id)), `Missing source authority ${authority.id}`)
   }
   const authorityFields = config.collections.find(

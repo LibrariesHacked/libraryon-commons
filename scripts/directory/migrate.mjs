@@ -72,6 +72,40 @@ const operation = {
   CR: 'CRL',
   ICL: 'ICL'
 }
+
+export const niSlugs = new Set([
+  'county-antrim',
+  'county-armagh',
+  'county-down',
+  'county-fermanagh',
+  'county-londonderry',
+  'county-tyrone',
+  'derry-city',
+  'greater-belfast'
+])
+
+export const niAuthority = {
+  id: 'northern-ireland',
+  slug: 'northern-ireland',
+  source_id: 'ni',
+  source_url: 'https://www.librariesni.org.uk/',
+  updated_on: '2026-01-23',
+  reviewed_on: '',
+  imported_on: '2026-10-27',
+  name: 'Northern Ireland',
+  gss: 'N92000002',
+  country: 'Northern Ireland',
+  website: 'https://www.librariesni.org.uk/',
+  librariesUrl: 'https://www.librariesni.org.uk/libraries/',
+  catalogue: 'https://catalogue.librariesni.org.uk/',
+  joinOnline: 'https://www.librariesni.org.uk/becoming-a-member/',
+  eventsUrl: 'https://www.librariesni.org.uk/events/',
+  email: 'enquiries@librariesni.org.uk',
+  phone: '0345 450 4580',
+  operatingOrganisation: 'Libraries NI',
+  notes:
+    'All public libraries across Northern Ireland are operated centrally by Libraries NI under the Libraries Act (Northern Ireland) 2008.'
+}
 /** @param {URL|string} file - UTF-8 JSON file. @returns {object} Parsed source or audit document. */
 const json = (file) => JSON.parse(readFileSync(file, 'utf8'))
 /** @param {URL|string} file - Output path. @param {unknown} value - Serializable audit data. @returns {void} */
@@ -118,9 +152,18 @@ export function writeMigratedRecords(
     }
   }
   for (const [folder, records] of Object.entries(original)) {
-    for (const { file } of records)
+    for (const { file, record } of records) {
+      if (folder === 'authorities' && niSlugs.has(record.slug)) continue
+      if (
+        folder === 'libraries' &&
+        (niSlugs.has(record.authority) ||
+          record.slug.includes('larne') ||
+          record.postcode?.startsWith('BT'))
+      )
+        continue
       if (!planned.has(`src/content/${folder}/${file}`))
         throw new Error(`Migration would remove original record: ${folder}/${file}`)
+    }
   }
   const removed = Object.keys(previous).filter((path) => !planned.has(path))
   for (const path of removed) {
@@ -521,13 +564,16 @@ export function convertAuthority(record) {
     gss: 'Local authority code',
     country: 'Country',
     website: 'Service URL',
+    librariesUrl: 'Libraries URL',
     phone: 'Phone number',
     email: 'Email address',
     catalogue: 'Catalogue URL',
     joinOnline: 'Join online URL',
+    eventsUrl: 'Events URL',
     androidApp: 'Android app URL',
     iOSApp: 'iOS app URL',
-    operatingOrganisation: 'Operating organisation'
+    operatingOrganisation: 'Operating organisation',
+    notes: 'Notes'
   }))
     data[key] = text(record[old])
   const effectiveGss =
@@ -715,21 +761,31 @@ function sourceKey(source) {
  * @returns {{matches: object[], targets: object[], authorityBySlug: Map}} Matching plan.
  */
 export function planMatches(original, inputs, overrides = {}) {
-  const authorityBySlug = new Map(
-    original.authorities.map(({ record }) => {
-      const rec = { ...record }
-      if (rec.slug === 'guernsey' && rec.gss === 'L99999999') {
-        rec.gss = 'L99999998'
-      }
-      return [rec.slug, rec]
-    })
-  )
+  const authorityBySlug = new Map()
+  for (const { record } of original.authorities) {
+    const rec = { ...record }
+    if (niSlugs.has(rec.slug)) continue
+    if (rec.slug === 'guernsey' && rec.gss === 'L99999999') {
+      rec.gss = 'L99999998'
+    }
+    authorityBySlug.set(rec.slug, rec)
+  }
+  authorityBySlug.set('northern-ireland', niAuthority)
+
   const aliases = new Map()
   for (const authority of authorityBySlug.values()) {
     const key = authorityKey(authority.name)
     if (!aliases.has(key)) aliases.set(key, [])
     aliases.get(key).push(authority.slug)
   }
+  for (const slug of niSlugs) {
+    const key = authorityKey(slug.replace(/-/g, ' '))
+    if (!aliases.has(key)) aliases.set(key, [])
+    aliases.get(key).push('northern-ireland')
+  }
+  aliases.set('northern ireland', ['northern-ireland'])
+  aliases.set('libraries ni', ['northern-ireland'])
+
   const explicitAliases = {
     bristol: 'bristol',
     hull: 'kingston-upon-hull',
@@ -738,16 +794,22 @@ export function planMatches(original, inputs, overrides = {}) {
     'st helens': 'st-helens'
   }
   const targets = original.libraries.map(({ file, record }) => {
+    const isNi =
+      niSlugs.has(record.authority) ||
+      record.slug.includes('larne') ||
+      record.postcode?.startsWith('BT')
+    const authSlug = isNi ? 'northern-ireland' : record.authority
+    const targetRec = isNi ? { ...record, authority: 'northern-ireland' } : record
     const correction = correctedPostcode(record.postcode, record.name, inputs.rules)
     return {
       file,
-      record,
+      record: targetRec,
       id: record.id,
       name: record.name,
       address: record.address,
       postcode: normalizePostcode(record.postcode),
       correctedPostcode: correction.postcode,
-      authority: record.authority
+      authority: authSlug
     }
   })
   const matches = []
@@ -829,6 +891,106 @@ export function uprnEvidence(source, target, lookups) {
   }
 }
 
+/**
+ * Enrich Northern Ireland library records with live verified facilities, opening hours,
+ * contact info and location pins from the official Libraries NI website directory.
+ * @param {object[]} libraries - All directory libraries.
+ * @param {Function} change - Tracked mutation callback recording audited changes.
+ * @returns {void}
+ */
+export function enrichNorthernIrelandLibraries(libraries, change) {
+  const scrapedFile = new URL('libraries-ni-scraped.json', auditRoot)
+  if (!existsSync(scrapedFile)) return
+  const scraped = json(scrapedFile)
+  const scrapedByUrl = new Map(scraped.map((item) => [item.url, item]))
+  const scrapedBySlug = new Map(
+    scraped.map((item) => {
+      const parts = item.url.split('/').filter(Boolean)
+      return [parts[parts.length - 1], item]
+    })
+  )
+
+  for (const { record } of libraries) {
+    if (record.authority !== 'northern-ireland') continue
+    const slug = record.slug
+    let match =
+      scrapedByUrl.get(record.data.URL) ||
+      scrapedBySlug.get(slug) ||
+      scrapedBySlug.get(`${slug}-library`)
+    if (slug === 'chichester') match = scrapedBySlug.get('chichester-library')
+    if (slug === 'cultural-heritage-service-library')
+      match = scrapedBySlug.get('cultural-heritage-service-library-armagh')
+    if (!match) continue
+
+    const evidence = {
+      source: 'libraries-ni-website',
+      evidence: match.url,
+      reason: 'Official Libraries NI branch directory (librariesni.org.uk)'
+    }
+
+    if (match.url && record.data.URL !== match.url) {
+      change(record, 'URL', match.url, evidence)
+    }
+
+    if (match.phone && !record.data['Phone number']) {
+      change(record, 'Phone number', match.phone, evidence)
+    }
+    if (
+      match.email &&
+      (!record.data['Email address'] ||
+        record.data['Email address'] === 'enquiries@librariesni.org.uk')
+    ) {
+      change(record, 'Email address', match.email, evidence)
+    }
+
+    for (const [facility, value] of Object.entries(match.facilities)) {
+      if (value === 'Yes' && record.data[facility] !== 'Yes') {
+        change(record, facility, 'Yes', evidence)
+      }
+    }
+
+    if (slug === 'enniskillen-library') {
+      change(record, 'Status', 'Closed (temporary)', {
+        ...evidence,
+        reason:
+          'Customer Notice: main building closed for redevelopment; interim service available at Fermanagh House'
+      })
+      change(
+        record,
+        'Special hours',
+        'Main building temporarily closed for redevelopment; interim service available at Fermanagh House',
+        evidence
+      )
+    } else {
+      for (const [hourField, value] of Object.entries(match.hours)) {
+        if (value !== record.data[hourField]) {
+          change(record, hourField, value, evidence)
+        }
+      }
+    }
+
+    const isBelfastCentralFallback =
+      slug !== 'belfast-central-library' &&
+      match.latitude === 54.6028288 &&
+      match.longitude === -5.930998199999999
+    if (match.latitude && match.longitude && !isBelfastCentralFallback) {
+      if (!record.data.Latitude || !record.data.Longitude) {
+        change(record, 'Latitude', match.latitude, evidence)
+        change(record, 'Longitude', match.longitude, evidence)
+      } else {
+        const dist = Math.hypot(
+          record.data.Latitude - match.latitude,
+          record.data.Longitude - match.longitude
+        )
+        if (dist > 0.005) {
+          change(record, 'Latitude', match.latitude, evidence)
+          change(record, 'Longitude', match.longitude, evidence)
+        }
+      }
+    }
+  }
+}
+
 /** @param {string} field - Schema field. @param {unknown} value - Candidate value. @param {object} schema - Owning schema. @returns {boolean} Whether this field passes without considering other required gaps. */
 function validField(field, value, schema) {
   return !dataIssues({ ...blank(schema), [field]: value }, schema).some(
@@ -878,6 +1040,7 @@ export async function migrate({ write = false } = {}) {
   report.migrationInputs = [
     'migration/directory/libraryon-baseline.json.gz',
     'migration/directory/overrides.json',
+    'migration/directory/libraries-ni-scraped.json',
     'src/data/schemas/libraries.json',
     'src/data/schemas/library-services.json',
     'scripts/directory/migrate.mjs',
@@ -904,14 +1067,28 @@ export async function migrate({ write = false } = {}) {
     })
   }
   const plan = planMatches(original, inputs, overrides)
-  const authorities = original.authorities.map(({ file, record }) => ({
-    file,
-    record: convertAuthority(record)
-  }))
-  const libraries = original.libraries.map(({ file, record }) => ({
-    file,
-    record: convertLibrary(record, plan.authorityBySlug.get(record.authority), report)
-  }))
+  const authorities = original.authorities
+    .filter(({ record }) => !niSlugs.has(record.slug))
+    .map(({ file, record }) => ({
+      file,
+      record: convertAuthority(record)
+    }))
+  authorities.push({
+    file: 'northern-ireland.json',
+    record: convertAuthority(niAuthority)
+  })
+  const libraries = original.libraries.map(({ file, record }) => {
+    const isNi =
+      niSlugs.has(record.authority) ||
+      record.slug.includes('larne') ||
+      record.postcode?.startsWith('BT')
+    const authSlug = isNi ? 'northern-ireland' : record.authority
+    const targetRec = isNi ? { ...record, authority: 'northern-ireland' } : record
+    return {
+      file: `${authSlug || 'unassigned'}--${record.slug}.json`,
+      record: convertLibrary(targetRec, plan.authorityBySlug.get(authSlug), report)
+    }
+  })
   const byId = new Map(libraries.map((item) => [item.record.id, item.record]))
   /** @param {object} record - Target. @param {string} field - Canonical field. @param {unknown} value - Approved value. @param {object} evidence - Source and rationale retained alongside before/after values. @returns {void} */
   const change = (record, field, value, evidence) => {
@@ -1277,6 +1454,7 @@ export async function migrate({ write = false } = {}) {
       }
     }
   }
+  enrichNorthernIrelandLibraries(libraries, change)
   for (const override of overrides.field_overrides) {
     if (!override.evidence || !override.reason)
       throw new Error('Field overrides require evidence and a reason')
