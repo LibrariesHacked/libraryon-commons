@@ -82,6 +82,10 @@ test('directory search uses place selection rather than text filtering or a subm
   assert.ok(inputHandler.includes('setTimeout(lookup, 250)'))
   assert.ok(!inputHandler.includes('update()'))
   assert.ok(!inputHandler.includes('selected = null'))
+  assert.ok(
+    directory.includes('isLibraryOpenAt'),
+    'directory client script must import isLibraryOpenAt for live status pills'
+  )
 })
 
 test('shared library picker redirects by default and credits only displayed names', () => {

@@ -197,8 +197,7 @@ export function prepareDirectoryEdit(record, kind) {
     }
   }
   if (!cleanRecord.slug) {
-    const rawName =
-      record.data?.['Library name'] || record.data?.['Local authority'] || 'new-entry'
+    const rawName = record.data?.['Library name'] || record.data?.['Local authority'] || 'new-entry'
     cleanRecord.slug =
       String(rawName)
         .toLowerCase()

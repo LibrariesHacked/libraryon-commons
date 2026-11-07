@@ -296,6 +296,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
   import {
     distanceMiles,
     expandDirectory,
+    isLibraryOpenAt,
     matchesLibrary
   } from '../../lib/helpers/searchHelpers.mjs'
   import { sitePath } from '../../lib/helpers/siteHelpers.mjs'
@@ -700,13 +701,15 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
 
   includeClosedInput?.addEventListener('change', () => {
     syncTagButtons()
-    loadDirectory(includeClosedInput.checked).catch(() => {
+    loadDirectory(includeClosedInput.checked).catch((err) => {
+      console.error('Failed to load full directory index:', err)
       count.textContent = form.dataset.authorityBrowseStatus
       more.hidden = true
     })
   })
 
-  loadDirectory(includeClosedInput?.checked).catch(() => {
+  loadDirectory(includeClosedInput?.checked).catch((err) => {
+    console.error('Failed to load directory search index:', err)
     count.textContent = form.dataset.authorityBrowseStatus
     more.hidden = true
     const notice = document.createElement('p')
