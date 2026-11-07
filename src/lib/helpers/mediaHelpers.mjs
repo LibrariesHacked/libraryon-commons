@@ -1,5 +1,5 @@
 /**
- * @fileoverview Client-side interactive media controllers for carousels, lightboxes, accordions, and timelines.
+ * @fileoverview Interactive media controllers for carousels, image lightboxes, accordions, and collection timelines.
  */
 
 import EmblaCarousel from 'embla-carousel'

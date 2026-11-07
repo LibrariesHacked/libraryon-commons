@@ -11,7 +11,11 @@ import {
   libraryPath,
   authorityByLibrary
 } from '../src/lib/directory.mjs'
-import { matchesLibrary, isLibraryOpenAt, resolveQueryLocation } from '../src/lib/search.mjs'
+import {
+  matchesLibrary,
+  isLibraryOpenAt,
+  resolveQueryLocation
+} from '../src/lib/helpers/searchHelpers.mjs'
 import {
   safeURL,
   articleTitle,
@@ -22,19 +26,22 @@ import {
   breadcrumbsForPage,
   sitePath,
   mediaURL
-} from '../src/lib/site.mjs'
-import { preservedLinks, decodeProtectedEmail } from '../src/lib/markdown.mjs'
-import { templateFor } from '../src/lib/templates.mjs'
-import { splitContentModules, unlinkedResources } from '../src/lib/content-modules.mjs'
+} from '../src/lib/helpers/siteHelpers.mjs'
+import { preservedLinks, decodeProtectedEmail } from '../src/lib/helpers/markdownHelpers.mjs'
+import {
+  templateFor,
+  splitContentModules,
+  unlinkedResources
+} from '../src/lib/helpers/contentHelpers.mjs'
 import { createMarkdownProcessor } from '@astrojs/markdown-remark'
 import remarkDirective from 'remark-directive'
-import { contentDirectives } from '../src/lib/content-directives.mjs'
+import { contentDirectives } from '../src/lib/helpers/contentDirectives.mjs'
 import { transformImportedMarkup } from '../scripts/archive/legacy-markup.mjs'
 import { load } from 'cheerio'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import astroConfig from '../astro.config.mjs'
-import { normalizeListSpacing } from '../src/lib/markdown-format.mjs'
+import { normalizeListSpacing } from '../src/lib/helpers/markdownHelpers.mjs'
 import { normalizeLinkedCards } from '../scripts/normalize-content.mjs'
 
 test('carousel and filter mechanics use maintained engines and native browser primitives', () => {
@@ -236,7 +243,11 @@ test('linked Markdown cards use the common body, heading and Lucide arrow struct
 
 test('Markdown component source changes are included in the content-cache fingerprint', () => {
   const hash = createHash('sha256')
-  for (const file of ['content-directives.mjs', 'markdown.mjs', 'site.mjs']) {
+  for (const file of [
+    'helpers/contentDirectives.mjs',
+    'helpers/markdownHelpers.mjs',
+    'helpers/siteHelpers.mjs'
+  ]) {
     hash.update(readFileSync(new URL(`../src/lib/${file}`, import.meta.url))).update('\0')
   }
   const options = astroConfig.markdown.processor.options.rehypePlugins.find(

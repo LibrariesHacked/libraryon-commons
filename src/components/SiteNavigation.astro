@@ -1,6 +1,6 @@
 ---
 import { ChevronDown, ChevronRight } from '@lucide/astro'
-import { safeURL, settings } from '../lib/site.mjs'
+import { safeURL, settings } from '../lib/helpers/siteHelpers.mjs'
 
 const { items = [], mode = 'desktop' } = Astro.props
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/'

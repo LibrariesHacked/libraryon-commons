@@ -32,7 +32,7 @@ import {
   Wrench
 } from '@lucide/astro'
 import facilityIcons from '../data/facility-icons.json'
-import { safeURL } from '../lib/site.mjs'
+import { safeURL } from '../lib/helpers/siteHelpers.mjs'
 
 const iconComponents = {
   Accessibility,
@@ -75,8 +75,9 @@ const {
   viewAllLabel = 'View all'
 } = Astro.props
 
-const validItems = items.filter((item) =>
-  item && (typeof item === 'string' ? item.trim() : (item.label || item.service || item.value))
+const validItems = items.filter(
+  (item) =>
+    item && (typeof item === 'string' ? item.trim() : item.label || item.service || item.value)
 )
 
 const fallbackColors = ['plum', 'rose', 'green', 'apricot']
@@ -117,7 +118,9 @@ function getFacilityDetails(label = '', index = 0) {
         const value =
           typeof item === 'object' && item.value
             ? item.value
-            : (typeof item === 'object' && item.service ? item.service : label)
+            : typeof item === 'object' && item.service
+              ? item.service
+              : label
         const { icon: IconComponent, color } = getFacilityDetails(label, index)
         const isExtra = typeof initialVisible === 'number' && index >= initialVisible
         return (

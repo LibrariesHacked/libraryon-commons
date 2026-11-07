@@ -4,11 +4,16 @@
 
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { createDirectory } from '../src/lib/directory-model.mjs'
-import { Library, LibraryService } from '../src/lib/directory-models.mjs'
-import { compactDirectory, expandDirectory, matchesLibrary } from '../src/lib/search.mjs'
+import { createDirectory } from '../src/lib/helpers/directoryHelpers.mjs'
+import { Library } from '../src/lib/models/Library.mjs'
+import { LibraryService } from '../src/lib/models/LibraryService.mjs'
+import {
+  compactDirectory,
+  expandDirectory,
+  matchesLibrary
+} from '../src/lib/helpers/searchHelpers.mjs'
 import { createNameIndex } from '@geovation/gb-name-index'
-import { libraryMapFeatures } from '../src/lib/library-map.mjs'
+import { libraryMapFeatures } from '../src/lib/helpers/geoHelpers.mjs'
 
 test('library maps use longitude/latitude, preserve routes and reject missing or invalid points', () => {
   const data = libraryMapFeatures(
@@ -188,8 +193,8 @@ test('legacy source slugs keep their public routes', () => {
 })
 
 test('library pages reproduce operating model, map links and nearby libraries', async () => {
-  const { operatingModelLabel, mapLinks, nearbyLibraries, collectValues } =
-    await import('../src/lib/directory-model.mjs')
+  const { operatingModelLabel, collectValues } = await import('../src/lib/helpers/dataHelpers.mjs')
+  const { mapLinks, nearbyLibraries } = await import('../src/lib/helpers/geoHelpers.mjs')
   assert.equal(operatingModelLabel('Local Authority Run'), 'Local authority staffed')
   assert.equal(operatingModelLabel('Independent Community'), 'Community-run')
   const here = { id: 'a', address: '1 High Street', latitude: 51.5, longitude: -0.1 }

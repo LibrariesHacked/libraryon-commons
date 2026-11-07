@@ -1,11 +1,9 @@
 /**
- * @fileoverview Export generation for CSV downloads and schema validation reports.
+ * @fileoverview Export generation for CSV downloads and Table Schema validation reports.
  */
 
 import { stringify } from 'csv-stringify/sync'
-import { dataIssues, directorySchemas } from './directory-schema.mjs'
-
-/** @typedef {import('./directory-models.mjs').Library} ExportLibrary */
+import { dataIssues, directorySchemas } from './schemaHelpers.mjs'
 
 const librarySchema = directorySchemas.libraries
 const csvColumns = librarySchema.fields.map((field) => field.name)
@@ -13,8 +11,8 @@ const reportCache = new WeakMap()
 
 /**
  * Report unwaived schema failures, retaining the complete export's record numbers.
- * Record numbers count the header, not physical lines inside quoted CSV cells.
- * @param {ExportLibrary[]} records - Canonical library records in export order.
+ *
+ * @param {Array<object>} records - Canonical library records in export order.
  * @returns {{totalRecords: number, validRecords: number, invalidRecords: number, issues: object[]}}
  */
 export function libraryValidationReport(records) {
@@ -44,10 +42,10 @@ export function libraryValidationReport(records) {
 
 /**
  * Serialize canonical fields in schema order, with RFC-style quoting and blank nulls.
- * The complete export retains validation gaps; validOnly never applies exceptions.
- * @param {ExportLibrary[]} records - Records to serialize, including closed buildings.
+ *
+ * @param {Array<object>} records - Records to serialize.
  * @param {{validOnly?: boolean}} [options] - Whether to omit schema-invalid records.
- * @returns {string} CSV with a header even when no records qualify.
+ * @returns {string} CSV with header.
  */
 export function libraryCsv(records, { validOnly = false } = {}) {
   const selectedRecords = validOnly
@@ -61,9 +59,10 @@ export function libraryCsv(records, { validOnly = false } = {}) {
 
 /**
  * Return the CSV download response used by global and authority-scoped endpoints.
- * @param {ExportLibrary[]} records - Canonical records selected by the route.
+ *
+ * @param {Array<object>} records - Canonical records selected by the route.
  * @param {{validOnly?: boolean, filename?: string}} [options] - Export and download name.
- * @returns {Response} UTF-8 CSV attachment; static hosts also use the link's filename.
+ * @returns {Response} UTF-8 CSV attachment.
  */
 export function libraryCsvResponse(
   records,

@@ -10,7 +10,7 @@ import SocialLinks from '../components/SocialLinks.astro'
 import TagListSection from '../components/TagListSection.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import { collectValues, facilityLabel } from '../lib/directory.mjs'
-import { settings, sitePath } from '../lib/site.mjs'
+import { settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
 
 const { authority, entries = [] } = Astro.props
 const copy = settings.ui.directory
@@ -51,10 +51,7 @@ const heroTags = [
     )}
   </div>
 
-  <LibraryMap
-    libraries={entries}
-    label={`Libraries in ${authority.name}`}
-  />
+  <LibraryMap libraries={entries} label={`Libraries in ${authority.name}`} />
 
   {hasClosedLibraries && (
     <script
@@ -109,7 +106,7 @@ const heroTags = [
 </DirectoryLayout>
 
 <script>
-  import { updateLibraryListStatus } from '../lib/directory-live.mjs'
+  import { updateLibraryListStatus } from '../lib/helpers/openingHoursHelpers.mjs'
 
   updateLibraryListStatus()
 

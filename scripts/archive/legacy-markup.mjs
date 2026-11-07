@@ -2,7 +2,7 @@
  * @fileoverview AST markup transformation translating legacy HTML into structured editorial components.
  */
 
-import { canonicalInternalPath } from '../../src/lib/site.mjs'
+import { canonicalInternalPath } from '../../src/lib/helpers/siteHelpers.mjs'
 
 function nodeText(node) {
   if (node.type === 'text') return node.value

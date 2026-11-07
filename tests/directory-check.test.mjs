@@ -127,12 +127,7 @@ test('classifyHttpStatus distinguishes ok, redirect, broken, and blocked respons
     'redirect'
   )
   assert.equal(
-    classifyHttpStatus(
-      200,
-      'https://example.com/cf',
-      'https://example.com/cf',
-      'Just a moment...'
-    ),
+    classifyHttpStatus(200, 'https://example.com/cf', 'https://example.com/cf', 'Just a moment...'),
     'blocked'
   )
   assert.equal(

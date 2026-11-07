@@ -9,7 +9,7 @@ import { gzipSync, gunzipSync } from 'node:zlib'
 import { unified } from 'unified'
 import remarkParse from 'remark-parse'
 import remarkDirective from 'remark-directive'
-import { normalizeListSpacing } from '../src/lib/markdown-format.mjs'
+import { normalizeListSpacing } from '../src/lib/helpers/markdownHelpers.mjs'
 import { originalAssetReferences } from './migrate-filenames.mjs'
 import { digest } from './archive/collect.mjs'
 

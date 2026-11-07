@@ -1,34 +1,43 @@
 /**
- * @fileoverview Search, indexing, distance calculations, and filter matching for the LibraryOn directory.
+ * @fileoverview Client-side directory search algorithms, /directory.json payload compaction, and multi-filter criteria matching.
  */
+
+import { isHoursOpenNow, weekDays } from './openingHoursHelpers.mjs'
+import { distanceMiles } from './geoHelpers.mjs'
 
 /**
  * Normalise a string by trimming whitespace and converting to lowercase.
+ *
  * @param {string} [value=''] - String to normalise.
  * @returns {string} Normalised lowercase string.
  */
 export const normalise = (value) => (value || '').toLowerCase().trim()
 
 /**
- * Remove all whitespace from a normalised string.
+ * Remove all whitespace from a normalised string for fuzzy query matching.
+ *
  * @param {string} [value=''] - String to compact.
  * @returns {string} Lowercase string with all whitespace removed.
  */
 const compact = (value) => normalise(value).replace(/\s+/g, '')
 
-/**
- * Convert degrees to radians.
- * @param {number} degrees - Angle in degrees.
- * @returns {number} Angle in radians.
- */
-const toRadians = (degrees) => (degrees * Math.PI) / 180
-
-const earthMiles = 3958.8
-const weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
 const searchFields = new WeakMap()
 
 /**
- * Compact library search records into a bandwidth-efficient JSON payload with shared authorities, services, and accessibility dictionaries.
+ * Convert a time string in "HH:MM" format to minutes from midnight.
+ *
+ * @param {string|null} time - Time string (e.g. "09:30").
+ * @returns {number|null} Minutes from midnight, or null if invalid.
+ */
+const toMinutes = (time) => {
+  const match = /^(\d{1,2}):(\d{2})$/.exec(String(time || '').trim())
+  if (!match) return null
+  return Number(match[1]) * 60 + Number(match[2])
+}
+
+/**
+ * Compact library search records into a bandwidth-efficient JSON payload with shared dictionaries.
+ *
  * @param {object[]} records - Unpacked library search records.
  * @returns {{version: number, authorities: Array<[string, string, string]>, services: string[], accessibility: string[], rows: Array}} Compacted directory payload.
  */
@@ -99,7 +108,8 @@ export function compactDirectory(records) {
 }
 
 /**
- * Reconstruct rich library search records from a compacted directory payload.
+ * Reconstruct rich library search records from a compacted directory payload in the browser.
+ *
  * @param {{version: number, authorities: Array<[string, string, string]>, services?: string[], accessibility?: string[], rows: Array}} data - Compacted directory payload.
  * @returns {object[]} Array of unpacked library search records.
  */
@@ -156,46 +166,11 @@ export function expandDirectory(data) {
 }
 
 /**
- * Convert a time string in "HH:MM" format to minutes from midnight.
- * @param {string|null} time - Time string (e.g. "09:30").
- * @returns {number|null} Minutes from midnight, or null if invalid.
- */
-const toMinutes = (time) => {
-  const match = /^(\d{1,2}):(\d{2})$/.exec(String(time || '').trim())
-  if (!match) return null
-  return Number(match[1]) * 60 + Number(match[2])
-}
-
-/**
- * Calculate straight-line distance in miles between two coordinate records.
- * @param {{latitude?: number, longitude?: number}} first - Origin coordinates.
- * @param {{latitude?: number, longitude?: number}} second - Target coordinates.
- * @returns {number|null} Distance in miles, or null when either coordinate is missing.
- */
-export function distanceMiles(first, second) {
-  if (
-    !Number.isFinite(first?.latitude) ||
-    !Number.isFinite(first?.longitude) ||
-    !Number.isFinite(second?.latitude) ||
-    !Number.isFinite(second?.longitude)
-  ) {
-    return null
-  }
-  const lat = toRadians(first.latitude)
-  const otherLat = toRadians(second.latitude)
-  const haversine =
-    Math.sin((otherLat - lat) / 2) ** 2 +
-    Math.cos(lat) *
-      Math.cos(otherLat) *
-      Math.sin(toRadians(second.longitude - first.longitude) / 2) ** 2
-  return 2 * earthMiles * Math.asin(Math.sqrt(haversine))
-}
-
-/**
- * Check whether a library record is open at the supplied date/time.
+ * Check whether a library record is currently open at a given date/time in UK local time.
+ *
  * @param {object} record - Library or search index record.
  * @param {Date} [now=new Date()] - Reference date/time.
- * @returns {boolean} True when the library is not closed and has a matching time slot.
+ * @returns {boolean} True if the library has an active opening session.
  */
 export function isLibraryOpenAt(record, now = new Date()) {
   if (
@@ -207,42 +182,15 @@ export function isLibraryOpenAt(record, now = new Date()) {
   ) {
     return false
   }
-  const day = weekDays[now.getDay()]
-  const currentMinutes = now.getHours() * 60 + now.getMinutes()
-  const compactSlots = record.hours?.[day]
-  if (Array.isArray(compactSlots)) {
-    return compactSlots.some(([start, end]) => {
-      const startMinutes = toMinutes(start)
-      const endMinutes = toMinutes(end)
-      return (
-        startMinutes !== null &&
-        endMinutes !== null &&
-        currentMinutes >= startMinutes &&
-        currentMinutes < endMinutes
-      )
-    })
-  }
-  const timeFrames = record.openingTimes?.[day]?.timeFrames
-  if (Array.isArray(timeFrames)) {
-    return timeFrames.some((frame) => {
-      const startMinutes = toMinutes(frame?.startTime)
-      const endMinutes = toMinutes(frame?.endTime)
-      return (
-        startMinutes !== null &&
-        endMinutes !== null &&
-        currentMinutes >= startMinutes &&
-        currentMinutes < endMinutes
-      )
-    })
-  }
-  return false
+  return isHoursOpenNow(record.hours || record.openingTimes, now)
 }
 
 /**
  * Derive a reference coordinate from directory records matching a postcode or place query.
+ *
  * @param {object[]} records - Directory search records.
- * @param {string} query - User search string.
- * @returns {{latitude: number, longitude: number, label: string}|null} Reference coordinates.
+ * @param {string} query - User search query.
+ * @returns {{latitude: number, longitude: number, label: string}|null} Reference coordinates or null.
  */
 export function resolveQueryLocation(records, query) {
   const needle = normalise(query)
@@ -263,10 +211,11 @@ export function resolveQueryLocation(records, query) {
 }
 
 /**
- * Check whether a library record matches the search query and LibraryOn filters.
+ * Evaluate whether a library record matches the active search query and filter criteria.
+ *
  * @param {object} record - Search index record.
  * @param {object} [filters={}] - Active query and filter values.
- * @returns {boolean} True when the record satisfies all active filters.
+ * @returns {boolean} True if the record satisfies all active filters.
  */
 export function matchesLibrary(record, filters = {}) {
   const {
@@ -280,8 +229,10 @@ export function matchesLibrary(record, filters = {}) {
     distance = 5,
     now = new Date()
   } = filters
+
   if (authority && record.authority !== authority) return false
   if (country && record.country !== country) return false
+
   if (services.length) {
     const recordServices = new Set(
       (record.services || []).map((item) =>
@@ -290,17 +241,22 @@ export function matchesLibrary(record, filters = {}) {
     )
     if (!services.every((service) => recordServices.has(normalise(service)))) return false
   }
+
   if (accessibility.length) {
     const recordAccessibility = new Set((record.accessibility || []).map(normalise))
     if (!accessibility.every((item) => recordAccessibility.has(normalise(item)))) return false
   }
+
   if (openNow && !isLibraryOpenAt(record, now)) return false
+
   if (location && Number.isFinite(location.latitude) && Number.isFinite(location.longitude)) {
     const miles = distanceMiles(location, record)
     if (miles === null || miles > Number(distance || 5)) return false
   }
+
   const needle = normalise(query)
   if (!needle) return true
+
   if (!searchFields.has(record)) {
     const fields = [record.name, record.address, record.town, record.postcode, record.authorityName]
       .filter(Boolean)
@@ -310,3 +266,5 @@ export function matchesLibrary(record, filters = {}) {
   const [text, compactText] = searchFields.get(record)
   return text.includes(needle) || compactText.includes(compact(query))
 }
+
+export { distanceMiles }

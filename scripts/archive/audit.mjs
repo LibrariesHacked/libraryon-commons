@@ -31,7 +31,7 @@ import {
   isDescriptiveImageLabel,
   reviewedImageDescriptions
 } from '../migrate-filenames.mjs'
-import { createDirectory } from '../../src/lib/directory-model.mjs'
+import { createDirectory } from '../../src/lib/helpers/directoryHelpers.mjs'
 
 const mediaExtension =
   /\.(?:jpe?g|png|gif|webp|avif|svg|tiff?|pdf|docx?|pptx?|xlsx?|zip|mp[34])(?:[?#]|$)/i

@@ -10,7 +10,7 @@ import {
   getLiveOpeningStatus,
   isHoursOpenNow,
   hasRecordedHours
-} from '../src/lib/directory-live.mjs'
+} from '../src/lib/helpers/openingHoursHelpers.mjs'
 
 test('timeStringToMinutes parses 24-hour time strings accurately', () => {
   assert.equal(timeStringToMinutes('00:00'), 0)

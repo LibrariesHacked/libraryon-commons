@@ -1,7 +1,7 @@
 ---
 import { Clock } from '@lucide/astro'
 import { facilityLabel } from '../lib/directory.mjs'
-import { settings } from '../lib/site.mjs'
+import { settings } from '../lib/helpers/siteHelpers.mjs'
 
 const { library } = Astro.props
 const copy = settings.ui.opening_hours
@@ -26,7 +26,9 @@ const hasHours = hours.some((day) => day.frames.length)
     {hasHours && (
       <div class="live-status-pill" data-live-status-pill>
         <span class="live-status-dot" aria-hidden="true"></span>
-        <span class="live-status-text" data-live-status-text>Checking hours...</span>
+        <span class="live-status-text" data-live-status-text>
+          Checking hours...
+        </span>
       </div>
     )}
   </div>
@@ -38,21 +40,23 @@ const hasHours = hours.some((day) => day.frames.length)
           <tr data-day={day}>
             <th scope="row">
               <span class="day-name">{facilityLabel(day)}</span>
-              <span class="today-tag" aria-hidden="true">Today</span>
+              <span class="today-tag" aria-hidden="true">
+                Today
+              </span>
             </th>
             <td>
               {frames.length ? (
                 frames.map((frame) => (
-                  <div
-                    class="hours-frame"
-                    data-start={frame.startTime}
-                    data-end={frame.endTime}
-                  >
-                    <span class="hours-time">{frame.startTime}–{frame.endTime}</span>
+                  <div class="hours-frame" data-start={frame.startTime} data-end={frame.endTime}>
+                    <span class="hours-time">
+                      {frame.startTime}–{frame.endTime}
+                    </span>
                     {frame.type && frame.type !== 'Staffed' && (
                       <span class="hours-type-badge"> · {frame.type}</span>
                     )}
-                    <span class="current-session-badge" aria-hidden="true">Now</span>
+                    <span class="current-session-badge" aria-hidden="true">
+                      Now
+                    </span>
                   </div>
                 ))
               ) : (
@@ -67,19 +71,11 @@ const hasHours = hours.some((day) => day.frames.length)
     <p class="hours-empty">{copy.not_supplied}</p>
   )}
 
-  {library.openingTimesNotes && (
-    <p class="hours-note">
-      {library.openingTimesNotes}
-    </p>
-  )}
-  {hasHours && (
-    <p class="hours-note hours-holiday-note">
-      {copy.holiday_note}
-    </p>
-  )}
+  {library.openingTimesNotes && <p class="hours-note">{library.openingTimesNotes}</p>}
+  {hasHours && <p class="hours-note hours-holiday-note">{copy.holiday_note}</p>}
 </section>
 
 <script>
-  import { updateOpeningHoursCards } from '../lib/directory-live.mjs'
+  import { updateOpeningHoursCards } from '../lib/helpers/openingHoursHelpers.mjs'
   updateOpeningHoursCards()
 </script>

@@ -1,11 +1,12 @@
 /**
- * @fileoverview Hierarchy and tree builder for the public sitemap.
+ * @fileoverview Recursive navigation tree builder converting flat published routes into a nested sitemap hierarchy.
  */
 
-import { articleTitle } from './site.mjs'
+import { articleTitle } from './siteHelpers.mjs'
 
 /**
  * Convert a URL path segment into a title-cased fallback label.
+ *
  * @param {string} segment - URL path segment (e.g. "special-collections").
  * @returns {string} Formatted label (e.g. "Special Collections").
  */
@@ -14,6 +15,7 @@ const segmentLabel = (segment) =>
 
 /**
  * Build a nested navigation tree representing page hierarchy from flat page entries.
+ *
  * @param {Array<{data: {path: string, title: string}, body?: string}>} pages - Collection of content pages.
  * @returns {Array<{label: string, href: string|null, children: Array<object>}>} Nested tree of sitemap nodes.
  */

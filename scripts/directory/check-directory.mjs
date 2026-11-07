@@ -6,7 +6,7 @@
 import { readFileSync, writeFileSync, readdirSync, existsSync, appendFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
-import { normalizePostcode } from '../../src/lib/directory-data.mjs'
+import { normalizePostcode } from '../../src/lib/helpers/dataHelpers.mjs'
 
 /**
  * Standard user agent for directory verification network requests.

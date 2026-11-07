@@ -3,8 +3,8 @@
  */
 
 import { libraries } from '../lib/directory.mjs'
-import { libraryValidationReport } from '../lib/directory-export.mjs'
-import { sitePath } from '../lib/site.mjs'
+import { libraryValidationReport } from '../lib/helpers/exportHelpers.mjs'
+import { sitePath } from '../lib/helpers/siteHelpers.mjs'
 
 /**
  * Handle GET requests for the nationwide library validation report.

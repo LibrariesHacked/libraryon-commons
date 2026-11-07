@@ -6,7 +6,7 @@ import LibrarySearch from '../components/LibrarySearch.astro'
 import PageContent from '../components/PageContent.astro'
 import homepage from '../data/homepage.json'
 import SiteLayout from '../layouts/SiteLayout.astro'
-import { articleTitle, safeURL, settings, sitePath } from '../lib/site.mjs'
+import { articleTitle, safeURL, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
 const { entry, allPages } = Astro.props
 const hero = homepage.image ? { url: homepage.image, alt: homepage.image_alt } : null
 const carousel = Array.isArray(homepage.carousel)

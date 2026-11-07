@@ -4,7 +4,7 @@
 
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { resourceUsage } from '../src/lib/resource-usage.mjs'
+import { resourceUsage } from '../src/lib/helpers/resourceHelpers.mjs'
 
 test('resource usage links include published pages and sessions, not unpublished pages', () => {
   const resources = [{ id: 'report' }, { id: 'slides' }]

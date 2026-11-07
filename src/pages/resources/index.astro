@@ -3,9 +3,9 @@ import { getCollection } from 'astro:content'
 
 import ResourceLink from '../../components/ResourceLink.astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
-import { resourceUsage } from '../../lib/resource-usage.mjs'
-import { normalise } from '../../lib/search.mjs'
-import { settings, sitePath } from '../../lib/site.mjs'
+import { resourceUsage } from '../../lib/helpers/resourceHelpers.mjs'
+import { normalise } from '../../lib/helpers/searchHelpers.mjs'
+import { settings, sitePath } from '../../lib/helpers/siteHelpers.mjs'
 const copy = settings.ui.resource_page
 const kindLabels = {
   document: copy.documents,
@@ -123,7 +123,7 @@ const usage = resourceUsage(
 </SiteLayout>
 
 <script>
-  import { normalise } from '../../lib/search.mjs'
+  import { normalise } from '../../lib/helpers/searchHelpers.mjs'
   const query = document.querySelector<HTMLInputElement>('#resource-query')
   const kind = document.querySelector<HTMLSelectElement>('#resource-kind')
   const location = document.querySelector<HTMLSelectElement>('#resource-location')

@@ -4,8 +4,8 @@
 
 import test from 'node:test'
 import { parse as parseCsv } from 'csv-parse/sync'
-import { libraryCsv, libraryValidationReport } from '../src/lib/directory-export.mjs'
-import { directoryReviewRows, reviewIndex } from '../src/lib/directory-review.mjs'
+import { libraryCsv, libraryValidationReport } from '../src/lib/helpers/exportHelpers.mjs'
+import { directoryReviewRows, reviewIndex } from '../src/lib/helpers/reviewHelpers.mjs'
 import {
   libraries as currentLibraries,
   authorities as currentAuthorities
@@ -24,18 +24,14 @@ import { tmpdir } from 'node:os'
 import { pathToFileURL } from 'node:url'
 import { join } from 'node:path'
 import { gunzipSync } from 'node:zlib'
-import {
-  openingHours,
-  legacyHours,
-  normalizePostcode,
-  normalizeUprn
-} from '../src/lib/directory-data.mjs'
+import { normalizePostcode, normalizeUprn } from '../src/lib/helpers/dataHelpers.mjs'
+import { openingHours, legacyHours } from '../src/lib/helpers/openingHoursHelpers.mjs'
 import {
   directorySchemas,
   dataIssues,
   validateRecord,
   prepareDirectoryEdit
-} from '../src/lib/directory-schema.mjs'
+} from '../src/lib/helpers/schemaHelpers.mjs'
 import {
   buildingMatch,
   possibleSameBuilding,
@@ -49,8 +45,9 @@ import {
   resolveReviewItem
 } from '../scripts/directory/migrate.mjs'
 import { parseServicePage, parseOnsPostcode, parseNsul } from '../scripts/directory/lookups.mjs'
-import { createDirectory } from '../src/lib/directory-model.mjs'
-import { Library, LibraryService } from '../src/lib/directory-models.mjs'
+import { createDirectory } from '../src/lib/helpers/directoryHelpers.mjs'
+import { Library } from '../src/lib/models/Library.mjs'
+import { LibraryService } from '../src/lib/models/LibraryService.mjs'
 
 test("review worklist follows live flags, prioritizes risks and never attaches another record's evidence", () => {
   const issue = { field: 'Statutory', code: 'required', value: null, reason: 'Unknown' }
@@ -714,11 +711,14 @@ test('written schema records preserve every original ID, route and date and subs
           assert.ok(evidence.accepted, `${targetFile}: ${evidence.reason}`)
           assert.equal(lookups.uprns[uprn].product, 'nsul')
         }
-        if (migrated.data.Status === 'Open') assert.equal(migrated.data['Year closed'], null, targetFile)
+        if (migrated.data.Status === 'Open')
+          assert.equal(migrated.data['Year closed'], null, targetFile)
       }
     }
   }
-  const niAuthority = JSON.parse(readFileSync('src/content/authorities/northern-ireland.json', 'utf8'))
+  const niAuthority = JSON.parse(
+    readFileSync('src/content/authorities/northern-ireland.json', 'utf8')
+  )
   validateRecord(niAuthority, 'authorities')
   assert.equal(niAuthority.data['Local authority'], 'Northern Ireland')
   assert.equal(niAuthority.data['Local authority code'], 'N92000002')

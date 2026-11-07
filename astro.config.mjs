@@ -7,13 +7,17 @@ import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import { unified } from '@astrojs/markdown-remark'
 import settings from './src/data/settings.json' with { type: 'json' }
-import { preservedLinks } from './src/lib/markdown.mjs'
+import { preservedLinks } from './src/lib/helpers/markdownHelpers.mjs'
 import remarkDirective from 'remark-directive'
-import { contentDirectives } from './src/lib/content-directives.mjs'
+import { contentDirectives } from './src/lib/helpers/contentDirectives.mjs'
 
 const base = process.env.BASE_PATH || '/'
 const rendererHash = createHash('sha256')
-for (const file of ['content-directives.mjs', 'markdown.mjs', 'site.mjs'])
+for (const file of [
+  'helpers/contentDirectives.mjs',
+  'helpers/markdownHelpers.mjs',
+  'helpers/siteHelpers.mjs'
+])
   rendererHash.update(readFileSync(new URL(`./src/lib/${file}`, import.meta.url))).update('\0')
 const rendererDigest = rendererHash.digest('hex')
 

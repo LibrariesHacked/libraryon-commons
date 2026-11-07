@@ -8,7 +8,7 @@ import OpeningHours from '../components/OpeningHours.astro'
 import TagListSection from '../components/TagListSection.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import { libraries, facilityLabel } from '../lib/directory.mjs'
-import { safeURL, settings, sitePath } from '../lib/site.mjs'
+import { safeURL, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
 const { library, authority } = Astro.props
 const copy = settings.ui.directory
 const maps = library.mapLinks
@@ -57,12 +57,7 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
     <section class="detail-section getting-here-section">
       <h2>{copy.getting_here}</h2>
       <div class="getting-here-actions">
-        <a
-          href={maps.google}
-          class="directions-card"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={maps.google} class="directions-card" target="_blank" rel="noopener noreferrer">
           <div class="directions-card-icon" aria-hidden="true">
             <Navigation size={22} />
           </div>
@@ -75,12 +70,7 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
             </span>
           </div>
         </a>
-        <a
-          href={maps.apple}
-          class="directions-card"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href={maps.apple} class="directions-card" target="_blank" rel="noopener noreferrer">
           <div class="directions-card-icon" aria-hidden="true">
             <MapPin size={22} />
           </div>
@@ -88,9 +78,7 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
             <span class="directions-card-title">
               {copy.apple_maps} <ArrowUpRight size={15} aria-hidden="true" />
             </span>
-            <span class="directions-card-subtitle">
-              Launch Maps on iPhone, iPad or Mac
-            </span>
+            <span class="directions-card-subtitle">Launch Maps on iPhone, iPad or Mac</span>
           </div>
         </a>
       </div>
@@ -104,7 +92,9 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
           <li data-hours={JSON.stringify(other.hours || other.openingTimes || null)}>
             <div class="library-result-header">
               <h3>
-                <a href={sitePath(other.url)}>{other.name}</a>
+                <a href={sitePath(other.url)}>
+                  {other.name} <ArrowUpRight size={17} aria-hidden="true" />
+                </a>
               </h3>
               <span class="distance-badge">
                 {miles.toFixed(1)} {copy.miles}
@@ -143,6 +133,6 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
 </DirectoryLayout>
 
 <script>
-  import { updateLibraryListStatus } from '../lib/directory-live.mjs'
+  import { updateLibraryListStatus } from '../lib/helpers/openingHoursHelpers.mjs'
   updateLibraryListStatus()
 </script>

@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 
-import { isPublishedPage } from '../../lib/site.mjs'
+import { isPublishedPage } from '../../lib/helpers/siteHelpers.mjs'
 import SessionTemplate from '../../templates/SessionTemplate.astro'
 export async function getStaticPaths() {
   const pages = new Map(

@@ -1,21 +1,24 @@
 /**
- * @fileoverview Table Schema validation, data constraint checks, and CMS entry normalization.
+ * @fileoverview Table Schema validation, data constraint checks, and CMS entry normalization for directory records.
  */
 
 import { z } from 'zod'
-import libraries from '../data/schemas/libraries.json' with { type: 'json' }
-import services from '../data/schemas/library-services.json' with { type: 'json' }
-import { openingHours } from './directory-data.mjs'
+import libraries from '../../data/schemas/libraries.json' with { type: 'json' }
+import services from '../../data/schemas/library-services.json' with { type: 'json' }
+import { openingHours } from './openingHoursHelpers.mjs'
 
 export const directorySchemas = { libraries, authorities: services }
+
 const fieldTypeValidators = {
   integer: z.number().int().safe(),
   number: z.number().finite(),
   year: z.number().int().min(1000).max(9999),
   string: z.string().min(1)
 }
+
 const uriValidator = z.url({ protocol: /^https?$/ })
 const emailValidator = z.email()
+
 const recordFields = new Set([
   'id',
   'slug',
@@ -29,6 +32,7 @@ const recordFields = new Set([
   'validation_exceptions',
   'manual_checks'
 ])
+
 const manualChecks = z.array(
   z
     .object({
@@ -44,6 +48,7 @@ const manualChecks = z.array(
 /**
  * Check raw Table Schema values without applying migration validation exceptions.
  * Blank daily-hour inputs are accepted; canonical CMS saves normalize them to null.
+ *
  * @param {Record<string, unknown>} data - Canonical schema-named field values.
  * @param {{fields: object[]}} schema - Supplied Table Schema specification.
  * @returns {Array<{field: string, code: string, value: unknown}>} Unwaived failures.
@@ -58,7 +63,6 @@ export function dataIssues(data, schema) {
     const value = data[field.name]
     const constraints = field.constraints || {}
     const isSessionHours = field.type === 'string' && / (un)?staffed hours$/.test(field.name)
-    /** @param {string} code - Schema failure to associate with this field's exact value. */
     const reportIssue = (code) => issues.push({ field: field.name, code, value: value ?? null })
     if (value === undefined) {
       reportIssue('missing-field')
@@ -86,29 +90,31 @@ export function dataIssues(data, schema) {
         reportIssue('hours-format')
       }
     }
-    if (field.name === 'Unique property reference number' && (value <= 0 || value > 999999999999))
+    if (field.name === 'Unique property reference number' && (value <= 0 || value > 999999999999)) {
       reportIssue('uprn-range')
+    }
   }
   return issues
 }
 
 /**
  * Enforce the canonical record envelope and exact, non-stale exception matches.
- * Structural, type, range and hours failures cannot be waived by annotations.
+ *
  * @param {object} record - Canonical record with schema data and review metadata.
  * @param {'libraries'|'authorities'} kind - Owning directory collection.
  * @returns {object} The original validated record, without mutation.
- * @throws {Error} For malformed records, unwaived failures or stale exceptions.
  */
 export function validateRecord(record, kind) {
   const schema = directorySchemas[kind]
   if (!schema || !record.data || !record.slug) throw new Error(`Invalid ${kind} record`)
   for (const field of Object.keys(record)) {
-    if (!recordFields.has(field))
+    if (!recordFields.has(field)) {
       throw new Error(`${record.slug}: unexpected record field: ${field}`)
+    }
   }
-  if (record.manual_checks !== undefined && !manualChecks.safeParse(record.manual_checks).success)
+  if (record.manual_checks !== undefined && !manualChecks.safeParse(record.manual_checks).success) {
     throw new Error(`${record.slug}: invalid manual checks`)
+  }
   const issues = dataIssues(record.data, schema)
   const exceptions = record.validation_exceptions || []
   for (const issue of issues) {
@@ -122,8 +128,9 @@ export function validateRecord(record, kind) {
         'minimum',
         'maximum'
       ].includes(issue.code)
-    )
+    ) {
       throw new Error(`${record.slug}: ${issue.field}: ${issue.code}`)
+    }
     if (
       !exceptions.some(
         (item) =>
@@ -153,10 +160,10 @@ export function validateRecord(record, kind) {
 
 /**
  * Normalize a CMS entry in place, remove resolved exceptions and reject new bad values.
- * Unknown required values receive explicit exceptions rather than invented content.
+ *
  * @param {object} record - Mutable plain-object copy of a Decap entry.
  * @param {'libraries'|'authorities'} kind - Directory collection being saved.
- * @returns {Record<string, unknown> & {data: Record<string, unknown>, validation_exceptions: object[]}} The normalized entry; dates are stamped by the CMS.
+ * @returns {Record<string, unknown> & {data: Record<string, unknown>, validation_exceptions: object[]}}
  */
 export function prepareDirectoryEdit(record, kind) {
   const schema = directorySchemas[kind]
@@ -175,8 +182,9 @@ export function prepareDirectoryEdit(record, kind) {
         JSON.stringify(item.value) === JSON.stringify(issue.value)
     )
     if (previous?.reason) return previous
-    if (issue.code === 'required')
+    if (issue.code === 'required') {
       return { ...issue, reason: 'Not recorded; requires editorial verification' }
+    }
     throw new Error(`${issue.field}: ${issue.code}`)
   })
   return validateRecord(record, kind)
@@ -184,10 +192,10 @@ export function prepareDirectoryEdit(record, kind) {
 
 /**
  * Validate a collection and enforce the schema's non-null uniqueness constraints.
- * @param {object[]} records - Complete collection, not an arbitrary partial export.
+ *
+ * @param {object[]} records - Complete collection.
  * @param {'libraries'|'authorities'} kind - Schema to apply to every record.
  * @returns {object[]} Validated records in their original order.
- * @throws {Error} For duplicate unique values or an invalid individual record.
  */
 export function validateRecords(records, kind) {
   const validatedRecords = records.map((record) => validateRecord(record, kind))

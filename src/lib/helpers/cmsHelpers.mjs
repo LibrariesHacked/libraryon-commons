@@ -1,5 +1,5 @@
 /**
- * @fileoverview Decap CMS custom editor components for rich editorial directives and components.
+ * @fileoverview Decap CMS custom editor components and serializers for cards, quotes, and editorial directives.
  */
 
 import { unified } from 'unified'
@@ -8,8 +8,8 @@ import remarkDirective from 'remark-directive'
 import remarkRehype from 'remark-rehype'
 import rehypeStringify from 'rehype-stringify'
 import { toMarkdown } from 'mdast-util-to-markdown'
-import { contentDirectives } from './content-directives.mjs'
-import { markdownOptions } from './markdown-format.mjs'
+import { contentDirectives } from './contentDirectives.mjs'
+import { markdownOptions } from './markdownHelpers.mjs'
 
 const parser = unified().use(remarkParse).use(remarkDirective)
 const preview = unified()

@@ -2,7 +2,7 @@
 import Breadcrumbs from '../components/Breadcrumbs.astro'
 import ResourceLink from '../components/ResourceLink.astro'
 import SiteLayout from '../layouts/SiteLayout.astro'
-import { articleTitle, settings } from '../lib/site.mjs'
+import { articleTitle, settings } from '../lib/helpers/siteHelpers.mjs'
 const { session, conference, resources } = Astro.props
 const copy = settings.ui.sessions
 const breadcrumbs = [

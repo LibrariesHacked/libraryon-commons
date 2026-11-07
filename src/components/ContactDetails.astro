@@ -1,6 +1,6 @@
 ---
 import { ArrowUpRight, MapPin, Phone, Mail } from '@lucide/astro'
-import { safeURL, settings } from '../lib/site.mjs'
+import { safeURL, settings } from '../lib/helpers/siteHelpers.mjs'
 const { record, address = '', fallbackWebsite = '' } = Astro.props
 const website = safeURL(record.website) || safeURL(fallbackWebsite)
 const copy = settings.ui.directory

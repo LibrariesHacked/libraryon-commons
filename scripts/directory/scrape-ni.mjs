@@ -54,13 +54,21 @@ export function parseLibraryPage(html, url) {
   let phone = null
   const phoneLink = $('a[href^="tel:"]').first()
   if (phoneLink.length) {
-    phone = phoneLink.text().replace(/^[^\d+]+/, '').replace(/\s+/g, ' ').trim()
+    phone = phoneLink
+      .text()
+      .replace(/^[^\d+]+/, '')
+      .replace(/\s+/g, ' ')
+      .trim()
   }
 
   let email = null
   const emailLink = $('a[href^="mailto:"]').first()
   if (emailLink.length) {
-    email = emailLink.text().replace(/^mailto:\s*/i, '').replace(/^[^\w+]+/, '').trim()
+    email = emailLink
+      .text()
+      .replace(/^mailto:\s*/i, '')
+      .replace(/^[^\w+]+/, '')
+      .trim()
   }
 
   let address = null
@@ -72,7 +80,13 @@ export function parseLibraryPage(html, url) {
       const lines = p
         .html()
         .split(/<br\s*\/?>/i)
-        .map((l) => cheerio.load(l).text().replace(/^[,\s]+|[,\s]+$/g, '').trim())
+        .map((l) =>
+          cheerio
+            .load(l)
+            .text()
+            .replace(/^[,\s]+|[,\s]+$/g, '')
+            .trim()
+        )
         .filter(Boolean)
       address = lines.join(', ')
       for (const line of lines) {
@@ -186,9 +200,7 @@ export function parseLibraryPage(html, url) {
     'Quiet study space': uniqueServices.some((s) => /study area|study space/i.test(s))
       ? 'Yes'
       : null,
-    'Step-free access': uniqueServices.some((s) =>
-      /disabled access|step-free|public lift/i.test(s)
-    )
+    'Step-free access': uniqueServices.some((s) => /disabled access|step-free|public lift/i.test(s))
       ? 'Yes'
       : null,
     'Accessible toilet': uniqueServices.some((s) => /disabled toilet/i.test(s)) ? 'Yes' : null,
@@ -234,7 +246,8 @@ async function scrapeAll() {
     if (href) {
       const parts = href.split('/').filter(Boolean)
       if (parts.length === 3 && parts[0] === 'libraries' && counties.includes(parts[1])) {
-        const fullUrl = 'https://www.librariesni.org.uk' + (href.startsWith('/') ? href : '/' + href)
+        const fullUrl =
+          'https://www.librariesni.org.uk' + (href.startsWith('/') ? href : '/' + href)
         branchUrls.add(fullUrl)
       }
     }

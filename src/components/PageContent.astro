@@ -1,6 +1,6 @@
 ---
-import { splitContentModules, unlinkedResources } from '../lib/content-modules.mjs'
-import { settings } from '../lib/site.mjs'
+import { splitContentModules, unlinkedResources } from '../lib/helpers/contentHelpers.mjs'
+import { settings } from '../lib/helpers/siteHelpers.mjs'
 import FAQSection from './FAQSection.astro'
 import ResourceLink from './ResourceLink.astro'
 const { entry, faqs = [], related = [] } = Astro.props
@@ -42,7 +42,7 @@ const resources = unlinkedResources(
 )}
 
 <script>
-  import { initializeCollectionMedia } from '../lib/collection-media.mjs'
+  import { initializeCollectionMedia } from '../lib/helpers/mediaHelpers.mjs'
 
   initializeCollectionMedia()
 </script>

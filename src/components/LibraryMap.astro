@@ -1,7 +1,7 @@
 ---
 import 'maplibre-gl/dist/maplibre-gl.css'
-import { libraryMapFeatures } from '../lib/library-map.mjs'
-import { sitePath } from '../lib/site.mjs'
+import { libraryMapFeatures } from '../lib/helpers/geoHelpers.mjs'
+import { sitePath } from '../lib/helpers/siteHelpers.mjs'
 
 const {
   id = `library-map-${crypto.randomUUID()}`,
@@ -37,8 +37,8 @@ const data = libraryMapFeatures(libraries, sitePath)
 
 <script>
   import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
-  import { libraryMapFeatures } from '../lib/library-map.mjs'
-  import { sitePath } from '../lib/site.mjs'
+  import { libraryMapFeatures } from '../lib/helpers/geoHelpers.mjs'
+  import { sitePath } from '../lib/helpers/siteHelpers.mjs'
 
   class LibraryMap extends HTMLElement {
     map = undefined

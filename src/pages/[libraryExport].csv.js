@@ -3,7 +3,7 @@
  */
 
 import { libraries } from '../lib/directory.mjs'
-import { libraryCsvResponse } from '../lib/directory-export.mjs'
+import { libraryCsvResponse } from '../lib/helpers/exportHelpers.mjs'
 
 /**
  * Return static paths for complete and validated library CSV export files.

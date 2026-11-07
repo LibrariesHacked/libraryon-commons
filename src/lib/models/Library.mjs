@@ -1,8 +1,9 @@
 /**
- * @fileoverview Data models representing library buildings and library services (authorities).
+ * @fileoverview Domain model for individual UK library buildings, normalizing address, facilities, opening schedules, and spatial proximity for directory pages and search.
  */
 
-import { days } from './directory-data.mjs'
+import { days, compactOpeningHours } from '../helpers/openingHoursHelpers.mjs'
+import { distanceMiles } from '../helpers/geoHelpers.mjs'
 
 const operationMap = {
   LAL: 'Local Authority Run',
@@ -24,67 +25,19 @@ const operatingLabels = {
 }
 
 /**
- * Convert degrees to radians.
- * @param {number} degrees - Angle in degrees.
- * @returns {number} Angle in radians.
- */
-const toRadians = (degrees) => (degrees * Math.PI) / 180
-const earthMiles = 3958.8
-const weekDays = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday']
-
-/**
- * Calculate straight-line distance in miles between two coordinate objects.
- * @param {{latitude?: number, longitude?: number}} first
- * @param {{latitude?: number, longitude?: number}} second
- * @returns {number|null} Distance in miles, or null when either coordinate is missing.
- */
-export function distanceMiles(first, second) {
-  if (
-    !Number.isFinite(first?.latitude) ||
-    !Number.isFinite(first?.longitude) ||
-    !Number.isFinite(second?.latitude) ||
-    !Number.isFinite(second?.longitude)
-  ) {
-    return null
-  }
-  const lat = toRadians(first.latitude)
-  const otherLat = toRadians(second.latitude)
-  const haversine =
-    Math.sin((otherLat - lat) / 2) ** 2 +
-    Math.cos(lat) *
-      Math.cos(otherLat) *
-      Math.sin(toRadians(second.longitude - first.longitude) / 2) ** 2
-  return 2 * earthMiles * Math.asin(Math.sqrt(haversine))
-}
-
-/**
- * Extract compact weekly [startTime, endTime] pairs for search filtering.
- * @param {object} openingTimes
- * @returns {Record<string, Array<[string, string]>>|null}
- */
-export function compactOpeningHours(openingTimes) {
-  if (!openingTimes || typeof openingTimes !== 'object') return null
-  const hours = {}
-  for (const day of weekDays) {
-    const slots = (openingTimes[day]?.timeFrames || [])
-      .filter((frame) => frame?.startTime && frame?.endTime)
-      .map((frame) => [frame.startTime, frame.endTime])
-    if (slots.length) hours[day] = slots
-  }
-  return Object.keys(hours).length ? hours : null
-}
-
-/**
- * Encapsulates a library location, presentation properties, services and operating schedule.
+ * Encapsulates a library location, presentation properties, services, and operating schedule.
  */
 export class Library {
   /**
-   * @param {object} record - Canonical library record.
+   * Construct a Library instance from a canonical directory record.
+   *
+   * @param {object} record - Canonical directory record with `data` property matching Table Schema.
    */
   constructor(record) {
     Object.assign(this, record)
     const data = record?.data || {}
 
+    // Extract facilities and services from semicolon-delimited lists and explicit boolean fields
     const services = (data['Facilities and services'] || '')
       .split(';')
       .map((value) => value.trim())
@@ -99,25 +52,31 @@ export class Library {
       ['Guest wifi', 'Guest wifi'],
       ['Member wifi', 'Member wifi']
     ]) {
-      if (data[field] === 'Yes' && !services.some((item) => item.service === service))
+      if (data[field] === 'Yes' && !services.some((item) => item.service === service)) {
         services.push({ service })
+      }
       if (data[field] === 'No') {
         const index = services.findIndex((item) => item.service === service)
         if (index >= 0) services.splice(index, 1)
       }
     }
 
+    // Extract accessibility features
     const accessibility = []
     for (const [field, label] of [
       ['Step-free access', 'step-free-access'],
       ['Accessible toilet', 'accessible-toilet'],
       ['Hearing loop', 'hearing-loop-system']
     ]) {
-      if (data[field] === 'Yes' && !accessibility.includes(label)) accessibility.push(label)
-      if (data[field] !== 'Yes' && accessibility.includes(label))
+      if (data[field] === 'Yes' && !accessibility.includes(label)) {
+        accessibility.push(label)
+      }
+      if (data[field] !== 'Yes' && accessibility.includes(label)) {
         accessibility.splice(accessibility.indexOf(label), 1)
+      }
     }
 
+    // Build structured weekly opening times
     const openingTimes = {}
     for (const day of days) {
       const timeFrames = []
@@ -134,12 +93,13 @@ export class Library {
           timeFrames.push({ startTime, endTime, type })
         }
       }
-      if (known)
+      if (known) {
         openingTimes[day.toLowerCase()] = {
           timeFrames: timeFrames.sort((first, second) =>
             first.startTime.localeCompare(second.startTime)
           )
         }
+      }
     }
 
     const operatingType = data['Type of library']
@@ -183,7 +143,7 @@ export class Library {
   }
 
   /**
-   * Whether the library is permanently closed or facilities are not open.
+   * Whether the library is permanently closed or not yet open.
    * @type {boolean}
    */
   get isClosed() {
@@ -195,7 +155,7 @@ export class Library {
   }
 
   /**
-   * Whether the library has valid numeric coordinates.
+   * Whether the library has valid numeric latitude and longitude coordinates.
    * @type {boolean}
    */
   get hasCoordinates() {
@@ -203,7 +163,7 @@ export class Library {
   }
 
   /**
-   * Human-readable operating model label for the library.
+   * Human-readable operating model label for the library (e.g. 'Local authority staffed').
    * @type {string}
    */
   get operatingModel() {
@@ -211,7 +171,7 @@ export class Library {
   }
 
   /**
-   * Google Maps and Apple Maps search links for the library.
+   * Google Maps and Apple Maps navigation links for the library.
    * @type {{google: string, apple: string}|null}
    */
   get mapLinks() {
@@ -230,7 +190,7 @@ export class Library {
   }
 
   /**
-   * Compact weekly opening hours formatted for directory search.
+   * Compact weekly opening hours formatted for client-side directory search.
    * @type {Record<string, Array<[string, string]>>|null}
    */
   get compactHours() {
@@ -239,9 +199,10 @@ export class Library {
 
   /**
    * Find the closest open libraries to this library by straight-line distance.
-   * @param {Library[]} candidates - Candidate libraries.
-   * @param {number} [count=5] - Number of neighbours to return.
-   * @returns {Array<{library: Library, miles: number}>} Nearest first.
+   *
+   * @param {Library[]} candidates - Candidate libraries to evaluate.
+   * @param {number} [count=5] - Maximum number of nearest neighbours to return.
+   * @returns {Array<{library: Library, miles: number}>} Nearest libraries sorted ascending by distance.
    */
   nearby(candidates, count = 5) {
     if (!this.hasCoordinates) return []
@@ -256,65 +217,5 @@ export class Library {
       if (nearest.length > count) nearest.pop()
     }
     return nearest
-  }
-}
-
-/**
- * Encapsulates a library service / local authority and its shared links and channels.
- */
-export class LibraryService {
-  /**
-   * @param {object} record - Canonical library service record.
-   */
-  constructor(record) {
-    Object.assign(this, record)
-    const data = record?.data || {}
-
-    const channels = [
-      ['Twitter URL', 'twitter'],
-      ['Facebook URL', 'facebook'],
-      ['Instagram URL', 'instagram'],
-      ['YouTube URL', 'youtube']
-    ]
-    const social = []
-    for (const [field, channel] of channels) {
-      const url = data[field]
-      if (url) social.push({ channel, url })
-    }
-
-    if (data && Object.keys(data).length > 0) {
-      this.name = data['Local authority']
-      this.gss = data['Local authority code']
-      this.country = data.Country
-      this.website = data['Service URL']
-      this.phone = data['Phone number']
-      this.email = data['Email address']
-      this.catalogue = data['Catalogue URL']
-      this.joinOnline = data['Join online URL']
-      this.androidApp = data['Android app URL']
-      this.iOSApp = data['iOS app URL']
-      this.operatingOrganisation = data['Operating organisation']
-      this.social = social
-    }
-
-    if (!this.library_ids) {
-      this.library_ids = []
-    }
-  }
-
-  /**
-   * Whether the authority has one or more social media channels recorded.
-   * @type {boolean}
-   */
-  get hasSocial() {
-    return Array.isArray(this.social) && this.social.length > 0
-  }
-
-  /**
-   * Relative public URL for the authority directory page.
-   * @type {string}
-   */
-  get url() {
-    return `/libraries/${this.slug}/`
   }
 }

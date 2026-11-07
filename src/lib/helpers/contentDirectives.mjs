@@ -1,5 +1,5 @@
 /**
- * @fileoverview Remark plugin transforming container directives into semantic HTML structures.
+ * @fileoverview Remark plugin transforming custom Markdown container directives (quotes, cards, timelines) into semantic HTML structures.
  */
 
 import { ArrowUpRight } from 'lucide'

@@ -90,16 +90,108 @@ tests/             # Automated test suite (node --test)
 - If interactive, components may contain a minimal, scoped `<script>` that imports shared logic from `src/lib/`.
 
 ### 3.4. Shared Business Logic (`src/lib/`)
-- Pure, platform-agnostic JavaScript or TypeScript modules without DOM dependencies where possible.
-- Files like `directory-live.mjs`, `directory-model.mjs`, `directory-schema.mjs`, and `search.mjs` must be directly importable and testable using Node's native test runner (`node --test`).
-- Client-side DOM helper functions (e.g. `updateLibraryListStatus()`) should safely check `typeof document === 'undefined'` before running.
 
-### 3.5. Data Layer (`src/content/`)
+The `src/lib/` folder contains pure, framework-independent JavaScript modules (`.mjs`). It is strictly structured by entity and functional role:
+
+```text
+src/lib/
+├── models/                   # Class-based domain entities (PascalCase matching class names)
+│   ├── Library.mjs           # Model for individual library buildings
+│   └── LibraryService.mjs    # Model for library authorities / councils
+├── helpers/                  # Standalone function helpers grouped by functional domain
+│   ├── geoHelpers.mjs        # Spatial math (Haversine miles), map links, GeoJSON features
+│   ├── dataHelpers.mjs       # UK postcode/UPRN normalization, address and label translations
+│   ├── openingHoursHelpers.mjs # Opening hours session parsing and live UK time status
+│   ├── searchHelpers.mjs     # Client search indexing, payload compaction, and filtering
+│   ├── directoryHelpers.mjs  # Directory graph assembly and breadcrumbs
+│   ├── markdownHelpers.mjs   # Markdown AST manipulation, link preservation, email decoding
+│   ├── contentHelpers.mjs    # Editorial module splitting, template resolution, resource links
+│   ├── siteHelpers.mjs       # Site configuration, URL routing, protocol sanitization
+│   └── sitemapHelpers.mjs    # Nested sitemap navigation tree builder
+└── directory.mjs             # High-level dataset loader and static directory collections
+```
+
+#### 3.4.1. Models vs. Helpers Rule
+- **Class-Based Models (`src/lib/models/`)**:
+  - Encapsulate rich entity state, property normalization, and instance methods.
+  - File names **must** use `PascalCase.mjs` matching the exported class (e.g., `Library.mjs` exports `class Library`, `LibraryService.mjs` exports `class LibraryService`).
+  - Models should never perform direct disk I/O or network requests.
+- **Standalone Helpers (`src/lib/helpers/`)**:
+  - Stateless, pure utility functions grouped by functional domain.
+  - File names **must** use `camelCase` with a descriptive domain suffix (e.g., `geoHelpers.mjs`, `openingHoursHelpers.mjs`, `dataHelpers.mjs`, `searchHelpers.mjs`).
+  - Helper functions should be deterministic, easily testable in isolation, and free of side effects.
+
+#### 3.4.2. File Header Documentation Standard (Concise What & Why)
+Every file in `src/lib/` and `scripts/` must begin with a clear, concise JSDoc `@fileoverview` header (1–2 sentences):
+1. **What it is**: The core responsibility of the module.
+2. **Why it's in the project**: How it connects to the project's features and user journeys.
+
+*Do not write long-winded essays or multi-paragraph dissertations in file headers.* Keep it direct, human-readable, and to the point.
+
+#### 3.4.3. Platform Independence & DOM Safety
+- Files in `src/lib/` must be directly importable and testable using Node's native test runner (`node --test`) without browser mocks.
+- Pure helper functions should not touch the DOM (`window`, `document`).
+
+---
+
+### 3.5. Astro Architecture: Build-Time vs. Browser Runtime Separation
+
+Astro projects combine two completely different execution environments. To keep code clear, maintainable, and free of tangled side-effects, the codebase enforces a strict three-layer separation:
+
+```text
+┌─────────────────────────────────────────────────────────────┐
+│ 1. BUILD-TIME DOMAIN LAYER (`src/lib/`)                     │
+│    - Pure Node.js / ESM (models, helpers, schema validation) │
+│    - Runs ONLY during `astro build` / `astro dev`           │
+│    - Produces data; never touches the browser DOM           │
+└──────────────────────────────┬──────────────────────────────┘
+                               │ Imports data
+┌──────────────────────────────▼──────────────────────────────┐
+│ 2. COMPONENT PRESENTATION LAYER (`src/components/`, etc.)   │
+│    - Frontmatter (`--- ... ---`) runs ONLY at build time    │
+│    - Renders accessible semantic HTML and CSS               │
+│    - Embeds runtime configuration via HTML5 `data-*` attrs  │
+└──────────────────────────────┬──────────────────────────────┘
+                               │ Links to external client file
+┌──────────────────────────────▼──────────────────────────────┐
+│ 3. BROWSER RUNTIME LAYER (`src/scripts/*Client.mjs`)        │
+│    - Pure browser JavaScript bundled and minified by Vite   │
+│    - Runs in the user's browser at runtime                  │
+│    - Handles DOM events, MapLibre, filters, geolocation     │
+└─────────────────────────────────────────────────────────────┘
+```
+
+#### 3.5.1. No Large Inline Scripts in `.astro` Files
+- **Avoid inline scripts**: Do not place large blocks of procedural DOM manipulation, event listeners, or API requests inside `<script>` tags in `.astro` templates.
+- **Extract to dedicated client files**: Place browser runtime logic in dedicated files under `src/scripts/` using the `*Client.mjs` naming convention (e.g. `src/scripts/directorySearchClient.mjs`, `src/scripts/libraryMapClient.mjs`, `src/scripts/carouselClient.mjs`).
+- **Single-line template links**: Components should link to client scripts via a clean import or src reference:
+  ```astro
+  <script src="../../scripts/directorySearchClient.mjs"></script>
+  ```
+  or:
+  ```astro
+  <script>
+    import { initDirectorySearch } from '../../scripts/directorySearchClient.mjs'
+    initDirectorySearch()
+  </script>
+  ```
+
+#### 3.5.2. How Build-Time and Browser Code Communicate
+Build-time code and browser runtime code must never share direct memory or function scopes:
+1. **Pass data through HTML5 `data-*` attributes**: When a browser script needs build-time context (e.g. a library's opening hours or initial coordinates), the `.astro` template writes it as a JSON-encoded or scalar `data-*` attribute on the element:
+   ```astro
+   <div class="library-map" data-coordinates={JSON.stringify({ lat, lng })}></div>
+   ```
+2. **Loosely couple components with Custom DOM Events**: Components on the same page communicate via typed custom events dispatched on `document` or `window` (e.g., `document.dispatchEvent(new CustomEvent('library-map-update', { detail: { records, location } }))`). This avoids tight couplings between unrelated widgets.
+
+---
+
+### 3.6. Data Layer (`src/content/`)
 - JSON directory records for authorities and libraries follow the [Public library data schemas](https://schema.librarydata.uk/).
 - Content is validated at build time against Table Schema definitions.
 - Records should never contain temporary migration artifacts, legacy field names, or unverified fabricated values.
 
-### 3.6. Data Scripts & Migrations (`scripts/`, `migration/`)
+### 3.7. Data Scripts & Migrations (`scripts/`, `migration/`)
 - All data transformation, geocoding, and ONS lookup scripts must be idempotent and reproducible.
 - Never import migration scripts into frontend bundles or build steps.
 

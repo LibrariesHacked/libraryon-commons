@@ -15,14 +15,14 @@ import { gzipSync, gunzipSync } from 'node:zlib'
 import { fileURLToPath } from 'node:url'
 import { parse } from 'csv-parse/sync'
 import readXlsx from 'read-excel-file/node'
+import { normalizePostcode, normalizeUprn } from '../../src/lib/helpers/dataHelpers.mjs'
+import { days, openingHours } from '../../src/lib/helpers/openingHoursHelpers.mjs'
 import {
-  days,
-  normalizePostcode,
-  normalizeUprn,
-  openingHours
-} from '../../src/lib/directory-data.mjs'
-import { directorySchemas, dataIssues, validateRecords } from '../../src/lib/directory-schema.mjs'
-import { distanceMiles } from '../../src/lib/directory-model.mjs'
+  directorySchemas,
+  dataIssues,
+  validateRecords
+} from '../../src/lib/helpers/schemaHelpers.mjs'
+import { distanceMiles } from '../../src/lib/helpers/geoHelpers.mjs'
 
 export const root = new URL('../../', import.meta.url)
 export const auditRoot = new URL('migration/directory/', root)
@@ -1381,19 +1381,15 @@ export async function migrate({ write = false } = {}) {
     if (record.data.Statutory !== null) continue
     const authority = plan.authorityBySlug.get(record.authority)
     const code = record.data['Local authority code'] || ''
-    const country =
-      (code.startsWith('N')
-        ? 'Northern Ireland'
-        : code.startsWith('S')
-          ? 'Scotland'
-          : code.startsWith('W')
-            ? 'Wales'
-            : code.startsWith('L') || code.startsWith('M')
-              ? 'Crown Dependencies'
-              : authority?.country ||
-              (record.slug.includes('larne')
-                ? 'Northern Ireland'
-                : 'England'))
+    const country = code.startsWith('N')
+      ? 'Northern Ireland'
+      : code.startsWith('S')
+        ? 'Scotland'
+        : code.startsWith('W')
+          ? 'Wales'
+          : code.startsWith('L') || code.startsWith('M')
+            ? 'Crown Dependencies'
+            : authority?.country || (record.slug.includes('larne') ? 'Northern Ireland' : 'England')
 
     if (country === 'Northern Ireland') {
       change(record, 'Statutory', 'Yes', {
@@ -1486,8 +1482,7 @@ export async function migrate({ write = false } = {}) {
       !pcLookup?.authorityCode ||
       lookup.authorityCode === pcLookup.authorityCode ||
       (lookup.authorityCode.startsWith('N') && pcLookup.authorityCode.startsWith('N'))
-    const pcMiles =
-      pcLookup?.latitude && lookup?.latitude ? distanceMiles(pcLookup, lookup) : null
+    const pcMiles = pcLookup?.latitude && lookup?.latitude ? distanceMiles(pcLookup, lookup) : null
     const close =
       (lookup?.postcode === targetPostcode && (pcMiles === null || pcMiles <= 0.621371)) ||
       (pcMiles !== null && pcMiles <= 0.310686)

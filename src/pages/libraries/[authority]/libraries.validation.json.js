@@ -3,8 +3,8 @@
  */
 
 import { authorities, libraries } from '../../../lib/directory.mjs'
-import { libraryValidationReport } from '../../../lib/directory-export.mjs'
-import { sitePath } from '../../../lib/site.mjs'
+import { libraryValidationReport } from '../../../lib/helpers/exportHelpers.mjs'
+import { sitePath } from '../../../lib/helpers/siteHelpers.mjs'
 
 /**
  * Return static paths for authority-scoped validation reports.

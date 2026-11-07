@@ -1,7 +1,7 @@
 ---
 import { Download, FileCheck, FileJson } from '@lucide/astro'
-import { libraryValidationReport } from '../lib/directory-export.mjs'
-import { sitePath } from '../lib/site.mjs'
+import { libraryValidationReport } from '../lib/helpers/exportHelpers.mjs'
+import { sitePath } from '../lib/helpers/siteHelpers.mjs'
 
 const { entries, authoritySlug } = Astro.props
 const prefix = authoritySlug ? `/libraries/${authoritySlug}/libraries` : '/libraries'

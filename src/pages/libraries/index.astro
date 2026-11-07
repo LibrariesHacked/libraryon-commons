@@ -13,7 +13,7 @@ import {
   collectValues,
   facilityLabel
 } from '../../lib/directory.mjs'
-import { settings, sitePath } from '../../lib/site.mjs'
+import { settings, sitePath } from '../../lib/helpers/siteHelpers.mjs'
 
 const copy = settings.ui.library_search
 const libraryOnServiceOrder = [
@@ -293,8 +293,12 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
 
 <script>
   import { autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom'
-  import { distanceMiles, expandDirectory, matchesLibrary } from '../../lib/search.mjs'
-  import { sitePath } from '../../lib/site.mjs'
+  import {
+    distanceMiles,
+    expandDirectory,
+    matchesLibrary
+  } from '../../lib/helpers/searchHelpers.mjs'
+  import { sitePath } from '../../lib/helpers/siteHelpers.mjs'
 
   const form = document.querySelector('#library-search')
   const picker = form.querySelector('library-place-search')
@@ -518,16 +522,20 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     metaRow.append(authority)
 
     if (!item.closed && item.hours) {
-      const hasHours = Object.values(item.hours).some((slots) => Array.isArray(slots) && slots.length > 0)
+      const hasHours = Object.values(item.hours).some(
+        (slots) => Array.isArray(slots) && slots.length > 0
+      )
       if (isLibraryOpenAt(item, new Date())) {
         const pill = document.createElement('span')
         pill.className = 'live-status-pill live-status-pill--small is-open'
-        pill.innerHTML = '<span class="live-status-dot" aria-hidden="true"></span><span>Open now</span>'
+        pill.innerHTML =
+          '<span class="live-status-dot" aria-hidden="true"></span><span>Open now</span>'
         metaRow.append(pill)
       } else if (hasHours) {
         const pill = document.createElement('span')
         pill.className = 'live-status-pill live-status-pill--small is-closed'
-        pill.innerHTML = '<span class="live-status-dot" aria-hidden="true"></span><span>Closed</span>'
+        pill.innerHTML =
+          '<span class="live-status-dot" aria-hidden="true"></span><span>Closed</span>'
         metaRow.append(pill)
       }
     }

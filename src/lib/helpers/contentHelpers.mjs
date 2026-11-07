@@ -1,12 +1,13 @@
 /**
- * @fileoverview Article HTML module splitting and resource link deduplication.
+ * @fileoverview Article HTML module splitting around {{faqs}} and {{resources}} markers, template resolution, and link deduplication.
  */
 
 import { load } from 'cheerio'
-import { safeURL, mediaURL } from './site.mjs'
+import { safeURL, mediaURL } from './siteHelpers.mjs'
 
 /**
  * Split rendered article HTML into modular content blocks around FAQ and resource markers.
+ *
  * @param {string} html - Rendered HTML from article markdown.
  * @param {{faqHeading?: string, base?: string, leadImage?: boolean}} [options={}] - Processing options.
  * @returns {Array<{type: 'html'|'faqs'|'resources', html?: string, headingId?: string, introduction?: string}>} Modular content blocks.
@@ -40,7 +41,9 @@ export function splitContentModules(
       if (!value) continue
       const local = prefix && value.startsWith(`${prefix}/`) ? value.slice(prefix.length) : value
       const resolved = mediaURL(local)
-      if (resolved !== local) element.attr(attribute, `${local === value ? '' : prefix}${resolved}`)
+      if (resolved !== local) {
+        element.attr(attribute, `${local === value ? '' : prefix}${resolved}`)
+      }
     }
   })
   const blocks = []
@@ -98,6 +101,7 @@ export function splitContentModules(
 
 /**
  * Filter resources to exclude URLs that are already linked directly in the article body.
+ *
  * @param {string} html - Article body HTML.
  * @param {Array<{url: string, [key: string]: unknown}>} resources - Candidate resources.
  * @returns {Array<{url: string, [key: string]: unknown}>} Resources not linked in body text.
@@ -109,10 +113,24 @@ export function unlinkedResources(html, resources) {
       .toArray()
       .map((node) => safeURL(document(node).attr('href')))
   )
-  return resources.filter((resource) => {
+  return (resources || []).filter((resource) => {
     const url = safeURL(resource.url)
     if (!url || linked.has(url)) return false
     linked.add(url)
     return true
   })
+}
+
+/**
+ * Select a named presentation template based on the content collection entry.
+ *
+ * @param {{data: {path: string, kind: string}}} entry - Content collection entry.
+ * @returns {'home'|'grant'|'legal'|'article'|string} Template identifier.
+ */
+export function templateFor(entry) {
+  if (entry.data.path === '/') return 'home'
+  if (entry.data.kind !== 'page') return entry.data.kind
+  if (entry.data.path.startsWith('/archive/grants')) return 'grant'
+  if (entry.data.path.startsWith('/legal/')) return 'legal'
+  return 'article'
 }

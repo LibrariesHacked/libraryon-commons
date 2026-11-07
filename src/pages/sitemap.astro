@@ -6,8 +6,8 @@ import Breadcrumbs from '../components/Breadcrumbs.astro'
 import SitemapTree from '../components/SitemapTree.astro'
 import SiteLayout from '../layouts/SiteLayout.astro'
 import { authorities, libraries } from '../lib/directory.mjs'
-import { isPublishedPage, articleTitle, settings, sitePath } from '../lib/site.mjs'
-import { buildPageTree } from '../lib/sitemap.mjs'
+import { isPublishedPage, articleTitle, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { buildPageTree } from '../lib/helpers/sitemapHelpers.mjs'
 
 const hasContributors =
   existsSync('./src/content/contributors') &&

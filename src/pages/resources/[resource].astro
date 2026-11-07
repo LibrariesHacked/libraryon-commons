@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content'
 
-import { resourceUsage } from '../../lib/resource-usage.mjs'
+import { resourceUsage } from '../../lib/helpers/resourceHelpers.mjs'
 import ResourceTemplate from '../../templates/ResourceTemplate.astro'
 export async function getStaticPaths() {
   const [resources, pages, sessions] = await Promise.all([

@@ -20,12 +20,12 @@ import { gunzipSync } from 'node:zlib'
 import { parse, stringify } from 'yaml'
 import sharp from 'sharp'
 import { load } from 'cheerio'
-import { normalizeListSpacing } from '../src/lib/markdown-format.mjs'
+import { normalizeListSpacing } from '../src/lib/helpers/markdownHelpers.mjs'
 import {
   createEditorComponents,
   previewEditorBlock,
   registerEditorComponents
-} from '../src/lib/cms-editor-components.mjs'
+} from '../src/lib/helpers/cmsHelpers.mjs'
 import { digest } from '../scripts/archive/collect.mjs'
 import { libraries, authorities } from '../src/lib/directory.mjs'
 import {
@@ -850,7 +850,7 @@ test('original "Last updated" dates are metadata, not repeated body text', () =>
 })
 
 test('library text fields are plain strings and facility labels keep original wording', async () => {
-  const { facilityLabel } = await import('../src/lib/directory-model.mjs')
+  const { facilityLabel } = await import('../src/lib/helpers/dataHelpers.mjs')
   for (const library of libraries) {
     for (const field of ['openingTimesNotes', 'notes', 'address']) {
       assert.equal(typeof library[field], 'string', `${library.name} ${field}`)

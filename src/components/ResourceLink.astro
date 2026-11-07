@@ -1,6 +1,6 @@
 ---
 import { Download, ArrowUpRight, Play } from '@lucide/astro'
-import { safeURL } from '../lib/site.mjs'
+import { safeURL } from '../lib/helpers/siteHelpers.mjs'
 const { resource, compact = false } = Astro.props
 const local = resource.url.startsWith('/uploads/')
 const label = resource.title

@@ -129,36 +129,20 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
 }
 
 /**
- * Copy authoritative Table Schemas and generate matching nullable TypeScript interfaces.
- * @param {URL} [root] - Repository root containing specifications and formatter options.
- * @returns {Promise<void>} Writes deterministic schema and type artifacts, not directory data.
+ * Copy authoritative Table Schemas to src/data/schemas/.
+ * @param {URL} [root] - Repository root containing specifications.
+ * @returns {Promise<void>} Writes deterministic schema artifacts, not directory data.
  */
 export async function generateSchemas(root = new URL('../', import.meta.url)) {
   const output = new URL('src/data/schemas/', root)
   mkdirSync(output, { recursive: true })
-  let types = ''
-  for (const [file, name] of [
+  for (const [file] of [
     ['libraries', 'LibraryData'],
     ['library-services', 'LibraryServiceData']
   ]) {
     const schema = JSON.parse(readFileSync(new URL(`tempdata/${file}.json`, root), 'utf8'))
     writeFileSync(new URL(`${file}.json`, output), `${JSON.stringify(schema, null, 2)}\n`)
-    types += `export interface ${name} {\n`
-    for (const field of schema.fields) {
-      const type =
-        field.constraints?.enum?.map((value) => JSON.stringify(value)).join(' | ') ||
-        { integer: 'number', number: 'number', year: 'number' }[field.type] ||
-        'string'
-      types += `  ${JSON.stringify(field.name)}: ${type} | null\n`
-    }
-    types += '}\n\n'
   }
-  types += `export interface ValidationException {\n  field: string\n  code: string\n  value: unknown\n  reason: string\n}\n\nexport interface ManualCheck {\n  kind: string\n  reason: string\n  audit_refs: string[]\n}\n\nexport interface DirectoryRecord<Data> {\n  id?: string | number\n  slug: string\n  authority?: string\n  source_id?: string | number\n  source_url?: string\n  updated_on?: string | null\n  reviewed_on?: string | null\n  imported_on?: string\n  data: Data\n  validation_exceptions: ValidationException[]\n  manual_checks?: ManualCheck[]\n}\n\nexport type LibraryRecord = DirectoryRecord<LibraryData>\nexport type LibraryServiceRecord = DirectoryRecord<LibraryServiceData>\n`
-  const options = JSON.parse(readFileSync(new URL('.prettierrc.json', root), 'utf8'))
-  writeFileSync(
-    new URL('src/lib/directory-types.ts', root),
-    await format(types, { ...options, filepath: 'src/lib/directory-types.ts' })
-  )
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {

@@ -3,7 +3,7 @@
  */
 
 import { searchRecords } from '../lib/directory.mjs'
-import { compactDirectory } from '../lib/search.mjs'
+import { compactDirectory } from '../lib/helpers/searchHelpers.mjs'
 
 /**
  * Handle GET requests for the complete library directory search index including closed buildings.

@@ -272,7 +272,9 @@
   cursor: pointer;
   border: 0;
   font-family: inherit;
-  transition: transform var(--motion-ease) 0.15s, box-shadow var(--motion-ease) 0.15s;
+  transition:
+    transform var(--motion-ease) 0.15s,
+    box-shadow var(--motion-ease) 0.15s;
   user-select: none;
 }
 .filter-tag:hover {

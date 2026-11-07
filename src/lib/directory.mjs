@@ -1,13 +1,24 @@
 /**
- * @fileoverview Read community-maintained CMS directory files and construct breadcrumb trails.
+ * @fileoverview Main directory dataset loader reading local authority and library JSON records directly from disk at build time.
  */
+
 import { readdirSync, readFileSync, existsSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
-import { createDirectory } from './directory-model.mjs'
-import { settings } from './site.mjs'
+import { createDirectory, directoryBreadcrumbs } from './helpers/directoryHelpers.mjs'
+import { Library } from './models/Library.mjs'
+import { LibraryService } from './models/LibraryService.mjs'
+import {
+  libraryAddress,
+  facilityLabel,
+  operatingModelLabel,
+  collectValues
+} from './helpers/dataHelpers.mjs'
+import { mapLinks, nearbyLibraries, distanceMiles } from './helpers/geoHelpers.mjs'
+import { compactOpeningHours } from './helpers/openingHoursHelpers.mjs'
 
 /**
- * Read editable records from content directory without forcing Vite to transform 4,000+ individual modules.
+ * Read editable records from the content directory without forcing Vite to transform 4,000+ individual modules.
+ *
  * @param {'libraries'|'authorities'} folder - Directory collection to read.
  * @returns {object[]} Parsed canonical JSON records in filename order.
  */
@@ -26,6 +37,7 @@ const libraryRecords = localRecords('libraries')
 
 export const { libraries, authorities, authorityByLibrary, libraryPath, searchRecords } =
   createDirectory(authorityRecords, libraryRecords, { requireCanonical: true })
+
 export {
   Library,
   LibraryService,
@@ -36,20 +48,7 @@ export {
   collectValues,
   nearbyLibraries,
   distanceMiles,
-  compactOpeningHours
-} from './directory-model.mjs'
-
-/**
- * Build a breadcrumb navigation trail for directory pages.
- * @param {string} title - Page title for the current terminal breadcrumb.
- * @param {{name: string, slug: string}|null} [authority=null] - Optional parent authority.
- * @returns {Array<{label: string, href?: string, current?: boolean}>} Breadcrumb items.
- */
-export function directoryBreadcrumbs(title, authority = null) {
-  return [
-    { label: settings.ui.editorial.home_breadcrumb, href: '/' },
-    { label: settings.ui.directory.breadcrumb, href: '/libraries/' },
-    ...(authority ? [{ label: authority.name, href: `/libraries/${authority.slug}/` }] : []),
-    { label: title, current: true }
-  ]
+  compactOpeningHours,
+  directoryBreadcrumbs,
+  createDirectory
 }

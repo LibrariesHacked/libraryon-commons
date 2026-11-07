@@ -3,27 +3,8 @@
  */
 
 import { readdirSync, readFileSync } from 'node:fs'
-import { validateRecords } from './directory-schema.mjs'
-import audit from '../../migration/directory/report.json' with { type: 'json' }
-
-/**
- * @typedef {object} ReviewRow
- * @property {string} key - Collection-qualified entry key.
- * @property {string} collection - Owning directory collection.
- * @property {string} entry - JSON filename without its extension.
- * @property {string} name - Public record name.
- * @property {string} authority - Display authority name.
- * @property {string} publicPath - Public record route.
- * @property {string} editPath - Exact CMS entry route.
- * @property {string} detailPath - Lazy evidence endpoint.
- * @property {number} exceptionCount - Current schema-exception count.
- * @property {number} manualCount - Current manual-check group count.
- * @property {string[]} categories - Filterable issue kinds.
- * @property {number} priority - Lower values are reviewed first.
- * @property {string} searchText - Normalized searchable record and issue text.
- * @property {object[]} exceptions - Exact current schema failures.
- * @property {object[]} manual - Manual checks with ownership-checked evidence.
- */
+import { validateRecords } from './schemaHelpers.mjs'
+import audit from '../../../migration/directory/report.json' with { type: 'json' }
 
 const urgentReviewKinds = new Set([
   'opening-hours',
@@ -31,7 +12,7 @@ const urgentReviewKinds = new Set([
   'duplicate-uprn',
   'historical-postcode-correction'
 ])
-/** @param {string} value - Machine-readable issue kind. @returns {string} Readable label retaining domain acronyms. */
+
 const reviewLabel = (value) =>
   value
     .replace(/-/g, ' ')
@@ -42,10 +23,10 @@ const reviewLabel = (value) =>
 
 /**
  * Join current flags to record-scoped audit evidence, omitting resolved records.
- * Evidence ownership is checked before archived details are exposed in a dialog.
+ *
  * @param {Record<string, {file: string, record: object}[]>} groups - Live canonical files.
  * @param {{review?: object[], unmapped?: object[]}} audit - Preserved migration evidence.
- * @returns {ReviewRow[]} Priority-sorted worklist with per-record detail payloads.
+ * @returns {Array<object>} Priority-sorted worklist with per-record detail payloads.
  */
 export function directoryReviewRows(groups, audit) {
   const evidenceById = new Map((audit.review || []).map((item) => [item.review_id, item]))
@@ -70,11 +51,12 @@ export function directoryReviewRows(groups, audit) {
         evidence: check.audit_refs.map((reference) => {
           const reviewId = reference.split('#')[1]
           const evidence = evidenceById.get(reviewId)
-          if (!evidence || !(evidence.id === record.id || evidence.ids?.includes(record.id)))
+          if (!evidence || !(evidence.id === record.id || evidence.ids?.includes(record.id))) {
             return {
               review_id: reviewId,
               reason: 'Audit evidence is missing or does not identify this record; requires review'
             }
+          }
           const { id, ids, ...details } = evidence
           const unmappedReference = evidence.evidence?.match(
             /^migration\/directory\/report\.json#\/unmapped\/(\d+)$/
@@ -127,8 +109,9 @@ export function directoryReviewRows(groups, audit) {
 
 /**
  * Omit full evidence from the initial browser index; dialogs fetch it on demand.
- * @param {ReviewRow[]} rows - Joined review rows from directoryReviewRows.
- * @returns {Omit<ReviewRow, 'exceptions'|'manual'>[]} Compact, browser-safe entries.
+ *
+ * @param {Array<object>} rows - Joined review rows.
+ * @returns {Array<object>} Compact entries.
  */
 export function reviewIndex(rows) {
   return rows.map(({ exceptions, manual, ...row }) => row)
@@ -136,8 +119,9 @@ export function reviewIndex(rows) {
 
 /**
  * Produce stable filter choices only for issue types present in the current worklist.
- * @param {{categories: string[]}[]} rows - Index or complete review rows.
- * @returns {{value: string, label: string}[]} Sorted category values and display labels.
+ *
+ * @param {Array<{categories: string[]}>} rows - Review rows.
+ * @returns {Array<{value: string, label: string}>} Sorted categories.
  */
 export function reviewCategories(rows) {
   return [...new Set(rows.flatMap((row) => row.categories))].sort().map((value) => ({
@@ -147,18 +131,18 @@ export function reviewCategories(rows) {
 }
 
 /**
- * Validate live files using Vite imports in Astro or filesystem reads in Node tests.
- * Audit imports stay server-only; fresh rows reflect current flags rather than cached ones.
- * @returns {ReviewRow[]} Worklist rows with record-scoped evidence.
+ * Validate live files and return review rows.
+ *
+ * @returns {Array<object>} Worklist rows with evidence.
  */
 export function loadDirectoryReview() {
   const bundled = import.meta.env?.SSR
     ? {
-        libraries: import.meta.glob('../content/libraries/*.json', {
+        libraries: import.meta.glob('../../content/libraries/*.json', {
           eager: true,
           import: 'default'
         }),
-        authorities: import.meta.glob('../content/authorities/*.json', {
+        authorities: import.meta.glob('../../content/authorities/*.json', {
           eager: true,
           import: 'default'
         })
@@ -166,7 +150,7 @@ export function loadDirectoryReview() {
     : null
   const groups = Object.fromEntries(
     ['libraries', 'authorities'].map((collection) => {
-      const directory = new URL(`../content/${collection}/`, import.meta.url)
+      const directory = new URL(`../../content/${collection}/`, import.meta.url)
       const entries = bundled
         ? Object.entries(bundled[collection]).map(([path, record]) => ({
             file: path.split('/').pop(),

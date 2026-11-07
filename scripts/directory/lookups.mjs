@@ -10,7 +10,7 @@ import { load } from 'cheerio'
 import { parse } from 'csv-parse'
 import proj4 from 'proj4'
 import { baseline, readInputs, planMatches, auditRoot, writeJson, root } from './migrate.mjs'
-import { normalizePostcode } from '../../src/lib/directory-data.mjs'
+import { normalizePostcode } from '../../src/lib/helpers/dataHelpers.mjs'
 
 const cacheFile = new URL('lookups.json', auditRoot)
 const userAgent =

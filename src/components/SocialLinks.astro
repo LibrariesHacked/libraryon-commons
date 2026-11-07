@@ -1,6 +1,6 @@
 ---
 import { ArrowUpRight } from '@lucide/astro'
-import { safeURL } from '../lib/site.mjs'
+import { safeURL } from '../lib/helpers/siteHelpers.mjs'
 
 const { heading, links = [] } = Astro.props
 const validLinks = links.filter((link) => safeURL(link?.url))
