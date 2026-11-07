@@ -2,15 +2,19 @@
 import { getCollection } from 'astro:content'
 
 import Breadcrumbs from '../components/Breadcrumbs.astro'
+import ShareButtons from '../components/ShareButtons.astro'
 import {
   articleTitle,
   breadcrumbsForPage,
+  canonicalInternalPath,
   formatDate,
   safeURL,
   settings,
   sitePath
 } from '../lib/helpers/siteHelpers.mjs'
+import { generateArticleSchema } from '../lib/helpers/seoHelpers.mjs'
 import SiteLayout from './SiteLayout.astro'
+
 const copy = settings.ui.editorial
 const { entry, allPages = [], headings = [], neighbours = [] } = Astro.props
 const title = articleTitle(entry)
@@ -23,9 +27,44 @@ const contributors = entry.data.contributors?.length
       entry.data.contributors.includes(profile.id)
     )
   : []
+
+const siteBase = Astro.site ? Astro.site.href : settings.site.url
+const canonicalUrl = Astro.site
+  ? new URL(canonicalInternalPath(Astro.url.pathname), Astro.site).href
+  : `${siteBase.replace(/\/+$/, '')}${entry.data.path}`
+
+const heroImage = entry.data.hero?.image
+const heroAlt = entry.data.hero?.alt || title
+
+const articleSchema = generateArticleSchema(
+  {
+    title,
+    description: entry.data.description,
+    url: canonicalUrl,
+    imageUrl: heroImage,
+    publishedOn: entry.data.published_on,
+    updatedOn: entry.data.updated_on,
+    author: entry.data.author
+  },
+  siteBase
+)
 ---
 
-<SiteLayout title={title} description={entry.data.description}>
+<SiteLayout
+  title={title}
+  description={entry.data.description}
+  image={heroImage ? { src: heroImage, alt: heroAlt } : undefined}
+  type="article"
+  article={{
+    publishedTime: entry.data.published_on
+      ? new Date(entry.data.published_on).toISOString()
+      : undefined,
+    modifiedTime: entry.data.updated_on ? new Date(entry.data.updated_on).toISOString() : undefined,
+    author: entry.data.author
+  }}
+  breadcrumbs={breadcrumbs}
+  schema={articleSchema}
+>
   <header class="page-heading">
     <div class="shell">
       <Breadcrumbs items={breadcrumbs} />
@@ -49,6 +88,7 @@ const contributors = entry.data.contributors?.length
   <div class:list={['section', 'shell', 'article-layout', !hasAside && 'article-layout-no-aside']}>
     <div>
       <slot />
+      <ShareButtons title={title} description={entry.data.description} />
       {hasSourceNote && (
         <div class="source-note">
           {entry.data.attribution && <p>{entry.data.attribution}</p>}

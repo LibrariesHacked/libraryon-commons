@@ -3,19 +3,32 @@ import { Menu, ArrowUpRight } from '@lucide/astro'
 import Brand from '../components/Brand.astro'
 import SiteNavigation from '../components/SiteNavigation.astro'
 import { canonicalInternalPath, settings, sitePath, safeURL } from '../lib/helpers/siteHelpers.mjs'
+import {
+  absoluteUrl,
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+  generateBreadcrumbSchema
+} from '../lib/helpers/seoHelpers.mjs'
 import '../styles/global.css'
 
 const {
   title = settings.site.title,
   description = settings.site.description,
   noindex = false,
-  publicSiteURL
+  publicSiteURL,
+  image,
+  type = 'website',
+  article,
+  breadcrumbs = [],
+  schema
 } = Astro.props
+
 /** @param value - Site path or external URL. @returns Public-host link in the separate CMS deployment, otherwise a base-aware local link. */
 const publicPath = (value) =>
   publicSiteURL && value.startsWith('/') && !value.startsWith('//')
     ? new URL(value.replace(/^\/+/, ''), `${publicSiteURL.replace(/\/+$/, '')}/`).href
     : sitePath(value)
+
 /** @param items - Navigation tree, including URL-less groups. @returns A copied tree with public-host links and preserved group structure. */
 const navigationItems = (items) =>
   items.map((item) => ({
@@ -24,9 +37,41 @@ const navigationItems = (items) =>
     ...(item.children ? { children: navigationItems(item.children) } : {})
   }))
 const navigation = publicSiteURL ? navigationItems(settings.navigation) : settings.navigation
+
+const siteBase = Astro.site ? Astro.site.href : settings.site.url
 const canonical = Astro.site
   ? new URL(canonicalInternalPath(Astro.url.pathname), Astro.site).href
-  : undefined
+  : absoluteUrl(canonicalInternalPath(Astro.url.pathname), siteBase)
+
+const fullTitle = title === settings.site.title ? title : `${title} | ${settings.site.title}`
+
+// Social share card resolution
+const shareImagePath = typeof image === 'string' ? image : image?.src || '/brand/social-card.png'
+const shareImageUrl = absoluteUrl(shareImagePath, siteBase)
+const shareImageAlt = typeof image === 'object' && image?.alt ? image.alt : fullTitle
+
+// JSON-LD structured data collection
+const isHomePage = Astro.url.pathname === '/' || Astro.url.pathname === ''
+const pageSchemas = []
+
+if (isHomePage) {
+  pageSchemas.push(generateWebSiteSchema(siteBase))
+}
+pageSchemas.push(generateOrganizationSchema(siteBase))
+
+if (Array.isArray(breadcrumbs) && breadcrumbs.length > 0) {
+  const breadcrumbSchema = generateBreadcrumbSchema(breadcrumbs, siteBase)
+  if (breadcrumbSchema) pageSchemas.push(breadcrumbSchema)
+}
+
+if (schema) {
+  if (Array.isArray(schema)) {
+    pageSchemas.push(...schema.filter(Boolean))
+  } else {
+    pageSchemas.push(schema)
+  }
+}
+
 const { navigation: navigationCopy } = settings.ui
 const { footer } = settings
 const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admin/') : null)
@@ -37,14 +82,51 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
     <meta name="theme-color" content="#244f3e" />
+    {canonical && <link rel="canonical" href={canonical} />}
+
+    <!-- Favicons -->
     <link rel="icon" href={publicPath('/brand/favicon.svg')} type="image/svg+xml" />
     <link rel="icon" href={publicPath('/brand/favicon-32.png')} sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href={publicPath('/brand/app-icon-180.png')} />
-    <title>{title === settings.site.title ? title : `${title} | ${settings.site.title}`}</title>
-    {canonical && <link rel="canonical" href={canonical} />}
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content={settings.site.title} />
+    <meta property="og:type" content={type} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:image" content={shareImageUrl} />
+    <meta property="og:image:alt" content={shareImageAlt} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    {article?.publishedTime && (
+      <meta property="article:published_time" content={article.publishedTime} />
+    )}
+    {article?.modifiedTime && (
+      <meta property="article:modified_time" content={article.modifiedTime} />
+    )}
+    {article?.author && <meta property="article:author" content={article.author} />}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={shareImageUrl} />
+    <meta name="twitter:image:alt" content={shareImageAlt} />
+
+    <!-- Structured Data (JSON-LD) -->
+    {pageSchemas.length > 0 && (
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify(pageSchemas.length === 1 ? pageSchemas[0] : pageSchemas)}
+      />
+    )}
   </head>
   <body>
     <a class="skip-link" href="#main">

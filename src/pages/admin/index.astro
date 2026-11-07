@@ -30,6 +30,8 @@ const publicSitePath = (value) =>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script>
       import { prepareDirectoryEdit } from '../../lib/helpers/schemaHelpers.mjs'
+      import { registerEditorComponents } from '../../lib/helpers/cmsHelpers.mjs'
+      import previewStyles from '../../styles/global.css?inline'
 
       const stampedFields = {
         pages: ['updated_on'],
@@ -39,35 +41,42 @@ const publicSitePath = (value) =>
         authorities: ['updated_on', 'reviewed_on'],
         libraries: ['updated_on', 'reviewed_on']
       }
+
       const cms = Reflect.get(window, 'CMS')
-      cms.registerEventListener({
-        name: 'preSave',
-        /** @param context - Decap entry being saved. @returns Normalized immutable values with actual edit/review dates stamped. */
-        handler: ({ entry }) => {
-          const today = new Date().toLocaleDateString('en-CA')
-          const collection = entry.get('collection')
-          let data = entry.get('data')
-          if (collection === 'libraries' || collection === 'authorities') {
-            const prepared = prepareDirectoryEdit(data.toJS(), collection)
-            for (const [field, value] of Object.entries(prepared.data)) {
-              data = data.setIn(['data', field], value)
+      if (cms) {
+        registerEditorComponents(cms)
+
+        cms.registerEventListener({
+          name: 'preSave',
+          /** @param context - Decap entry being saved. @returns Normalized immutable values with actual edit/review dates stamped. */
+          handler: ({ entry }) => {
+            try {
+              const today = new Date().toLocaleDateString('en-CA')
+              const collection = entry.get('collection')
+              let data = entry.get('data')
+
+              if (collection === 'libraries' || collection === 'authorities') {
+                const prepared = prepareDirectoryEdit(data.toJS(), collection)
+                for (const [field, value] of Object.entries(prepared.data)) {
+                  data = data.setIn(['data', field], value)
+                }
+                data = data.set('validation_exceptions', prepared.validation_exceptions)
+              }
+
+              return (stampedFields[entry.get('collection')] || []).reduce(
+                (data, field) => data.set(field, today),
+                data
+              )
+            } catch (err) {
+              console.error('Decap CMS preSave handler failed:', err)
+              throw err
             }
-            data = data.set('validation_exceptions', prepared.validation_exceptions)
           }
-          return (stampedFields[entry.get('collection')] || []).reduce(
-            (data, field) => data.set(field, today),
-            data
-          )
-        }
-      })
-    </script>
-    <script>
-      import { registerEditorComponents } from '../../lib/helpers/cmsHelpers.mjs'
-      import previewStyles from '../../styles/global.css?inline'
-      const cms = Reflect.get(window, 'CMS')
-      registerEditorComponents(cms)
-      cms.registerPreviewStyle(previewStyles, { raw: true })
-      cms.init()
+        })
+
+        cms.registerPreviewStyle(previewStyles, { raw: true })
+        cms.init()
+      }
     </script>
   </body>
 </html>

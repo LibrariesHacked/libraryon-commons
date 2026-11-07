@@ -3,7 +3,8 @@ import { Building, Globe, Library } from '@lucide/astro'
 import Breadcrumbs from '../components/Breadcrumbs.astro'
 import { directoryBreadcrumbs } from '../lib/directory.mjs'
 import SiteLayout from './SiteLayout.astro'
-const { title, description, subtitle, authority, tags = [] } = Astro.props
+
+const { title, description, subtitle, authority, tags = [], schema, image } = Astro.props
 const breadcrumbs = directoryBreadcrumbs(title, authority)
 
 const countryNames = [
@@ -24,7 +25,13 @@ const getHeroTagIcon = (tag = '') => {
 }
 ---
 
-<SiteLayout title={title} description={description}>
+<SiteLayout
+  title={title}
+  description={description}
+  breadcrumbs={breadcrumbs}
+  schema={schema}
+  image={image}
+>
   <header class="page-heading">
     <div class="shell">
       <Breadcrumbs items={breadcrumbs} />

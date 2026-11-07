@@ -1,0 +1,234 @@
+---
+import { Share2, Link as LinkIcon, Check, Mail } from '@lucide/astro'
+import { canonicalInternalPath, settings } from '../lib/helpers/siteHelpers.mjs'
+import { absoluteUrl, buildShareUrls } from '../lib/helpers/seoHelpers.mjs'
+
+const {
+  title = settings.site.title,
+  description = settings.site.description,
+  url,
+  heading = 'Share this page',
+  class: className
+} = Astro.props
+
+const siteBase = Astro.site ? Astro.site.href : settings.site.url
+const pageUrl =
+  url ||
+  (Astro.site
+    ? new URL(canonicalInternalPath(Astro.url.pathname), Astro.site).href
+    : absoluteUrl(canonicalInternalPath(Astro.url.pathname), siteBase))
+
+const shareUrls = buildShareUrls({ url: pageUrl, title, description })
+---
+
+<section
+  class:list={['share-section', className]}
+  aria-label={heading}
+  data-share-container
+  data-share-url={pageUrl}
+  data-share-title={title}
+  data-share-description={description}
+>
+  <div class="share-header">
+    <h2 class="share-heading">{heading}</h2>
+  </div>
+
+  <div class="share-actions">
+    <button
+      type="button"
+      class="share-btn share-btn-primary"
+      data-share-action="native"
+      hidden
+      aria-label="Share via device options"
+    >
+      <Share2 size={16} aria-hidden="true" />
+      <span>Share</span>
+    </button>
+
+    <button
+      type="button"
+      class="share-btn"
+      data-share-action="copy"
+      aria-label="Copy link to clipboard"
+    >
+      <span class="share-icon-copy">
+        <LinkIcon size={16} aria-hidden="true" />
+      </span>
+      <span class="share-icon-check" hidden>
+        <Check size={16} aria-hidden="true" />
+      </span>
+      <span class="share-btn-label">Copy link</span>
+      <span class="share-feedback" hidden>
+        Copied!
+      </span>
+    </button>
+
+    <div class="share-social-group">
+      <a
+        href={shareUrls.twitter}
+        class="share-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on X (opens in new tab)"
+        title="Share on X"
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+        </svg>
+      </a>
+
+      <a
+        href={shareUrls.facebook}
+        class="share-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on Facebook (opens in new tab)"
+        title="Share on Facebook"
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path>
+        </svg>
+      </a>
+
+      <a
+        href={shareUrls.linkedin}
+        class="share-link"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Share on LinkedIn (opens in new tab)"
+        title="Share on LinkedIn"
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.4 1.4 0 1 0 0-2.8 1.4 1.4 0 0 0 0 2.8m1.4 9.74v-8.37H5.06v8.37h2.8z"></path>
+        </svg>
+      </a>
+
+      <a
+        href={shareUrls.email}
+        class="share-link"
+        aria-label="Share via Email"
+        title="Share via Email"
+      >
+        <Mail size={16} aria-hidden="true" />
+      </a>
+    </div>
+  </div>
+</section>
+
+<script src="../scripts/shareClient.mjs"></script>
+
+<style>
+  .share-section {
+    margin-block: var(--size-7) var(--size-5);
+    padding: var(--size-4) var(--size-5);
+    background: var(--surface-tint-green);
+    border-radius: var(--radius-3);
+    border: var(--border-size-1) solid var(--line);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--size-3) var(--size-4);
+  }
+
+  .share-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .share-heading {
+    margin: 0;
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-6);
+    color: var(--text-1);
+  }
+
+  .share-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--size-2);
+  }
+
+  .share-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-2);
+    padding: var(--size-1) var(--size-3);
+    font-size: var(--font-size-0);
+    font-weight: var(--font-weight-5);
+    color: var(--text-1);
+    background: var(--surface-1);
+    border: var(--border-size-1) solid var(--line);
+    border-radius: var(--radius-2);
+    cursor: pointer;
+    text-decoration: none;
+    transition:
+      border-color 0.15s ease,
+      background-color 0.15s ease,
+      color 0.15s ease;
+  }
+
+  .share-btn:hover {
+    border-color: var(--primary);
+    background: var(--surface-2);
+  }
+
+  .share-btn:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+
+  .share-btn.is-copied {
+    border-color: var(--primary);
+    background: var(--surface-tint-green);
+    color: var(--primary);
+  }
+
+  .share-btn-primary {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+  }
+
+  .share-btn-primary:hover {
+    background: var(--primary-hover, #1d4032);
+    border-color: var(--primary-hover, #1d4032);
+    color: #ffffff;
+  }
+
+  .share-social-group {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-1);
+  }
+
+  .share-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    color: var(--text-2);
+    background: var(--surface-1);
+    border: var(--border-size-1) solid var(--line);
+    border-radius: var(--radius-2);
+    text-decoration: none;
+    transition:
+      color 0.15s ease,
+      border-color 0.15s ease,
+      background-color 0.15s ease;
+  }
+
+  .share-link:hover {
+    color: var(--primary);
+    border-color: var(--primary);
+    background: var(--surface-2);
+  }
+
+  .share-link:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+  }
+</style>

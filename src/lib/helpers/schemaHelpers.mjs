@@ -168,6 +168,7 @@ export function validateRecord(record, kind) {
 export function prepareDirectoryEdit(record, kind) {
   const schema = directorySchemas[kind]
   if (!schema) throw new Error(`Unknown directory collection: ${kind}`)
+
   record.data = Object.fromEntries(
     schema.fields.map((field) => [
       field.name,
@@ -187,7 +188,26 @@ export function prepareDirectoryEdit(record, kind) {
     }
     throw new Error(`${issue.field}: ${issue.code}`)
   })
-  return validateRecord(record, kind)
+
+  // Validate clean record without extra CMS-internal UI fields
+  const cleanRecord = {}
+  for (const key of Object.keys(record)) {
+    if (recordFields.has(key)) {
+      cleanRecord[key] = record[key]
+    }
+  }
+  if (!cleanRecord.slug) {
+    const rawName =
+      record.data?.['Library name'] || record.data?.['Local authority'] || 'new-entry'
+    cleanRecord.slug =
+      String(rawName)
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, '-')
+        .replace(/(^-|-$)/g, '') || 'new-entry'
+  }
+  validateRecord(cleanRecord, kind)
+
+  return record
 }
 
 /**

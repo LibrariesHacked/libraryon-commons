@@ -6,6 +6,7 @@ import DirectoryProvenance from '../components/DirectoryProvenance.astro'
 import LibraryMap from '../components/LibraryMap.astro'
 import LibrarySearch from '../components/LibrarySearch.astro'
 import LibraryDownloads from '../components/LibraryDownloads.astro'
+import ShareButtons from '../components/ShareButtons.astro'
 import SocialLinks from '../components/SocialLinks.astro'
 import TagListSection from '../components/TagListSection.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
@@ -88,6 +89,12 @@ const heroTags = [
     items={accessibility.map((value) => facilityLabel(value))}
   />
   <LibraryDownloads entries={entries} authoritySlug={authority.slug} />
+
+  <ShareButtons
+    title={`${authority.name} Libraries`}
+    description={`${copy.authority_description_prefix} ${authority.name}.`}
+    heading="Share this directory"
+  />
 
   <Fragment slot="aside">
     <section class="detail-section">

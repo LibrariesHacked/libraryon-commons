@@ -5,15 +5,25 @@ import ContactDetails from '../components/ContactDetails.astro'
 import DirectoryProvenance from '../components/DirectoryProvenance.astro'
 import LibraryMap from '../components/LibraryMap.astro'
 import OpeningHours from '../components/OpeningHours.astro'
+import ShareButtons from '../components/ShareButtons.astro'
 import TagListSection from '../components/TagListSection.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import { libraries, facilityLabel } from '../lib/directory.mjs'
-import { safeURL, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { canonicalInternalPath, safeURL, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { generateLibrarySchema } from '../lib/helpers/seoHelpers.mjs'
+
 const { library, authority } = Astro.props
 const copy = settings.ui.directory
 const maps = library.mapLinks
 const nearby = library.nearby(libraries)
 const tags = [authority?.country, library.operatingModel].filter(Boolean)
+
+const siteBase = Astro.site ? Astro.site.href : settings.site.url
+const canonicalUrl = Astro.site
+  ? new URL(canonicalInternalPath(Astro.url.pathname), Astro.site).href
+  : `${siteBase.replace(/\/+$/, '')}${Astro.url.pathname}`
+
+const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
 ---
 
 <DirectoryLayout
@@ -22,6 +32,7 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
   subtitle={library.address}
   authority={authority}
   tags={tags}
+  schema={librarySchema}
 >
   {library.permanentlyClosed && <p class="notice">{copy.permanently_closed}</p>}
   <LibraryMap
@@ -58,25 +69,23 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
       <h2>{copy.getting_here}</h2>
       <div class="getting-here-actions">
         <a href={maps.google} class="directions-card" target="_blank" rel="noopener noreferrer">
-          <div class="directions-card-icon" aria-hidden="true">
-            <Navigation size={22} />
+          <div class="directions-card-icon">
+            <Navigation size={22} aria-hidden="true" />
           </div>
-          <div class="directions-card-body">
+          <div class="directions-card-content">
             <span class="directions-card-title">
-              {copy.google_maps} <ArrowUpRight size={15} aria-hidden="true" />
+              Google Maps <ArrowUpRight size={15} aria-hidden="true" />
             </span>
-            <span class="directions-card-subtitle">
-              Plan driving, walking or public transit routes
-            </span>
+            <span class="directions-card-subtitle">Driving, transit, walking directions</span>
           </div>
         </a>
         <a href={maps.apple} class="directions-card" target="_blank" rel="noopener noreferrer">
-          <div class="directions-card-icon" aria-hidden="true">
-            <MapPin size={22} />
+          <div class="directions-card-icon">
+            <MapPin size={22} aria-hidden="true" />
           </div>
-          <div class="directions-card-body">
+          <div class="directions-card-content">
             <span class="directions-card-title">
-              {copy.apple_maps} <ArrowUpRight size={15} aria-hidden="true" />
+              Apple Maps <ArrowUpRight size={15} aria-hidden="true" />
             </span>
             <span class="directions-card-subtitle">Launch Maps on iPhone, iPad or Mac</span>
           </div>
@@ -121,6 +130,13 @@ const tags = [authority?.country, library.operatingModel].filter(Boolean)
       </a>
     </section>
   )}
+
+  <ShareButtons
+    title={library.name}
+    description={`${library.name}. ${library.address}.`}
+    heading="Share this library"
+  />
+
   <Fragment slot="aside">
     <OpeningHours library={library} />
     <DirectoryProvenance record={library} />
