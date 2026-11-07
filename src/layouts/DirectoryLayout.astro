@@ -6,24 +6,20 @@ import SiteLayout from './SiteLayout.astro'
 const { title, description, subtitle, authority, tags = [] } = Astro.props
 const breadcrumbs = directoryBreadcrumbs(title, authority)
 
+const countryNames = [
+  'england',
+  'scotland',
+  'wales',
+  'northern ireland',
+  'isle of man',
+  'jersey',
+  'guernsey'
+]
+
 const getHeroTagIcon = (tag = '') => {
   const lower = String(tag).toLowerCase()
-  if (
-    [
-      'england',
-      'scotland',
-      'wales',
-      'northern ireland',
-      'isle of man',
-      'jersey',
-      'guernsey'
-    ].some((country) => lower.includes(country))
-  ) {
-    return Globe
-  }
-  if (lower.includes('librar') || lower.includes('service')) {
-    return Library
-  }
+  if (countryNames.some((country) => lower.includes(country))) return Globe
+  if (lower.includes('librar') || lower.includes('service')) return Library
   return Building
 }
 ---
