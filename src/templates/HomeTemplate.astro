@@ -68,7 +68,7 @@ const collections = selected(homepage.collection_pages)
                       alt={slide.alt}
                       width="800"
                       height="600"
-                      loading="eager"
+                      loading={index < 3 ? 'eager' : 'lazy'}
                       decoding="async"
                       fetchpriority={index === 0 ? 'high' : 'auto'}
                     />
@@ -179,18 +179,21 @@ const collections = selected(homepage.collection_pages)
 
       const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)')
       let userPaused = reducedMotion.matches
-      let isVisible = true
-      let isScrolling = false
-      let scrollTimer
 
-      const autoplay = Autoplay({ delay: 4200, playOnInit: false, stopOnInteraction: true })
+      const autoplay = Autoplay({
+        delay: 4500,
+        playOnInit: !reducedMotion.matches,
+        stopOnInteraction: true,
+        stopOnMouseEnter: true,
+        stopOnFocusIn: true
+      })
       viewport.dataset.carouselInitialized = 'true'
       const carousel = EmblaCarousel(
         viewport,
         {
           align: 'start',
-          containScroll: false,
-          loop: true,
+          containScroll: 'trimSnaps',
+          loop: false,
           duration: reducedMotion.matches ? 0 : 25
         },
         [autoplay]
@@ -207,23 +210,10 @@ const collections = selected(homepage.collection_pages)
       }
 
       const syncDots = () => {
-        dots.forEach((dot, index) =>
-          dot.setAttribute('aria-current', String(index === carousel.selectedScrollSnap()))
-        )
+        const selected = carousel.selectedScrollSnap()
+        dots.forEach((dot, index) => dot.setAttribute('aria-current', String(index === selected)))
       }
-      const resume = () => {
-        if (
-          !userPaused &&
-          isVisible &&
-          !isScrolling &&
-          !root.matches(':hover, :focus-within') &&
-          !document.hidden
-        )
-          autoplay.play(reducedMotion.matches)
-      }
-      const pause = () => {
-        autoplay.stop()
-      }
+
       carousel.on('select', syncDots).on('reInit', syncDots)
       carousel.on('pointerDown', () => {
         userPaused = true
@@ -232,80 +222,57 @@ const collections = selected(homepage.collection_pages)
 
       prevBtn?.addEventListener('click', () => {
         carousel.scrollPrev(reducedMotion.matches)
-        autoplay.reset()
+        userPaused = true
+        autoplay.stop()
+        syncToggleUI()
       })
 
       nextBtn?.addEventListener('click', () => {
         carousel.scrollNext(reducedMotion.matches)
-        autoplay.reset()
+        userPaused = true
+        autoplay.stop()
+        syncToggleUI()
       })
 
-      for (const dot of dots) {
+      dots.forEach((dot, index) => {
         dot.addEventListener('click', () => {
-          carousel.scrollTo(
-            Number(dot.getAttribute('data-carousel-dot') || 0),
-            reducedMotion.matches
-          )
-          autoplay.reset()
+          carousel.scrollTo(index, reducedMotion.matches)
+          userPaused = true
+          autoplay.stop()
+          syncToggleUI()
         })
-      }
+      })
 
       toggleBtn?.addEventListener('click', () => {
         userPaused = !userPaused
         syncToggleUI()
-        if (userPaused) pause()
-        else resume()
+        if (userPaused) autoplay.stop()
+        else autoplay.play()
       })
 
-      root.addEventListener('mouseenter', pause)
-      root.addEventListener('mouseleave', resume)
-      root.addEventListener('focusin', pause)
-      root.addEventListener('focusout', (event) => {
-        if (!root.contains(event.relatedTarget)) resume()
-      })
-
-      // Pause autoplay when carousel is not visible in viewport
-      const visibilityObserver = new IntersectionObserver(
-        (entries) => {
-          isVisible = entries.some((entry) => entry.isIntersecting)
-          if (!isVisible) pause()
-          else resume()
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          if (!entry.isIntersecting) {
+            autoplay.stop()
+          } else if (!userPaused && !reducedMotion.matches) {
+            autoplay.play()
+          }
         },
         { threshold: 0.1 }
       )
-      visibilityObserver.observe(root)
-
-      // Pause autoplay during active window scrolling to prevent compositor jank
-      window.addEventListener(
-        'scroll',
-        () => {
-          isScrolling = true
-          pause()
-          clearTimeout(scrollTimer)
-          scrollTimer = setTimeout(() => {
-            isScrolling = false
-            resume()
-          }, 300)
-        },
-        { passive: true }
-      )
+      observer.observe(root)
 
       reducedMotion.addEventListener('change', () => {
-        if (reducedMotion.matches) userPaused = true
+        if (reducedMotion.matches) {
+          userPaused = true
+          autoplay.stop()
+        }
         carousel.reInit({ duration: reducedMotion.matches ? 0 : 25 })
         syncToggleUI()
-        if (userPaused) pause()
-        else resume()
-      })
-
-      document.addEventListener('visibilitychange', () => {
-        if (document.hidden) pause()
-        else resume()
       })
 
       syncDots()
       syncToggleUI()
-      resume()
     })()
   </script>}
 </SiteLayout>

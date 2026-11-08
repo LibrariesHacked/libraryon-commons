@@ -46,6 +46,15 @@ export function splitContentModules(
       }
     }
   })
+  document('img').each((index, node) => {
+    const element = document(node)
+    if (!element.attr('loading')) {
+      element.attr('loading', 'lazy')
+    }
+    if (!element.attr('decoding')) {
+      element.attr('decoding', 'async')
+    }
+  })
   const blocks = []
   const placed = new Set()
   const nodes = document.root().contents().toArray()

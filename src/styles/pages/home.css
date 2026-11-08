@@ -86,7 +86,6 @@
   display: grid;
   gap: 0.9rem;
   min-width: 0;
-  contain: layout paint;
 }
 .hero-carousel-viewport {
   overflow-x: auto;
@@ -115,15 +114,11 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  will-change: transform;
-  backface-visibility: hidden;
-  transform: translate3d(0, 0, 0);
 }
 .hero-carousel-slide {
   flex: 0 0 calc((100% - 2.3rem) / 3);
   min-width: 0;
   scroll-snap-align: start;
-  transform: translateZ(0);
 }
 .hero-carousel-card {
   margin: 0;
@@ -134,7 +129,6 @@
   overflow: hidden;
   background: var(--surface-tint-rose);
   box-shadow: var(--shadow-card);
-  transform: translateZ(0);
 }
 .hero-carousel-card img {
   width: 100%;

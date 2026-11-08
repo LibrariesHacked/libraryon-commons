@@ -47,7 +47,7 @@ export function canonicalInternalPath(value) {
 export function sitePath(value) {
   if (typeof value !== 'string' || !value.startsWith('/') || value.startsWith('//')) return value
   const base = (import.meta.env?.BASE_URL || '/').replace(/\/$/, '')
-  return `${base}${canonicalInternalPath(mediaURL(value))}`
+  return `${base}${canonicalInternalPath(value)}`
 }
 
 /**

@@ -637,6 +637,20 @@ export function contentDirectives() {
           element('figcaption', 'quote-attribution', attribution)
         ]
         block('figure', node.name === 'testimonial' ? 'testimonial-card' : 'testimonial-quote')
+        if (images.length) {
+          for (const img of images[0].children) {
+            if (img.type === 'image') {
+              img.data = {
+                ...(img.data || {}),
+                hProperties: {
+                  ...(img.data?.hProperties || {}),
+                  loading: 'lazy',
+                  decoding: 'async'
+                }
+              }
+            }
+          }
+        }
         node.children = images.length
           ? [
               element('div', 'testimonial-media', images[0].children),
@@ -667,6 +681,18 @@ export function contentDirectives() {
           node.data.hProperties.href = safeLink(attributes.href)
         }
         const images = node.children.filter(imageParagraph).flatMap((child) => child.children)
+        for (const img of images) {
+          if (img.type === 'image') {
+            img.data = {
+              ...(img.data || {}),
+              hProperties: {
+                ...(img.data?.hProperties || {}),
+                loading: 'lazy',
+                decoding: 'async'
+              }
+            }
+          }
+        }
         const body = node.children.filter((child) => !imageParagraph(child))
         for (const heading of body.filter((child) => child.type === 'heading')) {
           heading.data = {
