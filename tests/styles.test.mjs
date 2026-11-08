@@ -20,15 +20,17 @@ const modules = [
   'pages/editorial.css',
   'pages/directory.css',
   'pages/resources.css',
-  'pages/sitemap.css'
+  'pages/sitemap.css',
+  'pages/news.css'
 ]
 
 test('stylesheet entry imports foundations, shared components and page rules in order', () => {
   const entry = postcss.parse(read('global.css'))
   assert.ok(entry.nodes.every((node) => node.type === 'atrule' && node.name === 'import'))
   const imports = entry.nodes.map((node) => node.params.replace(/^["']|["']$/g, ''))
+  assert.equal(imports[0], '@fontsource-variable/lexend')
   assert.deepEqual(
-    imports.slice(2),
+    imports.slice(1),
     modules.map((file) => `./${file}`)
   )
   for (const folder of ['foundations', 'components', 'pages']) {

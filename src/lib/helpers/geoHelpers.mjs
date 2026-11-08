@@ -110,6 +110,7 @@ export function libraryMapFeatures(libraries, resolvePath = (path) => path) {
         properties: {
           name: library.name,
           address: library.address || library.postcode || '',
+          authority: library.authorityName || library.authority || '',
           url:
             typeof library.url === 'string' &&
             library.url.startsWith('/') &&

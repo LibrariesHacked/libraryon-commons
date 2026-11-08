@@ -67,13 +67,44 @@
 .content-card .content-card-body p + p {
   margin-top: 0.75rem;
 }
+.org-content-card .content-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+.org-card-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 0.25rem;
+}
+.org-card-role {
+  font-size: var(--font-size-0);
+  color: var(--brand-forest);
+  font-weight: var(--font-weight-5);
+  margin: 0;
+}
+.org-card-desc {
+  font-size: 0.88rem;
+  line-height: var(--font-lineheight-3);
+  color: var(--muted);
+  margin: 0;
+  flex-grow: 1;
+}
+.org-card-footer {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--size-2);
+}
 .card-placeholder {
   display: grid;
   place-items: center;
   background: var(--wash);
   color: var(--brand-primary);
-  font-family: var(--display);
-  font-size: var(--font-size-5);
+  font-family: var(--font);
+  font-weight: var(--font-weight-7);
+  font-size: var(--font-size-6);
 }
 .testimonial-card {
   display: grid;
@@ -107,9 +138,10 @@
 .testimonial-quote blockquote {
   margin: 0;
   padding: 0 0 0 var(--size-5);
-  font-family: var(--display);
-  font-size: 1.35rem;
-  line-height: 1.45;
+  font-family: var(--font);
+  font-weight: var(--font-weight-5);
+  font-size: 1.25rem;
+  line-height: 1.5;
 }
 .testimonial-quote {
   margin: var(--size-7) 0;
@@ -1044,4 +1076,49 @@
   .content-card[href] {
     transition: border-color 0.15s var(--motion-ease);
   }
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: var(--font-weight-6);
+  line-height: 1.25;
+  white-space: nowrap;
+  flex-shrink: 0;
+  border: 0;
+}
+.status-pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: currentColor;
+  flex-shrink: 0;
+}
+.status-pill--plum {
+  background: var(--surface-tint-plum-selected);
+  color: var(--brand-primary);
+}
+.status-pill--rose {
+  background: var(--surface-tint-rose);
+  color: var(--brand-berry);
+}
+.status-pill--green {
+  background: var(--surface-tint-green);
+  color: var(--brand-forest);
+}
+.status-pill--apricot {
+  background: var(--surface-tint-apricot);
+  color: var(--ink);
+}
+.status-pill--open {
+  background: var(--surface-tint-green);
+  color: var(--brand-forest);
+}
+.status-pill--closed {
+  background: var(--surface-tint-rose);
+  color: var(--brand-berry);
 }

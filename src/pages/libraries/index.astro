@@ -265,7 +265,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
               </li>
             ))}
           </ul>
-          <button id="more-results" class="button button-secondary load-more" type="button">
+          <button id="more-results" class="load-more" type="button">
             {copy.more_button}
           </button>
         </div>
@@ -563,6 +563,18 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     }
   }
 
+  const appendMore = (resolvedLoc) => {
+    const prevVisible = visible
+    visible += 60
+    const fragment = document.createDocumentFragment()
+    matches.slice(prevVisible, visible).forEach((item) => {
+      const miles = distanceFilterActive && resolvedLoc ? distanceMiles(resolvedLoc, item) : null
+      fragment.append(itemElement(item, miles))
+    })
+    list.append(fragment)
+    more.hidden = visible >= matches.length
+  }
+
   const syncURL = (resolvedLoc) => {
     const nextParams = new URLSearchParams()
     if (resolvedLoc && resolvedLoc.label !== form.dataset.currentLocation) {
@@ -723,7 +735,6 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     event.preventDefault()
   })
   more.addEventListener('click', () => {
-    visible += 60
-    render(activeLocation())
+    appendMore(activeLocation())
   })
 </script>

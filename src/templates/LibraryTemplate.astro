@@ -12,7 +12,7 @@ import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import { libraries, facilityLabel } from '../lib/directory.mjs'
 import { canonicalInternalPath, safeURL, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
 import { generateLibrarySchema } from '../lib/helpers/seoHelpers.mjs'
-import { getNewsForLibrary } from '../lib/news.mjs'
+import { getNewsForLibrary, getNewsSummaryForLibrary } from '../lib/helpers/newsHelpers.mjs'
 
 const { library, authority } = Astro.props
 const copy = settings.ui.directory
@@ -20,6 +20,9 @@ const maps = library.mapLinks
 const nearby = library.nearby(libraries)
 const tags = [authority?.country, library.operatingModel].filter(Boolean)
 const newsStories = getNewsForLibrary(library.id)
+const newsSummary = getNewsSummaryForLibrary(library.id)
+const hasNews = newsStories.length > 0 || (newsSummary && newsSummary.total > 0)
+const totalNewsCount = newsSummary?.total ?? newsStories.length
 
 const siteBase = Astro.site ? Astro.site.href : settings.site.url
 const canonicalUrl = Astro.site
@@ -134,12 +137,15 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
     </section>
   )}
 
-  {newsStories.length > 0 && (
+  {hasNews && (
     <section class="detail-section">
       <NewsList
         stories={newsStories}
-        title={`News & Updates for ${library.name} (${newsStories.length})`}
+        summary={newsSummary}
+        title={`News & Updates for ${library.name}`}
         subtitle="Stories mentioning this library in Public Libraries News."
+        archiveUrl={`/news/?q=${encodeURIComponent(library.name)}`}
+        archiveLabel={`Search all ${totalNewsCount.toLocaleString('en-GB')} stories mentioning ${library.name} in News Archive`}
       />
     </section>
   )}

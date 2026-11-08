@@ -1,201 +1,59 @@
 ---
-import { ArrowUpRight, Calendar, Building2, MapPin } from '@lucide/astro'
-import { categoryLabel, changeTypeLabel, formatNewsDate } from '../lib/news.mjs'
-import { sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { ArrowUpRight } from '@lucide/astro'
+import StatusPill from './StatusPill.astro'
+import { categoryLabel, changeTypeLabel, formatNewsDate } from '../lib/helpers/newsHelpers.mjs'
 
 const { story } = Astro.props
 
 const formattedDate = formatNewsDate(story.date)
 const firstLink = story.links && story.links.length > 0 ? story.links[0] : null
-const sourceDomain = story.domain || (firstLink?.domain) || null
-const sourceUrl = story.url || (firstLink?.url) || null
+const sourceDomain = story.domain || firstLink?.domain || null
+const sourceUrl = story.url || firstLink?.url || null
+const titleText = story.entity || story.authority_name || 'News update'
 ---
 
-<article class="news-card">
-  <header class="news-card-header">
-    <div class="news-card-meta">
-      <time datetime={story.date} class="news-date">
-        <Calendar size={14} aria-hidden="true" />
-        <span>{formattedDate}</span>
-      </time>
-      {story.authority_name && (
-        <span class="news-authority-badge">
-          <Building2 size={13} aria-hidden="true" />
-          <span>{story.authority_name}</span>
-        </span>
+<li class="news-result-item" data-id={story.id}>
+  <div class="library-result-header">
+    <h3>
+      {sourceUrl ? (
+        <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
+          {titleText} <ArrowUpRight size={15} aria-hidden="true" />
+        </a>
+      ) : (
+        <span>{titleText}</span>
       )}
-      {story.country && !story.authority_name && (
-        <span class="news-country-badge">
-          <MapPin size={13} aria-hidden="true" />
-          <span>{story.country}</span>
-        </span>
-      )}
-    </div>
-
-    {story.entity && (
-      <h3 class="news-entity-title">{story.entity}</h3>
-    )}
-  </header>
-
-  <div class="news-body">
-    {story.text_html ? (
-      <p class="news-text" set:html={story.text_html} />
-    ) : (
-      <p class="news-text">{story.text}</p>
-    )}
+    </h3>
+    {formattedDate && <StatusPill variant="plum">{formattedDate}</StatusPill>}
   </div>
 
-  <footer class="news-card-footer">
-    <div class="news-tags">
-      {story.change_type && (
-        <span class="news-pill news-pill--change">
-          {changeTypeLabel(story.change_type)}
-        </span>
-      )}
-      {(story.categories || []).slice(0, 3).map((cat) => (
-        <span class="news-pill news-pill--category">
-          {categoryLabel(cat)}
-        </span>
-      ))}
-      {(story.organisations || []).map((org) => (
-        <span class="news-pill news-pill--org">{org}</span>
-      ))}
-    </div>
+  {story.text_html ? (
+    <p class="news-result-text" set:html={story.text_html} />
+  ) : (
+    <p class="news-result-text">{story.text}</p>
+  )}
 
+  <div class="library-result-meta">
+    {story.authority_name && (
+      <span class="authority-label">
+        {story.authority_name}
+        {story.country ? ` · ${story.country}` : ''}
+      </span>
+    )}
+    {story.country && !story.authority_name && <span class="authority-label">{story.country}</span>}
+    {story.change_type && (
+      <StatusPill variant="rose">{changeTypeLabel(story.change_type)}</StatusPill>
+    )}
+    {(story.categories || []).slice(0, 2).map((cat) => (
+      <StatusPill variant="plum">{categoryLabel(cat)}</StatusPill>
+    ))}
+    {(story.organisations || []).map((org) => (
+      <StatusPill variant="green">{org}</StatusPill>
+    ))}
     {sourceUrl && (
-      <a
-        href={sourceUrl}
-        class="news-source-link"
-        target="_blank"
-        rel="noopener noreferrer"
-        title="Read original source"
-      >
-        <span>{sourceDomain || 'Original source'}</span>
-        <ArrowUpRight size={14} aria-hidden="true" />
+      <a href={sourceUrl} class="news-source-link" target="_blank" rel="noopener noreferrer">
+        <span>{sourceDomain || 'Source'}</span>
+        <ArrowUpRight size={13} aria-hidden="true" />
       </a>
     )}
-  </footer>
-</article>
-
-<style>
-  .news-card {
-    background-color: var(--surface-1, #ffffff);
-    border: 1px solid var(--surface-3, #e2e8f0);
-    border-radius: var(--radius-2, 8px);
-    padding: var(--size-4, 1.25rem);
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-3, 0.75rem);
-    transition: border-color 0.15s ease, box-shadow 0.15s ease;
-  }
-
-  .news-card:hover {
-    border-color: var(--brand, #0f766e);
-    box-shadow: var(--shadow-1, 0 1px 3px rgba(0, 0, 0, 0.08));
-  }
-
-  .news-card-header {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-1, 0.25rem);
-  }
-
-  .news-card-meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--size-2, 0.5rem);
-    font-size: var(--font-size-0, 0.8125rem);
-    color: var(--text-2, #64748b);
-  }
-
-  .news-date,
-  .news-authority-badge,
-  .news-country-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--size-1, 0.25rem);
-  }
-
-  .news-authority-badge {
-    font-weight: var(--font-weight-6, 600);
-    color: var(--text-1, #1e293b);
-  }
-
-  .news-entity-title {
-    font-size: var(--font-size-2, 1.125rem);
-    font-weight: var(--font-weight-7, 700);
-    color: var(--text-1, #0f172a);
-    margin: 0;
-  }
-
-  .news-body {
-    font-size: var(--font-size-1, 0.9375rem);
-    line-height: var(--font-lineheight-3, 1.5);
-    color: var(--text-2, #334155);
-  }
-
-  .news-text {
-    margin: 0;
-  }
-
-  .news-text :global(a) {
-    color: var(--brand, #0f766e);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-  }
-
-  .news-card-footer {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--size-2, 0.5rem);
-    padding-top: var(--size-2, 0.5rem);
-    border-top: 1px solid var(--surface-2, #f1f5f9);
-    margin-top: auto;
-  }
-
-  .news-tags {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--size-1, 0.25rem);
-  }
-
-  .news-pill {
-    display: inline-block;
-    font-size: var(--font-size-00, 0.75rem);
-    font-weight: var(--font-weight-5, 500);
-    padding: 0.15rem 0.5rem;
-    border-radius: var(--radius-round, 9999px);
-  }
-
-  .news-pill--category {
-    background-color: var(--surface-2, #f1f5f9);
-    color: var(--text-2, #475569);
-  }
-
-  .news-pill--change {
-    background-color: #fef3c7;
-    color: #92400e;
-  }
-
-  .news-pill--org {
-    background-color: #e0f2fe;
-    color: #0369a1;
-  }
-
-  .news-source-link {
-    display: inline-flex;
-    align-items: center;
-    gap: var(--size-1, 0.25rem);
-    font-size: var(--font-size-0, 0.8125rem);
-    color: var(--brand, #0f766e);
-    text-decoration: none;
-    font-weight: var(--font-weight-6, 600);
-  }
-
-  .news-source-link:hover {
-    text-decoration: underline;
-  }
-</style>
+  </div>
+</li>

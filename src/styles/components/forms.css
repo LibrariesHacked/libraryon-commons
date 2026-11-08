@@ -5,24 +5,36 @@
   gap: 0.65rem;
   background: var(--brand-primary);
   color: var(--paper);
-  border: var(--border-size-1) solid var(--brand-primary);
+  border: 0;
   border-radius: 4px;
   text-decoration: none;
   padding: 0.85rem var(--size-4);
+  font-family: inherit;
   font-size: 0.9rem;
+  font-weight: var(--font-weight-5);
   min-height: 48px;
+  cursor: pointer;
+  transition:
+    background-color 0.15s ease,
+    color 0.15s ease;
 }
 .button:hover {
   background: var(--brand-link);
   color: var(--paper);
 }
 .button-secondary {
-  background: var(--paper);
+  background: transparent;
+  border: 0;
   color: var(--brand-primary);
 }
 .button-secondary:hover {
-  background: var(--wash);
+  background: var(--surface-tint-plum-selected);
   color: var(--brand-link);
+}
+.button-small {
+  min-height: 36px;
+  padding: 0.35rem var(--size-3);
+  font-size: 0.82rem;
 }
 .button[hidden] {
   display: none;

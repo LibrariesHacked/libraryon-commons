@@ -242,23 +242,73 @@ const data = libraryMapFeatures(libraries, sitePath)
                 essential: true
               })
           })
+          const pinSvg =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>'
+          const arrowSvg =
+            '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
+
           map.on('click', 'library-points', (event) => {
             const feature = event.features?.[0]
             if (!feature || feature.geometry.type !== 'Point') return
+            const props = feature.properties || {}
+
             const content = document.createElement('div')
-            const title = document.createElement(feature.properties.url ? 'a' : 'strong')
-            title.textContent = String(feature.properties.name)
-            if (title instanceof HTMLAnchorElement) title.href = String(feature.properties.url)
-            const address = document.createElement('p')
-            address.textContent = String(feature.properties.address)
-            content.append(title, address)
-            if (feature.properties.closed) {
-              const closed = document.createElement('p')
-              closed.textContent = 'Permanently closed'
-              content.append(closed)
+            content.className = 'map-popup-card map-popup-library'
+
+            const header = document.createElement('header')
+            header.className = 'map-popup-header'
+
+            const badges = document.createElement('div')
+            badges.className = 'map-popup-badges'
+
+            if (props.closed) {
+              const closedBadge = document.createElement('span')
+              closedBadge.className = 'map-popup-pill map-popup-pill--closed'
+              closedBadge.textContent = 'Permanently closed'
+              badges.appendChild(closedBadge)
+            } else if (props.authority) {
+              const authBadge = document.createElement('span')
+              authBadge.className = 'map-popup-pill map-popup-pill--forest'
+              authBadge.textContent = String(props.authority).replace(/-/g, ' ')
+              badges.appendChild(authBadge)
             }
+            if (badges.hasChildNodes()) {
+              header.appendChild(badges)
+            }
+
+            const title = document.createElement('h3')
+            title.className = 'map-popup-title'
+            if (props.url) {
+              const link = document.createElement('a')
+              link.href = String(props.url)
+              link.textContent = String(props.name || 'Library')
+              title.appendChild(link)
+            } else {
+              title.textContent = String(props.name || 'Library')
+            }
+            header.appendChild(title)
+            content.appendChild(header)
+
+            if (props.address) {
+              const addr = document.createElement('p')
+              addr.className = 'map-popup-address'
+              addr.innerHTML = `${pinSvg}<span>${props.address}</span>`
+              content.appendChild(addr)
+            }
+
+            if (props.url) {
+              const footer = document.createElement('footer')
+              footer.className = 'map-popup-footer'
+              const link = document.createElement('a')
+              link.href = String(props.url)
+              link.className = 'map-popup-action'
+              link.innerHTML = `<span>View library details</span>${arrowSvg}`
+              footer.appendChild(link)
+              content.appendChild(footer)
+            }
+
             this.popup?.remove()
-            this.popup = new Popup({ maxWidth: '280px' })
+            this.popup = new Popup({ maxWidth: '300px', closeButton: true })
               .setLngLat(feature.geometry.coordinates)
               .setDOMContent(content)
               .addTo(map)

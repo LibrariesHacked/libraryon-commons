@@ -1,14 +1,37 @@
 ---
-import { ChevronDown, Filter, X, Search, RotateCcw } from '@lucide/astro'
+import {
+  BookOpen,
+  Briefcase,
+  Building,
+  Calendar,
+  ChevronDown,
+  CircleCheck,
+  DoorClosed,
+  Globe,
+  Heart,
+  Info,
+  Landmark,
+  Megaphone,
+  Monitor,
+  RotateCcw,
+  Search,
+  SlidersHorizontal,
+  Sparkles,
+  TrendingDown,
+  TrendingUp,
+  Users
+} from '@lucide/astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
+import Breadcrumbs from '../../components/Breadcrumbs.astro'
 import NewsCard from '../../components/NewsCard.astro'
 import NewsMap from '../../components/NewsMap.astro'
 import {
   getNewsMetadata,
+  filterStoriesByDate,
   CATEGORY_LABELS,
   CHANGE_TYPE_LABELS
-} from '../../lib/news.mjs'
-import { sitePath } from '../../lib/helpers/siteHelpers.mjs'
+} from '../../lib/helpers/newsHelpers.mjs'
+import { settings, sitePath } from '../../lib/helpers/siteHelpers.mjs'
 import { readFileSync, existsSync } from 'node:fs'
 import { pathToFileURL } from 'node:url'
 
@@ -25,21 +48,36 @@ if (existsSync(newsIndexUrl)) {
   }
 }
 
-// Initial 40 stories for SSR
-const initialStories = allStories.slice(0, 40)
-// Initial stories with valid coordinates for the initial map render
-const initialMapStories = allStories.filter(s => typeof s.lat === 'number' && typeof s.lng === 'number').slice(0, 150)
+// Initial stories filtered to the past year for SSR (anchor to latest story or today)
+const initialFilteredStories = filterStoriesByDate(allStories, { preset: '1y' })
+const defaultStoriesPool = initialFilteredStories.length > 0 ? initialFilteredStories : allStories
+const initialStories = defaultStoriesPool.slice(0, 30)
+const initialMapStories = defaultStoriesPool.filter(
+  (s) => typeof s.lat === 'number' && typeof s.lng === 'number'
+)
 
 const categoriesList = Object.entries(metadata.categories || {})
-  .map(([key, count]) => ({ key, label: CATEGORY_LABELS[key] || key.replace(/_/g, ' '), count }))
+  .map(([key, count]) => ({
+    key,
+    label: CATEGORY_LABELS[key] || key.replace(/_/g, ' '),
+    count
+  }))
   .sort((a, b) => b.count - a.count)
 
 const changeTypesList = Object.entries(metadata.change_types || {})
-  .map(([key, count]) => ({ key, label: CHANGE_TYPE_LABELS[key] || key.replace(/_/g, ' '), count }))
+  .map(([key, count]) => ({
+    key,
+    label: CHANGE_TYPE_LABELS[key] || key.replace(/_/g, ' '),
+    count
+  }))
   .sort((a, b) => b.count - a.count)
 
 const orgsList = Object.entries(metadata.organisations || {})
-  .map(([key, count]) => ({ key, label: key, count }))
+  .map(([key, label]) => ({ key, label, count: label }))
+  .map(({ key }) => {
+    const count = allStories.filter((s) => (s.organisations || []).includes(key)).length
+    return { key, label: key, count }
+  })
   .sort((a, b) => b.count - a.count)
 
 const countriesList = Object.entries(metadata.countries || {})
@@ -49,6 +87,64 @@ const countriesList = Object.entries(metadata.countries || {})
 const authoritiesList = Object.entries(metadata.authorities || {})
   .map(([key, count]) => ({ key, label: key, count }))
   .sort((a, b) => a.label.localeCompare(b.label, 'en'))
+
+function getCategoryIcon(key = '') {
+  switch (key) {
+    case 'funding_and_finance':
+    case 'cuts_and_finance':
+      return Landmark
+    case 'closures_and_threats':
+      return DoorClosed
+    case 'campaigns_and_activism':
+      return Megaphone
+    case 'staffing_and_volunteers':
+      return Users
+    case 'digital_and_technology':
+      return Monitor
+    case 'community_and_outreach':
+      return Building
+    case 'services_and_activities':
+      return BookOpen
+    case 'events_and_initiatives':
+      return Calendar
+    default:
+      return Sparkles
+  }
+}
+
+function getChangeTypeIcon(key = '') {
+  switch (key) {
+    case 'closure':
+      return DoorClosed
+    case 'reduction':
+    case 'threatened_reduction':
+      return TrendingDown
+    case 'threatened_closure':
+    case 'service_threatened':
+      return Info
+    case 'investment':
+    case 'refurbishment':
+      return TrendingUp
+    case 'new_library':
+    case 'reopening':
+      return Sparkles
+    case 'community_handover':
+    case 'transfer':
+      return RotateCcw
+    default:
+      return CircleCheck
+  }
+}
+
+function getOrgIcon(key = '') {
+  const norm = key.toLowerCase()
+  if (norm.includes('campaign')) return Megaphone
+  if (norm.includes('cilip')) return Briefcase
+  if (norm.includes('arts council')) return Sparkles
+  if (norm.includes('good things')) return Heart
+  if (norm.includes('government') || norm.includes('dcms')) return Landmark
+  return Building
+}
 ---
 
 <SiteLayout
@@ -57,22 +153,43 @@ const authoritiesList = Object.entries(metadata.authorities || {})
 >
   <header class="page-heading">
     <div class="shell">
+      <Breadcrumbs
+        items={[
+          { label: settings.ui.editorial?.home_breadcrumb || 'Home', href: '/' },
+          { label: 'News', current: true }
+        ]}
+      />
       <p class="eyebrow">Sector News & Archive</p>
       <h1>Public Libraries News</h1>
       <p>
-        Browse and map over {metadata.total_stories ? metadata.total_stories.toLocaleString('en-GB') : '38,000'} stories
-        from the weekly digests published by <strong>Ian Anstice</strong> on
-        <a href="https://www.publiclibrariesnews.com/" target="_blank" rel="noopener noreferrer">Public Libraries News</a>,
-        in partnership with <a href="https://www.librarycampaign.com/" target="_blank" rel="noopener noreferrer">The Library Campaign</a>.
+        Browse and map over{' '}
+        {metadata.total_stories ? metadata.total_stories.toLocaleString('en-GB') : '38,000'} stories
+        from the weekly digests published by <strong>Ian Anstice</strong>
+        on
+        <a href="https://www.publiclibrariesnews.com/" target="_blank" rel="noopener noreferrer">
+          Public Libraries News
+        </a>
+        , in partnership with{' '}
+        <a href="https://www.librarycampaign.com/" target="_blank" rel="noopener noreferrer">
+          The Library Campaign
+        </a>
+        .
       </p>
     </div>
   </header>
 
   <main class="section shell">
-    <form id="news-filter-form" class="library-search-form" role="search" aria-label="Filter news stories">
+    <form
+      id="news-filter-form"
+      class="library-search-form"
+      role="search"
+      aria-label="Filter news stories"
+      data-news-url={sitePath('/news.json')}
+      data-total-stories={metadata.total_stories}
+    >
       <div class="library-search-bar">
         <div class="library-search-input-wrap">
-          <Search size={18} aria-hidden="true" style="color: var(--text-2, #64748b);" />
+          <Search size={18} aria-hidden="true" />
           <input
             id="news-search-query"
             type="search"
@@ -81,150 +198,256 @@ const authoritiesList = Object.entries(metadata.authorities || {})
             autocomplete="off"
           />
         </div>
-        <button id="clear-all-filters" class="button button-secondary" type="button" title="Reset all filters">
+        <button
+          id="clear-all-filters"
+          class="button button-secondary"
+          type="button"
+          title="Reset all filters"
+        >
           <RotateCcw size={16} aria-hidden="true" />
           <span>Reset</span>
         </button>
       </div>
 
       <div class="library-filter-tabs">
-        <!-- Category Filter -->
-        <div class="tab-filter" id="category-tab">
+        <div class="tab-filter" id="news-filter-tab">
           <button
-            id="category-toggle"
+            id="news-filter-toggle"
             class="tab-filter-button"
             type="button"
             aria-expanded="false"
-            aria-controls="category-panel"
-            popovertarget="category-panel"
+            aria-controls="news-filter-panel"
+            popovertarget="news-filter-panel"
           >
-            <span>Category</span>
-            <span id="category-count" class="filter-badge" hidden>0</span>
+            <SlidersHorizontal size={16} aria-hidden="true" />
+            <span>Filter News</span>
+            <span id="news-filter-count" class="filter-badge" hidden>
+              0
+            </span>
             <ChevronDown size={16} aria-hidden="true" />
           </button>
-          <div id="category-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Category" popover="auto">
+
+          <div
+            id="news-filter-panel"
+            class="tab-filter-panel"
+            role="dialog"
+            aria-label="Filter news stories"
+            popover="auto"
+          >
             <div class="tab-filter-body">
-              <fieldset class="filter-fieldset">
-                <legend class="filter-legend">Library Themes</legend>
-                <div class="filter-checkbox-grid">
-                  {categoriesList.map(({ key, label, count }) => (
-                    <label class="filter-checkbox-label">
-                      <input type="checkbox" name="category" value={key} />
-                      <span class="label-text">{label}</span>
-                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
+              <!-- Time Period Slider -->
+              <div class="filter-group">
+                <div class="time-slider-group">
+                  <div class="time-slider-header">
+                    <label for="news-time-slider" class="filter-group-heading">
+                      Time Period
                     </label>
-                  ))}
+                    <span id="time-slider-value" class="time-slider-current">
+                      Past year
+                    </span>
+                  </div>
+                  <div class="time-slider-wrap">
+                    <input
+                      id="news-time-slider"
+                      name="time_slider"
+                      type="range"
+                      min="1"
+                      max="5"
+                      step="1"
+                      value="1"
+                      aria-label="Filter news by time period"
+                    />
+                    <div class="time-slider-ticks" aria-hidden="true">
+                      <span>1 yr</span>
+                      <span>2 yrs</span>
+                      <span>3 yrs</span>
+                      <span>5 yrs</span>
+                      <span>All</span>
+                    </div>
+                  </div>
                 </div>
-              </fieldset>
+              </div>
+
+              <!-- Categories -->
+              <div class="filter-group">
+                <p class="filter-group-heading">Category</p>
+                <div class="facility-chips filter-tag-list" data-tag-group="category">
+                  {categoriesList.map(({ key, label, count }, index) => {
+                    const isExtra = index >= 8
+                    const IconComponent = getCategoryIcon(key)
+                    return (
+                      <button
+                        type="button"
+                        class="facility-chip facility-chip--plum filter-tag"
+                        data-filter-type="category"
+                        data-filter-value={key}
+                        data-extra-tag={isExtra ? 'true' : undefined}
+                        hidden={isExtra ? true : undefined}
+                        aria-pressed="false"
+                      >
+                        <span class="facility-chip-icon" aria-hidden="true">
+                          <IconComponent size={15} />
+                        </span>
+                        <span class="facility-chip-label">{label}</span>
+                        <span class="filter-tag-count">({count.toLocaleString('en-GB')})</span>
+                      </button>
+                    )
+                  })}
+                  {categoriesList.length > 8 && (
+                    <button
+                      type="button"
+                      class="filter-tag-more"
+                      data-toggle-tags="category"
+                      data-expanded="false"
+                    >
+                      View all ({categoriesList.length})
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <!-- Change Types -->
+              <div class="filter-group">
+                <p class="filter-group-heading">Type of Service Change</p>
+                <div class="facility-chips filter-tag-list" data-tag-group="change_type">
+                  {changeTypesList.map(({ key, label, count }, index) => {
+                    const isExtra = index >= 6
+                    const IconComponent = getChangeTypeIcon(key)
+                    return (
+                      <button
+                        type="button"
+                        class="facility-chip facility-chip--rose filter-tag"
+                        data-filter-type="change_type"
+                        data-filter-value={key}
+                        data-extra-tag={isExtra ? 'true' : undefined}
+                        hidden={isExtra ? true : undefined}
+                        aria-pressed="false"
+                      >
+                        <span class="facility-chip-icon" aria-hidden="true">
+                          <IconComponent size={15} />
+                        </span>
+                        <span class="facility-chip-label">{label}</span>
+                        <span class="filter-tag-count">({count.toLocaleString('en-GB')})</span>
+                      </button>
+                    )
+                  })}
+                  {changeTypesList.length > 6 && (
+                    <button
+                      type="button"
+                      class="filter-tag-more"
+                      data-toggle-tags="change_type"
+                      data-expanded="false"
+                    >
+                      View all ({changeTypesList.length})
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <!-- Organisations -->
+              <div class="filter-group">
+                <p class="filter-group-heading">Sector Organisation</p>
+                <div class="facility-chips filter-tag-list" data-tag-group="organisation">
+                  {orgsList.map(({ key, label, count }, index) => {
+                    const isExtra = index >= 6
+                    const IconComponent = getOrgIcon(key)
+                    return (
+                      <button
+                        type="button"
+                        class="facility-chip facility-chip--green filter-tag"
+                        data-filter-type="organisation"
+                        data-filter-value={key}
+                        data-extra-tag={isExtra ? 'true' : undefined}
+                        hidden={isExtra ? true : undefined}
+                        aria-pressed="false"
+                      >
+                        <span class="facility-chip-icon" aria-hidden="true">
+                          <IconComponent size={15} />
+                        </span>
+                        <span class="facility-chip-label">{label}</span>
+                        <span class="filter-tag-count">({count.toLocaleString('en-GB')})</span>
+                      </button>
+                    )
+                  })}
+                  {orgsList.length > 6 && (
+                    <button
+                      type="button"
+                      class="filter-tag-more"
+                      data-toggle-tags="organisation"
+                      data-expanded="false"
+                    >
+                      View all ({orgsList.length})
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <!-- Countries -->
+              <div class="filter-group">
+                <p class="filter-group-heading">Country</p>
+                <div class="facility-chips filter-tag-list" data-tag-group="country">
+                  {countriesList.map(({ key, label, count }, index) => {
+                    const isExtra = index >= 4
+                    return (
+                      <button
+                        type="button"
+                        class="facility-chip facility-chip--apricot filter-tag"
+                        data-filter-type="country"
+                        data-filter-value={key}
+                        data-extra-tag={isExtra ? 'true' : undefined}
+                        hidden={isExtra ? true : undefined}
+                        aria-pressed="false"
+                      >
+                        <span class="facility-chip-icon" aria-hidden="true">
+                          <Globe size={15} />
+                        </span>
+                        <span class="facility-chip-label">{label}</span>
+                        <span class="filter-tag-count">({count.toLocaleString('en-GB')})</span>
+                      </button>
+                    )
+                  })}
+                  {countriesList.length > 4 && (
+                    <button
+                      type="button"
+                      class="filter-tag-more"
+                      data-toggle-tags="country"
+                      data-expanded="false"
+                    >
+                      View all ({countriesList.length})
+                    </button>
+                  )}
+                </div>
+              </div>
+
+              <!-- Library Authority -->
+              <div class="filter-group">
+                <label for="authority-select" class="filter-group-heading">
+                  Library Authority
+                </label>
+                <select id="authority-select" class="tab-filter-select">
+                  <option value="">All Library Authorities ({authoritiesList.length})</option>
+                  {authoritiesList.map(({ key, label, count }) => (
+                    <option value={key}>
+                      {label} ({count})
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+
+            <!-- Popover Footer with Clear and Apply buttons matching libraries page -->
+            <div class="tab-filter-footer">
+              <button id="clear-panel-filters" class="button button-secondary" type="button">
+                Clear all filters
+              </button>
+              <button id="apply-panel-filters" class="button" type="button">
+                Apply filters
+              </button>
             </div>
           </div>
         </div>
 
-        <!-- Change Type Filter -->
-        <div class="tab-filter" id="change-tab">
-          <button
-            id="change-toggle"
-            class="tab-filter-button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="change-panel"
-            popovertarget="change-panel"
-          >
-            <span>Change Type</span>
-            <span id="change-count" class="filter-badge" hidden>0</span>
-            <ChevronDown size={16} aria-hidden="true" />
-          </button>
-          <div id="change-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Change Type" popover="auto">
-            <div class="tab-filter-body">
-              <fieldset class="filter-fieldset">
-                <legend class="filter-legend">Type of Service Change</legend>
-                <div class="filter-checkbox-grid">
-                  {changeTypesList.map(({ key, label, count }) => (
-                    <label class="filter-checkbox-label">
-                      <input type="checkbox" name="change_type" value={key} />
-                      <span class="label-text">{label}</span>
-                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-            </div>
-          </div>
-        </div>
-
-        <!-- Organisation Filter -->
-        <div class="tab-filter" id="org-tab">
-          <button
-            id="org-toggle"
-            class="tab-filter-button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="org-panel"
-            popovertarget="org-panel"
-          >
-            <span>Organisation</span>
-            <span id="org-count" class="filter-badge" hidden>0</span>
-            <ChevronDown size={16} aria-hidden="true" />
-          </button>
-          <div id="org-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Sector Organisation" popover="auto">
-            <div class="tab-filter-body">
-              <fieldset class="filter-fieldset">
-                <legend class="filter-legend">National Bodies & Unions</legend>
-                <div class="filter-checkbox-grid">
-                  {orgsList.map(({ key, label, count }) => (
-                    <label class="filter-checkbox-label">
-                      <input type="checkbox" name="organisation" value={key} />
-                      <span class="label-text">{label}</span>
-                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-            </div>
-          </div>
-        </div>
-
-        <!-- Country Filter -->
-        <div class="tab-filter" id="country-tab">
-          <button
-            id="country-toggle"
-            class="tab-filter-button"
-            type="button"
-            aria-expanded="false"
-            aria-controls="country-panel"
-            popovertarget="country-panel"
-          >
-            <span>Country</span>
-            <span id="country-count" class="filter-badge" hidden>0</span>
-            <ChevronDown size={16} aria-hidden="true" />
-          </button>
-          <div id="country-panel" class="tab-filter-panel" role="dialog" aria-label="Filter by Country" popover="auto">
-            <div class="tab-filter-body">
-              <fieldset class="filter-fieldset">
-                <legend class="filter-legend">Countries</legend>
-                <div class="filter-checkbox-grid">
-                  {countriesList.slice(0, 20).map(({ key, label, count }) => (
-                    <label class="filter-checkbox-label">
-                      <input type="checkbox" name="country" value={key} />
-                      <span class="label-text">{label}</span>
-                      <span class="count-pill">{count.toLocaleString('en-GB')}</span>
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-            </div>
-          </div>
-        </div>
-
-        <!-- Library Authority Filter -->
-        <div class="tab-filter" id="authority-tab">
-          <select id="authority-select" class="tab-filter-select" aria-label="Filter by Library Authority">
-            <option value="">All Library Authorities ({authoritiesList.length})</option>
-            {authoritiesList.map(({ key, label, count }) => (
-              <option value={key}>{label} ({count})</option>
-            ))}
-          </select>
-        </div>
+        <div id="active-filter-chips" class="active-filter-chips" aria-live="polite"></div>
       </div>
     </form>
 
@@ -232,230 +455,416 @@ const authoritiesList = Object.entries(metadata.authorities || {})
       <div class="results-heading">
         <h2 id="news-results-heading">News Stories</h2>
         <p id="news-result-count" aria-live="polite">
-          Showing latest stories
+          Showing {defaultStoriesPool.length.toLocaleString('en-GB')} of{' '}
+          {metadata.total_stories ? metadata.total_stories.toLocaleString('en-GB') : '38,000'}{' '}
+          stories
         </p>
       </div>
 
       <div class="library-results-layout">
-        <!-- Interactive Map -->
-        <div class="news-map-pane">
-          <NewsMap
-            id="news-results-map"
-            stories={initialMapStories}
-            label="Mapped public libraries news stories"
-          />
-        </div>
+        <!-- Interactive Map Pane (first in DOM so stacked layout on mobile shows map on top) -->
+        <NewsMap
+          id="news-results-map"
+          stories={initialMapStories}
+          label="Mapped public libraries news stories"
+        />
 
-        <!-- Results Column -->
+        <!-- Results Column (grid-column: 1 on desktop) -->
         <div class="library-results-column">
-          <div id="news-results-container" class="news-cards-container">
+          <ul id="news-results-list" class="library-results news-results-list">
             {initialStories.map((story) => (
               <NewsCard story={story} />
             ))}
-          </div>
+          </ul>
 
-          <button id="load-more-news" class="button button-secondary load-more" type="button">
-            Load more stories
+          <button id="load-more-news" class="load-more" type="button">
+            Show more stories
           </button>
         </div>
       </div>
     </section>
+
+    <script
+      type="application/json"
+      id="initial-news-data"
+      set:html={JSON.stringify(defaultStoriesPool)}
+    />
   </main>
 </SiteLayout>
-
-<style>
-  .filter-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-  }
-
-  .filter-legend {
-    font-weight: var(--font-weight-6, 600);
-    font-size: var(--font-size-1, 0.9375rem);
-    margin-bottom: var(--size-3, 0.75rem);
-    color: var(--text-1, #0f172a);
-  }
-
-  .filter-checkbox-grid {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-2, 0.5rem);
-    max-height: 280px;
-    overflow-y: auto;
-    padding-right: var(--size-2, 0.5rem);
-  }
-
-  .filter-checkbox-label {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--size-2, 0.5rem);
-    font-size: var(--font-size-0, 0.8125rem);
-    cursor: pointer;
-    padding: var(--size-1, 0.25rem) var(--size-2, 0.5rem);
-    border-radius: var(--radius-1, 4px);
-    transition: background 0.15s ease;
-  }
-
-  .filter-checkbox-label:hover {
-    background: var(--surface-2, #f1f5f9);
-  }
-
-  .filter-checkbox-label input[type='checkbox'] {
-    margin: 0;
-  }
-
-  .label-text {
-    flex-grow: 1;
-    color: var(--text-1, #1e293b);
-  }
-
-  .count-pill {
-    font-size: var(--font-size-00, 0.75rem);
-    background: var(--surface-2, #f1f5f9);
-    color: var(--text-2, #64748b);
-    padding: 0.1rem 0.4rem;
-    border-radius: var(--radius-round, 9999px);
-  }
-
-  .tab-filter-select {
-    min-height: 44px;
-    padding: 0.55rem var(--size-3);
-    background: var(--paper, #ffffff);
-    color: var(--ink, #0f172a);
-    border: var(--border-size-1, 1px) solid var(--line-strong, #cbd5e1);
-    border-radius: 999px;
-    font-size: 0.86rem;
-    font-weight: var(--font-weight-5, 500);
-    cursor: pointer;
-  }
-
-  .news-map-pane {
-    position: sticky;
-    top: var(--size-4, 1.25rem);
-    align-self: start;
-  }
-
-  .news-cards-container {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-3, 0.875rem);
-  }
-</style>
 
 <script>
   import { autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom'
 
   let allStories = []
   let filteredStories = []
-  let displayedCount = 40
+  let displayedCount = 30
   const PAGE_SIZE = 30
 
   const form = document.getElementById('news-filter-form')
   const searchInput = document.getElementById('news-search-query')
   const authoritySelect = document.getElementById('authority-select')
-  const resultsContainer = document.getElementById('news-results-container')
+  const resultsContainer = document.getElementById('news-results-list')
   const resultCount = document.getElementById('news-result-count')
   const loadMoreBtn = document.getElementById('load-more-news')
   const resetBtn = document.getElementById('clear-all-filters')
   const newsMapEl = document.querySelector('news-map')
+  const filterToggle = document.getElementById('news-filter-toggle')
+  const filterPanel = document.getElementById('news-filter-panel')
+  const filterCountBadge = document.getElementById('news-filter-count')
+  const applyPanelBtn = document.getElementById('apply-panel-filters')
+  const clearPanelBtn = document.getElementById('clear-panel-filters')
+  const activeChipsContainer = document.getElementById('active-filter-chips')
+  const timeSlider = document.getElementById('news-time-slider')
+  const timeSliderValue = document.getElementById('time-slider-value')
+  const newsUrl = form?.dataset?.newsUrl || '/news.json'
+  const totalArchiveCount = Number(form?.dataset?.totalStories || 38093)
 
-  // Panels & Popovers setup
-  const popoverToggles = [
-    { toggle: '#category-toggle', panel: '#category-panel', countBadge: '#category-count', name: 'category' },
-    { toggle: '#change-toggle', panel: '#change-panel', countBadge: '#change-count', name: 'change_type' },
-    { toggle: '#org-toggle', panel: '#org-panel', countBadge: '#org-count', name: 'organisation' },
-    { toggle: '#country-toggle', panel: '#country-panel', countBadge: '#country-count', name: 'country' }
-  ]
+  // Sets to track active filter selections
+  const selectedCats = new Set()
+  const selectedChanges = new Set()
+  const selectedOrgs = new Set()
+  const selectedCountries = new Set()
 
-  popoverToggles.forEach(({ toggle, panel }) => {
-    const btn = document.querySelector(toggle)
-    const pnl = document.querySelector(panel)
-    if (btn && pnl) {
-      btn.addEventListener('click', () => {
-        computePosition(btn, pnl, {
-          placement: 'bottom-start',
-          middleware: [offset(6), flip(), shift({ padding: 8 })]
-        }).then(({ x, y }) => {
-          Object.assign(pnl.style, { left: `${x}px`, top: `${y}px` })
-        })
-      })
+  // Prevent default form submission on enter
+  form?.addEventListener('submit', (e) => e.preventDefault())
+
+  // Initialize from inline JSON data synchronously so pagination works immediately
+  const rawInitialData = document.getElementById('initial-news-data')?.textContent
+  if (rawInitialData) {
+    try {
+      allStories = JSON.parse(rawInitialData)
+      filteredStories = allStories
+      if (loadMoreBtn) {
+        loadMoreBtn.hidden = displayedCount >= filteredStories.length
+      }
+    } catch (err) {
+      console.warn('Failed parsing initial news data:', err)
     }
-  })
+  }
 
-  // Load news index async
+  const TIME_STEPS = {
+    '1': { label: 'Past year', years: 1 },
+    '2': { label: 'Past 2 years', years: 2 },
+    '3': { label: 'Past 3 years', years: 3 },
+    '4': { label: 'Past 5 years', years: 5 },
+    '5': { label: 'All time', years: 0, isAll: true }
+  }
+
+  const ARCHIVE_EXTENSIONS = [
+    {
+      id: '2020-2022',
+      minYear: 2020,
+      maxYear: 2022,
+      url: '/news/archive/2020-2022.json'
+    },
+    {
+      id: '2015-2019',
+      minYear: 2015,
+      maxYear: 2019,
+      url: '/news/archive/2015-2019.json'
+    },
+    {
+      id: '2010-2014',
+      minYear: 2010,
+      maxYear: 2014,
+      url: '/news/archive/2010-2014.json'
+    }
+  ]
+  const loadedExtensions = new Set()
+  let isFetchingExtension = false
+
+  async function loadExtension(ext) {
+    if (loadedExtensions.has(ext.id)) return
+    loadedExtensions.add(ext.id)
+    try {
+      const res = await fetch(ext.url)
+      if (res.ok) {
+        const stories = await res.json()
+        const existingIds = new Set(allStories.map((s) => s.id))
+        for (const s of stories) {
+          if (!existingIds.has(s.id)) {
+            allStories.push(s)
+            existingIds.add(s.id)
+          }
+        }
+        allStories.sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+      }
+    } catch (err) {
+      console.warn(`Failed loading archive ${ext.id}:`, err)
+    }
+  }
+
+  async function ensureExtensionsForRange(minDate, isAll = false) {
+    if (isFetchingExtension) return
+    const needed = ARCHIVE_EXTENSIONS.filter((ext) => {
+      if (loadedExtensions.has(ext.id)) return false
+      if (isAll) return true
+      if (!minDate) return false
+      const minYear = parseInt(minDate.slice(0, 4), 10)
+      return minYear <= ext.maxYear
+    })
+    if (needed.length === 0) return
+
+    isFetchingExtension = true
+    for (const ext of needed) {
+      await loadExtension(ext)
+    }
+    isFetchingExtension = false
+    applyFilters()
+  }
+
+  // Popover positioning using Floating UI autoUpdate identical to directory page
+  if (filterPanel && filterToggle) {
+    let cleanup
+    filterPanel.addEventListener('beforetoggle', () =>
+      filterPanel.removeAttribute('data-positioned')
+    )
+    filterPanel.addEventListener('toggle', () => {
+      const open = filterPanel.matches(':popover-open')
+      filterToggle.setAttribute('aria-expanded', String(open))
+      cleanup?.()
+      cleanup = open
+        ? autoUpdate(filterToggle, filterPanel, () => {
+            computePosition(filterToggle, filterPanel, {
+              strategy: 'fixed',
+              placement: 'bottom-start',
+              middleware: [offset(8), flip(), shift({ padding: 12, crossAxis: true })]
+            }).then(({ x, y }) => {
+              if (!filterPanel.matches(':popover-open')) return
+              Object.assign(filterPanel.style, { left: `${x}px`, top: `${y}px` })
+              filterPanel.setAttribute('data-positioned', 'true')
+            })
+          })
+        : undefined
+    })
+  }
+
+  function formatDate(str) {
+    if (!str) return ''
+    try {
+      const d = new Date(str)
+      if (isNaN(d.getTime())) return str
+      return d.toLocaleDateString('en-GB', {
+        day: 'numeric',
+        month: 'short',
+        year: 'numeric'
+      })
+    } catch {
+      return str
+    }
+  }
+
   async function loadIndex() {
     try {
-      const res = await fetch('/news.json')
+      const res = await fetch(newsUrl)
       if (res.ok) {
-        allStories = await res.json()
+        const fullIndex = await res.json()
+        const existingMap = new Map(allStories.map((s) => [s.id, s]))
+        for (const s of fullIndex) {
+          existingMap.set(s.id, s)
+        }
+        allStories = Array.from(existingMap.values())
+        allStories.sort((a, b) => (b.date || '').localeCompare(a.date || ''))
+
+        const urlParams = new URLSearchParams(window.location.search)
+        const paramAuth = urlParams.get('authority')
+        const paramOrg = urlParams.get('organisation')
+        const paramQ = urlParams.get('q')
+        const paramRange = urlParams.get('range')
+        const paramAll = urlParams.get('all')
+
+        if (paramAuth && authoritySelect) authoritySelect.value = paramAuth
+        if (paramQ && searchInput) searchInput.value = paramQ
+        if (paramOrg) {
+          selectedOrgs.add(paramOrg)
+        }
+
+        if (paramRange) {
+          const rangeMap = { '1y': '1', '2y': '2', '3y': '3', '5y': '4', all: '5' }
+          if (timeSlider && rangeMap[paramRange]) {
+            timeSlider.value = rangeMap[paramRange]
+          }
+        }
+        if (paramAll === 'true' && timeSlider) {
+          timeSlider.value = '5'
+        }
+
+        syncTagButtons()
         applyFilters()
       }
     } catch (err) {
-      console.warn('Error loading news.json:', err)
+      console.warn('Error loading news index:', err)
     }
   }
 
-  function getSelectedValues(name) {
-    const checked = form.querySelectorAll(`input[name="${name}"]:checked`)
-    return Array.from(checked).map(c => c.value)
+  function updateActiveChips(activeFilters) {
+    if (!activeChipsContainer) return
+    activeChipsContainer.innerHTML = ''
+    const fragment = document.createDocumentFragment()
+
+    activeFilters.forEach(({ label }) => {
+      const chip = document.createElement('span')
+      chip.className = 'active-chip'
+      chip.textContent = label
+      fragment.appendChild(chip)
+    })
+
+    activeChipsContainer.appendChild(fragment)
   }
 
-  function updateBadge(name, countBadgeId) {
-    const selected = getSelectedValues(name)
-    const badge = document.querySelector(countBadgeId)
-    if (badge) {
-      badge.textContent = selected.length
-      badge.hidden = selected.length === 0
+  function syncTagButtons() {
+    for (const btn of form.querySelectorAll('.filter-tag[data-filter-type]')) {
+      const type = btn.dataset.filterType
+      const val = btn.dataset.filterValue
+      let active = false
+      if (type === 'category') active = selectedCats.has(val)
+      else if (type === 'change_type') active = selectedChanges.has(val)
+      else if (type === 'organisation') active = selectedOrgs.has(val)
+      else if (type === 'country') active = selectedCountries.has(val)
+
+      btn.setAttribute('aria-pressed', active ? 'true' : 'false')
+      if (active) btn.hidden = false
     }
+
+    const activeCount =
+      selectedCats.size +
+      selectedChanges.size +
+      selectedOrgs.size +
+      selectedCountries.size +
+      (authoritySelect?.value ? 1 : 0) +
+      (timeSlider?.value !== '1' ? 1 : 0)
+
+    if (filterCountBadge) {
+      filterCountBadge.textContent = String(activeCount)
+      filterCountBadge.hidden = activeCount === 0
+    }
+  }
+
+  // Tag button click listeners
+  for (const btn of form.querySelectorAll('.filter-tag[data-filter-type]')) {
+    btn.addEventListener('click', () => {
+      const type = btn.dataset.filterType
+      const val = btn.dataset.filterValue
+      let targetSet
+      if (type === 'category') targetSet = selectedCats
+      else if (type === 'change_type') targetSet = selectedChanges
+      else if (type === 'organisation') targetSet = selectedOrgs
+      else if (type === 'country') targetSet = selectedCountries
+      if (!targetSet) return
+
+      if (targetSet.has(val)) {
+        targetSet.delete(val)
+      } else {
+        targetSet.add(val)
+      }
+      syncTagButtons()
+      applyFilters()
+    })
+  }
+
+  // "View all" expandable groups toggle
+  for (const button of form.querySelectorAll('[data-toggle-tags]')) {
+    button.addEventListener('click', () => {
+      const groupName = button.dataset.toggleTags
+      const group = form.querySelector(`[data-tag-group="${groupName}"]`)
+      if (!group) return
+      const expanded = button.dataset.expanded === 'true'
+      for (const tag of group.querySelectorAll('[data-extra-tag="true"]')) {
+        if (!expanded) {
+          tag.hidden = false
+        } else if (tag.getAttribute('aria-pressed') !== 'true') {
+          tag.hidden = true
+        }
+      }
+      button.dataset.expanded = expanded ? 'false' : 'true'
+      const totalCount = group.querySelectorAll('.filter-tag').length
+      button.textContent = expanded ? `View all (${totalCount})` : 'Show less'
+    })
   }
 
   function applyFilters() {
     if (!allStories || allStories.length === 0) return
 
-    const query = (searchInput.value || '').toLowerCase().trim()
-    const selectedCats = new Set(getSelectedValues('category'))
-    const selectedChanges = new Set(getSelectedValues('change_type'))
-    const selectedOrgs = new Set(getSelectedValues('organisation'))
-    const selectedCountries = new Set(getSelectedValues('country'))
-    const selectedAuthority = authoritySelect.value
+    const query = (searchInput?.value || '').toLowerCase().trim()
+    const selectedAuthority = authoritySelect?.value || ''
 
-    popoverToggles.forEach(({ name, countBadge }) => updateBadge(name, countBadge))
+    const sliderVal = timeSlider?.value || '1'
+    const timeStep = TIME_STEPS[sliderVal] || TIME_STEPS['1']
+    if (timeSliderValue) timeSliderValue.textContent = timeStep.label
 
-    filteredStories = allStories.filter(story => {
-      // Query filter
+    let minDate = ''
+    let maxDate = ''
+    let dateLabel = timeStep.label
+
+    const anchorDateStr = allStories[0]?.date || new Date().toISOString().slice(0, 10)
+    const anchorDate = new Date(anchorDateStr)
+
+    if (timeStep.years > 0) {
+      const d = new Date(anchorDate)
+      d.setFullYear(d.getFullYear() - timeStep.years)
+      minDate = d.toISOString().slice(0, 10)
+    }
+
+    const isAllTime = Boolean(timeStep.isAll)
+    if (isAllTime || (minDate && minDate < '2023-01-01')) {
+      ensureExtensionsForRange(minDate, isAllTime)
+    }
+
+    // Calculate active filter count and chips
+    const activeFilters = []
+    if (sliderVal !== '1') {
+      activeFilters.push({ label: `Date: ${dateLabel}`, type: 'date', value: sliderVal })
+    }
+    selectedCats.forEach((c) =>
+      activeFilters.push({ label: c.replace(/_/g, ' '), type: 'category', value: c })
+    )
+    selectedChanges.forEach((c) =>
+      activeFilters.push({ label: c.replace(/_/g, ' '), type: 'change', value: c })
+    )
+    selectedOrgs.forEach((o) => activeFilters.push({ label: o, type: 'org', value: o }))
+    selectedCountries.forEach((c) => activeFilters.push({ label: c, type: 'country', value: c }))
+    if (selectedAuthority) {
+      activeFilters.push({
+        label: selectedAuthority,
+        type: 'authority',
+        value: selectedAuthority
+      })
+    }
+
+    syncTagButtons()
+    updateActiveChips(activeFilters)
+
+    filteredStories = allStories.filter((story) => {
+      const storyDate = story.date || ''
+      if (minDate && storyDate && storyDate < minDate) return false
+      if (maxDate && storyDate && storyDate > maxDate) return false
+
       if (query) {
         const textMatch = (story.text || '').toLowerCase().includes(query)
         const entityMatch = (story.entity || '').toLowerCase().includes(query)
         const authMatch = (story.authority_name || '').toLowerCase().includes(query)
-        const libMatch = (story.library_names || []).some(n => n.toLowerCase().includes(query))
+        const libMatch = (story.library_names || []).some((n) => n.toLowerCase().includes(query))
         if (!textMatch && !entityMatch && !authMatch && !libMatch) return false
       }
 
-      // Category
       if (selectedCats.size > 0) {
-        const matchesCat = (story.categories || []).some(c => selectedCats.has(c))
+        const matchesCat = (story.categories || []).some((c) => selectedCats.has(c))
         if (!matchesCat) return false
       }
 
-      // Change Type
       if (selectedChanges.size > 0) {
         if (!selectedChanges.has(story.change_type)) return false
       }
 
-      // Organisation
       if (selectedOrgs.size > 0) {
-        const matchesOrg = (story.organisations || []).some(o => selectedOrgs.has(o))
+        const matchesOrg = (story.organisations || []).some((o) => selectedOrgs.has(o))
         if (!matchesOrg) return false
       }
 
-      // Country
       if (selectedCountries.size > 0) {
         if (!selectedCountries.has(story.country)) return false
       }
 
-      // Authority
       if (selectedAuthority) {
         if (story.authority_name !== selectedAuthority) return false
       }
@@ -468,97 +877,185 @@ const authoritiesList = Object.entries(metadata.authorities || {})
     updateMap()
   }
 
+  const arrowSvg =
+    '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
+
+  function escapeHtml(str) {
+    if (!str) return ''
+    const div = document.createElement('div')
+    div.textContent = str
+    return div.innerHTML
+  }
+
+  function createStoryElement(story) {
+    const li = document.createElement('li')
+    li.className = 'news-result-item'
+    if (story.id) li.dataset.id = story.id
+
+    const dateStr = story.date || ''
+    const formattedDate = formatDate(dateStr)
+    const entityStr = story.entity || story.authority_name || 'News update'
+    const textStr = story.text || ''
+
+    const firstLink = story.links && story.links.length > 0 ? story.links[0] : null
+    const sourceUrl = story.url || firstLink?.url || null
+    const sourceDomain = story.domain || firstLink?.domain || 'Source'
+
+    const titleHtml = sourceUrl
+      ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(entityStr)} ${arrowSvg}</a>`
+      : `<span>${escapeHtml(entityStr)}</span>`
+
+    const metaParts = []
+    if (story.authority_name) {
+      const countryPart = story.country ? ` · ${escapeHtml(story.country)}` : ''
+      metaParts.push(
+        `<span class="authority-label">${escapeHtml(story.authority_name)}${countryPart}</span>`
+      )
+    }
+    if (story.country && !story.authority_name) {
+      metaParts.push(`<span class="authority-label">${escapeHtml(story.country)}</span>`)
+    }
+    if (story.change_type) {
+      metaParts.push(
+        `<span class="status-pill status-pill--rose">${escapeHtml(story.change_type.replace(/_/g, ' '))}</span>`
+      )
+    }
+    ;(story.categories || []).slice(0, 2).forEach((cat) => {
+      metaParts.push(
+        `<span class="status-pill status-pill--plum">${escapeHtml(cat.replace(/_/g, ' '))}</span>`
+      )
+    })
+    ;(story.organisations || []).forEach((org) => {
+      metaParts.push(`<span class="status-pill status-pill--green">${escapeHtml(org)}</span>`)
+    })
+    if (sourceUrl) {
+      metaParts.push(
+        `<a href="${escapeHtml(sourceUrl)}" class="news-source-link" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(sourceDomain)}</span> ${arrowSvg}</a>`
+      )
+    }
+
+    li.innerHTML = `
+      <div class="library-result-header">
+        <h3>${titleHtml}</h3>
+        ${formattedDate ? `<span class="status-pill status-pill--plum">${escapeHtml(formattedDate)}</span>` : ''}
+      </div>
+      <p class="news-result-text"></p>
+      <div class="library-result-meta">
+        ${metaParts.join('')}
+      </div>
+    `
+    const textEl = li.querySelector('.news-result-text')
+    if (textEl) textEl.textContent = textStr
+    return li
+  }
+
   function renderResults() {
+    if (!resultCount || !resultsContainer || !loadMoreBtn) return
     const visible = filteredStories.slice(0, displayedCount)
-    resultCount.textContent = `Showing ${visible.length.toLocaleString('en-GB')} of ${filteredStories.length.toLocaleString('en-GB')} stories`
+
+    resultCount.textContent = `Showing ${filteredStories.length.toLocaleString('en-GB')} of ${totalArchiveCount.toLocaleString('en-GB')} stories`
 
     resultsContainer.innerHTML = ''
     if (visible.length === 0) {
-      resultsContainer.innerHTML = '<p class="news-empty-message">No news stories match the current filters.</p>'
+      resultsContainer.innerHTML =
+        '<li class="news-empty-message">No news stories match the current filters.</li>'
       loadMoreBtn.hidden = true
       return
     }
 
     const fragment = document.createDocumentFragment()
-    visible.forEach(story => {
-      const card = document.createElement('article')
-      card.className = 'news-card'
-
-      const dateStr = story.date || ''
-      const entityStr = story.entity || story.authority_name || ''
-      const textStr = story.text || ''
-
-      const pillsHtml = [
-        story.change_type ? `<span class="news-pill news-pill--change">${story.change_type.replace(/_/g, ' ')}</span>` : '',
-        ...(story.categories || []).slice(0, 2).map(c => `<span class="news-pill news-pill--category">${c.replace(/_/g, ' ')}</span>`),
-        ...(story.organisations || []).map(o => `<span class="news-pill news-pill--org">${o}</span>`)
-      ].join('')
-
-      const sourceLinkHtml = story.url
-        ? `<a href="${story.url}" class="news-source-link" target="_blank" rel="noopener noreferrer">${story.domain || 'Source article'} →</a>`
-        : ''
-
-      card.innerHTML = `
-        <header class="news-card-header">
-          <div class="news-card-meta">
-            <time datetime="${dateStr}" class="news-date">📅 ${dateStr}</time>
-            ${story.authority_name ? `<span class="news-authority-badge">🏛️ ${story.authority_name}</span>` : ''}
-            ${story.country && !story.authority_name ? `<span class="news-country-badge">📍 ${story.country}</span>` : ''}
-          </div>
-          ${entityStr ? `<h3 class="news-entity-title">${entityStr}</h3>` : ''}
-        </header>
-        <div class="news-body">
-          <p class="news-text">${textStr}</p>
-        </div>
-        <footer class="news-card-footer">
-          <div class="news-tags">${pillsHtml}</div>
-          ${sourceLinkHtml}
-        </footer>
-      `
-      fragment.appendChild(card)
+    visible.forEach((story) => {
+      fragment.appendChild(createStoryElement(story))
     })
-
     resultsContainer.appendChild(fragment)
+
+    loadMoreBtn.hidden = displayedCount >= filteredStories.length
+  }
+
+  function appendMoreStories() {
+    if (!resultCount || !resultsContainer || !loadMoreBtn) return
+    const prevCount = displayedCount
+    displayedCount = Math.min(displayedCount + PAGE_SIZE, filteredStories.length)
+    const nextSlice = filteredStories.slice(prevCount, displayedCount)
+    const fragment = document.createDocumentFragment()
+    nextSlice.forEach((story) => {
+      fragment.appendChild(createStoryElement(story))
+    })
+    resultsContainer.appendChild(fragment)
+
     loadMoreBtn.hidden = displayedCount >= filteredStories.length
   }
 
   function updateMap() {
     if (newsMapEl) {
-      // Pick stories that have coordinates
-      const mapped = filteredStories.filter(s => typeof s.lat === 'number' && typeof s.lng === 'number').slice(0, 200)
+      const mapped = filteredStories.filter(
+        (s) => typeof s.lat === 'number' && typeof s.lng === 'number'
+      )
       newsMapEl.dispatchEvent(new CustomEvent('news-map-update', { detail: { stories: mapped } }))
     }
   }
 
-  // Event Listeners
+  function resetAllFilters() {
+    selectedCats.clear()
+    selectedChanges.clear()
+    selectedOrgs.clear()
+    selectedCountries.clear()
+    if (searchInput) searchInput.value = ''
+    if (authoritySelect) authoritySelect.value = ''
+    if (timeSlider) timeSlider.value = '1'
+    if (timeSliderValue) timeSliderValue.textContent = 'Past year'
+    syncTagButtons()
+    applyFilters()
+  }
+
   let searchTimer
-  searchInput.addEventListener('input', () => {
+  searchInput?.addEventListener('input', () => {
     clearTimeout(searchTimer)
     searchTimer = setTimeout(applyFilters, 250)
   })
 
-  authoritySelect.addEventListener('change', applyFilters)
+  authoritySelect?.addEventListener('change', applyFilters)
 
-  form.querySelectorAll('input[type="checkbox"]').forEach(box => {
-    box.addEventListener('change', applyFilters)
-  })
-
-  loadMoreBtn.addEventListener('click', () => {
-    displayedCount += PAGE_SIZE
-    renderResults()
-  })
-
-  resetBtn.addEventListener('click', () => {
-    searchInput.value = ''
-    authoritySelect.value = ''
-    form.querySelectorAll('input[type="checkbox"]').forEach(box => { box.checked = false })
-    popoverToggles.forEach(({ countBadge }) => {
-      const b = document.querySelector(countBadge)
-      if (b) b.hidden = true
-    })
+  timeSlider?.addEventListener('input', () => {
+    const step = TIME_STEPS[timeSlider.value] || TIME_STEPS['1']
+    if (timeSliderValue) timeSliderValue.textContent = step.label
     applyFilters()
   })
 
-  // Start background index load
+  timeSlider?.addEventListener('change', applyFilters)
+
+  applyPanelBtn?.addEventListener('click', () => {
+    if (filterPanel?.matches(':popover-open')) filterPanel.hidePopover()
+    applyFilters()
+  })
+
+  clearPanelBtn?.addEventListener('click', () => {
+    selectedCats.clear()
+    selectedChanges.clear()
+    selectedOrgs.clear()
+    selectedCountries.clear()
+    if (authoritySelect) authoritySelect.value = ''
+    if (timeSlider) timeSlider.value = '1'
+    if (timeSliderValue) timeSliderValue.textContent = 'Past year'
+    syncTagButtons()
+    applyFilters()
+  })
+
+  loadMoreBtn?.addEventListener('click', () => {
+    appendMoreStories()
+  })
+
+  resetBtn?.addEventListener('click', resetAllFilters)
+
+  window.addEventListener('news-select-location', (event) => {
+    const auth = event.detail?.authority
+    if (auth && authoritySelect) {
+      authoritySelect.value = auth
+      applyFilters()
+      const heading = document.getElementById('news-results-heading')
+      heading?.scrollIntoView({ behavior: 'smooth' })
+    }
+  })
+
   loadIndex()
 </script>

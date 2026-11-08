@@ -1,12 +1,21 @@
 ---
+import { ChevronDown, ArrowUpRight, History } from '@lucide/astro'
 import NewsCard from './NewsCard.astro'
+import { categoryLabel } from '../lib/helpers/newsHelpers.mjs'
 
 const {
   stories = [],
+  summary = null,
   title = 'Public Libraries News Stories',
   subtitle = '',
-  emptyMessage = 'No news stories recorded.'
+  emptyMessage = 'No news stories recorded.',
+  initialCount = 5,
+  archiveUrl = null,
+  archiveLabel = 'Search all stories in News Archive'
 } = Astro.props
+
+const initialStories = stories.slice(0, initialCount)
+const remainingStories = stories.slice(initialCount)
 ---
 
 <section class="news-list-section" aria-labelledby="news-list-heading">
@@ -17,53 +26,134 @@ const {
     </div>
   )}
 
-  {stories.length > 0 ? (
-    <div class="news-list-grid">
-      {stories.map((story) => (
-        <NewsCard story={story} />
-      ))}
+  {summary && summary.total > 0 && (
+    <div class="news-summary-card">
+      <div class="news-summary-main">
+        <div class="news-summary-stats-grid">
+          <div class="news-summary-stat">
+            <span class="news-summary-stat-value">{summary.total.toLocaleString('en-GB')}</span>
+            <span class="news-summary-stat-label">archive stories</span>
+          </div>
+
+          {summary.first_year && summary.latest_year && (
+            <div class="news-summary-stat">
+              <span class="news-summary-stat-value">
+                {summary.first_year}–{summary.latest_year}
+              </span>
+              <span class="news-summary-stat-label">archive coverage</span>
+            </div>
+          )}
+
+          {summary.by_preset && (
+            <div class="news-summary-stat">
+              <span class="news-summary-stat-value">
+                {(summary.by_preset['1y'] || 0).toLocaleString('en-GB')}
+              </span>
+              <span class="news-summary-stat-label">past 12 months</span>
+            </div>
+          )}
+        </div>
+
+        {summary.top_categories && summary.top_categories.length > 0 && (
+          <div class="news-summary-topics">
+            <span class="news-summary-topics-heading">Key themes:</span>
+            <div class="news-summary-topic-pills">
+              {summary.top_categories.map((tc) => (
+                <span class="news-topic-pill">
+                  {categoryLabel(tc.key)} ({tc.count})
+                </span>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+
+      {archiveUrl && (
+        <div class="news-history-options">
+          <div class="news-history-label">
+            <History size={15} aria-hidden="true" />
+            <span>History options:</span>
+          </div>
+          <div class="news-history-buttons">
+            {summary.by_preset?.['1y'] > 0 && (
+              <a
+                href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=1y`}
+                class="news-history-btn"
+              >
+                <span>Past year ({summary.by_preset['1y']})</span>
+              </a>
+            )}
+            {summary.by_preset?.['3y'] > 0 && (
+              <a
+                href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=3y`}
+                class="news-history-btn"
+              >
+                <span>Past 3 years ({summary.by_preset['3y']})</span>
+              </a>
+            )}
+            {summary.by_preset?.['5y'] > 0 && (
+              <a
+                href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=5y`}
+                class="news-history-btn"
+              >
+                <span>Past 5 years ({summary.by_preset['5y']})</span>
+              </a>
+            )}
+            <a
+              href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=all`}
+              class="news-history-btn news-history-btn--all"
+            >
+              <span>All time ({summary.total.toLocaleString('en-GB')})</span>
+              <ArrowUpRight size={13} aria-hidden="true" />
+            </a>
+          </div>
+        </div>
+      )}
     </div>
+  )}
+
+  {stories.length > 0 ? (
+    <div class="news-list-container">
+      <ul class="library-results news-results-list">
+        {initialStories.map((story) => (
+          <NewsCard story={story} />
+        ))}
+      </ul>
+
+      {remainingStories.length > 0 && (
+        <details class="news-more-details">
+          <summary class="news-more-summary">
+            <span>Show {remainingStories.length} more stories</span>
+            <ChevronDown size={16} class="news-more-chevron" aria-hidden="true" />
+          </summary>
+          <ul class="library-results news-results-list news-results-list--more">
+            {remainingStories.map((story) => (
+              <NewsCard story={story} />
+            ))}
+          </ul>
+        </details>
+      )}
+
+      {archiveUrl && (
+        <div class="news-archive-footer">
+          <a href={archiveUrl} class="news-archive-action">
+            <span>{archiveLabel}</span>
+            <ArrowUpRight size={14} aria-hidden="true" />
+          </a>
+        </div>
+      )}
+    </div>
+  ) : summary && summary.total > 0 ? (
+    <p class="news-empty-message">
+      No stories recorded in the recent index (2023–present). Use the history options above or{' '}
+      {archiveUrl && (
+        <a href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=all`}>
+          explore all {summary.total.toLocaleString('en-GB')} historical stories in the News Archive
+        </a>
+      )}
+      .
+    </p>
   ) : (
     <p class="news-empty-message">{emptyMessage}</p>
   )}
 </section>
-
-<style>
-  .news-list-section {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-4, 1.25rem);
-    margin-block: var(--size-4, 1.5rem);
-  }
-
-  .news-list-header {
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-1, 0.25rem);
-  }
-
-  .news-list-header h2 {
-    font-size: var(--font-size-3, 1.25rem);
-    color: var(--text-1, #0f172a);
-    margin: 0;
-  }
-
-  .news-list-subtitle {
-    font-size: var(--font-size-1, 0.9375rem);
-    color: var(--text-2, #64748b);
-    margin: 0;
-  }
-
-  .news-list-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: var(--size-3, 0.875rem);
-  }
-
-  .news-empty-message {
-    font-size: var(--font-size-1, 0.9375rem);
-    color: var(--text-2, #64748b);
-    font-style: italic;
-    margin: 0;
-  }
-</style>

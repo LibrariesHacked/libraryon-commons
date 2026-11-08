@@ -1,0 +1,17 @@
+---
+/**
+ * @fileoverview Reusable metadata and status pill badge matching site standards.
+ */
+interface Props {
+  variant?: 'plum' | 'rose' | 'green' | 'apricot' | 'open' | 'closed'
+  dot?: boolean
+  class?: string
+}
+
+const { variant = 'plum', dot = false, class: className = '' } = Astro.props
+---
+
+<span class={`status-pill status-pill--${variant} ${className}`}>
+  {dot && <span class="status-pill-dot" aria-hidden="true" />}
+  <slot />
+</span>

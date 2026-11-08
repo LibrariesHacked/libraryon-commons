@@ -9,9 +9,10 @@ let cachedByAuthority = null
 let cachedByLibrary = null
 let cachedByOrganisation = null
 let cachedMetadata = null
+let cachedSummaries = null
 
 function loadJson(filename) {
-  const localUrl = new URL(`../data/news/${filename}`, import.meta.url)
+  const localUrl = new URL(`../../data/news/${filename}`, import.meta.url)
   if (existsSync(localUrl)) {
     return JSON.parse(readFileSync(localUrl, 'utf8'))
   }
@@ -50,17 +51,18 @@ export const CHANGE_TYPE_LABELS = {
 }
 
 export function categoryLabel(key) {
-  return CATEGORY_LABELS[key] || key.replace(/_/g, ' ')
+  return CATEGORY_LABELS[key] || (key ? key.replace(/_/g, ' ') : '')
 }
 
 export function changeTypeLabel(key) {
-  return CHANGE_TYPE_LABELS[key] || key.replace(/_/g, ' ')
+  return CHANGE_TYPE_LABELS[key] || (key ? key.replace(/_/g, ' ') : '')
 }
 
 export function formatNewsDate(dateStr) {
   if (!dateStr) return ''
   try {
     const d = new Date(dateStr)
+    if (isNaN(d.getTime())) return dateStr
     return d.toLocaleDateString('en-GB', {
       day: 'numeric',
       month: 'short',
@@ -86,8 +88,9 @@ export function getNewsForAuthority(gssCode, slug, name) {
     return cachedByAuthority[gssCode]
   }
   const meta = getNewsMetadata()
-  const resolvedGss = (name && meta.authority_gss_by_name?.[name.toLowerCase()]) ||
-                      (slug && meta.authority_gss_by_name?.[slug.toLowerCase()])
+  const resolvedGss =
+    (name && meta.authority_gss_by_name?.[name.toLowerCase()]) ||
+    (slug && meta.authority_gss_by_name?.[slug.toLowerCase()])
   if (resolvedGss && cachedByAuthority[resolvedGss]) {
     return cachedByAuthority[resolvedGss]
   }
@@ -107,6 +110,79 @@ export function getNewsForOrganisation(orgSlug) {
     cachedByOrganisation = loadJson('stories-by-organisation.json') || {}
   }
   return cachedByOrganisation[orgSlug] || []
+}
+
+export function getNewsSummaries() {
+  if (!cachedSummaries) {
+    cachedSummaries = loadJson('news-summaries.json') || {
+      organisations: {},
+      authorities: {},
+      libraries: {}
+    }
+  }
+  return cachedSummaries
+}
+
+export function getNewsSummaryForOrganisation(orgSlug) {
+  const summaries = getNewsSummaries()
+  return summaries.organisations?.[orgSlug] || null
+}
+
+export function getNewsSummaryForAuthority(gssCode, slug, name) {
+  const summaries = getNewsSummaries()
+  if (gssCode && summaries.authorities?.[gssCode]) {
+    return summaries.authorities[gssCode]
+  }
+  const meta = getNewsMetadata()
+  const resolvedGss =
+    (name && meta.authority_gss_by_name?.[name.toLowerCase()]) ||
+    (slug && meta.authority_gss_by_name?.[slug.toLowerCase()])
+  if (resolvedGss && summaries.authorities?.[resolvedGss]) {
+    return summaries.authorities[resolvedGss]
+  }
+  if (name) {
+    const key = name.toLowerCase()
+    if (summaries.authorities?.[key]) return summaries.authorities[key]
+  }
+  if (slug) {
+    const key = slug.toLowerCase()
+    if (summaries.authorities?.[key]) return summaries.authorities[key]
+  }
+  return null
+}
+
+export function getNewsSummaryForLibrary(libraryId) {
+  const summaries = getNewsSummaries()
+  return summaries.libraries?.[libraryId] || null
+}
+
+export function filterStoriesByDate(stories, options = {}) {
+  if (!Array.isArray(stories)) return []
+  const { preset = '1y', from = '', to = '', anchorDate } = options
+
+  if (preset === 'all') return stories
+
+  let minDate = from || ''
+  let maxDate = to || ''
+
+  if (preset === '1y' || preset === '3y' || preset === '5y') {
+    const years = preset === '1y' ? 1 : preset === '3y' ? 3 : 5
+    const anchor = anchorDate
+      ? new Date(anchorDate)
+      : stories[0]?.date
+        ? new Date(stories[0].date)
+        : new Date()
+    const cutoff = new Date(anchor)
+    cutoff.setFullYear(cutoff.getFullYear() - years)
+    minDate = cutoff.toISOString().slice(0, 10)
+  }
+
+  return stories.filter((story) => {
+    const d = story.date || ''
+    if (minDate && d && d < minDate) return false
+    if (maxDate && d && d > maxDate) return false
+    return true
+  })
 }
 
 export function getNewsMetadata() {

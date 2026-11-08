@@ -1990,32 +1990,40 @@ collections:
       - name: name
         label: Organisation Name
         widget: string
+      - name: slug
+        label: URL Slug
+        widget: string
       - name: acronym
         label: Acronym / Abbreviation
         widget: string
         required: false
-      - name: slug
-        label: URL Slug
+      - name: role
+        label: Role / Sector Position
         widget: string
+        required: false
+      - name: country
+        label: Country
+        widget: string
+        required: false
       - name: website
         label: Official Website URL
         widget: string
         required: false
-      - name: category
-        label: Category
-        widget: select
-        options:
-          - government
-          - funding-development
-          - professional-body
-          - sector-development
-          - charity
-          - trade-union
-          - national-library
-          - campaign
       - name: description
         label: Short Summary
         widget: text
+        required: false
+      - name: tags
+        label: Themes / Tags
+        widget: list
+        required: false
+      - name: updated_on
+        label: Updated Date
+        widget: datetime
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+        time_format: false
+        required: false
       - name: body
         label: Body Content
         widget: markdown
