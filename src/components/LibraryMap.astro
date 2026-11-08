@@ -43,11 +43,13 @@ const data = libraryMapFeatures(libraries, sitePath)
   class LibraryMap extends HTMLElement {
     map = undefined
     popup = undefined
+    PopupClass = undefined
     observer = undefined
     data = { type: 'FeatureCollection', features: [] }
     location = null
     initializing = false
     lifetime = undefined
+    pendingSelect = null
 
     connectedCallback() {
       if (this.lifetime && !this.lifetime.signal.aborted) return
@@ -63,6 +65,20 @@ const data = libraryMapFeatures(libraries, sitePath)
           this.data = libraryMapFeatures(records, sitePath)
           this.location = location
           this.updateMap({ isInitial: false })
+        },
+        { signal }
+      )
+      this.addEventListener(
+        'library-map-select',
+        (event) => {
+          const { library, unselect } = event.detail || {}
+          if (unselect || !library) {
+            this.popup?.remove()
+            this.popup = null
+            this.fitAllBounds()
+            return
+          }
+          this.selectLibrary(library)
         },
         { signal }
       )
@@ -119,6 +135,7 @@ const data = libraryMapFeatures(libraries, sitePath)
           return
         }
         setWorkerUrl(workerUrl)
+        this.PopupClass = Popup
 
         // Pre-compute initial camera so the map starts directly at its target without flickering from UK overview
         const originPoints = this.location
@@ -242,76 +259,17 @@ const data = libraryMapFeatures(libraries, sitePath)
                 essential: true
               })
           })
-          const pinSvg =
-            '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>'
-          const arrowSvg =
-            '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
-
           map.on('click', 'library-points', (event) => {
             const feature = event.features?.[0]
             if (!feature || feature.geometry.type !== 'Point') return
             const props = feature.properties || {}
-
-            const content = document.createElement('div')
-            content.className = 'map-popup-card map-popup-library'
-
-            const header = document.createElement('header')
-            header.className = 'map-popup-header'
-
-            const badges = document.createElement('div')
-            badges.className = 'map-popup-badges'
-
-            if (props.closed) {
-              const closedBadge = document.createElement('span')
-              closedBadge.className = 'map-popup-pill map-popup-pill--closed'
-              closedBadge.textContent = 'Permanently closed'
-              badges.appendChild(closedBadge)
-            } else if (props.authority) {
-              const authBadge = document.createElement('span')
-              authBadge.className = 'map-popup-pill map-popup-pill--forest'
-              authBadge.textContent = String(props.authority).replace(/-/g, ' ')
-              badges.appendChild(authBadge)
-            }
-            if (badges.hasChildNodes()) {
-              header.appendChild(badges)
-            }
-
-            const title = document.createElement('h3')
-            title.className = 'map-popup-title'
-            if (props.url) {
-              const link = document.createElement('a')
-              link.href = String(props.url)
-              link.textContent = String(props.name || 'Library')
-              title.appendChild(link)
-            } else {
-              title.textContent = String(props.name || 'Library')
-            }
-            header.appendChild(title)
-            content.appendChild(header)
-
-            if (props.address) {
-              const addr = document.createElement('p')
-              addr.className = 'map-popup-address'
-              addr.innerHTML = `${pinSvg}<span>${props.address}</span>`
-              content.appendChild(addr)
-            }
-
-            if (props.url) {
-              const footer = document.createElement('footer')
-              footer.className = 'map-popup-footer'
-              const link = document.createElement('a')
-              link.href = String(props.url)
-              link.className = 'map-popup-action'
-              link.innerHTML = `<span>View library details</span>${arrowSvg}`
-              footer.appendChild(link)
-              content.appendChild(footer)
-            }
-
-            this.popup?.remove()
-            this.popup = new Popup({ maxWidth: '300px', closeButton: true })
-              .setLngLat(feature.geometry.coordinates)
-              .setDOMContent(content)
-              .addTo(map)
+            this.showLibraryPopup(props, feature.geometry.coordinates)
+            this.dispatchEvent(
+              new CustomEvent('library-map-point-clicked', {
+                bubbles: true,
+                detail: { name: props.name, url: props.url }
+              })
+            )
           })
           for (const layer of ['library-clusters', 'library-points']) {
             map.on('mouseenter', layer, () => {
@@ -322,11 +280,154 @@ const data = libraryMapFeatures(libraries, sitePath)
             })
           }
           this.updateMap({ isInitial: true })
+          if (this.pendingSelect) {
+            this.selectLibrary(this.pendingSelect)
+            this.pendingSelect = null
+          }
         })
       } catch {
         clearTimeout(loadingTimer)
         this.setStatus(
           'The map is unavailable in this browser. Library details and listings remain available.'
+        )
+      }
+    }
+
+    showLibraryPopup(props, coordinates) {
+      if (!this.map || !this.PopupClass || !coordinates) return
+      const pinSvg =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>'
+      const arrowSvg =
+        '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
+
+      const content = document.createElement('div')
+      content.className = 'map-popup-card map-popup-library'
+
+      const header = document.createElement('header')
+      header.className = 'map-popup-header'
+
+      const badges = document.createElement('div')
+      badges.className = 'map-popup-badges'
+
+      if (props.closed) {
+        const closedBadge = document.createElement('span')
+        closedBadge.className = 'map-popup-pill map-popup-pill--closed'
+        closedBadge.textContent = 'Permanently closed'
+        badges.appendChild(closedBadge)
+      } else if (props.authority) {
+        const authBadge = document.createElement('span')
+        authBadge.className = 'map-popup-pill map-popup-pill--forest'
+        authBadge.textContent = String(props.authority).replace(/-/g, ' ')
+        badges.appendChild(authBadge)
+      }
+      if (badges.hasChildNodes()) {
+        header.appendChild(badges)
+      }
+
+      const title = document.createElement('h3')
+      title.className = 'map-popup-title'
+      if (props.url) {
+        const link = document.createElement('a')
+        link.href = String(props.url)
+        link.textContent = String(props.name || 'Library')
+        title.appendChild(link)
+      } else {
+        title.textContent = String(props.name || 'Library')
+      }
+      header.appendChild(title)
+      content.appendChild(header)
+
+      if (props.address) {
+        const addr = document.createElement('p')
+        addr.className = 'map-popup-address'
+        addr.innerHTML = `${pinSvg}<span>${props.address}</span>`
+        content.appendChild(addr)
+      }
+
+      if (props.url) {
+        const footer = document.createElement('footer')
+        footer.className = 'map-popup-footer'
+        const link = document.createElement('a')
+        link.href = String(props.url)
+        link.className = 'map-popup-action'
+        link.innerHTML = `<span>View library details</span>${arrowSvg}`
+        footer.appendChild(link)
+        content.appendChild(footer)
+      }
+
+      this.popup?.remove()
+      this.popup = new this.PopupClass({ maxWidth: '300px', closeButton: true })
+        .setLngLat(coordinates)
+        .setDOMContent(content)
+        .addTo(this.map)
+
+      this.popup.on('close', () => {
+        this.dispatchEvent(new CustomEvent('library-map-popup-closed', { bubbles: true }))
+      })
+    }
+
+    selectLibrary(library) {
+      if (!this.map) {
+        this.pendingSelect = library
+        return
+      }
+      const lng = Number(library.longitude)
+      const lat = Number(library.latitude)
+      if (!Number.isFinite(lng) || !Number.isFinite(lat)) return
+
+      const prefersReduced =
+        typeof window !== 'undefined' &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+      this.map.flyTo({
+        center: [lng, lat],
+        zoom: 16,
+        duration: prefersReduced ? 0 : 800,
+        essential: true
+      })
+
+      const props = {
+        name: library.name,
+        address: library.address || library.postcode || '',
+        authority: library.authorityName || library.authority || '',
+        url: library.url ? sitePath(library.url) : '',
+        closed: Boolean(
+          library.closed ||
+          library.permanentlyClosed ||
+          library.facilityOperated === 'Closed' ||
+          library.facilityOperated === 'Facility Not Open'
+        )
+      }
+      this.showLibraryPopup(props, [lng, lat])
+    }
+
+    fitAllBounds() {
+      if (!this.map) return
+      const originPoints = this.location ? [[this.location.longitude, this.location.latitude]] : []
+      const points = [
+        ...(this.data?.features || []).map((f) => f.geometry?.coordinates),
+        ...originPoints
+      ].filter(Boolean)
+      const prefersReduced =
+        typeof window !== 'undefined' &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+      if (points.length === 1) {
+        this.map.flyTo({
+          center: points[0],
+          zoom: 15.5,
+          duration: prefersReduced ? 0 : 700,
+          essential: true
+        })
+      } else if (points.length > 1) {
+        const longitudes = points.map(([lng]) => lng)
+        const latitudes = points.map(([, lat]) => lat)
+        this.map.fitBounds(
+          [
+            [Math.min(...longitudes), Math.min(...latitudes)],
+            [Math.max(...longitudes), Math.max(...latitudes)]
+          ],
+          { padding: 48, maxZoom: 14, duration: prefersReduced ? 0 : 700, essential: true }
         )
       }
     }

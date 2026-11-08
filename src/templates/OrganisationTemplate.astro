@@ -9,13 +9,18 @@ import {
   getNewsForOrganisation,
   getNewsSummaryForOrganisation
 } from '../lib/helpers/newsHelpers.mjs'
-import { settings } from '../lib/helpers/siteHelpers.mjs'
+import { settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { authorities } from '../lib/directory.mjs'
 
 const { organisation } = Astro.props
 const { Content } = await render(organisation)
 const stories = getNewsForOrganisation(organisation.data.slug)
 const summary = getNewsSummaryForOrganisation(organisation.data.slug)
 const totalStories = summary?.total ?? stories.length
+const isLocalAuthorities = organisation.data.slug === 'local-authorities'
+const sortedAuthorities = isLocalAuthorities
+  ? [...authorities].sort((a, b) => a.name.localeCompare(b.name, 'en'))
+  : []
 ---
 
 <SiteLayout
@@ -30,11 +35,11 @@ const totalStories = summary?.total ?? stories.length
       <Breadcrumbs
         items={[
           { label: settings.ui.editorial?.home_breadcrumb || 'Home', href: '/' },
-          { label: 'Organisations', href: '/organisations/' },
+          { label: 'Library stakeholders', href: '/organisations/' },
           { label: organisation.data.name, current: true }
         ]}
       />
-      <p class="eyebrow">Library Sector Organisation</p>
+      <p class="eyebrow">Library Sector Stakeholder</p>
       <h1>{organisation.data.name}</h1>
       {organisation.data.role && (
         <div class="org-role-badge">
@@ -59,6 +64,31 @@ const totalStories = summary?.total ?? stories.length
             <Content />
           </div>
         </section>
+
+        {isLocalAuthorities && (
+          <section class="org-authorities-section">
+            <h2>UK Library Authorities ({sortedAuthorities.length})</h2>
+            <p>
+              Every local authority in the UK responsible for statutory public library provision:
+            </p>
+            <div class="article-grid">
+              {sortedAuthorities.map((auth) => (
+                <a class="content-card" href={sitePath(`/libraries/${auth.slug}/`)}>
+                  <div class="content-card-body">
+                    <h3 class="content-card-heading">
+                      <span>{auth.name}</span>
+                      <ArrowUpRight class="content-card-arrow" size={18} aria-hidden="true" />
+                    </h3>
+                    <div class="org-card-pills">
+                      {auth.country && <StatusPill variant="apricot">{auth.country}</StatusPill>}
+                      <StatusPill variant="green">{auth.library_ids.length} libraries</StatusPill>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </section>
+        )}
 
         <section class="org-news-section">
           <NewsList

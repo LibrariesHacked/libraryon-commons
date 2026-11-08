@@ -492,8 +492,38 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     }
   }
 
+  let selectedLibraryId = null
+
   const itemElement = (item, miles) => {
     const li = document.createElement('li')
+    li.className = 'library-result-item'
+    const itemId = item.id || item.slug || `${item.latitude},${item.longitude}`
+    li.dataset.libraryId = itemId
+    if (selectedLibraryId && selectedLibraryId === itemId) {
+      li.classList.add('is-selected')
+    }
+
+    li.addEventListener('click', (event) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey) return
+
+      event.preventDefault()
+      const mapEl = document.querySelector('#library-results-map')
+      if (selectedLibraryId === itemId) {
+        selectedLibraryId = null
+        for (const el of list.querySelectorAll('.library-result-item.is-selected')) {
+          el.classList.remove('is-selected')
+        }
+        mapEl?.dispatchEvent(new CustomEvent('library-map-select', { detail: { unselect: true } }))
+      } else {
+        selectedLibraryId = itemId
+        for (const el of list.querySelectorAll('.library-result-item.is-selected')) {
+          el.classList.remove('is-selected')
+        }
+        li.classList.add('is-selected')
+        mapEl?.dispatchEvent(new CustomEvent('library-map-select', { detail: { library: item } }))
+      }
+    })
+
     const header = document.createElement('div')
     header.className = 'library-result-header'
     const title = document.createElement('h3')
@@ -620,6 +650,12 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
       distance: selectedDistance
     }
     matches = records.filter((record) => matchesLibrary(record, filters))
+    if (
+      selectedLibraryId &&
+      !matches.some((m) => (m.id || m.slug || `${m.latitude},${m.longitude}`) === selectedLibraryId)
+    ) {
+      selectedLibraryId = null
+    }
     if (distanceFilterActive && resolvedLoc) {
       matches.sort((first, second) => {
         const firstMiles = distanceMiles(resolvedLoc, first) ?? Number.POSITIVE_INFINITY
@@ -640,6 +676,36 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     explicitLocation = event.detail
     distanceFilterActive = true
     update()
+  })
+
+  const mapElement = document.querySelector('#library-results-map')
+  mapElement?.addEventListener('library-map-popup-closed', () => {
+    if (selectedLibraryId) {
+      selectedLibraryId = null
+      for (const el of list.querySelectorAll('.library-result-item.is-selected')) {
+        el.classList.remove('is-selected')
+      }
+      mapElement.dispatchEvent(
+        new CustomEvent('library-map-select', { detail: { unselect: true } })
+      )
+    }
+  })
+
+  mapElement?.addEventListener('library-map-point-clicked', (event) => {
+    const { name } = event.detail || {}
+    const match = matches.find((m) => m.name === name)
+    if (match) {
+      const matchId = match.id || match.slug || `${match.latitude},${match.longitude}`
+      selectedLibraryId = matchId
+      for (const el of list.querySelectorAll('.library-result-item')) {
+        if (el.dataset.libraryId === matchId) {
+          el.classList.add('is-selected')
+          el.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+        } else {
+          el.classList.remove('is-selected')
+        }
+      }
+    }
   })
 
   clearServicesButton.addEventListener('click', () => {

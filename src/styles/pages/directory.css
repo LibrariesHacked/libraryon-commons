@@ -879,13 +879,17 @@
   padding: var(--size-4);
   border-bottom: 0;
   background: var(--paper);
-  transition: background var(--motion-ease);
+  transition:
+    background var(--motion-ease),
+    box-shadow var(--motion-ease);
+  cursor: pointer;
 }
 .library-results > li:nth-child(even) {
   background: var(--surface-tint-rose-pale);
 }
 .library-results > li:hover,
-.library-results > li:focus-within {
+.library-results > li:focus-within,
+.library-results > li.is-selected {
   background: var(--surface-tint-plum-selected);
   box-shadow: inset 4px 0 0 var(--brand-primary);
 }

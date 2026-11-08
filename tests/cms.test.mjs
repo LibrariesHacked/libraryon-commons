@@ -440,18 +440,15 @@ test('menu hierarchy, single footer attribution, and CMS-only content origin are
   const about = settings.navigation.find((item) => item.label === 'About')
   const archive = settings.navigation.find((item) => item.label === 'Archive')
   const news = settings.navigation.find((item) => item.label === 'News')
-  const organisations = settings.navigation.find((item) => item.label === 'Organisations')
   assert.ok(libraryLink)
   assert.equal(libraryLink.label, 'Find a library')
   assert.ok(news)
   assert.equal(news.label, 'News')
-  assert.ok(organisations)
-  assert.equal(organisations.label, 'Organisations')
   assert.ok(discover)
   assert.equal(discover.label, 'Discover')
   assert.deepEqual(
     discover.children.map((item) => item.label),
-    ['Reading', 'Work and skills', 'Your community', 'Special collections']
+    ['Reading', 'Work and skills', 'Your community', 'Special collections', 'Library stakeholders']
   )
   assert.equal(about.label, 'About')
   assert.deepEqual(

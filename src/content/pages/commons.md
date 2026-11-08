@@ -3,6 +3,9 @@ title: LibraryCommons
 path: /commons
 kind: landing
 description: A community project for sharing and maintaining library knowledge.
+hero:
+  image: /uploads/archive/a-group-of-people-chat-as-they-sit-around-a-table-in-a-library-cafe.jpg
+  alt: A group of people chat around a table in a public library community cafe
 resources: []
 ---
 

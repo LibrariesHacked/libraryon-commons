@@ -1320,12 +1320,15 @@ export async function migrate({ write = false } = {}) {
       .update(`${authority.slug}|${source.postcode}|${normalized(source.address)}`)
       .digest('hex')
       .slice(0, 16)}`
+    const pcLookup = source.postcode ? lookups.postcodes?.[source.postcode] : null
     const data = {
       ...source.data,
       'Local authority': authority.name,
       'Local authority code': gssCode(authority.gss),
       Status: 'Closed (permanent)',
-      'Unique property reference number': null
+      'Unique property reference number': null,
+      Latitude: pcLookup?.latitude ?? source.data.Latitude ?? null,
+      Longitude: pcLookup?.longitude ?? source.data.Longitude ?? null
     }
     for (const day of days)
       for (const type of ['staffed', 'unstaffed']) data[`${day} ${type} hours`] = null
@@ -1344,6 +1347,8 @@ export async function migrate({ write = false } = {}) {
       address: source.address,
       postcode: source.postcode,
       yearClosed: closed,
+      latitude: data.Latitude,
+      longitude: data.Longitude,
       originalSourceRow: source.raw,
       relatedCurrentBuildings: nearName
     })
@@ -1351,11 +1356,14 @@ export async function migrate({ write = false } = {}) {
   for (const added of overrides.added_records || []) {
     const authority = plan.authorityBySlug.get(added.authority)
     if (!authority) throw new Error(`Unknown authority in added_record: ${added.authority}`)
+    const pcLookup = added.data.Postcode ? lookups.postcodes?.[added.data.Postcode] : null
     const data = {
       ...blank(directorySchemas.libraries),
       ...added.data,
       'Local authority': authority.name,
-      'Local authority code': gssCode(authority.gss)
+      'Local authority code': gssCode(authority.gss),
+      Latitude: added.data.Latitude ?? pcLookup?.latitude ?? null,
+      Longitude: added.data.Longitude ?? pcLookup?.longitude ?? null
     }
     const record = envelope(
       {

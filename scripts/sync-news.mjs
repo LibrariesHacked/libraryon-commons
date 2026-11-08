@@ -28,7 +28,9 @@ export const ORG_SLUG_MAP = {
   'The Library Campaign': 'the-library-campaign',
   'Welsh Government': 'welsh-government',
   'Scottish Library and Information Council': 'slic',
-  SLIC: 'slic'
+  SLIC: 'slic',
+  LGA: 'lga',
+  'Local Government Association': 'lga'
 }
 
 function getOrgSlug(name) {
@@ -218,9 +220,7 @@ export async function syncNews() {
         }
       }
       if (!byAuthority[authKey]) byAuthority[authKey] = []
-      if (byAuthority[authKey].length < 20) {
-        byAuthority[authKey].push(item)
-      }
+      byAuthority[authKey].push(item)
       if (authName) {
         authorityCounts[authName] = (authorityCounts[authName] || 0) + 1
         if (gssCode) {
@@ -229,7 +229,7 @@ export async function syncNews() {
       }
     }
 
-    // 2. By Library ID (capped to 10 most recent per library)
+    // 2. By Library ID
     for (const lib of libs) {
       if (lib.id) {
         updateSummary(libSummaries, lib.id, s.post_date, year, categories, changeType)
@@ -237,23 +237,19 @@ export async function syncNews() {
           libSummaries[lib.id].name = lib.name
         }
         if (!byLibrary[lib.id]) byLibrary[lib.id] = []
-        if (byLibrary[lib.id].length < 10) {
-          byLibrary[lib.id].push(item)
-        }
+        byLibrary[lib.id].push(item)
         libraryCounts[lib.id] = (libraryCounts[lib.id] || 0) + 1
       }
     }
 
-    // 3. By Organisation (capped to 20 most recent per organisation)
+    // 3. By Organisation
     for (const body of sectorBodies) {
       const slug = getOrgSlug(body)
       if (slug) {
         updateSummary(orgSummaries, slug, s.post_date, year, categories, changeType)
         orgSummaries[slug].name = body
         if (!byOrganisation[slug]) byOrganisation[slug] = []
-        if (byOrganisation[slug].length < 20) {
-          byOrganisation[slug].push(item)
-        }
+        byOrganisation[slug].push(item)
         orgCounts[body] = (orgCounts[body] || 0) + 1
       }
     }

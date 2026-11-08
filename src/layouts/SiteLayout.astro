@@ -75,6 +75,10 @@ if (schema) {
 const { navigation: navigationCopy } = settings.ui
 const { footer } = settings
 const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admin/') : null)
+
+const policyPaths = ['/accessibility/', '/privacy/', '/ai/']
+const policyLinks = (footer.links || []).filter((link) => policyPaths.includes(link.url))
+const exploreLinks = (footer.links || []).filter((link) => !policyPaths.includes(link.url))
 ---
 
 <!doctype html>
@@ -154,18 +158,26 @@ const cmsURL = import.meta.env.CMS_URL || (import.meta.env.DEV ? sitePath('/admi
     </main>
     <footer class="site-footer">
       <div class="shell footer-grid">
-        <div>
+        <div class="footer-brand-col">
           <Brand href={publicPath('/')} size={27} strokeWidth={2} />
           <p>{footer.attribution}</p>
+          <p>{footer.directory_note}</p>
+        </div>
+        <div class="footer-nav-col">
           <h2>{footer.links_heading}</h2>
           <nav aria-label={footer.aria_label}>
-            {footer.links.map((link) => (
+            {exploreLinks.map((link) => (
               <a href={safeURL(publicPath(link.url))}>{link.label}</a>
             ))}
           </nav>
         </div>
         <div class="footer-meta">
-          <p>{footer.directory_note}</p>
+          <h2>Policies &amp; Legal</h2>
+          <nav aria-label="Policy navigation">
+            {policyLinks.map((link) => (
+              <a href={safeURL(publicPath(link.url))}>{link.label}</a>
+            ))}
+          </nav>
           <a href={safeURL(settings.site.licence_url)}>
             {footer.licence_label} <ArrowUpRight size={15} aria-hidden="true" />
           </a>

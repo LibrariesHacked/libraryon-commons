@@ -16,22 +16,23 @@ const organisations = (await getCollection('organisations')).sort((a, b) =>
 ---
 
 <SiteLayout
-  title="Library Organisations | LibraryCommons"
-  description="Directory of national bodies, government departments, charities, and associations shaping public library services."
+  title="Library Stakeholders | LibraryCommons"
+  description="Directory of national bodies, local authorities, charities, and public communities shaping and supporting UK public libraries."
 >
   <header class="page-heading">
     <div class="shell">
       <Breadcrumbs
         items={[
           { label: settings.ui.editorial?.home_breadcrumb || 'Home', href: '/' },
-          { label: 'Organisations', current: true }
+          { label: 'Library stakeholders', current: true }
         ]}
       />
-      <p class="eyebrow">Sector Leadership & Governance</p>
-      <h1>Library Organisations</h1>
+      <p class="eyebrow">Leadership, Governance & Community</p>
+      <h1>Library Stakeholders</h1>
       <p>
-        Key national bodies, government departments, professional associations, unions, and user
-        campaigns supporting and shaping public libraries across the United Kingdom.
+        Key national bodies, local authorities, professional associations, unions, charities, and
+        community stakeholders who support, fund, and shape public libraries across the United
+        Kingdom.
       </p>
     </div>
   </header>

@@ -1,7 +1,8 @@
 ---
-import { ChevronDown, ArrowUpRight, History } from '@lucide/astro'
+import { Search, ChevronDown, ArrowUpRight, History } from '@lucide/astro'
 import NewsCard from './NewsCard.astro'
-import { categoryLabel } from '../lib/helpers/newsHelpers.mjs'
+import StatusPill from './StatusPill.astro'
+import { categoryLabel, filterStoriesByDate } from '../lib/helpers/newsHelpers.mjs'
 
 const {
   stories = [],
@@ -9,13 +10,20 @@ const {
   title = 'Public Libraries News Stories',
   subtitle = '',
   emptyMessage = 'No news stories recorded.',
-  initialCount = 5,
+  initialCount = 10,
   archiveUrl = null,
   archiveLabel = 'Search all stories in News Archive'
 } = Astro.props
 
-const initialStories = stories.slice(0, initialCount)
-const remainingStories = stories.slice(initialCount)
+const totalStories = summary?.total ?? stories.length
+const hasRecent = (summary?.by_preset?.['1y'] || 0) > 0
+const defaultSliderVal = hasRecent && totalStories > 15 ? '1' : '5'
+const defaultSliderLabel = defaultSliderVal === '1' ? 'Past year' : 'All time'
+
+const initialFiltered =
+  defaultSliderVal === '1' ? filterStoriesByDate(stories, { preset: '1y' }) : stories
+const initialDisplayStories = initialFiltered.slice(0, initialCount)
+const componentId = `news-list-${crypto.randomUUID()}`
 ---
 
 <section class="news-list-section" aria-labelledby="news-list-heading">
@@ -59,9 +67,9 @@ const remainingStories = stories.slice(initialCount)
             <span class="news-summary-topics-heading">Key themes:</span>
             <div class="news-summary-topic-pills">
               {summary.top_categories.map((tc) => (
-                <span class="news-topic-pill">
+                <StatusPill variant="plum">
                   {categoryLabel(tc.key)} ({tc.count})
-                </span>
+                </StatusPill>
               ))}
             </div>
           </div>
@@ -113,26 +121,76 @@ const remainingStories = stories.slice(initialCount)
   )}
 
   {stories.length > 0 ? (
-    <div class="news-list-container">
-      <ul class="library-results news-results-list">
-        {initialStories.map((story) => (
+    <news-stories-list
+      id={componentId}
+      class="news-stories-list-container"
+      data-default-range={defaultSliderVal}
+    >
+      <div class="news-list-controls">
+        <div class="news-search-field">
+          <Search size={16} class="search-field-icon" aria-hidden="true" />
+          <input
+            type="search"
+            class="news-list-search-input"
+            placeholder="Search stories by keyword, authority, topic..."
+            aria-label="Search news stories"
+            data-search-input
+          />
+        </div>
+
+        <div class="time-slider-group news-list-time-slider">
+          <div class="time-slider-header">
+            <label for={`${componentId}-slider`} class="filter-group-heading">
+              Time period
+            </label>
+            <span class="time-slider-current" data-time-slider-value>
+              {defaultSliderLabel}
+            </span>
+          </div>
+          <div class="time-slider-wrap">
+            <input
+              id={`${componentId}-slider`}
+              type="range"
+              min="1"
+              max="5"
+              step="1"
+              value={defaultSliderVal}
+              class="news-time-slider"
+              aria-label="Filter news by time period"
+              data-time-slider
+            />
+            <div class="time-slider-ticks" aria-hidden="true">
+              <span>1 yr</span>
+              <span>2 yrs</span>
+              <span>3 yrs</span>
+              <span>5 yrs</span>
+              <span>All</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="news-list-status-row">
+        <p class="news-list-count" data-count-text aria-live="polite">
+          Showing {Math.min(initialCount, initialFiltered.length).toLocaleString('en-GB')} of{' '}
+          {initialFiltered.length.toLocaleString('en-GB')} stories
+        </p>
+      </div>
+
+      <ul class="library-results news-results-list" data-results-list>
+        {initialDisplayStories.map((story) => (
           <NewsCard story={story} />
         ))}
       </ul>
 
-      {remainingStories.length > 0 && (
-        <details class="news-more-details">
-          <summary class="news-more-summary">
-            <span>Show {remainingStories.length} more stories</span>
-            <ChevronDown size={16} class="news-more-chevron" aria-hidden="true" />
-          </summary>
-          <ul class="library-results news-results-list news-results-list--more">
-            {remainingStories.map((story) => (
-              <NewsCard story={story} />
-            ))}
-          </ul>
-        </details>
-      )}
+      <button
+        type="button"
+        class="load-more"
+        data-load-more
+        hidden={initialFiltered.length <= initialCount}
+      >
+        Show more stories
+      </button>
 
       {archiveUrl && (
         <div class="news-archive-footer">
@@ -142,7 +200,13 @@ const remainingStories = stories.slice(initialCount)
           </a>
         </div>
       )}
-    </div>
+
+      <script
+        type="application/json"
+        data-stories-json
+        set:html={JSON.stringify(stories).replace(/</g, '\\u003c')}
+      />
+    </news-stories-list>
   ) : summary && summary.total > 0 ? (
     <p class="news-empty-message">
       No stories recorded in the recent index (2023–present). Use the history options above or{' '}
@@ -157,3 +221,217 @@ const remainingStories = stories.slice(initialCount)
     <p class="news-empty-message">{emptyMessage}</p>
   )}
 </section>
+
+<script>
+  import { categoryLabel, changeTypeLabel, formatNewsDate } from '../lib/helpers/newsHelpers.mjs'
+
+  class NewsStoriesList extends HTMLElement {
+    allStories = []
+    filteredStories = []
+    visible = 10
+    slider = null
+    sliderLabel = null
+    searchInput = null
+    resultsList = null
+    countText = null
+    loadMoreBtn = null
+
+    connectedCallback() {
+      const dataEl = this.querySelector('[data-stories-json]')
+      if (!dataEl) return
+      try {
+        this.allStories = JSON.parse(dataEl.textContent || '[]')
+      } catch {
+        this.allStories = []
+      }
+
+      this.slider = this.querySelector('[data-time-slider]')
+      this.sliderLabel = this.querySelector('[data-time-slider-value]')
+      this.searchInput = this.querySelector('[data-search-input]')
+      this.resultsList = this.querySelector('[data-results-list]')
+      this.countText = this.querySelector('[data-count-text]')
+      this.loadMoreBtn = this.querySelector('[data-load-more]')
+
+      this.slider?.addEventListener('input', () => this.handleFilter())
+      this.searchInput?.addEventListener('input', () => this.handleFilter())
+      this.loadMoreBtn?.addEventListener('click', () => {
+        this.visible += 10
+        this.render()
+      })
+    }
+
+    handleFilter(resetVisible = true) {
+      if (resetVisible) this.visible = 10
+      const sliderVal = this.slider ? parseInt(this.slider.value, 10) : 5
+      const query = (this.searchInput?.value || '').trim().toLowerCase()
+
+      const labels = {
+        1: 'Past year',
+        2: 'Past 2 years',
+        3: 'Past 3 years',
+        4: 'Past 5 years',
+        5: 'All time'
+      }
+      if (this.sliderLabel) {
+        this.sliderLabel.textContent = labels[sliderVal] || 'All time'
+      }
+
+      let cutoffDate = ''
+      if (sliderVal < 5) {
+        const years = sliderVal === 1 ? 1 : sliderVal === 2 ? 2 : sliderVal === 3 ? 3 : 5
+        const anchor = this.allStories[0]?.date ? new Date(this.allStories[0].date) : new Date()
+        const cutoff = new Date(anchor)
+        cutoff.setFullYear(cutoff.getFullYear() - years)
+        cutoffDate = cutoff.toISOString().slice(0, 10)
+      }
+
+      this.filteredStories = this.allStories.filter((s) => {
+        if (cutoffDate && s.date && s.date < cutoffDate) return false
+        if (query) {
+          const text = (s.text || '').toLowerCase()
+          const entity = (s.entity || '').toLowerCase()
+          const auth = (s.authority_name || '').toLowerCase()
+          const cats = (s.categories || [])
+            .map((c) => (categoryLabel(c) || c).toLowerCase())
+            .join(' ')
+          const orgs = (s.organisations || []).join(' ').toLowerCase()
+          if (
+            !text.includes(query) &&
+            !entity.includes(query) &&
+            !auth.includes(query) &&
+            !cats.includes(query) &&
+            !orgs.includes(query)
+          ) {
+            return false
+          }
+        }
+        return true
+      })
+
+      this.render()
+    }
+
+    render() {
+      if (!this.resultsList) return
+      const count = this.filteredStories.length
+      const shown = Math.min(this.visible, count)
+
+      if (this.countText) {
+        this.countText.textContent = `Showing ${shown.toLocaleString('en-GB')} of ${count.toLocaleString('en-GB')} stories`
+      }
+
+      if (this.loadMoreBtn) {
+        this.loadMoreBtn.hidden = this.visible >= count
+      }
+
+      if (count === 0) {
+        this.resultsList.innerHTML =
+          '<li class="news-empty-message">No stories match your filter criteria.</li>'
+        return
+      }
+
+      const items = this.filteredStories.slice(0, this.visible)
+      const fragment = document.createDocumentFragment()
+      for (const story of items) {
+        fragment.appendChild(this.buildStoryCard(story))
+      }
+      this.resultsList.replaceChildren(fragment)
+    }
+
+    buildStoryCard(story) {
+      const li = document.createElement('li')
+      li.className = 'news-result-item'
+      if (story.id) li.dataset.id = story.id
+
+      const header = document.createElement('div')
+      header.className = 'library-result-header'
+
+      const h3 = document.createElement('h3')
+      const sourceUrl = story.url || (story.links && story.links[0]?.url) || null
+      const sourceDomain = story.domain || (story.links && story.links[0]?.domain) || null
+      const titleText = story.entity || story.authority_name || 'News update'
+
+      if (sourceUrl) {
+        const a = document.createElement('a')
+        a.href = sourceUrl
+        a.target = '_blank'
+        a.rel = 'noopener noreferrer'
+        a.textContent = titleText + ' '
+        a.innerHTML +=
+          '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
+        h3.appendChild(a)
+      } else {
+        const span = document.createElement('span')
+        span.textContent = titleText
+        h3.appendChild(span)
+      }
+      header.appendChild(h3)
+
+      if (story.date) {
+        const datePill = document.createElement('span')
+        datePill.className = 'status-pill status-pill--plum'
+        datePill.textContent = formatNewsDate(story.date)
+        header.appendChild(datePill)
+      }
+      li.appendChild(header)
+
+      const textP = document.createElement('p')
+      textP.className = 'news-result-text'
+      textP.textContent = story.text || ''
+      li.appendChild(textP)
+
+      const meta = document.createElement('div')
+      meta.className = 'library-result-meta'
+
+      if (story.authority_name) {
+        const auth = document.createElement('span')
+        auth.className = 'authority-label'
+        auth.textContent = story.authority_name + (story.country ? ` · ${story.country}` : '')
+        meta.appendChild(auth)
+      } else if (story.country) {
+        const auth = document.createElement('span')
+        auth.className = 'authority-label'
+        auth.textContent = story.country
+        meta.appendChild(auth)
+      }
+
+      if (story.change_type) {
+        const pill = document.createElement('span')
+        pill.className = 'status-pill status-pill--rose'
+        pill.textContent = changeTypeLabel(story.change_type)
+        meta.appendChild(pill)
+      }
+
+      for (const cat of (story.categories || []).slice(0, 2)) {
+        const pill = document.createElement('span')
+        pill.className = 'status-pill status-pill--plum'
+        pill.textContent = categoryLabel(cat)
+        meta.appendChild(pill)
+      }
+
+      for (const org of story.organisations || []) {
+        const pill = document.createElement('span')
+        pill.className = 'status-pill status-pill--green'
+        pill.textContent = org
+        meta.appendChild(pill)
+      }
+
+      if (sourceUrl) {
+        const sourceA = document.createElement('a')
+        sourceA.href = sourceUrl
+        sourceA.className = 'news-source-link'
+        sourceA.target = '_blank'
+        sourceA.rel = 'noopener noreferrer'
+        sourceA.innerHTML = `<span>${sourceDomain || 'Source'}</span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`
+        meta.appendChild(sourceA)
+      }
+
+      li.appendChild(meta)
+      return li
+    }
+  }
+
+  if (!customElements.get('news-stories-list')) {
+    customElements.define('news-stories-list', NewsStoriesList)
+  }
+</script>

@@ -139,9 +139,9 @@
   margin: 0;
   padding: 0 0 0 var(--size-5);
   font-family: var(--font);
-  font-weight: var(--font-weight-5);
-  font-size: 1.25rem;
-  line-height: 1.5;
+  font-weight: var(--font-weight-2);
+  font-size: 1.35rem;
+  line-height: 1.55;
 }
 .testimonial-quote {
   margin: var(--size-7) 0;
@@ -1082,11 +1082,15 @@
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.28rem 0.7rem;
+  min-height: 32px;
+  height: 32px;
+  max-height: 32px;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: var(--font-weight-6);
-  line-height: 1.25;
+  line-height: 1;
   white-space: nowrap;
   flex-shrink: 0;
   border: 0;

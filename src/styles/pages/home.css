@@ -40,10 +40,10 @@
   color: var(--ink);
 }
 .hero-copy {
-  max-width: 720px;
+  max-width: 100%;
 }
 .hero h1 {
-  font-size: 3.8rem;
+  font-size: clamp(2.4rem, 4.2vw, 3.5rem);
   margin: 0 0 0.8rem;
 }
 .hero-title-highlight {
