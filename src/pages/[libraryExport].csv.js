@@ -2,8 +2,8 @@
  * @fileoverview Endpoint generating complete and validated nationwide library CSV export files.
  */
 
-import { libraries } from '../lib/directory.mjs'
-import { libraryCsvResponse } from '../lib/helpers/exportHelpers.mjs'
+import { libraries } from '../lib/directory/directoryLoader.mjs'
+import { libraryCsvResponse } from '../lib/directory/exportHelpers.mjs'
 
 /**
  * Return static paths for complete and validated library CSV export files.

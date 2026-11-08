@@ -385,6 +385,10 @@
 }
 .collection-carousel-slide--quote blockquote {
   margin: 0;
+  font-family: var(--font);
+  font-weight: var(--font-weight-2);
+  font-size: 1.35rem;
+  line-height: 1.55;
 }
 .collection-carousel-controls {
   display: flex;

@@ -10,12 +10,12 @@ import {
   searchRecords,
   libraryPath,
   authorityByLibrary
-} from '../src/lib/directory.mjs'
+} from '../src/lib/directory/directoryLoader.mjs'
 import {
   matchesLibrary,
   isLibraryOpenAt,
   resolveQueryLocation
-} from '../src/lib/helpers/searchHelpers.mjs'
+} from '../src/lib/directory/searchHelpers.mjs'
 import {
   safeURL,
   articleTitle,
@@ -27,22 +27,22 @@ import {
   sitePath,
   mediaURL,
   settings
-} from '../src/lib/helpers/siteHelpers.mjs'
-import { preservedLinks, decodeProtectedEmail } from '../src/lib/helpers/markdownHelpers.mjs'
+} from '../src/lib/site/siteHelpers.mjs'
+import { preservedLinks, decodeProtectedEmail } from '../src/lib/content/markdownHelpers.mjs'
 import {
   templateFor,
   splitContentModules,
   unlinkedResources
-} from '../src/lib/helpers/contentHelpers.mjs'
+} from '../src/lib/content/contentHelpers.mjs'
 import { createMarkdownProcessor } from '@astrojs/markdown-remark'
 import remarkDirective from 'remark-directive'
-import { contentDirectives } from '../src/lib/helpers/contentDirectives.mjs'
+import { contentDirectives } from '../src/lib/content/contentDirectives.mjs'
 import { transformImportedMarkup } from '../scripts/archive/legacy-markup.mjs'
 import { load } from 'cheerio'
 import { readFileSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import astroConfig from '../astro.config.mjs'
-import { normalizeListSpacing } from '../src/lib/helpers/markdownHelpers.mjs'
+import { normalizeListSpacing } from '../src/lib/content/markdownHelpers.mjs'
 import { normalizeLinkedCards } from '../scripts/normalize-content.mjs'
 
 test('carousel and filter mechanics use maintained engines and native browser primitives', () => {
@@ -210,7 +210,7 @@ test('editorial layouts omit source notes and sidebars when they have no content
   )
   assert.match(
     layout,
-    /const hasAside\s*=\s*headings\.length > 0 \|\| neighbours\.length > 0 \|\| Astro\.slots\.has\(['"]aside['"]\)/
+    /const hasAside\s*=\s*headings\.length > 0 \|\| Astro\.slots\.has\(['"]aside['"]\)/
   )
   assert.ok(layout.includes('{hasSourceNote && ('))
   assert.ok(layout.includes('{hasAside && ('))
@@ -249,9 +249,9 @@ test('linked Markdown cards use the common body, heading and Lucide arrow struct
 test('Markdown component source changes are included in the content-cache fingerprint', () => {
   const hash = createHash('sha256')
   for (const file of [
-    'helpers/contentDirectives.mjs',
-    'helpers/markdownHelpers.mjs',
-    'helpers/siteHelpers.mjs'
+    'content/contentDirectives.mjs',
+    'content/markdownHelpers.mjs',
+    'site/siteHelpers.mjs'
   ]) {
     hash.update(readFileSync(new URL(`../src/lib/${file}`, import.meta.url))).update('\0')
   }

@@ -1,7 +1,7 @@
 ---
 import { Clock } from '@lucide/astro'
-import { facilityLabel } from '../lib/directory.mjs'
-import { settings } from '../lib/helpers/siteHelpers.mjs'
+import { facilityLabel } from '../lib/directory/dataHelpers.mjs'
+import { settings } from '../lib/site/siteHelpers.mjs'
 
 const { library } = Astro.props
 const copy = settings.ui.opening_hours
@@ -76,6 +76,6 @@ const hasHours = hours.some((day) => day.frames.length)
 </section>
 
 <script>
-  import { updateOpeningHoursCards } from '../lib/helpers/openingHoursHelpers.mjs'
+  import { updateOpeningHoursCards } from '../lib/directory/openingHoursHelpers.mjs'
   updateOpeningHoursCards()
 </script>

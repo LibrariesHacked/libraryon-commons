@@ -1,14 +1,15 @@
 ---
 import { getCollection } from 'astro:content'
-import { ArrowUpRight, Newspaper } from '@lucide/astro'
+import { ArrowUpRight, Building2, Newspaper } from '@lucide/astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import Breadcrumbs from '../../components/Breadcrumbs.astro'
 import StatusPill from '../../components/StatusPill.astro'
 import {
   getNewsForOrganisation,
   getNewsSummaryForOrganisation
-} from '../../lib/helpers/newsHelpers.mjs'
-import { settings, sitePath } from '../../lib/helpers/siteHelpers.mjs'
+} from '../../lib/content/newsHelpers.mjs'
+import { settings, sitePath } from '../../lib/site/siteHelpers.mjs'
+import { authorities } from '../../lib/directory/directoryLoader.mjs'
 
 const organisations = (await getCollection('organisations')).sort((a, b) =>
   a.data.name.localeCompare(b.data.name, 'en')
@@ -40,13 +41,17 @@ const organisations = (await getCollection('organisations')).sort((a, b) =>
   <main class="section shell">
     <div class="article-grid">
       {organisations.map((org) => {
-        const stories = getNewsForOrganisation(org.data.slug)
-        const summary = getNewsSummaryForOrganisation(org.data.slug)
+        const isExcludedFromNews = ['local-authorities', 'the-public'].includes(org.data.slug)
+        const stories = isExcludedFromNews ? [] : getNewsForOrganisation(org.data.slug)
+        const summary = isExcludedFromNews ? null : getNewsSummaryForOrganisation(org.data.slug)
         const totalStories = summary?.total ?? stories.length
         const coverage =
           summary?.first_year && summary?.latest_year
             ? ` (${summary.first_year}–${summary.latest_year})`
             : ''
+        const isLocalAuthorities = org.data.slug === 'local-authorities'
+        const hasFooter = totalStories > 0 || isLocalAuthorities
+
         return (
           <a
             class="content-card org-content-card"
@@ -67,14 +72,23 @@ const organisations = (await getCollection('organisations')).sort((a, b) =>
 
               {org.data.description && <p class="org-card-desc">{org.data.description}</p>}
 
-              <div class="org-card-footer">
-                <StatusPill variant="green">
-                  <Newspaper size={14} aria-hidden="true" />
-                  <span>
-                    {totalStories.toLocaleString('en-GB')} news stories{coverage}
-                  </span>
-                </StatusPill>
-              </div>
+              {hasFooter && (
+                <div class="org-card-footer">
+                  {totalStories > 0 ? (
+                    <StatusPill variant="green">
+                      <Newspaper size={14} aria-hidden="true" />
+                      <span>
+                        {totalStories.toLocaleString('en-GB')} news stories{coverage}
+                      </span>
+                    </StatusPill>
+                  ) : isLocalAuthorities ? (
+                    <StatusPill variant="green">
+                      <Building2 size={14} aria-hidden="true" />
+                      <span>{authorities.length} statutory authorities</span>
+                    </StatusPill>
+                  ) : null}
+                </div>
+              )}
             </div>
           </a>
         )

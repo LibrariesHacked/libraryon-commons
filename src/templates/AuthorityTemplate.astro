@@ -11,9 +11,9 @@ import SocialLinks from '../components/SocialLinks.astro'
 import TagListSection from '../components/TagListSection.astro'
 import NewsList from '../components/NewsList.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
-import { collectValues, facilityLabel } from '../lib/directory.mjs'
-import { settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
-import { getNewsForAuthority, getNewsSummaryForAuthority } from '../lib/helpers/newsHelpers.mjs'
+import { collectValues, facilityLabel } from '../lib/directory/dataHelpers.mjs'
+import { settings, sitePath } from '../lib/site/siteHelpers.mjs'
+import { getNewsForAuthority, getNewsSummaryForAuthority } from '../lib/content/newsHelpers.mjs'
 
 const { authority, entries = [] } = Astro.props
 const copy = settings.ui.directory
@@ -131,7 +131,7 @@ const heroTags = [
 </DirectoryLayout>
 
 <script>
-  import { updateLibraryListStatus } from '../lib/helpers/openingHoursHelpers.mjs'
+  import { updateLibraryListStatus } from '../lib/directory/openingHoursHelpers.mjs'
 
   updateLibraryListStatus()
 

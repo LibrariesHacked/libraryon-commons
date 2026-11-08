@@ -2,13 +2,13 @@
 import { Menu, ArrowUpRight } from '@lucide/astro'
 import Brand from '../components/Brand.astro'
 import SiteNavigation from '../components/SiteNavigation.astro'
-import { canonicalInternalPath, settings, sitePath, safeURL } from '../lib/helpers/siteHelpers.mjs'
+import { canonicalInternalPath, settings, sitePath, safeURL } from '../lib/site/siteHelpers.mjs'
 import {
   absoluteUrl,
   generateOrganizationSchema,
   generateWebSiteSchema,
   generateBreadcrumbSchema
-} from '../lib/helpers/seoHelpers.mjs'
+} from '../lib/site/seoHelpers.mjs'
 import '../styles/global.css'
 
 const {

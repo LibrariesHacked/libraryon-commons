@@ -21,7 +21,7 @@ import {
   filterStoriesByDate,
   CATEGORY_LABELS,
   CHANGE_TYPE_LABELS
-} from '../src/lib/helpers/newsHelpers.mjs'
+} from '../src/lib/content/newsHelpers.mjs'
 
 test('categoryLabel and changeTypeLabel resolve known keys and format fallbacks', () => {
   assert.equal(categoryLabel('cuts_and_finance'), 'Cuts & Finance')
@@ -169,4 +169,14 @@ test('Decap CMS config includes organisations collection matching content fields
   assert.ok(fieldNames.includes('description'))
   assert.ok(fieldNames.includes('tags'))
   assert.ok(fieldNames.includes('body'))
+})
+
+test('umbrella stakeholder pages exclude news coverage sections', () => {
+  const nonNewsSlugs = ['local-authorities', 'the-public']
+  for (const slug of nonNewsSlugs) {
+    const summary = getNewsSummaryForOrganisation(slug)
+    assert.equal(summary, null, `${slug} should not have an organisation news summary`)
+    const stories = getNewsForOrganisation(slug)
+    assert.deepEqual(stories, [], `${slug} should not have news stories`)
+  }
 })

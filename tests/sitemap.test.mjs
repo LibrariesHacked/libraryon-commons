@@ -4,7 +4,7 @@
 
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { buildPageTree } from '../src/lib/helpers/sitemapHelpers.mjs'
+import { buildPageTree } from '../src/lib/site/sitemapHelpers.mjs'
 
 test('page sitemap groups published routes by their actual path hierarchy', () => {
   const tree = buildPageTree([

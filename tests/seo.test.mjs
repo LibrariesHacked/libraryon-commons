@@ -14,7 +14,7 @@ import {
   generateLibrarySchema,
   buildShareUrls,
   buildSitemapXml
-} from '../src/lib/helpers/seoHelpers.mjs'
+} from '../src/lib/site/seoHelpers.mjs'
 
 test('absoluteUrl builds valid fully qualified URLs from relative and absolute paths', () => {
   assert.equal(absoluteUrl('/', 'https://example.com/'), 'https://example.com/')

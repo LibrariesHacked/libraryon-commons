@@ -1,7 +1,7 @@
 ---
 import { LocateFixed } from '@lucide/astro'
 import { dataAttribution } from '@geovation/gb-name-index'
-import { settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { settings, sitePath } from '../lib/site/siteHelpers.mjs'
 
 const { id = `library-${crypto.randomUUID()}`, mode = 'navigate' } = Astro.props
 const copy = settings.ui.library_search

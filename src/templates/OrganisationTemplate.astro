@@ -8,16 +8,17 @@ import StatusPill from '../components/StatusPill.astro'
 import {
   getNewsForOrganisation,
   getNewsSummaryForOrganisation
-} from '../lib/helpers/newsHelpers.mjs'
-import { settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
-import { authorities } from '../lib/directory.mjs'
+} from '../lib/content/newsHelpers.mjs'
+import { settings, sitePath } from '../lib/site/siteHelpers.mjs'
+import { authorities } from '../lib/directory/directoryLoader.mjs'
 
 const { organisation } = Astro.props
 const { Content } = await render(organisation)
-const stories = getNewsForOrganisation(organisation.data.slug)
-const summary = getNewsSummaryForOrganisation(organisation.data.slug)
-const totalStories = summary?.total ?? stories.length
 const isLocalAuthorities = organisation.data.slug === 'local-authorities'
+const showNews = !['local-authorities', 'the-public'].includes(organisation.data.slug)
+const stories = showNews ? getNewsForOrganisation(organisation.data.slug) : []
+const summary = showNews ? getNewsSummaryForOrganisation(organisation.data.slug) : null
+const totalStories = summary?.total ?? stories.length
 const sortedAuthorities = isLocalAuthorities
   ? [...authorities].sort((a, b) => a.name.localeCompare(b.name, 'en'))
   : []
@@ -27,7 +28,9 @@ const sortedAuthorities = isLocalAuthorities
   title={organisation.data.name}
   description={
     organisation.data.description ||
-    `${organisation.data.name} profile and public library news stories.`
+    (showNews
+      ? `${organisation.data.name} profile and public library news stories.`
+      : `${organisation.data.name} profile.`)
   }
 >
   <header class="page-heading">
@@ -90,17 +93,19 @@ const sortedAuthorities = isLocalAuthorities
           </section>
         )}
 
-        <section class="org-news-section">
-          <NewsList
-            stories={stories}
-            summary={summary}
-            title={`Public Libraries News Stories`}
-            subtitle={`Roundups and reports mentioning ${organisation.data.name} in Public Libraries News.`}
-            emptyMessage={`No news stories currently recorded mentioning ${organisation.data.name}.`}
-            archiveUrl={`/news/?organisation=${encodeURIComponent(organisation.data.name)}`}
-            archiveLabel={`Search all ${totalStories.toLocaleString('en-GB')} reports in News Archive`}
-          />
-        </section>
+        {showNews && (
+          <section class="org-news-section">
+            <NewsList
+              stories={stories}
+              summary={summary}
+              title={`Public Libraries News Stories`}
+              subtitle={`Roundups and reports mentioning ${organisation.data.name} in Public Libraries News.`}
+              emptyMessage={`No news stories currently recorded mentioning ${organisation.data.name}.`}
+              archiveUrl={`/news/?organisation=${encodeURIComponent(organisation.data.name)}`}
+              archiveLabel={`Search all ${totalStories.toLocaleString('en-GB')} reports in News Archive`}
+            />
+          </section>
+        )}
       </div>
 
       <aside class="org-sidebar">
@@ -135,17 +140,19 @@ const sortedAuthorities = isLocalAuthorities
                 </dd>
               </div>
             )}
-            <div class="detail-row">
-              <dt>News Mentions</dt>
-              <dd>
-                <strong>{totalStories.toLocaleString('en-GB')} archive stories</strong>
-                {summary?.first_year && summary?.latest_year && (
-                  <span class="detail-subtext">
-                    {summary.first_year}–{summary.latest_year} coverage
-                  </span>
-                )}
-              </dd>
-            </div>
+            {showNews && (
+              <div class="detail-row">
+                <dt>News Mentions</dt>
+                <dd>
+                  <strong>{totalStories.toLocaleString('en-GB')} archive stories</strong>
+                  {summary?.first_year && summary?.latest_year && (
+                    <span class="detail-subtext">
+                      {summary.first_year}–{summary.latest_year} coverage
+                    </span>
+                  )}
+                </dd>
+              </div>
+            )}
           </dl>
 
           {organisation.data.tags && organisation.data.tags.length > 0 && (

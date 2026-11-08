@@ -20,14 +20,17 @@ import { gunzipSync } from 'node:zlib'
 import { parse, stringify } from 'yaml'
 import sharp from 'sharp'
 import { load } from 'cheerio'
-import { normalizeListSpacing } from '../src/lib/helpers/markdownHelpers.mjs'
+import { normalizeListSpacing } from '../src/lib/content/markdownHelpers.mjs'
 import {
   createEditorComponents,
   previewEditorBlock,
-  registerEditorComponents
-} from '../src/lib/helpers/cmsHelpers.mjs'
+  registerEditorComponents,
+  parseEditorBlock,
+  serializeEditorBlock
+} from '../src/lib/cms/cmsHelpers.mjs'
+import { directoryReviewRows, reviewIndex } from '../src/lib/cms/reviewHelpers.mjs'
 import { digest } from '../scripts/archive/collect.mjs'
-import { libraries, authorities } from '../src/lib/directory.mjs'
+import { libraries, authorities } from '../src/lib/directory/directoryLoader.mjs'
 import {
   descriptiveSlug,
   uniqueFilename,
@@ -451,17 +454,15 @@ test('menu hierarchy, single footer attribution, and CMS-only content origin are
     ['Reading', 'Work and skills', 'Your community', 'Special collections', 'Library stakeholders']
   )
   assert.equal(about.label, 'About')
-  assert.deepEqual(
-    about.children.map((item) => item.label),
-    ['About LibraryCommons']
-  )
+  assert.equal(about.url, '/commons/')
+  assert.equal(about.children, undefined)
   assert.equal(archive.label, 'Archive')
   assert.equal(archive.url, undefined)
   assert.deepEqual(
     archive.children.map((item) => item.label),
     ['About LibraryOn', 'Grants', 'Press Play Conference']
   )
-  for (const item of [...discover.children, ...about.children, ...archive.children]) {
+  for (const item of [...discover.children, ...archive.children]) {
     assert.ok(item.url)
   }
   assert.ok(settings.footer.attribution)
@@ -859,7 +860,7 @@ test('original "Last updated" dates are metadata, not repeated body text', () =>
 })
 
 test('library text fields are plain strings and facility labels keep original wording', async () => {
-  const { facilityLabel } = await import('../src/lib/helpers/dataHelpers.mjs')
+  const { facilityLabel } = await import('../src/lib/directory/dataHelpers.mjs')
   for (const library of libraries) {
     for (const field of ['openingTimesNotes', 'notes', 'address']) {
       assert.equal(typeof library[field], 'string', `${library.name} ${field}`)
@@ -867,4 +868,12 @@ test('library text fields are plain strings and facility labels keep original wo
   }
   assert.equal(facilityLabel('step-free-access'), 'Step-free access')
   assert.equal(facilityLabel('hearing-loop-system'), 'Hearing loop system')
+})
+
+test('CMS domain exports expected editor components and review worklist functions', () => {
+  assert.equal(typeof registerEditorComponents, 'function')
+  assert.equal(typeof parseEditorBlock, 'function')
+  assert.equal(typeof serializeEditorBlock, 'function')
+  assert.equal(typeof directoryReviewRows, 'function')
+  assert.equal(typeof reviewIndex, 'function')
 })

@@ -2,7 +2,7 @@
 import { Search, ChevronDown, ArrowUpRight, History } from '@lucide/astro'
 import NewsCard from './NewsCard.astro'
 import StatusPill from './StatusPill.astro'
-import { categoryLabel, filterStoriesByDate } from '../lib/helpers/newsHelpers.mjs'
+import { categoryLabel, filterStoriesByDate } from '../lib/content/newsHelpers.mjs'
 
 const {
   stories = [],
@@ -223,7 +223,7 @@ const componentId = `news-list-${crypto.randomUUID()}`
 </section>
 
 <script>
-  import { categoryLabel, changeTypeLabel, formatNewsDate } from '../lib/helpers/newsHelpers.mjs'
+  import { categoryLabel, changeTypeLabel, formatNewsDate } from '../lib/content/newsHelpers.mjs'
 
   class NewsStoriesList extends HTMLElement {
     allStories = []

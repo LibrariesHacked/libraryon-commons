@@ -9,10 +9,10 @@ import ShareButtons from '../components/ShareButtons.astro'
 import TagListSection from '../components/TagListSection.astro'
 import NewsList from '../components/NewsList.astro'
 import DirectoryLayout from '../layouts/DirectoryLayout.astro'
-import { libraries, facilityLabel } from '../lib/directory.mjs'
-import { canonicalInternalPath, safeURL, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
-import { generateLibrarySchema } from '../lib/helpers/seoHelpers.mjs'
-import { getNewsForLibrary, getNewsSummaryForLibrary } from '../lib/helpers/newsHelpers.mjs'
+import { libraries, facilityLabel } from '../lib/directory/directoryLoader.mjs'
+import { canonicalInternalPath, safeURL, settings, sitePath } from '../lib/site/siteHelpers.mjs'
+import { generateLibrarySchema } from '../lib/site/seoHelpers.mjs'
+import { getNewsForLibrary, getNewsSummaryForLibrary } from '../lib/content/newsHelpers.mjs'
 
 const { library, authority } = Astro.props
 const copy = settings.ui.directory
@@ -168,6 +168,6 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
 </DirectoryLayout>
 
 <script>
-  import { updateLibraryListStatus } from '../lib/helpers/openingHoursHelpers.mjs'
+  import { updateLibraryListStatus } from '../lib/directory/openingHoursHelpers.mjs'
   updateLibraryListStatus()
 </script>

@@ -2,9 +2,9 @@
  * @fileoverview Endpoint generating authority-scoped JSON validation reports for library datasets.
  */
 
-import { authorities, libraries } from '../../../lib/directory.mjs'
-import { libraryValidationReport } from '../../../lib/helpers/exportHelpers.mjs'
-import { sitePath } from '../../../lib/helpers/siteHelpers.mjs'
+import { authorities, libraries } from '../../../lib/directory/directoryLoader.mjs'
+import { libraryValidationReport } from '../../../lib/directory/exportHelpers.mjs'
+import { sitePath } from '../../../lib/site/siteHelpers.mjs'
 
 /**
  * Return static paths for authority-scoped validation reports.

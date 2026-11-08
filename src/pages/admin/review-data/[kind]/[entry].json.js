@@ -2,7 +2,7 @@
  * @fileoverview Endpoint providing record-scoped review details and evidence for directory maintainers.
  */
 
-import { loadDirectoryReview } from '../../../../lib/helpers/reviewHelpers.mjs'
+import { loadDirectoryReview } from '../../../../lib/cms/reviewHelpers.mjs'
 
 /**
  * Return static paths for all flagged directory review entries.

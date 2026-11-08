@@ -1,7 +1,7 @@
 ---
 import { Building, Globe, Library } from '@lucide/astro'
 import Breadcrumbs from '../components/Breadcrumbs.astro'
-import { directoryBreadcrumbs } from '../lib/directory.mjs'
+import { directoryBreadcrumbs } from '../lib/directory/directoryHelpers.mjs'
 import SiteLayout from './SiteLayout.astro'
 
 const { title, description, subtitle, authority, tags = [], schema, image } = Astro.props

@@ -2,7 +2,7 @@
 import Breadcrumbs from '../components/Breadcrumbs.astro'
 import ResourceLink from '../components/ResourceLink.astro'
 import SiteLayout from '../layouts/SiteLayout.astro'
-import { safeURL, settings } from '../lib/helpers/siteHelpers.mjs'
+import { safeURL, settings } from '../lib/site/siteHelpers.mjs'
 const { resource, usage = [] } = Astro.props
 const copy = settings.ui.resources
 const breadcrumbs = [

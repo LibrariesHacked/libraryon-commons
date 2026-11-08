@@ -2,8 +2,8 @@
  * @fileoverview Endpoint generating authority-scoped CSV downloads for complete and validated library subsets.
  */
 
-import { authorities, libraries } from '../../../lib/directory.mjs'
-import { libraryCsvResponse } from '../../../lib/helpers/exportHelpers.mjs'
+import { authorities, libraries } from '../../../lib/directory/directoryLoader.mjs'
+import { libraryCsvResponse } from '../../../lib/directory/exportHelpers.mjs'
 
 /**
  * Return static paths for authority-scoped complete and validated library CSV export files.

@@ -4,12 +4,12 @@
 
 import test from 'node:test'
 import { parse as parseCsv } from 'csv-parse/sync'
-import { libraryCsv, libraryValidationReport } from '../src/lib/helpers/exportHelpers.mjs'
-import { directoryReviewRows, reviewIndex } from '../src/lib/helpers/reviewHelpers.mjs'
+import { libraryCsv, libraryValidationReport } from '../src/lib/directory/exportHelpers.mjs'
+import { directoryReviewRows, reviewIndex } from '../src/lib/cms/reviewHelpers.mjs'
 import {
   libraries as currentLibraries,
   authorities as currentAuthorities
-} from '../src/lib/directory.mjs'
+} from '../src/lib/directory/directoryLoader.mjs'
 import assert from 'node:assert/strict'
 import {
   readFileSync,
@@ -24,14 +24,14 @@ import { tmpdir } from 'node:os'
 import { pathToFileURL } from 'node:url'
 import { join } from 'node:path'
 import { gunzipSync } from 'node:zlib'
-import { normalizePostcode, normalizeUprn } from '../src/lib/helpers/dataHelpers.mjs'
-import { openingHours, legacyHours } from '../src/lib/helpers/openingHoursHelpers.mjs'
+import { normalizePostcode, normalizeUprn } from '../src/lib/directory/dataHelpers.mjs'
+import { openingHours, legacyHours } from '../src/lib/directory/openingHoursHelpers.mjs'
 import {
   directorySchemas,
   dataIssues,
   validateRecord,
   prepareDirectoryEdit
-} from '../src/lib/helpers/schemaHelpers.mjs'
+} from '../src/lib/directory/schemaHelpers.mjs'
 import {
   buildingMatch,
   possibleSameBuilding,
@@ -45,9 +45,9 @@ import {
   resolveReviewItem
 } from '../scripts/directory/migrate.mjs'
 import { parseServicePage, parseOnsPostcode, parseNsul } from '../scripts/directory/lookups.mjs'
-import { createDirectory } from '../src/lib/helpers/directoryHelpers.mjs'
-import { Library } from '../src/lib/models/Library.mjs'
-import { LibraryService } from '../src/lib/models/LibraryService.mjs'
+import { createDirectory } from '../src/lib/directory/directoryHelpers.mjs'
+import { Library } from '../src/lib/directory/models/Library.mjs'
+import { LibraryService } from '../src/lib/directory/models/LibraryService.mjs'
 
 test("review worklist follows live flags, prioritizes risks and never attaches another record's evidence", () => {
   const issue = { field: 'Statutory', code: 'required', value: null, reason: 'Unknown' }

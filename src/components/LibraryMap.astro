@@ -1,7 +1,7 @@
 ---
 import 'maplibre-gl/dist/maplibre-gl.css'
-import { libraryMapFeatures } from '../lib/helpers/geoHelpers.mjs'
-import { sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { libraryMapFeatures } from '../lib/directory/geoHelpers.mjs'
+import { sitePath } from '../lib/site/siteHelpers.mjs'
 
 const {
   id = `library-map-${crypto.randomUUID()}`,
@@ -37,8 +37,8 @@ const data = libraryMapFeatures(libraries, sitePath)
 
 <script>
   import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
-  import { libraryMapFeatures } from '../lib/helpers/geoHelpers.mjs'
-  import { sitePath } from '../lib/helpers/siteHelpers.mjs'
+  import { libraryMapFeatures } from '../lib/directory/geoHelpers.mjs'
+  import { sitePath } from '../lib/site/siteHelpers.mjs'
 
   class LibraryMap extends HTMLElement {
     map = undefined
@@ -50,6 +50,8 @@ const data = libraryMapFeatures(libraries, sitePath)
     initializing = false
     lifetime = undefined
     pendingSelect = null
+    isProgrammaticPopupClose = false
+    onPopupClose = null
 
     connectedCallback() {
       if (this.lifetime && !this.lifetime.signal.aborted) return
@@ -73,8 +75,7 @@ const data = libraryMapFeatures(libraries, sitePath)
         (event) => {
           const { library, unselect } = event.detail || {}
           if (unselect || !library) {
-            this.popup?.remove()
-            this.popup = null
+            this.removePopup()
             this.fitAllBounds()
             return
           }
@@ -105,11 +106,26 @@ const data = libraryMapFeatures(libraries, sitePath)
     disconnectedCallback() {
       this.lifetime?.abort()
       this.observer?.disconnect()
-      this.popup?.remove()
+      this.removePopup()
       this.map?.remove()
       this.map = undefined
       this.initializing = false
       delete this.dataset.mapReady
+    }
+
+    removePopup() {
+      if (!this.popup) return
+      this.isProgrammaticPopupClose = true
+      const existingPopup = this.popup
+      this.popup = null
+      try {
+        if (typeof existingPopup.off === 'function' && this.onPopupClose) {
+          existingPopup.off('close', this.onPopupClose)
+        }
+        existingPopup.remove()
+      } finally {
+        this.isProgrammaticPopupClose = false
+      }
     }
 
     setStatus(message = '') {
@@ -311,13 +327,21 @@ const data = libraryMapFeatures(libraries, sitePath)
 
       if (props.closed) {
         const closedBadge = document.createElement('span')
-        closedBadge.className = 'map-popup-pill map-popup-pill--closed'
-        closedBadge.textContent = 'Permanently closed'
+        closedBadge.className = 'status-pill status-pill--closed'
+        const dot = document.createElement('span')
+        dot.className = 'status-pill-dot'
+        dot.setAttribute('aria-hidden', 'true')
+        const text = document.createElement('span')
+        text.textContent = 'Permanently closed'
+        closedBadge.append(dot, text)
         badges.appendChild(closedBadge)
-      } else if (props.authority) {
+      }
+      if (props.authority) {
         const authBadge = document.createElement('span')
-        authBadge.className = 'map-popup-pill map-popup-pill--forest'
-        authBadge.textContent = String(props.authority).replace(/-/g, ' ')
+        authBadge.className = 'status-pill status-pill--plum'
+        const text = document.createElement('span')
+        text.textContent = String(props.authority).replace(/-/g, ' ')
+        authBadge.appendChild(text)
         badges.appendChild(authBadge)
       }
       if (badges.hasChildNodes()) {
@@ -355,15 +379,18 @@ const data = libraryMapFeatures(libraries, sitePath)
         content.appendChild(footer)
       }
 
-      this.popup?.remove()
-      this.popup = new this.PopupClass({ maxWidth: '300px', closeButton: true })
+      this.removePopup()
+      this.popup = new this.PopupClass({ maxWidth: '320px', closeButton: true })
         .setLngLat(coordinates)
         .setDOMContent(content)
         .addTo(this.map)
 
-      this.popup.on('close', () => {
+      this.onPopupClose = () => {
+        if (this.isProgrammaticPopupClose) return
+        this.popup = null
         this.dispatchEvent(new CustomEvent('library-map-popup-closed', { bubbles: true }))
-      })
+      }
+      this.popup.on('close', this.onPopupClose)
     }
 
     selectLibrary(library) {
@@ -374,6 +401,8 @@ const data = libraryMapFeatures(libraries, sitePath)
       const lng = Number(library.longitude)
       const lat = Number(library.latitude)
       if (!Number.isFinite(lng) || !Number.isFinite(lat)) return
+
+      this.removePopup()
 
       const prefersReduced =
         typeof window !== 'undefined' &&
@@ -436,7 +465,7 @@ const data = libraryMapFeatures(libraries, sitePath)
       this.dataset.mapCount = String(this.data.features.length)
       const source = this.map?.getSource('libraries')
       if (!this.map || !source) return
-      this.popup?.remove()
+      this.removePopup()
       source.setData(this.data)
       const origin = {
         type: 'FeatureCollection',

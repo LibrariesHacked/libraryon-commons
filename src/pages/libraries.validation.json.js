@@ -2,9 +2,9 @@
  * @fileoverview Endpoint publishing validation reports for the nationwide library dataset.
  */
 
-import { libraries } from '../lib/directory.mjs'
-import { libraryValidationReport } from '../lib/helpers/exportHelpers.mjs'
-import { sitePath } from '../lib/helpers/siteHelpers.mjs'
+import { libraries } from '../lib/directory/directoryLoader.mjs'
+import { libraryValidationReport } from '../lib/directory/exportHelpers.mjs'
+import { sitePath } from '../lib/site/siteHelpers.mjs'
 
 /**
  * Handle GET requests for the nationwide library validation report.

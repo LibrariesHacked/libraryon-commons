@@ -11,8 +11,8 @@ import {
   safeURL,
   settings,
   sitePath
-} from '../lib/helpers/siteHelpers.mjs'
-import { generateArticleSchema } from '../lib/helpers/seoHelpers.mjs'
+} from '../lib/site/siteHelpers.mjs'
+import { generateArticleSchema } from '../lib/site/seoHelpers.mjs'
 import SiteLayout from './SiteLayout.astro'
 
 const copy = settings.ui.editorial
@@ -21,7 +21,7 @@ const title = articleTitle(entry)
 const breadcrumbs = breadcrumbsForPage(entry, allPages, copy.home_breadcrumb)
 const originalSource = safeURL(entry.data.source_url)
 const hasSourceNote = Boolean(entry.data.attribution || originalSource || entry.data.updated_on)
-const hasAside = headings.length > 0 || neighbours.length > 0 || Astro.slots.has('aside')
+const hasAside = headings.length > 0 || Astro.slots.has('aside')
 const contributors = entry.data.contributors?.length
   ? (await getCollection('contributors')).filter((profile) =>
       entry.data.contributors.includes(profile.id)

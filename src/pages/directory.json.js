@@ -2,8 +2,8 @@
  * @fileoverview Endpoint publishing the active library directory index in compacted JSON format.
  */
 
-import { searchRecords } from '../lib/directory.mjs'
-import { compactDirectory } from '../lib/helpers/searchHelpers.mjs'
+import { searchRecords } from '../lib/directory/directoryLoader.mjs'
+import { compactDirectory } from '../lib/directory/searchHelpers.mjs'
 
 /**
  * Handle GET requests for the active library directory search index.

@@ -15,14 +15,14 @@ import { gzipSync, gunzipSync } from 'node:zlib'
 import { fileURLToPath } from 'node:url'
 import { parse } from 'csv-parse/sync'
 import readXlsx from 'read-excel-file/node'
-import { normalizePostcode, normalizeUprn } from '../../src/lib/helpers/dataHelpers.mjs'
-import { days, openingHours } from '../../src/lib/helpers/openingHoursHelpers.mjs'
+import { normalizePostcode, normalizeUprn } from '../../src/lib/directory/dataHelpers.mjs'
+import { days, openingHours } from '../../src/lib/directory/openingHoursHelpers.mjs'
 import {
   directorySchemas,
   dataIssues,
   validateRecords
-} from '../../src/lib/helpers/schemaHelpers.mjs'
-import { distanceMiles } from '../../src/lib/helpers/geoHelpers.mjs'
+} from '../../src/lib/directory/schemaHelpers.mjs'
+import { distanceMiles } from '../../src/lib/directory/geoHelpers.mjs'
 
 export const root = new URL('../../', import.meta.url)
 export const auditRoot = new URL('migration/directory/', root)

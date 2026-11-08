@@ -91,35 +91,43 @@ tests/             # Automated test suite (node --test)
 
 ### 3.4. Shared Business Logic (`src/lib/`)
 
-The `src/lib/` folder contains pure, framework-independent JavaScript modules (`.mjs`). It is strictly structured by entity and functional role:
+The `src/lib/` folder contains pure, framework-independent JavaScript modules (`.mjs`). For a complete inventory of these files, their execution lifecycles, and a visual flowchart of the content pipeline, see the [content and data pipeline guide](content-pipeline.md). It is structured into domain directories:
 
 ```text
 src/lib/
-├── models/                   # Class-based domain entities (PascalCase matching class names)
-│   ├── Library.mjs           # Model for individual library buildings
-│   └── LibraryService.mjs    # Model for library authorities / councils
-├── helpers/                  # Standalone function helpers grouped by functional domain
-│   ├── geoHelpers.mjs        # Spatial math (Haversine miles), map links, GeoJSON features
-│   ├── dataHelpers.mjs       # UK postcode/UPRN normalization, address and label translations
-│   ├── openingHoursHelpers.mjs # Opening hours session parsing and live UK time status
-│   ├── searchHelpers.mjs     # Client search indexing, payload compaction, and filtering
-│   ├── directoryHelpers.mjs  # Directory graph assembly and breadcrumbs
-│   ├── markdownHelpers.mjs   # Markdown AST manipulation, link preservation, email decoding
-│   ├── contentHelpers.mjs    # Editorial module splitting, template resolution, resource links
-│   ├── siteHelpers.mjs       # Site configuration, URL routing, protocol sanitization
-│   └── sitemapHelpers.mjs    # Nested sitemap navigation tree builder
-└── directory.mjs             # High-level dataset loader and static directory collections
+├── cms/                      # CMS admin widgets and review worklist (runs on /admin/)
+│   ├── cmsHelpers.mjs        # Decap CMS editor widgets (card, quote, video, hotspot)
+│   └── reviewHelpers.mjs     # Directory review worklist and audit verification
+├── content/                  # Editorial build-time pipeline (Remark, Cheerio, loaders)
+│   ├── contentDirectives.mjs # Remark plugin for :::card, :::quote container directives
+│   ├── markdownHelpers.mjs   # Markdown AST plugins, list indentation, email protection
+│   ├── contentHelpers.mjs    # Article HTML module splitting ({{faqs}}, {{resources}})
+│   ├── newsHelpers.mjs       # Public Libraries News loader and date filters
+│   └── resourceHelpers.mjs   # Downloadable document and external link tracking
+├── directory/                # Directory domain models, validation, math, and exports
+│   ├── models/               # Class-based domain entities
+│   │   ├── Library.mjs       # Library building model
+│   │   └── LibraryService.mjs# Library authority/service model
+│   ├── directoryLoader.mjs   # Fast in-memory directory collection loader
+│   ├── directoryHelpers.mjs  # Graph assembly, breadcrumbs, parent authority linking
+│   ├── openingHoursHelpers.mjs # Opening hours normalization and live UK status
+│   ├── geoHelpers.mjs        # Haversine distance, navigation map links, GeoJSON
+│   ├── dataHelpers.mjs       # Postcode/UPRN formatting, address helpers, facility labels
+│   ├── schemaHelpers.mjs     # Table Schema validation and exception rules
+│   ├── exportHelpers.mjs     # CSV downloads (/libraries.csv) and validation reports
+│   └── searchHelpers.mjs     # Client search indexing (/directory.json) and query filtering
+├── site/                     # Site-level metadata, URLs, and navigation
+│   ├── siteHelpers.mjs       # Canonical internal URLs, site settings, date formatting
+│   ├── seoHelpers.mjs        # Schema.org JSON-LD generation and XML sitemap
+│   └── sitemapHelpers.mjs    # Hierarchical navigation tree builder
 ```
 
-#### 3.4.1. Models vs. Helpers Rule
-- **Class-Based Models (`src/lib/models/`)**:
-  - Encapsulate rich entity state, property normalization, and instance methods.
-  - File names **must** use `PascalCase.mjs` matching the exported class (e.g., `Library.mjs` exports `class Library`, `LibraryService.mjs` exports `class LibraryService`).
-  - Models should never perform direct disk I/O or network requests.
-- **Standalone Helpers (`src/lib/helpers/`)**:
-  - Stateless, pure utility functions grouped by functional domain.
-  - File names **must** use `camelCase` with a descriptive domain suffix (e.g., `geoHelpers.mjs`, `openingHoursHelpers.mjs`, `dataHelpers.mjs`, `searchHelpers.mjs`).
-  - Helper functions should be deterministic, easily testable in isolation, and free of side effects.
+#### 3.4.1. Domain Directory Rules
+- **CMS Admin (`src/lib/cms/`)**: Contains logic specifically powering the Decap CMS web interface on the `/admin/` route.
+- **Content Pipeline (`src/lib/content/`)**: Headless AST and HTML transformation tools that run at build time to convert source Markdown into structured HTML components.
+- **Directory Domain (`src/lib/directory/`)**: Pure domain logic, Table Schema validation, spatial math, and data exports. Class models live in `models/`, and `directoryLoader.mjs` provides the in-memory collections.
+- **Site Infrastructure (`src/lib/site/`)**: Cross-cutting site settings, canonical path helpers, British date formatters, and search engine SEO metadata.
+- **Client Scripts (`src/scripts/`)**: Interactive browser DOM scripts (`mediaClient.mjs`, `shareClient.mjs`) that interact with `document` or `window`. Pure helpers in `src/lib/` must never touch the DOM.
 
 #### 3.4.2. File Header Documentation Standard (Concise What & Why)
 Every file in `src/lib/` and `scripts/` must begin with a clear, concise JSDoc `@fileoverview` header (1–2 sentences):

@@ -478,18 +478,49 @@ const data = storiesToLocationGeoJson(stories)
             const header = document.createElement('header')
             header.className = 'map-popup-header'
 
+            const changeTypeLabels = {
+              closure: 'Closure',
+              reduction_or_cut: 'Reduction or Cut',
+              community_handover: 'Community Handover',
+              investment_or_expansion: 'Investment or Expansion',
+              unstaffed_open_plus: 'Unstaffed Open+',
+              other: 'Sector Change'
+            }
+            const categoryLabels = {
+              cuts_and_finance: 'Cuts & Finance',
+              closures_and_threats: 'Closures & Threats',
+              staffing_and_unions: 'Staffing & Unions',
+              events_and_activities: 'Events & Activities',
+              campaigns_and_protests: 'Campaigns & Protests',
+              volunteers_and_community: 'Volunteers & Community',
+              digital_and_technology: 'Digital & Technology',
+              refurbishment_and_new_builds: 'Refurbishment & Builds',
+              opening_hours: 'Opening Hours',
+              book_bans_and_challenges: 'Book Bans',
+              mobile_and_outreach: 'Mobile & Outreach',
+              governance_and_trusts: 'Governance & Trusts',
+              co_location: 'Co-location & Hubs',
+              warm_spaces_and_wellbeing: 'Warm Spaces',
+              unstaffed_open_plus: 'Unstaffed Open+'
+            }
+
             const badges = document.createElement('div')
             badges.className = 'map-popup-badges'
 
             const countBadge = document.createElement('span')
-            countBadge.className = 'map-popup-pill map-popup-pill--plum'
+            countBadge.className = 'status-pill status-pill--plum'
+            const dot = document.createElement('span')
+            dot.className = 'status-pill-dot'
+            dot.setAttribute('aria-hidden', 'true')
             const countNum = Number(props.story_count) || stories.length
-            countBadge.textContent = `${countNum} ${countNum === 1 ? 'story' : 'stories'}`
+            const countText = document.createElement('span')
+            countText.textContent = `${countNum} ${countNum === 1 ? 'story' : 'stories'}`
+            countBadge.append(dot, countText)
             badges.appendChild(countBadge)
 
             if (props.country) {
               const countryBadge = document.createElement('span')
-              countryBadge.className = 'map-popup-pill map-popup-pill--forest'
+              countryBadge.className = 'status-pill status-pill--apricot'
               countryBadge.textContent = String(props.country)
               badges.appendChild(countryBadge)
             }
@@ -524,13 +555,14 @@ const data = storiesToLocationGeoJson(stories)
 
               if (s.change) {
                 const changeBadge = document.createElement('span')
-                changeBadge.className = 'map-popup-pill map-popup-pill--berry'
-                changeBadge.textContent = String(s.change)
+                changeBadge.className = 'status-pill status-pill--rose'
+                changeBadge.textContent = changeTypeLabels[s.change] || String(s.change)
                 metaRow.appendChild(changeBadge)
               } else if (s.category) {
                 const catBadge = document.createElement('span')
-                catBadge.className = 'map-popup-pill map-popup-pill--plum'
-                catBadge.textContent = String(s.category).replace(/_/g, ' ')
+                catBadge.className = 'status-pill status-pill--green'
+                catBadge.textContent =
+                  categoryLabels[s.category] || String(s.category).replace(/_/g, ' ')
                 metaRow.appendChild(catBadge)
               }
               storyViewport.appendChild(metaRow)
@@ -619,7 +651,7 @@ const data = storiesToLocationGeoJson(stories)
             content.appendChild(footer)
 
             this.popup?.remove()
-            this.popup = new Popup({ maxWidth: '320px', closeButton: true })
+            this.popup = new Popup({ maxWidth: '340px', closeButton: true })
               .setLngLat(feature.geometry.coordinates)
               .setDOMContent(content)
               .addTo(map)

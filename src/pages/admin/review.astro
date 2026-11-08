@@ -1,12 +1,8 @@
 ---
 import { ArrowLeft, ArrowRight, ClipboardCheck, Pencil, X } from '@lucide/astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
-import {
-  loadDirectoryReview,
-  reviewIndex,
-  reviewCategories
-} from '../../lib/helpers/reviewHelpers.mjs'
-import { sitePath } from '../../lib/helpers/siteHelpers.mjs'
+import { loadDirectoryReview, reviewIndex, reviewCategories } from '../../lib/cms/reviewHelpers.mjs'
+import { sitePath } from '../../lib/site/siteHelpers.mjs'
 
 const rows = loadDirectoryReview()
 const categories = reviewCategories(rows)

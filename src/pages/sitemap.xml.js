@@ -3,9 +3,9 @@
  */
 
 import { getCollection } from 'astro:content'
-import { authorities, libraries } from '../lib/directory.mjs'
-import { isPublishedPage, settings } from '../lib/helpers/siteHelpers.mjs'
-import { buildSitemapXml } from '../lib/helpers/seoHelpers.mjs'
+import { authorities, libraries } from '../lib/directory/directoryLoader.mjs'
+import { isPublishedPage, settings } from '../lib/site/siteHelpers.mjs'
+import { buildSitemapXml } from '../lib/site/seoHelpers.mjs'
 
 export async function GET(context) {
   const siteUrl = (

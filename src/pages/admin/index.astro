@@ -1,5 +1,5 @@
 ---
-import { settings, sitePath } from '../../lib/helpers/siteHelpers.mjs'
+import { settings, sitePath } from '../../lib/site/siteHelpers.mjs'
 const publicSiteURL = import.meta.env.PUBLIC_SITE_URL || settings.site.url
 /** @param value - Public-site help path. @returns A link to the public host rather than the CMS-only deployment. */
 const publicSitePath = (value) =>
@@ -29,8 +29,8 @@ const publicSitePath = (value) =>
     </script>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script>
-      import { prepareDirectoryEdit } from '../../lib/helpers/schemaHelpers.mjs'
-      import { registerEditorComponents } from '../../lib/helpers/cmsHelpers.mjs'
+      import { prepareDirectoryEdit } from '../../lib/directory/schemaHelpers.mjs'
+      import { registerEditorComponents } from '../../lib/cms/cmsHelpers.mjs'
       import previewStyles from '../../styles/global.css?inline'
 
       const stampedFields = {

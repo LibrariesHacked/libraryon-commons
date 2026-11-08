@@ -12,8 +12,8 @@ import {
   searchRecords,
   collectValues,
   facilityLabel
-} from '../../lib/directory.mjs'
-import { settings, sitePath } from '../../lib/helpers/siteHelpers.mjs'
+} from '../../lib/directory/directoryLoader.mjs'
+import { settings, sitePath } from '../../lib/site/siteHelpers.mjs'
 
 const copy = settings.ui.library_search
 const libraryOnServiceOrder = [
@@ -298,8 +298,8 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     expandDirectory,
     isLibraryOpenAt,
     matchesLibrary
-  } from '../../lib/helpers/searchHelpers.mjs'
-  import { sitePath } from '../../lib/helpers/siteHelpers.mjs'
+  } from '../../lib/directory/searchHelpers.mjs'
+  import { sitePath } from '../../lib/site/siteHelpers.mjs'
 
   const form = document.querySelector('#library-search')
   const picker = form.querySelector('library-place-search')

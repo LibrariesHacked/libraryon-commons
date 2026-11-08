@@ -5,9 +5,9 @@ import { getCollection, getEntries } from 'astro:content'
 import Breadcrumbs from '../components/Breadcrumbs.astro'
 import SitemapTree from '../components/SitemapTree.astro'
 import SiteLayout from '../layouts/SiteLayout.astro'
-import { authorities, libraries } from '../lib/directory.mjs'
-import { isPublishedPage, articleTitle, settings, sitePath } from '../lib/helpers/siteHelpers.mjs'
-import { buildPageTree } from '../lib/helpers/sitemapHelpers.mjs'
+import { authorities, libraries } from '../lib/directory/directoryLoader.mjs'
+import { isPublishedPage, articleTitle, settings, sitePath } from '../lib/site/siteHelpers.mjs'
+import { buildPageTree } from '../lib/site/sitemapHelpers.mjs'
 
 const hasContributors =
   existsSync('./src/content/contributors') &&
