@@ -13,9 +13,10 @@ import LandingTemplate from '../templates/LandingTemplate.astro'
 import LegalTemplate from '../templates/LegalTemplate.astro'
 
 export async function getStaticPaths() {
+  const customRoutePaths = new Set(['/libraries', '/news', '/organisations'])
   const pages = await getCollection('pages')
   return pages
-    .filter((entry) => isPublishedPage(entry) && entry.data.path !== '/libraries')
+    .filter((entry) => isPublishedPage(entry) && !customRoutePaths.has(entry.data.path))
     .map((entry) => ({
       params: { path: entry.data.path.replace(/^\/+|\/+$/g, '') || undefined },
       props: { entry }

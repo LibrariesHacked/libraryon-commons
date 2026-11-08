@@ -180,3 +180,22 @@ test('umbrella stakeholder pages exclude news coverage sections', () => {
     assert.deepEqual(stories, [], `${slug} should not have news stories`)
   }
 })
+
+test('news and stakeholders index pages exist as editable CMS markdown pages', () => {
+  for (const [file, path] of [
+    ['news.md', '/news'],
+    ['organisations.md', '/organisations']
+  ]) {
+    const pagePath = new URL(`../src/content/pages/${file}`, import.meta.url)
+    assert.ok(existsSync(pagePath), `src/content/pages/${file} exists`)
+    const raw = readFileSync(pagePath, 'utf8')
+    const match = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n([\s\S]*)$/)
+    assert.ok(match, `${file} has frontmatter`)
+    const data = parse(match[1])
+    assert.equal(data.path, path)
+    assert.equal(data.published, true)
+    assert.ok(data.title, `${file} has title`)
+    assert.ok(data.description, `${file} has description`)
+    assert.ok(match[2].trim().length > 0, `${file} has intro content`)
+  }
+})

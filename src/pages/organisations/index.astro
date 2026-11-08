@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content'
+import { getCollection, getEntry, render } from 'astro:content'
 import { ArrowUpRight, Building2, Newspaper } from '@lucide/astro'
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import Breadcrumbs from '../../components/Breadcrumbs.astro'
@@ -11,30 +11,37 @@ import {
 import { settings, sitePath } from '../../lib/site/siteHelpers.mjs'
 import { authorities } from '../../lib/directory/directoryLoader.mjs'
 
+const orgPage = await getEntry('pages', 'organisations')
+const { Content } = orgPage ? await render(orgPage) : { Content: null }
+const title = orgPage?.data.title || 'Library Stakeholders'
+const description =
+  orgPage?.data.description ||
+  'Directory of national bodies, local authorities, charities, and public communities shaping and supporting UK public libraries.'
+const eyebrow = orgPage?.data.eyebrow || 'Leadership, Governance & Community'
+
 const organisations = (await getCollection('organisations')).sort((a, b) =>
   a.data.name.localeCompare(b.data.name, 'en')
 )
 ---
 
-<SiteLayout
-  title="Library Stakeholders | LibraryCommons"
-  description="Directory of national bodies, local authorities, charities, and public communities shaping and supporting UK public libraries."
->
+<SiteLayout title={`${title} | ${settings.site.title}`} description={description}>
   <header class="page-heading">
     <div class="shell">
       <Breadcrumbs
         items={[
           { label: settings.ui.editorial?.home_breadcrumb || 'Home', href: '/' },
-          { label: 'Library stakeholders', current: true }
+          { label: title, current: true }
         ]}
       />
-      <p class="eyebrow">Leadership, Governance & Community</p>
-      <h1>Library Stakeholders</h1>
-      <p>
-        Key national bodies, local authorities, professional associations, unions, charities, and
-        community stakeholders who support, fund, and shape public libraries across the United
-        Kingdom.
-      </p>
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1>{title}</h1>
+      {Content ? (
+        <div class="page-intro">
+          <Content />
+        </div>
+      ) : (
+        <p>{description}</p>
+      )}
     </div>
   </header>
 

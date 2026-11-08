@@ -29,6 +29,7 @@ const pages = defineCollection({
       'conference',
       'legal'
     ]),
+    eyebrow: z.string().optional(),
     content_origin: z.enum(['libraryon', 'commons']).optional(),
     published: z.boolean().default(true),
     description: z.string().optional(),

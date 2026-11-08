@@ -21,6 +21,7 @@ import {
   TrendingUp,
   Users
 } from '@lucide/astro'
+import { getEntry, render } from 'astro:content'
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import Breadcrumbs from '../../components/Breadcrumbs.astro'
 import NewsCard from '../../components/NewsCard.astro'
@@ -145,36 +146,34 @@ function getOrgIcon(key = '') {
   if (norm.includes('government') || norm.includes('dcms')) return Landmark
   return Building
 }
+
+const newsPage = await getEntry('pages', 'news')
+const { Content } = newsPage ? await render(newsPage) : { Content: null }
+const title = newsPage?.data.title || 'Public Libraries News'
+const description =
+  newsPage?.data.description ||
+  'Searchable news archive and interactive map of 38,000+ public library stories, funding updates, closures, and campaigns.'
+const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
 ---
 
-<SiteLayout
-  title="Public Libraries News | LibraryCommons"
-  description="Searchable news archive and interactive map of 38,000+ public library stories, funding updates, closures, and campaigns."
->
+<SiteLayout title={`${title} | ${settings.site.title}`} description={description}>
   <header class="page-heading">
     <div class="shell">
       <Breadcrumbs
         items={[
           { label: settings.ui.editorial?.home_breadcrumb || 'Home', href: '/' },
-          { label: 'News', current: true }
+          { label: title, current: true }
         ]}
       />
-      <p class="eyebrow">Sector News & Archive</p>
-      <h1>Public Libraries News</h1>
-      <p>
-        Browse and map over{' '}
-        {metadata.total_stories ? metadata.total_stories.toLocaleString('en-GB') : '38,000'} stories
-        from the weekly digests published by <strong>Ian Anstice</strong>
-        on
-        <a href="https://www.publiclibrariesnews.com/" target="_blank" rel="noopener noreferrer">
-          Public Libraries News
-        </a>
-        , in partnership with{' '}
-        <a href="https://www.librarycampaign.com/" target="_blank" rel="noopener noreferrer">
-          The Library Campaign
-        </a>
-        .
-      </p>
+      {eyebrow && <p class="eyebrow">{eyebrow}</p>}
+      <h1>{title}</h1>
+      {Content ? (
+        <div class="page-intro">
+          <Content />
+        </div>
+      ) : (
+        <p>{description}</p>
+      )}
     </div>
   </header>
 

@@ -133,7 +133,7 @@ test('editorial headings and blockquotes use distinct accents', () => {
   )
   assert.equal(quoteValues.get('border-left'), '4px solid var(--brand-rose)')
   assert.equal(quoteValues.has('border-right'), false)
-  assert.equal(quoteValues.get('font-weight'), 'var(--font-weight-2)')
+  assert.equal(quoteValues.get('font-weight'), 'var(--font-weight-3)')
 
   const content = postcss.parse(read('components/content.css'))
   const testimonialBlockquote = content.nodes.find(
@@ -146,7 +146,7 @@ test('editorial headings and blockquotes use distinct accents', () => {
       .filter((node) => node.type === 'decl')
       .map((node) => [node.prop, node.value])
   )
-  assert.equal(testimonialQuoteValues.get('font-weight'), 'var(--font-weight-2)')
+  assert.equal(testimonialQuoteValues.get('font-weight'), 'var(--font-weight-3)')
 
   const carouselQuote = content.nodes.find(
     (node) =>
@@ -157,7 +157,7 @@ test('editorial headings and blockquotes use distinct accents', () => {
       .filter((node) => node.type === 'decl')
       .map((node) => [node.prop, node.value])
   )
-  assert.equal(carouselQuoteValues.get('font-weight'), 'var(--font-weight-2)')
+  assert.equal(carouselQuoteValues.get('font-weight'), 'var(--font-weight-3)')
 
   const sourceNote = content.nodes.find(
     (node) => node.type === 'rule' && node.selector === '.source-note'

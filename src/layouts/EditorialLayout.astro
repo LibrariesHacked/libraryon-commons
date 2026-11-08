@@ -68,6 +68,7 @@ const articleSchema = generateArticleSchema(
   <header class="page-heading">
     <div class="shell">
       <Breadcrumbs items={breadcrumbs} />
+      {entry.data.eyebrow && <p class="eyebrow">{entry.data.eyebrow}</p>}
       <h1>{title}</h1>
       {!entry.data.source_url && entry.data.description && <p>{entry.data.description}</p>}
       {entry.data.author && (

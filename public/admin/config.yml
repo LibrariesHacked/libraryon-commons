@@ -811,6 +811,10 @@ collections:
       - name: title
         label: Title
         widget: string
+      - name: eyebrow
+        label: Eyebrow
+        widget: string
+        required: false
       - name: path
         label: Site Path
         widget: string
