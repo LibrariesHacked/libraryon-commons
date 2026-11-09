@@ -1,6 +1,6 @@
-# Editing Content
+# Editing content
 
-LibraryCommons uses Decap CMS to edit Markdown and JSON files directly in the source.
+LibraryCommons uses Decap CMS to edit Markdown and JSON files directly in the source repository. On editing the site is then rebuilt.
 
 Editors can also use the public **Editing guide** linked from the site footer. It explains common tasks without requiring repository knowledge.
 
@@ -20,7 +20,7 @@ Editors can also use the public **Editing guide** linked from the site footer. I
 
 3. Open <http://127.0.0.1:4322/admin/> and click **Login**.
 
-Local edits write directly to your working tree without committing. Stop `decap-server` when finished and never expose it publicly.
+Local edits write directly to the working tree without committing. Stop `decap-server` when finished.
 
 ## CMS Sections
 
@@ -29,55 +29,55 @@ Local edits write directly to your working tree without committing. Stop `decap-
 | Site Settings              | Site title, header navigation (including submenus), redirects, UI labels, and footer |
 | Commons Homepage           | Hero copy, hero image, section headings, and featured pages                          |
 | Editorial Content          | Articles, collections, case studies, grants, conferences, and legal pages            |
-| Frequently Asked Questions | Reusable questions and Markdown answers, selected and ordered on pages               |
+| Frequently Asked Questions | Reusable questions and answers, selected and ordered on pages                        |
 | Libraries                  | Individual library details: address, contacts, opening hours, services, and notes    |
-| Library Authorities        | Authority contacts, website, catalogue URL, and country                              |
+| Library Authorities        | Authority contacts, website, catalogue URL, and other details                        |
 | Resources And Downloads    | PDFs, slide decks, recordings, external links, and credits                           |
 | Conference Sessions        | Session descriptions, speakers, parent conference, and linked resources              |
 | Contributors               | Contributor biographies and profile images                                           |
 
-### Directory Records
+### Library directory records
 
 The **Library data** and **Library service data** groups use the supplied Table Schema field names. Keep the existing URL slug, authority relationship, and source identifiers unchanged. Empty values are stored as `null`; unknown required values are recorded as validation exceptions rather than guessed. The save handler rejects invalid new values and removes resolved exceptions.
 
-Staffed and unstaffed opening hours are separate fields. Use `09:00-17:00` or split sessions such as `09:00-12:00,13:00-17:00`. Leave the field blank when closed; saves store it as `null`, never the text `Closed`. Invalid imported sessions are kept in the source audit and flagged for manual review rather than silently repaired. The overall library `Status` is separate from its daily hours.
+Staffed and unstaffed opening hours are separate fields. Use `09:00-17:00` or split sessions such as `09:00-12:00,13:00-17:00`. Leave the field blank when closed; saves store it as `null`. Don't use the text `Closed`. Invalid imported sessions are kept in the source audit and flagged for manual review rather than silently repaired. The overall library `Status` is separate from its daily hours.
 
-Live files contain only canonical schema data, routing/provenance metadata, validation exceptions, and optional manual-check references. There is no legacy `extensions` payload. Source details without an exact schema field are preserved only in the audit for review, not used as a parallel site model.
+### Review checks and exceptions
 
-### Review Checks And Exceptions
+The system is designed to automatically make regular checks on the data against the schema as well as other checks (e.g.URLs resolving).
 
-Both directory forms show expandable **Manual checks** and **Validation exceptions** sections. A check shows its type, reason, and audit references. An exception shows its schema field, issue code, and reason; correct the actual data field rather than editing exception metadata. Resolved exceptions are removed automatically on save. An unresolved exception cannot be cleared just by deleting its list item.
+Both directory forms show expandable **Manual checks** and **Validation exceptions** sections. A check shows check type, reason, and audit references. An exception shows its schema field, issue code, and reason; correct the actual data field rather than editing exception metadata. Resolved exceptions are removed automatically when saved. An unresolved exception cannot be cleared just by deleting its list item.
 
 The **Data review** link above the CMS opens `/admin/review/`. Search by library/service name, authority, field, or reason; filter by record type and issue type. The worklist prioritizes hours and identifier conflicts, then validation gaps. Each record links to its public page and exact CMS entry. Open its review dialog to see exception values, candidate values, original invalid hours, lookup outcomes, and archived source-only details. Evidence is fetched only for the selected record.
 
-Complete a manual review by correcting the canonical fields, then removing the corresponding check from **Manual checks** and saving through the normal draft/review workflow. The original migration audit is retained. The worklist and downloads reflect saved repository data on the next site build, not unsaved forms or unpublished drafts. Missing or unrelated audit evidence is flagged rather than silently attached to a record.
+Complete a manual review by correcting the fields, then removing the corresponding check from **Manual checks** and saving through the normal draft/review workflow. The original migration audit is saved for reference. The worklist and downloads reflect saved repository data on the next site build, not unsaved forms or unpublished drafts. Missing or unrelated audit evidence is flagged rather than silently attached to a record.
 
 The worklist is a read-only page in the CMS deployment, not a private authenticated resource. It and its evidence endpoints are marked `noindex`; CMS editing still requires authentication. The ordinary public library pages do not display technical review flags. In the split deployment, use the CMS host's `/admin/review/`; the public Pages deployment intentionally excludes `/admin/`.
 
-Moved libraries have separate building records: close the old building and retain the new building as open. Historical additions have no invented last-updated date. Normal CMS saves still stamp the actual edit/review date. The migration itself preserves all original dates. See the [audit and override procedure](../migration/directory/README.md) before rerunning a migration or approving uncertain identifiers.
+Moved libraries have separate records: close the old library and create the new building as open. Normal CMS saves stamp the actual edit/review date. The migration initially preserved all original dates. See the [audit and override procedure](../migration/directory/README.md) before rerunning a migration or approving uncertain identifiers.
 
-### Library CSV Downloads
+### Library CSV downloads
 
 The public library directory offers an all-library CSV; each authority page offers its own library CSV. Exports include current and closed buildings, exact schema column order, no CMS metadata, and blank cells for `null` values. Quoting preserves commas, quotes, and embedded newlines. The **Validation and schema** disclosure also provides the Table Schema, a row-level validation report, and a strictly validated subset CSV.
 
 The all-records CSV retains libraries with documented required-field or format exceptions; it must not be described as fully schema-valid. The separate validated CSV contains only rows that pass every library-schema field constraint. It may therefore contain fewer libraries, and an authority with no qualifying rows receives a header-only file. The validation report identifies excluded records and fields; row numbers refer to CSV records, including the header, rather than physical lines within quoted text.
 
-## Editorial Content
+## Editorial content
 
 To add a page, create an entry in **Editorial Content**, choose a content type (which selects the [page template](development.md)), and set a unique path such as `/stories/my-library`.
 
-- **Reserved paths:** Do not use `/libraries`, `/resources`, `/sessions`, `/people`, `/admin`, or `/directory.json`.
-- **Publish on site:** Unchecking this keeps a page editable in the CMS while removing its public route (used for archived legal notices and the original `/libraries` map page).
-- **Content Origin:** Editorial metadata distinguishing original `libraryon` material from new `commons` entries. Pages with a `libraryon.org` source URL default to LibraryOn.
-- **Updated Date:** Automatically stamped with today's date when saved in the CMS.
+- **Reserved paths:** Do not use `/libraries`, `/resources`, `/sessions`, `/people`, `/admin`, or `/directory`.
+- **Publish on site:** Unchecking this keeps a page editable in the CMS while removing its public route
+- **Content origin:** Editorial metadata distinguishing original `libraryon` material from new `commons` entries. Pages with a `libraryon.org` source URL default to LibraryOn.
+- **Updated date:** Automatically stamped with today's date when saved in the CMS.
 - **Preserved articles:** The original LibraryOn text is checksum-verified against `migration/source-articles.json`. FAQ-bearing pages now use references instead of inline answers; their pre-modular text is retained in a compressed archive snapshot. Edit questions and answers in the FAQ collection, not in the page body.
 
-### Navigation And Page Hierarchy
+### Navigation and page hierarchy
 
 Header navigation and page structure are maintained separately:
 
-- **Site Settings → Navigation** controls the header menu. Point a section's URL at its published landing page; submenu URLs should match the pages' Site Paths.
-- **Site Path** determines sitemap nesting and breadcrumb ancestors. A section appears as a linked ancestor only when a published page exists at that path.
+- **Site settings → Navigation** controls the header menu. Point a section's URL at its published landing page; submenu URLs should match the pages' Site Paths.
+- **Site path** determines sitemap nesting and breadcrumb ancestors. A section appears as a linked ancestor only when a published page exists at that path.
 - **Subpages** selects and orders the cards shown on a landing page. It does not create routes or change sitemap nesting.
 
 For example, the Archive menu links to the `/archive/` landing page, whose Subpages list contains pages with paths under `/archive/`. When changing a live Site Path, add a redirect in Site Settings so existing links continue to work.
@@ -90,9 +90,9 @@ The original LibraryOn articles, imported FAQs and resources, archive uploads, a
 
 When using the local editor, saves write to your working copy only. They do not create a pull request or publish the change.
 
-## Reusable Content
+## Reusable content
 
-Create questions under **Frequently Asked Questions**, then select and order them in a page's **FAQs** field. The referenced FAQ files are the only editable source for question and answer text. Answers support Markdown; do not copy them into the page body.
+Create questions under **Frequently Asked Questions**, then select and order them in a page's **FAQs** field. The referenced FAQ files are the only editable source for question and answer text. Answers support Markdown copy.
 
 Put `{{faqs}}` on its own line to place the selected FAQs. An optional preceding heading matching **FAQ Heading**, plus any introductory Markdown, becomes the section heading and introduction. Existing linked FAQ pages already use this pattern. Without a marker, the template places FAQs after the body.
 
@@ -100,7 +100,7 @@ The optional `{{resources}}` marker similarly positions selected resources. Reso
 
 ## Explicit Page Blocks
 
-The **Content** editor has **Rich Text** and **Markdown** modes. In Rich Text, use the **+ / Add Component** menu to insert a block. Existing blocks open as the same editable forms, with image pickers and labelled fields; editors do not need to type directive syntax.
+The **Content** editor has **Rich text** and **Markdown** modes. In Rich Text, use the **+ / Add component** menu to insert a block. Existing blocks open as the same editable forms, with image pickers and labelled fields; editors do not need to type directive syntax.
 
 | Control                        | Fields                                                                             |
 | ------------------------------ | ---------------------------------------------------------------------------------- |
@@ -112,9 +112,9 @@ The **Content** editor has **Rich Text** and **Markdown** modes. In Rich Text, u
 | YouTube Video                  | Embed URL and accessible title                                                     |
 | Collection Image               | Image, alternative text, layout, zoom control, and caption                         |
 | Collection Carousel            | Type and accessible label; slides and notes are written in Markdown                |
-| Collection Accordion           | Accessible label; entries are written in Markdown                                 |
-| Editorial Aside                | Heading and layout; aside text is written in Markdown                             |
-| Book Recommendations           | Section title; covers and descriptions are written in Markdown                    |
+| Collection Accordion           | Accessible label; entries are written in Markdown                                  |
+| Editorial Aside                | Heading and layout; aside text is written in Markdown                              |
+| Book Recommendations           | Section title; covers and descriptions are written in Markdown                     |
 | Linked FAQs / Linked Resources | Insert the selected page metadata references at this position                      |
 
 Select FAQ and resource entries in their normal page fields. The insertion shortcuts place a marker; they do not copy the linked content. A whole-card link cannot be combined with links inside that card's text.
@@ -172,11 +172,11 @@ Use `:::card{href="/reading"}` only for a whole-card link with no other links in
 
 Each video also has a **Watch on YouTube** link. Some embedded webviews, including the VS Code integrated browser in this environment, can abort third-party iframe navigation and leave the player blank even when it works in a regular browser. The direct link remains available when embedded playback is blocked.
 
-## Special Collection Controls
+## Special collection controls
 
 The editor presents the outer component as a form. For slides, accordion entries, aside text, and book lists, its **Markdown** field contains the inner items. Keep each slide’s image and notes together and each book’s cover, description, and details inside the same item.
 
-### Image and Carousel
+### Image and carousel
 
 Choose **Full** for a lead image, **Inset** for an image alongside article text, or a float when it belongs beside nearby paragraphs. Captions and credits go inside the image block.
 
@@ -210,7 +210,7 @@ The poster advertises a performance on 22 August 1844.
 :::::
 ```
 
-### Accordion and Aside
+### Accordion and aside
 
 Use one `accordion-item` per topic. An aside has one heading and should contain only information that helps readers understand the nearby article text.
 
@@ -226,7 +226,7 @@ The library keeps local newspaper issues in its study collection.
 ::::
 ```
 
-### Book Recommendations
+### Book recommendations
 
 Use one `recommendation-item` per book. Put the cover and its description inside that item; the selected description opens beside its matching cover.
 
@@ -248,7 +248,7 @@ The editor’s form handles the component boundary. You should only need to edit
 
 Unknown blocks, missing required data, and unsafe links fail the build with an error. Plain blockquotes, paragraphs, headings, lists, and video links remain plain Markdown. These blocks are page-specific content; keep shared questions and answers in the FAQ collection instead of copying them.
 
-## File Names
+## File names
 
 FAQ filenames come from their questions; resource and session filenames come from their titles. Imported slide decks use session titles, and images use alt text or other source metadata. Names are lowercase, hyphenated ASCII, with numeric suffixes for collisions. Libraries, authorities, and page filenames already use descriptive names.
 
@@ -258,15 +258,15 @@ Markdown list markers use one space (`- Item`), including HTML imports and CMS o
 
 Use a descriptive filename before uploading new images or documents, and provide useful alternative text for images. New files go into the community uploads folder. Changing a resource title does not rename its existing file or change its ID. Give repeated links enough detail to tell them apart, such as a programme round or session name. The resource pages show where each item is used. Page URLs come from the **Path** field, independently of filenames. Resource and FAQ relations use their filenames as IDs. To rename existing resources safely, preview with `node scripts/migrate-filenames.mjs --resource-ids=old-id,another-old-id`; add `--apply` to update page and session references, keep redirects for old resource pages, and record the filename history. Do not rename those files manually. The recorded migration and preservation checks are described in [Preserving The Original Material](preservation.md).
 
-## Libraries And Authorities
+## Libraries and authorities
 
 Each library is stored in `src/content/libraries/<slug>.json` and links to an authority in `src/content/authorities/<slug>.json`.
 
 - **Adding an authority:** Create the authority under **Library Authorities** before assigning libraries to it.
-- **Slugs and IDs:** Keep existing slugs and IDs unchanged where possible. If a library's slug or authority changes, add a redirect in **Site Settings**.
+- **Slugs and IDs:** Keep existing slugs and IDs unchanged where possible. If a library's slug or authority changes, add a redirect in **Site settings**.
 - **Opening hours:** Leave a day empty if closed or unknown, and use opening-hours notes for holiday exceptions.
-- **Last Reviewed:** Stamped automatically when a library or authority is saved in the CMS.
+- **Last reviewed:** Stamped automatically when a library or authority is saved in the CMS.
 
-## Publishing Changes
+## Publishing changes
 
-CMS configuration lives in `public/admin/config.yml`. Production editing is hosted on Netlify and uses Netlify Identity with Git Gateway to write reviewed drafts to `LibrariesHacked/libraryon-commons` (`main` branch). Editors need an invitation, not GitHub repository access. New uploads go to `public/uploads/community/`; archived files remain separate. See [the split-hosting setup](site.md#split-hosting) for the full handover steps.
+CMS configuration lives in `public/admin/config.yml`. Production editing is hosted on Netlify and uses Netlify Identity with Git Gateway to write reviewed drafts to `LibrariesHacked/libraryon-commons` (`main` branch). Editors need an invitation, not GitHub repository access. New uploads go to `public/uploads/community/`; archived files remain separate. See [the split-hosting setup](site.md#split-hosting) for the full site hosting steps.

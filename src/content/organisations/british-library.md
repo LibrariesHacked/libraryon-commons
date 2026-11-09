@@ -15,4 +15,4 @@ updated_on: 2026-11-01
 
 **The British Library** is the national library of the UK, holding over 170 million items. Beyond its St Pancras and Boston Spa sites, it collaborates closely with public library networks across all four nations.
 
-Through its **Living Knowledge Network**, the nationwide rollout of **Business & IP Centres (BIPC)** in city libraries, and the **LibraryOn** project (supported by Arts Council England), the British Library connects national collections with local communities.
+Through its **Living Knowledge Network**, and the nationwide rollout of **Business & IP Centres (BIPC)** in city libraries, the British Library connects national collections with local communities.

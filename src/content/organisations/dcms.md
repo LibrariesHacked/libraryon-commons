@@ -2,7 +2,7 @@
 name: Department for Culture, Media and Sport
 slug: dcms
 acronym: DCMS
-role: Statutory Superintendence & National Policy
+role: Statutory Superintendence and National Policy
 description: The UK Government department responsible for government policy on public libraries in England, holding statutory superintendence duties under the Public Libraries and Museums Act 1964.
 website: https://www.gov.uk/government/organisations/department-for-culture-media-and-sport
 country: United Kingdom

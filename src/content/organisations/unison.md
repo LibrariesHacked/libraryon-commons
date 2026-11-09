@@ -15,4 +15,4 @@ updated_on: 2026-11-01
 
 **UNISON** is the primary trade union representing public library staff employed by local authorities and leisure/cultural trusts throughout the United Kingdom.
 
-UNISON regularly campaigns against redundancies, restructuring, and unstaffed library closures, and defends national standards for library worker pay and health and safety.
+UNISON campaigns against redundancies, restructuring, and unstaffed library closures, and defends national standards for library worker pay and health and safety.

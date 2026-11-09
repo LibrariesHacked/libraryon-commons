@@ -3,7 +3,7 @@ name: Arts Council England
 slug: arts-council-england
 acronym: ACE
 role: National Development Agency
-description: The national development agency for creativity and culture in England, supporting public libraries through development programmes, strategic funding, and capital investment.
+description: The National Development Agency for creativity and culture in England, supporting public libraries through development programmes, strategic funding, and capital investment.
 website: https://www.artscouncil.org.uk/
 country: England
 tags:

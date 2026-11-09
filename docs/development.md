@@ -1,4 +1,4 @@
-# Code And Templates
+# Code and templates
 
 For detailed coding standards, plain English conventions, design token rules, and directory data integrity requirements, see [coding standards](coding-standards.md). For a step-by-step diagram of how content moves from Decap CMS to Markdown, HTML, and the browser, see the [content and data pipeline](content-pipeline.md).
 
@@ -8,7 +8,7 @@ The Astro site is organised into three layers:
 
 - **Routes (`src/pages/`)** — Define URL structure and data loading.
 - **Templates (`src/templates/`)** — Render specific content types.
-- **Layouts & Components (`src/layouts/`, `src/components/`)** — Shared page shell, navigation, footer, cards, and directory widgets.
+- **Layouts and components (`src/layouts/`, `src/components/`)** — Shared page shell, navigation, footer, cards, and directory widgets.
 
 ## Template Hierarchy
 
@@ -33,7 +33,7 @@ SiteLayout                  Header, navigation, metadata, and footer
 
 `src/lib/content/contentHelpers.mjs` resolves the template for each editorial entry. Template types in `src/content.config.mjs` and `public/admin/config.yml` must stay in sync.
 
-## Shared Changes
+## Shared changes
 
 | Change                                                  | Update In                                                                        |
 | ------------------------------------------------------- | -------------------------------------------------------------------------------- |
@@ -60,7 +60,7 @@ The admin route registers Decap editor components before calling `CMS.init()`. F
 
 Keep content-type templates as thin wrappers around shared layouts and components. Add specialised markup only for a genuine content-type difference, and keep reusable behaviour out of individual content files. Markdown transforms run at build time; they do not add client-side JavaScript. Keep interactive scripts with the component or route that needs them rather than adding them to the shared site layout.
 
-## Styling Foundation
+## Styling
 
 `src/styles/global.css` is the single ordered import entry used by the public layout and the CMS preview bundle. It loads foundations, shared components, and page-specific rules; keep declarations in their owning file rather than adding them back to the entry point.
 
@@ -74,7 +74,7 @@ Stylesheet imports are bundled by Astro/Vite, including the admin's `?inline` pr
 
 Run `node --test tests/styles.test.mjs` for import ownership, selected token packs, token usage, brand values and shared preview-entry checks. Run the full suite and build after shared style changes.
 
-## Browser Behaviour
+## Browser
 
 - **Carousel:** `HomeTemplate.astro` uses framework-independent Embla Carousel and its Autoplay plugin. Embla owns snapping, looping, dragging, resizing, timers, and hidden-tab autoplay handling. The small site adapter owns the controls, dots, explicit pause state, hover/focus policy, and reduced-motion behaviour. Reduced motion starts paused; an explicit Play action opts into autoplay with instant rather than animated slide changes. Native horizontal scrolling remains available before initialization or without JavaScript.
 - **Directory filters:** HTML `popover="auto"` and `popovertarget` own opening, closing, outside-click dismissal, Escape, and focus behaviour. Floating UI's DOM package handles top-layer positioning, viewport collisions, and repositioning on scroll/resize. Application code only synchronizes the existing labels and filter state. Keep this limited to the directory route.
@@ -82,7 +82,7 @@ Run `node --test tests/styles.test.mjs` for import ownership, selected token pac
 
 Do not add a general-purpose frontend framework merely to reduce a handful of event listeners. Prefer native elements first and focused maintained libraries when they remove meaningful mechanics. Carousel and directory dependencies are loaded only by their relevant routes.
 
-## Directory Model
+## Directory
 
 Each library (`src/content/libraries/*.json`) references its parent authority (`src/content/authorities/*.json`) by slug. `src/lib/directory/directoryHelpers.mjs` validates these relationships, computes each authority's member list, calculates nearby libraries, and generates the client search index (`/directory.json`).
 
@@ -94,11 +94,11 @@ Run `npm run directory:check` for automated directory verification and health au
 
 `src/lib/cms/reviewHelpers.mjs` joins current record flags to record-scoped audit evidence. The read-only `/admin/review/` page filters a compact index and lazily loads `/admin/review-data/<collection>/<entry>.json`. No raw audit report is bundled into client JavaScript. Source text is rendered through text nodes, not HTML. Review pages remain in the CMS-only Netlify package and are excluded from the public Pages deployment with the rest of `/admin/`; `PUBLIC_SITE_URL` points record links back to the public site. Review data is public to anyone with its URL, not protected by the CMS login.
 
-### Library Search
+### Library search
 
-The directory needs no search or geocoding API. Astro generates `/directory.json` from the editable library records at build time. `compactDirectory` and `expandDirectory` in `src/lib/directory/searchHelpers.mjs` share authority metadata, store rows as arrays and round coordinates to four decimal places, following the [library finder widget](https://github.com/LibrariesHacked/libraryfinder-widget) approach. This reduces the current download from 489 KB to 332 KB with gzip. Service, accessibility, opening-hours and distance filters use the decoded records.
+The directory needs no search or geocoding API. Astro generates `/directory.json` from the editable library records at build time. `compactDirectory` and `expandDirectory` in `src/lib/directory/searchHelpers.mjs` share authority metadata, store rows as arrays and round coordinates to four decimal places, following the [library finder widget](https://github.com/LibrariesHacked/libraryfinder-widget) approach. 
 
-Place and postcode choices use the pinned `@geovation/gb-name-index` client. After a 250 ms pause and at least three characters, it fetches the [GB Name Index](https://geovation.github.io/gb-name-index/) static manifest and relevant prefix shards. The client caches downloads. Superseded lookups are cancelled; at most eight choices are displayed. Typing only looks up places: it does not filter library names or change the current library results. Selecting a place finds libraries within the selected distance and saves its label and coordinates in the URL. There is no Search button; Find nearby can also set the location. No library data leaves the browser, but place prefixes are sent as static file requests to GitHub Pages, so place lookup needs an internet connection. GB coverage does not include Northern Ireland; all directory records remain available through authority browsing.
+Place and postcode selection use the `@geovation/gb-name-index` client. After a 250 ms pause and at least three characters, it fetches the [GB Name Index](https://geovation.github.io/gb-name-index/) static manifest and relevant prefix shards. The client caches downloads. Typing only looks up places: it does not filter library names or change the current library results. Selecting a place finds libraries within the selected distance and saves its label and coordinates in the URL. Find nearby can also set the location. No library data leaves the browser, but place prefixes are sent as static file requests to GitHub Pages, so place lookup needs an internet connection.
 
 The picker displays OS and Overture attribution only while place names are shown. Loading, empty, error and selected states do not show credits. If place files cannot load, the current results, filters, Find nearby and authority browsing remain available. No full place dataset is bundled, and no separate transformation job or API credentials are required. Changes to editable libraries are included on the next site build.
 
@@ -108,9 +108,7 @@ The directory uses `<LibrarySearch id="library" mode="inline" />` and listens fo
 
 `@github/combobox-nav` owns the picker's combobox ARIA state and active-option keyboard navigation. Up/Down highlights an option without changing the query or library results; Enter or a pointer selection commits it. Enter without a highlighted option does not select, and Tab retains normal focus navigation rather than committing a suggestion. Escape or leaving the input dismisses suggestions. Lookup, cancellation, attribution, geolocation and URL behavior remain application logic. Option IDs are scoped to each picker instance, and keyboard highlighting uses the existing suggestion hover style. This adds no React, Lit or general-purpose component suite.
 
-A Lion combobox trial on 3 November 2026 supported Arrow/Enter selection in Chromium, but did not reduce custom code. After formatting, picker script size grew from 168 to 200 lines (6,429 to 7,464 bytes); the full component grew from 235 to 269 lines. The production homepage's initial static JavaScript module graph grew from 30,862 to 206,148 bytes, or 12,172 to 57,081 bytes when each module was gzip-compressed. These figures exclude dynamically loaded name data and translation modules. Lion added managed keyboard/ARIA behavior that the existing suggestion buttons do not provide, so this is not a comparison of identical interaction capabilities. Most remaining custom code handles search requests, cancellation, geolocation and navigation. The trial was removed because it did not meet the smaller-code/lightweight goal; no Lion or Lit dependency was retained.
-
-### Library Maps
+### Maps
 
 `src/components/LibraryMap.astro` uses the official `maplibre-gl` library directly, with no React or third-party Astro wrapper. Maps initialize only in the browser near the viewport. The renderer is dynamically imported, and the worker is bundled with Vite's documented `?worker&url` import. MapLibre's own CSS is imported only by the map component; site-specific map styles remain in `src/styles/pages/directory.css`. Removing a component releases its map and worker resources.
 
