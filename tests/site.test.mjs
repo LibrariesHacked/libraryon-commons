@@ -294,12 +294,18 @@ test('named Markdown blocks render explicit components and ordinary content stay
   assert.ok(!ordinary.includes('testimonial-quote'))
   assert.ok(!ordinary.includes('library-can-do-panel'))
   assert.ok(!ordinary.includes('<iframe'))
-  await assert.rejects(processor.render(':::quote\n\n> No author.\n\n:::'), /author is required/)
-  await assert.rejects(processor.render(':::unknown\n\nText\n\n:::'), /unknown content block/)
-  await assert.rejects(
-    processor.render(':::card{href="javascript:alert(1)"}\n\nText\n\n:::'),
-    /links must use/
-  )
+  const originalConsoleError = console.error
+  console.error = () => {}
+  try {
+    await assert.rejects(processor.render(':::quote\n\n> No author.\n\n:::'), /author is required/)
+    await assert.rejects(processor.render(':::unknown\n\nText\n\n:::'), /unknown content block/)
+    await assert.rejects(
+      processor.render(':::card{href="javascript:alert(1)"}\n\nText\n\n:::'),
+      /links must use/
+    )
+  } finally {
+    console.error = originalConsoleError
+  }
 })
 
 test('hotspot galleries expose a show-hide toggle and one initially selected marker', async () => {
