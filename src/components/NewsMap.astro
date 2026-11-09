@@ -651,7 +651,11 @@ const data = storiesToLocationGeoJson(stories)
             content.appendChild(footer)
 
             this.popup?.remove()
-            this.popup = new Popup({ maxWidth: '340px', closeButton: true })
+            this.popup = new Popup({
+              maxWidth: '340px',
+              closeButton: true,
+              focusAfterOpen: false
+            })
               .setLngLat(feature.geometry.coordinates)
               .setDOMContent(content)
               .addTo(map)

@@ -136,32 +136,29 @@ const shareUrls = buildShareUrls({ url: pageUrl, title, description })
     display: inline-flex;
     align-items: center;
     gap: 0.4rem;
-    min-height: 34px;
-    height: 34px;
+    min-height: 32px;
+    height: 32px;
     box-sizing: border-box;
-    padding: 0 0.85rem;
+    padding: 0 0.75rem;
     font-family: var(--font);
-    font-size: 0.82rem;
+    font-size: 0.78rem;
     font-weight: var(--font-weight-6);
     line-height: 1;
     color: var(--brand-link);
     background: var(--paper);
     border: 0;
     border-radius: 999px;
-    box-shadow: 0 1px 3px rgba(30, 26, 40, 0.08);
     cursor: pointer;
     text-decoration: none;
     white-space: nowrap;
     transition:
       background-color 0.15s var(--motion-ease),
-      color 0.15s var(--motion-ease),
-      box-shadow 0.15s var(--motion-ease);
+      color 0.15s var(--motion-ease);
   }
 
   .share-btn:hover {
     background: var(--surface-tint-plum-selected);
     color: var(--brand-primary);
-    box-shadow: 0 2px 6px rgba(30, 26, 40, 0.12);
   }
 
   .share-btn:focus-visible {

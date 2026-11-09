@@ -380,7 +380,11 @@ const data = libraryMapFeatures(libraries, sitePath)
       }
 
       this.removePopup()
-      this.popup = new this.PopupClass({ maxWidth: '320px', closeButton: true })
+      this.popup = new this.PopupClass({
+        maxWidth: '320px',
+        closeButton: true,
+        focusAfterOpen: false
+      })
         .setLngLat(coordinates)
         .setDOMContent(content)
         .addTo(this.map)

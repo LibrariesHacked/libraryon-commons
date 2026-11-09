@@ -28,8 +28,6 @@ faqs:
 
 # Libraries are for everyone
 
-**Start your journey of discovery here — explore what’s on offer and find your local library.**
-
 **Libraries are free spaces of culture, learning, and community; places that belong to everyone, where stories are shared, ideas take root, and everyone can feel a sense of belonging.**
 
 ::video{src="https://www.youtube.com/embed/JN89c9HpY0s?si=y8UjMuXMXF7iAW5-" title="Embedded YouTube video"}

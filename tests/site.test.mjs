@@ -168,6 +168,7 @@ test('directory pages share MapLibre maps and search keeps its filtered listings
   assert.ok(component.includes('https://tiles.openfreemap.org/styles/positron'))
   assert.ok(component.includes('cluster: true'))
   assert.ok(component.includes('.setDOMContent(content)'))
+  assert.ok(component.includes('focusAfterOpen: false'))
   assert.ok(!component.includes('.setHTML('))
   assert.ok(component.includes('this.map?.remove()'))
 })

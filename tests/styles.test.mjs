@@ -180,6 +180,19 @@ test('collection component figures are not restyled as article media', () => {
     selectors.some((selector) => selector.includes('lacemaking')),
     false
   )
+
+  const noAsideRules = editorial.nodes.filter(
+    (node) => node.type === 'rule' && node.selector.includes('article-layout-no-aside')
+  )
+  for (const rule of noAsideRules) {
+    if (rule.selector.includes('>')) continue
+    const widthDecl = rule.nodes?.find((n) => n.type === 'decl' && n.prop === 'width')
+    assert.equal(
+      widthDecl,
+      undefined,
+      'article-layout-no-aside must not override shell width with 100%'
+    )
+  }
 })
 
 test('homepage carousel has a distinct light surface and quiet inactive dots', () => {
