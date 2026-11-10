@@ -14,4 +14,4 @@ child_pages:
 
 # Archive
 
-Earlier LibraryOn website pages, programmes, and events are preserved here.
+Earlier LibraryOn website pages, programmes, and events.
