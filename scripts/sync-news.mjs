@@ -44,11 +44,21 @@ function getOrgSlug(name) {
   )
 }
 
+export function resolvePLNArchiveDir() {
+  const candidates = [
+    process.env.PLN_DATA_DIR ? path.resolve(process.env.PLN_DATA_DIR) : null,
+    path.resolve(rootDir, '..', 'public-libraries-news', 'data', 'stories'),
+    path.resolve(rootDir, 'public-libraries-news', 'data', 'stories')
+  ].filter(Boolean)
+
+  return candidates.find((dir) => existsSync(dir)) || null
+}
+
 async function loadStories() {
-  const localArchiveDir = path.resolve(rootDir, '..', 'public-libraries-news', 'data', 'stories')
+  const localArchiveDir = resolvePLNArchiveDir()
   let stories = []
 
-  if (existsSync(localArchiveDir)) {
+  if (localArchiveDir) {
     console.log(`Loading stories from local archive: ${localArchiveDir}`)
     const files = readdirSync(localArchiveDir)
       .filter((file) => file.endsWith('.json'))
@@ -66,9 +76,9 @@ async function loadStories() {
       }
     }
   } else {
-    console.log('Local PLN archive not found. Fetching recent stories from GitHub...')
+    console.log('Local PLN archive not found. Fetching stories from GitHub...')
     const currentYear = new Date().getFullYear()
-    for (const year of [currentYear, currentYear - 1, currentYear - 2]) {
+    for (let year = currentYear; year >= 2010; year--) {
       const url = `https://raw.githubusercontent.com/LibrariesHacked/public-libraries-news/main/data/stories/${year}.json`
       try {
         const res = await fetch(url)
@@ -89,6 +99,9 @@ export async function syncNews() {
   mkdirSync(targetDir, { recursive: true })
   const stories = await loadStories()
   console.log(`Processing ${stories.length.toLocaleString()} total stories...`)
+  if (!stories.length) {
+    throw new Error('No stories found to process; aborting sync to prevent data loss.')
+  }
 
   // Pre-grouped lookups
   const byAuthority = {}

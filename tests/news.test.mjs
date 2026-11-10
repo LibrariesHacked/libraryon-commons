@@ -199,3 +199,32 @@ test('news and stakeholders index pages exist as editable CMS markdown pages', (
     assert.ok(match[2].trim().length > 0, `${file} has intro content`)
   }
 })
+
+test('sync-news GitHub workflow is configured for automatic scheduled and dispatch updates', () => {
+  const workflowPath = new URL('../.github/workflows/sync-news.yml', import.meta.url)
+  assert.ok(existsSync(workflowPath), '.github/workflows/sync-news.yml exists')
+  const content = readFileSync(workflowPath, 'utf8')
+  const workflow = parse(content)
+  assert.equal(workflow.name, 'Sync Public Libraries News')
+  assert.ok(workflow.on.schedule, 'workflow has a schedule')
+  assert.ok(Object.hasOwn(workflow.on, 'workflow_dispatch'), 'workflow supports workflow_dispatch')
+  assert.ok(workflow.on.repository_dispatch, 'workflow supports repository_dispatch')
+  assert.equal(workflow.permissions.contents, 'write')
+  const steps = workflow.jobs.sync.steps
+  assert.ok(
+    steps.some(
+      (s) =>
+        s.uses?.startsWith('actions/checkout') &&
+        s.with?.repository?.includes('public-libraries-news')
+    ),
+    'checks out PLN repository'
+  )
+  assert.ok(
+    steps.some((s) => s.run?.includes('npm run sync:news')),
+    'runs npm run sync:news'
+  )
+  assert.ok(
+    steps.some((s) => s.run?.includes('git commit')),
+    'commits news changes'
+  )
+})
