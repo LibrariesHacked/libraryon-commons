@@ -37,3 +37,5 @@ The static site is hosted on GitHub Pages (with content management administratio
 
 - **No analytics or advertising cookies:** LibraryCommons does not use Google Analytics, Meta Pixel, or other third-party tracking scripts.
 - **Functional storage only:** The site may use standard browser session storage or local storage exclusively to preserve your chosen search filters or active tabs during your visit. These do not track you across the web.
+
+If you have any concerns or questions contact [info@librarieshacked.org](mailto:info@librarieshacked.org)
