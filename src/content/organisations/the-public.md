@@ -18,6 +18,7 @@ Members of the public interact with libraries in many ways:
 
 - **Readers and learners**: Borrowing books, downloading audiobooks and eBooks, researching family history, and using quiet study spaces.
 - **Children and families**: Attending baby rhyme times, children's reading clubs, and homework support sessions.
+- **Developers of digital services**: Members of the public and organisations wanting to integrate with library data and digital services to make these better and link with other services and accounts
 - **Jobseekers and entrepreneurs**: Accessing free Wi-Fi, computer suites, printing, and Business & IP Centres.
 - **Community Groups and volunteers**: Meeting in community spaces, running reading groups, and volunteering alongside library staff.
 - **Citizens and campaigners**: Championing local branches, participating in public consultations, and defending statutory services.
