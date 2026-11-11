@@ -144,8 +144,6 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
         summary={newsSummary}
         title={`News & Updates for ${library.name}`}
         subtitle="Stories mentioning this library in Public Libraries News."
-        archiveUrl={`/news/?q=${encodeURIComponent(library.name)}`}
-        archiveLabel={`Search all ${totalNewsCount.toLocaleString('en-GB')} stories mentioning ${library.name} in News Archive`}
       />
     </section>
   )}

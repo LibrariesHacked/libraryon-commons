@@ -1,8 +1,12 @@
 ---
-import { Search, ChevronDown, ArrowUpRight, History } from '@lucide/astro'
 import NewsCard from './NewsCard.astro'
-import StatusPill from './StatusPill.astro'
-import { categoryLabel, filterStoriesByDate } from '../lib/content/newsHelpers.mjs'
+import {
+  categoryColor,
+  categoryLabel,
+  changeTypeLabel,
+  filterStoriesByDate,
+  formatNewsDate
+} from '../lib/content/newsHelpers.mjs'
 
 const {
   stories = [],
@@ -10,9 +14,7 @@ const {
   title = 'Public Libraries News Stories',
   subtitle = '',
   emptyMessage = 'No news stories recorded.',
-  initialCount = 10,
-  archiveUrl = null,
-  archiveLabel = 'Search all stories in News Archive'
+  initialCount = 10
 } = Astro.props
 
 const totalStories = summary?.total ?? stories.length
@@ -65,58 +67,29 @@ const componentId = `news-list-${crypto.randomUUID()}`
         {summary.top_categories && summary.top_categories.length > 0 && (
           <div class="news-summary-topics">
             <span class="news-summary-topics-heading">Key themes:</span>
-            <div class="news-summary-topic-pills">
-              {summary.top_categories.map((tc) => (
-                <StatusPill variant="plum">
-                  {categoryLabel(tc.key)} ({tc.count})
-                </StatusPill>
-              ))}
+            <div
+              class="news-summary-topic-pills"
+              role="toolbar"
+              aria-label="Filter stories by key theme"
+            >
+              {summary.top_categories.map((tc) => {
+                const color = categoryColor(tc.key)
+                return (
+                  <button
+                    type="button"
+                    class={`news-topic-filter-btn news-topic-filter-btn--${color}`}
+                    data-topic-key={tc.key}
+                    aria-pressed="false"
+                  >
+                    <span>{categoryLabel(tc.key)}</span>
+                    <span class="news-topic-count">({tc.count})</span>
+                  </button>
+                )
+              })}
             </div>
           </div>
         )}
       </div>
-
-      {archiveUrl && (
-        <div class="news-history-options">
-          <div class="news-history-label">
-            <History size={15} aria-hidden="true" />
-            <span>History options:</span>
-          </div>
-          <div class="news-history-buttons">
-            {summary.by_preset?.['1y'] > 0 && (
-              <a
-                href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=1y`}
-                class="news-history-btn"
-              >
-                <span>Past year ({summary.by_preset['1y']})</span>
-              </a>
-            )}
-            {summary.by_preset?.['3y'] > 0 && (
-              <a
-                href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=3y`}
-                class="news-history-btn"
-              >
-                <span>Past 3 years ({summary.by_preset['3y']})</span>
-              </a>
-            )}
-            {summary.by_preset?.['5y'] > 0 && (
-              <a
-                href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=5y`}
-                class="news-history-btn"
-              >
-                <span>Past 5 years ({summary.by_preset['5y']})</span>
-              </a>
-            )}
-            <a
-              href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=all`}
-              class="news-history-btn news-history-btn--all"
-            >
-              <span>All time ({summary.total.toLocaleString('en-GB')})</span>
-              <ArrowUpRight size={13} aria-hidden="true" />
-            </a>
-          </div>
-        </div>
-      )}
     </div>
   )}
 
@@ -127,17 +100,6 @@ const componentId = `news-list-${crypto.randomUUID()}`
       data-default-range={defaultSliderVal}
     >
       <div class="news-list-controls">
-        <div class="news-search-field">
-          <Search size={16} class="search-field-icon" aria-hidden="true" />
-          <input
-            type="search"
-            class="news-list-search-input"
-            placeholder="Search stories by keyword, authority, topic..."
-            aria-label="Search news stories"
-            data-search-input
-          />
-        </div>
-
         <div class="time-slider-group news-list-time-slider">
           <div class="time-slider-header">
             <label for={`${componentId}-slider`} class="filter-group-heading">
@@ -192,38 +154,24 @@ const componentId = `news-list-${crypto.randomUUID()}`
         Show more stories
       </button>
 
-      {archiveUrl && (
-        <div class="news-archive-footer">
-          <a href={archiveUrl} class="news-archive-action">
-            <span>{archiveLabel}</span>
-            <ArrowUpRight size={14} aria-hidden="true" />
-          </a>
-        </div>
-      )}
-
       <script
         type="application/json"
         data-stories-json
         set:html={JSON.stringify(stories).replace(/</g, '\\u003c')}
       />
     </news-stories-list>
-  ) : summary && summary.total > 0 ? (
-    <p class="news-empty-message">
-      No stories recorded in the recent index (2023–present). Use the history options above or{' '}
-      {archiveUrl && (
-        <a href={`${archiveUrl}${archiveUrl.includes('?') ? '&' : '?'}range=all`}>
-          explore all {summary.total.toLocaleString('en-GB')} historical stories in the News Archive
-        </a>
-      )}
-      .
-    </p>
   ) : (
     <p class="news-empty-message">{emptyMessage}</p>
   )}
 </section>
 
 <script>
-  import { categoryLabel, changeTypeLabel, formatNewsDate } from '../lib/content/newsHelpers.mjs'
+  import {
+    categoryColor,
+    categoryLabel,
+    changeTypeLabel,
+    formatNewsDate
+  } from '../lib/content/newsHelpers.mjs'
 
   class NewsStoriesList extends HTMLElement {
     allStories = []
@@ -231,10 +179,10 @@ const componentId = `news-list-${crypto.randomUUID()}`
     visible = 10
     slider = null
     sliderLabel = null
-    searchInput = null
     resultsList = null
     countText = null
     loadMoreBtn = null
+    activeTheme = null
 
     connectedCallback() {
       const dataEl = this.querySelector('[data-stories-json]')
@@ -247,23 +195,40 @@ const componentId = `news-list-${crypto.randomUUID()}`
 
       this.slider = this.querySelector('[data-time-slider]')
       this.sliderLabel = this.querySelector('[data-time-slider-value]')
-      this.searchInput = this.querySelector('[data-search-input]')
       this.resultsList = this.querySelector('[data-results-list]')
       this.countText = this.querySelector('[data-count-text]')
       this.loadMoreBtn = this.querySelector('[data-load-more]')
 
+      const themeContainer = this.closest('.news-list-section') || document
+      const themeButtons = themeContainer.querySelectorAll('[data-topic-key]')
+      themeButtons.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const key = btn.dataset.topicKey
+          if (this.activeTheme === key) {
+            this.activeTheme = null
+            btn.setAttribute('aria-pressed', 'false')
+          } else {
+            this.activeTheme = key
+            themeButtons.forEach((b) => b.setAttribute('aria-pressed', 'false'))
+            btn.setAttribute('aria-pressed', 'true')
+          }
+          this.handleFilter()
+        })
+      })
+
       this.slider?.addEventListener('input', () => this.handleFilter())
-      this.searchInput?.addEventListener('input', () => this.handleFilter())
+      this.slider?.addEventListener('change', () => this.handleFilter())
       this.loadMoreBtn?.addEventListener('click', () => {
         this.visible += 10
         this.render()
       })
+
+      this.handleFilter(false)
     }
 
     handleFilter(resetVisible = true) {
       if (resetVisible) this.visible = 10
       const sliderVal = this.slider ? parseInt(this.slider.value, 10) : 5
-      const query = (this.searchInput?.value || '').trim().toLowerCase()
 
       const labels = {
         1: 'Past year',
@@ -287,23 +252,9 @@ const componentId = `news-list-${crypto.randomUUID()}`
 
       this.filteredStories = this.allStories.filter((s) => {
         if (cutoffDate && s.date && s.date < cutoffDate) return false
-        if (query) {
-          const text = (s.text || '').toLowerCase()
-          const entity = (s.entity || '').toLowerCase()
-          const auth = (s.authority_name || '').toLowerCase()
-          const cats = (s.categories || [])
-            .map((c) => (categoryLabel(c) || c).toLowerCase())
-            .join(' ')
-          const orgs = (s.organisations || []).join(' ').toLowerCase()
-          if (
-            !text.includes(query) &&
-            !entity.includes(query) &&
-            !auth.includes(query) &&
-            !cats.includes(query) &&
-            !orgs.includes(query)
-          ) {
-            return false
-          }
+        if (this.activeTheme) {
+          const cats = s.categories || []
+          if (!cats.includes(this.activeTheme)) return false
         }
         return true
       })
@@ -343,27 +294,28 @@ const componentId = `news-list-${crypto.randomUUID()}`
       li.className = 'news-result-item'
       if (story.id) li.dataset.id = story.id
 
-      const header = document.createElement('div')
-      header.className = 'library-result-header'
-
-      const h3 = document.createElement('h3')
       const sourceUrl = story.url || (story.links && story.links[0]?.url) || null
       const sourceDomain = story.domain || (story.links && story.links[0]?.domain) || null
       const titleText = story.entity || story.authority_name || 'News update'
 
+      const container = sourceUrl ? document.createElement('a') : document.createElement('div')
+      container.className = 'news-result-link'
       if (sourceUrl) {
-        const a = document.createElement('a')
-        a.href = sourceUrl
-        a.target = '_blank'
-        a.rel = 'noopener noreferrer'
-        a.textContent = titleText + ' '
-        a.innerHTML +=
-          '<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
-        h3.appendChild(a)
-      } else {
-        const span = document.createElement('span')
-        span.textContent = titleText
-        h3.appendChild(span)
+        container.href = sourceUrl
+        container.target = '_blank'
+        container.rel = 'noopener noreferrer'
+      }
+
+      const header = document.createElement('div')
+      header.className = 'library-result-header'
+
+      const h3 = document.createElement('h3')
+      const span = document.createElement('span')
+      span.textContent = titleText
+      h3.appendChild(span)
+      if (sourceUrl) {
+        h3.innerHTML +=
+          ' <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
       }
       header.appendChild(h3)
 
@@ -373,12 +325,12 @@ const componentId = `news-list-${crypto.randomUUID()}`
         datePill.textContent = formatNewsDate(story.date)
         header.appendChild(datePill)
       }
-      li.appendChild(header)
+      container.appendChild(header)
 
       const textP = document.createElement('p')
       textP.className = 'news-result-text'
       textP.textContent = story.text || ''
-      li.appendChild(textP)
+      container.appendChild(textP)
 
       const meta = document.createElement('div')
       meta.className = 'library-result-meta'
@@ -404,7 +356,7 @@ const componentId = `news-list-${crypto.randomUUID()}`
 
       for (const cat of (story.categories || []).slice(0, 2)) {
         const pill = document.createElement('span')
-        pill.className = 'status-pill status-pill--plum'
+        pill.className = `status-pill status-pill--${categoryColor(cat)}`
         pill.textContent = categoryLabel(cat)
         meta.appendChild(pill)
       }
@@ -417,16 +369,14 @@ const componentId = `news-list-${crypto.randomUUID()}`
       }
 
       if (sourceUrl) {
-        const sourceA = document.createElement('a')
-        sourceA.href = sourceUrl
-        sourceA.className = 'news-source-link'
-        sourceA.target = '_blank'
-        sourceA.rel = 'noopener noreferrer'
-        sourceA.innerHTML = `<span>${sourceDomain || 'Source'}</span><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`
-        meta.appendChild(sourceA)
+        const sourceSpan = document.createElement('span')
+        sourceSpan.className = 'news-source-link'
+        sourceSpan.innerHTML = `<span>${sourceDomain || 'Source'}</span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`
+        meta.appendChild(sourceSpan)
       }
 
-      li.appendChild(meta)
+      container.appendChild(meta)
+      li.appendChild(container)
       return li
     }
   }

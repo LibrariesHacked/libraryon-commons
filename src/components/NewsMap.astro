@@ -123,6 +123,7 @@ const data = storiesToLocationGeoJson(stories)
 
 <script>
   import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
+  import { categoryColor, categoryLabel, changeTypeLabel } from '../lib/content/newsHelpers.mjs'
 
   function storiesToLocationGeoJson(items) {
     const locMap = new Map()
@@ -478,57 +479,43 @@ const data = storiesToLocationGeoJson(stories)
             const header = document.createElement('header')
             header.className = 'map-popup-header'
 
-            const changeTypeLabels = {
-              closure: 'Closure',
-              reduction_or_cut: 'Reduction or Cut',
-              community_handover: 'Community Handover',
-              investment_or_expansion: 'Investment or Expansion',
-              unstaffed_open_plus: 'Unstaffed Open+',
-              other: 'Sector Change'
-            }
-            const categoryLabels = {
-              cuts_and_finance: 'Cuts & Finance',
-              closures_and_threats: 'Closures & Threats',
-              staffing_and_unions: 'Staffing & Unions',
-              events_and_activities: 'Events & Activities',
-              campaigns_and_protests: 'Campaigns & Protests',
-              volunteers_and_community: 'Volunteers & Community',
-              digital_and_technology: 'Digital & Technology',
-              refurbishment_and_new_builds: 'Refurbishment & Builds',
-              opening_hours: 'Opening Hours',
-              book_bans_and_challenges: 'Book Bans',
-              mobile_and_outreach: 'Mobile & Outreach',
-              governance_and_trusts: 'Governance & Trusts',
-              co_location: 'Co-location & Hubs',
-              warm_spaces_and_wellbeing: 'Warm Spaces',
-              unstaffed_open_plus: 'Unstaffed Open+'
-            }
+            const isSingleStory = stories.length === 1
+            const countNum = Number(props.story_count) || stories.length
 
             const badges = document.createElement('div')
             badges.className = 'map-popup-badges'
 
-            const countBadge = document.createElement('span')
-            countBadge.className = 'status-pill status-pill--plum'
-            const dot = document.createElement('span')
-            dot.className = 'status-pill-dot'
-            dot.setAttribute('aria-hidden', 'true')
-            const countNum = Number(props.story_count) || stories.length
-            const countText = document.createElement('span')
-            countText.textContent = `${countNum} ${countNum === 1 ? 'story' : 'stories'}`
-            countBadge.append(dot, countText)
-            badges.appendChild(countBadge)
+            // If there is only 1 story, do not show "1 story"
+            if (countNum > 1) {
+              const countBadge = document.createElement('span')
+              countBadge.className = 'status-pill status-pill--plum'
+              const dot = document.createElement('span')
+              dot.className = 'status-pill-dot'
+              dot.setAttribute('aria-hidden', 'true')
+              const countText = document.createElement('span')
+              countText.textContent = `${countNum} stories`
+              countBadge.append(dot, countText)
+              badges.appendChild(countBadge)
+            }
 
-            if (props.country) {
+            if (props.country && !isSingleStory) {
               const countryBadge = document.createElement('span')
               countryBadge.className = 'status-pill status-pill--apricot'
               countryBadge.textContent = String(props.country)
               badges.appendChild(countryBadge)
             }
-            header.appendChild(badges)
+            if (badges.children.length > 0) {
+              header.appendChild(badges)
+            }
 
             const title = document.createElement('h3')
             title.className = 'map-popup-title'
-            title.textContent = String(props.name || 'Library news location')
+            // For a single story, show story entity as title to eliminate title duplication
+            if (isSingleStory && stories[0]?.entity) {
+              title.textContent = stories[0].entity
+            } else {
+              title.textContent = String(props.name || 'Library news location')
+            }
             header.appendChild(title)
             content.appendChild(header)
 
@@ -556,18 +543,28 @@ const data = storiesToLocationGeoJson(stories)
               if (s.change) {
                 const changeBadge = document.createElement('span')
                 changeBadge.className = 'status-pill status-pill--rose'
-                changeBadge.textContent = changeTypeLabels[s.change] || String(s.change)
+                changeBadge.textContent = changeTypeLabel(s.change)
                 metaRow.appendChild(changeBadge)
               } else if (s.category) {
+                const color = categoryColor(s.category)
                 const catBadge = document.createElement('span')
-                catBadge.className = 'status-pill status-pill--green'
-                catBadge.textContent =
-                  categoryLabels[s.category] || String(s.category).replace(/_/g, ' ')
+                catBadge.className = `status-pill status-pill--${color}`
+                catBadge.textContent = categoryLabel(s.category)
                 metaRow.appendChild(catBadge)
               }
+
+              // Show location label in meta if single story and name differs from entity title
+              if (isSingleStory && props.name && s.entity && s.entity !== props.name) {
+                const locSpan = document.createElement('span')
+                locSpan.className = 'status-pill status-pill--apricot'
+                locSpan.textContent = props.name
+                metaRow.appendChild(locSpan)
+              }
+
               storyViewport.appendChild(metaRow)
 
-              if (s.entity && s.entity !== props.name) {
+              // Only show separate entity name if multiple stories and entity differs from header title
+              if (!isSingleStory && s.entity && s.entity !== props.name) {
                 const entityP = document.createElement('p')
                 entityP.className = 'map-popup-entity-name'
                 entityP.textContent = s.entity

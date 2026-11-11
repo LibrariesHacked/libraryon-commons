@@ -9,6 +9,7 @@ import { parse } from 'yaml'
 import {
   categoryLabel,
   changeTypeLabel,
+  categoryColor,
   formatNewsDate,
   getNewsMetadata,
   getNewsSummaries,
@@ -20,7 +21,8 @@ import {
   getNewsForOrganisation,
   filterStoriesByDate,
   CATEGORY_LABELS,
-  CHANGE_TYPE_LABELS
+  CHANGE_TYPE_LABELS,
+  CATEGORY_COLORS
 } from '../src/lib/content/newsHelpers.mjs'
 
 test('categoryLabel and changeTypeLabel resolve known keys and format fallbacks', () => {
@@ -35,6 +37,19 @@ test('categoryLabel and changeTypeLabel resolve known keys and format fallbacks'
   assert.equal(changeTypeLabel(''), '')
 })
 
+test('categoryColor returns logical grouping colours and defaults to plum', () => {
+  assert.equal(categoryColor('cuts_and_finance'), 'rose')
+  assert.equal(categoryColor('closures_and_threats'), 'rose')
+  assert.equal(categoryColor('refurbishment_and_new_builds'), 'green')
+  assert.equal(categoryColor('mobile_and_outreach'), 'green')
+  assert.equal(categoryColor('digital_and_technology'), 'apricot')
+  assert.equal(categoryColor('opening_hours'), 'apricot')
+  assert.equal(categoryColor('events_and_activities'), 'plum')
+  assert.equal(categoryColor('governance_and_trusts'), 'plum')
+  assert.equal(categoryColor('unknown_topic'), 'plum')
+  assert.equal(categoryColor(''), 'plum')
+})
+
 test('formatNewsDate formats dates in British English and handles empty or invalid inputs', () => {
   assert.equal(formatNewsDate(''), '')
   assert.equal(formatNewsDate(null), '')
@@ -43,7 +58,7 @@ test('formatNewsDate formats dates in British English and handles empty or inval
   assert.match(formatted, /2\s+Nov\s+2026/)
 })
 
-test('filterStoriesByDate filters by 1y, 3y, 5y presets, custom range, and all', () => {
+test('filterStoriesByDate filters by 1y, 2y, 3y, 5y presets, custom range, and all', () => {
   const sample = [
     { id: 1, date: '2026-11-01' },
     { id: 2, date: '2025-10-01' },
@@ -56,6 +71,13 @@ test('filterStoriesByDate filters by 1y, 3y, 5y presets, custom range, and all',
   const past1y = filterStoriesByDate(sample, { preset: '1y', anchorDate: anchor })
   assert.equal(past1y.length, 1)
   assert.equal(past1y[0].id, 1)
+
+  const past2y = filterStoriesByDate(sample, { preset: '2y', anchorDate: anchor })
+  assert.equal(past2y.length, 2)
+  assert.deepEqual(
+    past2y.map((s) => s.id),
+    [1, 2]
+  )
 
   const past3y = filterStoriesByDate(sample, { preset: '3y', anchorDate: anchor })
   assert.equal(past3y.length, 2)

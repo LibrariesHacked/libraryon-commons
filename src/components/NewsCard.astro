@@ -1,7 +1,12 @@
 ---
 import { ArrowUpRight } from '@lucide/astro'
 import StatusPill from './StatusPill.astro'
-import { categoryLabel, changeTypeLabel, formatNewsDate } from '../lib/content/newsHelpers.mjs'
+import {
+  categoryColor,
+  categoryLabel,
+  changeTypeLabel,
+  formatNewsDate
+} from '../lib/content/newsHelpers.mjs'
 
 const { story } = Astro.props
 
@@ -13,47 +18,81 @@ const titleText = story.entity || story.authority_name || 'News update'
 ---
 
 <li class="news-result-item" data-id={story.id}>
-  <div class="library-result-header">
-    <h3>
-      {sourceUrl ? (
-        <a href={sourceUrl} target="_blank" rel="noopener noreferrer">
-          {titleText} <ArrowUpRight size={15} aria-hidden="true" />
-        </a>
+  {sourceUrl ? (
+    <a href={sourceUrl} class="news-result-link" target="_blank" rel="noopener noreferrer">
+      <div class="library-result-header">
+        <h3>
+          <span>{titleText}</span> <ArrowUpRight size={16} aria-hidden="true" />
+        </h3>
+        {formattedDate && <StatusPill variant="plum">{formattedDate}</StatusPill>}
+      </div>
+
+      {story.text_html ? (
+        <p class="news-result-text" set:html={story.text_html} />
       ) : (
-        <span>{titleText}</span>
+        <p class="news-result-text">{story.text}</p>
       )}
-    </h3>
-    {formattedDate && <StatusPill variant="plum">{formattedDate}</StatusPill>}
-  </div>
 
-  {story.text_html ? (
-    <p class="news-result-text" set:html={story.text_html} />
+      <div class="library-result-meta">
+        {story.authority_name && (
+          <span class="authority-label">
+            {story.authority_name}
+            {story.country ? ` · ${story.country}` : ''}
+          </span>
+        )}
+        {story.country && !story.authority_name && (
+          <span class="authority-label">{story.country}</span>
+        )}
+        {story.change_type && (
+          <StatusPill variant="rose">{changeTypeLabel(story.change_type)}</StatusPill>
+        )}
+        {(story.categories || []).slice(0, 2).map((cat) => (
+          <StatusPill variant={categoryColor(cat)}>{categoryLabel(cat)}</StatusPill>
+        ))}
+        {(story.organisations || []).map((org) => (
+          <StatusPill variant="green">{org}</StatusPill>
+        ))}
+        <span class="news-source-link">
+          <span>{sourceDomain || 'Source'}</span>
+          <ArrowUpRight size={14} aria-hidden="true" />
+        </span>
+      </div>
+    </a>
   ) : (
-    <p class="news-result-text">{story.text}</p>
-  )}
+    <div class="news-result-link">
+      <div class="library-result-header">
+        <h3>
+          <span>{titleText}</span>
+        </h3>
+        {formattedDate && <StatusPill variant="plum">{formattedDate}</StatusPill>}
+      </div>
 
-  <div class="library-result-meta">
-    {story.authority_name && (
-      <span class="authority-label">
-        {story.authority_name}
-        {story.country ? ` · ${story.country}` : ''}
-      </span>
-    )}
-    {story.country && !story.authority_name && <span class="authority-label">{story.country}</span>}
-    {story.change_type && (
-      <StatusPill variant="rose">{changeTypeLabel(story.change_type)}</StatusPill>
-    )}
-    {(story.categories || []).slice(0, 2).map((cat) => (
-      <StatusPill variant="plum">{categoryLabel(cat)}</StatusPill>
-    ))}
-    {(story.organisations || []).map((org) => (
-      <StatusPill variant="green">{org}</StatusPill>
-    ))}
-    {sourceUrl && (
-      <a href={sourceUrl} class="news-source-link" target="_blank" rel="noopener noreferrer">
-        <span>{sourceDomain || 'Source'}</span>
-        <ArrowUpRight size={13} aria-hidden="true" />
-      </a>
-    )}
-  </div>
+      {story.text_html ? (
+        <p class="news-result-text" set:html={story.text_html} />
+      ) : (
+        <p class="news-result-text">{story.text}</p>
+      )}
+
+      <div class="library-result-meta">
+        {story.authority_name && (
+          <span class="authority-label">
+            {story.authority_name}
+            {story.country ? ` · ${story.country}` : ''}
+          </span>
+        )}
+        {story.country && !story.authority_name && (
+          <span class="authority-label">{story.country}</span>
+        )}
+        {story.change_type && (
+          <StatusPill variant="rose">{changeTypeLabel(story.change_type)}</StatusPill>
+        )}
+        {(story.categories || []).slice(0, 2).map((cat) => (
+          <StatusPill variant={categoryColor(cat)}>{categoryLabel(cat)}</StatusPill>
+        ))}
+        {(story.organisations || []).map((org) => (
+          <StatusPill variant="green">{org}</StatusPill>
+        ))}
+      </div>
+    </div>
+  )}
 </li>

@@ -101,8 +101,6 @@ const sortedAuthorities = isLocalAuthorities
               title={`Public Libraries News Stories`}
               subtitle={`Roundups and reports mentioning ${organisation.data.name} in Public Libraries News.`}
               emptyMessage={`No news stories currently recorded mentioning ${organisation.data.name}.`}
-              archiveUrl={`/news/?organisation=${encodeURIComponent(organisation.data.name)}`}
-              archiveLabel={`Search all ${totalStories.toLocaleString('en-GB')} reports in News Archive`}
             />
           </section>
         )}

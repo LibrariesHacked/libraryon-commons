@@ -50,6 +50,35 @@ export const CHANGE_TYPE_LABELS = {
   other: 'Sector Change'
 }
 
+export const CATEGORY_COLORS = {
+  // Threats, Cuts & Activism -> rose
+  cuts_and_finance: 'rose',
+  closures_and_threats: 'rose',
+  campaigns_and_protests: 'rose',
+  book_bans_and_challenges: 'rose',
+
+  // Buildings, Places & Wellbeing -> green
+  refurbishment_and_new_builds: 'green',
+  mobile_and_outreach: 'green',
+  co_location: 'green',
+  warm_spaces_and_wellbeing: 'green',
+
+  // Operations & Technology -> apricot
+  digital_and_technology: 'apricot',
+  opening_hours: 'apricot',
+  unstaffed_open_plus: 'apricot',
+
+  // People, Community & Governance -> plum
+  events_and_activities: 'plum',
+  volunteers_and_community: 'plum',
+  staffing_and_unions: 'plum',
+  governance_and_trusts: 'plum'
+}
+
+export function categoryColor(key) {
+  return CATEGORY_COLORS[key] || 'plum'
+}
+
 export function categoryLabel(key) {
   return CATEGORY_LABELS[key] || (key ? key.replace(/_/g, ' ') : '')
 }
@@ -165,8 +194,8 @@ export function filterStoriesByDate(stories, options = {}) {
   let minDate = from || ''
   let maxDate = to || ''
 
-  if (preset === '1y' || preset === '3y' || preset === '5y') {
-    const years = preset === '1y' ? 1 : preset === '3y' ? 3 : 5
+  if (preset === '1y' || preset === '2y' || preset === '3y' || preset === '5y') {
+    const years = preset === '1y' ? 1 : preset === '2y' ? 2 : preset === '3y' ? 3 : 5
     const anchor = anchorDate
       ? new Date(anchorDate)
       : stories[0]?.date

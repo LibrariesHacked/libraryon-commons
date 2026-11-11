@@ -29,6 +29,9 @@ import NewsMap from '../../components/NewsMap.astro'
 import {
   getNewsMetadata,
   filterStoriesByDate,
+  categoryColor,
+  categoryLabel,
+  changeTypeLabel,
   CATEGORY_LABELS,
   CHANGE_TYPE_LABELS
 } from '../../lib/content/newsHelpers.mjs'
@@ -277,7 +280,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
                     return (
                       <button
                         type="button"
-                        class="facility-chip facility-chip--plum filter-tag"
+                        class={`facility-chip facility-chip--${categoryColor(key)} filter-tag`}
                         data-filter-type="category"
                         data-filter-value={key}
                         data-extra-tag={isExtra ? 'true' : undefined}
@@ -493,6 +496,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
 
 <script>
   import { autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom'
+  import { categoryColor, categoryLabel, changeTypeLabel } from '../../lib/content/newsHelpers.mjs'
 
   let allStories = []
   let filteredStories = []
@@ -701,10 +705,33 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     activeChipsContainer.innerHTML = ''
     const fragment = document.createDocumentFragment()
 
-    activeFilters.forEach(({ label }) => {
-      const chip = document.createElement('span')
-      chip.className = 'active-chip'
-      chip.textContent = label
+    const crossSvg =
+      '<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>'
+
+    activeFilters.forEach(({ label, color = 'plum', type, value }) => {
+      const chip = document.createElement('button')
+      chip.type = 'button'
+      chip.className = `active-chip active-chip--${color}`
+      chip.setAttribute('aria-label', `Remove filter: ${label}`)
+      chip.innerHTML = `<span>${escapeHtml(label)}</span>${crossSvg}`
+
+      chip.addEventListener('click', () => {
+        if (type === 'category') selectedCats.delete(value)
+        else if (type === 'change') selectedChanges.delete(value)
+        else if (type === 'org') selectedOrgs.delete(value)
+        else if (type === 'country') selectedCountries.delete(value)
+        else if (type === 'authority') {
+          if (authoritySelect) authoritySelect.value = ''
+        } else if (type === 'date') {
+          if (timeSlider) {
+            timeSlider.value = '1'
+            if (timeSliderValue) timeSliderValue.textContent = 'Past year'
+          }
+        }
+        syncTagButtons()
+        applyFilters()
+      })
+
       fragment.appendChild(chip)
     })
 
@@ -812,19 +839,49 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     // Calculate active filter count and chips
     const activeFilters = []
     if (sliderVal !== '1') {
-      activeFilters.push({ label: `Date: ${dateLabel}`, type: 'date', value: sliderVal })
+      activeFilters.push({
+        label: `Date: ${dateLabel}`,
+        color: 'plum',
+        type: 'date',
+        value: sliderVal
+      })
     }
     selectedCats.forEach((c) =>
-      activeFilters.push({ label: c.replace(/_/g, ' '), type: 'category', value: c })
+      activeFilters.push({
+        label: categoryLabel(c),
+        color: categoryColor(c),
+        type: 'category',
+        value: c
+      })
     )
     selectedChanges.forEach((c) =>
-      activeFilters.push({ label: c.replace(/_/g, ' '), type: 'change', value: c })
+      activeFilters.push({
+        label: changeTypeLabel(c),
+        color: 'rose',
+        type: 'change',
+        value: c
+      })
     )
-    selectedOrgs.forEach((o) => activeFilters.push({ label: o, type: 'org', value: o }))
-    selectedCountries.forEach((c) => activeFilters.push({ label: c, type: 'country', value: c }))
+    selectedOrgs.forEach((o) =>
+      activeFilters.push({
+        label: o,
+        color: 'green',
+        type: 'org',
+        value: o
+      })
+    )
+    selectedCountries.forEach((c) =>
+      activeFilters.push({
+        label: c,
+        color: 'apricot',
+        type: 'country',
+        value: c
+      })
+    )
     if (selectedAuthority) {
       activeFilters.push({
         label: selectedAuthority,
+        color: 'plum',
         type: 'authority',
         value: selectedAuthority
       })
@@ -900,8 +957,8 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     const sourceUrl = story.url || firstLink?.url || null
     const sourceDomain = story.domain || firstLink?.domain || 'Source'
 
-    const titleHtml = sourceUrl
-      ? `<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(entityStr)} ${arrowSvg}</a>`
+    const titleInner = sourceUrl
+      ? `<span>${escapeHtml(entityStr)}</span> ${arrowSvg}`
       : `<span>${escapeHtml(entityStr)}</span>`
 
     const metaParts = []
@@ -916,12 +973,12 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     }
     if (story.change_type) {
       metaParts.push(
-        `<span class="status-pill status-pill--rose">${escapeHtml(story.change_type.replace(/_/g, ' '))}</span>`
+        `<span class="status-pill status-pill--rose">${escapeHtml(changeTypeLabel(story.change_type))}</span>`
       )
     }
     ;(story.categories || []).slice(0, 2).forEach((cat) => {
       metaParts.push(
-        `<span class="status-pill status-pill--plum">${escapeHtml(cat.replace(/_/g, ' '))}</span>`
+        `<span class="status-pill status-pill--${categoryColor(cat)}">${escapeHtml(categoryLabel(cat))}</span>`
       )
     })
     ;(story.organisations || []).forEach((org) => {
@@ -929,13 +986,13 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     })
     if (sourceUrl) {
       metaParts.push(
-        `<a href="${escapeHtml(sourceUrl)}" class="news-source-link" target="_blank" rel="noopener noreferrer"><span>${escapeHtml(sourceDomain)}</span> ${arrowSvg}</a>`
+        `<span class="news-source-link"><span>${escapeHtml(sourceDomain)}</span> ${arrowSvg}</span>`
       )
     }
 
-    li.innerHTML = `
+    const innerHtml = `
       <div class="library-result-header">
-        <h3>${titleHtml}</h3>
+        <h3>${titleInner}</h3>
         ${formattedDate ? `<span class="status-pill status-pill--plum">${escapeHtml(formattedDate)}</span>` : ''}
       </div>
       <p class="news-result-text"></p>
@@ -943,6 +1000,22 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
         ${metaParts.join('')}
       </div>
     `
+
+    if (sourceUrl) {
+      const a = document.createElement('a')
+      a.className = 'news-result-link'
+      a.href = sourceUrl
+      a.target = '_blank'
+      a.rel = 'noopener noreferrer'
+      a.innerHTML = innerHtml
+      li.appendChild(a)
+    } else {
+      const div = document.createElement('div')
+      div.className = 'news-result-link'
+      div.innerHTML = innerHtml
+      li.appendChild(div)
+    }
+
     const textEl = li.querySelector('.news-result-text')
     if (textEl) textEl.textContent = textStr
     return li
