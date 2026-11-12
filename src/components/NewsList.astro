@@ -3,10 +3,8 @@ import NewsCard from './NewsCard.astro'
 import {
   categoryColor,
   categoryLabel,
-  changeTypeLabel,
-  filterStoriesByDate,
-  formatNewsDate
-} from '../lib/content/newsHelpers.mjs'
+  filterStoriesByDate
+} from '../lib/content/newsFormatHelpers.mjs'
 
 const {
   stories = [],
@@ -25,6 +23,7 @@ const defaultSliderLabel = defaultSliderVal === '1' ? 'Past year' : 'All time'
 const initialFiltered =
   defaultSliderVal === '1' ? filterStoriesByDate(stories, { preset: '1y' }) : stories
 const initialDisplayStories = initialFiltered.slice(0, initialCount)
+const initialRemaining = Math.max(0, initialFiltered.length - initialDisplayStories.length)
 const componentId = `news-list-${crypto.randomUUID()}`
 ---
 
@@ -36,70 +35,69 @@ const componentId = `news-list-${crypto.randomUUID()}`
     </div>
   )}
 
-  {summary && summary.total > 0 && (
-    <div class="news-summary-card">
-      <div class="news-summary-main">
-        <div class="news-summary-stats-grid">
-          <div class="news-summary-stat">
-            <span class="news-summary-stat-value">{summary.total.toLocaleString('en-GB')}</span>
-            <span class="news-summary-stat-label">archive stories</span>
-          </div>
-
-          {summary.first_year && summary.latest_year && (
-            <div class="news-summary-stat">
-              <span class="news-summary-stat-value">
-                {summary.first_year}–{summary.latest_year}
-              </span>
-              <span class="news-summary-stat-label">archive coverage</span>
-            </div>
-          )}
-
-          {summary.by_preset && (
-            <div class="news-summary-stat">
-              <span class="news-summary-stat-value">
-                {(summary.by_preset['1y'] || 0).toLocaleString('en-GB')}
-              </span>
-              <span class="news-summary-stat-label">past 12 months</span>
-            </div>
-          )}
-        </div>
-
-        {summary.top_categories && summary.top_categories.length > 0 && (
-          <div class="news-summary-topics">
-            <span class="news-summary-topics-heading">Key themes:</span>
-            <div
-              class="news-summary-topic-pills"
-              role="toolbar"
-              aria-label="Filter stories by key theme"
-            >
-              {summary.top_categories.map((tc) => {
-                const color = categoryColor(tc.key)
-                return (
-                  <button
-                    type="button"
-                    class={`news-topic-filter-btn news-topic-filter-btn--${color}`}
-                    data-topic-key={tc.key}
-                    aria-pressed="false"
-                  >
-                    <span>{categoryLabel(tc.key)}</span>
-                    <span class="news-topic-count">({tc.count})</span>
-                  </button>
-                )
-              })}
-            </div>
-          </div>
-        )}
-      </div>
-    </div>
-  )}
-
   {stories.length > 0 ? (
     <news-stories-list
       id={componentId}
       class="news-stories-list-container"
       data-default-range={defaultSliderVal}
+      data-base-url={import.meta.env.BASE_URL}
     >
-      <div class="news-list-controls">
+      <div class="news-summary-card">
+        {summary && summary.total > 0 && (
+          <div class="news-summary-main">
+            <div class="news-summary-stats-grid">
+              <div class="news-summary-stat">
+                <span class="news-summary-stat-value">{summary.total.toLocaleString('en-GB')}</span>
+                <span class="news-summary-stat-label">archive stories</span>
+              </div>
+
+              {summary.first_year && summary.latest_year && (
+                <div class="news-summary-stat">
+                  <span class="news-summary-stat-value">
+                    {summary.first_year}–{summary.latest_year}
+                  </span>
+                  <span class="news-summary-stat-label">archive coverage</span>
+                </div>
+              )}
+
+              {summary.by_preset && (
+                <div class="news-summary-stat">
+                  <span class="news-summary-stat-value">
+                    {(summary.by_preset['1y'] || 0).toLocaleString('en-GB')}
+                  </span>
+                  <span class="news-summary-stat-label">past 12 months</span>
+                </div>
+              )}
+            </div>
+
+            {summary.top_categories && summary.top_categories.length > 0 && (
+              <div class="news-summary-topics">
+                <span class="news-summary-topics-heading">Key themes:</span>
+                <div
+                  class="news-summary-topic-pills"
+                  role="toolbar"
+                  aria-label="Filter stories by key theme"
+                >
+                  {summary.top_categories.map((topicCategory) => {
+                    const color = categoryColor(topicCategory.key)
+                    return (
+                      <button
+                        type="button"
+                        class={`news-topic-filter-btn news-topic-filter-btn--${color}`}
+                        data-topic-key={topicCategory.key}
+                        aria-pressed="false"
+                      >
+                        <span>{categoryLabel(topicCategory.key)}</span>
+                        <span class="news-topic-count">({topicCategory.count})</span>
+                      </button>
+                    )
+                  })}
+                </div>
+              </div>
+            )}
+          </div>
+        )}
+
         <div class="time-slider-group news-list-time-slider">
           <div class="time-slider-header">
             <label for={`${componentId}-slider`} class="filter-group-heading">
@@ -134,7 +132,7 @@ const componentId = `news-list-${crypto.randomUUID()}`
 
       <div class="news-list-status-row">
         <p class="news-list-count" data-count-text aria-live="polite">
-          Showing {Math.min(initialCount, initialFiltered.length).toLocaleString('en-GB')} of{' '}
+          Showing {initialDisplayStories.length.toLocaleString('en-GB')} of{' '}
           {initialFiltered.length.toLocaleString('en-GB')} stories
         </p>
       </div>
@@ -151,7 +149,7 @@ const componentId = `news-list-${crypto.randomUUID()}`
         data-load-more
         hidden={initialFiltered.length <= initialCount}
       >
-        Show more stories
+        Show more stories ({initialRemaining.toLocaleString('en-GB')} remaining)
       </button>
 
       <script
@@ -166,222 +164,6 @@ const componentId = `news-list-${crypto.randomUUID()}`
 </section>
 
 <script>
-  import {
-    categoryColor,
-    categoryLabel,
-    changeTypeLabel,
-    formatNewsDate
-  } from '../lib/content/newsHelpers.mjs'
-
-  class NewsStoriesList extends HTMLElement {
-    allStories = []
-    filteredStories = []
-    visible = 10
-    slider = null
-    sliderLabel = null
-    resultsList = null
-    countText = null
-    loadMoreBtn = null
-    activeTheme = null
-
-    connectedCallback() {
-      const dataEl = this.querySelector('[data-stories-json]')
-      if (!dataEl) return
-      try {
-        this.allStories = JSON.parse(dataEl.textContent || '[]')
-      } catch {
-        this.allStories = []
-      }
-
-      this.slider = this.querySelector('[data-time-slider]')
-      this.sliderLabel = this.querySelector('[data-time-slider-value]')
-      this.resultsList = this.querySelector('[data-results-list]')
-      this.countText = this.querySelector('[data-count-text]')
-      this.loadMoreBtn = this.querySelector('[data-load-more]')
-
-      const themeContainer = this.closest('.news-list-section') || document
-      const themeButtons = themeContainer.querySelectorAll('[data-topic-key]')
-      themeButtons.forEach((btn) => {
-        btn.addEventListener('click', () => {
-          const key = btn.dataset.topicKey
-          if (this.activeTheme === key) {
-            this.activeTheme = null
-            btn.setAttribute('aria-pressed', 'false')
-          } else {
-            this.activeTheme = key
-            themeButtons.forEach((b) => b.setAttribute('aria-pressed', 'false'))
-            btn.setAttribute('aria-pressed', 'true')
-          }
-          this.handleFilter()
-        })
-      })
-
-      this.slider?.addEventListener('input', () => this.handleFilter())
-      this.slider?.addEventListener('change', () => this.handleFilter())
-      this.loadMoreBtn?.addEventListener('click', () => {
-        this.visible += 10
-        this.render()
-      })
-
-      this.handleFilter(false)
-    }
-
-    handleFilter(resetVisible = true) {
-      if (resetVisible) this.visible = 10
-      const sliderVal = this.slider ? parseInt(this.slider.value, 10) : 5
-
-      const labels = {
-        1: 'Past year',
-        2: 'Past 2 years',
-        3: 'Past 3 years',
-        4: 'Past 5 years',
-        5: 'All time'
-      }
-      if (this.sliderLabel) {
-        this.sliderLabel.textContent = labels[sliderVal] || 'All time'
-      }
-
-      let cutoffDate = ''
-      if (sliderVal < 5) {
-        const years = sliderVal === 1 ? 1 : sliderVal === 2 ? 2 : sliderVal === 3 ? 3 : 5
-        const anchor = this.allStories[0]?.date ? new Date(this.allStories[0].date) : new Date()
-        const cutoff = new Date(anchor)
-        cutoff.setFullYear(cutoff.getFullYear() - years)
-        cutoffDate = cutoff.toISOString().slice(0, 10)
-      }
-
-      this.filteredStories = this.allStories.filter((s) => {
-        if (cutoffDate && s.date && s.date < cutoffDate) return false
-        if (this.activeTheme) {
-          const cats = s.categories || []
-          if (!cats.includes(this.activeTheme)) return false
-        }
-        return true
-      })
-
-      this.render()
-    }
-
-    render() {
-      if (!this.resultsList) return
-      const count = this.filteredStories.length
-      const shown = Math.min(this.visible, count)
-
-      if (this.countText) {
-        this.countText.textContent = `Showing ${shown.toLocaleString('en-GB')} of ${count.toLocaleString('en-GB')} stories`
-      }
-
-      if (this.loadMoreBtn) {
-        this.loadMoreBtn.hidden = this.visible >= count
-      }
-
-      if (count === 0) {
-        this.resultsList.innerHTML =
-          '<li class="news-empty-message">No stories match your filter criteria.</li>'
-        return
-      }
-
-      const items = this.filteredStories.slice(0, this.visible)
-      const fragment = document.createDocumentFragment()
-      for (const story of items) {
-        fragment.appendChild(this.buildStoryCard(story))
-      }
-      this.resultsList.replaceChildren(fragment)
-    }
-
-    buildStoryCard(story) {
-      const li = document.createElement('li')
-      li.className = 'news-result-item'
-      if (story.id) li.dataset.id = story.id
-
-      const sourceUrl = story.url || (story.links && story.links[0]?.url) || null
-      const sourceDomain = story.domain || (story.links && story.links[0]?.domain) || null
-      const titleText = story.entity || story.authority_name || 'News update'
-
-      const container = sourceUrl ? document.createElement('a') : document.createElement('div')
-      container.className = 'news-result-link'
-      if (sourceUrl) {
-        container.href = sourceUrl
-        container.target = '_blank'
-        container.rel = 'noopener noreferrer'
-      }
-
-      const header = document.createElement('div')
-      header.className = 'library-result-header'
-
-      const h3 = document.createElement('h3')
-      const span = document.createElement('span')
-      span.textContent = titleText
-      h3.appendChild(span)
-      if (sourceUrl) {
-        h3.innerHTML +=
-          ' <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
-      }
-      header.appendChild(h3)
-
-      if (story.date) {
-        const datePill = document.createElement('span')
-        datePill.className = 'status-pill status-pill--plum'
-        datePill.textContent = formatNewsDate(story.date)
-        header.appendChild(datePill)
-      }
-      container.appendChild(header)
-
-      const textP = document.createElement('p')
-      textP.className = 'news-result-text'
-      textP.textContent = story.text || ''
-      container.appendChild(textP)
-
-      const meta = document.createElement('div')
-      meta.className = 'library-result-meta'
-
-      if (story.authority_name) {
-        const auth = document.createElement('span')
-        auth.className = 'authority-label'
-        auth.textContent = story.authority_name + (story.country ? ` · ${story.country}` : '')
-        meta.appendChild(auth)
-      } else if (story.country) {
-        const auth = document.createElement('span')
-        auth.className = 'authority-label'
-        auth.textContent = story.country
-        meta.appendChild(auth)
-      }
-
-      if (story.change_type) {
-        const pill = document.createElement('span')
-        pill.className = 'status-pill status-pill--rose'
-        pill.textContent = changeTypeLabel(story.change_type)
-        meta.appendChild(pill)
-      }
-
-      for (const cat of (story.categories || []).slice(0, 2)) {
-        const pill = document.createElement('span')
-        pill.className = `status-pill status-pill--${categoryColor(cat)}`
-        pill.textContent = categoryLabel(cat)
-        meta.appendChild(pill)
-      }
-
-      for (const org of story.organisations || []) {
-        const pill = document.createElement('span')
-        pill.className = 'status-pill status-pill--green'
-        pill.textContent = org
-        meta.appendChild(pill)
-      }
-
-      if (sourceUrl) {
-        const sourceSpan = document.createElement('span')
-        sourceSpan.className = 'news-source-link'
-        sourceSpan.innerHTML = `<span>${sourceDomain || 'Source'}</span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>`
-        meta.appendChild(sourceSpan)
-      }
-
-      container.appendChild(meta)
-      li.appendChild(container)
-      return li
-    }
-  }
-
-  if (!customElements.get('news-stories-list')) {
-    customElements.define('news-stories-list', NewsStoriesList)
-  }
+  import { initNewsStoriesList } from '../scripts/newsListClient.mjs'
+  initNewsStoriesList()
 </script>

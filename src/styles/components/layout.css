@@ -141,6 +141,9 @@
   padding: 2.8rem 0 2.2rem;
   background: var(--wash);
 }
+.page-heading + .section {
+  padding-top: var(--size-6);
+}
 .page-heading p {
   max-width: 800px;
   color: var(--muted);
@@ -296,6 +299,9 @@
   }
   .page-heading {
     padding-block: var(--size-7);
+  }
+  .page-heading + .section {
+    padding-top: var(--size-5);
   }
   .page-heading p {
     font-size: 0.88rem;

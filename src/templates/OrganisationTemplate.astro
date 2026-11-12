@@ -140,14 +140,11 @@ const sortedAuthorities = isLocalAuthorities
             )}
             {showNews && (
               <div class="detail-row">
-                <dt>News Mentions</dt>
+                <dt>Public Libraries News</dt>
                 <dd>
-                  <strong>{totalStories.toLocaleString('en-GB')} archive stories</strong>
-                  {summary?.first_year && summary?.latest_year && (
-                    <span class="detail-subtext">
-                      {summary.first_year}–{summary.latest_year} coverage
-                    </span>
-                  )}
+                  <a href="#news-list-heading" class="external-link">
+                    <span>Jump to news stories ({totalStories.toLocaleString('en-GB')})</span>
+                  </a>
                 </dd>
               </div>
             )}

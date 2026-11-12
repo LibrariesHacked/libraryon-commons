@@ -6,43 +6,17 @@
 import { existsSync, mkdirSync, readdirSync, readFileSync, writeFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { ORG_SLUG_MAP, getOrgSlug } from '../src/lib/content/newsFormatHelpers.mjs'
+import {
+  authorities as directoryAuthorities,
+  libraries as directoryLibraries
+} from '../src/lib/directory/directoryLoader.mjs'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const rootDir = path.resolve(__dirname, '..')
 const targetDir = path.join(rootDir, 'src', 'data', 'news')
 
-// Standard organisation slug mapping
-export const ORG_SLUG_MAP = {
-  DCMS: 'dcms',
-  'Department for Culture, Media and Sport': 'dcms',
-  'Arts Council England': 'arts-council-england',
-  ACE: 'arts-council-england',
-  CILIP: 'cilip',
-  'Chartered Institute of Library and Information Professionals': 'cilip',
-  'Libraries Connected': 'libraries-connected',
-  'Society of Chief Librarians': 'libraries-connected',
-  'The Reading Agency': 'the-reading-agency',
-  UNISON: 'unison',
-  'British Library': 'british-library',
-  'The British Library': 'british-library',
-  'The Library Campaign': 'the-library-campaign',
-  'Welsh Government': 'welsh-government',
-  'Scottish Library and Information Council': 'slic',
-  SLIC: 'slic',
-  LGA: 'lga',
-  'Local Government Association': 'lga'
-}
-
-function getOrgSlug(name) {
-  if (!name) return ''
-  return (
-    ORG_SLUG_MAP[name] ||
-    name
-      .toLowerCase()
-      .replace(/[^a-z0-9]+/g, '-')
-      .replace(/(^-|-$)/g, '')
-  )
-}
+export { ORG_SLUG_MAP, getOrgSlug }
 
 export function resolvePLNArchiveDir() {
   const candidates = [
@@ -120,7 +94,22 @@ export async function syncNews() {
   const orgCounts = {}
   const authorityCounts = {}
   const authorityGssByName = {}
+  const authoritySlugsByName = {}
   const libraryCounts = {}
+
+  const authSlugByGss = new Map()
+  const authSlugByName = new Map()
+  for (const auth of directoryAuthorities || []) {
+    if (auth.gss && auth.slug) authSlugByGss.set(auth.gss, auth.slug)
+    if (auth.name && auth.slug) authSlugByName.set(auth.name.toLowerCase(), auth.slug)
+  }
+
+  const libById = new Map()
+  for (const lib of directoryLibraries || []) {
+    if (lib.id && lib.name) {
+      libById.set(lib.id, { name: lib.name, url: lib.url || null })
+    }
+  }
 
   // Sort stories newest first
   stories.sort((a, b) => (b.post_date || '').localeCompare(a.post_date || ''))
@@ -200,6 +189,23 @@ export async function syncNews() {
 
     const cleanText = (s.text || s.text_html || '').replace(/<[^>]+>/g, '').trim()
 
+    const authoritySlug =
+      (gssCode ? authSlugByGss.get(gssCode) : null) ||
+      (authName ? authSlugByName.get(authName.toLowerCase()) : null) ||
+      null
+
+    const mentionedLibs = []
+    const libsSeen = new Set()
+    for (const lib of libs) {
+      const match = lib.id ? libById.get(lib.id) : null
+      const libName = match?.name || lib.name || ''
+      const libUrl = match?.url || null
+      const key = `${libUrl || ''}::${libName}`
+      if (!libName || libsSeen.has(key)) continue
+      libsSeen.add(key)
+      mentionedLibs.push(libUrl ? { name: libName, url: libUrl } : { name: libName })
+    }
+
     // Compact story item for page displays and card rendering
     const item = {
       id: s.id,
@@ -212,6 +218,8 @@ export async function syncNews() {
       change_type: changeType,
       organisations: sectorBodies,
       authority_name: authName,
+      ...(authoritySlug ? { authority_slug: authoritySlug } : {}),
+      ...(mentionedLibs.length > 0 ? { libraries: mentionedLibs } : {}),
       country
     }
 
@@ -238,6 +246,9 @@ export async function syncNews() {
         authorityCounts[authName] = (authorityCounts[authName] || 0) + 1
         if (gssCode) {
           authorityGssByName[authName.toLowerCase()] = gssCode
+        }
+        if (authoritySlug) {
+          authoritySlugsByName[authName] = authoritySlug
         }
       }
     }
@@ -294,6 +305,7 @@ export async function syncNews() {
           id: authKey || locKey,
           name: authName || s.entity_raw || 'Library news location',
           authority_name: authName || '',
+          ...(authoritySlug ? { authority_slug: authoritySlug } : {}),
           country: country || '',
           lat: lat4,
           lng: lng4,
@@ -329,6 +341,8 @@ export async function syncNews() {
       change_type: changeType,
       organisations: sectorBodies,
       authority_name: authName,
+      ...(authoritySlug ? { authority_slug: authoritySlug } : {}),
+      ...(mentionedLibs.length > 0 ? { libraries: mentionedLibs } : {}),
       country,
       lat: coords?.latitude != null ? Math.round(coords.latitude * 1e4) / 1e4 : null,
       lng: coords?.longitude != null ? Math.round(coords.longitude * 1e4) / 1e4 : null
@@ -466,7 +480,8 @@ export async function syncNews() {
     organisations: orgCounts,
     authorities: authorityCounts,
     libraries: libraryCounts,
-    authority_gss_by_name: authorityGssByName
+    authority_gss_by_name: authorityGssByName,
+    authority_slugs_by_name: authoritySlugsByName
   }
 
   console.log('Writing news-metadata.json...')

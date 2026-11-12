@@ -2,97 +2,111 @@
 import { ArrowUpRight } from '@lucide/astro'
 import StatusPill from './StatusPill.astro'
 import {
+  authorityPageUrl,
   categoryColor,
   categoryLabel,
   changeTypeLabel,
-  formatNewsDate
+  formatNewsDate,
+  joinBaseUrl,
+  organisationPageUrl
 } from '../lib/content/newsHelpers.mjs'
 
 const { story } = Astro.props
 
+const baseUrl = import.meta.env.BASE_URL
 const formattedDate = formatNewsDate(story.date)
 const firstLink = story.links && story.links.length > 0 ? story.links[0] : null
 const sourceDomain = story.domain || firstLink?.domain || null
 const sourceUrl = story.url || firstLink?.url || null
 const titleText = story.entity || story.authority_name || 'News update'
+const authorityHref = authorityPageUrl(story.authority_slug, baseUrl)
+const mentionedLibraries = (story.libraries || []).slice(0, 2)
 ---
 
-<li class="news-result-item" data-id={story.id}>
-  {sourceUrl ? (
-    <a href={sourceUrl} class="news-result-link" target="_blank" rel="noopener noreferrer">
-      <div class="library-result-header">
-        <h3>
-          <span>{titleText}</span> <ArrowUpRight size={16} aria-hidden="true" />
-        </h3>
-        {formattedDate && <StatusPill variant="plum">{formattedDate}</StatusPill>}
-      </div>
+<li
+  class={sourceUrl ? 'news-result-item news-result-item--linked' : 'news-result-item'}
+  data-id={story.id}
+>
+  <div class="news-result-link">
+    <div class="library-result-header">
+      <h3>
+        {sourceUrl ? (
+          <a
+            href={sourceUrl}
+            class="news-card-primary-link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>{titleText}</span> <ArrowUpRight size={16} aria-hidden="true" />
+          </a>
+        ) : (
+          <span>{titleText}</span>
+        )}
+      </h3>
+      {formattedDate && <StatusPill variant="plum">{formattedDate}</StatusPill>}
+    </div>
 
-      {story.text_html ? (
-        <p class="news-result-text" set:html={story.text_html} />
-      ) : (
-        <p class="news-result-text">{story.text}</p>
+    {story.text_html ? (
+      <p class="news-result-text" set:html={story.text_html} />
+    ) : (
+      <p class="news-result-text">{story.text}</p>
+    )}
+
+    <div class="library-result-meta">
+      {story.authority_name && (
+        <span class="authority-label">
+          {authorityHref ? (
+            <a href={authorityHref} class="news-cross-link news-cross-link--authority">
+              {story.authority_name}
+            </a>
+          ) : (
+            story.authority_name
+          )}
+          {story.country ? ` · ${story.country}` : ''}
+        </span>
       )}
-
-      <div class="library-result-meta">
-        {story.authority_name && (
-          <span class="authority-label">
-            {story.authority_name}
-            {story.country ? ` · ${story.country}` : ''}
-          </span>
-        )}
-        {story.country && !story.authority_name && (
-          <span class="authority-label">{story.country}</span>
-        )}
-        {story.change_type && (
-          <StatusPill variant="rose">{changeTypeLabel(story.change_type)}</StatusPill>
-        )}
-        {(story.categories || []).slice(0, 2).map((cat) => (
-          <StatusPill variant={categoryColor(cat)}>{categoryLabel(cat)}</StatusPill>
-        ))}
-        {(story.organisations || []).map((org) => (
+      {story.country && !story.authority_name && (
+        <span class="authority-label">{story.country}</span>
+      )}
+      {mentionedLibraries.map((lib) =>
+        lib.url ? (
+          <a
+            href={joinBaseUrl(lib.url, baseUrl)}
+            class="status-pill status-pill--plum news-library-pill news-cross-link news-cross-link--pill"
+          >
+            {lib.name}
+          </a>
+        ) : (
+          <StatusPill variant="plum" class="news-library-pill">
+            {lib.name}
+          </StatusPill>
+        )
+      )}
+      {story.change_type && (
+        <StatusPill variant="rose">{changeTypeLabel(story.change_type)}</StatusPill>
+      )}
+      {(story.categories || []).slice(0, 2).map((cat) => (
+        <StatusPill variant={categoryColor(cat)}>{categoryLabel(cat)}</StatusPill>
+      ))}
+      {(story.organisations || []).map((org) => {
+        const orgHref = organisationPageUrl(org, baseUrl)
+        return orgHref ? (
+          <a
+            href={orgHref}
+            class="status-pill status-pill--green news-cross-link news-cross-link--pill"
+          >
+            {org}
+          </a>
+        ) : (
           <StatusPill variant="green">{org}</StatusPill>
-        ))}
+        )
+      })}
+      {sourceUrl && (
         <span class="news-source-link">
           <span>{sourceDomain || 'Source'}</span>
           <ArrowUpRight size={14} aria-hidden="true" />
         </span>
-      </div>
-    </a>
-  ) : (
-    <div class="news-result-link">
-      <div class="library-result-header">
-        <h3>
-          <span>{titleText}</span>
-        </h3>
-        {formattedDate && <StatusPill variant="plum">{formattedDate}</StatusPill>}
-      </div>
-
-      {story.text_html ? (
-        <p class="news-result-text" set:html={story.text_html} />
-      ) : (
-        <p class="news-result-text">{story.text}</p>
       )}
-
-      <div class="library-result-meta">
-        {story.authority_name && (
-          <span class="authority-label">
-            {story.authority_name}
-            {story.country ? ` · ${story.country}` : ''}
-          </span>
-        )}
-        {story.country && !story.authority_name && (
-          <span class="authority-label">{story.country}</span>
-        )}
-        {story.change_type && (
-          <StatusPill variant="rose">{changeTypeLabel(story.change_type)}</StatusPill>
-        )}
-        {(story.categories || []).slice(0, 2).map((cat) => (
-          <StatusPill variant={categoryColor(cat)}>{categoryLabel(cat)}</StatusPill>
-        ))}
-        {(story.organisations || []).map((org) => (
-          <StatusPill variant="green">{org}</StatusPill>
-        ))}
-      </div>
     </div>
-  )}
+  </div>
 </li>

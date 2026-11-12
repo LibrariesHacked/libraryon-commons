@@ -505,6 +505,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
 
     li.addEventListener('click', (event) => {
       if (event.metaKey || event.ctrlKey || event.shiftKey) return
+      if (event.target instanceof Element && event.target.closest('a')) return
 
       event.preventDefault()
       const mapEl = document.querySelector('#library-results-map')

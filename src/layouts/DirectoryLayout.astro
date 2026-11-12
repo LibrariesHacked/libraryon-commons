@@ -1,5 +1,5 @@
 ---
-import { Building, Globe, Library } from '@lucide/astro'
+import { BarChart3, Building, Globe, Library, Newspaper } from '@lucide/astro'
 import Breadcrumbs from '../components/Breadcrumbs.astro'
 import { directoryBreadcrumbs } from '../lib/directory/directoryHelpers.mjs'
 import SiteLayout from './SiteLayout.astro'
@@ -20,6 +20,8 @@ const countryNames = [
 const getHeroTagIcon = (tag = '') => {
   const lower = String(tag).toLowerCase()
   if (countryNames.some((country) => lower.includes(country))) return Globe
+  if (lower.includes('activity') || lower.includes('impact')) return BarChart3
+  if (lower.includes('news') || lower.includes('stor')) return Newspaper
   if (lower.includes('librar') || lower.includes('service')) return Library
   return Building
 }
@@ -40,11 +42,22 @@ const getHeroTagIcon = (tag = '') => {
       {tags.length > 0 && (
         <ul class="tags hero-tags">
           {tags.map((tag) => {
-            const Icon = getHeroTagIcon(tag)
+            const label = typeof tag === 'object' && tag !== null ? tag.label : tag
+            const href = typeof tag === 'object' && tag !== null ? tag.href : null
+            const Icon = getHeroTagIcon(label)
             return (
               <li class="hero-tag">
-                <Icon size={14} class="hero-tag-icon" aria-hidden="true" />
-                <span>{tag}</span>
+                {href ? (
+                  <a href={href} class="hero-tag-link">
+                    <Icon size={14} class="hero-tag-icon" aria-hidden="true" />
+                    <span>{label}</span>
+                  </a>
+                ) : (
+                  <>
+                    <Icon size={14} class="hero-tag-icon" aria-hidden="true" />
+                    <span>{label}</span>
+                  </>
+                )}
               </li>
             )
           })}

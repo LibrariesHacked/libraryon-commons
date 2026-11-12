@@ -19,7 +19,13 @@ import {
   getNewsForLibrary,
   getNewsForAuthority,
   getNewsForOrganisation,
+  getNewsIndexStories,
   filterStoriesByDate,
+  getOrgSlug,
+  authorityPageUrl,
+  organisationPageUrl,
+  newsExplorerUrl,
+  matchesStoryQuery,
   CATEGORY_LABELS,
   CHANGE_TYPE_LABELS,
   CATEGORY_COLORS
@@ -249,4 +255,112 @@ test('sync-news GitHub workflow is configured for automatic scheduled and dispat
     steps.some((s) => s.run?.includes('git commit')),
     'commits news changes'
   )
+})
+
+test('browser client scripts import pure newsFormatHelpers instead of Node-only newsHelpers', () => {
+  const formatHelpersSource = readFileSync(
+    new URL('../src/lib/content/newsFormatHelpers.mjs', import.meta.url),
+    'utf8'
+  )
+  assert.doesNotMatch(formatHelpersSource, /node:/)
+
+  for (const relPath of [
+    '../src/components/NewsList.astro',
+    '../src/components/NewsMap.astro',
+    '../src/pages/news/index.astro'
+  ]) {
+    const astroSource = readFileSync(new URL(relPath, import.meta.url), 'utf8')
+    const clientScriptMatches = [
+      ...astroSource.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)
+    ]
+    for (const match of clientScriptMatches) {
+      assert.doesNotMatch(
+        match[1],
+        /newsHelpers\.mjs/,
+        `${relPath} client script must not import server-only newsHelpers.mjs`
+      )
+    }
+  }
+})
+
+test('Aberdeen City authority exposes all summary stories across time presets', () => {
+  const summary = getNewsSummaryForAuthority('S12000033', 'aberdeen-city', 'Aberdeen City')
+  const stories = getNewsForAuthority('S12000033', 'aberdeen-city', 'Aberdeen City')
+  assert.ok(summary)
+  assert.equal(stories.length, summary.total)
+  assert.equal(filterStoriesByDate(stories, { preset: 'all' }).length, stories.length)
+  assert.ok(filterStoriesByDate(stories, { preset: '3y' }).length > 1)
+})
+
+test('news cross-reference helpers resolve authority, organisation, and explorer URLs cleanly', () => {
+  assert.equal(authorityPageUrl('aberdeen-city'), '/libraries/aberdeen-city/')
+  assert.equal(authorityPageUrl('aberdeen-city', '/commons/'), '/commons/libraries/aberdeen-city/')
+  assert.equal(authorityPageUrl(''), null)
+
+  assert.equal(getOrgSlug('Arts Council England'), 'arts-council-england')
+  assert.equal(getOrgSlug('Scottish Library and Information Council'), 'slic')
+  assert.equal(organisationPageUrl('CILIP'), '/organisations/cilip/')
+  assert.equal(
+    organisationPageUrl('British Library', '/sub'),
+    '/sub/organisations/british-library/'
+  )
+
+  assert.equal(
+    newsExplorerUrl({ authority: 'Aberdeen City', category: 'cuts_and_finance' }),
+    '/news/?authority=Aberdeen+City&category=cuts_and_finance'
+  )
+
+  const sampleStory = {
+    text: 'Service update announced.',
+    entity: 'Aberdeen City',
+    authority_name: 'Aberdeen City',
+    libraries: [{ name: 'Cornhill Library', url: '/libraries/aberdeen-city/cornhill-library/' }]
+  }
+  assert.equal(matchesStoryQuery(sampleStory, 'cornhill'), true)
+  assert.equal(matchesStoryQuery(sampleStory, 'nonexistent branch'), false)
+})
+
+test('enriched stories carry authority_slug and mentioned library branch URLs', () => {
+  const meta = getNewsMetadata()
+  assert.equal(meta.authority_slugs_by_name?.['Aberdeen City'], 'aberdeen-city')
+  assert.equal(meta.authority_slugs_by_name?.['Northamptonshire'], undefined)
+
+  const aberdeenStories = getNewsForAuthority('S12000033', 'aberdeen-city', 'Aberdeen City')
+  assert.ok(aberdeenStories.length > 0)
+  assert.equal(aberdeenStories[0].authority_slug, 'aberdeen-city')
+  const storyWithBranch = aberdeenStories.find(
+    (s) => Array.isArray(s.libraries) && s.libraries.length > 0
+  )
+  assert.ok(storyWithBranch, 'Aberdeen stories include branch-linked stories')
+  assert.match(storyWithBranch.libraries[0].url, /^\/libraries\/aberdeen-city\/[^/]+\/$/)
+
+  const indexStories = getNewsIndexStories()
+  const indexWithBranch = indexStories.find(
+    (s) => Array.isArray(s.libraries) && s.libraries.length > 0
+  )
+  assert.ok(indexWithBranch, 'news-index stories are enriched with mentioned library links')
+  assert.ok(Array.isArray(indexWithBranch.library_names))
+})
+
+test('NewsCard and templates cross-reference without nested anchor tags', () => {
+  const newsCardSource = readFileSync(
+    new URL('../src/components/NewsCard.astro', import.meta.url),
+    'utf8'
+  )
+  assert.match(newsCardSource, /news-card-primary-link/)
+  assert.match(newsCardSource, /news-cross-link--authority/)
+  assert.doesNotMatch(newsCardSource, /<a[^>]+class="news-result-link"/)
+
+  const libraryTemplateSource = readFileSync(
+    new URL('../src/templates/LibraryTemplate.astro', import.meta.url),
+    'utf8'
+  )
+  assert.match(libraryTemplateSource, /news-authority-fallback/)
+  assert.match(libraryTemplateSource, /#news-list-heading/)
+
+  const orgTemplateSource = readFileSync(
+    new URL('../src/templates/OrganisationTemplate.astro', import.meta.url),
+    'utf8'
+  )
+  assert.match(orgTemplateSource, /Jump to news stories/)
 })

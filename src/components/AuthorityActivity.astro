@@ -1,0 +1,112 @@
+---
+import {
+  ArrowUpRight,
+  BookOpen,
+  Calendar,
+  HeartHandshake,
+  Laptop,
+  Sparkles,
+  TrendingUp,
+  Users,
+  Wifi
+} from '@lucide/astro'
+import { buildAuthorityActivitySummary } from '../lib/content/activityHelpers.mjs'
+
+const { activity, authority } = Astro.props
+const summary = activity ? buildAuthorityActivitySummary(activity, authority?.name) : null
+
+const getCardIcon = (metricKey) => {
+  switch (metricKey) {
+    case 'visits':
+      return Users
+    case 'loans':
+      return BookOpen
+    case 'users':
+      return Sparkles
+    case 'events':
+      return Calendar
+    case 'attendance':
+      return HeartHandshake
+    case 'computerHours':
+      return Laptop
+    case 'wifiSessions':
+      return Wifi
+    default:
+      return Sparkles
+  }
+}
+---
+
+{summary && summary.cards.length > 0 && (
+  <section
+    class="detail-section authority-activity-section"
+    aria-labelledby="authority-activity-heading"
+  >
+    <div class="authority-activity-header">
+      <div>
+        <h2 id="authority-activity-heading">Community impact and library activity</h2>
+        <p class="authority-activity-lead">{summary.leadText}</p>
+      </div>
+      <span class="status-pill status-pill--plum">{summary.periodLabel} annual return</span>
+    </div>
+
+    <div class="activity-cards-grid">
+      {summary.cards.map((card) => {
+        const Icon = getCardIcon(card.key)
+        return (
+          <article class={`activity-card activity-card--${card.tone}`}>
+            <div class="activity-card-top">
+              <span class="activity-card-icon" aria-hidden="true">
+                <Icon size={18} />
+              </span>
+              {card.growthBadge ? (
+                <span class="activity-growth-pill">
+                  <TrendingUp size={13} aria-hidden="true" />
+                  <span>{card.growthBadge}</span>
+                </span>
+              ) : (
+                card.isDifferentPeriod && (
+                  <span class="activity-period-pill">{card.periodLabel}</span>
+                )
+              )}
+            </div>
+
+            <div class="activity-card-main">
+              <p class="activity-card-value">{card.formattedValue}</p>
+              <h3 class="activity-card-title">
+                {card.title}
+                {card.isDifferentPeriod && card.growthBadge && (
+                  <small class="activity-card-period-inline"> ({card.periodLabel})</small>
+                )}
+              </h3>
+            </div>
+
+            <div class="activity-card-details">
+              <p class="activity-card-context">{card.primaryContext}</p>
+              {card.secondaryContext && (
+                <p class="activity-card-subcontext">{card.secondaryContext}</p>
+              )}
+            </div>
+          </article>
+        )
+      })}
+    </div>
+
+    <div class="activity-footer-note">
+      <p>
+        Headline figures from the Arts Council England Public Libraries Activity Dataset,
+        highlighting how {authority?.name || 'local'} libraries support reading, digital access, and
+        community connection.
+      </p>
+      <a
+        href="https://activity.librarydata.uk/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="activity-dashboard-link"
+      >
+        <span>Explore the English library activity dashboard</span>
+        <ArrowUpRight size={15} aria-hidden="true" />
+      </a>
+    </div>
+  </section>
+)}

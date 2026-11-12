@@ -11,57 +11,13 @@
   gap: var(--size-3);
 }
 
-.news-list-controls {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-end;
-  gap: var(--size-4);
-  background: var(--wash);
-  padding: var(--size-4);
-  border-radius: var(--card-radius);
-  margin-block: var(--size-2);
-}
-
-.news-search-field {
-  position: relative;
-  flex: 1 1 240px;
-  min-width: 200px;
-}
-
-.news-search-field .search-field-icon {
-  position: absolute;
-  left: 0.85rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--muted);
-  pointer-events: none;
-}
-
-.news-list-search-input {
-  width: 100%;
-  min-height: 42px;
-  padding: 0.5rem 0.85rem 0.5rem 2.4rem;
-  background: var(--paper);
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  font-family: var(--font);
-  font-size: 0.88rem;
-  color: var(--ink);
-  outline: none;
-  box-sizing: border-box;
-  transition:
-    border-color var(--motion-ease),
-    box-shadow var(--motion-ease);
-}
-
-.news-list-search-input:focus {
-  border-color: var(--brand-primary);
-  box-shadow: 0 0 0 2px var(--brand-primary);
-}
-
 .news-list-time-slider {
-  flex: 1 1 260px;
-  min-width: 220px;
+  width: 100%;
+}
+
+.news-summary-main + .news-list-time-slider {
+  padding-top: var(--size-3);
+  border-top: var(--border-size-1) solid var(--line-plum-soft);
 }
 
 .news-list-status-row {
@@ -181,13 +137,19 @@
   color: var(--brand-primary);
 }
 
+.library-results > li.news-result-item,
 .news-result-item {
+  position: relative;
   padding: 0;
   background: var(--paper);
   transition:
     background var(--motion-ease),
     box-shadow var(--motion-ease);
   display: flex;
+}
+
+.news-result-item--linked {
+  cursor: pointer;
 }
 
 .news-result-item:nth-child(even) {
@@ -203,7 +165,7 @@
 .news-result-link {
   display: flex;
   flex-direction: column;
-  gap: var(--size-2);
+  gap: 0.3rem;
   padding: var(--size-4);
   width: 100%;
   text-decoration: none;
@@ -215,9 +177,100 @@ a.news-result-link {
   cursor: pointer;
 }
 
-a.news-result-link:focus-visible {
+a.news-result-link:focus-visible,
+.news-card-primary-link:focus-visible {
   outline: 3px solid var(--focus);
-  outline-offset: -3px;
+  outline-offset: 2px;
+}
+
+.news-card-primary-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.news-cross-link {
+  position: relative;
+  z-index: 2;
+  color: inherit;
+  text-decoration: none;
+}
+
+.news-cross-link--authority {
+  color: var(--brand-link);
+  font-weight: var(--font-weight-6);
+}
+
+.news-cross-link--authority:hover,
+.news-cross-link--authority:focus-visible {
+  color: var(--brand-primary);
+  text-decoration: underline;
+}
+
+.news-cross-link--pill {
+  transition:
+    transform var(--motion-ease),
+    box-shadow var(--motion-ease);
+}
+
+.news-cross-link--pill:hover,
+.news-cross-link--pill:focus-visible {
+  text-decoration: underline;
+  box-shadow: 0 0 0 1px currentColor;
+}
+
+.hero-tag-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-2);
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero-tag-link:hover,
+.hero-tag-link:focus-visible {
+  text-decoration: underline;
+}
+
+.news-context-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--size-2) var(--size-4);
+  margin-top: var(--size-2);
+  padding: var(--size-2) var(--size-3);
+  background: var(--surface-tint-plum);
+  border-radius: var(--radius-3);
+  font-size: var(--font-size-0);
+}
+
+.news-context-links[hidden] {
+  display: none;
+}
+
+.news-context-link-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--size-2);
+  flex-wrap: wrap;
+}
+
+.news-context-link-prefix {
+  color: var(--muted);
+  font-weight: var(--font-weight-6);
+}
+
+.news-context-link {
+  color: var(--brand-link);
+  font-weight: var(--font-weight-6);
+  text-decoration: none;
+}
+
+.news-context-link:hover,
+.news-context-link:focus-visible {
+  color: var(--brand-primary);
+  text-decoration: underline;
 }
 
 .news-result-item .library-result-header {
@@ -225,7 +278,12 @@ a.news-result-link:focus-visible {
   align-items: baseline;
   justify-content: space-between;
   gap: var(--size-3);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0;
+}
+
+.news-result-item .library-result-meta {
+  margin-top: 0.1rem;
+  gap: 0.35rem var(--size-2);
 }
 
 .news-result-item h3 {
@@ -233,18 +291,18 @@ a.news-result-link:focus-visible {
   font-size: 1.05rem;
   line-height: var(--font-lineheight-2);
   color: var(--brand-link);
-  display: inline-flex;
-  align-items: center;
-  gap: 0.35rem;
+  text-decoration: none;
 }
 
 .news-result-item:hover h3,
 .news-result-item:focus-within h3 {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--brand-primary);
 }
 
-.news-result-item h3 a {
+.news-result-item h3 a,
+.library-results > li.news-result-item h3 a,
+.library-results > li.news-result-item h3 a:hover {
   color: inherit;
   text-decoration: none;
   display: inline-flex;
@@ -252,7 +310,8 @@ a.news-result-link:focus-visible {
   gap: 0.35rem;
 }
 
-.news-result-item h3 a:hover {
+.news-result-item--linked:hover h3 a > span,
+.news-result-item--linked:focus-within h3 a > span {
   text-decoration: underline;
 }
 
@@ -356,8 +415,6 @@ a.news-result-link:focus-visible {
   display: flex;
   flex-direction: column;
   gap: var(--size-3);
-  margin-top: var(--size-3);
-  margin-bottom: var(--size-4);
 }
 
 .news-summary-main {
@@ -926,22 +983,7 @@ a.news-result-link:focus-visible {
   opacity: 0.85;
 }
 
-.map-popup-location {
-  gap: var(--size-2);
-}
-
-.map-popup-location .map-popup-header {
-  gap: 0.35rem;
-}
-
-.map-popup-location .map-popup-title {
-  font-size: 1rem;
-  line-height: 1.3;
-}
-
 .map-popup-location .map-popup-text {
-  font-size: 0.84rem;
-  line-height: 1.45;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -950,11 +992,6 @@ a.news-result-link:focus-visible {
 
 .map-popup-location .map-popup-story-viewport {
   gap: 0.35rem;
-}
-
-.map-popup-location .map-popup-footer {
-  margin-top: 0.25rem;
-  padding-top: 0.25rem;
 }
 
 .org-lead-description {

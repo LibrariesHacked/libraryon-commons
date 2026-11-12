@@ -773,6 +773,9 @@
   border-radius: var(--card-radius);
   background: var(--surface-tint-rose-pale);
 }
+.faq-section:last-child {
+  margin-bottom: 0;
+}
 .faq-section > h2 {
   margin: 0 0 var(--size-3);
   color: var(--brand-berry);

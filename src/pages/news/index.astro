@@ -28,6 +28,7 @@ import NewsCard from '../../components/NewsCard.astro'
 import NewsMap from '../../components/NewsMap.astro'
 import {
   getNewsMetadata,
+  getNewsIndexStories,
   filterStoriesByDate,
   categoryColor,
   categoryLabel,
@@ -36,21 +37,9 @@ import {
   CHANGE_TYPE_LABELS
 } from '../../lib/content/newsHelpers.mjs'
 import { settings, sitePath } from '../../lib/site/siteHelpers.mjs'
-import { readFileSync, existsSync } from 'node:fs'
-import { pathToFileURL } from 'node:url'
 
 const metadata = getNewsMetadata()
-const localNewsUrl = new URL('../../data/news/news-index.json', import.meta.url)
-const rootNewsUrl = new URL('./src/data/news/news-index.json', pathToFileURL(`${process.cwd()}/`))
-const newsIndexUrl = existsSync(localNewsUrl) ? localNewsUrl : rootNewsUrl
-let allStories = []
-if (existsSync(newsIndexUrl)) {
-  try {
-    allStories = JSON.parse(readFileSync(newsIndexUrl, 'utf8'))
-  } catch (err) {
-    console.warn('Failed reading news-index.json:', err.message)
-  }
-}
+const allStories = getNewsIndexStories()
 
 // Initial stories filtered to the past year for SSR (anchor to latest story or today)
 const initialFilteredStories = filterStoriesByDate(allStories, { preset: '1y' })
@@ -187,7 +176,9 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
       role="search"
       aria-label="Filter news stories"
       data-news-url={sitePath('/news.json')}
+      data-base-url={import.meta.env.BASE_URL}
       data-total-stories={metadata.total_stories}
+      data-authority-slugs={JSON.stringify(metadata.authority_slugs_by_name || {})}
     >
       <div class="library-search-bar">
         <div class="library-search-input-wrap">
@@ -451,6 +442,8 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
 
         <div id="active-filter-chips" class="active-filter-chips" aria-live="polite"></div>
       </div>
+
+      <div id="news-context-links" class="news-context-links" hidden aria-live="polite"></div>
     </form>
 
     <section class="library-results-workspace" aria-labelledby="news-results-heading">
@@ -496,7 +489,15 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
 
 <script>
   import { autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom'
-  import { categoryColor, categoryLabel, changeTypeLabel } from '../../lib/content/newsHelpers.mjs'
+  import {
+    authorityPageUrl,
+    categoryColor,
+    categoryLabel,
+    changeTypeLabel,
+    matchesStoryQuery,
+    organisationPageUrl
+  } from '../../lib/content/newsFormatHelpers.mjs'
+  import { createNewsStoryElement } from '../../scripts/newsListClient.mjs'
 
   let allStories = []
   let filteredStories = []
@@ -517,10 +518,18 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
   const applyPanelBtn = document.getElementById('apply-panel-filters')
   const clearPanelBtn = document.getElementById('clear-panel-filters')
   const activeChipsContainer = document.getElementById('active-filter-chips')
+  const contextLinksContainer = document.getElementById('news-context-links')
   const timeSlider = document.getElementById('news-time-slider')
   const timeSliderValue = document.getElementById('time-slider-value')
   const newsUrl = form?.dataset?.newsUrl || '/news.json'
+  const baseUrl = form?.dataset?.baseUrl || '/'
   const totalArchiveCount = Number(form?.dataset?.totalStories || 38093)
+  let authoritySlugsByName = {}
+  try {
+    authoritySlugsByName = JSON.parse(form?.dataset?.authoritySlugs || '{}')
+  } catch {
+    authoritySlugsByName = {}
+  }
 
   // Sets to track active filter selections
   const selectedCats = new Set()
@@ -672,6 +681,8 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
         const urlParams = new URLSearchParams(window.location.search)
         const paramAuth = urlParams.get('authority')
         const paramOrg = urlParams.get('organisation')
+        const paramCat = urlParams.get('category')
+        const paramChange = urlParams.get('change_type')
         const paramQ = urlParams.get('q')
         const paramRange = urlParams.get('range')
         const paramAll = urlParams.get('all')
@@ -680,6 +691,20 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
         if (paramQ && searchInput) searchInput.value = paramQ
         if (paramOrg) {
           selectedOrgs.add(paramOrg)
+        }
+        if (paramCat) {
+          paramCat
+            .split(',')
+            .map((v) => v.trim())
+            .filter(Boolean)
+            .forEach((v) => selectedCats.add(v))
+        }
+        if (paramChange) {
+          paramChange
+            .split(',')
+            .map((v) => v.trim())
+            .filter(Boolean)
+            .forEach((v) => selectedChanges.add(v))
         }
 
         if (paramRange) {
@@ -889,18 +914,15 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
 
     syncTagButtons()
     updateActiveChips(activeFilters)
+    updateContextLinks(selectedAuthority, selectedOrgs)
 
     filteredStories = allStories.filter((story) => {
       const storyDate = story.date || ''
       if (minDate && storyDate && storyDate < minDate) return false
       if (maxDate && storyDate && storyDate > maxDate) return false
 
-      if (query) {
-        const textMatch = (story.text || '').toLowerCase().includes(query)
-        const entityMatch = (story.entity || '').toLowerCase().includes(query)
-        const authMatch = (story.authority_name || '').toLowerCase().includes(query)
-        const libMatch = (story.library_names || []).some((n) => n.toLowerCase().includes(query))
-        if (!textMatch && !entityMatch && !authMatch && !libMatch) return false
+      if (query && !matchesStoryQuery(story, query)) {
+        return false
       }
 
       if (selectedCats.size > 0) {
@@ -933,92 +955,61 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     updateMap()
   }
 
-  const arrowSvg =
-    '<svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>'
+  function updateContextLinks(selectedAuthority, selectedOrgsSet) {
+    if (!contextLinksContainer) return
+    contextLinksContainer.innerHTML = ''
+    const items = []
 
-  function escapeHtml(str) {
-    if (!str) return ''
-    const div = document.createElement('div')
-    div.textContent = str
-    return div.innerHTML
+    if (selectedAuthority) {
+      const slug = authoritySlugsByName[selectedAuthority]
+      const href = authorityPageUrl(slug, baseUrl)
+      if (href) {
+        items.push({
+          prefix: 'Authority directory:',
+          label: `${selectedAuthority} libraries & profile →`,
+          href
+        })
+      }
+    }
+
+    for (const orgName of selectedOrgsSet) {
+      const href = organisationPageUrl(orgName, baseUrl)
+      if (href) {
+        items.push({
+          prefix: 'Stakeholder profile:',
+          label: `${orgName} overview & remit →`,
+          href
+        })
+      }
+    }
+
+    if (items.length === 0) {
+      contextLinksContainer.hidden = true
+      return
+    }
+
+    const fragment = document.createDocumentFragment()
+    for (const item of items) {
+      const wrap = document.createElement('span')
+      wrap.className = 'news-context-link-item'
+      const prefixSpan = document.createElement('span')
+      prefixSpan.className = 'news-context-link-prefix'
+      prefixSpan.textContent = item.prefix
+      const a = document.createElement('a')
+      a.href = item.href
+      a.className = 'news-context-link'
+      a.textContent = item.label
+      wrap.appendChild(prefixSpan)
+      wrap.appendChild(a)
+      fragment.appendChild(wrap)
+    }
+
+    contextLinksContainer.appendChild(fragment)
+    contextLinksContainer.hidden = false
   }
 
   function createStoryElement(story) {
-    const li = document.createElement('li')
-    li.className = 'news-result-item'
-    if (story.id) li.dataset.id = story.id
-
-    const dateStr = story.date || ''
-    const formattedDate = formatDate(dateStr)
-    const entityStr = story.entity || story.authority_name || 'News update'
-    const textStr = story.text || ''
-
-    const firstLink = story.links && story.links.length > 0 ? story.links[0] : null
-    const sourceUrl = story.url || firstLink?.url || null
-    const sourceDomain = story.domain || firstLink?.domain || 'Source'
-
-    const titleInner = sourceUrl
-      ? `<span>${escapeHtml(entityStr)}</span> ${arrowSvg}`
-      : `<span>${escapeHtml(entityStr)}</span>`
-
-    const metaParts = []
-    if (story.authority_name) {
-      const countryPart = story.country ? ` · ${escapeHtml(story.country)}` : ''
-      metaParts.push(
-        `<span class="authority-label">${escapeHtml(story.authority_name)}${countryPart}</span>`
-      )
-    }
-    if (story.country && !story.authority_name) {
-      metaParts.push(`<span class="authority-label">${escapeHtml(story.country)}</span>`)
-    }
-    if (story.change_type) {
-      metaParts.push(
-        `<span class="status-pill status-pill--rose">${escapeHtml(changeTypeLabel(story.change_type))}</span>`
-      )
-    }
-    ;(story.categories || []).slice(0, 2).forEach((cat) => {
-      metaParts.push(
-        `<span class="status-pill status-pill--${categoryColor(cat)}">${escapeHtml(categoryLabel(cat))}</span>`
-      )
-    })
-    ;(story.organisations || []).forEach((org) => {
-      metaParts.push(`<span class="status-pill status-pill--green">${escapeHtml(org)}</span>`)
-    })
-    if (sourceUrl) {
-      metaParts.push(
-        `<span class="news-source-link"><span>${escapeHtml(sourceDomain)}</span> ${arrowSvg}</span>`
-      )
-    }
-
-    const innerHtml = `
-      <div class="library-result-header">
-        <h3>${titleInner}</h3>
-        ${formattedDate ? `<span class="status-pill status-pill--plum">${escapeHtml(formattedDate)}</span>` : ''}
-      </div>
-      <p class="news-result-text"></p>
-      <div class="library-result-meta">
-        ${metaParts.join('')}
-      </div>
-    `
-
-    if (sourceUrl) {
-      const a = document.createElement('a')
-      a.className = 'news-result-link'
-      a.href = sourceUrl
-      a.target = '_blank'
-      a.rel = 'noopener noreferrer'
-      a.innerHTML = innerHtml
-      li.appendChild(a)
-    } else {
-      const div = document.createElement('div')
-      div.className = 'news-result-link'
-      div.innerHTML = innerHtml
-      li.appendChild(div)
-    }
-
-    const textEl = li.querySelector('.news-result-text')
-    if (textEl) textEl.textContent = textStr
-    return li
+    return createNewsStoryElement(story, { baseUrl })
   }
 
   function renderResults() {

@@ -196,6 +196,12 @@
   color: var(--brand-primary);
   border-color: var(--brand-primary);
 }
+.home-content-section {
+  padding-bottom: var(--size-7);
+}
+.home-prose > :last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 960px) {
   .hero-carousel-slide {
     flex: 0 0 calc((100% - 1.15rem) / 2);

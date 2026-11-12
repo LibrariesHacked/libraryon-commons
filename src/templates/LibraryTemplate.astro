@@ -12,17 +12,34 @@ import DirectoryLayout from '../layouts/DirectoryLayout.astro'
 import { libraries, facilityLabel } from '../lib/directory/directoryLoader.mjs'
 import { canonicalInternalPath, safeURL, settings, sitePath } from '../lib/site/siteHelpers.mjs'
 import { generateLibrarySchema } from '../lib/site/seoHelpers.mjs'
-import { getNewsForLibrary, getNewsSummaryForLibrary } from '../lib/content/newsHelpers.mjs'
+import {
+  getNewsForLibrary,
+  getNewsSummaryForAuthority,
+  getNewsSummaryForLibrary
+} from '../lib/content/newsHelpers.mjs'
 
 const { library, authority } = Astro.props
 const copy = settings.ui.directory
 const maps = library.mapLinks
 const nearby = library.nearby(libraries)
-const tags = [authority?.country, library.operatingModel].filter(Boolean)
 const newsStories = getNewsForLibrary(library.id)
 const newsSummary = getNewsSummaryForLibrary(library.id)
 const hasNews = newsStories.length > 0 || (newsSummary && newsSummary.total > 0)
 const totalNewsCount = newsSummary?.total ?? newsStories.length
+const authorityNewsSummary = authority
+  ? getNewsSummaryForAuthority(authority.gss, authority.slug, authority.name)
+  : null
+const authorityNewsCount = authorityNewsSummary?.total ?? 0
+const tags = [
+  authority?.country,
+  library.operatingModel,
+  hasNews && totalNewsCount > 0
+    ? {
+        label: `${totalNewsCount.toLocaleString('en-GB')} news ${totalNewsCount === 1 ? 'story' : 'stories'}`,
+        href: '#news-list-heading'
+      }
+    : null
+].filter(Boolean)
 
 const siteBase = Astro.site ? Astro.site.href : settings.site.url
 const canonicalUrl = Astro.site
@@ -137,7 +154,7 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
     </section>
   )}
 
-  {hasNews && (
+  {hasNews ? (
     <section class="detail-section">
       <NewsList
         stories={newsStories}
@@ -146,6 +163,21 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
         subtitle="Stories mentioning this library in Public Libraries News."
       />
     </section>
+  ) : (
+    authority &&
+    authorityNewsCount > 0 && (
+      <section class="detail-section">
+        <h2>Public Libraries News</h2>
+        <p class="news-authority-fallback">
+          No branch-specific news stories are recorded for {library.name}. View{' '}
+          <a href={`${sitePath(`/libraries/${authority.slug}/`)}#news-list-heading`}>
+            {authorityNewsCount.toLocaleString('en-GB')} service-wide news stories for{' '}
+            {authority.name}
+          </a>
+          .
+        </p>
+      </section>
+    )
   )}
 
   <ShareButtons

@@ -12,6 +12,7 @@
     "package:netlify-admin": "node scripts/package-netlify-admin.mjs",
     "test": "node --test",
     "sync:news": "node scripts/sync-news.mjs",
+    "sync:activity": "node scripts/sync-activity.mjs",
     "directory:schemas": "node scripts/directory-schemas.mjs",
     "directory:lookups": "node scripts/directory/lookups.mjs",
     "directory:migrate": "node scripts/directory/migrate.mjs",

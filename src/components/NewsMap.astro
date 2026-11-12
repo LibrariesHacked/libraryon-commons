@@ -1,5 +1,6 @@
 ---
 import 'maplibre-gl/dist/maplibre-gl.css'
+import { storiesToLocationGeoJson } from '../lib/content/newsFormatHelpers.mjs'
 
 const {
   id = `news-map-${crypto.randomUUID()}`,
@@ -7,83 +8,6 @@ const {
   label = 'News story locations',
   emptyMessage = 'No mapped news stories to display for these filters.'
 } = Astro.props
-
-function storiesToLocationGeoJson(items) {
-  const locMap = new Map()
-  for (const s of items) {
-    if (s.recent_stories && Array.isArray(s.recent_stories)) {
-      const lat4 = Math.round(Number(s.lat) * 1e4) / 1e4
-      const lng4 = Math.round(Number(s.lng) * 1e4) / 1e4
-      const key = `${lat4},${lng4}`
-      locMap.set(key, {
-        id: s.id || key,
-        name: s.name || s.authority_name || 'News location',
-        authority_name: s.authority_name || '',
-        country: s.country || '',
-        lat: lat4,
-        lng: lng4,
-        story_count: s.story_count || s.recent_stories.length,
-        stories: s.recent_stories
-      })
-      continue
-    }
-
-    if (typeof s.lat === 'number' && typeof s.lng === 'number' && !isNaN(s.lat) && !isNaN(s.lng)) {
-      const lat4 = Math.round(s.lat * 1e4) / 1e4
-      const lng4 = Math.round(s.lng * 1e4) / 1e4
-      const key = `${lat4},${lng4}`
-      if (!locMap.has(key)) {
-        locMap.set(key, {
-          id: s.authority_name || s.entity || key,
-          name: s.authority_name || s.entity || 'News location',
-          authority_name: s.authority_name || '',
-          country: s.country || '',
-          lat: lat4,
-          lng: lng4,
-          story_count: 0,
-          stories: []
-        })
-      }
-      const loc = locMap.get(key)
-      loc.story_count += 1
-      if (loc.stories.length < 15) {
-        loc.stories.push({
-          id: s.id,
-          date: s.date || '',
-          entity: s.entity || s.authority_name || 'News update',
-          text: (s.text || '').length > 180 ? `${(s.text || '').slice(0, 177)}...` : s.text || '',
-          url: s.url || '',
-          domain: s.domain || '',
-          category: (s.categories && s.categories[0]) || '',
-          change: s.change_type || ''
-        })
-      }
-    }
-  }
-
-  const features = []
-  for (const loc of locMap.values()) {
-    features.push({
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [loc.lng, loc.lat]
-      },
-      properties: {
-        id: loc.id,
-        name: loc.name,
-        authority_name: loc.authority_name,
-        country: loc.country,
-        story_count: loc.story_count,
-        stories: JSON.stringify(loc.stories)
-      }
-    })
-  }
-  return {
-    type: 'FeatureCollection',
-    features
-  }
-}
 
 const data = storiesToLocationGeoJson(stories)
 ---
@@ -123,86 +47,12 @@ const data = storiesToLocationGeoJson(stories)
 
 <script>
   import workerUrl from 'maplibre-gl/dist/maplibre-gl-worker.mjs?worker&url'
-  import { categoryColor, categoryLabel, changeTypeLabel } from '../lib/content/newsHelpers.mjs'
-
-  function storiesToLocationGeoJson(items) {
-    const locMap = new Map()
-    for (const s of items) {
-      if (s.recent_stories && Array.isArray(s.recent_stories)) {
-        const lat4 = Math.round(Number(s.lat) * 1e4) / 1e4
-        const lng4 = Math.round(Number(s.lng) * 1e4) / 1e4
-        const key = `${lat4},${lng4}`
-        locMap.set(key, {
-          id: s.id || key,
-          name: s.name || s.authority_name || 'News location',
-          authority_name: s.authority_name || '',
-          country: s.country || '',
-          lat: lat4,
-          lng: lng4,
-          story_count: s.story_count || s.recent_stories.length,
-          stories: s.recent_stories
-        })
-        continue
-      }
-
-      if (
-        typeof s.lat === 'number' &&
-        typeof s.lng === 'number' &&
-        !isNaN(s.lat) &&
-        !isNaN(s.lng)
-      ) {
-        const lat4 = Math.round(s.lat * 1e4) / 1e4
-        const lng4 = Math.round(s.lng * 1e4) / 1e4
-        const key = `${lat4},${lng4}`
-        if (!locMap.has(key)) {
-          locMap.set(key, {
-            id: s.authority_name || s.entity || key,
-            name: s.authority_name || s.entity || 'News location',
-            authority_name: s.authority_name || '',
-            country: s.country || '',
-            lat: lat4,
-            lng: lng4,
-            story_count: 0,
-            stories: []
-          })
-        }
-        const loc = locMap.get(key)
-        loc.story_count += 1
-        if (loc.stories.length < 15) {
-          loc.stories.push({
-            id: s.id,
-            date: s.date || '',
-            entity: s.entity || s.authority_name || 'News update',
-            text: (s.text || '').length > 180 ? `${(s.text || '').slice(0, 177)}...` : s.text || '',
-            url: s.url || '',
-            domain: s.domain || '',
-            category: (s.categories && s.categories[0]) || '',
-            change: s.change_type || ''
-          })
-        }
-      }
-    }
-
-    const features = []
-    for (const loc of locMap.values()) {
-      features.push({
-        type: 'Feature',
-        geometry: {
-          type: 'Point',
-          coordinates: [loc.lng, loc.lat]
-        },
-        properties: {
-          id: loc.id,
-          name: loc.name,
-          authority_name: loc.authority_name,
-          country: loc.country,
-          story_count: loc.story_count,
-          stories: JSON.stringify(loc.stories)
-        }
-      })
-    }
-    return { type: 'FeatureCollection', features }
-  }
+  import {
+    categoryColor,
+    categoryLabel,
+    changeTypeLabel,
+    storiesToLocationGeoJson
+  } from '../lib/content/newsFormatHelpers.mjs'
 
   class NewsMap extends HTMLElement {
     map = undefined
@@ -629,23 +479,6 @@ const data = storiesToLocationGeoJson(stories)
             }
 
             renderStory(0)
-
-            const footer = document.createElement('footer')
-            footer.className = 'map-popup-footer'
-            const filterBtn = document.createElement('button')
-            filterBtn.type = 'button'
-            filterBtn.className = 'map-popup-filter-btn'
-            filterBtn.textContent = 'Filter stories in list ↓'
-            filterBtn.addEventListener('click', () => {
-              this.dispatchEvent(
-                new CustomEvent('news-select-location', {
-                  bubbles: true,
-                  detail: { authority: props.authority_name || props.name }
-                })
-              )
-            })
-            footer.appendChild(filterBtn)
-            content.appendChild(footer)
 
             this.popup?.remove()
             this.popup = new Popup({

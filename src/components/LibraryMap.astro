@@ -336,14 +336,6 @@ const data = libraryMapFeatures(libraries, sitePath)
         closedBadge.append(dot, text)
         badges.appendChild(closedBadge)
       }
-      if (props.authority) {
-        const authBadge = document.createElement('span')
-        authBadge.className = 'status-pill status-pill--plum'
-        const text = document.createElement('span')
-        text.textContent = String(props.authority).replace(/-/g, ' ')
-        authBadge.appendChild(text)
-        badges.appendChild(authBadge)
-      }
       if (badges.hasChildNodes()) {
         header.appendChild(badges)
       }
@@ -381,7 +373,7 @@ const data = libraryMapFeatures(libraries, sitePath)
 
       this.removePopup()
       this.popup = new this.PopupClass({
-        maxWidth: '320px',
+        maxWidth: '280px',
         closeButton: true,
         focusAfterOpen: false
       })
