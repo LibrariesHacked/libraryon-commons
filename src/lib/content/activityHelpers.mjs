@@ -174,11 +174,7 @@ export function buildAuthorityActivitySummary(record, authorityName) {
     let secondaryContext = null
     if (visitsMetric.outreach_visits && visitsMetric.outreach_visits >= 50) {
       secondaryContext = `Includes ${visitsMetric.outreach_visits.toLocaleString('en-GB')} mobile library and home delivery visits`
-    } else if (
-      visitsMetric.per_1k &&
-      visitsMetric.per_1k >= 1000 &&
-      visitsMetric.per_1k <= 10000
-    ) {
+    } else if (visitsMetric.per_1k && visitsMetric.per_1k >= 1000 && visitsMetric.per_1k <= 10000) {
       secondaryContext = `Equivalent to ${(visitsMetric.per_1k / 1000).toFixed(1)} visits per local resident`
     }
 

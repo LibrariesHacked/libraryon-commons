@@ -100,9 +100,11 @@ src/lib/
 │   ├── cmsHelpers.mjs        # Decap CMS editor widgets (card, quote, video, hotspot)
 │   └── reviewHelpers.mjs     # Directory review worklist and audit verification
 ├── content/                  # Editorial build-time pipeline (Remark, Cheerio, loaders)
+│   ├── activityHelpers.mjs   # Authority library activity data loader and advocacy summaries
 │   ├── contentDirectives.mjs # Remark plugin for :::card, :::quote container directives
 │   ├── markdownHelpers.mjs   # Markdown AST plugins, list indentation, email protection
 │   ├── contentHelpers.mjs    # Article HTML module splitting ({{faqs}}, {{resources}})
+│   ├── newsFormatHelpers.mjs # Isomorphic news date, summary, and story card formatters
 │   ├── newsHelpers.mjs       # Public Libraries News loader and date filters
 │   └── resourceHelpers.mjs   # Downloadable document and external link tracking
 ├── directory/                # Directory domain models, validation, math, and exports

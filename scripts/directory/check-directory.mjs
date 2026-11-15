@@ -7,6 +7,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, appendFileSync } 
 import { join } from 'node:path'
 import { createHash } from 'node:crypto'
 import { normalizePostcode } from '../../src/lib/directory/dataHelpers.mjs'
+import { distanceMiles } from '../../src/lib/directory/geoHelpers.mjs'
 
 /**
  * Standard user agent for directory verification network requests.
@@ -54,6 +55,121 @@ export function checkPostcode(postcode, lookups = {}) {
     return { valid: true, normalized, status: 'terminated', lookup }
   }
   return { valid: true, normalized, status: 'found', lookup }
+}
+
+/**
+ * Check whether a library's recorded coordinates are consistent with its verified postcode and authority.
+ * Flags records whose coordinates are far outside the verified postcode area or whose recorded postcode
+ * belongs to a different authority than the verified postcode in the street address.
+ * @param {object} data - Canonical library data object.
+ * @param {object} [lookups] - Lookup cache containing `postcodes` and `uprns`.
+ * @returns {{valid: boolean, status: 'ok'|'missing-coordinates'|'out-of-authority-coordinates'|'out-of-authority-postcode', milesFromPostcode: number|null, candidateLatitude: number|null, candidateLongitude: number|null, candidatePostcode: string|null}} Coordinate assessment outcome.
+ */
+export function checkCoordinateOutlier(data, lookups = {}) {
+  const postcodes = lookups.postcodes || {}
+  const uprns = lookups.uprns || {}
+  const latitude = data?.Latitude
+  const longitude = data?.Longitude
+  const postcode = normalizePostcode(data?.Postcode)
+  const postcodeLookup = postcode ? postcodes[postcode] || null : null
+  const addressText = [data?.['Address 1'], data?.['Address 2'], data?.['Address 3']]
+    .filter(Boolean)
+    .join(', ')
+  const addressPostcode = extractPostcodeCandidate(addressText)
+  const addressPostcodeLookup =
+    addressPostcode && postcodes[addressPostcode]?.status === 'found'
+      ? postcodes[addressPostcode]
+      : null
+
+  if (
+    latitude === null ||
+    latitude === undefined ||
+    longitude === null ||
+    longitude === undefined
+  ) {
+    return {
+      valid: false,
+      status: 'missing-coordinates',
+      milesFromPostcode: null,
+      candidateLatitude: postcodeLookup?.latitude ?? null,
+      candidateLongitude: postcodeLookup?.longitude ?? null,
+      candidatePostcode: null
+    }
+  }
+
+  const point = { latitude, longitude }
+  const authorityCode = data?.['Local authority code'] || null
+
+  if (
+    addressPostcode &&
+    addressPostcode !== postcode &&
+    addressPostcodeLookup?.latitude !== null &&
+    addressPostcodeLookup?.latitude !== undefined &&
+    authorityCode &&
+    addressPostcodeLookup.authorityCode === authorityCode &&
+    postcodeLookup?.authorityCode &&
+    postcodeLookup.authorityCode !== authorityCode
+  ) {
+    const milesFromAddressPostcode = distanceMiles(point, addressPostcodeLookup)
+    if (milesFromAddressPostcode !== null && milesFromAddressPostcode > 15) {
+      return {
+        valid: false,
+        status: 'out-of-authority-postcode',
+        milesFromPostcode: Number(milesFromAddressPostcode.toFixed(2)),
+        candidateLatitude: addressPostcodeLookup.latitude,
+        candidateLongitude: addressPostcodeLookup.longitude,
+        candidatePostcode: addressPostcode
+      }
+    }
+  }
+
+  if (
+    postcodeLookup?.status === 'found' &&
+    postcodeLookup.latitude !== null &&
+    postcodeLookup.latitude !== undefined
+  ) {
+    const milesFromPostcode = distanceMiles(point, postcodeLookup)
+    const isDevolvedSingleAuthority = authorityCode === 'N92000002'
+    if (
+      !isDevolvedSingleAuthority &&
+      milesFromPostcode !== null &&
+      milesFromPostcode > 15 &&
+      (!addressPostcodeLookup?.latitude || distanceMiles(point, addressPostcodeLookup) > 15)
+    ) {
+      const uprn = data?.['Unique property reference number']
+      const uprnLookup = uprn ? uprns[String(uprn)] : null
+      const useUprn =
+        uprnLookup?.status === 'found' &&
+        uprnLookup.postcode === postcode &&
+        uprnLookup.latitude !== null &&
+        uprnLookup.longitude !== null
+      return {
+        valid: false,
+        status: 'out-of-authority-coordinates',
+        milesFromPostcode: Number(milesFromPostcode.toFixed(2)),
+        candidateLatitude: useUprn ? uprnLookup.latitude : postcodeLookup.latitude,
+        candidateLongitude: useUprn ? uprnLookup.longitude : postcodeLookup.longitude,
+        candidatePostcode: null
+      }
+    }
+    return {
+      valid: true,
+      status: 'ok',
+      milesFromPostcode: milesFromPostcode !== null ? Number(milesFromPostcode.toFixed(2)) : null,
+      candidateLatitude: null,
+      candidateLongitude: null,
+      candidatePostcode: null
+    }
+  }
+
+  return {
+    valid: true,
+    status: 'ok',
+    milesFromPostcode: null,
+    candidateLatitude: null,
+    candidateLongitude: null,
+    candidatePostcode: null
+  }
 }
 
 /**
@@ -261,6 +377,7 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
     validationExceptions: { count: 0, byField: {}, byKind: { libraries: 0, authorities: 0 } },
     manualChecks: { count: 0, byKind: {} },
     postcodes: { total: 0, found: 0, missingLookup: 0, terminated: 0, invalidSyntax: 0, empty: 0 },
+    coordinates: { totalWithCoordinates: 0, missingCoordinates: 0, outliers: [] },
     urls: {
       total: 0,
       distinct: 0,
@@ -277,7 +394,7 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
 
   // 1. Scan Libraries
   if (existsSync(librariesDir)) {
-    const libFiles = readdirSync(librariesDir).filter((f) => f.endsWith('.json'))
+    const libFiles = readdirSync(librariesDir).filter((fileName) => fileName.endsWith('.json'))
     report.totals.libraries = libFiles.length
     for (const file of libFiles) {
       const record = JSON.parse(readFileSync(join(librariesDir, file), 'utf8'))
@@ -288,11 +405,11 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
         report.manualChecks.count++
         report.manualChecks.byKind[check.kind] = (report.manualChecks.byKind[check.kind] || 0) + 1
       }
-      for (const ex of record.validation_exceptions || []) {
+      for (const exception of record.validation_exceptions || []) {
         report.validationExceptions.count++
         report.validationExceptions.byKind.libraries++
-        report.validationExceptions.byField[ex.field] =
-          (report.validationExceptions.byField[ex.field] || 0) + 1
+        report.validationExceptions.byField[exception.field] =
+          (report.validationExceptions.byField[exception.field] || 0) + 1
       }
 
       // Check Postcode
@@ -317,6 +434,62 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
             candidate: extracted,
             reason: 'Postcode extracted from address text'
           })
+        }
+      }
+
+      // Check Coordinates against Verified Postcode and Authority
+      const coordinateResult = checkCoordinateOutlier(data, lookups)
+      if (coordinateResult.status === 'missing-coordinates') {
+        report.coordinates.missingCoordinates++
+      } else {
+        report.coordinates.totalWithCoordinates++
+        if (!coordinateResult.valid) {
+          report.coordinates.outliers.push({
+            id,
+            file,
+            name: data['Library name'],
+            status: coordinateResult.status,
+            milesFromPostcode: coordinateResult.milesFromPostcode,
+            latitude: data.Latitude,
+            longitude: data.Longitude,
+            candidateLatitude: coordinateResult.candidateLatitude,
+            candidateLongitude: coordinateResult.candidateLongitude,
+            candidatePostcode: coordinateResult.candidatePostcode
+          })
+          if (coordinateResult.candidatePostcode) {
+            report.candidates.push({
+              id,
+              file,
+              collection: 'libraries',
+              field: 'Postcode',
+              before: data.Postcode,
+              candidate: coordinateResult.candidatePostcode,
+              reason: `Postcode out of authority (${coordinateResult.milesFromPostcode} miles from address postcode)`
+            })
+          }
+          if (
+            coordinateResult.candidateLatitude !== null &&
+            coordinateResult.candidateLongitude !== null
+          ) {
+            report.candidates.push({
+              id,
+              file,
+              collection: 'libraries',
+              field: 'Latitude',
+              before: data.Latitude,
+              candidate: coordinateResult.candidateLatitude,
+              reason: `Coordinates ${coordinateResult.milesFromPostcode} miles from verified postcode`
+            })
+            report.candidates.push({
+              id,
+              file,
+              collection: 'libraries',
+              field: 'Longitude',
+              before: data.Longitude,
+              candidate: coordinateResult.candidateLongitude,
+              reason: `Coordinates ${coordinateResult.milesFromPostcode} miles from verified postcode`
+            })
+          }
         }
       }
 
@@ -368,7 +541,7 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
 
   // 2. Scan Authorities
   if (existsSync(authoritiesDir)) {
-    const authFiles = readdirSync(authoritiesDir).filter((f) => f.endsWith('.json'))
+    const authFiles = readdirSync(authoritiesDir).filter((fileName) => fileName.endsWith('.json'))
     report.totals.authorities = authFiles.length
     for (const file of authFiles) {
       const record = JSON.parse(readFileSync(join(authoritiesDir, file), 'utf8'))
@@ -379,11 +552,11 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
         report.manualChecks.count++
         report.manualChecks.byKind[check.kind] = (report.manualChecks.byKind[check.kind] || 0) + 1
       }
-      for (const ex of record.validation_exceptions || []) {
+      for (const exception of record.validation_exceptions || []) {
         report.validationExceptions.count++
         report.validationExceptions.byKind.authorities++
-        report.validationExceptions.byField[ex.field] =
-          (report.validationExceptions.byField[ex.field] || 0) + 1
+        report.validationExceptions.byField[exception.field] =
+          (report.validationExceptions.byField[exception.field] || 0) + 1
       }
 
       // Check Authority URLs
@@ -478,17 +651,24 @@ export function formatAuditSummary(report) {
     '--------------------------------------------------',
     `Validation Exceptions: ${report.validationExceptions.count}`,
     ...Object.entries(report.validationExceptions.byField).map(
-      ([f, c]) => `  - ${f.padEnd(25)}: ${c}`
+      ([field, count]) => `  - ${field.padEnd(25)}: ${count}`
     ),
     '--------------------------------------------------',
     `Open Manual Checks:    ${report.manualChecks.count}`,
-    ...Object.entries(report.manualChecks.byKind).map(([k, c]) => `  - ${k.padEnd(25)}: ${c}`),
+    ...Object.entries(report.manualChecks.byKind).map(
+      ([kind, count]) => `  - ${kind.padEnd(25)}: ${count}`
+    ),
     '--------------------------------------------------',
     'Postcodes Assessment:',
     `  - Found in lookups:    ${report.postcodes.found}`,
     `  - Terminated postcodes: ${report.postcodes.terminated} (closed historical buildings)`,
     `  - Missing lookups:     ${report.postcodes.missingLookup}`,
     `  - Empty / unrecorded:  ${report.postcodes.empty}`,
+    '--------------------------------------------------',
+    'Coordinates Assessment:',
+    `  - With coordinates:    ${report.coordinates?.totalWithCoordinates || 0}`,
+    `  - Missing coordinates: ${report.coordinates?.missingCoordinates || 0}`,
+    `  - Coordinate outliers: ${report.coordinates?.outliers?.length || 0}`,
     '--------------------------------------------------',
     'Links & URLs Assessment:',
     `  - Total URLs:          ${report.urls.total} (${report.urls.distinct} distinct)`,
@@ -525,6 +705,7 @@ export function formatAuditMarkdown(report) {
 | **Postcodes Verified** | **${report.postcodes.found}** | Verified against official ONS/boundary lookups |
 | **Terminated Postcodes** | **${report.postcodes.terminated}** | Postcodes retired by Royal Mail (closed buildings) |
 | **Missing Postcodes** | **${report.postcodes.empty}** | Unrecorded postcode values |
+| **Coordinate Outliers** | **${report.coordinates?.outliers?.length || 0}** | Libraries whose coordinates are outside their verified postcode/authority |
 | **Distinct URLs Tested** | **${report.urls.distinct}** | Total URL references across directory records |
 | **Broken Links** | **${report.urls.statuses.broken || 0}** | HTTP 404/500 or DNS failure |
 | **Redirects** | **${report.urls.statuses.redirect || 0}** | Permanent or cross-domain redirects |
@@ -541,8 +722,8 @@ ${
     ? `### 💡 Proposed Candidates\n` +
       report.candidates
         .map(
-          (c) =>
-            `- **${c.collection}/${c.file}** (\`${c.field}\`): Change \`${c.before}\` &rarr; \`${c.candidate}\` (${c.reason})`
+          (candidate) =>
+            `- **${candidate.collection}/${candidate.file}** (\`${candidate.field}\`): Change \`${candidate.before}\` &rarr; \`${candidate.candidate}\` (${candidate.reason})`
         )
         .join('\n')
     : `*(No pending automated candidates; all extracted values verified)*`
@@ -559,7 +740,7 @@ ${
  */
 export function attachDiscoveredIssues(records, report, auditJson) {
   let newReviewItems = 0
-  const recordsById = new Map(records.map((r) => [r.id, r]))
+  const recordsById = new Map(records.map((record) => [record.id, record]))
   for (const candidate of report.candidates) {
     const record = recordsById.get(candidate.id)
     if (!record) continue
@@ -572,13 +753,13 @@ export function attachDiscoveredIssues(records, report, auditJson) {
       reason: candidate.reason
     }
     const reviewId = `review_${createHash('sha256').update(JSON.stringify(evidence)).digest('hex').slice(0, 24)}`
-    if (!auditJson.review.some((r) => r.review_id === reviewId)) {
+    if (!auditJson.review.some((reviewItem) => reviewItem.review_id === reviewId)) {
       auditJson.review.push({ ...evidence, review_id: reviewId })
       newReviewItems++
     }
     if (!record.manual_checks) record.manual_checks = []
     const ref = `migration/directory/report.json#${reviewId}`
-    if (!record.manual_checks.some((c) => c.audit_refs.includes(ref))) {
+    if (!record.manual_checks.some((check) => check.audit_refs.includes(ref))) {
       record.manual_checks.push({
         kind: 'candidate-field-update',
         reason: candidate.reason,

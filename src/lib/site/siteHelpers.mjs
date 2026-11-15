@@ -161,7 +161,7 @@ export function articleImage(entry) {
 export const navigation = settings.navigation.length
   ? settings.navigation
   : [
-      { label: 'Find a library', url: '/libraries/' },
+      { label: 'Find your library', url: '/libraries/' },
       { label: 'Collections', url: '/special-collections/' },
       { label: 'Reading', url: '/reading/' },
       { label: 'Resources', url: '/resources/' },
@@ -175,7 +175,10 @@ export const navigation = settings.navigation.length
  * @returns {string} Formatted date string (e.g. '7 November 2026').
  */
 export function formatDate(value) {
-  return new Date(value).toLocaleDateString('en-GB', {
+  if (!value) return ''
+  const parsedDate = new Date(value)
+  if (Number.isNaN(parsedDate.getTime())) return String(value)
+  return parsedDate.toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',

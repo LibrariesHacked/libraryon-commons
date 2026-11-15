@@ -145,30 +145,33 @@ flowchart TD
 
 The codebase is organized into domain-specific subdirectories under `src/lib/`:
 
-| Category | File | Where It Runs | What It Does (Plain English) |
-| --- | --- | --- | --- |
-| **CMS Admin (`src/lib/cms/`)** | `cms/cmsHelpers.mjs` | Browser (`/admin/` only) | Visual editing widgets and markdown serializers for Decap CMS. |
-| **CMS Admin (`src/lib/cms/`)** | `cms/reviewHelpers.mjs` | Browser (`/admin/review/`) | Data validation inspector and audit reviewer for directory records. |
-| **Content Pipeline (`src/lib/content/`)** | `content/contentDirectives.mjs` | Node.js (Build time) | Remark plugin that turns `:::card` and `:::quote` into semantic HTML. |
-| **Content Pipeline (`src/lib/content/`)** | `content/markdownHelpers.mjs` | Node.js (Build time) | Fixes markdown list indentation, cleans image URLs, and obfuscates emails. |
-| **Content Pipeline (`src/lib/content/`)** | `content/contentHelpers.mjs` | Node.js (Build time) | Splits HTML to inject FAQ and Resource blocks; chooses templates. |
-| **Content Pipeline (`src/lib/content/`)** | `content/newsHelpers.mjs` | Node.js (Build time) | Loads, filters, and groups news stories by stakeholder, council, or date. |
-| **Content Pipeline (`src/lib/content/`)** | `content/resourceHelpers.mjs` | Node.js (Build time) | Loads and filters downloadable documents and web resources. |
-| **Directory Domain (`src/lib/directory/`)** | `directory/directoryLoader.mjs` | Node.js (Build time) | High-level dataset loader that reads all JSON records from disk (re-exported via `src/lib/directory.mjs`). |
-| **Directory Domain (`src/lib/directory/`)** | `directory/models/Library.mjs` | Node.js (Build time) | Class representing a library building (name, address, hours, services). |
-| **Directory Domain (`src/lib/directory/`)** | `directory/models/LibraryService.mjs` | Node.js (Build time) | Class representing a council service (service URL, member branches). |
-| **Directory Domain (`src/lib/directory/`)** | `directory/directoryHelpers.mjs` | Node.js (Build time) | Links libraries to councils, finds nearby libraries, builds breadcrumbs. |
-| **Directory Domain (`src/lib/directory/`)** | `directory/openingHoursHelpers.mjs` | Node.js & Browser | Calculates if a library is open right now in UK local time (BST/GMT). |
-| **Directory Domain (`src/lib/directory/`)** | `directory/dataHelpers.mjs` | Node.js (Build time) | Formats UK postcodes, addresses, and accessibility labels. |
-| **Directory Domain (`src/lib/directory/`)** | `directory/geoHelpers.mjs` | Node.js & Browser | Calculates distances in miles (Haversine formula) and map URLs. |
-| **Directory Domain (`src/lib/directory/`)** | `directory/schemaHelpers.mjs` | Node.js (Build / CLI) | Validates directory records against Table Schema specifications. |
-| **Directory Domain (`src/lib/directory/`)** | `directory/exportHelpers.mjs` | Node.js (Build time) | Serializes validated directory data into public CSV download files. |
-| **Directory Domain (`src/lib/directory/`)** | `directory/searchHelpers.mjs` | Node.js & Browser | Compresses directory data for `/directory.json`; filters search results. |
-| **Site & SEO (`src/lib/site/`)** | `site/siteHelpers.mjs` | Node.js (Build time) | Site URL resolving, path canonicalization, and date formatting. |
-| **Site & SEO (`src/lib/site/`)** | `site/seoHelpers.mjs` | Node.js (Build time) | Generates Schema.org JSON-LD structured data for Google search indexing. |
-| **Site & SEO (`src/lib/site/`)** | `site/sitemapHelpers.mjs` | Node.js (Build time) | Builds the hierarchical navigation sitemap tree. |
-| **Browser Runtime (`src/scripts/`)** | `src/scripts/mediaClient.mjs` | Visitor's Browser DOM | Interactive lightbox modals, image zoom, collection carousels, and accordions. |
-| **Browser Runtime (`src/scripts/`)** | `src/scripts/shareClient.mjs` | Visitor's Browser DOM | Native Web Share API dialog with fallback. |
+| Category                                    | File                                  | Where It Runs              | What It Does (Plain English)                                                                               |
+| ------------------------------------------- | ------------------------------------- | -------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| **CMS Admin (`src/lib/cms/`)**              | `cms/cmsHelpers.mjs`                  | Browser (`/admin/` only)   | Visual editing widgets and markdown serializers for Decap CMS.                                             |
+| **CMS Admin (`src/lib/cms/`)**              | `cms/reviewHelpers.mjs`               | Browser (`/admin/review/`) | Data validation inspector and audit reviewer for directory records.                                        |
+| **Content Pipeline (`src/lib/content/`)**   | `content/activityHelpers.mjs`         | Node.js (Build time)       | Loads authority library usage data and builds advocacy impact summaries.                                   |
+| **Content Pipeline (`src/lib/content/`)**   | `content/contentDirectives.mjs`       | Node.js (Build time)       | Remark plugin that turns `:::card` and `:::quote` into semantic HTML.                                      |
+| **Content Pipeline (`src/lib/content/`)**   | `content/markdownHelpers.mjs`         | Node.js (Build time)       | Fixes markdown list indentation, cleans image URLs, and obfuscates emails.                                 |
+| **Content Pipeline (`src/lib/content/`)**   | `content/contentHelpers.mjs`          | Node.js (Build time)       | Splits HTML to inject FAQ and Resource blocks; chooses templates.                                          |
+| **Content Pipeline (`src/lib/content/`)**   | `content/newsFormatHelpers.mjs`       | Node.js & Browser          | Formats news dates, period summaries, and story card HTML without DOM access.                              |
+| **Content Pipeline (`src/lib/content/`)**   | `content/newsHelpers.mjs`             | Node.js (Build time)       | Loads, filters, and groups news stories by stakeholder, council, or date.                                  |
+| **Content Pipeline (`src/lib/content/`)**   | `content/resourceHelpers.mjs`         | Node.js (Build time)       | Loads and filters downloadable documents and web resources.                                                |
+| **Directory Domain (`src/lib/directory/`)** | `directory/directoryLoader.mjs`       | Node.js (Build time)       | High-level dataset loader that reads all JSON records from disk (re-exported via `src/lib/directory.mjs`). |
+| **Directory Domain (`src/lib/directory/`)** | `directory/models/Library.mjs`        | Node.js (Build time)       | Class representing a library building (name, address, hours, services).                                    |
+| **Directory Domain (`src/lib/directory/`)** | `directory/models/LibraryService.mjs` | Node.js (Build time)       | Class representing a council service (service URL, member branches).                                       |
+| **Directory Domain (`src/lib/directory/`)** | `directory/directoryHelpers.mjs`      | Node.js (Build time)       | Links libraries to councils, finds nearby libraries, builds breadcrumbs.                                   |
+| **Directory Domain (`src/lib/directory/`)** | `directory/openingHoursHelpers.mjs`   | Node.js & Browser          | Calculates if a library is open right now in UK local time (BST/GMT).                                      |
+| **Directory Domain (`src/lib/directory/`)** | `directory/dataHelpers.mjs`           | Node.js (Build time)       | Formats UK postcodes, addresses, and accessibility labels.                                                 |
+| **Directory Domain (`src/lib/directory/`)** | `directory/geoHelpers.mjs`            | Node.js & Browser          | Calculates distances in miles (Haversine formula) and map URLs.                                            |
+| **Directory Domain (`src/lib/directory/`)** | `directory/schemaHelpers.mjs`         | Node.js (Build / CLI)      | Validates directory records against Table Schema specifications.                                           |
+| **Directory Domain (`src/lib/directory/`)** | `directory/exportHelpers.mjs`         | Node.js (Build time)       | Serializes validated directory data into public CSV download files.                                        |
+| **Directory Domain (`src/lib/directory/`)** | `directory/searchHelpers.mjs`         | Node.js & Browser          | Compresses directory data for `/directory.json`; filters search results.                                   |
+| **Site & SEO (`src/lib/site/`)**            | `site/siteHelpers.mjs`                | Node.js (Build time)       | Site URL resolving, path canonicalization, and date formatting.                                            |
+| **Site & SEO (`src/lib/site/`)**            | `site/seoHelpers.mjs`                 | Node.js (Build time)       | Generates Schema.org JSON-LD structured data for Google search indexing.                                   |
+| **Site & SEO (`src/lib/site/`)**            | `site/sitemapHelpers.mjs`             | Node.js (Build time)       | Builds the hierarchical navigation sitemap tree.                                                           |
+| **Browser Runtime (`src/scripts/`)**        | `src/scripts/mediaClient.mjs`         | Visitor's Browser DOM      | Interactive lightbox modals, image zoom, collection carousels, and accordions.                             |
+| **Browser Runtime (`src/scripts/`)**        | `src/scripts/newsListClient.mjs`      | Visitor's Browser DOM      | Client-side time-period filtering, pagination, and archive fetching for news lists.                        |
+| **Browser Runtime (`src/scripts/`)**        | `src/scripts/shareClient.mjs`         | Visitor's Browser DOM      | Native Web Share API dialog with fallback.                                                                 |
 
 ## 5. Architectural Standards & Organization
 

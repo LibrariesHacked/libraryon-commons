@@ -83,7 +83,7 @@ const heroTags = [
     />
   )}
 
-  <ul class="library-results" data-library-list>
+  <ul class="library-results authority-library-results" data-library-list>
     {entries.map((library) => (
       <li
         data-hours={JSON.stringify(library.hours || library.openingTimes || null)}
@@ -104,12 +104,6 @@ const heroTags = [
     ))}
   </ul>
 
-  <TagListSection heading={copy.services_heading} items={services} />
-  <TagListSection
-    heading={copy.accessibility}
-    items={accessibility.map((value) => facilityLabel(value))}
-  />
-
   {activityData && <AuthorityActivity activity={activityData} authority={authority} />}
 
   {hasNews && (
@@ -120,14 +114,6 @@ const heroTags = [
       subtitle="Recent news, changes, and service updates reported in Public Libraries News."
     />
   )}
-
-  <LibraryDownloads entries={entries} authoritySlug={authority.slug} />
-
-  <ShareButtons
-    title={`${authority.name} Libraries`}
-    description={`${copy.authority_description_prefix} ${authority.name}.`}
-    heading="Share this directory"
-  />
 
   <Fragment slot="aside">
     <section class="detail-section">
@@ -141,7 +127,18 @@ const heroTags = [
       </section>
     )}
     <SocialLinks heading={copy.connect} links={authority.social} />
+    <TagListSection heading={copy.services_heading} items={services} initialVisible={12} />
+    <TagListSection
+      heading={copy.accessibility}
+      items={accessibility.map((value) => facilityLabel(value))}
+    />
+    <LibraryDownloads entries={entries} authoritySlug={authority.slug} />
     <DirectoryProvenance record={authority} />
+    <ShareButtons
+      title={`${authority.name} Libraries`}
+      description={`${copy.authority_description_prefix} ${authority.name}.`}
+      heading="Share this directory"
+    />
   </Fragment>
 </DirectoryLayout>
 

@@ -90,7 +90,9 @@ function getCrossReferenceMaps() {
     const lowerName = authorityName.toLowerCase()
     const gssCode = gssByNameLower[lowerName]
     const resolvedSlug =
-      (gssCode && authoritySlugByGss.get(gssCode)) || authoritySlugByNameLower.get(lowerName) || null
+      (gssCode && authoritySlugByGss.get(gssCode)) ||
+      authoritySlugByNameLower.get(lowerName) ||
+      null
     if (resolvedSlug) {
       authoritySlugsByName[authorityName] = resolvedSlug
       authoritySlugByNameLower.set(lowerName, resolvedSlug)
@@ -171,8 +173,7 @@ export function enrichNewsStory(story) {
 
   let authoritySlug = story.authority_slug || null
   if (!authoritySlug && story.authority_name) {
-    authoritySlug =
-      authoritySlugByNameLower.get(String(story.authority_name).toLowerCase()) || null
+    authoritySlug = authoritySlugByNameLower.get(String(story.authority_name).toLowerCase()) || null
   }
 
   let libraries = null

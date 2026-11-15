@@ -215,7 +215,9 @@ export async function buildActivityByAuthority() {
 
     // Find latest financial year with at least one positive metric
     const primaryYear = parsedYears.find((yearRecord) =>
-      Object.values(yearRecord.metrics).some((metricValue) => metricValue !== null && metricValue > 0)
+      Object.values(yearRecord.metrics).some(
+        (metricValue) => metricValue !== null && metricValue > 0
+      )
     )
     if (!primaryYear) continue
 
@@ -232,7 +234,10 @@ export async function buildActivityByAuthority() {
       // or combined-authority duplicate entries (such as Torbay reporting Devon's 2.2M total visits)
       if (metricKey === 'visits' && population > 0) {
         const chosenRatePerThousand = (chosenYear.metrics.visits / population) * 1000
-        if (chosenRatePerThousand < 200 || (gssCode !== 'E09000001' && chosenRatePerThousand > 10000)) {
+        if (
+          chosenRatePerThousand < 200 ||
+          (gssCode !== 'E09000001' && chosenRatePerThousand > 10000)
+        ) {
           const completeAlternative = candidates.find((yearRecord) => {
             const ratePerThousand = (yearRecord.metrics.visits / population) * 1000
             return ratePerThousand >= 300 && (gssCode === 'E09000001' || ratePerThousand <= 10000)

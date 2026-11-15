@@ -51,6 +51,7 @@ const data = storiesToLocationGeoJson(stories)
     categoryColor,
     categoryLabel,
     changeTypeLabel,
+    formatNewsDate,
     storiesToLocationGeoJson
   } from '../lib/content/newsFormatHelpers.mjs'
 
@@ -386,7 +387,7 @@ const data = storiesToLocationGeoJson(stories)
               if (s.date) {
                 const dateSpan = document.createElement('span')
                 dateSpan.className = 'map-popup-date'
-                dateSpan.innerHTML = `${calendarSvg}<span>${s.date}</span>`
+                dateSpan.innerHTML = `${calendarSvg}<span>${formatNewsDate(s.date)}</span>`
                 metaRow.appendChild(dateSpan)
               }
 

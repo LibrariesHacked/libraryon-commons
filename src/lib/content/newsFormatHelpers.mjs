@@ -114,7 +114,8 @@ export function formatNewsDate(dateString) {
     return parsedDate.toLocaleDateString('en-GB', {
       day: 'numeric',
       month: 'short',
-      year: 'numeric'
+      year: 'numeric',
+      timeZone: 'UTC'
     })
   } catch {
     return dateString

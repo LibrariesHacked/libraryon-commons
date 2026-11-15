@@ -801,6 +801,10 @@ export function planMatches(original, inputs, overrides = {}) {
     const authSlug = isNi ? 'northern-ireland' : record.authority
     const targetRec = isNi ? { ...record, authority: 'northern-ireland' } : record
     const correction = correctedPostcode(record.postcode, record.name, inputs.rules)
+    const overridePostcode = normalizePostcode(
+      overrides?.field_overrides?.find((item) => item.id === record.id && item.field === 'Postcode')
+        ?.value
+    )
     return {
       file,
       record: targetRec,
@@ -808,6 +812,7 @@ export function planMatches(original, inputs, overrides = {}) {
       name: record.name,
       address: record.address,
       postcode: normalizePostcode(record.postcode),
+      overridePostcode,
       correctedPostcode: correction.postcode,
       authority: authSlug
     }
@@ -823,13 +828,15 @@ export function planMatches(original, inputs, overrides = {}) {
         : aliases.get(authorityKey(source.authority))?.length === 1
           ? aliases.get(authorityKey(source.authority))[0]
           : null
+    const approved = overrides.matches?.[sourceKey(source)]
     const candidates = targets.filter(
       (target) =>
         target.authority === source.authoritySlug &&
         (buildingMatch(target, source) ||
-          buildingMatch({ ...target, postcode: target.correctedPostcode }, source))
+          buildingMatch({ ...target, postcode: target.correctedPostcode }, source) ||
+          (approved === target.id &&
+            buildingMatch({ ...target, postcode: target.overridePostcode }, source)))
     )
-    const approved = overrides.matches?.[sourceKey(source)]
     const chosen = approved
       ? candidates.find((candidate) => candidate.id === approved)
       : candidates.length === 1
@@ -872,20 +879,42 @@ export function uprnEvidence(source, target, lookups) {
     return { accepted: false, reason: 'UPRN not independently located' }
   if (lookup.postcode !== target.postcode)
     return { accepted: false, reason: 'UPRN postcode association differs or is missing' }
-  const miles = distanceMiles(target.record, lookup)
+  const postcode = lookups.postcodes?.[target.postcode]
+  if (postcode?.status !== 'found')
+    return { accepted: false, reason: 'Postcode not independently verified' }
+  const baselineMiles = distanceMiles(target.record, lookup)
+  const baselineToPostcodeMiles =
+    postcode.latitude !== null &&
+    postcode.latitude !== undefined &&
+    postcode.longitude !== null &&
+    postcode.longitude !== undefined
+      ? distanceMiles(target.record, postcode)
+      : null
+  const uprnToPostcodeMiles =
+    postcode.latitude !== null &&
+    postcode.latitude !== undefined &&
+    postcode.longitude !== null &&
+    postcode.longitude !== undefined
+      ? distanceMiles(lookup, postcode)
+      : null
+  const baselineIsCorruptOutlier =
+    baselineToPostcodeMiles !== null &&
+    baselineToPostcodeMiles > 2 &&
+    uprnToPostcodeMiles !== null &&
+    uprnToPostcodeMiles <= 0.0621371 &&
+    Boolean(lookup.authorityCode && lookup.authorityCode === postcode.authorityCode)
+  const miles = baselineIsCorruptOutlier ? uprnToPostcodeMiles : baselineMiles
   if (miles === null || miles > 0.0621371)
     return {
       accepted: false,
       reason: 'UPRN is missing coordinates or more than 100 metres from LibraryOn point',
       miles
     }
-  const postcode = lookups.postcodes?.[target.postcode]
-  if (postcode?.status !== 'found')
-    return { accepted: false, reason: 'Postcode not independently verified' }
   return {
     accepted: true,
-    reason:
-      'Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode',
+    reason: baselineIsCorruptOutlier
+      ? 'Unique authority/name/address/postcode match; independently located UPRN within 100m of verified postcode correcting out-of-authority baseline coordinate'
+      : 'Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode',
     miles,
     lookup: lookup.url
   }
@@ -1186,7 +1215,10 @@ export async function migrate({ write = false } = {}) {
         continue
       }
       if (field === 'Unique property reference number') {
-        const evidence = uprnEvidence(source, match.target, lookups)
+        const evidenceTarget = match.target.overridePostcode
+          ? { ...match.target, postcode: match.target.overridePostcode }
+          : match.target
+        const evidence = uprnEvidence(source, evidenceTarget, lookups)
         if (!evidence.accepted) {
           report.review.push({
             kind: 'uprn',
@@ -1508,6 +1540,34 @@ export async function migrate({ write = false } = {}) {
       change(record, 'Longitude', lookup.longitude, {
         source: 'uprn-location',
         evidence: 'Coordinates updated from verified UPRN location'
+      })
+    }
+  }
+  for (const { record } of libraries) {
+    const targetPostcode = record.data.Postcode
+    const pcLookup = targetPostcode ? lookups.postcodes?.[targetPostcode] : null
+    if (!pcLookup || pcLookup.status !== 'found' || !pcLookup.latitude || !pcLookup.longitude)
+      continue
+    const currentCoords = {
+      latitude: record.data.Latitude,
+      longitude: record.data.Longitude
+    }
+    const milesFromPostcode =
+      currentCoords.latitude !== null && currentCoords.longitude !== null
+        ? distanceMiles(currentCoords, pcLookup)
+        : null
+    const sameAuthority =
+      pcLookup.authorityCode && pcLookup.authorityCode === record.data['Local authority code']
+    if (sameAuthority && milesFromPostcode !== null && milesFromPostcode > 15) {
+      change(record, 'Latitude', pcLookup.latitude, {
+        source: 'postcode-location-verification',
+        evidence: pcLookup.url || 'ONSPD verified postcode centroid',
+        reason: `Replaced out-of-authority coordinates (${milesFromPostcode.toFixed(1)} miles from verified authority postcode ${targetPostcode})`
+      })
+      change(record, 'Longitude', pcLookup.longitude, {
+        source: 'postcode-location-verification',
+        evidence: pcLookup.url || 'ONSPD verified postcode centroid',
+        reason: `Replaced out-of-authority coordinates (${milesFromPostcode.toFixed(1)} miles from verified authority postcode ${targetPostcode})`
       })
     }
   }

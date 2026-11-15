@@ -21,7 +21,7 @@ LibraryCommons is an community project maintained by [Libraries Hacked](https://
 
 ### 1. Library directory searches
 
-When using the library search on [Find a library](/libraries/):
+When using the library search on [Find your library](/libraries/):
 
 - **Place and postcode lookups:** If you type a town or UK postcode to search for libraries, the query is resolved in your browser using local search indexes or secure HTTPS lookups. Postcodes and search terms are not stored, recorded, or linked to individual users.
 - **Device location ("Find nearby"):** If you explicitly choose to use the "Find nearby" button, your browser requests your location coordinates via browser geolocation permissions. These coordinates are used solely within your current browser session to calculate distances to nearby libraries.

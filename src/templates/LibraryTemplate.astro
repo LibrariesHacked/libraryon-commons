@@ -63,14 +63,6 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
     label={`${library.name} location`}
     emptyMessage="Coordinates are not recorded for this library."
   />
-  <section class="detail-section">
-    <h2>{copy.visit_contact}</h2>
-    <ContactDetails
-      record={library}
-      address={library.address}
-      fallbackWebsite={authority?.website}
-    />
-  </section>
   <slot />
   <TagListSection heading={copy.services_heading} items={library.services} />
   <TagListSection
@@ -85,64 +77,6 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
     <section class="detail-section">
       <h2>{copy.library_notes}</h2>
       <p>{library.notes}</p>
-    </section>
-  )}
-  {maps && (
-    <section class="detail-section getting-here-section">
-      <h2>{copy.getting_here}</h2>
-      <div class="getting-here-actions">
-        <a href={maps.google} class="directions-card" target="_blank" rel="noopener noreferrer">
-          <div class="directions-card-icon">
-            <Navigation size={22} aria-hidden="true" />
-          </div>
-          <div class="directions-card-content">
-            <span class="directions-card-title">
-              Google Maps <ArrowUpRight size={15} aria-hidden="true" />
-            </span>
-            <span class="directions-card-subtitle">Driving, transit, walking directions</span>
-          </div>
-        </a>
-        <a href={maps.apple} class="directions-card" target="_blank" rel="noopener noreferrer">
-          <div class="directions-card-icon">
-            <MapPin size={22} aria-hidden="true" />
-          </div>
-          <div class="directions-card-content">
-            <span class="directions-card-title">
-              Apple Maps <ArrowUpRight size={15} aria-hidden="true" />
-            </span>
-            <span class="directions-card-subtitle">Launch Maps on iPhone, iPad or Mac</span>
-          </div>
-        </a>
-      </div>
-    </section>
-  )}
-  {nearby.length > 0 && (
-    <section class="detail-section nearby-section">
-      <h2>{copy.nearby_libraries}</h2>
-      <ul class="library-results" data-library-list>
-        {nearby.map(({ library: other, miles }) => (
-          <li data-hours={JSON.stringify(other.hours || other.openingTimes || null)}>
-            <div class="library-result-header">
-              <h3>
-                <a href={sitePath(other.url)}>
-                  {other.name} <ArrowUpRight size={17} aria-hidden="true" />
-                </a>
-              </h3>
-              <span class="distance-badge">
-                {miles.toFixed(1)} {copy.miles}
-              </span>
-            </div>
-            <p>{other.address || other.postcode}</p>
-            <div class="library-result-meta">
-              <span class="authority-label">
-                {other.authorityName || copy.unassigned_authority}
-                {other.country ? ` · ${other.country}` : ''}
-              </span>
-              <span class="live-status-pill live-status-pill--small" data-open-status />
-            </div>
-          </li>
-        ))}
-      </ul>
     </section>
   )}
   {safeURL(library.virtualTourUrl) && (
@@ -180,20 +114,86 @@ const librarySchema = generateLibrarySchema(library, authority, canonicalUrl)
     )
   )}
 
-  <ShareButtons
-    title={library.name}
-    description={`${library.name}. ${library.address}.`}
-    heading="Share this library"
-  />
+  {nearby.length > 0 && (
+    <section class="detail-section nearby-section">
+      <h2>{copy.nearby_libraries}</h2>
+      <ul class="library-results" data-library-list>
+        {nearby.map(({ library: other, miles }) => (
+          <li data-hours={JSON.stringify(other.hours || other.openingTimes || null)}>
+            <div class="library-result-header">
+              <h3>
+                <a href={sitePath(other.url)}>
+                  {other.name} <ArrowUpRight size={17} aria-hidden="true" />
+                </a>
+              </h3>
+              <span class="distance-badge">
+                {miles.toFixed(1)} {copy.miles}
+              </span>
+            </div>
+            <p>{other.address || other.postcode}</p>
+            <div class="library-result-meta">
+              <span class="authority-label">
+                {other.authorityName || copy.unassigned_authority}
+                {other.country ? ` · ${other.country}` : ''}
+              </span>
+              <span class="live-status-pill live-status-pill--small" data-open-status />
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
 
   <Fragment slot="aside">
     <OpeningHours library={library} />
+    <section class="detail-section">
+      <h2>{copy.visit_contact}</h2>
+      <ContactDetails
+        record={library}
+        address={library.address}
+        fallbackWebsite={authority?.website}
+      />
+    </section>
+    {maps && (
+      <section class="detail-section getting-here-section">
+        <h2>{copy.getting_here}</h2>
+        <div class="getting-here-actions">
+          <a href={maps.google} class="directions-card" target="_blank" rel="noopener noreferrer">
+            <div class="directions-card-icon">
+              <Navigation size={22} aria-hidden="true" />
+            </div>
+            <div class="directions-card-content">
+              <span class="directions-card-title">
+                Google Maps <ArrowUpRight size={15} aria-hidden="true" />
+              </span>
+              <span class="directions-card-subtitle">Driving, transit, walking directions</span>
+            </div>
+          </a>
+          <a href={maps.apple} class="directions-card" target="_blank" rel="noopener noreferrer">
+            <div class="directions-card-icon">
+              <MapPin size={22} aria-hidden="true" />
+            </div>
+            <div class="directions-card-content">
+              <span class="directions-card-title">
+                Apple Maps <ArrowUpRight size={15} aria-hidden="true" />
+              </span>
+              <span class="directions-card-subtitle">Launch Maps on iPhone, iPad or Mac</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    )}
     <DirectoryProvenance record={library} />
     {authority && (
       <a class="button button-secondary" href={sitePath(`/libraries/${authority.slug}/`)}>
         {copy.more_in_prefix} {authority.name} <ArrowUpRight size={17} aria-hidden="true" />
       </a>
     )}
+    <ShareButtons
+      title={library.name}
+      description={`${library.name}. ${library.address}.`}
+      heading="Share this library"
+    />
   </Fragment>
 </DirectoryLayout>
 

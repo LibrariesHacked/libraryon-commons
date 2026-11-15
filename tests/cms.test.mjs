@@ -438,13 +438,13 @@ test('site settings have configured fields and preserve data after a YAML round 
 })
 
 test('menu hierarchy, single footer attribution, and CMS-only content origin are configured', () => {
-  const libraryLink = settings.navigation.find((item) => item.label === 'Find a library')
+  const libraryLink = settings.navigation.find((item) => item.label === 'Find your library')
   const discover = settings.navigation.find((item) => item.label === 'Discover')
   const about = settings.navigation.find((item) => item.label === 'About')
   const archive = settings.navigation.find((item) => item.label === 'Archive')
   const news = settings.navigation.find((item) => item.label === 'News')
   assert.ok(libraryLink)
-  assert.equal(libraryLink.label, 'Find a library')
+  assert.equal(libraryLink.label, 'Find your library')
   assert.ok(news)
   assert.equal(news.label, 'News')
   assert.ok(discover)

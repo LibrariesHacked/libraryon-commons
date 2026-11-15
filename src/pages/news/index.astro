@@ -651,21 +651,6 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     })
   }
 
-  function formatDate(str) {
-    if (!str) return ''
-    try {
-      const d = new Date(str)
-      if (isNaN(d.getTime())) return str
-      return d.toLocaleDateString('en-GB', {
-        day: 'numeric',
-        month: 'short',
-        year: 'numeric'
-      })
-    } catch {
-      return str
-    }
-  }
-
   async function loadIndex() {
     try {
       const res = await fetch(newsUrl)

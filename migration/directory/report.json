@@ -18326,6 +18326,22 @@
       "evidence": "Two matched supporting datasets agree; LibraryOn has no statutory value"
     },
     {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Year opened",
+      "before": null,
+      "after": 2022,
+      "source": "libraries.csv:2125",
+      "evidence": "Unique authority/name/address/postcode match; fill missing durable value"
+    },
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Statutory",
+      "before": null,
+      "after": "Yes",
+      "source": "libraries.csv:2125",
+      "evidence": "Two matched supporting datasets agree; LibraryOn has no statutory value"
+    },
+    {
       "id": "lib_ff4e119d-2818-498b-a5af-cb5d8f963eb6",
       "field": "Statutory",
       "before": null,
@@ -22271,6 +22287,14 @@
       "before": null,
       "after": "Yes",
       "source": "libraries.csv:2409",
+      "evidence": "Two matched supporting datasets agree; LibraryOn has no statutory value"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Statutory",
+      "before": null,
+      "after": "Yes",
+      "source": "libraries.csv:2410",
       "evidence": "Two matched supporting datasets agree; LibraryOn has no statutory value"
     },
     {
@@ -38127,6 +38151,43 @@
       "evidence": "Two matched supporting datasets agree; LibraryOn has no statutory value"
     },
     {
+      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "field": "Unique property reference number",
+      "before": null,
+      "after": 100121338767,
+      "source": "libraries.csv:4155",
+      "evidence": {
+        "accepted": true,
+        "reason": "Unique authority/name/address/postcode match; independently located UPRN within 100m of verified postcode correcting out-of-authority baseline coordinate",
+        "miles": 0.021690913968392372,
+        "lookup": "nsul.zip#Data/NSUL_E128_SEP_2026_SW.csv:3753615"
+      }
+    },
+    {
+      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "field": "Latitude",
+      "before": 53.118966,
+      "after": 51.261489047671,
+      "source": "libraries.csv:4155",
+      "evidence": "Coordinates updated from verified UPRN location"
+    },
+    {
+      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "field": "Longitude",
+      "before": -1.112873,
+      "after": -2.183507910337797,
+      "source": "libraries.csv:4155",
+      "evidence": "Coordinates updated from verified UPRN location"
+    },
+    {
+      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "field": "Statutory",
+      "before": null,
+      "after": "Yes",
+      "source": "libraries.csv:4155",
+      "evidence": "Two matched supporting datasets agree; LibraryOn has no statutory value"
+    },
+    {
       "id": "lib_1c43e1ef-adc1-4af5-a28f-3b9d19971837",
       "field": "Unique property reference number",
       "before": null,
@@ -42855,6 +42916,14 @@
       "before": null,
       "after": 1938,
       "source": "arts-council-2024:890",
+      "evidence": "Unique authority/name/address/postcode match; fill missing durable value"
+    },
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Facility type",
+      "before": null,
+      "after": "Static library",
+      "source": "arts-council-2024:891",
       "evidence": "Unique authority/name/address/postcode match; fill missing durable value"
     },
     {
@@ -48239,6 +48308,14 @@
       "before": null,
       "after": "Static library",
       "source": "arts-council-2024:1910",
+      "evidence": "Unique authority/name/address/postcode match; fill missing durable value"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Facility type",
+      "before": null,
+      "after": "Static library",
+      "source": "arts-council-2024:1912",
       "evidence": "Unique authority/name/address/postcode match; fill missing durable value"
     },
     {
@@ -54682,6 +54759,14 @@
       "evidence": "Unique authority/name/address/postcode match; fill missing durable value"
     },
     {
+      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "field": "Facility type",
+      "before": null,
+      "after": "Static library",
+      "source": "arts-council-2024:3378",
+      "evidence": "Unique authority/name/address/postcode match; fill missing durable value"
+    },
+    {
       "id": "lib_1c43e1ef-adc1-4af5-a28f-3b9d19971837",
       "field": "Facility type",
       "before": null,
@@ -60258,14 +60343,6 @@
       "evidence": "Public Libraries and Museums Act 1964 s.7 statutory library duty (England)"
     },
     {
-      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
-      "field": "Statutory",
-      "before": null,
-      "after": "Yes",
-      "source": "statutory-authority-policy",
-      "evidence": "Public Libraries and Museums Act 1964 s.7 statutory library duty (England)"
-    },
-    {
       "id": "lib_95568cf1-34ca-4dab-ac7f-3949c27784fd",
       "field": "Statutory",
       "before": null,
@@ -64827,14 +64904,6 @@
     },
     {
       "id": "lib_b6aa2546-1786-4f53-a2d3-8eda6376129c",
-      "field": "Statutory",
-      "before": null,
-      "after": "Yes",
-      "source": "statutory-authority-policy",
-      "evidence": "Public Libraries and Museums Act 1964 s.7 statutory library duty (England)"
-    },
-    {
-      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
       "field": "Statutory",
       "before": null,
       "after": "Yes",
@@ -70866,14 +70935,6 @@
       "evidence": "Public Libraries and Museums Act 1964 s.7 statutory library duty (England)"
     },
     {
-      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
-      "field": "Statutory",
-      "before": null,
-      "after": "Yes",
-      "source": "statutory-authority-policy",
-      "evidence": "Public Libraries and Museums Act 1964 s.7 statutory library duty (England)"
-    },
-    {
       "id": "lib_b53d529a-e5a8-4dab-88af-4c7c29bc468e",
       "field": "Statutory",
       "before": null,
@@ -76842,6 +76903,24 @@
       "reason": "Official Libraries NI branch directory (librariesni.org.uk)"
     },
     {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Postcode",
+      "before": "WV4 6RZ",
+      "after": "W5 1RH",
+      "source": "reviewed-override",
+      "evidence": "tempdata/libraries.csv:2125",
+      "reason": "Postcode corrected from out-of-authority Wolverhampton value (WV4 6RZ) to recorded Ealing address postcode (W5 1RH) verified against libraries.csv and Arts Council 2024"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Postcode",
+      "before": "RM13 9GP",
+      "after": "ME8 7LR",
+      "source": "reviewed-override",
+      "evidence": "tempdata/libraries.csv:2410",
+      "reason": "Postcode corrected from out-of-authority Havering value (RM13 9GP) to recorded Medway address postcode (ME8 7LR) verified against libraries.csv and Arts Council 2024"
+    },
+    {
       "id": "lib_c03eeb14-bea8-4899-a0b0-97acd21e9b82",
       "field": "Postcode",
       "before": null,
@@ -82457,6 +82536,42 @@
       "after": -0.1643645227223692,
       "source": "uprn-location",
       "evidence": "Coordinates updated from verified UPRN location"
+    },
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Latitude",
+      "before": 52.56177,
+      "after": 51.525728,
+      "source": "postcode-location-verification",
+      "evidence": "onspd.zip#Data/multi_csv/ONSPD_AUG_2026_UK_W.csv:33585",
+      "reason": "Replaced out-of-authority coordinates (104.7 miles from verified authority postcode W5 1RH)"
+    },
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Longitude",
+      "before": -2.11398,
+      "after": -0.314673,
+      "source": "postcode-location-verification",
+      "evidence": "onspd.zip#Data/multi_csv/ONSPD_AUG_2026_UK_W.csv:33585",
+      "reason": "Replaced out-of-authority coordinates (104.7 miles from verified authority postcode W5 1RH)"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Latitude",
+      "before": 51.51701,
+      "after": 51.36544,
+      "source": "postcode-location-verification",
+      "evidence": "onspd.zip#Data/multi_csv/ONSPD_AUG_2026_UK_ME.csv:21477",
+      "reason": "Replaced out-of-authority coordinates (20.6 miles from verified authority postcode ME8 7LR)"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Longitude",
+      "before": 0.19115,
+      "after": 0.602538,
+      "source": "postcode-location-verification",
+      "evidence": "onspd.zip#Data/multi_csv/ONSPD_AUG_2026_UK_ME.csv:21477",
+      "reason": "Replaced out-of-authority coordinates (20.6 miles from verified authority postcode ME8 7LR)"
     },
     {
       "id": 2,
@@ -125248,6 +125363,38 @@
       "decision": "retain-current; historical/time-sensitive evidence only"
     },
     {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Statutory",
+      "current": null,
+      "candidate": "Yes",
+      "source": "libraries.csv:2125",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Year closed",
+      "current": "Open",
+      "candidate": 2019,
+      "source": "libraries.csv:2125",
+      "decision": "retain-libraryon-status; historical closure may refer to a move or reopening"
+    },
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Co-located",
+      "current": null,
+      "candidate": "No",
+      "source": "libraries.csv:2125",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Email address",
+      "current": null,
+      "candidate": "pitshangerlibrary@ealing.gov.uk",
+      "source": "libraries.csv:2125",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
       "id": "lib_ff4e119d-2818-498b-a5af-cb5d8f963eb6",
       "field": "Statutory",
       "current": null,
@@ -131613,6 +131760,38 @@
       "current": "https://www.medway.gov.uk/directory_record/28/luton_library",
       "candidate": "http://medway.gov.uk/libraries",
       "source": "libraries.csv:2409",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Statutory",
+      "current": null,
+      "candidate": "Yes",
+      "source": "libraries.csv:2410",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Co-located",
+      "current": null,
+      "candidate": "No",
+      "source": "libraries.csv:2410",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Email address",
+      "current": "rainham.library@medway.gov.uk",
+      "candidate": "ortonlibrary@vivacity.org",
+      "source": "libraries.csv:2410",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "URL",
+      "current": "https://www.medway.gov.uk/directory_record/29/rainham_library",
+      "candidate": "http://medway.gov.uk/libraries",
+      "source": "libraries.csv:2410",
       "decision": "retain-current; historical/time-sensitive evidence only"
     },
     {
@@ -162304,6 +162483,22 @@
       "decision": "retain-current; historical/time-sensitive evidence only"
     },
     {
+      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "field": "Statutory",
+      "current": null,
+      "candidate": "Yes",
+      "source": "libraries.csv:4155",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "field": "Co-located",
+      "current": null,
+      "candidate": "No",
+      "source": "libraries.csv:4155",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
       "id": "lib_1c43e1ef-adc1-4af5-a28f-3b9d19971837",
       "field": "Statutory",
       "current": null,
@@ -165072,6 +165267,14 @@
       "decision": "retain-current; historical/time-sensitive evidence only"
     },
     {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Email address",
+      "current": null,
+      "candidate": "pitshangerlibrary@ealing.gov.uk",
+      "source": "arts-council-2024:891",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
       "id": "lib_dd52a3de-bc78-4285-8209-69c5efb3c768",
       "field": "Statutory",
       "current": null,
@@ -165725,6 +165928,14 @@
       "current": null,
       "candidate": "No",
       "source": "arts-council-2024:1899",
+      "decision": "retain-current; historical/time-sensitive evidence only"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Email address",
+      "current": "rainham.library@medway.gov.uk",
+      "candidate": "ortonlibrary@vivacity.org",
+      "source": "arts-council-2024:1912",
       "decision": "retain-current; historical/time-sensitive evidence only"
     },
     {
@@ -184200,23 +184411,6 @@
     },
     {
       "kind": "unmatched-source",
-      "source": "libraries.csv:2125",
-      "name": "Pitshanger Library",
-      "address": "143-145 Pitshanger Lane, London, Middlesex",
-      "postcode": "W5 1RH",
-      "yearClosed": 2019,
-      "candidates": [],
-      "reason": "Possible existing building: no duplicate added",
-      "review_id": "review_b75add2ce874c37537c09a3b",
-      "resolution": {
-        "status": "deferred",
-        "decision": "preserve-unmatched-source-backlog",
-        "decided_on": "2026-11-04",
-        "rationale": "Maintainer approved deferring unmatched source rows rather than forcing matches or discarding evidence. Possible duplicates and additional historical buildings remain available in the audit for future investigation; existing directory records are unchanged."
-      }
-    },
-    {
-      "kind": "unmatched-source",
       "source": "libraries.csv:2129",
       "name": "Angel Raynham",
       "address": "Raynham Primary School, Raynham Avenue, Edmonton, Greater London",
@@ -185831,23 +186025,6 @@
       "candidates": [],
       "reason": "Possible existing building: no duplicate added",
       "review_id": "review_087c577a36d162f7e451eb2d",
-      "resolution": {
-        "status": "deferred",
-        "decision": "preserve-unmatched-source-backlog",
-        "decided_on": "2026-11-04",
-        "rationale": "Maintainer approved deferring unmatched source rows rather than forcing matches or discarding evidence. Possible duplicates and additional historical buildings remain available in the audit for future investigation; existing directory records are unchanged."
-      }
-    },
-    {
-      "kind": "unmatched-source",
-      "source": "libraries.csv:2410",
-      "name": "Rainham Library",
-      "address": "Birling Avenue, Gillingham, Kent",
-      "postcode": "ME8 7LR",
-      "yearClosed": null,
-      "candidates": [],
-      "reason": "Possible existing building: no duplicate added",
-      "review_id": "review_eef72a96439a8a8f9e338832",
       "resolution": {
         "status": "deferred",
         "decision": "preserve-unmatched-source-backlog",
@@ -197531,23 +197708,6 @@
     },
     {
       "kind": "unmatched-source",
-      "source": "libraries.csv:4155",
-      "name": "Westbury",
-      "address": "Westbury House, Edward Street, Westbury, Wiltshire",
-      "postcode": "BA13 3BD",
-      "yearClosed": null,
-      "candidates": [],
-      "reason": "Not enough evidence for a unique closed building; open historical rows require review",
-      "review_id": "review_077b6c8c76e8326f92eb9311",
-      "resolution": {
-        "status": "deferred",
-        "decision": "preserve-unmatched-source-backlog",
-        "decided_on": "2026-11-04",
-        "rationale": "Maintainer approved deferring unmatched source rows rather than forcing matches or discarding evidence. Possible duplicates and additional historical buildings remain available in the audit for future investigation; existing directory records are unchanged."
-      }
-    },
-    {
-      "kind": "unmatched-source",
       "source": "libraries.csv:4161",
       "name": "Bromborough",
       "address": "Allport Lane, Bromborough, Merseyside",
@@ -205320,23 +205480,6 @@
       "candidates": [],
       "reason": "Possible existing building: no duplicate added",
       "review_id": "review_63f24dba85e33095dde10dc1",
-      "resolution": {
-        "status": "deferred",
-        "decision": "preserve-unmatched-source-backlog",
-        "decided_on": "2026-11-04",
-        "rationale": "Maintainer approved deferring unmatched source rows rather than forcing matches or discarding evidence. Possible duplicates and additional historical buildings remain available in the audit for future investigation; existing directory records are unchanged."
-      }
-    },
-    {
-      "kind": "unmatched-source",
-      "source": "arts-council-2024:891",
-      "name": "Pitshanger Library",
-      "address": "143-145 Pitshanger Lane, London, Middlesex",
-      "postcode": "W5 1RH",
-      "yearClosed": null,
-      "candidates": [],
-      "reason": "Possible existing building: no duplicate added",
-      "review_id": "review_2f64c93002e78e6e3a3c628d",
       "resolution": {
         "status": "deferred",
         "decision": "preserve-unmatched-source-backlog",
@@ -213122,23 +213265,6 @@
       "candidates": [],
       "reason": "Possible existing building: no duplicate added",
       "review_id": "review_62758ad9c349f533af3d4436",
-      "resolution": {
-        "status": "deferred",
-        "decision": "preserve-unmatched-source-backlog",
-        "decided_on": "2026-11-04",
-        "rationale": "Maintainer approved deferring unmatched source rows rather than forcing matches or discarding evidence. Possible duplicates and additional historical buildings remain available in the audit for future investigation; existing directory records are unchanged."
-      }
-    },
-    {
-      "kind": "unmatched-source",
-      "source": "arts-council-2024:1912",
-      "name": "Rainham Library",
-      "address": "Birling Avenue, Gillingham, Kent",
-      "postcode": "ME8 7LR",
-      "yearClosed": null,
-      "candidates": [],
-      "reason": "Possible existing building: no duplicate added",
-      "review_id": "review_cb59ffa27107b6321ae953e4",
       "resolution": {
         "status": "deferred",
         "decision": "preserve-unmatched-source-backlog",
@@ -225000,23 +225126,6 @@
       "candidates": [],
       "reason": "Possible existing building: no duplicate added",
       "review_id": "review_0fe6f643205c53bf9c0324e0",
-      "resolution": {
-        "status": "deferred",
-        "decision": "preserve-unmatched-source-backlog",
-        "decided_on": "2026-11-04",
-        "rationale": "Maintainer approved deferring unmatched source rows rather than forcing matches or discarding evidence. Possible duplicates and additional historical buildings remain available in the audit for future investigation; existing directory records are unchanged."
-      }
-    },
-    {
-      "kind": "unmatched-source",
-      "source": "arts-council-2024:3378",
-      "name": "Westbury",
-      "address": "Westbury House, 15 Edward Street, Westbury, Wiltshire",
-      "postcode": "BA13 3BD",
-      "yearClosed": null,
-      "candidates": [],
-      "reason": "Possible existing building: no duplicate added",
-      "review_id": "review_b4d0194087369e70ef905898",
       "resolution": {
         "status": "deferred",
         "decision": "preserve-unmatched-source-backlog",
@@ -339301,8 +339410,10 @@
       "postcode": "W5 1RH",
       "address": "143-145 Pitshanger Lane, London, Middlesex",
       "correction": null,
-      "target": null,
-      "candidates": []
+      "target": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "candidates": [
+        "lib_d167422b-a9c3-4938-820a-6e110a69047a"
+      ]
     },
     {
       "source": "libraries.csv",
@@ -342770,8 +342881,10 @@
       "postcode": "ME8 7LR",
       "address": "Birling Avenue, Gillingham, Kent",
       "correction": null,
-      "target": null,
-      "candidates": []
+      "target": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "candidates": [
+        "lib_68566e31-7a86-4c23-8473-5a5b58056a61"
+      ]
     },
     {
       "source": "libraries.csv",
@@ -363763,8 +363876,10 @@
       "postcode": "BA13 3BD",
       "address": "Westbury House, Edward Street, Westbury, Wiltshire",
       "correction": null,
-      "target": null,
-      "candidates": []
+      "target": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "candidates": [
+        "lib_4383336b-c477-4541-af00-3c519e5c0f60"
+      ]
     },
     {
       "source": "libraries.csv",
@@ -375459,8 +375574,10 @@
       "postcode": "W5 1RH",
       "address": "143-145 Pitshanger Lane, London, Middlesex",
       "correction": null,
-      "target": null,
-      "candidates": []
+      "target": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "candidates": [
+        "lib_d167422b-a9c3-4938-820a-6e110a69047a"
+      ]
     },
     {
       "source": "arts-council-2024",
@@ -387889,8 +388006,10 @@
       "postcode": "ME8 7LR",
       "address": "Birling Avenue, Gillingham, Kent",
       "correction": null,
-      "target": null,
-      "candidates": []
+      "target": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "candidates": [
+        "lib_68566e31-7a86-4c23-8473-5a5b58056a61"
+      ]
     },
     {
       "source": "arts-council-2024",
@@ -405660,8 +405779,10 @@
       "postcode": "BA13 3BD",
       "address": "Westbury House, 15 Edward Street, Westbury, Wiltshire",
       "correction": null,
-      "target": null,
-      "candidates": []
+      "target": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+      "candidates": [
+        "lib_4383336b-c477-4541-af00-3c519e5c0f60"
+      ]
     },
     {
       "source": "arts-council-2024",
@@ -427899,7 +428020,7 @@
     },
     {
       "file": "migration/directory/overrides.json",
-      "sha256": "96939e3f5390ce2a7b4b8ad504255648ad8ed2262f05000002ee49bc9b70746d"
+      "sha256": "56663019842ea32e64f91ec577116db1b1949af69b7b88412166b09efff49559"
     },
     {
       "file": "migration/directory/libraries-ni-scraped.json",
@@ -427915,11 +428036,11 @@
     },
     {
       "file": "scripts/directory/migrate.mjs",
-      "sha256": "7134887dd71401e7af07d4ae91f73d2c201ce35a784daf4e30f03b8e275421a5"
+      "sha256": "5e04ecb1a9bf6b06cff9362509a8d92dd914ddb6803d2863f001c445bf9958da"
     },
     {
       "file": "scripts/directory/lookups.mjs",
-      "sha256": "a585243a3e72cc150fcac399297efde4055b00fa4aec1a4a8b3103ab93ee9cd5"
+      "sha256": "f7e7df9fa27af4b2644bc166fd29b0ff0891ffb18c44b4423ef975fbab944325"
     }
   ],
   "unmapped": [
@@ -504530,13 +504651,13 @@
     "originalLibraries": 3811,
     "libraries": 4241,
     "authorities": 211,
-    "matchedRows": 4011,
+    "matchedRows": 4017,
     "addedClosedBuildings": 430,
-    "filledUprns": 722,
-    "changes": 9936,
-    "review": 8154,
+    "filledUprns": 723,
+    "changes": 9949,
+    "review": 8148,
     "approvedReviews": 405,
-    "deferredReviews": 3287,
+    "deferredReviews": 3281,
     "archivedReviews": 4462,
     "pendingReviews": 0,
     "validationExceptions": 0

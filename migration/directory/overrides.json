@@ -1,8 +1,31 @@
 {
   "authority_aliases": {},
-  "matches": {},
+  "matches": {
+    "libraries.csv:4155": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+    "arts-council-2024:3378": "lib_4383336b-c477-4541-af00-3c519e5c0f60",
+    "libraries.csv:2125": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+    "arts-council-2024:891": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+    "libraries.csv:2410": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+    "arts-council-2024:1912": "lib_68566e31-7a86-4c23-8473-5a5b58056a61"
+  },
   "excluded_sources": [],
   "field_overrides": [
+    {
+      "id": "lib_d167422b-a9c3-4938-820a-6e110a69047a",
+      "field": "Postcode",
+      "before": "WV4 6RZ",
+      "value": "W5 1RH",
+      "reason": "Postcode corrected from out-of-authority Wolverhampton value (WV4 6RZ) to recorded Ealing address postcode (W5 1RH) verified against libraries.csv and Arts Council 2024",
+      "evidence": "tempdata/libraries.csv:2125"
+    },
+    {
+      "id": "lib_68566e31-7a86-4c23-8473-5a5b58056a61",
+      "field": "Postcode",
+      "before": "RM13 9GP",
+      "value": "ME8 7LR",
+      "reason": "Postcode corrected from out-of-authority Havering value (RM13 9GP) to recorded Medway address postcode (ME8 7LR) verified against libraries.csv and Arts Council 2024",
+      "evidence": "tempdata/libraries.csv:2410"
+    },
     {
       "id": "lib_c03eeb14-bea8-4899-a0b0-97acd21e9b82",
       "field": "Postcode",
@@ -4886,9 +4909,7 @@
     },
     {
       "check_reason": "Review the supporting evidence in the migration audit",
-      "exclude_kinds": [
-        "postcode-lookup"
-      ],
+      "exclude_kinds": ["postcode-lookup"],
       "status": "approved",
       "decision": "retain-current-values",
       "decided_on": "2026-11-04",
@@ -5048,10 +5069,7 @@
     {
       "kind": "postcode-lookup",
       "condition": "verified-civic-building",
-      "postcodes": [
-        "SE13 6LG",
-        "L3 8EW"
-      ],
+      "postcodes": ["SE13 6LG", "L3 8EW"],
       "status": "approved",
       "decision": "accept-civic-building-postcode",
       "decided_on": "2026-11-06",

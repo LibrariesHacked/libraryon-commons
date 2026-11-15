@@ -889,8 +889,8 @@
 }
 .detail-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
-  gap: var(--size-9);
+  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 1fr);
+  gap: clamp(var(--size-6), 4vw, var(--size-8));
   align-items: start;
 }
 .detail-grid > div > :first-child,
@@ -898,11 +898,17 @@
   margin-top: 0;
 }
 .detail-section {
-  margin-bottom: var(--size-8);
+  margin-bottom: var(--size-6);
 }
 .detail-section h2 {
-  font-size: 1.6rem;
+  font-size: 1.55rem;
   margin-top: 0;
+}
+.detail-grid > aside .detail-section h2 {
+  font-size: 1.3rem;
+}
+.detail-grid > aside > .button {
+  margin-bottom: var(--size-5);
 }
 .contact-list {
   display: grid;
@@ -978,6 +984,10 @@
 @media (max-width: 1000px) {
   .article-grid {
     gap: var(--size-3);
+  }
+  .detail-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--size-6);
   }
 }
 @media (max-width: 760px) {

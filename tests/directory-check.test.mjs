@@ -7,6 +7,7 @@ import assert from 'node:assert/strict'
 import {
   extractPostcodeCandidate,
   checkPostcode,
+  checkCoordinateOutlier,
   checkUrlSyntax,
   classifyHttpStatus,
   verifyUrl,
@@ -73,6 +74,90 @@ test('checkPostcode validates formats and maps lookup results', () => {
     status: 'missing-lookup',
     lookup: null
   })
+})
+
+test('checkCoordinateOutlier flags out-of-authority coordinates and postcodes', () => {
+  const lookups = {
+    postcodes: {
+      'BA13 3BD': {
+        status: 'found',
+        postcode: 'BA13 3BD',
+        authorityCode: 'E06000054',
+        latitude: 51.261754,
+        longitude: -2.183777
+      },
+      'W5 1RH': {
+        status: 'found',
+        postcode: 'W5 1RH',
+        authorityCode: 'E09000009',
+        latitude: 51.525728,
+        longitude: -0.314673
+      },
+      'WV4 6RZ': {
+        status: 'found',
+        postcode: 'WV4 6RZ',
+        authorityCode: 'E08000031',
+        latitude: 52.561513,
+        longitude: -2.115955
+      }
+    },
+    uprns: {
+      100121338767: {
+        status: 'found',
+        postcode: 'BA13 3BD',
+        authorityCode: 'E06000054',
+        latitude: 51.261489047671,
+        longitude: -2.183507910337797
+      }
+    }
+  }
+
+  const badWestbury = checkCoordinateOutlier(
+    {
+      'Local authority code': 'E06000054',
+      'Address 1': 'Westbury House, 15 Edward Street, Westbury, Wiltshire. BA13 3BD',
+      Postcode: 'BA13 3BD',
+      'Unique property reference number': 100121338767,
+      Latitude: 53.118966,
+      Longitude: -1.112873
+    },
+    lookups
+  )
+  assert.equal(badWestbury.valid, false)
+  assert.equal(badWestbury.status, 'out-of-authority-coordinates')
+  assert.ok(badWestbury.milesFromPostcode > 100)
+  assert.equal(badWestbury.candidateLatitude, 51.261489047671)
+  assert.equal(badWestbury.candidateLongitude, -2.183507910337797)
+
+  const fixedWestbury = checkCoordinateOutlier(
+    {
+      'Local authority code': 'E06000054',
+      'Address 1': 'Westbury House, 15 Edward Street, Westbury, Wiltshire. BA13 3BD',
+      Postcode: 'BA13 3BD',
+      'Unique property reference number': 100121338767,
+      Latitude: 51.261489047671,
+      Longitude: -2.183507910337797
+    },
+    lookups
+  )
+  assert.equal(fixedWestbury.valid, true)
+  assert.equal(fixedWestbury.status, 'ok')
+
+  const badPitshanger = checkCoordinateOutlier(
+    {
+      'Local authority code': 'E09000009',
+      'Address 1': '143-145 Pitshanger Lane, London, Middlesex, W5 1RH',
+      Postcode: 'WV4 6RZ',
+      Latitude: 52.56177,
+      Longitude: -2.11398
+    },
+    lookups
+  )
+  assert.equal(badPitshanger.valid, false)
+  assert.equal(badPitshanger.status, 'out-of-authority-postcode')
+  assert.equal(badPitshanger.candidatePostcode, 'W5 1RH')
+  assert.equal(badPitshanger.candidateLatitude, 51.525728)
+  assert.equal(badPitshanger.candidateLongitude, -0.314673)
 })
 
 test('checkUrlSyntax detects formatting issues and suggests fixes', () => {
@@ -245,6 +330,7 @@ test('auditDirectory scans content without errors and formatAuditSummary returns
   assert.ok(report.totals.authorities > 0)
   assert.ok(report.postcodes.found > 4000)
   assert.equal(report.postcodes.empty, 0)
+  assert.equal(report.coordinates.outliers.length, 0)
   assert.ok(report.urls.total > 0)
   assert.equal(report.urls.syntaxIssues.length, 0)
 
@@ -252,6 +338,7 @@ test('auditDirectory scans content without errors and formatAuditSummary returns
   assert.ok(summary.includes('DIRECTORY HEALTH & VERIFICATION REPORT'))
   assert.ok(summary.includes('Total Libraries:'))
   assert.ok(summary.includes('Postcodes Assessment:'))
+  assert.ok(summary.includes('Coordinates Assessment:'))
 
   const markdown = formatAuditMarkdown(report)
   assert.ok(markdown.includes('Directory Health & Link Verification Report'))
