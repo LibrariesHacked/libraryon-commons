@@ -40,27 +40,28 @@ Netlify still needs a GitHub connection to this repository for Git Gateway, but 
 3. In **Settings → Pages → Custom domain**, set `librarycommons.org.uk`.
 4. In **Settings → Secrets and variables → Actions → Variables**, these defaults are already in the workflow. Set `CMS_URL` if you change the editor hostname:
 
-    | Variable | Value |
-    | --- | --- |
-    | `SITE_URL` | `https://librarycommons.org.uk/` |
-    | `BASE_PATH` | `/` |
-    | `PAGES_DOMAIN` | `librarycommons.org.uk` (hostname only) |
-    | `CMS_URL` | `https://edit.librarycommons.org.uk/` |
+   | Variable       | Value                                   |
+   | -------------- | --------------------------------------- |
+   | `SITE_URL`     | `https://librarycommons.org.uk/`        |
+   | `BASE_PATH`    | `/`                                     |
+   | `PAGES_DOMAIN` | `librarycommons.org.uk` (hostname only) |
+   | `CMS_URL`      | `https://edit.librarycommons.org.uk/`   |
 
 5. In Cloudflare DNS, add these apex records with TTL **Auto**. Start as **DNS only** (gray cloud) while GitHub verifies the domain and provisions its certificate:
 
-    | Type | Name | Target |
-    | --- | --- | --- |
-    | A | `@` | `185.199.108.153` |
-    | A | `@` | `185.199.109.153` |
-    | A | `@` | `185.199.110.153` |
-    | A | `@` | `185.199.111.153` |
-    | AAAA | `@` | `2606:50c0:8000::153` |
-    | AAAA | `@` | `2606:50c0:8001::153` |
-    | AAAA | `@` | `2606:50c0:8002::153` |
-    | AAAA | `@` | `2606:50c0:8003::153` |
+   | Type | Name | Target                |
+   | ---- | ---- | --------------------- |
+   | A    | `@`  | `185.199.108.153`     |
+   | A    | `@`  | `185.199.109.153`     |
+   | A    | `@`  | `185.199.110.153`     |
+   | A    | `@`  | `185.199.111.153`     |
+   | AAAA | `@`  | `2606:50c0:8000::153` |
+   | AAAA | `@`  | `2606:50c0:8001::153` |
+   | AAAA | `@`  | `2606:50c0:8002::153` |
+   | AAAA | `@`  | `2606:50c0:8003::153` |
 
-    Remove conflicting apex A/AAAA records first. Optionally add a CNAME from `www` to `librarieshacked.github.io`, initially DNS-only; GitHub Pages redirects it to the apex when both are configured. The workflow writes `librarycommons.org.uk` to `CNAME`.
+   Remove conflicting apex A/AAAA records first. Optionally add a CNAME from `www` to `librarieshacked.github.io`, initially DNS-only; GitHub Pages redirects it to the apex when both are configured. The workflow writes `librarycommons.org.uk` to `CNAME`.
+
 6. Wait for DNS to propagate, then confirm **Enforce HTTPS** is available in GitHub Pages settings.
 7. After the first successful workflow run, check the **github-pages** environment and open <https://librarycommons.org.uk/>.
 8. Once HTTPS works directly at GitHub Pages, turn on Cloudflare proxy (orange cloud) for the apex A/AAAA records and optional `www` CNAME. In Cloudflare **SSL/TLS → Overview**, choose **Full (strict)**. GitHub Pages and Netlify use managed hosting; if proxying causes certificate, redirect, or routing errors, switch the affected record back to DNS-only.
@@ -73,21 +74,21 @@ The repository is configured by default for `https://librarycommons.org.uk/` at 
 2. Netlify reads [netlify.toml](../netlify.toml). Its ignore command skips Netlify's own builds. GitHub Actions will deploy only `.deploy/netlify-admin` to this site; it does not publish the public site to Netlify.
 3. Under **Domain management → Add a domain**, add `edit.librarycommons.org.uk`. Cloudflare DNS should contain:
 
-    | Type | Name | Target | Proxy status |
-    | --- | --- | --- | --- |
-    | CNAME | `edit` | The `*.netlify.app` hostname assigned to this Netlify site | DNS only initially |
+   | Type  | Name   | Target                                                     | Proxy status       |
+   | ----- | ------ | ---------------------------------------------------------- | ------------------ |
+   | CNAME | `edit` | The `*.netlify.app` hostname assigned to this Netlify site | DNS only initially |
 
-    Leave the record DNS-only while Netlify verifies the domain and provisions its TLS certificate. After `https://edit.librarycommons.org.uk/` works directly, you can turn on Cloudflare proxy for `edit` as well. Keep Cloudflare SSL/TLS on **Full (strict)**.
+   Leave the record DNS-only while Netlify verifies the domain and provisions its TLS certificate. After `https://edit.librarycommons.org.uk/` works directly, you can turn on Cloudflare proxy for `edit` as well. Keep Cloudflare SSL/TLS on **Full (strict)**.
 
 ### 3. Deploy the CMS bundle
 
 1. Copy the site ID from **Site configuration → General → Site details**. Create a Netlify personal access token in **User settings → Applications**.
 2. In GitHub, open **Settings → Secrets and variables → Actions → Secrets** and add:
 
-    | Secret | Value |
-    | --- | --- |
-    | `NETLIFY_SITE_ID` | The Netlify site ID |
-    | `NETLIFY_AUTH_TOKEN` | The Netlify personal access token |
+   | Secret               | Value                             |
+   | -------------------- | --------------------------------- |
+   | `NETLIFY_SITE_ID`    | The Netlify site ID               |
+   | `NETLIFY_AUTH_TOKEN` | The Netlify personal access token |
 
 3. Run **Actions → Deploy LibraryCommons → Run workflow**. This publishes the CMS-only bundle; Netlify's automatic build remains skipped. Deploying once also gives `https://edit.librarycommons.org.uk/admin/` its CMS files before enabling Identity.
 
@@ -112,12 +113,12 @@ Add or remove editors in the Netlify site's **Identity → Users** list. Keep re
 1. Merge a small documentation-only change to `main`.
 2. Confirm **Deploy LibraryCommons** runs its tests, builds the Pages artifact, and publishes both targets.
 3. Open the public domain and confirm pages, images, search, and internal links work. Check that the **Content management** footer link opens the editor subdomain, not the Pages site.
-4. Open <https://edit.librarycommons.org.uk/>, sign in as the invited test editor, and create a draft page. Confirm it appears as a pull request in GitHub.
-5. Check that uploaded test media is stored under `public/uploads/community/`, then remove the test draft through its pull request.
+4. Open <https://edit.librarycommons.org.uk/>, sign in as the invited test editor, and create an update. Confirm the commit appears in GitHub.
+5. Check that uploaded test media is stored under `public/uploads/community/`.
 
-Confirm in GitHub that the test editor's pull request is reviewable and that the author information is sufficient for your audit needs. Git Gateway is a shared repository integration, not the same audit identity model as giving each editor a GitHub account.
+Confirm in GitHub that the test editor's changes appear cleanly and that the author information is sufficient for your audit needs. Git Gateway is a shared repository integration, not the same audit identity model as giving each editor a GitHub account.
 
-The CMS workflow uses Decap's editorial workflow. Repository administrators should keep the existing `main` branch rules requiring the **Tests and build** check, maintainer approval, and code-owner review. See [reviewing changes](preservation.md#reviewing-changes).
+CMS edits publish directly to `main`. See [reviewing changes](preservation.md#reviewing-changes).
 
 ## Site Capabilities
 

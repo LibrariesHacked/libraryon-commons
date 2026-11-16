@@ -87,15 +87,11 @@ export function getActivityForAuthority(gssCode) {
  * Build a positive multi-year growth badge label when a metric has grown by at least 2%.
  * Never returns negative or decline indicators so the presentation remains advocacy-focused.
  *
- * @param {object} metric - Individual metric object containing optional growth_pct and baseline_period.
- * @returns {string|null} Human-readable growth label (e.g. "Up 12% since 2023/24"), or null.
+ * @param {object} metric - Individual metric object containing optional growth_pct.
+ * @returns {string|null} Human-readable growth label (e.g. "Up 12%"), or null.
  */
 function formatGrowthBadge(metric) {
   if (!metric || !metric.growth_pct || metric.growth_pct < 2) return null
-  const baselineShort = formatActivityPeriod(metric.baseline_period)
-  if (baselineShort) {
-    return `Up ${metric.growth_pct}% since ${baselineShort}`
-  }
   return `Up ${metric.growth_pct}%`
 }
 

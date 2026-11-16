@@ -1,0 +1,103 @@
+---
+import { ArrowRight, ArrowUpRight, BookOpen, Library, Newspaper, Users } from '@lucide/astro'
+
+import activityByAuthority from '../data/activity/activity-by-authority.json'
+import { sitePath } from '../lib/site/siteHelpers.mjs'
+import { libraries, authorities } from '../lib/directory/directoryLoader.mjs'
+import { getNewsMetadata } from '../lib/content/newsHelpers.mjs'
+
+const newsMetadata = getNewsMetadata()
+let totalVisits = 0
+let totalLoans = 0
+for (const item of Object.values(activityByAuthority)) {
+  totalVisits += item.metrics?.visits?.total || 0
+  totalLoans += item.metrics?.loans?.total || 0
+}
+const formattedVisits = `${Math.round(totalVisits / 1000000)}M+`
+const formattedLoans = `${Math.round(totalLoans / 1000000)}M+`
+const formattedLibraries = libraries.length.toLocaleString('en-GB')
+const formattedNews = newsMetadata.total_stories.toLocaleString('en-GB')
+---
+
+<section class="section section-wash home-data-section">
+  <div class="shell">
+    <div class="section-heading">
+      <div>
+        <h2>Open library data</h2>
+        <p class="home-data-lead">
+          Facts, branch locations, and community impact across UK public libraries.
+        </p>
+      </div>
+      <a href={sitePath('/libraries/')}>
+        Find your library <ArrowRight size={16} aria-hidden="true" />
+      </a>
+    </div>
+    <div class="home-data-grid">
+      <a class="home-data-card home-data-card--green" href={sitePath('/libraries/')}>
+        <div class="home-data-card-top">
+          <span class="home-data-card-icon" aria-hidden="true">
+            <Library size={20} />
+          </span>
+          <ArrowUpRight size={18} class="home-data-card-arrow" aria-hidden="true" />
+        </div>
+        <div>
+          <p class="home-data-card-value">{formattedLibraries}</p>
+          <h3 class="home-data-card-title">Public library branches</h3>
+          <p class="home-data-card-desc">
+            Mapped across {authorities.length} local library authorities in England, Scotland,
+            Wales, and Northern Ireland.
+          </p>
+        </div>
+      </a>
+
+      <a class="home-data-card home-data-card--plum" href={sitePath('/libraries/')}>
+        <div class="home-data-card-top">
+          <span class="home-data-card-icon" aria-hidden="true">
+            <Users size={20} />
+          </span>
+          <ArrowUpRight size={18} class="home-data-card-arrow" aria-hidden="true" />
+        </div>
+        <div>
+          <p class="home-data-card-value">{formattedVisits}</p>
+          <h3 class="home-data-card-title">Annual library visits</h3>
+          <p class="home-data-card-desc">
+            Welcoming local communities into physical branches, mobile libraries, and study spaces.
+          </p>
+        </div>
+      </a>
+
+      <a class="home-data-card home-data-card--green" href={sitePath('/libraries/')}>
+        <div class="home-data-card-top">
+          <span class="home-data-card-icon" aria-hidden="true">
+            <BookOpen size={20} />
+          </span>
+          <ArrowUpRight size={18} class="home-data-card-arrow" aria-hidden="true" />
+        </div>
+        <div>
+          <p class="home-data-card-value">{formattedLoans}</p>
+          <h3 class="home-data-card-title">Books & digital loans</h3>
+          <p class="home-data-card-desc">
+            Physical books, eBooks, eAudiobooks, and children's literature borrowed annually.
+          </p>
+        </div>
+      </a>
+
+      <a class="home-data-card home-data-card--apricot" href={sitePath('/news/')}>
+        <div class="home-data-card-top">
+          <span class="home-data-card-icon" aria-hidden="true">
+            <Newspaper size={20} />
+          </span>
+          <ArrowUpRight size={18} class="home-data-card-arrow" aria-hidden="true" />
+        </div>
+        <div>
+          <p class="home-data-card-value">{formattedNews}</p>
+          <h3 class="home-data-card-title">Sector news stories</h3>
+          <p class="home-data-card-desc">
+            Searchable archive of public library updates, funding, campaigns, and changes since
+            2010.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>

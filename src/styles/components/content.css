@@ -889,7 +889,7 @@
 }
 .detail-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(300px, 1fr);
+  grid-template-columns: minmax(0, 1.25fr) minmax(320px, 1fr);
   gap: clamp(var(--size-6), 4vw, var(--size-8));
   align-items: start;
 }
@@ -985,9 +985,76 @@
   .article-grid {
     gap: var(--size-3);
   }
+}
+@media (max-width: 900px) {
   .detail-grid {
-    grid-template-columns: minmax(0, 1fr);
-    gap: var(--size-6);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--size-5);
+  }
+  .detail-grid > div,
+  .detail-grid > aside {
+    display: contents;
+  }
+  .library-closed-notice {
+    order: 1;
+  }
+  .detail-grid > div > .library-search {
+    order: 1;
+  }
+  .authority-libraries-heading-row {
+    order: 2;
+  }
+  .detail-grid > div > .library-map {
+    order: 3;
+  }
+  .opening-hours-card {
+    order: 4;
+  }
+  .authority-library-results {
+    order: 4;
+  }
+  .library-contact-section {
+    order: 5;
+  }
+  .authority-service-section {
+    order: 5;
+  }
+  .getting-here-section {
+    order: 6;
+  }
+  .authority-about-section,
+  .social-links-section {
+    order: 6;
+  }
+  .authority-activity-section {
+    order: 7;
+  }
+  .facility-section {
+    order: 8;
+  }
+  .library-notes-section,
+  .library-tour-section {
+    order: 8;
+  }
+  .authority-news-section,
+  .library-news-section {
+    order: 9;
+  }
+  .nearby-section {
+    order: 10;
+  }
+  .library-downloads {
+    order: 10;
+  }
+  .library-more-authority {
+    order: 11;
+  }
+  .detail-grid > aside > .notice {
+    order: 12;
+  }
+  .share-buttons-container {
+    order: 13;
   }
 }
 @media (max-width: 760px) {
@@ -996,8 +1063,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .detail-grid {
-    grid-template-columns: 1fr;
-    gap: var(--size-3);
+    gap: var(--size-4);
   }
   .testimonial-card,
   .testimonial-card:nth-of-type(even) {

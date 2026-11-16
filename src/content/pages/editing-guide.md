@@ -8,7 +8,7 @@ description: A practical guide to adding and updating LibraryCommons content.
 
 # Editing
 
-Use the content editor to add and update pages, questions, resources, and library listings. Changes are saved as drafts for review before they appear on the public site.
+Use the content editor to add and update pages, questions, resources, and library listings. Changes are published directly to the repository and appear on the public site when deployed.
 
 ## Before you begin
 
@@ -31,7 +31,7 @@ The **+ / Add Component** menu includes collection images, carousels, accordions
 
 In a carousel, each `slide` contains one image or quote and any notes that belong to it. In a hotspot carousel, add hotspot notes inside the slide for the image they describe; marker positions are percentages from the left and top of the image. In an accordion, each `accordion-item` has a title and its own content. Book recommendations keep each cover, title, author, year, and description together in one `recommendation-item`.
 
-Use the existing articles as a guide. Keep related notes and images inside their component, and do not move a slide’s notes into a neighbouring slide. If you are unsure about a complex block, save it as a draft and ask for review before publishing.
+Use the existing articles as a guide. Keep related notes and images inside their component, and do not move a slide’s notes into a neighbouring slide. If you are unsure about a complex block, check your changes before publishing.
 
 ## Questions, resources, and links
 
@@ -45,4 +45,4 @@ For a recording, include the session name in the title. For a document, say what
 
 ## Review and publishing
 
-Save your work as a draft. The draft is sent for review; a maintainer checks the content and the automated site checks before merging it. If changes are requested, edit the draft rather than starting a second copy.
+Publish your changes when ready. The automated site checks run to verify the build and tests pass. You can return to the editor at any time to make further updates.

@@ -107,26 +107,34 @@ const articleSchema = generateArticleSchema(
     </div>
     {hasAside && (
       <aside class="article-aside">
-        <div>
+        <div class="article-aside-inner">
           {headings.length > 0 && (
-            <>
-              <h2>{copy.on_this_page}</h2>
+            <section class="aside-nav-card" aria-label={copy.on_this_page}>
+              <h2 class="aside-nav-heading">{copy.on_this_page}</h2>
               <nav aria-label={copy.on_this_page}>
-                {headings.map((heading) => (
-                  <a href={`#${heading.slug}`}>{heading.text}</a>
-                ))}
+                <ul class="aside-nav-list">
+                  {headings.map((heading) => (
+                    <li>
+                      <a href={`#${heading.slug}`}>{heading.text}</a>
+                    </li>
+                  ))}
+                </ul>
               </nav>
-            </>
+            </section>
           )}
           {neighbours.length > 0 && (
-            <>
-              <h2 style="margin-top:2rem">{copy.in_this_section}</h2>
+            <section class="aside-nav-card" aria-label={copy.in_this_section}>
+              <h2 class="aside-nav-heading">{copy.in_this_section}</h2>
               <nav aria-label={copy.in_this_section}>
-                {neighbours.map((page) => (
-                  <a href={sitePath(page.data.path)}>{articleTitle(page)}</a>
-                ))}
+                <ul class="aside-nav-list">
+                  {neighbours.map((page) => (
+                    <li>
+                      <a href={sitePath(page.data.path)}>{articleTitle(page)}</a>
+                    </li>
+                  ))}
+                </ul>
               </nav>
-            </>
+            </section>
           )}
           <slot name="aside" />
         </div>

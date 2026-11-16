@@ -46,11 +46,19 @@ import { normalizeListSpacing } from '../src/lib/content/markdownHelpers.mjs'
 import { normalizeLinkedCards } from '../scripts/normalize-content.mjs'
 
 test('carousel and filter mechanics use maintained engines and native browser primitives', () => {
-  const home = readFileSync(new URL('../src/templates/HomeTemplate.astro', import.meta.url), 'utf8')
-  assert.ok(home.includes("from 'embla-carousel'"))
-  assert.ok(home.includes("from 'embla-carousel-autoplay'"))
-  assert.ok(!home.includes('setInterval('))
-  assert.ok(!home.includes('requestAnimationFrame('))
+  const carouselClient = readFileSync(
+    new URL('../src/scripts/carouselClient.mjs', import.meta.url),
+    'utf8'
+  )
+  assert.ok(carouselClient.includes("from 'embla-carousel'"))
+  assert.ok(carouselClient.includes("from 'embla-carousel-autoplay'"))
+  assert.ok(!carouselClient.includes('setInterval('))
+  assert.ok(!carouselClient.includes('requestAnimationFrame('))
+  const homeHero = readFileSync(
+    new URL('../src/components/HomeHero.astro', import.meta.url),
+    'utf8'
+  )
+  assert.ok(homeHero.includes('src="../scripts/carouselClient.mjs"'))
   const directory = readFileSync(
     new URL('../src/pages/libraries/index.astro', import.meta.url),
     'utf8'
@@ -94,7 +102,7 @@ test('shared library picker redirects by default and credits only displayed name
     new URL('../src/components/LibrarySearch.astro', import.meta.url),
     'utf8'
   )
-  const home = readFileSync(new URL('../src/templates/HomeTemplate.astro', import.meta.url), 'utf8')
+  const home = readFileSync(new URL('../src/components/HomeHero.astro', import.meta.url), 'utf8')
   const layout = readFileSync(
     new URL('../src/layouts/DirectoryLayout.astro', import.meta.url),
     'utf8'

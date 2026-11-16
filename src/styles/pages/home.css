@@ -202,6 +202,91 @@
 .home-prose > :last-child {
   margin-bottom: 0;
 }
+.home-data-lead {
+  margin: var(--size-1) 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+.home-data-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: var(--size-4);
+  margin-top: var(--size-5);
+}
+.home-data-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--size-3);
+  padding: var(--size-5);
+  border-radius: var(--card-radius);
+  background: var(--paper);
+  text-decoration: none;
+  color: var(--ink);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 0.15s var(--motion-ease),
+    box-shadow 0.15s var(--motion-ease);
+}
+.home-data-card:hover {
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+.home-data-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.home-data-card-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--surface-tint-green);
+  color: var(--brand-forest);
+}
+.home-data-card--plum .home-data-card-icon {
+  background: var(--surface-tint-plum-selected);
+  color: var(--brand-primary);
+}
+.home-data-card--green .home-data-card-icon {
+  background: var(--surface-tint-green);
+  color: var(--brand-forest);
+}
+.home-data-card--apricot .home-data-card-icon {
+  background: var(--surface-tint-apricot);
+  color: var(--brand-berry);
+}
+.home-data-card-value {
+  font-size: clamp(2rem, 3.2vw, 2.6rem);
+  font-weight: var(--font-weight-7);
+  line-height: 1.1;
+  color: var(--ink);
+  margin: var(--size-2) 0 var(--size-1);
+}
+.home-data-card-title {
+  font-size: 1rem;
+  font-weight: var(--font-weight-6);
+  color: var(--ink);
+  margin: 0 0 var(--size-1);
+}
+.home-data-card-desc {
+  font-size: 0.82rem;
+  color: var(--muted);
+  line-height: 1.45;
+  margin: 0;
+}
+.home-data-card-arrow {
+  color: var(--muted);
+  transition:
+    color 0.15s var(--motion-ease),
+    transform 0.15s var(--motion-ease);
+}
+.home-data-card:hover .home-data-card-arrow {
+  color: var(--brand-primary);
+  transform: translate(2px, -2px);
+}
 @media (max-width: 960px) {
   .hero-carousel-slide {
     flex: 0 0 calc((100% - 1.15rem) / 2);

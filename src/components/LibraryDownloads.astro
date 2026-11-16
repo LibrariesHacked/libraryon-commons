@@ -3,26 +3,27 @@ import { Download, FileCheck, FileJson } from '@lucide/astro'
 import { libraryValidationReport } from '../lib/directory/exportHelpers.mjs'
 import { sitePath } from '../lib/site/siteHelpers.mjs'
 
-const { entries, authoritySlug } = Astro.props
+const { entries, authoritySlug, authorityName } = Astro.props
 const prefix = authoritySlug ? `/libraries/${authoritySlug}/libraries` : '/libraries'
 const report = libraryValidationReport(entries)
+const heading = authoritySlug ? 'Download library data' : 'Download directory data'
+const description = authoritySlug
+  ? `Download a spreadsheet of all ${report.totalRecords.toLocaleString('en-GB')} libraries in ${authorityName || 'this service'}, including addresses, facilities, and contact details.`
+  : `Download all ${report.totalRecords.toLocaleString('en-GB')} UK public libraries as a spreadsheet for research, mapping, or local planning.`
 ---
 
 <section class="detail-section library-downloads" aria-label="Library data downloads">
-  <h2>{authoritySlug ? 'Library data' : 'All library data'}</h2>
-  <p class="muted">
-    {report.totalRecords.toLocaleString('en-GB')} records;{' '}
-    {report.invalidRecords.toLocaleString('en-GB')} with validation issues
-  </p>
+  <h2>{heading}</h2>
+  <p class="muted">{description}</p>
   <a
     class="button button-secondary"
     href={sitePath(`${prefix}.csv`)}
     download={authoritySlug ? `libraries-${authoritySlug}.csv` : 'libraries.csv'}
   >
-    <Download size={17} aria-hidden="true" /> Download CSV
+    <Download size={17} aria-hidden="true" /> Download spreadsheet (CSV)
   </a>
   <details>
-    <summary>Validation and schema</summary>
+    <summary>Data schema and developer formats</summary>
     <ul class="contact-list">
       <li>
         <a
@@ -31,18 +32,18 @@ const report = libraryValidationReport(entries)
             authoritySlug ? `libraries-${authoritySlug}.validated.csv` : 'libraries.validated.csv'
           }
         >
-          <FileCheck size={17} aria-hidden="true" /> Validated records CSV (
-          {report.validRecords.toLocaleString('en-GB')})
+          <FileCheck size={17} aria-hidden="true" /> Validated records only (
+          {report.validRecords.toLocaleString('en-GB')} CSV)
         </a>
       </li>
       <li>
         <a href={sitePath(`${prefix}.validation.json`)} download>
-          <FileJson size={17} aria-hidden="true" /> Validation report
+          <FileJson size={17} aria-hidden="true" /> Quality & validation report (JSON)
         </a>
       </li>
       <li>
         <a href={sitePath('/schemas/libraries.json')} download>
-          <FileJson size={17} aria-hidden="true" /> Table Schema
+          <FileJson size={17} aria-hidden="true" /> Table Schema definition (JSON)
         </a>
       </li>
     </ul>

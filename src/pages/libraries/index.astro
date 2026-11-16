@@ -69,10 +69,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     <div class="shell">
       <p class="eyebrow">{copy.eyebrow}</p>
       <h1>{copy.heading}</h1>
-      <p>
-        {libraries.length.toLocaleString('en-GB')} {copy.intro_library_count}{' '}
-        {authorities.length.toLocaleString('en-GB')} {copy.intro_authority_count}
-      </p>
+      <p>{copy.description}</p>
     </div>
   </section>
   <section class="section shell">
@@ -686,9 +683,6 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
       for (const el of list.querySelectorAll('.library-result-item.is-selected')) {
         el.classList.remove('is-selected')
       }
-      mapElement.dispatchEvent(
-        new CustomEvent('library-map-select', { detail: { unselect: true } })
-      )
     }
   })
 

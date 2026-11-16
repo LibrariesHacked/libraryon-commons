@@ -31,45 +31,102 @@
   color: var(--muted);
 }
 .article-aside {
-  font-size: 0.8rem;
+  font-size: 0.85rem;
 }
-.article-aside > div {
+.article-aside-inner {
   position: sticky;
   top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-5);
 }
-.article-aside h2 {
+.aside-nav-card {
+  background: var(--surface-tint-green);
+  border-radius: var(--card-radius);
+  padding: var(--size-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+}
+.aside-nav-heading {
   font-family: var(--font);
   font-size: 0.95rem;
-  margin: 0 0 var(--size-3);
+  font-weight: var(--font-weight-6);
+  color: var(--brand-forest);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--size-2);
 }
-.article-aside nav {
-  display: grid;
-  gap: 0.7rem;
+.aside-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-1);
 }
-.article-aside a {
+.aside-nav-list li {
+  margin: 0;
+  padding: 0;
+}
+.aside-nav-list a {
+  display: block;
+  padding: 0.45rem 0.65rem;
+  border-radius: var(--radius-2);
+  color: var(--ink);
   text-decoration: none;
+  line-height: 1.4;
+  font-size: 0.84rem;
+  transition:
+    background-color 0.15s var(--motion-ease),
+    color 0.15s var(--motion-ease);
+}
+.aside-nav-list a:hover {
+  background: var(--paper);
+  color: var(--brand-forest);
+  text-decoration: none;
+}
+.aside-nav-list a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 1px;
 }
 @media (max-width: 1000px) {
   .article-layout:not(.article-layout-no-aside) {
     gap: var(--size-7);
-    grid-template-columns: minmax(0, 1fr) 210px;
+    grid-template-columns: minmax(0, 1fr) 220px;
   }
 }
 @media (max-width: 760px) {
   .article-layout:not(.article-layout-no-aside) {
     display: flex;
-    flex-direction: column-reverse;
-    gap: var(--size-7);
+    flex-direction: column;
+    gap: var(--size-6);
   }
-  .article-aside > div {
+  .article-aside-inner {
     position: static;
-  }
-  .article-aside nav {
     display: flex;
-    gap: 0.75rem var(--size-3);
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--size-4);
   }
-  .article-aside nav a {
-    font-size: var(--font-size-0);
+  .aside-nav-card {
+    padding: var(--size-3) var(--size-4);
+    background: var(--surface-tint-green);
+  }
+  .aside-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .aside-nav-list a {
+    font-size: 0.88rem;
+    padding: 0.5rem 0.65rem;
+    background: var(--paper);
+    border-radius: var(--radius-2);
+  }
+  .aside-nav-list a:hover,
+  .aside-nav-list a:active {
+    background: var(--canvas);
+    color: var(--brand-forest);
   }
 }

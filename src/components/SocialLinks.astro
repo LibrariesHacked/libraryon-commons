@@ -7,7 +7,7 @@ const validLinks = links.filter((link) => safeURL(link?.url))
 ---
 
 {validLinks.length > 0 && (
-  <section class="detail-section">
+  <section class="detail-section social-links-section">
     {heading && <h2>{heading}</h2>}
     <ul class="contact-list">
       {validLinks.map((link) => (

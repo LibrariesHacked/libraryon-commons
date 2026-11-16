@@ -73,10 +73,12 @@ const data = libraryMapFeatures(libraries, sitePath)
       this.addEventListener(
         'library-map-select',
         (event) => {
-          const { library, unselect } = event.detail || {}
+          const { library, unselect, resetBounds = false } = event.detail || {}
           if (unselect || !library) {
             this.removePopup()
-            this.fitAllBounds()
+            if (resetBounds) {
+              this.fitAllBounds()
+            }
             return
           }
           this.selectLibrary(library)

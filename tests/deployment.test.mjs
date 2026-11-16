@@ -14,7 +14,7 @@ test('Netlify Decap uses Identity and Git Gateway without repository user access
   assert.equal(cms.backend.name, 'git-gateway')
   assert.equal(cms.backend.branch, 'main')
   assert.equal(cms.backend.repo, undefined)
-  assert.equal(cms.publish_mode, 'editorial_workflow')
+  assert.equal(cms.publish_mode, undefined)
   assert.ok(
     read('../src/pages/admin/index.astro').includes(
       'identity.netlify.com/v1/netlify-identity-widget.js'

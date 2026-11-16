@@ -33,11 +33,11 @@ The importer never overwrites library records, site settings, or files modified 
 
 ## Reviewing changes
 
-New CMS edits are saved as GitHub pull requests rather than published directly. The repository's `CODEOWNERS` file assigns maintainer review to the original LibraryOn articles, imported FAQs and resources, archived uploads, and preservation records. New community uploads go to `public/uploads/community/`, separate from archived media.
+CMS edits are published directly to the repository. The repository's `CODEOWNERS` file assigns maintainer review to the original LibraryOn articles, imported FAQs and resources, archived uploads, and preservation records. New community uploads go to `public/uploads/community/`, separate from archived media.
 
-The pull-request workflow runs `npm test` and `npm run build`. 
+The continuous integration workflow runs `npm test` and `npm run build` on every push and pull request.
 
-Local CMS editing uses the local file service and writes to the working tree for testing; it does not create GitHub pull requests.
+Local CMS editing uses the local file service and writes to the working tree for testing.
 
 The importer reuses the filename mapping and gives new resources, sessions, and uploads descriptive names. `node scripts/migrate-filenames.mjs` previews any remaining legacy filenames; add `--apply` to migrate them and update active references. The migration leaves raw captures and compressed preservation bundles untouched. Asset URLs change with their filenames; the mapping records previous URLs but does not configure hosting redirects.
 

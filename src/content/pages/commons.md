@@ -6,6 +6,7 @@ description: A community project for sharing and maintaining library knowledge.
 hero:
   image: /uploads/community/labrador-in-mobile-library-devon.jpg
   alt: A yellow labrador sits happily on the patterned floor of a Devon mobile library vehicle
+  caption: A friendly four-legged regular aboard a Devon mobile library.
   credit: Libraries Unlimited, Devon Libraries
 resources: []
 ---

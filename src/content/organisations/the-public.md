@@ -1,7 +1,6 @@
 ---
 name: The Public
 slug: the-public
-acronym: Community
 role: Library Users, Readers, Learners & Communities
 description: The diverse public, local residents, families, learners, and community groups whom public libraries exist to serve.
 country: United Kingdom

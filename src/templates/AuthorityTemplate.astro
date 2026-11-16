@@ -35,11 +35,10 @@ const services = collectValues(activeForSummary, (library) =>
 )
 const accessibility = collectValues(activeForSummary, (library) => library.accessibility)
 
-const librariesSubtitle = `${activeEntries.length} ${copy.libraries_heading.toLowerCase()}${hasClosedLibraries ? ` · ${closedEntries.length} closed` : ''}${services.length ? ` · ${services.length} ${copy.services_count}` : ''}${authority.country ? ` · ${authority.country}` : ''}`
+const librariesSubtitle = `Public library service for ${authority.name}.`
 const heroTags = [
   authority.country,
   `${activeEntries.length} ${copy.libraries_heading.toLowerCase()}`,
-  hasClosedLibraries ? `${closedEntries.length} closed` : '',
   activityData
     ? {
         label: `Activity data (${formatActivityPeriod(activityData.period)})`,
@@ -83,9 +82,35 @@ const heroTags = [
     />
   )}
 
-  <ul class="library-results authority-library-results" data-library-list>
+  <div class="authority-results-heading">
+    <h3>Libraries in {authority.name}</h3>
+    <span class="authority-results-count" id="authority-branches-count">
+      {activeEntries.length} {activeEntries.length === 1 ? 'branch' : 'branches'}
+    </span>
+  </div>
+
+  <ul
+    class="library-results authority-library-results"
+    data-library-list
+    id="authority-library-list"
+  >
     {entries.map((library) => (
       <li
+        class="library-result-item"
+        data-library-id={library.id || library.slug || library.name}
+        data-library={JSON.stringify({
+          id: library.id,
+          name: library.name,
+          slug: library.slug,
+          address: library.address,
+          postcode: library.postcode,
+          url: library.url,
+          latitude: library.latitude,
+          longitude: library.longitude,
+          permanentlyClosed: library.permanentlyClosed,
+          closed: library.permanentlyClosed,
+          authorityName: authority.name
+        })}
         data-hours={JSON.stringify(library.hours || library.openingTimes || null)}
         data-permanently-closed={library.permanentlyClosed ? 'true' : undefined}
         hidden={library.permanentlyClosed ? true : undefined}
@@ -104,35 +129,41 @@ const heroTags = [
     ))}
   </ul>
 
-  {activityData && <AuthorityActivity activity={activityData} authority={authority} />}
-
   {hasNews && (
-    <NewsList
-      stories={newsStories}
-      summary={newsSummary}
-      title={`Public Libraries News for ${authority.name}`}
-      subtitle="Recent news, changes, and service updates reported in Public Libraries News."
-    />
+    <section class="detail-section authority-news-section">
+      <NewsList
+        stories={newsStories}
+        summary={newsSummary}
+        title={`Public Libraries News for ${authority.name}`}
+        subtitle="Recent news, changes, and service updates reported in Public Libraries News."
+      />
+    </section>
   )}
 
   <Fragment slot="aside">
-    <section class="detail-section">
+    <section class="detail-section authority-service-section">
       <h2>{copy.library_service}</h2>
       <ContactDetails record={authority} />
     </section>
     {authority.about && (
-      <section class="detail-section">
+      <section class="detail-section authority-about-section">
         <h2>{copy.about_service}</h2>
         <p>{authority.about}</p>
       </section>
     )}
     <SocialLinks heading={copy.connect} links={authority.social} />
-    <TagListSection heading={copy.services_heading} items={services} initialVisible={12} />
+    {activityData && <AuthorityActivity activity={activityData} authority={authority} />}
+    <TagListSection heading={copy.services_heading} items={services} initialVisible={8} />
     <TagListSection
       heading={copy.accessibility}
       items={accessibility.map((value) => facilityLabel(value))}
+      initialVisible={8}
     />
-    <LibraryDownloads entries={entries} authoritySlug={authority.slug} />
+    <LibraryDownloads
+      entries={entries}
+      authoritySlug={authority.slug}
+      authorityName={authority.name}
+    />
     <DirectoryProvenance record={authority} />
     <ShareButtons
       title={`${authority.name} Libraries`}
@@ -147,6 +178,79 @@ const heroTags = [
 
   updateLibraryListStatus()
 
+  const list = document.getElementById('authority-library-list')
+  const mapEl = document.querySelector('library-map')
+  const countEl = document.getElementById('authority-branches-count')
+  let selectedLibraryId = null
+
+  if (list) {
+    list.addEventListener('click', (event) => {
+      if (event.metaKey || event.ctrlKey || event.shiftKey) return
+      if (event.target instanceof Element && event.target.closest('a')) return
+
+      const item =
+        event.target instanceof Element ? event.target.closest('.library-result-item') : null
+      if (!item) return
+
+      event.preventDefault()
+      const itemId = item.dataset.libraryId
+      let library = null
+      try {
+        library = item.dataset.library ? JSON.parse(item.dataset.library) : null
+      } catch {
+        library = null
+      }
+
+      if (selectedLibraryId === itemId) {
+        selectedLibraryId = null
+        for (const el of list.querySelectorAll('.library-result-item.is-selected')) {
+          el.classList.remove('is-selected')
+        }
+        mapEl?.dispatchEvent(new CustomEvent('library-map-select', { detail: { unselect: true } }))
+      } else {
+        selectedLibraryId = itemId
+        for (const el of list.querySelectorAll('.library-result-item.is-selected')) {
+          el.classList.remove('is-selected')
+        }
+        item.classList.add('is-selected')
+        if (library) {
+          mapEl?.dispatchEvent(new CustomEvent('library-map-select', { detail: { library } }))
+        }
+      }
+    })
+  }
+
+  mapEl?.addEventListener('library-map-popup-closed', () => {
+    if (selectedLibraryId) {
+      selectedLibraryId = null
+      for (const el of list?.querySelectorAll('.library-result-item.is-selected') || []) {
+        el.classList.remove('is-selected')
+      }
+    }
+  })
+
+  mapEl?.addEventListener('library-map-point-clicked', (event) => {
+    const { name } = event.detail || {}
+    if (!name || !list) return
+
+    for (const el of list.querySelectorAll('.library-result-item')) {
+      let library = null
+      try {
+        library = el.dataset.library ? JSON.parse(el.dataset.library) : null
+      } catch {
+        library = null
+      }
+
+      if (library && library.name === name) {
+        selectedLibraryId = el.dataset.libraryId
+        el.classList.add('is-selected')
+        el.scrollIntoView({ behavior: 'smooth', block: 'nearest' })
+      } else {
+        el.classList.remove('is-selected')
+      }
+    }
+  })
+
   const closedToggle = document.getElementById('authority-include-closed')
   if (closedToggle) {
     closedToggle.addEventListener('change', () => {
@@ -157,11 +261,13 @@ const heroTags = [
       }
 
       const mapDataEl = document.getElementById('authority-map-data')
-      const mapEl = document.querySelector('library-map')
       if (mapDataEl && mapEl) {
         try {
           const { active, all } = JSON.parse(mapDataEl.textContent)
           const records = showClosed ? all : active
+          if (countEl) {
+            countEl.textContent = `${records.length} ${records.length === 1 ? 'branch' : 'branches'}`
+          }
           mapEl.dispatchEvent(new CustomEvent('library-map-update', { detail: { records } }))
         } catch {
           // Ignore JSON parse errors silently

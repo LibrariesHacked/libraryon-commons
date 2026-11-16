@@ -50,7 +50,7 @@ Both directory forms show expandable **Manual checks** and **Validation exceptio
 
 The **Data review** link above the CMS opens `/admin/review/`. Search by library/service name, authority, field, or reason; filter by record type and issue type. The worklist prioritizes hours and identifier conflicts, then validation gaps. Each record links to its public page and exact CMS entry. Open its review dialog to see exception values, candidate values, original invalid hours, lookup outcomes, and archived source-only details. Evidence is fetched only for the selected record.
 
-Complete a manual review by correcting the fields, then removing the corresponding check from **Manual checks** and saving through the normal draft/review workflow. The original migration audit is saved for reference. The worklist and downloads reflect saved repository data on the next site build, not unsaved forms or unpublished drafts. Missing or unrelated audit evidence is flagged rather than silently attached to a record.
+Complete a manual review by correcting the fields, then removing the corresponding check from **Manual checks** and saving the changes. The original migration audit is saved for reference. The worklist and downloads reflect saved repository data on the next site build, not unsaved forms. Missing or unrelated audit evidence is flagged rather than silently attached to a record.
 
 The worklist is a read-only page in the CMS deployment, not a private authenticated resource. It and its evidence endpoints are marked `noindex`; CMS editing still requires authentication. The ordinary public library pages do not display technical review flags. In the split deployment, use the CMS host's `/admin/review/`; the public Pages deployment intentionally excludes `/admin/`.
 
@@ -84,11 +84,11 @@ For example, the Archive menu links to the `/archive/` landing page, whose Subpa
 
 ## Review And Preserved Material
 
-Production CMS edits are saved as draft pull requests. A maintainer reviews the changes before they are merged and published. The repository runs its tests and builds the site for each pull request. GitHub must also be configured to require the **Tests and build** check and code-owner approval on `main`; see [reviewing changes](preservation.md#reviewing-changes).
+Production CMS edits are published directly to the repository's `main` branch. The repository runs its tests and builds the site on each push.
 
 The original LibraryOn articles, imported FAQs and resources, archive uploads, and preservation records are assigned to maintainer review in `.github/CODEOWNERS`. New CMS uploads are stored in `public/uploads/community/`, not alongside `public/uploads/archive/`.
 
-When using the local editor, saves write to your working copy only. They do not create a pull request or publish the change.
+When using the local editor, saves write to your working copy only.
 
 ## Reusable content
 
@@ -269,4 +269,4 @@ Each library is stored in `src/content/libraries/<slug>.json` and links to an au
 
 ## Publishing changes
 
-CMS configuration lives in `public/admin/config.yml`. Production editing is hosted on Netlify and uses Netlify Identity with Git Gateway to write reviewed drafts to `LibrariesHacked/libraryon-commons` (`main` branch). Editors need an invitation, not GitHub repository access. New uploads go to `public/uploads/community/`; archived files remain separate. See [the split-hosting setup](site.md#split-hosting) for the full site hosting steps.
+CMS configuration lives in `public/admin/config.yml`. Production editing is hosted on Netlify and uses Netlify Identity with Git Gateway to write changes to `LibrariesHacked/libraryon-commons` (`main` branch). Editors need an invitation, not GitHub repository access. New uploads go to `public/uploads/community/`; archived files remain separate. See [the split-hosting setup](site.md#split-hosting) for the full site hosting steps.

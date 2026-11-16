@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
   branch: main
-publish_mode: editorial_workflow
 local_backend: true
 media_folder: public/uploads/community
 public_folder: /uploads/community
@@ -1461,7 +1460,7 @@ collections:
         required: false
         collapsed: true
         allow_add: false
-        summary: "{{fields.kind}}: {{fields.reason}}"
+        summary: '{{fields.kind}}: {{fields.reason}}'
         hint: Review evidence in the Data review worklist. Remove a check only after completing the review; the original audit is retained.
         fields:
           - name: kind
@@ -1482,7 +1481,7 @@ collections:
         required: false
         collapsed: true
         allow_add: false
-        summary: "{{fields.field}}: {{fields.reason}}"
+        summary: '{{fields.field}}: {{fields.reason}}'
         hint: Correct the data field; resolved exceptions disappear automatically when saved.
         fields:
           - name: field
@@ -1854,7 +1853,7 @@ collections:
         collection: authorities
         search_fields:
           - data.Local authority
-        value_field: "{{slug}}"
+        value_field: '{{slug}}'
         display_fields:
           - data.Local authority
         required: false
@@ -1896,7 +1895,7 @@ collections:
         required: false
         collapsed: true
         allow_add: false
-        summary: "{{fields.kind}}: {{fields.reason}}"
+        summary: '{{fields.kind}}: {{fields.reason}}'
         hint: Review evidence in the Data review worklist. Remove a check only after completing the review; the original audit is retained.
         fields:
           - name: kind
@@ -1917,7 +1916,7 @@ collections:
         required: false
         collapsed: true
         allow_add: false
-        summary: "{{fields.field}}: {{fields.reason}}"
+        summary: '{{fields.field}}: {{fields.reason}}'
         hint: Correct the data field; resolved exceptions disappear automatically when saved.
         fields:
           - name: field

@@ -162,8 +162,13 @@ function getFacilityDetails(label = '', index = 0) {
         const label = typeof item === 'string' ? item : item.label || item.service || ''
         const url = typeof item === 'object' && item.url ? safeURL(item.url) : null
         const { icon: IconComponent, color } = getFacilityDetails(label, index)
+        const isExtra = typeof initialVisible === 'number' && index >= initialVisible
         return (
-          <li class={`facility-chip facility-chip--${color}`}>
+          <li
+            class={`facility-chip facility-chip--${color}`}
+            data-extra-tag={isExtra ? 'true' : undefined}
+            hidden={isExtra ? true : undefined}
+          >
             <span class="facility-chip-icon" aria-hidden="true">
               <IconComponent size={15} />
             </span>
@@ -179,5 +184,42 @@ function getFacilityDetails(label = '', index = 0) {
         )
       })}
     </ul>
+    {typeof initialVisible === 'number' && validItems.length > initialVisible && (
+      <button
+        type="button"
+        class="facility-chip-toggle button button-secondary"
+        data-toggle-facility-tags
+        data-expanded="false"
+        data-label-more={`Show all ${validItems.length} ${heading ? heading.toLowerCase() : 'items'}`}
+        data-label-less="Show fewer"
+      >
+        Show all {validItems.length} {heading ? heading.toLowerCase() : 'items'}
+      </button>
+    )}
   </section>
 )}
+
+<script>
+  document.addEventListener('click', (event) => {
+    const target = event.target
+    if (!(target instanceof Element)) return
+    const button = target.closest('[data-toggle-facility-tags]')
+    if (!button) return
+    const section = button.closest('.facility-section')
+    if (!section) return
+    const isExpanded = button.getAttribute('data-expanded') === 'true'
+    const extraTags = section.querySelectorAll('[data-extra-tag="true"]')
+    for (const tag of extraTags) {
+      if (isExpanded) {
+        tag.setAttribute('hidden', '')
+      } else {
+        tag.removeAttribute('hidden')
+      }
+    }
+    const nextExpanded = !isExpanded
+    button.setAttribute('data-expanded', String(nextExpanded))
+    const moreLabel = button.getAttribute('data-label-more') || 'Show more'
+    const lessLabel = button.getAttribute('data-label-less') || 'Show fewer'
+    button.textContent = nextExpanded ? lessLabel : moreLabel
+  })
+</script>

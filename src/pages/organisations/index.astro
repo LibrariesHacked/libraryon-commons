@@ -52,10 +52,6 @@ const organisations = (await getCollection('organisations')).sort((a, b) =>
         const stories = isExcludedFromNews ? [] : getNewsForOrganisation(org.data.slug)
         const summary = isExcludedFromNews ? null : getNewsSummaryForOrganisation(org.data.slug)
         const totalStories = summary?.total ?? stories.length
-        const coverage =
-          summary?.first_year && summary?.latest_year
-            ? ` (${summary.first_year}–${summary.latest_year})`
-            : ''
         const isLocalAuthorities = org.data.slug === 'local-authorities'
         const hasFooter = totalStories > 0 || isLocalAuthorities
 
@@ -85,7 +81,8 @@ const organisations = (await getCollection('organisations')).sort((a, b) =>
                     <StatusPill variant="green">
                       <Newspaper size={14} aria-hidden="true" />
                       <span>
-                        {totalStories.toLocaleString('en-GB')} news stories{coverage}
+                        {totalStories.toLocaleString('en-GB')}{' '}
+                        {totalStories === 1 ? 'news story' : 'news stories'}
                       </span>
                     </StatusPill>
                   ) : isLocalAuthorities ? (

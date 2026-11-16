@@ -7,9 +7,9 @@ import assert from 'node:assert/strict'
 import { existsSync, readFileSync } from 'node:fs'
 import { parse } from 'yaml'
 
-test('CMS edits use pull requests and preserved records have ownership rules', () => {
+test('CMS edits publish directly and preserved records have ownership rules', () => {
   const config = parse(readFileSync(new URL('../public/admin/config.yml', import.meta.url), 'utf8'))
-  assert.equal(config.publish_mode, 'editorial_workflow')
+  assert.equal(config.publish_mode, undefined)
   assert.equal(config.media_folder, 'public/uploads/community')
   assert.equal(config.public_folder, '/uploads/community')
   assert.ok(existsSync(new URL('../public/uploads/community/.gitkeep', import.meta.url)))

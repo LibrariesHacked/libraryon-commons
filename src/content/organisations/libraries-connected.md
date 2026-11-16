@@ -1,7 +1,6 @@
 ---
 name: Libraries Connected
 slug: libraries-connected
-acronym: LC
 role: Sector Membership Organisation
 description: The charity and membership body representing public library services in England, Wales, and Northern Ireland, promoting the Universal Library Offers.
 website: https://www.librariesconnected.org.uk/

@@ -1,7 +1,6 @@
 ---
 name: Welsh Government
 slug: welsh-government
-acronym: WG
 role: Devolved Government & Public Library Standards
 description: The devolved government for Wales, responsible for national public library strategy, capital grants, and statutory monitoring under the Welsh Public Library Standards (WPLS).
 website: https://www.gov.wales/

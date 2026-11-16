@@ -45,7 +45,10 @@ const getCardIcon = (metricKey) => {
     <div class="authority-activity-header">
       <div>
         <h2 id="authority-activity-heading">Community impact and library activity</h2>
-        <p class="authority-activity-lead">{summary.leadText}</p>
+        <p class="authority-activity-lead">
+          Annual public library activity reported to Arts Council England, showing how local
+          libraries support reading, digital access, and community connection.
+        </p>
       </div>
       <span class="status-pill status-pill--plum">{summary.periodLabel} annual return</span>
     </div>
@@ -93,11 +96,7 @@ const getCardIcon = (metricKey) => {
     </div>
 
     <div class="activity-footer-note">
-      <p>
-        Headline figures from the Arts Council England Public Libraries Activity Dataset,
-        highlighting how {authority?.name || 'local'} libraries support reading, digital access, and
-        community connection.
-      </p>
+      <p>Source: Arts Council England Public Libraries Activity Dataset.</p>
       <a
         href="https://activity.librarydata.uk/"
         target="_blank"
