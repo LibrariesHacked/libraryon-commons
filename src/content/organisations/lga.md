@@ -2,7 +2,7 @@
 name: Local Government Association
 slug: lga
 acronym: LGA
-role: National Voice of Local Government
+role: National voice of local government
 description: The national membership body for local authorities in England and Wales, advocating for councils and their public library services.
 website: https://www.local.gov.uk/
 country: England & Wales

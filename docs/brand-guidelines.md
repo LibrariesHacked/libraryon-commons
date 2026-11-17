@@ -26,6 +26,7 @@ The site palette lives in `src/styles/foundations/tokens.css`. Use its CSS varia
 | `--line` / `--line-strong`     | `#d2d1d4` / `#bcbabf`    | Quiet boundaries for controls and data        |
 | `--line-plum-soft`             | `#e7d2ec`                | Nearby-library control boundary               |
 | `--line-rose-soft`             | `#e6c0c8`                | Subtle card hover boundary                    |
+| `--line-green-soft`            | `#b8d9c0`                | Subtle green card hover boundary              |
 | `--focus`                      | `#6495ed`                | Functional keyboard focus indicator           |
 | `--lightbox-overlay`           | `rgba(30, 26, 40, 0.82)` | Modal image viewer backdrop                   |
 

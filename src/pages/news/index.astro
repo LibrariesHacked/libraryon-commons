@@ -448,7 +448,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
 
     <section class="library-results-workspace" aria-labelledby="news-results-heading">
       <div class="results-heading">
-        <h2 id="news-results-heading">News Stories</h2>
+        <h2 id="news-results-heading">News stories</h2>
         <p id="news-result-count" aria-live="polite">
           Showing {defaultStoriesPool.length.toLocaleString('en-GB')} of{' '}
           {metadata.total_stories ? metadata.total_stories.toLocaleString('en-GB') : '38,000'}{' '}
@@ -961,7 +961,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
       const href = organisationPageUrl(orgName, baseUrl)
       if (href) {
         items.push({
-          prefix: 'Stakeholder profile:',
+          prefix: 'Organisation profile:',
           label: `${orgName} overview & remit →`,
           href
         })

@@ -1,7 +1,7 @@
 ---
 name: The Public
 slug: the-public
-role: Library Users, Readers, Learners & Communities
+role: Library users, readers, learners and communities
 description: The diverse public, local residents, families, learners, and community groups whom public libraries exist to serve.
 country: United Kingdom
 tags:

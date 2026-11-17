@@ -13,11 +13,11 @@ import { authorities } from '../../lib/directory/directoryLoader.mjs'
 
 const orgPage = await getEntry('pages', 'organisations')
 const { Content } = orgPage ? await render(orgPage) : { Content: null }
-const title = orgPage?.data.title || 'Library Stakeholders'
+const title = orgPage?.data.title || 'Library organisations'
 const description =
   orgPage?.data.description ||
   'Directory of national bodies, local authorities, charities, and public communities shaping and supporting UK public libraries.'
-const eyebrow = orgPage?.data.eyebrow || 'Leadership, Governance & Community'
+const eyebrow = orgPage?.data.eyebrow || 'Leadership, governance and community'
 
 const organisations = (await getCollection('organisations')).sort((a, b) =>
   a.data.name.localeCompare(b.data.name, 'en')

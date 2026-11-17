@@ -15,7 +15,8 @@ for (const item of Object.values(activityByAuthority)) {
 }
 const formattedVisits = `${Math.round(totalVisits / 1000000)}M+`
 const formattedLoans = `${Math.round(totalLoans / 1000000)}M+`
-const formattedLibraries = libraries.length.toLocaleString('en-GB')
+const activeLibraries = libraries.filter((library) => !library.permanentlyClosed)
+const formattedLibraries = activeLibraries.length.toLocaleString('en-GB')
 const formattedNews = newsMetadata.total_stories.toLocaleString('en-GB')
 ---
 

@@ -209,15 +209,17 @@ a.news-result-link:focus-visible,
 }
 
 .news-cross-link--pill {
+  text-decoration: none;
   transition:
-    transform var(--motion-ease),
-    box-shadow var(--motion-ease);
+    background-color 0.15s var(--motion-ease),
+    color 0.15s var(--motion-ease),
+    filter 0.15s var(--motion-ease);
 }
 
 .news-cross-link--pill:hover,
 .news-cross-link--pill:focus-visible {
-  text-decoration: underline;
-  box-shadow: 0 0 0 1px currentColor;
+  text-decoration: none;
+  filter: brightness(0.95);
 }
 
 .hero-tag-link {

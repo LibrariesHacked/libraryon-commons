@@ -1,7 +1,7 @@
 ---
 name: The Reading Agency
 slug: the-reading-agency
-role: Reading & Literacy Charity
+role: Reading and literacy charity
 description: A national charity that inspires people of all ages to read more, running nationwide library programmes including the Summer Reading Challenge and Reading Well.
 website: https://readingagency.org.uk/
 country: United Kingdom

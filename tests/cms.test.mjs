@@ -451,7 +451,7 @@ test('menu hierarchy, single footer attribution, and CMS-only content origin are
   assert.equal(discover.label, 'Discover')
   assert.deepEqual(
     discover.children.map((item) => item.label),
-    ['Reading', 'Work and skills', 'Your community', 'Special collections', 'Library stakeholders']
+    ['Reading', 'Work and skills', 'Your community', 'Special collections', 'Library organisations']
   )
   assert.equal(about.label, 'About')
   assert.equal(about.url, '/commons/')

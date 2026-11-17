@@ -1,7 +1,7 @@
 ---
 name: Local Authorities
 slug: local-authorities
-role: Statutory Library Authorities & Service Providers
+role: Statutory library authorities and service providers
 description: The local government councils across England, Scotland, Wales, and Northern Ireland with statutory responsibility for funding, managing, and delivering public library services.
 website: https://www.gov.uk/find-local-council
 country: United Kingdom

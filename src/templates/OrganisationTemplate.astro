@@ -10,7 +10,7 @@ import {
   getNewsSummaryForOrganisation
 } from '../lib/content/newsHelpers.mjs'
 import { settings, sitePath } from '../lib/site/siteHelpers.mjs'
-import { authorities } from '../lib/directory/directoryLoader.mjs'
+import { authorities, libraries } from '../lib/directory/directoryLoader.mjs'
 
 const { organisation } = Astro.props
 const { Content } = await render(organisation)
@@ -22,6 +22,18 @@ const totalStories = summary?.total ?? stories.length
 const sortedAuthorities = isLocalAuthorities
   ? [...authorities].sort((a, b) => a.name.localeCompare(b.name, 'en'))
   : []
+
+const activeLibraryCountByAuthority = new Map()
+if (isLocalAuthorities) {
+  for (const lib of libraries) {
+    if (!lib.permanentlyClosed && lib.authority) {
+      activeLibraryCountByAuthority.set(
+        lib.authority,
+        (activeLibraryCountByAuthority.get(lib.authority) || 0) + 1
+      )
+    }
+  }
+}
 ---
 
 <SiteLayout
@@ -38,11 +50,11 @@ const sortedAuthorities = isLocalAuthorities
       <Breadcrumbs
         items={[
           { label: settings.ui.editorial?.home_breadcrumb || 'Home', href: '/' },
-          { label: 'Library stakeholders', href: '/organisations/' },
+          { label: 'Library organisations', href: '/organisations/' },
           { label: organisation.data.name, current: true }
         ]}
       />
-      <p class="eyebrow">Library Sector Stakeholder</p>
+      <p class="eyebrow">Library sector organisation</p>
       <h1>{organisation.data.name}</h1>
       {organisation.data.role && (
         <div class="org-role-badge">
@@ -70,7 +82,7 @@ const sortedAuthorities = isLocalAuthorities
 
         {isLocalAuthorities && (
           <section class="org-authorities-section">
-            <h2>UK Library Authorities ({sortedAuthorities.length})</h2>
+            <h2>UK library authorities ({sortedAuthorities.length})</h2>
             <p>
               Every local authority in the UK responsible for statutory public library provision:
             </p>
@@ -84,7 +96,9 @@ const sortedAuthorities = isLocalAuthorities
                     </h3>
                     <div class="org-card-pills">
                       {auth.country && <StatusPill variant="apricot">{auth.country}</StatusPill>}
-                      <StatusPill variant="green">{auth.library_ids.length} libraries</StatusPill>
+                      <StatusPill variant="green">
+                        {(activeLibraryCountByAuthority.get(auth.slug) || 0)} libraries
+                      </StatusPill>
                     </div>
                   </div>
                 </a>
@@ -98,7 +112,7 @@ const sortedAuthorities = isLocalAuthorities
             <NewsList
               stories={stories}
               summary={summary}
-              title={`Public Libraries News Stories`}
+              title={`Public Libraries News stories`}
               subtitle={`Roundups and reports mentioning ${organisation.data.name} in Public Libraries News.`}
               emptyMessage={`No news stories currently recorded mentioning ${organisation.data.name}.`}
             />
@@ -108,7 +122,7 @@ const sortedAuthorities = isLocalAuthorities
 
       <aside class="org-sidebar">
         <div class="sidebar-card">
-          <h3>Organisation Details</h3>
+          <h3>Organisation details</h3>
           <dl class="org-details-list">
             {organisation.data.acronym && (
               <div class="detail-row">
@@ -124,7 +138,7 @@ const sortedAuthorities = isLocalAuthorities
             )}
             {organisation.data.website && (
               <div class="detail-row">
-                <dt>Official Website</dt>
+                <dt>Official website</dt>
                 <dd>
                   <a
                     href={organisation.data.website}

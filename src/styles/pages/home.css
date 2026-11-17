@@ -219,17 +219,16 @@
   justify-content: space-between;
   gap: var(--size-3);
   padding: var(--size-5);
+  border: var(--border-size-2) solid transparent;
   border-radius: var(--card-radius);
   background: var(--paper);
   text-decoration: none;
   color: var(--ink);
-  box-shadow: var(--shadow-card);
   transition:
-    transform 0.15s var(--motion-ease),
-    box-shadow 0.15s var(--motion-ease);
+    border-color 0.15s var(--motion-ease);
 }
-.home-data-card:hover {
-  transform: translateY(-2px);
+.home-data-card:is(:hover, :focus-visible) {
+  border-color: var(--line-green-soft);
   text-decoration: none;
 }
 .home-data-card-top {
@@ -283,8 +282,8 @@
     color 0.15s var(--motion-ease),
     transform 0.15s var(--motion-ease);
 }
-.home-data-card:hover .home-data-card-arrow {
-  color: var(--brand-primary);
+.home-data-card:is(:hover, :focus-visible) .home-data-card-arrow {
+  color: var(--brand-forest);
   transform: translate(2px, -2px);
 }
 @media (max-width: 960px) {

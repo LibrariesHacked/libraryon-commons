@@ -191,9 +191,9 @@ export function createNewsStoryElement(story, options = {}) {
 
   if (sourceDomain) {
     const domainSpan = document.createElement('span')
-    domainSpan.className = 'news-source-domain'
+    domainSpan.className = 'news-source-link'
     const labelSpan = document.createElement('span')
-    labelSpan.textContent = `Source: ${sourceDomain}`
+    labelSpan.textContent = sourceDomain
     domainSpan.appendChild(labelSpan)
     domainSpan.insertAdjacentHTML('beforeend', ' ' + ARROW_UP_RIGHT_SVG)
     metaRow.appendChild(domainSpan)

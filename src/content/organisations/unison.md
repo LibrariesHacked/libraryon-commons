@@ -2,7 +2,7 @@
 name: UNISON
 slug: unison
 acronym: UNISON
-role: Trade Union Representation
+role: Trade union representation
 description: The UK's largest trade union representing local government public sector workers, actively defending public library staffing, terms, and council services against cuts.
 website: https://www.unison.org.uk/
 country: United Kingdom

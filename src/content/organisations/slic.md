@@ -2,7 +2,7 @@
 name: Scottish Library and Information Council
 slug: slic
 acronym: SLIC
-role: Scottish Advisory & Development Body
+role: Scottish advisory and development body
 description: The independent advisory body to the Scottish Government on library and information services, leading national strategy for Scotland's 32 public library authorities.
 website: https://scottishlibraries.org/
 country: Scotland

@@ -199,7 +199,7 @@ test('Decap CMS config includes organisations collection matching content fields
   assert.ok(fieldNames.includes('body'))
 })
 
-test('umbrella stakeholder pages exclude news coverage sections', () => {
+test('umbrella organisation pages exclude news coverage sections', () => {
   const nonNewsSlugs = ['local-authorities', 'the-public']
   for (const slug of nonNewsSlugs) {
     const summary = getNewsSummaryForOrganisation(slug)
@@ -209,7 +209,7 @@ test('umbrella stakeholder pages exclude news coverage sections', () => {
   }
 })
 
-test('news and stakeholders index pages exist as editable CMS markdown pages', () => {
+test('news and organisations index pages exist as editable CMS markdown pages', () => {
   for (const [file, path] of [
     ['news.md', '/news'],
     ['organisations.md', '/organisations']

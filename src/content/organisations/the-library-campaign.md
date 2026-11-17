@@ -1,7 +1,7 @@
 ---
 name: The Library Campaign
 slug: the-library-campaign
-role: National Library Users' Association
+role: National library users' association
 description: The only national charity and campaign group dedicated solely to defending and advocating for publicly funded, council-run public library services across the UK.
 website: https://www.librarycampaign.com/
 country: United Kingdom

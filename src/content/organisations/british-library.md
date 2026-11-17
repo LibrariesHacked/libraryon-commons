@@ -2,7 +2,7 @@
 name: The British Library
 slug: british-library
 acronym: BL
-role: National Library & Network Lead
+role: National library and network lead
 description: The national library of the United Kingdom, partnering with public libraries through the Living Knowledge Network, Business & IP Centres (BIPC), and the LibraryOn initiative.
 website: https://www.bl.uk/
 country: United Kingdom
