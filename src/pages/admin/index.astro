@@ -20,18 +20,67 @@ const publicSitePath = (value) =>
   </head>
   <body>
     <nav class="cms-help-links" aria-label="Editor help">
+      <span id="cms-user-badge" class="cms-user-badge" style="display: none;"></span>
       <a href={sitePath('/admin/review/')}>Data review</a>
       <a href={publicSitePath('/editing-guide/')}>Editing guide</a>
       <a href={publicSitePath('/sitemap/')}>Site map</a>
     </nav>
     <script is:inline>
       window.CMS_MANUAL_INIT = true
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on('login', () => {
+          document.location.reload()
+        })
+      }
     </script>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script>
       import { prepareDirectoryEdit } from '../../lib/directory/schemaHelpers.mjs'
       import { registerEditorComponents } from '../../lib/cms/cmsHelpers.mjs'
+      import {
+        parseDomainPermissions,
+        resolveUserPermissions,
+        validateEntrySave
+      } from '../../lib/cms/cmsAuthHelpers.mjs'
+      import domainPermissionsCsv from '../../data/auth/domain-permissions.csv?raw'
       import previewStyles from '../../styles/global.css?inline'
+
+      const domainPermissions = parseDomainPermissions(domainPermissionsCsv)
+
+      const getCurrentPermissions = () => {
+        const netlifyIdentity = Reflect.get(window, 'netlifyIdentity')
+        const user = netlifyIdentity?.currentUser?.()
+        if (!user) {
+          return {
+            allowed: true,
+            email: 'local@dev',
+            domain: 'dev',
+            role: 'general-editor',
+            gssCodes: ['*'],
+            isGeneralEditor: true,
+            notes: 'Local development editor'
+          }
+        }
+        return resolveUserPermissions(user, domainPermissions)
+      }
+
+      const syncUserScopeUI = (permissions) => {
+        if (!permissions) return
+        if (!permissions.isGeneralEditor && permissions.role === 'service-editor') {
+          document.body.classList.add('is-service-editor')
+        } else {
+          document.body.classList.remove('is-service-editor')
+        }
+
+        const badge = document.getElementById('cms-user-badge')
+        if (badge && permissions.email && permissions.email !== 'local@dev') {
+          const scope = permissions.isGeneralEditor
+            ? 'General Editor'
+            : `Service Editor (${permissions.gssCodes.join(', ') || 'unassigned'})`
+          badge.textContent = `${permissions.email} • ${scope}`
+          badge.style.display = 'inline-block'
+        }
+      }
 
       const stampedFields = {
         pages: ['updated_on'],
@@ -46,23 +95,30 @@ const publicSitePath = (value) =>
       if (cms) {
         registerEditorComponents(cms)
 
+        const initialPermissions = getCurrentPermissions()
+        syncUserScopeUI(initialPermissions)
+
         cms.registerEventListener({
           name: 'preSave',
           /** @param context - Decap entry being saved. @returns Normalized immutable values with actual edit/review dates stamped. */
           handler: ({ entry }) => {
             try {
-              const today = new Date().toLocaleDateString('en-CA')
+              const permissions = getCurrentPermissions()
               const collection = entry.get('collection')
               let data = entry.get('data')
 
               if (collection === 'libraries' || collection === 'authorities') {
                 const prepared = prepareDirectoryEdit(data.toJS(), collection)
+                validateEntrySave(prepared, collection, permissions)
                 for (const [field, value] of Object.entries(prepared.data)) {
                   data = data.setIn(['data', field], value)
                 }
                 data = data.set('validation_exceptions', prepared.validation_exceptions)
+              } else {
+                validateEntrySave(data.toJS(), collection, permissions)
               }
 
+              const today = new Date().toLocaleDateString('en-CA')
               return (stampedFields[entry.get('collection')] || []).reduce(
                 (data, field) => data.set(field, today),
                 data
@@ -85,10 +141,28 @@ const publicSitePath = (value) =>
   .cms-help-links {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
     gap: 0.75rem;
     padding: 0.5rem 1rem;
     border-bottom: 1px solid #d2d1d4;
     background: #fff;
     font: 0.8rem/1.3 sans-serif;
+  }
+
+  .cms-user-badge {
+    margin-right: auto;
+    font-weight: 600;
+    color: #4a4a4a;
+  }
+
+  :global(body.is-service-editor a[href='#/collections/settings']),
+  :global(body.is-service-editor a[href='#/collections/homepage']),
+  :global(body.is-service-editor a[href='#/collections/pages']),
+  :global(body.is-service-editor a[href='#/collections/faqs']),
+  :global(body.is-service-editor a[href='#/collections/resources']),
+  :global(body.is-service-editor a[href='#/collections/sessions']),
+  :global(body.is-service-editor a[href='#/collections/organisations']),
+  :global(body.is-service-editor a[href='#/collections/contributors']) {
+    display: none !important;
   }
 </style>

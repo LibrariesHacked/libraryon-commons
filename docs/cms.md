@@ -22,6 +22,32 @@ Editors can also use the public **Editing guide** linked from the site footer. I
 
 Local edits write directly to the working tree without committing. Stop `decap-server` when finished.
 
+## User Accounts And Permissions
+
+CMS registration and editorial scopes are governed by email domain mappings in [src/data/auth/domain-permissions.csv](../src/data/auth/domain-permissions.csv):
+
+| Column      | Purpose                                                                                                                      |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `domain`    | Authorised domain or semicolon-separated list of domains (e.g. `manchester.gov.uk` or `service.gov.uk;lib.service.gov.uk`) |
+| `gss_codes` | Semicolon-separated ONS GSS codes (e.g. `E08000003`) or `*` for all authorities                                              |
+| `role`      | Either `service-editor` or `general-editor`                                                                                  |
+| `notes`     | Human-readable description (e.g. authority name)                                                                             |
+
+### Editorial Roles
+
+- **General Content Editors (`general-editor`)**: Have full access across all CMS collections (Site Settings, Homepage, Pages, FAQs, Libraries, Authorities, Resources, Sessions, Organisations, Contributors) and can edit records for any authority.
+- **Service Editors (`service-editor`)**: Confined to the library directory (`libraries` and `authorities`). A service editor can only save changes to records matching their assigned GSS codes.
+
+### Registration and Guardrail Enforcement
+
+1. **Netlify Identity hooks (`netlify/functions/`)**:
+   - `identity-validate`: Checks the registrant's email domain against the CSV before registration is accepted. Unrecognised domains are blocked with HTTP 400.
+   - `identity-signup`: Assigns the corresponding role and GSS codes into the user's `app_metadata`.
+   - `identity-login`: Keeps `app_metadata` synchronised with CSV updates on each login, while preserving manually added users created via the Netlify console.
+2. **CMS Client Hooks (`src/pages/admin/index.astro`)**:
+   - Decap CMS's `preSave` event hook checks the user's identity claims before writing any file. If a service editor attempts to save a library or authority with a non-permitted GSS code, or attempts to edit another collection, Decap stops the save with an explanatory error.
+   - For local development with `decap-server`, the editor runs with general-editor permissions.
+
 ## CMS Sections
 
 | Section                    | Controls                                                                             |
