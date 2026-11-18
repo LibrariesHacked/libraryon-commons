@@ -33,7 +33,7 @@ export function packageNetlifyAdmin({ root = process.cwd() } = {}) {
 
   writeFileSync(
     path.join(output, 'index.html'),
-    '<!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=/admin/"><title>LibraryCommons editor</title><p><a href="/admin/">Open the LibraryCommons editor</a></p></html>\n'
+    '<!doctype html><html lang="en"><meta charset="utf-8"><title>LibraryCommons editor</title><script>if(window.location.hash&&/(confirmation|invite|recovery|email_change)_token=/.test(window.location.hash)){window.location.replace(\'/admin/\'+window.location.hash)}else{window.location.replace(\'/admin/\')}</script><meta http-equiv="refresh" content="0;url=/admin/"><p><a href="/admin/">Open the LibraryCommons editor</a></p></html>\n'
   )
   return output
 }

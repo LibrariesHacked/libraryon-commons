@@ -251,3 +251,17 @@ test('Netlify Identity login function refreshes roles and GSS codes from CSV', a
   assert.deepEqual(parsed.app_metadata.roles, ['service-editor'])
   assert.deepEqual(parsed.app_metadata.gss_codes, ['E08000025'])
 })
+
+test('admin index gates login reload on unauthenticated init to avoid infinite reload loop', () => {
+  const adminHtml = readFileSync('src/pages/admin/index.astro', 'utf8')
+  assert.ok(
+    adminHtml.includes("netlifyIdentity.on('init'"),
+    'Checks netlifyIdentity init event before attaching login handler'
+  )
+  assert.ok(
+    !adminHtml.includes(
+      "netlifyIdentity.on('login', () => {\n          document.location.reload()"
+    ),
+    'Does not reload unconditionally on every login event'
+  )
+})

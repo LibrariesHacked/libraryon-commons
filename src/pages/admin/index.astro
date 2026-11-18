@@ -28,8 +28,12 @@ const publicSitePath = (value) =>
     <script is:inline>
       window.CMS_MANUAL_INIT = true
       if (window.netlifyIdentity) {
-        window.netlifyIdentity.on('login', () => {
-          document.location.reload()
+        window.netlifyIdentity.on('init', (user) => {
+          if (!user) {
+            window.netlifyIdentity.on('login', () => {
+              document.location.reload()
+            })
+          }
         })
       }
     </script>
@@ -97,6 +101,16 @@ const publicSitePath = (value) =>
 
         const initialPermissions = getCurrentPermissions()
         syncUserScopeUI(initialPermissions)
+
+        const netlifyIdentity = Reflect.get(window, 'netlifyIdentity')
+        if (netlifyIdentity) {
+          netlifyIdentity.on('login', () => {
+            syncUserScopeUI(getCurrentPermissions())
+          })
+          netlifyIdentity.on('logout', () => {
+            syncUserScopeUI(getCurrentPermissions())
+          })
+        }
 
         cms.registerEventListener({
           name: 'preSave',

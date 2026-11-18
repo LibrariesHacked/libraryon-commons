@@ -40,5 +40,7 @@ test('Netlify CMS package contains only the editor, runtime assets, and communit
   assert.ok(existsSync(path.join(output, 'uploads/community/library-guide.jpg')))
   assert.ok(!existsSync(path.join(output, 'uploads/archive/original.pdf')))
   assert.ok(!existsSync(path.join(output, 'reading/index.html')))
-  assert.match(readFileSync(path.join(output, 'index.html'), 'utf8'), /\/admin\//)
+  const indexHtml = readFileSync(path.join(output, 'index.html'), 'utf8')
+  assert.match(indexHtml, /\/admin\//)
+  assert.match(indexHtml, /confirmation.*token/)
 })
