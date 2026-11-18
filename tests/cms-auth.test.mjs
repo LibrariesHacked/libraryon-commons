@@ -21,13 +21,29 @@ test('domain permissions CSV loads and parses domain, GSS codes, and editorial r
   const csvContent = readFileSync('src/data/auth/domain-permissions.csv', 'utf8')
   const rules = parseDomainPermissions(csvContent)
 
-  assert.ok(rules.length >= 2, 'Has at least 2 permission rules')
+  assert.ok(
+    rules.length >= 200,
+    'Has comprehensive coverage of UK library services and national bodies'
+  )
 
-  const generalEditorRule = rules.find((r) => r.domains.includes('librarycommons.org.uk'))
-  assert.ok(generalEditorRule, 'Has librarycommons.org.uk rule')
-  assert.equal(generalEditorRule.role, 'general-editor')
-  assert.deepEqual(generalEditorRule.gssCodes, ['*'])
+  // Core admin & national sector organisations (ACE, British Library, Libraries Connected, SLIC, etc.)
+  const generalEditorDomains = [
+    'librarieshacked.org',
+    'librarycommons.org.uk',
+    'artscouncil.org.uk',
+    'bl.uk',
+    'librariesconnected.org.uk',
+    'librariesconnected.org',
+    'scottishlibraries.org'
+  ]
+  for (const domain of generalEditorDomains) {
+    const rule = rules.find((r) => r.domains.includes(domain))
+    assert.ok(rule, `Has rule for ${domain}`)
+    assert.equal(rule.role, 'general-editor', `${domain} must have general-editor role`)
+    assert.deepEqual(rule.gssCodes, ['*'], `${domain} must have wildcard GSS access`)
+  }
 
+  // Service editors for local authorities
   const manchesterRule = rules.find((r) => r.domains.includes('manchester.gov.uk'))
   assert.ok(manchesterRule, 'Has manchester.gov.uk rule')
   assert.equal(manchesterRule.role, 'service-editor')
