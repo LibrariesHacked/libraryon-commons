@@ -34,8 +34,8 @@ collections:
           - name: navigation
             label: Navigation
             widget: list
-            summary: '{{fields.label}}'
-            hint: 'Controls the header menu only. Use a published landing page URL for a section; submenu URLs should match its child page paths.'
+            summary: "{{fields.label}}"
+            hint: Controls the header menu only. Use a published landing page URL for a section; submenu URLs should match its child page paths.
             fields:
               - name: label
                 label: Label
@@ -52,7 +52,7 @@ collections:
                 label: Submenu Links
                 widget: list
                 required: false
-                summary: '{{fields.label}}'
+                summary: "{{fields.label}}"
                 fields:
                   - name: label
                     label: Label
@@ -678,8 +678,8 @@ collections:
               - name: links
                 label: Footer Links
                 widget: list
-                summary: '{{fields.label}}'
-                fields: &footerLinks
+                summary: "{{fields.label}}"
+                fields:
                   - name: label
                     label: Link Label
                     widget: string
@@ -728,7 +728,7 @@ collections:
             label: Hero Image Carousel
             widget: list
             required: false
-            summary: '{{fields.alt}}'
+            summary: "{{fields.alt}}"
             fields:
               - name: image
                 label: Image
@@ -782,9 +782,9 @@ collections:
     create: true
     extension: md
     format: frontmatter
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     identifier_field: title
-    summary: '{{title}} ({{kind}})'
+    summary: "{{title}} ({{kind}})"
     view_groups:
       - label: Content Type
         field: kind
@@ -871,7 +871,7 @@ collections:
         collection: contributors
         search_fields:
           - name
-        value_field: '{{slug}}'
+        value_field: "{{slug}}"
         display_fields:
           - name
         multiple: true
@@ -921,7 +921,9 @@ collections:
       - name: body
         label: Content
         widget: markdown
-        modes: [rich_text, raw]
+        modes:
+          - rich_text
+          - raw
         editor_components:
           - library-testimonial
           - library-quote
@@ -938,7 +940,7 @@ collections:
           - library-resources
           - image
           - code-block
-        hint: 'Use the + menu for content blocks. Collection carousels and book recommendations keep all slides, notes, and entries inline in this Markdown body. Select FAQ and resource entries in their page fields.'
+        hint: Use the + menu for content blocks. Collection carousels and book recommendations keep all slides, notes, and entries inline in this Markdown body. Select FAQ and resource entries in their page fields.
       - name: faq_heading
         label: FAQ Section Heading
         widget: string
@@ -950,7 +952,7 @@ collections:
         collection: faqs
         search_fields:
           - question
-        value_field: '{{slug}}'
+        value_field: "{{slug}}"
         display_fields:
           - question
         multiple: true
@@ -960,7 +962,7 @@ collections:
         label: Gallery Or Slides
         widget: list
         required: false
-        summary: '{{fields.alt}}'
+        summary: "{{fields.alt}}"
         fields: *a1
       - name: resources
         label: Related Resources
@@ -968,7 +970,7 @@ collections:
         collection: resources
         search_fields:
           - title
-        value_field: '{{slug}}'
+        value_field: "{{slug}}"
         display_fields:
           - title
         multiple: true
@@ -992,9 +994,9 @@ collections:
     create: true
     extension: md
     format: frontmatter
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     identifier_field: question
-    summary: '{{question}}'
+    summary: "{{question}}"
     editor:
       preview: false
     fields:
@@ -1026,8 +1028,8 @@ collections:
     create: true
     extension: json
     format: json
-    slug: '{{slug}}'
-    summary: '{{title}} ({{kind}})'
+    slug: "{{slug}}"
+    summary: "{{title}} ({{kind}})"
     editor:
       preview: false
     fields:
@@ -1077,8 +1079,8 @@ collections:
     create: true
     extension: json
     format: json
-    slug: '{{slug}}'
-    summary: '{{title}}'
+    slug: "{{slug}}"
+    summary: "{{title}}"
     editor:
       preview: false
     fields:
@@ -1091,7 +1093,7 @@ collections:
         collection: pages
         search_fields:
           - title
-        value_field: '{{slug}}'
+        value_field: "{{slug}}"
         display_fields:
           - title
         filters:
@@ -1130,7 +1132,7 @@ collections:
         collection: resources
         search_fields:
           - title
-        value_field: '{{slug}}'
+        value_field: "{{slug}}"
         display_fields:
           - title
         multiple: true
@@ -1150,9 +1152,8 @@ collections:
     create: true
     extension: json
     format: json
-    slug: '{{fields.slug}}'
+    slug: "{{fields.slug}}"
     identifier_field: Local authority
-    summary: '{{fields.Local authority}}'
     sortable_fields:
       - Local authority
       - reviewed_on
@@ -1499,8 +1500,7 @@ collections:
     create: true
     extension: json
     format: json
-    slug: '{{fields.authority}}--{{fields.slug}}'
-    summary: '{{fields.Library name}}'
+    slug: "{{fields.authority}}--{{fields.slug}}"
     editor:
       preview: false
     fields:
@@ -1934,7 +1934,7 @@ collections:
     create: true
     extension: json
     format: json
-    slug: '{{fields.slug}}'
+    slug: "{{fields.slug}}"
     identifier_field: name
     editor:
       preview: false
@@ -1977,7 +1977,7 @@ collections:
     label_singular: Organisation
     folder: src/content/organisations
     create: true
-    slug: '{{slug}}'
+    slug: "{{slug}}"
     identifier_field: name
     editor:
       preview: false

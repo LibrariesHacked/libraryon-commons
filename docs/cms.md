@@ -1,10 +1,10 @@
-# Editing content
+# CMS technical documentation
 
-LibraryCommons uses Decap CMS to edit Markdown and JSON files directly in the source repository. On editing the site is then rebuilt.
+This technical documentation describes the Decap CMS architecture, data schemas, validation hooks, and permission systems for repository maintainers and developers.
 
-Editors can also use the public **Editing guide** linked from the site footer. It explains common tasks without requiring repository knowledge.
+For end users and local authority staff editing library details on the live website, refer to the plain-English [Editing guide](../src/content/pages/editing-guide.md) published on the site.
 
-## Open The Local Editor
+## Open the local editor
 
 1. Start the Astro development server:
 
@@ -22,7 +22,7 @@ Editors can also use the public **Editing guide** linked from the site footer. I
 
 Local edits write directly to the working tree without committing. Stop `decap-server` when finished.
 
-## User Accounts And Permissions
+## User accounts and permissions
 
 CMS registration and editorial scopes are governed by email domain mappings in [src/data/auth/domain-permissions.csv](../src/data/auth/domain-permissions.csv):
 
@@ -33,22 +33,23 @@ CMS registration and editorial scopes are governed by email domain mappings in [
 | `role`      | Either `service-editor` or `general-editor`                                                                                  |
 | `notes`     | Human-readable description (e.g. authority name)                                                                             |
 
-### Editorial Roles
+### Editorial roles
 
 - **General Content Editors (`general-editor`)**: Have full access across all CMS collections (Site Settings, Homepage, Pages, FAQs, Libraries, Authorities, Resources, Sessions, Organisations, Contributors) and can edit records for any authority.
 - **Service Editors (`service-editor`)**: Confined to the library directory (`libraries` and `authorities`). A service editor can only save changes to records matching their assigned GSS codes.
 
-### Registration and Guardrail Enforcement
+### Registration and guardrail enforcement
 
 1. **Netlify Identity hooks (`netlify/functions/`)**:
    - `identity-validate`: Checks the registrant's email domain against the CSV before registration is accepted. Unrecognised domains are blocked with HTTP 400.
    - `identity-signup`: Assigns the corresponding role and GSS codes into the user's `app_metadata`.
    - `identity-login`: Keeps `app_metadata` synchronised with CSV updates on each login, while preserving manually added users created via the Netlify console.
-2. **CMS Client Hooks (`src/pages/admin/index.astro`)**:
+2. **CMS client hooks and collection filtering (`src/pages/admin/index.astro`)**:
+   - For service editors, Decap CMS dynamically filters the **Libraries** and **Library Authorities** collections so only records matching their assigned authority GSS code are shown.
    - Decap CMS's `preSave` event hook checks the user's identity claims before writing any file. If a service editor attempts to save a library or authority with a non-permitted GSS code, or attempts to edit another collection, Decap stops the save with an explanatory error.
    - For local development with `decap-server`, the editor runs with general-editor permissions.
 
-## CMS Sections
+## CMS sections
 
 | Section                    | Controls                                                                             |
 | -------------------------- | ------------------------------------------------------------------------------------ |
@@ -64,7 +65,7 @@ CMS registration and editorial scopes are governed by email domain mappings in [
 
 ### Library directory records
 
-The **Library data** and **Library service data** groups use the supplied Table Schema field names. Keep the existing URL slug, authority relationship, and source identifiers unchanged. Empty values are stored as `null`; unknown required values are recorded as validation exceptions rather than guessed. The save handler rejects invalid new values and removes resolved exceptions.
+Library and library service records use the supplied Table Schema field names as top-level properties. Keep the existing URL slug, authority relationship, and source identifiers unchanged. Empty values are stored as `null`; unknown required values are recorded as validation exceptions rather than guessed. The save handler rejects invalid new values and removes resolved exceptions.
 
 Staffed and unstaffed opening hours are separate fields. Use `09:00-17:00` or split sessions such as `09:00-12:00,13:00-17:00`. Leave the field blank when closed; saves store it as `null`. Don't use the text `Closed`. Invalid imported sessions are kept in the source audit and flagged for manual review rather than silently repaired. The overall library `Status` is separate from its daily hours.
 
@@ -108,7 +109,7 @@ Header navigation and page structure are maintained separately:
 
 For example, the Archive menu links to the `/archive/` landing page, whose Subpages list contains pages with paths under `/archive/`. When changing a live Site Path, add a redirect in Site Settings so existing links continue to work.
 
-## Review And Preserved Material
+## Review and preserved material
 
 Production CMS edits are published directly to the repository's `main` branch. The repository runs its tests and builds the site on each push.
 
@@ -124,7 +125,7 @@ Put `{{faqs}}` on its own line to place the selected FAQs. An optional preceding
 
 The optional `{{resources}}` marker similarly positions selected resources. Resources already linked in the page or its FAQ answers are not repeated. Without a marker, modules appear after the body.
 
-## Explicit Page Blocks
+## Explicit page blocks
 
 The **Content** editor has **Rich text** and **Markdown** modes. In Rich Text, use the **+ / Add component** menu to insert a block. Existing blocks open as the same editable forms, with image pickers and labelled fields; editors do not need to type directive syntax.
 

@@ -1,48 +1,114 @@
 ---
-title: Editing LibraryCommons
+title: Editing guide
 path: /editing-guide
 kind: page
 content_origin: commons
-description: A practical guide to adding and updating LibraryCommons content.
+description: A step-by-step guide to signing up, logging in, and editing library and service details on LibraryCommons.
 ---
 
-# Editing
+# Editing guide
 
-Use the content editor to add and update pages, questions, resources, and library listings. Changes are published directly to the repository and appear on the public site when deployed.
+Welcome to the LibraryCommons editor. This guide shows you how to register for an editor account, verify your email, log in, and update details for your local libraries and library service.
 
-## Before you begin
+You do not need technical knowledge or a GitHub account. All updates happen through web forms in your browser.
 
-- Search for an existing page or resource before creating a new one.
-- Keep the title and address of an existing page unless a maintainer has agreed to change them
-- Pages marked as original LibraryOn content and archived files are preserved. Changes need review.
-- New images and documents belong in the community uploads area. Do not replace files in the archived uploads area.
+## Register for an account
 
-## Add or update a page
+To edit details for your council's libraries, you need an editor account linked to your official work email address (for example, `your.name@council.gov.uk`).
 
-Choose **Editorial Content** and open a page, or choose **New Page** to start one. Enter a clear title and a site path such as `/stories/reading-together`. Choose the page type that best matches the content. Add a short summary and write the page in the **Content** editor.
+1. Open the [editor website](https://edit.librarycommons.org.uk/admin/).
+2. Select **Sign up with Netlify Identity**.
+3. In the sign-up box, choose the **Sign up** tab.
+4. Enter your full name, work email address, and a secure password.
+5. Select **Sign up**.
 
-Use headings in order: the page title is the main heading, section headings are the next level, and smaller headings sit underneath them.
+![The sign-up window showing full name, work email, and password fields](/uploads/community/cms-signup-modal.png)
 
-For a new image, choose **Collection Image** or the image control. Write alternative text that explains the important information in the image. Add a caption or credit when needed. Use **Full** for a lead image, **Inset** for a smaller image within the article, or a float when the image belongs beside nearby text.
+> **Email domain check:** Registration is automatically restricted to recognised library authority and council email domains. If your council email is not accepted, contact the site maintainers to add your domain to the pre-approved list.
 
-## Special collection controls
+## Verify your email address
 
-The **+ / Add Component** menu includes collection images, carousels, accordions, editorial asides, and book recommendations. Their outer fields set the title, image, layout, and accessible label. Some components also contain a **Markdown** field for the items inside them.
+After submitting the registration form, Netlify Identity sends a verification email to your work inbox.
 
-In a carousel, each `slide` contains one image or quote and any notes that belong to it. In a hotspot carousel, add hotspot notes inside the slide for the image they describe; marker positions are percentages from the left and top of the image. In an accordion, each `accordion-item` has a title and its own content. Book recommendations keep each cover, title, author, year, and description together in one `recommendation-item`.
+1. Open your inbox and look for an email from **LibraryCommons** or **Netlify Identity**.
+2. Click the verification link inside the email.
+3. Your browser opens the editor and completes your account setup.
+4. Once verified, you are ready to log in.
 
-Use the existing articles as a guide. Keep related notes and images inside their component, and do not move a slide’s notes into a neighbouring slide. If you are unsure about a complex block, check your changes before publishing.
+If you do not see the email within a few minutes, check your junk or spam folder.
 
-## Questions, resources, and links
+## Log in to the editor
 
-Add shared questions under **Frequently Asked Questions**, then select them on the page. Do not copy their answers into the page body. Add a resource once, give it a name that says what it contains, and connect it to the relevant page or conference session. The resource page will show where it is used.
+1. Go to [edit.librarycommons.org.uk/admin/](https://edit.librarycommons.org.uk/admin/).
+2. Select **Log in with Netlify Identity**.
+3. Enter your work email address and password, then select **Log in**.
 
-For a recording, include the session name in the title. For a document, say what it is and which programme or round it belongs to. Add a short description when a title alone does not explain why the item is useful. Keep credits and rights information when supplied.
+![The login window showing email and password fields](/uploads/community/cms-login-modal.png)
 
-## Menus and site text
+When you log in, your editor role and authority scope appear at the top of the screen (for example, `your.name@council.gov.uk • Service Editor (E08000003)`).
 
-**Site Settings** contains the main menu, footer links, redirects, page labels, and other template text. Keep link labels short and clear. Check that a destination works before saving a menu change.
+As a service editor, your view is automatically focused on your council's records.
 
-## Review and publishing
+## Update a library branch
 
-Publish your changes when ready. The automated site checks run to verify the build and tests pass. You can return to the editor at any time to make further updates.
+Most editorial updates involve keeping branch details, opening hours, and facilities accurate and up to date.
+
+1. In the left navigation menu, select **Libraries**.
+2. You will see the branches belonging to your service. Select the library you want to update.
+3. Make your changes in the form fields.
+4. When finished, select the green **Publish** button at the top of the page.
+
+![The library listings table showing branches and their last review dates](/uploads/community/cms-libraries-list.png)
+
+### Key library fields
+
+- **Library name and address:** Check the branch name, street address, and postcode.
+- **Contact details:** Keep phone numbers, enquiries email addresses, and official branch web pages current.
+- **Facilities and services:** Tick or untick services available at this branch, including public computers, Wi-Fi, printing, quiet study space, and meeting rooms.
+- **Accessibility:** Confirm step-free access, accessible toilets, and hearing loop availability.
+- **Opening hours:** Enter staffed and unstaffed opening times for each day of the week.
+
+![The library edit form showing fields for contact details, facilities, and opening hours](/uploads/community/cms-library-edit.png)
+
+### How to enter opening hours
+
+Opening hours use standard 24-hour time format:
+
+- **Single session:** Enter `09:00-17:00` for a standard day.
+- **Split session:** Use a comma with no spaces for lunch breaks or split shifts, such as `09:00-12:30,13:30-17:00`.
+- **Closed days:** Leave the field blank. Do not write the word `Closed`.
+- **Self-service or unstaffed hours:** If your library uses open-access technology, record unstaffed hours in the separate unstaffed hours field.
+
+## Update library authority details
+
+To update council-wide services and digital links:
+
+1. In the left navigation menu, select **Library Authorities**.
+2. Select your service's entry.
+3. Update council-wide digital services, such as:
+   - Main library service website
+   - Online catalogue URL
+   - Online joining URL
+   - Mobile app links (Android and iOS)
+   - Social media links (Facebook, Instagram, YouTube)
+4. Select **Publish** to save your changes.
+
+## What happens after you publish
+
+When you select **Publish**:
+
+1. Your changes are saved directly to the LibraryCommons repository.
+2. Automated checks verify that the data meets national public library data schemas.
+3. The site rebuilds and publishes your changes live to the public directory. This could take a short while.
+
+You can log back in at any time to make further updates.
+
+## Wider editorial content
+
+A small number of team members have general editor access to update site-wide articles, case studies, grant announcements, and frequently asked questions.
+
+If you have general editor permissions:
+- Use **Editorial Content** to create or edit articles and stories.
+- Use **Frequently Asked Questions** to manage reusable questions and answers across pages.
+- Use **Resources And Downloads** to add shared slide decks, reports, or webinar recordings.
+- Keep page paths descriptive (for example, `/stories/our-new-makerspace`). Ensure images have descriptive alternative text for screen readers.

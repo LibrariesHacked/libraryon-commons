@@ -117,7 +117,7 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
       }
     ])
     collection.set('identifier_field', title)
-    collection.set('summary', `{{fields.${title}}}`)
+    collection.delete('summary')
     collection.set('sortable_fields', [title, 'reviewed_on'])
   }
   writeFileSync(file, document.toString({ lineWidth: 0, flowCollectionPadding: false }))
@@ -141,6 +141,5 @@ export async function generateSchemas(root = new URL('../', import.meta.url)) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  await generateSchemas()
   updateDirectoryCms()
 }
