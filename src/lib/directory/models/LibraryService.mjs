@@ -13,7 +13,7 @@ export class LibraryService {
    */
   constructor(record) {
     Object.assign(this, record)
-    const data = record?.data || {}
+    const data = record?.data || record || {}
 
     // Extract social media links
     const channels = [
@@ -28,7 +28,8 @@ export class LibraryService {
       if (url) social.push({ channel, url })
     }
 
-    if (data && Object.keys(data).length > 0) {
+    const hasCanonical = Boolean(data['Local authority'])
+    if (hasCanonical) {
       this.name = data['Local authority']
       this.gss = data['Local authority code']
       this.country = data.Country
@@ -45,6 +46,15 @@ export class LibraryService {
 
     if (!this.library_ids) {
       this.library_ids = []
+    }
+
+    if (!record?.data) {
+      Object.defineProperty(this, 'data', {
+        value: this,
+        enumerable: false,
+        configurable: true,
+        writable: true
+      })
     }
   }
 

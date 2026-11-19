@@ -41,8 +41,8 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
     )
     const relation = metadata.find((field) => field.name === 'authority')
     if (relation) {
-      relation.search_fields = ['data.Local authority']
-      relation.display_fields = ['data.Local authority']
+      relation.search_fields = ['Local authority']
+      relation.display_fields = ['Local authority']
     }
     const dataFields = schema.fields.map((field) => {
       const constraints = field.constraints || {}
@@ -77,12 +77,7 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
       return result
     })
     collection.set('fields', [
-      {
-        name: 'data',
-        label: kind === 'libraries' ? 'Library data' : 'Library service data',
-        widget: 'object',
-        fields: dataFields
-      },
+      ...dataFields,
       ...metadata,
       {
         name: 'manual_checks',
@@ -121,9 +116,9 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         ]
       }
     ])
-    collection.set('identifier_field', `data.${title}`)
-    collection.set('summary', `{{data.${title}}}`)
-    collection.set('sortable_fields', [`data.${title}`, 'reviewed_on'])
+    collection.set('identifier_field', title)
+    collection.set('summary', `{{fields.${title}}}`)
+    collection.set('sortable_fields', [title, 'reviewed_on'])
   }
   writeFileSync(file, document.toString({ lineWidth: 0, flowCollectionPadding: false }))
 }

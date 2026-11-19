@@ -701,18 +701,18 @@ test('written schema records preserve every original ID, route and date and subs
       ])
         assert.deepEqual(migrated[field], record[field], `${targetFile}: ${field}`)
       if (kind === 'libraries') {
-        const uprn = migrated.data['Unique property reference number']
+        const uprn = (migrated.data || migrated)['Unique property reference number']
         if (uprn && !record.uprn) {
           const evidence = uprnEvidence(
-            { data: migrated.data },
-            { postcode: migrated.data.Postcode, record },
+            { data: migrated.data || migrated },
+            { postcode: (migrated.data || migrated).Postcode, record },
             lookups
           )
           assert.ok(evidence.accepted, `${targetFile}: ${evidence.reason}`)
           assert.equal(lookups.uprns[uprn].product, 'nsul')
         }
-        if (migrated.data.Status === 'Open')
-          assert.equal(migrated.data['Year closed'], null, targetFile)
+        if ((migrated.data || migrated).Status === 'Open')
+          assert.equal((migrated.data || migrated)['Year closed'], null, targetFile)
       }
     }
   }
@@ -720,9 +720,9 @@ test('written schema records preserve every original ID, route and date and subs
     readFileSync('src/content/authorities/northern-ireland.json', 'utf8')
   )
   validateRecord(niAuthority, 'authorities')
-  assert.equal(niAuthority.data['Local authority'], 'Northern Ireland')
-  assert.equal(niAuthority.data['Local authority code'], 'N92000002')
-  assert.equal(niAuthority.data['Operating organisation'], 'Libraries NI')
+  assert.equal((niAuthority.data || niAuthority)['Local authority'], 'Northern Ireland')
+  assert.equal((niAuthority.data || niAuthority)['Local authority code'], 'N92000002')
+  assert.equal((niAuthority.data || niAuthority)['Operating organisation'], 'Libraries NI')
   assert.ok(report.summary.filledUprns > 0)
   for (const added of report.added) {
     assert.ok(added.yearClosed)

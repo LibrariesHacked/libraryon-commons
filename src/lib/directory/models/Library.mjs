@@ -35,7 +35,7 @@ export class Library {
    */
   constructor(record) {
     Object.assign(this, record)
-    const data = record?.data || {}
+    const data = record?.data || record || {}
 
     // Extract facilities and services from semicolon-delimited lists and explicit boolean fields
     const services = (data['Facilities and services'] || '')
@@ -105,18 +105,19 @@ export class Library {
     const operatingType = data['Type of library']
 
     if (data && Object.keys(data).length > 0) {
-      this.name = data['Library name']
-      this.address = [data['Address 1'], data['Address 2'], data['Address 3']]
-        .filter(Boolean)
-        .join(', ')
-      this.postcode = data.Postcode
-      this.uprn = data['Unique property reference number']
-      this.latitude = data.Latitude
-      this.longitude = data.Longitude
-      this.phone = data['Phone number']
-      this.email = data['Email address']
-      this.website = data.URL
-      this.notes = data.Notes || ''
+      this.name = data['Library name'] || record.name || ''
+      this.address =
+        [data['Address 1'], data['Address 2'], data['Address 3']].filter(Boolean).join(', ') ||
+        record.address ||
+        ''
+      this.postcode = data.Postcode || record.postcode || null
+      this.uprn = data['Unique property reference number'] || record.uprn || null
+      this.latitude = data.Latitude ?? record.latitude ?? null
+      this.longitude = data.Longitude ?? record.longitude ?? null
+      this.phone = data['Phone number'] || record.phone || ''
+      this.email = data['Email address'] || record.email || ''
+      this.website = data.URL || record.website || ''
+      this.notes = data.Notes || record.notes || ''
       this.coLocated =
         data['Co-located'] === 'No'
           ? []
@@ -133,12 +134,25 @@ export class Library {
               ? 'Facility Not Open'
               : operatingType
                 ? operationMap[operatingType]
-                : ''
-      this.permanentlyClosed = data.Status === 'Closed (permanent)'
-      this.services = services
-      this.accessibility = accessibility
-      this.openingTimes = openingTimes
-      this.openingTimesNotes = data['Special hours'] || ''
+                : record.facilityOperated || ''
+      this.permanentlyClosed = Boolean(
+        data.Status === 'Closed (permanent)' || record.permanentlyClosed
+      )
+      this.services = services.length ? services : record.services || []
+      this.accessibility = accessibility.length ? accessibility : record.accessibility || []
+      this.openingTimes = Object.keys(openingTimes).length
+        ? openingTimes
+        : record.openingTimes || {}
+      this.openingTimesNotes = data['Special hours'] || record.openingTimesNotes || ''
+    }
+
+    if (!record?.data) {
+      Object.defineProperty(this, 'data', {
+        value: this,
+        enumerable: false,
+        configurable: true,
+        writable: true
+      })
     }
   }
 

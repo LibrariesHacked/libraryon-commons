@@ -399,7 +399,7 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
     for (const file of libFiles) {
       const record = JSON.parse(readFileSync(join(librariesDir, file), 'utf8'))
       const id = record.id
-      const data = record.data || {}
+      const data = record.data || record || {}
 
       for (const check of record.manual_checks || []) {
         report.manualChecks.count++
@@ -546,7 +546,7 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
     for (const file of authFiles) {
       const record = JSON.parse(readFileSync(join(authoritiesDir, file), 'utf8'))
       const id = record.id
-      const data = record.data || {}
+      const data = record.data || record || {}
 
       for (const check of record.manual_checks || []) {
         report.manualChecks.count++

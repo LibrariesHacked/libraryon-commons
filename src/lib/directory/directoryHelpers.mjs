@@ -23,11 +23,15 @@ export function createDirectory(
   { requireCanonical = false } = {}
 ) {
   validateRecords(
-    requireCanonical ? authorityRecords : authorityRecords.filter((record) => record.data),
+    requireCanonical
+      ? authorityRecords
+      : authorityRecords.filter((record) => record.data || record['Local authority']),
     'authorities'
   )
   validateRecords(
-    requireCanonical ? libraryRecords : libraryRecords.filter((record) => record.data),
+    requireCanonical
+      ? libraryRecords
+      : libraryRecords.filter((record) => record.data || record['Library name']),
     'libraries'
   )
 

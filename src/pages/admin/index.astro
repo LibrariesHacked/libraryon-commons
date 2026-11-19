@@ -35,10 +35,14 @@ const publicSitePath = (value) =>
             })
           }
         })
+        window.netlifyIdentity.on('logout', () => {
+          document.location.href = '/admin/'
+        })
       }
     </script>
     <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
     <script>
+      import { parse as parseYaml } from 'yaml'
       import { prepareDirectoryEdit } from '../../lib/directory/schemaHelpers.mjs'
       import { registerEditorComponents } from '../../lib/cms/cmsHelpers.mjs'
       import {
@@ -47,6 +51,7 @@ const publicSitePath = (value) =>
         validateEntrySave
       } from '../../lib/cms/cmsAuthHelpers.mjs'
       import domainPermissionsCsv from '../../data/auth/domain-permissions.csv?raw'
+      import cmsConfigRaw from '../../../public/admin/config.yml?raw'
       import previewStyles from '../../styles/global.css?inline'
 
       const domainPermissions = parseDomainPermissions(domainPermissionsCsv)
@@ -124,10 +129,12 @@ const publicSitePath = (value) =>
               if (collection === 'libraries' || collection === 'authorities') {
                 const prepared = prepareDirectoryEdit(data.toJS(), collection)
                 validateEntrySave(prepared, collection, permissions)
-                for (const [field, value] of Object.entries(prepared.data)) {
-                  data = data.setIn(['data', field], value)
+                for (const [field, value] of Object.entries(prepared)) {
+                  data = data.set(field, value)
                 }
-                data = data.set('validation_exceptions', prepared.validation_exceptions)
+                if (data.has('data')) {
+                  data = data.delete('data')
+                }
               } else {
                 validateEntrySave(data.toJS(), collection, permissions)
               }
@@ -145,7 +152,33 @@ const publicSitePath = (value) =>
         })
 
         cms.registerPreviewStyle(previewStyles, { raw: true })
-        cms.init()
+
+        if (
+          initialPermissions.role === 'service-editor' &&
+          !initialPermissions.isGeneralEditor &&
+          initialPermissions.gssCodes?.length &&
+          !initialPermissions.gssCodes.includes('*')
+        ) {
+          const config = parseYaml(cmsConfigRaw)
+          const primaryGss = initialPermissions.gssCodes[0]
+          const libCol = config.collections?.find((c) => c.name === 'libraries')
+          if (libCol) {
+            libCol.filter = {
+              field: 'Local authority code',
+              value: primaryGss
+            }
+          }
+          const authCol = config.collections?.find((c) => c.name === 'authorities')
+          if (authCol) {
+            authCol.filter = {
+              field: 'Local authority code',
+              value: primaryGss
+            }
+          }
+          cms.init({ config })
+        } else {
+          cms.init()
+        }
       }
     </script>
   </body>

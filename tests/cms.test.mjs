@@ -757,14 +757,14 @@ test('all original directory listings are represented in the editable CMS source
   const libraryFields = config.collections.find(
     (collection) => collection.name === 'libraries'
   ).fields
-  const uprn = libraryFields
-    .find((field) => field.name === 'data')
-    .fields.find((field) => field.name === 'Unique property reference number')
+  const uprn = (libraryFields.find((field) => field.name === 'data')?.fields || libraryFields).find(
+    (field) => field.name === 'Unique property reference number'
+  )
   assert.equal(uprn.widget, 'number')
   assert.equal(uprn.required, false)
-  const countries = authorityFields
-    .find((field) => field.name === 'data')
-    .fields.find((field) => field.name === 'Country').options
+  const countries = (
+    authorityFields.find((field) => field.name === 'data')?.fields || authorityFields
+  ).find((field) => field.name === 'Country').options
   for (const authority of authorities) {
     assert.ok(countries.includes(authority.country), `Country not editable: ${authority.country}`)
   }

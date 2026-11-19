@@ -19,7 +19,7 @@ const fieldTypeValidators = {
 const uriValidator = z.url({ protocol: /^https?$/ })
 const emailValidator = z.email()
 
-const recordFields = new Set([
+const metadataFields = new Set([
   'id',
   'slug',
   'authority',
@@ -57,6 +57,7 @@ export function dataIssues(data, schema) {
   const issues = []
   const names = new Set(schema.fields.map((field) => field.name))
   for (const key of Object.keys(data)) {
+    if (metadataFields.has(key)) continue
     if (!names.has(key)) issues.push({ field: key, code: 'unknown-field', value: data[key] })
   }
   for (const field of schema.fields) {
@@ -106,16 +107,21 @@ export function dataIssues(data, schema) {
  */
 export function validateRecord(record, kind) {
   const schema = directorySchemas[kind]
-  if (!schema || !record.data || !record.slug) throw new Error(`Invalid ${kind} record`)
+  const hasCanonicalData = Boolean(
+    record?.data || (kind === 'libraries' ? record?.['Library name'] : record?.['Local authority'])
+  )
+  if (!schema || !hasCanonicalData || !record?.slug) throw new Error(`Invalid ${kind} record`)
+  const allowedFields = new Set([...metadataFields, ...schema.fields.map((field) => field.name)])
   for (const field of Object.keys(record)) {
-    if (!recordFields.has(field)) {
+    if (!allowedFields.has(field)) {
       throw new Error(`${record.slug}: unexpected record field: ${field}`)
     }
   }
   if (record.manual_checks !== undefined && !manualChecks.safeParse(record.manual_checks).success) {
     throw new Error(`${record.slug}: invalid manual checks`)
   }
-  const issues = dataIssues(record.data, schema)
+  const data = record.data || record
+  const issues = dataIssues(data, schema)
   const exceptions = record.validation_exceptions || []
   for (const issue of issues) {
     if (
@@ -169,13 +175,17 @@ export function prepareDirectoryEdit(record, kind) {
   const schema = directorySchemas[kind]
   if (!schema) throw new Error(`Unknown directory collection: ${kind}`)
 
-  record.data = Object.fromEntries(
-    schema.fields.map((field) => [
-      field.name,
-      record.data?.[field.name] === '' ? null : (record.data?.[field.name] ?? null)
-    ])
-  )
-  record.validation_exceptions = dataIssues(record.data, schema).map((issue) => {
+  const sourceData = record.data || record
+  for (const field of schema.fields) {
+    const raw = sourceData[field.name] ?? record[field.name]
+    const normalized = raw === '' ? null : (raw ?? null)
+    record[field.name] = normalized
+    if (record.data) {
+      record.data[field.name] = normalized
+    }
+  }
+
+  record.validation_exceptions = dataIssues(record, schema).map((issue) => {
     const previous = record.validation_exceptions?.find(
       (item) =>
         item.field === issue.field &&
@@ -190,14 +200,20 @@ export function prepareDirectoryEdit(record, kind) {
   })
 
   // Validate clean record without extra CMS-internal UI fields
+  const allowedFields = new Set([...metadataFields, ...schema.fields.map((field) => field.name)])
   const cleanRecord = {}
   for (const key of Object.keys(record)) {
-    if (recordFields.has(key)) {
+    if (allowedFields.has(key)) {
       cleanRecord[key] = record[key]
     }
   }
   if (!cleanRecord.slug) {
-    const rawName = record.data?.['Library name'] || record.data?.['Local authority'] || 'new-entry'
+    const rawName =
+      record['Library name'] ||
+      record['Local authority'] ||
+      record.data?.['Library name'] ||
+      record.data?.['Local authority'] ||
+      'new-entry'
     cleanRecord.slug =
       String(rawName)
         .toLowerCase()
@@ -223,7 +239,8 @@ export function validateRecords(records, kind) {
   for (const field of unique) {
     const seen = new Set()
     for (const record of validatedRecords) {
-      const value = record.data[field.name]
+      const data = record.data || record
+      const value = data[field.name]
       if (value === null) continue
       if (seen.has(value)) throw new Error(`Duplicate ${kind} ${field.name}: ${value}`)
       seen.add(value)

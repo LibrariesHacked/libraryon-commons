@@ -264,4 +264,8 @@ test('admin index gates login reload on unauthenticated init to avoid infinite r
     ),
     'Does not reload unconditionally on every login event'
   )
+  assert.ok(
+    adminHtml.includes("netlifyIdentity.on('logout'"),
+    'Registers logout listener on netlifyIdentity'
+  )
 })

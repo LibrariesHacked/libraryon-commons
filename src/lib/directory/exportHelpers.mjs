@@ -19,14 +19,15 @@ export function libraryValidationReport(records) {
   if (Array.isArray(records) && reportCache.has(records)) {
     return reportCache.get(records)
   }
-  const issues = records.flatMap((record, index) =>
-    dataIssues(record.data, librarySchema).map((issue) => ({
+  const issues = records.flatMap((record, index) => {
+    const data = record.data || record
+    return dataIssues(data, librarySchema).map((issue) => ({
       id: record.id,
-      name: record.data['Library name'],
+      name: data['Library name'],
       csvRecord: index + 2,
       ...issue
     }))
-  )
+  })
   const invalidRecordNumbers = new Set(issues.map((issue) => issue.csvRecord))
   const report = {
     totalRecords: records.length,
@@ -49,10 +50,13 @@ export function libraryValidationReport(records) {
  */
 export function libraryCsv(records, { validOnly = false } = {}) {
   const selectedRecords = validOnly
-    ? records.filter((record) => !dataIssues(record.data, librarySchema).length)
+    ? records.filter((record) => !dataIssues(record.data || record, librarySchema).length)
     : records
   return stringify(
-    selectedRecords.map((record) => csvColumns.map((field) => record.data[field])),
+    selectedRecords.map((record) => {
+      const data = record.data || record
+      return csvColumns.map((field) => data[field])
+    }),
     { header: true, columns: csvColumns, record_delimiter: '\r\n' }
   )
 }
