@@ -331,6 +331,8 @@ test('auditDirectory scans content without errors and formatAuditSummary returns
   assert.ok(report.postcodes.found > 4000)
   assert.equal(report.postcodes.empty, 0)
   assert.equal(report.coordinates.outliers.length, 0)
+  assert.ok(report.closures.closedPermanent > 0)
+  assert.equal(report.closures.yearWithoutClosed.length, 0)
   assert.ok(report.urls.total > 0)
   assert.equal(report.urls.syntaxIssues.length, 0)
 
@@ -339,6 +341,7 @@ test('auditDirectory scans content without errors and formatAuditSummary returns
   assert.ok(summary.includes('Total Libraries:'))
   assert.ok(summary.includes('Postcodes Assessment:'))
   assert.ok(summary.includes('Coordinates Assessment:'))
+  assert.ok(summary.includes('Closures Assessment:'))
 
   const markdown = formatAuditMarkdown(report)
   assert.ok(markdown.includes('Directory Health & Link Verification Report'))

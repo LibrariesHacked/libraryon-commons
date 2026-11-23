@@ -5887,7 +5887,7 @@
       "evidence": {
         "accepted": true,
         "reason": "Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode",
-        "miles": 0.01267159571446761,
+        "miles": 0.012671595714467609,
         "lookup": "nsul.zip#Data/NSUL_E128_SEP_2026_SW.csv:1548665"
       }
     },
@@ -11471,7 +11471,7 @@
       "evidence": {
         "accepted": true,
         "reason": "Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode",
-        "miles": 0.0009743891553503327,
+        "miles": 0.0009743891553503325,
         "lookup": "nsul.zip#Data/NSUL_E128_SEP_2026_EE.csv:1137108"
       }
     },
@@ -16798,7 +16798,7 @@
       "evidence": {
         "accepted": true,
         "reason": "Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode",
-        "miles": 0.0012615998762310204,
+        "miles": 0.0012615998762310202,
         "lookup": "nsul.zip#Data/NSUL_E128_SEP_2026_LN.csv:595407"
       }
     },
@@ -17807,7 +17807,7 @@
       "evidence": {
         "accepted": true,
         "reason": "Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode",
-        "miles": 0.014043293796836649,
+        "miles": 0.014043293796836647,
         "lookup": "nsul.zip#Data/NSUL_E128_SEP_2026_LN.csv:5205956"
       }
     },
@@ -35816,7 +35816,7 @@
       "evidence": {
         "accepted": true,
         "reason": "Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode",
-        "miles": 0.020125149943116222,
+        "miles": 0.02012514994311622,
         "lookup": "nsul.zip#Data/NSUL_E128_SEP_2026_NW.csv:1125990"
       }
     },
@@ -36145,7 +36145,7 @@
       "evidence": {
         "accepted": true,
         "reason": "Unique authority/name/address/postcode match; independently located UPRN within 100m and identical postcode",
-        "miles": 0.013117466799978515,
+        "miles": 0.013117466799978517,
         "lookup": "nsul.zip#Data/NSUL_E128_SEP_2026_WM.csv:1560286"
       }
     },
@@ -82400,6 +82400,105 @@
       "source": "reviewed-override",
       "evidence": "Wandsworth Borough Council / Better GLL",
       "reason": "SW11 6HW was the terminated postcode of the demolished 1960s building; SW11 6RD is the active postcode for the new building opened 2023"
+    },
+    {
+      "id": "lib_00b2b1b3-4f21-4414-bf2e-a07346cb8600",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "after": "Open",
+      "source": "reviewed-override",
+      "evidence": "Croydon Council official library directory",
+      "reason": "Ashburton Library remained open; upstream LibraryOn mistakenly had permanentlyClosed: true"
+    },
+    {
+      "id": "lib_e5912bde-ca1d-450a-b89c-d010f12671e1",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "after": "Open",
+      "source": "reviewed-override",
+      "evidence": "Glasgow Life official libraries directory",
+      "reason": "Barmulloch Library is an active open branch; upstream LibraryOn had permanentlyClosed: true"
+    },
+    {
+      "id": "lib_d75fd5d1-1e61-4457-a653-4703c21eb4ad",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "after": "Open",
+      "source": "reviewed-override",
+      "evidence": "Kent County Council official library directory",
+      "reason": "Wood Avenue Library is an active open branch; upstream LibraryOn had permanentlyClosed: true"
+    },
+    {
+      "id": "lib_b4f1b79f-b1d4-4b6d-8537-186157ed723d",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "after": "Open",
+      "source": "reviewed-override",
+      "evidence": "Lincolnshire County Council official libraries directory",
+      "reason": "Boundary Street Community Hub is an active open branch; upstream LibraryOn had permanentlyClosed: true"
+    },
+    {
+      "id": "lib_4fabe7f7-514f-429d-b026-17c392862cf0",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "after": "Open",
+      "source": "reviewed-override",
+      "evidence": "Redcar & Cleveland Borough Council official library directory",
+      "reason": "Guisborough Library is an active open branch; upstream LibraryOn had permanentlyClosed: true"
+    },
+    {
+      "id": "lib_383c33ad-4fef-4f9d-9e07-65160e839022",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "after": "Open",
+      "source": "reviewed-override",
+      "evidence": "Westminster City Council official library directory",
+      "reason": "Paddington Library is an active open branch; upstream LibraryOn had permanentlyClosed: true"
+    },
+    {
+      "id": "lib_4d537e82-19b8-4dc4-8469-43d4d3f60313",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "after": "Open",
+      "source": "reviewed-override",
+      "evidence": "Council of the Isles of Scilly official library directory",
+      "reason": "St Marys Library is the active main branch on the Isles of Scilly; upstream had Facility Not Open"
+    },
+    {
+      "id": "lib_c9a93e71-d797-47f7-b437-4addc3784d38",
+      "field": "Postcode",
+      "before": "ME20 6BZ",
+      "after": "TN15 6EL",
+      "source": "reviewed-override",
+      "evidence": "src/content/libraries/kent--west-kingsdown-library.json",
+      "reason": "Postcode corrected from out-of-area ME20 6BZ to recorded building address postcode TN15 6EL"
+    },
+    {
+      "id": "lib_083ecb88-5959-40f7-9c99-56ac45245cc2",
+      "field": "Postcode",
+      "before": "RM16 2NJ",
+      "after": "RM16 2JU",
+      "source": "reviewed-override",
+      "evidence": "src/content/libraries/thurrock--blackshots-library.json",
+      "reason": "Postcode corrected to match building address on Blackshots Lane (RM16 2JU)"
+    },
+    {
+      "id": "lib_77f106dd-1da1-4594-8fe8-94993d1db2ac",
+      "field": "Postcode",
+      "before": "RM16 4JD",
+      "after": "RM16 4JP",
+      "source": "reviewed-override",
+      "evidence": "src/content/libraries/thurrock--chadwell-information-centre.json",
+      "reason": "Postcode corrected to match building address on Brentwood Road (RM16 4JP)"
+    },
+    {
+      "id": 183,
+      "field": "Service URL",
+      "before": "https://libraries.thurrock.gov.uk/home",
+      "after": "https://www.thurrock.gov.uk/libraries",
+      "source": "reviewed-override",
+      "evidence": "Thurrock Council official website",
+      "reason": "Thurrock library service homepage restored from catalogue URL"
     },
     {
       "id": "lib_da2f88a8-ae7e-4537-a7de-6b665d4ad027",
@@ -169188,14 +169287,6 @@
     },
     {
       "id": 183,
-      "field": "Service URL",
-      "current": "https://libraries.thurrock.gov.uk/home",
-      "candidate": "https://www.thurrock.gov.uk/libraries",
-      "source": "services-grid",
-      "decision": "retain-libraryon"
-    },
-    {
-      "id": 183,
       "field": "Catalogue URL",
       "current": "https://libraries.thurrock.gov.uk/home",
       "candidate": "https://librarycatalogue.essex.gov.uk/",
@@ -248657,6 +248748,31 @@
         "decision": "leave-unconfirmed-fields-blank",
         "decided_on": "2026-11-04",
         "rationale": "Maintainer approved archiving historical LMS and catalogue hints that were not independently confirmed. Preserve evidence without promoting old software or supplier claims into canonical data."
+      }
+    },
+    {
+      "kind": "current-service-url",
+      "id": 183,
+      "field": "Service URL",
+      "current": "https://www.thurrock.gov.uk/libraries",
+      "lookup": {
+        "status": "ok",
+        "httpStatus": 200,
+        "finalUrl": "https://libraries.thurrock.gov.uk/home",
+        "checkedAt": "2026-11-04T06:23:02.980Z",
+        "title": "Home | Thurrock Libraries",
+        "signals": "",
+        "crossDomain": true,
+        "libraryRelevant": true,
+        "genericRedirect": false
+      },
+      "reason": "Existing LibraryOn URL retained; lookup needs editorial review",
+      "review_id": "review_d27e8cd818962afb4d8afb39",
+      "resolution": {
+        "status": "approved",
+        "decision": "retain-current-values",
+        "decided_on": "2026-11-04",
+        "rationale": "Maintainer approved existing LibraryOn URL retained checks. Preserve current URLs without claiming successful live verification."
       }
     },
     {
@@ -428020,7 +428136,7 @@
     },
     {
       "file": "migration/directory/overrides.json",
-      "sha256": "56663019842ea32e64f91ec577116db1b1949af69b7b88412166b09efff49559"
+      "sha256": "f315726972cbb1c69a3e6668678cc6989ea100b24c09c9e74a28e886f51ea239"
     },
     {
       "file": "migration/directory/libraries-ni-scraped.json",
@@ -504654,9 +504770,9 @@
     "matchedRows": 4017,
     "addedClosedBuildings": 430,
     "filledUprns": 723,
-    "changes": 9949,
-    "review": 8148,
-    "approvedReviews": 405,
+    "changes": 9960,
+    "review": 8149,
+    "approvedReviews": 406,
     "deferredReviews": 3281,
     "archivedReviews": 4462,
     "pendingReviews": 0,

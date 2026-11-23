@@ -1153,19 +1153,19 @@ collections:
     extension: json
     format: json
     slug: "{{fields.slug}}"
-    identifier_field: Local authority
+    identifier_field: local_authority
     sortable_fields:
-      - Local authority
+      - local_authority
       - reviewed_on
     editor:
       preview: false
     fields:
-      - name: Local authority
+      - name: local_authority
         label: Local authority
         widget: string
         required: false
         hint: Name of the local authority responsible for the library service
-      - name: Local authority code
+      - name: local_authority_code
         label: Local authority code
         widget: string
         required: false
@@ -1173,7 +1173,7 @@ collections:
         pattern:
           - ^[ELMNSW][0-9]{8}$
           - Official Government Statistical Service (GSS/ONS) 9-character code for the authority
-      - name: Country
+      - name: country
         label: Country
         widget: select
         required: false
@@ -1184,12 +1184,17 @@ collections:
           - Wales
           - Northern Ireland
           - Crown Dependencies
-      - name: Local authority department
+      - name: about
+        label: About the library service
+        widget: string
+        required: false
+        hint: Narrative overview of the public library service, community focus, and history
+      - name: local_authority_department
         label: Local authority department
         widget: string
         required: false
         hint: Name of the local authority department or directorate responsible for the library service
-      - name: Governance model
+      - name: governance_model
         label: Governance model
         widget: select
         required: false
@@ -1199,211 +1204,231 @@ collections:
           - Public sector mutual
           - Charitable trust
           - Commissioned contractor
-      - name: Operating organisation
+      - name: operating_organisation
         label: Operating organisation
         widget: string
         required: false
         hint: Organisation delivering the service if not run directly in-house by the local authority (e.g. public sector mutual, charitable trust, or commissioned leisure contractor)
-      - name: Consortium
+      - name: consortium
         label: Consortium
         widget: string
         required: false
         hint: Shared library consortium or regional technical partnership (e.g. LibrariesWest, The Libraries Consortium, SELMS)
-      - name: Service URL
+      - name: service_url
         label: Service URL
         widget: string
         required: false
         hint: The main public web portal or homepage for the library service
-      - name: Libraries URL
+      - name: libraries_url
         label: Libraries URL
         widget: string
         required: false
         hint: Web page or directory listing physical branch libraries, opening hours, and locations
-      - name: Mobile library URL
+      - name: mobile_library_url
         label: Mobile library URL
         widget: string
         required: false
         hint: Web page or schedule listing mobile library routes, timetables, and stops
-      - name: Home library service URL
+      - name: home_library_service_url
         label: Home library service URL
         widget: string
         required: false
         hint: Web page providing information on the home library or books-on-wheels delivery service for housebound residents
-      - name: Childrens service URL
+      - name: childrens_service_url
         label: Childrens service URL
         widget: string
         required: false
         hint: Web page detailing children's library services, activities, and early literacy programmes
-      - name: Catalogue URL
+      - name: catalogue_url
         label: Catalogue URL
         widget: string
         required: false
         hint: Online public access catalogue (OPAC) homepage or search URL
-      - name: Join online URL
+      - name: join_online_url
         label: Join online URL
         widget: string
         required: false
         hint: Direct URL for members of the public to register or join the library service online
-      - name: Events URL
+      - name: events_url
         label: Events URL
         widget: string
         required: false
         hint: Web page or booking portal listing library events, activities, and workshops
-      - name: Eventbrite ID
+      - name: eventbrite_id
         label: Eventbrite ID
         widget: string
         required: false
         hint: Eventbrite organiser profile identifier for booking library activities
-      - name: Computer access URL
+      - name: computer_access_url
         label: Computer access URL
         widget: string
         required: false
         hint: Web page providing information on public computer facilities, booking, and acceptable use
-      - name: Wifi access URL
+      - name: wifi_access_url
         label: Wifi access URL
         widget: string
         required: false
         hint: Web page detailing public Wi-Fi access, networks, and usage terms
-      - name: Room booking URL
+      - name: room_booking_url
         label: Room booking URL
         widget: string
         required: false
         hint: Web page or booking portal for hiring meeting rooms, workspaces, or event venues in libraries
-      - name: Volunteer URL
+      - name: volunteer_url
         label: Volunteer URL
         widget: string
         required: false
         hint: Web page providing information and applications for library volunteering opportunities
-      - name: Fees and charges URL
+      - name: fees_and_charges_url
         label: Fees and charges URL
         widget: string
         required: false
         hint: Web page detailing the full schedule of library fees, fines, hire costs, and replacement charges
-      - name: Adult fine
+      - name: adult_fine
         label: Adult fine
         widget: number
         required: false
         hint: Standard overdue fine per day for adult books in GBP (0.00 if fine-free)
         value_type: float
         min: 0
-      - name: Child fine
+      - name: child_fine
         label: Child fine
         widget: number
         required: false
         hint: Standard overdue fine per day for children's books in GBP (0.00 if fine-free)
         value_type: float
         min: 0
-      - name: Fine interval
+      - name: fine_interval
         label: Fine interval
         widget: string
         required: false
         hint: Billing interval for overdue library item fines (e.g. Day, Week)
-      - name: Email address
+      - name: email_address
         label: Email address
         widget: string
         required: false
         hint: Generic public contact or enquiry email address for the library service
-      - name: Phone number
+      - name: phone_number
         label: Phone number
         widget: string
         required: false
         hint: Generic public telephone contact number for the library service
-      - name: App name
+      - name: app_name
         label: App name
         widget: string
         required: false
         hint: Public-facing name of the official mobile library app
-      - name: Android app URL
+      - name: android_app_url
         label: Android app URL
         widget: string
         required: false
         hint: Google Play Store download URL for the service's mobile library application
-      - name: iOS app URL
+      - name: ios_app_url
         label: iOS app URL
         widget: string
         required: false
         hint: Apple App Store download URL for the service's mobile library application
-      - name: Twitter URL
+      - name: twitter_url
         label: Twitter URL
         widget: string
         required: false
         hint: Official Twitter / X profile URL for the library service
-      - name: Facebook URL
+      - name: facebook_url
         label: Facebook URL
         widget: string
         required: false
         hint: Official Facebook page URL for the library service
-      - name: Instagram URL
+      - name: instagram_url
         label: Instagram URL
         widget: string
         required: false
         hint: Official Instagram profile URL for the library service
-      - name: YouTube URL
+      - name: youtube_url
         label: YouTube URL
         widget: string
         required: false
         hint: Official YouTube channel URL for the library service
-      - name: Blog URL
+      - name: bluesky_url
+        label: Bluesky URL
+        widget: string
+        required: false
+        hint: Official Bluesky profile URL for the library service
+      - name: threads_url
+        label: Threads URL
+        widget: string
+        required: false
+        hint: Official Threads profile URL for the library service
+      - name: linkedin_url
+        label: LinkedIn URL
+        widget: string
+        required: false
+        hint: Official LinkedIn organisation page URL for the library service
+      - name: tiktok_url
+        label: TikTok URL
+        widget: string
+        required: false
+        hint: Official TikTok profile URL for the library service
+      - name: blog_url
         label: Blog URL
         widget: string
         required: false
         hint: Official library service blog or online articles URL
-      - name: Podcast URL
+      - name: podcast_url
         label: Podcast URL
         widget: string
         required: false
         hint: Official library service podcast or audio broadcasts portal URL
-      - name: Library management system supplier
+      - name: library_management_system_supplier
         label: Library management system supplier
         widget: string
         required: false
         hint: Vendor or commercial supplier of the Library Management System (LMS / ILS)
-      - name: Library management system
+      - name: library_management_system
         label: Library management system
         widget: string
         required: false
         hint: Name of the Library Management System (LMS / ILS) software in use
-      - name: Online catalogue system
+      - name: online_catalogue_system
         label: Online catalogue system
         widget: string
         required: false
         hint: Name of the Online Public Access Catalogue (OPAC) or discovery interface in use
-      - name: Ebook supplier
+      - name: ebook_supplier
         label: Ebook supplier
         widget: string
         required: false
         hint: Commercial supplier or platform for digital ebook lending (e.g. Overdrive / Libby, BorrowBox, Bibliotheca)
-      - name: Ebook URL
+      - name: ebook_url
         label: Ebook URL
         widget: string
         required: false
         hint: Direct public URL to the service's ebook lending catalogue or platform
-      - name: Audiobook supplier
+      - name: audiobook_supplier
         label: Audiobook supplier
         widget: string
         required: false
         hint: Commercial supplier or platform for digital e-audiobook lending (e.g. BorrowBox, Overdrive / Libby, Ulverscroft)
-      - name: Audiobook URL
+      - name: audiobook_url
         label: Audiobook URL
         widget: string
         required: false
         hint: Direct public URL to the service's e-audiobook lending catalogue or platform
-      - name: Emagazine supplier
+      - name: emagazine_supplier
         label: Emagazine supplier
         widget: string
         required: false
         hint: Commercial supplier or platform for digital e-magazine lending (e.g. PressReader, OverDrive / Libby, BorrowBox)
-      - name: Enewspaper supplier
+      - name: enewspaper_supplier
         label: Enewspaper supplier
         widget: string
         required: false
         hint: Commercial supplier or platform for digital e-newspaper subscriptions (e.g. PressReader, NewsBank)
-      - name: Online reference subscriptions
+      - name: online_reference_subscriptions
         label: Online reference subscriptions
         widget: string
         required: false
         hint: Semicolon-separated list of major digital reference and subscription resources provided by the service (e.g. 'Ancestry Library Edition; Findmypast; British Newspaper Archive; Theory Test Pro; BFI Replay; Britannica')
-      - name: Green library
+      - name: green_library
         label: Green library
         widget: select
         required: false
@@ -1411,7 +1436,7 @@ collections:
         options:
           - Yes
           - No
-      - name: Notes
+      - name: notes
         label: Notes
         widget: string
         required: false
@@ -1504,12 +1529,12 @@ collections:
     editor:
       preview: false
     fields:
-      - name: Local authority
+      - name: local_authority
         label: Local authority
         widget: string
         required: false
         hint: Local authority responsible for the library service
-      - name: Local authority code
+      - name: local_authority_code
         label: Local authority code
         widget: string
         required: false
@@ -1517,32 +1542,37 @@ collections:
         pattern:
           - ^[ELMNSW][0-9]{8}$
           - Official Government Statistical Service (GSS/ONS) 9-character code for the local authority
-      - name: Library name
+      - name: library_name
         label: Library name
         widget: string
         required: false
         hint: Full public name by which the library branch or service point is known
-      - name: Library code
+      - name: library_code
         label: Library code
         widget: string
         required: false
         hint: Identifier or code used locally or nationally for the library branch
-      - name: Address 1
+      - name: address_1
         label: Address 1
         widget: string
         required: false
         hint: Address line 1
-      - name: Address 2
+      - name: address_2
         label: Address 2
         widget: string
         required: false
         hint: Address line 2
-      - name: Address 3
+      - name: address_3
         label: Address 3
         widget: string
         required: false
         hint: Address line 3
-      - name: Postcode
+      - name: town
+        label: Town or city
+        widget: string
+        required: false
+        hint: Town, city, or locality name for the library building
+      - name: postcode
         label: Postcode
         widget: string
         required: false
@@ -1550,13 +1580,13 @@ collections:
         pattern:
           - ^([A-Z][A-HJ-Y]?[0-9][A-Z0-9]? ?[0-9][A-Z]{2}|GIR ?0A{2})$
           - Postcode for the library building
-      - name: Unique property reference number
+      - name: unique_property_reference_number
         label: Unique property reference number
         widget: number
         required: false
         hint: Unique property reference number for the building unit the library is located in
         value_type: int
-      - name: Latitude
+      - name: latitude
         label: Latitude
         widget: number
         required: false
@@ -1564,7 +1594,7 @@ collections:
         value_type: float
         min: -90
         max: 90
-      - name: Longitude
+      - name: longitude
         label: Longitude
         widget: number
         required: false
@@ -1572,17 +1602,17 @@ collections:
         value_type: float
         min: -180
         max: 180
-      - name: Status
+      - name: status
         label: Status
         widget: select
         required: false
-        hint: Current operating status of the library
+        hint: Current operating status of the library. When 'Closed (permanent)', Year closed must be set.
         options:
           - Open
           - Closed (permanent)
           - Closed (temporary)
           - Planned
-      - name: Statutory
+      - name: statutory
         label: Statutory
         widget: select
         required: false
@@ -1590,7 +1620,7 @@ collections:
         options:
           - Yes
           - No
-      - name: Facility type
+      - name: facility_type
         label: Facility type
         widget: select
         required: false
@@ -1601,7 +1631,7 @@ collections:
           - Archive
           - Mobile library
           - Prison library
-      - name: Type of library
+      - name: type_of_library
         label: Type of library
         widget: select
         required: false
@@ -1612,7 +1642,7 @@ collections:
           - CL
           - CRL
           - ICL
-      - name: Year opened
+      - name: year_opened
         label: Year opened
         widget: number
         required: false
@@ -1620,109 +1650,116 @@ collections:
         value_type: int
         min: 1000
         max: 9999
-      - name: Year closed
+      - name: year_closed
         label: Year closed
         widget: number
         required: false
-        hint: Year the library permanently closed
+        hint: Four-digit year the library permanently closed. When set, Status must be 'Closed (permanent)'.
         value_type: int
         min: 1000
         max: 9999
-      - name: Monday staffed hours
+      - name: temporary_closed_until
+        label: Temporary closure expected reopening
+        widget: date
+        required: false
+        hint: Expected reopening date for temporarily closed libraries
+        format: YYYY-MM-DD
+        date_format: YYYY-MM-DD
+      - name: monday_staffed_hours
         label: Monday staffed hours
         widget: string
         required: false
         hint: Staffed opening hours for Monday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Tuesday staffed hours
+      - name: tuesday_staffed_hours
         label: Tuesday staffed hours
         widget: string
         required: false
         hint: Staffed opening hours for Tuesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Wednesday staffed hours
+      - name: wednesday_staffed_hours
         label: Wednesday staffed hours
         widget: string
         required: false
         hint: Staffed opening hours for Wednesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Thursday staffed hours
+      - name: thursday_staffed_hours
         label: Thursday staffed hours
         widget: string
         required: false
         hint: Staffed opening hours for Thursday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Friday staffed hours
+      - name: friday_staffed_hours
         label: Friday staffed hours
         widget: string
         required: false
         hint: Staffed opening hours for Friday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Saturday staffed hours
+      - name: saturday_staffed_hours
         label: Saturday staffed hours
         widget: string
         required: false
         hint: Staffed opening hours for Saturday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Sunday staffed hours
+      - name: sunday_staffed_hours
         label: Sunday staffed hours
         widget: string
         required: false
         hint: Staffed opening hours for Sunday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Monday unstaffed hours
+      - name: monday_unstaffed_hours
         label: Monday unstaffed hours
         widget: string
         required: false
         hint: Unstaffed opening hours for Monday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Tuesday unstaffed hours
+      - name: tuesday_unstaffed_hours
         label: Tuesday unstaffed hours
         widget: string
         required: false
         hint: Unstaffed opening hours for Tuesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Wednesday unstaffed hours
+      - name: wednesday_unstaffed_hours
         label: Wednesday unstaffed hours
         widget: string
         required: false
         hint: Unstaffed opening hours for Wednesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Thursday unstaffed hours
+      - name: thursday_unstaffed_hours
         label: Thursday unstaffed hours
         widget: string
         required: false
         hint: Unstaffed opening hours for Thursday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Friday unstaffed hours
+      - name: friday_unstaffed_hours
         label: Friday unstaffed hours
         widget: string
         required: false
         hint: Unstaffed opening hours for Friday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Saturday unstaffed hours
+      - name: saturday_unstaffed_hours
         label: Saturday unstaffed hours
         widget: string
         required: false
         hint: Unstaffed opening hours for Saturday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Sunday unstaffed hours
+      - name: sunday_unstaffed_hours
         label: Sunday unstaffed hours
         widget: string
         required: false
         hint: Unstaffed opening hours for Sunday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
-      - name: Special hours
+      - name: special_hours
         label: Special hours
         widget: string
         required: false
         hint: Changes to normal opening hours such as for public holidays
-      - name: Weekly staffed hours
+      - name: weekly_staffed_hours
         label: Weekly staffed hours
         widget: number
         required: false
         hint: Total number of staffed hours per regular week
         value_type: float
         min: 0
-      - name: Weekly total hours
+      - name: weekly_total_hours
         label: Weekly total hours
         widget: number
         required: false
         hint: Total number of open hours (staffed plus unstaffed) per regular week
         value_type: float
         min: 0
-      - name: Automated access system
+      - name: automated_access_system
         label: Automated access system
         widget: string
         required: false
         hint: Automated access control or self-service system used to support visitors during unstaffed opening hours (e.g. Open+, Lyngsoe, Self-service kiosk)
-      - name: Co-located
+      - name: co_located
         label: Co-located
         widget: select
         required: false
@@ -1730,20 +1767,20 @@ collections:
         options:
           - Yes
           - No
-      - name: Co-located with
+      - name: co_located_with
         label: Co-located with
         widget: string
         required: false
         hint: Details of services or facilities co-located with the library. For multiple co-locations, separate values with a semicolon (;), e.g. 'Council customer services; Community centre; Post office'.
-      - name: Guest wifi
+      - name: guest_wifi
         label: Guest wifi
         widget: select
         required: false
-        hint: Whether free public Wi-Fi is available to any visitor without requiring library membership
+        hint: Whether free guest Wi-Fi is available for public use by visitors (infers free public Wi-Fi)
         options:
           - Yes
           - No
-      - name: Member wifi
+      - name: member_wifi
         label: Member wifi
         widget: select
         required: false
@@ -1751,7 +1788,7 @@ collections:
         options:
           - Yes
           - No
-      - name: Public computers
+      - name: public_computers
         label: Public computers
         widget: select
         required: false
@@ -1759,7 +1796,7 @@ collections:
         options:
           - Yes
           - No
-      - name: Printing
+      - name: printing
         label: Printing
         widget: select
         required: false
@@ -1767,7 +1804,7 @@ collections:
         options:
           - Yes
           - No
-      - name: Meeting rooms
+      - name: meeting_rooms
         label: Meeting rooms
         widget: select
         required: false
@@ -1775,7 +1812,15 @@ collections:
         options:
           - Yes
           - No
-      - name: Quiet study space
+      - name: cafe
+        label: Café
+        widget: select
+        required: false
+        hint: Whether an on-site café or public refreshment facility is available
+        options:
+          - Yes
+          - No
+      - name: quiet_study_space
         label: Quiet study space
         widget: select
         required: false
@@ -1783,7 +1828,15 @@ collections:
         options:
           - Yes
           - No
-      - name: Step-free access
+      - name: makerspace
+        label: Makerspace
+        widget: select
+        required: false
+        hint: Whether a makerspace or digital fabrication equipment (such as 3D printers or laser cutters) is available
+        options:
+          - Yes
+          - No
+      - name: step_free_access
         label: Step-free access
         widget: select
         required: false
@@ -1792,7 +1845,7 @@ collections:
           - Yes
           - No
           - Partial
-      - name: Accessible toilet
+      - name: accessible_toilet
         label: Accessible toilet
         widget: select
         required: false
@@ -1800,7 +1853,23 @@ collections:
         options:
           - Yes
           - No
-      - name: Hearing loop
+      - name: baby_changing
+        label: Baby changing
+        widget: select
+        required: false
+        hint: Whether baby changing facilities are available
+        options:
+          - Yes
+          - No
+      - name: changing_places_toilet
+        label: Changing Places toilet
+        widget: select
+        required: false
+        hint: Whether a fully equipped Changing Places accessible toilet is available
+        options:
+          - Yes
+          - No
+      - name: hearing_loop
         label: Hearing loop
         widget: select
         required: false
@@ -1808,27 +1877,58 @@ collections:
         options:
           - Yes
           - No
-      - name: Facilities and services
+      - name: sensory_space
+        label: Sensory space
+        widget: select
+        required: false
+        hint: Whether a dedicated sensory room, sensory space, or designated sensory-friendly hours are provided
+        options:
+          - Yes
+          - No
+      - name: accessible_parking
+        label: Accessible parking
+        widget: select
+        required: false
+        hint: Whether dedicated accessible or disabled parking bays are available on site or nearby
+        options:
+          - Yes
+          - No
+      - name: facilities_and_services
         label: Facilities and services
         widget: string
         required: false
         hint: Semicolon-separated list of all public facilities, amenities, and specialized digital resources available at the library branch (e.g. 'Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; BFI Replay; Meeting rooms')
-      - name: Phone number
+      - name: phone_number
         label: Phone number
         widget: string
         required: false
         hint: Direct public phone number for this specific library branch
-      - name: Email address
+      - name: email_address
         label: Email address
         widget: string
         required: false
         hint: Direct public email address for this library branch, or the general service email if not available
-      - name: URL
+      - name: url
         label: URL
         widget: string
         required: false
         hint: Public web page URL specifically for this library branch
-      - name: Notes
+      - name: catalogue_url
+        label: Catalogue URL
+        widget: string
+        required: false
+        hint: Branch-specific online catalogue URL
+      - name: join_online_url
+        label: Join online URL
+        widget: string
+        required: false
+        hint: Branch-specific online joining URL
+      - name: virtual_tour_url
+        label: Virtual tour URL
+        widget: string
+        required: false
+        hint: 3D or virtual walkthrough tour URL for the library building
+      - name: notes
         label: Notes
         widget: string
         required: false
@@ -1844,10 +1944,10 @@ collections:
         widget: relation
         collection: authorities
         search_fields:
-          - Local authority
+          - local_authority
         value_field: "{{slug}}"
         display_fields:
-          - Local authority
+          - local_authority
         required: false
         hint: Choose the library authority. Leave blank only if it is not known.
       - name: id
@@ -1923,9 +2023,9 @@ collections:
           - name: reason
             label: Reason
             widget: text
-    identifier_field: Library name
+    identifier_field: library_name
     sortable_fields:
-      - Library name
+      - library_name
       - reviewed_on
   - name: contributors
     label: Contributors

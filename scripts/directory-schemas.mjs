@@ -18,8 +18,8 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
   const document = parseDocument(readFileSync(file, 'utf8'))
   const collections = document.get('collections')
   for (const [kind, schemaFile, title] of [
-    ['libraries', 'libraries', 'Library name'],
-    ['authorities', 'library-services', 'Local authority']
+    ['libraries', 'libraries', 'library_name'],
+    ['authorities', 'library-services', 'local_authority']
   ]) {
     const index = collections.items.findIndex((item) => item.get('name') === kind)
     const collection = collections.items[index]
@@ -41,25 +41,33 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
     )
     const relation = metadata.find((field) => field.name === 'authority')
     if (relation) {
-      relation.search_fields = ['Local authority']
-      relation.display_fields = ['Local authority']
+      relation.search_fields = ['local_authority']
+      relation.display_fields = ['local_authority']
     }
     const dataFields = schema.fields.map((field) => {
       const constraints = field.constraints || {}
+      const fieldName = field.name
+      const fieldLabel = field.title || field.name
       const result = {
-        name: field.name,
-        label: field.name,
+        name: fieldName,
+        label: fieldLabel,
         widget: constraints.enum
           ? 'select'
           : ['integer', 'number', 'year'].includes(field.type)
             ? 'number'
-            : 'string',
+            : field.type === 'date'
+              ? 'date'
+              : 'string',
         required: false,
         hint: field.description
       }
+      if (field.type === 'date') {
+        result.format = 'YYYY-MM-DD'
+        result.date_format = 'YYYY-MM-DD'
+      }
       if (constraints.enum)
         result.options =
-          field.name === 'Country'
+          fieldName === 'Country' || field.name === 'country'
             ? Array.from(new Set([...constraints.enum, 'Crown Dependencies']))
             : constraints.enum
       if (result.widget === 'number') {
@@ -72,7 +80,11 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         }
       }
       if (constraints.pattern) result.pattern = [constraints.pattern, field.description]
-      if (field.type === 'string' && / (un)?staffed hours$/.test(field.name))
+      if (
+        field.type === 'string' &&
+        (/ (un)?staffed hours$/.test(field.title || field.name) ||
+          /_(un)?staffed_hours$/.test(field.name))
+      )
         result.hint = `${field.description}. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.`
       return result
     })

@@ -17,30 +17,47 @@ export class LibraryService {
 
     // Extract social media links
     const channels = [
-      ['Twitter URL', 'twitter'],
-      ['Facebook URL', 'facebook'],
-      ['Instagram URL', 'instagram'],
-      ['YouTube URL', 'youtube']
+      [['Twitter URL', 'twitter_url'], 'twitter'],
+      [['Facebook URL', 'facebook_url'], 'facebook'],
+      [['Instagram URL', 'instagram_url'], 'instagram'],
+      [['YouTube URL', 'youtube_url'], 'youtube'],
+      [['Bluesky URL', 'bluesky_url'], 'bluesky'],
+      [['Threads URL', 'threads_url'], 'threads'],
+      [['LinkedIn URL', 'linkedin_url'], 'linkedin'],
+      [['TikTok URL', 'tiktok_url'], 'tiktok']
     ]
     const social = []
-    for (const [field, channel] of channels) {
-      const url = data[field]
+    for (const [fields, channel] of channels) {
+      const url = fields.map((f) => data[f]).find(Boolean)
       if (url) social.push({ channel, url })
     }
 
-    const hasCanonical = Boolean(data['Local authority'])
+    const hasCanonical = Boolean(data['Local authority'] || data.local_authority)
     if (hasCanonical) {
-      this.name = data['Local authority']
-      this.gss = data['Local authority code']
-      this.country = data.Country
-      this.website = data['Service URL']
-      this.phone = data['Phone number']
-      this.email = data['Email address']
-      this.catalogue = data['Catalogue URL']
-      this.joinOnline = data['Join online URL']
-      this.androidApp = data['Android app URL']
-      this.iOSApp = data['iOS app URL']
-      this.operatingOrganisation = data['Operating organisation']
+      this.name = data['Local authority'] || data.local_authority
+      this.local_authority = this.name
+      this.gss = data['Local authority code'] || data.local_authority_code
+      this.local_authority_code = this.gss
+      this.country = data.Country || data.country
+      this.website = data['Service URL'] || data.service_url
+      this.service_url = this.website
+      this.phone = data['Phone number'] || data.phone_number
+      this.phone_number = this.phone
+      this.email = data['Email address'] || data.email_address
+      this.email_address = this.email
+      this.catalogue = data['Catalogue URL'] || data.catalogue_url
+      this.catalogue_url = this.catalogue
+      this.joinOnline = data['Join online URL'] || data.join_online_url
+      this.join_online_url = this.joinOnline
+      this.androidApp = data['Android app URL'] || data.android_app_url
+      this.android_app_url = this.androidApp
+      this.iOSApp = data['iOS app URL'] || data.ios_app_url
+      this.ios_app_url = this.iOSApp
+      this.operatingOrganisation =
+        data['Operating organisation'] || data.operating_organisation
+      this.operating_organisation = this.operatingOrganisation
+      this.about =
+        data['About the library service'] || data.about || record.about || undefined
       this.social = social
     }
 

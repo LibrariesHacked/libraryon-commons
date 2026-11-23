@@ -1,7 +1,8 @@
 {
   "fields": [
     {
-      "name": "Local authority",
+      "name": "local_authority",
+      "title": "Local authority",
       "description": "Name of the local authority responsible for the library service",
       "type": "string",
       "format": "default",
@@ -10,7 +11,8 @@
       }
     },
     {
-      "name": "Local authority code",
+      "name": "local_authority_code",
+      "title": "Local authority code",
       "description": "Official Government Statistical Service (GSS/ONS) 9-character code for the authority",
       "type": "string",
       "format": "default",
@@ -21,7 +23,8 @@
       }
     },
     {
-      "name": "Country",
+      "name": "country",
+      "title": "Country",
       "description": "Country within the United Kingdom or Crown Dependencies",
       "type": "string",
       "format": "default",
@@ -37,7 +40,18 @@
       }
     },
     {
-      "name": "Local authority department",
+      "name": "about",
+      "title": "About the library service",
+      "description": "Narrative overview of the public library service, community focus, and history",
+      "type": "string",
+      "format": "default",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "local_authority_department",
+      "title": "Local authority department",
       "description": "Name of the local authority department or directorate responsible for the library service",
       "type": "string",
       "format": "default",
@@ -46,7 +60,8 @@
       }
     },
     {
-      "name": "Governance model",
+      "name": "governance_model",
+      "title": "Governance model",
       "description": "Overall governance or operating model of the statutory library service",
       "type": "string",
       "format": "default",
@@ -61,7 +76,8 @@
       }
     },
     {
-      "name": "Operating organisation",
+      "name": "operating_organisation",
+      "title": "Operating organisation",
       "description": "Organisation delivering the service if not run directly in-house by the local authority (e.g. public sector mutual, charitable trust, or commissioned leisure contractor)",
       "type": "string",
       "format": "default",
@@ -70,7 +86,8 @@
       }
     },
     {
-      "name": "Consortium",
+      "name": "consortium",
+      "title": "Consortium",
       "description": "Shared library consortium or regional technical partnership (e.g. LibrariesWest, The Libraries Consortium, SELMS)",
       "type": "string",
       "format": "default",
@@ -79,7 +96,8 @@
       }
     },
     {
-      "name": "Service URL",
+      "name": "service_url",
+      "title": "Service URL",
       "description": "The main public web portal or homepage for the library service",
       "type": "string",
       "format": "uri",
@@ -88,7 +106,8 @@
       }
     },
     {
-      "name": "Libraries URL",
+      "name": "libraries_url",
+      "title": "Libraries URL",
       "description": "Web page or directory listing physical branch libraries, opening hours, and locations",
       "type": "string",
       "format": "uri",
@@ -97,7 +116,8 @@
       }
     },
     {
-      "name": "Mobile library URL",
+      "name": "mobile_library_url",
+      "title": "Mobile library URL",
       "description": "Web page or schedule listing mobile library routes, timetables, and stops",
       "type": "string",
       "format": "uri",
@@ -106,7 +126,8 @@
       }
     },
     {
-      "name": "Home library service URL",
+      "name": "home_library_service_url",
+      "title": "Home library service URL",
       "description": "Web page providing information on the home library or books-on-wheels delivery service for housebound residents",
       "type": "string",
       "format": "uri",
@@ -115,7 +136,8 @@
       }
     },
     {
-      "name": "Childrens service URL",
+      "name": "childrens_service_url",
+      "title": "Childrens service URL",
       "description": "Web page detailing children's library services, activities, and early literacy programmes",
       "type": "string",
       "format": "uri",
@@ -124,7 +146,8 @@
       }
     },
     {
-      "name": "Catalogue URL",
+      "name": "catalogue_url",
+      "title": "Catalogue URL",
       "description": "Online public access catalogue (OPAC) homepage or search URL",
       "type": "string",
       "format": "uri",
@@ -133,7 +156,8 @@
       }
     },
     {
-      "name": "Join online URL",
+      "name": "join_online_url",
+      "title": "Join online URL",
       "description": "Direct URL for members of the public to register or join the library service online",
       "type": "string",
       "format": "uri",
@@ -142,7 +166,8 @@
       }
     },
     {
-      "name": "Events URL",
+      "name": "events_url",
+      "title": "Events URL",
       "description": "Web page or booking portal listing library events, activities, and workshops",
       "type": "string",
       "format": "uri",
@@ -151,7 +176,8 @@
       }
     },
     {
-      "name": "Eventbrite ID",
+      "name": "eventbrite_id",
+      "title": "Eventbrite ID",
       "description": "Eventbrite organiser profile identifier for booking library activities",
       "type": "string",
       "format": "default",
@@ -160,7 +186,8 @@
       }
     },
     {
-      "name": "Computer access URL",
+      "name": "computer_access_url",
+      "title": "Computer access URL",
       "description": "Web page providing information on public computer facilities, booking, and acceptable use",
       "type": "string",
       "format": "uri",
@@ -169,7 +196,8 @@
       }
     },
     {
-      "name": "Wifi access URL",
+      "name": "wifi_access_url",
+      "title": "Wifi access URL",
       "description": "Web page detailing public Wi-Fi access, networks, and usage terms",
       "type": "string",
       "format": "uri",
@@ -178,7 +206,8 @@
       }
     },
     {
-      "name": "Room booking URL",
+      "name": "room_booking_url",
+      "title": "Room booking URL",
       "description": "Web page or booking portal for hiring meeting rooms, workspaces, or event venues in libraries",
       "type": "string",
       "format": "uri",
@@ -187,7 +216,8 @@
       }
     },
     {
-      "name": "Volunteer URL",
+      "name": "volunteer_url",
+      "title": "Volunteer URL",
       "description": "Web page providing information and applications for library volunteering opportunities",
       "type": "string",
       "format": "uri",
@@ -196,7 +226,8 @@
       }
     },
     {
-      "name": "Fees and charges URL",
+      "name": "fees_and_charges_url",
+      "title": "Fees and charges URL",
       "description": "Web page detailing the full schedule of library fees, fines, hire costs, and replacement charges",
       "type": "string",
       "format": "uri",
@@ -205,7 +236,8 @@
       }
     },
     {
-      "name": "Adult fine",
+      "name": "adult_fine",
+      "title": "Adult fine",
       "description": "Standard overdue fine per day for adult books in GBP (0.00 if fine-free)",
       "type": "number",
       "format": "default",
@@ -215,7 +247,8 @@
       }
     },
     {
-      "name": "Child fine",
+      "name": "child_fine",
+      "title": "Child fine",
       "description": "Standard overdue fine per day for children's books in GBP (0.00 if fine-free)",
       "type": "number",
       "format": "default",
@@ -225,7 +258,8 @@
       }
     },
     {
-      "name": "Fine interval",
+      "name": "fine_interval",
+      "title": "Fine interval",
       "description": "Billing interval for overdue library item fines (e.g. Day, Week)",
       "type": "string",
       "format": "default",
@@ -234,7 +268,8 @@
       }
     },
     {
-      "name": "Email address",
+      "name": "email_address",
+      "title": "Email address",
       "description": "Generic public contact or enquiry email address for the library service",
       "type": "string",
       "format": "email",
@@ -243,7 +278,8 @@
       }
     },
     {
-      "name": "Phone number",
+      "name": "phone_number",
+      "title": "Phone number",
       "description": "Generic public telephone contact number for the library service",
       "type": "string",
       "format": "default",
@@ -252,7 +288,8 @@
       }
     },
     {
-      "name": "App name",
+      "name": "app_name",
+      "title": "App name",
       "description": "Public-facing name of the official mobile library app",
       "type": "string",
       "format": "default",
@@ -261,7 +298,8 @@
       }
     },
     {
-      "name": "Android app URL",
+      "name": "android_app_url",
+      "title": "Android app URL",
       "description": "Google Play Store download URL for the service's mobile library application",
       "type": "string",
       "format": "uri",
@@ -270,7 +308,8 @@
       }
     },
     {
-      "name": "iOS app URL",
+      "name": "ios_app_url",
+      "title": "iOS app URL",
       "description": "Apple App Store download URL for the service's mobile library application",
       "type": "string",
       "format": "uri",
@@ -279,7 +318,8 @@
       }
     },
     {
-      "name": "Twitter URL",
+      "name": "twitter_url",
+      "title": "Twitter URL",
       "description": "Official Twitter / X profile URL for the library service",
       "type": "string",
       "format": "uri",
@@ -288,7 +328,8 @@
       }
     },
     {
-      "name": "Facebook URL",
+      "name": "facebook_url",
+      "title": "Facebook URL",
       "description": "Official Facebook page URL for the library service",
       "type": "string",
       "format": "uri",
@@ -297,7 +338,8 @@
       }
     },
     {
-      "name": "Instagram URL",
+      "name": "instagram_url",
+      "title": "Instagram URL",
       "description": "Official Instagram profile URL for the library service",
       "type": "string",
       "format": "uri",
@@ -306,7 +348,8 @@
       }
     },
     {
-      "name": "YouTube URL",
+      "name": "youtube_url",
+      "title": "YouTube URL",
       "description": "Official YouTube channel URL for the library service",
       "type": "string",
       "format": "uri",
@@ -315,7 +358,48 @@
       }
     },
     {
-      "name": "Blog URL",
+      "name": "bluesky_url",
+      "title": "Bluesky URL",
+      "description": "Official Bluesky profile URL for the library service",
+      "type": "string",
+      "format": "uri",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "threads_url",
+      "title": "Threads URL",
+      "description": "Official Threads profile URL for the library service",
+      "type": "string",
+      "format": "uri",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "linkedin_url",
+      "title": "LinkedIn URL",
+      "description": "Official LinkedIn organisation page URL for the library service",
+      "type": "string",
+      "format": "uri",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "tiktok_url",
+      "title": "TikTok URL",
+      "description": "Official TikTok profile URL for the library service",
+      "type": "string",
+      "format": "uri",
+      "constraints": {
+        "required": false
+      }
+    },
+    {
+      "name": "blog_url",
+      "title": "Blog URL",
       "description": "Official library service blog or online articles URL",
       "type": "string",
       "format": "uri",
@@ -324,7 +408,8 @@
       }
     },
     {
-      "name": "Podcast URL",
+      "name": "podcast_url",
+      "title": "Podcast URL",
       "description": "Official library service podcast or audio broadcasts portal URL",
       "type": "string",
       "format": "uri",
@@ -333,7 +418,8 @@
       }
     },
     {
-      "name": "Library management system supplier",
+      "name": "library_management_system_supplier",
+      "title": "Library management system supplier",
       "description": "Vendor or commercial supplier of the Library Management System (LMS / ILS)",
       "type": "string",
       "format": "default",
@@ -342,7 +428,8 @@
       }
     },
     {
-      "name": "Library management system",
+      "name": "library_management_system",
+      "title": "Library management system",
       "description": "Name of the Library Management System (LMS / ILS) software in use",
       "type": "string",
       "format": "default",
@@ -351,7 +438,8 @@
       }
     },
     {
-      "name": "Online catalogue system",
+      "name": "online_catalogue_system",
+      "title": "Online catalogue system",
       "description": "Name of the Online Public Access Catalogue (OPAC) or discovery interface in use",
       "type": "string",
       "format": "default",
@@ -360,7 +448,8 @@
       }
     },
     {
-      "name": "Ebook supplier",
+      "name": "ebook_supplier",
+      "title": "Ebook supplier",
       "description": "Commercial supplier or platform for digital ebook lending (e.g. Overdrive / Libby, BorrowBox, Bibliotheca)",
       "type": "string",
       "format": "default",
@@ -369,7 +458,8 @@
       }
     },
     {
-      "name": "Ebook URL",
+      "name": "ebook_url",
+      "title": "Ebook URL",
       "description": "Direct public URL to the service's ebook lending catalogue or platform",
       "type": "string",
       "format": "uri",
@@ -378,7 +468,8 @@
       }
     },
     {
-      "name": "Audiobook supplier",
+      "name": "audiobook_supplier",
+      "title": "Audiobook supplier",
       "description": "Commercial supplier or platform for digital e-audiobook lending (e.g. BorrowBox, Overdrive / Libby, Ulverscroft)",
       "type": "string",
       "format": "default",
@@ -387,7 +478,8 @@
       }
     },
     {
-      "name": "Audiobook URL",
+      "name": "audiobook_url",
+      "title": "Audiobook URL",
       "description": "Direct public URL to the service's e-audiobook lending catalogue or platform",
       "type": "string",
       "format": "uri",
@@ -396,7 +488,8 @@
       }
     },
     {
-      "name": "Emagazine supplier",
+      "name": "emagazine_supplier",
+      "title": "Emagazine supplier",
       "description": "Commercial supplier or platform for digital e-magazine lending (e.g. PressReader, OverDrive / Libby, BorrowBox)",
       "type": "string",
       "format": "default",
@@ -405,7 +498,8 @@
       }
     },
     {
-      "name": "Enewspaper supplier",
+      "name": "enewspaper_supplier",
+      "title": "Enewspaper supplier",
       "description": "Commercial supplier or platform for digital e-newspaper subscriptions (e.g. PressReader, NewsBank)",
       "type": "string",
       "format": "default",
@@ -414,7 +508,8 @@
       }
     },
     {
-      "name": "Online reference subscriptions",
+      "name": "online_reference_subscriptions",
+      "title": "Online reference subscriptions",
       "description": "Semicolon-separated list of major digital reference and subscription resources provided by the service (e.g. 'Ancestry Library Edition; Findmypast; British Newspaper Archive; Theory Test Pro; BFI Replay; Britannica')",
       "type": "string",
       "format": "default",
@@ -423,7 +518,8 @@
       }
     },
     {
-      "name": "Green library",
+      "name": "green_library",
+      "title": "Green library",
       "description": "Whether the library service participates in the Green Libraries Partnership initiative",
       "type": "string",
       "format": "default",
@@ -436,7 +532,8 @@
       }
     },
     {
-      "name": "Notes",
+      "name": "notes",
+      "title": "Notes",
       "description": "General administrative or operational notes concerning the library service",
       "type": "string",
       "format": "default",

@@ -79,6 +79,19 @@ Opening hours use standard 24-hour time format:
 - **Closed days:** Leave the field blank. Do not write the word `Closed`.
 - **Self-service or unstaffed hours:** If your library uses open-access technology, record unstaffed hours in the separate unstaffed hours field.
 
+### How to close a library branch
+
+When a library closes permanently, LibraryCommons keeps the historical building record intact so that the building remains on the historical map and in national research archives.
+
+To record a permanent closure:
+
+1. In the branch edit form, find **Status** and select **Closed (permanent)**.
+2. In the **Year closed** field, enter the four-digit year the library closed (for example, `2024`). These two fields must always be completed in unison.
+3. **Keep all other details intact:** Do not delete the library branch, and do not remove its building name, street address, postcode, coordinates, or historical facilities. Keeping this data ensures the building remains accurately geocoded and identifiable on historical maps.
+4. Select **Publish**.
+
+> **Temporary closures:** If a library is closed for refurbishment, repairs, or short-term redevelopment, set **Status** to **Closed (temporary)** and leave **Year closed** blank. You can add a short note in **Special hours** explaining the temporary closure and any interim service arrangements.
+
 ## Update library authority details
 
 To update council-wide services and digital links:

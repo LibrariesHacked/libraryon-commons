@@ -4897,6 +4897,94 @@
       "value": "SW11 6RD",
       "reason": "SW11 6HW was the terminated postcode of the demolished 1960s building; SW11 6RD is the active postcode for the new building opened 2023",
       "evidence": "Wandsworth Borough Council / Better GLL"
+    },
+    {
+      "id": "lib_00b2b1b3-4f21-4414-bf2e-a07346cb8600",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "value": "Open",
+      "reason": "Ashburton Library remained open; upstream LibraryOn mistakenly had permanentlyClosed: true",
+      "evidence": "Croydon Council official library directory"
+    },
+    {
+      "id": "lib_e5912bde-ca1d-450a-b89c-d010f12671e1",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "value": "Open",
+      "reason": "Barmulloch Library is an active open branch; upstream LibraryOn had permanentlyClosed: true",
+      "evidence": "Glasgow Life official libraries directory"
+    },
+    {
+      "id": "lib_d75fd5d1-1e61-4457-a653-4703c21eb4ad",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "value": "Open",
+      "reason": "Wood Avenue Library is an active open branch; upstream LibraryOn had permanentlyClosed: true",
+      "evidence": "Kent County Council official library directory"
+    },
+    {
+      "id": "lib_b4f1b79f-b1d4-4b6d-8537-186157ed723d",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "value": "Open",
+      "reason": "Boundary Street Community Hub is an active open branch; upstream LibraryOn had permanentlyClosed: true",
+      "evidence": "Lincolnshire County Council official libraries directory"
+    },
+    {
+      "id": "lib_4fabe7f7-514f-429d-b026-17c392862cf0",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "value": "Open",
+      "reason": "Guisborough Library is an active open branch; upstream LibraryOn had permanentlyClosed: true",
+      "evidence": "Redcar & Cleveland Borough Council official library directory"
+    },
+    {
+      "id": "lib_383c33ad-4fef-4f9d-9e07-65160e839022",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "value": "Open",
+      "reason": "Paddington Library is an active open branch; upstream LibraryOn had permanentlyClosed: true",
+      "evidence": "Westminster City Council official library directory"
+    },
+    {
+      "id": "lib_4d537e82-19b8-4dc4-8469-43d4d3f60313",
+      "field": "Status",
+      "before": "Closed (permanent)",
+      "value": "Open",
+      "reason": "St Marys Library is the active main branch on the Isles of Scilly; upstream had Facility Not Open",
+      "evidence": "Council of the Isles of Scilly official library directory"
+    },
+    {
+      "id": "lib_c9a93e71-d797-47f7-b437-4addc3784d38",
+      "field": "Postcode",
+      "before": "ME20 6BZ",
+      "value": "TN15 6EL",
+      "reason": "Postcode corrected from out-of-area ME20 6BZ to recorded building address postcode TN15 6EL",
+      "evidence": "src/content/libraries/kent--west-kingsdown-library.json"
+    },
+    {
+      "id": "lib_083ecb88-5959-40f7-9c99-56ac45245cc2",
+      "field": "Postcode",
+      "before": "RM16 2NJ",
+      "value": "RM16 2JU",
+      "reason": "Postcode corrected to match building address on Blackshots Lane (RM16 2JU)",
+      "evidence": "src/content/libraries/thurrock--blackshots-library.json"
+    },
+    {
+      "id": "lib_77f106dd-1da1-4594-8fe8-94993d1db2ac",
+      "field": "Postcode",
+      "before": "RM16 4JD",
+      "value": "RM16 4JP",
+      "reason": "Postcode corrected to match building address on Brentwood Road (RM16 4JP)",
+      "evidence": "src/content/libraries/thurrock--chadwell-information-centre.json"
+    },
+    {
+      "id": 183,
+      "field": "Service URL",
+      "before": "https://libraries.thurrock.gov.uk/home",
+      "value": "https://www.thurrock.gov.uk/libraries",
+      "reason": "Thurrock library service homepage restored from catalogue URL",
+      "evidence": "Thurrock Council official website"
     }
   ],
   "review_resolutions": [
@@ -4909,7 +4997,9 @@
     },
     {
       "check_reason": "Review the supporting evidence in the migration audit",
-      "exclude_kinds": ["postcode-lookup"],
+      "exclude_kinds": [
+        "postcode-lookup"
+      ],
       "status": "approved",
       "decision": "retain-current-values",
       "decided_on": "2026-11-04",
@@ -5069,7 +5159,10 @@
     {
       "kind": "postcode-lookup",
       "condition": "verified-civic-building",
-      "postcodes": ["SE13 6LG", "L3 8EW"],
+      "postcodes": [
+        "SE13 6LG",
+        "L3 8EW"
+      ],
       "status": "approved",
       "decision": "accept-civic-building-postcode",
       "decided_on": "2026-11-06",

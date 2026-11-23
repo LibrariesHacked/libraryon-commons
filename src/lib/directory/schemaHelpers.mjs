@@ -13,6 +13,7 @@ const fieldTypeValidators = {
   integer: z.number().int().safe(),
   number: z.number().finite(),
   year: z.number().int().min(1000).max(9999),
+  date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   string: z.string().min(1)
 }
 
@@ -55,16 +56,37 @@ const manualChecks = z.array(
  */
 export function dataIssues(data, schema) {
   const issues = []
-  const names = new Set(schema.fields.map((field) => field.name))
+  const names = new Set(
+    schema.fields.flatMap((field) => [field.name, field.title].filter(Boolean))
+  )
   for (const key of Object.keys(data)) {
     if (metadataFields.has(key)) continue
     if (!names.has(key)) issues.push({ field: key, code: 'unknown-field', value: data[key] })
   }
   for (const field of schema.fields) {
-    const value = data[field.name]
+    const key =
+      data[field.name] !== undefined && data[field.name] !== null
+        ? field.name
+        : field.title && data[field.title] !== undefined && data[field.title] !== null
+          ? field.title
+          : field.name in data
+            ? field.name
+            : field.title && field.title in data
+              ? field.title
+              : field.name
+    const value =
+      data[field.name] !== undefined && data[field.name] !== null
+        ? data[field.name]
+        : field.title && data[field.title] !== undefined && data[field.title] !== null
+          ? data[field.title]
+          : data[key]
     const constraints = field.constraints || {}
-    const isSessionHours = field.type === 'string' && / (un)?staffed hours$/.test(field.name)
-    const reportIssue = (code) => issues.push({ field: field.name, code, value: value ?? null })
+    const isSessionHours =
+      field.type === 'string' &&
+      (/ (un)?staffed hours$/.test(field.title || field.name) ||
+        /_(un)?staffed_hours$/.test(field.name))
+    const reportField = field.title || key
+    const reportIssue = (code) => issues.push({ field: reportField, code, value: value ?? null })
     if (value === undefined) {
       reportIssue('missing-field')
       continue
@@ -91,7 +113,12 @@ export function dataIssues(data, schema) {
         reportIssue('hours-format')
       }
     }
-    if (field.name === 'Unique property reference number' && (value <= 0 || value > 999999999999)) {
+    if (
+      (field.name === 'unique_property_reference_number' ||
+        field.name === 'Unique property reference number' ||
+        field.title === 'Unique property reference number') &&
+      (value <= 0 || value > 999999999999)
+    ) {
       reportIssue('uprn-range')
     }
   }
@@ -108,10 +135,16 @@ export function dataIssues(data, schema) {
 export function validateRecord(record, kind) {
   const schema = directorySchemas[kind]
   const hasCanonicalData = Boolean(
-    record?.data || (kind === 'libraries' ? record?.['Library name'] : record?.['Local authority'])
+    record?.data ||
+      (kind === 'libraries'
+        ? record?.['library_name'] || record?.['Library name']
+        : record?.['local_authority'] || record?.['Local authority'])
   )
   if (!schema || !hasCanonicalData || !record?.slug) throw new Error(`Invalid ${kind} record`)
-  const allowedFields = new Set([...metadataFields, ...schema.fields.map((field) => field.name)])
+  const allowedFields = new Set([
+    ...metadataFields,
+    ...schema.fields.flatMap((field) => [field.name, field.title].filter(Boolean))
+  ])
   for (const field of Object.keys(record)) {
     if (!allowedFields.has(field)) {
       throw new Error(`${record.slug}: unexpected record field: ${field}`)
@@ -123,6 +156,8 @@ export function validateRecord(record, kind) {
   const data = record.data || record
   const issues = dataIssues(data, schema)
   const exceptions = record.validation_exceptions || []
+  const fieldByName = new Map(schema.fields.map((f) => [f.name, f]))
+  const fieldByTitle = new Map(schema.fields.filter((f) => f.title).map((f) => [f.title, f]))
   for (const issue of issues) {
     if (
       [
@@ -140,7 +175,9 @@ export function validateRecord(record, kind) {
     if (
       !exceptions.some(
         (item) =>
-          item.field === issue.field &&
+          (item.field === issue.field ||
+            fieldByTitle.get(item.field)?.name === issue.field ||
+            fieldByName.get(item.field)?.title === issue.field) &&
           item.code === issue.code &&
           JSON.stringify(item.value) === JSON.stringify(issue.value) &&
           item.reason
@@ -153,7 +190,9 @@ export function validateRecord(record, kind) {
     if (
       !issues.some(
         (issue) =>
-          issue.field === exception.field &&
+          (issue.field === exception.field ||
+            fieldByTitle.get(exception.field)?.name === issue.field ||
+            fieldByName.get(exception.field)?.title === issue.field) &&
           issue.code === exception.code &&
           JSON.stringify(issue.value) === JSON.stringify(exception.value)
       )
@@ -177,11 +216,15 @@ export function prepareDirectoryEdit(record, kind) {
 
   const sourceData = record.data || record
   for (const field of schema.fields) {
-    const raw = sourceData[field.name] ?? record[field.name]
-    const normalized = raw === '' ? null : (raw ?? null)
-    record[field.name] = normalized
-    if (record.data) {
-      record.data[field.name] = normalized
+    const keys = [field.name, field.title].filter((k) => k && k in sourceData)
+    if (!keys.length) keys.push(field.name)
+    for (const key of keys) {
+      const raw = sourceData[key] ?? record[key]
+      const normalized = raw === '' ? null : (raw ?? null)
+      record[key] = normalized
+      if (record.data) {
+        record.data[key] = normalized
+      }
     }
   }
 
@@ -200,7 +243,10 @@ export function prepareDirectoryEdit(record, kind) {
   })
 
   // Validate clean record without extra CMS-internal UI fields
-  const allowedFields = new Set([...metadataFields, ...schema.fields.map((field) => field.name)])
+  const allowedFields = new Set([
+    ...metadataFields,
+    ...schema.fields.flatMap((field) => [field.name, field.title].filter(Boolean))
+  ])
   const cleanRecord = {}
   for (const key of Object.keys(record)) {
     if (allowedFields.has(key)) {
@@ -210,9 +256,13 @@ export function prepareDirectoryEdit(record, kind) {
   if (!cleanRecord.slug) {
     const rawName =
       record['Library name'] ||
+      record['library_name'] ||
       record['Local authority'] ||
+      record['local_authority'] ||
       record.data?.['Library name'] ||
+      record.data?.['library_name'] ||
       record.data?.['Local authority'] ||
+      record.data?.['local_authority'] ||
       'new-entry'
     cleanRecord.slug =
       String(rawName)
@@ -240,9 +290,15 @@ export function validateRecords(records, kind) {
     const seen = new Set()
     for (const record of validatedRecords) {
       const data = record.data || record
-      const value = data[field.name]
+      const key =
+        field.name in data
+          ? field.name
+          : field.title && field.title in data
+            ? field.title
+            : field.name
+      const value = data[key]
       if (value === null) continue
-      if (seen.has(value)) throw new Error(`Duplicate ${kind} ${field.name}: ${value}`)
+      if (seen.has(value)) throw new Error(`Duplicate ${kind} ${key}: ${value}`)
       seen.add(value)
     }
   }

@@ -54,8 +54,9 @@ const authorityKey = (value) =>
     .replace(/\b(council|county|city|of|borough|royal|metropolitan|district|london)\b/g, '')
     .replace(/\s+/g, ' ')
     .trim()
-/** @param {{fields: {name: string}[]}} schema - Field specification. @returns {object} Complete null-valued canonical data object. */
-const blank = (schema) => Object.fromEntries(schema.fields.map((field) => [field.name, null]))
+/** @param {{fields: {name: string, title?: string}[]}} schema - Field specification. @returns {object} Complete null-valued canonical data object. */
+const blank = (schema) =>
+  Object.fromEntries(schema.fields.map((field) => [field.title || field.name, null]))
 /** @param {unknown} value - Historical year text. @returns {number|null} Exact four-digit year, without guessing decades. */
 const year = (value) => (/^\d{4}$/.test(String(value ?? '').trim()) ? Number(value) : null)
 /** @param {unknown} value - Authority identifier. @returns {string|null} Schema-compatible GSS code, excluding placeholders. */
@@ -873,7 +874,9 @@ export function planMatches(original, inputs, overrides = {}) {
  * @returns {object} Acceptance, reason, and distance/provenance when available.
  */
 export function uprnEvidence(source, target, lookups) {
-  const uprn = source.data['Unique property reference number']
+  const uprn =
+    source.data?.unique_property_reference_number ??
+    source.data?.['Unique property reference number']
   const lookup = lookups.uprns?.[uprn]
   if (!uprn || !lookup || lookup.status !== 'found')
     return { accepted: false, reason: 'UPRN not independently located' }

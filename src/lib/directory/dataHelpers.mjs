@@ -7,7 +7,13 @@
  */
 const facilityLabels = {
   'step-free-access': 'Step-free access',
-  'sensory-friendly-environment': 'Sensory-friendly environment',
+  'accessible-toilet': 'Accessible toilet',
+  'accessible-parking': 'Accessible parking',
+  'baby-changing-facilities': 'Baby changing',
+  'changing-places-toilet': 'Changing Places toilet',
+  'sensory-friendly-environment': 'Sensory space',
+  'quiet-room': 'Sensory space',
+  'neurodivergent-spaces': 'Sensory space',
   'dda-compliant': 'DDA-compliant',
   school_college: 'School or college',
   uni_he: 'University or higher education'

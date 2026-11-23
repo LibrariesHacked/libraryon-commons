@@ -38,24 +38,27 @@ export class Library {
     const data = record?.data || record || {}
 
     // Extract facilities and services from semicolon-delimited lists and explicit boolean fields
-    const services = (data['Facilities and services'] || '')
+    const services = (data['Facilities and services'] || data.facilities_and_services || '')
       .split(';')
       .map((value) => value.trim())
       .filter(Boolean)
       .map((service) => ({ service }))
 
-    for (const [field, service] of [
-      ['Public computers', 'Computers'],
-      ['Printing', 'Printing'],
-      ['Meeting rooms', 'Meeting rooms'],
-      ['Quiet study space', 'Quiet study space'],
-      ['Guest wifi', 'Guest wifi'],
-      ['Member wifi', 'Member wifi']
+    for (const [fields, service] of [
+      [['Public computers', 'public_computers'], 'Computers'],
+      [['Printing', 'printing'], 'Printing'],
+      [['Meeting rooms', 'meeting_rooms'], 'Meeting rooms'],
+      [['Quiet study space', 'quiet_study_space'], 'Quiet study space'],
+      [['Guest wifi', 'guest_wifi'], 'Guest wifi'],
+      [['Member wifi', 'member_wifi'], 'Member wifi'],
+      [['Makerspace', 'makerspace'], 'Makerspace'],
+      [['Café', 'cafe'], 'Cafe']
     ]) {
-      if (data[field] === 'Yes' && !services.some((item) => item.service === service)) {
+      const val = fields.map((f) => data[f]).find((v) => v !== undefined)
+      if (val === 'Yes' && !services.some((item) => item.service === service)) {
         services.push({ service })
       }
-      if (data[field] === 'No') {
+      if (val === 'No') {
         const index = services.findIndex((item) => item.service === service)
         if (index >= 0) services.splice(index, 1)
       }
@@ -63,15 +66,20 @@ export class Library {
 
     // Extract accessibility features
     const accessibility = []
-    for (const [field, label] of [
-      ['Step-free access', 'step-free-access'],
-      ['Accessible toilet', 'accessible-toilet'],
-      ['Hearing loop', 'hearing-loop-system']
+    for (const [fields, label] of [
+      [['Step-free access', 'step_free_access'], 'step-free-access'],
+      [['Accessible toilet', 'accessible_toilet'], 'accessible-toilet'],
+      [['Hearing loop', 'hearing_loop'], 'hearing-loop-system'],
+      [['Accessible parking', 'accessible_parking'], 'accessible-parking'],
+      [['Changing Places toilet', 'changing_places_toilet'], 'changing-places-toilet'],
+      [['Sensory space', 'sensory_space'], 'sensory-friendly-environment'],
+      [['Baby changing', 'baby_changing'], 'baby-changing-facilities']
     ]) {
-      if (data[field] === 'Yes' && !accessibility.includes(label)) {
+      const val = fields.map((f) => data[f]).find((v) => v !== undefined)
+      if (val === 'Yes' && !accessibility.includes(label)) {
         accessibility.push(label)
       }
-      if (data[field] !== 'Yes' && accessibility.includes(label)) {
+      if (val !== 'Yes' && val !== undefined && accessibility.includes(label)) {
         accessibility.splice(accessibility.indexOf(label), 1)
       }
     }
@@ -85,7 +93,8 @@ export class Library {
         ['staffed', 'Staffed'],
         ['unstaffed', 'Self-service']
       ]) {
-        const value = data[`${day} ${kind} hours`]
+        const value =
+          data[`${day} ${kind} hours`] || data[`${day.toLowerCase()}_${kind}_hours`]
         if (!value) continue
         known = true
         for (const slot of value.split(',')) {
@@ -102,41 +111,72 @@ export class Library {
       }
     }
 
-    const operatingType = data['Type of library']
+    const operatingType = data['Type of library'] || data.type_of_library
 
     if (data && Object.keys(data).length > 0) {
-      this.name = data['Library name'] || record.name || ''
+      this.name = data['Library name'] || data.library_name || record.name || ''
+      this.library_name = this.name
       this.address =
-        [data['Address 1'], data['Address 2'], data['Address 3']].filter(Boolean).join(', ') ||
+        [
+          data['Address 1'] || data.address_1,
+          data['Address 2'] || data.address_2,
+          data['Address 3'] || data.address_3
+        ]
+          .filter(Boolean)
+          .join(', ') ||
         record.address ||
         ''
-      this.postcode = data.Postcode || record.postcode || null
-      this.uprn = data['Unique property reference number'] || record.uprn || null
-      this.latitude = data.Latitude ?? record.latitude ?? null
-      this.longitude = data.Longitude ?? record.longitude ?? null
-      this.phone = data['Phone number'] || record.phone || ''
-      this.email = data['Email address'] || record.email || ''
-      this.website = data.URL || record.website || ''
-      this.notes = data.Notes || record.notes || ''
+      this.town = data['Town or city'] || data.town || record.town || undefined
+      this.postcode = data.Postcode || data.postcode || record.postcode || null
+      this.uprn =
+        data['Unique property reference number'] ||
+        data.unique_property_reference_number ||
+        record.uprn ||
+        null
+      this.unique_property_reference_number = this.uprn
+      this.latitude = data.Latitude ?? data.latitude ?? record.latitude ?? null
+      this.longitude = data.Longitude ?? data.longitude ?? record.longitude ?? null
+      this.phone = data['Phone number'] || data.phone_number || record.phone || ''
+      this.phone_number = this.phone
+      this.email = data['Email address'] || data.email_address || record.email || ''
+      this.email_address = this.email
+      this.website = data.URL || data.url || record.website || ''
+      this.url = this.website
+      this.catalogue =
+        data['Catalogue URL'] || data.catalogue_url || record.catalogue || ''
+      this.catalogue_url = this.catalogue
+      this.joinOnline =
+        data['Join online URL'] || data.join_online_url || record.joinOnline || ''
+      this.join_online_url = this.joinOnline
+      this.virtualTourUrl =
+        data['Virtual tour URL'] || data.virtual_tour_url || record.virtualTourUrl || ''
+      this.virtual_tour_url = this.virtualTourUrl
+      this.temporaryClosedUntil =
+        data['Temporary closure expected reopening'] ||
+        data.temporary_closed_until ||
+        record.tempClosedUntil ||
+        null
+      this.temporary_closed_until = this.temporaryClosedUntil
+      this.notes = data.Notes || data.notes || record.notes || ''
       this.coLocated =
-        data['Co-located'] === 'No'
+        (data['Co-located'] || data.co_located) === 'No'
           ? []
-          : (data['Co-located with'] || '')
+          : (data['Co-located with'] || data.co_located_with || '')
               .split(';')
               .map((value) => value.trim())
               .filter(Boolean)
       this.facilityOperated =
-        data.Status === 'Closed (permanent)'
+        (data.Status || data.status) === 'Closed (permanent)'
           ? 'Closed'
-          : data.Status === 'Closed (temporary)'
+          : (data.Status || data.status) === 'Closed (temporary)'
             ? 'Temporary Closure'
-            : data.Status === 'Planned'
+            : (data.Status || data.status) === 'Planned'
               ? 'Facility Not Open'
               : operatingType
                 ? operationMap[operatingType]
                 : record.facilityOperated || ''
       this.permanentlyClosed = Boolean(
-        data.Status === 'Closed (permanent)' || record.permanentlyClosed
+        (data.Status || data.status) === 'Closed (permanent)' || record.permanentlyClosed
       )
       this.services = services.length ? services : record.services || []
       this.accessibility = accessibility.length ? accessibility : record.accessibility || []

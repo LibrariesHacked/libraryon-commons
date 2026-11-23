@@ -68,11 +68,15 @@ export function checkPostcode(postcode, lookups = {}) {
 export function checkCoordinateOutlier(data, lookups = {}) {
   const postcodes = lookups.postcodes || {}
   const uprns = lookups.uprns || {}
-  const latitude = data?.Latitude
-  const longitude = data?.Longitude
-  const postcode = normalizePostcode(data?.Postcode)
+  const latitude = data?.latitude ?? data?.Latitude
+  const longitude = data?.longitude ?? data?.Longitude
+  const postcode = normalizePostcode(data?.postcode || data?.Postcode)
   const postcodeLookup = postcode ? postcodes[postcode] || null : null
-  const addressText = [data?.['Address 1'], data?.['Address 2'], data?.['Address 3']]
+  const addressText = [
+    data?.address_1 || data?.['Address 1'],
+    data?.address_2 || data?.['Address 2'],
+    data?.address_3 || data?.['Address 3']
+  ]
     .filter(Boolean)
     .join(', ')
   const addressPostcode = extractPostcodeCandidate(addressText)
@@ -98,7 +102,7 @@ export function checkCoordinateOutlier(data, lookups = {}) {
   }
 
   const point = { latitude, longitude }
-  const authorityCode = data?.['Local authority code'] || null
+  const authorityCode = data?.local_authority_code || data?.['Local authority code'] || null
 
   if (
     addressPostcode &&
@@ -136,7 +140,8 @@ export function checkCoordinateOutlier(data, lookups = {}) {
       milesFromPostcode > 15 &&
       (!addressPostcodeLookup?.latitude || distanceMiles(point, addressPostcodeLookup) > 15)
     ) {
-      const uprn = data?.['Unique property reference number']
+      const uprn =
+        data?.unique_property_reference_number || data?.['Unique property reference number']
       const uprnLookup = uprn ? uprns[String(uprn)] : null
       const useUprn =
         uprnLookup?.status === 'found' &&
@@ -378,6 +383,12 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
     manualChecks: { count: 0, byKind: {} },
     postcodes: { total: 0, found: 0, missingLookup: 0, terminated: 0, invalidSyntax: 0, empty: 0 },
     coordinates: { totalWithCoordinates: 0, missingCoordinates: 0, outliers: [] },
+    closures: {
+      closedPermanent: 0,
+      closedWithYear: 0,
+      closedWithoutYear: 0,
+      yearWithoutClosed: []
+    },
     urls: {
       total: 0,
       distinct: 0,
@@ -412,9 +423,31 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
           (report.validationExceptions.byField[exception.field] || 0) + 1
       }
 
+      // Check Closure Status and Year Consistency
+      const isClosed = (data.status || data.Status) === 'Closed (permanent)'
+      const yearClosedVal = data.year_closed ?? data['Year closed']
+      const hasYearClosed = yearClosedVal !== null && yearClosedVal !== undefined
+      if (isClosed) {
+        report.closures.closedPermanent++
+        if (hasYearClosed) {
+          report.closures.closedWithYear++
+        } else {
+          report.closures.closedWithoutYear++
+        }
+      } else if (hasYearClosed) {
+        report.closures.yearWithoutClosed.push({
+          id,
+          file,
+          name: data.library_name || data['Library name'],
+          status: data.status || data.Status,
+          yearClosed: yearClosedVal
+        })
+      }
+
       // Check Postcode
       report.postcodes.total++
-      const pcResult = checkPostcode(data.Postcode, lookups.postcodes)
+      const rawPostcode = data.postcode || data.Postcode
+      const pcResult = checkPostcode(rawPostcode, lookups.postcodes)
       if (pcResult.status === 'found') report.postcodes.found++
       else if (pcResult.status === 'missing-lookup') report.postcodes.missingLookup++
       else if (pcResult.status === 'terminated') report.postcodes.terminated++
@@ -422,14 +455,20 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
       else if (pcResult.status === 'empty') {
         report.postcodes.empty++
         const extracted = extractPostcodeCandidate(
-          [data['Address 1'], data['Address 2'], data['Address 3']].filter(Boolean).join(', ')
+          [
+            data.address_1 || data['Address 1'],
+            data.address_2 || data['Address 2'],
+            data.address_3 || data['Address 3']
+          ]
+            .filter(Boolean)
+            .join(', ')
         )
         if (extracted) {
           report.candidates.push({
             id,
             file,
             collection: 'libraries',
-            field: 'Postcode',
+            field: 'postcode',
             before: null,
             candidate: extracted,
             reason: 'Postcode extracted from address text'
@@ -447,11 +486,11 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
           report.coordinates.outliers.push({
             id,
             file,
-            name: data['Library name'],
+            name: data.library_name || data['Library name'],
             status: coordinateResult.status,
             milesFromPostcode: coordinateResult.milesFromPostcode,
-            latitude: data.Latitude,
-            longitude: data.Longitude,
+            latitude: data.latitude ?? data.Latitude,
+            longitude: data.longitude ?? data.Longitude,
             candidateLatitude: coordinateResult.candidateLatitude,
             candidateLongitude: coordinateResult.candidateLongitude,
             candidatePostcode: coordinateResult.candidatePostcode
@@ -461,8 +500,8 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
               id,
               file,
               collection: 'libraries',
-              field: 'Postcode',
-              before: data.Postcode,
+              field: 'postcode',
+              before: rawPostcode,
               candidate: coordinateResult.candidatePostcode,
               reason: `Postcode out of authority (${coordinateResult.milesFromPostcode} miles from address postcode)`
             })
@@ -475,8 +514,8 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
               id,
               file,
               collection: 'libraries',
-              field: 'Latitude',
-              before: data.Latitude,
+              field: 'latitude',
+              before: data.latitude ?? data.Latitude,
               candidate: coordinateResult.candidateLatitude,
               reason: `Coordinates ${coordinateResult.milesFromPostcode} miles from verified postcode`
             })
@@ -484,8 +523,8 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
               id,
               file,
               collection: 'libraries',
-              field: 'Longitude',
-              before: data.Longitude,
+              field: 'longitude',
+              before: data.longitude ?? data.Longitude,
               candidate: coordinateResult.candidateLongitude,
               reason: `Coordinates ${coordinateResult.milesFromPostcode} miles from verified postcode`
             })
@@ -494,16 +533,17 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
       }
 
       // Check URL
-      if (data.URL) {
-        distinctUrls.add(data.URL)
-        urlRecords.push({ url: data.URL, id, file, field: 'URL', collection: 'libraries' })
-        const urlSyntax = checkUrlSyntax(data.URL)
+      const libraryUrl = data.url || data.URL
+      if (libraryUrl) {
+        distinctUrls.add(libraryUrl)
+        urlRecords.push({ url: libraryUrl, id, file, field: 'url', collection: 'libraries' })
+        const urlSyntax = checkUrlSyntax(libraryUrl)
         if (!urlSyntax.valid) {
           report.urls.syntaxIssues.push({
             id,
             file,
-            field: 'URL',
-            value: data.URL,
+            field: 'url',
+            value: libraryUrl,
             issue: urlSyntax.issue,
             candidate: urlSyntax.candidate
           })
@@ -512,8 +552,8 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
               id,
               file,
               collection: 'libraries',
-              field: 'URL',
-              before: data.URL,
+              field: 'url',
+              before: libraryUrl,
               candidate: urlSyntax.candidate,
               reason: `Fixed URL issue: ${urlSyntax.issue}`
             })
@@ -522,15 +562,16 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
       }
 
       // Check Email
-      if (data['Email address']) {
-        const emailSyntax = checkEmailSyntax(data['Email address'])
+      const libraryEmail = data.email_address || data['Email address']
+      if (libraryEmail) {
+        const emailSyntax = checkEmailSyntax(libraryEmail)
         if (!emailSyntax.valid && emailSyntax.candidate) {
           report.candidates.push({
             id,
             file,
             collection: 'libraries',
-            field: 'Email address',
-            before: data['Email address'],
+            field: 'email_address',
+            before: libraryEmail,
             candidate: emailSyntax.candidate,
             reason: `Fixed email issue: ${emailSyntax.issue}`
           })
@@ -561,7 +602,11 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
 
       // Check Authority URLs
       for (const [key, value] of Object.entries(data)) {
-        if (key.includes('URL') && value && typeof value === 'string') {
+        if (
+          (key.includes('URL') || key.endsWith('_url')) &&
+          value &&
+          typeof value === 'string'
+        ) {
           distinctUrls.add(value)
           urlRecords.push({ url: value, id, file, field: key, collection: 'authorities' })
           const urlSyntax = checkUrlSyntax(value)
@@ -590,15 +635,16 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
       }
 
       // Check Authority Email
-      if (data['Email address']) {
-        const emailSyntax = checkEmailSyntax(data['Email address'])
+      const authorityEmail = data.email_address || data['Email address']
+      if (authorityEmail) {
+        const emailSyntax = checkEmailSyntax(authorityEmail)
         if (!emailSyntax.valid && emailSyntax.candidate) {
           report.candidates.push({
             id,
             file,
             collection: 'authorities',
-            field: 'Email address',
-            before: data['Email address'],
+            field: 'email_address',
+            before: authorityEmail,
             candidate: emailSyntax.candidate,
             reason: `Fixed email issue: ${emailSyntax.issue}`
           })
@@ -669,6 +715,12 @@ export function formatAuditSummary(report) {
     `  - With coordinates:    ${report.coordinates?.totalWithCoordinates || 0}`,
     `  - Missing coordinates: ${report.coordinates?.missingCoordinates || 0}`,
     `  - Coordinate outliers: ${report.coordinates?.outliers?.length || 0}`,
+    '--------------------------------------------------',
+    'Closures Assessment:',
+    `  - Permanently closed:   ${report.closures?.closedPermanent || 0}`,
+    `  - With closure year:    ${report.closures?.closedWithYear || 0}`,
+    `  - Missing closure year: ${report.closures?.closedWithoutYear || 0} (retained historical or pending verification)`,
+    `  - Open with closed year: ${report.closures?.yearWithoutClosed?.length || 0}`,
     '--------------------------------------------------',
     'Links & URLs Assessment:',
     `  - Total URLs:          ${report.urls.total} (${report.urls.distinct} distinct)`,

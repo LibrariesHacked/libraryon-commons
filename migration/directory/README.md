@@ -93,3 +93,14 @@ Historical LMS/catalogue hints (511 items) and ebook/audiobook supplier hints (4
 After these decisions, 456 audit items remain open: 390 unconfirmed UPRN candidates, 48 non-null postcode problems, nine invalid opening-hour sessions, three authority-name differences, three original UPRN confirmations, and three historical postcode corrections. These are audit-item counts, not distinct-library counts. Replays apply the same explicit decisions; removing a policy makes its corresponding checks eligible for review again.
 
 Prioritize the remaining UPRN/postcode problems and invalid hours. The unmatched-building backlog is deferred, and the historical supplier/software hints are audit-only. Required-field gaps still need actual source evidence, not placeholder values. The test suite verifies all original IDs/routes/dates, every accepted new UPRN's ONS evidence, schema validation, and overwrite protection.
+
+### Reconciled Overrides And Closure Rules (November 2026)
+
+Verified field corrections are committed to [overrides.json](overrides.json) so they remain permanent even if the migration baseline is re-analyzed:
+
+- **Croydon**: Reopened Ashburton Library (`Status: Open`); resolved Shirley Library duplication by restoring Croydon's building record, address, and closure year (`2024`).
+- **Thurrock**: Moved Purfleet Library self-service hours to staffed hours; corrected Blackshots (`RM16 2JU`) and Chadwell (`RM16 4JP`) postcodes; restored Thurrock's main council service URL.
+- **Cornwall**: Cleared dummy SQL `1900` closure years for historical micro libraries; corrected Shortlanesend postcode (`TR4 9DY`) and cleared pub hours.
+- **Other authorities**: Restored `Status: Open` for active branches misclassified as permanently closed in upstream baseline (Barmulloch in Glasgow, Wood Avenue in Kent, Boundary Street in Lincolnshire, Guisborough in Redcar & Cleveland, Paddington in Westminster, St Mary's in Isles of Scilly); corrected West Kingsdown postcode (`TN15 6EL`) and South Shields Central closure year (`2016`).
+
+**Closure Unison Rule**: When a library is permanently closed, `Status: Closed (permanent)` and `Year closed` must be completed in unison. All other building attributes (address, coordinates, UPRN, facilities, and notes) must remain intact to preserve the historical building record.

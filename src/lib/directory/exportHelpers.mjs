@@ -6,7 +6,7 @@ import { stringify } from 'csv-stringify/sync'
 import { dataIssues, directorySchemas } from './schemaHelpers.mjs'
 
 const librarySchema = directorySchemas.libraries
-const csvColumns = librarySchema.fields.map((field) => field.name)
+const csvColumns = librarySchema.fields.map((field) => field.title || field.name)
 const reportCache = new WeakMap()
 
 /**
@@ -23,7 +23,7 @@ export function libraryValidationReport(records) {
     const data = record.data || record
     return dataIssues(data, librarySchema).map((issue) => ({
       id: record.id,
-      name: data['Library name'],
+      name: data['Library name'] || data.library_name,
       csvRecord: index + 2,
       ...issue
     }))
@@ -55,7 +55,15 @@ export function libraryCsv(records, { validOnly = false } = {}) {
   return stringify(
     selectedRecords.map((record) => {
       const data = record.data || record
-      return csvColumns.map((field) => data[field])
+      return librarySchema.fields.map((field) => {
+        const val =
+          data[field.name] !== undefined && data[field.name] !== null
+            ? data[field.name]
+            : field.title && data[field.title] !== undefined && data[field.title] !== null
+              ? data[field.title]
+              : data[field.name] ?? (field.title ? data[field.title] : null) ?? null
+        return val
+      })
     }),
     { header: true, columns: csvColumns, record_delimiter: '\r\n' }
   )

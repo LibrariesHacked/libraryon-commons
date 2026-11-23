@@ -124,7 +124,7 @@ test('CSV exports preserve schema columns, types, quoted values and explicit val
   const rows = parseCsv(csv, { columns: true })
   assert.deepEqual(
     Object.keys(rows[0]),
-    directorySchemas.libraries.fields.map((field) => field.name)
+    directorySchemas.libraries.fields.map((field) => field.title || field.name)
   )
   assert.equal(rows.length, 2)
   assert.equal(rows[0]['Library name'], data['Library name'])
@@ -154,7 +154,13 @@ test('complete and authority-scoped CSVs preserve every record while strict expo
     const entries = currentLibraries.filter((record) => record.authority === authority.slug)
     const rows = parseCsv(libraryCsv(entries), { columns: true })
     assert.equal(rows.length, entries.length)
-    assert.ok(rows.every((row) => row['Local authority'] === authority.data['Local authority']))
+    assert.ok(
+      rows.every(
+        (row) =>
+          (row.local_authority || row['Local authority']) ===
+          (authority.data['Local authority'] || authority.data.local_authority)
+      )
+    )
   }
   const strict = parseCsv(libraryCsv(currentLibraries, { validOnly: true }), { columns: true })
   assert.equal(strict.length, libraryValidationReport(currentLibraries).validRecords)
@@ -701,18 +707,27 @@ test('written schema records preserve every original ID, route and date and subs
       ])
         assert.deepEqual(migrated[field], record[field], `${targetFile}: ${field}`)
       if (kind === 'libraries') {
-        const uprn = (migrated.data || migrated)['Unique property reference number']
+        const migratedData = migrated.data || migrated
+        const uprn =
+          migratedData.unique_property_reference_number ??
+          migratedData['Unique property reference number']
         if (uprn && !record.uprn) {
           const evidence = uprnEvidence(
-            { data: migrated.data || migrated },
-            { postcode: (migrated.data || migrated).Postcode, record },
+            { data: migratedData },
+            { postcode: migratedData.postcode || migratedData.Postcode, record },
             lookups
           )
           assert.ok(evidence.accepted, `${targetFile}: ${evidence.reason}`)
           assert.equal(lookups.uprns[uprn].product, 'nsul')
         }
-        if ((migrated.data || migrated).Status === 'Open')
-          assert.equal((migrated.data || migrated)['Year closed'], null, targetFile)
+        if ((migratedData.status || migratedData.Status) === 'Open')
+          assert.equal(
+            migratedData.year_closed !== undefined
+              ? migratedData.year_closed
+              : migratedData['Year closed'],
+            null,
+            targetFile
+          )
       }
     }
   }
@@ -720,9 +735,13 @@ test('written schema records preserve every original ID, route and date and subs
     readFileSync('src/content/authorities/northern-ireland.json', 'utf8')
   )
   validateRecord(niAuthority, 'authorities')
-  assert.equal((niAuthority.data || niAuthority)['Local authority'], 'Northern Ireland')
-  assert.equal((niAuthority.data || niAuthority)['Local authority code'], 'N92000002')
-  assert.equal((niAuthority.data || niAuthority)['Operating organisation'], 'Libraries NI')
+  const niData = niAuthority.data || niAuthority
+  assert.equal(niData.local_authority || niData['Local authority'], 'Northern Ireland')
+  assert.equal(niData.local_authority_code || niData['Local authority code'], 'N92000002')
+  assert.equal(
+    niData.operating_organisation || niData['Operating organisation'],
+    'Libraries NI'
+  )
   assert.ok(report.summary.filledUprns > 0)
   for (const added of report.added) {
     assert.ok(added.yearClosed)
