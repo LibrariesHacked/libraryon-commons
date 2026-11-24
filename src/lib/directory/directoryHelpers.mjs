@@ -25,13 +25,17 @@ export function createDirectory(
   validateRecords(
     requireCanonical
       ? authorityRecords
-      : authorityRecords.filter((record) => record.data || record['Local authority']),
+      : authorityRecords.filter(
+          (record) => record.data || record.local_authority || record['Local authority']
+        ),
     'authorities'
   )
   validateRecords(
     requireCanonical
       ? libraryRecords
-      : libraryRecords.filter((record) => record.data || record['Library name']),
+      : libraryRecords.filter(
+          (record) => record.data || record.library_name || record['Library name']
+        ),
     'libraries'
   )
 

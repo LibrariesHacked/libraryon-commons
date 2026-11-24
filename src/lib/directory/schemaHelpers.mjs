@@ -286,14 +286,10 @@ export function prepareDirectoryEdit(record, kind) {
   }
   if (!cleanRecord.slug) {
     const rawName =
+      record.library_name ||
       record['Library name'] ||
-      record['library_name'] ||
+      record.local_authority ||
       record['Local authority'] ||
-      record['local_authority'] ||
-      record.data?.['Library name'] ||
-      record.data?.['library_name'] ||
-      record.data?.['Local authority'] ||
-      record.data?.['local_authority'] ||
       'new-entry'
     cleanRecord.slug =
       String(rawName)

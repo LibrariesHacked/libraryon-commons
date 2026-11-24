@@ -9,67 +9,59 @@ export class LibraryService {
   /**
    * Construct a LibraryService instance from a canonical directory record.
    *
-   * @param {object} record - Canonical authority record with `data` matching Table Schema.
+   * @param {object} record - Canonical authority record matching Table Schema.
    */
-  constructor(record) {
+  constructor(record = {}) {
     Object.assign(this, record)
-    const data = record?.data || record || {}
+    const flat = record.data ? { ...record.data, ...record } : record
 
     // Extract social media links
     const channels = [
-      [['Twitter URL', 'twitter_url'], 'twitter'],
-      [['Facebook URL', 'facebook_url'], 'facebook'],
-      [['Instagram URL', 'instagram_url'], 'instagram'],
-      [['YouTube URL', 'youtube_url'], 'youtube'],
-      [['Bluesky URL', 'bluesky_url'], 'bluesky'],
-      [['Threads URL', 'threads_url'], 'threads'],
-      [['LinkedIn URL', 'linkedin_url'], 'linkedin'],
-      [['TikTok URL', 'tiktok_url'], 'tiktok']
+      [['twitter_url', 'Twitter URL'], 'twitter'],
+      [['facebook_url', 'Facebook URL'], 'facebook'],
+      [['instagram_url', 'Instagram URL'], 'instagram'],
+      [['youtube_url', 'YouTube URL'], 'youtube'],
+      [['bluesky_url', 'Bluesky URL'], 'bluesky'],
+      [['threads_url', 'Threads URL'], 'threads'],
+      [['linkedin_url', 'LinkedIn URL'], 'linkedin'],
+      [['tiktok_url', 'TikTok URL'], 'tiktok']
     ]
     const social = []
     for (const [fields, channel] of channels) {
-      const url = fields.map((f) => data[f]).find(Boolean)
+      const url = fields.map((f) => flat[f]).find(Boolean)
       if (url) social.push({ channel, url })
     }
 
-    const hasCanonical = Boolean(data['Local authority'] || data.local_authority)
-    if (hasCanonical) {
-      this.name = data['Local authority'] || data.local_authority
-      this.local_authority = this.name
-      this.gss = data['Local authority code'] || data.local_authority_code
-      this.local_authority_code = this.gss
-      this.country = data.Country || data.country
-      this.website = data['Service URL'] || data.service_url
-      this.service_url = this.website
-      this.phone = data['Phone number'] || data.phone_number
-      this.phone_number = this.phone
-      this.email = data['Email address'] || data.email_address
-      this.email_address = this.email
-      this.catalogue = data['Catalogue URL'] || data.catalogue_url
-      this.catalogue_url = this.catalogue
-      this.joinOnline = data['Join online URL'] || data.join_online_url
-      this.join_online_url = this.joinOnline
-      this.androidApp = data['Android app URL'] || data.android_app_url
-      this.android_app_url = this.androidApp
-      this.iOSApp = data['iOS app URL'] || data.ios_app_url
-      this.ios_app_url = this.iOSApp
-      this.operatingOrganisation = data['Operating organisation'] || data.operating_organisation
-      this.operating_organisation = this.operatingOrganisation
-      this.about = data['About the library service'] || data.about || record.about || undefined
-      this.social = social
-    }
+    this.name = flat.local_authority || flat['Local authority'] || flat.name || ''
+    this.local_authority = this.name
+    this.gss = flat.local_authority_code || flat['Local authority code'] || flat.gss || ''
+    this.local_authority_code = this.gss
+    this.country = flat.country || flat.Country || ''
+    this.website = flat.service_url || flat['Service URL'] || flat.website || ''
+    this.service_url = this.website
+    this.phone = flat.phone_number || flat['Phone number'] || flat.phone || ''
+    this.phone_number = this.phone
+    this.email = flat.email_address || flat['Email address'] || flat.email || ''
+    this.email_address = this.email
+    this.catalogue = flat.catalogue_url || flat['Catalogue URL'] || flat.catalogue || ''
+    this.catalogue_url = this.catalogue
+    this.joinOnline = flat.join_online_url || flat['Join online URL'] || flat.joinOnline || ''
+    this.join_online_url = this.joinOnline
+    this.androidApp = flat.android_app_url || flat['Android app URL'] || flat.androidApp || ''
+    this.android_app_url = this.androidApp
+    this.iOSApp = flat.ios_app_url || flat['iOS app URL'] || flat.iOSApp || ''
+    this.ios_app_url = this.iOSApp
+    this.operatingOrganisation =
+      flat.operating_organisation ||
+      flat['Operating organisation'] ||
+      flat.operatingOrganisation ||
+      ''
+    this.operating_organisation = this.operatingOrganisation
+    this.about = flat.about || flat['About the library service'] || undefined
+    this.social = social
 
     if (!this.library_ids) {
       this.library_ids = []
-    }
-
-    if (!record?.data) {
-      Object.defineProperty(this, 'data', {
-        value: this,
-        enumerable: false,
-        configurable: true,
-        writable: true
-      })
     }
   }
 

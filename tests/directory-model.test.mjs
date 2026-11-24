@@ -231,15 +231,13 @@ test('Library model encapsulates address, operatingModel, mapLinks, and nearby s
     name: 'Test Central',
     authority: 'example',
     slug: 'test-central',
-    data: {
-      'Library name': 'Test Central',
-      'Address 1': '10 High Street',
-      Postcode: 'TE1 1ST',
-      Latitude: 51.5,
-      Longitude: -0.1,
-      'Type of library': 'LAL',
-      Status: 'Open'
-    }
+    library_name: 'Test Central',
+    address_1: '10 High Street',
+    postcode: 'TE1 1ST',
+    latitude: 51.5,
+    longitude: -0.1,
+    type_of_library: 'LAL',
+    status: 'Open'
   })
   assert.equal(library.address, '10 High Street')
   assert.equal(library.facilityOperated, 'Local Authority Run')
@@ -252,7 +250,8 @@ test('Library model encapsulates address, operatingModel, mapLinks, and nearby s
   const other = new Library({
     id: 'test-2',
     name: 'Test Branch',
-    data: { Latitude: 51.51, Longitude: -0.1 }
+    latitude: 51.51,
+    longitude: -0.1
   })
   const nearest = library.nearby([other])
   assert.equal(nearest.length, 1)
@@ -262,16 +261,44 @@ test('Library model encapsulates address, operatingModel, mapLinks, and nearby s
 test('LibraryService model encapsulates authority fields and channels', () => {
   const service = new LibraryService({
     slug: 'example',
-    data: {
-      'Local authority': 'Example Council',
-      'Local authority code': 'E09000001',
-      Country: 'England',
-      'Twitter URL': 'https://twitter.com/example'
-    }
+    local_authority: 'Example Council',
+    local_authority_code: 'E09000001',
+    country: 'England',
+    twitter_url: 'https://twitter.com/example'
   })
   assert.equal(service.name, 'Example Council')
   assert.equal(service.gss, 'E09000001')
   assert.equal(service.country, 'England')
   assert.equal(service.hasSocial, true)
   assert.equal(service.url, '/libraries/example/')
+
+  const snakeService = new LibraryService({
+    slug: 'snake-example',
+    local_authority: 'Snake Council',
+    local_authority_code: 'E09000002',
+    country: 'England',
+    twitter_url: 'https://twitter.com/snake'
+  })
+  assert.equal(snakeService.name, 'Snake Council')
+  assert.equal(snakeService.gss, 'E09000002')
+  assert.equal(snakeService.country, 'England')
+  assert.equal(snakeService.hasSocial, true)
+})
+
+test('Library model supports snake_case schema fields and special_hours', () => {
+  const lib = new Library({
+    id: 'test-snake',
+    slug: 'test-snake',
+    authority: 'example',
+    library_name: 'Snake Library',
+    address_1: '12 Snake Lane',
+    postcode: 'SK1 1AA',
+    special_hours: 'Closed on bank holidays',
+    type_of_library: 'LAL',
+    status: 'Open'
+  })
+  assert.equal(lib.name, 'Snake Library')
+  assert.equal(lib.address, '12 Snake Lane')
+  assert.equal(lib.postcode, 'SK1 1AA')
+  assert.equal(lib.openingTimesNotes, 'Closed on bank holidays')
 })

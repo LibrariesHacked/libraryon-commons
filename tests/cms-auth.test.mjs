@@ -138,24 +138,45 @@ test('validateEntrySave allows matching GSS records and blocks unauthorized cros
   }
 
   const manchesterLibrary = {
-    data: {
-      'Local authority': 'Manchester',
-      'Local authority code': 'E08000003',
-      'Library name': 'Central Library'
-    }
+    local_authority: 'Manchester',
+    local_authority_code: 'E08000003',
+    library_name: 'Central Library'
   }
 
   const birminghamLibrary = {
-    data: {
-      'Local authority': 'Birmingham',
-      'Local authority code': 'E08000025',
-      'Library name': 'Library of Birmingham'
-    }
+    local_authority: 'Birmingham',
+    local_authority_code: 'E08000025',
+    library_name: 'Library of Birmingham'
   }
 
   // Allowed: matching GSS code
   assert.doesNotThrow(() => {
     validateEntrySave(manchesterLibrary, 'libraries', serviceUser)
+  })
+
+  // Allowed: matching GSS code using schema field name local_authority_code
+  const herefordshireUser = {
+    allowed: true,
+    email: 'user@herefordshire.gov.uk',
+    role: 'service-editor',
+    isGeneralEditor: false,
+    gssCodes: ['E06000019']
+  }
+
+  const herefordLibrary = {
+    local_authority: 'Herefordshire',
+    local_authority_code: 'E06000019',
+    library_name: 'Hereford Library'
+  }
+
+  const herefordAuthority = {
+    local_authority: 'Herefordshire',
+    local_authority_code: 'E06000019'
+  }
+
+  assert.doesNotThrow(() => {
+    validateEntrySave(herefordLibrary, 'libraries', herefordshireUser)
+    validateEntrySave(herefordAuthority, 'authorities', herefordshireUser)
   })
 
   // Denied: wrong GSS code

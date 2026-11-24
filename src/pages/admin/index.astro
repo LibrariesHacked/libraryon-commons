@@ -164,14 +164,14 @@ const publicSitePath = (value) =>
           const libCol = config.collections?.find((c) => c.name === 'libraries')
           if (libCol) {
             libCol.filter = {
-              field: 'Local authority code',
+              field: 'local_authority_code',
               value: primaryGss
             }
           }
           const authCol = config.collections?.find((c) => c.name === 'authorities')
           if (authCol) {
             authCol.filter = {
-              field: 'Local authority code',
+              field: 'local_authority_code',
               value: primaryGss
             }
           }

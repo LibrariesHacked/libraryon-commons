@@ -33,7 +33,7 @@ export function directoryReviewRows(groups, audit) {
   const authorityNames = new Map(
     (groups.authorities || []).map(({ record }) => {
       const data = record.data || record
-      return [record.slug, data['Local authority']]
+      return [record.slug, data.local_authority || data['Local authority']]
     })
   )
   const rows = []
@@ -48,9 +48,14 @@ export function directoryReviewRows(groups, audit) {
       if (!exceptions.length && !checks.length) continue
       const entry = file.replace(/\.json$/, '')
       const data = record.data || record
-      const name = data[isLibrary ? 'Library name' : 'Local authority']
+      const name = isLibrary
+        ? data.library_name || data['Library name']
+        : data.local_authority || data['Local authority']
       const authority = isLibrary
-        ? authorityNames.get(record.authority) || data['Local authority'] || 'Unassigned'
+        ? authorityNames.get(record.authority) ||
+          data.local_authority ||
+          data['Local authority'] ||
+          'Unassigned'
         : name
       const manual = checks.map((check) => ({
         ...check,

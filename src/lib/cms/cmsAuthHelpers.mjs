@@ -226,7 +226,9 @@ export function validateEntrySave(entryData, collection, userPermissions) {
 
   // Extract authority GSS code from directory entry structure
   const rawGss =
-    entryData?.data?.['Local authority code'] ?? entryData?.['Local authority code'] ?? null
+    entryData?.local_authority_code ??
+    (typeof entryData?.get === 'function' ? entryData.get('local_authority_code') : null) ??
+    null
 
   const targetGss = rawGss ? String(rawGss).trim().toUpperCase() : null
 

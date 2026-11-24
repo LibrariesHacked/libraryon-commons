@@ -98,6 +98,38 @@ test("review worklist follows live flags, prioritizes risks and never attaches a
   assert.ok(!JSON.stringify(rows[0]).includes('unrelated secret'))
   assert.ok(!('exceptions' in reviewIndex(rows)[0]))
   assert.ok(!('manual' in reviewIndex(rows)[0]))
+
+  // Test directoryReviewRows with snake_case directory records
+  const snakeRows = directoryReviewRows(
+    {
+      authorities: [
+        {
+          file: 'snake-auth.json',
+          record: { id: 2, slug: 'snake-auth', local_authority: 'Snake Authority' }
+        }
+      ],
+      libraries: [
+        {
+          file: 'snake-auth--branch.json',
+          record: {
+            id: 'snake-branch',
+            slug: 'branch',
+            authority: 'snake-auth',
+            library_name: 'Snake Branch',
+            manual_checks: [check]
+          }
+        }
+      ]
+    },
+    {
+      review: [
+        { review_id: 'review_one', id: 'snake-branch', kind: 'opening-hours', original: ['09:00-08:00'] }
+      ]
+    }
+  )
+  assert.equal(snakeRows.length, 1)
+  assert.equal(snakeRows[0].name, 'Snake Branch')
+  assert.equal(snakeRows[0].authority, 'Snake Authority')
 })
 
 test('CSV exports preserve schema columns, types, quoted values and explicit validation gaps', () => {
@@ -158,7 +190,7 @@ test('complete and authority-scoped CSVs preserve every record while strict expo
       rows.every(
         (row) =>
           (row.local_authority || row['Local authority']) ===
-          (authority.data['Local authority'] || authority.data.local_authority)
+          (authority.local_authority || authority.data?.local_authority || authority.data?.['Local authority'])
       )
     )
   }
