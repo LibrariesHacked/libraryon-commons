@@ -486,6 +486,7 @@ export function convertLibrary(record, authority, report) {
     'Library name': record.name,
     'Address 1': text(record.address),
     Postcode: normalizePostcode(record.postcode),
+    'Unique Property Reference Number (UPRN)': normalizeUprn(record.uprn),
     'Unique property reference number': normalizeUprn(record.uprn),
     Latitude: record.latitude ?? null,
     Longitude: record.longitude ?? null,
@@ -504,6 +505,7 @@ export function convertLibrary(record, authority, report) {
     'Facilities and services': record.services?.map((item) => item.service).join('; ') || null,
     'Phone number': text(record.phone),
     'Email address': text(record.email),
+    'Website URL': text(record.website),
     URL: text(record.website),
     Notes: text(record.notes)
   })
@@ -876,6 +878,7 @@ export function planMatches(original, inputs, overrides = {}) {
 export function uprnEvidence(source, target, lookups) {
   const uprn =
     source.data?.unique_property_reference_number ??
+    source.data?.['Unique Property Reference Number (UPRN)'] ??
     source.data?.['Unique property reference number']
   const lookup = lookups.uprns?.[uprn]
   if (!uprn || !lookup || lookup.status !== 'found')

@@ -224,8 +224,7 @@
   background: var(--paper);
   text-decoration: none;
   color: var(--ink);
-  transition:
-    border-color 0.15s var(--motion-ease);
+  transition: border-color 0.15s var(--motion-ease);
 }
 .home-data-card:is(:hover, :focus-visible) {
   border-color: var(--line-green-soft);

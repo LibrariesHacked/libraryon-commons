@@ -97,7 +97,7 @@ if (isLocalAuthorities) {
                     <div class="org-card-pills">
                       {auth.country && <StatusPill variant="apricot">{auth.country}</StatusPill>}
                       <StatusPill variant="green">
-                        {(activeLibraryCountByAuthority.get(auth.slug) || 0)} libraries
+                        {activeLibraryCountByAuthority.get(auth.slug) || 0} libraries
                       </StatusPill>
                     </div>
                   </div>

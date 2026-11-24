@@ -1300,9 +1300,14 @@ collections:
         min: 0
       - name: fine_interval
         label: Fine interval
-        widget: string
+        widget: select
         required: false
         hint: Billing interval for overdue library item fines (e.g. Day, Week)
+        options:
+          - Day
+          - Week
+          - Month
+          - Item
       - name: email_address
         label: Email address
         widget: string
@@ -1578,14 +1583,16 @@ collections:
         required: false
         hint: Postcode for the library building
         pattern:
-          - ^([A-Z][A-HJ-Y]?[0-9][A-Z0-9]? ?[0-9][A-Z]{2}|GIR ?0A{2})$
+          - ^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$
           - Postcode for the library building
       - name: unique_property_reference_number
-        label: Unique property reference number
+        label: Unique Property Reference Number (UPRN)
         widget: number
         required: false
         hint: Unique property reference number for the building unit the library is located in
         value_type: int
+        min: 1
+        max: 999999999999
       - name: latitude
         label: Latitude
         widget: number
@@ -1606,7 +1613,7 @@ collections:
         label: Status
         widget: select
         required: false
-        hint: Current operating status of the library. When 'Closed (permanent)', Year closed must be set.
+        hint: Current operating status of the library
         options:
           - Open
           - Closed (permanent)
@@ -1654,7 +1661,7 @@ collections:
         label: Year closed
         widget: number
         required: false
-        hint: Four-digit year the library permanently closed. When set, Status must be 'Closed (permanent)'.
+        hint: Year the library permanently closed
         value_type: int
         min: 1000
         max: 9999
@@ -1669,72 +1676,72 @@ collections:
         label: Monday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours for Monday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: tuesday_staffed_hours
         label: Tuesday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours for Tuesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: wednesday_staffed_hours
         label: Wednesday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours for Wednesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: thursday_staffed_hours
         label: Thursday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours for Thursday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: friday_staffed_hours
         label: Friday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours for Friday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: saturday_staffed_hours
         label: Saturday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours for Saturday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: sunday_staffed_hours
         label: Sunday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours for Sunday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: monday_unstaffed_hours
         label: Monday unstaffed hours
         widget: string
         required: false
-        hint: Unstaffed opening hours for Monday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: tuesday_unstaffed_hours
         label: Tuesday unstaffed hours
         widget: string
         required: false
-        hint: Unstaffed opening hours for Tuesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: wednesday_unstaffed_hours
         label: Wednesday unstaffed hours
         widget: string
         required: false
-        hint: Unstaffed opening hours for Wednesday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: thursday_unstaffed_hours
         label: Thursday unstaffed hours
         widget: string
         required: false
-        hint: Unstaffed opening hours for Thursday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: friday_unstaffed_hours
         label: Friday unstaffed hours
         widget: string
         required: false
-        hint: Unstaffed opening hours for Friday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: saturday_unstaffed_hours
         label: Saturday unstaffed hours
         widget: string
         required: false
-        hint: Unstaffed opening hours for Saturday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: sunday_unstaffed_hours
         label: Sunday unstaffed hours
         widget: string
         required: false
-        hint: Unstaffed opening hours for Sunday. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
       - name: special_hours
         label: Special hours
         widget: string
@@ -1747,6 +1754,7 @@ collections:
         hint: Total number of staffed hours per regular week
         value_type: float
         min: 0
+        max: 168
       - name: weekly_total_hours
         label: Weekly total hours
         widget: number
@@ -1754,6 +1762,7 @@ collections:
         hint: Total number of open hours (staffed plus unstaffed) per regular week
         value_type: float
         min: 0
+        max: 168
       - name: automated_access_system
         label: Automated access system
         widget: string
@@ -1776,7 +1785,7 @@ collections:
         label: Guest wifi
         widget: select
         required: false
-        hint: Whether free guest Wi-Fi is available for public use by visitors (infers free public Wi-Fi)
+        hint: Whether free public Wi-Fi is available to any visitor without requiring library membership
         options:
           - Yes
           - No
@@ -1909,7 +1918,7 @@ collections:
         required: false
         hint: Direct public email address for this library branch, or the general service email if not available
       - name: url
-        label: URL
+        label: Website URL
         widget: string
         required: false
         hint: Public web page URL specifically for this library branch

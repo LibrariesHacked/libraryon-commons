@@ -1,4 +1,7 @@
 {
+  "name": "library-services",
+  "title": "Library services",
+  "version": "2.0.0",
   "fields": [
     {
       "name": "local_authority",
@@ -264,7 +267,13 @@
       "type": "string",
       "format": "default",
       "constraints": {
-        "required": false
+        "required": false,
+        "enum": [
+          "Day",
+          "Week",
+          "Month",
+          "Item"
+        ]
       }
     },
     {
@@ -541,5 +550,11 @@
         "required": false
       }
     }
+  ],
+  "primaryKey": "local_authority_code",
+  "description": "Core details, governance, digital platforms, systems, and operating models for UK public library services.",
+  "homepage": "https://schema.librarydata.uk",
+  "missingValues": [
+    ""
   ]
 }

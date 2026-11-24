@@ -105,42 +105,42 @@ test('CSV exports preserve schema columns, types, quoted values and explicit val
     directorySchemas.libraries.fields.map((field) => [field.name, null])
   )
   Object.assign(data, {
-    'Local authority': 'Example',
-    'Local authority code': 'E09000001',
-    'Library name': 'Central, "Annex"',
-    Postcode: 'SW1A 1AA',
-    Status: 'Open',
-    Statutory: 'Yes',
-    'Type of library': 'LAL',
-    Latitude: 51.5,
-    'Unique property reference number': 100000000001,
-    Notes: 'First line\nSecond line'
+    local_authority: 'Example',
+    local_authority_code: 'E09000001',
+    library_name: 'Central, "Annex"',
+    postcode: 'SW1A 1AA',
+    status: 'Open',
+    statutory: 'Yes',
+    type_of_library: 'LAL',
+    latitude: 51.5,
+    unique_property_reference_number: 100000000001,
+    notes: 'First line\nSecond line'
   })
   const records = [
     { id: 'one', data },
-    { id: 'two', data: { ...data, Statutory: null } }
+    { id: 'two', data: { ...data, statutory: null } }
   ]
   const csv = libraryCsv(records)
   const rows = parseCsv(csv, { columns: true })
   assert.deepEqual(
     Object.keys(rows[0]),
-    directorySchemas.libraries.fields.map((field) => field.title || field.name)
+    directorySchemas.libraries.fields.map((field) => field.name)
   )
   assert.equal(rows.length, 2)
-  assert.equal(rows[0]['Library name'], data['Library name'])
-  assert.equal(rows[0].Notes, data.Notes)
-  assert.equal(rows[0].Latitude, '51.5')
-  assert.equal(rows[0]['Unique property reference number'], '100000000001')
-  assert.equal(rows[0]['Monday staffed hours'], '')
+  assert.equal(rows[0].library_name, data.library_name)
+  assert.equal(rows[0].notes, data.notes)
+  assert.equal(rows[0].latitude, '51.5')
+  assert.equal(rows[0].unique_property_reference_number, '100000000001')
+  assert.equal(rows[0].monday_staffed_hours, '')
   assert.equal(parseCsv(libraryCsv(records, { validOnly: true }), { columns: true }).length, 1)
   const report = libraryValidationReport(records)
   assert.equal(report.totalRecords, 2)
   assert.equal(report.validRecords, 1)
   assert.deepEqual(report.issues[0], {
     id: 'two',
-    name: data['Library name'],
+    name: data.library_name,
     csvRecord: 3,
-    field: 'Statutory',
+    field: 'statutory',
     code: 'required',
     value: null
   })
@@ -471,7 +471,7 @@ test('schema validation rejects unknown fields, wrong values and stale exception
   data.Postcode = 'SW1A 1AA'
   assert.throws(() => validateRecord(record, 'libraries'), /stale validation exception/)
   record.validation_exceptions = record.validation_exceptions.filter(
-    (issue) => issue.field !== 'Postcode'
+    (issue) => issue.field !== 'postcode' && issue.field !== 'Postcode'
   )
   data['Monday staffed hours'] = '9-5'
   assert.throws(() => validateRecord(record, 'libraries'), /hours-format/)
@@ -511,10 +511,18 @@ test('CMS edits materialize missing fields, clear resolved exceptions and reject
     'libraries'
   )
   assert.equal(record.data.Postcode, null)
-  assert.ok(record.validation_exceptions.some((item) => item.field === 'Postcode'))
+  assert.ok(
+    record.validation_exceptions.some(
+      (item) => item.field === 'postcode' || item.field === 'Postcode'
+    )
+  )
   record.data.Postcode = 'SW1A 1AA'
   prepareDirectoryEdit(record, 'libraries')
-  assert.ok(!record.validation_exceptions.some((item) => item.field === 'Postcode'))
+  assert.ok(
+    !record.validation_exceptions.some(
+      (item) => item.field === 'postcode' || item.field === 'Postcode'
+    )
+  )
   record.data['Monday staffed hours'] = ''
   prepareDirectoryEdit(record, 'libraries')
   assert.equal(record.data['Monday staffed hours'], null)
@@ -738,10 +746,7 @@ test('written schema records preserve every original ID, route and date and subs
   const niData = niAuthority.data || niAuthority
   assert.equal(niData.local_authority || niData['Local authority'], 'Northern Ireland')
   assert.equal(niData.local_authority_code || niData['Local authority code'], 'N92000002')
-  assert.equal(
-    niData.operating_organisation || niData['Operating organisation'],
-    'Libraries NI'
-  )
+  assert.equal(niData.operating_organisation || niData['Operating organisation'], 'Libraries NI')
   assert.ok(report.summary.filledUprns > 0)
   for (const added of report.added) {
     assert.ok(added.yearClosed)

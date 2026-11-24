@@ -53,11 +53,9 @@ export class LibraryService {
       this.android_app_url = this.androidApp
       this.iOSApp = data['iOS app URL'] || data.ios_app_url
       this.ios_app_url = this.iOSApp
-      this.operatingOrganisation =
-        data['Operating organisation'] || data.operating_organisation
+      this.operatingOrganisation = data['Operating organisation'] || data.operating_organisation
       this.operating_organisation = this.operatingOrganisation
-      this.about =
-        data['About the library service'] || data.about || record.about || undefined
+      this.about = data['About the library service'] || data.about || record.about || undefined
       this.social = social
     }
 

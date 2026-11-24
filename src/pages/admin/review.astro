@@ -304,7 +304,7 @@ const serialized = JSON.stringify(index).replace(/</g, '\\u003c')
         heading('Validation exceptions', detailBody)
         for (const issue of detail.exceptions) {
           const section = document.createElement('section')
-          heading(`${issue.field}: ${issue.code}`, section, 'h4')
+          heading(`${issue.label || issue.field}: ${issue.code}`, section, 'h4')
           paragraph(issue.reason, section)
           paragraph(
             `Current value: ${issue.value === null ? 'Not recorded' : typeof issue.value === 'string' ? issue.value : JSON.stringify(issue.value)}`,

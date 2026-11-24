@@ -3,10 +3,10 @@
  */
 
 import { stringify } from 'csv-stringify/sync'
-import { dataIssues, directorySchemas } from './schemaHelpers.mjs'
+import { dataIssues, directorySchemas, FIELD_ALIASES } from './schemaHelpers.mjs'
 
 const librarySchema = directorySchemas.libraries
-const csvColumns = librarySchema.fields.map((field) => field.title || field.name)
+const csvColumns = librarySchema.fields.map((field) => field.name)
 const reportCache = new WeakMap()
 
 /**
@@ -56,13 +56,18 @@ export function libraryCsv(records, { validOnly = false } = {}) {
     selectedRecords.map((record) => {
       const data = record.data || record
       return librarySchema.fields.map((field) => {
-        const val =
-          data[field.name] !== undefined && data[field.name] !== null
-            ? data[field.name]
-            : field.title && data[field.title] !== undefined && data[field.title] !== null
-              ? data[field.title]
-              : data[field.name] ?? (field.title ? data[field.title] : null) ?? null
-        return val
+        const candidateKeys = [
+          field.name,
+          field.title,
+          ...[...FIELD_ALIASES.entries()]
+            .filter(([, canonicalName]) => canonicalName === field.name)
+            .map(([alias]) => alias)
+        ].filter(Boolean)
+        const key =
+          candidateKeys.find((k) => data[k] !== undefined && data[k] !== null) ||
+          candidateKeys.find((k) => k in data) ||
+          field.name
+        return data[key] ?? null
       })
     }),
     { header: true, columns: csvColumns, record_delimiter: '\r\n' }

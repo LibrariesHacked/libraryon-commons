@@ -3,7 +3,7 @@
  */
 
 import { readdirSync, readFileSync } from 'node:fs'
-import { validateRecords } from '../directory/schemaHelpers.mjs'
+import { getFieldTitle, validateRecords } from '../directory/schemaHelpers.mjs'
 import audit from '../../../migration/directory/report.json' with { type: 'json' }
 
 const urgentReviewKinds = new Set([
@@ -39,11 +39,14 @@ export function directoryReviewRows(groups, audit) {
   const rows = []
   for (const [collection, entries] of Object.entries(groups)) {
     for (const { file, record } of entries) {
-      const exceptions = record.validation_exceptions || []
+      const isLibrary = collection === 'libraries'
+      const exceptions = (record.validation_exceptions || []).map((issue) => ({
+        ...issue,
+        label: getFieldTitle(issue.field, isLibrary ? 'libraries' : 'authorities')
+      }))
       const checks = record.manual_checks || []
       if (!exceptions.length && !checks.length) continue
       const entry = file.replace(/\.json$/, '')
-      const isLibrary = collection === 'libraries'
       const data = record.data || record
       const name = data[isLibrary ? 'Library name' : 'Local authority']
       const authority = isLibrary

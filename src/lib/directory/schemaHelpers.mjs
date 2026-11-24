@@ -34,6 +34,27 @@ const metadataFields = new Set([
   'manual_checks'
 ])
 
+export const FIELD_ALIASES = new Map([
+  ['Unique property reference number', 'unique_property_reference_number'],
+  ['Unique Property Reference Number (UPRN)', 'unique_property_reference_number'],
+  ['URL', 'url'],
+  ['Website URL', 'url']
+])
+
+/**
+ * Look up the human-readable title for a schema field, falling back to its name.
+ *
+ * @param {string} fieldName - Schema field name or alias.
+ * @param {'libraries'|'authorities'} [kind='libraries'] - Owning directory collection.
+ * @returns {string} Human-readable title for display to users.
+ */
+export function getFieldTitle(fieldName, kind = 'libraries') {
+  const schema = directorySchemas[kind] || directorySchemas.libraries
+  const canonicalName = FIELD_ALIASES.get(fieldName) || fieldName
+  const field = schema.fields.find((f) => f.name === canonicalName || f.title === fieldName)
+  return field?.title || fieldName
+}
+
 const manualChecks = z.array(
   z
     .object({
@@ -56,36 +77,36 @@ const manualChecks = z.array(
  */
 export function dataIssues(data, schema) {
   const issues = []
-  const names = new Set(
-    schema.fields.flatMap((field) => [field.name, field.title].filter(Boolean))
-  )
+  const names = new Set(schema.fields.flatMap((field) => [field.name, field.title].filter(Boolean)))
+  for (const [alias, canonicalName] of FIELD_ALIASES) {
+    if (schema.fields.some((f) => f.name === canonicalName)) {
+      names.add(alias)
+    }
+  }
   for (const key of Object.keys(data)) {
     if (metadataFields.has(key)) continue
     if (!names.has(key)) issues.push({ field: key, code: 'unknown-field', value: data[key] })
   }
   for (const field of schema.fields) {
+    const candidateKeys = [
+      field.name,
+      field.title,
+      ...[...FIELD_ALIASES.entries()]
+        .filter(([, canonicalName]) => canonicalName === field.name)
+        .map(([alias]) => alias)
+    ].filter(Boolean)
+
     const key =
-      data[field.name] !== undefined && data[field.name] !== null
-        ? field.name
-        : field.title && data[field.title] !== undefined && data[field.title] !== null
-          ? field.title
-          : field.name in data
-            ? field.name
-            : field.title && field.title in data
-              ? field.title
-              : field.name
-    const value =
-      data[field.name] !== undefined && data[field.name] !== null
-        ? data[field.name]
-        : field.title && data[field.title] !== undefined && data[field.title] !== null
-          ? data[field.title]
-          : data[key]
+      candidateKeys.find((k) => data[k] !== undefined && data[k] !== null) ||
+      candidateKeys.find((k) => k in data) ||
+      field.name
+    const value = data[key]
     const constraints = field.constraints || {}
     const isSessionHours =
       field.type === 'string' &&
       (/ (un)?staffed hours$/.test(field.title || field.name) ||
         /_(un)?staffed_hours$/.test(field.name))
-    const reportField = field.title || key
+    const reportField = field.name
     const reportIssue = (code) => issues.push({ field: reportField, code, value: value ?? null })
     if (value === undefined) {
       reportIssue('missing-field')
@@ -136,14 +157,17 @@ export function validateRecord(record, kind) {
   const schema = directorySchemas[kind]
   const hasCanonicalData = Boolean(
     record?.data ||
-      (kind === 'libraries'
-        ? record?.['library_name'] || record?.['Library name']
-        : record?.['local_authority'] || record?.['Local authority'])
+    (kind === 'libraries'
+      ? record?.['library_name'] || record?.['Library name']
+      : record?.['local_authority'] || record?.['Local authority'])
   )
   if (!schema || !hasCanonicalData || !record?.slug) throw new Error(`Invalid ${kind} record`)
   const allowedFields = new Set([
     ...metadataFields,
-    ...schema.fields.flatMap((field) => [field.name, field.title].filter(Boolean))
+    ...schema.fields.flatMap((field) => [field.name, field.title].filter(Boolean)),
+    ...[...FIELD_ALIASES.entries()]
+      .filter(([, targetName]) => schema.fields.some((f) => f.name === targetName))
+      .map(([alias]) => alias)
   ])
   for (const field of Object.keys(record)) {
     if (!allowedFields.has(field)) {
@@ -158,6 +182,17 @@ export function validateRecord(record, kind) {
   const exceptions = record.validation_exceptions || []
   const fieldByName = new Map(schema.fields.map((f) => [f.name, f]))
   const fieldByTitle = new Map(schema.fields.filter((f) => f.title).map((f) => [f.title, f]))
+  for (const [alias, targetName] of FIELD_ALIASES) {
+    const field = fieldByName.get(targetName)
+    if (field && !fieldByTitle.has(alias)) fieldByTitle.set(alias, field)
+  }
+  const resolveCanonicalName = (fieldName) =>
+    fieldByName.get(fieldName)?.name ||
+    fieldByTitle.get(fieldName)?.name ||
+    FIELD_ALIASES.get(fieldName) ||
+    fieldName
+  const matchesField = (f1, f2) =>
+    f1 === f2 || resolveCanonicalName(f1) === resolveCanonicalName(f2)
   for (const issue of issues) {
     if (
       [
@@ -175,9 +210,7 @@ export function validateRecord(record, kind) {
     if (
       !exceptions.some(
         (item) =>
-          (item.field === issue.field ||
-            fieldByTitle.get(item.field)?.name === issue.field ||
-            fieldByName.get(item.field)?.title === issue.field) &&
+          matchesField(item.field, issue.field) &&
           item.code === issue.code &&
           JSON.stringify(item.value) === JSON.stringify(issue.value) &&
           item.reason
@@ -190,9 +223,7 @@ export function validateRecord(record, kind) {
     if (
       !issues.some(
         (issue) =>
-          (issue.field === exception.field ||
-            fieldByTitle.get(exception.field)?.name === issue.field ||
-            fieldByName.get(exception.field)?.title === issue.field) &&
+          matchesField(issue.field, exception.field) &&
           issue.code === exception.code &&
           JSON.stringify(issue.value) === JSON.stringify(exception.value)
       )

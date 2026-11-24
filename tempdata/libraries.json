@@ -1,4 +1,7 @@
 {
+  "name": "libraries",
+  "title": "Libraries",
+  "version": "2.0.0",
   "fields": [
     {
       "name": "local_authority",
@@ -89,17 +92,19 @@
       "format": "default",
       "constraints": {
         "required": true,
-        "pattern": "^([A-Z][A-HJ-Y]?[0-9][A-Z0-9]? ?[0-9][A-Z]{2}|GIR ?0A{2})$"
+        "pattern": "^([A-Za-z][A-Ha-hJ-Yj-y]?[0-9][A-Za-z0-9]? ?[0-9][A-Za-z]{2}|[Gg][Ii][Rr] ?0[Aa]{2})$"
       }
     },
     {
       "name": "unique_property_reference_number",
-      "title": "Unique property reference number",
+      "title": "Unique Property Reference Number (UPRN)",
       "description": "Unique property reference number for the building unit the library is located in",
       "type": "integer",
       "format": "default",
       "constraints": {
-        "required": false
+        "required": false,
+        "minimum": 1,
+        "maximum": 999999999999
       }
     },
     {
@@ -129,7 +134,7 @@
     {
       "name": "status",
       "title": "Status",
-      "description": "Current operating status of the library. When 'Closed (permanent)', Year closed must be set.",
+      "description": "Current operating status of the library",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -203,7 +208,7 @@
     {
       "name": "year_closed",
       "title": "Year closed",
-      "description": "Four-digit year the library permanently closed. When set, Status must be 'Closed (permanent)'.",
+      "description": "Year the library permanently closed",
       "type": "year",
       "format": "default",
       "constraints": {
@@ -223,7 +228,7 @@
     {
       "name": "monday_staffed_hours",
       "title": "Monday staffed hours",
-      "description": "Staffed opening hours for Monday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -233,7 +238,7 @@
     {
       "name": "tuesday_staffed_hours",
       "title": "Tuesday staffed hours",
-      "description": "Staffed opening hours for Tuesday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -243,7 +248,7 @@
     {
       "name": "wednesday_staffed_hours",
       "title": "Wednesday staffed hours",
-      "description": "Staffed opening hours for Wednesday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -253,7 +258,7 @@
     {
       "name": "thursday_staffed_hours",
       "title": "Thursday staffed hours",
-      "description": "Staffed opening hours for Thursday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -263,7 +268,7 @@
     {
       "name": "friday_staffed_hours",
       "title": "Friday staffed hours",
-      "description": "Staffed opening hours for Friday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -273,7 +278,7 @@
     {
       "name": "saturday_staffed_hours",
       "title": "Saturday staffed hours",
-      "description": "Staffed opening hours for Saturday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -283,7 +288,7 @@
     {
       "name": "sunday_staffed_hours",
       "title": "Sunday staffed hours",
-      "description": "Staffed opening hours for Sunday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -293,7 +298,7 @@
     {
       "name": "monday_unstaffed_hours",
       "title": "Monday unstaffed hours",
-      "description": "Unstaffed opening hours for Monday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -303,7 +308,7 @@
     {
       "name": "tuesday_unstaffed_hours",
       "title": "Tuesday unstaffed hours",
-      "description": "Unstaffed opening hours for Tuesday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -313,7 +318,7 @@
     {
       "name": "wednesday_unstaffed_hours",
       "title": "Wednesday unstaffed hours",
-      "description": "Unstaffed opening hours for Wednesday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -323,7 +328,7 @@
     {
       "name": "thursday_unstaffed_hours",
       "title": "Thursday unstaffed hours",
-      "description": "Unstaffed opening hours for Thursday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -333,7 +338,7 @@
     {
       "name": "friday_unstaffed_hours",
       "title": "Friday unstaffed hours",
-      "description": "Unstaffed opening hours for Friday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -343,7 +348,7 @@
     {
       "name": "saturday_unstaffed_hours",
       "title": "Saturday unstaffed hours",
-      "description": "Unstaffed opening hours for Saturday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -353,7 +358,7 @@
     {
       "name": "sunday_unstaffed_hours",
       "title": "Sunday unstaffed hours",
-      "description": "Unstaffed opening hours for Sunday",
+      "description": "Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -378,7 +383,8 @@
       "format": "default",
       "constraints": {
         "required": false,
-        "minimum": 0
+        "minimum": 0,
+        "maximum": 168
       }
     },
     {
@@ -389,7 +395,8 @@
       "format": "default",
       "constraints": {
         "required": false,
-        "minimum": 0
+        "minimum": 0,
+        "maximum": 168
       }
     },
     {
@@ -429,7 +436,7 @@
     {
       "name": "guest_wifi",
       "title": "Guest wifi",
-      "description": "Whether free guest Wi-Fi is available for public use by visitors (infers free public Wi-Fi)",
+      "description": "Whether free public Wi-Fi is available to any visitor without requiring library membership",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -498,8 +505,8 @@
     },
     {
       "name": "cafe",
-      "title": "Café",
-      "description": "Whether an on-site café or public refreshment facility is available",
+      "title": "Caf\u00e9",
+      "description": "Whether an on-site caf\u00e9 or public refreshment facility is available",
       "type": "string",
       "format": "default",
       "constraints": {
@@ -669,7 +676,7 @@
     },
     {
       "name": "url",
-      "title": "URL",
+      "title": "Website URL",
       "description": "Public web page URL specifically for this library branch",
       "type": "string",
       "format": "uri",
@@ -720,11 +727,20 @@
   ],
   "foreignKeys": [
     {
-      "fields": "Local authority code",
+      "fields": "local_authority_code",
       "reference": {
         "resource": "library-services.csv",
-        "fields": "Local authority code"
+        "fields": "local_authority_code"
       }
     }
+  ],
+  "description": "Static public library service points, locations, opening hours, facilities, and contact details.",
+  "homepage": "https://schema.librarydata.uk",
+  "missingValues": [
+    ""
+  ],
+  "primaryKey": [
+    "local_authority_code",
+    "library_name"
   ]
 }

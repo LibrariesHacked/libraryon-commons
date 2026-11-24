@@ -93,8 +93,7 @@ export class Library {
         ['staffed', 'Staffed'],
         ['unstaffed', 'Self-service']
       ]) {
-        const value =
-          data[`${day} ${kind} hours`] || data[`${day.toLowerCase()}_${kind}_hours`]
+        const value = data[`${day} ${kind} hours`] || data[`${day.toLowerCase()}_${kind}_hours`]
         if (!value) continue
         known = true
         for (const slot of value.split(',')) {
@@ -129,6 +128,7 @@ export class Library {
       this.town = data['Town or city'] || data.town || record.town || undefined
       this.postcode = data.Postcode || data.postcode || record.postcode || null
       this.uprn =
+        data['Unique Property Reference Number (UPRN)'] ||
         data['Unique property reference number'] ||
         data.unique_property_reference_number ||
         record.uprn ||
@@ -140,13 +140,11 @@ export class Library {
       this.phone_number = this.phone
       this.email = data['Email address'] || data.email_address || record.email || ''
       this.email_address = this.email
-      this.website = data.URL || data.url || record.website || ''
+      this.website = data['Website URL'] || data.URL || data.url || record.website || ''
       this.url = this.website
-      this.catalogue =
-        data['Catalogue URL'] || data.catalogue_url || record.catalogue || ''
+      this.catalogue = data['Catalogue URL'] || data.catalogue_url || record.catalogue || ''
       this.catalogue_url = this.catalogue
-      this.joinOnline =
-        data['Join online URL'] || data.join_online_url || record.joinOnline || ''
+      this.joinOnline = data['Join online URL'] || data.join_online_url || record.joinOnline || ''
       this.join_online_url = this.joinOnline
       this.virtualTourUrl =
         data['Virtual tour URL'] || data.virtual_tour_url || record.virtualTourUrl || ''

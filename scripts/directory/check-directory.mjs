@@ -602,11 +602,7 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
 
       // Check Authority URLs
       for (const [key, value] of Object.entries(data)) {
-        if (
-          (key.includes('URL') || key.endsWith('_url')) &&
-          value &&
-          typeof value === 'string'
-        ) {
+        if ((key.includes('URL') || key.endsWith('_url')) && value && typeof value === 'string') {
           distinctUrls.add(value)
           urlRecords.push({ url: value, id, file, field: key, collection: 'authorities' })
           const urlSyntax = checkUrlSyntax(value)
