@@ -2,7 +2,9 @@
  * @fileoverview Review worklist aggregation and evidence linking for community maintainers.
  */
 
-import { readdirSync, readFileSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
+import { jsonRecordFiles } from '../directory/recordFiles.mjs'
+import { libraryCollectionName } from './libraryCollections.mjs'
 import { getFieldTitle, validateRecords } from '../directory/schemaHelpers.mjs'
 import audit from '../../../migration/directory/report.json' with { type: 'json' }
 
@@ -46,7 +48,11 @@ export function directoryReviewRows(groups, audit) {
       }))
       const checks = record.manual_checks || []
       if (!exceptions.length && !checks.length) continue
-      const entry = file.replace(/\.json$/, '')
+      const entry = file
+        .split(/[\\/]/)
+        .pop()
+        .replace(/\.json$/, '')
+      const editCollection = isLibrary ? libraryCollectionName(record.authority) : collection
       const data = record.data || record
       const name = isLibrary
         ? data.library_name || data['Library name']
@@ -83,16 +89,17 @@ export function directoryReviewRows(groups, audit) {
         })
       }))
       rows.push({
-        key: `${collection}/${entry}`,
+        key: `${editCollection}/${entry}`,
         collection,
+        editCollection,
         entry,
         name,
         authority,
         publicPath: isLibrary
           ? `/libraries/${record.authority || 'unassigned'}/${record.slug}/`
           : `/libraries/${record.slug}/`,
-        editPath: `/admin/#/collections/${collection}/entries/${encodeURIComponent(entry)}`,
-        detailPath: `/admin/review-data/${collection}/${encodeURIComponent(entry)}.json`,
+        editPath: `/admin/#/collections/${editCollection}/entries/${encodeURIComponent(entry)}`,
+        detailPath: `/admin/review-data/${editCollection}/${encodeURIComponent(entry)}.json`,
         exceptionCount: exceptions.length,
         manualCount: checks.length,
         categories: [
@@ -150,7 +157,7 @@ export function reviewCategories(rows) {
 export function loadDirectoryReview() {
   const bundled = import.meta.env?.SSR
     ? {
-        libraries: import.meta.glob('../../content/libraries/*.json', {
+        libraries: import.meta.glob('../../content/libraries/**/*.json', {
           eager: true,
           import: 'default'
         }),
@@ -168,12 +175,10 @@ export function loadDirectoryReview() {
             file: path.split('/').pop(),
             record
           }))
-        : readdirSync(directory)
-            .filter((file) => file.endsWith('.json'))
-            .map((file) => ({
-              file,
-              record: JSON.parse(readFileSync(new URL(file, directory), 'utf8'))
-            }))
+        : jsonRecordFiles(directory).map((file) => ({
+            file,
+            record: JSON.parse(readFileSync(new URL(file, directory), 'utf8'))
+          }))
       validateRecords(
         entries.map(({ record }) => record),
         collection

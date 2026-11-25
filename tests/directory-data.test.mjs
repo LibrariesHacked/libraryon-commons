@@ -23,6 +23,9 @@ import {
 import { tmpdir } from 'node:os'
 import { pathToFileURL } from 'node:url'
 import { join } from 'node:path'
+import { jsonRecordFiles } from '../src/lib/directory/recordFiles.mjs'
+import { libraryRecordFile } from '../src/lib/cms/libraryCollections.mjs'
+import { applyLibrarySlugCorrection } from '../src/lib/directory/slugCorrections.mjs'
 import { gunzipSync } from 'node:zlib'
 import { normalizePostcode, normalizeUprn } from '../src/lib/directory/dataHelpers.mjs'
 import { openingHours, legacyHours } from '../src/lib/directory/openingHoursHelpers.mjs'
@@ -93,7 +96,7 @@ test("review worklist follows live flags, prioritizes risks and never attaches a
     ['Beta', 'Alpha']
   )
   assert.equal(rows[0].authority, 'Example')
-  assert.equal(rows[0].editPath, '/admin/#/collections/libraries/entries/example--beta')
+  assert.equal(rows[0].editPath, '/admin/#/collections/libraries--example/entries/example--beta')
   assert.deepEqual(rows[0].manual[0].evidence[0].original, ['09:00-08:00'])
   assert.ok(!JSON.stringify(rows[0]).includes('unrelated secret'))
   assert.ok(!('exceptions' in reviewIndex(rows)[0]))
@@ -429,9 +432,7 @@ test('every live file contains only canonical data, metadata, exceptions and val
   const report = JSON.parse(readFileSync('migration/directory/report.json', 'utf8'))
   const reviews = new Map(report.review.map((item) => [item.review_id, item]))
   for (const kind of ['libraries', 'authorities']) {
-    for (const file of readdirSync(`src/content/${kind}`).filter((name) =>
-      name.endsWith('.json')
-    )) {
+    for (const file of jsonRecordFiles(`src/content/${kind}`)) {
       const record = JSON.parse(readFileSync(`src/content/${kind}/${file}`, 'utf8'))
       validateRecord(record, kind)
       assert.ok(!('extensions' in record), file)
@@ -740,7 +741,18 @@ test('written schema records preserve every original ID, route and date and subs
         (niSlugs.has(record.authority) ||
           record.slug.includes('larne') ||
           record.postcode?.startsWith('BT'))
-      const targetFile = isNiLib ? `northern-ireland--${record.slug}.json` : file
+      const filename = isNiLib ? `northern-ireland--${record.slug}.json` : file
+      const targetFile =
+        kind === 'libraries'
+          ? libraryRecordFile(
+              filename,
+              applyLibrarySlugCorrection({
+                id: record.id,
+                authority: isNiLib ? 'northern-ireland' : record.authority,
+                slug: record.slug
+              })
+            )
+          : filename
       const migrated = JSON.parse(readFileSync(`src/content/${kind}/${targetFile}`, 'utf8'))
       validateRecord(migrated, kind)
       for (const field of [
@@ -752,7 +764,13 @@ test('written schema records preserve every original ID, route and date and subs
         'reviewed_on',
         'imported_on'
       ])
-        assert.deepEqual(migrated[field], record[field], `${targetFile}: ${field}`)
+        assert.deepEqual(
+          migrated[field],
+          field === 'slug' && kind === 'libraries'
+            ? applyLibrarySlugCorrection(record).slug
+            : record[field],
+          `${targetFile}: ${field}`
+        )
       if (kind === 'libraries') {
         const migratedData = migrated.data || migrated
         const uprn =
@@ -809,19 +827,23 @@ test('migration writes are repeatable, protect editorial edits and never remove 
     { file, record: { ...record, data: {} } },
     { file: 'closed.json', record: { slug: 'closed', data: {} } }
   ]
-  writeFileSync(join(directory, 'src/content/libraries/one.json'), JSON.stringify(record))
+  mkdirSync(join(directory, 'src/content/libraries/unassigned'), { recursive: true })
+  writeFileSync(
+    join(directory, 'src/content/libraries/unassigned/one.json'),
+    JSON.stringify(record)
+  )
   writeMigratedRecords(original, [['libraries', output]], options)
   writeMigratedRecords(original, [['libraries', output]], options)
   writeMigratedRecords(original, [['libraries', output.slice(0, 1)]], options)
-  assert.ok(!existsSync(join(directory, 'src/content/libraries/closed.json')))
+  assert.ok(!existsSync(join(directory, 'src/content/libraries/unassigned/closed.json')))
   assert.throws(() => writeMigratedRecords(original, [], options), /remove original/)
-  writeFileSync(join(directory, 'src/content/libraries/one.json'), '{"edited":true}')
+  writeFileSync(join(directory, 'src/content/libraries/unassigned/one.json'), '{"edited":true}')
   assert.throws(
     () => writeMigratedRecords(original, [['libraries', output]], options),
     /overwrite edited/
   )
   assert.equal(
-    readFileSync(join(directory, 'src/content/libraries/one.json'), 'utf8'),
+    readFileSync(join(directory, 'src/content/libraries/unassigned/one.json'), 'utf8'),
     '{"edited":true}'
   )
 })

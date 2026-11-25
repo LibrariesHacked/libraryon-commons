@@ -4,7 +4,8 @@
 
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { readFileSync, readdirSync } from 'node:fs'
+import { readFileSync } from 'node:fs'
+import { jsonRecordFiles } from '../src/lib/directory/recordFiles.mjs'
 import { parse } from 'yaml'
 import {
   facilitySelections,
@@ -20,9 +21,9 @@ import facilities from '../src/data/cms-facilities.json' with { type: 'json' }
 import authorities from '../src/data/cms-lookups/authorities.json' with { type: 'json' }
 
 const config = parse(readFileSync('public/admin/config.yml', 'utf8'))
-const libraries = readdirSync('src/content/libraries')
-  .filter((file) => file.endsWith('.json'))
-  .map((file) => JSON.parse(readFileSync(`src/content/libraries/${file}`, 'utf8')))
+const libraries = jsonRecordFiles('src/content/libraries').map((file) =>
+  JSON.parse(readFileSync(`src/content/libraries/${file}`, 'utf8'))
+)
 
 test('all existing library facilities, identities and daily sessions survive the controls', () => {
   assert.equal(new Set(facilities).size, 27)

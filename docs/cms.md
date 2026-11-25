@@ -26,7 +26,9 @@ The left-hand menu groups content into collections:
 | Organisations              | Organisation profiles                                                         |
 
 General editors can edit all these collections. Service editors can save library and authority
-records for their assigned local authorities.
+records for their assigned local authorities. Libraries are grouped into a separate collection for
+each service, such as **Libraries — Manchester**. Service editors see only their assigned services;
+general editors see all services and **Libraries — Unassigned**.
 
 ## Saving and publishing
 
@@ -44,12 +46,13 @@ should be reported to a maintainer.
 
 ### Authority and branch details
 
-Choose a library's authority in the first field. The picker displays its name and GSS code together.
-Saving fills in both values automatically.
+Open the library collection for the relevant service. Its authority is set automatically, including
+the name and GSS code. A service list retrieves only that service's library files.
 
 The authority relationship identifies the service record used by the website. The saved name and
-code also appear in directory exports. Editors only need to choose the authority once. An unresolved
-relationship can remain blank without clearing its existing name and code.
+code also appear in directory exports. Unassigned records keep their existing name and code.
+To transfer a library to another service, ask a maintainer to update its authority and move its file
+to the matching service folder.
 
 Authority records hold service-wide information. Branch records hold details specific to a location.
 For example, a service's main catalogue belongs in **Library Authorities**, while a branch's
@@ -166,6 +169,13 @@ general-editor permissions. Stop both servers when finished.
 
 The browser loads Decap CMS **3.18.0** with its standard Git Gateway backend. The complete
 configuration is embedded in the editor page, avoiding a second configuration download.
+The single Libraries form in the configuration is a template: initialization expands it into
+ordinary Decap folder collections using the authority lookup list. Library files live in
+`src/content/libraries/<authority>/<slug>.json`. Filenames use the existing library slug without
+repeating the authority. IDs and public URLs are unchanged.
+The 16 corrected legacy slugs are listed in
+[library-slug-changes.json](../migration/directory/library-slug-changes.json); their old public URLs
+redirect to the corrected ones.
 
 Small extensions provide archive selection, page components and directory controls. The facilities
 control uses Decap's native select while keeping the directory's semicolon-separated storage format.
@@ -197,6 +207,14 @@ to push to `main`. Token-generated commits do not start another push workflow.
 
 Authority lookups include the name and GSS code used during saves. The editor embeds this small
 identity list, so resolving a selection needs no additional backend request.
+Adding an authority also adds its library collection after the next deployment. Service editors'
+authority forms use native file collections, so multi-service accounts retrieve only their assigned
+authority records.
+
+For the initial folder migration, close old editor tabs before deployment and reload the CMS
+afterward. The repeatable `node scripts/directory/split-libraries.mjs` command moves flat files or
+renames prefixed files in service folders without rewriting them, and updates migration replay paths.
+Subsequent directory imports write directly into service folders using slug-only filenames.
 
 ### Further reading
 

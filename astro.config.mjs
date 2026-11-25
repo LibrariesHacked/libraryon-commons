@@ -7,6 +7,7 @@ import { createHash } from 'node:crypto'
 import { readFileSync } from 'node:fs'
 import { unified } from '@astrojs/markdown-remark'
 import settings from './src/data/settings.json' with { type: 'json' }
+import { librarySlugRedirects } from './src/lib/directory/slugCorrections.mjs'
 import { preservedLinks } from './src/lib/content/markdownHelpers.mjs'
 import remarkDirective from 'remark-directive'
 import { contentDirectives } from './src/lib/content/contentDirectives.mjs'
@@ -26,12 +27,15 @@ export default defineConfig({
   devToolbar: { enabled: false },
   site: process.env.SITE_URL || settings.site.url || undefined,
   base,
-  redirects: Object.fromEntries(
-    settings.redirects.map((redirect) => [
-      redirect.from.endsWith('/') ? redirect.from : `${redirect.from}/`,
-      redirect.to
-    ])
-  ),
+  redirects: {
+    ...librarySlugRedirects,
+    ...Object.fromEntries(
+      settings.redirects.map((redirect) => [
+        redirect.from.endsWith('/') ? redirect.from : `${redirect.from}/`,
+        redirect.to
+      ])
+    )
+  },
   markdown: {
     processor: unified({
       remarkPlugins: [remarkDirective, contentDirectives],

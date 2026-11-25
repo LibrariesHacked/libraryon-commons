@@ -1,0 +1,102 @@
+{
+  "date": "2026-11-25",
+  "reason": "Approved slug cleanup during migration to service folders and slug-only filenames. Remove trailing/repeated hyphens and normalize case; preserve IDs, source URLs and dates. Redirect old public routes.",
+  "changes": [
+    {
+      "id": "lib_4709e4ff-58dc-4370-8dad-7ba0f4585f65",
+      "authority": "aberdeenshire",
+      "before": "strichen-library-",
+      "after": "strichen-library"
+    },
+    {
+      "id": "lib_344814ae-7b9b-4d44-81e5-583a974cab30",
+      "authority": "blackburn-with-darwen",
+      "before": "mill-hill-library-",
+      "after": "mill-hill-library"
+    },
+    {
+      "id": "lib_8a9e51d2-443c-49a1-977b-71090e014e2b",
+      "authority": "cumberland",
+      "before": "longtown-",
+      "after": "longtown"
+    },
+    {
+      "id": "lib_49a7f80c-67b9-4968-b2a0-234f4217eecf",
+      "authority": "dundee-city",
+      "before": "douglas-community-library-",
+      "after": "douglas-community-library"
+    },
+    {
+      "id": "lib_19d14e8c-87b4-4af6-8cbb-07b68616be91",
+      "authority": "dundee-city",
+      "before": "lochee-community-library-",
+      "after": "lochee-community-library"
+    },
+    {
+      "id": "lib_d33dc034-ec3b-4a0a-a407-47e4cb6bd8d8",
+      "authority": "fife",
+      "before": "kirkcaldy-galleries-",
+      "after": "kirkcaldy-galleries"
+    },
+    {
+      "id": "lib_a31481af-273a-4997-bdc1-ace7d4cb9285",
+      "authority": "hammersmith-and-fulham",
+      "before": "hammersmith-library-including-local-studies--archives",
+      "after": "hammersmith-library-including-local-studies-archives"
+    },
+    {
+      "id": "lib_ab9eff22-0d16-4a07-a721-b0d695666e08",
+      "authority": "hounslow",
+      "before": "beavers-community-hub-and-Library",
+      "after": "beavers-community-hub-and-library"
+    },
+    {
+      "id": "lib_f80531d2-28ef-4c81-9340-a5fe76fa2da0",
+      "authority": "hounslow",
+      "before": "Chiswick-community-hub-and-library",
+      "after": "chiswick-community-hub-and-library"
+    },
+    {
+      "id": "lib_1de447b6-0113-424a-a004-34cf501a8ffa",
+      "authority": "nottinghamshire",
+      "before": "Rainworth-Community-Partnership-Library",
+      "after": "rainworth-community-partnership-library"
+    },
+    {
+      "id": "lib_4759b375-e928-4034-8222-0f9cd37a6784",
+      "authority": "scottish-borders",
+      "before": "innerleithen-library-contact-centre-",
+      "after": "innerleithen-library-contact-centre"
+    },
+    {
+      "id": "lib_25d35ad5-eef4-42de-8f12-5cf675e3bfa9",
+      "authority": "south-lanarkshire",
+      "before": "lesmahagow-library-",
+      "after": "lesmahagow-library"
+    },
+    {
+      "id": "lib_ccfdd49b-8ae8-4a7d-a71f-88dc3bbd033a",
+      "authority": "southwark",
+      "before": "southwark-heritage-centre-and-walworth-library-",
+      "after": "southwark-heritage-centre-and-walworth-library"
+    },
+    {
+      "id": "lib_b40eae57-1682-4c40-9218-c8cf09de8c04",
+      "authority": "west-lothian",
+      "before": "bathgate-simpson-library-",
+      "after": "bathgate-simpson-library"
+    },
+    {
+      "id": "lib_af73c323-e688-4c97-8a96-e17b1ff38fc9",
+      "authority": "westmorland-and-furness",
+      "before": "kirkby-stephen-",
+      "after": "kirkby-stephen"
+    },
+    {
+      "id": "lib_07b5fbbd-87ca-4dc6-b2fc-7f0a3fa695b8",
+      "authority": "windsor-and-maidenhead",
+      "before": "boyn-grove-",
+      "after": "boyn-grove"
+    }
+  ]
+}

@@ -8,6 +8,16 @@ The latest machine-readable counts and decisions are in [report.json](report.jso
 
 ## Record Structure
 
+Library records are grouped into `src/content/libraries/<authority>/`, with unresolved relationships
+in `unassigned/`. Filenames use the library's existing slug without an authority prefix. Directory
+migration writes to these folders. The folder migration preserves every
+record's bytes and updates paths in `written-files.json` without changing its replay-protection hashes.
+
+[library-slug-changes.json](library-slug-changes.json) tracks the 16 approved legacy slug corrections
+by stable ID, authority, old slug and new slug. These are the only content changes made during the
+filename cleanup. Old public routes redirect to the corrected routes. Source URLs and dates remain
+unchanged; replay applies the same explicit corrections and still protects subsequent editorial edits.
+
 Each JSON file remains individually editable under `src/content/libraries` or `src/content/authorities`. Its `data` object is the final authoritative structure: every field from the corresponding Table Schema, using the exact names and typed values. Missing values are explicit `null`s. Stable IDs, routing, and dates are metadata outside `data`, alongside `validation_exceptions` and optional `manual_checks`. There is no legacy `extensions` payload; validation rejects legacy or unknown top-level fields.
 
 Original opening-time frames and identifiers remain in the immutable source baseline, not alongside canonical values. Useful source details without an exact schema field, such as service links, broad accessibility descriptions, virtual tours, and branch-specific catalogue links, are retained under `unmapped` in the audit and flagged for manual review. They are not silently mapped to a different meaning or read by the site. Raw source rows for added historical buildings are retained under `added` in the audit.

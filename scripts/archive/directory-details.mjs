@@ -2,7 +2,8 @@
  * @file Add each library's services list and source update date to the editable directory records.
  * The collector's `populate=*` request omits the services component, so it is fetched explicitly.
  */
-import { readFile, readdir, writeFile, mkdir } from 'node:fs/promises'
+import { readFile, writeFile, mkdir } from 'node:fs/promises'
+import { jsonRecordFiles } from '../../src/lib/directory/recordFiles.mjs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 
@@ -103,7 +104,7 @@ export async function enrichDirectory(root = process.cwd()) {
     ['libraries', 'libraries'],
     ['authorities', 'authorities']
   ]) {
-    for (const file of await readdir(path.join(root, 'src/content', folder))) {
+    for (const file of jsonRecordFiles(path.join(root, 'src/content', folder))) {
       const target = path.join(root, 'src/content', folder, file)
       const record = JSON.parse(await readFile(target, 'utf8'))
       const fields = {}

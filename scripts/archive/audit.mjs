@@ -3,6 +3,7 @@
  */
 
 import { readFile, readdir, mkdir, writeFile, appendFile } from 'node:fs/promises'
+import { jsonRecordFiles } from '../../src/lib/directory/recordFiles.mjs'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { gzipSync, gunzipSync } from 'node:zlib'
@@ -350,11 +351,7 @@ export async function auditArchive({ root = process.cwd(), repair = false } = {}
   scanData(freshData)
   scanData(embeddedData)
   const records = async (folder) =>
-    Promise.all(
-      (await readdir(absolute(folder)))
-        .filter((file) => file.endsWith('.json'))
-        .map((file) => json(`${folder}/${file}`))
-    )
+    Promise.all(jsonRecordFiles(absolute(folder)).map((file) => json(`${folder}/${file}`)))
   const directory = createDirectory(
     await records('src/content/authorities'),
     await records('src/content/libraries')

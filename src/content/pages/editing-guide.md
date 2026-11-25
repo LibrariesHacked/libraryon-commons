@@ -63,7 +63,7 @@ As a service editor, your view is automatically focused on your council's record
 Most editorial updates involve keeping branch details, opening hours, and facilities accurate and up
 to date.
 
-1. In the left navigation menu, select **Libraries**.
+1. In the left navigation menu, select **Libraries** followed by your service's name.
 2. You will see the branches belonging to your service. Select the library you want to update.
 3. Make your changes in the form fields.
 4. When finished, select the green **Publish** button at the top of the page.

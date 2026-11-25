@@ -10,7 +10,7 @@ import { loadDirectoryReview } from '../../../../lib/cms/reviewHelpers.mjs'
  */
 export function getStaticPaths() {
   return loadDirectoryReview().map((row) => ({
-    params: { kind: row.collection, entry: row.entry },
+    params: { kind: row.editCollection, entry: row.entry },
     props: { row }
   }))
 }

@@ -84,7 +84,7 @@ Do not add a general-purpose frontend framework merely to reduce a handful of ev
 
 ## Directory
 
-Each library (`src/content/libraries/*.json`) references its parent authority (`src/content/authorities/*.json`) by slug. `src/lib/directory/directoryHelpers.mjs` validates these relationships, computes each authority's member list, calculates nearby libraries, and generates the client search index (`/directory.json`).
+Each library (`src/content/libraries/<authority>/*.json`) references its parent authority (`src/content/authorities/*.json`) by slug. Unassigned libraries use the `unassigned` folder. `src/lib/directory/directoryHelpers.mjs` validates these relationships, computes each authority's member list, calculates nearby libraries, and generates the client search index (`/directory.json`).
 
 Directory records contain a canonical `data` object whose field names and types come from the supplied Table Schema, stable routing/provenance metadata, `validation_exceptions`, and optional `manual_checks` referencing the source audit. Legacy payloads and unknown top-level fields are rejected. `src/lib/directory/schemaHelpers.mjs` validates all loaded records; `src/lib/directory/models/Library.mjs` and `src/lib/directory/models/LibraryService.mjs` derive the presentation model solely from schema fields. Original source structures and unmapped details remain only in the migration audit. Daily hours contain session strings or `null` when closed; blank strings are accepted on input and saved as `null`. Unknown required values remain `null` with documented exceptions rather than fabricated facts. Crown Dependencies remain present despite falling outside the supplied country/code constraints.
 

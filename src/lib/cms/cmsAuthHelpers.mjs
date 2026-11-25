@@ -1,6 +1,11 @@
 /**
  * @fileoverview Domain authorization and permission resolution for Decap CMS editors and Netlify Identity.
  */
+import {
+  directoryCollectionKind,
+  libraryCollectionName,
+  validateLibraryCollection
+} from './libraryCollections.mjs'
 
 /**
  * Split a single CSV line into cell values, respecting double quotes and commas.
@@ -208,6 +213,7 @@ export function isGssAllowed(allowedGssCodes = [], targetGssCode = '') {
  * @returns {boolean} True if the save is permitted.
  */
 export function validateEntrySave(entryData, collection, userPermissions) {
+  validateLibraryCollection(entryData, collection)
   if (collection === 'resource_lookups' || collection === 'authority_lookups') {
     throw new Error(
       'Permission denied: CMS lookups are generated automatically. Edit the original resource or authority instead.'
@@ -222,9 +228,12 @@ export function validateEntrySave(entryData, collection, userPermissions) {
   if (userPermissions.isGeneralEditor) {
     return true
   }
+  if (collection === libraryCollectionName('')) {
+    throw new Error('Permission denied: Only general editors can edit unassigned libraries.')
+  }
 
   // Service editors are strictly confined to directory collections
-  if (collection !== 'libraries' && collection !== 'authorities') {
+  if (directoryCollectionKind(collection) !== 'libraries' && collection !== 'authorities') {
     throw new Error(
       `Permission denied: Service editors are only permitted to edit library directory records, not "${collection}".`
     )
@@ -258,14 +267,33 @@ export function validateEntrySave(entryData, collection, userPermissions) {
  * @param {object} userPermissions - Resolved user permissions.
  * @returns {Array<object>} Permitted collections for this user session.
  */
-export function filterCollectionsForPermissions(collections, userPermissions) {
+export function filterCollectionsForPermissions(collections, userPermissions, authorities = []) {
   if (!Array.isArray(collections)) return []
-  if (!userPermissions || userPermissions.isGeneralEditor) {
+  if (userPermissions?.allowed && userPermissions.isGeneralEditor) {
     return collections
   }
 
-  if (userPermissions.role === 'service-editor') {
-    return collections.filter((col) => col.name === 'libraries' || col.name === 'authorities')
+  if (userPermissions?.allowed && userPermissions.role === 'service-editor') {
+    const permitted = authorities.filter(({ code }) => isGssAllowed(userPermissions.gssCodes, code))
+    const names = new Set(permitted.map(({ id }) => libraryCollectionName(id)))
+    return collections.flatMap((col) => {
+      if (names.has(col.name) || ['authority_lookups', 'resource_lookups'].includes(col.name)) {
+        return [col]
+      }
+      if (col.name !== 'authorities' || !permitted.length) return []
+      const { folder, fields, slug, create, filter, ...metadata } = col
+      return [
+        {
+          ...metadata,
+          files: permitted.map(({ id, name }) => ({
+            name: id,
+            label: name,
+            file: `${folder}/${id}.json`,
+            fields
+          }))
+        }
+      ]
+    })
   }
 
   return []

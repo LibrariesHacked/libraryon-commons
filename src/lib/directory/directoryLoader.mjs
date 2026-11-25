@@ -2,7 +2,9 @@
  * @fileoverview Main directory dataset loader reading local authority and library JSON records directly from disk at build time.
  */
 
-import { readdirSync, readFileSync, existsSync } from 'node:fs'
+import { readFileSync, existsSync } from 'node:fs'
+import { jsonRecordFiles } from './recordFiles.mjs'
+import { libraryRecordFile } from '../cms/libraryCollections.mjs'
 import { pathToFileURL } from 'node:url'
 import { createDirectory, directoryBreadcrumbs } from './directoryHelpers.mjs'
 import { Library } from './models/Library.mjs'
@@ -27,9 +29,13 @@ function localRecords(folder) {
   const directory = existsSync(localDir)
     ? localDir
     : new URL(`./src/content/${folder}/`, pathToFileURL(`${process.cwd()}/`))
-  return readdirSync(directory)
-    .filter((file) => file.endsWith('.json'))
-    .map((file) => JSON.parse(readFileSync(new URL(file, directory), 'utf8')))
+  return jsonRecordFiles(directory).map((file) => {
+    const record = JSON.parse(readFileSync(new URL(file, directory), 'utf8'))
+    if (folder === 'libraries' && file !== libraryRecordFile(file, record)) {
+      throw new Error(`Library is in the wrong service folder: ${file}`)
+    }
+    return record
+  })
 }
 
 const authorityRecords = localRecords('authorities')

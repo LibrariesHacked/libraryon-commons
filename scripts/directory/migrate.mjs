@@ -2,17 +2,13 @@
  * @fileoverview Directory migration pipeline transforming legacy snapshots into canonical CMS collections.
  */
 
-import {
-  readFileSync,
-  writeFileSync,
-  readdirSync,
-  mkdirSync,
-  existsSync,
-  unlinkSync
-} from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, existsSync, unlinkSync } from 'node:fs'
 import { createHash } from 'node:crypto'
 import { gzipSync, gunzipSync } from 'node:zlib'
 import { fileURLToPath } from 'node:url'
+import { jsonRecordFiles } from '../../src/lib/directory/recordFiles.mjs'
+import { libraryRecordFile } from '../../src/lib/cms/libraryCollections.mjs'
+import { applyLibrarySlugCorrection } from '../../src/lib/directory/slugCorrections.mjs'
 import { parse } from 'csv-parse/sync'
 import readXlsx from 'read-excel-file/node'
 import { normalizePostcode, normalizeUprn } from '../../src/lib/directory/dataHelpers.mjs'
@@ -134,8 +130,10 @@ export function writeMigratedRecords(
   const previous = existsSync(manifestFile) ? json(manifestFile) : {}
   const planned = new Map()
   for (const [folder, records] of groups) {
-    for (const { file, record } of records) {
-      const path = `src/content/${folder}/${file}`
+    for (const { file, record: inputRecord } of records) {
+      const record = folder === 'libraries' ? applyLibrarySlugCorrection(inputRecord) : inputRecord
+      const targetFile = folder === 'libraries' ? libraryRecordFile(file, record) : file
+      const path = `src/content/${folder}/${targetFile}`
       if (planned.has(path)) throw new Error(`Duplicate output file: ${path}`)
       planned.set(path, `${JSON.stringify(record, null, 2)}\n`)
       const url = new URL(path, workspaceRoot)
@@ -164,7 +162,9 @@ export function writeMigratedRecords(
           record.postcode?.startsWith('BT'))
       )
         continue
-      if (!planned.has(`src/content/${folder}/${file}`))
+      const targetFile =
+        folder === 'libraries' ? libraryRecordFile(file, applyLibrarySlugCorrection(record)) : file
+      if (!planned.has(`src/content/${folder}/${targetFile}`))
         throw new Error(`Migration would remove original record: ${folder}/${file}`)
     }
   }
@@ -179,6 +179,7 @@ export function writeMigratedRecords(
   }
   const manifest = {}
   for (const [path, content] of planned) {
+    mkdirSync(new URL('./', new URL(path, workspaceRoot)), { recursive: true })
     writeFileSync(new URL(path, workspaceRoot), content)
     manifest[path] = createHash('sha256').update(content).digest('hex')
   }
@@ -440,9 +441,10 @@ export function baseline() {
   const original = Object.fromEntries(
     ['libraries', 'authorities'].map((folder) => [
       folder,
-      readdirSync(new URL(`src/content/${folder}/`, root))
-        .filter((name) => name.endsWith('.json'))
-        .map((file) => ({ file, record: json(new URL(`src/content/${folder}/${file}`, root)) }))
+      jsonRecordFiles(new URL(`src/content/${folder}/`, root)).map((file) => ({
+        file,
+        record: json(new URL(`src/content/${folder}/${file}`, root))
+      }))
     ])
   )
   if (original.libraries.some(({ record }) => record.data))

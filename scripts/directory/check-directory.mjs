@@ -5,6 +5,7 @@
 
 import { readFileSync, writeFileSync, readdirSync, existsSync, appendFileSync } from 'node:fs'
 import { join } from 'node:path'
+import { jsonRecordFiles } from '../../src/lib/directory/recordFiles.mjs'
 import { createHash } from 'node:crypto'
 import { normalizePostcode } from '../../src/lib/directory/dataHelpers.mjs'
 import { distanceMiles } from '../../src/lib/directory/geoHelpers.mjs'
@@ -405,7 +406,7 @@ export async function auditDirectory({ rootDir = process.cwd(), live = false } =
 
   // 1. Scan Libraries
   if (existsSync(librariesDir)) {
-    const libFiles = readdirSync(librariesDir).filter((fileName) => fileName.endsWith('.json'))
+    const libFiles = jsonRecordFiles(librariesDir)
     report.totals.libraries = libFiles.length
     for (const file of libFiles) {
       const record = JSON.parse(readFileSync(join(librariesDir, file), 'utf8'))

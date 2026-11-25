@@ -36,6 +36,9 @@ const publicSitePath = (value) =>
     <p id="cms-load-error" role="alert" hidden></p>
     <script is:inline>
       window.CMS_MANUAL_INIT = true
+      window.CMS_IDENTITY_READY = window.netlifyIdentity
+        ? new Promise((resolve) => window.netlifyIdentity.on('init', resolve))
+        : Promise.resolve()
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', (user) => {
           if (!user) window.netlifyIdentity.on('login', () => document.location.reload())
@@ -57,9 +60,14 @@ const publicSitePath = (value) =>
       } from '../../lib/cms/directoryControls.mjs'
       import authorityLookups from '../../data/cms-lookups/authorities.json'
       import {
+        directoryCollectionKind,
+        expandLibraryCollections
+      } from '../../lib/cms/libraryCollections.mjs'
+      import {
         parseDomainPermissions,
         resolveUserPermissions,
-        validateEntrySave
+        validateEntrySave,
+        filterCollectionsForPermissions
       } from '../../lib/cms/cmsAuthHelpers.mjs'
       import { sitePath } from '../../lib/site/siteHelpers.mjs'
       import domainPermissionsCsv from '../../data/auth/domain-permissions.csv?raw'
@@ -135,6 +143,7 @@ const publicSitePath = (value) =>
        * @throws {Error} When Decap or the archive manifest cannot be loaded.
        */
       const initialize = async () => {
+        await Reflect.get(window, 'CMS_IDENTITY_READY')
         const cms = Reflect.get(window, 'CMS')
         if (!cms) throw new Error('Decap CMS failed to load.')
         const response = await fetch(sitePath('/admin/archive-media.json'))
@@ -177,13 +186,14 @@ const publicSitePath = (value) =>
             try {
               const permissions = getCurrentPermissions()
               const collection = entry.get('collection')
+              const kind = directoryCollectionKind(collection)
               let data = entry.get('data')
-              if (collection === 'libraries' || collection === 'authorities') {
+              if (kind === 'libraries' || kind === 'authorities') {
                 const input =
-                  collection === 'libraries'
+                  kind === 'libraries'
                     ? prepareLibraryAuthority(data.toJS(), authorityLookups.items)
                     : data.toJS()
-                const prepared = prepareDirectoryEdit(input, collection)
+                const prepared = prepareDirectoryEdit(input, kind)
                 validateEntrySave(prepared, collection, permissions)
                 for (const [field, value] of Object.entries(prepared)) data = data.set(field, value)
                 if (data.has('data')) data = data.delete('data')
@@ -191,7 +201,7 @@ const publicSitePath = (value) =>
                 validateEntrySave(data.toJS(), collection, permissions)
               }
               const today = new Date().toLocaleDateString('en-CA')
-              return (stampedFields[collection] || []).reduce(
+              return (stampedFields[kind] || []).reduce(
                 (data, field) => data.set(field, today),
                 data
               )
@@ -202,22 +212,15 @@ const publicSitePath = (value) =>
           }
         })
         cms.registerPreviewStyle(previewStyles, { raw: true })
-        const config = withArchiveWidgets(parseYaml(cmsConfigRaw))
+        const config = withArchiveWidgets(
+          expandLibraryCollections(parseYaml(cmsConfigRaw), authorityLookups.items)
+        )
         config.load_config_file = false
-        if (
-          initialPermissions.role === 'service-editor' &&
-          !initialPermissions.isGeneralEditor &&
-          initialPermissions.gssCodes?.length &&
-          !initialPermissions.gssCodes.includes('*')
-        ) {
-          const primaryGss = initialPermissions.gssCodes[0]
-          for (const name of ['libraries', 'authorities']) {
-            const collection = config.collections.find((item) => item.name === name)
-            collection.delete = false
-            if (name === 'authorities') collection.create = false
-            collection.filter = { field: 'local_authority_code', value: primaryGss }
-          }
-        }
+        config.collections = filterCollectionsForPermissions(
+          config.collections,
+          initialPermissions,
+          authorityLookups.items
+        )
         cms.init({ config })
       }
       initialize().catch(reportError)

@@ -209,20 +209,28 @@ test('filterCollectionsForPermissions restricts service editors to libraries and
     { name: 'settings' },
     { name: 'homepage' },
     { name: 'pages' },
-    { name: 'libraries' },
-    { name: 'authorities' }
+    { name: 'libraries--manchester' },
+    { name: 'libraries--unassigned' },
+    { name: 'authorities', folder: 'src/content/authorities', fields: [] }
   ]
 
-  const serviceFiltered = filterCollectionsForPermissions(allCollections, {
-    role: 'service-editor',
-    isGeneralEditor: false
-  })
+  const serviceFiltered = filterCollectionsForPermissions(
+    allCollections,
+    {
+      allowed: true,
+      role: 'service-editor',
+      gssCodes: ['E08000003'],
+      isGeneralEditor: false
+    },
+    [{ id: 'manchester', name: 'Manchester', code: 'E08000003' }]
+  )
   assert.deepEqual(
     serviceFiltered.map((c) => c.name),
-    ['libraries', 'authorities']
+    ['libraries--manchester', 'authorities']
   )
 
   const generalFiltered = filterCollectionsForPermissions(allCollections, {
+    allowed: true,
     role: 'general-editor',
     isGeneralEditor: true
   })
