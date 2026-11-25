@@ -1,0 +1,2086 @@
+{
+  "source": "https://raw.githubusercontent.com/LibrariesHacked/librarydata-db/c4bc46abc29e435274a4e6f5d69bf9fd56a891e7/data/services/services.json",
+  "sha256": "eced8790a72502cb68916a552878de0a2dfcc84084857b3d141caf4c4ea8b148",
+  "records": {
+    "E06000053": {
+      "source_id": "rec422vqwy9cuKbpV",
+      "name": "Isles of Scilly",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "E06000027": {
+      "source_id": "rec2YuTPRTnXmRUxh",
+      "name": "Torbay",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.torbaylibraries.org.uk/web/arena/discover-feesandcharges"
+      }
+    },
+    "E10000028": {
+      "source_id": "recZEsW1cQpe2Ev93",
+      "name": "Staffordshire",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.staffordshire.gov.uk/Libraries/Fees-and-charges/Fees-and-charges-overview.aspx"
+      }
+    },
+    "E06000020": {
+      "source_id": "recaFlva6Vb8SEPjk",
+      "name": "Telford and Wrekin",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.telford.gov.uk/info/20413/library_services_-_information_help_and_support/434/library_fees_and_charges"
+      }
+    },
+    "E06000051": {
+      "source_id": "recco6SGKftNUR6WW",
+      "name": "Shropshire",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://shropshire.gov.uk/libraries/prices-and-pins/"
+      }
+    },
+    "S12000019": {
+      "source_id": "recgT9SSvtr0tzS2Y",
+      "name": "Midlothian",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.midlothian.gov.uk/info/1594/using_the_library/170/library_fines_and_charges"
+      }
+    },
+    "E10000008": {
+      "source_id": "rec1NfLkqKeohhrk0",
+      "name": "Devon",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.devonlibraries.org.uk/web/arena/discover-feesandcharges"
+      }
+    },
+    "E06000016": {
+      "source_id": "rec33kcV7FBIFQbh5",
+      "name": "Leicester",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.leicester.gov.uk/your-community/libraries-and-community-centres/libraries/join-a-library/charges/"
+      }
+    },
+    "E09000022": {
+      "source_id": "recU7GKU30cbmXEtx",
+      "name": "Lambeth",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.3,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.lambeth.gov.uk/libraries-archives/libraries-fees-charges"
+      }
+    },
+    "S12000049": {
+      "source_id": "rechm9X4FspBCXPHm",
+      "name": "Glasgow City",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://libcat.csglasgow.org/web/arena/terms-and-conditions"
+      }
+    },
+    "S12000036": {
+      "source_id": "recwyuqs0dxfQfBWt",
+      "name": "City of Edinburgh",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.edinburgh.gov.uk/using-library/borrowing-library?documentId=12002&categoryId=20121"
+      }
+    },
+    "E06000054": {
+      "source_id": "recC3KSWv81fXKdvO",
+      "name": "Wiltshire",
+      "fields": {
+        "adult_fine": 0.22,
+        "child_fine": 0.22,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "http://www.wiltshire.gov.uk/libraries-charges"
+      }
+    },
+    "E06000055": {
+      "source_id": "rec2u3v11m75eV4kT",
+      "name": "Bedford",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://virtual-library.culturalservices.net/webingres/bedfordshire/vlib/0.beds_libraries/fines_charges_bbc.htm"
+      }
+    },
+    "E06000056": {
+      "source_id": "rec3Ao2etdY7qRfYF",
+      "name": "Central Bedfordshire",
+      "fields": {
+        "adult_fine": 0.28,
+        "child_fine": 0.14,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "http://virtual-library.culturalservices.net/webingres/bedfordshire/vlib/0.beds_libraries/fines_charges_cbc.htm"
+      }
+    },
+    "E09000004": {
+      "source_id": "reccwKAJOptbtbPZI",
+      "name": "Bexley",
+      "fields": {
+        "adult_fine": 0.4,
+        "child_fine": 0.4,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://arena.yourlondonlibrary.net/web/bexley/fees-and-charges"
+      }
+    },
+    "E06000005": {
+      "source_id": "recypkexWEaXGnoAc",
+      "name": "Darlington",
+      "fields": {
+        "adult_fine": 0.15,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www2.darlington.gov.uk/documents/20528/96068/fines+%26+charges+2019-2020.pdf/0538bb54-6aff-4481-8f88-d64a287744a2"
+      }
+    },
+    "E08000017": {
+      "source_id": "recGtXWtsI8Q6zqvJ",
+      "name": "Doncaster",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://library.doncaster.gov.uk/web/arena/library-fees-and-charges"
+      }
+    },
+    "E06000011": {
+      "source_id": "recKs7RWvU8T6sTOg",
+      "name": "East Riding of Yorkshire",
+      "fields": {
+        "adult_fine": 0.1,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.eastriding.gov.uk/leisure/libraries/using-the-library/library-fees-and-charges/"
+      }
+    },
+    "E06000012": {
+      "source_id": "recKv7E6KmaxucOV0",
+      "name": "North East Lincolnshire",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://lincsinspire.com/libraries-archives/library-archives-policies/"
+      }
+    },
+    "E06000062": {
+      "source_id": "recSsvVAaArYf9x5x",
+      "name": "West Northamptonshire",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0.05,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.westnorthants.gov.uk/visiting-library/library-fees-and-charges"
+      }
+    },
+    "E06000061": {
+      "source_id": "recYxSKzCqM3Vs7ye",
+      "name": "North Northamptonshire",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0.05,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.northnorthants.gov.uk/visiting-library/library-fees-and-charges"
+      }
+    },
+    "E06000013": {
+      "source_id": "recjdeQb57DK7XaIq",
+      "name": "North Lincolnshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.northlincs.gov.uk/schools-libraries-and-learning/libraries/charges/"
+      }
+    },
+    "E10000025": {
+      "source_id": "recw7s87pZe8LZyCR",
+      "name": "Oxfordshire",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0.05,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.oxfordshire.gov.uk/residents/leisure-and-culture/libraries/using-library/charges-and-fines"
+      }
+    },
+    "E06000026": {
+      "source_id": "recNL0kBcoiuNoNgY",
+      "name": "Plymouth",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.plymouth.gov.uk/libraries/librarycharges"
+      }
+    },
+    "E06000003": {
+      "source_id": "recpSztgyqN1bxYx9",
+      "name": "Redcar and Cleveland",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.redcar-cleveland.gov.uk/libraries/library-fees-and-charges"
+      }
+    },
+    "E08000036": {
+      "source_id": "rec6MOkxGN5jyMRox",
+      "name": "Wakefield",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.wakefield.gov.uk/libraries-and-local-history/how-to-use-the-library/fees-and-charges"
+      }
+    },
+    "E10000032": {
+      "source_id": "recSQdLiAhKoTz1Tr",
+      "name": "West Sussex",
+      "fields": {
+        "adult_fine": 0.33,
+        "child_fine": 0.33,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.westsussex.gov.uk/libraries/using-library-services/library-charges-and-loan-periods/"
+      }
+    },
+    "E08000027": {
+      "source_id": "rec04zFaNNl5WnbE2",
+      "name": "Dudley",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.better.org.uk/library/dudley/dudley/fees"
+      }
+    },
+    "E08000031": {
+      "source_id": "rec4NeNbpXPVotcUm",
+      "name": "Wolverhampton",
+      "fields": {
+        "adult_fine": 0.23,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.wolverhampton.gov.uk/libraries/library-charges"
+      }
+    },
+    "W06000024": {
+      "source_id": "rec6nwFwXJytiszsX",
+      "name": "Merthyr Tydfil",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "E08000012": {
+      "source_id": "rec7zefpRT67opQCK",
+      "name": "Liverpool",
+      "fields": {
+        "adult_fine": 0.1,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://liverpool.gov.uk/libraries/join-and-membership-information/fees-and-charges/"
+      }
+    },
+    "E08000030": {
+      "source_id": "recAsCyGI7tYxm5x6",
+      "name": "Walsall",
+      "fields": {
+        "adult_fine": 0.16,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://go.walsall.gov.uk/walsall-libraries/resources/fees-and-charges"
+      }
+    },
+    "E08000016": {
+      "source_id": "recKdSSSjmJeLPWm5",
+      "name": "Barnsley",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.barnsley.gov.uk/services/libraries/library-fees-and-charges"
+      }
+    },
+    "E06000019": {
+      "source_id": "recK2PKdPgCF6zLhR",
+      "name": "Herefordshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.herefordshire.gov.uk/libraries-1/joining-using-library/5"
+      }
+    },
+    "E09000019": {
+      "source_id": "recNSKuQoZg63myq1",
+      "name": "Islington",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.islington.gov.uk/libraries-arts-and-heritage/libraries/join-islington-libraries/fines-and-charges"
+      }
+    },
+    "E08000032": {
+      "source_id": "recPK2AWKVml1UDnS",
+      "name": "Bradford",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.bradford.gov.uk/libraries/services-in-our-libraries/fees-and-charges-in-libraries/"
+      }
+    },
+    "S12000027": {
+      "source_id": "recR1wyMCH7fe4C1d",
+      "name": "Shetland Islands",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "http://www.shetland-library.gov.uk/Pricelist.asp"
+      }
+    },
+    "E06000052": {
+      "source_id": "recSkeLSB6ZGqFxIq",
+      "name": "Cornwall",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.cornwall.gov.uk/leisure-and-culture/libraries/using-the-library/library-charges/"
+      }
+    },
+    "S12000023": {
+      "source_id": "recSBrFHb7QgaTlTl",
+      "name": "Orkney Islands",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "E08000028": {
+      "source_id": "recTSbs2MrXvhEmYY",
+      "name": "Sandwell",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.sandwell.gov.uk/info/200261/libraries/800/library_fees_and_charges"
+      }
+    },
+    "E09000003": {
+      "source_id": "recYFBJK5IsW7Pa9l",
+      "name": "Barnet",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.barnet.gov.uk/libraries/fines-charges-and-room-hire"
+      }
+    },
+    "E06000036": {
+      "source_id": "rece1oxc1BqVAhjtV",
+      "name": "Bracknell Forest",
+      "fields": {
+        "adult_fine": 0.6,
+        "child_fine": 0.6,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.bracknell-forest.gov.uk/libraries/using-your-library/library-charges"
+      }
+    },
+    "E06000030": {
+      "source_id": "recgNXDXUO3aL4mFI",
+      "name": "Swindon",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.swindon.gov.uk/info/20057/books_and_reading_services/508/find_library_fees_and_charges"
+      }
+    },
+    "E10000017": {
+      "source_id": "recku3x1aeOiNyKmL",
+      "name": "Lancashire",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.lancashire.gov.uk/libraries-and-archives/libraries/library-services/library-charges/"
+      }
+    },
+    "E06000001": {
+      "source_id": "recskUgwyg60Lu9vQ",
+      "name": "Hartlepool",
+      "fields": {
+        "adult_fine": 0.1,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.hartlepool.gov.uk/downloads/file/329/library_charges_2015-16"
+      }
+    },
+    "E08000015": {
+      "source_id": "recvS65PogXyBPEAz",
+      "name": "Wirral",
+      "fields": {
+        "adult_fine": 0.23,
+        "child_fine": 0.08,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.wirral.gov.uk/sites/default/files/all/About%20the%20council/Performance%20and%20spending/Fees%20and%20Charges%20for%20council%20services/Libraries%20fees%20and%20charges%202020-21.pdf"
+      }
+    },
+    "S12000047": {
+      "source_id": "recwUPaMUiAwvDWsn",
+      "name": "Fife",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://onfife.com/late-fees-and-charges"
+      }
+    },
+    "S12000010": {
+      "source_id": "recyLCDHUPEJRtJ2R",
+      "name": "East Lothian",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.eastlothian.gov.uk/info/210562/libraries/11900/your_local_library/3"
+      }
+    },
+    "E08000022": {
+      "source_id": "reczHdmKZ08djxbqj",
+      "name": "North Tyneside",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://my.northtyneside.gov.uk/category/1011/charges"
+      }
+    },
+    "E09000006": {
+      "source_id": "rec30RsiK68y5XOoB",
+      "name": "Bromley",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.better.org.uk/library/london/bromley/bromley-central-library/fees"
+      }
+    },
+    "E08000037": {
+      "source_id": "recbFt8878hjjavWj",
+      "name": "Gateshead",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.gateshead.gov.uk/article/10326/Fees-and-charges-from-1-April-2019"
+      }
+    },
+    "S12000020": {
+      "source_id": "recvP7bLZmtDBa7Vb",
+      "name": "Moray",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "http://www.moray.gov.uk/moray_standard/page_1478.html"
+      }
+    },
+    "E06000065": {
+      "source_id": "recFrlYhVjjJPAnSJ",
+      "name": "North Yorkshire",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0.15,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.northyorks.gov.uk/leisure-tourism-and-culture/libraries/library-charges-and-fines"
+      }
+    },
+    "E09000011": {
+      "source_id": "recbpzeWxTaY6bHJK",
+      "name": "Greenwich",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.better.org.uk/library/london/greenwich/greenwich-centre-library/fees"
+      }
+    },
+    "E08000023": {
+      "source_id": "recK0hnNNaEzl7rkt",
+      "name": "South Tyneside",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.southtyneside.gov.uk/article/34394/Loan-periods-and-charges"
+      }
+    },
+    "E06000004": {
+      "source_id": "recJpOJsWgAOg3Z5C",
+      "name": "Stockton-on-Tees",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.stockton.gov.uk/library-fees"
+      }
+    },
+    "E09000032": {
+      "source_id": "recgOKZ70btCBM9G5",
+      "name": "Wandsworth",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.wandsworth.gov.uk/leisure-and-culture/libraries/our-libraries/#"
+      }
+    },
+    "E08000010": {
+      "source_id": "recLEIK6smsJgpuCd",
+      "name": "Wigan",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.wigan.gov.uk/Resident/Libraries/Fees.aspx"
+      }
+    },
+    "E08000009": {
+      "source_id": "rec7lakMe0QtzICnB",
+      "name": "Trafford",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.trafford.gov.uk/residents/leisure-and-lifestyle/libraries/library-charges.aspx"
+      }
+    },
+    "E10000029": {
+      "source_id": "rec8GmDAo1DMw2WWP",
+      "name": "Suffolk",
+      "fields": {
+        "adult_fine": 0.15,
+        "child_fine": 0.15,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.suffolklibraries.co.uk/borrow/help/borrowing-physical-titles/borrowing-periods-and-overdue-charges-for-physical-titles"
+      }
+    },
+    "E06000008": {
+      "source_id": "recDHlUc7DRbKoRMh",
+      "name": "Blackburn with Darwen",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.blackburn.gov.uk/bwdlibraries/library-charges-and-loans"
+      }
+    },
+    "E10000014": {
+      "source_id": "recHChmiAQISpLfIE",
+      "name": "Hampshire",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.hants.gov.uk/librariesandarchives/library/membership/fees-and-charges"
+      }
+    },
+    "S12000041": {
+      "source_id": "recJIsEBF4R3UJ1wz",
+      "name": "Angus",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.angusalive.scot/libraries/library-charges"
+      }
+    },
+    "E06000060": {
+      "source_id": "recPEUbDD0W6f90NY",
+      "name": "Buckinghamshire",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.3,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.buckinghamshire.gov.uk/libraries/library-membership/library-charges-and-concessions/"
+      }
+    },
+    "E06000037": {
+      "source_id": "recSr3Kn6IAOOfYGx",
+      "name": "West Berkshire",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.3,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "http://info.westberks.gov.uk/35213"
+      }
+    },
+    "E08000005": {
+      "source_id": "recXBu0fHvTorq4wo",
+      "name": "Rochdale",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "http://www.rochdale.gov.uk/library-services/Pages/library-charges.aspx"
+      }
+    },
+    "E10000019": {
+      "source_id": "recYKgSA07g5uI0bD",
+      "name": "Lincolnshire",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.better.org.uk/library/lincolnshire/boston-library/fees"
+      }
+    },
+    "E09000007": {
+      "source_id": "receBpoCStpJGFe01",
+      "name": "Camden",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.camden.gov.uk/library-charges-and-fines"
+      }
+    },
+    "E08000001": {
+      "source_id": "recgfxlj2DuNmFO00",
+      "name": "Bolton",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.bolton.gov.uk/library-services/library-charges"
+      }
+    },
+    "E06000031": {
+      "source_id": "recgqDf2ucYi9m2RE",
+      "name": "Peterborough",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://peterboroughlibraries.org.uk/fines-charges"
+      }
+    },
+    "E06000040": {
+      "source_id": "rechQBqerSRxPp6dP",
+      "name": "Windsor and Maidenhead",
+      "fields": {
+        "adult_fine": 0.37,
+        "child_fine": 0.37,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.rbwm.gov.uk/leisure-and-culture/libraries/libraries-price-list"
+      }
+    },
+    "E08000006": {
+      "source_id": "rechsh5beC9rUUQa7",
+      "name": "Salford",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://salfordcommunityleisure.co.uk/libraries/fine-free/"
+      }
+    },
+    "E08000029": {
+      "source_id": "reco9bAjhx6fKoRUE",
+      "name": "Solihull",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.solihull.gov.uk/Libraries/Search-renew-and-reserve"
+      }
+    },
+    "E06000033": {
+      "source_id": "recobLmPAXJHJcYeI",
+      "name": "Southend-on-Sea",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.southend.gov.uk/info/200191/library_services/15/library_facilities_and_fees"
+      }
+    },
+    "E08000025": {
+      "source_id": "recqPW3PEJ14YdkWw",
+      "name": "Birmingham",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.birmingham.gov.uk/info/20087/libraries/1439/library_and_archive_fees_and_charges"
+      }
+    },
+    "E06000042": {
+      "source_id": "recrtb4Y4gOnOqqu6",
+      "name": "Milton Keynes",
+      "fields": {
+        "adult_fine": 0.55,
+        "child_fine": 0.55,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.milton-keynes.gov.uk/libraries/library-info/library-charges"
+      }
+    },
+    "E09000028": {
+      "source_id": "recseNptlO2ZCJvlu",
+      "name": "Southwark",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.southwark.gov.uk/libraries/membership/fees-and-charges"
+      }
+    },
+    "E06000045": {
+      "source_id": "recunQynIbjKIno5b",
+      "name": "Southampton",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.southampton.gov.uk/libraries/library-activities/library-fines-charges.aspx"
+      }
+    },
+    "E08000004": {
+      "source_id": "recvdfFUzukIvO3ef",
+      "name": "Oldham",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.oldham.gov.uk/info/200280/libraries/1845/library_charges"
+      }
+    },
+    "E06000043": {
+      "source_id": "recvt7LbLTNBIBlh1",
+      "name": "Brighton and Hove",
+      "fields": {
+        "adult_fine": 0.4,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.brighton-hove.gov.uk/libraries-leisure-and-arts/libraries/fees-library-services"
+      }
+    },
+    "E06000038": {
+      "source_id": "recw9frutiOFzXLl9",
+      "name": "Reading",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.reading.gov.uk/article/12813/Library-charges"
+      }
+    },
+    "E09000027": {
+      "source_id": "recxitLx1vk0OXPOm",
+      "name": "Richmond upon Thames",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://richmond.spydus.co.uk/cgi-bin/spydus.exe/MSGTRNGEN/WPAC/CHARGESANDCONCESSIONS1"
+      }
+    },
+    "E06000039": {
+      "source_id": "recxsbm0ilnbmmsv7",
+      "name": "Slough",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.slough.gov.uk/libraries/computers-services/4"
+      }
+    },
+    "E06000041": {
+      "source_id": "recylglx1RKNPRIYv",
+      "name": "Wokingham",
+      "fields": {
+        "adult_fine": 0.42,
+        "child_fine": 0.42,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.wokingham.gov.uk/libraries/library-services/library-charges/"
+      }
+    },
+    "E06000046": {
+      "source_id": "recz085jxsXfTRMO7",
+      "name": "Isle of Wight",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.iow.gov.uk/documentlibrary/view/isle-of-wight-library-service-fees-and-charges"
+      }
+    },
+    "E06000009": {
+      "source_id": "rec3UcaVR3yHu82fR",
+      "name": "Blackpool",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.blackpool.gov.uk/Residents/Libraries-arts-and-heritage/Libraries/Library-service-fees-and-charges.aspx"
+      }
+    },
+    "S12000035": {
+      "source_id": "rec5CuGSdTtObeBiR",
+      "name": "Argyll and Bute",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "E10000011": {
+      "source_id": "rec5FOQMsTQvffMsQ",
+      "name": "East Sussex",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.eastsussex.gov.uk/libraries/local/policies/fees/overdue-charges/"
+      }
+    },
+    "E06000057": {
+      "source_id": "recAqHPJNc62RQPHN",
+      "name": "Northumberland",
+      "fields": {
+        "adult_fine": 0.21,
+        "child_fine": 0.21,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.northumberland.gov.uk/Libraries-and-archives/Library-fees-and-charges.aspx"
+      }
+    },
+    "S12000018": {
+      "source_id": "recBzHtV2tbocitt3",
+      "name": "Inverclyde",
+      "fields": {
+        "adult_fine": 0.1,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.inverclyde.gov.uk/council-and-government/finance/fees-and-charges"
+      }
+    },
+    "S12000048": {
+      "source_id": "recH5CtXaBIUljrpK",
+      "name": "Perth and Kinross",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.culturepk.org.uk/libraries/catalogue-renewals-and-reservations/library-charges/"
+      }
+    },
+    "E10000020": {
+      "source_id": "recNftOhJQajqRMbR",
+      "name": "Norfolk",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.norfolk.gov.uk/libraries-local-history-and-archives/libraries/your-library-account/charges-and-exemptions"
+      }
+    },
+    "E10000003": {
+      "source_id": "recSbRxM6ObRV4kKy",
+      "name": "Cambridgeshire",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.cambridgeshire.gov.uk/residents/libraries-leisure-culture/libraries/fees-and-charges"
+      }
+    },
+    "E06000044": {
+      "source_id": "recVoV5JpucFtvnHU",
+      "name": "Portsmouth",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://librariesandarchives.portsmouth.gov.uk/public-library-service/library-and-archive-charges/"
+      }
+    },
+    "E08000007": {
+      "source_id": "recoOSBB9iXzhjr3Y",
+      "name": "Stockport",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.stockport.gov.uk/join-your-local-library/how-to-join-a-library"
+      }
+    },
+    "S12000034": {
+      "source_id": "recqRMR0h3qwty16y",
+      "name": "Aberdeenshire",
+      "fields": {
+        "adult_fine": 1.1,
+        "child_fine": 0,
+        "fine_interval": "Week",
+        "fees_and_charges_url": "https://www.livelifeaberdeenshire.org.uk/libraries/library-charges/"
+      }
+    },
+    "E08000008": {
+      "source_id": "recxtIdqoXp90OcOh",
+      "name": "Tameside",
+      "fields": {
+        "adult_fine": 0.24,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.tameside.gov.uk/Libraries/Library-Fees-and-Charges"
+      }
+    },
+    "E06000035": {
+      "source_id": "recKJ2gxHa3zKfzxd",
+      "name": "Medway",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.15,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.medway.gov.uk/info/200181/libraries/56/library_fees_and_charges/1"
+      }
+    },
+    "E08000033": {
+      "source_id": "recrUFRe4QNJoTTxj",
+      "name": "Calderdale",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.calderdale.gov.uk/v2/residents/leisure-and-culture/libraries/fees-and-charges"
+      }
+    },
+    "S12000029": {
+      "source_id": "recgIv0YmWgfRHsmQ",
+      "name": "South Lanarkshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.slleisureandculture.co.uk/info/421/library_charges"
+      }
+    },
+    "S12000033": {
+      "source_id": "reczKLCltkSNQHyNo",
+      "name": "Aberdeen City",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.aberdeencity.gov.uk/services/libraries-and-archives/using-library/fines-and-charges"
+      }
+    },
+    "S12000042": {
+      "source_id": "recFEvoqMN5oBpVai",
+      "name": "Dundee City",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0,
+        "fine_interval": "Week",
+        "fees_and_charges_url": "http://www.leisureandculturedundee.com/requests-fees-and-charges"
+      }
+    },
+    "S12000011": {
+      "source_id": "rec3ggFmDvOGWnozV",
+      "name": "East Renfrewshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.ercultureandleisure.org/article/7848/Fees-and-Chargesp"
+      }
+    },
+    "E10000013": {
+      "source_id": "recShAWlSNKE1OBgU",
+      "name": "Gloucestershire",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.gloucestershire.gov.uk/libraries/library-charges/"
+      }
+    },
+    "E10000015": {
+      "source_id": "recaewICneJGqXvwE",
+      "name": "Hertfordshire",
+      "fields": {
+        "adult_fine": 0.28,
+        "child_fine": 0.08,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.hertfordshire.gov.uk/services/libraries-and-archives/library-membership/charges-and-concessions/charges-and-concessions.aspx"
+      }
+    },
+    "S12000017": {
+      "source_id": "rec4diCUc5y5axHYf",
+      "name": "Highland",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.highlifehighland.com/libraries/policies-user-guides/"
+      }
+    },
+    "E10000016": {
+      "source_id": "recyZQ2cvygBpWwTF",
+      "name": "Kent",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.kent.gov.uk/leisure-and-community/libraries/borrow-library-items/library-charges"
+      }
+    },
+    "E08000003": {
+      "source_id": "recBt61UrjvKggSZr",
+      "name": "Manchester",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.manchester.gov.uk/info/200062/libraries/524/charges_and_fines"
+      }
+    },
+    "S12000021": {
+      "source_id": "rec5AJC2mHEfgGipJ",
+      "name": "North Ayrshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.north-ayrshire.gov.uk/libraries/find-reserve-and-renew-items.aspx"
+      }
+    },
+    "E06000047": {
+      "source_id": "recFmxCF1rfKc2pSL",
+      "name": "County Durham",
+      "fields": {
+        "adult_fine": 0.22,
+        "child_fine": 0.14,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.durham.gov.uk/article/21224/Loan-periods-and-charges"
+      }
+    },
+    "W06000009": {
+      "source_id": "rec9DUnPd9c2RNxQL",
+      "name": "Pembrokeshire",
+      "fields": {
+        "adult_fine": 0.15,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.pembrokeshire.gov.uk/library-information/fees"
+      }
+    },
+    "S12000006": {
+      "source_id": "recN7H0FaRC33ivIP",
+      "name": "Dumfries and Galloway",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.dumgal.gov.uk/article/15311/Borrow-items-from-the-library"
+      }
+    },
+    "E06000021": {
+      "source_id": "recNgPMJMTwSokUbv",
+      "name": "Stoke-on-Trent",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.stoke.gov.uk/directory_record/333468/library_fees_and_charges"
+      }
+    },
+    "S12000050": {
+      "source_id": "recfWQNRqvWrrXo9X",
+      "name": "North Lanarkshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://culturenl.co.uk/libraries/join/library-charges/"
+      }
+    },
+    "S12000038": {
+      "source_id": "recsN51E6TUMc6nSw",
+      "name": "Renfrewshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://libcat.renfrewshire.gov.uk/iguana/www.main.cls?p=13961a65-033a-4fdd-b6b1-cd91360ede1d&v=9f15c967-c697-4c9e-b2bc-6d6523ea758d"
+      }
+    },
+    "E10000031": {
+      "source_id": "recOTw2FuOwfc7pKq",
+      "name": "Warwickshire",
+      "fields": {
+        "adult_fine": 0.18,
+        "child_fine": 0.18,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.warwickshire.gov.uk/librarycostsandfines"
+      }
+    },
+    "S12000026": {
+      "source_id": "recenaFQmpDmL0u2t",
+      "name": "Scottish Borders",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.liveborders.org.uk/home/our-libraries/libraries/"
+      }
+    },
+    "E08000026": {
+      "source_id": "reczMus2NCCLKlqpo",
+      "name": "Coventry",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.coventry.gov.uk/libraries-1/join-find-use/12"
+      }
+    },
+    "S12000028": {
+      "source_id": "reclMyp6hEeMMo2Sw",
+      "name": "South Ayrshire",
+      "fields": {
+        "adult_fine": 0.1,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": null
+      }
+    },
+    "S12000013": {
+      "source_id": "rec0a4vMI51na9xQh",
+      "name": "Na h-Eileanan Siar",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.cne-siar.gov.uk/leisure-sport-and-culture/libraries-and-archives/leabharlannan-nan-eilean-siar/general-information/"
+      }
+    },
+    "E08000011": {
+      "source_id": "rec25u79PNBGHKYa2",
+      "name": "Knowsley",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://yourlibrary.knowsley.gov.uk/using-your-library__trashed/summary-of-charges-for-using-your-library/"
+      }
+    },
+    "E06000049": {
+      "source_id": "recBOvaz2mJwAH2xL",
+      "name": "Cheshire East",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.05,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.cheshireeast.gov.uk/libraries/library_charges.aspx"
+      }
+    },
+    "E06000007": {
+      "source_id": "recO0xmoGD40EnUKE",
+      "name": "Warrington",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://livewirewarrington.co.uk/library/our-libraries/using-libraries-services/"
+      }
+    },
+    "E06000006": {
+      "source_id": "recVyYenbOPAIxgXN",
+      "name": "Halton",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://library.haltonbc.info/policies/"
+      }
+    },
+    "S12000005": {
+      "source_id": "recWgUFQkY42GQazt",
+      "name": "Clackmannanshire",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Week",
+        "fees_and_charges_url": "https://www.clacks.gov.uk/document/5821.pdf"
+      }
+    },
+    "E06000002": {
+      "source_id": "recWFPk5nSmWkoptE",
+      "name": "Middlesbrough",
+      "fields": {
+        "adult_fine": 0.18,
+        "child_fine": 0.18,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.middlesbrough.gov.uk/leisure-events-libraries-and-hubs/community-hubs-and-libraries/your-library-services/fees-and-charges-middlesbrough-libraries"
+      }
+    },
+    "E08000014": {
+      "source_id": "reccnFIe9ZL4QEbrH",
+      "name": "Sefton",
+      "fields": {
+        "adult_fine": 0.12,
+        "child_fine": 0.01,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.sefton.gov.uk/schools-learning/libraries/joining-and-more/"
+      }
+    },
+    "E06000050": {
+      "source_id": "rect3g0gAtUGxcZZd",
+      "name": "Cheshire West and Chester",
+      "fields": {
+        "adult_fine": 0.22,
+        "child_fine": 0.06,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.cheshirewestandchester.gov.uk/residents/libraries/library-charges.aspx"
+      }
+    },
+    "E06000063": {
+      "source_id": "recBuLwb7uWK2mACH",
+      "name": "Cumberland",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://legacy.cumberland.gov.uk/libraries/services/charges.asp"
+      }
+    },
+    "E06000064": {
+      "source_id": "recKCzUSMMa9kFF47",
+      "name": "Westmorland and Furness",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "S12000045": {
+      "source_id": "recdOeG57BlhxgOGO",
+      "name": "East Dunbartonshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.edlc.co.uk/libraries/fees-and-charges"
+      }
+    },
+    "E08000021": {
+      "source_id": "rec7W05scty1XZNeF",
+      "name": "Newcastle upon Tyne",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.newcastle.gov.uk/services/libraries-culture/using-newcastle-libraries/library-charges-and-fines"
+      }
+    },
+    "E08000013": {
+      "source_id": "reczgglvru3BxpEJY",
+      "name": "St. Helens",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://sthelens.gov.uk/article/3620/Library-fees-and-charges"
+      }
+    },
+    "E08000002": {
+      "source_id": "rec1MJJ7vjSP2FRwY",
+      "name": "Bury",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.bury.gov.uk/libraries-and-archives/library-fees-and-charges"
+      }
+    },
+    "E10000012": {
+      "source_id": "rec7bzAhFbpwehp08",
+      "name": "Essex",
+      "fields": {
+        "adult_fine": 0.27,
+        "child_fine": 0.27,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://libraries.essex.gov.uk/digital-content/our-strategies-policies-and-terms/facilities-charges-and-loan-charges-"
+      }
+    },
+    "E08000034": {
+      "source_id": "recCa2B6VuU7VLwWe",
+      "name": "Kirklees",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.kirklees.gov.uk/beta/libraries/holidays-and-charges.aspx"
+      }
+    },
+    "E08000018": {
+      "source_id": "recFCZhlnieOxWtFS",
+      "name": "Rotherham",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.rotherham.gov.uk/neighbourhoods-1/fees-charges-libraries-neighbourhood-hubs"
+      }
+    },
+    "S12000039": {
+      "source_id": "recOoa7pjy6FEIVy5",
+      "name": "West Dunbartonshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.west-dunbarton.gov.uk/libraries/using-the-library/libraries-charges/"
+      }
+    },
+    "S12000014": {
+      "source_id": "recPpXRJgSxJy0XWa",
+      "name": "Falkirk",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://fct.ent.sirsidynix.net.uk/client/en_GB/libraries/?rm=LIBRARY+CHARGES0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue"
+      }
+    },
+    "E06000034": {
+      "source_id": "reca85RZwt9chyHK0",
+      "name": "Thurrock",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.thurrock.gov.uk/library-fees-and-charges/library-item-charges"
+      }
+    },
+    "E09000001": {
+      "source_id": "reciUQEb4u00kgose",
+      "name": "City of London",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.cityoflondon.gov.uk/services/libraries/loans-and-charges"
+      }
+    },
+    "E10000034": {
+      "source_id": "recjnoKmgnjcG5ZTM",
+      "name": "Worcestershire",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.worcestershire.gov.uk/worcestershire-libraries/your-library-membership/pay-fees-and-charges"
+      }
+    },
+    "S12000008": {
+      "source_id": "recnvqYeZZROUKQRQ",
+      "name": "East Ayrshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "E10000024": {
+      "source_id": "recwTgEeeGVgMOoWj",
+      "name": "Nottinghamshire",
+      "fields": {
+        "adult_fine": 0.21,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.inspireculture.org.uk/reading-information/libraries/joining-and-using-libraries/fees-and-charges/"
+      }
+    },
+    "E10000018": {
+      "source_id": "recFuA3y9SOBvRz61",
+      "name": "Leicestershire",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.05,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.leicestershire.gov.uk/leisure-and-community/libraries/using-library-services/library-fees-and-charges"
+      }
+    },
+    "E06000014": {
+      "source_id": "recVU3AzWs9jQAs68",
+      "name": "York",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.exploreyork.org.uk/policies/#libfees"
+      }
+    },
+    "E10000007": {
+      "source_id": "recY5wVuobdf9K8Rz",
+      "name": "Derbyshire",
+      "fields": {
+        "adult_fine": 0.1,
+        "child_fine": 0.05,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.derbyshire.gov.uk/leisure/libraries/using-your-library/borrowing/overdue-books/charges-for-overdue-books.aspx"
+      }
+    },
+    "E06000015": {
+      "source_id": "recdsSxMC92ST4Ldx",
+      "name": "Derby",
+      "fields": {
+        "adult_fine": 0.21,
+        "child_fine": 0.11,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.inderby.org.uk/libraries/derby-libraries-charges/"
+      }
+    },
+    "E06000018": {
+      "source_id": "recqKG3CWFJtljkmx",
+      "name": "Nottingham",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.nottinghamcitylibraries.co.uk/our-services/charges-fees/"
+      }
+    },
+    "E06000017": {
+      "source_id": "recvUWEnyyY9CBouf",
+      "name": "Rutland",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://rutlandlibraries.org.uk/fees/"
+      }
+    },
+    "E08000019": {
+      "source_id": "recwCmVGUCcOzfYzC",
+      "name": "Sheffield",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.sheffield.gov.uk/home/libraries-archives/borrow-renew-late-fees"
+      }
+    },
+    "E06000010": {
+      "source_id": "reco1K6Vn5CXlO3oP",
+      "name": "Kingston upon Hull",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0.2,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.hcandl.co.uk/libraries/join-library/fees-and-charges"
+      }
+    },
+    "N92000002": {
+      "source_id": "recjUR9Phyl7HQ7z0",
+      "name": "Northern Ireland",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.librariesni.org.uk/charges/"
+      }
+    },
+    "E09000014": {
+      "source_id": "recJipJsgnZuSAyCs",
+      "name": "Haringey",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.17,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.haringey.gov.uk/libraries-sport-and-leisure/libraries/borrowing-and-charges#charges"
+      }
+    },
+    "S12000040": {
+      "source_id": "recL3PqrZcqsHy12m",
+      "name": "West Lothian",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.westlothian.gov.uk/article/33643/General-Information-and-Enquiries"
+      }
+    },
+    "E09000017": {
+      "source_id": "recCJiheRDp84xkcR",
+      "name": "Hillingdon",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.hillingdon.gov.uk/article/4097/Fees-and-charges"
+      }
+    },
+    "E08000035": {
+      "source_id": "recI4WzwR5w6ycOlQ",
+      "name": "Leeds",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.leeds.gov.uk/libraries/library-charges"
+      }
+    },
+    "E06000058": {
+      "source_id": "rec1JMOvihbNG64QL",
+      "name": "Bournemouth, Christchurch and Poole",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.bcpcouncil.gov.uk/Libraries/Library-charges.aspx"
+      }
+    },
+    "E06000066": {
+      "source_id": "recEysHs59ZhY4zoo",
+      "name": "Somerset",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.somerset.gov.uk/libraries/library-fees-and-charges/"
+      }
+    },
+    "E06000023": {
+      "source_id": "recKVGMJTncVBlM9d",
+      "name": "Bristol",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.bristol.gov.uk/libraries-archives/library-charges"
+      }
+    },
+    "E06000024": {
+      "source_id": "recRm7fKnyGoTTgdZ",
+      "name": "North Somerset",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.n-somerset.gov.uk/council-democracy/accounts-spending-insurance/fees-charges"
+      }
+    },
+    "E06000059": {
+      "source_id": "recVriGpYoNnncbD4",
+      "name": "Dorset",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.dorsetcouncil.gov.uk/libraries-history-culture/libraries/join-the-library/library-charges.aspx"
+      }
+    },
+    "E06000025": {
+      "source_id": "reca2qTbcGvikAIib",
+      "name": "South Gloucestershire",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.southglos.gov.uk/leisure-and-culture/libraries/library-services/library-charges-and-concessions/"
+      }
+    },
+    "E06000022": {
+      "source_id": "recdO2KvUCLBKqiKU",
+      "name": "Bath and North East Somerset",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://beta.bathnes.gov.uk/loan-periods-and-charges-library-items"
+      }
+    },
+    "E09000010": {
+      "source_id": "rec0kVKnJk7mS3hos",
+      "name": "Enfield",
+      "fields": {
+        "adult_fine": 0.45,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.enfield.gov.uk/services/libraries/library-fees-and-charges"
+      }
+    },
+    "E09000031": {
+      "source_id": "rec2z7K4BRmIsJbxv",
+      "name": "Waltham Forest",
+      "fields": {
+        "adult_fine": 0.51,
+        "child_fine": 0.51,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://walthamforest.mylibrary.digital/digital-content/libraries/borrowing-information-library-charges/fees-charges"
+      }
+    },
+    "E09000005": {
+      "source_id": "rec3FimpXwfXwvhtj",
+      "name": "Brent",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.brent.gov.uk/libraries-arts-and-heritage/libraries/library-fees"
+      }
+    },
+    "E09000012": {
+      "source_id": "recFvb6Jg9ukW1iR4",
+      "name": "Hackney",
+      "fields": {
+        "adult_fine": 0.22,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://hackney.gov.uk/library-fees-fines"
+      }
+    },
+    "E09000023": {
+      "source_id": "recSh5GIcTwopYDvo",
+      "name": "Lewisham",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://lewisham.gov.uk/myservices/libraries/using-the-library/library-charges-and-fines"
+      }
+    },
+    "E09000016": {
+      "source_id": "recThV4VPZkr195T5",
+      "name": "Havering",
+      "fields": {
+        "adult_fine": 0.42,
+        "child_fine": 0.42,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.havering.gov.uk/downloads/20174/fees_and_charges"
+      }
+    },
+    "E09000002": {
+      "source_id": "reccLIyRDSsEhKpNn",
+      "name": "Barking and Dagenham",
+      "fields": {
+        "adult_fine": 0.36,
+        "child_fine": 0.36,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.lbbd.gov.uk/libraries-and-local-history/our-libraries/library-fees-and-charges"
+      }
+    },
+    "E09000026": {
+      "source_id": "recik63QJjNzc5LTu",
+      "name": "Redbridge",
+      "fields": {
+        "adult_fine": 0.4,
+        "child_fine": 0.06,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.redbridge.gov.uk/libraries/charges-and-fines/"
+      }
+    },
+    "E09000021": {
+      "source_id": "recir0HlaEouCD06A",
+      "name": "Kingston upon Thames",
+      "fields": {
+        "adult_fine": 0.27,
+        "child_fine": 0.27,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://libraries.kingston.gov.uk/digital-content/libraries/library-rules-policies-notices/fees-charges"
+      }
+    },
+    "E09000018": {
+      "source_id": "recorOE1zPHc7tfq0",
+      "name": "Hounslow",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.16,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.hounslow.gov.uk/info/20050/libraries/1658/library_fees_and_charges"
+      }
+    },
+    "E09000015": {
+      "source_id": "recsiHMh4kihGvSfS",
+      "name": "Harrow",
+      "fields": {
+        "adult_fine": 0.34,
+        "child_fine": 0.22,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.harrow.gov.uk/libraries/fees-charges-terms-use/2"
+      }
+    },
+    "E09000009": {
+      "source_id": "recuaPBgRHFFyNq10",
+      "name": "Ealing",
+      "fields": {
+        "adult_fine": 0.23,
+        "child_fine": 0.23,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.ealing.gov.uk/info/201219/libraries/2389/fees_and_charges_for_ealing_libraries"
+      }
+    },
+    "E09000029": {
+      "source_id": "recwIUzgolRGtASxK",
+      "name": "Sutton",
+      "fields": {
+        "adult_fine": 0.35,
+        "child_fine": 0.35,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://llc.ent.sirsidynix.net.uk/client/en_GB/sutton/?rm=LIBRARY+FEES+%260%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue"
+      }
+    },
+    "E09000025": {
+      "source_id": "recw4pRdQoEWffPvf",
+      "name": "Newham",
+      "fields": {
+        "adult_fine": 0.24,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://llc.ent.sirsidynix.net.uk/client/en_GB/newham/?rm=FINES+AND+FEES0%7C%7C%7C1%7C%7C%7C0%7C%7C%7Ctrue"
+      }
+    },
+    "E09000024": {
+      "source_id": "rechacuy651HxENjP",
+      "name": "Merton",
+      "fields": {
+        "adult_fine": 0.28,
+        "child_fine": 0.28,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://libraries.merton.gov.uk/client/en_GB/merton/?rm=FEES+AND+CHARG0%7C%7C%7C1%7C%7C%p7C0%7C%7C%7Ctrue"
+      }
+    },
+    "E09000008": {
+      "source_id": "recrovNoWkksNLcfW",
+      "name": "Croydon",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.croydon.gov.uk/leisure/libraries/join-the-library/library-charges"
+      }
+    },
+    "W06000022": {
+      "source_id": "recV4njsLYYQYDrRe",
+      "name": "Newport",
+      "fields": {
+        "adult_fine": 0.22,
+        "child_fine": 0.22,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://live.newport.gov.uk/our-city/see-and-do/libraries/libraries-fees-and-charges"
+      }
+    },
+    "W06000008": {
+      "source_id": "recWX6szg4e67ww77",
+      "name": "Ceredigion",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.ceredigion.gov.uk/resident/tourism-leisure/ceredigion-library/fees-and-charges/"
+      }
+    },
+    "W06000019": {
+      "source_id": "recwmFDVTXcrIDCWq",
+      "name": "Blaenau Gwent",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://aneurinleisure.org.uk/explore/libraries/library-services"
+      }
+    },
+    "W06000005": {
+      "source_id": "rec9c6MjJwQADbFjT",
+      "name": "Flintshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://aura.wales/libraries/what-can-i-borrow-from-flintshire-libraries/"
+      }
+    },
+    "W06000020": {
+      "source_id": "recJeWujggmqEyiyc",
+      "name": "Torfaen",
+      "fields": {
+        "adult_fine": 0.1,
+        "child_fine": 0.05,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.torfaen.gov.uk/en/Libraries/Librarycharges/Library-Charges.aspx"
+      }
+    },
+    "W06000004": {
+      "source_id": "recOrcPf7GCMKDudd",
+      "name": "Denbighshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "W06000015": {
+      "source_id": "recR4oGyHSdI8LNA8",
+      "name": "Cardiff",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.25,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.cardiff.gov.uk/ENG/resident/Libraries-and-archives/Library-fines-and-charges/Pages/Library%20Fines%20and%20charges.aspx"
+      }
+    },
+    "W06000018": {
+      "source_id": "recYcS0JrE2j2Gldu",
+      "name": "Caerphilly",
+      "fields": {
+        "adult_fine": 0.13,
+        "child_fine": 0.06,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.caerphilly.gov.uk/Services/Libraries/Fees-and-charges.aspx"
+      }
+    },
+    "W06000013": {
+      "source_id": "recZNGL7N2ZB4stVZ",
+      "name": "Bridgend",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "W06000002": {
+      "source_id": "reca93AbmbzQkpNmr",
+      "name": "Gwynedd",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.gwynedd.llyw.cymru/en/Residents/Libraries-and-archives/Fees,-guidelines-and-policies/Fees,-guidelines-and-policies.aspx"
+      }
+    },
+    "W06000016": {
+      "source_id": "recesOWzquD4skYd0",
+      "name": "Rhondda Cynon Taf",
+      "fields": {
+        "adult_fine": 0.41,
+        "child_fine": 0.41,
+        "fine_interval": "Week",
+        "fees_and_charges_url": "https://www.rctcbc.gov.uk/EN/Resident/Libraries/Feesandcharges.aspx"
+      }
+    },
+    "W06000001": {
+      "source_id": "recgJ8SCKSB0BNIQa",
+      "name": "Isle of Anglesey",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.3,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.anglesey.gov.uk/en/Council/Council-finances/Council-fees-and-charges.aspx"
+      }
+    },
+    "W06000023": {
+      "source_id": "recmyYKeV6BhRDjsv",
+      "name": "Powys",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://en.powys.gov.uk/article/2325/Library-fines-and-charges"
+      }
+    },
+    "W06000014": {
+      "source_id": "recnRgkC3DYLyeY9f",
+      "name": "Vale of Glamorgan",
+      "fields": {
+        "adult_fine": 0.65,
+        "child_fine": 0.65,
+        "fine_interval": "Week",
+        "fees_and_charges_url": "https://www.valeofglamorgan.gov.uk/en/enjoying/Libraries/Fees-and-Charges.aspx"
+      }
+    },
+    "W06000003": {
+      "source_id": "recn3zceYF4pn468q",
+      "name": "Conwy",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "http://www.conwy.gov.uk/en/Resident/Libraries-Museums-and-Archives/Libraries/Library-Fees-and-Charges.aspx"
+      }
+    },
+    "W06000012": {
+      "source_id": "recsJoEhvak62wzHo",
+      "name": "Neath Port Talbot",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.npt.gov.uk/1228"
+      }
+    },
+    "W06000011": {
+      "source_id": "recuHUp5trVkZ38zH",
+      "name": "Swansea",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.swansea.gov.uk/librarycharges"
+      }
+    },
+    "W06000010": {
+      "source_id": "recvEGiTGpln7Nxqp",
+      "name": "Carmarthenshire",
+      "fields": {
+        "adult_fine": 0.2,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.carmarthenshire.gov.wales/media/1219678/loan-charges.pdf"
+      }
+    },
+    "W06000006": {
+      "source_id": "reczZs2cC4rXBaIeX",
+      "name": "Wrexham",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": null
+      }
+    },
+    "W06000021": {
+      "source_id": "reczmf6tUm15VMw5b",
+      "name": "Monmouthshire",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.monmouthshire.gov.uk/app/uploads/2016/04/Charges-2016-2017.pdf"
+      }
+    },
+    "E06000032": {
+      "source_id": "recos7a4ejzWKpzfz",
+      "name": "Luton",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://llc.ent.sirsidynix.net.uk/client/en_GB/luton/?rm=COMPUTERS+AND+2%7C%7C%7C1%7C%7C%7C7%7C%7C%7Ctrue"
+      }
+    },
+    "S12000030": {
+      "source_id": "recjll0mJZogj0z7b",
+      "name": "Stirling",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.stirling.gov.uk/libraries-archives/your-local-library-catalogue-search/charges-fines/"
+      }
+    },
+    "E08000024": {
+      "source_id": "recgXbQ9h4rpgMpNQ",
+      "name": "Sunderland",
+      "fields": {
+        "adult_fine": 0.24,
+        "child_fine": 0.11,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.sunderland.gov.uk/article/12852/Fees-and-charges"
+      }
+    },
+    "E10000030": {
+      "source_id": "reckTtYIoWDEkIvzD",
+      "name": "Surrey",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0.3,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.surreycc.gov.uk/libraries/your-library/library-services-and-charges"
+      }
+    },
+    "E09000030": {
+      "source_id": "recmiFEAyLmOPXmn9",
+      "name": "Tower Hamlets",
+      "fields": {
+        "adult_fine": 0,
+        "child_fine": 0,
+        "fine_interval": null,
+        "fees_and_charges_url": "https://www.ideastore.co.uk/about-us-library-charges-fines"
+      }
+    },
+    "E09000013": {
+      "source_id": "recKu3zEseY7MrBYx",
+      "name": "Hammersmith and Fulham",
+      "fields": {
+        "adult_fine": 0.3,
+        "child_fine": 0,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.lbhf.gov.uk/libraries/using-library/borrowing-and-other-charges"
+      }
+    },
+    "E09000033": {
+      "source_id": "recQXodcNiubvMBAX",
+      "name": "Westminster",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.westminster.gov.uk/library-charges"
+      }
+    },
+    "E09000020": {
+      "source_id": "recacIxHreoeyrkzq",
+      "name": "Kensington and Chelsea",
+      "fields": {
+        "adult_fine": 0.25,
+        "child_fine": 0.1,
+        "fine_interval": "Day",
+        "fees_and_charges_url": "https://www.rbkc.gov.uk/libraries/your-library/borrowing-loans-and-fines"
+      }
+    }
+  }
+}

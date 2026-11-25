@@ -15,6 +15,8 @@ test('Netlify CMS package contains only the editor, runtime assets, and communit
   for (const file of [
     'dist/admin/index.html',
     'dist/admin/config.yml',
+    'dist/admin/archive/index.html',
+    'dist/admin/archive-media.json',
     'dist/admin/review/index.html',
     'dist/admin/review-data/authorities/merthyr-tydfil.json',
     'dist/_astro/editor.js',
@@ -30,6 +32,8 @@ test('Netlify CMS package contains only the editor, runtime assets, and communit
   const output = packageNetlifyAdmin({ root })
   assert.ok(existsSync(path.join(output, 'admin/index.html')))
   assert.ok(existsSync(path.join(output, 'admin/config.yml')))
+  assert.ok(existsSync(path.join(output, 'admin/archive/index.html')))
+  assert.ok(existsSync(path.join(output, 'admin/archive-media.json')))
   assert.ok(existsSync(path.join(output, 'admin/review/index.html')))
   assert.ok(existsSync(path.join(output, 'admin/review-data/authorities/merthyr-tydfil.json')))
   assert.match(
@@ -47,4 +51,26 @@ test('Netlify CMS package contains only the editor, runtime assets, and communit
   const indexHtml = readFileSync(path.join(output, 'index.html'), 'utf8')
   assert.match(indexHtml, /\/admin\//)
   assert.match(indexHtml, /confirmation.*token/)
+})
+
+test('Netlify archive proxy accepts a custom public host and rejects invalid origins', (context) => {
+  const root = mkdtempSync(path.join(tmpdir(), 'librarycommons-admin-origin-'))
+  context.after(() => rmSync(root, { recursive: true, force: true }))
+  for (const file of ['dist/admin/index.html', 'dist/admin/config.yml', 'dist/_astro/editor.js']) {
+    const target = path.join(root, file)
+    mkdirSync(path.dirname(target), { recursive: true })
+    writeFileSync(target, '')
+  }
+  const output = packageNetlifyAdmin({ root, publicSiteURL: 'https://public.example/base/' })
+  assert.match(
+    readFileSync(path.join(output, '_redirects'), 'utf8'),
+    /https:\/\/public\.example\/base\/uploads\/archive\/:splat 200/
+  )
+  for (const publicSiteURL of [
+    'ftp://example.com',
+    'https://user:password@example.com',
+    'https://example.com/?query=1'
+  ]) {
+    assert.throws(() => packageNetlifyAdmin({ root, publicSiteURL }), /Public site URL/)
+  }
 })

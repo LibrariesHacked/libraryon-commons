@@ -23,6 +23,8 @@ import {
   validateRecords
 } from '../../src/lib/directory/schemaHelpers.mjs'
 import { distanceMiles } from '../../src/lib/directory/geoHelpers.mjs'
+import serviceFields from '../../migration/directory/service-fields.json' with { type: 'json' }
+import { serviceFieldNames } from './import-service-fields.mjs'
 
 export const root = new URL('../../', import.meta.url)
 export const auditRoot = new URL('migration/directory/', root)
@@ -582,6 +584,10 @@ export function convertAuthority(record) {
   const effectiveGss =
     record.slug === 'guernsey' && record.gss === 'L99999999' ? 'L99999998' : record.gss
   data['Local authority code'] = gssCode(effectiveGss)
+  const sourceFields = serviceFields.records[effectiveGss]?.fields || {}
+  for (const [title, field] of Object.entries(serviceFieldNames)) {
+    data[title] = record[field] ?? record[title] ?? sourceFields[field] ?? null
+  }
   if (data['Local authority code']?.startsWith('S')) data.Country = 'Scotland'
   else if (data['Local authority code']?.startsWith('W')) data.Country = 'Wales'
   else if (data['Local authority code']?.startsWith('N')) data.Country = 'Northern Ireland'
@@ -1075,6 +1081,7 @@ export async function migrate({ write = false } = {}) {
   report.migrationInputs = [
     'migration/directory/libraryon-baseline.json.gz',
     'migration/directory/overrides.json',
+    'migration/directory/service-fields.json',
     'migration/directory/libraries-ni-scraped.json',
     'src/data/schemas/libraries.json',
     'src/data/schemas/library-services.json',

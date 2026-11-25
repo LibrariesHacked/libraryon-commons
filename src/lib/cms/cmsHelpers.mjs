@@ -537,10 +537,11 @@ export function createEditorComponents() {
 /**
  * Register all custom editor components with Decap CMS.
  * @param {{registerEditorComponent: (component: object) => void}} cms - Decap CMS instance.
+ * @param {(component: object) => object} [prepare] - Optional widget preparation preserving component serializers and patterns.
  * @returns {void}
  */
-export function registerEditorComponents(cms) {
+export function registerEditorComponents(cms, prepare = (value) => value) {
   for (const component of createEditorComponents()) {
-    cms.registerEditorComponent(component)
+    cms.registerEditorComponent(prepare(component))
   }
 }

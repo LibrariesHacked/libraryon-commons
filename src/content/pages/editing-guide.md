@@ -125,3 +125,8 @@ If you have general editor permissions:
 - Use **Frequently Asked Questions** to manage reusable questions and answers across pages.
 - Use **Resources And Downloads** to add shared slide decks, reports, or webinar recordings.
 - Keep page paths descriptive (for example, `/stories/our-new-makerspace`). Ensure images have descriptive alternative text for screen readers.
+- Upload new files using the **Media Library**. To reuse a preserved image or document, expand **Choose a preserved archive file** in an image or file field. Archive files cannot be uploaded over or deleted in the editor.
+- For a Markdown link or resource URL, open **Archive files** above the editor. It opens in a separate tab: search for a filename, copy its URL, then paste it into your entry.
+- Search within relation fields to choose linked pages, FAQs and resources. The CMS-wide search box is disabled.
+
+If the editor reports a loading error, do not save a form with missing fields. Reload and try again; report repeated failures to the team.

@@ -2,6 +2,7 @@ backend:
   name: git-gateway
   branch: main
 local_backend: true
+search: false
 media_folder: public/uploads/community
 public_folder: /uploads/community
 collections:
@@ -272,6 +273,24 @@ collections:
                     widget: string
                   - name: join_online
                     label: Join Online Link
+                    widget: string
+                  - name: overdue_fines
+                    label: Overdue Fines Label
+                    widget: string
+                  - name: fine_free
+                    label: Fine-Free Label
+                    widget: string
+                  - name: adult_fine_label
+                    label: Adult Fine Label
+                    widget: string
+                  - name: child_fine_label
+                    label: Child Fine Label
+                    widget: string
+                  - name: fine_interval_prefix
+                    label: Fine Interval Prefix
+                    widget: string
+                  - name: fees_and_charges
+                    label: Fees And Charges Link
                     widget: string
                   - name: contact_aria_label
                     label: Contact List Accessible Name

@@ -236,7 +236,10 @@ test('CMS form controls are registered before initialization and keep Markdown a
   }
   const admin = readFileSync('src/pages/admin/index.astro', 'utf8')
   assert.ok(admin.indexOf('CMS_MANUAL_INIT') < admin.indexOf('unpkg.com/decap-cms'))
-  assert.ok(admin.indexOf('registerEditorComponents(cms)') < admin.indexOf('cms.init()'))
+  assert.ok(
+    admin.indexOf('registerEditorComponents(cms, withArchiveWidgets)') <
+      admin.indexOf('cms.init({ config })')
+  )
 })
 
 test('every existing named Markdown block survives a CMS form round trip', () => {

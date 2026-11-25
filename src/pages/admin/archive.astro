@@ -1,0 +1,114 @@
+---
+/** @fileoverview Read-only archive browser for copying preserved asset URLs into CMS entries. */
+import SiteLayout from '../../layouts/SiteLayout.astro'
+import { sitePath } from '../../lib/site/siteHelpers.mjs'
+const publicSiteURL = import.meta.env.PUBLIC_SITE_URL
+---
+
+<SiteLayout
+  title="Archive files"
+  description="Read-only preserved archive files for CMS editors."
+  noindex
+  publicSiteURL={publicSiteURL}
+>
+  <section class="shell archive-browser">
+    <h1>Preserved archive files</h1>
+    <p>
+      These files are read-only. Copy a URL into an image, download or Markdown link. Upload new
+      files through the community Media Library in the editor.
+    </p>
+    <a href={sitePath('/admin/')}>Back to the editor</a>
+    <label for="archive-search">Search filenames</label>
+    <input id="archive-search" type="search" />
+    <p id="archive-status" role="status">
+      Loading archive files...
+    </p>
+    <ul id="archive-files"></ul>
+  </section>
+</SiteLayout>
+
+<script>
+  import { sitePath } from '../../lib/site/siteHelpers.mjs'
+  const status = document.getElementById('archive-status')
+  const list = document.getElementById('archive-files')
+  const search = document.getElementById('archive-search')
+  /**
+   * Fetch the static manifest once and wire local filename filtering.
+   * @returns {Promise<void>} Resolves when the archive list is ready.
+   * @throws {Error} When the manifest cannot be loaded.
+   */
+  const initialize = async () => {
+    const response = await fetch(sitePath('/admin/archive-media.json'))
+    if (!response.ok) throw new Error(`Archive manifest failed to load (${response.status}).`)
+    const files = await response.json()
+    /** @returns {void} Rebuild the visible file list from the current search term without network requests. */
+    const render = () => {
+      const term = search instanceof HTMLInputElement ? search.value.toLowerCase() : ''
+      const matches = files.filter((file) => file.name.toLowerCase().includes(term))
+      list?.replaceChildren()
+      if (status) status.textContent = `${matches.length} archive files`
+      for (const file of matches) {
+        const item = document.createElement('li')
+        const link = document.createElement('a')
+        link.href = sitePath(file.url)
+        link.textContent = file.name
+        link.target = '_blank'
+        link.rel = 'noopener'
+        const input = document.createElement('input')
+        input.value = file.url
+        input.readOnly = true
+        input.setAttribute('aria-label', `URL for ${file.name}`)
+        input.addEventListener('focus', () => input.select())
+        const copy = document.createElement('button')
+        copy.type = 'button'
+        copy.textContent = 'Copy URL'
+        copy.addEventListener('click', async () => {
+          try {
+            await navigator.clipboard.writeText(file.url)
+            if (status) status.textContent = `Copied ${file.name}`
+          } catch (error) {
+            console.error('Archive URL copy failed:', error)
+            input.focus()
+            input.select()
+            if (status) status.textContent = 'Copy failed. The URL is selected; copy it manually.'
+          }
+        })
+        item.append(link, input, copy)
+        list?.append(item)
+      }
+    }
+    search?.addEventListener('input', render)
+    render()
+  }
+  initialize().catch((error) => {
+    console.error('Archive browser failed:', error)
+    if (status) status.textContent = `${error.message} Reload to retry.`
+  })
+</script>
+
+<style>
+  .archive-browser {
+    padding-block: 2rem;
+  }
+  label {
+    display: block;
+    margin-top: 1rem;
+  }
+  input {
+    max-width: 100%;
+  }
+  li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-block: 1rem;
+    overflow-wrap: anywhere;
+  }
+  li a {
+    flex-basis: 100%;
+  }
+  li input {
+    flex: 1;
+    min-width: 0;
+  }
+</style>

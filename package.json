@@ -16,6 +16,7 @@
     "directory:schemas": "node scripts/directory-schemas.mjs",
     "directory:lookups": "node scripts/directory/lookups.mjs",
     "directory:migrate": "node scripts/directory/migrate.mjs",
+    "directory:service-fields": "node scripts/directory/import-service-fields.mjs",
     "directory:check": "node scripts/directory/check-directory.mjs",
     "format": "prettier --write astro.config.mjs .prettierrc.json \"src/**/*.{astro,js,mjs,css}\" src/data/*.json \"scripts/**/*.{mjs,js,cjs}\" \"tests/**/*.{mjs,js,cjs}\" package.json \".github/workflows/*.{yml,yaml}\"",
     "format:check": "prettier --check astro.config.mjs .prettierrc.json \"src/**/*.{astro,js,mjs,css}\" src/data/*.json \"scripts/**/*.{mjs,js,cjs}\" \"tests/**/*.{mjs,js,cjs}\" package.json \".github/workflows/*.{yml,yaml}\"",

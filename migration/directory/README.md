@@ -20,6 +20,27 @@ Not every source record satisfies the supplied required fields. `validation_exce
 
 ## Source Priority
 
+### Service fine backfill
+
+`service-fields.json` contains a compact snapshot of adult fines, child fines, fine
+intervals and fees URLs from `LibrariesHacked/librarydata-db` at commit
+`c4bc46abc29e435274a4e6f5d69bf9fd56a891e7`. It records the original source URL,
+SHA-256 and source record IDs. This is historical data, not a current live survey.
+The regular authority converter uses this snapshot so replaying migration does not
+drop the service fields.
+
+Preview a fill-only import with `npm run directory:service-fields`; apply with
+`npm run directory:service-fields -- --apply`. It matches unique authority codes,
+fills only explicit nulls, validates every planned record before writing, preserves
+dates and unrelated fields, and reports conflicts instead of overwriting editorial
+values. The saved snapshot makes subsequent runs offline and repeatable.
+`service-fields-import.json` retains the applied corrections and current conflicts.
+
+Guernsey, Jersey and Isle of Man were incorrectly backfilled as fine-free without
+evidence in that source. Maintainer-approved `--clear-unverified` changed only their
+paired zero values to null; the audit records the correction. Do not infer free
+child lending from an unknown child fine, or a fine-free service from partial data.
+
 1. LibraryOn baseline: authoritative current values and all original dates.
 2. `tempdata/libraries.csv`: fill missing durable facts after a strong building match.
 3. Arts Council's `English Public Libraries Location Dataset 2024.xlsx`: lower-priority supporting evidence, including historical buildings.

@@ -1,0 +1,67 @@
+{
+  "source": "https://raw.githubusercontent.com/LibrariesHacked/librarydata-db/c4bc46abc29e435274a4e6f5d69bf9fd56a891e7/data/services/services.json",
+  "sha256": "eced8790a72502cb68916a552878de0a2dfcc84084857b3d141caf4c4ea8b148",
+  "policy": "Match unique GSS codes, fill null values only, retain editorial conflicts and preserve dates.",
+  "changes": [
+    {
+      "file": "guernsey.json",
+      "field": "adult_fine",
+      "before": 0,
+      "after": null,
+      "reason": "Unsubstantiated fine-free backfill removed by maintainer approval."
+    },
+    {
+      "file": "guernsey.json",
+      "field": "child_fine",
+      "before": 0,
+      "after": null,
+      "reason": "Unsubstantiated fine-free backfill removed by maintainer approval."
+    },
+    {
+      "file": "isle-of-man.json",
+      "field": "adult_fine",
+      "before": 0,
+      "after": null,
+      "reason": "Unsubstantiated fine-free backfill removed by maintainer approval."
+    },
+    {
+      "file": "isle-of-man.json",
+      "field": "child_fine",
+      "before": 0,
+      "after": null,
+      "reason": "Unsubstantiated fine-free backfill removed by maintainer approval."
+    },
+    {
+      "file": "jersey.json",
+      "field": "adult_fine",
+      "before": 0,
+      "after": null,
+      "reason": "Unsubstantiated fine-free backfill removed by maintainer approval."
+    },
+    {
+      "file": "jersey.json",
+      "field": "child_fine",
+      "before": 0,
+      "after": null,
+      "reason": "Unsubstantiated fine-free backfill removed by maintainer approval."
+    }
+  ],
+  "conflicts": [],
+  "unsupported": [
+    {
+      "file": "guernsey.json",
+      "code": "L99999998",
+      "reason": "No fine evidence in the pinned LibraryData source."
+    },
+    {
+      "file": "isle-of-man.json",
+      "code": "M99999999",
+      "reason": "No fine evidence in the pinned LibraryData source."
+    },
+    {
+      "file": "jersey.json",
+      "code": "L99999999",
+      "reason": "No fine evidence in the pinned LibraryData source."
+    }
+  ]
+}

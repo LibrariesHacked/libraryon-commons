@@ -9,9 +9,9 @@ import { pathToFileURL } from 'node:url'
 /**
  * Package built CMS routes, review evidence, runtime assets and community uploads only.
  * Public editorial pages and preserved archive uploads remain on the main site's host.
- * @param {{root?: string}} [options] - Repository root or temporary packaging fixture.
+ * @param {{root?: string, publicSiteURL?: string}} [options] - Repository root and public archive host.
  * @returns {string} Netlify deployment directory with a root redirect and noindex headers.
- * @throws {Error} When required built CMS assets are absent.
+ * @throws {Error} When required CMS assets are absent or the public archive host is invalid.
  */
 export function packageNetlifyAdmin({
   root = process.cwd(),
@@ -25,7 +25,19 @@ export function packageNetlifyAdmin({
     }
   }
 
-  const normalizedOrigin = String(publicSiteURL).replace(/\/+$/, '')
+  const origin = new URL(publicSiteURL)
+  if (
+    !['https:', 'http:'].includes(origin.protocol) ||
+    origin.username ||
+    origin.password ||
+    origin.search ||
+    origin.hash
+  ) {
+    throw new Error(
+      'Public site URL must be an HTTP(S) URL without credentials, a query or fragment.'
+    )
+  }
+  const normalizedOrigin = origin.href.replace(/\/+$/, '')
   mkdirSync(output, { recursive: true })
   writeFileSync(path.join(output, '_headers'), '/admin/*\n  X-Robots-Tag: noindex, nofollow\n')
   writeFileSync(
