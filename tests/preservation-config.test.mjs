@@ -4,7 +4,7 @@
 
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { existsSync, readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { parse } from 'yaml'
 
 test('CMS edits publish directly and preserved records have ownership rules', () => {
@@ -12,7 +12,13 @@ test('CMS edits publish directly and preserved records have ownership rules', ()
   assert.equal(config.publish_mode, undefined)
   assert.equal(config.media_folder, 'public/uploads/community')
   assert.equal(config.public_folder, '/uploads/community')
-  assert.ok(existsSync(new URL('../public/uploads/community/.gitkeep', import.meta.url)))
+  const uploads = readdirSync(new URL('../public/uploads/community/', import.meta.url), {
+    withFileTypes: true
+  })
+  assert.ok(
+    uploads.some((entry) => entry.isFile() && !entry.name.startsWith('.')),
+    'Community uploads contain real files without needing a placeholder'
+  )
 
   const owners = new Set(
     readFileSync(new URL('../.github/CODEOWNERS', import.meta.url), 'utf8')
