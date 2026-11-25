@@ -27,6 +27,197 @@ const publicSitePath = (value) =>
     </nav>
     <script is:inline>
       window.CMS_MANUAL_INIT = true
+      window.__archiveMediaNames = new Set()
+      ;(() => {
+        const nativeFetch = window.fetch.bind(window)
+        const blobCache = new Map()
+        const treeCache = new Map()
+
+        const cloneJsonResponse = (data, status = 200) =>
+          new Response(JSON.stringify(data), {
+            status,
+            headers: { 'Content-Type': 'application/json' }
+          })
+
+        const fetchWithRetry = async (input, init) => {
+          const response = await nativeFetch(input, init)
+          if ([429, 502, 503, 504].includes(response.status)) {
+            await new Promise((resolve) => setTimeout(resolve, 600))
+            return nativeFetch(input, init)
+          }
+          return response
+        }
+
+        window.fetch = async (input, init = {}) => {
+          const method = String(
+            init?.method || (input instanceof Request ? input.method : 'GET')
+          ).toUpperCase()
+          let url =
+            typeof input === 'string' ? input : input instanceof URL ? input.href : input.url
+
+          // Local Decap proxy server enhancements: hide .gitkeep and surface archive media in Media Library
+          if (
+            url.includes('localhost:8081/api/v1') &&
+            method === 'POST' &&
+            typeof init?.body === 'string'
+          ) {
+            try {
+              const payload = JSON.parse(init.body)
+              if (payload.action === 'getMedia') {
+                const res = await nativeFetch(input, init)
+                if (!res.ok) return res
+                const community = (await res.json()).filter((item) => !item.name?.startsWith('.'))
+                const archiveRes = await nativeFetch(input, {
+                  ...init,
+                  body: JSON.stringify({
+                    action: 'getMedia',
+                    params: {
+                      mediaFolder: 'public/uploads/archive',
+                      publicFolder: '/uploads/archive'
+                    }
+                  })
+                }).catch(() => null)
+                if (archiveRes?.ok) {
+                  const seen = new Set(community.map((item) => item.name))
+                  const archiveItems = (await archiveRes.json()).filter(
+                    (item) => item.name && !item.name.startsWith('.') && !seen.has(item.name)
+                  )
+                  for (const item of archiveItems) {
+                    window.__archiveMediaNames.add(item.name)
+                    community.push({
+                      ...item,
+                      path: `public/uploads/community/${item.name}`,
+                      url: `/uploads/archive/${item.name}`
+                    })
+                  }
+                }
+                return cloneJsonResponse(community)
+              }
+              if (
+                payload.action === 'getMediaFile' &&
+                typeof payload.params?.path === 'string' &&
+                payload.params.path.startsWith('public/uploads/community/')
+              ) {
+                const res = await nativeFetch(input, init)
+                if (res.ok) return res
+                const basename = payload.params.path.slice('public/uploads/community/'.length)
+                const fallback = await nativeFetch(input, {
+                  ...init,
+                  body: JSON.stringify({
+                    action: 'getMediaFile',
+                    params: { path: `public/uploads/archive/${basename}` }
+                  })
+                })
+                if (fallback.ok) {
+                  const data = await fallback.json()
+                  window.__archiveMediaNames.add(basename)
+                  return cloneJsonResponse({ ...data, path: payload.params.path })
+                }
+                return res
+              }
+            } catch {
+              // Fall through to native fetch
+            }
+          }
+
+          // Git Gateway / GitHub REST API stability & media enhancements
+          if (url.includes('/.netlify/git/github/')) {
+            if (method !== 'GET' && method !== 'HEAD') {
+              treeCache.clear()
+              return nativeFetch(input, init)
+            }
+
+            // Normalize encoded slashes in /git/trees/<branch>:<path> so proxies handle paths consistently
+            if (url.includes('/git/trees/')) {
+              url = url.replace(/(\/git\/trees\/[^:?#]+:)([^?#]+)/, (_, prefix, encodedDir) => {
+                try {
+                  return prefix + decodeURIComponent(encodedDir)
+                } catch {
+                  return prefix + encodedDir
+                }
+              })
+            }
+
+            // Cache immutable Git blob objects in memory to prevent GitHub secondary rate-limit errors
+            const blobMatch = url.match(/\/git\/blobs\/([0-9a-f]{40})(?:$|\?)/i)
+            if (blobMatch) {
+              const sha = blobMatch[1]
+              if (!blobCache.has(sha)) {
+                blobCache.set(
+                  sha,
+                  fetchWithRetry(url, init).then(async (res) => {
+                    if (!res.ok) {
+                      blobCache.delete(sha)
+                      throw res
+                    }
+                    return res.json()
+                  })
+                )
+              }
+              try {
+                return cloneJsonResponse(await blobCache.get(sha))
+              } catch (err) {
+                if (err instanceof Response) return err
+                throw err
+              }
+            }
+
+            // Cache & clean /git/trees responses, filtering .gitkeep and merging archive media into Media Library
+            if (url.includes('/git/trees/')) {
+              if (!treeCache.has(url)) {
+                treeCache.set(
+                  url,
+                  (async () => {
+                    const res = await fetchWithRetry(url, init)
+                    if (!res.ok) {
+                      treeCache.delete(url)
+                      throw res
+                    }
+                    const data = await res.json()
+                    if (Array.isArray(data?.tree)) {
+                      data.tree = data.tree.filter(
+                        (entry) => entry.path !== '.gitkeep' && !entry.path?.endsWith('/.gitkeep')
+                      )
+                    }
+                    if (
+                      /:public\/uploads\/community(?:$|\?)/.test(url) &&
+                      Array.isArray(data?.tree)
+                    ) {
+                      const archiveUrl = url.replace(
+                        /:public\/uploads\/community/,
+                        ':public/uploads/archive'
+                      )
+                      const archiveRes = await fetchWithRetry(archiveUrl, init).catch(() => null)
+                      if (archiveRes?.ok) {
+                        const archiveData = await archiveRes.json().catch(() => null)
+                        const seen = new Set(data.tree.map((entry) => entry.path))
+                        for (const entry of archiveData?.tree || []) {
+                          if (entry.path && !entry.path.startsWith('.') && !seen.has(entry.path)) {
+                            window.__archiveMediaNames.add(entry.path)
+                            data.tree.push(entry)
+                          }
+                        }
+                      }
+                    }
+                    return data
+                  })()
+                )
+              }
+              try {
+                return cloneJsonResponse(await treeCache.get(url))
+              } catch (err) {
+                if (err instanceof Response) return err
+                throw err
+              }
+            }
+
+            return fetchWithRetry(url, init)
+          }
+
+          return nativeFetch(input, init)
+        }
+      })()
+
       if (window.netlifyIdentity) {
         window.netlifyIdentity.on('init', (user) => {
           if (!user) {
@@ -55,6 +246,24 @@ const publicSitePath = (value) =>
       import previewStyles from '../../styles/global.css?inline'
 
       const domainPermissions = parseDomainPermissions(domainPermissionsCsv)
+
+      const normalizeArchiveUploadPaths = (value, archiveNames) => {
+        if (!archiveNames?.size || value === null || value === undefined) return value
+        if (typeof value === 'string') {
+          return value.replace(/\/uploads\/community\/([^\s"'<>\\)#?]+)/g, (full, filename) =>
+            archiveNames.has(filename) ? `/uploads/archive/${filename}` : full
+          )
+        }
+        if (Array.isArray(value)) {
+          return value.map((item) => normalizeArchiveUploadPaths(item, archiveNames))
+        }
+        if (typeof value === 'object') {
+          return Object.fromEntries(
+            Object.entries(value).map(([k, v]) => [k, normalizeArchiveUploadPaths(v, archiveNames)])
+          )
+        }
+        return value
+      }
 
       const getCurrentPermissions = () => {
         const netlifyIdentity = Reflect.get(window, 'netlifyIdentity')
@@ -93,15 +302,33 @@ const publicSitePath = (value) =>
 
       const stampedFields = {
         pages: ['updated_on'],
+        faqs: ['updated_on'],
         resources: ['updated_on'],
         sessions: ['updated_on'],
         contributors: ['updated_on'],
+        organisations: ['updated_on'],
         authorities: ['updated_on', 'reviewed_on'],
         libraries: ['updated_on', 'reviewed_on']
       }
 
       const cms = Reflect.get(window, 'CMS')
       if (cms) {
+        const enLocale = cms.getLocale?.('en') || {}
+        if (cms.registerLocale) {
+          cms.registerLocale('en', {
+            ...enLocale,
+            editor: {
+              ...enLocale.editor,
+              editorToolbar: {
+                ...enLocale.editor?.editorToolbar,
+                backCollection: 'Back to %{collectionLabel}',
+                changesSaved: 'No unsaved changes',
+                unsavedChanges: 'Unsaved changes'
+              }
+            }
+          })
+        }
+
         registerEditorComponents(cms)
 
         const initialPermissions = getCurrentPermissions()
@@ -125,6 +352,7 @@ const publicSitePath = (value) =>
               const permissions = getCurrentPermissions()
               const collection = entry.get('collection')
               let data = entry.get('data')
+              const archiveNames = Reflect.get(window, '__archiveMediaNames')
 
               if (collection === 'libraries' || collection === 'authorities') {
                 const prepared = prepareDirectoryEdit(data.toJS(), collection)
@@ -136,7 +364,11 @@ const publicSitePath = (value) =>
                   data = data.delete('data')
                 }
               } else {
-                validateEntrySave(data.toJS(), collection, permissions)
+                const normalized = normalizeArchiveUploadPaths(data.toJS(), archiveNames)
+                validateEntrySave(normalized, collection, permissions)
+                for (const [field, value] of Object.entries(normalized)) {
+                  data = data.set(field, value)
+                }
               }
 
               const today = new Date().toLocaleDateString('en-CA')
@@ -163,6 +395,7 @@ const publicSitePath = (value) =>
           const primaryGss = initialPermissions.gssCodes[0]
           const libCol = config.collections?.find((c) => c.name === 'libraries')
           if (libCol) {
+            libCol.delete = false
             libCol.filter = {
               field: 'local_authority_code',
               value: primaryGss
@@ -170,6 +403,8 @@ const publicSitePath = (value) =>
           }
           const authCol = config.collections?.find((c) => c.name === 'authorities')
           if (authCol) {
+            authCol.create = false
+            authCol.delete = false
             authCol.filter = {
               field: 'local_authority_code',
               value: primaryGss
@@ -185,21 +420,44 @@ const publicSitePath = (value) =>
 </html>
 
 <style>
+  :global(html),
+  :global(body) {
+    margin: 0;
+    padding: 0;
+  }
+
   .cms-help-links {
+    position: fixed;
+    bottom: 0.75rem;
+    right: 0.875rem;
+    z-index: 300;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
-    gap: 0.75rem;
-    padding: 0.5rem 1rem;
-    border-bottom: 1px solid #d2d1d4;
-    background: #fff;
-    font: 0.8rem/1.3 sans-serif;
+    gap: 0.65rem;
+    padding: 0.35rem 0.75rem;
+    border: 1px solid #d2d1d4;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.1);
+    font: 0.78rem/1.3 sans-serif;
+  }
+
+  .cms-help-links a {
+    color: #1d4ed8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .cms-help-links a:hover,
+  .cms-help-links a:focus-visible {
+    text-decoration: underline;
   }
 
   .cms-user-badge {
-    margin-right: auto;
+    padding-right: 0.5rem;
+    border-right: 1px solid #d2d1d4;
     font-weight: 600;
-    color: #4a4a4a;
+    color: #374151;
   }
 
   :global(body.is-service-editor a[href='#/collections/settings']),

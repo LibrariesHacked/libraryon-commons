@@ -50,4 +50,26 @@ const copy = settings.ui.directory
       </a>
     </li>
   )}
+  {record.adultFine !== null && record.adultFine !== undefined && (
+    <li>
+      {record.adultFine === 0 && (record.childFine === 0 || record.childFine === null) ? (
+        <span>Overdue fines: Fine-free</span>
+      ) : (
+        <span>
+          Overdue fines: £{Number(record.adultFine).toFixed(2)} adult
+          {record.childFine !== null && record.childFine !== undefined
+            ? ` / ${record.childFine === 0 ? 'free' : `£${Number(record.childFine).toFixed(2)}`} child`
+            : ''}
+          {record.fineInterval ? ` per ${record.fineInterval.toLowerCase()}` : ''}
+        </span>
+      )}
+    </li>
+  )}
+  {safeURL(record.feesUrl) && (
+    <li>
+      <a href={safeURL(record.feesUrl)}>
+        Fees and charges <ArrowUpRight size={15} aria-hidden="true" />
+      </a>
+    </li>
+  )}
 </ul>

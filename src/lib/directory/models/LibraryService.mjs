@@ -58,6 +58,12 @@ export class LibraryService {
       ''
     this.operating_organisation = this.operatingOrganisation
     this.about = flat.about || flat['About the library service'] || undefined
+    this.adultFine =
+      flat.adult_fine !== null && flat.adult_fine !== undefined ? Number(flat.adult_fine) : null
+    this.childFine =
+      flat.child_fine !== null && flat.child_fine !== undefined ? Number(flat.child_fine) : null
+    this.fineInterval = flat.fine_interval || null
+    this.feesUrl = flat.fees_and_charges_url || ''
     this.social = social
 
     if (!this.library_ids) {

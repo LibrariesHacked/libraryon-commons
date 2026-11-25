@@ -36,6 +36,10 @@ test('Netlify CMS package contains only the editor, runtime assets, and communit
     readFileSync(path.join(output, '_headers'), 'utf8'),
     /\/admin\/\*[\s\S]*X-Robots-Tag: noindex, nofollow/
   )
+  assert.match(
+    readFileSync(path.join(output, '_redirects'), 'utf8'),
+    /^\/uploads\/archive\/\* https:\/\/librarycommons\.org\.uk\/uploads\/archive\/:splat 200$/m
+  )
   assert.ok(existsSync(path.join(output, '_astro/editor.js')))
   assert.ok(existsSync(path.join(output, 'uploads/community/library-guide.jpg')))
   assert.ok(!existsSync(path.join(output, 'uploads/archive/original.pdf')))

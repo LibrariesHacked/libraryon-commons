@@ -93,8 +93,7 @@ export class Library {
         ['staffed', 'Staffed'],
         ['unstaffed', 'Self-service']
       ]) {
-        const value =
-          flat[`${day.toLowerCase()}_${kind}_hours`] || flat[`${day} ${kind} hours`]
+        const value = flat[`${day.toLowerCase()}_${kind}_hours`] || flat[`${day} ${kind} hours`]
         if (!value) continue
         known = true
         for (const slot of value.split(',')) {
@@ -174,9 +173,7 @@ export class Library {
             : operatingType
               ? operationMap[operatingType]
               : flat.facilityOperated || ''
-    this.permanentlyClosed = Boolean(
-      status === 'Closed (permanent)' || flat.permanentlyClosed
-    )
+    this.permanentlyClosed = Boolean(status === 'Closed (permanent)' || flat.permanentlyClosed)
     this.services = services.length ? services : flat.services || []
     this.accessibility = accessibility.length ? accessibility : flat.accessibility || []
     this.openingTimes = Object.keys(openingTimes).length ? openingTimes : flat.openingTimes || {}

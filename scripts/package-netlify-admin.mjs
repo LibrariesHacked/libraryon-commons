@@ -13,7 +13,10 @@ import { pathToFileURL } from 'node:url'
  * @returns {string} Netlify deployment directory with a root redirect and noindex headers.
  * @throws {Error} When required built CMS assets are absent.
  */
-export function packageNetlifyAdmin({ root = process.cwd() } = {}) {
+export function packageNetlifyAdmin({
+  root = process.cwd(),
+  publicSiteURL = process.env.PUBLIC_SITE_URL || 'https://librarycommons.org.uk'
+} = {}) {
   const dist = path.join(root, 'dist')
   const output = path.join(root, '.deploy/netlify-admin')
   for (const required of ['admin/index.html', 'admin/config.yml', '_astro']) {
@@ -22,8 +25,13 @@ export function packageNetlifyAdmin({ root = process.cwd() } = {}) {
     }
   }
 
+  const normalizedOrigin = String(publicSiteURL).replace(/\/+$/, '')
   mkdirSync(output, { recursive: true })
   writeFileSync(path.join(output, '_headers'), '/admin/*\n  X-Robots-Tag: noindex, nofollow\n')
+  writeFileSync(
+    path.join(output, '_redirects'),
+    `/uploads/archive/* ${normalizedOrigin}/uploads/archive/:splat 200\n`
+  )
   cpSync(path.join(dist, 'admin'), path.join(output, 'admin'), { recursive: true })
   cpSync(path.join(dist, '_astro'), path.join(output, '_astro'), { recursive: true })
   const communityUploads = path.join(dist, 'uploads/community')

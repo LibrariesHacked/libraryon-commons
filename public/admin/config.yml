@@ -785,6 +785,10 @@ collections:
     slug: "{{slug}}"
     identifier_field: title
     summary: "{{title}} ({{kind}})"
+    sortable_fields:
+      - title
+      - kind
+      - updated_on
     view_groups:
       - label: Content Type
         field: kind
@@ -997,6 +1001,8 @@ collections:
     slug: "{{slug}}"
     identifier_field: question
     summary: "{{question}}"
+    sortable_fields:
+      - question
     editor:
       preview: false
     fields:
@@ -1029,7 +1035,11 @@ collections:
     extension: json
     format: json
     slug: "{{slug}}"
+    identifier_field: title
     summary: "{{title}} ({{kind}})"
+    sortable_fields:
+      - title
+      - kind
     editor:
       preview: false
     fields:
@@ -1040,14 +1050,18 @@ collections:
         label: Resource Type
         widget: select
         options:
-          - document
-          - slides
-          - recording
-          - link
+          - label: Document (PDF or file)
+            value: document
+          - label: Presentation slides
+            value: slides
+          - label: Video or audio recording
+            value: recording
+          - label: Web link
+            value: link
       - name: url
-        label: File Or External URL
-        widget: file
-        hint: Upload a local document, or enter the external presentation or recording URL.
+        label: Web Link Or Uploaded File Path
+        widget: string
+        hint: Paste a full web address (https://...) or a site file path (/uploads/community/...). To upload a new file first, use the Media button in the top bar.
       - name: description
         label: Description
         widget: text
@@ -1080,7 +1094,11 @@ collections:
     extension: json
     format: json
     slug: "{{slug}}"
+    identifier_field: title
     summary: "{{title}}"
+    sortable_fields:
+      - order
+      - title
     editor:
       preview: false
     fields:
@@ -1186,7 +1204,7 @@ collections:
           - Crown Dependencies
       - name: about
         label: About the library service
-        widget: string
+        widget: text
         required: false
         hint: Narrative overview of the public library service, community focus, and history
       - name: local_authority_department
@@ -1430,7 +1448,7 @@ collections:
         hint: Commercial supplier or platform for digital e-newspaper subscriptions (e.g. PressReader, NewsBank)
       - name: online_reference_subscriptions
         label: Online reference subscriptions
-        widget: string
+        widget: text
         required: false
         hint: Semicolon-separated list of major digital reference and subscription resources provided by the service (e.g. 'Ancestry Library Edition; Findmypast; British Newspaper Archive; Theory Test Pro; BFI Replay; Britannica')
       - name: green_library
@@ -1443,7 +1461,7 @@ collections:
           - No
       - name: notes
         label: Notes
-        widget: string
+        widget: text
         required: false
         hint: General administrative or operational notes concerning the library service
       - name: slug
@@ -1523,6 +1541,7 @@ collections:
           - name: reason
             label: Reason
             widget: text
+    delete: false
   - name: libraries
     label: Libraries
     label_singular: Library
@@ -1644,11 +1663,16 @@ collections:
         required: false
         hint: The operating model of the public library branch
         options:
-          - LAL
-          - LAL-
-          - CL
-          - CRL
-          - ICL
+          - label: Local authority run — staffed (LAL)
+            value: LAL
+          - label: Local authority run — unstaffed (LAL-)
+            value: LAL-
+          - label: Commissioned library (CL)
+            value: CL
+          - label: Community-run library (CRL)
+            value: CRL
+          - label: Independent community library (ICL)
+            value: ICL
       - name: year_opened
         label: Year opened
         widget: number
@@ -1676,75 +1700,75 @@ collections:
         label: Monday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: tuesday_staffed_hours
         label: Tuesday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: wednesday_staffed_hours
         label: Wednesday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: thursday_staffed_hours
         label: Thursday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: friday_staffed_hours
         label: Friday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: saturday_staffed_hours
         label: Saturday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: sunday_staffed_hours
         label: Sunday staffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: monday_unstaffed_hours
         label: Monday unstaffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: tuesday_unstaffed_hours
         label: Tuesday unstaffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: wednesday_unstaffed_hours
         label: Wednesday unstaffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: thursday_unstaffed_hours
         label: Thursday unstaffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: friday_unstaffed_hours
         label: Friday unstaffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: saturday_unstaffed_hours
         label: Saturday unstaffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: sunday_unstaffed_hours
         label: Sunday unstaffed hours
         widget: string
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed.. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.
+        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
       - name: special_hours
         label: Special hours
-        widget: string
+        widget: text
         required: false
         hint: Changes to normal opening hours such as for public holidays
       - name: weekly_staffed_hours
@@ -1778,7 +1802,7 @@ collections:
           - No
       - name: co_located_with
         label: Co-located with
-        widget: string
+        widget: text
         required: false
         hint: Details of services or facilities co-located with the library. For multiple co-locations, separate values with a semicolon (;), e.g. 'Council customer services; Community centre; Post office'.
       - name: guest_wifi
@@ -1904,7 +1928,7 @@ collections:
           - No
       - name: facilities_and_services
         label: Facilities and services
-        widget: string
+        widget: text
         required: false
         hint: Semicolon-separated list of all public facilities, amenities, and specialized digital resources available at the library branch (e.g. 'Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; BFI Replay; Meeting rooms')
       - name: phone_number
@@ -1939,7 +1963,7 @@ collections:
         hint: 3D or virtual walkthrough tour URL for the library building
       - name: notes
         label: Notes
-        widget: string
+        widget: text
         required: false
         hint: Public notes regarding library services, facilities, or planned changes
       - name: slug
@@ -1960,10 +1984,8 @@ collections:
         required: false
         hint: Choose the library authority. Leave blank only if it is not known.
       - name: id
-        label: Stable Listing ID
-        widget: string
+        widget: hidden
         required: false
-        hint: Keep existing IDs unchanged. New listings may leave this empty.
       - name: source_id
         widget: hidden
         required: false
@@ -2036,6 +2058,7 @@ collections:
     sortable_fields:
       - library_name
       - reviewed_on
+    delete: false
   - name: contributors
     label: Contributors
     label_singular: Contributor
@@ -2045,6 +2068,8 @@ collections:
     format: json
     slug: "{{fields.slug}}"
     identifier_field: name
+    sortable_fields:
+      - name
     editor:
       preview: false
     fields:
@@ -2086,8 +2111,13 @@ collections:
     label_singular: Organisation
     folder: src/content/organisations
     create: true
+    extension: md
+    format: frontmatter
     slug: "{{slug}}"
     identifier_field: name
+    sortable_fields:
+      - name
+      - acronym
     editor:
       preview: false
     fields:

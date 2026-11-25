@@ -307,7 +307,13 @@ export function previewEditorBlock(name, data, getAsset) {
   if (name === 'resources') {
     return '<section><h2>Related resources</h2></section>'
   }
-  const asset = (image) => (image && getAsset ? String(getAsset(image)) : image)
+  const asset = (image) => {
+    if (!image) return image
+    if (String(image).startsWith('/uploads/archive/') || /^https?:\/\//i.test(String(image))) {
+      return String(image)
+    }
+    return getAsset ? String(getAsset(image)) : image
+  }
   const values = {
     ...data,
     image: asset(data.image),

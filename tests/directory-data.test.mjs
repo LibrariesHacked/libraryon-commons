@@ -123,7 +123,12 @@ test("review worklist follows live flags, prioritizes risks and never attaches a
     },
     {
       review: [
-        { review_id: 'review_one', id: 'snake-branch', kind: 'opening-hours', original: ['09:00-08:00'] }
+        {
+          review_id: 'review_one',
+          id: 'snake-branch',
+          kind: 'opening-hours',
+          original: ['09:00-08:00']
+        }
       ]
     }
   )
@@ -190,7 +195,9 @@ test('complete and authority-scoped CSVs preserve every record while strict expo
       rows.every(
         (row) =>
           (row.local_authority || row['Local authority']) ===
-          (authority.local_authority || authority.data?.local_authority || authority.data?.['Local authority'])
+          (authority.local_authority ||
+            authority.data?.local_authority ||
+            authority.data?.['Local authority'])
       )
     )
   }

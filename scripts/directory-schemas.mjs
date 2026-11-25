@@ -48,6 +48,21 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
       const constraints = field.constraints || {}
       const fieldName = field.name
       const fieldLabel = field.title || field.name
+      const multilineFields = new Set([
+        'about',
+        'notes',
+        'special_hours',
+        'facilities_and_services',
+        'online_reference_subscriptions',
+        'co_located_with'
+      ])
+      const libraryTypeLabels = {
+        LAL: 'Local authority run — staffed (LAL)',
+        'LAL-': 'Local authority run — unstaffed (LAL-)',
+        CL: 'Commissioned library (CL)',
+        CRL: 'Community-run library (CRL)',
+        ICL: 'Independent community library (ICL)'
+      }
       const result = {
         name: fieldName,
         label: fieldLabel,
@@ -57,7 +72,9 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
             ? 'number'
             : field.type === 'date'
               ? 'date'
-              : 'string',
+              : multilineFields.has(fieldName)
+                ? 'text'
+                : 'string',
         required: false,
         hint: field.description
       }
@@ -69,7 +86,12 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         result.options =
           fieldName === 'Country' || field.name === 'country'
             ? Array.from(new Set([...constraints.enum, 'Crown Dependencies']))
-            : constraints.enum
+            : fieldName === 'type_of_library'
+              ? constraints.enum.map((value) => ({
+                  label: libraryTypeLabels[value] || value,
+                  value
+                }))
+              : constraints.enum
       if (result.widget === 'number') {
         result.value_type = field.type === 'number' ? 'float' : 'int'
         if (constraints.minimum !== undefined) result.min = constraints.minimum
@@ -84,8 +106,10 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         field.type === 'string' &&
         (/ (un)?staffed hours$/.test(field.title || field.name) ||
           /_(un)?staffed_hours$/.test(field.name))
-      )
-        result.hint = `${field.description}. Use 09:00-17:00 or 09:00-12:00,13:00-17:00. Leave blank when closed; saved as null.`
+      ) {
+        const cleanDesc = String(field.description || '').replace(/\.+\s*$/, '')
+        result.hint = `${cleanDesc}. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.`
+      }
       return result
     })
     collection.set('fields', [
@@ -128,6 +152,7 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         ]
       }
     ])
+    collection.set('delete', false)
     collection.set('identifier_field', title)
     collection.delete('summary')
     collection.set('sortable_fields', [title, 'reviewed_on'])
