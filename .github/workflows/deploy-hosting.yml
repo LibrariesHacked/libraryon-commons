@@ -17,6 +17,8 @@ jobs:
   build:
     name: Build deployment artifacts
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -24,7 +26,20 @@ jobs:
           node-version: 22.23.4
           cache: npm
       - run: npm ci
+      - run: npm run cms:lookups
       - run: npm test
+      - name: Persist generated CMS lookups
+        if: github.ref == 'refs/heads/main'
+        run: |
+          git add src/data/cms-lookups/resources.json src/data/cms-lookups/authorities.json
+          if git diff --staged --quiet; then
+            echo "CMS lookups are already synchronized."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "chore(cms): regenerate native relation lookups" -m "Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+            git push origin HEAD:main
+          fi
       - name: Build public GitHub Pages site
         env:
           SITE_URL: ${{ vars.SITE_URL || 'https://librarycommons.org.uk/' }}

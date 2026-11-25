@@ -6,6 +6,7 @@ import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { parseDocument } from 'yaml'
 import { format } from 'prettier'
+import facilities from '../src/data/cms-facilities.json' with { type: 'json' }
 
 /**
  * Regenerate only directory CMS forms from the supplied schemas, preserving other collections.
@@ -40,9 +41,14 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
       ].includes(field.name)
     )
     const relation = metadata.find((field) => field.name === 'authority')
-    if (relation) {
+    if (relation?.collection === 'authorities') {
       relation.search_fields = ['local_authority']
       relation.display_fields = ['local_authority']
+    }
+    if (relation && kind === 'libraries') {
+      relation.label = 'Library authority (name and GSS code)'
+      relation.hint =
+        'Sets the authority name and code together. New authorities appear after the site updates; reload to see them.'
     }
     const dataFields = schema.fields.map((field) => {
       const constraints = field.constraints || {}
@@ -79,8 +85,10 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         hint: field.description
       }
       if (field.type === 'date') {
+        result.widget = 'datetime'
         result.format = 'YYYY-MM-DD'
         result.date_format = 'YYYY-MM-DD'
+        result.time_format = false
       }
       if (constraints.enum)
         result.options =
@@ -107,14 +115,58 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         (/ (un)?staffed hours$/.test(field.title || field.name) ||
           /_(un)?staffed_hours$/.test(field.name))
       ) {
-        const cleanDesc = String(field.description || '').replace(/\.+\s*$/, '')
-        result.hint = `${cleanDesc}. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.`
+        result.widget = 'directory-hours'
+        result.hint =
+          fieldName === 'monday_staffed_hours'
+            ? 'Use 09:00-17:00 or 09:00-12:30,13:30-17:00 for split sessions. Midnight closing is 24:00. Blank means closed or not recorded.'
+            : '24-hour times, as above. Blank means closed or not recorded.'
       }
+      if (kind === 'libraries' && ['local_authority', 'local_authority_code'].includes(fieldName)) {
+        result.widget = 'hidden'
+      }
+      if (fieldName === 'facilities_and_services') {
+        result.widget = 'directory-facilities'
+        result.multiple = true
+        result.options = facilities
+        result.hint = 'Choose all that apply.'
+      }
+      if (['adult_fine', 'child_fine'].includes(fieldName)) {
+        result.label = `${fieldLabel} (GBP)`
+        result.hint = 'Pounds per fine interval. Use 0 for fine-free, or leave blank if unknown.'
+      }
+      if (fieldName === 'co_located_with') {
+        result.hint =
+          'Separate building partners with semicolons, e.g. Community centre; Post office.'
+      }
+      if (field.format === 'uri')
+        result.hint = 'Full web address, starting with https:// or http://.'
+      if (field.format === 'email') result.hint = 'Email address, e.g. library@example.gov.uk.'
+      if (fieldName === 'phone_number') result.hint = 'Include the area code and any extension.'
+      const shortHints = {
+        local_authority_code: 'Nine-character GSS code, e.g. E08000003.',
+        operating_organisation: 'Organisation running the service, if different from the council.',
+        consortium: 'Shared partnership, e.g. LibrariesWest or The Libraries Consortium.',
+        online_reference_subscriptions:
+          'Separate resources with semicolons, e.g. Findmypast; BFI Replay.',
+        automated_access_system: 'Self-service access system, e.g. Open+.',
+        special_hours: 'Holiday hours, temporary changes or other exceptions.',
+        type_of_library: 'How the library is run.',
+        temporary_closed_until: 'Expected reopening date.',
+        library_management_system_supplier: 'Supplier of the library management software.',
+        library_management_system: 'Library management software name.',
+        online_catalogue_system: 'Catalogue or discovery software name.',
+        ebook_supplier: 'Ebook provider, e.g. Bolinda or OverDrive.',
+        audiobook_supplier: 'Audiobook provider, e.g. Bolinda or OverDrive.',
+        emagazine_supplier: 'Digital magazine provider.',
+        enewspaper_supplier: 'Digital newspaper provider.'
+      }
+      if (shortHints[fieldName]) result.hint = shortHints[fieldName]
       return result
     })
     collection.set('fields', [
+      ...(kind === 'libraries' && relation ? [relation] : []),
       ...dataFields,
-      ...metadata,
+      ...metadata.filter((field) => kind !== 'libraries' || field.name !== 'authority'),
       {
         name: 'manual_checks',
         label: 'Manual checks',
@@ -123,7 +175,7 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         collapsed: true,
         allow_add: false,
         summary: '{{fields.kind}}: {{fields.reason}}',
-        hint: 'Review evidence in the Data review worklist. Remove a check only after completing the review; the original audit is retained.',
+        hint: 'See Data review for details. Remove a check when the review is complete.',
         fields: [
           { name: 'kind', label: 'Check type', widget: 'string' },
           { name: 'reason', label: 'Reason', widget: 'text' },
@@ -143,7 +195,7 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         collapsed: true,
         allow_add: false,
         summary: '{{fields.field}}: {{fields.reason}}',
-        hint: 'Correct the data field; resolved exceptions disappear automatically when saved.',
+        hint: 'Correct the field above. Resolved issues clear when you save.',
         fields: [
           { name: 'field', label: 'Schema field', widget: 'string' },
           { name: 'code', label: 'Issue', widget: 'string' },

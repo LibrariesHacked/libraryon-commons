@@ -40,6 +40,7 @@ test('CMS keeps Git Gateway, disables global search and never replaces fetch or 
     /registerBackend|registerGatewayBackend|gatewayBackend|config\.backend\.name\s*=/
   )
   assert.match(source, /identity\.netlify\.com\/v1\/netlify-identity-widget\.js/)
+  assert.match(source, /https:\/\/unpkg\.com\/decap-cms@3\.18\.0\/dist\/decap-cms\.js/)
   const prepared = withArchiveWidgets(config)
   assert.equal(config.collections[0].files[0].fields[0].widget, 'object')
   assert.equal(prepared.backend.name, 'git-gateway')

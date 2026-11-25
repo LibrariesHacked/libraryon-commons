@@ -45,12 +45,17 @@ const publicSitePath = (value) =>
         })
       }
     </script>
-    <script is:inline src="https://unpkg.com/decap-cms@3.17.3/dist/decap-cms.js"></script>
+    <script is:inline src="https://unpkg.com/decap-cms@3.18.0/dist/decap-cms.js"></script>
     <script>
       import { parse as parseYaml } from 'yaml'
       import { prepareDirectoryEdit } from '../../lib/directory/schemaHelpers.mjs'
       import { registerEditorComponents } from '../../lib/cms/cmsHelpers.mjs'
       import { registerArchiveWidgets, withArchiveWidgets } from '../../lib/cms/archiveMedia.mjs'
+      import {
+        registerDirectoryControls,
+        prepareLibraryAuthority
+      } from '../../lib/cms/directoryControls.mjs'
+      import authorityLookups from '../../data/cms-lookups/authorities.json'
       import {
         parseDomainPermissions,
         resolveUserPermissions,
@@ -139,6 +144,10 @@ const publicSitePath = (value) =>
           h: Reflect.get(window, 'h'),
           createClass: Reflect.get(window, 'createClass')
         })
+        registerDirectoryControls(cms, {
+          h: Reflect.get(window, 'h'),
+          createClass: Reflect.get(window, 'createClass')
+        })
         const enLocale = cms.getLocale('en')
         cms.registerLocale('en', {
           ...enLocale,
@@ -170,7 +179,11 @@ const publicSitePath = (value) =>
               const collection = entry.get('collection')
               let data = entry.get('data')
               if (collection === 'libraries' || collection === 'authorities') {
-                const prepared = prepareDirectoryEdit(data.toJS(), collection)
+                const input =
+                  collection === 'libraries'
+                    ? prepareLibraryAuthority(data.toJS(), authorityLookups.items)
+                    : data.toJS()
+                const prepared = prepareDirectoryEdit(input, collection)
                 validateEntrySave(prepared, collection, permissions)
                 for (const [field, value] of Object.entries(prepared)) data = data.set(field, value)
                 if (data.has('data')) data = data.delete('data')

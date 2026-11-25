@@ -198,6 +198,7 @@ export function isGssAllowed(allowedGssCodes = [], targetGssCode = '') {
 
 /**
  * Validate that a proposed CMS entry save complies with the user's assigned role and GSS permissions.
+ * Generated lookup collections cannot be saved by any editor.
  * Throws an Error with a user-facing explanation when access is denied.
  *
  * @param {object} entryData - Decap CMS entry data object (e.g. prepared JS object).
@@ -207,6 +208,11 @@ export function isGssAllowed(allowedGssCodes = [], targetGssCode = '') {
  * @returns {boolean} True if the save is permitted.
  */
 export function validateEntrySave(entryData, collection, userPermissions) {
+  if (collection === 'resource_lookups' || collection === 'authority_lookups') {
+    throw new Error(
+      'Permission denied: CMS lookups are generated automatically. Edit the original resource or authority instead.'
+    )
+  }
   if (!userPermissions || !userPermissions.allowed) {
     throw new Error(
       'Permission denied: Your account is not authorised to save changes in this CMS.'

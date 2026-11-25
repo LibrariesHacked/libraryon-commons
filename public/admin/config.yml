@@ -794,6 +794,40 @@ collections:
             display_fields:
               - title
             multiple: true
+  - name: resource_lookups
+    label: Generated Resource Lookups
+    hide: true
+    delete: false
+    files:
+      - name: resources
+        label: Resources
+        file: src/data/cms-lookups/resources.json
+        fields:
+          - name: items
+            widget: list
+            allow_add: false
+            fields:
+              - name: id
+                widget: hidden
+              - name: label
+                widget: string
+  - name: authority_lookups
+    label: Generated Authority Lookups
+    hide: true
+    delete: false
+    files:
+      - name: authorities
+        label: Authorities
+        file: src/data/cms-lookups/authorities.json
+        fields:
+          - name: items
+            widget: list
+            allow_add: false
+            fields:
+              - name: id
+                widget: hidden
+              - name: label
+                widget: string
   - name: pages
     label: Editorial Content
     label_singular: Page
@@ -963,7 +997,7 @@ collections:
           - library-resources
           - image
           - code-block
-        hint: Use the + menu for content blocks. Collection carousels and book recommendations keep all slides, notes, and entries inline in this Markdown body. Select FAQ and resource entries in their page fields.
+        hint: Use + for content blocks, or switch to Markdown. Choose shared FAQs and resources in the fields below.
       - name: faq_heading
         label: FAQ Section Heading
         widget: string
@@ -990,14 +1024,16 @@ collections:
       - name: resources
         label: Related Resources
         widget: relation
-        collection: resources
+        collection: resource_lookups
+        file: resources
         search_fields:
-          - title
-        value_field: "{{slug}}"
+          - items.*.label
+        value_field: items.*.id
         display_fields:
-          - title
+          - items.*.label
         multiple: true
         required: false
+        hint: Choose shared resources. Reload after the site updates to see new entries.
       - name: child_pages
         label: Subpages
         widget: relation
@@ -1080,7 +1116,7 @@ collections:
       - name: url
         label: Web Link Or Uploaded File Path
         widget: string
-        hint: Paste a full web address (https://...) or a site file path (/uploads/community/...). To upload a new file first, use the Media button in the top bar.
+        hint: Web address or file path. Upload files using Media, or copy a URL from Archive files.
       - name: description
         label: Description
         widget: text
@@ -1166,14 +1202,16 @@ collections:
       - name: resources
         label: Slides And Recordings
         widget: relation
-        collection: resources
+        collection: resource_lookups
+        file: resources
         search_fields:
-          - title
-        value_field: "{{slug}}"
+          - items.*.label
+        value_field: items.*.id
         display_fields:
-          - title
+          - items.*.label
         multiple: true
         required: false
+        hint: Choose slides or recordings. Reload after the site updates to see new entries.
       - name: updated_on
         label: Updated Date
         widget: datetime
@@ -1206,7 +1244,7 @@ collections:
         label: Local authority code
         widget: string
         required: false
-        hint: Official Government Statistical Service (GSS/ONS) 9-character code for the authority
+        hint: Nine-character GSS code, e.g. E08000003.
         pattern:
           - ^[ELMNSW][0-9]{8}$
           - Official Government Statistical Service (GSS/ONS) 9-character code for the authority
@@ -1245,52 +1283,52 @@ collections:
         label: Operating organisation
         widget: string
         required: false
-        hint: Organisation delivering the service if not run directly in-house by the local authority (e.g. public sector mutual, charitable trust, or commissioned leisure contractor)
+        hint: Organisation running the service, if different from the council.
       - name: consortium
         label: Consortium
         widget: string
         required: false
-        hint: Shared library consortium or regional technical partnership (e.g. LibrariesWest, The Libraries Consortium, SELMS)
+        hint: Shared partnership, e.g. LibrariesWest or The Libraries Consortium.
       - name: service_url
         label: Service URL
         widget: string
         required: false
-        hint: The main public web portal or homepage for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: libraries_url
         label: Libraries URL
         widget: string
         required: false
-        hint: Web page or directory listing physical branch libraries, opening hours, and locations
+        hint: Full web address, starting with https:// or http://.
       - name: mobile_library_url
         label: Mobile library URL
         widget: string
         required: false
-        hint: Web page or schedule listing mobile library routes, timetables, and stops
+        hint: Full web address, starting with https:// or http://.
       - name: home_library_service_url
         label: Home library service URL
         widget: string
         required: false
-        hint: Web page providing information on the home library or books-on-wheels delivery service for housebound residents
+        hint: Full web address, starting with https:// or http://.
       - name: childrens_service_url
         label: Childrens service URL
         widget: string
         required: false
-        hint: Web page detailing children's library services, activities, and early literacy programmes
+        hint: Full web address, starting with https:// or http://.
       - name: catalogue_url
         label: Catalogue URL
         widget: string
         required: false
-        hint: Online public access catalogue (OPAC) homepage or search URL
+        hint: Full web address, starting with https:// or http://.
       - name: join_online_url
         label: Join online URL
         widget: string
         required: false
-        hint: Direct URL for members of the public to register or join the library service online
+        hint: Full web address, starting with https:// or http://.
       - name: events_url
         label: Events URL
         widget: string
         required: false
-        hint: Web page or booking portal listing library events, activities, and workshops
+        hint: Full web address, starting with https:// or http://.
       - name: eventbrite_id
         label: Eventbrite ID
         widget: string
@@ -1300,39 +1338,39 @@ collections:
         label: Computer access URL
         widget: string
         required: false
-        hint: Web page providing information on public computer facilities, booking, and acceptable use
+        hint: Full web address, starting with https:// or http://.
       - name: wifi_access_url
         label: Wifi access URL
         widget: string
         required: false
-        hint: Web page detailing public Wi-Fi access, networks, and usage terms
+        hint: Full web address, starting with https:// or http://.
       - name: room_booking_url
         label: Room booking URL
         widget: string
         required: false
-        hint: Web page or booking portal for hiring meeting rooms, workspaces, or event venues in libraries
+        hint: Full web address, starting with https:// or http://.
       - name: volunteer_url
         label: Volunteer URL
         widget: string
         required: false
-        hint: Web page providing information and applications for library volunteering opportunities
+        hint: Full web address, starting with https:// or http://.
       - name: fees_and_charges_url
         label: Fees and charges URL
         widget: string
         required: false
-        hint: Web page detailing the full schedule of library fees, fines, hire costs, and replacement charges
+        hint: Full web address, starting with https:// or http://.
       - name: adult_fine
-        label: Adult fine
+        label: Adult fine (GBP)
         widget: number
         required: false
-        hint: Standard overdue fine per day for adult books in GBP (0.00 if fine-free)
+        hint: Pounds per fine interval. Use 0 for fine-free, or leave blank if unknown.
         value_type: float
         min: 0
       - name: child_fine
-        label: Child fine
+        label: Child fine (GBP)
         widget: number
         required: false
-        hint: Standard overdue fine per day for children's books in GBP (0.00 if fine-free)
+        hint: Pounds per fine interval. Use 0 for fine-free, or leave blank if unknown.
         value_type: float
         min: 0
       - name: fine_interval
@@ -1349,12 +1387,12 @@ collections:
         label: Email address
         widget: string
         required: false
-        hint: Generic public contact or enquiry email address for the library service
+        hint: Email address, e.g. library@example.gov.uk.
       - name: phone_number
         label: Phone number
         widget: string
         required: false
-        hint: Generic public telephone contact number for the library service
+        hint: Include the area code and any extension.
       - name: app_name
         label: App name
         widget: string
@@ -1364,112 +1402,112 @@ collections:
         label: Android app URL
         widget: string
         required: false
-        hint: Google Play Store download URL for the service's mobile library application
+        hint: Full web address, starting with https:// or http://.
       - name: ios_app_url
         label: iOS app URL
         widget: string
         required: false
-        hint: Apple App Store download URL for the service's mobile library application
+        hint: Full web address, starting with https:// or http://.
       - name: twitter_url
         label: Twitter URL
         widget: string
         required: false
-        hint: Official Twitter / X profile URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: facebook_url
         label: Facebook URL
         widget: string
         required: false
-        hint: Official Facebook page URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: instagram_url
         label: Instagram URL
         widget: string
         required: false
-        hint: Official Instagram profile URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: youtube_url
         label: YouTube URL
         widget: string
         required: false
-        hint: Official YouTube channel URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: bluesky_url
         label: Bluesky URL
         widget: string
         required: false
-        hint: Official Bluesky profile URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: threads_url
         label: Threads URL
         widget: string
         required: false
-        hint: Official Threads profile URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: linkedin_url
         label: LinkedIn URL
         widget: string
         required: false
-        hint: Official LinkedIn organisation page URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: tiktok_url
         label: TikTok URL
         widget: string
         required: false
-        hint: Official TikTok profile URL for the library service
+        hint: Full web address, starting with https:// or http://.
       - name: blog_url
         label: Blog URL
         widget: string
         required: false
-        hint: Official library service blog or online articles URL
+        hint: Full web address, starting with https:// or http://.
       - name: podcast_url
         label: Podcast URL
         widget: string
         required: false
-        hint: Official library service podcast or audio broadcasts portal URL
+        hint: Full web address, starting with https:// or http://.
       - name: library_management_system_supplier
         label: Library management system supplier
         widget: string
         required: false
-        hint: Vendor or commercial supplier of the Library Management System (LMS / ILS)
+        hint: Supplier of the library management software.
       - name: library_management_system
         label: Library management system
         widget: string
         required: false
-        hint: Name of the Library Management System (LMS / ILS) software in use
+        hint: Library management software name.
       - name: online_catalogue_system
         label: Online catalogue system
         widget: string
         required: false
-        hint: Name of the Online Public Access Catalogue (OPAC) or discovery interface in use
+        hint: Catalogue or discovery software name.
       - name: ebook_supplier
         label: Ebook supplier
         widget: string
         required: false
-        hint: Commercial supplier or platform for digital ebook lending (e.g. Overdrive / Libby, BorrowBox, Bibliotheca)
+        hint: Ebook provider, e.g. Bolinda or OverDrive.
       - name: ebook_url
         label: Ebook URL
         widget: string
         required: false
-        hint: Direct public URL to the service's ebook lending catalogue or platform
+        hint: Full web address, starting with https:// or http://.
       - name: audiobook_supplier
         label: Audiobook supplier
         widget: string
         required: false
-        hint: Commercial supplier or platform for digital e-audiobook lending (e.g. BorrowBox, Overdrive / Libby, Ulverscroft)
+        hint: Audiobook provider, e.g. Bolinda or OverDrive.
       - name: audiobook_url
         label: Audiobook URL
         widget: string
         required: false
-        hint: Direct public URL to the service's e-audiobook lending catalogue or platform
+        hint: Full web address, starting with https:// or http://.
       - name: emagazine_supplier
         label: Emagazine supplier
         widget: string
         required: false
-        hint: Commercial supplier or platform for digital e-magazine lending (e.g. PressReader, OverDrive / Libby, BorrowBox)
+        hint: Digital magazine provider.
       - name: enewspaper_supplier
         label: Enewspaper supplier
         widget: string
         required: false
-        hint: Commercial supplier or platform for digital e-newspaper subscriptions (e.g. PressReader, NewsBank)
+        hint: Digital newspaper provider.
       - name: online_reference_subscriptions
         label: Online reference subscriptions
         widget: text
         required: false
-        hint: Semicolon-separated list of major digital reference and subscription resources provided by the service (e.g. 'Ancestry Library Edition; Findmypast; British Newspaper Archive; Theory Test Pro; BFI Replay; Britannica')
+        hint: Separate resources with semicolons, e.g. Findmypast; BFI Replay.
       - name: green_library
         label: Green library
         widget: select
@@ -1525,7 +1563,7 @@ collections:
         collapsed: true
         allow_add: false
         summary: "{{fields.kind}}: {{fields.reason}}"
-        hint: Review evidence in the Data review worklist. Remove a check only after completing the review; the original audit is retained.
+        hint: See Data review for details. Remove a check when the review is complete.
         fields:
           - name: kind
             label: Check type
@@ -1546,7 +1584,7 @@ collections:
         collapsed: true
         allow_add: false
         summary: "{{fields.field}}: {{fields.reason}}"
-        hint: Correct the data field; resolved exceptions disappear automatically when saved.
+        hint: Correct the field above. Resolved issues clear when you save.
         fields:
           - name: field
             label: Schema field
@@ -1572,16 +1610,28 @@ collections:
     editor:
       preview: false
     fields:
+      - name: authority
+        label: Library authority (name and GSS code)
+        widget: relation
+        collection: authority_lookups
+        file: authorities
+        search_fields:
+          - items.*.label
+        value_field: items.*.id
+        display_fields:
+          - items.*.label
+        required: false
+        hint: Sets the authority name and code together. New authorities appear after the site updates; reload to see them.
       - name: local_authority
         label: Local authority
-        widget: string
+        widget: hidden
         required: false
         hint: Local authority responsible for the library service
       - name: local_authority_code
         label: Local authority code
-        widget: string
+        widget: hidden
         required: false
-        hint: Official Government Statistical Service (GSS/ONS) 9-character code for the local authority
+        hint: Nine-character GSS code, e.g. E08000003.
         pattern:
           - ^[ELMNSW][0-9]{8}$
           - Official Government Statistical Service (GSS/ONS) 9-character code for the local authority
@@ -1680,7 +1730,7 @@ collections:
         label: Type of library
         widget: select
         required: false
-        hint: The operating model of the public library branch
+        hint: How the library is run.
         options:
           - label: Local authority run — staffed (LAL)
             value: LAL
@@ -1710,86 +1760,87 @@ collections:
         max: 9999
       - name: temporary_closed_until
         label: Temporary closure expected reopening
-        widget: date
+        widget: datetime
         required: false
-        hint: Expected reopening date for temporarily closed libraries
+        hint: Expected reopening date.
         format: YYYY-MM-DD
         date_format: YYYY-MM-DD
+        time_format: false
       - name: monday_staffed_hours
         label: Monday staffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: Use 09:00-17:00 or 09:00-12:30,13:30-17:00 for split sessions. Midnight closing is 24:00. Blank means closed or not recorded.
       - name: tuesday_staffed_hours
         label: Tuesday staffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: wednesday_staffed_hours
         label: Wednesday staffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: thursday_staffed_hours
         label: Thursday staffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: friday_staffed_hours
         label: Friday staffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: saturday_staffed_hours
         label: Saturday staffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: sunday_staffed_hours
         label: Sunday staffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: monday_unstaffed_hours
         label: Monday unstaffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: tuesday_unstaffed_hours
         label: Tuesday unstaffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: wednesday_unstaffed_hours
         label: Wednesday unstaffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: thursday_unstaffed_hours
         label: Thursday unstaffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: friday_unstaffed_hours
         label: Friday unstaffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: saturday_unstaffed_hours
         label: Saturday unstaffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: sunday_unstaffed_hours
         label: Sunday unstaffed hours
-        widget: string
+        widget: directory-hours
         required: false
-        hint: Staffed opening hours in HH:MM-HH:MM format (or comma-separated for split sessions e.g. 09:00-13:00, 14:00-17:00). Leave blank if closed. Use 24-hour times such as 09:00-17:00 or 09:00-12:30,13:30-17:00. Leave blank when closed.
+        hint: 24-hour times, as above. Blank means closed or not recorded.
       - name: special_hours
         label: Special hours
         widget: text
         required: false
-        hint: Changes to normal opening hours such as for public holidays
+        hint: Holiday hours, temporary changes or other exceptions.
       - name: weekly_staffed_hours
         label: Weekly staffed hours
         widget: number
@@ -1810,7 +1861,7 @@ collections:
         label: Automated access system
         widget: string
         required: false
-        hint: Automated access control or self-service system used to support visitors during unstaffed opening hours (e.g. Open+, Lyngsoe, Self-service kiosk)
+        hint: Self-service access system, e.g. Open+.
       - name: co_located
         label: Co-located
         widget: select
@@ -1823,7 +1874,7 @@ collections:
         label: Co-located with
         widget: text
         required: false
-        hint: Details of services or facilities co-located with the library. For multiple co-locations, separate values with a semicolon (;), e.g. 'Council customer services; Community centre; Post office'.
+        hint: Separate building partners with semicolons, e.g. Community centre; Post office.
       - name: guest_wifi
         label: Guest wifi
         widget: select
@@ -1947,39 +1998,68 @@ collections:
           - No
       - name: facilities_and_services
         label: Facilities and services
-        widget: text
+        widget: directory-facilities
         required: false
-        hint: Semicolon-separated list of all public facilities, amenities, and specialized digital resources available at the library branch (e.g. 'Books; Printing; Free Wi-Fi; Findmypast; British Newspaper Archive; BFI Replay; Meeting rooms')
+        hint: Choose all that apply.
+        multiple: true
+        options:
+          - Archives
+          - BFI Replay
+          - Bookable space
+          - Books
+          - Books delivered
+          - British Newspaper Archive
+          - Business support
+          - Cafe
+          - Career support
+          - Children's activities
+          - Computers
+          - Digital lending
+          - Digital skills sessions
+          - Events
+          - Family history
+          - Faxing
+          - Findmypast
+          - Free Wi-Fi
+          - Garden
+          - Hobby and interest groups
+          - Local info
+          - Makerspace
+          - Photocopiers
+          - Printing
+          - Scanning
+          - Toilets
+          - Work space
       - name: phone_number
         label: Phone number
         widget: string
         required: false
-        hint: Direct public phone number for this specific library branch
+        hint: Include the area code and any extension.
       - name: email_address
         label: Email address
         widget: string
         required: false
-        hint: Direct public email address for this library branch, or the general service email if not available
+        hint: Email address, e.g. library@example.gov.uk.
       - name: url
         label: Website URL
         widget: string
         required: false
-        hint: Public web page URL specifically for this library branch
+        hint: Full web address, starting with https:// or http://.
       - name: catalogue_url
         label: Catalogue URL
         widget: string
         required: false
-        hint: Branch-specific online catalogue URL
+        hint: Full web address, starting with https:// or http://.
       - name: join_online_url
         label: Join online URL
         widget: string
         required: false
-        hint: Branch-specific online joining URL
+        hint: Full web address, starting with https:// or http://.
       - name: virtual_tour_url
         label: Virtual tour URL
         widget: string
         required: false
-        hint: 3D or virtual walkthrough tour URL for the library building
+        hint: Full web address, starting with https:// or http://.
       - name: notes
         label: Notes
         widget: text
@@ -1991,17 +2071,6 @@ collections:
         pattern:
           - ^[A-Za-z0-9][A-Za-z0-9-]*$
           - Use letters, numbers and hyphens; keep existing slugs unchanged.
-      - name: authority
-        label: Authority
-        widget: relation
-        collection: authorities
-        search_fields:
-          - local_authority
-        value_field: "{{slug}}"
-        display_fields:
-          - local_authority
-        required: false
-        hint: Choose the library authority. Leave blank only if it is not known.
       - name: id
         widget: hidden
         required: false
@@ -2038,7 +2107,7 @@ collections:
         collapsed: true
         allow_add: false
         summary: "{{fields.kind}}: {{fields.reason}}"
-        hint: Review evidence in the Data review worklist. Remove a check only after completing the review; the original audit is retained.
+        hint: See Data review for details. Remove a check when the review is complete.
         fields:
           - name: kind
             label: Check type
@@ -2059,7 +2128,7 @@ collections:
         collapsed: true
         allow_add: false
         summary: "{{fields.field}}: {{fields.reason}}"
-        hint: Correct the data field; resolved exceptions disappear automatically when saved.
+        hint: Correct the field above. Resolved issues clear when you save.
         fields:
           - name: field
             label: Schema field
