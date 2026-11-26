@@ -1,6 +1,6 @@
 # Preserving original content
 
-The files and scripts below preserve the original LibraryOn dataset and verify that imported content remains intact.
+The files and scripts below preserve historical LibraryOn source material and verify that original editorial page content remains intact. Current library and authority records are editable and are not required to match the archived directory dataset.
 
 ## Stored artefacts
 

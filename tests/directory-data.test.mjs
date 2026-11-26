@@ -13,7 +13,6 @@ import {
 import assert from 'node:assert/strict'
 import {
   readFileSync,
-  readdirSync,
   mkdtempSync,
   mkdirSync,
   writeFileSync,
@@ -24,8 +23,6 @@ import { tmpdir } from 'node:os'
 import { pathToFileURL } from 'node:url'
 import { join } from 'node:path'
 import { jsonRecordFiles } from '../src/lib/directory/recordFiles.mjs'
-import { libraryRecordFile } from '../src/lib/cms/libraryCollections.mjs'
-import { applyLibrarySlugCorrection } from '../src/lib/directory/slugCorrections.mjs'
 import { gunzipSync } from 'node:zlib'
 import { normalizePostcode, normalizeUprn } from '../src/lib/directory/dataHelpers.mjs'
 import { openingHours, legacyHours } from '../src/lib/directory/openingHoursHelpers.mjs'
@@ -717,83 +714,43 @@ test('LibraryOn hours separate staffed, volunteer and self-service without chang
   assert.throws(() => createDirectory([], [record]), /hours-format/)
 })
 
-test('written schema records preserve every original ID, route and date and substantiate each new UPRN', () => {
+test('live schema records validate and substantiate each newly added UPRN', () => {
   const baseline = JSON.parse(
     gunzipSync(readFileSync('migration/directory/libraryon-baseline.json.gz'))
   )
+  const baselineLibraries = new Map(
+    baseline.libraries.map(({ record }) => [String(record.source_id ?? record.id), record])
+  )
   const report = JSON.parse(readFileSync('migration/directory/report.json', 'utf8'))
   const lookups = JSON.parse(readFileSync('migration/directory/lookups.json', 'utf8'))
-  const niSlugs = new Set([
-    'county-antrim',
-    'county-armagh',
-    'county-down',
-    'county-fermanagh',
-    'county-londonderry',
-    'county-tyrone',
-    'derry-city',
-    'greater-belfast'
-  ])
-  for (const [kind, records] of Object.entries(baseline)) {
-    for (const { file, record } of records) {
-      if (kind === 'authorities' && niSlugs.has(record.slug)) continue
-      const isNiLib =
-        kind === 'libraries' &&
-        (niSlugs.has(record.authority) ||
-          record.slug.includes('larne') ||
-          record.postcode?.startsWith('BT'))
-      const filename = isNiLib ? `northern-ireland--${record.slug}.json` : file
-      const targetFile =
-        kind === 'libraries'
-          ? libraryRecordFile(
-              filename,
-              applyLibrarySlugCorrection({
-                id: record.id,
-                authority: isNiLib ? 'northern-ireland' : record.authority,
-                slug: record.slug
-              })
-            )
-          : filename
-      const migrated = JSON.parse(readFileSync(`src/content/${kind}/${targetFile}`, 'utf8'))
+  for (const kind of ['libraries', 'authorities']) {
+    for (const file of jsonRecordFiles(`src/content/${kind}`)) {
+      const migrated = JSON.parse(readFileSync(`src/content/${kind}/${file}`, 'utf8'))
       validateRecord(migrated, kind)
-      for (const field of [
-        'id',
-        'slug',
-        'source_id',
-        'source_url',
-        'updated_on',
-        'reviewed_on',
-        'imported_on'
-      ])
-        assert.deepEqual(
-          migrated[field],
-          field === 'slug' && kind === 'libraries'
-            ? applyLibrarySlugCorrection(record).slug
-            : record[field],
-          `${targetFile}: ${field}`
+      if (kind !== 'libraries') continue
+
+      const migratedData = migrated.data || migrated
+      const uprn =
+        migratedData.unique_property_reference_number ??
+        migratedData['Unique property reference number']
+      const sourceRecord = baselineLibraries.get(String(migrated.source_id))
+      if (uprn && sourceRecord && !sourceRecord.uprn) {
+        const evidence = uprnEvidence(
+          { data: migratedData },
+          { postcode: migratedData.postcode || migratedData.Postcode, record: sourceRecord },
+          lookups
         )
-      if (kind === 'libraries') {
-        const migratedData = migrated.data || migrated
-        const uprn =
-          migratedData.unique_property_reference_number ??
-          migratedData['Unique property reference number']
-        if (uprn && !record.uprn) {
-          const evidence = uprnEvidence(
-            { data: migratedData },
-            { postcode: migratedData.postcode || migratedData.Postcode, record },
-            lookups
-          )
-          assert.ok(evidence.accepted, `${targetFile}: ${evidence.reason}`)
-          assert.equal(lookups.uprns[uprn].product, 'nsul')
-        }
-        if ((migratedData.status || migratedData.Status) === 'Open')
-          assert.equal(
-            migratedData.year_closed !== undefined
-              ? migratedData.year_closed
-              : migratedData['Year closed'],
-            null,
-            targetFile
-          )
+        assert.ok(evidence.accepted, `${file}: ${evidence.reason}`)
+        assert.equal(lookups.uprns[uprn].product, 'nsul')
       }
+      if ((migratedData.status || migratedData.Status) === 'Open')
+        assert.equal(
+          migratedData.year_closed !== undefined
+            ? migratedData.year_closed
+            : migratedData['Year closed'],
+          null,
+          file
+        )
     }
   }
   const niAuthority = JSON.parse(
