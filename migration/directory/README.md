@@ -102,7 +102,7 @@ npm run directory:lookups -- --ons-only
 npm run directory:lookups
 npm run directory:migrate
 npm run directory:migrate -- --write
-npm run check:directory
+npm run directory:check
 npm test
 npm run build
 ```

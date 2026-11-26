@@ -32,15 +32,17 @@ test('CMS keeps Git Gateway, disables global search and never replaces fetch or 
   for (const name of ['libraries', 'authorities']) {
     assert.equal(config.collections.find((item) => item.name === name).delete, false)
   }
-  const source = readFileSync('src/pages/admin/index.astro', 'utf8')
+  const template = readFileSync('src/pages/admin/index.astro', 'utf8')
+  const client = readFileSync('src/scripts/cmsAdminClient.mjs', 'utf8')
+  const source = `${template}\n${client}`
   assert.doesNotMatch(source, /window\.fetch\s*=|__archiveMediaNames|normalizeArchiveUploadPaths/)
-  assert.match(source, /config\.load_config_file = false/)
+  assert.match(client, /config\.load_config_file = false/)
   assert.doesNotMatch(
     source,
     /registerBackend|registerGatewayBackend|gatewayBackend|config\.backend\.name\s*=/
   )
-  assert.match(source, /identity\.netlify\.com\/v1\/netlify-identity-widget\.js/)
-  assert.match(source, /https:\/\/unpkg\.com\/decap-cms@3\.18\.0\/dist\/decap-cms\.js/)
+  assert.match(template, /identity\.netlify\.com\/v1\/netlify-identity-widget\.js/)
+  assert.match(template, /https:\/\/unpkg\.com\/decap-cms@3\.18\.0\/dist\/decap-cms\.js/)
   const prepared = withArchiveWidgets(config)
   assert.equal(config.collections[0].files[0].fields[0].widget, 'object')
   assert.equal(prepared.backend.name, 'git-gateway')

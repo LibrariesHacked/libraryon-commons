@@ -4,8 +4,7 @@
 
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
-import { parseDocument } from 'yaml'
-import { format } from 'prettier'
+import { parseDocument, Scalar } from 'yaml'
 import facilities from '../src/data/cms-facilities.json' with { type: 'json' }
 
 /**
@@ -90,8 +89,12 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         result.date_format = 'YYYY-MM-DD'
         result.time_format = false
       }
-      if (constraints.enum)
-        result.options =
+      if (kind === 'libraries' && field.type === 'year') {
+        result.widget = 'directory-year'
+        result.hint = 'Optional. Leave blank if the year is unknown.'
+      }
+      if (constraints.enum) {
+        const options =
           fieldName === 'Country' || field.name === 'country'
             ? Array.from(new Set([...constraints.enum, 'Crown Dependencies']))
             : fieldName === 'type_of_library'
@@ -100,6 +103,16 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
                   value
                 }))
               : constraints.enum
+        const hasOtherStringOption = options.some(
+          (option) => typeof option === 'string' && option !== 'Yes' && option !== 'No'
+        )
+        result.options = options.map((option) => {
+          if (!hasOtherStringOption || (option !== 'Yes' && option !== 'No')) return option
+          const scalar = new Scalar(option)
+          scalar.type = Scalar.QUOTE_DOUBLE
+          return scalar
+        })
+      }
       if (result.widget === 'number') {
         result.value_type = field.type === 'number' ? 'float' : 'int'
         if (constraints.minimum !== undefined) result.min = constraints.minimum
@@ -120,6 +133,11 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
           fieldName === 'monday_staffed_hours'
             ? 'Use 09:00-17:00 or 09:00-12:30,13:30-17:00 for split sessions. Midnight closing is 24:00. Blank means closed or not recorded.'
             : '24-hour times, as above. Blank means closed or not recorded.'
+      }
+      if (fieldName === 'special_hours') {
+        result.widget = 'directory-special-hours'
+        result.hint =
+          'Add dated periods, mark full-day closures or set a next-day end date; existing notes are preserved.'
       }
       if (kind === 'libraries' && ['local_authority', 'local_authority_code'].includes(fieldName)) {
         result.widget = 'hidden'
@@ -149,7 +167,9 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         online_reference_subscriptions:
           'Separate resources with semicolons, e.g. Findmypast; BFI Replay.',
         automated_access_system: 'Self-service access system, e.g. Open+.',
-        special_hours: 'Holiday hours, temporary changes or other exceptions.',
+        special_hours:
+          'Add dated periods, mark full-day closures or set a next-day end date; existing notes are preserved.',
+        member_wifi: 'Whether Wi-Fi is available to registered members.',
         type_of_library: 'How the library is run.',
         temporary_closed_until: 'Expected reopening date.',
         library_management_system_supplier: 'Supplier of the library management software.',
@@ -161,6 +181,16 @@ export function updateDirectoryCms(root = new URL('../', import.meta.url)) {
         enewspaper_supplier: 'Digital newspaper provider.'
       }
       if (shortHints[fieldName]) result.hint = shortHints[fieldName]
+      if (fieldName === 'monday_staffed_hours') {
+        result.hint =
+          'Add one period per opening interval, using 24-hour times such as 09:00-17:00. Midnight closing is 24:00. Blank means closed or not recorded.'
+      } else if (
+        /(monday|tuesday|wednesday|thursday|friday|saturday|sunday)_(un)?staffed_hours$/.test(
+          fieldName
+        )
+      ) {
+        result.hint = '24-hour times as above. Add another period for split hours.'
+      }
       return result
     })
     collection.set('fields', [

@@ -1,6 +1,6 @@
 # Running and hosting
 
-LibraryCommons is a static site built from files in this repository. It requires no database, external API, or map service at runtime.
+The public LibraryCommons site is built from files in this repository and served as static files; it needs no database or application server. Optional directory features such as maps and place-name lookup use external map tiles or public data files, so those features need an internet connection.
 
 ## Local development
 
@@ -11,7 +11,7 @@ npm ci
 npm run dev
 ```
 
-Open <http://127.0.0.1:4322/>. For local CMS editing at `/admin/`, also run the local backend described in [Editing Content](cms.md#open-the-local-editor).
+Open <http://127.0.0.1:4322/>. For local CMS editing at `/admin/`, also run the local backend described in [Running the editor locally](cms.md#running-the-editor-locally).
 
 ## Test and build
 
@@ -122,8 +122,8 @@ CMS edits publish directly to `main`. See [reviewing changes](preservation.md#re
 
 ## Site Capabilities
 
-- **Included:** Editorial pages, collections, conference sessions, downloadable resources, authority indexes, individual library pages, and client-side search by library name, town, authority, or postcode text.
-- **Not included:** Interactive slippy maps, distance/postcode geocoding, or live event feeds. External videos (YouTube) and Canva decks remain outbound links or embeds.
+- **Included:** Editorial pages, collections, conference sessions, downloadable resources, authority indexes, individual library pages, and a library directory with search, filters, place/postcode lookup, distance search, and interactive maps.
+- **Not included:** A live event feed. Maps and place-name lookup depend on external resources; external videos (YouTube) and Canva decks remain outbound links or embeds.
 
 ## Visual Design
 

@@ -12,11 +12,21 @@ import {
   serializeFacilities,
   prepareLibraryAuthority,
   validateHoursControl,
+  hourSessionRows,
+  serializeHourSessions,
+  validateOptionalYear,
+  validateSpecialHoursControl,
   registerDirectoryControls
 } from '../src/lib/cms/directoryControls.mjs'
 import { validateEntrySave } from '../src/lib/cms/cmsAuthHelpers.mjs'
 import { prepareDirectoryEdit } from '../src/lib/directory/schemaHelpers.mjs'
 import { Library } from '../src/lib/directory/models/Library.mjs'
+import {
+  formatSpecialHours,
+  parseSpecialHours,
+  serializeSpecialHoursDraft,
+  serializeSpecialHoursForSave
+} from '../src/lib/directory/specialHoursHelpers.mjs'
 import facilities from '../src/data/cms-facilities.json' with { type: 'json' }
 import authorities from '../src/data/cms-lookups/authorities.json' with { type: 'json' }
 
@@ -93,12 +103,17 @@ test('facility conversion supports native immutable lists, clearing and preserve
   assert.throws(() => facilitySelections([]), /Facilities must/)
   const widgets = new Map()
   const native = () => null
+  let validationAlert = ''
   registerDirectoryControls(
     {
       getWidget: () => ({ control: native, preview: native }),
       registerWidget: (name, control) => widgets.set(name, control)
     },
-    { createClass: (definition) => definition, h: (type, props) => ({ type, props }) }
+    {
+      createClass: (definition) => definition,
+      h: (type, props) => ({ type, props }),
+      onValidationError: ({ message }) => (validationAlert = message)
+    }
   )
   let saved
   const field = { get: () => ['Books'], set: (name, options) => ({ options }) }
@@ -123,6 +138,20 @@ test('facility conversion supports native immutable lists, clearing and preserve
       .error.message.includes('end after'),
     true
   )
+  assert.match(validationAlert, /end after/)
+  widgets.get('directory-year').isValid.call({ props: { value: 10000 } })
+  assert.match(validationAlert, /four-digit year/)
+  let yearValue = 2026
+  const yearControl = widgets.get('directory-year').render.call({
+    props: { value: yearValue, onChange: (value) => (yearValue = value) }
+  })
+  assert.equal(yearControl.type, native)
+  yearControl.props.onChange(Number.NaN)
+  assert.equal(yearValue, null)
+  yearControl.props.onChange('')
+  assert.equal(yearValue, null)
+  yearControl.props.onChange(2026)
+  assert.equal(yearValue, 2026)
 })
 
 test('opening-hours validation handles midnight, split sessions and unknowns without guessing', () => {
@@ -169,11 +198,158 @@ test('directory forms use one authority picker, fixed facilities and native date
     }
   }
   const admin = readFileSync('src/pages/admin/index.astro', 'utf8')
-  assert.ok(admin.indexOf('registerDirectoryControls(cms,') < admin.indexOf('cms.init({ config })'))
+  const adminClient = readFileSync('src/scripts/cmsAdminClient.mjs', 'utf8')
+  assert.match(admin, /id="cms-save-error"[^>]*role="alert"/)
+  assert.match(adminClient, /showSaveError\(error\)/)
   assert.ok(
-    admin.indexOf('prepareLibraryAuthority(data.toJS()') <
-      admin.indexOf('validateEntrySave(prepared')
+    adminClient.indexOf('registerDirectoryControls(cms,') <
+      adminClient.indexOf('cms.init({ config })')
   )
+  assert.ok(
+    adminClient.indexOf('prepareLibraryAuthority(data.toJS()') <
+      adminClient.indexOf('validateEntrySave(prepared')
+  )
+})
+
+test('daily hours are edited as separate sessions without comma entry', () => {
+  assert.deepEqual(hourSessionRows('09:00-12:30,13:30-17:00'), [
+    { open: '09:00', close: '12:30' },
+    { open: '13:30', close: '17:00' }
+  ])
+  assert.equal(serializeHourSessions([{ open: '09:00', close: '12:30' }]), '09:00-12:30')
+  assert.equal(
+    serializeHourSessions([
+      { open: '09:00', close: '12:30' },
+      { open: '13:30', close: '24:00' }
+    ]),
+    '09:00-12:30,13:30-24:00'
+  )
+  assert.equal(serializeHourSessions([{ open: '', close: '' }]), null)
+  assert.equal(validateHoursControl('09:00-12:30,13:30-24:00').error, false)
+})
+
+test('special hours preserve legacy notes and serialize dated periods in Google format', () => {
+  const legacy = 'Closed on bank holidays'
+  assert.deepEqual(parseSpecialHours(legacy), { periods: [], notes: legacy, invalid: false })
+  const draft = serializeSpecialHoursDraft(
+    [
+      { date: '2026-12-25', isClosed: true },
+      { date: '2026-12-26', isClosed: false, openTime: '10:00', closeTime: '13:00' },
+      { date: '2026-12-26', isClosed: false, openTime: '14:00', closeTime: '17:00' },
+      {
+        date: '2026-12-27',
+        endDate: '2026-12-28',
+        isClosed: false,
+        openTime: '22:00',
+        closeTime: '02:00'
+      }
+    ],
+    legacy
+  )
+  assert.equal(validateSpecialHoursControl(draft).error, false)
+  const saved = serializeSpecialHoursForSave(draft)
+  assert.deepEqual(JSON.parse(saved), {
+    specialHourPeriods: [
+      { startDate: { year: 2026, month: 12, day: 25 }, isClosed: true },
+      {
+        startDate: { year: 2026, month: 12, day: 26 },
+        openTime: '10:00',
+        closeTime: '13:00'
+      },
+      {
+        startDate: { year: 2026, month: 12, day: 26 },
+        openTime: '14:00',
+        closeTime: '17:00'
+      },
+      {
+        startDate: { year: 2026, month: 12, day: 27 },
+        endDate: { year: 2026, month: 12, day: 28 },
+        openTime: '22:00',
+        closeTime: '02:00'
+      }
+    ],
+    notes: legacy
+  })
+  assert.match(formatSpecialHours(saved), /Closed on bank holidays/)
+  assert.match(formatSpecialHours(saved), /25 December 2026: Closed/)
+  assert.match(formatSpecialHours(saved), /26 December 2026: 10:00–13:00, 14:00–17:00/)
+  assert.match(
+    formatSpecialHours(saved),
+    /27 December 2026: 22:00–02:00 \(until 28 December 2026\)/
+  )
+  assert.equal(serializeSpecialHoursForSave(legacy), legacy)
+  assert.equal(new Library({ special_hours: saved }).openingTimesNotes, formatSpecialHours(saved))
+  assert.equal(
+    validateSpecialHoursControl(serializeSpecialHoursDraft([{ date: '', isClosed: true }], ''))
+      .error.message,
+    'Choose a valid date for each special-hours period.'
+  )
+  const overlap = serializeSpecialHoursDraft(
+    [
+      { date: '2026-12-26', isClosed: false, openTime: '10:00', closeTime: '14:00' },
+      { date: '2026-12-26', isClosed: false, openTime: '13:00', closeTime: '17:00' }
+    ],
+    ''
+  )
+  assert.match(validateSpecialHoursControl(overlap).error.message, /must not overlap/)
+  const overnightOverlap = serializeSpecialHoursDraft(
+    [
+      {
+        date: '2026-12-26',
+        endDate: '2026-12-27',
+        isClosed: false,
+        openTime: '23:00',
+        closeTime: '02:00'
+      },
+      { date: '2026-12-27', isClosed: false, openTime: '01:00', closeTime: '03:00' }
+    ],
+    ''
+  )
+  assert.match(validateSpecialHoursControl(overnightOverlap).error.message, /must not overlap/)
+  const tooLong = serializeSpecialHoursDraft(
+    [
+      {
+        date: '2026-12-26',
+        endDate: '2026-12-27',
+        isClosed: false,
+        openTime: '00:00',
+        closeTime: '00:00'
+      }
+    ],
+    ''
+  )
+  assert.match(validateSpecialHoursControl(tooLong).error.message, /less than 24 hours/)
+})
+
+test('optional year validation accepts blanks and rejects invalid years', () => {
+  for (const value of [null, undefined, '', Number.NaN]) {
+    assert.equal(validateOptionalYear(value).error, false)
+  }
+  for (const value of [999, 10000, 2026.5, 'not a year']) {
+    assert.match(validateOptionalYear(value).error.message, /four-digit year/)
+  }
+  assert.equal(validateOptionalYear(2026).error, false)
+  const saved = prepareDirectoryEdit({ ...libraries[0], year_opened: '' }, 'libraries')
+  assert.equal(saved.year_opened, null)
+})
+
+test('library hours use structured controls and year fields remain optional', () => {
+  const library = config.collections.find(({ name }) => name === 'libraries')
+  const fields = new Map(library.fields.map((field) => [field.name, field]))
+  for (const field of library.fields.filter((item) =>
+    /^(monday|tuesday|wednesday|thursday|friday|saturday|sunday)_(un)?staffed_hours$/.test(
+      item.name
+    )
+  )) {
+    assert.equal(field.widget, 'directory-hours', field.name)
+  }
+  assert.equal(fields.get('special_hours').widget, 'directory-special-hours')
+  for (const name of ['year_opened', 'year_closed']) {
+    assert.equal(fields.get(name).widget, 'directory-year')
+    assert.equal(fields.get(name).required, false)
+  }
+  assert.match(fields.get('year_opened').hint, /optional|leave blank/i)
+  assert.match(fields.get('member_wifi').hint, /registered members\.$/)
 })
 
 test('field hints stay concise and opening-hours examples appear only once', () => {

@@ -27,6 +27,7 @@ work email address (for example, `your.name@council.gov.uk`).
 4. Enter your full name, work email address, and a secure password.
 5. Select **Sign up**.
 
+<!--suppress MarkdownUnresolvedFileReference -->
 ![The sign-up window showing full name, work email, and password fields](/uploads/community/cms-signup-modal.png)
 
 > **Email domain check:** Registration is automatically restricted to recognised library authority
@@ -51,24 +52,25 @@ If you do not see the email within a few minutes, check your junk or spam folder
 2. Select **Log in with Netlify Identity**.
 3. Enter your work email address and password, then select **Log in**.
 
+<!--suppress MarkdownUnresolvedFileReference -->
 ![The login window showing email and password fields](/uploads/community/cms-login-modal.png)
 
-When you log in, your editor role and authority scope appear at the top of the screen (for example,
+When you log in, your editor role and authority scope appear in the editor help bar (for example,
 `your.name@council.gov.uk • Service Editor (E08000003)`).
 
-As a service editor, your view is automatically focused on your council's records.
+Each library service has its own **Libraries — \[service name\]** collection. Service editors see the
+collection for their assigned service; general editors see all service collections and
+**Libraries — Unassigned**.
 
 ## Update a library branch
 
 Most editorial updates involve keeping branch details, opening hours, and facilities accurate and up
 to date.
 
-1. In the left navigation menu, select **Libraries** followed by your service's name.
-2. You will see the branches belonging to your service. Select the library you want to update.
+1. In the left navigation menu, select **Libraries — \[your service name\]**.
+2. The collection lists branches belonging to that service. Select the library you want to update.
 3. Make your changes in the form fields.
 4. When finished, select the green **Publish** button at the top of the page.
-
-![The library listings table showing branches and their last review dates](/uploads/community/cms-libraries-list.png)
 
 ### Key library fields
 
@@ -80,24 +82,38 @@ to date.
 - **Facilities and services:** Search and choose services available at this branch. Each selection
   has a remove button. Separate Yes/No fields cover specific facilities and accessibility features.
 - **Accessibility:** Confirm step-free access, accessible toilets, and hearing loop availability.
-- **Opening hours:** Enter staffed and unstaffed opening times for each day of the week.
-
-![The library edit form showing fields for contact details, facilities, and opening hours](/uploads/community/cms-library-edit.png)
+- **Year opened:** This is optional. Leave it blank if the year is unknown.
+- **Opening hours:** Add staffed and unstaffed time periods for each day of the week.
 
 ### How to enter opening hours
 
-Opening hours use standard 24-hour time format:
+Use the separate **Opens** and **Closes** fields for each time period. The form saves the values in
+the directory's standard 24-hour format:
 
-- **Single session:** Enter `09:00-17:00` for a standard day.
-- **Split session:** Use a comma with no spaces for lunch breaks or split shifts, such as
-  `09:00-12:30,13:30-17:00`.
+- **Single period:** Enter `09:00` under **Opens** and `17:00` under **Closes**.
+- **Split hours:** Select **Add time period** and enter each session separately, for example
+  `09:00`–`12:30` and `13:30`–`17:00`. You do not need to type commas.
 - **Closed or unknown days:** Leave the field blank.
-- **Midnight closing:** Use `24:00` as the closing time, for example `08:00-24:00`. Opening times
-  must be before `24:00`.
+- **Midnight closing:** Enter `24:00` as the closing time. Opening times must be before `24:00`.
 - **Validation:** Sessions must be in time order, end after they start, and not overlap. The form
-  checks these rules before saving.
+  checks these rules before saving. If validation blocks a save, an alert near the top of the editor
+  explains the problem; the affected field also shows its message. Correct the field and publish
+  again.
 - **Self-service or unstaffed hours:** If your library uses open-access technology, record unstaffed
   hours in the separate unstaffed hours field.
+
+### Special hours
+
+Use **Special hours** for holiday dates or other one-off changes. The editor uses Google
+Business Profile-style periods:
+
+1. Select **Add special date** and choose the date.
+2. For a full-day closure, select **Closed all day**. Otherwise enter the opening and closing times.
+3. For split hours, add the same date again and enter the next period.
+4. If a period closes after midnight, select the following date as its optional end date.
+
+Existing free-text notes are kept in **Other opening-hours notes**. You can leave that field blank
+when adding dated periods.
 
 ### How to close a library branch
 
@@ -116,8 +132,8 @@ To record a permanent closure:
 
 > **Temporary closures:** If a library is closed for refurbishment, repairs, or short-term
 > redevelopment, set **Status** to **Closed (temporary)** and leave **Year closed** blank. You can
-> add a short note in **Special hours** explaining the temporary closure and any interim service
-> arrangements.
+> add a short note in **Other opening-hours notes** under **Special hours** explaining the temporary
+> closure and any interim service arrangements.
 
 ## Update library authority details
 

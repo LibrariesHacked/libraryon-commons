@@ -83,10 +83,19 @@ test('selective Open Props imports supply every adopted token without a reset or
 
 test('site and CMS previews continue to consume the same complete stylesheet entry', () => {
   const site = readFileSync(new URL('../src/layouts/SiteLayout.astro', import.meta.url), 'utf8')
-  const admin = readFileSync(new URL('../src/pages/admin/index.astro', import.meta.url), 'utf8')
+  const admin = readFileSync(new URL('../src/scripts/cmsAdminClient.mjs', import.meta.url), 'utf8')
+  const adminPage = readFileSync(new URL('../src/pages/admin/index.astro', import.meta.url), 'utf8')
+  const shareComponent = readFileSync(
+    new URL('../src/components/ShareButtons.astro', import.meta.url),
+    'utf8'
+  )
   assert.ok(site.includes("import '../styles/global.css'"))
-  assert.ok(admin.includes("import previewStyles from '../../styles/global.css?inline'"))
+  assert.ok(adminPage.includes("import '../../styles/admin.css'"))
+  assert.ok(admin.includes("import previewStyles from '../styles/global.css?inline'"))
   assert.ok(admin.includes('registerPreviewStyle(previewStyles, { raw: true })'))
+  assert.doesNotThrow(() => postcss.parse(read('admin.css')))
+  assert.ok(shareComponent.includes("import './ShareButtons.css'"))
+  assert.doesNotThrow(() => postcss.parse(readFileSync('src/components/ShareButtons.css', 'utf8')))
   for (const file of modules) {
     assert.doesNotThrow(() => postcss.parse(read(file), { from: path.join('src/styles', file) }))
   }

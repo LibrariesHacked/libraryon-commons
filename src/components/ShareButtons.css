@@ -1,0 +1,87 @@
+.share-section {
+  margin-block: var(--size-7) var(--size-5);
+  padding: var(--size-4) var(--size-5);
+  background: var(--surface-tint-plum);
+  border-radius: var(--card-radius);
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--size-3) var(--size-4);
+}
+
+.share-header {
+  display: flex;
+  align-items: center;
+}
+
+.share-heading {
+  margin: 0;
+  font-family: var(--font), sans-serif;
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-6);
+  color: var(--ink);
+}
+
+.share-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--size-2);
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  padding: 0 0.75rem;
+  font-family: var(--font), sans-serif;
+  font-size: 0.78rem;
+  font-weight: var(--font-weight-6);
+  line-height: 1;
+  color: var(--brand-link);
+  background: var(--paper);
+  border: 0;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    background-color 0.15s var(--motion-ease),
+    color 0.15s var(--motion-ease);
+}
+
+.share-btn:hover {
+  background: var(--surface-tint-plum-selected);
+  color: var(--brand-primary);
+}
+
+.share-btn:focus-visible {
+  outline: var(--border-size-2) solid var(--focus);
+  outline-offset: 2px;
+}
+
+.share-btn.is-copied {
+  background: var(--surface-tint-green);
+  color: var(--brand-forest);
+}
+
+.share-btn-primary {
+  background: var(--brand-primary);
+  color: var(--paper);
+}
+
+.share-btn-primary:hover {
+  background: var(--brand-link);
+  color: var(--paper);
+}
+
+.share-icon-copy,
+.share-icon-check {
+  display: inline-flex;
+  align-items: center;
+}

@@ -235,10 +235,11 @@ test('CMS form controls are registered before initialization and keep Markdown a
     assert.ok(body.editor_components.includes(component.id))
   }
   const admin = readFileSync('src/pages/admin/index.astro', 'utf8')
+  const adminClient = readFileSync('src/scripts/cmsAdminClient.mjs', 'utf8')
   assert.ok(admin.indexOf('CMS_MANUAL_INIT') < admin.indexOf('unpkg.com/decap-cms'))
   assert.ok(
-    admin.indexOf('registerEditorComponents(cms, withArchiveWidgets)') <
-      admin.indexOf('cms.init({ config })')
+    adminClient.indexOf('registerEditorComponents(cms, withArchiveWidgets)') <
+      adminClient.indexOf('cms.init({ config })')
   )
 })
 
@@ -557,7 +558,7 @@ test('CMS records have unique public paths, valid relations and existing local f
     }
     if (record.data.faqs?.length) {
       assert.equal(
-        [...record.body.matchAll(/^\{\{faqs\}\}\r?$/gm)].length,
+        [...record.body.matchAll(/^\{\{faqs}}\r?$/gm)].length,
         1,
         `${id}: FAQ module is placed once`
       )
@@ -596,7 +597,7 @@ test('resource links use descriptive labels across editable content and CMS reco
       const source = readFileSync(`src/content/${folder}/${file}`, 'utf8')
       assert.doesNotMatch(
         source,
-        /\[(?:\*\*)?(?:View slides PDF|View recording)(?:\*\*)?\]\(/i,
+        /\[(?:\*\*)?(?:View slides PDF|View recording)(?:\*\*)?]\(/i,
         `${folder}/${file}: use a descriptive resource link name`
       )
     }
@@ -790,7 +791,7 @@ test('imported archive media is checksummed, deduplicated and within ordinary-Gi
 })
 
 test('saving in the CMS stamps a date field that exists in each collection', () => {
-  const admin = readFileSync('src/pages/admin/index.astro', 'utf8')
+  const admin = readFileSync('src/scripts/cmsAdminClient.mjs', 'utf8')
   assert.ok(admin.includes("name: 'preSave'"))
   for (const [name, fields] of Object.entries({
     pages: ['updated_on'],

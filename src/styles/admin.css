@@ -1,0 +1,161 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.cms-help-links {
+  position: fixed;
+  bottom: 3.75rem;
+  right: 0.875rem;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: calc(100vw - 3.25rem);
+  gap: 0.65rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #d2d1d4;
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.96);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.1);
+  font: 0.78rem/1.3 sans-serif;
+}
+
+.directory-hours-rows,
+.directory-special-hours-rows {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.directory-hours-row,
+.directory-special-hours-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: end;
+  gap: 0.75rem;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid #d2d1d4;
+  border-radius: 0.5rem;
+}
+
+.directory-hours-row legend,
+.directory-special-hours-row legend {
+  padding: 0 0.25rem;
+}
+
+.directory-control-field {
+  display: grid;
+  gap: 0.25rem;
+  min-width: 8rem;
+}
+
+.directory-control-field input,
+.directory-control-field textarea {
+  box-sizing: border-box;
+  min-height: 2.25rem;
+  padding: 0.4rem;
+  font: inherit;
+}
+
+.directory-special-hours-times {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.directory-special-hours-closed {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.directory-special-hours-notes {
+  margin-top: 0.75rem;
+}
+
+.directory-control-help {
+  margin: 0 0 0.75rem;
+}
+
+.cms-help-links a {
+  color: #1d4ed8;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cms-help-links a:hover,
+.cms-help-links a:focus-visible {
+  text-decoration: underline;
+}
+
+.cms-user-badge {
+  overflow-wrap: anywhere;
+  font-weight: 600;
+  color: #374151;
+}
+
+#cms-load-error {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  margin: 0;
+  padding: 1rem;
+  color: #991b1b;
+  background: #fef2f2;
+  font: 1rem/1.4 sans-serif;
+}
+
+.cms-save-error {
+  position: fixed;
+  top: 4.5rem;
+  left: 50%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: min(45rem, calc(100vw - 2rem));
+  box-sizing: border-box;
+  transform: translateX(-50%);
+  padding: 0.85rem 1rem;
+  border: 1px solid #b91c1c;
+  border-radius: 0.5rem;
+  color: #7f1d1d;
+  background: #fef2f2;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.18);
+  font: 0.95rem/1.4 sans-serif;
+}
+
+.cms-save-error[hidden] {
+  display: none;
+}
+
+.cms-save-error span {
+  flex: 1;
+  white-space: pre-line;
+}
+
+.cms-save-error button {
+  padding: 0.35rem 0.6rem;
+  border: 1px solid currentColor;
+  border-radius: 0.25rem;
+  color: inherit;
+  background: white;
+  font: inherit;
+  cursor: pointer;
+}
+
+body.is-service-editor a[href='#/collections/settings'],
+body.is-service-editor a[href='#/collections/homepage'],
+body.is-service-editor a[href='#/collections/pages'],
+body.is-service-editor a[href='#/collections/faqs'],
+body.is-service-editor a[href='#/collections/resources'],
+body.is-service-editor a[href='#/collections/sessions'],
+body.is-service-editor a[href='#/collections/organisations'],
+body.is-service-editor a[href='#/collections/contributors'] {
+  display: none !important;
+}

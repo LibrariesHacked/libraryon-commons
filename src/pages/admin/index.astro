@@ -1,6 +1,7 @@
 ---
 /** @fileoverview Stock Decap Git Gateway editor with Netlify Identity, scoped forms and archive widgets. */
 import { settings, sitePath } from '../../lib/site/siteHelpers.mjs'
+import '../../styles/admin.css'
 const publicSiteURL = import.meta.env.PUBLIC_SITE_URL || settings.site.url
 /**
  * Resolve help links against the public host rather than the CMS-only deployment.
@@ -21,6 +22,7 @@ const publicSitePath = (value) =>
     <meta name="robots" content="noindex, nofollow" />
     <link href={sitePath('/admin/config.yml')} type="text/yaml" rel="cms-config-url" />
     <title>{settings.site.title} {settings.ui.admin.title_suffix}</title>
+    <!--noinspection JSUnresolvedLibraryURL-->
     <script is:inline src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   </head>
   <body>
@@ -34,6 +36,13 @@ const publicSitePath = (value) =>
       <a href={publicSitePath('/sitemap/')}>Site map</a>
     </nav>
     <p id="cms-load-error" role="alert" hidden></p>
+    <div id="cms-save-error" class="cms-save-error" role="alert" aria-live="assertive" hidden>
+      <strong>Unable to save changes.</strong>
+      <span id="cms-save-error-message"></span>
+      <button id="cms-save-error-dismiss" type="button" aria-label="Dismiss save error">
+        Dismiss
+      </button>
+    </div>
     <script is:inline>
       window.CMS_MANUAL_INIT = true
       window.CMS_IDENTITY_READY = window.netlifyIdentity
@@ -48,243 +57,8 @@ const publicSitePath = (value) =>
         })
       }
     </script>
+    <!--noinspection JSUnresolvedLibraryURL-->
     <script is:inline src="https://unpkg.com/decap-cms@3.18.0/dist/decap-cms.js"></script>
-    <script>
-      import { parse as parseYaml } from 'yaml'
-      import { prepareDirectoryEdit } from '../../lib/directory/schemaHelpers.mjs'
-      import { registerEditorComponents } from '../../lib/cms/cmsHelpers.mjs'
-      import { registerArchiveWidgets, withArchiveWidgets } from '../../lib/cms/archiveMedia.mjs'
-      import {
-        registerDirectoryControls,
-        prepareLibraryAuthority
-      } from '../../lib/cms/directoryControls.mjs'
-      import authorityLookups from '../../data/cms-lookups/authorities.json'
-      import {
-        directoryCollectionKind,
-        expandLibraryCollections
-      } from '../../lib/cms/libraryCollections.mjs'
-      import {
-        parseDomainPermissions,
-        resolveUserPermissions,
-        validateEntrySave,
-        filterCollectionsForPermissions
-      } from '../../lib/cms/cmsAuthHelpers.mjs'
-      import { sitePath } from '../../lib/site/siteHelpers.mjs'
-      import domainPermissionsCsv from '../../data/auth/domain-permissions.csv?raw'
-      import cmsConfigRaw from '../../../public/admin/config.yml?raw'
-      import previewStyles from '../../styles/global.css?inline'
-
-      const domainPermissions = parseDomainPermissions(domainPermissionsCsv)
-      /**
-       * Surface initialization failures without replacing Decap's backend error handling.
-       * @param {Error} error - CMS bundle or archive manifest failure.
-       * @returns {void}
-       */
-      const reportError = (error) => {
-        console.error('Decap CMS initialization failed:', error)
-        const alert = document.getElementById('cms-load-error')
-        if (alert) {
-          alert.textContent = 'The CMS could not initialize. Reload to retry. ' + error.message
-          alert.hidden = false
-        }
-      }
-      /**
-       * Resolve the signed-in editor's scope, retaining the existing local-development profile.
-       * @returns {ReturnType<typeof resolveUserPermissions>} Effective editor permissions.
-       */
-      const getCurrentPermissions = () => {
-        const user = Reflect.get(window, 'netlifyIdentity')?.currentUser?.()
-        if (!user) {
-          return {
-            allowed: true,
-            email: 'local@dev',
-            domain: 'dev',
-            role: 'general-editor',
-            gssCodes: ['*'],
-            isGeneralEditor: true,
-            notes: 'Local development editor'
-          }
-        }
-        return resolveUserPermissions(user, domainPermissions)
-      }
-      /**
-       * Synchronize the role badge and collection-link visibility.
-       * @param {ReturnType<typeof resolveUserPermissions>} permissions - Current editor scope.
-       * @returns {void}
-       */
-      const syncUserScopeUI = (permissions) => {
-        document.body.classList.toggle(
-          'is-service-editor',
-          !permissions.isGeneralEditor && permissions.role === 'service-editor'
-        )
-        const badge = document.getElementById('cms-user-badge')
-        if (badge && permissions.email && permissions.email !== 'local@dev') {
-          const scope = permissions.isGeneralEditor
-            ? 'General Editor'
-            : `Service Editor (${permissions.gssCodes.join(', ') || 'unassigned'})`
-          badge.textContent = `${permissions.email} • ${scope}`
-          badge.style.display = 'inline-block'
-        }
-      }
-      const stampedFields = {
-        pages: ['updated_on'],
-        faqs: ['updated_on'],
-        resources: ['updated_on'],
-        sessions: ['updated_on'],
-        contributors: ['updated_on'],
-        organisations: ['updated_on'],
-        authorities: ['updated_on', 'reviewed_on'],
-        libraries: ['updated_on', 'reviewed_on']
-      }
-
-      /**
-       * Register supported extensions and initialize the stock backend from embedded config.
-       * @returns {Promise<void>} Resolves after initialization has been requested.
-       * @throws {Error} When Decap or the archive manifest cannot be loaded.
-       */
-      const initialize = async () => {
-        await Reflect.get(window, 'CMS_IDENTITY_READY')
-        const cms = Reflect.get(window, 'CMS')
-        if (!cms) throw new Error('Decap CMS failed to load.')
-        const response = await fetch(sitePath('/admin/archive-media.json'))
-        if (!response.ok) throw new Error(`Archive manifest failed to load (${response.status}).`)
-        const manifest = await response.json()
-        registerArchiveWidgets(cms, manifest, {
-          h: Reflect.get(window, 'h'),
-          createClass: Reflect.get(window, 'createClass')
-        })
-        registerDirectoryControls(cms, {
-          h: Reflect.get(window, 'h'),
-          createClass: Reflect.get(window, 'createClass')
-        })
-        const enLocale = cms.getLocale('en')
-        cms.registerLocale('en', {
-          ...enLocale,
-          editor: {
-            ...enLocale.editor,
-            editorToolbar: {
-              ...enLocale.editor.editorToolbar,
-              changesSaved: 'No unsaved changes'
-            }
-          }
-        })
-        registerEditorComponents(cms, withArchiveWidgets)
-        const initialPermissions = getCurrentPermissions()
-        syncUserScopeUI(initialPermissions)
-        const identity = Reflect.get(window, 'netlifyIdentity')
-        identity?.on('login', () => syncUserScopeUI(getCurrentPermissions()))
-        identity?.on('logout', () => syncUserScopeUI(getCurrentPermissions()))
-        cms.registerEventListener({
-          name: 'preSave',
-          /**
-           * Validate the editor scope and directory fields, then stamp actual edit dates.
-           * @param {{entry: object}} context - Decap immutable entry.
-           * @returns {object} Prepared immutable entry data.
-           * @throws {Error} When authorization or directory validation fails.
-           */
-          handler: ({ entry }) => {
-            try {
-              const permissions = getCurrentPermissions()
-              const collection = entry.get('collection')
-              const kind = directoryCollectionKind(collection)
-              let data = entry.get('data')
-              if (kind === 'libraries' || kind === 'authorities') {
-                const input =
-                  kind === 'libraries'
-                    ? prepareLibraryAuthority(data.toJS(), authorityLookups.items)
-                    : data.toJS()
-                const prepared = prepareDirectoryEdit(input, kind)
-                validateEntrySave(prepared, collection, permissions)
-                for (const [field, value] of Object.entries(prepared)) data = data.set(field, value)
-                if (data.has('data')) data = data.delete('data')
-              } else {
-                validateEntrySave(data.toJS(), collection, permissions)
-              }
-              const today = new Date().toLocaleDateString('en-CA')
-              return (stampedFields[kind] || []).reduce(
-                (data, field) => data.set(field, today),
-                data
-              )
-            } catch (error) {
-              console.error('Decap CMS preSave handler failed:', error)
-              throw error
-            }
-          }
-        })
-        cms.registerPreviewStyle(previewStyles, { raw: true })
-        const config = withArchiveWidgets(
-          expandLibraryCollections(parseYaml(cmsConfigRaw), authorityLookups.items)
-        )
-        config.load_config_file = false
-        config.collections = filterCollectionsForPermissions(
-          config.collections,
-          initialPermissions,
-          authorityLookups.items
-        )
-        cms.init({ config })
-      }
-      initialize().catch(reportError)
-    </script>
+    <script src="../../scripts/cmsAdminClient.mjs"></script>
   </body>
 </html>
-
-<style>
-  :global(html),
-  :global(body) {
-    margin: 0;
-    padding: 0;
-  }
-  .cms-help-links {
-    position: fixed;
-    bottom: 0.75rem;
-    right: 0.875rem;
-    z-index: 300;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: calc(100vw - 3.25rem);
-    gap: 0.65rem;
-    padding: 0.35rem 0.75rem;
-    border: 1px solid #d2d1d4;
-    border-radius: 0.75rem;
-    background: rgba(255, 255, 255, 0.96);
-    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.1);
-    font: 0.78rem/1.3 sans-serif;
-  }
-  .cms-help-links a {
-    color: #1d4ed8;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .cms-help-links a:hover,
-  .cms-help-links a:focus-visible {
-    text-decoration: underline;
-  }
-  .cms-user-badge {
-    overflow-wrap: anywhere;
-    font-weight: 600;
-    color: #374151;
-  }
-  #cms-load-error {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    margin: 0;
-    padding: 1rem;
-    color: #991b1b;
-    background: #fef2f2;
-    font: 1rem/1.4 sans-serif;
-  }
-  :global(body.is-service-editor a[href='#/collections/settings']),
-  :global(body.is-service-editor a[href='#/collections/homepage']),
-  :global(body.is-service-editor a[href='#/collections/pages']),
-  :global(body.is-service-editor a[href='#/collections/faqs']),
-  :global(body.is-service-editor a[href='#/collections/resources']),
-  :global(body.is-service-editor a[href='#/collections/sessions']),
-  :global(body.is-service-editor a[href='#/collections/organisations']),
-  :global(body.is-service-editor a[href='#/collections/contributors']) {
-    display: none !important;
-  }
-</style>

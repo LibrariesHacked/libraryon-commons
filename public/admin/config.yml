@@ -911,6 +911,7 @@ collections:
       - name: published
         label: Publish on site
         widget: boolean
+        # noinspection YAMLIncompatibleTypes
         default: true
         required: false
         hint: Turn off to keep this entry in the CMS without generating a public page.
@@ -1744,20 +1745,14 @@ collections:
             value: ICL
       - name: year_opened
         label: Year opened
-        widget: number
+        widget: directory-year
         required: false
-        hint: Year the library opened
-        value_type: int
-        min: 1000
-        max: 9999
+        hint: Optional. Leave blank if the year is unknown.
       - name: year_closed
         label: Year closed
-        widget: number
+        widget: directory-year
         required: false
-        hint: Year the library permanently closed
-        value_type: int
-        min: 1000
-        max: 9999
+        hint: Optional. Leave blank if the year is unknown.
       - name: temporary_closed_until
         label: Temporary closure expected reopening
         widget: datetime
@@ -1770,77 +1765,77 @@ collections:
         label: Monday staffed hours
         widget: directory-hours
         required: false
-        hint: Use 09:00-17:00 or 09:00-12:30,13:30-17:00 for split sessions. Midnight closing is 24:00. Blank means closed or not recorded.
+        hint: Add one period per opening interval, using 24-hour times such as 09:00-17:00. Midnight closing is 24:00. Blank means closed or not recorded.
       - name: tuesday_staffed_hours
         label: Tuesday staffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: wednesday_staffed_hours
         label: Wednesday staffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: thursday_staffed_hours
         label: Thursday staffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: friday_staffed_hours
         label: Friday staffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: saturday_staffed_hours
         label: Saturday staffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: sunday_staffed_hours
         label: Sunday staffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: monday_unstaffed_hours
         label: Monday unstaffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: tuesday_unstaffed_hours
         label: Tuesday unstaffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: wednesday_unstaffed_hours
         label: Wednesday unstaffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: thursday_unstaffed_hours
         label: Thursday unstaffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: friday_unstaffed_hours
         label: Friday unstaffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: saturday_unstaffed_hours
         label: Saturday unstaffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: sunday_unstaffed_hours
         label: Sunday unstaffed hours
         widget: directory-hours
         required: false
-        hint: 24-hour times, as above. Blank means closed or not recorded.
+        hint: 24-hour times as above. Add another period for split hours.
       - name: special_hours
         label: Special hours
-        widget: text
+        widget: directory-special-hours
         required: false
-        hint: Holiday hours, temporary changes or other exceptions.
+        hint: Add dated periods, mark full-day closures or set a next-day end date; existing notes are preserved.
       - name: weekly_staffed_hours
         label: Weekly staffed hours
         widget: number
@@ -1887,7 +1882,7 @@ collections:
         label: Member wifi
         widget: select
         required: false
-        hint: Whether Wi-Fi is available to registered library members using library card authentication
+        hint: Whether Wi-Fi is available to registered members.
         options:
           - Yes
           - No
@@ -1945,8 +1940,8 @@ collections:
         required: false
         hint: Whether the library entrance and main service areas have step-free / level access for wheelchair users and pushchairs
         options:
-          - Yes
-          - No
+          - "Yes"
+          - "No"
           - Partial
       - name: accessible_toilet
         label: Accessible toilet

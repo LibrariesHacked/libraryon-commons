@@ -183,12 +183,17 @@ test('directory schema regeneration preserves the native authority lookup', (t) 
     )
   }
   updateDirectoryCms(pathToFileURL(`${root}${path.sep}`))
-  const regenerated = parse(readFileSync(path.join(root, 'public', 'admin', 'config.yml'), 'utf8'))
+  const generatedConfig = readFileSync(path.join(root, 'public', 'admin', 'config.yml'), 'utf8')
+  const regenerated = parse(generatedConfig)
   const authorityField = (configuration) =>
     configuration.collections
       .find(({ name }) => name === 'libraries')
       .fields.find(({ name }) => name === 'authority')
   assert.deepEqual(authorityField(regenerated), authorityField(config))
+  assert.match(
+    generatedConfig,
+    /name: step_free_access[\s\S]*?options:\r?\n\s+- "Yes"\r?\n\s+- "No"\r?\n\s+- Partial/
+  )
 })
 
 test('CI regenerates before tests and deployment persists only the generated files', () => {
@@ -201,7 +206,7 @@ test('CI regenerates before tests and deployment persists only the generated fil
       assert.equal(parsed.jobs.build.permissions.contents, 'write')
       assert.ok(source.indexOf('npm test') < source.indexOf('git add src/data/cms-lookups/'))
       assert.match(source, /git push origin HEAD:main/)
-      assert.doesNotMatch(source, /--force|\[skip ci\]/)
+      assert.doesNotMatch(source, /--force|\[skip ci]/)
       assert.match(
         source,
         /git add src\/data\/cms-lookups\/resources.json src\/data\/cms-lookups\/authorities.json/

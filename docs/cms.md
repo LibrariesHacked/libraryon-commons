@@ -63,15 +63,21 @@ telephone number belongs in **Libraries**.
 **Facilities and services** is a searchable multi-select. Separate Yes/No fields describe specific
 facilities and accessibility features. Blank values mean the information is not recorded.
 
-Staffed and unstaffed opening hours have separate daily fields:
+Staffed and unstaffed opening hours have separate daily fields. Each day lets you add opening and
+closing times as separate periods:
 
-- One session: `09:00-17:00`
-- Split sessions: `09:00-12:30,13:30-17:00`
-- Midnight closing: `08:00-24:00`
-- Closed or not recorded: leave blank
+- One period: enter `09:00` and `17:00` in the **Opens** and **Closes** fields.
+- Split sessions: select **Add time period** for each interval, such as `09:00`–`12:30` and
+  `13:30`–`17:00`.
+- Midnight closing: enter `24:00` as the closing time.
+- Closed or not recorded: leave the day blank.
 
-The form checks that sessions are in order and do not overlap. Use **Special hours** for holidays
-and other exceptions. A branch's overall **Status** is separate from its daily schedule.
+The form checks that sessions are valid, in order and do not overlap. Use **Special hours** for
+one-off changes: add a date, mark it **Closed all day** or enter its hours. Add the same date again
+for split hours. Set the optional end date to the following day when a period closes after midnight.
+The dated periods follow the Google Business Profile special-hours format, and existing free-text
+notes are preserved. A branch's overall **Status** is separate from its daily schedule. **Year
+opened** is optional; leave it blank if unknown.
 
 Fine amounts are in pounds per selected fine interval. Zero means fine-free; blank means unknown.
 
@@ -219,7 +225,7 @@ Subsequent directory imports write directly into service folders using slug-only
 ### Further reading
 
 - [Editing guide](../src/content/pages/editing-guide.md): instructions for editors.
-- [Site hosting](site.md#split-hosting): GitHub Pages and Netlify setup.
+- [Site hosting](site.md#hosting): GitHub Pages and Netlify setup.
 - [Development](development.md): page templates and rendering.
 - [Preservation](preservation.md): original material, filenames and migration tools.
 - [Directory migration](../migration/directory/README.md): source data and audit procedures.

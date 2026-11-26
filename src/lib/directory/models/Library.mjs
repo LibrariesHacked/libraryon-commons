@@ -4,6 +4,7 @@
 
 import { days, compactOpeningHours } from '../openingHoursHelpers.mjs'
 import { distanceMiles } from '../geoHelpers.mjs'
+import { formatSpecialHours } from '../specialHoursHelpers.mjs'
 
 const operationMap = {
   LAL: 'Local Authority Run',
@@ -177,8 +178,9 @@ export class Library {
     this.services = services.length ? services : flat.services || []
     this.accessibility = accessibility.length ? accessibility : flat.accessibility || []
     this.openingTimes = Object.keys(openingTimes).length ? openingTimes : flat.openingTimes || {}
-    this.openingTimesNotes =
+    this.openingTimesNotes = formatSpecialHours(
       flat.special_hours || flat['Special hours'] || flat.openingTimesNotes || ''
+    )
   }
 
   /**
