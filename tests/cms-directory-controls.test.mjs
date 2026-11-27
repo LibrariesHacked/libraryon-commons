@@ -272,6 +272,47 @@ test('adding a daily-hours period displays a new editable row', () => {
   assert.equal(findNodes(updated, 'input').length, 2)
 })
 
+test('special-hours add and remove buttons update editable rows', () => {
+  const widgets = new Map()
+  const h = (type, props, ...children) => ({ type, props: props || {}, children })
+  registerDirectoryControls(
+    {
+      getWidget: () => ({ preview: () => null }),
+      registerWidget: (name, control) => widgets.set(name, control)
+    },
+    { createClass: (definition) => definition, h }
+  )
+  const control = widgets.get('directory-special-hours')
+  const instance = {
+    props: {
+      value: null,
+      onChange: (value) => {
+        instance.props = { ...instance.props, value }
+      }
+    }
+  }
+  const findNodes = (node, type) =>
+    Array.isArray(node)
+      ? node.flatMap((child) => findNodes(child, type))
+      : node && typeof node === 'object'
+        ? [
+            ...(node.type === type ? [node] : []),
+            ...(node.children || []).flatMap((child) => findNodes(child, type))
+          ]
+        : []
+
+  findNodes(control.render.call(instance), 'button')[0].props.onClick()
+  assert.equal(parseSpecialHours(instance.props.value).periods.length, 1)
+  assert.equal(findNodes(control.render.call(instance), 'fieldset').length, 1)
+
+  const remove = findNodes(control.render.call(instance), 'button').find((button) =>
+    button.children.includes('Remove date')
+  )
+  remove.props.onClick()
+  assert.equal(instance.props.value, null)
+  assert.equal(findNodes(control.render.call(instance), 'fieldset').length, 0)
+})
+
 test('special hours preserve legacy notes and serialize dated periods in Google format', () => {
   const legacy = 'Closed on bank holidays'
   assert.deepEqual(parseSpecialHours(legacy), { periods: [], notes: legacy, invalid: false })
