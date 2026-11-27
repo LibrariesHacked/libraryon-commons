@@ -240,7 +240,14 @@ test('adding a daily-hours period displays a new editable row', () => {
   )
   const control = widgets.get('directory-hours')
   const instance = {
-    props: { value: null, onChange: (value) => (instance.props.value = value) },
+    props: {
+      value: undefined,
+      onChange: (value) => {
+        const nextProps = { ...instance.props, value }
+        control.componentWillReceiveProps.call(instance, nextProps)
+        instance.props = nextProps
+      }
+    },
     state: {},
     setState(nextState) {
       this.state = { ...this.state, ...nextState }
@@ -259,6 +266,7 @@ test('adding a daily-hours period displays a new editable row', () => {
   const initial = control.render.call(instance)
   findNodes(initial, 'button')[0].props.onClick()
 
+  assert.equal(instance.props.value, null)
   const updated = control.render.call(instance)
   assert.equal(findNodes(updated, 'li').length, 1)
   assert.equal(findNodes(updated, 'input').length, 2)

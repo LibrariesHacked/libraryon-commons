@@ -21,7 +21,10 @@ export function registerHoursWidget(cms, { h, createClass, onValidationError }) 
       },
       /** Keep the editor in sync with CMS undo/redo and external value changes. */
       componentWillReceiveProps(nextProps) {
-        if (nextProps.value !== this.props.value) {
+        if (
+          serializeHourSessions(hourSessionRows(nextProps.value)) !==
+          serializeHourSessions(hourSessionRows(this.props.value))
+        ) {
           this.setState({ rows: hourSessionRows(nextProps.value) })
         }
       },
@@ -86,7 +89,7 @@ export function registerHoursWidget(cms, { h, createClass, onValidationError }) 
             'button',
             {
               type: 'button',
-              onClick: () => this.setState({ rows: [...rows, { open: '', close: '' }] })
+              onClick: () => update([...rows, { open: '', close: '' }])
             },
             'Add time period'
           )
