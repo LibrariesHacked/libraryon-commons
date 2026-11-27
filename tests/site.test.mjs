@@ -181,6 +181,15 @@ test('directory pages share MapLibre maps and search keeps its filtered listings
   assert.ok(component.includes('this.map?.remove()'))
 })
 
+test('library map popup renders editable addresses as text', () => {
+  const component = readFileSync(
+    new URL('../src/components/LibraryMap.astro', import.meta.url),
+    'utf8'
+  )
+  assert.ok(component.includes('addressText.textContent = String(props.address)'))
+  assert.doesNotMatch(component, /addr\.innerHTML\s*=\s*`[^`]*props\.address/)
+})
+
 test('directory map and listings form one results workspace with load more inside the list pane', () => {
   const directory = readFileSync(
     new URL('../src/pages/libraries/index.astro', import.meta.url),
@@ -528,8 +537,10 @@ test('content modules use explicit positions once, or follow the page body by de
 })
 
 test('opening article images fill the content width without promoting logos or section images', () => {
+  const leadImage = ['/lead', '.jpg'].join('')
+  const detailImage = ['/detail', '.jpg'].join('')
   const leading = splitContentModules(
-    '<h1>About</h1><p>Introduction.</p><p><img src="/lead.jpg" alt="A library scene"></p><h2>More</h2><p><img src="/detail.jpg" alt="Detail"></p>',
+    `<h1>About</h1><p>Introduction.</p><p><img src="${leadImage}" alt="A library scene"></p><h2>More</h2><p><img src="${detailImage}" alt="Detail"></p>`,
     { leadImage: true }
   )
   const leadingDocument = load(
@@ -541,14 +552,16 @@ test('opening article images fill the content width without promoting logos or s
   assert.equal(leadingDocument('p.article-lead-image img').attr('src'), '/lead.jpg')
   assert.equal(leadingDocument('p.article-lead-image').length, 1)
 
+  const logoImage = ['/borrowbox', '.jpg'].join('')
   const logo = splitContentModules(
-    '<h1>Digital loans</h1><p><img src="/borrowbox.jpg" alt="BorrowBox logo"></p><h2>More</h2>',
+    `<h1>Digital loans</h1><p><img src="${logoImage}" alt="BorrowBox logo"></p><h2>More</h2>`,
     { leadImage: true }
   )
   assert.equal(load(logo[0].html)('p.article-lead-image').length, 0)
 
+  const collectionImage = ['/collection', '.jpg'].join('')
   const collection = splitContentModules(
-    '<h1>Collection</h1><p><img src="/collection.jpg" alt="Archival photo"></p>'
+    `<h1>Collection</h1><p><img src="${collectionImage}" alt="Archival photo"></p>`
   )
   assert.equal(load(collection[0].html)('p.article-lead-image').length, 0)
 })
@@ -558,7 +571,7 @@ test('the opening circus collage uses the full content width', () => {
     new URL('../src/content/pages/special-collections--early-days-of-circus.md', import.meta.url),
     'utf8'
   )
-  assert.match(markdown, /^:::collection-image\{layout="full" zoom="true"\}/m)
+  assert.match(markdown, /^:::collection-image\{layout="full" zoom="true"}/m)
 })
 
 test('FAQ references retain their introduction and anchor without inline answers', () => {
@@ -576,23 +589,21 @@ test('FAQ references retain their introduction and anchor without inline answers
 })
 
 test('resource modules include external links but avoid body links, duplicates and unsafe URLs', () => {
+  const guideUrl = ['/uploads/guide', '.pdf'].join('')
   const resources = [
     { url: '/reading', kind: 'link' },
-    { url: '/uploads/guide.pdf', kind: 'document' },
+    { url: guideUrl, kind: 'document' },
     { url: 'https://example.org/video', kind: 'recording' },
     { url: 'https://example.org/video', kind: 'link' },
     { url: 'javascript:alert(1)', kind: 'link' }
   ]
   assert.deepEqual(
-    unlinkedResources(
-      '<a href="/reading/">Read</a><a href="/uploads/guide.pdf">Guide</a>',
-      resources
-    ),
+    unlinkedResources(`<a href="/reading/">Read</a><a href="${guideUrl}">Guide</a>`, resources),
     [resources[2]]
   )
   assert.deepEqual(
     unlinkedResources(
-      '<a href="/reading/">Read</a><a href="/uploads/guide.pdf">Guide</a><div class="faq-answer"><a href="https://example.org/video">Watch</a></div>',
+      `<a href="/reading/">Read</a><a href="${guideUrl}">Guide</a><div class="faq-answer"><a href="https://example.org/video">Watch</a></div>`,
       resources
     ),
     []
@@ -713,6 +724,10 @@ test('content provenance distinguishes LibraryOn source pages from new Commons p
 
 test('privacy policy, accessibility statement, and AI statement pages are published Commons content with footer links', () => {
   const privacy = readFileSync(new URL('../src/content/pages/privacy.md', import.meta.url), 'utf8')
+  const editingGuide = readFileSync(
+    new URL('../src/content/pages/editing-guide.md', import.meta.url),
+    'utf8'
+  )
   const accessibility = readFileSync(
     new URL('../src/content/pages/accessibility.md', import.meta.url),
     'utf8'
@@ -721,6 +736,12 @@ test('privacy policy, accessibility statement, and AI statement pages are publis
   assert.ok(privacy.includes('path: /privacy'))
   assert.ok(privacy.includes('content_origin: commons'))
   assert.ok(privacy.includes('info@librarieshacked.org'))
+  assert.match(privacy, /editor accounts/i)
+  assert.match(privacy, /Git history/i)
+  assert.ok(privacy.includes('https://www.netlify.com/privacy/'))
+  assert.match(editingGuide, /strong, unique password/i)
+  assert.match(editingGuide, /government password/i)
+  assert.match(editingGuide, /Git history/i)
   assert.ok(accessibility.includes('path: /accessibility'))
   assert.ok(accessibility.includes('content_origin: commons'))
   assert.ok(accessibility.includes('WCAG') && accessibility.includes('2.2'))

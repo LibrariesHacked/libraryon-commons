@@ -1,6 +1,6 @@
 /**
- * Scrape all 98 branch libraries from https://www.librariesni.org.uk/
- * and save a validated, structured snapshot to migration/directory/libraries-ni-scraped.json.
+ * @fileoverview Scrape LibrariesNI branch pages into a structured directory snapshot.
+ * The output is written to migration/directory/libraries-ni-scraped.json.
  */
 
 import { fetch } from 'undici'
@@ -12,6 +12,11 @@ import { dirname, join } from 'node:path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const outputFile = join(__dirname, '../../migration/directory/libraries-ni-scraped.json')
 
+/**
+ * Convert a 12-hour clock time (including noon/midnight) to 24-hour notation.
+ * @param {string} str - Human-readable time string.
+ * @returns {string|null} Time in HH:MM format, or null when it cannot be parsed.
+ */
 function parseTime12(str) {
   str = str.trim().toLowerCase()
   if (str === '12 noon' || str === '12:00 noon' || str === 'noon') return '12:00'
@@ -26,6 +31,11 @@ function parseTime12(str) {
   return `${String(hour).padStart(2, '0')}:${String(min).padStart(2, '0')}`
 }
 
+/**
+ * Parse a range of 12-hour times into the directory's HH:MM-HH:MM format.
+ * @param {string} rangeStr - Human-readable opening-hours range.
+ * @returns {string|null} Normalized time range, or null when invalid.
+ */
 function parseSessionRange(rangeStr) {
   const m = rangeStr.match(
     /(\d{1,2}(?::\d{2})?\s*(?:am|pm)?|noon|midnight)\s*[-–—]\s*(\d{1,2}(?::\d{2})?\s*(?:am|pm)?|noon|midnight)/i
@@ -37,6 +47,12 @@ function parseSessionRange(rangeStr) {
   return `${start}-${end}`
 }
 
+/**
+ * Extract contact details, services, facilities, coordinates, and hours from a branch page.
+ * @param {string} html - Downloaded LibrariesNI page markup.
+ * @param {string} url - Canonical URL of the branch page.
+ * @returns {{name: string, url: string, latitude: number|null, longitude: number|null, address: string|null, postcode: string|null, phone: string|null, email: string|null, services: string[], facilities: Record<string, string|null>, hours: Record<string, string|null>}} Parsed branch record.
+ */
 export function parseLibraryPage(html, url) {
   const $ = cheerio.load(html)
 
@@ -222,6 +238,10 @@ export function parseLibraryPage(html, url) {
   }
 }
 
+/**
+ * Fetch the branch index and pages, then write the complete parsed snapshot.
+ * @returns {Promise<void>} Resolves after the snapshot is written.
+ */
 async function scrapeAll() {
   console.log('Fetching LibrariesNI index...')
   const res = await fetch('https://www.librariesni.org.uk/libraries/', {

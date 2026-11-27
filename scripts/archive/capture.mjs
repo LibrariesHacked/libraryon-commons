@@ -1,5 +1,5 @@
 /**
- * @file Optional visual evidence capture, not a static-site builder.
+ * @fileoverview Optional visual evidence capture, not a static-site builder.
  * Writes desktop/mobile DOM, screenshots and embedded HAR bodies per collection.
  * A separate context blocks live networking to smoke-test the first captured URL.
  * @example node capture.mjs --priority --mobile --collection browser-priority

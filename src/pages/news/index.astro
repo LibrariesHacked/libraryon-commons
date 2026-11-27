@@ -1,26 +1,24 @@
 ---
+/** @fileoverview Server-rendered news archive with client-side filtering, archive loading, and map synchronization. */
+import { ChevronDown, Globe, RotateCcw, Search, SlidersHorizontal, Icon } from '@lucide/astro'
 import {
-  BookOpen,
-  Briefcase,
-  Building,
-  Calendar,
-  ChevronDown,
-  CircleCheck,
-  DoorClosed,
-  Globe,
-  Heart,
-  Info,
-  Landmark,
-  Megaphone,
-  Monitor,
-  RotateCcw,
-  Search,
-  SlidersHorizontal,
-  Sparkles,
-  TrendingDown,
-  TrendingUp,
-  Users
-} from '@lucide/astro'
+  BookOpen as BookOpenNode,
+  Briefcase as BriefcaseNode,
+  Building as BuildingNode,
+  Calendar as CalendarNode,
+  CircleCheck as CircleCheckNode,
+  DoorClosed as DoorClosedNode,
+  Heart as HeartNode,
+  Info as InfoNode,
+  Landmark as LandmarkNode,
+  Megaphone as MegaphoneNode,
+  Monitor as MonitorNode,
+  RotateCcw as RotateCcwNode,
+  Sparkles as SparklesNode,
+  TrendingDown as TrendingDownNode,
+  TrendingUp as TrendingUpNode,
+  Users as UsersNode
+} from 'lucide'
 import { getEntry, render } from 'astro:content'
 import SiteLayout from '../../layouts/SiteLayout.astro'
 import Breadcrumbs from '../../components/Breadcrumbs.astro'
@@ -81,62 +79,77 @@ const authoritiesList = Object.entries(metadata.authorities || {})
   .map(([key, count]) => ({ key, label: key, count }))
   .sort((a, b) => a.label.localeCompare(b.label, 'en'))
 
+/**
+ * Resolve the icon node representing a news category.
+ * @param {string} [key=''] - Category identifier.
+ * @returns {Array} Matching Lucide icon node.
+ */
 function getCategoryIcon(key = '') {
   switch (key) {
     case 'funding_and_finance':
     case 'cuts_and_finance':
-      return Landmark
+      return LandmarkNode
     case 'closures_and_threats':
-      return DoorClosed
+      return DoorClosedNode
     case 'campaigns_and_activism':
-      return Megaphone
+      return MegaphoneNode
     case 'staffing_and_volunteers':
-      return Users
+      return UsersNode
     case 'digital_and_technology':
-      return Monitor
+      return MonitorNode
     case 'community_and_outreach':
-      return Building
+      return BuildingNode
     case 'services_and_activities':
-      return BookOpen
+      return BookOpenNode
     case 'events_and_initiatives':
-      return Calendar
+      return CalendarNode
     default:
-      return Sparkles
+      return SparklesNode
   }
 }
 
+/**
+ * Resolve the icon node representing a reported change type.
+ * @param {string} [key=''] - Change-type identifier.
+ * @returns {Array} Matching Lucide icon node.
+ */
 function getChangeTypeIcon(key = '') {
   switch (key) {
     case 'closure':
-      return DoorClosed
+      return DoorClosedNode
     case 'reduction':
     case 'threatened_reduction':
-      return TrendingDown
+      return TrendingDownNode
     case 'threatened_closure':
     case 'service_threatened':
-      return Info
+      return InfoNode
     case 'investment':
     case 'refurbishment':
-      return TrendingUp
+      return TrendingUpNode
     case 'new_library':
     case 'reopening':
-      return Sparkles
+      return SparklesNode
     case 'community_handover':
     case 'transfer':
-      return RotateCcw
+      return RotateCcwNode
     default:
-      return CircleCheck
+      return CircleCheckNode
   }
 }
 
+/**
+ * Select an icon node for a known organisation using its display name.
+ * @param {string} [key=''] - Organisation name or identifier.
+ * @returns {Array} Matching Lucide icon node.
+ */
 function getOrgIcon(key = '') {
   const norm = key.toLowerCase()
-  if (norm.includes('campaign')) return Megaphone
-  if (norm.includes('cilip')) return Briefcase
-  if (norm.includes('arts council')) return Sparkles
-  if (norm.includes('good things')) return Heart
-  if (norm.includes('government') || norm.includes('dcms')) return Landmark
-  return Building
+  if (norm.includes('campaign')) return MegaphoneNode
+  if (norm.includes('cilip')) return BriefcaseNode
+  if (norm.includes('arts council')) return SparklesNode
+  if (norm.includes('good things')) return HeartNode
+  if (norm.includes('government') || norm.includes('dcms')) return LandmarkNode
+  return BuildingNode
 }
 
 const newsPage = await getEntry('pages', 'news')
@@ -267,7 +280,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
                 <div class="facility-chips filter-tag-list" data-tag-group="category">
                   {categoriesList.map(({ key, label, count }, index) => {
                     const isExtra = index >= 8
-                    const IconComponent = getCategoryIcon(key)
+                    const iconNode = getCategoryIcon(key)
                     return (
                       <button
                         type="button"
@@ -279,7 +292,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
                         aria-pressed="false"
                       >
                         <span class="facility-chip-icon" aria-hidden="true">
-                          <IconComponent size={15} />
+                          <Icon iconNode={iconNode} size={15} />
                         </span>
                         <span class="facility-chip-label">{label}</span>
                         <span class="filter-tag-count">({count.toLocaleString('en-GB')})</span>
@@ -305,7 +318,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
                 <div class="facility-chips filter-tag-list" data-tag-group="change_type">
                   {changeTypesList.map(({ key, label, count }, index) => {
                     const isExtra = index >= 6
-                    const IconComponent = getChangeTypeIcon(key)
+                    const iconNode = getChangeTypeIcon(key)
                     return (
                       <button
                         type="button"
@@ -317,7 +330,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
                         aria-pressed="false"
                       >
                         <span class="facility-chip-icon" aria-hidden="true">
-                          <IconComponent size={15} />
+                          <Icon iconNode={iconNode} size={15} />
                         </span>
                         <span class="facility-chip-label">{label}</span>
                         <span class="filter-tag-count">({count.toLocaleString('en-GB')})</span>
@@ -343,7 +356,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
                 <div class="facility-chips filter-tag-list" data-tag-group="organisation">
                   {orgsList.map(({ key, label, count }, index) => {
                     const isExtra = index >= 6
-                    const IconComponent = getOrgIcon(key)
+                    const iconNode = getOrgIcon(key)
                     return (
                       <button
                         type="button"
@@ -355,7 +368,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
                         aria-pressed="false"
                       >
                         <span class="facility-chip-icon" aria-hidden="true">
-                          <IconComponent size={15} />
+                          <Icon iconNode={iconNode} size={15} />
                         </span>
                         <span class="facility-chip-label">{label}</span>
                         <span class="filter-tag-count">({count.toLocaleString('en-GB')})</span>
@@ -585,6 +598,11 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
   const loadedExtensions = new Set()
   let isFetchingExtension = false
 
+  /**
+   * Fetch one older archive segment and merge unseen stories into the current index.
+   * @param {{id: string, url: string}} ext - Archive segment descriptor.
+   * @returns {Promise<void>} Resolves when the segment has been merged or its failure logged.
+   */
   async function loadExtension(ext) {
     if (loadedExtensions.has(ext.id)) return
     loadedExtensions.add(ext.id)
@@ -606,6 +624,12 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     }
   }
 
+  /**
+   * Load archive segments needed to cover the selected date range.
+   * @param {string} minDate - Inclusive earliest date required by the active range.
+   * @param {boolean} [isAll=false] - Whether the filter requests the complete archive.
+   * @returns {Promise<void>} Resolves after any needed archive segments have been processed.
+   */
   async function ensureExtensionsForRange(minDate, isAll = false) {
     if (isFetchingExtension) return
     const needed = ARCHIVE_EXTENSIONS.filter((ext) => {
@@ -651,6 +675,10 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     })
   }
 
+  /**
+   * Fetch the compact news index, restore filter state from the URL, and render results.
+   * @returns {Promise<void>} Resolves after loading and applying the index when available.
+   */
   async function loadIndex() {
     try {
       const res = await fetch(newsUrl)
@@ -710,6 +738,10 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     }
   }
 
+  /**
+   * Render removable chips for the currently active news filters.
+   * @param {Array<{label: string, color?: string, type: string, value: string}>} activeFilters - Active filter descriptions.
+   */
   function updateActiveChips(activeFilters) {
     if (!activeChipsContainer) return
     activeChipsContainer.innerHTML = ''
@@ -748,6 +780,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     activeChipsContainer.appendChild(fragment)
   }
 
+  /** Synchronize tag-button pressed states and the filter-count badge. */
   function syncTagButtons() {
     for (const btn of form.querySelectorAll('.filter-tag[data-filter-type]')) {
       const type = btn.dataset.filterType
@@ -818,6 +851,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     })
   }
 
+  /** Apply selected filters, load older data when needed, and refresh results and map. */
   function applyFilters() {
     if (!allStories || allStories.length === 0) return
 
@@ -940,6 +974,11 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     updateMap()
   }
 
+  /**
+   * Render links to the authority and organisation pages relevant to current filters.
+   * @param {string} selectedAuthority - Selected authority name, or an empty string.
+   * @param {Set<string>} selectedOrgsSet - Selected organisation names.
+   */
   function updateContextLinks(selectedAuthority, selectedOrgsSet) {
     if (!contextLinksContainer) return
     contextLinksContainer.innerHTML = ''
@@ -993,10 +1032,16 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     contextLinksContainer.hidden = false
   }
 
+  /**
+   * Create a story card using the shared news-card renderer and current base URL.
+   * @param {object} story - Indexed news story to render.
+   * @returns {HTMLElement} Rendered story element.
+   */
   function createStoryElement(story) {
     return createNewsStoryElement(story, { baseUrl })
   }
 
+  /** Replace the visible results and update the count and load-more control. */
   function renderResults() {
     if (!resultCount || !resultsContainer || !loadMoreBtn) return
     const visible = filteredStories.slice(0, displayedCount)
@@ -1020,6 +1065,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     loadMoreBtn.hidden = displayedCount >= filteredStories.length
   }
 
+  /** Append the next page of already-filtered stories to the result list. */
   function appendMoreStories() {
     if (!resultCount || !resultsContainer || !loadMoreBtn) return
     const prevCount = displayedCount
@@ -1034,6 +1080,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     loadMoreBtn.hidden = displayedCount >= filteredStories.length
   }
 
+  /** Send mapped stories from the current result set to the interactive map. */
   function updateMap() {
     if (newsMapEl) {
       const mapped = filteredStories.filter(
@@ -1043,6 +1090,7 @@ const eyebrow = newsPage?.data.eyebrow || 'Sector News & Archive'
     }
   }
 
+  /** Clear all category, organisation, country, authority, date, and text filters. */
   function resetAllFilters() {
     selectedCats.clear()
     selectedChanges.clear()

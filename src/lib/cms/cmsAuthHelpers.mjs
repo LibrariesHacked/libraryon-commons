@@ -117,8 +117,8 @@ export function extractDomainFromEmail(email) {
 }
 
 /**
- * Resolve effective permissions and GSS scopes for a user based on their email or Netlify Identity record.
- * Combines explicit Netlify Identity metadata with repository domain permissions.
+ * Resolve effective permissions and GSS scopes for a user from repository domain permissions.
+ * Netlify Identity metadata is a cached assignment; the CSV remains authoritative.
  *
  * @param {object|string} userOrEmail - Netlify Identity user object or plain email string.
  * @param {Array<object>} permissionsList - Parsed domain permission records.
@@ -137,10 +137,6 @@ export function resolveUserPermissions(userOrEmail, permissionsList = []) {
   const email = (isObject ? userOrEmail.email : userOrEmail) || ''
   const domain = extractDomainFromEmail(email)
 
-  const appMetadata = isObject ? userOrEmail.app_metadata || {} : {}
-  const explicitRoles = Array.isArray(appMetadata.roles) ? appMetadata.roles : []
-  const explicitGssCodes = Array.isArray(appMetadata.gss_codes) ? appMetadata.gss_codes : []
-
   // Match domain in repository rules (exact match or subdomain)
   const matchedRules = domain
     ? permissionsList.filter((rule) =>
@@ -151,24 +147,15 @@ export function resolveUserPermissions(userOrEmail, permissionsList = []) {
   const hasGeneralEditorRule = matchedRules.some((rule) => rule.role === 'general-editor')
   const ruleGssCodes = matchedRules.flatMap((rule) => rule.gssCodes)
 
-  // Resolve role: explicit metadata takes precedence, then domain rule match
+  // Resolve role exclusively from current domain rules.
   let role = null
-  if (explicitRoles.includes('general-editor') || explicitRoles.includes('admin')) {
-    role = 'general-editor'
-  } else if (explicitRoles.includes('service-editor')) {
-    role = 'service-editor'
-  } else if (hasGeneralEditorRule) {
+  if (hasGeneralEditorRule) {
     role = 'general-editor'
   } else if (matchedRules.length > 0) {
     role = 'service-editor'
   }
 
-  // Aggregate GSS codes from explicit claims and matched rules
-  const gssSet = new Set([
-    ...explicitGssCodes.map((code) => String(code).toUpperCase()),
-    ...ruleGssCodes
-  ])
-  const gssCodes = Array.from(gssSet)
+  const gssCodes = Array.from(new Set(ruleGssCodes.map((code) => String(code).toUpperCase())))
 
   const isGeneralEditor = role === 'general-editor' || gssCodes.includes('*')
   const allowed = Boolean(role) || isGeneralEditor || gssCodes.length > 0
@@ -265,6 +252,7 @@ export function validateEntrySave(entryData, collection, userPermissions) {
  *
  * @param {Array<object>} collections - Full Decap CMS collection configurations.
  * @param {object} userPermissions - Resolved user permissions.
+ * @param {Array<object>} [authorities=[]] - Authority records used to scope service-editor collections.
  * @returns {Array<object>} Permitted collections for this user session.
  */
 export function filterCollectionsForPermissions(collections, userPermissions, authorities = []) {

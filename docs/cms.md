@@ -42,6 +42,36 @@ therefore differ while a deployment is running.
 If an entry fails to load, reload it before continuing. Repeated loading or publishing failures
 should be reported to a maintainer.
 
+## Identity roles and Git attribution
+
+### How editor access is assigned
+
+The repository now uses the editor roles and authority GSS scopes listed in
+[domain-permissions.csv](../src/data/auth/domain-permissions.csv). The Identity signup and login
+hooks copy the matching role and GSS codes into Netlify Identity's `app_metadata.roles` and
+`app_metadata.gss_codes`. The CMS also checks the current CSV directly, so manually assigned or
+out-of-date Identity metadata does not grant access. A CSV change takes effect after deployment;
+existing editors receive updated Identity metadata on their next login. Removing a domain from the
+CSV removes its CMS access at that point.
+
+### Netlify Git Gateway setting
+
+The role changes above are implemented in the repository. Separately, the deployed Netlify site
+must limit **Identity → Services → Git Gateway → Roles** to `general-editor` and `service-editor`.
+If the setting is blank, any signed-in Identity user may be able to use Git Gateway even when the
+CMS hides their collections. This allow-list is configured in the Netlify dashboard, so its current
+value cannot be confirmed from repository files.
+
+### Public Git history
+
+Published files and their Git history are public. Git history records changed files and content,
+timestamps, and commit messages, providing a record of what changed and when. The CMS does not add an
+editor's Netlify Identity email address or user ID to content or commit messages. Public history may
+remain available after an editor account is removed.
+
+The [editor guide](../src/content/pages/editing-guide.md) and
+[privacy policy](../src/content/pages/privacy.md) explain this to editors.
+
 ## Editing the library directory
 
 ### Authority and branch details

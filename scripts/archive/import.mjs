@@ -1,7 +1,8 @@
 /**
- * @file Convert captured source records into Decap content and local media.
+ * @fileoverview Convert captured source records into Decap content and local media.
  * The raw archive is read-only; import-state checksums protect subsequent edits.
  */
+import { Buffer } from 'node:buffer'
 import { readFile, writeFile, mkdir, unlink, readdir } from 'node:fs/promises'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
@@ -41,6 +42,11 @@ const extensions = {
   'audio/mpeg': 'mp3',
   'video/mp4': 'mp4'
 }
+/**
+ * Collapse all whitespace in scraped text into single spaces.
+ * @param {string} value - Text to normalize.
+ * @returns {string} Trimmed, single-spaced text.
+ */
 const squash = (value) => value.replace(/\s+/g, ' ').trim()
 
 /**
@@ -124,6 +130,12 @@ export function resourceKind(url, label = '') {
   return 'link'
 }
 
+/**
+ * Find the closest meaningful session heading associated with a resource link.
+ * @param {Function} document - Cheerio document query function.
+ * @param {object} link - Cheerio-wrapped resource link.
+ * @returns {string} Nearby title, or an empty string when none is found.
+ */
 function sessionTitleForLink(document, link) {
   for (const ancestor of link.parents().toArray()) {
     for (const sibling of document(ancestor).prevAll().toArray()) {
@@ -142,6 +154,12 @@ function sessionTitleForLink(document, link) {
   return titleParagraph.length ? squash(document(titleParagraph).find('strong').first().text()) : ''
 }
 
+/**
+ * Add a session title to generic recording or slides link text when possible.
+ * @param {string} label - Original visible link text.
+ * @param {string} title - Associated session title.
+ * @returns {string} Link text suitable for the imported session record.
+ */
 function descriptiveSessionLink(label, title) {
   const normalized = squash(label)
   if (!title) return normalized
@@ -157,6 +175,12 @@ function descriptiveSessionLink(label, title) {
   return normalized
 }
 
+/**
+ * Produce a descriptive title for a resource link with a generic source label.
+ * @param {string} label - Original visible link text.
+ * @param {string} pageTitle - Title of the source page.
+ * @returns {string} Resource title for the content collection.
+ */
 function descriptiveResourceTitle(label, pageTitle) {
   const normalized = squash(label)
   const contextual = /^(?:view slides pdf|watch recording):\s*(.+)$/i.exec(normalized)

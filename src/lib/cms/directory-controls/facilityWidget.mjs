@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Decap CMS control for selecting directory library facilities.
+ */
+
 import { facilitySelections, serializeFacilities } from './directoryControlValues.mjs'
 
 /**

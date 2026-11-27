@@ -2,6 +2,10 @@
  * @fileoverview Browser runtime handler for interactive social share buttons and clipboard copying.
  */
 
+/**
+ * Initialize native sharing and clipboard-copy actions for each share container.
+ * @returns {void}
+ */
 export function initShareButtons() {
   const shareContainers = document.querySelectorAll('[data-share-container]')
 

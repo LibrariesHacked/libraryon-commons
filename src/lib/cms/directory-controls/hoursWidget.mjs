@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Decap CMS control for editing daily library opening-hour sessions.
+ */
+
 import {
   hourSessionRows,
   serializeHourSessions,

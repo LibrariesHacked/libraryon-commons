@@ -1,4 +1,8 @@
 /**
+ * @fileoverview Normalize a selected library authority against the deployed authority lookup.
+ */
+
+/**
  * Prepare the selected authority before schema and permission validation.
  * Blank associations preserve unresolved legacy name/code evidence rather than guessing.
  * @param {object} record - Plain library entry data.

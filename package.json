@@ -2,6 +2,7 @@
   "name": "libraryon-commons",
   "private": true,
   "type": "module",
+  "web-types": "./web-types.json",
   "engines": {
     "node": ">=22.23.4"
   },

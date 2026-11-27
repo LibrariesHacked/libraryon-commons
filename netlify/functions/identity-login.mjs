@@ -43,21 +43,14 @@ export async function handler(event) {
     const permissions = loadPermissions()
     const resolved = resolveUserPermissions(user, permissions)
 
-    // Preserve manually added users whose domains might not be in CSV
-    const existingRoles = Array.isArray(user.app_metadata?.roles) ? user.app_metadata.roles : []
-    const existingGss = Array.isArray(user.app_metadata?.gss_codes)
-      ? user.app_metadata.gss_codes
-      : []
-
-    const roles = resolved.role ? [resolved.role] : existingRoles
-    const gssCodes = resolved.gssCodes.length > 0 ? resolved.gssCodes : existingGss
+    const roles = resolved.role ? [resolved.role] : []
 
     return {
       statusCode: 200,
       body: JSON.stringify({
         app_metadata: {
-          roles: roles.length ? roles : ['service-editor'],
-          gss_codes: gssCodes
+          roles,
+          gss_codes: resolved.gssCodes
         }
       })
     }

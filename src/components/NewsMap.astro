@@ -1,4 +1,5 @@
 ---
+/** @fileoverview Lazy-loaded map of news-story locations with clustered markers and story-detail popups. */
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { storiesToLocationGeoJson } from '../lib/content/newsFormatHelpers.mjs'
 
@@ -63,6 +64,7 @@ const data = storiesToLocationGeoJson(stories)
     initializing = false
     lifetime = undefined
 
+    /** Load initial story data and initialize the map when this element approaches the viewport. */
     connectedCallback() {
       if (this.lifetime && !this.lifetime.signal.aborted) return
       this.lifetime = new AbortController()
@@ -108,6 +110,7 @@ const data = storiesToLocationGeoJson(stories)
       }
     }
 
+    /** Abort pending work and release map and observer resources when removed. */
     disconnectedCallback() {
       this.lifetime?.abort()
       this.observer?.disconnect()
@@ -118,6 +121,10 @@ const data = storiesToLocationGeoJson(stories)
       delete this.dataset.mapReady
     }
 
+    /**
+     * Update the map's accessible status message.
+     * @param {string} [message=''] - Message to show, or an empty string to hide the status.
+     */
     setStatus(message = '') {
       const status = this.querySelector('[data-map-status]')
       if (!status) return
@@ -125,6 +132,11 @@ const data = storiesToLocationGeoJson(stories)
       status.hidden = !message
     }
 
+    /**
+     * Load MapLibre and create the clustered news-location map.
+     * @param {AbortSignal} signal - Lifecycle signal used to ignore work after disconnection.
+     * @returns {Promise<void>} Resolves after map setup has been attempted.
+     */
     async initializeMap(signal) {
       if (this.map || this.initializing) return
       this.initializing = true
@@ -376,6 +388,10 @@ const data = storiesToLocationGeoJson(stories)
 
             let currentIndex = 0
 
+            /**
+             * Render one story's metadata, summary, and source link in the popup.
+             * @param {number} idx - Index of the story to render.
+             */
             const renderStory = (idx) => {
               storyViewport.innerHTML = ''
               const s = stories[idx]
@@ -387,7 +403,10 @@ const data = storiesToLocationGeoJson(stories)
               if (s.date) {
                 const dateSpan = document.createElement('span')
                 dateSpan.className = 'map-popup-date'
-                dateSpan.innerHTML = `${calendarSvg}<span>${formatNewsDate(s.date)}</span>`
+                dateSpan.innerHTML = calendarSvg
+                const dateText = document.createElement('span')
+                dateText.textContent = formatNewsDate(s.date)
+                dateSpan.appendChild(dateText)
                 metaRow.appendChild(dateSpan)
               }
 
@@ -436,7 +455,10 @@ const data = storiesToLocationGeoJson(stories)
                 link.rel = 'noopener noreferrer'
                 link.className = 'map-popup-action'
                 const label = s.domain ? `Read at ${s.domain}` : 'Read source article'
-                link.innerHTML = `<span>${label}</span>${arrowSvg}`
+                const labelText = document.createElement('span')
+                labelText.textContent = label
+                link.appendChild(labelText)
+                link.insertAdjacentHTML('beforeend', arrowSvg)
                 storyViewport.appendChild(link)
               }
             }
@@ -512,6 +534,10 @@ const data = storiesToLocationGeoJson(stories)
       }
     }
 
+    /**
+     * Replace the story features and adjust the camera after filtering.
+     * @param {{isInitial?: boolean}} [options] - Whether this is the initial map render.
+     */
     updateMap({ isInitial = false } = {}) {
       if (!this.map || !this.dataset.mapReady) return
       const source = this.map.getSource('news-points')

@@ -18,6 +18,47 @@ const targetDir = path.join(rootDir, 'src', 'data', 'news')
 
 export { ORG_SLUG_MAP, getOrgSlug }
 
+/**
+ * Check that an incoming story date is a valid ISO date or date-time.
+ * @param {unknown} value - Incoming `post_date` value.
+ * @returns {boolean} Whether the value can safely be used for date calculations.
+ */
+export function isValidStoryDate(value) {
+  if (typeof value !== 'string') return false
+  const match = /^(\d{4})-(\d{2})-(\d{2})(?:T.*)?$/.exec(value)
+  if (!match || !Number.isFinite(Date.parse(value))) return false
+
+  const dateOnly = `${match[1]}-${match[2]}-${match[3]}`
+  return new Date(`${dateOnly}T00:00:00.000Z`).toISOString().slice(0, 10) === dateOnly
+}
+
+/**
+ * Keep undated stories but exclude records with malformed non-empty dates.
+ * @param {Array<object>} stories - Incoming public-news stories.
+ * @returns {Array<object>} Stories with absent or valid dates.
+ */
+export function filterStoriesWithValidDates(stories) {
+  return stories.filter((story) => {
+    const date = story?.post_date
+    return date === undefined || date === null || date === '' || isValidStoryDate(date)
+  })
+}
+
+/**
+ * Select the newest valid story date, falling back to the supplied current date.
+ * @param {Array<object>} stories - Incoming public-news stories.
+ * @param {Date} [fallbackDate] - Current date used when no story has a valid date.
+ * @returns {string} A safe YYYY-MM-DD date anchor.
+ */
+export function getNewsAnchorDate(stories, fallbackDate = new Date()) {
+  const dates = stories
+    .map((story) => story?.post_date)
+    .filter(isValidStoryDate)
+    .map((date) => new Date(date))
+    .sort((a, b) => b.getTime() - a.getTime())
+  return (dates[0] || fallbackDate).toISOString().slice(0, 10)
+}
+
 export function resolvePLNArchiveDir() {
   const candidates = [
     process.env.PLN_DATA_DIR ? path.resolve(process.env.PLN_DATA_DIR) : null,
@@ -71,7 +112,12 @@ async function loadStories() {
 
 export async function syncNews() {
   mkdirSync(targetDir, { recursive: true })
-  const stories = await loadStories()
+  const loadedStories = await loadStories()
+  const stories = filterStoriesWithValidDates(loadedStories)
+  const malformedCount = loadedStories.length - stories.length
+  if (malformedCount) {
+    console.warn(`Skipping ${malformedCount} stories with malformed post_date values.`)
+  }
   console.log(`Processing ${stories.length.toLocaleString()} total stories...`)
   if (!stories.length) {
     throw new Error('No stories found to process; aborting sync to prevent data loss.')
@@ -112,7 +158,11 @@ export async function syncNews() {
   }
 
   // Sort stories newest first
-  stories.sort((a, b) => (b.post_date || '').localeCompare(a.post_date || ''))
+  stories.sort((a, b) => {
+    const dateA = a.post_date ? Date.parse(a.post_date) : Number.NEGATIVE_INFINITY
+    const dateB = b.post_date ? Date.parse(b.post_date) : Number.NEGATIVE_INFINITY
+    return dateB - dateA
+  })
 
   // High-level summary aggregations
   const orgSummaries = {}
@@ -120,7 +170,7 @@ export async function syncNews() {
   const libSummaries = {}
 
   // Date cutoffs relative to anchor date (newest story date)
-  const anchorDateStr = stories[0]?.post_date || new Date().toISOString().slice(0, 10)
+  const anchorDateStr = getNewsAnchorDate(stories)
   const anchorDate = new Date(anchorDateStr)
 
   const d1 = new Date(anchorDate)

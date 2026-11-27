@@ -18,18 +18,23 @@ const preview = unified()
   .use(contentDirectives)
   .use(remarkRehype)
   .use(rehypeStringify)
+/** Serialize Markdown AST children using the shared editorial formatting options. */
 const markdown = (children) => toMarkdown({ type: 'root', children }, markdownOptions).trim()
+/** Parse a Markdown string into its root child nodes. */
 const parse = (value) => parser.parse(String(value || '')).children
+/** Extract the content between a directive's opening and closing fences. */
 const directiveBody = (source) =>
   String(source || '')
     .split(/\r?\n/)
     .slice(1, -1)
     .join('\n')
     .trim()
+/** Serialize directive attributes, omitting empty values and escaping markup-sensitive characters. */
 const attributes = (values) => {
   const entries = Object.entries(values).filter(
     ([, value]) => value !== undefined && value !== null && value !== ''
   )
+  /** Escape a single attribute value for the directive's quoted syntax. */
   const escaped = (value) =>
     String(value).replace(
       /[&"<>\r\n]/g,
@@ -47,11 +52,15 @@ const attributes = (values) => {
     ? `{${entries.map(([key, value]) => `${key}="${escaped(value)}"`).join(' ')}}`
     : ''
 }
+/** Wrap a body in a named Markdown directive with optional attributes and fence syntax. */
 const wrap = (name, body, values = {}, fence = ':::') =>
   `${fence}${name}${attributes(values)}\n\n${body.trim()}\n\n${fence}`
+/** Check whether an AST node is a paragraph containing only one image. */
 const imageParagraph = (node) =>
   node.type === 'paragraph' && node.children.length === 1 && node.children[0].type === 'image'
+/** Create a Markdown text node after normalizing its value to a string. */
 const text = (value) => ({ type: 'text', value: String(value || '') })
+/** Convert CMS image fields into a paragraph containing one Markdown image node. */
 const imageNode = (data) => ({
   type: 'paragraph',
   children: [
@@ -63,11 +72,13 @@ const imageNode = (data) => ({
     }
   ]
 })
+/** Convert CMS heading fields into a Markdown heading AST node. */
 const headingNode = (data) => ({
   type: 'heading',
   depth: Number(data.heading_level || 3),
   children: parse(data.title || '')[0]?.children || [text('')]
 })
+/** Build the Decap field configuration for Markdown content. */
 const markdownField = (name, label, required = false) => ({
   name,
   label,
@@ -76,6 +87,7 @@ const markdownField = (name, label, required = false) => ({
   editor_components: [],
   modes: ['rich_text', 'raw']
 })
+/** Build a required plain-text field used to preserve nested Markdown source. */
 const markdownSourceField = (name, label) => ({
   name,
   label,
@@ -83,12 +95,14 @@ const markdownSourceField = (name, label) => ({
   required: true,
   hint: 'Keep the nested slide or book Markdown in this article block.'
 })
+/** Build a Decap string field configuration. */
 const stringField = (name, label, required = false) => ({
   name,
   label,
   widget: 'string',
   required
 })
+/** Build a string field that accepts only HTTP(S) URLs or local paths. */
 const linkField = (name, label) => ({
   ...stringField(name, label),
   pattern: ['^(?:/(?!/)|https?://).*$|^$', 'Use an HTTP(S) URL or a local path.']
@@ -359,7 +373,7 @@ const attributionFields = () => [
 ]
 const containerPattern = (name, count = 3) =>
   new RegExp(
-    `^(:{${count},})${name}(?:\\{[^\\r\\n]*\\})?[\\t ]*\\r?\\n[\\s\\S]*?\\r?\\n\\1[\\t ]*(?=\\r?\\n|$)`
+    `^(:{${count},})${name}(?:\\{[^\\r\\n]*})?[\\t ]*\\r?\\n[\\s\\S]*?\\r?\\n\\1[\\t ]*(?=\\r?\\n|$)`
   )
 
 /**
@@ -517,9 +531,9 @@ export function createEditorComponents() {
     label,
     fields,
     pattern: ['faqs', 'resources'].includes(name)
-      ? new RegExp(`^\\{\\{${name}\\}\\}[\\t ]*(?=\\r?\\n|$)`)
+      ? new RegExp(`^\\{\\{${name}}}[\\t ]*(?=\\r?\\n|$)`)
       : name === 'video'
-        ? /^::video(?:\{[^\r\n]*\})?[\t ]*(?=\r?\n|$)/
+        ? /^::video(?:\{[^\r\n]*})?[\t ]*(?=\r?\n|$)/
         : containerPattern(
             name,
             name === 'cards' || name === 'collection-accordion' || name === 'collection-aside'

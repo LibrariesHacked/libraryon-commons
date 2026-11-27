@@ -1,4 +1,7 @@
 ---
+/**
+ * @fileoverview Accessible place search for library listings, with inline map selection and nearby search.
+ */
 import { LocateFixed } from '@lucide/astro'
 import { dataAttribution } from '@geovation/gb-name-index'
 import { settings, sitePath } from '../lib/site/siteHelpers.mjs'
@@ -68,6 +71,7 @@ const copy = settings.ui.library_search
   import Combobox from '@github/combobox-nav'
 
   class LibraryPlaceSearch extends HTMLElement {
+    /** Set up place suggestions, geolocation, and query-string state when the element is connected. */
     connectedCallback() {
       if (this.dataset.initialized) return
       this.dataset.initialized = 'true'
@@ -87,6 +91,7 @@ const copy = settings.ui.library_search
       let request = null
       let indexPromise
 
+      /** Cancel pending searches and clear suggestion UI. */
       const cancel = () => {
         clearTimeout(timer)
         request?.abort()
@@ -97,6 +102,10 @@ const copy = settings.ui.library_search
         results.replaceChildren()
       }
 
+      /**
+       * Apply a chosen location by dispatching it inline or navigating to the directory search.
+       * @param {{latitude: number, longitude: number, label: string}} location - Selected place.
+       */
       const select = (location) => {
         cancel()
         selected = location
@@ -118,6 +127,10 @@ const copy = settings.ui.library_search
         }
       }
 
+      /**
+       * Search the place-name index for the current input and render coordinate-bearing matches.
+       * @returns {Promise<void>} Resolves when suggestions are rendered or the request is handled.
+       */
       const lookup = async () => {
         cancel()
         const query = input.value.trim()

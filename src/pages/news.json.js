@@ -4,6 +4,10 @@
 
 import { getNewsIndexStories } from '../lib/content/newsHelpers.mjs'
 
+/**
+ * Return the compact news index used by client-side search and map filtering.
+ * @returns {Response} JSON response containing the indexed stories.
+ */
 export function GET() {
   const stories = getNewsIndexStories()
   return new Response(JSON.stringify(stories), {

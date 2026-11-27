@@ -1,4 +1,5 @@
 ---
+/** @fileoverview Server-rendered library search page with service, accessibility, distance, and open-status filters. */
 import { ChevronDown, X } from '@lucide/astro'
 
 import LibrarySearch from '../../components/LibrarySearch.astro'
@@ -378,6 +379,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
   let matches = []
   let visible = 60
 
+  /** Close the service and distance filter popovers. */
   const closePanels = () => {
     for (const panel of [servicesPanel, distancePanel])
       if (panel.matches(':popover-open')) panel.hidePopover()
@@ -426,6 +428,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     })
   }
 
+  /** Synchronize selected tag button states and the active-filter count. */
   const syncTagButtons = () => {
     for (const button of form.querySelectorAll('[data-service]')) {
       const active = selectedServices.has(button.dataset.service)
@@ -471,8 +474,13 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     update()
   })
 
+  /** Return the location explicitly selected by the user, if any. */
   const activeLocation = () => explicitLocation
 
+  /**
+   * Update distance-filter labels and availability for the resolved location.
+   * @param {object|null} resolvedLoc - Current resolved location, or null when unavailable.
+   */
   const syncDistanceUI = (resolvedLoc) => {
     distanceValue.textContent = `${selectedDistance} ${form.dataset.milesSuffix}`
     distanceToggle.disabled = !resolvedLoc
@@ -491,6 +499,12 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
 
   let selectedLibraryId = null
 
+  /**
+   * Create a library result row and keep its selected state synchronized with the map.
+   * @param {object} item - Library record to display.
+   * @param {number|null} miles - Distance from the active location, when calculated.
+   * @returns {HTMLLIElement} Rendered library result item.
+   */
   const itemElement = (item, miles) => {
     const li = document.createElement('li')
     li.className = 'library-result-item'
@@ -573,6 +587,10 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     return li
   }
 
+  /**
+   * Render the current result page, including its count and empty state.
+   * @param {object|null} resolvedLoc - Current resolved location for distance labels.
+   */
   const render = (resolvedLoc) => {
     list.replaceChildren(
       ...matches.slice(0, visible).map((item) => {
@@ -591,6 +609,10 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     }
   }
 
+  /**
+   * Append the next batch of library results without rebuilding existing rows.
+   * @param {object|null} resolvedLoc - Current resolved location for distance labels.
+   */
   const appendMore = (resolvedLoc) => {
     const prevVisible = visible
     visible += 60
@@ -603,6 +625,10 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     more.hidden = visible >= matches.length
   }
 
+  /**
+   * Persist active filters and location coordinates in the current page URL.
+   * @param {object|null} resolvedLoc - Current resolved location to encode.
+   */
   const syncURL = (resolvedLoc) => {
     const nextParams = new URLSearchParams()
     if (resolvedLoc && resolvedLoc.label !== form.dataset.currentLocation) {
@@ -635,6 +661,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     )
   }
 
+  /** Refilter and order records, then synchronize the URL, results, and map. */
   const update = () => {
     if (!records.length) return
     visible = 60
@@ -732,6 +759,7 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     update()
   })
 
+  /** Clear the selected location and restore the default distance filter. */
   const clearLocationState = () => {
     picker.dispatchEvent(new CustomEvent('library-location-clear'))
     explicitLocation = null
@@ -750,6 +778,11 @@ const initialResults = searchRecords.filter((record) => !record.closed).slice(0,
     closePanels()
   })
 
+  /**
+   * Load and cache the appropriate directory index before applying current filters.
+   * @param {boolean} includeClosed - Whether to include permanently closed libraries.
+   * @returns {Promise<void>} Resolves after the selected index is loaded and rendered.
+   */
   const loadDirectory = async (includeClosed) => {
     if (includeClosed) {
       if (!allRecords) {

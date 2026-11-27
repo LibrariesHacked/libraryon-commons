@@ -105,20 +105,36 @@ test('resolveUserPermissions assigns service-editor role and GSS codes to matchi
   assert.deepEqual(unknownUser.gssCodes, [])
 })
 
-test('resolveUserPermissions respects manually created users with explicit app_metadata', () => {
-  const rules = [] // empty CSV
-  const manualUser = {
-    email: 'contractor@external-agency.com',
+test('resolveUserPermissions treats CSV as authoritative over stale app_metadata', () => {
+  const permissions = [
+    {
+      domains: ['manchester.gov.uk'],
+      gssCodes: ['E08000003'],
+      role: 'service-editor',
+      notes: 'Manchester'
+    }
+  ]
+  const staleUser = {
+    email: 'librarian@manchester.gov.uk',
     app_metadata: {
-      roles: ['service-editor'],
-      gss_codes: ['E08000035']
+      roles: ['general-editor'],
+      gss_codes: ['*', 'E08000035']
     }
   }
 
-  const resolved = resolveUserPermissions(manualUser, rules)
+  const resolved = resolveUserPermissions(staleUser, permissions)
   assert.equal(resolved.allowed, true)
   assert.equal(resolved.role, 'service-editor')
-  assert.deepEqual(resolved.gssCodes, ['E08000035'])
+  assert.equal(resolved.isGeneralEditor, false)
+  assert.deepEqual(resolved.gssCodes, ['E08000003'])
+
+  const removedUser = resolveUserPermissions(
+    { email: 'contractor@external-agency.com', app_metadata: staleUser.app_metadata },
+    []
+  )
+  assert.equal(removedUser.allowed, false)
+  assert.equal(removedUser.role, null)
+  assert.deepEqual(removedUser.gssCodes, [])
 })
 
 test('isGssAllowed enforces exact match unless wildcard is present', () => {
@@ -254,7 +270,12 @@ test('Netlify Identity validate function accepts pre-authorised domain and rejec
 
 test('Netlify Identity signup function assigns roles and GSS codes in app_metadata', async () => {
   const event = {
-    body: JSON.stringify({ user: { email: 'librarian@manchester.gov.uk' } })
+    body: JSON.stringify({
+      user: {
+        email: 'librarian@manchester.gov.uk',
+        app_metadata: { roles: ['general-editor'], gss_codes: ['*'] }
+      }
+    })
   }
   const response = await signupHandler(event)
   assert.equal(response.statusCode, 200)
@@ -269,7 +290,7 @@ test('Netlify Identity login function refreshes roles and GSS codes from CSV', a
     body: JSON.stringify({
       user: {
         email: 'staff@birmingham.gov.uk',
-        app_metadata: { roles: ['service-editor'] }
+        app_metadata: { roles: ['general-editor'], gss_codes: ['*'] }
       }
     })
   }
@@ -279,6 +300,22 @@ test('Netlify Identity login function refreshes roles and GSS codes from CSV', a
   const parsed = JSON.parse(response.body)
   assert.deepEqual(parsed.app_metadata.roles, ['service-editor'])
   assert.deepEqual(parsed.app_metadata.gss_codes, ['E08000025'])
+})
+
+test('Netlify Identity login clears stale permissions when a domain is removed from CSV', async () => {
+  const response = await loginHandler({
+    body: JSON.stringify({
+      user: {
+        email: 'former-editor@no-longer-authorised.example',
+        app_metadata: { roles: ['general-editor'], gss_codes: ['*'] }
+      }
+    })
+  })
+
+  assert.equal(response.statusCode, 200)
+  const parsed = JSON.parse(response.body)
+  assert.deepEqual(parsed.app_metadata.roles, [])
+  assert.deepEqual(parsed.app_metadata.gss_codes, [])
 })
 
 test('admin index gates login reload on unauthenticated init to avoid infinite reload loop', () => {

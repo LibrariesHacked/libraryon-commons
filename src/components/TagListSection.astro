@@ -1,9 +1,10 @@
 ---
+/** @fileoverview Render facility and service tags as filter controls or linked details with consistent icons. */
+import { ArrowUpRight, Icon } from '@lucide/astro'
 import {
   Accessibility,
   Archive,
   ArrowUpDown,
-  ArrowUpRight,
   Baby,
   BookOpen,
   Briefcase,
@@ -30,11 +31,11 @@ import {
   Users,
   Wifi,
   Wrench
-} from '@lucide/astro'
+} from 'lucide'
 import facilityIcons from '../data/facility-icons.json'
 import { safeURL } from '../lib/site/siteHelpers.mjs'
 
-const iconComponents = {
+const iconNodes = {
   Accessibility,
   Archive,
   ArrowUpDown,
@@ -83,12 +84,12 @@ const validItems = items.filter(
 const fallbackColors = ['plum', 'rose', 'green', 'apricot']
 
 /**
- * Resolve the representative Lucide icon component and brand palette tint for a facility label.
+ * Resolve the representative Lucide icon node and brand palette tint for a facility label.
  * Looks up matches in facility-icons.json without hardcoded conditional branches.
  *
  * @param {string} label - Facility or service name.
  * @param {number} index - Position index for fallback round-robin color distribution.
- * @returns {{ icon: any, color: string }} Icon component and color tint token name.
+ * @returns {{ iconNode: Array, color: string }} Icon node and color tint token name.
  */
 function getFacilityDetails(label = '', index = 0) {
   const normalized = String(label).toLowerCase()
@@ -96,14 +97,14 @@ function getFacilityDetails(label = '', index = 0) {
   for (const [iconName, config] of Object.entries(facilityIcons)) {
     if (config.matches.some((keyword) => normalized.includes(keyword))) {
       return {
-        icon: iconComponents[iconName] || CircleCheck,
+        iconNode: iconNodes[iconName] || CircleCheck,
         color: config.color
       }
     }
   }
 
   return {
-    icon: CircleCheck,
+    iconNode: CircleCheck,
     color: fallbackColors[index % fallbackColors.length]
   }
 }
@@ -121,7 +122,7 @@ function getFacilityDetails(label = '', index = 0) {
             : typeof item === 'object' && item.service
               ? item.service
               : label
-        const { icon: IconComponent, color } = getFacilityDetails(label, index)
+        const { iconNode, color } = getFacilityDetails(label, index)
         const isExtra = typeof initialVisible === 'number' && index >= initialVisible
         return (
           <button
@@ -134,7 +135,7 @@ function getFacilityDetails(label = '', index = 0) {
             aria-pressed="false"
           >
             <span class="facility-chip-icon" aria-hidden="true">
-              <IconComponent size={15} />
+              <Icon iconNode={iconNode} size={15} />
             </span>
             <span class="facility-chip-label">{label}</span>
           </button>
@@ -161,7 +162,7 @@ function getFacilityDetails(label = '', index = 0) {
       {validItems.map((item, index) => {
         const label = typeof item === 'string' ? item : item.label || item.service || ''
         const url = typeof item === 'object' && item.url ? safeURL(item.url) : null
-        const { icon: IconComponent, color } = getFacilityDetails(label, index)
+        const { iconNode, color } = getFacilityDetails(label, index)
         const isExtra = typeof initialVisible === 'number' && index >= initialVisible
         return (
           <li
@@ -170,7 +171,7 @@ function getFacilityDetails(label = '', index = 0) {
             hidden={isExtra ? true : undefined}
           >
             <span class="facility-chip-icon" aria-hidden="true">
-              <IconComponent size={15} />
+              <Icon iconNode={iconNode} size={15} />
             </span>
             {url ? (
               <a href={url} class="facility-chip-link">

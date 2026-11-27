@@ -1,4 +1,5 @@
 ---
+/** @fileoverview Lazy-loaded interactive map for library locations, clusters, search origins, and selected-library popups. */
 import 'maplibre-gl/dist/maplibre-gl.css'
 import { libraryMapFeatures } from '../lib/directory/geoHelpers.mjs'
 import { sitePath } from '../lib/site/siteHelpers.mjs'
@@ -53,6 +54,7 @@ const data = libraryMapFeatures(libraries, sitePath)
     isProgrammaticPopupClose = false
     onPopupClose = null
 
+    /** Initialize event listeners and load the map when this element approaches the viewport. */
     connectedCallback() {
       if (this.lifetime && !this.lifetime.signal.aborted) return
       this.lifetime = new AbortController()
@@ -105,6 +107,7 @@ const data = libraryMapFeatures(libraries, sitePath)
       }
     }
 
+    /** Abort pending work and release map, observer, and popup resources when removed. */
     disconnectedCallback() {
       this.lifetime?.abort()
       this.observer?.disconnect()
@@ -115,6 +118,7 @@ const data = libraryMapFeatures(libraries, sitePath)
       delete this.dataset.mapReady
     }
 
+    /** Remove the current popup without treating the removal as a user-initiated close. */
     removePopup() {
       if (!this.popup) return
       this.isProgrammaticPopupClose = true
@@ -130,6 +134,10 @@ const data = libraryMapFeatures(libraries, sitePath)
       }
     }
 
+    /**
+     * Update the map's accessible status message.
+     * @param {string} [message=''] - Message to show, or an empty string to hide the status.
+     */
     setStatus(message = '') {
       const status = this.querySelector('[data-map-status]')
       if (!status) return
@@ -137,6 +145,11 @@ const data = libraryMapFeatures(libraries, sitePath)
       status.hidden = !message
     }
 
+    /**
+     * Load MapLibre and create the clustered library map unless this instance is already initializing.
+     * @param {AbortSignal} signal - Lifecycle signal used to ignore work after disconnection.
+     * @returns {Promise<void>} Resolves after map setup has been attempted.
+     */
     async initializeMap(signal) {
       if (this.map || this.initializing) return
       this.initializing = true
@@ -311,6 +324,11 @@ const data = libraryMapFeatures(libraries, sitePath)
       }
     }
 
+    /**
+     * Build and display a safe library-information popup at the supplied map coordinates.
+     * @param {{name?: string, address?: string, url?: string, closed?: boolean}} props - Library details for the popup.
+     * @param {[number, number]} coordinates - Longitude and latitude for the popup anchor.
+     */
     showLibraryPopup(props, coordinates) {
       if (!this.map || !this.PopupClass || !coordinates) return
       const pinSvg =
@@ -358,7 +376,10 @@ const data = libraryMapFeatures(libraries, sitePath)
       if (props.address) {
         const addr = document.createElement('p')
         addr.className = 'map-popup-address'
-        addr.innerHTML = `${pinSvg}<span>${props.address}</span>`
+        addr.innerHTML = pinSvg
+        const addressText = document.createElement('span')
+        addressText.textContent = String(props.address)
+        addr.appendChild(addressText)
         content.appendChild(addr)
       }
 
@@ -391,6 +412,10 @@ const data = libraryMapFeatures(libraries, sitePath)
       this.popup.on('close', this.onPopupClose)
     }
 
+    /**
+     * Move to a selected library and display its details, deferring selection until map load if needed.
+     * @param {object} library - Directory record containing the library location and display fields.
+     */
     selectLibrary(library) {
       if (!this.map) {
         this.pendingSelect = library
@@ -428,6 +453,7 @@ const data = libraryMapFeatures(libraries, sitePath)
       this.showLibraryPopup(props, [lng, lat])
     }
 
+    /** Fit the camera to all mapped libraries and the optional search origin. */
     fitAllBounds() {
       if (!this.map) return
       const originPoints = this.location ? [[this.location.longitude, this.location.latitude]] : []
@@ -459,6 +485,10 @@ const data = libraryMapFeatures(libraries, sitePath)
       }
     }
 
+    /**
+     * Replace map features and adjust the camera after an initial load or filter update.
+     * @param {{isInitial?: boolean}} [options] - Whether to avoid animated transitions for initial rendering.
+     */
     updateMap({ isInitial = false } = {}) {
       this.dataset.mapCount = String(this.data.features.length)
       const source = this.map?.getSource('libraries')

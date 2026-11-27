@@ -1,20 +1,36 @@
 ---
+/** @fileoverview Render accessible site navigation with active-page and active-section states. */
 import { ChevronDown, ChevronRight } from '@lucide/astro'
 import { safeURL, settings } from '../lib/site/siteHelpers.mjs'
 
 const { items = [], mode = 'desktop' } = Astro.props
 const currentPath = Astro.url.pathname.replace(/\/+$/, '') || '/'
 
+/**
+ * Normalize an internal path for consistent navigation-state comparisons.
+ * @param {string} value - Candidate path from navigation data.
+ * @returns {string} Normalized path, or an empty string for unsupported paths.
+ */
 function normalizedPath(value) {
   if (!value?.startsWith('/') || value.startsWith('//')) return ''
   return value.replace(/\/+$/, '') || '/'
 }
 
+/**
+ * Check whether a navigation path is the current page or one of its parent sections.
+ * @param {string} value - Candidate navigation path.
+ * @returns {boolean} Whether the current page belongs to this path.
+ */
 function isActive(value) {
   const path = normalizedPath(value)
   return path && (currentPath === path || (path !== '/' && currentPath.startsWith(`${path}/`)))
 }
 
+/**
+ * Check whether a navigation path exactly matches the current page.
+ * @param {string} value - Candidate navigation path.
+ * @returns {boolean} Whether the path is the current page.
+ */
 function isCurrent(value) {
   return currentPath === normalizedPath(value)
 }

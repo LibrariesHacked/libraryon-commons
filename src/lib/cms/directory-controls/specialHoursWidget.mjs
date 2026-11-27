@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Decap CMS control for editing dated special opening hours and notes.
+ */
+
 import {
   parseSpecialHours,
   serializeSpecialHoursDraft

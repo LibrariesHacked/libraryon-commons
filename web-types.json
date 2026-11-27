@@ -1,0 +1,27 @@
+{
+  "name": "libraryon-commons",
+  "version": "1.0.0",
+  "description": "Custom elements used by the LibraryCommons Astro site.",
+  "contributions": {
+    "html": {
+      "elements": [
+        {
+          "name": "library-place-search",
+          "description": "Accessible place search and nearby-library control."
+        },
+        {
+          "name": "library-map",
+          "description": "Interactive map of library locations."
+        },
+        {
+          "name": "news-map",
+          "description": "Interactive map of news-story locations."
+        },
+        {
+          "name": "news-stories-list",
+          "description": "Filterable list of public-library news stories."
+        }
+      ]
+    }
+  }
+}

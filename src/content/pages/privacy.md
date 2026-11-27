@@ -8,7 +8,7 @@ description: How LibraryCommons and Libraries Hacked protect your privacy and ha
 
 # Privacy policy
 
-LibraryCommons is an community project maintained by [Libraries Hacked](https://www.librarieshacked.org/). We are committed to protecting your privacy.
+LibraryCommons is a community project maintained by [Libraries Hacked](https://www.librarieshacked.org/). We are committed to protecting your privacy.
 
 ## Summary of principles
 
@@ -21,7 +21,7 @@ LibraryCommons is an community project maintained by [Libraries Hacked](https://
 
 ### 1. Library directory searches
 
-When using the library search on [Find your library](/libraries/):
+When using the library search on [Find your library](/libraries):
 
 - **Place and postcode lookups:** If you type a town or UK postcode to search for libraries, the query is resolved in your browser using local search indexes or secure HTTPS lookups. Postcodes and search terms are not stored, recorded, or linked to individual users.
 - **Device location ("Find nearby"):** If you explicitly choose to use the "Find nearby" button, your browser requests your location coordinates via browser geolocation permissions. These coordinates are used solely within your current browser session to calculate distances to nearby libraries.
@@ -37,5 +37,19 @@ The static site is hosted on GitHub Pages (with content management administratio
 
 - **No analytics or advertising cookies:** LibraryCommons does not use Google Analytics, Meta Pixel, or other third-party tracking scripts.
 - **Functional storage only:** The site may use standard browser session storage or local storage exclusively to preserve your chosen search filters or active tabs during your visit. These do not track you across the web.
+
+### 4. Editor accounts and publishing
+
+If you create an editor account, Netlify Identity processes your name, work email address, and
+account information to verify your email and manage sign-in. We use the email domain to assign an
+editor role and the library-service scope recorded in our permissions CSV. This information is for
+editing access; it is not included in public library records. Netlify's handling of account data is
+described in its [Privacy Policy](https://www.netlify.com/privacy/).
+
+Publishing creates a public commit in the LibraryCommons GitHub repository. Git history records
+changed files and content, timestamps, and commit messages, providing a record of what changed and
+when. The CMS does not add your Netlify Identity email address or user ID to content or commit
+messages, and passwords are not stored in the repository. Public Git history may remain available
+after an editor account is removed.
 
 If you have any concerns or questions contact [info@librarieshacked.org](mailto:info@librarieshacked.org)

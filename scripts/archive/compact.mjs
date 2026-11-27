@@ -1,5 +1,5 @@
 /**
- * @file Package source evidence without duplicate media or browser artifacts.
+ * @fileoverview Package source evidence without duplicate media or browser artifacts.
  * The small deterministic gzip bundles are ordinary Git files, never Git LFS.
  */
 import { readFile, readdir, mkdir, writeFile } from 'node:fs/promises'

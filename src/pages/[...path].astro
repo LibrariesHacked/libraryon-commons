@@ -1,4 +1,5 @@
 ---
+/** @fileoverview Resolve published editorial paths to their content-driven page templates. */
 import { getCollection, getEntries, render } from 'astro:content'
 
 import { isPublishedPage, settings } from '../lib/site/siteHelpers.mjs'
@@ -12,6 +13,10 @@ import HomeTemplate from '../templates/HomeTemplate.astro'
 import LandingTemplate from '../templates/LandingTemplate.astro'
 import LegalTemplate from '../templates/LegalTemplate.astro'
 
+/**
+ * Build static routes for published pages not handled by dedicated route files.
+ * @returns {Promise<Array<{params: {path?: string}, props: {entry: object}}>>} Page route definitions.
+ */
 export async function getStaticPaths() {
   const customRoutePaths = new Set(['/libraries', '/news', '/organisations'])
   const pages = await getCollection('pages')

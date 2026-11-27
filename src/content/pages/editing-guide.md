@@ -28,11 +28,18 @@ work email address (for example, `your.name@council.gov.uk`).
 5. Select **Sign up**.
 
 <!--suppress MarkdownUnresolvedFileReference -->
+
 ![The sign-up window showing full name, work email, and password fields](/uploads/community/cms-signup-modal.png)
 
 > **Email domain check:** Registration is automatically restricted to recognised library authority
 > and council email domains. If your council email is not accepted, contact the site maintainers to
 > add your domain to the pre-approved list.
+
+Choose a strong, unique password for this account. Never reuse a government password or a council,
+work, or other important password; a password manager can help you create and remember a separate
+one. Your account is managed by Netlify Identity; read
+[Netlify's privacy policy](https://www.netlify.com/privacy/)
+and our [LibraryCommons privacy policy](/privacy/).
 
 ## Verify your email address
 
@@ -53,6 +60,7 @@ If you do not see the email within a few minutes, check your junk or spam folder
 3. Enter your work email address and password, then select **Log in**.
 
 <!--suppress MarkdownUnresolvedFileReference -->
+
 ![The login window showing email and password fields](/uploads/community/cms-login-modal.png)
 
 When you log in, your editor role and authority scope appear in the editor help bar (for example,
@@ -157,6 +165,12 @@ When you select **Publish**:
 2. Automated checks verify that the data meets national public library data schemas.
 3. The site rebuilds and publishes your changes live to the public directory. This could take a
    short while.
+
+Published changes are committed to the public GitHub repository. Git history records the changed
+files, date, and commit message, providing a record of what changed and when. The CMS does not add
+your Netlify Identity email address or user ID to content or commit messages. Keep personal
+information out of public records and comments. Public repository history may remain available even
+after an editor account is removed.
 
 You can log back in at any time to make further updates.
 

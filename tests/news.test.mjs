@@ -6,6 +6,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFileSync, readdirSync, existsSync } from 'node:fs'
 import { parse } from 'yaml'
+import { filterStoriesWithValidDates, getNewsAnchorDate } from '../scripts/sync-news.mjs'
 import {
   categoryLabel,
   changeTypeLabel,
@@ -15,7 +16,6 @@ import {
   getNewsSummaries,
   getNewsSummaryForOrganisation,
   getNewsSummaryForAuthority,
-  getNewsSummaryForLibrary,
   getNewsForLibrary,
   getNewsForAuthority,
   getNewsForOrganisation,
@@ -25,10 +25,7 @@ import {
   authorityPageUrl,
   organisationPageUrl,
   newsExplorerUrl,
-  matchesStoryQuery,
-  CATEGORY_LABELS,
-  CHANGE_TYPE_LABELS,
-  CATEGORY_COLORS
+  matchesStoryQuery
 } from '../src/lib/content/newsHelpers.mjs'
 
 test('categoryLabel and changeTypeLabel resolve known keys and format fallbacks', () => {
@@ -62,6 +59,24 @@ test('formatNewsDate formats dates in British English and handles empty or inval
   assert.equal(formatNewsDate('not-a-date'), 'not-a-date')
   const formatted = formatNewsDate('2026-11-02T12:00:00Z')
   assert.match(formatted, /2\s+Nov\s+2026/)
+})
+
+test('news sync excludes malformed dates before calculating date cutoffs', () => {
+  const stories = [
+    { id: 'newest', post_date: '2026-11-22' },
+    { id: 'invalid', post_date: '2026-13-40' },
+    { id: 'timestamp', post_date: '2025-11-22T09:30:00Z' },
+    { id: 'undated' }
+  ]
+  assert.deepEqual(
+    filterStoriesWithValidDates(stories).map(({ id }) => id),
+    ['newest', 'timestamp', 'undated']
+  )
+  assert.equal(getNewsAnchorDate(stories), '2026-11-22')
+  assert.equal(
+    getNewsAnchorDate([{ post_date: '2026-13-40' }], new Date('2024-06-07T12:00:00Z')),
+    '2024-06-07'
+  )
 })
 
 test('filterStoriesByDate filters by 1y, 2y, 3y, 5y presets, custom range, and all', () => {
@@ -281,6 +296,17 @@ test('browser client scripts import pure newsFormatHelpers instead of Node-only 
       )
     }
   }
+})
+
+test('news map popup renders imported dates and domains as text', () => {
+  const component = readFileSync(
+    new URL('../src/components/NewsMap.astro', import.meta.url),
+    'utf8'
+  )
+  assert.ok(component.includes('dateText.textContent = formatNewsDate(s.date)'))
+  assert.ok(component.includes('labelText.textContent = label'))
+  assert.doesNotMatch(component, /dateSpan\.innerHTML\s*=\s*`[^`]*formatNewsDate\(s\.date\)/)
+  assert.doesNotMatch(component, /link\.innerHTML\s*=\s*`<span>\$\{label}/)
 })
 
 test('Aberdeen City authority exposes all summary stories across time presets', () => {

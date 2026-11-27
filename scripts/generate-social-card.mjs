@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Generate the fixed-size LibraryCommons social-sharing image.
+ */
+
 import fs from 'node:fs'
 import path from 'node:path'
 import { chromium } from 'playwright'
@@ -168,6 +172,10 @@ body {
 </body>
 </html>`
 
+/**
+ * Render the social-card markup in a headless browser and save its PNG asset.
+ * @returns {Promise<void>} Resolves after the generated image is written.
+ */
 async function generate() {
   const launchOptions = {
     headless: true

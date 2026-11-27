@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Browser bootstrap for Decap CMS configuration, editor permissions, and save validation.
+ */
+
 import { parse as parseYaml } from 'yaml'
 import { prepareDirectoryEdit } from '../lib/directory/schemaHelpers.mjs'
 import { registerEditorComponents } from '../lib/cms/cmsHelpers.mjs'
@@ -26,10 +30,16 @@ import previewStyles from '../styles/global.css?inline'
 const domainPermissions = parseDomainPermissions(domainPermissionsCsv)
 const saveError = document.getElementById('cms-save-error')
 const saveErrorMessage = document.getElementById('cms-save-error-message')
+/** Clear the CMS save-error message and hide its alert. */
 const clearSaveError = () => {
   if (saveError) saveError.hidden = true
   if (saveErrorMessage) saveErrorMessage.textContent = ''
 }
+/**
+ * Add a save or validation error to the CMS alert without duplicating messages.
+ * @param {Error|string} error - Error to present to the editor.
+ * @returns {void}
+ */
 const showSaveError = (error) => {
   if (!saveError || !saveErrorMessage) return
   const message = error instanceof Error ? error.message : String(error)

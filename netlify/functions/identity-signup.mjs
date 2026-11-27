@@ -39,20 +39,17 @@ export async function handler(event) {
   try {
     const payload = JSON.parse(event.body || '{}')
     const user = payload.user || {}
-    const email = user.email || ''
-
     const permissions = loadPermissions()
     const resolved = resolveUserPermissions(user, permissions)
 
-    const roles = resolved.role ? [resolved.role] : ['service-editor']
-    const gssCodes = resolved.gssCodes || []
+    const roles = resolved.role ? [resolved.role] : []
 
     return {
       statusCode: 200,
       body: JSON.stringify({
         app_metadata: {
           roles,
-          gss_codes: gssCodes
+          gss_codes: resolved.gssCodes
         }
       })
     }

@@ -1,7 +1,8 @@
 /**
- * @file Rate-limited public-site collector with resumable, checksummed responses.
+ * @fileoverview Rate-limited public-site collector with resumable, checksummed responses.
  * Raw captures are local-only; import/compaction create the ordinary-Git outputs.
  */
+import { Buffer } from 'node:buffer'
 import { createHash } from 'node:crypto'
 import { mkdir, readFile, writeFile, appendFile } from 'node:fs/promises'
 import path from 'node:path'
@@ -327,10 +328,14 @@ export async function collect(options) {
     try {
       const result = await get(url)
       if (result.status >= 300 && result.status < 400) {
-        if (!result.location || redirects >= 10) throw new Error('Invalid or excessive redirects')
+        if (!result.location || redirects >= 10) {
+          failures.push({ url, error: 'Invalid or excessive redirects' })
+          return null
+        }
         const target = new URL(result.location, url).href
         if (!allowed(target, options.api)) {
-          throw new Error(`Redirect outside allowed scope: ${target}`)
+          failures.push({ url, error: `Redirect outside allowed scope: ${target}` })
+          return null
         }
         return await fetchObject(target, redirects + 1)
       }

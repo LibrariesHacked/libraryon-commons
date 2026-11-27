@@ -1,5 +1,5 @@
 /**
- * @file Add each library's services list and source update date to the editable directory records.
+ * @fileoverview Add each library's services list and source update date to the editable directory records.
  * The collector's `populate=*` request omits the services component, so it is fetched explicitly.
  */
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
@@ -56,6 +56,11 @@ function withFields(record, fields) {
   return Object.keys(fields).every((key) => key in result) ? result : { ...record, ...fields }
 }
 
+/**
+ * Convert a source timestamp to the date-only format used by content records.
+ * @param {string|undefined|null} timestamp - Source timestamp.
+ * @returns {string} ISO date prefix, or an empty string when unavailable.
+ */
 const day = (timestamp) => (timestamp ? String(timestamp).slice(0, 10) : '')
 
 /**

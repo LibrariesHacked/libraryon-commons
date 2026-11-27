@@ -1,4 +1,5 @@
 ---
+/** @fileoverview Assemble the homepage from its hero, editorial content, data section, and curated page collections. */
 import { ArrowRight } from '@lucide/astro'
 
 import ArticleCards from '../components/ArticleCards.astro'
@@ -18,6 +19,11 @@ const copy = settings.ui.home
 const sourceURL = safeURL(entry.data.source_url)
 const heading = homepage.title || articleTitle(entry)
 const highlightedHeading = heading.match(/^(.*\s)(everyone)$/i)
+/**
+ * Select published pages in the supplied order by their canonical content paths.
+ * @param {string[]} paths - Content paths listed in homepage settings.
+ * @returns {object[]} Matching page entries; missing paths are omitted.
+ */
 const selected = (paths) =>
   paths.map((path) => allPages.find((page) => page.data.path === path)).filter(Boolean)
 const collections = selected(homepage.collection_pages)

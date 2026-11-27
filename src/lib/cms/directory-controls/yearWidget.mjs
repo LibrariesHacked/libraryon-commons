@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Decap CMS control for an optional directory year value.
+ */
+
 import { validateOptionalYear } from './directoryControlValues.mjs'
 
 /**

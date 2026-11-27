@@ -1,3 +1,7 @@
+/**
+ * @fileoverview Browser controller for the hero carousel, including autoplay and accessible controls.
+ */
+
 import EmblaCarousel from 'embla-carousel'
 import Autoplay from 'embla-carousel-autoplay'
 
@@ -36,6 +40,7 @@ import Autoplay from 'embla-carousel-autoplay'
     [autoplay]
   )
 
+  /** Synchronize the autoplay button label, state, and icons with the pause state. */
   const syncToggleUI = () => {
     if (!toggleBtn) return
     toggleBtn.setAttribute('aria-pressed', String(userPaused))
@@ -46,6 +51,7 @@ import Autoplay from 'embla-carousel-autoplay'
     if (playIcon) playIcon.hidden = !userPaused
   }
 
+  /** Mark the navigation dot corresponding to the currently selected slide. */
   const syncDots = () => {
     const selected = carousel.selectedScrollSnap()
     dots.forEach((dot, index) => dot.setAttribute('aria-current', String(index === selected)))
