@@ -15,6 +15,16 @@ export function registerHoursWidget(cms, { h, createClass, onValidationError }) 
   cms.registerWidget(
     'directory-hours',
     createClass({
+      /** @returns {{rows: {open: string, close: string}[]}} Editable rows, including unsaved blank drafts. */
+      getInitialState() {
+        return { rows: hourSessionRows(this.props.value) }
+      },
+      /** Keep the editor in sync with CMS undo/redo and external value changes. */
+      componentWillReceiveProps(nextProps) {
+        if (nextProps.value !== this.props.value) {
+          this.setState({ rows: hourSessionRows(nextProps.value) })
+        }
+      },
       /** @returns {{error: false|{message: string}}} Session validation used by Decap before saving. */
       isValid() {
         const result = validateHoursControl(this.props.value)
@@ -23,19 +33,22 @@ export function registerHoursWidget(cms, { h, createClass, onValidationError }) 
       },
       /** @returns {object} Separate opening and closing inputs for each daily session. */
       render() {
-        const rows = hourSessionRows(this.props.value)
-        const update = (nextRows) => this.props.onChange(serializeHourSessions(nextRows))
+        const rows = this.state.rows || hourSessionRows(this.props.value)
+        const update = (nextRows) => {
+          this.setState({ rows: nextRows })
+          this.props.onChange(serializeHourSessions(nextRows))
+        }
         return h(
           'div',
           { className: 'directory-hours-control' },
           h(
-            'div',
+            'ol',
             { className: 'directory-hours-rows' },
             rows.map((row, index) =>
               h(
-                'fieldset',
+                'li',
                 { className: 'directory-hours-row', key: `session-${index}` },
-                h('legend', {}, `Period ${index + 1}`),
+                h('span', { className: 'directory-hours-period' }, `Period ${index + 1}`),
                 ...['open', 'close'].map((key) => {
                   const label = key === 'open' ? 'Opens' : 'Closes'
                   return h(
@@ -71,7 +84,10 @@ export function registerHoursWidget(cms, { h, createClass, onValidationError }) 
           ),
           h(
             'button',
-            { type: 'button', onClick: () => update([...rows, { open: '', close: '' }]) },
+            {
+              type: 'button',
+              onClick: () => this.setState({ rows: [...rows, { open: '', close: '' }] })
+            },
             'Add time period'
           )
         )

@@ -228,6 +228,42 @@ test('daily hours are edited as separate sessions without comma entry', () => {
   assert.equal(validateHoursControl('09:00-12:30,13:30-24:00').error, false)
 })
 
+test('adding a daily-hours period displays a new editable row', () => {
+  const widgets = new Map()
+  const h = (type, props, ...children) => ({ type, props: props || {}, children })
+  registerDirectoryControls(
+    {
+      getWidget: () => ({ preview: () => null }),
+      registerWidget: (name, control) => widgets.set(name, control)
+    },
+    { createClass: (definition) => definition, h }
+  )
+  const control = widgets.get('directory-hours')
+  const instance = {
+    props: { value: null, onChange: (value) => (instance.props.value = value) },
+    state: {},
+    setState(nextState) {
+      this.state = { ...this.state, ...nextState }
+    }
+  }
+  const findNodes = (node, type) =>
+    Array.isArray(node)
+      ? node.flatMap((child) => findNodes(child, type))
+      : node && typeof node === 'object'
+        ? [
+            ...(node.type === type ? [node] : []),
+            ...(node.children || []).flatMap((child) => findNodes(child, type))
+          ]
+        : []
+
+  const initial = control.render.call(instance)
+  findNodes(initial, 'button')[0].props.onClick()
+
+  const updated = control.render.call(instance)
+  assert.equal(findNodes(updated, 'li').length, 1)
+  assert.equal(findNodes(updated, 'input').length, 2)
+})
+
 test('special hours preserve legacy notes and serialize dated periods in Google format', () => {
   const legacy = 'Closed on bank holidays'
   assert.deepEqual(parseSpecialHours(legacy), { periods: [], notes: legacy, invalid: false })
